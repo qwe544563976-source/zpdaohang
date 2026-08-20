@@ -20,6 +20,21 @@ AI 按 references/method-extraction.schema.json 输出结构化 JSON
 - **方案 C 高风险词（Q15/Q21）**：生成器只强制映射四类高风险词（专名／数值／单位／时间词，词表在 `scripts/shared_constants.py`）；未映射即拒绝装配。差异表写入生成报告与配方 generation 块；审计员按清单逐词单选 accept/reject，清单外严禁找茬。
 - **留插座（Q17）**：`spine_slot_hint` 现在一律 null；PVR 未正式加工前禁止填值。
 
+### 真实原文驱动的词表与覆盖修正（2026-08-20，BPHS97 第 14~16 章开工时发现）
+
+拿正式书包的真实 `exact_text` 试跑方案 C 时，实测出两个会直接放行错误的缺口，已修并留正反回归
+（`test_build_methods.py::RealBphsTermCoverageTests`，样本全部取自 ch14~16 原文）：
+
+| 缺口 | 真实样本 | 后果 | 修法 |
+|---|---|---|---|
+| 基数词不算数值 | `three mothers, or two fathers`（ch16 v10）、`six Grahas`（ch16 v11）、`Nine will be the number of sons`（ch16 v24-32） | 检出 0 个高风险词，子女／兄弟数量写错也能通过装配 | 新增 `HIGH_RISK_CARDINAL_WORDS`（two~twelve） |
+| 译本短形式未收录 | `Putr’s Lord`、`with Shukr`、`Lagn’s Lord`、`Should Mandi be in Lagna`、`in own Navāńś` | 行星／宫位／分盘写错也能通过装配 | 专名表补 `putr`、`shukr`、`lagn`、`mandi`、`gulika` 与分盘名 `navamsa/navans/dwadasamsa/drekkana/decanate` |
+| 覆盖判断用子串 | 词 `10` 被 `100 sons` 判为已覆盖；词 `one` 被 `money` 判为已覆盖 | 数值写错的步骤被误判为已映射 | `high_risk_term_covered` 改为按词边界匹配 |
+
+故意不收 `one`：Santhanam 译本里 `one` 绝大多数是代词（`one will beget a child`），强制映射只产生
+噪音；真正的 `one child only`（ch16 v5、v6）其结果词本来就必须进 results 映射。若将来出现 `one`
+被写错的真实批次证据，再按错误家族纪律加入。
+
 `tmp/` 中旧的 `build_*.py`、`rebuild_*.py`、批次合并脚本和“修订 N”产物只作历史记录。新批次不得调用它们，也不得在旧方法配方上继续补丁。
 
 ## 已登记错误家族

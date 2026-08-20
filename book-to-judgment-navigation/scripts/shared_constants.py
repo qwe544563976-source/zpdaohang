@@ -59,14 +59,16 @@ def compute_step_hash(step: dict[str, Any]) -> str:
 # 只强制映射这四类；一步通常只命中 2～5 个词。词表按已登记错误家族流程扩充，
 # 不做全量词映射表。检测在去音符、不分大小写的规范化文本上按词边界进行。
 HIGH_RISK_PROPER_NOUNS = (
-    # 行星（含常见梵文名）
+    # 行星（含常见梵文名与 Santhanam 译本的短形式）
     "sun", "moon", "mars", "mercury", "jupiter", "venus", "saturn", "rahu", "ketu",
     "surya", "chandra", "mangal", "kuja", "budh", "budha", "guru", "brihaspati",
-    "shukra", "sukra", "shani", "sani",
-    # 宫位梵文名
-    "lagna", "tanu", "dhan", "dhana", "sahaj", "sahaja", "bandhu", "putra", "ari",
-    "yuvati", "randhr", "randhra", "dharm", "dharma", "karm", "karma", "labh",
-    "labha", "vyaya",
+    "shukra", "shukr", "sukra", "shani", "sani", "mandi", "gulika",
+    # 宫位梵文名（Santhanam 译本正文多用无尾音短形式：Putr、Lagn、Randhr…）
+    "lagna", "lagn", "tanu", "dhan", "dhana", "sahaj", "sahaja", "bandhu",
+    "putr", "putra", "ari", "yuvati", "randhr", "randhra", "dharm", "dharma",
+    "karm", "karma", "labh", "labha", "vyaya",
+    # 分盘名（写错分盘＝换一张盘，属最高风险）
+    "navamsa", "navans", "dwadasamsa", "drekkana", "decanate",
     # 星座
     "aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio",
     "sagittarius", "capricorn", "aquarius", "pisces",
@@ -76,11 +78,21 @@ HIGH_RISK_PROPER_NOUNS = (
 HIGH_RISK_UNIT_WORDS = ("degree", "degrees", "ghati", "ghatis", "ghatika", "amsa", "amsha")
 HIGH_RISK_TIME_WORDS = (
     "dasha", "dasa", "antardasha", "bhukti", "pratyantar",
-    "year", "years", "month", "months", "day", "days",
+    "year", "years", "month", "months", "day", "days", "age",
 )
 HIGH_RISK_ORDINAL_WORDS = (
     "first", "second", "third", "fourth", "fifth", "sixth", "seventh",
     "eighth", "ninth", "tenth", "eleventh", "twelfth",
+)
+# 基数词也是数值：BPHS 的子女、兄弟数量断语几乎全用基数词
+# （"There will be 10 sons" 与 "Nine will be the number of sons" 同章并存）。
+# 真实证据：ch14 v7-11、ch16 v10/v11/v17/v24-32。
+# 故意不含 "one"：Santhanam 译本里 one 绝大多数是代词（"one will beget a child"），
+# 强制映射它只会产生无信息噪音；真正的 "one child only"（ch16 v5、v6）其结果词
+# 本来就必须进 results 映射。若将来出现 one 被写错的真实批次证据，再按错误家族纪律加入。
+HIGH_RISK_CARDINAL_WORDS = (
+    "two", "three", "four", "five", "six", "seven",
+    "eight", "nine", "ten", "eleven", "twelve",
 )
 HIGH_RISK_NUMBER_PATTERN = re.compile(r"\b\d+(?:st|nd|rd|th)?\b")
 
@@ -89,6 +101,7 @@ _HIGH_RISK_WORD_CLASSES = (
     ("unit", HIGH_RISK_UNIT_WORDS),
     ("time", HIGH_RISK_TIME_WORDS),
     ("number", HIGH_RISK_ORDINAL_WORDS),
+    ("number", HIGH_RISK_CARDINAL_WORDS),
 )
 
 
@@ -123,9 +136,13 @@ def detect_high_risk_terms(text: str) -> list[dict[str, str]]:
 
 
 def high_risk_term_covered(term: str, quote_terms: list[str]) -> bool:
-    """高风险词是否已被某个 claim_terms 映射对的引文词覆盖。"""
-    normalized_term = normalize_for_term_match(term)
-    return any(normalized_term in normalize_for_term_match(quote) for quote in quote_terms)
+    """高风险词是否已被某个 claim_terms 映射对的引文词按整词覆盖。
+
+    必须按词边界判断：子串判断会让 "money" 假装覆盖 "one"、"100" 假装覆盖 "10"，
+    等于把写错数值的步骤放行。
+    """
+    pattern = re.compile(rf"\b{re.escape(normalize_for_term_match(term))}\b")
+    return any(pattern.search(normalize_for_term_match(quote)) for quote in quote_terms)
 
 
 def map_high_risk_terms(
@@ -140,12 +157,11 @@ def map_high_risk_terms(
     rows: list[dict[str, str]] = []
     uncovered: list[str] = []
     for item in detected:
-        normalized_term = normalize_for_term_match(item["term"])
         match = next(
             (
                 (quote, claim)
                 for quote, claim in pairs
-                if normalized_term in normalize_for_term_match(quote)
+                if high_risk_term_covered(item["term"], [quote])
             ),
             None,
         )

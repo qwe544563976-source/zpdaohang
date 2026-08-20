@@ -1,0 +1,138 @@
+[
+  {
+    "method": "ch15-v2-housing-comfort",
+    "title": "住房舒适：四宫被宫主或上升主占据且受吉星相照",
+    "generalization_scope": "general_rule",
+    "source_status": "single_explicit_source",
+    "fact_binding_status": "unmapped",
+    "upstream_issue_ids": [],
+    "user_intents": [
+      "我这辈子住房条件怎么样",
+      "我能不能住得舒服"
+    ],
+    "facts": [
+      {
+        "key": "四宫是否受吉星相照",
+        "availability": "always",
+        "role": "evidence_condition"
+      },
+      {
+        "key": "四宫是否被四宫主占据",
+        "availability": "conditional",
+        "role": "evidence_condition"
+      },
+      {
+        "key": "四宫是否被上升主占据",
+        "availability": "conditional",
+        "role": "evidence_condition"
+      }
+    ],
+    "dependencies": [],
+    "steps": [
+      {
+        "action": "核对四宫（Bandhu Bhava）的占据者与吉星相照，判断住房舒适程度。",
+        "applicability_scope": "仅限本命盘四宫住房主题；原文未给时间或上升限定。",
+        "minimum_supported_claim": "四宫被其宫主或上升主占据、并受吉星相照时，住房舒适圆满。",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Bandhu is occupied by its Lord",
+              "claim": "四宫被其宫主"
+            },
+            {
+              "quote": "by Lagn’s Lord",
+              "claim": "上升主"
+            },
+            {
+              "quote": "be drishtied by a benefic",
+              "claim": "受吉星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "residential comforts in full degree",
+              "claim": "住房舒适圆满"
+            }
+          ]
+        },
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "produced_fact_keys": [
+          "四宫住房舒适判定"
+        ],
+        "required_fact_keys": [
+          "四宫是否受吉星相照"
+        ],
+        "condition_logic": {
+          "fact_key": "四宫是否受吉星相照"
+        },
+        "conditional_requirements": [],
+        "alternative_groups": [
+          {
+            "group_id": "occupier",
+            "branches": [
+              {
+                "branch_id": "own-lord",
+                "condition_logic": {
+                  "fact_key": "四宫是否被四宫主占据"
+                },
+                "required_fact_keys": [
+                  "四宫是否被四宫主占据"
+                ]
+              },
+              {
+                "branch_id": "lagna-lord",
+                "condition_logic": {
+                  "fact_key": "四宫是否被上升主占据"
+                },
+                "required_fact_keys": [
+                  "四宫是否被上升主占据"
+                ]
+              }
+            ]
+          }
+        ],
+        "concession_conditions": [],
+        "context_reference": false,
+        "context_bindings": [],
+        "source_status": "single_explicit_source",
+        "evidence": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch15:v2",
+            "quote": "One will have residential comforts in full degree, if Bandhu is occupied by its Lord, or by Lagn’s Lord and be drishtied by a benefic."
+          }
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断房产数量、价值或购房时间。"
+        ]
+      }
+    ],
+    "retrieval_plan": {
+      "support_queries": [
+        "Bandhu Bhava occupied by its Lord residential comforts",
+        "四宫主落四宫 住房舒适"
+      ],
+      "counter_queries": [
+        "Bandhu Bhava malefic loss of house",
+        "四宫受凶星 住房不利"
+      ],
+      "boundary_queries": [
+        "Bandhu Bhava benefic drishti condition scope",
+        "住房判断的适用边界"
+      ],
+      "method_queries": [
+        "how to judge Bandhu Bhava effects",
+        "判断四宫应检查什么"
+      ]
+    },
+    "stop_conditions": [
+      "缺少四宫占据者事实时停止。",
+      "缺少四宫相位事实时停止。"
+    ],
+    "spine_slot_hint": null
+  }
+]

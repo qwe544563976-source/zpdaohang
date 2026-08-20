@@ -437,5 +437,37 @@ class HighRiskTermTests(unittest.TestCase):
         self.assertIn("sani", detected)
 
 
+class RealBphsTermCoverageTests(unittest.TestCase):
+    """真实 BPHS 97（Santhanam）原文驱动的高风险词回归。
+
+    每条样本都来自正式书包 ch14~16 的 exact_text；这些词曾整体漏检，
+    漏检即等于数值或行星写错也能通过装配。
+    """
+
+    def detected(self, text: str) -> set[str]:
+        return {item["term"] for item in MODULE.detect_high_risk_terms(text)}
+
+    def test_cardinal_numbers_in_child_and_sibling_counts(self) -> None:
+        self.assertIn("three", self.detected("the native will be brought up by three mothers, or two fathers"))
+        self.assertIn("six", self.detected("if Putr is tenanted by six Grahas"))
+        self.assertIn("nine", self.detected("Nine will be the number of sons"))
+
+    def test_santhanam_short_forms_are_detected(self) -> None:
+        self.assertIn("putr", self.detected("Should Putr’s Lord be in Ari Bhava"))
+        self.assertIn("shukr", self.detected("while its Lord is with Shukr"))
+        self.assertIn("lagn", self.detected("Lagn’s Lord is in fall"))
+        self.assertIn("mandi", self.detected("Should Mandi be in Lagna"))
+
+    def test_divisional_chart_names_are_detected(self) -> None:
+        self.assertIn("navans", self.detected("or in own Navāńś, or in exaltation"))
+
+    def test_pronoun_one_is_deliberately_not_a_number_term(self) -> None:
+        self.assertNotIn("one", self.detected("one will beget a child at the age of 30"))
+
+    def test_coverage_requires_whole_word_not_substring(self) -> None:
+        self.assertFalse(MODULE.shared_constants.high_risk_term_covered("10", ["100 sons"]))
+        self.assertTrue(MODULE.shared_constants.high_risk_term_covered("10", ["10 sons"]))
+
+
 if __name__ == "__main__":
     unittest.main()
