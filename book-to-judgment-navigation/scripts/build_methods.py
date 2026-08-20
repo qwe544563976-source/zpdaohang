@@ -393,6 +393,10 @@ def assemble_step(method_id: str, number: int, step: dict[str, Any], atoms: dict
         "condition_logic": and_logic(condition_nodes),
         "conditional_fact_requirements": conditional_requirements,
         "source_status": step["source_status"],
+        # 保留条件词／结果词映射：验证器据此区分"条件里的或"（必须拆分支）和
+        # "结果里的或"（如 loss of younger brothers and/or sisters，是结果本身模糊），
+        # 独立审计也据此逐词确认高风险词。
+        "claim_terms": step["claim_terms"],
         "evidence_refs": evidence_refs(step, atoms),
         "stop_condition": "缺少以下固定事实即停止：" + "、".join(required) + "。",
         "stop_fact_keys": list(required),

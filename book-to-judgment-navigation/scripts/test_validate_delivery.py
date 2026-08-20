@@ -1001,6 +1001,31 @@ class DeliveryGateTests(unittest.TestCase):
         write_json(path, work)
         self.assert_error("正式模式拒绝裸 evidence_atoms.jsonl 路径")
 
+    def test_or_in_result_quote_does_not_require_selection_group(self) -> None:
+        """真实证据：ch14 v7-11 的 `and/or` 在结果里，不是条件分支。"""
+        step = {
+            "claim_terms": {
+                "conditions": [{"quote": "Should Mangal be yuti with Rahu", "claim": "火星与罗睺同宫"}],
+                "results": [{"quote": "there will be loss of younger brothers and/or sisters", "claim": "失去弟妹"}],
+            }
+        }
+        text = "Should Mangal be yuti with Rahu\nthere will be loss of younger brothers and/or sisters"
+        self.assertFalse(VALIDATOR.or_outside_results(text, step))
+
+    def test_or_in_condition_quote_still_requires_selection_group(self) -> None:
+        step = {
+            "claim_terms": {
+                "conditions": [{"quote": "if Putr’s Lord is in Ari, or in Putr itself", "claim": "五宫主落六宫"}],
+                "results": [{"quote": "the native will beget issues with difficulty", "claim": "得子艰难"}],
+            }
+        }
+        text = "if Putr’s Lord is in Ari, or in Putr itself\nthe native will beget issues with difficulty"
+        self.assertTrue(VALIDATOR.or_outside_results(text, step))
+
+    def test_or_gate_without_claim_terms_stays_strict(self) -> None:
+        text = "if A is in Ari, or in Randhr"
+        self.assertTrue(VALIDATOR.or_outside_results(text, {}))
+
     def test_v2_step_hash_mismatch_is_rejected(self) -> None:
         step = {
             "step_id": "m.step-001",

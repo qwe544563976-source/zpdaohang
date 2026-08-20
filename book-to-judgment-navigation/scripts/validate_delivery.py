@@ -94,6 +94,9 @@ REQUIRED_STEP_FIELDS = {
     "exception_relations",
     "forbidden_extensions",
 }
+# claim_terms 是 v2 升级后新装配的步骤才有的字段，刻意不列为必填：
+# 已并入总账的旧方法在装配时没有保留它，且原始映射已无处回填。
+# 没有它时 OR 闸门保持升级前的严格行为（见 or_outside_results）。
 QUERY_LANES = (
     "support_queries",
     "counter_queries",
@@ -1113,6 +1116,31 @@ def check_evidence_ref(
     return valid
 
 
+def or_outside_results(source_text: str, step: dict) -> bool:
+    """原文里的"或"是不是落在条件侧（落在条件侧才必须拆成 selection_group）。
+
+    真实证据：BPHS97 ch14 v7-11 的 `loss of younger brothers and/or sisters`——
+    这处 and/or 描述的是结果本身模糊（失去弟弟和/或妹妹），不是"要检查哪个分支"。
+    旧闸门不分条件和结果，把这类步骤一律拦下；要通过就只能截断逐字短引，
+    而截断正是已登记的"句尾碎片短引"错误家族。
+
+    判据用方案 C 已经强制建立的条件词／结果词分离：命中的 OR 片段若整段落在
+    某条结果映射引文里，就是结果侧的或；只要有一处落在结果引文之外，仍然要求拆分支。
+    """
+    claim_terms = step.get("claim_terms")
+    result_quotes = []
+    if isinstance(claim_terms, dict):
+        result_quotes = [
+            pair.get("quote", "")
+            for pair in claim_terms.get("results", [])
+            if isinstance(pair, dict) and isinstance(pair.get("quote"), str)
+        ]
+    for match in EXPLICIT_OR_PATTERN.finditer(source_text):
+        if not any(match.group(0) in quote for quote in result_quotes):
+            return True
+    return False
+
+
 def validate_condition_logic(value: object, label: str, errors: list[str]) -> set[str]:
     if not isinstance(value, dict):
         errors.append(f"{label} 的 condition_logic 必须是对象")
@@ -1837,7 +1865,7 @@ def validate_method(
             and group.get("selection_group")
             for group in groups
         )
-        if enforce_v2 and EXPLICIT_OR_PATTERN.search(source_text) and not has_selection_group:
+        if enforce_v2 and not has_selection_group and or_outside_results(source_text, step):
             errors.append(
                 f"{step_label} 的正式原文含明确 OR／任选分支，但配方没有 selection_group"
             )

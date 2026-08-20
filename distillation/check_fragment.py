@@ -65,6 +65,35 @@ def semantic_class_for(atom_id: str, atoms: dict[str, dict]) -> str:
     return "condition_result" if role == "verse" else "foundational_knowledge"
 
 
+def load_validator():
+    import importlib.util
+
+    path = REPO / "book-to-judgment-navigation" / "scripts" / "validate_delivery.py"
+    spec = importlib.util.spec_from_file_location("delivery_validator_or_precheck", path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def or_gate_problems(methods: list[dict]) -> list[str]:
+    """用交付验证器的同一套判据预检 OR 闸门。"""
+    validator = load_validator()
+    problems: list[str] = []
+    for method in methods:
+        for number, step in enumerate(method.get("steps", []), 1):
+            has_group = bool(step.get("alternative_groups"))
+            source_text = "\n".join(
+                [item.get("quote", "") for item in step.get("evidence", [])]
+                + [step.get("minimum_supported_claim", "")]
+            )
+            if not has_group and validator.or_outside_results(source_text, step):
+                problems.append(
+                    f"方法 {method.get('method')} 步骤 {number}："
+                    "条件侧含明确 OR／任选分支，必须写进 alternative_groups"
+                )
+    return problems
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("fragment", type=Path)
@@ -113,8 +142,21 @@ def main() -> int:
                 ],
                 check=False, capture_output=True, text=True, encoding="utf-8",
             )
-        print(result.stdout or result.stderr)
-        return result.returncode
+        if result.returncode != 0:
+            print(result.stdout or result.stderr)
+            return result.returncode
+
+        # 生成器不查 OR 闸门（那是交付验证的活），但等到最后才发现太晚：
+        # 这里先用验证器的同一套判据预检，让抽取当场看到"条件里的或没拆分支"。
+        or_problems = or_gate_problems(methods)
+        report = json.loads(result.stdout)
+        if or_problems:
+            report["passed"] = False
+            report["errors"] = or_problems
+            print(json.dumps(report, ensure_ascii=False, indent=2))
+            return 1
+        print(json.dumps(report, ensure_ascii=False, indent=2))
+        return 0
     except (OSError, ValueError, KeyError, json.JSONDecodeError) as exc:
         print(json.dumps({"passed": False, "errors": [str(exc)]}, ensure_ascii=False, indent=2))
         return 1
