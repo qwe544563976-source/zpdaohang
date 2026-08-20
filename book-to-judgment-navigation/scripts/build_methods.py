@@ -472,9 +472,22 @@ def assemble(extraction: dict[str, Any], atoms: dict[str, dict]) -> tuple[dict[s
         for step in method["steps"]:
             for ref in step["evidence_refs"]:
                 refs_by_atom.setdefault(ref["evidence_atom_id"], set()).add(method["method"])
-    unused_scope = source_scope - set(refs_by_atom)
+    # 原文去向：默认每条都要进方法步骤；但书里确实存在过渡句、章节引言和收尾语这类
+    # 没有判断规则的正文（例："三宫已讲完，现在听四宫"）。这类原文必须显式声明
+    # 非 method_step 的去向，既不许被方法引用，也不再被当成"漏做的方法"。
+    dispositions = {
+        record["evidence_atom_id"]: record.get("disposition", "method_step")
+        for record in source_records
+    }
+    method_step_scope = {atom_id for atom_id in source_scope if dispositions[atom_id] == "method_step"}
+    unused_scope = method_step_scope - set(refs_by_atom)
     if unused_scope:
         raise BuildError(f"本批候选原文没有进入任何方法步骤：{sorted(unused_scope)}")
+    wrongly_used = {atom_id for atom_id in refs_by_atom if dispositions.get(atom_id) != "method_step"}
+    if wrongly_used:
+        raise BuildError(
+            f"声明为非方法去向的原文却被方法步骤引用：{sorted(wrongly_used)}"
+        )
     step_ids = [step["step_id"] for method in methods for step in method["steps"]]
     if review_mode == "full":
         audit_step_ids = sorted(step_ids)
@@ -551,13 +564,14 @@ def build_source_scan(extraction: dict[str, Any], method_data: dict[str, Any]) -
     records = []
     for source in extraction["source_records"]:
         atom_id = source["evidence_atom_id"]
+        disposition = source.get("disposition", "method_step")
         records.append(
             {
                 "evidence_atom_id": atom_id,
                 "semantic_class": source["semantic_class"],
                 "risk_flags": source["risk_flags"],
-                "disposition": "method_step",
-                "method_ids": sorted(refs_by_atom[atom_id]),
+                "disposition": disposition,
+                "method_ids": sorted(refs_by_atom[atom_id]) if disposition == "method_step" else [],
             }
         )
     return {

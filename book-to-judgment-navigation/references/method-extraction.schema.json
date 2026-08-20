@@ -131,9 +131,19 @@
       "properties": {
         "evidence_atom_id": {"type": "string", "minLength": 1},
         "semantic_class": {
-          "enum": ["judgment_method", "condition_result", "exception_boundary", "calculation_rule"]
+          "enum": [
+            "judgment_method",
+            "condition_result",
+            "exception_boundary",
+            "calculation_rule",
+            "foundational_knowledge",
+            "case_or_commentary"
+          ]
         },
-        "risk_flags": {"$ref": "#/$defs/string_list"}
+        "risk_flags": {"$ref": "#/$defs/string_list"},
+        "disposition": {
+          "enum": ["method_step", "knowledge_only", "reviewed_no_method", "case_or_auxiliary"]
+        }
       }
     },
     "term_pair": {

@@ -437,6 +437,53 @@ class HighRiskTermTests(unittest.TestCase):
         self.assertIn("sani", detected)
 
 
+class NonMethodDispositionTests(unittest.TestCase):
+    """书里确有没有判断规则的正文（章节过渡句、引言、收尾语）。
+
+    真实样本：BPHS97 ch15 v1「三宫结果已述，现在听四宫」、ch14 v15「估量强弱之后再宣布结果」。
+    不给它们一个合法去向，抽取员就只能把过渡句硬做成方法——97 章会累积上百条假方法。
+    """
+
+    def transition_extraction(self) -> dict:
+        data = extraction()
+        data["source_records"][0]["semantic_class"] = "foundational_knowledge"
+        data["source_records"][0]["disposition"] = "knowledge_only"
+        step = data["methods"][0]["steps"][0]
+        step["evidence"] = [item for item in step["evidence"] if item["evidence_atom_id"] != CONTEXT_ID]
+        return data
+
+    def test_knowledge_only_atom_is_not_required_to_have_a_method(self) -> None:
+        data = self.transition_extraction()
+        MODULE.validate_schema(data)
+        output, _report = MODULE.assemble(data, ATOMS)
+        self.assertEqual(len(output["methods"]), 1)
+
+    def test_knowledge_only_atom_is_recorded_with_no_method_ids(self) -> None:
+        data = self.transition_extraction()
+        MODULE.validate_schema(data)
+        output, _ = MODULE.assemble(data, ATOMS)
+        scan = MODULE.build_source_scan(data, output)
+        row = next(item for item in scan["atom_dispositions"] if item["evidence_atom_id"] == CONTEXT_ID)
+        self.assertEqual(row["disposition"], "knowledge_only")
+        self.assertEqual(row["method_ids"], [])
+
+    def test_knowledge_only_atom_must_not_be_cited_by_a_step(self) -> None:
+        data = extraction()
+        data["source_records"][0]["semantic_class"] = "foundational_knowledge"
+        data["source_records"][0]["disposition"] = "knowledge_only"
+        MODULE.validate_schema(data)
+        with self.assertRaisesRegex(MODULE.BuildError, "非方法去向的原文却被方法步骤引用"):
+            MODULE.assemble(data, ATOMS)
+
+    def test_default_disposition_still_requires_every_atom_to_be_used(self) -> None:
+        data = extraction()
+        step = data["methods"][0]["steps"][0]
+        step["evidence"] = [item for item in step["evidence"] if item["evidence_atom_id"] != CONTEXT_ID]
+        MODULE.validate_schema(data)
+        with self.assertRaisesRegex(MODULE.BuildError, "没有进入任何方法步骤"):
+            MODULE.assemble(data, ATOMS)
+
+
 class RealBphsTermCoverageTests(unittest.TestCase):
     """真实 BPHS 97（Santhanam）原文驱动的高风险词回归。
 
