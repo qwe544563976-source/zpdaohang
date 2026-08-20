@@ -1,0 +1,52 @@
+# 三宫的凶星：Surya 毁兄姐、Shani 毁弟妹、Mangal 两者皆毁
+
+> 本文件由 `query-recipes.json` 自动生成。机器配方是唯一真相；禁止手改本文件改变路由或执行许可。
+
+## 用户会怎样问
+
+- 我的哥哥姐姐会不会有事
+- 我的弟弟妹妹保得住吗
+
+## 方法路由
+
+- 可执行方法：[]
+- 候选方法：["ch14-v14-adverse-grahas"]
+- 事实接入状态：`unmapped`
+- 允许执行：`false`
+
+## 必查事实
+
+- Surya 是否落三宫
+- Shani 是否落三宫
+- Mangal 是否落三宫
+
+## 按情况检查的事实
+
+- 无
+
+## 四路查书计划
+
+### 支持路
+
+- Surya in Sahaj Bhava destroy preborn Shani afterborn Mangal both
+- 太阳落三宫 毁兄姐 土星落三宫 毁弟妹 火星两者皆毁
+
+### 反例或取消路
+
+- Sahaj Bhava yuti benefic endowed with co-born
+- 三宫吉星同宫 兄弟姐妹得保全
+
+### 适用边界路
+
+- adverse Grahas in Sahaj Bhava preborn afterborn scope
+- 三宫凶星判断的适用边界
+
+### 判断方法路
+
+- how to judge adverse Grahas in Sahaj Bhava
+- 判断三宫凶星对兄弟姐妹影响的步骤
+
+## 停止条件
+
+- 缺少 Surya、Shani、Mangal 的落宫事实时停止。
+- 无法确定三宫（Sahaj Bhava）所在星座时停止。

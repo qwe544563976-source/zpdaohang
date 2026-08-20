@@ -1,0 +1,53 @@
+# 子女行为卑劣：五宫被三或四凶星占据且五宫主落陷
+
+> 本文件由 `query-recipes.json` 自动生成。机器配方是唯一真相；禁止手改本文件改变路由或执行许可。
+
+## 用户会怎样问
+
+- 我孩子的品行会怎么样
+- 我的子女会不会走歪路
+
+## 方法路由
+
+- 可执行方法：[]
+- 候选方法：["ch16-v17-children-of-mean-deeds"]
+- 事实接入状态：`unmapped`
+- 允许执行：`false`
+
+## 必查事实
+
+- 五宫主是否落陷
+
+## 按情况检查的事实
+
+- 五宫是否被三颗凶星占据
+- 五宫是否被四颗凶星占据
+- 五宫内是否有吉星（含水星）
+
+## 四路查书计划
+
+### 支持路
+
+- Putr occupied by three or four malefics Putr’s Lord in fall mean deeds
+- 五宫三四颗凶星 五宫主落陷 子女卑劣
+
+### 反例或取消路
+
+- benefic including Budh in Putr excluded combination
+- 五宫有吉星含水星 组合被排除
+
+### 适用边界路
+
+- number of malefics in Putr Bhava boundary three four
+- 五宫凶星数量三或四的适用边界
+
+### 判断方法路
+
+- how to judge character of children from Putr Bhava
+- 判断子女品行要看五宫哪些条件
+
+## 停止条件
+
+- 缺少五宫内凶星数量事实时停止。
+- 缺少五宫主庙陷状态事实时停止。
+- 缺少五宫内是否有吉星（含水星）事实时停止。

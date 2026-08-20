@@ -1,0 +1,51 @@
+# 三宫主与 Mangal 遇凶星或落凶星星座：兄弟姐妹立即毁灭
+
+> 本文件由 `query-recipes.json` 自动生成。机器配方是唯一真相；禁止手改本文件改变路由或执行许可。
+
+## 用户会怎样问
+
+- 我的兄弟姐妹会不会夭折
+- 家里孩子是不是养不住
+
+## 方法路由
+
+- 可执行方法：[]
+- 候选方法：["ch14-v3-cobirth-destruction-malefic"]
+- 事实接入状态：`unmapped`
+- 允许执行：`false`
+
+## 必查事实
+
+- 本命盘中哪些行星被判为凶星
+
+## 按情况检查的事实
+
+- 三宫主与 Mangal 是否与凶星同宫
+- 三宫主与 Mangal 是否落在凶星所主的星座
+
+## 四路查书计划
+
+### 支持路
+
+- said 2 Grahas together with a malefic destruction of co-born
+- 三宫主与火星 与凶星同宫 兄弟姐妹毁灭
+
+### 反例或取消路
+
+- Mangal or Sahaj Lord in angle trine exaltation happiness co-born
+- 三宫主入角宫三角宫 兄弟姐妹得幸福
+
+### 适用边界路
+
+- destruction at once of co-born condition scope
+- 兄弟姐妹毁灭判断的适用边界
+
+### 判断方法路
+
+- how to judge destruction of co-born in Sahaj Bhava
+- 判断兄弟姐妹是否毁灭的步骤
+
+## 停止条件
+
+- 缺少本命盘凶星判定事实时停止。
+- 缺少前述两颗行星的同宫与所落星座事实时停止。
