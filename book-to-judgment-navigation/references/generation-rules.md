@@ -1,0 +1,88 @@
+# 判断方法生成规则登记簿
+
+本文件只登记已经有真实失败证据的错误，以及防止它再次进入方法配方的共享代码和回归测试。共享生成程序和验证器当前冻结；代码审计发现的新洞，只有拿出真实批次证明它已经错误放行或错误拦截，才允许解冻修改。没有这种证据的项目只登记到“本门不查什么”，不修、不停产。能由字符串或结构确定判断的错误，新增异议必须在 24 小时内补齐“代码拦截＋正例测试＋反例测试”；开放语义错误必须登记真实标本、独立审计要求和未自动化的边界，不能用脆弱正则假装已经闭环。
+
+## 唯一正式入口
+
+```text
+AI 按 references/method-extraction.schema.json 输出结构化 JSON
+→ scripts/build_methods.py 强校验并装配 method-recipes.json（本技能内，v2 升级后唯一入口）
+→ validate_delivery.py --require-v2 运行结构检查、分支通电、空话检查、步骤指纹和高风险词差异表复核
+→ 正确／错误／空白三类检查
+→ 按生成报告中的 audit_step_ids 独立语义审查（v3 凭证：逐步骤绑 step_hash ＋ 高风险词单选确认）
+```
+
+## v2 升级新增的机器拦截（拆网定案 2026-08-20）
+
+- **步骤级哈希（Q1）**：每个 step 由生成器写入 `step_hash` 内容指纹；验证器重算比对，手改即失败。审计凭证逐步骤绑定 `step_hash`，改第 7 步只让第 7 步凭证失效；重产批次中指纹未变步骤的 PASS 凭证保持有效。已并入的旧方法由 `scripts/backfill_step_hash.py` 一次性回填。
+- **放行公式（Q13）**：机器检查 Exit 0 ＋ 审计确认无私货 ＝ 该步放行。机器全过不等于直接放行；审计保留否决权，但作用域锁死单步。
+- **一轮封顶（Q13b）＋按方法并入（Q16）**：被审计打回的步骤只重写 1 次；仍有争议即进 `quarantined_candidate` 隔离。任一步骤被隔离，整个方法不并入；同批其他健康方法照常并入。
+- **方案 C 高风险词（Q15/Q21）**：生成器只强制映射四类高风险词（专名／数值／单位／时间词，词表在 `scripts/shared_constants.py`）；未映射即拒绝装配。差异表写入生成报告与配方 generation 块；审计员按清单逐词单选 accept/reject，清单外严禁找茬。
+- **留插座（Q17）**：`spine_slot_hint` 现在一律 null；PVR 未正式加工前禁止填值。
+
+`tmp/` 中旧的 `build_*.py`、`rebuild_*.py`、批次合并脚本和“修订 N”产物只作历史记录。新批次不得调用它们，也不得在旧方法配方上继续补丁。
+
+## 已登记错误家族
+
+## 本门不查什么
+
+以下情况不再触发共享闸门改动：只有代码审计推演、没有真实批次因它错误放行或错误拦截；只是假设有人伪造运行回执、伪造最小凭证或故意利用空文件绕过，而现有真实批次没有因此出错。此类项目只保留审计记录，不改变共享程序、不增加测试、不停止生产。
+
+已确认有真实失败证据并继续保留的四项：失败批次必须进入失败终态、合入必须要么全部成功要么全部回滚、备份目录不能进入正式检查、派生人读文件必须随合入回滚。
+
+## 本轮必须持续拦截的三个错误家族（2026-08-19）
+
+这三类不是假设题，而是已经在真实批次中出现过；以后每个新批次都按下面的处理：
+
+- 占位事实冒充真实条件：`source_*`、`choice_*`、`原文事实已取得`、`或者分支 A/B`、`条件已成立` 等都不是排盘事实。`build_methods.py` 的 `PLACEHOLDER_FACT_PATTERNS` 负责在生成器自检时直接拒绝；验证器再做一次拦截。证据：[其他专题后半批次的独立审查报告](C:/Users/aa/Documents/ChatGPT/洗书/tmp/BPHS97_其他专题后半原文_20260819_run01/validation/independent-semantic-audit.json)。
+- 逐字短引被截成句尾碎片：像只剩半个句尾的引文不能进入方法步骤；必须回到正式原文补齐完整条件—结果，再由生成器逐字核对。证据：[定位和计算基础批次的独立审查报告](C:/Users/aa/Documents/ChatGPT/洗书/tmp/BPHS97_定位和计算基础其余原文_20260819_run02/validation/independent-semantic-audit.json)。
+- 多条独立规则挤进一个步骤：一个步骤只做一次明确检查；如果同一原文包含多组独立条件、结果或反制，必须拆成多个步骤并分别绑定证据。证据：[十二宫和宫主结果批次的独立审查报告](C:/Users/aa/Documents/ChatGPT/洗书/tmp/BPHS97_十二宫和宫主结果_原文批次002_20260819_run02/validation/independent-semantic-audit.json)。
+
+本轮第9章收拢批次还留下一个具体反例：`v7-11` 步骤文字写了“Vyaya 中任意一颗行星”，但条件树没有接入实际占据事实；以后遇到“文字说检查、条件树没接线”也按真实语义错误拒绝。证据：[第9章 v3～v17 收拢批次审查报告](C:/Users/aa/Documents/ChatGPT/洗书/tmp/BPHS97_第09章出生不利条件_20260819_run06/validation/independent-semantic-audit.json)。
+
+| 异议家族 | 真实标本 | 共享代码拦截 | 正例测试 | 反例测试 |
+|---|---|---|---|---|
+| OR 被压成 AND，或跨分支借用前置条件 | 第 37、42、74、75 章被驳回配方；`validation/or-multi-match-independent-review-20260819.md` 的交叉假放行；`validation/or-multi-match-independent-recheck-20260819.md` 的三分支误拒绝 | `build_methods.py` 强制 OR 写入 `alternative_groups` 并装配为 `selection_group + branch_condition_logic`；运行时要求同一分支的 `when` 与分支条件同时成立；验证器检查仅 A、仅 B、A+B、全不成立、交叉无人命中和三分支中其他分支真实命中 | `test_or_positive_is_assembled_as_selection_group`、`test_selection_group_allows_both_branches_active`、`test_accepts_selection_group_with_overlapping_branches`、`test_accepts_three_branch_cross_when_third_branch_is_active` | `test_or_negative_rejects_raw_or_in_main_logic`、`test_selection_group_crossed_when_and_logic_stops`、`test_selection_group_crossed_combination_is_checked`、`test_rejects_three_branch_when_no_branch_is_active` |
+| 最小意思是空话 | 第 52～60 章 272 步空模板 | 生成器核对条件词和结果词的“原文词／中文主张词”配对；生成器和验证器共同拦截空话及三次以上原句复读 | `test_minimum_claim_positive_has_condition_and_result_pairs` | `test_minimum_claim_negative_rejects_empty_template`、`test_rejects_minimum_claim_repeated_three_times` |
+| 阶段事实错挂 | 第 57～60 章开始／中段／末段异议 | `time_scope.kind=phase` 时，阶段事实必须进入对应条件树并标成 `phase_condition` | `test_phase_positive_requires_exact_phase_fact` | `test_phase_negative_rejects_unwired_phase_fact` |
+| 补救混入风险条件 | 第 57～60 章念诵、捐赠等补救异议 | `remedy_condition` 禁止进入主风险条件；只能进入取消或缓解关系 | `test_remedy_positive_is_kept_in_mitigation_relation` | `test_remedy_negative_rejects_remedy_as_risk_condition` |
+| even if 被写成 if | 第 57 章 step-007 | 让步条件只能写入 `concession_conditions`，不得进入主风险条件和选择分支 | `test_even_if_positive_is_separate_from_risk_gate` | `test_even_if_negative_rejects_concession_as_required_gate` |
+| 代词或承接关系丢失 | 前句给条件、后句用 such／this／fully 承接的异议 | `context_reference=true` 时必须绑定本批范围内的前置原文编号 | `test_context_positive_binds_previous_atom` | `test_context_negative_rejects_missing_binding` |
+| 占位事实冒充真实条件 | `tmp/BPHS97_其他专题前半其余原文_20260819_run01/validation/independent-semantic-audit.json`、`tmp/BPHS97_其他专题后半原文_20260819_run01/validation/independent-semantic-audit.json`（`source_*`、`choice_*`、`原文事实已取得`） | `build_methods.py` 和 `validate_delivery.py` 共用占位事实黑名单；命中即拒绝进入机器配方 | `test_placeholder_source_fact_is_rejected`、`test_placeholder_chinese_fact_is_rejected` | `test_generator_derives_query_scan_and_mechanical_state`（真实事实键通过） |
+| 句尾碎片短引 | `tmp/BPHS97_定位和计算基础其余原文_20260819_run02/validation/independent-semantic-audit.json`（如 `fer positional displacement`、`Gangetic belt, shrines etc.`） | 先由抽取段恢复完整条件—结果边界；独立审计在高风险批次逐步骤检查，当前不加无法可靠判断句界的正则 | 真实审计条目作为回归样本，重产批次必须全审 | 完整短引正例由 `exact_text` 逐字验收；碎片反例由审计退回并保留 |
+| 多条独立规则挤进一个步骤 | `tmp/BPHS97_十二宫和宫主结果_原文批次002_20260819_run02/validation/independent-semantic-audit.json`（第 21 章 step-016） | 抽取段按“一步只做一次明确检查”拆分；语义边界由独立审计确认，当前不以关键词猜规则数量 | 拆分后的真实批次作为正例；原合并步骤作为反例留档 | 机器只验结构和证据绑定，不能替代语义拆分判断 |
+
+代码级回归位置：
+
+- `cangjie-skill/scripts/test_build_methods.py`
+- `book-to-judgment-navigation/scripts/test_validate_delivery.py`
+
+## 审查换挡
+
+- 大运流年、多星同聚、复杂瑜伽：永远 `full`，逐步全审。
+- 生产节奏和审计密度分开：机器检查通过且没有真实依赖的下一批可以连续生产；当前审计仍保持 `full`，不因生产连续就降低审计密度。
+- 只有结构单一的落宫章节，在连续三个批次没有出现新的错误家族后才允许 `sample`；这三个批次必须完成独立审计全审。一次性内容失误只退回本批，不重置计数。
+- 高速状态每三个批次仍有一个批次全审。
+- 抽审步骤由 `build_methods.py` 用 `batch_id` 作固定随机种子抽取 20%，写入 `audit_step_ids`；人工智能和程序员不能改名单。
+- 抽审发现任何新异议时，当前批次和相邻批次恢复全审；这项回退由批次状态记录执行，不改方法正文。
+- 共享生成程序或验证器一旦因新的可复现 P0 解冻，清洁批次数归零；独立审计必须在一次报告中提交完整组合矩阵：两分支、三分支、跨分支借条件、完整原文与短引，以及 `A or B`、`Either … or`、`or if/when/in`。矩阵缺一格就不能把修复记为完成。
+
+## 案例书
+
+- 规则书只允许 `generalization_scope=general_rule`。
+- 案例书可以使用 `single_case_only`，但这种方法不得进入通用执行主路。
+- 单个案例的结果不得升级成全书通则。案例书首次出现新的真实错误类别时，登记新规则和正反测试，不把“发现新书型”本身算作流程失败。
+
+## 批次状态和老板审批
+
+批次只能按以下顺序前进：
+
+```text
+未开工 → 生成中 → 机检仿真 → 审计中 → 已并入
+```
+
+没有机器检查记录不能进入审计，没有独立审计记录不能并入。日常批次不要求老板逐批签字；老板只审批首次进入抽审、BPHS 全书完成和系统正式发布三个里程碑。
+
+## 不属于本地生成器的异常
+
+`build_methods.py` 是纯本地程序，不联网，不添加 503、网络超时或接口重试。实际外部调用入口出现已复现的瞬时错误后，只在那个入口增加有限次数重试和机器日志；不能把未知的“五类异常”提前做成全局重试系统。

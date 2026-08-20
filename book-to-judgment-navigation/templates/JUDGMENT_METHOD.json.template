@@ -1,0 +1,59 @@
+{
+  "method": "{{method-slug}}",
+  "title": "{{方法名称}}",
+  "generalization_scope": "{{general_rule|single_case_only}}",
+  "target_house": "{{仅处理固定宫位的方法填写 1～12 的整数；其他方法删除本行}}",
+  "pilot_only": true,
+  "publishable": false,
+  "workflow_status": "pilot_candidate",
+  "workflow_history": ["pilot_candidate"],
+  "source_status": "{{repeated_support|single_explicit_source|structure_hint_only|synthesized_candidate|no_source_in_scope}}",
+  "fact_binding_status": "{{unmapped|mapped|unavailable}}",
+  "upstream_issue_ids": [],
+  "user_intents": ["{{普通用户问法}}"],
+  "required_facts": ["{{机器可核对的事实名称}}"],
+  "conditional_facts": ["{{只有某个分支被选中后才需要的事实；没有则保持空数组}}"],
+  "dependencies": [],
+  "steps": [
+    {
+      "step_id": "{{method-slug}}.step-01",
+      "action": "{{本步骤做什么}}",
+      "applicability_scope": "{{只填写原文明确的上升、宫位、分盘、运期、年龄、问题或示例范围；示例不得扩大成通则}}",
+      "minimum_supported_claim": "{{每个判断都必须被本步骤某条 quote 直接支持；没有直接短引就删除，不得用常识补公式、比例、对象、时间或结果}}",
+      "produced_fact_keys": [],
+      "required_fact_keys": ["{{只填写本步骤真正需要的外部输入；前序产出和按分支事实不要放这里}}"],
+      "condition_logic": {"fact_key": "{{逐项覆盖引文中的 AND、OR、NOT 分支所需事实}}"},
+      "conditional_fact_requirements": [
+        {
+          "when": {"fact_key": "{{选择组共同前提事实}}"},
+          "required_fact_keys": ["{{只属于当前分支的事实}}"],
+          "branch_condition_logic": {"fact_key": "{{当前分支成立事实}}"},
+          "selection_group": "{{method.step:group-id}}",
+          "stop_condition": "{{只有选中本分支后，缺少哪些事实才停止}}"
+        }
+      ],
+      "source_status": "{{repeated_support|single_explicit_source|structure_hint_only|synthesized_candidate|no_source_in_scope}}",
+      "evidence_refs": [
+        {
+          "evidence_atom_id": "{{原文原子编号}}",
+          "quote": "{{从 exact_text 逐字截取的短引}}",
+          "pdf_pages": [0]
+        }
+      ],
+      "stop_condition": "{{缺少 required_fact_keys 中任一字段时停止；写出具体字段，不得只写资料不足}}",
+      "stop_fact_keys": ["{{事实名称}}"],
+      "exception_relations": [],
+      "forbidden_extensions": ["{{明确写出本步骤不能推出的更强结论}}"],
+      "step_hash": "{{由 build_methods.py 自动计算的步骤内容指纹；人工不得填写或修改}}"
+    }
+  ],
+  "retrieval_plan": {
+    "support_queries": ["{{支持路查询}}"],
+    "counter_queries": ["{{反例或取消路查询}}"],
+    "boundary_queries": ["{{边界路查询}}"],
+    "method_queries": ["{{判断方法路查询}}"]
+  },
+  "stop_conditions": ["{{方法级停止条件}}"],
+  "executable_in_pilot": false,
+  "spine_slot_hint": null
+}
