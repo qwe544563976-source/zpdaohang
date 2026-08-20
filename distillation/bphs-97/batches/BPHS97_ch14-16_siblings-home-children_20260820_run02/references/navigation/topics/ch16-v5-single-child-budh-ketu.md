@@ -1,0 +1,53 @@
+# 只生一子：五宫主落陷于六八十二宫且水星与计都在五宫
+
+> 本文件由 `query-recipes.json` 自动生成。机器配方是唯一真相；禁止手改本文件改变路由或执行许可。
+
+## 用户会怎样问
+
+- 我会有几个孩子
+- 我是不是只能生一个
+
+## 方法路由
+
+- 可执行方法：[]
+- 候选方法：["ch16-v5-single-child-budh-ketu"]
+- 事实接入状态：`unmapped`
+- 允许执行：`false`
+
+## 必查事实
+
+- 五宫主是否处于落陷状态
+- 水星（Budh）与计都（Ketu）是否同在第五宫
+
+## 按情况检查的事实
+
+- 五宫主是否落陷于第六宫（Ari Bhava）
+- 五宫主是否落陷于第八宫（Randhr Bhava）
+- 五宫主是否落陷于第十二宫（Vyaya Bhava）
+
+## 四路查书计划
+
+### 支持路
+
+- Putr’s Lord in fall Budh Ketu in Putr Bhava one child only
+- 五宫主落陷 水星计都在五宫 只生一子
+
+### 反例或取消路
+
+- Putr’s Lord strong many children Budh Guru Shukr
+- 五宫主有力 子女众多 反例
+
+### 适用边界路
+
+- one child only rule scope wife fertility
+- 只生一子断语的适用边界
+
+### 判断方法路
+
+- how to check debilitation of Putr’s Lord
+- 怎样查五宫主是否落陷
+
+## 停止条件
+
+- 缺少五宫主落陷与落宫事实时停止。
+- 缺少水星与计都落宫事实时停止。

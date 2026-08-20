@@ -1,0 +1,51 @@
+# 由三母或两父抚养：太阳与月亮同星座且同九分盘
+
+> 本文件由 `query-recipes.json` 自动生成。机器配方是唯一真相；禁止手改本文件改变路由或执行许可。
+
+## 用户会怎样问
+
+- 我小时候是不是被别人带大的
+- 我会不会有继父继母
+
+## 方法路由
+
+- 可执行方法：[]
+- 候选方法：["ch16-v10-three-mothers-two-fathers"]
+- 事实接入状态：`unmapped`
+- 允许执行：`false`
+
+## 必查事实
+
+- 太阳（Surya）与月亮（Chandra）是否同落一个星座
+- 太阳（Surya）与月亮（Chandra）是否同落一个九分盘（Navāńś）
+
+## 按情况检查的事实
+
+- 无
+
+## 四路查书计划
+
+### 支持路
+
+- Surya and Chandra together in same Navāńś three mothers two fathers
+- 太阳月亮同星座 同九分盘 三位母亲 两位父亲
+
+### 反例或取消路
+
+- Surya Chandra in different Rāśis parents
+- 日月不同星座 抚养者 反例
+
+### 适用边界路
+
+- Navāńś sameness requirement scope
+- 同九分盘条件的适用边界
+
+### 判断方法路
+
+- how to compare Rāśi and Navāńś of Surya and Chandra
+- 怎样比对太阳与月亮的星座和九分盘
+
+## 停止条件
+
+- 缺少太阳与月亮的星座事实时停止。
+- 缺少太阳与月亮的九分盘事实时停止。

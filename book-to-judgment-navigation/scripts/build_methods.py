@@ -130,11 +130,18 @@ def placeholder_fact_reason(value: object) -> str | None:
     return None
 
 
-def validate_fact_key_not_placeholder(value: object, label: str) -> None:
+def validate_fact_key_not_placeholder(value: object, label: str, check_disjunction: bool = True) -> None:
+    """check_disjunction=False 用于产出事实名。
+
+    输入事实名是交给排盘取值的接口，必须原子；产出事实名只是这一步的结论标签，
+    原文本身模糊时它就该模糊（例："第32或33年得子判定" 来自原文
+    `in his 32nd, or 33rd year`，是结果侧的或，不是条件析取）。
+    与 OR 闸门同一个道理：条件侧的或必须拆分支，结果侧的或照抄原文。
+    """
     reason = placeholder_fact_reason(value)
     if reason:
         raise BuildError(f"{label} 使用占位事实 {value!r}（命中 {reason} 黑名单）")
-    disjunction = shared_constants.disjunctive_fact_reason(value)
+    disjunction = shared_constants.disjunctive_fact_reason(value) if check_disjunction else None
     if disjunction:
         raise BuildError(
             f"{label} 把析取藏进了事实名 {value!r}（命中 {disjunction!r}）："
@@ -148,17 +155,19 @@ def validate_fact_key_not_placeholder(value: object, label: str) -> None:
 def validate_method_fact_keys(method: dict[str, Any]) -> None:
     method_id = method["method"]
 
-    def check_list(values: object, label: str) -> None:
+    def check_list(values: object, label: str, check_disjunction: bool = True) -> None:
         if isinstance(values, list):
             for index, value in enumerate(values, 1):
-                validate_fact_key_not_placeholder(value, f"方法 {method_id} {label}[{index}]")
+                validate_fact_key_not_placeholder(
+                    value, f"方法 {method_id} {label}[{index}]", check_disjunction
+                )
 
     for fact in method["facts"]:
         validate_fact_key_not_placeholder(fact["key"], f"方法 {method_id} facts.key")
     for step_number, step in enumerate(method["steps"], 1):
         step_label = f"方法 {method_id} 步骤 {step_number}"
         check_list(step["required_fact_keys"], f"步骤 {step_number} required_fact_keys")
-        check_list(step["produced_fact_keys"], f"步骤 {step_number} produced_fact_keys")
+        check_list(step["produced_fact_keys"], f"步骤 {step_number} produced_fact_keys", False)
         check_list(step["time_scope"]["fact_keys"], f"步骤 {step_number} time_scope.fact_keys")
         for node in [step["condition_logic"], *step["concession_conditions"]]:
             for fact_key in logic_facts(node):

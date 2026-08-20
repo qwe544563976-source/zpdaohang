@@ -29,6 +29,7 @@ FRAGMENTS = LOCAL / "fragments"
 LOCAL_PACKAGE = LOCAL / "accepted-package.local.json"
 ATOMS = LOCAL / "evidence_atoms.jsonl"
 SCOPE_FILE = LOCAL / "groups" / "all-scope.json"
+KNOWLEDGE_ONLY = REPO / "distillation" / "KNOWLEDGE_ONLY_ATOMS.json"
 
 DEFAULT_BATCH_ID = "BPHS97_ch14-16_siblings-home-children_20260820_run01"
 DEFAULT_TARGET = REPO / "distillation" / "bphs-97" / "batches" / DEFAULT_BATCH_ID
@@ -43,7 +44,16 @@ def load_atoms() -> dict[str, dict]:
     return atoms
 
 
+def load_knowledge_only() -> dict[str, dict]:
+    """经审查确认没有判断规则的正文（过渡句、引言、收尾语）：只入知识地图，不做成方法。"""
+    if not KNOWLEDGE_ONLY.is_file():
+        return {}
+    data = json.loads(KNOWLEDGE_ONLY.read_text(encoding="utf-8"))
+    return {item["evidence_atom_id"]: item for item in data.get("atoms", [])}
+
+
 def build_extraction(batch_id: str, scope: list[str], atoms: dict[str, dict], fragments: Path) -> dict:
+    knowledge_only = load_knowledge_only()
     methods: list[dict] = []
     for path in sorted(fragments.glob("*.json")):
         raw = json.loads(path.read_text(encoding="utf-8"))
@@ -75,8 +85,11 @@ def build_extraction(batch_id: str, scope: list[str], atoms: dict[str, dict], fr
         "source_records": [
             {
                 "evidence_atom_id": atom_id,
-                "semantic_class": "condition_result",
+                "semantic_class": knowledge_only[atom_id]["semantic_class"]
+                if atom_id in knowledge_only else "condition_result",
                 "risk_flags": [],
+                **({"disposition": knowledge_only[atom_id]["disposition"]}
+                   if atom_id in knowledge_only else {}),
             }
             for atom_id in scope
         ],

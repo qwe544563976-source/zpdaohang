@@ -1,0 +1,51 @@
+# 三宫主与 Mangal 相照或落三宫：因三宫得好结果
+
+> 本文件由 `query-recipes.json` 自动生成。机器配方是唯一真相；禁止手改本文件改变路由或执行许可。
+
+## 用户会怎样问
+
+- 我和兄弟姐妹的关系好不好
+- 兄弟姐妹会不会给我带来好处
+
+## 方法路由
+
+- 可执行方法：[]
+- 候选方法：["ch14-v2-lord-mangal-good-results"]
+- 事实接入状态：`unmapped`
+- 允许执行：`false`
+
+## 必查事实
+
+- 三宫主是哪颗行星
+
+## 按情况检查的事实
+
+- 三宫主与 Mangal 是否一同相照三宫
+- 三宫主与 Mangal 是否同落三宫内
+
+## 四路查书计划
+
+### 支持路
+
+- Sahaj Lord along with Mangal drishties Sahaj Bhava good results
+- 三宫主 与火星 相照三宫 好结果
+
+### 反例或取消路
+
+- said 2 Grahas with malefic destruction of co-born
+- 三宫主与火星遇凶星 兄弟姐妹毁灭
+
+### 适用边界路
+
+- Sahaj Bhava good results due to Sahaj Bhava scope
+- 三宫好结果的适用边界
+
+### 判断方法路
+
+- how to judge Sahaj Lord and Mangal combination
+- 判断三宫主与火星组合的步骤
+
+## 停止条件
+
+- 缺少三宫主行星身份事实时停止。
+- 缺少三宫主与 Mangal 的相照或落宫事实时停止。
