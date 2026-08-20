@@ -43,9 +43,9 @@ def load_atoms() -> dict[str, dict]:
     return atoms
 
 
-def build_extraction(batch_id: str, scope: list[str], atoms: dict[str, dict]) -> dict:
+def build_extraction(batch_id: str, scope: list[str], atoms: dict[str, dict], fragments: Path) -> dict:
     methods: list[dict] = []
-    for path in sorted(FRAGMENTS.glob("*.json")):
+    for path in sorted(fragments.glob("*.json")):
         raw = json.loads(path.read_text(encoding="utf-8"))
         methods.extend(raw["methods"] if isinstance(raw, dict) else raw)
     if not methods:
@@ -102,31 +102,33 @@ def knowledge_maps(target: Path, scope: list[str], atoms: dict[str, dict]) -> No
             if page not in entry["pdf_pages"]:
                 entry["pdf_pages"].append(page)
 
-    topics = {
-        "sahaj-bhava-co-born": {
-            "title": "三宫：兄弟姐妹",
-            "chapter_numbers": [14],
-            "evidence_atom_ids": [a for a in scope if ":ch14:" in a],
-        },
-        "bandhu-bhava-home-mother-vehicle": {
-            "title": "四宫：住房、母亲、车乘",
-            "chapter_numbers": [15],
-            "evidence_atom_ids": [a for a in scope if ":ch15:" in a],
-        },
-        "putr-bhava-children": {
-            "title": "五宫：子女",
-            "chapter_numbers": [16],
-            "evidence_atom_ids": [a for a in scope if ":ch16:" in a],
-        },
-    }
+    # 主题与术语只在本批真有原文时才生成：知识地图里不允许出现没有原文编号的空条目。
+    TOPIC_SPECS = (
+        ("sahaj-bhava-co-born", "三宫：兄弟姐妹", 14),
+        ("bandhu-bhava-home-mother-vehicle", "四宫：住房、母亲、车乘", 15),
+        ("putr-bhava-children", "五宫：子女", 16),
+    )
+    TERM_SPECS = (
+        ("Sahaj Bhava", "三宫；兄弟姐妹、勇气等事项。", 14),
+        ("Bandhu Bhava", "四宫；住房、母亲、车乘等事项。", 15),
+        ("Putr Bhava", "五宫；子女、智力等事项。", 16),
+    )
 
+    def scoped(chapter: int) -> list[str]:
+        return [atom_id for atom_id in scope if atoms[atom_id]["chapter_number"] == chapter]
+
+    topics = {
+        name: {"title": title, "chapter_numbers": [chapter], "evidence_atom_ids": scoped(chapter)}
+        for name, title, chapter in TOPIC_SPECS
+        if scoped(chapter)
+    }
     glossary = [
-        {"term": "Sahaj Bhava", "explanation": "三宫；兄弟姐妹、勇气等事项。", "evidence_atom_ids": [a for a in scope if ":ch14:" in a][:3]},
-        {"term": "Bandhu Bhava", "explanation": "四宫；住房、母亲、车乘等事项。", "evidence_atom_ids": [a for a in scope if ":ch15:" in a][:3]},
-        {"term": "Putr Bhava", "explanation": "五宫；子女、智力等事项。", "evidence_atom_ids": [a for a in scope if ":ch16:" in a][:3]},
-        {"term": "Drishti", "explanation": "相位；一颗行星对某宫或某星的照射关系。", "evidence_atom_ids": [a for a in scope if ":ch14:" in a][:1]},
-        {"term": "Yuti", "explanation": "同宫；两颗以上行星落在同一宫。", "evidence_atom_ids": [a for a in scope if ":ch14:" in a][1:2]},
+        {"term": term, "explanation": explanation, "evidence_atom_ids": scoped(chapter)[:3]}
+        for term, explanation, chapter in TERM_SPECS
+        if scoped(chapter)
     ]
+    if not topics or not glossary:
+        raise SystemExit("本批范围内没有可建主题或术语的原文")
 
     write_json(target / "references" / "knowledge" / "chapter-map.json", {
         "schema_version": "knowledge-chapter-map/v1",
@@ -173,6 +175,8 @@ def main() -> int:
     parser.add_argument("--batch-id", default=DEFAULT_BATCH_ID)
     parser.add_argument("--target", type=Path, default=DEFAULT_TARGET)
     parser.add_argument("--keep", action="store_true", help="不清空目标目录（默认重建）")
+    parser.add_argument("--scope", type=Path, default=SCOPE_FILE, help="本批原文编号清单")
+    parser.add_argument("--fragments", type=Path, default=FRAGMENTS, help="抽取片段目录")
     args = parser.parse_args()
 
     target = args.target.resolve()
@@ -181,10 +185,25 @@ def main() -> int:
     target.mkdir(parents=True, exist_ok=True)
 
     atoms = load_atoms()
-    scope = json.loads(SCOPE_FILE.read_text(encoding="utf-8"))
+    scope = json.loads(args.scope.read_text(encoding="utf-8"))
     package = json.loads(LOCAL_PACKAGE.read_text(encoding="utf-8"))
 
-    extraction = build_extraction(args.batch_id, scope, atoms)
+    # 工作单的允许范围必须与本批实际原文严格相等：
+    # 整章都在本批的写进 chapter_scope；只取了一章里一部分的，逐条写进 evidence_atom_scope。
+    # 否则验证器会按整章加载原子，把没生产的原文算成"遗漏"。
+    scope_set = set(scope)
+    chapters_touched = sorted({atoms[atom_id]["chapter_number"] for atom_id in scope})
+    chapter_scope: list[int] = []
+    atom_scope: list[str] = []
+    for chapter in chapters_touched:
+        whole = {
+            atom_id for atom_id, atom in atoms.items() if atom["chapter_number"] == chapter
+        }
+        if whole <= scope_set:
+            chapter_scope.append(chapter)
+        else:
+            atom_scope.extend(atom_id for atom_id in scope if atoms[atom_id]["chapter_number"] == chapter)
+    extraction = build_extraction(args.batch_id, scope, atoms, args.fragments.resolve())
     extraction_path = target / "validation" / "stage-a-extraction.json"
     write_json(extraction_path, extraction)
 
@@ -221,8 +240,8 @@ def main() -> int:
         "distillation_strategy": "rule_book",
         "input": {
             "accepted_package_path": str(LOCAL_PACKAGE),
-            "chapter_scope": [14, 15, 16],
-            "evidence_atom_scope": [],
+            "chapter_scope": chapter_scope,
+            "evidence_atom_scope": atom_scope,
         },
         "target_dir": str(target),
         "topic_order": ["三宫兄弟姐妹", "四宫住房母亲车乘", "五宫子女"],
@@ -242,7 +261,7 @@ def main() -> int:
         "evidence_contract_version": package["evidence_atoms"]["contract_version"],
         "evidence_atoms_path": str(ATOMS.resolve()),
         "evidence_atoms_sha256": package["evidence_atoms"]["content_sha256"],
-        "chapter_scope": [14, 15, 16],
+        "chapter_scope": chapter_scope,
         "created_at": "2026-08-20T00:00:00Z",
     })
 
@@ -276,6 +295,10 @@ def main() -> int:
     )
 
     render = run([sys.executable, str(VALIDATOR), str(target), "--render-derived"], "render-derived")
+    rendered_files = render["report"].get("rendered_files")
+    if rendered_files is None:
+        print(json.dumps({"stage": "render", **render}, ensure_ascii=False, indent=2))
+        return 1
     validate = run([sys.executable, str(VALIDATOR), str(target), "--require-v2"], "validate --require-v2")
 
     recipes = json.loads((target / "references" / "navigation" / "method-recipes.json").read_text(encoding="utf-8"))
@@ -283,7 +306,7 @@ def main() -> int:
         "batch_id": args.batch_id,
         "target": str(target),
         "build": build["report"],
-        "render_passed": render["report"].get("passed"),
+        "rendered_files": rendered_files,
         "validate_returncode": validate["returncode"],
         "validate": validate["report"],
         "methods": len(recipes.get("methods", [])),
