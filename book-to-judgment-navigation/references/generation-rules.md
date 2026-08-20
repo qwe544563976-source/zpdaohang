@@ -35,6 +35,22 @@ AI 按 references/method-extraction.schema.json 输出结构化 JSON
 噪音；真正的 `one child only`（ch16 v5、v6）其结果词本来就必须进 results 映射。若将来出现 `one`
 被写错的真实批次证据，再按错误家族纪律加入。
 
+### 机器保证"有映射"，审计保证"映射对"——分工的真实样本
+
+第一批出现一个只能靠人审的错误：ch16 v13 原文 `or is in her Decanate`，抽取把 `Decanate`
+译成了"十分盘"。`Decanate`（西方 decan，星座的三分之一）对应 **Drekkana，D3 三分盘**；
+十分盘是 Dasamsa（D10）。**写错分盘等于换一张盘**，结论全废。
+
+机器在这条上做对了它该做的：`decanate` 在高风险词表里，方案 C 强制它进 `claim_terms` 映射，
+差异表如实列出了 `decanate → 或落在月亮的十分盘（Decanate）`。但机器只能验证"这个词被映射了"，
+验证不了"映射的中文对不对"——那需要懂 D3 与 D10 的区别。这正是 Q21 让审计员对差异表
+逐词单选 accept/reject 的意义：机器把该看的词端到审计员面前，审计员只需判对错，不用自己找茬。
+
+同批另有一个反向样本：同一条 v13 的 `with Chandra, or is in her Decanate` 是条件侧的或，
+`EXPLICIT_OR_PATTERN` 的 `\bor\s*,?\s*(?:if|when|should|in|at|from)\b` 抓不到 `or is in`，
+但抽取按语义正确拆成了 `alternative_groups` 两个分支。正则漏抓不等于可以不拆——
+语义上是"或"就必须拆分支，不要指望闸门替你判断。
+
 `tmp/` 中旧的 `build_*.py`、`rebuild_*.py`、批次合并脚本和“修订 N”产物只作历史记录。新批次不得调用它们，也不得在旧方法配方上继续补丁。
 
 ## 已登记错误家族
