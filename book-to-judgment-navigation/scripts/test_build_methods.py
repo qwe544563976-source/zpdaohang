@@ -484,6 +484,55 @@ class NonMethodDispositionTests(unittest.TestCase):
             MODULE.assemble(data, ATOMS)
 
 
+class DisjunctiveFactNameTests(unittest.TestCase):
+    """事实名是交给排盘的接口，必须原子；析取藏进名字＝OR 被压成单个事实。
+
+    真实证据：第一批 74 步里有 3 处，全部出现在同一组
+    （ch16 v16 两处、v24-32 一处），抽取员自己也在交付说明里存疑。
+    """
+
+    def test_or_inside_always_fact_name_is_rejected(self) -> None:
+        data = extraction()
+        method = data["methods"][0]
+        method["facts"][0]["key"] = "五宫主是否落二宫、五宫或九宫之一"
+        step = method["steps"][0]
+        step["required_fact_keys"] = ["五宫主是否落二宫、五宫或九宫之一"]
+        step["condition_logic"] = {"fact_key": "五宫主是否落二宫、五宫或九宫之一"}
+        MODULE.validate_schema(data)
+        with self.assertRaisesRegex(MODULE.BuildError, "把析取藏进了事实名"):
+            MODULE.assemble(data, ATOMS)
+
+    def test_or_inside_branch_fact_name_is_rejected(self) -> None:
+        data = extraction()
+        method = data["methods"][0]
+        method["facts"][1]["key"] = "五宫主是否与木星同宫或被木星相照"
+        step = method["steps"][0]
+        step["alternative_groups"] = [{
+            "group_id": "primary",
+            "branches": [
+                {"branch_id": "a", "condition_logic": {"fact_key": "五宫主是否与木星同宫或被木星相照"},
+                 "required_fact_keys": ["五宫主是否与木星同宫或被木星相照"]},
+                {"branch_id": "b", "condition_logic": {"fact_key": "branch-b"},
+                 "required_fact_keys": ["branch-b"]},
+            ],
+        }]
+        MODULE.validate_schema(data)
+        with self.assertRaisesRegex(MODULE.BuildError, "把析取藏进了事实名"):
+            MODULE.assemble(data, ATOMS)
+
+    def test_atomic_base_fact_name_passes(self) -> None:
+        """正例：基座事实写成原子取值，分支各自判断。"""
+        data = extraction()
+        method = data["methods"][0]
+        method["facts"][0]["key"] = "本盘五宫主落在哪一宫"
+        step = method["steps"][0]
+        step["required_fact_keys"] = ["本盘五宫主落在哪一宫"]
+        step["condition_logic"] = {"fact_key": "本盘五宫主落在哪一宫"}
+        MODULE.validate_schema(data)
+        output, _ = MODULE.assemble(data, ATOMS)
+        self.assertIn("本盘五宫主落在哪一宫", output["methods"][0]["required_facts"])
+
+
 class RealBphsTermCoverageTests(unittest.TestCase):
     """真实 BPHS 97（Santhanam）原文驱动的高风险词回归。
 

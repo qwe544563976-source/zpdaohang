@@ -134,6 +134,15 @@ def validate_fact_key_not_placeholder(value: object, label: str) -> None:
     reason = placeholder_fact_reason(value)
     if reason:
         raise BuildError(f"{label} 使用占位事实 {value!r}（命中 {reason} 黑名单）")
+    disjunction = shared_constants.disjunctive_fact_reason(value)
+    if disjunction:
+        raise BuildError(
+            f"{label} 把析取藏进了事实名 {value!r}（命中 {disjunction!r}）："
+            "事实名是交给排盘的接口，必须是能直接取值的原子事实。"
+            "把每个可能性拆成独立分支写进 alternative_groups，"
+            "或改写成一个原子事实（例：不写「五宫主是否落二宫、五宫或九宫之一」，"
+            "改写基座事实「本盘五宫主落在哪一宫」再由各分支分别判断）。"
+        )
 
 
 def validate_method_fact_keys(method: dict[str, Any]) -> None:

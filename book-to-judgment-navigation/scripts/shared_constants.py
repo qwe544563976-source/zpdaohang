@@ -145,6 +145,23 @@ def high_risk_term_covered(term: str, quote_terms: list[str]) -> bool:
     return any(pattern.search(normalize_for_term_match(quote)) for quote in quote_terms)
 
 
+# 事实名是交给排盘系统的接口，必须是能直接取值的原子事实。
+# 名字里出现析取词，说明把多个可分辨的事实压成了一个"是否"判断——
+# 那正是已登记错误家族「OR 被压成 AND / 藏进单个事实」的另一种形态。
+# 真实证据：ch16 v16 的「五宫主是否落二宫、五宫或九宫之一」、
+# 「五宫主是否与木星同宫或被木星相照」，ch16 v24-32 的
+# 「五宫有凶星或土星落木星起第5宫是否成立」。
+DISJUNCTIVE_FACT_PATTERN = re.compile(r"或|之一|和/或|任一|任意一")
+
+
+def disjunctive_fact_reason(value: object) -> str | None:
+    """事实名里是否藏了析取。返回命中的析取词，没有则 None。"""
+    if not isinstance(value, str):
+        return None
+    match = DISJUNCTIVE_FACT_PATTERN.search(value)
+    return match.group(0) if match else None
+
+
 def map_high_risk_terms(
     detected: list[dict[str, str]], pairs: list[tuple[str, str]]
 ) -> tuple[list[dict[str, str]], list[str]]:
