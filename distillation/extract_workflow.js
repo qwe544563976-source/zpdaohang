@@ -18,7 +18,7 @@ const RULES = `
 抽成严格符合 schema 的"判断方法"结构化 JSON，将来给 RAG（查原文系统）当路标。
 
 ## 开工必读（两份都要完整读，规则以它们为准）
-1. ${REPO}/distillation/抽取规则_批量版.md ——9 条硬约束、四路查询正反教材、6 条软约束
+1. ${REPO}/distillation/抽取规则_批量版.md ——硬约束、四路查询正反教材、软约束（条数会增补，以文件为准）
 2. ${REPO}/distillation/事实键命名规范.md ——事实键三条铁律、16 个句式模板、译名红线
 
 ## 标准样例（已通过生成器强校验，照这个形状写）
@@ -46,7 +46,13 @@ ${REPO}/book-to-judgment-navigation/references/method-extraction.schema.json
    报错就按提示改再跑。常见报错都是硬约束没满足。
 3. 通过后自己复核：本组每条原子都被引用了吗？语义上的"或"都拆成分支了吗？
    长偈拆够步骤了吗？有没有把原文没有的话写进最小意思？
-4. 返回 JSON：{"group","out_file","methods","steps","atoms_covered","notes"}
+   跨偈承接（本偈没写落宫、前提来自上一偈）有没有写进 context_reference／context_bindings？
+   ——这两个字段现在会随步骤进交付件，绑错或该绑没绑，审计会 REJECT。
+4. **没有判断规则的原文**（纯过渡句、章节引言、收尾告诫）不要硬做成方法，
+   写进 ${REPO}/distillation/_local/batches/${BATCH}/knowledge_only.json：
+   {"atoms":[{"evidence_atom_id":"…","reason":"…","semantic_class":"foundational_knowledge","disposition":"knowledge_only"}]}
+   **不要去改全局的 KNOWLEDGE_ONLY_ATOMS.json**——几个组并行会抢同一个文件。
+5. 返回 JSON：{"group","out_file","methods","steps","atoms_covered","notes"}
    notes 写你的拆分依据、遇到的争议、没把握的地方——审计会重点看这些。
 `
 
