@@ -446,6 +446,12 @@ def main() -> int:
     drift = check_term_drift.scan(recipes)
     write_json(target / "validation" / "term-drift-report.json", drift)
 
+    # 顺手把审计分片包切好：审计员少花 4~5 次工具调用自己翻找，5 片 × 69 批省下来是实数。
+    subprocess.run(
+        [sys.executable, str(REPO / "distillation" / "make_audit_bundle.py"), str(target), "--shards", "5"],
+        check=False, capture_output=True, text=True, encoding="utf-8",
+    )
+
     print(json.dumps({
         "batch_id": args.batch_id,
         "target": str(target),

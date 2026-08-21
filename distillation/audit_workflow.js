@@ -39,9 +39,16 @@ JSON 格式、字段完整性、逐字短引是否为 exact_text 子串、PDF �
 const CORRECTNESS = `${COMMON}
 # 你的角色：对照原文的正确性审计员
 
+## 你的分片包（该看的东西已经预切好，直接读这一个文件）
+BUNDLE_PATH
+里面有：分给你的每一步的完整配方、该步所属方法的意图与查询词、
+该步引用的**每一条原文原子的 exact_text 全文**（逐字复制，未摘要未截断）、
+以及该步的高风险词差异表。包里记了冻结文件的 sha256——
+冻结文件仍是唯一真相，你随时可以回去核对，但不必再自己翻找。
+
 对分给你的每一个步骤，按这个顺序做：
-1. 从 method-recipes.json 找到该步骤，记下它引用的 evidence_atom_id；
-2. 去 evidence_atoms.jsonl 把那条原子的 **exact_text 全文**读出来（不是只读短引）；
+1. 从分片包里取出该步骤与它引用的原子；
+2. 把那条原子的 **exact_text 全文**读完（不是只读短引）；
 3. 把原文和步骤逐项对照，回答下面每一条：
 
 - **有没有多说**：\`minimum_supported_claim\` 里的每一个意思，原文都真的说了吗？
@@ -183,7 +190,9 @@ for (let i = 0; i < stepIds.length; i += size) shards.push(stepIds.slice(i, i + 
 log(`应审步骤 ${stepIds.length} 个，分 ${shards.length} 片逐字对照原文全审`)
 
 const correctness = await parallel(shards.map((shard, index) => () =>
-  agent(CORRECTNESS.replace('SHARD_STEP_IDS', shard.map(id => `- ${id}`).join('\n')) + RECHECK_NOTE,
+  agent(CORRECTNESS
+      .replace('SHARD_STEP_IDS', shard.map(id => `- ${id}`).join('\n'))
+      .replace('BUNDLE_PATH', `${TARGET}/validation/audit-bundles/shard-${index + 1}.json`) + RECHECK_NOTE,
     { label: `对照原文:${index + 1}/${shards.length}`, phase: '对照原文审计', schema: ENTRY_SCHEMA })
 ))
 

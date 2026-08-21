@@ -1,0 +1,2343 @@
+{
+  "shard": 5,
+  "step_count": 18,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch18-v24-marriage-age-10-16.step-001",
+      "method": {
+        "method": "ch18-v24-marriage-age-10-16",
+        "title": "10岁或16岁成婚：金星落二宫、七宫主落十一宫",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我大概几岁结婚",
+          "金星落二宫又七宫主落十一宫主什么婚期"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Shukra in Dhan, while Yuvati Lord is in Labh will give marriage at the age of 10, or 16",
+            "金星落二宫 七宫主落十一宫 10岁 16岁 成婚"
+          ],
+          "counter_queries": [
+            "Marriage will be in the 15th year, if Dhan Lord is in Labh, while Lagn Lord is in Karm",
+            "An exchange between the Lords of Dhan and Labh will bring marriage 13 years after birth"
+          ],
+          "boundary_queries": [
+            "TIME OF MARRIAGE (upto Sloka 34)",
+            "Should Yuvati Lord be in Vyaya, while the natal Lord is in Yuvati in Navamsa, marriage will be in 23rd/26th year of age"
+          ],
+          "method_queries": [
+            "Shukra Dhan Yuvati Lord Labh marriage age BPHS",
+            "判断婚期要看金星与七宫主分别落在哪一宫"
+          ]
+        },
+        "stop_conditions": [
+          "缺少金星落宫事实时停止。",
+          "缺少七宫主落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v24-marriage-age-10-16.step-001",
+        "action": "核对金星是否落二宫，并核对七宫主是否落十一宫。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）婚期主题；两个条件在原文里同时成立；原文本偈用中性的 marriage，未限男女。",
+        "minimum_supported_claim": "金星落二宫、且七宫主落十一宫时，会在10岁或16岁成婚。",
+        "produced_fact_keys": [
+          "第10或16岁成婚判定"
+        ],
+        "required_fact_keys": [
+          "金星（Shukra）是否落二宫（Dhan）",
+          "七宫主（Yuvati's Lord）是否落十一宫（Labh）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "金星（Shukra）是否落二宫（Dhan）"
+            },
+            {
+              "fact_key": "七宫主（Yuvati's Lord）是否落十一宫（Labh）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Shukra in Dhan",
+              "claim": "金星落二宫"
+            },
+            {
+              "quote": "while Yuvati Lord is in Labh",
+              "claim": "七宫主落十一宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will give marriage at the age of 10, or 16",
+              "claim": "会在10岁或16岁成婚"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v24",
+            "quote": "Shukra in Dhan, while Yuvati Lord is in Labh will give marriage at the age of 10, or 16.",
+            "pdf_pages": [
+              34
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：金星（Shukra）是否落二宫（Dhan）、七宫主（Yuvati's Lord）是否落十一宫（Labh）。",
+        "stop_fact_keys": [
+          "金星（Shukra）是否落二宫（Dhan）",
+          "七宫主（Yuvati's Lord）是否落十一宫（Labh）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断配偶身份或婚姻质量。",
+          "不得把两个条件拆成任一成立即可。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "第10岁或第16岁",
+          "fact_keys": []
+        },
+        "step_hash": "79703c0f668bada79744b6b6ea30bb051544eeb81d93900d9a993b75ea7cd87d"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v25-marriage-year-11.step-001",
+      "method": {
+        "method": "ch18-v25-marriage-year-11",
+        "title": "第11年成婚：金星落角宫、上升主落摩羯座或水瓶座",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我大概几岁结婚",
+          "金星落角宫又上升主落摩羯或水瓶主什么婚期"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Marriage will take place during the 11th year, if Shukra is in an angle from Lagna, while Lagn Lord is in Makar, or Kumbh",
+            "金星落角宫 上升主落摩羯座 水瓶座 第11年 成婚"
+          ],
+          "counter_queries": [
+            "The native will marry at 12, or l9, if Shukra is in an angle from the Lagna, while Shani is in Yuvati counted from Shukr",
+            "The native will marry at 30, or 27, if Shukra is in Lagna, while the 7th Lord is in Yuvati itself"
+          ],
+          "boundary_queries": [
+            "TIME OF MARRIAGE (upto Sloka 34)",
+            "if Shukra is in an angle from the Lagna angle kendra from Lagna marriage"
+          ],
+          "method_queries": [
+            "Shukra in an angle from Lagna Lagn Lord Rāśi marriage timing",
+            "判断婚期要看金星是否落角宫与上升主所落星座"
+          ]
+        },
+        "stop_conditions": [
+          "缺少金星是否落角宫的事实时停止。",
+          "缺少上升主所落星座事实时停止。",
+          "摩羯座与水瓶座两个分支事实都缺时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v25-marriage-year-11.step-001",
+        "action": "先核对金星是否落上升起的角宫，再取出上升主所落星座，核对它是摩羯座还是水瓶座。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）婚期主题；原文的角宫以上升（Lagna）起算；原文本偈用中性的 Marriage，未限男女。",
+        "minimum_supported_claim": "金星落上升起的角宫、且上升主落摩羯座或水瓶座时，婚姻发生在第11年。",
+        "produced_fact_keys": [
+          "第11年成婚判定"
+        ],
+        "required_fact_keys": [
+          "金星（Shukra）是否落角宫",
+          "本盘上升主（Lagn's Lord）落在哪个星座"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "金星（Shukra）是否落角宫"
+                },
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）落在哪个星座"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "上升主（Lagn's Lord）是否落摩羯座（Makar）"
+                },
+                {
+                  "fact_key": "上升主（Lagn's Lord）是否落水瓶座（Kumbh）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "金星（Shukra）是否落角宫"
+                },
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）落在哪个星座"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "上升主（Lagn's Lord）是否落摩羯座（Makar）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升主（Lagn's Lord）是否落摩羯座（Makar）"
+            },
+            "selection_group": "ch18-v25-marriage-year-11.step-001:lagn-lord-rasi",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升主（Lagn's Lord）是否落摩羯座（Makar）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "金星（Shukra）是否落角宫"
+                },
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）落在哪个星座"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "上升主（Lagn's Lord）是否落水瓶座（Kumbh）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升主（Lagn's Lord）是否落水瓶座（Kumbh）"
+            },
+            "selection_group": "ch18-v25-marriage-year-11.step-001:lagn-lord-rasi",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升主（Lagn's Lord）是否落水瓶座（Kumbh）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if Shukra is in an angle from Lagna",
+              "claim": "金星落上升起的角宫"
+            },
+            {
+              "quote": "while Lagn Lord is in Makar",
+              "claim": "上升主落摩羯座"
+            },
+            {
+              "quote": "or Kumbh",
+              "claim": "水瓶座"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Marriage will take place during the 11<sup>th</sup> year",
+              "claim": "婚姻发生在第11年"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v25",
+            "quote": "Marriage will take place during the 11<sup>th</sup> year, if Shukra is in an angle from Lagna, while Lagn Lord is in Makar, or Kumbh.",
+            "pdf_pages": [
+              34
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：金星（Shukra）是否落角宫、本盘上升主（Lagn's Lord）落在哪个星座。",
+        "stop_fact_keys": [
+          "金星（Shukra）是否落角宫",
+          "本盘上升主（Lagn's Lord）落在哪个星座"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断配偶身份或婚姻质量。",
+          "不得把角宫的起算点从上升改成别的星体。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "第11年",
+          "fact_keys": []
+        },
+        "step_hash": "2257cd7ebc6b75dd295247a9e6a661799fa2355de7e0c1ea6ad96f71e5ed8682"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v26-marriage-12-l9.step-001",
+      "method": {
+        "method": "ch18-v26-marriage-12-l9",
+        "title": "12或l9（原文如此印）成婚：金星落角宫、土星落金星起第七宫",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我大概几岁结婚",
+          "土星落金星起第七宫主什么婚期"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "The native will marry at 12, or l9, if Shukra is in an angle from the Lagna, while Shani is in Yuvati counted from Shukr",
+            "金星落角宫 土星落金星起第七宫 12 成婚"
+          ],
+          "counter_queries": [
+            "Marriage will take place during the 11th year, if Shukra is in an angle from Lagna, while Lagn Lord is in Makar, or Kumbh",
+            "Should Shukra be in Yuvati from Chandra, while Shani is in Yuvati from Shukr, marriage will be in the 18th year"
+          ],
+          "boundary_queries": [
+            "TIME OF MARRIAGE (upto Sloka 34)",
+            "Shukra is in Yuvati from the 8th Bhava (i.e. Dhan from Lagna) counted from"
+          ],
+          "method_queries": [
+            "Shani in Yuvati counted from Shukr marriage timing BPHS",
+            "判断婚期要看从金星起算的第七宫落了哪颗行星"
+          ]
+        },
+        "stop_conditions": [
+          "缺少金星是否落角宫的事实时停止。",
+          "缺少土星相对金星落宫的事实时停止。",
+          "原文 l9 的取值存疑，输出年龄前须人工核对原书。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v26-marriage-12-l9.step-001",
+        "action": "核对金星是否落上升起的角宫，再核对土星是否落在从金星起算的第七宫。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）婚期主题；本偈未重复年龄单位，其「12, or l9」属第22偈开启的「TIME OF MARRIAGE (upto Sloka 34)」段落；原文印作 l9，疑为 19 的排印讹误，本方法照原文保留不作改写；角宫以上升（Lagna）起算。",
+        "minimum_supported_claim": "金星落上升起的角宫、且土星落金星起第七宫时，命主会在12或l9成婚。",
+        "produced_fact_keys": [
+          "12或l9成婚判定"
+        ],
+        "required_fact_keys": [
+          "金星（Shukra）是否落角宫",
+          "土星（Shani）是否落金星（Shukra）起第七宫（Yuvati）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "金星（Shukra）是否落角宫"
+            },
+            {
+              "fact_key": "土星（Shani）是否落金星（Shukra）起第七宫（Yuvati）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if Shukra is in an angle from the Lagna",
+              "claim": "金星落上升起的角宫"
+            },
+            {
+              "quote": "while Shani is in Yuvati counted from Shukr",
+              "claim": "土星落金星起第七宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "The native will marry at 12, or l9",
+              "claim": "命主会在12或l9成婚"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v26",
+            "quote": "The native will marry at 12, or l9, if Shukra is in an angle from the Lagna, while Shani is in Yuvati counted from Shukr.",
+            "pdf_pages": [
+              34,
+              35
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：金星（Shukra）是否落角宫、土星（Shani）是否落金星（Shukra）起第七宫（Yuvati）。",
+        "stop_fact_keys": [
+          "金星（Shukra）是否落角宫",
+          "土星（Shani）是否落金星（Shukra）起第七宫（Yuvati）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把原文的 l9 径改为 19 后当作确定结论。",
+          "不得据此推断配偶身份或婚姻质量。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch18:v22"
+        ],
+        "time_scope": {
+          "kind": "period",
+          "label": "12 与 l9（原文如此印作）",
+          "fact_keys": []
+        },
+        "step_hash": "d5f91f6a0e1a267c268f0a9851683960d72227a303136c5f95fccf44636c1f4c"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v27-marriage-year-18.step-001",
+      "method": {
+        "method": "ch18-v27-marriage-year-18",
+        "title": "第18年成婚：金星落月亮起第七宫、土星落金星起第七宫",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我大概几岁结婚",
+          "金星落月亮起第七宫主什么婚期"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Shukra be in Yuvati from Chandra, while Shani is in Yuvati from Shukr, marriage will be in the 18th year",
+            "金星落月亮起第七宫 土星落金星起第七宫 第18年 成婚"
+          ],
+          "counter_queries": [
+            "The native will marry at 12, or l9, if Shukra is in an angle from the Lagna, while Shani is in Yuvati counted from Shukr",
+            "Marriage will be in the 15th year, if Dhan Lord is in Labh, while Lagn Lord is in Karm"
+          ],
+          "boundary_queries": [
+            "TIME OF MARRIAGE (upto Sloka 34)",
+            "THREE MARRIAGES Should Chandra be in Yuvati from Shukr, while Budh is in Yuvati from Chandra"
+          ],
+          "method_queries": [
+            "Yuvati from Chandra Yuvati from Shukr counted from planet BPHS",
+            "判断婚期要看从月亮与从金星起算的第七宫"
+          ]
+        },
+        "stop_conditions": [
+          "缺少金星相对月亮落宫的事实时停止。",
+          "缺少土星相对金星落宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v27-marriage-year-18.step-001",
+        "action": "核对金星是否落在从月亮起算的第七宫，再核对土星是否落在从金星起算的第七宫。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）婚期主题；两处第七宫都是从行星起算而非从上升起算；原文本偈用中性的 marriage，未限男女。",
+        "minimum_supported_claim": "金星落月亮起第七宫、且土星落金星起第七宫时，婚姻发生在第18年。",
+        "produced_fact_keys": [
+          "第18年成婚判定"
+        ],
+        "required_fact_keys": [
+          "金星（Shukra）是否落月亮（Chandra）起第七宫（Yuvati）",
+          "土星（Shani）是否落金星（Shukra）起第七宫（Yuvati）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "金星（Shukra）是否落月亮（Chandra）起第七宫（Yuvati）"
+            },
+            {
+              "fact_key": "土星（Shani）是否落金星（Shukra）起第七宫（Yuvati）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Shukra be in Yuvati from Chandra",
+              "claim": "金星落月亮起第七宫"
+            },
+            {
+              "quote": "while Shani is in Yuvati from Shukr",
+              "claim": "土星落金星起第七宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "marriage will be in the 18<sup>th</sup> year",
+              "claim": "婚姻发生在第18年"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v27",
+            "quote": "Should Shukra be in Yuvati from Chandra, while Shani is in Yuvati from Shukr, marriage will be in the 18<sup>th</sup> year.",
+            "pdf_pages": [
+              35
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：金星（Shukra）是否落月亮（Chandra）起第七宫（Yuvati）、土星（Shani）是否落金星（Shukra）起第七宫（Yuvati）。",
+        "stop_fact_keys": [
+          "金星（Shukra）是否落月亮（Chandra）起第七宫（Yuvati）",
+          "土星（Shani）是否落金星（Shukra）起第七宫（Yuvati）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断配偶身份或婚姻质量。",
+          "不得把从行星起算的第七宫改成从上升起算的七宫。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "第18年",
+          "fact_keys": []
+        },
+        "step_hash": "b21c81ef15e6465612f494ded83085bd4dd2dc0f93fa0f1d874b54f7050a6a19"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v28-marriage-year-15.step-001",
+      "method": {
+        "method": "ch18-v28-marriage-year-15",
+        "title": "第15年成婚：二宫主落十一宫、上升主落十宫",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我大概几岁结婚",
+          "二宫主落十一宫又上升主落十宫主什么婚期"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Marriage will be in the 15th year, if Dhan Lord is in Labh, while Lagn Lord is in Karm",
+            "二宫主落十一宫 上升主落十宫 第15年 成婚"
+          ],
+          "counter_queries": [
+            "An exchange between the Lords of Dhan and Labh will bring marriage 13 years after birth",
+            "Shukra in Dhan, while Yuvati Lord is in Labh will give marriage at the age of 10, or 16"
+          ],
+          "boundary_queries": [
+            "TIME OF MARRIAGE (upto Sloka 34)",
+            "Either the 25th year, or the 33rd year will bring marriage, if Randhr Lord is in Yuvati, as Shukra is in Navamsa Lagna"
+          ],
+          "method_queries": [
+            "Dhan Lord in Labh Lagn Lord in Karm marriage year BPHS",
+            "判断婚期要看二宫主与上升主分别落在哪一宫"
+          ]
+        },
+        "stop_conditions": [
+          "缺少二宫主落宫事实时停止。",
+          "缺少上升主落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v28-marriage-year-15.step-001",
+        "action": "核对二宫主是否落十一宫，并核对上升主是否落十宫。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）婚期主题；本偈的条件全在二宫、十一宫与十宫，不涉及七宫本身；原文本偈用中性的 Marriage，未限男女。",
+        "minimum_supported_claim": "二宫主落十一宫、且上升主落十宫时，婚姻发生在第15年。",
+        "produced_fact_keys": [
+          "第15年成婚判定"
+        ],
+        "required_fact_keys": [
+          "二宫主（Dhan's Lord）是否落十一宫（Labh）",
+          "上升主（Lagn's Lord）是否落十宫（Karm）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "二宫主（Dhan's Lord）是否落十一宫（Labh）"
+            },
+            {
+              "fact_key": "上升主（Lagn's Lord）是否落十宫（Karm）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if Dhan Lord is in Labh",
+              "claim": "二宫主落十一宫"
+            },
+            {
+              "quote": "while Lagn Lord is in Karm",
+              "claim": "上升主落十宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Marriage will be in the 15<sup>th</sup> year",
+              "claim": "婚姻发生在第15年"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v28",
+            "quote": "Marriage will be in the 15<sup>th</sup> year, if Dhan Lord is in Labh, while Lagn Lord is in Karm.",
+            "pdf_pages": [
+              35
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：二宫主（Dhan's Lord）是否落十一宫（Labh）、上升主（Lagn's Lord）是否落十宫（Karm）。",
+        "stop_fact_keys": [
+          "二宫主（Dhan's Lord）是否落十一宫（Labh）",
+          "上升主（Lagn's Lord）是否落十宫（Karm）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断配偶身份或婚姻质量。",
+          "不得把两个条件拆成任一成立即可。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "第15年",
+          "fact_keys": []
+        },
+        "step_hash": "9d27bf1484b538fc981b11470aefd34d40947b648206aac888e3057429041424"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v29-marriage-13-years-after-birth.step-001",
+      "method": {
+        "method": "ch18-v29-marriage-13-years-after-birth",
+        "title": "出生后13年成婚：二宫主与十一宫主互换星座",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我大概几岁结婚",
+          "二宫主与十一宫主互换主什么婚期"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "An exchange between the Lords of Dhan and Labh will bring marriage 13 years after birth",
+            "二宫主 十一宫主 互换星座 出生后13年 成婚"
+          ],
+          "counter_queries": [
+            "Marriage will be in the 15th year, if Dhan Lord is in Labh, while Lagn Lord is in Karm",
+            "Shukra in Dhan, while Yuvati Lord is in Labh will give marriage at the age of 10, or 16"
+          ],
+          "boundary_queries": [
+            "TIME OF MARRIAGE (upto Sloka 34)",
+            "exchange between the Lords parivartana Dhan Labh 7th house marriage"
+          ],
+          "method_queries": [
+            "exchange between the Lords of Dhan and Labh marriage timing BPHS",
+            "判断婚期要看二宫主与十一宫主之间的互换关系"
+          ]
+        },
+        "stop_conditions": [
+          "缺少二宫主与十一宫主是否互换的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v29-marriage-13-years-after-birth.step-001",
+        "action": "核对二宫主与十一宫主是否互换星座。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）婚期主题；原文只说 exchange（互换），未指明互换的其他形式；原文本偈用中性的 marriage，未限男女。",
+        "minimum_supported_claim": "二宫主与十一宫主互换星座时，婚姻在出生后13年到来。",
+        "produced_fact_keys": [
+          "出生后13年成婚判定"
+        ],
+        "required_fact_keys": [
+          "二宫主（Dhan's Lord）与十一宫主（Labh's Lord）是否互换星座"
+        ],
+        "condition_logic": {
+          "fact_key": "二宫主（Dhan's Lord）与十一宫主（Labh's Lord）是否互换星座"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "An exchange between the Lords of Dhan and Labh",
+              "claim": "二宫主与十一宫主互换星座"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will bring marriage 13 years after birth",
+              "claim": "婚姻在出生后13年到来"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v29",
+            "quote": "An exchange between the Lords of Dhan and Labh will bring marriage 13 years after birth.",
+            "pdf_pages": [
+              35
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：二宫主（Dhan's Lord）与十一宫主（Labh's Lord）是否互换星座。",
+        "stop_fact_keys": [
+          "二宫主（Dhan's Lord）与十一宫主（Labh's Lord）是否互换星座"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断配偶身份或婚姻质量。",
+          "不得把互换扩大成二宫主或十一宫主的单向落宫。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "出生后第13年",
+          "fact_keys": []
+        },
+        "step_hash": "66d15dac7eaabe3bdae2aedc361240249f4ad14d7fed04be45058587c5d19217"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v30-marriage-22-27.step-001",
+      "method": {
+        "method": "ch18-v30-marriage-22-27",
+        "title": "婚期第22年与第27年：金星落八宫起第七宫（即二宫）、其星座主与火星同宫",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我大概哪一年会结婚",
+          "我的婚期会不会落在第22年或第27年"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Shukra is in Yuvati from the 8th Bhava (i.e. Dhan from Lagna) dispositor yuti with Mangal marriage",
+            "金星落八宫起第七宫 即二宫 星座主与火星同宫 第22年 第27年 婚期"
+          ],
+          "counter_queries": [
+            "An exchange between the Lords of Dhan and Labh will bring marriage 13 years after birth",
+            "Shukra in Dhan, while Yuvati Lord is in Labh will give marriage at the age of 10, or 16"
+          ],
+          "boundary_queries": [
+            "TIME OF MARRIAGE (upto Sloka 34) Yuvati Lord is in a benefic’s Bhava marry at the age of 5, or 9",
+            "Shani is in Yuvati counted from Shukr 从行星起算宫位的算法"
+          ],
+          "method_queries": [
+            "Effects of Yuvati Bhava marriage timing rules Shukra dispositor",
+            "判断婚期应检查哪些行星与宫位"
+          ]
+        },
+        "stop_conditions": [
+          "缺少金星（Shukra）落宫事实时停止。",
+          "缺少金星星座主与火星（Mangal）是否同宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v30-marriage-22-27.step-001",
+        "action": "核对金星（Shukra）是否落在从八宫（Randhr）起算的第七宫、即上升起算的二宫（Dhan），以及金星的星座主是否与火星（Mangal）同宫，判断婚期。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）婚期主题；原文「his dispositor」的 his 指同句的金星（Shukra）；原文只把婚期系在第22与第27年两个年份。",
+        "minimum_supported_claim": "金星（Shukra）落在从八宫（Randhr）起算的第七宫（Yuvati）、即从上升（Lagna）起算的二宫（Dhan），且其星座主与火星（Mangal）同宫时，命主第22或第27年成婚。",
+        "produced_fact_keys": [
+          "金星落二宫且其星座主会火星主第22或第27年成婚判定"
+        ],
+        "required_fact_keys": [
+          "金星（Shukra）是否落二宫（Dhan）",
+          "金星（Shukra）的星座主是否与火星（Mangal）同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "金星（Shukra）是否落二宫（Dhan）"
+            },
+            {
+              "fact_key": "金星（Shukra）的星座主是否与火星（Mangal）同宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Shukra is in Yuvati from the 8<sup>th</sup> Bhava (i.e. Dhan from Lagna)",
+              "claim": "金星（Shukra）落在从八宫（Randhr）起算的第七宫（Yuvati）、即从上升（Lagna）起算的二宫（Dhan）"
+            },
+            {
+              "quote": "his dispositor is yuti with Mangal",
+              "claim": "其星座主与火星（Mangal）同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Ones 22<sup>nd</sup> /27<sup>th</sup> year will confer marriage",
+              "claim": "命主第22或第27年成婚"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v30",
+            "quote": "Ones 22<sup>nd</sup> /27<sup>th</sup> year will confer marriage, if Shukra is in Yuvati from the 8<sup>th</sup> Bhava (i.e. Dhan from Lagna), while his dispositor is yuti with Mangal.",
+            "pdf_pages": [
+              35
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：金星（Shukra）是否落二宫（Dhan）、金星（Shukra）的星座主是否与火星（Mangal）同宫。",
+        "stop_fact_keys": [
+          "金星（Shukra）是否落二宫（Dhan）",
+          "金星（Shukra）的星座主是否与火星（Mangal）同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断配偶相貌、家世或婚姻次数。",
+          "不得把第22年与第27年之外的年份也算进本条。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch18:v30"
+        ],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定第22年与第27年",
+          "fact_keys": []
+        },
+        "step_hash": "27145543d97e60b6f50c2ed453354b6afff9611f71567682174a27d9e5d72033"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v31-marriage-23-26.step-001",
+      "method": {
+        "method": "ch18-v31-marriage-23-26",
+        "title": "婚期第23年与第26年：七宫主落十二宫、本命主星在九分盘落七宫",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "七宫主落十二宫时婚期在哪一年",
+          "我的婚期是不是在第23年或第26年"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Yuvati Lord be in Vyaya, while the natal Lord is in Yuvati in Navamsa marriage 23rd 26th year",
+            "七宫主落十二宫 本命主星九分盘落七宫 第23年 第26年 婚期"
+          ],
+          "counter_queries": [
+            "Marriage will take place during the 11th year, if Shukra is in an angle from Lagna, while Lagn Lord is in Makar, or Kumbh",
+            "If Chandra is in Yuvati, as Yuvati Lord is in Vyaya the native will not be endowed with marital happiness"
+          ],
+          "boundary_queries": [
+            "TIME OF MARRIAGE (upto Sloka 34)",
+            "natal Lord Lagn Lord Navamsa 七宫 判定口径 版本差异"
+          ],
+          "method_queries": [
+            "Effects of Yuvati Bhava Navamsa placement marriage timing",
+            "判断婚期时怎么用九分盘（Navamsa D9）"
+          ]
+        },
+        "stop_conditions": [
+          "缺少七宫主（Yuvati's Lord）落宫事实时停止。",
+          "the natal Lord 指代未确定时停止：原文未指明它是哪一宫之主，不得自行绑定为上升主或任何别的宫主。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v31-marriage-23-26.step-001",
+        "action": "核对七宫主（Yuvati's Lord）是否落十二宫（Vyaya），并核对本命主星在九分盘（Navamsa D9）中是否落七宫（Yuvati），判断婚期。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）婚期主题；原文只写 the natal Lord，未指明它是哪一宫之主，该指代在本批范围内无法确定，本步因此停判；原文只给第23与第26年。",
+        "minimum_supported_claim": "七宫主（Yuvati's Lord）落十二宫（Vyaya），且本命主星（natal Lord）在九分盘（Navamsa D9）中落七宫（Yuvati）时，婚期在第23或第26年（年龄）。",
+        "produced_fact_keys": [
+          "七宫主落十二宫且本命主星九分盘落七宫主第23或第26年成婚判定"
+        ],
+        "required_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落十二宫（Vyaya）",
+          "本命主星（natal Lord）在九分盘（Navamsa D9）中是否落七宫（Yuvati）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "七宫主（Yuvati's Lord）是否落十二宫（Vyaya）"
+            },
+            {
+              "fact_key": "本命主星（natal Lord）在九分盘（Navamsa D9）中是否落七宫（Yuvati）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Yuvati Lord be in Vyaya",
+              "claim": "七宫主（Yuvati's Lord）落十二宫（Vyaya）"
+            },
+            {
+              "quote": "the natal Lord is in Yuvati in Navamsa",
+              "claim": "本命主星（natal Lord）在九分盘（Navamsa D9）中落七宫（Yuvati）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "marriage will be in 23<sup>rd</sup> /26<sup>th</sup> year of age",
+              "claim": "婚期在第23或第26年（年龄）"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v31",
+            "quote": "Should Yuvati Lord be in Vyaya, while the natal Lord is in Yuvati in Navamsa, marriage will be in 23<sup>rd</sup> /26<sup>th</sup> year of age.",
+            "pdf_pages": [
+              35
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：七宫主（Yuvati's Lord）是否落十二宫（Vyaya）、本命主星（natal Lord）在九分盘（Navamsa D9）中是否落七宫（Yuvati）。",
+        "stop_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落十二宫（Vyaya）",
+          "本命主星（natal Lord）在九分盘（Navamsa D9）中是否落七宫（Yuvati）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断婚姻的好坏或配偶健康。",
+          "不得把 the natal Lord 坐实为任何一宫之主（含上升主）：原文未指明，全书亦仅此一处出现该词，须经原书核对确定指代后才可绑定；未确定前本步停判。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定第23年与第26年（年龄）",
+          "fact_keys": []
+        },
+        "step_hash": "469a1791b7ab404f0f60f231335aee4e2d1db9b12349be0b9ac661e5d3f3f18a"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v32-marriage-25-33.step-001",
+      "method": {
+        "method": "ch18-v32-marriage-25-33",
+        "title": "婚期第25年与第33年：八宫主落七宫、金星落九分盘的上升宫",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的婚期在第25年还是第33年",
+          "八宫主落七宫对婚期有什么说法"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Either the 25th year, or the 33rd year will bring marriage, if Randhr Lord is in Yuvati, as Shukra is in Navamsa Lagna",
+            "八宫主落七宫 金星落九分盘上升 第25年 第33年 婚期"
+          ],
+          "counter_queries": [
+            "Marriage will be in the 15th year, if Dhan Lord is in Labh, while Lagn Lord is in Karm",
+            "Should Shukra be in Yuvati from Chandra, while Shani is in Yuvati from Shukr, marriage will be in the 18th year"
+          ],
+          "boundary_queries": [
+            "TIME OF MARRIAGE (upto Sloka 34)",
+            "Shukra is in Navamsa Lagna 九分盘上升的取法"
+          ],
+          "method_queries": [
+            "Effects of Yuvati Bhava Randhr Lord placement marriage",
+            "判断婚期应检查哪些宫主"
+          ]
+        },
+        "stop_conditions": [
+          "缺少八宫主（Randhr's Lord）落宫事实时停止。",
+          "缺少金星（Shukra）在九分盘（Navamsa D9）中落宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v32-marriage-25-33.step-001",
+        "action": "核对八宫主（Randhr's Lord）是否落七宫（Yuvati），并核对金星（Shukra）在九分盘（Navamsa D9）中是否落上升宫（Lagna），判断婚期。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）婚期主题；原文只给第25与第33年两个年份。",
+        "minimum_supported_claim": "八宫主（Randhr's Lord）落七宫（Yuvati），且金星（Shukra）在九分盘（Navamsa D9）中落上升宫（Lagna）时，婚期在第25或第33年。",
+        "produced_fact_keys": [
+          "八宫主落七宫且金星落九分盘上升宫主第25或第33年成婚判定"
+        ],
+        "required_fact_keys": [
+          "八宫主（Randhr's Lord）是否落七宫（Yuvati）",
+          "金星（Shukra）在九分盘（Navamsa D9）中是否落上升宫（Lagna）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "八宫主（Randhr's Lord）是否落七宫（Yuvati）"
+            },
+            {
+              "fact_key": "金星（Shukra）在九分盘（Navamsa D9）中是否落上升宫（Lagna）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Randhr Lord is in Yuvati",
+              "claim": "八宫主（Randhr's Lord）落七宫（Yuvati）"
+            },
+            {
+              "quote": "Shukra is in Navamsa Lagna",
+              "claim": "金星（Shukra）在九分盘（Navamsa D9）中落上升宫（Lagna）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Either the 25<sup>th</sup> year, or the 33<sup>rd</sup> year will bring marriage",
+              "claim": "婚期在第25或第33年"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v32",
+            "quote": "Either the 25<sup>th</sup> year, or the 33<sup>rd</sup> year will bring marriage, if Randhr Lord is in Yuvati, as Shukra is in Navamsa Lagna.",
+            "pdf_pages": [
+              35
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：八宫主（Randhr's Lord）是否落七宫（Yuvati）、金星（Shukra）在九分盘（Navamsa D9）中是否落上升宫（Lagna）。",
+        "stop_fact_keys": [
+          "八宫主（Randhr's Lord）是否落七宫（Yuvati）",
+          "金星（Shukra）在九分盘（Navamsa D9）中是否落上升宫（Lagna）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断婚姻是否长久或配偶寿命。",
+          "不得把第25年与第33年之外的年份也算进本条。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定第25年与第33年",
+          "fact_keys": []
+        },
+        "step_hash": "05bb12d20b17ea1ce9e1a1197c463dec9ba5deeec2c0032376fb421306eaaa44"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v33-marriage-31-33.step-001",
+      "method": {
+        "method": "ch18-v33-marriage-31-33",
+        "title": "婚期第31年与第33年：金星落九宫起第九宫（即五宫）、罗睺落五宫或九宫",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会在第31年还是第33年结婚",
+          "罗睺落五宫或九宫对婚期有什么说法"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Shukra be in Dharm from Dharm (i.e. in Putr Bhava), while Rahu is in one of the said Bhavas marriage 31st 33rd year",
+            "金星落九宫起第九宫 即五宫 罗睺落五宫或九宫 第31年 第33年 婚期"
+          ],
+          "counter_queries": [
+            "The native will marry at 30, or 27, if Shukra is in Lagna, while the 7th Lord is in Yuvati itself",
+            "If Surya is in Yuvati, while his dispositor is yuti with Shukr, there will be marriage at 7th, or 11th year of age"
+          ],
+          "boundary_queries": [
+            "Dharm from Dharm (i.e. in Putr Bhava) 从某宫起算另一宫的算法",
+            "TIME OF MARRIAGE (upto Sloka 34)"
+          ],
+          "method_queries": [
+            "Effects of Yuvati Bhava Rahu placement marriage timing",
+            "判断婚期时罗睺（Rahu）落宫怎么用"
+          ]
+        },
+        "stop_conditions": [
+          "缺少金星（Shukra）落宫事实时停止。",
+          "选中罗睺（Rahu）分支后缺少该分支落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v33-marriage-31-33.step-001",
+        "action": "核对金星（Shukra）是否落在从九宫（Dharm）起算的第九宫、即五宫（Putr），再看罗睺（Rahu）是否落在原文所说的两宫之一，判断婚期。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）婚期主题；本句「the said Bhavas」由原文自注为 Putr／Dharm 两宫；原文只给第31与第33年。",
+        "minimum_supported_claim": "金星（Shukra）落在从九宫（Dharm）起算的第九宫、即五宫（Putr），且罗睺（Rahu）落在上述两宫之一、即五宫（Putr）或九宫（Dharm）时，婚期在第31或第33年。",
+        "produced_fact_keys": [
+          "金星落五宫且罗睺落五宫或九宫主第31或第33年成婚判定"
+        ],
+        "required_fact_keys": [
+          "金星（Shukra）是否落五宫（Putr）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "金星（Shukra）是否落五宫（Putr）"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "罗睺（Rahu）是否落五宫（Putr）"
+                },
+                {
+                  "fact_key": "罗睺（Rahu）是否落九宫（Dharm）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "金星（Shukra）是否落五宫（Putr）"
+            },
+            "required_fact_keys": [
+              "罗睺（Rahu）是否落五宫（Putr）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "罗睺（Rahu）是否落五宫（Putr）"
+            },
+            "selection_group": "ch18-v33-marriage-31-33.step-001:rahu-bhava",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：罗睺（Rahu）是否落五宫（Putr）。"
+          },
+          {
+            "when": {
+              "fact_key": "金星（Shukra）是否落五宫（Putr）"
+            },
+            "required_fact_keys": [
+              "罗睺（Rahu）是否落九宫（Dharm）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "罗睺（Rahu）是否落九宫（Dharm）"
+            },
+            "selection_group": "ch18-v33-marriage-31-33.step-001:rahu-bhava",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：罗睺（Rahu）是否落九宫（Dharm）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Shukra be in Dharm from Dharm (i.e. in Putr Bhava)",
+              "claim": "金星（Shukra）落在从九宫（Dharm）起算的第九宫、即五宫（Putr）"
+            },
+            {
+              "quote": "Rahu is in one of the said Bhavas (i.e. in Putr/Dharm)",
+              "claim": "罗睺（Rahu）落在上述两宫之一、即五宫（Putr）或九宫（Dharm）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "marriage will take place during 31<sup>st</sup> , or 33<sup>rd</sup> year",
+              "claim": "婚期在第31或第33年"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v33",
+            "quote": "Should Shukra be in Dharm from Dharm (i.e. in Putr Bhava), while Rahu is in one of the said Bhavas (i.e. in Putr/Dharm), marriage will take place during 31<sup>st</sup> , or 33<sup>rd</sup> year.",
+            "pdf_pages": [
+              35
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：金星（Shukra）是否落五宫（Putr）。",
+        "stop_fact_keys": [
+          "金星（Shukra）是否落五宫（Putr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把罗睺（Rahu）落五宫与落九宫合并成两者都要——原文是两宫之一。",
+          "不得据此推断婚姻次数或配偶身份。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch18:v33"
+        ],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定第31年与第33年",
+          "fact_keys": []
+        },
+        "step_hash": "abbe079a1845991d86dd305140897d1c388091890db2393d20afc254f3a66dd4"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v34-marriage-30-27.step-001",
+      "method": {
+        "method": "ch18-v34-marriage-30-27",
+        "title": "婚期30岁与27岁：金星落上升宫、七宫主落七宫本身",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会在30岁或27岁结婚",
+          "金星落上升宫、七宫主落本宫时婚期在哪一年"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "The native will marry at 30, or 27, if Shukra is in Lagna, while the 7th Lord is in Yuvati itself",
+            "金星落上升宫 七宫主落本宫 30岁 27岁 婚期"
+          ],
+          "counter_queries": [
+            "Shukra in Dhan, while Yuvati Lord is in Labh will give marriage at the age of 10, or 16",
+            "If Yuvati Lord is in a benefic’s Bhava, while Shukra is exalted, or is in own Rāśi, the native will marry at the age of 5, or 9"
+          ],
+          "boundary_queries": [
+            "TIME OF MARRIAGE (upto Sloka 34)",
+            "If Yuvati’s Lord is in Yuvati Bhava, the native will be endowed with happiness through wife"
+          ],
+          "method_queries": [
+            "Effects of Yuvati Bhava Shukra in Lagna marriage timing",
+            "判断婚期时金星（Shukra）落宫怎么用"
+          ]
+        },
+        "stop_conditions": [
+          "缺少金星（Shukra）落宫事实时停止。",
+          "缺少七宫主（Yuvati's Lord）是否落本宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v34-marriage-30-27.step-001",
+        "action": "核对金星（Shukra）是否落上升宫（Lagna），并核对七宫主（Yuvati's Lord）是否落七宫（Yuvati）本身，判断婚期。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）婚期主题；原文只给30与27两个岁数。",
+        "minimum_supported_claim": "金星（Shukra）落上升宫（Lagna），且七宫主（Yuvati's Lord）落本宫、即落七宫（Yuvati）本身时，命主在30岁或27岁成婚。",
+        "produced_fact_keys": [
+          "金星落上升宫且七宫主落本宫主30岁或27岁成婚判定"
+        ],
+        "required_fact_keys": [
+          "金星（Shukra）是否落上升宫（Lagna）",
+          "七宫主（Yuvati's Lord）是否落本宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "金星（Shukra）是否落上升宫（Lagna）"
+            },
+            {
+              "fact_key": "七宫主（Yuvati's Lord）是否落本宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Shukra is in Lagna",
+              "claim": "金星（Shukra）落上升宫（Lagna）"
+            },
+            {
+              "quote": "the 7<sup>th</sup> Lord is in Yuvati itself",
+              "claim": "七宫主（Yuvati's Lord）落本宫、即落七宫（Yuvati）本身"
+            }
+          ],
+          "results": [
+            {
+              "quote": "The native will marry at 30, or 27",
+              "claim": "命主在30岁或27岁成婚"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v34",
+            "quote": "The native will marry at 30, or 27, if Shukra is in Lagna, while the 7<sup>th</sup> Lord is in Yuvati itself.",
+            "pdf_pages": [
+              35
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：金星（Shukra）是否落上升宫（Lagna）、七宫主（Yuvati's Lord）是否落本宫。",
+        "stop_fact_keys": [
+          "金星（Shukra）是否落上升宫（Lagna）",
+          "七宫主（Yuvati's Lord）是否落本宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断婚姻幸福与否。",
+          "不得把30岁与27岁之外的岁数也算进本条。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定30岁与27岁",
+          "fact_keys": []
+        },
+        "step_hash": "d24b71ef75041a9def3b73b75032341e62aef14f5036fb05e337e8485f3abeb4"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v35-39-wife-loss-18-33.step-001",
+      "method": {
+        "method": "ch18-v35-39-wife-loss-18-33",
+        "title": "第18年与第33年失去妻子：七宫主落陷、金星落八宫",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会在某一年失去妻子",
+          "七宫主落陷、金星落八宫对妻子有什么妨害"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "TIMING OF WIFE’S DEATH Loss of wife will occur in the 18th year, or 33rd year of age, if Yuvati Lord is in fall, while Shukra is in Randhr",
+            "七宫主落陷 金星落八宫 第18年 第33年 失去妻子"
+          ],
+          "counter_queries": [
+            "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife (and marriage)",
+            "One will have two wives, if Yuvati Lord is in fall, or in a malefic Rashialong with a malefic"
+          ],
+          "boundary_queries": [
+            "LOSS OF SPOUSE If Yuvati Lord is devoid of strength and is relegated to Ari, 8th, or Vyaya, or, if Yuvati Lord is in fall, the native’s wife will be destroyed",
+            "EVILS TO SPOUSE Yuvati Bhava, or its Lord is yuti with a malefic bereft of strength",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "Effects of Yuvati Bhava wife death timing rules",
+            "判断配偶存亡应检查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少七宫主（Yuvati's Lord）是否落陷的事实时停止。",
+          "缺少金星（Shukra）落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v35-39-wife-loss-18-33.step-001",
+        "action": "核对七宫主（Yuvati's Lord）是否落陷，并核对金星（Shukra）是否落八宫（Randhr），判断失去妻子的年份。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）配偶存亡主题；原文以「wife」立说，属男命框架；原文只给第18与第33年两个年份。",
+        "minimum_supported_claim": "七宫主（Yuvati's Lord）落陷，且金星（Shukra）落八宫（Randhr）时，命主在第18或第33年（年龄）失去妻子。",
+        "produced_fact_keys": [
+          "七宫主落陷且金星落八宫主第18或第33年失去妻子判定"
+        ],
+        "required_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落陷",
+          "金星（Shukra）是否落八宫（Randhr）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "七宫主（Yuvati's Lord）是否落陷"
+            },
+            {
+              "fact_key": "金星（Shukra）是否落八宫（Randhr）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Yuvati Lord is in fall",
+              "claim": "七宫主（Yuvati's Lord）落陷"
+            },
+            {
+              "quote": "Shukra is in Randhr",
+              "claim": "金星（Shukra）落八宫（Randhr）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Loss of wife will occur in the 18<sup>th</sup> year, or 33<sup>rd</sup> year of age of the native",
+              "claim": "命主在第18或第33年（年龄）失去妻子"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v35-39",
+            "quote": "Loss of wife will occur in the 18<sup>th</sup> year, or 33<sup>rd</sup> year of age of the native, if Yuvati Lord is in fall, while Shukra is in Randhr.",
+            "pdf_pages": [
+              35
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：七宫主（Yuvati's Lord）是否落陷、金星（Shukra）是否落八宫（Randhr）。",
+        "stop_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落陷",
+          "金星（Shukra）是否落八宫（Randhr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断死因或再婚。",
+          "不得把第18年与第33年之外的年份也算进本条。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定第18年与第33年（年龄）",
+          "fact_keys": []
+        },
+        "step_hash": "97263db45a23588b2aae04ce66a725624204a8c2aeaafd3543c8c679b42bc6ca"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v35-39-spouse-loss-19.step-001",
+      "method": {
+        "method": "ch18-v35-39-spouse-loss-19",
+        "title": "第19年失去配偶：七宫主落八宫、十二宫主落七宫",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我第19年会不会失去配偶",
+          "七宫主落八宫对配偶有什么妨害"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "One will lose his spouse in his 19th year, if Yuvati Lord is in the 8th, while Vyaya Lord is in Yuvati",
+            "七宫主落八宫 十二宫主落七宫 第19年 失去配偶"
+          ],
+          "counter_queries": [
+            "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife (and marriage)",
+            "THREE MARRIAGES there will be marriage in Karm year followed by another in the 22nd year and yet another in the 33rd year"
+          ],
+          "boundary_queries": [
+            "SICK WIFE Should Yuvati Lord be in Ari, 8th, or Vyaya, the wife will be sickly. This however does not apply to own Bhava, or exaltation placement",
+            "LOSS OF SPOUSE Yuvati Lord is devoid of strength and is relegated to Ari, 8th, or Vyaya",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "Effects of Yuvati Bhava Vyaya Lord placement spouse",
+            "判断配偶存亡应检查哪些宫主"
+          ]
+        },
+        "stop_conditions": [
+          "缺少七宫主（Yuvati's Lord）落宫事实时停止。",
+          "缺少十二宫主（Vyaya's Lord）落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v35-39-spouse-loss-19.step-001",
+        "action": "核对七宫主（Yuvati's Lord）是否落八宫（Randhr），并核对十二宫主（Vyaya's Lord）是否落七宫（Yuvati），判断失去配偶的年份。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）配偶存亡主题；原文以「his spouse」立说，属男命框架；原文只给第19年一个年份。",
+        "minimum_supported_claim": "七宫主（Yuvati's Lord）落八宫，且十二宫主（Vyaya's Lord）落七宫（Yuvati）时，命主在第19年失去配偶。",
+        "produced_fact_keys": [
+          "七宫主落八宫且十二宫主落七宫主第19年失去配偶判定"
+        ],
+        "required_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落八宫（Randhr）",
+          "十二宫主（Vyaya's Lord）是否落七宫（Yuvati）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "七宫主（Yuvati's Lord）是否落八宫（Randhr）"
+            },
+            {
+              "fact_key": "十二宫主（Vyaya's Lord）是否落七宫（Yuvati）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Yuvati Lord is in the 8<sup>th</sup>",
+              "claim": "七宫主（Yuvati's Lord）落八宫"
+            },
+            {
+              "quote": "Vyaya Lord is in Yuvati",
+              "claim": "十二宫主（Vyaya's Lord）落七宫（Yuvati）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "One will lose his spouse in his 19<sup>th</sup> year",
+              "claim": "命主在第19年失去配偶"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v35-39",
+            "quote": "One will lose his spouse in his 19<sup>th</sup> year, if Yuvati Lord is in the 8<sup>th</sup> , while Vyaya Lord is in Yuvati.",
+            "pdf_pages": [
+              35
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：七宫主（Yuvati's Lord）是否落八宫（Randhr）、十二宫主（Vyaya's Lord）是否落七宫（Yuvati）。",
+        "stop_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落八宫（Randhr）",
+          "十二宫主（Vyaya's Lord）是否落七宫（Yuvati）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断死因或再婚。",
+          "不得把第19年之外的年份也算进本条。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定第19年",
+          "fact_keys": []
+        },
+        "step_hash": "88dbb53e225cad2659b3149ac3695431850a0499c876f918b6e2694b1c69adbe"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v35-39-wife-snake-bite.step-001",
+      "method": {
+        "method": "ch18-v35-39-wife-snake-bite",
+        "title": "妻子婚后三日内因蛇咬去世：罗睺落二宫、火星落七宫",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我妻子会不会有性命之忧",
+          "罗睺落二宫、火星落七宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "The native’s wife will die within three days of marriage due to snake bite, Rahu in Dhan and Mangal in Yuvati",
+            "罗睺落二宫 火星落七宫 婚后三日 蛇咬 妻子去世"
+          ],
+          "counter_queries": [
+            "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife (and marriage)",
+            "WORTHY SPOUSE The native will beget a spouse endowed with (the seven principal) virtues, who will expand his dynasty by sons and grandsons"
+          ],
+          "boundary_queries": [
+            "DEATH OF WlFE lf Ari, 7th and 8th are in their order occupied by Mangal, Rahu and Shani, the native’s wife will not live (long)",
+            "If Mangal and Shukra are in Yuvati, or, if Shani is Yuvati, while the Lord of Lagn is in Randhr, the native will have 3 wives",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "Effects of Yuvati Bhava Mangal Rahu placement wife death",
+            "判断配偶灾厄应检查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少罗睺（Rahu）落宫事实时停止。",
+          "缺少火星（Mangal）落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v35-39-wife-snake-bite.step-001",
+        "action": "核对罗睺（Rahu）是否落二宫（Dhan），并核对火星（Mangal）是否落七宫（Yuvati）。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）配偶存亡主题；原文以「the native’s wife」立说，属男命框架；原文把时间限定在婚后三日内。",
+        "minimum_supported_claim": "罗睺（Rahu）落二宫（Dhan），且火星（Mangal）落七宫（Yuvati）时，命主的妻子在婚后三日内因蛇咬去世。",
+        "produced_fact_keys": [
+          "罗睺落二宫且火星落七宫主妻子婚后三日内蛇咬去世判定"
+        ],
+        "required_fact_keys": [
+          "罗睺（Rahu）是否落二宫（Dhan）",
+          "火星（Mangal）是否落七宫（Yuvati）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "罗睺（Rahu）是否落二宫（Dhan）"
+            },
+            {
+              "fact_key": "火星（Mangal）是否落七宫（Yuvati）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Rahu in Dhan",
+              "claim": "罗睺（Rahu）落二宫（Dhan）"
+            },
+            {
+              "quote": "Mangal in Yuvati",
+              "claim": "火星（Mangal）落七宫（Yuvati）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "The native’s wife will die within three days of marriage due to snake bite",
+              "claim": "命主的妻子在婚后三日内因蛇咬去世"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v35-39",
+            "quote": "The native’s wife will die within three days of marriage due to snake bite, if the native has Rahu in Dhan and Mangal in Yuvati.",
+            "pdf_pages": [
+              35
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：罗睺（Rahu）是否落二宫（Dhan）、火星（Mangal）是否落七宫（Yuvati）。",
+        "stop_fact_keys": [
+          "罗睺（Rahu）是否落二宫（Dhan）",
+          "火星（Mangal）是否落七宫（Yuvati）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把蛇咬扩大成其他死因或其他事故。",
+          "不得把婚后三日之外的时间也算进本条。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定婚后三日内",
+          "fact_keys": []
+        },
+        "step_hash": "c9b0f144d29fd1f509286e81a6ba9d5aff7fbe9e345b75f6921eb6bdd9bb2e85"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v35-39-wife-death-12-21.step-001",
+      "method": {
+        "method": "ch18-v35-39-wife-death-12-21",
+        "title": "妻子在第12年与第21年去世：金星落八宫、其星座主落土星星座",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我妻子可能在我哪一年去世",
+          "金星落八宫对妻子寿命有什么说法"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Shukra is in Randhr, while his dispositor is in a Rashiof Shani, death of wife will take place during the native’s 12th, or 21st year of age",
+            "金星落八宫 星座主落土星星座 第12年 第21年 妻子去世"
+          ],
+          "counter_queries": [
+            "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife (and marriage)",
+            "If Yuvati Lord is in a Rashiof Shani, or of Shukra and be drishtied by a benefic, there will be many wives"
+          ],
+          "boundary_queries": [
+            "Loss of wife will occur in the 18th year, or 33rd year of age of the native, if Yuvati Lord is in fall, while Shukra is in Randhr",
+            "If Shukra yuti a malefic in any Bhava the native will lose his wife",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "Effects of Yuvati Bhava dispositor Rashi of Shani wife death",
+            "判断妻子寿命应检查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少金星（Shukra）落宫事实时停止。",
+          "缺少金星星座主所落星座的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v35-39-wife-death-12-21.step-001",
+        "action": "核对金星（Shukra）是否落八宫（Randhr），并核对金星的星座主是否落在土星（Shani）主管的星座，判断妻子去世的年份。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）配偶存亡主题；原文以「wife」立说，属男命框架；原文「his dispositor」的 his 指同句的金星（Shukra）；原文只给第12与第21年两个年份。",
+        "minimum_supported_claim": "金星（Shukra）落八宫（Randhr），且金星的星座主落在土星（Shani）主管的星座时，妻子在命主第12或第21年（年龄）去世。",
+        "produced_fact_keys": [
+          "金星落八宫且其星座主落土星星座主妻子第12或第21年去世判定"
+        ],
+        "required_fact_keys": [
+          "金星（Shukra）是否落八宫（Randhr）",
+          "金星（Shukra）的星座主是否落土星（Shani）主管的星座"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "金星（Shukra）是否落八宫（Randhr）"
+            },
+            {
+              "fact_key": "金星（Shukra）的星座主是否落土星（Shani）主管的星座"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Shukra is in Randhr",
+              "claim": "金星（Shukra）落八宫（Randhr）"
+            },
+            {
+              "quote": "his dispositor is in a Rashiof Shani",
+              "claim": "金星的星座主落在土星（Shani）主管的星座"
+            }
+          ],
+          "results": [
+            {
+              "quote": "death of wife will take place during the native’s 12<sup>th</sup> , or 21<sup>st</sup> year of age",
+              "claim": "妻子在命主第12或第21年（年龄）去世"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v35-39",
+            "quote": "If Shukra is in Randhr, while his dispositor is in a Rashiof Shani, death of wife will take place during the native’s 12<sup>th</sup> , or 21<sup>st</sup> year of age.",
+            "pdf_pages": [
+              35
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：金星（Shukra）是否落八宫（Randhr）、金星（Shukra）的星座主是否落土星（Shani）主管的星座。",
+        "stop_fact_keys": [
+          "金星（Shukra）是否落八宫（Randhr）",
+          "金星（Shukra）的星座主是否落土星（Shani）主管的星座"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断死因或再婚。",
+          "不得把第12年与第21年之外的年份也算进本条。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch18:v35-39"
+        ],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定第12年与第21年（年龄）",
+          "fact_keys": []
+        },
+        "step_hash": "7e0ae7bdeeb73375e9101961de03d55d77d803b92ce97d8e0f39857eb2c9d0e5"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v35-39-wife-loss-13.step-001",
+      "method": {
+        "method": "ch18-v35-39-wife-loss-13",
+        "title": "第13年失去妻子：上升主落陷、二宫主落八宫",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我第13年会不会失去妻子",
+          "上升主落陷对妻子有什么妨害"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should the ascendat Lord be in his Rashiof debilitation, as Dhan Lord is in Randhr, loss of wife will occur in the 13th year of age",
+            "上升主落陷 二宫主落八宫 第13年 失去妻子"
+          ],
+          "counter_queries": [
+            "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife (and marriage)",
+            "THREE MARRIAGES Should Chandra be in Yuvati from Shukr, while Budh is in Yuvati from Chandra"
+          ],
+          "boundary_queries": [
+            "If Lagn’s Lord is a malefic and is placed in Yuvati Bhava, the natives wife will not live (long)",
+            "LOSS OF SPOUSE Yuvati Lord is in fall the native’s wife will be destroyed",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "Effects of Yuvati Bhava Lagna Lord debilitation wife loss",
+            "判断上升主落陷会带来什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升主（Lagna's Lord）是否落陷的事实时停止。",
+          "缺少二宫主（Dhan's Lord）落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v35-39-wife-loss-13.step-001",
+        "action": "核对上升主（Lagna's Lord）是否落在自己的落陷星座，并核对二宫主（Dhan's Lord）是否落八宫（Randhr），判断失去妻子的年份。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）配偶存亡主题；原文以「wife」立说，属男命框架；原文只给第13年一个年份。",
+        "minimum_supported_claim": "上升主（Lagna's Lord）落在自己的落陷星座，且二宫主（Dhan's Lord）落八宫（Randhr）时，命主在第13年（年龄）失去妻子。",
+        "produced_fact_keys": [
+          "上升主落陷且二宫主落八宫主第13年失去妻子判定"
+        ],
+        "required_fact_keys": [
+          "上升主（Lagna's Lord）是否落陷",
+          "二宫主（Dhan's Lord）是否落八宫（Randhr）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "上升主（Lagna's Lord）是否落陷"
+            },
+            {
+              "fact_key": "二宫主（Dhan's Lord）是否落八宫（Randhr）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "the ascendat Lord be in his Rashiof debilitation",
+              "claim": "上升主（Lagna's Lord）落在自己的落陷星座"
+            },
+            {
+              "quote": "Dhan Lord is in Randhr",
+              "claim": "二宫主（Dhan's Lord）落八宫（Randhr）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "loss of wife will occur in the 13<sup>th</sup> year of age",
+              "claim": "命主在第13年（年龄）失去妻子"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v35-39",
+            "quote": "Should the ascendat Lord be in his Rashiof debilitation, as Dhan Lord is in Randhr, loss of wife will occur in the 13<sup>th</sup> year of age.",
+            "pdf_pages": [
+              35
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：上升主（Lagna's Lord）是否落陷、二宫主（Dhan's Lord）是否落八宫（Randhr）。",
+        "stop_fact_keys": [
+          "上升主（Lagna's Lord）是否落陷",
+          "二宫主（Dhan's Lord）是否落八宫（Randhr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断死因或再婚。",
+          "不得把第13年之外的年份也算进本条。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定第13年（年龄）",
+          "fact_keys": []
+        },
+        "step_hash": "55eebd0b0d92ae5449ef71512bf4401fbd81696ab67e730faa462584ce1061d1"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v40-41-three-marriages.step-001",
+      "method": {
+        "method": "ch18-v40-41-three-marriages",
+        "title": "三次婚姻：月亮在金星起第七宫、水星在月亮起第七宫、八宫主落五宫",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会有三次婚姻",
+          "我的几次婚姻分别在哪一年"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "THREE MARRIAGES Should Chandra be in Yuvati from Shukr, while Budh is in Yuvati from Chandra and Randhr Lord is in Putr marriage in Karm year 22nd 33rd",
+            "月亮在金星起第七宫 水星在月亮起第七宫 八宫主落五宫 三次婚姻 Karm 年"
+          ],
+          "counter_queries": [
+            "One will have two wives, if Yuvati Lord is in fall, or in a malefic Rashialong with a malefic",
+            "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife (and marriage)"
+          ],
+          "boundary_queries": [
+            "PLURALlIY OF WIVES If Mangal and Shukra are in Yuvati, or, if Shani is Yuvati, while the Lord of Lagn is in Randhr, the native will have 3 wives",
+            "Karm year 以宫位名指年份的算法"
+          ],
+          "method_queries": [
+            "Effects of Yuvati Bhava number of wives and marriage timing",
+            "判断婚姻次数应检查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少月亮（Chandra）相对金星（Shukra）的落宫事实时停止。",
+          "缺少水星（Budh）相对月亮（Chandra）的落宫事实时停止。",
+          "缺少八宫主（Randhr's Lord）落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v40-41-three-marriages.step-001",
+        "action": "核对月亮（Chandra）是否落在从金星起算的第七宫、水星（Budh）是否落在从月亮起算的第七宫，并核对八宫主（Randhr's Lord）是否落从上升起算的五宫（Putr），判断婚姻次数与各次婚期。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）婚姻次数与婚期主题；原文把第一次婚期写作 Karm 年，未折算成岁数。",
+        "minimum_supported_claim": "月亮（Chandra）落在从金星（Shukr）起算的第七宫（Yuvati），水星（Budh）落在从月亮（Chandra）起算的第七宫（Yuvati），且八宫主（Randhr's Lord）落在从上升（Lagna）起算的五宫（Putr）时，会有三次婚姻：一次在 Karm 年，另一次在第22年，再一次在第33年。",
+        "produced_fact_keys": [
+          "月亮水星互在第七宫且八宫主落五宫主三次婚姻判定"
+        ],
+        "required_fact_keys": [
+          "月亮（Chandra）是否落金星（Shukra）起第七宫（Yuvati）",
+          "水星（Budh）是否落月亮（Chandra）起第七宫（Yuvati）",
+          "八宫主（Randhr's Lord）是否落五宫（Putr）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "月亮（Chandra）是否落金星（Shukra）起第七宫（Yuvati）"
+            },
+            {
+              "fact_key": "水星（Budh）是否落月亮（Chandra）起第七宫（Yuvati）"
+            },
+            {
+              "fact_key": "八宫主（Randhr's Lord）是否落五宫（Putr）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Chandra be in Yuvati from Shukr",
+              "claim": "月亮（Chandra）落在从金星（Shukr）起算的第七宫（Yuvati）"
+            },
+            {
+              "quote": "Budh is in Yuvati from Chandra",
+              "claim": "水星（Budh）落在从月亮（Chandra）起算的第七宫（Yuvati）"
+            },
+            {
+              "quote": "Randhr Lord is in Putr (from the Lagna)",
+              "claim": "八宫主（Randhr's Lord）落在从上升（Lagna）起算的五宫（Putr）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "THREE MARRIAGES",
+              "claim": "三次婚姻"
+            },
+            {
+              "quote": "there will be marriage in Karm year followed by another in the 22<sup>nd</sup> year and yet another in the 33<sup>rd</sup> year",
+              "claim": "一次在 Karm 年，另一次在第22年，再一次在第33年"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v40-41",
+            "quote": "THREE MARRIAGES. Should Chandra be in Yuvati from Shukr, while Budh is in Yuvati from Chandra and Randhr Lord is in Putr (from the Lagna), there will be marriage in Karm year followed by another in the 22<sup>nd</sup> year and yet another in the 33<sup>rd</sup> year.",
+            "pdf_pages": [
+              35
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：月亮（Chandra）是否落金星（Shukra）起第七宫（Yuvati）、水星（Budh）是否落月亮（Chandra）起第七宫（Yuvati）、八宫主（Randhr's Lord）是否落五宫（Putr）。",
+        "stop_fact_keys": [
+          "月亮（Chandra）是否落金星（Shukra）起第七宫（Yuvati）",
+          "水星（Budh）是否落月亮（Chandra）起第七宫（Yuvati）",
+          "八宫主（Randhr's Lord）是否落五宫（Putr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 Karm 年折算成具体岁数——原文只写 Karm year。",
+          "不得据此推断离婚原因或配偶身份。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定 Karm 年、第22年与第33年",
+          "fact_keys": []
+        },
+        "step_hash": "2aeffd83cacb888840398fda1371be4e0f6df24c6910c0eab5efbbb7a1985f9b"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v42-wife-short-life.step-001",
+      "method": {
+        "method": "ch18-v42-wife-short-life",
+        "title": "妻子不能久活：六宫、七宫、八宫依次被火星、罗睺、土星占据",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我妻子的寿命长不长",
+          "火星、罗睺、土星分别落六宫七宫八宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "DEATH OF WlFE lf Ari, 7th and 8th are in their order occupied by Mangal, Rahu and Shani, the native’s wife will not live (long)",
+            "六宫火星 七宫罗睺 八宫土星 妻子不能久活"
+          ],
+          "counter_queries": [
+            "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife (and marriage)",
+            "WORTHY SPOUSE the 7th Lord is exalted, while Yuvati is occupied by strong Lagna Lord and a benefic"
+          ],
+          "boundary_queries": [
+            "If Lagn’s Lord is a malefic and is placed in Yuvati Bhava, the natives wife will not live (long)",
+            "LOSS OF SPOUSE Yuvati Lord is devoid of strength and is relegated to Ari, 8th, or Vyaya",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "Effects of Yuvati Bhava malefics occupying Ari 7th 8th wife",
+            "判断妻子寿命应检查哪几宫"
+          ]
+        },
+        "stop_conditions": [
+          "缺少火星（Mangal）落宫事实时停止。",
+          "缺少罗睺（Rahu）落宫事实时停止。",
+          "缺少土星（Shani）落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v42-wife-short-life.step-001",
+        "action": "核对六宫（Ari）、七宫（Yuvati）、八宫（Randhr）是否依次由火星（Mangal）、罗睺（Rahu）、土星（Shani）占据，判断妻子的存活。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）配偶存亡主题；原文以「the native’s wife」立说，属男命框架；原文没有给年份或年龄。",
+        "minimum_supported_claim": "六宫（Ari）、七宫、八宫依次被火星（Mangal）、罗睺（Rahu）、土星（Shani）占据时，命主的妻子不能长久活着。",
+        "produced_fact_keys": [
+          "六七八宫依次被火星罗睺土星占据主妻子不能久活判定"
+        ],
+        "required_fact_keys": [
+          "火星（Mangal）是否落六宫（Ari）",
+          "罗睺（Rahu）是否落七宫（Yuvati）",
+          "土星（Shani）是否落八宫（Randhr）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "火星（Mangal）是否落六宫（Ari）"
+            },
+            {
+              "fact_key": "罗睺（Rahu）是否落七宫（Yuvati）"
+            },
+            {
+              "fact_key": "土星（Shani）是否落八宫（Randhr）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Ari, 7<sup>th</sup> and 8<sup>th</sup> are in their order occupied by Mangal, Rahu and Shani",
+              "claim": "六宫（Ari）、七宫、八宫依次被火星（Mangal）、罗睺（Rahu）、土星（Shani）占据"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native’s wife will not live (long)",
+              "claim": "命主的妻子不能长久活着"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v42",
+            "quote": "DEATH OF WlFE. lf Ari, 7<sup>th</sup> and 8<sup>th</sup> are in their order occupied by Mangal, Rahu and Shani, the native’s wife will not live (long).",
+            "pdf_pages": [
+              35
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：火星（Mangal）是否落六宫（Ari）、罗睺（Rahu）是否落七宫（Yuvati）、土星（Shani）是否落八宫（Randhr）。",
+        "stop_fact_keys": [
+          "火星（Mangal）是否落六宫（Ari）",
+          "罗睺（Rahu）是否落七宫（Yuvati）",
+          "土星（Shani）是否落八宫（Randhr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体去世年份或死因——原文只说不能长久活着。",
+          "不得把三颗行星的对应宫位互换后仍套用本条。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "step_hash": "0a1d1cb7366f28a336cc520b1c6fa6ee9dd4b83bbc948c456e9711c3ebafbd32"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch18:v22": {
+      "evidence_atom_id": "bphs-97:santhanam:ch18:v22",
+      "chapter_number": 18,
+      "chapter_title": "Effects of Yuvati Bhava",
+      "verse_label": "22.",
+      "content_role": "verse",
+      "exact_text": "22. TIME OF MARRIAGE (upto Sloka 34). If Yuvati Lord is in a benefic’s Bhava (or in Dharm, as Subha Rashiso means), while Shukra is exalted, or is in own Rāśi, the native will marry at the age of 5, or 9.",
+      "pdf_pages": [
+        34
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 18 · Sloka 22 · PDF page 34 · bphs-97:santhanam:ch18:v22",
+      "previous_atom_id": "bphs-97:santhanam:ch18:v19-21",
+      "next_atom_id": "bphs-97:santhanam:ch18:v23",
+      "context_before": " There will be many wives, if Shukra is in a Dual Rāśi, while its Lord is in exaltation, as Yuvati Lord is endowed with strength.\n\n",
+      "context_after": "23. If Surya is in Yuvati, while his dispositor is yuti with Shukr, there will be marriage at 7<sup>th</sup> , or 11<sup>th</sup",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch18:v24": {
+      "evidence_atom_id": "bphs-97:santhanam:ch18:v24",
+      "chapter_number": 18,
+      "chapter_title": "Effects of Yuvati Bhava",
+      "verse_label": "24.",
+      "content_role": "verse",
+      "exact_text": "24. Shukra in Dhan, while Yuvati Lord is in Labh will give marriage at the age of 10, or 16.",
+      "pdf_pages": [
+        34
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 18 · Sloka 24 · PDF page 34 · bphs-97:santhanam:ch18:v24",
+      "previous_atom_id": "bphs-97:santhanam:ch18:v23",
+      "next_atom_id": "bphs-97:santhanam:ch18:v25",
+      "context_before": " If Surya is in Yuvati, while his dispositor is yuti with Shukr, there will be marriage at 7<sup>th</sup> , or 11<sup>th</sup> year of age.\n\n",
+      "context_after": "25. Marriage will take place during the 11<sup>th</sup> year, if Shukra is in an angle from Lagna, while Lagn Lord is in Makar, ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch18:v25": {
+      "evidence_atom_id": "bphs-97:santhanam:ch18:v25",
+      "chapter_number": 18,
+      "chapter_title": "Effects of Yuvati Bhava",
+      "verse_label": "25.",
+      "content_role": "verse",
+      "exact_text": "25. Marriage will take place during the 11<sup>th</sup> year, if Shukra is in an angle from Lagna, while Lagn Lord is in Makar, or Kumbh.",
+      "pdf_pages": [
+        34
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 18 · Sloka 25 · PDF page 34 · bphs-97:santhanam:ch18:v25",
+      "previous_atom_id": "bphs-97:santhanam:ch18:v24",
+      "next_atom_id": "bphs-97:santhanam:ch18:v26",
+      "context_before": " or 11<sup>th</sup> year of age.\n\n24. Shukra in Dhan, while Yuvati Lord is in Labh will give marriage at the age of 10, or 16.\n\n",
+      "context_after": "26. The native will marry at 12, or l9, if Shukra is in an angle from the Lagna, while\n\n<!-- SOURCE_PAGE 35 -->\n\nShani is in Yuv",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch18:v26": {
+      "evidence_atom_id": "bphs-97:santhanam:ch18:v26",
+      "chapter_number": 18,
+      "chapter_title": "Effects of Yuvati Bhava",
+      "verse_label": "26.",
+      "content_role": "verse",
+      "exact_text": "26. The native will marry at 12, or l9, if Shukra is in an angle from the Lagna, while Shani is in Yuvati counted from Shukr.",
+      "pdf_pages": [
+        34,
+        35
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 18 · Sloka 26 · PDF pages 34-35 · bphs-97:santhanam:ch18:v26",
+      "previous_atom_id": "bphs-97:santhanam:ch18:v25",
+      "next_atom_id": "bphs-97:santhanam:ch18:v27",
+      "context_before": " Marriage will take place during the 11<sup>th</sup> year, if Shukra is in an angle from Lagna, while Lagn Lord is in Makar, or Kumbh.\n\n",
+      "context_after": "27. Should Shukra be in Yuvati from Chandra, while Shani is in Yuvati from Shukr, marriage will be in the 18<sup>th</sup> year.\n",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch18:v27": {
+      "evidence_atom_id": "bphs-97:santhanam:ch18:v27",
+      "chapter_number": 18,
+      "chapter_title": "Effects of Yuvati Bhava",
+      "verse_label": "27.",
+      "content_role": "verse",
+      "exact_text": "27. Should Shukra be in Yuvati from Chandra, while Shani is in Yuvati from Shukr, marriage will be in the 18<sup>th</sup> year.",
+      "pdf_pages": [
+        35
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 18 · Sloka 27 · PDF page 35 · bphs-97:santhanam:ch18:v27",
+      "previous_atom_id": "bphs-97:santhanam:ch18:v26",
+      "next_atom_id": "bphs-97:santhanam:ch18:v28",
+      "context_before": " The native will marry at 12, or l9, if Shukra is in an angle from the Lagna, while\n\n<!-- SOURCE_PAGE 35 -->\n\nShani is in Yuvati counted from Shukr.\n\n",
+      "context_after": "28. Marriage will be in the 15<sup>th</sup> year, if Dhan Lord is in Labh, while Lagn Lord is in Karm.\n\n29. An exchange between ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch18:v28": {
+      "evidence_atom_id": "bphs-97:santhanam:ch18:v28",
+      "chapter_number": 18,
+      "chapter_title": "Effects of Yuvati Bhava",
+      "verse_label": "28.",
+      "content_role": "verse",
+      "exact_text": "28. Marriage will be in the 15<sup>th</sup> year, if Dhan Lord is in Labh, while Lagn Lord is in Karm.",
+      "pdf_pages": [
+        35
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 18 · Sloka 28 · PDF page 35 · bphs-97:santhanam:ch18:v28",
+      "previous_atom_id": "bphs-97:santhanam:ch18:v27",
+      "next_atom_id": "bphs-97:santhanam:ch18:v29",
+      "context_before": "7. Should Shukra be in Yuvati from Chandra, while Shani is in Yuvati from Shukr, marriage will be in the 18<sup>th</sup> year.\n\n",
+      "context_after": "29. An exchange between the Lords of Dhan and Labh will bring marriage 13 years after birth.\n\n30. Ones 22<sup>nd</sup> /27<sup>t",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch18:v29": {
+      "evidence_atom_id": "bphs-97:santhanam:ch18:v29",
+      "chapter_number": 18,
+      "chapter_title": "Effects of Yuvati Bhava",
+      "verse_label": "29.",
+      "content_role": "verse",
+      "exact_text": "29. An exchange between the Lords of Dhan and Labh will bring marriage 13 years after birth.",
+      "pdf_pages": [
+        35
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 18 · Sloka 29 · PDF page 35 · bphs-97:santhanam:ch18:v29",
+      "previous_atom_id": "bphs-97:santhanam:ch18:v28",
+      "next_atom_id": "bphs-97:santhanam:ch18:v30",
+      "context_before": " 18<sup>th</sup> year.\n\n28. Marriage will be in the 15<sup>th</sup> year, if Dhan Lord is in Labh, while Lagn Lord is in Karm.\n\n",
+      "context_after": "30. Ones 22<sup>nd</sup> /27<sup>th</sup> year will confer marriage, if Shukra is in Yuvati from the 8<sup>th</sup> Bhava (i.e. ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch18:v30": {
+      "evidence_atom_id": "bphs-97:santhanam:ch18:v30",
+      "chapter_number": 18,
+      "chapter_title": "Effects of Yuvati Bhava",
+      "verse_label": "30.",
+      "content_role": "verse",
+      "exact_text": "30. Ones 22<sup>nd</sup> /27<sup>th</sup> year will confer marriage, if Shukra is in Yuvati from the 8<sup>th</sup> Bhava (i.e. Dhan from Lagna), while his dispositor is yuti with Mangal.",
+      "pdf_pages": [
+        35
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 18 · Sloka 30 · PDF page 35 · bphs-97:santhanam:ch18:v30",
+      "previous_atom_id": "bphs-97:santhanam:ch18:v29",
+      "next_atom_id": "bphs-97:santhanam:ch18:v31",
+      "context_before": "abh, while Lagn Lord is in Karm.\n\n29. An exchange between the Lords of Dhan and Labh will bring marriage 13 years after birth.\n\n",
+      "context_after": "31. Should Yuvati Lord be in Vyaya, while the natal Lord is in Yuvati in Navamsa, marriage will be in 23<sup>rd</sup> /26<sup>th",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch18:v31": {
+      "evidence_atom_id": "bphs-97:santhanam:ch18:v31",
+      "chapter_number": 18,
+      "chapter_title": "Effects of Yuvati Bhava",
+      "verse_label": "31.",
+      "content_role": "verse",
+      "exact_text": "31. Should Yuvati Lord be in Vyaya, while the natal Lord is in Yuvati in Navamsa, marriage will be in 23<sup>rd</sup> /26<sup>th</sup> year of age.",
+      "pdf_pages": [
+        35
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 18 · Sloka 31 · PDF page 35 · bphs-97:santhanam:ch18:v31",
+      "previous_atom_id": "bphs-97:santhanam:ch18:v30",
+      "next_atom_id": "bphs-97:santhanam:ch18:v32",
+      "context_before": "rriage, if Shukra is in Yuvati from the 8<sup>th</sup> Bhava (i.e. Dhan from Lagna), while his dispositor is yuti with Mangal.\n\n",
+      "context_after": "32. Either the 25<sup>th</sup> year, or the 33<sup>rd</sup> year will bring marriage, if Randhr Lord is in Yuvati, as Shukra is ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch18:v32": {
+      "evidence_atom_id": "bphs-97:santhanam:ch18:v32",
+      "chapter_number": 18,
+      "chapter_title": "Effects of Yuvati Bhava",
+      "verse_label": "32.",
+      "content_role": "verse",
+      "exact_text": "32. Either the 25<sup>th</sup> year, or the 33<sup>rd</sup> year will bring marriage, if Randhr Lord is in Yuvati, as Shukra is in Navamsa Lagna.",
+      "pdf_pages": [
+        35
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 18 · Sloka 32 · PDF page 35 · bphs-97:santhanam:ch18:v32",
+      "previous_atom_id": "bphs-97:santhanam:ch18:v31",
+      "next_atom_id": "bphs-97:santhanam:ch18:v33",
+      "context_before": " Should Yuvati Lord be in Vyaya, while the natal Lord is in Yuvati in Navamsa, marriage will be in 23<sup>rd</sup> /26<sup>th</sup> year of age.\n\n",
+      "context_after": "33. Should Shukra be in Dharm from Dharm (i.e. in Putr Bhava), while Rahu is in one of the said Bhavas (i.e. in Putr/Dharm), mar",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch18:v33": {
+      "evidence_atom_id": "bphs-97:santhanam:ch18:v33",
+      "chapter_number": 18,
+      "chapter_title": "Effects of Yuvati Bhava",
+      "verse_label": "33.",
+      "content_role": "verse",
+      "exact_text": "33. Should Shukra be in Dharm from Dharm (i.e. in Putr Bhava), while Rahu is in one of the said Bhavas (i.e. in Putr/Dharm), marriage will take place during 31<sup>st</sup> , or 33<sup>rd</sup> year.",
+      "pdf_pages": [
+        35
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 18 · Sloka 33 · PDF page 35 · bphs-97:santhanam:ch18:v33",
+      "previous_atom_id": "bphs-97:santhanam:ch18:v32",
+      "next_atom_id": "bphs-97:santhanam:ch18:v34",
+      "context_before": " Either the 25<sup>th</sup> year, or the 33<sup>rd</sup> year will bring marriage, if Randhr Lord is in Yuvati, as Shukra is in Navamsa Lagna.\n\n",
+      "context_after": "34. The native will marry at 30, or 27, if Shukra is in Lagna, while the 7<sup>th</sup> Lord is in Yuvati itself.\n\n35-39. TIMING",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch18:v34": {
+      "evidence_atom_id": "bphs-97:santhanam:ch18:v34",
+      "chapter_number": 18,
+      "chapter_title": "Effects of Yuvati Bhava",
+      "verse_label": "34.",
+      "content_role": "verse",
+      "exact_text": "34. The native will marry at 30, or 27, if Shukra is in Lagna, while the 7<sup>th</sup> Lord is in Yuvati itself.",
+      "pdf_pages": [
+        35
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 18 · Sloka 34 · PDF page 35 · bphs-97:santhanam:ch18:v34",
+      "previous_atom_id": "bphs-97:santhanam:ch18:v33",
+      "next_atom_id": "bphs-97:santhanam:ch18:v35-39",
+      "context_before": " is in one of the said Bhavas (i.e. in Putr/Dharm), marriage will take place during 31<sup>st</sup> , or 33<sup>rd</sup> year.\n\n",
+      "context_after": "35-39. TIMING OF WIFE’S DEATH. Loss of wife will occur in the 18<sup>th</sup> year, or 33<sup>rd</sup> year of age of the native",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch18:v35-39": {
+      "evidence_atom_id": "bphs-97:santhanam:ch18:v35-39",
+      "chapter_number": 18,
+      "chapter_title": "Effects of Yuvati Bhava",
+      "verse_label": "35-39.",
+      "content_role": "verse",
+      "exact_text": "35-39. TIMING OF WIFE’S DEATH. Loss of wife will occur in the 18<sup>th</sup> year, or 33<sup>rd</sup> year of age of the native, if Yuvati Lord is in fall, while Shukra is in Randhr. One will lose his spouse in his 19<sup>th</sup> year, if Yuvati Lord is in the 8<sup>th</sup> , while Vyaya Lord is in Yuvati. The native’s wife will die within three days of marriage due to snake bite, if the native has Rahu in Dhan and Mangal in Yuvati. If Shukra is in Randhr, while his dispositor is in a Rashiof Shani, death of wife will take place during the native’s 12<sup>th</sup> , or 21<sup>st</sup> year of age. Should the ascendat Lord be in his Rashiof debilitation, as Dhan Lord is in Randhr, loss of wife will occur in the 13<sup>th</sup> year of age.",
+      "pdf_pages": [
+        35
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 18 · Sloka 35-39 · PDF page 35 · bphs-97:santhanam:ch18:v35-39",
+      "previous_atom_id": "bphs-97:santhanam:ch18:v34",
+      "next_atom_id": "bphs-97:santhanam:ch18:v40-41",
+      "context_before": "/sup> year.\n\n34. The native will marry at 30, or 27, if Shukra is in Lagna, while the 7<sup>th</sup> Lord is in Yuvati itself.\n\n",
+      "context_after": "40-41. THREE MARRIAGES. Should Chandra be in Yuvati from Shukr, while Budh is in Yuvati from Chandra and Randhr Lord is in Putr ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch18:v40-41": {
+      "evidence_atom_id": "bphs-97:santhanam:ch18:v40-41",
+      "chapter_number": 18,
+      "chapter_title": "Effects of Yuvati Bhava",
+      "verse_label": "40-41.",
+      "content_role": "verse",
+      "exact_text": "40-41. THREE MARRIAGES. Should Chandra be in Yuvati from Shukr, while Budh is in Yuvati from Chandra and Randhr Lord is in Putr (from the Lagna), there will be marriage in Karm year followed by another in the 22<sup>nd</sup> year and yet another in the 33<sup>rd</sup> year.",
+      "pdf_pages": [
+        35
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 18 · Sloka 40-41 · PDF page 35 · bphs-97:santhanam:ch18:v40-41",
+      "previous_atom_id": "bphs-97:santhanam:ch18:v35-39",
+      "next_atom_id": "bphs-97:santhanam:ch18:v42",
+      "context_before": " Should the ascendat Lord be in his Rashiof debilitation, as Dhan Lord is in Randhr, loss of wife will occur in the 13<sup>th</sup> year of age.\n\n",
+      "context_after": "42. DEATH OF WlFE. lf Ari, 7<sup>th</sup> and 8<sup>th</sup> are in their order occupied by Mangal, Rahu and Shani, the native’s",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch18:v42": {
+      "evidence_atom_id": "bphs-97:santhanam:ch18:v42",
+      "chapter_number": 18,
+      "chapter_title": "Effects of Yuvati Bhava",
+      "verse_label": "42.",
+      "content_role": "verse",
+      "exact_text": "42. DEATH OF WlFE. lf Ari, 7<sup>th</sup> and 8<sup>th</sup> are in their order occupied by Mangal, Rahu and Shani, the native’s wife will not live (long).",
+      "pdf_pages": [
+        35
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 18 · Sloka 42 · PDF page 35 · bphs-97:santhanam:ch18:v42",
+      "previous_atom_id": "bphs-97:santhanam:ch18:v40-41",
+      "next_atom_id": null,
+      "context_before": " Should Chandra be in Yuvati from Shukr, while Budh is in Yuvati from Chandra and Randhr Lord is in Putr (from the Lagna), there will be marriage in Karm year followed by another in the 22<sup>nd</sup> year and yet another in the 33<sup>rd</sup> year.\n\n",
+      "context_after": "",
+      "content_missing": false
+    }
+  }
+}
