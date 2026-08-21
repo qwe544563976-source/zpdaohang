@@ -1,0 +1,144 @@
+{
+  "shard": 5,
+  "step_count": 1,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch23-v14-lagn-vyaya-lords-exchange-religious-expenses.step-001",
+      "method": {
+        "method": "ch23-v14-lagn-vyaya-lords-exchange-religious-expenses",
+        "title": "开支花在宗教上：上升主落十二宫、十二宫主落上升宫并与金星同宫",
+        "target_house": 12,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的钱会不会花在宗教上",
+          "我是不是会为信仰花钱"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Lagn’s Lord is in Vyaya, while Vyaya’s Lord is in Lagn with Shukr, expenses will be on religious grounds.",
+            "上升主落十二宫 十二宫主落上升 金星同宫 宗教开支"
+          ],
+          "counter_queries": [
+            "If Lagn’s Lord is in Vyaya Bhava and is devoid of benefic Drishti and/or Yuti, the native will be bereft of physical happiness, will spend unfruitfully and be given to much anger.",
+            "If Vyaya’s Lord is in Tanu Bhava, the native will be a spendthrift, be weak in constitution, will suffer from phlegmatic disorders and be devoid of wealth and learning."
+          ],
+          "boundary_queries": [
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Indications of Tanu Bhava"
+          ],
+          "method_queries": [
+            "Effects of Vyaya’s Lord in Various Bhavas",
+            "上升主与十二宫主互换宫位怎么判断"
+          ]
+        },
+        "stop_conditions": [
+          "三项落宫与同宫事实缺任意一条即停止。",
+          "缺少本盘上升主与十二宫主身份时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch23-v14-lagn-vyaya-lords-exchange-religious-expenses.step-001",
+        "action": "核对上升主（Lagn's Lord）是否落十二宫（Vyaya），并核对十二宫主（Vyaya's Lord）是否落上升宫且与金星（Shukra）同宫。",
+        "applicability_scope": "仅限本命盘十二宫（Vyaya Bhava）的开支用途主题；原文三项条件同时成立才下断语；原文未给时间限定，也未给开支金额。",
+        "minimum_supported_claim": "上升主（Lagn's Lord）落十二宫（Vyaya），同时十二宫主（Vyaya's Lord）落上升宫（Lagn）并与金星（Shukr）同宫时，开支会花在宗教方面。",
+        "produced_fact_keys": [
+          "上升主与十二宫主互换加金星的宗教开支判定"
+        ],
+        "required_fact_keys": [
+          "上升主（Lagn's Lord）是否落十二宫（Vyaya）",
+          "十二宫主（Vyaya's Lord）是否落上升宫（Lagna）",
+          "十二宫主（Vyaya's Lord）是否与金星（Shukra）同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "上升主（Lagn's Lord）是否落十二宫（Vyaya）"
+            },
+            {
+              "fact_key": "十二宫主（Vyaya's Lord）是否落上升宫（Lagna）"
+            },
+            {
+              "fact_key": "十二宫主（Vyaya's Lord）是否与金星（Shukra）同宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Lagn’s Lord is in Vyaya",
+              "claim": "上升主（Lagn's Lord）落十二宫（Vyaya）"
+            },
+            {
+              "quote": "Vyaya’s Lord is in Lagn with Shukr",
+              "claim": "十二宫主（Vyaya's Lord）落上升宫（Lagn）并与金星（Shukr）同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "expenses will be on religious grounds",
+              "claim": "开支会花在宗教方面"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch23:v14",
+            "quote": "If Lagn’s Lord is in Vyaya, while Vyaya’s Lord is in Lagn with Shukr, expenses will be on religious grounds.",
+            "pdf_pages": [
+              40
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：上升主（Lagn's Lord）是否落十二宫（Vyaya）、十二宫主（Vyaya's Lord）是否落上升宫（Lagna）、十二宫主（Vyaya's Lord）是否与金星（Shukra）同宫。",
+        "stop_fact_keys": [
+          "上升主（Lagn's Lord）是否落十二宫（Vyaya）",
+          "十二宫主（Vyaya's Lord）是否落上升宫（Lagna）",
+          "十二宫主（Vyaya's Lord）是否与金星（Shukra）同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得缺少金星（Shukra）同宫这一条就下断语。",
+          "不得把「宗教方面的开支」读成必定虔诚、出家或破财。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "01bf8757edeabb5b57275ec343321555092d85deee8e5f0ce8c4a9fde85b265b"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch23:v14": {
+      "evidence_atom_id": "bphs-97:santhanam:ch23:v14",
+      "chapter_number": 23,
+      "chapter_title": "Effects of Vyaya Bhava",
+      "verse_label": "14.",
+      "content_role": "verse",
+      "exact_text": "14. If Lagn’s Lord is in Vyaya, while Vyaya’s Lord is in Lagn with Shukr, expenses will be on religious grounds.",
+      "pdf_pages": [
+        40
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 23 · Sloka 14 · PDF page 40 · bphs-97:santhanam:ch23:v14",
+      "previous_atom_id": "bphs-97:santhanam:ch23:v13",
+      "next_atom_id": null,
+      "context_before": " will be through sinful measures, if Vyaya is occupied by Shani, or Mangal etc. and is not receiving a Drishti from a benefic.\n\n",
+      "context_after": "",
+      "content_missing": false
+    }
+  }
+}

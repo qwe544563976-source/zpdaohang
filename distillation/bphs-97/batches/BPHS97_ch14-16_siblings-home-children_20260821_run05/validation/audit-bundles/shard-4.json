@@ -1,0 +1,2380 @@
+{
+  "shard": 4,
+  "step_count": 15,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch16-v8-issues-with-difficulty.step-001",
+      "method": {
+        "method": "ch16-v8-issues-with-difficulty",
+        "title": "得子艰难：五宫主落凶宫、敌星座、落陷或落回五宫",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我生孩子会不会很难",
+          "我要不要做好难有孩子的准备"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Putr’s Lord inimical Rāśi in fall beget issues with difficulty",
+            "五宫主落敌星座 落陷 得子艰难"
+          ],
+          "counter_queries": [
+            "Putr’s Lord in own Rāśi angle trine happiness through children",
+            "五宫主落吉位 子女顺利 反例"
+          ],
+          "boundary_queries": [
+            "difficulty in begetting issues rule boundary",
+            "得子艰难断语的适用边界"
+          ],
+          "method_queries": [
+            "how to evaluate Putr’s Lord dignity and house",
+            "怎样评估五宫主的落宫与庙陷友敌"
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫主行星身份事实时停止。",
+          "缺少五宫主落宫或庙陷友敌事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v8-issues-with-difficulty.step-001",
+        "action": "先定出五宫主是哪颗行星，再逐一核对它是否落第六、第八、第十二宫、敌星座、落陷或落回第五宫。",
+        "applicability_scope": "仅限本命盘得子难易主题；原文只列这六种落点，未给子女人数、性别或时间。",
+        "minimum_supported_claim": "五宫主落六宫、八宫、十二宫，或落敌星座，或落陷，或落五宫本宫时，得子艰难。",
+        "produced_fact_keys": [
+          "五宫主落点不利得子艰难判定"
+        ],
+        "required_fact_keys": [
+          "本盘五宫主是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘五宫主是哪颗行星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "五宫主是否落在第六宫（Ari Bhava）"
+                },
+                {
+                  "fact_key": "五宫主是否落在第八宫（Randhr Bhava）"
+                },
+                {
+                  "fact_key": "五宫主是否落在第十二宫（Vyaya Bhava）"
+                },
+                {
+                  "fact_key": "五宫主是否落在敌星座"
+                },
+                {
+                  "fact_key": "五宫主是否处于落陷状态"
+                },
+                {
+                  "fact_key": "五宫主是否落在第五宫本宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘五宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "五宫主是否落在第六宫（Ari Bhava）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫主是否落在第六宫（Ari Bhava）"
+            },
+            "selection_group": "ch16-v8-issues-with-difficulty.step-001:unfavourable-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫主是否落在第六宫（Ari Bhava）。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘五宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "五宫主是否落在第八宫（Randhr Bhava）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫主是否落在第八宫（Randhr Bhava）"
+            },
+            "selection_group": "ch16-v8-issues-with-difficulty.step-001:unfavourable-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫主是否落在第八宫（Randhr Bhava）。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘五宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "五宫主是否落在第十二宫（Vyaya Bhava）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫主是否落在第十二宫（Vyaya Bhava）"
+            },
+            "selection_group": "ch16-v8-issues-with-difficulty.step-001:unfavourable-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫主是否落在第十二宫（Vyaya Bhava）。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘五宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "五宫主是否落在敌星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫主是否落在敌星座"
+            },
+            "selection_group": "ch16-v8-issues-with-difficulty.step-001:unfavourable-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫主是否落在敌星座。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘五宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "五宫主是否处于落陷状态"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫主是否处于落陷状态"
+            },
+            "selection_group": "ch16-v8-issues-with-difficulty.step-001:unfavourable-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫主是否处于落陷状态。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘五宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "五宫主是否落在第五宫本宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫主是否落在第五宫本宫"
+            },
+            "selection_group": "ch16-v8-issues-with-difficulty.step-001:unfavourable-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫主是否落在第五宫本宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Putr’s Lord is in Ari",
+              "claim": "五宫主落六宫"
+            },
+            {
+              "quote": "Randhr",
+              "claim": "八宫"
+            },
+            {
+              "quote": "Vyaya Bhava",
+              "claim": "十二宫"
+            },
+            {
+              "quote": "be in an inimical Rāśi",
+              "claim": "落敌星座"
+            },
+            {
+              "quote": "be in fall",
+              "claim": "落陷"
+            },
+            {
+              "quote": "or in Putr itself",
+              "claim": "落五宫本宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will beget issues with difficulty",
+              "claim": "得子艰难"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v8",
+            "quote": "If Putr’s Lord is in Ari, Randhr, or Vyaya Bhava, or be in an inimical Rāśi, or be in fall, or in Putr itself, the native will beget issues with difficulty.",
+            "pdf_pages": [
+              30
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘五宫主是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘五宫主是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把“艰难”升级成无子或子女去世。",
+          "不得据此推断得子的年龄或年份。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "f559ae12644106d8976d6718ab567bf3b8c03e2e036539b338d02ff8e25622d5"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch16-v9-adopted-issues-shani-budh.step-001",
+      "method": {
+        "method": "ch16-v9-adopted-issues-shani-budh",
+        "title": "养子女：五宫由土星或水星主管，并被土星与曼迪占据或相照",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会领养孩子",
+          "我的孩子是不是不是亲生的"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Putr Bhava owned by Shani Budh drishtied by Shani and Mandi adopted issues",
+            "五宫由土星或水星主管 土星曼迪占据相照 养子女"
+          ],
+          "counter_queries": [
+            "Putr Bhava strong Guru own children",
+            "五宫得木星力量 亲生子女 反例"
+          ],
+          "boundary_queries": [
+            "adopted issues rule scope Mandi drishti",
+            "养子女断语的适用边界与曼迪相照"
+          ],
+          "method_queries": [
+            "how to find the lord and occupants of Putr Bhava",
+            "怎样确定五宫宫主与五宫内的行星"
+          ]
+        },
+        "stop_conditions": [
+          "缺少第五宫星座与宫主事实时停止。",
+          "缺少土星与曼迪对第五宫的占据或相照事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v9-adopted-issues-shani-budh.step-001",
+        "action": "先定出第五宫落在哪个星座与由谁主管，再核对土星与曼迪是占据还是相照第五宫。",
+        "applicability_scope": "仅限本命盘领养子女主题；原文只给这一组主管与占据相照条件，未给领养时间或人数。",
+        "minimum_supported_claim": "五宫由土星（Shani）或水星（Budh）主管，并且被土星与曼迪（Mandi）占据或相照时，会有养子女。",
+        "produced_fact_keys": [
+          "五宫土星水星主管得养子女判定"
+        ],
+        "required_fact_keys": [
+          "本盘第五宫落在哪个星座"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘第五宫落在哪个星座"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "第五宫是否由土星（Shani）主管"
+                },
+                {
+                  "fact_key": "第五宫是否由水星（Budh）主管"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "第五宫是否被土星与曼迪（Mandi）占据"
+                },
+                {
+                  "fact_key": "第五宫是否被土星与曼迪（Mandi）相照"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘第五宫落在哪个星座"
+            },
+            "required_fact_keys": [
+              "第五宫是否由土星（Shani）主管"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "第五宫是否由土星（Shani）主管"
+            },
+            "selection_group": "ch16-v9-adopted-issues-shani-budh.step-001:owner",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：第五宫是否由土星（Shani）主管。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘第五宫落在哪个星座"
+            },
+            "required_fact_keys": [
+              "第五宫是否由水星（Budh）主管"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "第五宫是否由水星（Budh）主管"
+            },
+            "selection_group": "ch16-v9-adopted-issues-shani-budh.step-001:owner",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：第五宫是否由水星（Budh）主管。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘第五宫落在哪个星座"
+            },
+            "required_fact_keys": [
+              "第五宫是否被土星与曼迪（Mandi）占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "第五宫是否被土星与曼迪（Mandi）占据"
+            },
+            "selection_group": "ch16-v9-adopted-issues-shani-budh.step-001:contact",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：第五宫是否被土星与曼迪（Mandi）占据。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘第五宫落在哪个星座"
+            },
+            "required_fact_keys": [
+              "第五宫是否被土星与曼迪（Mandi）相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "第五宫是否被土星与曼迪（Mandi）相照"
+            },
+            "selection_group": "ch16-v9-adopted-issues-shani-budh.step-001:contact",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：第五宫是否被土星与曼迪（Mandi）相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Putr Bhava be owned by Shani",
+              "claim": "五宫由土星（Shani）"
+            },
+            {
+              "quote": "or Budh",
+              "claim": "水星（Budh）"
+            },
+            {
+              "quote": "be occupied, or drishtied by Shani and Mandi",
+              "claim": "被土星与曼迪（Mandi）占据或相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "one will have adopted issues",
+              "claim": "会有养子女"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v9",
+            "quote": "Should Putr Bhava be owned by Shani, or Budh and be occupied, or drishtied by Shani and Mandi, one will have adopted issues.",
+            "pdf_pages": [
+              30
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘第五宫落在哪个星座。",
+        "stop_fact_keys": [
+          "本盘第五宫落在哪个星座"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断领养的时间、人数或性别。",
+          "不得把养子女改写成亲生子女的吉凶。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "6383713e04127c4d85e11827f644c2357589356a8a33e586215dbe3fd7504347"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch16-v10-three-mothers-two-fathers.step-001",
+      "method": {
+        "method": "ch16-v10-three-mothers-two-fathers",
+        "title": "由三母或两父抚养：太阳与月亮同星座且同九分盘",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我小时候是不是被别人带大的",
+          "我会不会有继父继母"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Surya and Chandra together in same Navāńś three mothers two fathers",
+            "太阳月亮同星座 同九分盘 三位母亲 两位父亲"
+          ],
+          "counter_queries": [
+            "Surya Chandra in different Rāśis parents",
+            "日月不同星座 抚养者 反例"
+          ],
+          "boundary_queries": [
+            "Navāńś sameness requirement scope",
+            "同九分盘条件的适用边界"
+          ],
+          "method_queries": [
+            "how to compare Rāśi and Navāńś of Surya and Chandra",
+            "怎样比对太阳与月亮的星座和九分盘"
+          ]
+        },
+        "stop_conditions": [
+          "缺少太阳与月亮的星座事实时停止。",
+          "缺少太阳与月亮的九分盘事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v10-three-mothers-two-fathers.step-001",
+        "action": "核对太阳与月亮是否同落一个星座，并核对两者是否同落一个九分盘。",
+        "applicability_scope": "仅限本命盘抚养者主题；原文只说三位母亲或两位父亲，未给年龄、年份或原因。",
+        "minimum_supported_claim": "太阳（Surya）与月亮（Chandra）同落一个星座、并同落同一九分盘（Navāńś）时，此人由三位母亲、或两位父亲抚养。",
+        "produced_fact_keys": [
+          "日月同座同九分盘多抚养者判定"
+        ],
+        "required_fact_keys": [
+          "太阳（Surya）与月亮（Chandra）是否同落一个星座",
+          "太阳（Surya）与月亮（Chandra）是否同落一个九分盘（Navāńś）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "太阳（Surya）与月亮（Chandra）是否同落一个星座"
+            },
+            {
+              "fact_key": "太阳（Surya）与月亮（Chandra）是否同落一个九分盘（Navāńś）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Surya and Chandra be together in a Rashiand",
+              "claim": "太阳（Surya）与月亮（Chandra）同落一个星座"
+            },
+            {
+              "quote": "in the same Navāńś",
+              "claim": "并同落同一九分盘"
+            }
+          ],
+          "results": [
+            {
+              "quote": "brought up by three mothers",
+              "claim": "由三位母亲"
+            },
+            {
+              "quote": "or two fathers",
+              "claim": "或两位父亲抚养"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v10",
+            "quote": "Should Surya and Chandra be together in a Rashiand in the same Navāńś, the native will be brought up by three mothers, or two fathers.",
+            "pdf_pages": [
+              30,
+              31
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：太阳（Surya）与月亮（Chandra）是否同落一个星座、太阳（Surya）与月亮（Chandra）是否同落一个九分盘（Navāńś）。",
+        "stop_fact_keys": [
+          "太阳（Surya）与月亮（Chandra）是否同落一个星座",
+          "太阳（Surya）与月亮（Chandra）是否同落一个九分盘（Navāńś）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把三位母亲或两位父亲的人数改成其他数字。",
+          "不得据此推断父母的生死或婚姻状况。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "7158da3b374833b9aba52efc5e7d50d8be8f5ba80ba1438e159bf26d92c72d7c"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch16-v11-adopted-issue-six-grahas.step-001",
+      "method": {
+        "method": "ch16-v11-adopted-issue-six-grahas",
+        "title": "养子女：五宫聚六星、五宫主落十二宫、月亮与上升有力",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会领养孩子",
+          "我的孩子会不会不是自己生的"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Putr tenanted by six Grahas Lord in Vyaya Chandra Lagn strength adopted issue",
+            "五宫六颗行星 五宫主落十二宫 月亮上升有力 养子女"
+          ],
+          "counter_queries": [
+            "Putr Bhava strong lord own children",
+            "五宫主有力 亲生子女 反例"
+          ],
+          "boundary_queries": [
+            "six Grahas in Putr requirement boundary",
+            "五宫聚六星条件的适用边界"
+          ],
+          "method_queries": [
+            "how to count Grahas tenanting Putr Bhava",
+            "怎样数第五宫里的行星数量"
+          ]
+        },
+        "stop_conditions": [
+          "缺少第五宫内行星数量事实时停止。",
+          "缺少五宫主落宫或月亮上升力量事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v11-adopted-issue-six-grahas.step-001",
+        "action": "数清第五宫内的行星是否达到六颗，核对五宫主是否落第十二宫，并核对月亮与上升是否有力。",
+        "applicability_scope": "仅限本命盘领养子女主题；原文只给这一组条件，未给领养时间、人数或性别。",
+        "minimum_supported_claim": "五宫（Putr）中有六颗行星、五宫主落十二宫（Vyaya Bhava）、且月亮（Chandra）与上升（Lagn）都有力时，主养子女。",
+        "produced_fact_keys": [
+          "五宫聚六星养子女判定"
+        ],
+        "required_fact_keys": [
+          "第五宫（Putr）内是否有六颗行星",
+          "五宫主是否落在第十二宫（Vyaya Bhava）",
+          "月亮（Chandra）与上升（Lagn）是否都有力量"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "第五宫（Putr）内是否有六颗行星"
+            },
+            {
+              "fact_key": "五宫主是否落在第十二宫（Vyaya Bhava）"
+            },
+            {
+              "fact_key": "月亮（Chandra）与上升（Lagn）是否都有力量"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if Putr is tenanted by six Grahas",
+              "claim": "五宫（Putr）中有六颗行星"
+            },
+            {
+              "quote": "while its Lord is in Vyaya Bhava",
+              "claim": "五宫主落十二宫（Vyaya Bhava）"
+            },
+            {
+              "quote": "Chandra and Lagn are endowed with strength",
+              "claim": "月亮（Chandra）与上升（Lagn）都有力"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Adopted issue is indicated",
+              "claim": "主养子女"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v11",
+            "quote": "Adopted issue is indicated, if Putr is tenanted by six Grahas, while its Lord is in Vyaya Bhava and Chandra and Lagn are endowed with strength.",
+            "pdf_pages": [
+              31
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：第五宫（Putr）内是否有六颗行星、五宫主是否落在第十二宫（Vyaya Bhava）、月亮（Chandra）与上升（Lagn）是否都有力量。",
+        "stop_fact_keys": [
+          "第五宫（Putr）内是否有六颗行星",
+          "五宫主是否落在第十二宫（Vyaya Bhava）",
+          "月亮（Chandra）与上升（Lagn）是否都有力量"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把六颗行星放宽成五颗或更少。",
+          "不得据此推断领养的时间或子女人数。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "a3bd87f7479ad5af055dbf157b298fcaa5037dcdea57e3de85189787b790051e"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch16-v12-many-children.step-001",
+      "method": {
+        "method": "ch16-v12-many-children",
+        "title": "子女众多：五宫主有力且五宫受有力的水星木星金星相照",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会有几个孩子",
+          "我是不是子女缘旺"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Putr’s Lord strong Putr drishtied by strong Budh Guru Shukr many children",
+            "五宫主有力 五宫受水星木星金星相照 子女众多"
+          ],
+          "counter_queries": [
+            "Putr’s Lord in fall no children",
+            "五宫主落陷 无子 反例"
+          ],
+          "boundary_queries": [
+            "many children rule scope strength requirement",
+            "多子断语对力量条件的要求与边界"
+          ],
+          "method_queries": [
+            "how to check drishti of Budh Guru Shukr on Putr Bhava",
+            "怎样查水星木星金星对五宫的相照"
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫主力量事实时停止。",
+          "缺少水星木星金星对第五宫相照的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v12-many-children.step-001",
+        "action": "核对五宫主是否有力，并核对第五宫是否同时受有力的水星、木星与金星相照。",
+        "applicability_scope": "仅限本命盘子女人数主题；原文只说众多，未给具体数字、性别或出生年份。",
+        "minimum_supported_claim": "五宫主有力、且五宫（Putr）受有力的水星（Budh）、木星（Guru）与金星（Shukr）相照时，子女众多。",
+        "produced_fact_keys": [
+          "五宫得力受吉相照多子判定"
+        ],
+        "required_fact_keys": [
+          "五宫主是否有力量",
+          "第五宫（Putr）是否受有力的水星（Budh）、木星（Guru）与金星（Shukr）相照"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "五宫主是否有力量"
+            },
+            {
+              "fact_key": "第五宫（Putr）是否受有力的水星（Budh）、木星（Guru）与金星（Shukr）相照"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if Putr’s Lord is strong",
+              "claim": "五宫主有力"
+            },
+            {
+              "quote": "while Putr is drishtied by strong Budh, Guru and Shukr",
+              "claim": "五宫（Putr）受有力的水星（Budh）、木星（Guru）与金星（Shukr）相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "There will be many children",
+              "claim": "子女众多"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v12",
+            "quote": "There will be many children, if Putr’s Lord is strong, while Putr is drishtied by strong Budh, Guru and Shukr.",
+            "pdf_pages": [
+              31
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：五宫主是否有力量、第五宫（Putr）是否受有力的水星（Budh）、木星（Guru）与金星（Shukr）相照。",
+        "stop_fact_keys": [
+          "五宫主是否有力量",
+          "第五宫（Putr）是否受有力的水星（Budh）、木星（Guru）与金星（Shukr）相照"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把“众多”换算成具体子女人数。",
+          "不得据此推断子女的性别或出生时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "bbbb280f85ef3c8635232e4f9a6bddc886a301b8ed21b018ec0bbbc88b080659"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch16-v13-daughters-chandra.step-001",
+      "method": {
+        "method": "ch16-v13-daughters-chandra",
+        "title": "生女儿：五宫主与月亮同宫或落月亮的三分盘",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会生儿子还是女儿",
+          "我是不是会有女儿"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Putr’s Lord with Chandra or in her Decanate beget daughters",
+            "五宫主与月亮同宫 月亮三分盘 生女儿"
+          ],
+          "counter_queries": [
+            "Putr’s Lord with Surya sons",
+            "五宫主与太阳相关 生子 反例"
+          ],
+          "boundary_queries": [
+            "Decanate of Chandra definition scope daughters rule",
+            "月亮三分盘条件的界定与边界"
+          ],
+          "method_queries": [
+            "how to find the Decanate of Putr’s Lord",
+            "怎样查五宫主所在的三分盘"
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫主行星身份事实时停止。",
+          "缺少五宫主与月亮的同宫或三分盘事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v13-daughters-chandra.step-001",
+        "action": "先定出五宫主是哪颗行星，再核对它是否与月亮同宫，或是否落在月亮的三分盘中。",
+        "applicability_scope": "仅限本命盘子女性别主题；原文只说会生女儿，未给女儿人数或出生年份。原文以「so say Jyotishis」结尾，是转述占星家之说，不是 Parashara 自断，结论强度低于本章其他直断条目。",
+        "minimum_supported_claim": "五宫主与月亮（Chandra）同宫、或落在月亮的三分盘（Decanate）中时，此人生女儿。",
+        "produced_fact_keys": [
+          "五宫主属月得女判定"
+        ],
+        "required_fact_keys": [
+          "本盘五宫主是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘五宫主是哪颗行星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "五宫主是否与月亮（Chandra）同宫"
+                },
+                {
+                  "fact_key": "五宫主是否落在月亮主管的三分盘（Decanate）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘五宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "五宫主是否与月亮（Chandra）同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫主是否与月亮（Chandra）同宫"
+            },
+            "selection_group": "ch16-v13-daughters-chandra.step-001:chandra-link",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫主是否与月亮（Chandra）同宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘五宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "五宫主是否落在月亮主管的三分盘（Decanate）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫主是否落在月亮主管的三分盘（Decanate）"
+            },
+            "selection_group": "ch16-v13-daughters-chandra.step-001:chandra-link",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫主是否落在月亮主管的三分盘（Decanate）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Putr’s Lord is with Chandra",
+              "claim": "五宫主与月亮（Chandra）同宫"
+            },
+            {
+              "quote": "or is in her Decanate",
+              "claim": "或落在月亮的三分盘（Decanate）中"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will beget daughters",
+              "claim": "此人生女儿"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v13",
+            "quote": "If Putr’s Lord is with Chandra, or is in her Decanate, the native will beget daughters; so say Jyotishis.",
+            "pdf_pages": [
+              31
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘五宫主是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘五宫主是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断女儿的人数或出生年份。",
+          "不得把生女儿改写成不会有儿子。",
+          "不得把这条转述之说当作与 Parashara 自断同等强度的结论。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "7f4f474b52b19fbd40f07eb038a72a79f8779d3b51959465ac06877b397bb4a5"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch16-v14-questionable-birth.step-001",
+      "method": {
+        "method": "ch16-v14-questionable-birth",
+        "title": "子女出身可疑：五宫主落动星座、土星落五宫、罗睺与月亮同宫",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我孩子的出身会不会有争议",
+          "我的子女宫有没有出身方面的隐患"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Putr’s Lord Movable Rāśi Shani in Putr Rahu with Chandra questionable birth",
+            "五宫主落动星座 土星落五宫 罗睺月亮同宫 出身可疑"
+          ],
+          "counter_queries": [
+            "benefic in Putr Bhava cancels questionable birth of child",
+            "五宫受吉星 子女出身可疑被取消"
+          ],
+          "boundary_queries": [
+            "questionable birth Putr Bhava scope of application",
+            "子女出身可疑断语的适用边界"
+          ],
+          "method_queries": [
+            "how to judge legitimacy of children from Putr Bhava",
+            "判断子女出身要检查哪些因素"
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫主所落星座性质事实时停止。",
+          "缺少土星落宫事实时停止。",
+          "缺少罗睺与月亮同宫关系事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v14-questionable-birth.step-001",
+        "action": "核对五宫主所落星座性质、土星是否落五宫、罗睺是否与月亮同宫，判断所生子女的出身是否可疑。",
+        "applicability_scope": "仅限本命五宫子女出身主题；原文未给上升、时间或大运限定。",
+        "minimum_supported_claim": "五宫主落动星座、土星落五宫、罗睺与月亮同宫时，所生子女出身可疑。",
+        "produced_fact_keys": [
+          "子女出身可疑判定"
+        ],
+        "required_fact_keys": [
+          "五宫主是否落动星座",
+          "土星是否落五宫",
+          "罗睺是否与月亮同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "五宫主是否落动星座"
+            },
+            {
+              "fact_key": "土星是否落五宫"
+            },
+            {
+              "fact_key": "罗睺是否与月亮同宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Putr’s Lord is in a Movable Rāśi",
+              "claim": "五宫主落动星座"
+            },
+            {
+              "quote": "Shani is in Putr",
+              "claim": "土星落五宫"
+            },
+            {
+              "quote": "Rahu is with Chandra",
+              "claim": "罗睺与月亮同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the child (so born) is of questionable birth",
+              "claim": "所生子女出身可疑"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v14",
+            "quote": "If Putr’s Lord is in a Movable Rāśi, while Shani is in Putr, as Rahu is with Chandra, the child (so born) is of questionable birth.",
+            "pdf_pages": [
+              31
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：五宫主是否落动星座、土星是否落五宫、罗睺是否与月亮同宫。",
+        "stop_fact_keys": [
+          "五宫主是否落动星座",
+          "土星是否落五宫",
+          "罗睺是否与月亮同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断子女数量、性别或出生时间。",
+          "不得把子女出身可疑扩大成对父母品行的断语。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "9e97e456a08dbcba4b44a187ad6f1cbf7e2e5e2d26f06e2cde56e4a865a4c688"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch16-v15-born-of-others-loins.step-001",
+      "method": {
+        "method": "ch16-v15-born-of-others-loins",
+        "title": "出自他人血脉：月亮落上升起第8宫、木星落月亮起第8宫并有凶星相照或同宫",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的出身有没有问题",
+          "我是不是亲生的这件事星盘怎么说"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Chandra 8th from Lagna Guru 8th from Chandra born of other’s loins",
+            "月亮落上升第8宫 木星落月亮第8宫 出自他人血脉"
+          ],
+          "counter_queries": [
+            "Yog without malefic Drishti or Yuti not effective",
+            "无凶星相照或同宫 该瑜伽不成立"
+          ],
+          "boundary_queries": [
+            "malefic Drishti or Yuti essential in this Yog condition",
+            "凶星相照或同宫作为必要条件的边界"
+          ],
+          "method_queries": [
+            "how to judge birth from other’s loins in BPHS",
+            "判断出身血脉要看哪些组合"
+          ]
+        },
+        "stop_conditions": [
+          "缺少月亮相对上升宫位事实时停止。",
+          "缺少木星相对月亮宫位事实时停止。",
+          "缺少凶星相照与同宫两项分支事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v15-born-of-others-loins.step-001",
+        "action": "核对月亮相对上升的宫位、木星相对月亮的宫位，再核对该组合是否有凶星相照或与凶星同宫，判断此人是否出自他人血脉。",
+        "applicability_scope": "仅限本命出身血脉主题；原文只要求本条所述凶星相照或同宫，未给时间或大运限定。",
+        "minimum_supported_claim": "月亮落上升起第8宫、木星落月亮起第8宫，且有凶星相照或与凶星同宫时，此人出自他人血脉。",
+        "produced_fact_keys": [
+          "出自他人血脉判定"
+        ],
+        "required_fact_keys": [
+          "月亮是否落上升起第8宫",
+          "木星是否落月亮起第8宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "月亮是否落上升起第8宫"
+                },
+                {
+                  "fact_key": "木星是否落月亮起第8宫"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "该组合是否受凶星相照"
+                },
+                {
+                  "fact_key": "该组合是否与凶星同宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "月亮是否落上升起第8宫"
+                },
+                {
+                  "fact_key": "木星是否落月亮起第8宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "该组合是否受凶星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "该组合是否受凶星相照"
+            },
+            "selection_group": "ch16-v15-born-of-others-loins.step-001:malefic-link",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：该组合是否受凶星相照。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "月亮是否落上升起第8宫"
+                },
+                {
+                  "fact_key": "木星是否落月亮起第8宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "该组合是否与凶星同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "该组合是否与凶星同宫"
+            },
+            "selection_group": "ch16-v15-born-of-others-loins.step-001:malefic-link",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：该组合是否与凶星同宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Chandra is in the 8<sup>th</sup> from Lagna",
+              "claim": "月亮落上升起第8宫"
+            },
+            {
+              "quote": "Guru is in the 8<sup>th</sup> from Chandra",
+              "claim": "木星落月亮起第8宫"
+            },
+            {
+              "quote": "Malefic’s Drishti",
+              "claim": "有凶星相照"
+            },
+            {
+              "quote": "Yuti is essential in this Yog",
+              "claim": "与凶星同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native is born of other’s loins",
+              "claim": "此人出自他人血脉"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v15",
+            "quote": "Undoubtedly the native is born of other’s loins, if Chandra is in the 8<sup>th</sup> from Lagna, while Guru is in the 8<sup>th</sup> from Chandra. Malefic’s Drishti, or Yuti is essential in this Yog.",
+            "pdf_pages": [
+              31
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：月亮是否落上升起第8宫、木星是否落月亮起第8宫。",
+        "stop_fact_keys": [
+          "月亮是否落上升起第8宫",
+          "木星是否落月亮起第8宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "没有凶星相照或同宫时不得下此断语。",
+          "不得据此推断父母姓名、婚姻状况或具体年份。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "1f8be9df3ccd92d20514cfea5ae9da33777e1ae079c042eb60e18145a7545daf"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch16-v16-obtainment-of-children.step-001",
+      "method": {
+        "method": "ch16-v16-obtainment-of-children",
+        "title": "得子有望：五宫主入旺、落二五九宫或与木星同宫相照",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子会不会有孩子",
+          "我能不能顺利得子"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Putr’s Lord exalted or in Dhan Putr Dharm Bhava obtainment of children",
+            "五宫主入旺 落二宫五宫九宫 与木星同宫相照 得子"
+          ],
+          "counter_queries": [
+            "Putr’s Lord in fall or with malefics denial of children",
+            "五宫主落陷 与凶星同宫 无子"
+          ],
+          "boundary_queries": [
+            "obtainment of children rule applicability Putr Bhava",
+            "得子有无判断的适用边界"
+          ],
+          "method_queries": [
+            "how to judge whether one will have children BPHS",
+            "判断有没有孩子应检查五宫主什么状态"
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫主旺陷状态状态事实时停止。",
+          "缺少五宫主落宫事实时停止。",
+          "缺少五宫主与木星同宫或相照事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v16-obtainment-of-children.step-001",
+        "action": "核对五宫主是否入旺，判断是否有子女可得。",
+        "applicability_scope": "仅限本命五宫得子有无主题；原文未给数量、时间或上升限定。",
+        "minimum_supported_claim": "五宫主入旺时，会有子女可得。",
+        "produced_fact_keys": [
+          "五宫主入旺得子判定"
+        ],
+        "required_fact_keys": [
+          "五宫主是否入旺"
+        ],
+        "condition_logic": {
+          "fact_key": "五宫主是否入旺"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Putr’s Lord is exalted",
+              "claim": "五宫主入旺"
+            }
+          ],
+          "results": [
+            {
+              "quote": "obtainment of children will be there",
+              "claim": "会有子女可得"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v16",
+            "quote": "If Putr’s Lord is exalted",
+            "pdf_pages": [
+              31
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v16",
+            "quote": "obtainment of children will be there",
+            "pdf_pages": [
+              31
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：五宫主是否入旺。",
+        "stop_fact_keys": [
+          "五宫主是否入旺"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断子女数量、性别或得子年份。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "3f84533f8b26b66c5d20447f5ea9208da63e925361345e8d9e7bc4ae98a85fce"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch16-v16-obtainment-of-children.step-002",
+      "method": {
+        "method": "ch16-v16-obtainment-of-children",
+        "title": "得子有望：五宫主入旺、落二五九宫或与木星同宫相照",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子会不会有孩子",
+          "我能不能顺利得子"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Putr’s Lord exalted or in Dhan Putr Dharm Bhava obtainment of children",
+            "五宫主入旺 落二宫五宫九宫 与木星同宫相照 得子"
+          ],
+          "counter_queries": [
+            "Putr’s Lord in fall or with malefics denial of children",
+            "五宫主落陷 与凶星同宫 无子"
+          ],
+          "boundary_queries": [
+            "obtainment of children rule applicability Putr Bhava",
+            "得子有无判断的适用边界"
+          ],
+          "method_queries": [
+            "how to judge whether one will have children BPHS",
+            "判断有没有孩子应检查五宫主什么状态"
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫主旺陷状态状态事实时停止。",
+          "缺少五宫主落宫事实时停止。",
+          "缺少五宫主与木星同宫或相照事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v16-obtainment-of-children.step-002",
+        "action": "先取得五宫主所落宫位，再核对是否落二宫、五宫或九宫，判断是否有子女可得。",
+        "applicability_scope": "仅限本命五宫得子有无主题；原文只列二宫、五宫、九宫三处落宫，未给数量或时间限定。",
+        "minimum_supported_claim": "五宫主落二宫、五宫或九宫之一时，会有子女可得。",
+        "produced_fact_keys": [
+          "五宫主吉宫得子判定"
+        ],
+        "required_fact_keys": [
+          "本盘五宫主落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘五宫主落在哪一宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "五宫主是否落二宫"
+                },
+                {
+                  "fact_key": "五宫主是否落五宫"
+                },
+                {
+                  "fact_key": "五宫主是否落九宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘五宫主落在哪一宫"
+            },
+            "required_fact_keys": [
+              "五宫主是否落二宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫主是否落二宫"
+            },
+            "selection_group": "ch16-v16-obtainment-of-children.step-002:lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫主是否落二宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘五宫主落在哪一宫"
+            },
+            "required_fact_keys": [
+              "五宫主是否落五宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫主是否落五宫"
+            },
+            "selection_group": "ch16-v16-obtainment-of-children.step-002:lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫主是否落五宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘五宫主落在哪一宫"
+            },
+            "required_fact_keys": [
+              "五宫主是否落九宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫主是否落九宫"
+            },
+            "selection_group": "ch16-v16-obtainment-of-children.step-002:lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫主是否落九宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "in Dhan, Putr, or Dharm Bhava",
+              "claim": "落二宫、五宫或九宫之一"
+            }
+          ],
+          "results": [
+            {
+              "quote": "obtainment of children will be there",
+              "claim": "会有子女可得"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v16",
+            "quote": "be in Dhan, Putr, or Dharm Bhava",
+            "pdf_pages": [
+              31
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v16",
+            "quote": "obtainment of children will be there",
+            "pdf_pages": [
+              31
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘五宫主落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘五宫主落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把二宫、五宫、九宫以外的落宫也算作本条件。",
+          "不得据此推断子女数量或得子年份。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "3b3e3972f02fbb4d186d035b67b9660e26e1033a1f33c476341dbb1a0b22daaf"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch16-v16-obtainment-of-children.step-003",
+      "method": {
+        "method": "ch16-v16-obtainment-of-children",
+        "title": "得子有望：五宫主入旺、落二五九宫或与木星同宫相照",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子会不会有孩子",
+          "我能不能顺利得子"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Putr’s Lord exalted or in Dhan Putr Dharm Bhava obtainment of children",
+            "五宫主入旺 落二宫五宫九宫 与木星同宫相照 得子"
+          ],
+          "counter_queries": [
+            "Putr’s Lord in fall or with malefics denial of children",
+            "五宫主落陷 与凶星同宫 无子"
+          ],
+          "boundary_queries": [
+            "obtainment of children rule applicability Putr Bhava",
+            "得子有无判断的适用边界"
+          ],
+          "method_queries": [
+            "how to judge whether one will have children BPHS",
+            "判断有没有孩子应检查五宫主什么状态"
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫主旺陷状态状态事实时停止。",
+          "缺少五宫主落宫事实时停止。",
+          "缺少五宫主与木星同宫或相照事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v16-obtainment-of-children.step-003",
+        "action": "先取得五宫主是哪颗行星，再核对它与木星的同宫或相照关系，判断是否有子女可得。",
+        "applicability_scope": "仅限本命五宫得子有无主题；原文只讲与木星的同宫或相照关系，未给数量或时间限定。",
+        "minimum_supported_claim": "五宫主与木星同宫或被木星相照时，会有子女可得。",
+        "produced_fact_keys": [
+          "五宫主木星关联得子判定"
+        ],
+        "required_fact_keys": [
+          "本盘五宫主是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘五宫主是哪颗行星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "五宫主是否与木星同宫"
+                },
+                {
+                  "fact_key": "五宫主是否被木星相照"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘五宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "五宫主是否与木星同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫主是否与木星同宫"
+            },
+            "selection_group": "ch16-v16-obtainment-of-children.step-003:guru-link",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫主是否与木星同宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘五宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "五宫主是否被木星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫主是否被木星相照"
+            },
+            "selection_group": "ch16-v16-obtainment-of-children.step-003:guru-link",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫主是否被木星相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "yuti with, or drishtied by Guru",
+              "claim": "与木星同宫或被木星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "obtainment of children will be there",
+              "claim": "会有子女可得"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v16",
+            "quote": "be yuti with, or drishtied by Guru",
+            "pdf_pages": [
+              31
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v16",
+            "quote": "obtainment of children will be there",
+            "pdf_pages": [
+              31
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘五宫主是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘五宫主是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把木星以外行星的同宫或相照算作本条件。",
+          "不得据此推断子女数量或得子年份。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "de0ae7edb796b87faa2e7edee7a53ca733f389a7373ce6cb4b353cdff98b98f9"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch16-v17-children-of-mean-deeds.step-001",
+      "method": {
+        "method": "ch16-v17-children-of-mean-deeds",
+        "title": "子女行为卑劣：五宫被三或四凶星占据且五宫主落陷",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我孩子的品行会怎么样",
+          "我的子女会不会走歪路"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Putr occupied by three or four malefics Putr’s Lord in fall mean deeds",
+            "五宫三四颗凶星 五宫主落陷 子女卑劣"
+          ],
+          "counter_queries": [
+            "benefic including Budh in Putr excluded combination",
+            "五宫有吉星含水星 组合被排除"
+          ],
+          "boundary_queries": [
+            "number of malefics in Putr Bhava boundary three four",
+            "五宫凶星数量三或四的适用边界"
+          ],
+          "method_queries": [
+            "how to judge character of children from Putr Bhava",
+            "判断子女品行要看五宫哪些条件"
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫内凶星数量事实时停止。",
+          "缺少五宫主庙陷状态事实时停止。",
+          "缺少五宫内是否有吉星（含水星）事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v17-children-of-mean-deeds.step-001",
+        "action": "核对五宫内凶星数量与五宫主是否落陷，并核对五宫内是否有吉星（含水星），判断子女品行。",
+        "applicability_scope": "仅限本命五宫子女品行主题；原文只给三颗或四颗凶星占据这两种数量，未给时间或上升限定。",
+        "minimum_supported_claim": "五宫被三颗或四颗凶星占据、且五宫主落陷时，所得子女会行卑劣之事；五宫中有吉星（含水星）则不算此组合。",
+        "produced_fact_keys": [
+          "子女行为卑劣判定"
+        ],
+        "required_fact_keys": [
+          "五宫主是否落陷",
+          "五宫内是否有吉星（含水星）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "五宫主是否落陷"
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "五宫内是否有吉星（含水星）"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "五宫是否被三颗凶星占据"
+                },
+                {
+                  "fact_key": "五宫是否被四颗凶星占据"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "五宫主是否落陷"
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "五宫内是否有吉星（含水星）"
+                    }
+                  ]
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "五宫是否被三颗凶星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫是否被三颗凶星占据"
+            },
+            "selection_group": "ch16-v17-children-of-mean-deeds.step-001:malefic-count",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫是否被三颗凶星占据。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "五宫主是否落陷"
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "五宫内是否有吉星（含水星）"
+                    }
+                  ]
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "五宫是否被四颗凶星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫是否被四颗凶星占据"
+            },
+            "selection_group": "ch16-v17-children-of-mean-deeds.step-001:malefic-count",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫是否被四颗凶星占据。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Putr is occupied by three, or four malefics",
+              "claim": "五宫被三颗或四颗凶星占据"
+            },
+            {
+              "quote": "Putr’s Lord is in fall",
+              "claim": "五宫主落陷"
+            },
+            {
+              "quote": "A benefic (including Budh) in Putr is excluded",
+              "claim": "五宫中有吉星（含水星）则不算此组合"
+            }
+          ],
+          "results": [
+            {
+              "quote": "One will obtain children, that will indulge in mean deeds",
+              "claim": "所得子女会行卑劣之事"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v17",
+            "quote": "One will obtain children, that will indulge in mean deeds, if Putr is occupied by three, or four malefics, while Putr’s Lord is in fall.",
+            "pdf_pages": [
+              31
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v17",
+            "quote": "A benefic (including Budh) in Putr is excluded in the said combination.",
+            "pdf_pages": [
+              31
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：五宫主是否落陷、五宫内是否有吉星（含水星）。",
+        "stop_fact_keys": [
+          "五宫主是否落陷",
+          "五宫内是否有吉星（含水星）"
+        ],
+        "exception_relations": [
+          {
+            "type": "limitation",
+            "evidence_atom_ids": [
+              "bphs-97:santhanam:ch16:v17"
+            ],
+            "condition_logic": {
+              "fact_key": "五宫内是否有吉星（含水星）"
+            }
+          }
+        ],
+        "forbidden_extensions": [
+          "不得把凶星数量少于三颗的情形也算作本组合。",
+          "不得据此推断子女数量或子女具体行为。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "ab7304c9bccff6aa483c8cc306fc7a19935ef3da5aa4d860e1e31db66ff5409b"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch16-v18-v20-age-of-begetting-child.step-001",
+      "method": {
+        "method": "ch16-v18-v20-age-of-begetting-child",
+        "title": "得子年龄：五宫木星金星与上升主的三种组合",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我什么时候能有孩子",
+          "我大概几岁会当爸爸",
+          "我的得子年龄有没有说法"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Putr occupied by Guru its Lord with Shukr offspring 32nd 33rd year",
+            "五宫主与木星在角宫 30岁36岁得子",
+            "木星落九宫 金星与上升主 40岁得子"
+          ],
+          "counter_queries": [
+            "loss of child at the age of 32 Rahu in Putr",
+            "五宫组合不成立 得子年龄断语失效"
+          ],
+          "boundary_queries": [
+            "age of begetting child specific years scope BPHS Putr Bhava",
+            "得子年龄断语只限原文所给年份的边界"
+          ],
+          "method_queries": [
+            "how to time the birth of a child from Putr Bhava",
+            "判断得子时间要看哪些行星组合"
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫占据者事实时停止。",
+          "缺少五宫主与金星、木星的同宫关系事实时停止。",
+          "缺少木星落宫与金星、上升主相对位置事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v18-v20-age-of-begetting-child.step-001",
+        "action": "核对五宫是否被木星占据、五宫主是否与金星同宫，判断第32或33年得子。",
+        "applicability_scope": "仅限本命五宫得子年份主题；原文只给第32或33年这一个结论，未给上升或大运限定。",
+        "minimum_supported_claim": "五宫被木星占据、五宫主与金星同宫时，此人在第32或33年得子。",
+        "produced_fact_keys": [
+          "第32或33年得子判定"
+        ],
+        "required_fact_keys": [
+          "五宫是否被木星占据",
+          "五宫主是否与金星同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "五宫是否被木星占据"
+            },
+            {
+              "fact_key": "五宫主是否与金星同宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Putr is occupied by Guru",
+              "claim": "五宫被木星占据"
+            },
+            {
+              "quote": "its Lord is with Shukr",
+              "claim": "五宫主与金星同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "one will obtain an offspring in his 32<sup>nd</sup> , or 33<sup>rd</sup> year",
+              "claim": "此人在第32或33年得子"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v18",
+            "quote": "If Putr is occupied by Guru, while its Lord is with Shukr, one will obtain an offspring in his 32<sup>nd</sup> , or 33<sup>rd</sup> year.",
+            "pdf_pages": [
+              31
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：五宫是否被木星占据、五宫主是否与金星同宫。",
+        "stop_fact_keys": [
+          "五宫是否被木星占据",
+          "五宫主是否与金星同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把第32或33年扩大成其他年份或整个大运期。",
+          "不得据此推断子女数量或性别。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文指定的年龄/年份",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "55e40620fdd43e6fee4a55f47663424fc229618e2fb3d8a4761c474e94e056af"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch16-v18-v20-age-of-begetting-child.step-002",
+      "method": {
+        "method": "ch16-v18-v20-age-of-begetting-child",
+        "title": "得子年龄：五宫木星金星与上升主的三种组合",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我什么时候能有孩子",
+          "我大概几岁会当爸爸",
+          "我的得子年龄有没有说法"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Putr occupied by Guru its Lord with Shukr offspring 32nd 33rd year",
+            "五宫主与木星在角宫 30岁36岁得子",
+            "木星落九宫 金星与上升主 40岁得子"
+          ],
+          "counter_queries": [
+            "loss of child at the age of 32 Rahu in Putr",
+            "五宫组合不成立 得子年龄断语失效"
+          ],
+          "boundary_queries": [
+            "age of begetting child specific years scope BPHS Putr Bhava",
+            "得子年龄断语只限原文所给年份的边界"
+          ],
+          "method_queries": [
+            "how to time the birth of a child from Putr Bhava",
+            "判断得子时间要看哪些行星组合"
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫占据者事实时停止。",
+          "缺少五宫主与金星、木星的同宫关系事实时停止。",
+          "缺少木星落宫与金星、上升主相对位置事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v18-v20-age-of-begetting-child.step-002",
+        "action": "核对五宫主是否落角宫、木星是否与五宫主同宫，判断30岁或36岁得子。",
+        "applicability_scope": "仅限本命五宫得子年龄主题；原文只给30岁或36岁这一个结论，未给上升或大运限定。",
+        "minimum_supported_claim": "五宫主落角宫、并与作为子女法者的木星同宫时，此人在30岁或36岁得子。",
+        "produced_fact_keys": [
+          "30岁或36岁得子判定"
+        ],
+        "required_fact_keys": [
+          "五宫主是否落角宫",
+          "木星是否与五宫主同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "五宫主是否落角宫"
+            },
+            {
+              "fact_key": "木星是否与五宫主同宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Putr’s Lord be in an angle along with Guru, the Karak",
+              "claim": "五宫主落角宫、并与作为子女法者的木星同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "one will beget a child at the age of 30, or 36",
+              "claim": "此人在30岁或36岁得子"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v19",
+            "quote": "Should Putr’s Lord be in an angle along with Guru, the Karak, one will beget a child at the age of 30, or 36.",
+            "pdf_pages": [
+              31
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：五宫主是否落角宫、木星是否与五宫主同宫。",
+        "stop_fact_keys": [
+          "五宫主是否落角宫",
+          "木星是否与五宫主同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把30岁或36岁扩大成其他年龄区间。",
+          "不得据此推断子女数量或性别。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文指定的年龄/年份",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "fab5e102c48d56cd63b514fa11dbbb4c8e141690ca065e2475540a36b6a9be25"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch16-v18-v20-age-of-begetting-child.step-003",
+      "method": {
+        "method": "ch16-v18-v20-age-of-begetting-child",
+        "title": "得子年龄：五宫木星金星与上升主的三种组合",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我什么时候能有孩子",
+          "我大概几岁会当爸爸",
+          "我的得子年龄有没有说法"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Putr occupied by Guru its Lord with Shukr offspring 32nd 33rd year",
+            "五宫主与木星在角宫 30岁36岁得子",
+            "木星落九宫 金星与上升主 40岁得子"
+          ],
+          "counter_queries": [
+            "loss of child at the age of 32 Rahu in Putr",
+            "五宫组合不成立 得子年龄断语失效"
+          ],
+          "boundary_queries": [
+            "age of begetting child specific years scope BPHS Putr Bhava",
+            "得子年龄断语只限原文所给年份的边界"
+          ],
+          "method_queries": [
+            "how to time the birth of a child from Putr Bhava",
+            "判断得子时间要看哪些行星组合"
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫占据者事实时停止。",
+          "缺少五宫主与金星、木星的同宫关系事实时停止。",
+          "缺少木星落宫与金星、上升主相对位置事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v18-v20-age-of-begetting-child.step-003",
+        "action": "核对木星是否落九宫、金星是否与上升主同落木星起第9宫，判断40岁得子。",
+        "applicability_scope": "仅限本命五宫得子年龄主题；原文只给40岁这一个结论，未给上升或大运限定。",
+        "minimum_supported_claim": "木星落九宫、金星与上升主同落木星起第9宫时，此人在40岁得子。",
+        "produced_fact_keys": [
+          "40岁得子判定"
+        ],
+        "required_fact_keys": [
+          "木星是否落九宫",
+          "金星是否与上升主同落木星起第9宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "木星是否落九宫"
+            },
+            {
+              "fact_key": "金星是否与上升主同落木星起第9宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Guru is in Dharm Bhava",
+              "claim": "木星落九宫"
+            },
+            {
+              "quote": "Shukra is in the 9<sup>th</sup> from Guru along with Lagn’s Lord",
+              "claim": "金星与上升主同落木星起第9宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "one will beget a child at the age of 40",
+              "claim": "此人在40岁得子"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v20",
+            "quote": "If Guru is in Dharm Bhava, while Shukra is in the 9<sup>th</sup> from Guru along with Lagn’s Lord, one will beget a child at the age of 40.",
+            "pdf_pages": [
+              31
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：木星是否落九宫、金星是否与上升主同落木星起第9宫。",
+        "stop_fact_keys": [
+          "木星是否落九宫",
+          "金星是否与上升主同落木星起第9宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把40岁扩大成其他年龄或整段大运。",
+          "不得据此推断子女数量或性别。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文指定的年龄/年份",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b6237325da6b606078eb761e4734e4ffd1ce157630466f6ea8bd273c6d4253a1"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch16:v8": {
+      "evidence_atom_id": "bphs-97:santhanam:ch16:v8",
+      "chapter_number": 16,
+      "chapter_title": "Effects of Putr Bhava",
+      "verse_label": "8.",
+      "content_role": "verse",
+      "exact_text": "8. If Putr’s Lord is in Ari, Randhr, or Vyaya Bhava, or be in an inimical Rāśi, or be in fall, or in Putr itself, the native will beget issues with difficulty.",
+      "pdf_pages": [
+        30
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 16 · Sloka 8 · PDF page 30 · bphs-97:santhanam:ch16:v8",
+      "previous_atom_id": "bphs-97:santhanam:ch16:v7",
+      "next_atom_id": "bphs-97:santhanam:ch16:v9",
+      "context_before": " Should Dharm’s Lord be in Lagna, while Putr’s Lord is in fall and Ketu is in Putr along with Budh, obtainment of progeny will be after a great deal of ordeal.\n\n",
+      "context_after": "9. Should Putr Bhava be owned by Shani, or Budh and be occupied, or drishtied by Shani and Mandi, one will have adopted issues.\n",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch16:v9": {
+      "evidence_atom_id": "bphs-97:santhanam:ch16:v9",
+      "chapter_number": 16,
+      "chapter_title": "Effects of Putr Bhava",
+      "verse_label": "9.",
+      "content_role": "verse",
+      "exact_text": "9. Should Putr Bhava be owned by Shani, or Budh and be occupied, or drishtied by Shani and Mandi, one will have adopted issues.",
+      "pdf_pages": [
+        30
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 16 · Sloka 9 · PDF page 30 · bphs-97:santhanam:ch16:v9",
+      "previous_atom_id": "bphs-97:santhanam:ch16:v8",
+      "next_atom_id": "bphs-97:santhanam:ch16:v10",
+      "context_before": " If Putr’s Lord is in Ari, Randhr, or Vyaya Bhava, or be in an inimical Rāśi, or be in fall, or in Putr itself, the native will beget issues with difficulty.\n\n",
+      "context_after": "10. Should Surya and Chandra be together in a Rashiand in the same Navāńś, the native\n\n<!-- SOURCE_PAGE 31 -->\n\nwill be brought ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch16:v10": {
+      "evidence_atom_id": "bphs-97:santhanam:ch16:v10",
+      "chapter_number": 16,
+      "chapter_title": "Effects of Putr Bhava",
+      "verse_label": "10.",
+      "content_role": "verse",
+      "exact_text": "10. Should Surya and Chandra be together in a Rashiand in the same Navāńś, the native will be brought up by three mothers, or two fathers.",
+      "pdf_pages": [
+        30,
+        31
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 16 · Sloka 10 · PDF pages 30-31 · bphs-97:santhanam:ch16:v10",
+      "previous_atom_id": "bphs-97:santhanam:ch16:v9",
+      "next_atom_id": "bphs-97:santhanam:ch16:v11",
+      "context_before": ". Should Putr Bhava be owned by Shani, or Budh and be occupied, or drishtied by Shani and Mandi, one will have adopted issues.\n\n",
+      "context_after": "11. Adopted issue is indicated, if Putr is tenanted by six Grahas, while its Lord is in Vyaya Bhava and Chandra and Lagn are end",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch16:v11": {
+      "evidence_atom_id": "bphs-97:santhanam:ch16:v11",
+      "chapter_number": 16,
+      "chapter_title": "Effects of Putr Bhava",
+      "verse_label": "11.",
+      "content_role": "verse",
+      "exact_text": "11. Adopted issue is indicated, if Putr is tenanted by six Grahas, while its Lord is in Vyaya Bhava and Chandra and Lagn are endowed with strength.",
+      "pdf_pages": [
+        31
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 16 · Sloka 11 · PDF page 31 · bphs-97:santhanam:ch16:v11",
+      "previous_atom_id": "bphs-97:santhanam:ch16:v10",
+      "next_atom_id": "bphs-97:santhanam:ch16:v12",
+      "context_before": " Should Surya and Chandra be together in a Rashiand in the same Navāńś, the native\n\n<!-- SOURCE_PAGE 31 -->\n\nwill be brought up by three mothers, or two fathers.\n\n",
+      "context_after": "12. There will be many children, if Putr’s Lord is strong, while Putr is drishtied by strong Budh, Guru and Shukr.\n\n13. If Putr’",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch16:v12": {
+      "evidence_atom_id": "bphs-97:santhanam:ch16:v12",
+      "chapter_number": 16,
+      "chapter_title": "Effects of Putr Bhava",
+      "verse_label": "12.",
+      "content_role": "verse",
+      "exact_text": "12. There will be many children, if Putr’s Lord is strong, while Putr is drishtied by strong Budh, Guru and Shukr.",
+      "pdf_pages": [
+        31
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 16 · Sloka 12 · PDF page 31 · bphs-97:santhanam:ch16:v12",
+      "previous_atom_id": "bphs-97:santhanam:ch16:v11",
+      "next_atom_id": "bphs-97:santhanam:ch16:v13",
+      "context_before": " Adopted issue is indicated, if Putr is tenanted by six Grahas, while its Lord is in Vyaya Bhava and Chandra and Lagn are endowed with strength.\n\n",
+      "context_after": "13. If Putr’s Lord is with Chandra, or is in her Decanate, the native will beget daughters; so say Jyotishis.\n\n14. If Putr’s Lor",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch16:v13": {
+      "evidence_atom_id": "bphs-97:santhanam:ch16:v13",
+      "chapter_number": 16,
+      "chapter_title": "Effects of Putr Bhava",
+      "verse_label": "13.",
+      "content_role": "verse",
+      "exact_text": "13. If Putr’s Lord is with Chandra, or is in her Decanate, the native will beget daughters; so say Jyotishis.",
+      "pdf_pages": [
+        31
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 16 · Sloka 13 · PDF page 31 · bphs-97:santhanam:ch16:v13",
+      "previous_atom_id": "bphs-97:santhanam:ch16:v12",
+      "next_atom_id": "bphs-97:santhanam:ch16:v14",
+      "context_before": " strength.\n\n12. There will be many children, if Putr’s Lord is strong, while Putr is drishtied by strong Budh, Guru and Shukr.\n\n",
+      "context_after": "14. If Putr’s Lord is in a Movable Rāśi, while Shani is in Putr, as Rahu is with Chandra, the child (so born) is of questionable",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch16:v14": {
+      "evidence_atom_id": "bphs-97:santhanam:ch16:v14",
+      "chapter_number": 16,
+      "chapter_title": "Effects of Putr Bhava",
+      "verse_label": "14.",
+      "content_role": "verse",
+      "exact_text": "14. If Putr’s Lord is in a Movable Rāśi, while Shani is in Putr, as Rahu is with Chandra, the child (so born) is of questionable birth.",
+      "pdf_pages": [
+        31
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 16 · Sloka 14 · PDF page 31 · bphs-97:santhanam:ch16:v14",
+      "previous_atom_id": "bphs-97:santhanam:ch16:v13",
+      "next_atom_id": "bphs-97:santhanam:ch16:v15",
+      "context_before": "Guru and Shukr.\n\n13. If Putr’s Lord is with Chandra, or is in her Decanate, the native will beget daughters; so say Jyotishis.\n\n",
+      "context_after": "15. Undoubtedly the native is born of other’s loins, if Chandra is in the 8<sup>th</sup> from Lagna, while Guru is in the 8<sup>",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch16:v15": {
+      "evidence_atom_id": "bphs-97:santhanam:ch16:v15",
+      "chapter_number": 16,
+      "chapter_title": "Effects of Putr Bhava",
+      "verse_label": "15.",
+      "content_role": "verse",
+      "exact_text": "15. Undoubtedly the native is born of other’s loins, if Chandra is in the 8<sup>th</sup> from Lagna, while Guru is in the 8<sup>th</sup> from Chandra. Malefic’s Drishti, or Yuti is essential in this Yog.",
+      "pdf_pages": [
+        31
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 16 · Sloka 15 · PDF page 31 · bphs-97:santhanam:ch16:v15",
+      "previous_atom_id": "bphs-97:santhanam:ch16:v14",
+      "next_atom_id": "bphs-97:santhanam:ch16:v16",
+      "context_before": " If Putr’s Lord is in a Movable Rāśi, while Shani is in Putr, as Rahu is with Chandra, the child (so born) is of questionable birth.\n\n",
+      "context_after": "16. If Putr’s Lord is exalted, or be in Dhan, Putr, or Dharm Bhava, or be yuti with, or drishtied by Guru, obtainment of childre",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch16:v16": {
+      "evidence_atom_id": "bphs-97:santhanam:ch16:v16",
+      "chapter_number": 16,
+      "chapter_title": "Effects of Putr Bhava",
+      "verse_label": "16.",
+      "content_role": "verse",
+      "exact_text": "16. If Putr’s Lord is exalted, or be in Dhan, Putr, or Dharm Bhava, or be yuti with, or drishtied by Guru, obtainment of children will be there.",
+      "pdf_pages": [
+        31
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 16 · Sloka 16 · PDF page 31 · bphs-97:santhanam:ch16:v16",
+      "previous_atom_id": "bphs-97:santhanam:ch16:v15",
+      "next_atom_id": "bphs-97:santhanam:ch16:v17",
+      "context_before": "up>th</sup> from Lagna, while Guru is in the 8<sup>th</sup> from Chandra. Malefic’s Drishti, or Yuti is essential in this Yog.\n\n",
+      "context_after": "17. One will obtain children, that will indulge in mean deeds, if Putr is occupied by three, or four malefics, while Putr’s Lord",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch16:v17": {
+      "evidence_atom_id": "bphs-97:santhanam:ch16:v17",
+      "chapter_number": 16,
+      "chapter_title": "Effects of Putr Bhava",
+      "verse_label": "17.",
+      "content_role": "verse",
+      "exact_text": "17. One will obtain children, that will indulge in mean deeds, if Putr is occupied by three, or four malefics, while Putr’s Lord is in fall. A benefic (including Budh) in Putr is excluded in the said combination.",
+      "pdf_pages": [
+        31
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 16 · Sloka 17 · PDF page 31 · bphs-97:santhanam:ch16:v17",
+      "previous_atom_id": "bphs-97:santhanam:ch16:v16",
+      "next_atom_id": "bphs-97:santhanam:ch16:v18",
+      "context_before": " If Putr’s Lord is exalted, or be in Dhan, Putr, or Dharm Bhava, or be yuti with, or drishtied by Guru, obtainment of children will be there.\n\n",
+      "context_after": "18. If Putr is occupied by Guru, while its Lord is with Shukr, one will obtain an offspring in his 32<sup>nd</sup> , or 33<sup>r",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch16:v18": {
+      "evidence_atom_id": "bphs-97:santhanam:ch16:v18",
+      "chapter_number": 16,
+      "chapter_title": "Effects of Putr Bhava",
+      "verse_label": "18.",
+      "content_role": "verse",
+      "exact_text": "18. If Putr is occupied by Guru, while its Lord is with Shukr, one will obtain an offspring in his 32<sup>nd</sup> , or 33<sup>rd</sup> year.",
+      "pdf_pages": [
+        31
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 16 · Sloka 18 · PDF page 31 · bphs-97:santhanam:ch16:v18",
+      "previous_atom_id": "bphs-97:santhanam:ch16:v17",
+      "next_atom_id": "bphs-97:santhanam:ch16:v19",
+      "context_before": "three, or four malefics, while Putr’s Lord is in fall. A benefic (including Budh) in Putr is excluded in the said combination.\n\n",
+      "context_after": "19. Should Putr’s Lord be in an angle along with Guru, the Karak, one will beget a child at the age of 30, or 36.\n\n20. If Guru i",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch16:v19": {
+      "evidence_atom_id": "bphs-97:santhanam:ch16:v19",
+      "chapter_number": 16,
+      "chapter_title": "Effects of Putr Bhava",
+      "verse_label": "19.",
+      "content_role": "verse",
+      "exact_text": "19. Should Putr’s Lord be in an angle along with Guru, the Karak, one will beget a child at the age of 30, or 36.",
+      "pdf_pages": [
+        31
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 16 · Sloka 19 · PDF page 31 · bphs-97:santhanam:ch16:v19",
+      "previous_atom_id": "bphs-97:santhanam:ch16:v18",
+      "next_atom_id": "bphs-97:santhanam:ch16:v20",
+      "context_before": " If Putr is occupied by Guru, while its Lord is with Shukr, one will obtain an offspring in his 32<sup>nd</sup> , or 33<sup>rd</sup> year.\n\n",
+      "context_after": "20. If Guru is in Dharm Bhava, while Shukra is in the 9<sup>th</sup> from Guru along with Lagn’s Lord, one will beget a child at",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch16:v20": {
+      "evidence_atom_id": "bphs-97:santhanam:ch16:v20",
+      "chapter_number": 16,
+      "chapter_title": "Effects of Putr Bhava",
+      "verse_label": "20.",
+      "content_role": "verse",
+      "exact_text": "20. If Guru is in Dharm Bhava, while Shukra is in the 9<sup>th</sup> from Guru along with Lagn’s Lord, one will beget a child at the age of 40.",
+      "pdf_pages": [
+        31
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 16 · Sloka 20 · PDF page 31 · bphs-97:santhanam:ch16:v20",
+      "previous_atom_id": "bphs-97:santhanam:ch16:v19",
+      "next_atom_id": "bphs-97:santhanam:ch16:v21",
+      "context_before": "/sup> year.\n\n19. Should Putr’s Lord be in an angle along with Guru, the Karak, one will beget a child at the age of 30, or 36.\n\n",
+      "context_after": "21. The native will at the age of 32 lose his child, if Rahu is in Putr, Putr’s Lord is in Yuti with a malefic and Guru is in de",
+      "content_missing": false
+    }
+  }
+}

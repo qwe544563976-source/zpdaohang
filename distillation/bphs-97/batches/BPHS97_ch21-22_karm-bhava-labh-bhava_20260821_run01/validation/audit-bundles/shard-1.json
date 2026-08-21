@@ -1,0 +1,996 @@
+{
+  "shard": 1,
+  "step_count": 7,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch21-v2-karm-lord-paternal-happiness.step-001",
+      "method": {
+        "method": "ch21-v2-karm-lord-paternal-happiness",
+        "title": "父亲方面的幸福与名声：十宫主有力，且入旺、落本宫或落本九分盘星座",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和父亲的缘分好不好",
+          "我这辈子有没有名声"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Karm’s Lord is strong and in exaltation, or in its own Rāśi/Navāńś, the native will derive extreme paternal happiness",
+            "十宫主 有力 入旺 本宫 九分盘 父亲的幸福 名声"
+          ],
+          "counter_queries": [
+            "If Karm’s Lord is devoid of strength, the native will face obstructions in his work",
+            "If Karm’s Lord is in Ari Bhava, the native will be bereft of paternal bliss",
+            "十宫主无力 工作受阻 失去父亲之乐"
+          ],
+          "boundary_queries": [
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava",
+            "Exaltation and Debilitation. For the seven Grahas, from Surya on, the exaltation Rāśis are, respectively, Mesh, Vrishabh, Makar, Kanya, Kark, Meen and Tula"
+          ],
+          "method_queries": [
+            "Effects of Karm’s Lord in Various Bhavas",
+            "判断十宫（Karm Bhava）时要核对宫主的力量与尊贵状态"
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主力量事实时停止。",
+          "力量判准由排盘窗口定义，未给出取值时停止。",
+          "缺少十宫主入旺、本宫与本九分盘星座三项事实中被命中的那一项时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch21-v2-karm-lord-paternal-happiness.step-001",
+        "action": "先核对十宫主（Karm's Lord）是否有力，再核对它是否入旺、落本宫或落自己主管的九分盘（Navamsa D9）星座。",
+        "applicability_scope": "仅限本命盘十宫（Karm Bhava）主题下的父亲幸福、名声与善行；原文把「有力」与入旺／本宫／本九分盘并列在同一个条件里，「有力」的判准原文本句未给；原文未给时间限定。本章效果原文自述以 Brahma、Garga 等人之言转述（同章 v1）。",
+        "minimum_supported_claim": "十宫主有力，并且入旺、落本宫或落本九分盘（Navamsa D9）星座时，命主会得到极大的父亲方面的幸福、享有名声，并做出善行。",
+        "produced_fact_keys": [
+          "十宫主力量与尊贵状态的父亲幸福名声判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm's Lord）是否有力"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "十宫主（Karm's Lord）是否有力"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "十宫主（Karm's Lord）是否入旺"
+                },
+                {
+                  "fact_key": "十宫主（Karm's Lord）是否落本宫"
+                },
+                {
+                  "fact_key": "十宫主（Karm's Lord）是否落在自己主管的九分盘（Navamsa D9）星座"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "十宫主（Karm's Lord）是否有力"
+            },
+            "required_fact_keys": [
+              "十宫主（Karm's Lord）是否入旺"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十宫主（Karm's Lord）是否入旺"
+            },
+            "selection_group": "ch21-v2-karm-lord-paternal-happiness.step-001:karm-lord-dignity",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十宫主（Karm's Lord）是否入旺。"
+          },
+          {
+            "when": {
+              "fact_key": "十宫主（Karm's Lord）是否有力"
+            },
+            "required_fact_keys": [
+              "十宫主（Karm's Lord）是否落本宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十宫主（Karm's Lord）是否落本宫"
+            },
+            "selection_group": "ch21-v2-karm-lord-paternal-happiness.step-001:karm-lord-dignity",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十宫主（Karm's Lord）是否落本宫。"
+          },
+          {
+            "when": {
+              "fact_key": "十宫主（Karm's Lord）是否有力"
+            },
+            "required_fact_keys": [
+              "十宫主（Karm's Lord）是否落在自己主管的九分盘（Navamsa D9）星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十宫主（Karm's Lord）是否落在自己主管的九分盘（Navamsa D9）星座"
+            },
+            "selection_group": "ch21-v2-karm-lord-paternal-happiness.step-001:karm-lord-dignity",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十宫主（Karm's Lord）是否落在自己主管的九分盘（Navamsa D9）星座。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Karm’s Lord is strong",
+              "claim": "十宫主有力"
+            },
+            {
+              "quote": "in exaltation",
+              "claim": "入旺"
+            },
+            {
+              "quote": "in its own Rāśi/Navāńś",
+              "claim": "落本宫或落本九分盘（Navamsa D9）星座"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will derive extreme paternal happiness, will enjoy fame and will perform good deeds",
+              "claim": "会得到极大的父亲方面的幸福、享有名声，并做出善行"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch21:v2",
+            "quote": "If Karm’s Lord is strong and in exaltation, or in its own Rāśi/Navāńś, the native will derive extreme paternal happiness, will enjoy fame and will perform good deeds.",
+            "pdf_pages": [
+              38
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm's Lord）是否有力。",
+        "stop_fact_keys": [
+          "十宫主（Karm's Lord）是否有力"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断父亲的寿命、职业或具体事件。",
+          "不得把这条十宫主的规则改挂到九宫主或太阳（Surya）身上。",
+          "原文本句没有给出「有力」的判准，不得自行发明力量算法。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "step_hash": "7cce2c1e7f40d23904ff7d73c4bd95b7d6ff921f5470f69ae5467a520216a0c5"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch21-v3-karm-lord-weak-obstructions.step-001",
+      "method": {
+        "method": "ch21-v3-karm-lord-weak-obstructions",
+        "title": "工作上的阻碍：十宫主没有力量",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我做事为什么总是受阻",
+          "我的事业顺不顺"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Karm’s Lord is devoid of strength, the native will face obstructions in his work",
+            "十宫主 无力 工作 阻碍"
+          ],
+          "counter_queries": [
+            "If Karm’s Lord is strong and in exaltation, or in its own Rāśi/Navāńś, the native will derive extreme paternal happiness",
+            "If Karm’s Lord is with a benefic, or be in an auspicious Bhava, one will always gain through royal patronage and in business",
+            "十宫主有力 王室恩宠 生意得利"
+          ],
+          "boundary_queries": [
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava",
+            "If Karm’s Lord is in Randhr Bhava, the native will be devoid of acts, long-lived and intent on blaming others"
+          ],
+          "method_queries": [
+            "Effects of Karm’s Lord in Various Bhavas",
+            "判断事业阻碍要先看十宫主的力量"
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主力量事实时停止。",
+          "力量判准由排盘窗口定义，未给出取值时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch21-v3-karm-lord-weak-obstructions.step-001",
+        "action": "核对十宫主（Karm's Lord）是否有力，若没有力量则判为工作上会遇到阻碍。",
+        "applicability_scope": "仅限本命盘十宫（Karm Bhava）的工作阻碍主题；「没有力量」按原文 devoid of strength 接线，判准原文本句未给；原文未给时间限定。本章效果原文自述以 Brahma、Garga 等人之言转述（同章 v1）。",
+        "minimum_supported_claim": "十宫主没有力量时，命主在工作上会遇到阻碍。",
+        "produced_fact_keys": [
+          "十宫主无力的工作阻碍判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm's Lord）是否有力"
+        ],
+        "condition_logic": {
+          "operator": "NOT",
+          "operands": [
+            {
+              "fact_key": "十宫主（Karm's Lord）是否有力"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Karm’s Lord is devoid of strength",
+              "claim": "十宫主没有力量"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will face obstructions in his work",
+              "claim": "在工作上会遇到阻碍"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch21:v3",
+            "quote": "If Karm’s Lord is devoid of strength, the native will face obstructions in his work.",
+            "pdf_pages": [
+              38
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm's Lord）是否有力。",
+        "stop_fact_keys": [
+          "十宫主（Karm's Lord）是否有力"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断失业、破产或阻碍出现的年份。",
+          "原文本句没有给出力量的判准，不得自行发明力量算法。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "step_hash": "1fce9494fd9dc0daab09667cb15f1b884249d39cea9106381c63f52f1fd93382"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch21-v3-rahu-angle-trine-sacrifices.step-001",
+      "method": {
+        "method": "ch21-v3-rahu-angle-trine-sacrifices",
+        "title": "举行宗教祭祀：罗睺落角宫或三角宫",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会做祭祀、法事这类宗教活动",
+          "罗睺落角宫三角宫是什么效果"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Rahu is in an angle, or in a trine, he will perform religious sacrifices, like Jyotishtoma",
+            "罗睺 角宫 三角宫 宗教祭祀 Jyotishtoma"
+          ],
+          "counter_queries": [
+            "Should Rahu, Surya, Shani and Mangal be in Labh Bhava, the native will incur cessation of his duties",
+            "If the Lord of Karm Bhava is relegated to Randhr Bhava along with Rahu, the native will hate others",
+            "罗睺 凶星 职务中断 坏事"
+          ],
+          "boundary_queries": [
+            "Kendras, Konas etc. defined. The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "Putr and Dharm Bhava are known by the name Kon (or trine)",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics"
+          ],
+          "method_queries": [
+            "Now I tell you about the effects of nonluminous Grahas",
+            "判断罗睺（Rahu）落角宫或三角宫要查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少罗睺落宫事实时停止。",
+          "角宫与三角宫的宫位界定未取得时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch21-v3-rahu-angle-trine-sacrifices.step-001",
+        "action": "取罗睺（Rahu）所落的宫，核对它是否落角宫或三角宫。",
+        "applicability_scope": "仅限原文这一句给出的罗睺落角宫或三角宫与举行宗教祭祀；原文未给上升、时间限定，也没有列出角宫与三角宫的具体宫位。本章效果原文自述以 Brahma、Garga 等人之言转述（同章 v1）。",
+        "minimum_supported_claim": "罗睺落角宫或落三角宫时，命主会举行像 Jyotishtoma 那样的宗教祭祀。",
+        "produced_fact_keys": [
+          "罗睺落角宫三角宫的宗教祭祀判定"
+        ],
+        "required_fact_keys": [
+          "本盘罗睺（Rahu）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘罗睺（Rahu）落在哪一宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "罗睺（Rahu）是否落角宫"
+                },
+                {
+                  "fact_key": "罗睺（Rahu）是否落三角宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘罗睺（Rahu）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "罗睺（Rahu）是否落角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "罗睺（Rahu）是否落角宫"
+            },
+            "selection_group": "ch21-v3-rahu-angle-trine-sacrifices.step-001:rahu-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：罗睺（Rahu）是否落角宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘罗睺（Rahu）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "罗睺（Rahu）是否落三角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "罗睺（Rahu）是否落三角宫"
+            },
+            "selection_group": "ch21-v3-rahu-angle-trine-sacrifices.step-001:rahu-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：罗睺（Rahu）是否落三角宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Rahu is in an angle",
+              "claim": "罗睺落角宫"
+            },
+            {
+              "quote": "or in a trine",
+              "claim": "落三角宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "he will perform religious sacrifices, like Jyotishtoma",
+              "claim": "会举行像 Jyotishtoma 那样的宗教祭祀"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch21:v3",
+            "quote": "If Rahu is in an angle, or in a trine, he will perform religious sacrifices, like Jyotishtoma.",
+            "pdf_pages": [
+              38
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘罗睺（Rahu）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘罗睺（Rahu）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断祭祀的次数、时间或宗教身份。",
+          "不得把 Jyotishtoma 之外的具体仪式写成原文断语。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "step_hash": "72237e2d12b72bad8bc27e96312d4e7d85b60890a20752f9cec325cc4a5ef6d8"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch21-v4-karm-lord-royal-gains.step-001",
+      "method": {
+        "method": "ch21-v4-karm-lord-royal-gains",
+        "title": "王室恩宠与生意得利：十宫主与吉星同宫或落吉宫",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我能不能靠贵人或上级得利",
+          "我做生意赚不赚钱"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Karm’s Lord is with a benefic, or be in an auspicious Bhava, one will always gain through royal patronage and in business",
+            "十宫主 与吉星同宫 吉宫 王室恩宠 生意获利"
+          ],
+          "counter_queries": [
+            "In a contrary situation, only opposite results will come to pass",
+            "Should Karm and Labh Bhava be both occupied by malefics, the native will indulge only in bad deeds",
+            "十宫与十一宫被凶星占据 只做坏事"
+          ],
+          "boundary_queries": [
+            "Kendras and Konas (Putr and Dharm) are auspicious Bhavas, the association with which turns even evil into auspiciousness",
+            "Ari, Randhr and Vyaya are Trikas, Dusthan, or malefic Bhavas",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics"
+          ],
+          "method_queries": [
+            "Effects of Karm’s Lord in Various Bhavas",
+            "判断十宫主所落宫位的吉凶要查什么"
+          ]
+        },
+        "stop_conditions": [
+          "无法确定十宫主是哪颗行星时停止。",
+          "缺少十宫主与吉星同宫或落吉宫的事实时停止。",
+          "吉星名册未取得时停止。",
+          "吉宫的界定未取得时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch21-v4-karm-lord-royal-gains.step-001",
+        "action": "先定出十宫主（Karm's Lord）是哪颗行星，再核对它是否与吉星同宫，或是否落在吉宫。",
+        "applicability_scope": "仅限本命盘十宫（Karm Bhava）主题下的王室恩宠与生意得利；原文本句未界定哪些宫属于吉宫，也未给时间限定。本章效果原文自述以 Brahma、Garga 等人之言转述（同章 v1）。",
+        "minimum_supported_claim": "十宫主与吉星同宫，或落在吉宫时，命主总能通过王室恩宠和生意获利。",
+        "produced_fact_keys": [
+          "十宫主吉星同宫或落吉宫的王室与生意获利判定"
+        ],
+        "required_fact_keys": [
+          "本盘十宫主（Karm's Lord）是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘十宫主（Karm's Lord）是哪颗行星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "十宫主（Karm's Lord）是否与吉星同宫"
+                },
+                {
+                  "fact_key": "十宫主（Karm's Lord）是否落在吉宫（auspicious Bhava）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘十宫主（Karm's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "十宫主（Karm's Lord）是否与吉星同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十宫主（Karm's Lord）是否与吉星同宫"
+            },
+            "selection_group": "ch21-v4-karm-lord-royal-gains.step-001:karm-lord-association",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十宫主（Karm's Lord）是否与吉星同宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘十宫主（Karm's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "十宫主（Karm's Lord）是否落在吉宫（auspicious Bhava）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十宫主（Karm's Lord）是否落在吉宫（auspicious Bhava）"
+            },
+            "selection_group": "ch21-v4-karm-lord-royal-gains.step-001:karm-lord-association",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十宫主（Karm's Lord）是否落在吉宫（auspicious Bhava）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Karm’s Lord is with a benefic",
+              "claim": "十宫主与吉星同宫"
+            },
+            {
+              "quote": "or be in an auspicious Bhava",
+              "claim": "落在吉宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "one will always gain through royal patronage and in business",
+              "claim": "总能通过王室恩宠和生意获利"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch21:v4",
+            "quote": "If Karm’s Lord is with a benefic, or be in an auspicious Bhava, one will always gain through royal patronage and in business.",
+            "pdf_pages": [
+              38
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘十宫主（Karm's Lord）是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘十宫主（Karm's Lord）是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断获利的金额、行业或时间。",
+          "不得自行规定哪些宫算吉宫，界定须来自原文另有出处的段落。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "step_hash": "eb2368892498e29fc8d236e3b1a0ce72a13d6c427f59d3a8dfee3044d79bf458"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch21-v4-contrary-opposite-results.step-001",
+      "method": {
+        "method": "ch21-v4-contrary-opposite-results",
+        "title": "相反情形只得相反结果：十宫主既不与吉星同宫也不落吉宫",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "十宫主没有吉星帮扶会怎样",
+          "这条规则反过来该怎么判"
+        ],
+        "facts": null,
+        "dependencies": [
+          "ch21-v4-karm-lord-royal-gains"
+        ],
+        "retrieval_plan": {
+          "support_queries": [
+            "In a contrary situation, only opposite results will come to pass",
+            "十宫主 相反情形 相反结果"
+          ],
+          "counter_queries": [
+            "If Karm’s Lord is with a benefic, or be in an auspicious Bhava, one will always gain through royal patronage and in business",
+            "If malefics are surrounded by benefics, while angles, or trines are themselves beneficoccupied, evils disappear soon",
+            "凶星被吉星包围 恶果消失"
+          ],
+          "boundary_queries": [
+            "Ari, Randhr and Vyaya are Trikas, Dusthan, or malefic Bhavas",
+            "Kendras and Konas (Putr and Dharm) are auspicious Bhavas, the association with which turns even evil into auspiciousness",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics"
+          ],
+          "method_queries": [
+            "Effects of Karm’s Lord in Various Bhavas",
+            "判断相反情形要先核对前句列出的条件"
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主与吉星同宫的事实时停止。",
+          "缺少十宫主是否落吉宫的事实时停止。",
+          "吉星名册与吉宫的界定未取得时停止。",
+          "同偈前句的结论未取得时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch21-v4-contrary-opposite-results.step-001",
+        "action": "核对同偈前句的两个条件是否都不成立，若都不成立则按原文判为只会出现相反的结果。",
+        "applicability_scope": "承接同偈前句（十宫主与吉星同宫，或落在吉宫）；原文只说「相反情形」与「相反结果」，既未写出相反情形的具体配置，也未写出相反结果的具体内容，本条只按前句条件的否定接线。本章效果原文自述以 Brahma、Garga 等人之言转述（同章 v1）。",
+        "minimum_supported_claim": "在与前句条件相反的情形下，只会出现相反的结果。",
+        "produced_fact_keys": [
+          "十宫主相反情形的相反结果判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm's Lord）是否与吉星同宫",
+          "十宫主（Karm's Lord）是否落在吉宫（auspicious Bhava）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "十宫主（Karm's Lord）是否与吉星同宫"
+                }
+              ]
+            },
+            {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "十宫主（Karm's Lord）是否落在吉宫（auspicious Bhava）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "In a contrary situation",
+              "claim": "与前句条件相反的情形"
+            }
+          ],
+          "results": [
+            {
+              "quote": "only opposite results will come to pass",
+              "claim": "只会出现相反的结果"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch21:v4",
+            "quote": "In a contrary situation, only opposite results will come to pass.",
+            "pdf_pages": [
+              38
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm's Lord）是否与吉星同宫、十宫主（Karm's Lord）是否落在吉宫（auspicious Bhava）。",
+        "stop_fact_keys": [
+          "十宫主（Karm's Lord）是否与吉星同宫",
+          "十宫主（Karm's Lord）是否落在吉宫（auspicious Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「相反的结果」具体化为原文没有写的破财、失业、降职等断语。",
+          "不得脱离同偈前句单独使用本条。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch21:v4"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "step_hash": "7b0ed4114b933264f396935abda825395cec62fb290a204a1174bfeb2df50446"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch21-v5-karm-labh-malefics-bad-deeds.step-001",
+      "method": {
+        "method": "ch21-v5-karm-labh-malefics-bad-deeds",
+        "title": "只做坏事并玷污自己的人：十宫与十一宫同时被凶星占据",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我为什么老是做出格的事",
+          "十宫十一宫都是凶星会怎样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Karm and Labh Bhava be both occupied by malefics, the native will indulge only in bad deeds and will defile his own men",
+            "十宫 十一宫 都被凶星占据 坏事"
+          ],
+          "counter_queries": [
+            "If malefics are surrounded by benefics, while angles, or trines are themselves beneficoccupied, evils disappear soon",
+            "If Karm’s Lord is with a benefic, or be in an auspicious Bhava, one will always gain through royal patronage and in business",
+            "凶星被吉星包围 恶果消失"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Sahaj, Ari, Karm and Labh are Upachayas",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava"
+          ],
+          "method_queries": [
+            "Prosperity, or Annihilation of a Bhava. Predict prosperity of the Bhava, which is yuti with, or drishtied by a benefic",
+            "判断某一宫被凶星占据的效果要查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫被凶星占据的事实时停止。",
+          "缺少十一宫被凶星占据的事实时停止。",
+          "凶星名册未取得时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch21-v5-karm-labh-malefics-bad-deeds.step-001",
+        "action": "核对十宫（Karm）与十一宫（Labh）是否都被凶星占据。",
+        "applicability_scope": "仅限两宫同时被凶星占据这一种配置；原文没有给凶星的数量、也没有给时间限定，凶星名册须另查原文定义。本章效果原文自述以 Brahma、Garga 等人之言转述（同章 v1）。",
+        "minimum_supported_claim": "十宫与十一宫同时被凶星占据时，命主只会做坏事，并会玷污自己的人。",
+        "produced_fact_keys": [
+          "十宫十一宫凶星占据的坏事判定"
+        ],
+        "required_fact_keys": [
+          "十宫（Karm）是否被凶星占据",
+          "十一宫（Labh）是否被凶星占据"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "十宫（Karm）是否被凶星占据"
+            },
+            {
+              "fact_key": "十一宫（Labh）是否被凶星占据"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Karm and Labh Bhava be both occupied by malefics",
+              "claim": "十宫与十一宫同时被凶星占据"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will indulge only in bad deeds and will defile his own men",
+              "claim": "只会做坏事，并会玷污自己的人"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch21:v5",
+            "quote": "Should Karm and Labh Bhava be both occupied by malefics, the native will indulge only in bad deeds and will defile his own men.",
+            "pdf_pages": [
+              38
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫（Karm）是否被凶星占据、十一宫（Labh）是否被凶星占据。",
+        "stop_fact_keys": [
+          "十宫（Karm）是否被凶星占据",
+          "十一宫（Labh）是否被凶星占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断犯罪、坐牢等原文没有写的具体事件。",
+          "不得把两宫同时被占据放宽成任一宫被占据。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "step_hash": "394b64487b07999c0f9899b3179d39300b248d5807eab3ffd73f629e416888f0"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch21-v6-karm-lord-randhr-rahu-hatred.step-001",
+      "method": {
+        "method": "ch21-v6-karm-lord-randhr-rahu-hatred",
+        "title": "憎恨他人与愚蠢：十宫主落八宫并与罗睺同宫",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我为什么总是跟人过不去",
+          "十宫主落八宫又碰上罗睺会怎样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If the Lord of Karm Bhava is relegated to Randhr Bhava along with Rahu, the native will hate others; be a great fool and will do bad deeds",
+            "十宫主 落八宫 与罗睺同宫 憎恨 愚蠢"
+          ],
+          "counter_queries": [
+            "If Karm’s Lord is in Randhr Bhava, the native will be devoid of acts, long-lived and intent on blaming others",
+            "If there is a Drishti in the process from a benefic, then these evils will not mature",
+            "吉星相照 恶果不会成熟"
+          ],
+          "boundary_queries": [
+            "Evil Bhavas, or Dusthan Bhavas are Ari, Randhr and Vyaya Bhava",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Indications of Randhr Bhava. Randhr Bhava indicates longevity, battle, enemies, forts, wealth of the dead"
+          ],
+          "method_queries": [
+            "Effects of Karm’s Lord in Various Bhavas",
+            "判断十宫主落八宫要查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主落八宫的事实时停止。",
+          "缺少十宫主与罗睺同宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch21-v6-karm-lord-randhr-rahu-hatred.step-001",
+        "action": "核对十宫主（Karm's Lord）是否落八宫（Randhr），并核对它是否与罗睺（Rahu）同宫。",
+        "applicability_scope": "仅限十宫主落八宫且与罗睺同宫这一种配置；原文以 his 指代命主，未给时间限定。本章效果原文自述以 Brahma、Garga 等人之言转述（同章 v1）。",
+        "minimum_supported_claim": "十宫主被贬落到八宫并与罗睺同宫时，命主会憎恨他人、极为愚蠢，并做坏事。",
+        "produced_fact_keys": [
+          "十宫主落八宫与罗睺同宫的憎恨愚蠢判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm's Lord）是否落八宫（Randhr）",
+          "十宫主（Karm's Lord）是否与罗睺（Rahu）同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "十宫主（Karm's Lord）是否落八宫（Randhr）"
+            },
+            {
+              "fact_key": "十宫主（Karm's Lord）是否与罗睺（Rahu）同宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If the Lord of Karm Bhava is relegated to Randhr Bhava",
+              "claim": "十宫主被贬落到八宫"
+            },
+            {
+              "quote": "along with Rahu",
+              "claim": "与罗睺同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will hate others; be a great fool and will do bad deeds",
+              "claim": "会憎恨他人、极为愚蠢，并做坏事"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch21:v6",
+            "quote": "If the Lord of Karm Bhava is relegated to Randhr Bhava along with Rahu, the native will hate others; be a great fool and will do bad deeds.",
+            "pdf_pages": [
+              38
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm's Lord）是否落八宫（Randhr）、十宫主（Karm's Lord）是否与罗睺（Rahu）同宫。",
+        "stop_fact_keys": [
+          "十宫主（Karm's Lord）是否落八宫（Randhr）",
+          "十宫主（Karm's Lord）是否与罗睺（Rahu）同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断智力水平的具体高低或精神疾病。",
+          "不得把罗睺（Rahu）换成计都（Ketu）或别的凶星。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "step_hash": "97f9e6e0217c67f2482f3326ec94b618c272f3afc9d087d868e9e57a9a63d56e"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch21:v2": {
+      "evidence_atom_id": "bphs-97:santhanam:ch21:v2",
+      "chapter_number": 21,
+      "chapter_title": "Effects of Karm Bhava",
+      "verse_label": "2.",
+      "content_role": "verse",
+      "exact_text": "2. Paternal Happiness. If Karm’s Lord is strong and in exaltation, or in its own Rāśi/Navāńś, the native will derive extreme paternal happiness, will enjoy fame and will perform good deeds.",
+      "pdf_pages": [
+        38
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 21 · Sloka 2 · PDF page 38 · bphs-97:santhanam:ch21:v2",
+      "previous_atom_id": "bphs-97:santhanam:ch21:v1",
+      "next_atom_id": "bphs-97:santhanam:ch21:v3",
+      "context_before": "rm Bhava**\n\n1. I now explain the effects of Karm Bhava. Listen to these, o Maitreya, in the words of Brahma, Garga and others.\n\n",
+      "context_after": "3. If Karm’s Lord is devoid of strength, the native will face obstructions in his work. If Rahu is in an angle, or in a trine, h",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch21:v3": {
+      "evidence_atom_id": "bphs-97:santhanam:ch21:v3",
+      "chapter_number": 21,
+      "chapter_title": "Effects of Karm Bhava",
+      "verse_label": "3.",
+      "content_role": "verse",
+      "exact_text": "3. If Karm’s Lord is devoid of strength, the native will face obstructions in his work. If Rahu is in an angle, or in a trine, he will perform religious sacrifices, like Jyotishtoma.",
+      "pdf_pages": [
+        38
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 21 · Sloka 3 · PDF page 38 · bphs-97:santhanam:ch21:v3",
+      "previous_atom_id": "bphs-97:santhanam:ch21:v2",
+      "next_atom_id": "bphs-97:santhanam:ch21:v4",
+      "context_before": " If Karm’s Lord is strong and in exaltation, or in its own Rāśi/Navāńś, the native will derive extreme paternal happiness, will enjoy fame and will perform good deeds.\n\n",
+      "context_after": "4. If Karm’s Lord is with a benefic, or be in an auspicious Bhava, one will always gain through royal patronage and in business.",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch21:v4": {
+      "evidence_atom_id": "bphs-97:santhanam:ch21:v4",
+      "chapter_number": 21,
+      "chapter_title": "Effects of Karm Bhava",
+      "verse_label": "4.",
+      "content_role": "verse",
+      "exact_text": "4. If Karm’s Lord is with a benefic, or be in an auspicious Bhava, one will always gain through royal patronage and in business. In a contrary situation, only opposite results will come to pass.",
+      "pdf_pages": [
+        38
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 21 · Sloka 4 · PDF page 38 · bphs-97:santhanam:ch21:v4",
+      "previous_atom_id": "bphs-97:santhanam:ch21:v3",
+      "next_atom_id": "bphs-97:santhanam:ch21:v5",
+      "context_before": " face obstructions in his work. If Rahu is in an angle, or in a trine, he will perform religious sacrifices, like Jyotishtoma.\n\n",
+      "context_after": "5. Should Karm and Labh Bhava be both occupied by malefics, the native will indulge only in bad deeds and will defile his own me",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch21:v5": {
+      "evidence_atom_id": "bphs-97:santhanam:ch21:v5",
+      "chapter_number": 21,
+      "chapter_title": "Effects of Karm Bhava",
+      "verse_label": "5.",
+      "content_role": "verse",
+      "exact_text": "5. Should Karm and Labh Bhava be both occupied by malefics, the native will indulge only in bad deeds and will defile his own men.",
+      "pdf_pages": [
+        38
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 21 · Sloka 5 · PDF page 38 · bphs-97:santhanam:ch21:v5",
+      "previous_atom_id": "bphs-97:santhanam:ch21:v4",
+      "next_atom_id": "bphs-97:santhanam:ch21:v6",
+      "context_before": "ne will always gain through royal patronage and in business. In a contrary situation, only opposite results will come to pass.\n\n",
+      "context_after": "6. If the Lord of Karm Bhava is relegated to Randhr Bhava along with Rahu, the native will hate others; be a great fool and will",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch21:v6": {
+      "evidence_atom_id": "bphs-97:santhanam:ch21:v6",
+      "chapter_number": 21,
+      "chapter_title": "Effects of Karm Bhava",
+      "verse_label": "6.",
+      "content_role": "verse",
+      "exact_text": "6. If the Lord of Karm Bhava is relegated to Randhr Bhava along with Rahu, the native will hate others; be a great fool and will do bad deeds.",
+      "pdf_pages": [
+        38
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 21 · Sloka 6 · PDF page 38 · bphs-97:santhanam:ch21:v6",
+      "previous_atom_id": "bphs-97:santhanam:ch21:v5",
+      "next_atom_id": "bphs-97:santhanam:ch21:v7",
+      "context_before": " Should Karm and Labh Bhava be both occupied by malefics, the native will indulge only in bad deeds and will defile his own men.\n\n",
+      "context_after": "7. If Shani, Mangal and Karm’s Lord are in Yuvati, as Yuvati’s Lord is with a malefic, the native will be fond of carnal pleasur",
+      "content_missing": false
+    }
+  }
+}

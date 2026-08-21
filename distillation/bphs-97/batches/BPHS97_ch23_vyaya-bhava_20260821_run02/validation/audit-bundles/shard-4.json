@@ -1,0 +1,572 @@
+{
+  "shard": 4,
+  "step_count": 3,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch23-v11-malefic-afflicted-vyaya-wandering.step-001",
+      "method": {
+        "method": "ch23-v11-malefic-afflicted-vyaya-wandering",
+        "title": "在各国之间漂泊：十二宫主与十二宫皆有凶星，且宫主相照凶星或被凶星相照",
+        "target_house": 12,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会长期在外奔波",
+          "我是不是要离乡背井"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "One will wander from country to country, if Vyaya’s Lord and Vyaya Bhava are with malefics",
+            "十二宫主 与凶星同宫 十二宫有凶星 相照 各国漂泊"
+          ],
+          "counter_queries": [
+            "One will move in his own country, if Vyaya’s Lord and Vyaya Bhava are with benefics and Vyaya’s Lord gives a Drishti to, or receives a Drishti from benefics.",
+            "If Bandhu, Karm and Vyaya Bhava are all occupied by malefics, both the parents will leave the child to its own fate and wander from place to place."
+          ],
+          "boundary_queries": [
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava."
+          ],
+          "method_queries": [
+            "Effects of Vyaya’s Lord in Various Bhavas",
+            "判断远行漂泊要看十二宫的哪几项"
+          ]
+        },
+        "stop_conditions": [
+          "缺少十二宫主是否与凶星同宫的事实时停止。",
+          "缺少十二宫是否被凶星占据的事实时停止。",
+          "两个相照方向的事实都缺失时停止。",
+          "凶星名册未确定时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch23-v11-malefic-afflicted-vyaya-wandering.step-001",
+        "action": "先核对十二宫主（Vyaya's Lord）是否与凶星同宫、十二宫（Vyaya）内是否有凶星，再核对十二宫主是否相照凶星或被凶星相照。",
+        "applicability_scope": "仅限本命盘十二宫（Vyaya Bhava）主题；原文把同宫与占据两项并列为共同前提，相照方向为择一；原文未给时间限定，也未给国别或次数。",
+        "minimum_supported_claim": "十二宫主（Vyaya's Lord）与凶星同宫、十二宫（Vyaya）内有凶星，并且十二宫主相照凶星或被凶星相照时，命主会从一个国家漂泊到另一个国家。",
+        "produced_fact_keys": [
+          "十二宫受凶时的迁徙漂泊判定"
+        ],
+        "required_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否与凶星同宫",
+          "十二宫（Vyaya）是否被凶星占据"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否与凶星同宫"
+                },
+                {
+                  "fact_key": "十二宫（Vyaya）是否被凶星占据"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否相照凶星"
+                },
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否被凶星相照"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否与凶星同宫"
+                },
+                {
+                  "fact_key": "十二宫（Vyaya）是否被凶星占据"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "十二宫主（Vyaya's Lord）是否相照凶星"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否相照凶星"
+            },
+            "selection_group": "ch23-v11-malefic-afflicted-vyaya-wandering.step-001:malefic-drishti-direction",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十二宫主（Vyaya's Lord）是否相照凶星。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否与凶星同宫"
+                },
+                {
+                  "fact_key": "十二宫（Vyaya）是否被凶星占据"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "十二宫主（Vyaya's Lord）是否被凶星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否被凶星相照"
+            },
+            "selection_group": "ch23-v11-malefic-afflicted-vyaya-wandering.step-001:malefic-drishti-direction",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十二宫主（Vyaya's Lord）是否被凶星相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Vyaya’s Lord and Vyaya Bhava are with malefics",
+              "claim": "十二宫主（Vyaya's Lord）与凶星同宫、十二宫（Vyaya）内有凶星"
+            },
+            {
+              "quote": "Vyaya’s Lord gives a Drishti to, or receives a Drishti from malefics",
+              "claim": "十二宫主相照凶星或被凶星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "One will wander from country to country",
+              "claim": "命主会从一个国家漂泊到另一个国家"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch23:v11",
+            "quote": "One will wander from country to country, if Vyaya’s Lord and Vyaya Bhava are with malefics and Vyaya’s Lord gives a Drishti to, or receives a Drishti from malefics.",
+            "pdf_pages": [
+              40
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十二宫主（Vyaya's Lord）是否与凶星同宫、十二宫（Vyaya）是否被凶星占据。",
+        "stop_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否与凶星同宫",
+          "十二宫（Vyaya）是否被凶星占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得省掉同宫与占据两项共同前提，只凭相照下判断。",
+          "不得据此推断移民、国别或出行年份。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "44d3d05131ae894d62b3145d0fc66e1bea15dd3bc2469ba9f2ec90c47d11af6a"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch23-v12-benefic-supported-vyaya-own-country.step-001",
+      "method": {
+        "method": "ch23-v12-benefic-supported-vyaya-own-country",
+        "title": "在自己国内活动：十二宫主与十二宫皆有吉星，且宫主相照吉星或被吉星相照",
+        "target_house": 12,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会一直待在本地",
+          "我适不适合出国"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "One will move in his own country, if Vyaya’s Lord and Vyaya Bhava are with benefics",
+            "十二宫主 与吉星同宫 十二宫有吉星 相照 本国活动"
+          ],
+          "counter_queries": [
+            "One will wander from country to country, if Vyaya’s Lord and Vyaya Bhava are with malefics and Vyaya’s Lord gives a Drishti to, or receives a Drishti from malefics.",
+            "If Bandhu, Karm and Vyaya Bhava are all occupied by malefics, both the parents will leave the child to its own fate and wander from place to place."
+          ],
+          "boundary_queries": [
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Benefics in both Vyaya and Dhan Bhava cause Subh Yog. Malefics in both Vyaya and Dhan Bhava cause Asubh Yog."
+          ],
+          "method_queries": [
+            "Effects of Vyaya’s Lord in Various Bhavas",
+            "十二宫受吉星支持时怎么判断行止"
+          ]
+        },
+        "stop_conditions": [
+          "缺少十二宫主是否与吉星同宫的事实时停止。",
+          "缺少十二宫是否被吉星占据的事实时停止。",
+          "两个相照方向的事实都缺失时停止。",
+          "吉星名册未确定时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch23-v12-benefic-supported-vyaya-own-country.step-001",
+        "action": "先核对十二宫主（Vyaya's Lord）是否与吉星同宫、十二宫（Vyaya）内是否有吉星，再核对十二宫主是否相照吉星或被吉星相照。",
+        "applicability_scope": "仅限本命盘十二宫（Vyaya Bhava）主题；原文把同宫与占据两项并列为共同前提，相照方向为择一；原文未给时间限定。",
+        "minimum_supported_claim": "十二宫主（Vyaya's Lord）与吉星同宫、十二宫（Vyaya）内有吉星，并且十二宫主相照吉星或被吉星相照时，命主会在自己的国家内活动。",
+        "produced_fact_keys": [
+          "十二宫受吉时的本国活动判定"
+        ],
+        "required_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否与吉星同宫",
+          "十二宫（Vyaya）是否被吉星占据"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否与吉星同宫"
+                },
+                {
+                  "fact_key": "十二宫（Vyaya）是否被吉星占据"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否相照吉星"
+                },
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否被吉星相照"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否与吉星同宫"
+                },
+                {
+                  "fact_key": "十二宫（Vyaya）是否被吉星占据"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "十二宫主（Vyaya's Lord）是否相照吉星"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否相照吉星"
+            },
+            "selection_group": "ch23-v12-benefic-supported-vyaya-own-country.step-001:benefic-drishti-direction",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十二宫主（Vyaya's Lord）是否相照吉星。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否与吉星同宫"
+                },
+                {
+                  "fact_key": "十二宫（Vyaya）是否被吉星占据"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "十二宫主（Vyaya's Lord）是否被吉星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否被吉星相照"
+            },
+            "selection_group": "ch23-v12-benefic-supported-vyaya-own-country.step-001:benefic-drishti-direction",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十二宫主（Vyaya's Lord）是否被吉星相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Vyaya’s Lord and Vyaya Bhava are with benefics",
+              "claim": "十二宫主（Vyaya's Lord）与吉星同宫、十二宫（Vyaya）内有吉星"
+            },
+            {
+              "quote": "Vyaya’s Lord gives a Drishti to, or receives a Drishti from benefics",
+              "claim": "十二宫主相照吉星或被吉星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "One will move in his own country",
+              "claim": "命主会在自己的国家内活动"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch23:v12",
+            "quote": "One will move in his own country, if Vyaya’s Lord and Vyaya Bhava are with benefics and Vyaya’s Lord gives a Drishti to, or receives a Drishti from benefics.",
+            "pdf_pages": [
+              40
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十二宫主（Vyaya's Lord）是否与吉星同宫、十二宫（Vyaya）是否被吉星占据。",
+        "stop_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否与吉星同宫",
+          "十二宫（Vyaya）是否被吉星占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得省掉同宫与占据两项共同前提，只凭相照下判断。",
+          "不得把「在自己的国家内活动」读成不能出国或必定富裕。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "cabfa4a3f0f030576f4771f50c87599c0e46a0e29c50e5b2c12e0729b8e9bb13"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch23-v13-shani-mangal-in-vyaya-sinful-earnings.step-001",
+      "method": {
+        "method": "ch23-v13-shani-mangal-in-vyaya-sinful-earnings",
+        "title": "收入靠罪恶手段：十二宫被土星或火星占据且无吉星相照",
+        "target_house": 12,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的钱是怎么来的",
+          "我会不会走上不正当的路子"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Earnings will be through sinful measures, if Vyaya is occupied by Shani, or Mangal etc. and is not receiving a Drishti from a benefic.",
+            "十二宫 土星 火星 占据 没有吉星相照 罪恶的收入"
+          ],
+          "counter_queries": [
+            "There will be expenses on good accounts, if Vyaya’s Lord is with a benefic, or in his own Bhava, or exalted, or, if a benefic occupies Vyaya.",
+            "If Gulik is in Vyaya Bhava, the native will indulge in base deeds, be sinful, defectivelimbed, unfortunate, indolent and will join mean people.",
+            "If Vyaya’s Lord is in Ari Bhava, the native will incur enmity with his own men, be given to anger, be sinful, miserable and will go to others’ wives."
+          ],
+          "boundary_queries": [
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Benefics in both Vyaya and Dhan Bhava cause Subh Yog. Malefics in both Vyaya and Dhan Bhava cause Asubh Yog."
+          ],
+          "method_queries": [
+            "Just as these effects are derived from Tanu Bhava in regard to the native, similar deductions be made about co-borns etc. from Sahaj and other Bhavas.",
+            "十二宫被凶星占据又无吉照该怎么判断"
+          ]
+        },
+        "stop_conditions": [
+          "缺少十二宫是否被吉星相照的事实时停止。",
+          "土星与火星的十二宫落宫事实都缺失时停止。",
+          "原文 etc. 所指的其余行星未确定时，对这些行星停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch23-v13-shani-mangal-in-vyaya-sinful-earnings.step-001",
+        "action": "先核对十二宫（Vyaya）是否受吉星相照，确认没有吉星相照后，再核对十二宫内是否有土星（Shani）或火星（Mangal）。",
+        "applicability_scope": "仅限本命盘十二宫（Vyaya Bhava）的收入来源主题；原文占据者只写出 Shani, or Mangal etc.，etc. 所指未列出，未列出的行星不确定即停判；原文未给时间限定。",
+        "minimum_supported_claim": "十二宫（Vyaya）被土星（Shani）占据，或被火星（Mangal）占据，且没有受到吉星相照时，收入将通过罪恶的手段取得。",
+        "produced_fact_keys": [
+          "十二宫凶星占据无吉照的收入来源判定"
+        ],
+        "required_fact_keys": [
+          "十二宫（Vyaya）是否被吉星相照"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "十二宫（Vyaya）是否被吉星相照"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "土星（Shani）是否落十二宫（Vyaya）"
+                },
+                {
+                  "fact_key": "火星（Mangal）是否落十二宫（Vyaya）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "十二宫（Vyaya）是否被吉星相照"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "土星（Shani）是否落十二宫（Vyaya）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "土星（Shani）是否落十二宫（Vyaya）"
+            },
+            "selection_group": "ch23-v13-shani-mangal-in-vyaya-sinful-earnings.step-001:vyaya-occupant",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：土星（Shani）是否落十二宫（Vyaya）。"
+          },
+          {
+            "when": {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "十二宫（Vyaya）是否被吉星相照"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "火星（Mangal）是否落十二宫（Vyaya）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "火星（Mangal）是否落十二宫（Vyaya）"
+            },
+            "selection_group": "ch23-v13-shani-mangal-in-vyaya-sinful-earnings.step-001:vyaya-occupant",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：火星（Mangal）是否落十二宫（Vyaya）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Vyaya is occupied by Shani",
+              "claim": "十二宫（Vyaya）被土星（Shani）占据"
+            },
+            {
+              "quote": "or Mangal etc.",
+              "claim": "或被火星（Mangal）占据"
+            },
+            {
+              "quote": "is not receiving a Drishti from a benefic",
+              "claim": "且没有受到吉星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Earnings will be through sinful measures",
+              "claim": "收入将通过罪恶的手段取得"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch23:v13",
+            "quote": "Earnings will be through sinful measures, if Vyaya is occupied by Shani, or Mangal etc. and is not receiving a Drishti from a benefic.",
+            "pdf_pages": [
+              40
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十二宫（Vyaya）是否被吉星相照。",
+        "stop_fact_keys": [
+          "十二宫（Vyaya）是否被吉星相照"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把原文的 etc. 自行补成全部凶星或某几颗指定行星。",
+          "不得省掉「没有吉星相照」这一前提。",
+          "不得据此推断犯罪、刑罚或收入数额。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "fba566f7f0109059d05db57a9311e4f478f4587a7975407aba39800bfb44d67b"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch23:v11": {
+      "evidence_atom_id": "bphs-97:santhanam:ch23:v11",
+      "chapter_number": 23,
+      "chapter_title": "Effects of Vyaya Bhava",
+      "verse_label": "11.",
+      "content_role": "verse",
+      "exact_text": "11. One will wander from country to country, if Vyaya’s Lord and Vyaya Bhava are with malefics and Vyaya’s Lord gives a Drishti to, or receives a Drishti from malefics.",
+      "pdf_pages": [
+        40
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 23 · Sloka 11 · PDF page 40 · bphs-97:santhanam:ch23:v11",
+      "previous_atom_id": "bphs-97:santhanam:ch23:v10",
+      "next_atom_id": "bphs-97:santhanam:ch23:v12",
+      "context_before": " If there is a benefic in Vyaya, while its Lord is exalted, or is yuti with, or receives a Drishti from a benefic, one will attain final emancipation.\n\n",
+      "context_after": "12. One will move in his own country, if Vyaya’s Lord and Vyaya Bhava are with benefics and Vyaya’s Lord gives a Drishti to, or ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch23:v12": {
+      "evidence_atom_id": "bphs-97:santhanam:ch23:v12",
+      "chapter_number": 23,
+      "chapter_title": "Effects of Vyaya Bhava",
+      "verse_label": "12.",
+      "content_role": "verse",
+      "exact_text": "12. One will move in his own country, if Vyaya’s Lord and Vyaya Bhava are with benefics and Vyaya’s Lord gives a Drishti to, or receives a Drishti from benefics.",
+      "pdf_pages": [
+        40
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 23 · Sloka 12 · PDF page 40 · bphs-97:santhanam:ch23:v12",
+      "previous_atom_id": "bphs-97:santhanam:ch23:v11",
+      "next_atom_id": "bphs-97:santhanam:ch23:v13",
+      "context_before": " One will wander from country to country, if Vyaya’s Lord and Vyaya Bhava are with malefics and Vyaya’s Lord gives a Drishti to, or receives a Drishti from malefics.\n\n",
+      "context_after": "13. Earnings will be through sinful measures, if Vyaya is occupied by Shani, or Mangal etc. and is not receiving a Drishti from ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch23:v13": {
+      "evidence_atom_id": "bphs-97:santhanam:ch23:v13",
+      "chapter_number": 23,
+      "chapter_title": "Effects of Vyaya Bhava",
+      "verse_label": "13.",
+      "content_role": "verse",
+      "exact_text": "13. Earnings will be through sinful measures, if Vyaya is occupied by Shani, or Mangal etc. and is not receiving a Drishti from a benefic.",
+      "pdf_pages": [
+        40
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 23 · Sloka 13 · PDF page 40 · bphs-97:santhanam:ch23:v13",
+      "previous_atom_id": "bphs-97:santhanam:ch23:v12",
+      "next_atom_id": "bphs-97:santhanam:ch23:v14",
+      "context_before": " One will move in his own country, if Vyaya’s Lord and Vyaya Bhava are with benefics and Vyaya’s Lord gives a Drishti to, or receives a Drishti from benefics.\n\n",
+      "context_after": "14. If Lagn’s Lord is in Vyaya, while Vyaya’s Lord is in Lagn with Shukr, expenses will be on religious grounds.\n\n<!-- SOURCE_PA",
+      "content_missing": false
+    }
+  }
+}

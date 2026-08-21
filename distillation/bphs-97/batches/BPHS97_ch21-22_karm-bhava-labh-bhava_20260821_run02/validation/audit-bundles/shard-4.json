@@ -1,0 +1,996 @@
+{
+  "shard": 4,
+  "step_count": 7,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch21-v19-21-fame-karm-lord-in-dharm.step-001",
+      "method": {
+        "method": "ch21-v19-21-fame-karm-lord-in-dharm",
+        "title": "得享名声：十宫主落九宫、上升主落十宫、月亮落五宫",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会声名远播",
+          "十宫主落九宫对我意味着什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Fame will come to the native, if Karm’s Lord is in Dharm Bhava, as Lagn’s Lord is in Karm Bhava and Chandra is in Putr Bhava",
+            "十宫主落九宫 上升主落十宫 月亮落五宫 名声"
+          ],
+          "counter_queries": [
+            "If Shani is in Karm Bhava along with a debilitated Grah, while Karm Bhava in the Navāńś Kundali is occupied by a malefic, the native will be bereft of acts",
+            "Should Rahu, Surya, Shani and Mangal be in Labh Bhava, the native will incur cessation of his duties"
+          ],
+          "boundary_queries": [
+            "If Karm’s Lord is in Dharm Bhava, one born of royal scion will become a king, whereas an ordinary native will be equal to a king",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava"
+          ],
+          "method_queries": [
+            "Prosperity, or Annihilation of a Bhava. Predict prosperity of the Bhava, which is yuti with, or drishtied by a benefic",
+            "判断名声应检查十宫主落在哪一宫"
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主落宫事实时停止。",
+          "缺少上升主落宫事实时停止。",
+          "缺少月亮落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch21-v19-21-fame-karm-lord-in-dharm.step-001",
+        "action": "核对十宫主（Karm's Lord）是否落九宫（Dharm）、上升主（Lagn's Lord）是否落十宫（Karm）、月亮（Chandra）是否落五宫（Putr）。",
+        "applicability_scope": "仅限本命盘十宫（Karm）名声主题；本条是同偈三组名声组合中的第三组，三个条件同时成立才下断语；原文未给时间限定。",
+        "minimum_supported_claim": "十宫主落九宫、上升主落十宫、月亮落五宫时，命主会有名声。",
+        "produced_fact_keys": [
+          "十宫主落九宫得名声判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm's Lord）是否落九宫（Dharm）",
+          "上升主（Lagn's Lord）是否落十宫（Karm）",
+          "月亮（Chandra）是否落五宫（Putr）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "十宫主（Karm's Lord）是否落九宫（Dharm）"
+            },
+            {
+              "fact_key": "上升主（Lagn's Lord）是否落十宫（Karm）"
+            },
+            {
+              "fact_key": "月亮（Chandra）是否落五宫（Putr）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Karm’s Lord is in Dharm Bhava",
+              "claim": "十宫主落九宫"
+            },
+            {
+              "quote": "Lagn’s Lord is in Karm Bhava",
+              "claim": "上升主落十宫"
+            },
+            {
+              "quote": "Chandra is in Putr Bhava",
+              "claim": "月亮落五宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Fame will come to the native",
+              "claim": "命主会有名声"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch21:v19-21",
+            "quote": "Fame will come to the native, if Karm’s Lord is in Dharm Bhava, as Lagn’s Lord is in Karm Bhava and Chandra is in Putr Bhava.",
+            "pdf_pages": [
+              39
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm's Lord）是否落九宫（Dharm）、上升主（Lagn's Lord）是否落十宫（Karm）、月亮（Chandra）是否落五宫（Putr）。",
+        "stop_fact_keys": [
+          "十宫主（Karm's Lord）是否落九宫（Dharm）",
+          "上升主（Lagn's Lord）是否落十宫（Karm）",
+          "月亮（Chandra）是否落五宫（Putr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断名声的领域、大小或应期。",
+          "不得把三个落宫条件中的任何一个单独当成有名声的判据。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "6a36daff128395fc1feee3b5c7fb657010cfc51951c3bfe446e608af09700d56"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch22-v2-labh-lord-placement-gains.step-001",
+      "method": {
+        "method": "ch22-v2-labh-lord-placement-gains",
+        "title": "收获甚多：十一宫主落十一宫、角宫或从上升起算的三角宫",
+        "target_house": 11,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子的收入进项怎么样",
+          "我能不能有很多收获"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Labh’s Lord be in Labh itself, or be in an angle, or in a trine from Lagna, there will be many gains",
+            "十一宫主落十一宫 落角宫 落三角宫 收获甚多"
+          ],
+          "counter_queries": [
+            "There will be no gains in spite of numerous efforts, if Labh’s Lord is in fall, in combustion, or be in Ari, Randhr, or Vyaya Bhava with a malefic",
+            "If Labh’s Lord is in Sahaj Bhava, while Labh Bhava is occupied by a benefic, the native will gain 2000 Nishkas in his 36th year"
+          ],
+          "boundary_queries": [
+            "Kendras, Konas etc. defined. O Maitreya, listen to other matters, which I am explaining. The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "Indications of Labh Bhava. All articles, son’s wife, income, prosperity, quadrupeds etc. are to be understood from Labh Bhava"
+          ],
+          "method_queries": [
+            "If Labh’s Lord is in Labh Bhava, the native will gain in all his undertakings, while his learning and happiness will be on the increase day by day",
+            "判断十一宫（Labh）收获应检查十一宫主落在哪一宫"
+          ]
+        },
+        "stop_conditions": [
+          "缺少十一宫主落宫事实时停止。",
+          "落十一宫、落角宫、落三角宫三个分支事实都缺时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch22-v2-labh-lord-placement-gains.step-001",
+        "action": "核对十一宫主（Labh's Lord）落在哪一宫，看它是否落十一宫（Labh）本身、落角宫、或落从上升（Lagna）起算的三角宫。",
+        "applicability_scope": "仅限本命盘十一宫（Labh）收获主题；原文三个落宫是并列备选，任一成立即可；原文未给收获数额与时间。",
+        "minimum_supported_claim": "十一宫主落十一宫、落角宫或落从上升起算的三角宫时，收获甚多。",
+        "produced_fact_keys": [
+          "十一宫主落宫收获甚多判定"
+        ],
+        "required_fact_keys": [
+          "本盘十一宫主（Labh's Lord）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘十一宫主（Labh's Lord）落在哪一宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "十一宫主（Labh's Lord）是否落十一宫（Labh）"
+                },
+                {
+                  "fact_key": "十一宫主（Labh's Lord）是否落角宫"
+                },
+                {
+                  "fact_key": "十一宫主（Labh's Lord）是否落三角宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘十一宫主（Labh's Lord）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "十一宫主（Labh's Lord）是否落十一宫（Labh）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十一宫主（Labh's Lord）是否落十一宫（Labh）"
+            },
+            "selection_group": "ch22-v2-labh-lord-placement-gains.step-001:labh-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十一宫主（Labh's Lord）是否落十一宫（Labh）。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘十一宫主（Labh's Lord）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "十一宫主（Labh's Lord）是否落角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十一宫主（Labh's Lord）是否落角宫"
+            },
+            "selection_group": "ch22-v2-labh-lord-placement-gains.step-001:labh-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十一宫主（Labh's Lord）是否落角宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘十一宫主（Labh's Lord）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "十一宫主（Labh's Lord）是否落三角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十一宫主（Labh's Lord）是否落三角宫"
+            },
+            "selection_group": "ch22-v2-labh-lord-placement-gains.step-001:labh-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十一宫主（Labh's Lord）是否落三角宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Labh’s Lord be in Labh itself",
+              "claim": "十一宫主落十一宫"
+            },
+            {
+              "quote": "be in an angle",
+              "claim": "落角宫"
+            },
+            {
+              "quote": "in a trine from Lagna",
+              "claim": "落从上升起算的三角宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "there will be many gains",
+              "claim": "收获甚多"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch22:v2",
+            "quote": "Should Labh’s Lord be in Labh itself, or be in an angle, or in a trine from Lagna, there will be many gains.",
+            "pdf_pages": [
+              39
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘十一宫主（Labh's Lord）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘十一宫主（Labh's Lord）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断收获的数额、来源或应期。",
+          "不得要求三个落宫同时成立。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "e56058d33a391de777b957bd086286d74ac938759b34bf248d754a6859b929c9"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch22-v2-exalted-labh-lord-gains.step-001",
+      "method": {
+        "method": "ch22-v2-exalted-labh-lord-gains",
+        "title": "入旺虽燃烧仍收获甚多：十一宫主入旺",
+        "target_house": 11,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "十一宫主入旺又燃烧我还有没有收获",
+          "行星燃烧会不会毁掉我的进项"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Similarly, if Labh’s Lord is exalted, though in combustion there will be many gains",
+            "十一宫主入旺 燃烧 收获甚多"
+          ],
+          "counter_queries": [
+            "There will be no gains in spite of numerous efforts, if Labh’s Lord is in fall, in combustion, or be in Ari, Randhr, or Vyaya Bhava with a malefic",
+            "There will be penury right from birth and the native will have to beg even for his food, if the Lords of Dhan and Labh Bhava are both combust, or with malefics"
+          ],
+          "boundary_queries": [
+            "Indications of Labh Bhava. All articles, son’s wife, income, prosperity, quadrupeds etc. are to be understood from Labh Bhava",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "method_queries": [
+            "If Labh’s Lord is in Labh Bhava, the native will gain in all his undertakings",
+            "判断十一宫（Labh）收获时入旺与燃烧如何取舍"
+          ]
+        },
+        "stop_conditions": [
+          "缺少十一宫主入旺事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch22-v2-exalted-labh-lord-gains.step-001",
+        "action": "核对十一宫主（Labh's Lord）是否入旺；入旺成立时，纵然它处于燃烧，仍按收获甚多判。",
+        "applicability_scope": "仅限本命盘十一宫（Labh）收获主题；「Similarly」承同偈前句的收获断语；燃烧是原文的让步条件，不是成立条件；原文未给收获数额与时间。",
+        "minimum_supported_claim": "承同偈前句的收获断语，十一宫主入旺时，纵然处于燃烧，也收获甚多。",
+        "produced_fact_keys": [
+          "十一宫主入旺纵燃烧仍收获判定"
+        ],
+        "required_fact_keys": [
+          "十一宫主（Labh's Lord）是否入旺"
+        ],
+        "condition_logic": {
+          "fact_key": "十一宫主（Labh's Lord）是否入旺"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Labh’s Lord is exalted",
+              "claim": "十一宫主入旺"
+            },
+            {
+              "quote": "though in combustion",
+              "claim": "纵然处于燃烧"
+            }
+          ],
+          "results": [
+            {
+              "quote": "there will be many gains",
+              "claim": "收获甚多"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch22:v2",
+            "quote": "Similarly, if Labh’s Lord is exalted, though in combustion there will be many gains.",
+            "pdf_pages": [
+              39
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十一宫主（Labh's Lord）是否入旺。",
+        "stop_fact_keys": [
+          "十一宫主（Labh's Lord）是否入旺"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断收获的数额、来源或应期。",
+          "不得把燃烧本身当成收获甚多的成立条件。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch22:v2"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [
+          {
+            "fact_key": "十一宫主（Labh's Lord）是否燃烧"
+          }
+        ],
+        "step_hash": "fc14717d674fe7ec01353908cc88855869676de6ccefd4711e21876703297d80"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch22-v3-labh-lord-in-dhan-great-gains.step-001",
+      "method": {
+        "method": "ch22-v3-labh-lord-in-dhan-great-gains",
+        "title": "收获甚大：十一宫主落二宫、二宫主落角宫并与木星同宫",
+        "target_house": 11,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子的进项大不大",
+          "我的收获能不能很大"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Labh’s Lord is in Dhan Bhava, while Dhan’s Lord is in an angle along with Guru, the gains will be great",
+            "十一宫主落二宫（Dhan） 二宫主落角宫 与木星（Guru）同宫 收获甚大"
+          ],
+          "counter_queries": [
+            "There will be no gains in spite of numerous efforts, if Labh’s Lord is in fall, in combustion, or be in Ari, Randhr, or Vyaya Bhava with a malefic",
+            "One will be penniless, if the Lord of Dhan Bhava is in an evil Bhava, while the Lord of Labh Bhava is also so placed and Dhan Bhava is occupied by a malefic"
+          ],
+          "boundary_queries": [
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava"
+          ],
+          "method_queries": [
+            "If Dhan Lord is in Labh, while the Lord of Labh in Dhan, wealth will be acquired by the native. Alternately these two Lords may join in an angle, or in a trine",
+            "If Labh’s Lord is in Labh Bhava, the native will gain in all his undertakings, while his learning and happiness will be on the increase day by day"
+          ]
+        },
+        "stop_conditions": [
+          "缺少十一宫主落宫事实时停止。",
+          "缺少二宫主落角宫事实时停止。",
+          "缺少二宫主与木星同宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch22-v3-labh-lord-in-dhan-great-gains.step-001",
+        "action": "核对十一宫主（Labh's Lord）是否落二宫（Dhan），同时核对二宫主（Dhan's Lord）是否落角宫并与木星（Guru）同宫。",
+        "applicability_scope": "仅限本命盘十一宫（Labh）收获主题；原文三个条件是并列前提，须同时成立；原文未给收获数额与应期。",
+        "minimum_supported_claim": "十一宫主落二宫、二宫主落角宫并与木星同宫时，收获甚大。",
+        "produced_fact_keys": [
+          "十一宫主落二宫收获甚大判定"
+        ],
+        "required_fact_keys": [
+          "十一宫主（Labh's Lord）是否落二宫（Dhan）",
+          "二宫主（Dhan's Lord）是否落角宫",
+          "二宫主（Dhan's Lord）是否与木星（Guru）同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "十一宫主（Labh's Lord）是否落二宫（Dhan）"
+            },
+            {
+              "fact_key": "二宫主（Dhan's Lord）是否落角宫"
+            },
+            {
+              "fact_key": "二宫主（Dhan's Lord）是否与木星（Guru）同宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Labh’s Lord is in Dhan Bhava",
+              "claim": "十一宫主落二宫"
+            },
+            {
+              "quote": "Dhan’s Lord is in an angle",
+              "claim": "二宫主落角宫"
+            },
+            {
+              "quote": "along with Guru",
+              "claim": "并与木星同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the gains will be great",
+              "claim": "收获甚大"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch22:v3",
+            "quote": "If Labh’s Lord is in Dhan Bhava, while Dhan’s Lord is in an angle along with Guru, the gains will be great.",
+            "pdf_pages": [
+              39
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十一宫主（Labh's Lord）是否落二宫（Dhan）、二宫主（Dhan's Lord）是否落角宫、二宫主（Dhan's Lord）是否与木星（Guru）同宫。",
+        "stop_fact_keys": [
+          "十一宫主（Labh's Lord）是否落二宫（Dhan）",
+          "二宫主（Dhan's Lord）是否落角宫",
+          "二宫主（Dhan's Lord）是否与木星（Guru）同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断收获的数额、来源或应期。",
+          "不得把「落角宫」与「与木星同宫」拆成任选其一：原文两者并列。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "c7a7b8fa56cd40456d691115ace86efa03427f3ba62d480ca1fac04eb98404f5"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch22-v4-labh-lord-in-sahaj-2000-nishkas.step-001",
+      "method": {
+        "method": "ch22-v4-labh-lord-in-sahaj-2000-nishkas",
+        "title": "第36年得2000 Nishkas：十一宫主落三宫、十一宫被吉星占据",
+        "target_house": 11,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我什么时候会有一笔大进项",
+          "我三十多岁的财运怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Labh’s Lord is in Sahaj Bhava, while Labh Bhava is occupied by a benefic, the native will gain 2000 Nishkas in his 36th year",
+            "十一宫主落三宫（Sahaj） 十一宫被吉星占据 第36年 2000 Nishkas"
+          ],
+          "counter_queries": [
+            "There will be no gains in spite of numerous efforts, if Labh’s Lord is in fall, in combustion, or be in Ari, Randhr, or Vyaya Bhava with a malefic",
+            "Should the Lords of Dhan and Labh Bhava be relegated to Ari, Randhr, or Vyaya Bhava, while Mangal is in Labh Bhava and Rahu is in Dhan Bhava, the native will lose his wealth on account of royal punishments"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Indications of Labh Bhava. All articles, son’s wife, income, prosperity, quadrupeds etc. are to be understood from Labh Bhava"
+          ],
+          "method_queries": [
+            "If Labh’s Lord is in Sahaj Bhava, the native will be skilful in all jobs, wealthy, endowed with fraternal bliss and may sometimes incur gout pains",
+            "If Labh’s Lord is in Labh Bhava, the native will gain in all his undertakings, while his learning and happiness will be on the increase day by day"
+          ]
+        },
+        "stop_conditions": [
+          "缺少十一宫主落宫事实时停止。",
+          "缺少十一宫吉星占据事实时停止。",
+          "吉星名册未取得时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch22-v4-labh-lord-in-sahaj-2000-nishkas.step-001",
+        "action": "核对十一宫主（Labh's Lord）是否落三宫（Sahaj），同时核对十一宫（Labh）是否被吉星占据。",
+        "applicability_scope": "仅限本命盘十一宫（Labh）收获主题；两个条件须同时成立；原文以 his 指称本人；吉星名册按 BPHS 自己的界定取。",
+        "minimum_supported_claim": "十一宫主落三宫、十一宫被吉星占据时，本人在第36年获得2000 Nishkas。",
+        "produced_fact_keys": [
+          "十一宫主落三宫第36年收获判定"
+        ],
+        "required_fact_keys": [
+          "十一宫主（Labh's Lord）是否落三宫（Sahaj）",
+          "十一宫（Labh）是否被吉星占据"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "十一宫主（Labh's Lord）是否落三宫（Sahaj）"
+            },
+            {
+              "fact_key": "十一宫（Labh）是否被吉星占据"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Labh’s Lord is in Sahaj Bhava",
+              "claim": "十一宫主落三宫"
+            },
+            {
+              "quote": "Labh Bhava is occupied by a benefic",
+              "claim": "十一宫被吉星占据"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will gain 2000 Nishkas in his 36<sup>th</sup> year",
+              "claim": "本人在第36年获得2000 Nishkas"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch22:v4",
+            "quote": "If Labh’s Lord is in Sahaj Bhava, while Labh Bhava is occupied by a benefic, the native will gain 2000 Nishkas in his 36<sup>th</sup> year.",
+            "pdf_pages": [
+              39
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十一宫主（Labh's Lord）是否落三宫（Sahaj）、十一宫（Labh）是否被吉星占据。",
+        "stop_fact_keys": [
+          "十一宫主（Labh's Lord）是否落三宫（Sahaj）",
+          "十一宫（Labh）是否被吉星占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 2000 Nishkas 换算成任何现代货币金额。",
+          "不得把第36年挪到其他年岁，也不得推广成一生的收获水平。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定第36年",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "66be3423d3bd3d172b784a8cad3be3db674ca151477622751436f0bb5145dbc2"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch22-v5-labh-lord-with-benefic-500-nishkas.step-001",
+      "method": {
+        "method": "ch22-v5-labh-lord-with-benefic-500-nishkas",
+        "title": "第40年得500 Nishkas：十一宫主与吉星同宫并落角宫或三角宫",
+        "target_house": 11,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我四十岁前后有没有进账",
+          "十一宫主与吉星同宫是什么效果"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Labh’s Lord is yuti with a benefic in an angle, or in a trine, the native will acquire 500 Nishkas in his 40th year",
+            "十一宫主（Labh's Lord）与吉星同宫 角宫 三角宫 第40年 500 Nishkas"
+          ],
+          "counter_queries": [
+            "There will be no gains in spite of numerous efforts, if Labh’s Lord is in fall, in combustion, or be in Ari, Randhr, or Vyaya Bhava with a malefic",
+            "There will be penury right from birth and the native will have to beg even for his food, if the Lords of Dhan and Labh Bhava are both combust, or with malefics"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Putr and Dharm Bhava are known by the name Kon (or trine)"
+          ],
+          "method_queries": [
+            "If the Lord of Dhan is in an angle, while Labh Lord is in a trine thereof, or is drishtied by, or yuti with Guru and Shukr, the subject will be wealthy",
+            "If Labh’s Lord is in Labh Bhava, the native will gain in all his undertakings, while his learning and happiness will be on the increase day by day"
+          ]
+        },
+        "stop_conditions": [
+          "缺少十一宫主与吉星同宫事实时停止。",
+          "落角宫与落三角宫两个分支事实都缺时停止。",
+          "吉星名册未取得时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch22-v5-labh-lord-with-benefic-500-nishkas.step-001",
+        "action": "核对十一宫主（Labh's Lord）是否与吉星同宫；成立时再看这一同宫落在角宫还是三角宫。",
+        "applicability_scope": "仅限本命盘十一宫（Labh）收获主题；原文 in an angle, or in a trine 是两个并列备选，任一成立即可；同宫双方同落一宫，故按十一宫主的落宫取值；原文以 his 指称本人。",
+        "minimum_supported_claim": "十一宫主与吉星同宫，并落角宫或落三角宫时，本人在第40年获得500 Nishkas。",
+        "produced_fact_keys": [
+          "十一宫主与吉星同宫第40年收获判定"
+        ],
+        "required_fact_keys": [
+          "十一宫主（Labh's Lord）是否与吉星同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "十一宫主（Labh's Lord）是否与吉星同宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "十一宫主（Labh's Lord）是否落角宫"
+                },
+                {
+                  "fact_key": "十一宫主（Labh's Lord）是否落三角宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "十一宫主（Labh's Lord）是否与吉星同宫"
+            },
+            "required_fact_keys": [
+              "十一宫主（Labh's Lord）是否落角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十一宫主（Labh's Lord）是否落角宫"
+            },
+            "selection_group": "ch22-v5-labh-lord-with-benefic-500-nishkas.step-001:labh-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十一宫主（Labh's Lord）是否落角宫。"
+          },
+          {
+            "when": {
+              "fact_key": "十一宫主（Labh's Lord）是否与吉星同宫"
+            },
+            "required_fact_keys": [
+              "十一宫主（Labh's Lord）是否落三角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十一宫主（Labh's Lord）是否落三角宫"
+            },
+            "selection_group": "ch22-v5-labh-lord-with-benefic-500-nishkas.step-001:labh-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十一宫主（Labh's Lord）是否落三角宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Labh’s Lord is yuti with a benefic",
+              "claim": "十一宫主与吉星同宫"
+            },
+            {
+              "quote": "in an angle",
+              "claim": "落角宫"
+            },
+            {
+              "quote": "in a trine",
+              "claim": "落三角宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will acquire 500 Nishkas in his 40<sup>th</sup> year",
+              "claim": "本人在第40年获得500 Nishkas"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch22:v5",
+            "quote": "If Labh’s Lord is yuti with a benefic in an angle, or in a trine, the native will acquire 500 Nishkas in his 40<sup>th</sup> year.",
+            "pdf_pages": [
+              39
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十一宫主（Labh's Lord）是否与吉星同宫。",
+        "stop_fact_keys": [
+          "十一宫主（Labh's Lord）是否与吉星同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得要求角宫与三角宫同时成立：原文两者任选其一。",
+          "不得把 500 Nishkas 换算成任何现代货币金额，也不得挪动第40年这一年岁。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定第40年",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "d1e7063d4f8505744b6d190dd2c7df2e6c1b31c2326fae184deffb6c82e3de27"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch22-v6-guru-in-labh-chandra-shukra-6000-nishkas.step-001",
+      "method": {
+        "method": "ch22-v6-guru-in-labh-chandra-shukra-6000-nishkas",
+        "title": "拥有6000 Nishkas：木星落十一宫、月亮落二宫、金星落九宫",
+        "target_house": 11,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子能积下多少家当",
+          "木星落十一宫是什么财运"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "The native will own 6000 Nishkas, if Labh Bhava is occupied by Guru, while Dhan Bhava and Dharm Bhava are, respectively, taken over by Chandra and Shukra by position",
+            "木星（Guru）落十一宫 月亮（Chandra）落二宫 金星（Shukra）落九宫 6000 Nishkas"
+          ],
+          "counter_queries": [
+            "Should the Lords of Dhan and Labh Bhava be relegated to Ari, Randhr, or Vyaya Bhava, while Mangal is in Labh Bhava and Rahu is in Dhan Bhava, the native will lose his wealth on account of royal punishments",
+            "There will be no gains in spite of numerous efforts, if Labh’s Lord is in fall, in combustion, or be in Ari, Randhr, or Vyaya Bhava with a malefic"
+          ],
+          "boundary_queries": [
+            "Indications of Labh Bhava. All articles, son’s wife, income, prosperity, quadrupeds etc. are to be understood from Labh Bhava",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava"
+          ],
+          "method_queries": [
+            "When Guru is in Labh, Shukra is in Dhan and a benefic is placed in Vyaya Bhava, while Dhan’s Lord is yuti with a benefic, there will be expenses on religious, or charitable grounds",
+            "Should Simh be Putr Bhava and be occupied by Surya himself, as Shani, Chandra and Guru are in Labh Bhava, the native will be very affluent"
+          ]
+        },
+        "stop_conditions": [
+          "缺少木星落十一宫事实时停止。",
+          "缺少月亮落二宫事实时停止。",
+          "缺少金星落九宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch22-v6-guru-in-labh-chandra-shukra-6000-nishkas.step-001",
+        "action": "核对十一宫（Labh）是否被木星（Guru）占据，并核对二宫（Dhan）与九宫（Dharm）是否分别被月亮（Chandra）与金星（Shukra）占据。",
+        "applicability_scope": "仅限本命盘十一宫（Labh）收获主题；原文三个落宫是并列前提，且二宫对月亮、九宫对金星的对应次序由原文 respectively 定死；原文未给应期。",
+        "minimum_supported_claim": "十一宫被木星占据，二宫与九宫分别被月亮和金星按落宫占据时，本人拥有6000 Nishkas。",
+        "produced_fact_keys": [
+          "木星落十一宫6000 Nishkas判定"
+        ],
+        "required_fact_keys": [
+          "木星（Guru）是否落十一宫（Labh）",
+          "月亮（Chandra）是否落二宫（Dhan）",
+          "金星（Shukra）是否落九宫（Dharm）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "木星（Guru）是否落十一宫（Labh）"
+            },
+            {
+              "fact_key": "月亮（Chandra）是否落二宫（Dhan）"
+            },
+            {
+              "fact_key": "金星（Shukra）是否落九宫（Dharm）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Labh Bhava is occupied by Guru",
+              "claim": "十一宫被木星占据"
+            },
+            {
+              "quote": "Dhan Bhava and Dharm Bhava are, respectively, taken over by Chandra and Shukra by position",
+              "claim": "二宫与九宫分别被月亮和金星按落宫占据"
+            }
+          ],
+          "results": [
+            {
+              "quote": "The native will own 6000 Nishkas",
+              "claim": "本人拥有6000 Nishkas"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch22:v6",
+            "quote": "The native will own 6000 Nishkas, if Labh Bhava is occupied by Guru, while Dhan Bhava and Dharm Bhava are, respectively, taken over by Chandra and Shukra by position.",
+            "pdf_pages": [
+              39
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：木星（Guru）是否落十一宫（Labh）、月亮（Chandra）是否落二宫（Dhan）、金星（Shukra）是否落九宫（Dharm）。",
+        "stop_fact_keys": [
+          "木星（Guru）是否落十一宫（Labh）",
+          "月亮（Chandra）是否落二宫（Dhan）",
+          "金星（Shukra）是否落九宫（Dharm）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把月亮与金星的落宫对调：原文 respectively 已定死二宫配月亮、九宫配金星。",
+          "不得把 6000 Nishkas 换算成任何现代货币金额，也不得据此推断应期。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "07d8af6c4f528640d5192667ea5a1453227b5ba2f66cddf71e71384fe21f44e2"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch21:v19-21": {
+      "evidence_atom_id": "bphs-97:santhanam:ch21:v19-21",
+      "chapter_number": 21,
+      "chapter_title": "Effects of Karm Bhava",
+      "verse_label": "19-21.",
+      "content_role": "verse",
+      "exact_text": "19-21. Combinations for Fame. One will be endowed with fame, if Chandra is in Karm Bhava, while Karm’s Lord is in a trine from Karm Bhava and Lagn’s Lord is in Lagn’s angle. Similar effects will come to pass, if Labh’s Lord is in Karm Bhava, while Karm’s Lord is strong and gives a Drishti to Guru. Fame will come to the native, if Karm’s Lord is in Dharm Bhava, as Lagn’s Lord is in Karm Bhava and Chandra is in Putr Bhava.",
+      "pdf_pages": [
+        39
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 21 · Sloka 19-21 · PDF page 39 · bphs-97:santhanam:ch21:v19-21",
+      "previous_atom_id": "bphs-97:santhanam:ch21:v18",
+      "next_atom_id": "bphs-97:santhanam:ch21:v22",
+      "context_before": " Obstructions to the native’s acts will crop up, if Karm’s Lord is in fall, as both Karm Bhava and the 10<sup>th</sup> from Karm Bhava have malefic occupations.\n\n",
+      "context_after": "22. O excellent of the Brahmins, thus have been told about the effects of Karm Bhava in a brief manner. Other related effects be",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch22:v2": {
+      "evidence_atom_id": "bphs-97:santhanam:ch22:v2",
+      "chapter_number": 22,
+      "chapter_title": "Effects of Labh Bhava",
+      "verse_label": "2.",
+      "content_role": "verse",
+      "exact_text": "2. Should Labh’s Lord be in Labh itself, or be in an angle, or in a trine from Lagna, there will be many gains. Similarly, if Labh’s Lord is exalted, though in combustion there will be many gains.",
+      "pdf_pages": [
+        39
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 22 · Sloka 2 · PDF page 39 · bphs-97:santhanam:ch22:v2",
+      "previous_atom_id": "bphs-97:santhanam:ch22:v1",
+      "next_atom_id": "bphs-97:santhanam:ch22:v3",
+      "context_before": " O excellent of the Brahmins, I now explain effects relating to Labh Bhava, the auspiciousness of which Bhava will make one happy at all times.\n\n",
+      "context_after": "3. If Labh’s Lord is in Dhan Bhava, while Dhan’s Lord is in an angle along with Guru, the gains will be great.\n\n4. If Labh’s Lor",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch22:v3": {
+      "evidence_atom_id": "bphs-97:santhanam:ch22:v3",
+      "chapter_number": 22,
+      "chapter_title": "Effects of Labh Bhava",
+      "verse_label": "3.",
+      "content_role": "verse",
+      "exact_text": "3. If Labh’s Lord is in Dhan Bhava, while Dhan’s Lord is in an angle along with Guru, the gains will be great.",
+      "pdf_pages": [
+        39
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 22 · Sloka 3 · PDF page 39 · bphs-97:santhanam:ch22:v3",
+      "previous_atom_id": "bphs-97:santhanam:ch22:v2",
+      "next_atom_id": "bphs-97:santhanam:ch22:v4",
+      "context_before": "ine from Lagna, there will be many gains. Similarly, if Labh’s Lord is exalted, though in combustion there will be many gains.\n\n",
+      "context_after": "4. If Labh’s Lord is in Sahaj Bhava, while Labh Bhava is occupied by a benefic, the native will gain 2000 Nishkas in his 36<sup>",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch22:v4": {
+      "evidence_atom_id": "bphs-97:santhanam:ch22:v4",
+      "chapter_number": 22,
+      "chapter_title": "Effects of Labh Bhava",
+      "verse_label": "4.",
+      "content_role": "verse",
+      "exact_text": "4. If Labh’s Lord is in Sahaj Bhava, while Labh Bhava is occupied by a benefic, the native will gain 2000 Nishkas in his 36<sup>th</sup> year.",
+      "pdf_pages": [
+        39
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 22 · Sloka 4 · PDF page 39 · bphs-97:santhanam:ch22:v4",
+      "previous_atom_id": "bphs-97:santhanam:ch22:v3",
+      "next_atom_id": "bphs-97:santhanam:ch22:v5",
+      "context_before": "be many gains.\n\n3. If Labh’s Lord is in Dhan Bhava, while Dhan’s Lord is in an angle along with Guru, the gains will be great.\n\n",
+      "context_after": "5. If Labh’s Lord is yuti with a benefic in an angle, or in a trine, the native will acquire 500 Nishkas in his 40<sup>th</sup> ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch22:v5": {
+      "evidence_atom_id": "bphs-97:santhanam:ch22:v5",
+      "chapter_number": 22,
+      "chapter_title": "Effects of Labh Bhava",
+      "verse_label": "5.",
+      "content_role": "verse",
+      "exact_text": "5. If Labh’s Lord is yuti with a benefic in an angle, or in a trine, the native will acquire 500 Nishkas in his 40<sup>th</sup> year.",
+      "pdf_pages": [
+        39
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 22 · Sloka 5 · PDF page 39 · bphs-97:santhanam:ch22:v5",
+      "previous_atom_id": "bphs-97:santhanam:ch22:v4",
+      "next_atom_id": "bphs-97:santhanam:ch22:v6",
+      "context_before": " If Labh’s Lord is in Sahaj Bhava, while Labh Bhava is occupied by a benefic, the native will gain 2000 Nishkas in his 36<sup>th</sup> year.\n\n",
+      "context_after": "6. The native will own 6000 Nishkas, if Labh Bhava is occupied by Guru, while Dhan Bhava and Dharm Bhava are, respectively, take",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch22:v6": {
+      "evidence_atom_id": "bphs-97:santhanam:ch22:v6",
+      "chapter_number": 22,
+      "chapter_title": "Effects of Labh Bhava",
+      "verse_label": "6.",
+      "content_role": "verse",
+      "exact_text": "6. The native will own 6000 Nishkas, if Labh Bhava is occupied by Guru, while Dhan Bhava and Dharm Bhava are, respectively, taken over by Chandra and Shukra by position.",
+      "pdf_pages": [
+        39
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 22 · Sloka 6 · PDF page 39 · bphs-97:santhanam:ch22:v6",
+      "previous_atom_id": "bphs-97:santhanam:ch22:v5",
+      "next_atom_id": "bphs-97:santhanam:ch22:v7",
+      "context_before": " If Labh’s Lord is yuti with a benefic in an angle, or in a trine, the native will acquire 500 Nishkas in his 40<sup>th</sup> year.\n\n",
+      "context_after": "7. Should Guru, Budh and Chandra be in the 11<sup>th</sup> from Labh, the native will be endowed with wealth, grains, fortunes, ",
+      "content_missing": false
+    }
+  }
+}

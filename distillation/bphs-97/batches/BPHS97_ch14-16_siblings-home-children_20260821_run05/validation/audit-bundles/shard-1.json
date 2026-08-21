@@ -1,0 +1,2174 @@
+{
+  "shard": 1,
+  "step_count": 15,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch14-v1-cobirth-benefic.step-001",
+      "method": {
+        "method": "ch14-v1-cobirth-benefic",
+        "title": "三宫与吉星同宫或受吉星相照：得兄弟姐妹并有勇气",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我有没有兄弟姐妹",
+          "我兄弟姐妹多不多",
+          "我这个人算不算有胆量"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Sahaj Bhava yuti benefic endowed with co-born courageous",
+            "三宫 吉星同宫 相照 兄弟姐妹 勇气"
+          ],
+          "counter_queries": [
+            "Sahaj Bhava malefic destruction of co-born",
+            "三宫受凶星 兄弟姐妹受损"
+          ],
+          "boundary_queries": [
+            "Sahaj Bhava benefic drishti scope of effects",
+            "三宫吉星判断的适用边界"
+          ],
+          "method_queries": [
+            "how to judge Sahaj Bhava effects of co-born",
+            "判断三宫兄弟姐妹应检查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少本命盘吉星判定事实时停止。",
+          "缺少三宫同宫与相照行星事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch14-v1-cobirth-benefic.step-001",
+        "action": "核对三宫（Sahaj Bhava）与吉星的同宫或相照关系，判断兄弟姐妹与勇气。",
+        "applicability_scope": "仅限本命盘三宫兄弟姐妹与勇气主题；原文未给上升、时间或数量限定。",
+        "minimum_supported_claim": "三宫与吉星同宫，或受吉星相照，得兄弟姐妹并有勇气。",
+        "produced_fact_keys": [
+          "三宫吉星联结得兄弟姐妹与勇气判定"
+        ],
+        "required_fact_keys": [
+          "本命盘中哪些行星被判为吉星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本命盘中哪些行星被判为吉星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "三宫是否与吉星同宫"
+                },
+                {
+                  "fact_key": "三宫是否被吉星相照"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本命盘中哪些行星被判为吉星"
+            },
+            "required_fact_keys": [
+              "三宫是否与吉星同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "三宫是否与吉星同宫"
+            },
+            "selection_group": "ch14-v1-cobirth-benefic.step-001:benefic-link",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：三宫是否与吉星同宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本命盘中哪些行星被判为吉星"
+            },
+            "required_fact_keys": [
+              "三宫是否被吉星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "三宫是否被吉星相照"
+            },
+            "selection_group": "ch14-v1-cobirth-benefic.step-001:benefic-link",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：三宫是否被吉星相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Sahaj Bhava be yuti with",
+              "claim": "三宫与吉星同宫"
+            },
+            {
+              "quote": "drishtied by a benefic",
+              "claim": "受吉星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "endowed with co-born and be courageous",
+              "claim": "得兄弟姐妹并有勇气"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch14:v1",
+            "quote": "Should Sahaj Bhava be yuti with, or drishtied by a benefic, the native will be endowed with co-born and be courageous.",
+            "pdf_pages": [
+              28
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本命盘中哪些行星被判为吉星。",
+        "stop_fact_keys": [
+          "本命盘中哪些行星被判为吉星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断兄弟姐妹的具体数目、性别或出生顺序。",
+          "不得把本条的勇气结论扩大到其他宫位主题。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "9368e0f6d5f82f7fd198c7031e348f27f0f9b96551620a091f3c93e89500ef4b"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch14-v2-lord-mangal-good-results.step-001",
+      "method": {
+        "method": "ch14-v2-lord-mangal-good-results",
+        "title": "三宫主与 Mangal 相照或落三宫：因三宫得好结果",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和兄弟姐妹的关系好不好",
+          "兄弟姐妹会不会给我带来好处"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Sahaj Lord along with Mangal drishties Sahaj Bhava good results",
+            "三宫主 与火星 相照三宫 好结果"
+          ],
+          "counter_queries": [
+            "said 2 Grahas with malefic destruction of co-born",
+            "三宫主与火星遇凶星 兄弟姐妹毁灭"
+          ],
+          "boundary_queries": [
+            "Sahaj Bhava good results due to Sahaj Bhava scope",
+            "三宫好结果的适用边界"
+          ],
+          "method_queries": [
+            "how to judge Sahaj Lord and Mangal combination",
+            "判断三宫主与火星组合的步骤"
+          ]
+        },
+        "stop_conditions": [
+          "缺少三宫主行星身份事实时停止。",
+          "缺少三宫主与 Mangal 的相照或落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch14-v2-lord-mangal-good-results.step-001",
+        "action": "核对三宫主与 Mangal 是否一同相照三宫，或这两颗行星是否同落三宫内。",
+        "applicability_scope": "仅限本命盘三宫（Sahaj Bhava）好结果主题；原文未给时间、上升或数量限定。",
+        "minimum_supported_claim": "三宫主与 Mangal 一同相照三宫，或这两颗行星同落三宫内，命主因三宫得好结果。",
+        "produced_fact_keys": [
+          "三宫主与 Mangal 带来三宫好结果判定"
+        ],
+        "required_fact_keys": [
+          "三宫主是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "三宫主是哪颗行星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "三宫主与 Mangal 是否一同相照三宫"
+                },
+                {
+                  "fact_key": "三宫主与 Mangal 是否同落三宫内"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "三宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "三宫主与 Mangal 是否一同相照三宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "三宫主与 Mangal 是否一同相照三宫"
+            },
+            "selection_group": "ch14-v2-lord-mangal-good-results.step-001:lord-mangal-link",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：三宫主与 Mangal 是否一同相照三宫。"
+          },
+          {
+            "when": {
+              "fact_key": "三宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "三宫主与 Mangal 是否同落三宫内"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "三宫主与 Mangal 是否同落三宫内"
+            },
+            "selection_group": "ch14-v2-lord-mangal-good-results.step-001:lord-mangal-link",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：三宫主与 Mangal 是否同落三宫内。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Sahaj’s Lord along with Mangal drishties Sahaj Bhava",
+              "claim": "三宫主与 Mangal 一同相照三宫"
+            },
+            {
+              "quote": "these two Grahas may be in Sahaj itself",
+              "claim": "这两颗行星同落三宫内"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will enjoy good results",
+              "claim": "命主因三宫得好结果"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch14:v2",
+            "quote": "If Sahaj’s Lord along with Mangal drishties Sahaj Bhava, the native will enjoy good results, due to Sahaj Bhava. Alternatively these two Grahas may be in Sahaj itself.",
+            "pdf_pages": [
+              28
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：三宫主是哪颗行星。",
+        "stop_fact_keys": [
+          "三宫主是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断好结果的具体内容、数量或发生时间。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch14:v2"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "6febf63ea3e18a6a6099d3e8b3a6f88dc41e8038df55ebc9c7119d7ba5fcc29b"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch14-v3-cobirth-destruction-malefic.step-001",
+      "method": {
+        "method": "ch14-v3-cobirth-destruction-malefic",
+        "title": "三宫主与 Mangal 遇凶星或落凶星星座：兄弟姐妹立即毁灭",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的兄弟姐妹会不会去世",
+          "家里孩子是不是养不住"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "said 2 Grahas together with a malefic destruction of co-born",
+            "三宫主与火星 与凶星同宫 兄弟姐妹毁灭"
+          ],
+          "counter_queries": [
+            "Mangal or Sahaj Lord in angle trine exaltation happiness co-born",
+            "三宫主入角宫三角宫 兄弟姐妹得幸福"
+          ],
+          "boundary_queries": [
+            "destruction at once of co-born condition scope",
+            "兄弟姐妹毁灭判断的适用边界"
+          ],
+          "method_queries": [
+            "how to judge destruction of co-born in Sahaj Bhava",
+            "判断兄弟姐妹是否毁灭的步骤"
+          ]
+        },
+        "stop_conditions": [
+          "缺少本命盘凶星判定事实时停止。",
+          "缺少前述两颗行星的同宫与所落星座事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch14-v3-cobirth-destruction-malefic.step-001",
+        "action": "核对前一偈所说的三宫主与 Mangal 这两颗行星是否与凶星同宫，或落在凶星所主的星座。",
+        "applicability_scope": "仅限本命盘三宫兄弟姐妹存亡主题；本条承接前一偈所指的两颗行星，原文未给时间限定。",
+        "minimum_supported_claim": "前述2颗行星与凶星同宫，或落在凶星所主的星座，兄弟姐妹立即毁灭。",
+        "produced_fact_keys": [
+          "前述两星遇凶导致兄弟姐妹毁灭判定"
+        ],
+        "required_fact_keys": [
+          "本命盘中哪些行星被判为凶星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本命盘中哪些行星被判为凶星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "三宫主与 Mangal 是否与凶星同宫"
+                },
+                {
+                  "fact_key": "三宫主与 Mangal 是否落在凶星所主的星座"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本命盘中哪些行星被判为凶星"
+            },
+            "required_fact_keys": [
+              "三宫主与 Mangal 是否与凶星同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "三宫主与 Mangal 是否与凶星同宫"
+            },
+            "selection_group": "ch14-v3-cobirth-destruction-malefic.step-001:malefic-link",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：三宫主与 Mangal 是否与凶星同宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本命盘中哪些行星被判为凶星"
+            },
+            "required_fact_keys": [
+              "三宫主与 Mangal 是否落在凶星所主的星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "三宫主与 Mangal 是否落在凶星所主的星座"
+            },
+            "selection_group": "ch14-v3-cobirth-destruction-malefic.step-001:malefic-link",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：三宫主与 Mangal 是否落在凶星所主的星座。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "the said 2 Grahas are together with a malefic",
+              "claim": "前述2颗行星与凶星同宫"
+            },
+            {
+              "quote": "in a Rāśi, owned by a malefic",
+              "claim": "落在凶星所主的星座"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Destruction at once of co-born",
+              "claim": "兄弟姐妹立即毁灭"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch14:v3",
+            "quote": "Destruction at once of co-born will come to pass, if the said 2 Grahas are together with a malefic, or in a Rāśi, owned by a malefic.",
+            "pdf_pages": [
+              28
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本命盘中哪些行星被判为凶星。",
+        "stop_fact_keys": [
+          "本命盘中哪些行星被判为凶星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断毁灭发生的年龄、年份或具体是哪一位兄弟姐妹。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch14:v2"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "7765dad7ab8a62eebd5e5e3667a035f1411d85215021dc0032dfc36e6ddfb935"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch14-v4-cobirth-gender.step-001",
+      "method": {
+        "method": "ch14-v4-cobirth-gender",
+        "title": "三宫的阴阳属性：兄弟姐妹的性别",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会有弟弟还是妹妹",
+          "我兄弟姐妹是男是女",
+          "我下面会不会有妹妹"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Sahaj Lord female Grah sisters born after him male Rasis younger brothers",
+            "三宫主阴性行星 妹妹 阳性星座 弟弟"
+          ],
+          "counter_queries": [
+            "Surya Sahaj Bhava destroy preborn Shani destroy afterborn",
+            "三宫凶星 兄弟姐妹被毁"
+          ],
+          "boundary_queries": [
+            "female and male co-born strength and weakness assessment",
+            "兄弟姐妹性别判断的适用边界"
+          ],
+          "method_queries": [
+            "how to determine gender of co-born from Sahaj Bhava",
+            "判断兄弟姐妹性别的步骤"
+          ]
+        },
+        "stop_conditions": [
+          "缺少三宫主行星身份事实时停止。",
+          "缺少三宫内行星与三宫星座的阴阳属性事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch14-v4-cobirth-gender.step-001",
+        "action": "先取得三宫主是哪颗行星与三宫落在哪个星座，再核对阴性一侧的两项指示：三宫主为阴性行星、三宫被阴性行星占据。",
+        "applicability_scope": "仅限本命盘三宫兄弟姐妹性别主题；原文只说晚生的妹妹，未给数目与时间。",
+        "minimum_supported_claim": "三宫主是阴性行星，或三宫被阴性行星占据，会有比自己晚生的妹妹。",
+        "produced_fact_keys": [
+          "三宫阴性主晚生妹妹判定"
+        ],
+        "required_fact_keys": [
+          "三宫主是哪颗行星",
+          "本盘三宫（Sahaj）落在哪个星座"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "三宫主是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘三宫（Sahaj）落在哪个星座"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "三宫主是否为阴性行星"
+                },
+                {
+                  "fact_key": "三宫是否被阴性行星占据"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "三宫主是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘三宫（Sahaj）落在哪个星座"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "三宫主是否为阴性行星"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "三宫主是否为阴性行星"
+            },
+            "selection_group": "ch14-v4-cobirth-gender.step-001:female-source",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：三宫主是否为阴性行星。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "三宫主是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘三宫（Sahaj）落在哪个星座"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "三宫是否被阴性行星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "三宫是否被阴性行星占据"
+            },
+            "selection_group": "ch14-v4-cobirth-gender.step-001:female-source",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：三宫是否被阴性行星占据。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Sahaj’s Lord is a female Grah",
+              "claim": "三宫主是阴性行星"
+            },
+            {
+              "quote": "Sahaj Bhava be occupied by female Grahas",
+              "claim": "三宫被阴性行星占据"
+            }
+          ],
+          "results": [
+            {
+              "quote": "one will have sisters, born after him",
+              "claim": "会有比自己晚生的妹妹"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch14:v4-4.5",
+            "quote": "If Sahaj’s Lord is a female Grah, or, if Sahaj Bhava be occupied by female Grahas, one will have sisters, born after him.",
+            "pdf_pages": [
+              28
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：三宫主是哪颗行星、本盘三宫（Sahaj）落在哪个星座。",
+        "stop_fact_keys": [
+          "三宫主是哪颗行星",
+          "本盘三宫（Sahaj）落在哪个星座"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断妹妹的数目、出生年份或存亡。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "5c478cfb60ae50990e7422af8f0a4e378d40f28b2fc369ad564df8da3fb045db"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch14-v4-cobirth-gender.step-002",
+      "method": {
+        "method": "ch14-v4-cobirth-gender",
+        "title": "三宫的阴阳属性：兄弟姐妹的性别",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会有弟弟还是妹妹",
+          "我兄弟姐妹是男是女",
+          "我下面会不会有妹妹"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Sahaj Lord female Grah sisters born after him male Rasis younger brothers",
+            "三宫主阴性行星 妹妹 阳性星座 弟弟"
+          ],
+          "counter_queries": [
+            "Surya Sahaj Bhava destroy preborn Shani destroy afterborn",
+            "三宫凶星 兄弟姐妹被毁"
+          ],
+          "boundary_queries": [
+            "female and male co-born strength and weakness assessment",
+            "兄弟姐妹性别判断的适用边界"
+          ],
+          "method_queries": [
+            "how to determine gender of co-born from Sahaj Bhava",
+            "判断兄弟姐妹性别的步骤"
+          ]
+        },
+        "stop_conditions": [
+          "缺少三宫主行星身份事实时停止。",
+          "缺少三宫内行星与三宫星座的阴阳属性事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch14-v4-cobirth-gender.step-002",
+        "action": "先取得三宫落在哪个星座，再核对原文给出的两项阳性指示：三宫被阳性行星占据、三宫所在星座为阳性星座。",
+        "applicability_scope": "仅限本命三宫兄弟姐妹性别主题；原文未给数目、时间与存亡。原文阳性一侧只列了 male Grahas 与 male Rāśis 两项指示，没有提到三宫主，不得比照阴性一侧补出宫主分支。原文未指明 male Rāśis 属于谁，本方法取「三宫所在星座」这一读法，其他可能读法（如三宫主所落星座）由此被排除，属取舍而非原文明文。",
+        "minimum_supported_claim": "三宫的阳性行星与阳性星座主有弟弟。",
+        "produced_fact_keys": [
+          "三宫阳性主有弟弟判定"
+        ],
+        "required_fact_keys": [
+          "本盘三宫（Sahaj）落在哪个星座"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘三宫（Sahaj）落在哪个星座"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "三宫是否被阳性行星占据"
+                },
+                {
+                  "fact_key": "三宫所在星座是否为阳性星座"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘三宫（Sahaj）落在哪个星座"
+            },
+            "required_fact_keys": [
+              "三宫是否被阳性行星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "三宫是否被阳性行星占据"
+            },
+            "selection_group": "ch14-v4-cobirth-gender.step-002:male-source",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：三宫是否被阳性行星占据。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘三宫（Sahaj）落在哪个星座"
+            },
+            "required_fact_keys": [
+              "三宫所在星座是否为阳性星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "三宫所在星座是否为阳性星座"
+            },
+            "selection_group": "ch14-v4-cobirth-gender.step-002:male-source",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：三宫所在星座是否为阳性星座。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "male Grahas and male Rāśis",
+              "claim": "阳性行星与阳性星座"
+            }
+          ],
+          "results": [
+            {
+              "quote": "denote younger brothers",
+              "claim": "主有弟弟"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch14:v4-4.5",
+            "quote": "Similarly male Grahas and male Rāśis denote younger brothers.",
+            "pdf_pages": [
+              28
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘三宫（Sahaj）落在哪个星座。",
+        "stop_fact_keys": [
+          "本盘三宫（Sahaj）落在哪个星座"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断弟弟的数目、出生年份或存亡。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch14:v4-4.5"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "f3852471b801de787f1f4d990e912a9004f4eff9266717c90b0e2764fa1b0ee8"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch14-v4-cobirth-gender.step-003",
+      "method": {
+        "method": "ch14-v4-cobirth-gender",
+        "title": "三宫的阴阳属性：兄弟姐妹的性别",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会有弟弟还是妹妹",
+          "我兄弟姐妹是男是女",
+          "我下面会不会有妹妹"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Sahaj Lord female Grah sisters born after him male Rasis younger brothers",
+            "三宫主阴性行星 妹妹 阳性星座 弟弟"
+          ],
+          "counter_queries": [
+            "Surya Sahaj Bhava destroy preborn Shani destroy afterborn",
+            "三宫凶星 兄弟姐妹被毁"
+          ],
+          "boundary_queries": [
+            "female and male co-born strength and weakness assessment",
+            "兄弟姐妹性别判断的适用边界"
+          ],
+          "method_queries": [
+            "how to determine gender of co-born from Sahaj Bhava",
+            "判断兄弟姐妹性别的步骤"
+          ]
+        },
+        "stop_conditions": [
+          "缺少三宫主行星身份事实时停止。",
+          "缺少三宫内行星与三宫星座的阴阳属性事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch14-v4-cobirth-gender.step-003",
+        "action": "核对三宫涉及的行星与星座是否为阴阳混合。",
+        "applicability_scope": "仅限本章三宫兄弟姐妹性别主题；本句以“it”承接上文的阴阳判法，原文未给数目与时间。",
+        "minimum_supported_claim": "三宫涉及的行星与星座为阴阳混合时，会得到两性兼有的兄弟姐妹。",
+        "produced_fact_keys": [
+          "三宫阴阳混合主两性兄弟姐妹判定"
+        ],
+        "required_fact_keys": [
+          "三宫涉及的行星与星座是否阴阳混合"
+        ],
+        "condition_logic": {
+          "fact_key": "三宫涉及的行星与星座是否阴阳混合"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "of mixed nature",
+              "claim": "阴阳混合"
+            }
+          ],
+          "results": [
+            {
+              "quote": "co-born of both sexes will be obtained",
+              "claim": "会得到两性兼有的兄弟姐妹"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch14:v4-4.5",
+            "quote": "Should it be of mixed nature, co-born of both sexes will be obtained.",
+            "pdf_pages": [
+              28
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：三宫涉及的行星与星座是否阴阳混合。",
+        "stop_fact_keys": [
+          "三宫涉及的行星与星座是否阴阳混合"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断两性兄弟姐妹各自的数目或先后次序。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch14:v4-4.5"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "755ce134212812fdf073fdaf00dfe78c1b1cf3515b648cab4fcbd35535992787"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch14-v5-lord-mangal-randhr-destruction.step-001",
+      "method": {
+        "method": "ch14-v5-lord-mangal-randhr-destruction",
+        "title": "三宫主与 Mangal 同落八宫：兄弟姐妹遭毁灭",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的兄弟姐妹会不会出事",
+          "我会不会失去兄弟姐妹"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Sahaj Lord and Mangal together in Randhr Bhava destruction of co-born",
+            "三宫主 火星 同落八宫 兄弟姐妹毁灭"
+          ],
+          "counter_queries": [
+            "Mangal or Sahaj Lord in exaltation friendly divisions happiness",
+            "三宫主入旺 友好分盘 兄弟姐妹平安"
+          ],
+          "boundary_queries": [
+            "Randhr Bhava co-born destruction applicability",
+            "八宫致兄弟姐妹毁灭的适用边界"
+          ],
+          "method_queries": [
+            "how to judge Sahaj Lord placement in Randhr Bhava",
+            "判断三宫主落八宫的步骤"
+          ]
+        },
+        "stop_conditions": [
+          "缺少三宫主与 Mangal 的落宫事实时停止。",
+          "无法确定八宫（Randhr Bhava）所在星座时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch14-v5-lord-mangal-randhr-destruction.step-001",
+        "action": "核对三宫主与 Mangal 是否同落八宫（Randhr Bhava）。",
+        "applicability_scope": "仅限本命盘三宫兄弟姐妹存亡主题；原文未给时间、数目或性别限定。",
+        "minimum_supported_claim": "三宫主与 Mangal 同落八宫（Randhr Bhava），兄弟姐妹遭毁灭。",
+        "produced_fact_keys": [
+          "三宫主与 Mangal 同落八宫的兄弟姐妹毁灭判定"
+        ],
+        "required_fact_keys": [
+          "三宫主与 Mangal 是否同落八宫（Randhr Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "三宫主与 Mangal 是否同落八宫（Randhr Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Sahaj’s Lord and Mangal be together in Randhr Bhava",
+              "claim": "三宫主与 Mangal 同落八宫（Randhr Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "destruction of co- born will result",
+              "claim": "兄弟姐妹遭毁灭"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch14:v5-6",
+            "quote": "Should Sahaj’s Lord and Mangal be together in Randhr Bhava, destruction of co- born will result.",
+            "pdf_pages": [
+              28,
+              29
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：三宫主与 Mangal 是否同落八宫（Randhr Bhava）。",
+        "stop_fact_keys": [
+          "三宫主与 Mangal 是否同落八宫（Randhr Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断毁灭的年龄、年份或具体是哪一位兄弟姐妹。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "a1b37e900c2874f71a752ce3d1d9742ea33fbe85f42870d5ed7714eda53b0ddf"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch14-v6-cobirth-happiness.step-001",
+      "method": {
+        "method": "ch14-v6-cobirth-happiness",
+        "title": "Mangal 或三宫主入角宫、三角宫、入旺或友好分盘：兄弟姐妹方面得幸福",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和兄弟姐妹能不能过得顺心",
+          "兄弟姐妹方面我有没有福气"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Mangal or Sahaj Lord in an angle trine exaltation friendly divisions happiness",
+            "火星或三宫主 角宫 三角宫 入旺 友好分盘 兄弟姐妹幸福"
+          ],
+          "counter_queries": [
+            "Sahaj Lord and Mangal in Randhr Bhava destruction of co-born",
+            "三宫主与火星落八宫 兄弟姐妹毁灭"
+          ],
+          "boundary_queries": [
+            "happiness in this respect scope of co-born effects",
+            "兄弟姐妹幸福判断的适用边界"
+          ],
+          "method_queries": [
+            "how to judge happiness of co-born from Mangal and Sahaj Lord",
+            "判断兄弟姐妹是否顺遂的步骤"
+          ]
+        },
+        "stop_conditions": [
+          "缺少三宫主行星身份事实时停止。",
+          "缺少 Mangal 与三宫主的落宫、庙旺与分盘事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch14-v6-cobirth-happiness.step-001",
+        "action": "核对 Mangal 或三宫主是否落于角宫、三角宫、入旺或友好分盘。",
+        "applicability_scope": "仅限本命盘兄弟姐妹方面的幸福主题；本句以“in this respect”承接同偈的兄弟姐妹话题，原文未给时间限定。",
+        "minimum_supported_claim": "Mangal 或三宫主落于角宫、三角宫、入旺或友好分盘时，兄弟姐妹方面得幸福。",
+        "produced_fact_keys": [
+          "兄弟姐妹方面得幸福判定"
+        ],
+        "required_fact_keys": [
+          "三宫主是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "三宫主是哪颗行星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "Mangal 是否落于角宫"
+                },
+                {
+                  "fact_key": "Mangal 是否落于三角宫"
+                },
+                {
+                  "fact_key": "Mangal 是否入旺"
+                },
+                {
+                  "fact_key": "Mangal 是否落于友好分盘"
+                },
+                {
+                  "fact_key": "三宫主是否落于角宫"
+                },
+                {
+                  "fact_key": "三宫主是否落于三角宫"
+                },
+                {
+                  "fact_key": "三宫主是否入旺"
+                },
+                {
+                  "fact_key": "三宫主是否落于友好分盘"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "三宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "Mangal 是否落于角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "Mangal 是否落于角宫"
+            },
+            "selection_group": "ch14-v6-cobirth-happiness.step-001:graha-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Mangal 是否落于角宫。"
+          },
+          {
+            "when": {
+              "fact_key": "三宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "Mangal 是否落于三角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "Mangal 是否落于三角宫"
+            },
+            "selection_group": "ch14-v6-cobirth-happiness.step-001:graha-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Mangal 是否落于三角宫。"
+          },
+          {
+            "when": {
+              "fact_key": "三宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "Mangal 是否入旺"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "Mangal 是否入旺"
+            },
+            "selection_group": "ch14-v6-cobirth-happiness.step-001:graha-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Mangal 是否入旺。"
+          },
+          {
+            "when": {
+              "fact_key": "三宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "Mangal 是否落于友好分盘"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "Mangal 是否落于友好分盘"
+            },
+            "selection_group": "ch14-v6-cobirth-happiness.step-001:graha-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Mangal 是否落于友好分盘。"
+          },
+          {
+            "when": {
+              "fact_key": "三宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "三宫主是否落于角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "三宫主是否落于角宫"
+            },
+            "selection_group": "ch14-v6-cobirth-happiness.step-001:graha-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：三宫主是否落于角宫。"
+          },
+          {
+            "when": {
+              "fact_key": "三宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "三宫主是否落于三角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "三宫主是否落于三角宫"
+            },
+            "selection_group": "ch14-v6-cobirth-happiness.step-001:graha-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：三宫主是否落于三角宫。"
+          },
+          {
+            "when": {
+              "fact_key": "三宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "三宫主是否入旺"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "三宫主是否入旺"
+            },
+            "selection_group": "ch14-v6-cobirth-happiness.step-001:graha-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：三宫主是否入旺。"
+          },
+          {
+            "when": {
+              "fact_key": "三宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "三宫主是否落于友好分盘"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "三宫主是否落于友好分盘"
+            },
+            "selection_group": "ch14-v6-cobirth-happiness.step-001:graha-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：三宫主是否落于友好分盘。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if Mangal",
+              "claim": "Mangal"
+            },
+            {
+              "quote": "Sahaj’s Lord is in an angle",
+              "claim": "三宫主落于角宫"
+            },
+            {
+              "quote": "in a trine",
+              "claim": "三角宫"
+            },
+            {
+              "quote": "in exaltation",
+              "claim": "入旺"
+            },
+            {
+              "quote": "friendly divisions",
+              "claim": "友好分盘"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Happiness in this respect will come to pass",
+              "claim": "兄弟姐妹方面得幸福"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch14:v5-6",
+            "quote": "Happiness in this respect will come to pass, if Mangal, or Sahaj’s Lord is in an angle, or in a trine, or in exaltation, or friendly divisions.",
+            "pdf_pages": [
+              28,
+              29
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：三宫主是哪颗行星。",
+        "stop_fact_keys": [
+          "三宫主是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断兄弟姐妹的数目、性别或幸福出现的时间。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch14:v5-6"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "e4434921cfdabc3a517e0ef14c72e1e72086c7aede17bafa58a995f09d37973d"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch14-v7-elder-sister-younger-brothers.step-001",
+      "method": {
+        "method": "ch14-v7-elder-sister-younger-brothers",
+        "title": "Budh 落三宫、三宫主与 Chandra 同宫、Mangal 与 Shani 同宫：有姐姐与弟弟，第三个弟弟去世",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我上面有没有姐姐",
+          "我下面会不会有弟弟",
+          "我的弟弟会不会出事"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Budh in Sahaj Bhava Sahaj Lord and Chandra together Mangal joins Shani elder sister",
+            "水星落三宫 三宫主与月亮同宫 火星土星同宫 姐姐 弟弟"
+          ],
+          "counter_queries": [
+            "Sahaj Bhava benefic endowed with co-born",
+            "三宫吉星 兄弟姐妹得保全"
+          ],
+          "boundary_queries": [
+            "number of brothers and sisters combination scope",
+            "兄弟姐妹数目判断的适用边界"
+          ],
+          "method_queries": [
+            "how to judge number of brothers and sisters BPHS",
+            "判断兄弟姐妹人数与排行的步骤"
+          ]
+        },
+        "stop_conditions": [
+          "缺少 Budh 落宫事实时停止。",
+          "缺少三宫主与 Chandra 的同宫事实时停止。",
+          "缺少 Mangal 与 Shani 的同宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch14-v7-elder-sister-younger-brothers.step-001",
+        "action": "核对 Budh 是否落三宫、三宫主是否与 Chandra 同宫、指示星 Mangal 是否与 Shani 同宫，判断姐姐与弟弟。",
+        "applicability_scope": "仅限本命盘三宫兄弟姐妹主题；本条只讲这一组三星条件下的姐姐与弟弟，原文未给时间限定。",
+        "minimum_supported_claim": "Budh 落三宫、三宫主与 Chandra 同宫、指示星 Mangal 与 Shani 同宫时，已有一位姐姐出生，并且会有弟弟。",
+        "produced_fact_keys": [
+          "有姐姐并有弟弟的判定"
+        ],
+        "required_fact_keys": [
+          "Budh 是否落三宫",
+          "三宫主是否与 Chandra 同宫",
+          "Mangal 是否与 Shani 同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "Budh 是否落三宫"
+            },
+            {
+              "fact_key": "三宫主是否与 Chandra 同宫"
+            },
+            {
+              "fact_key": "Mangal 是否与 Shani 同宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Budh is in Sahaj Bhava",
+              "claim": "Budh 落三宫"
+            },
+            {
+              "quote": "Sahaj’s Lord and Chandra are together",
+              "claim": "三宫主与 Chandra 同宫"
+            },
+            {
+              "quote": "the indicator (Mangal) joins Shani",
+              "claim": "指示星 Mangal 与 Shani 同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "there occurred the birth of an elder sister and there will be younger brothers",
+              "claim": "已有一位姐姐出生，并且会有弟弟"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch14:v7-11",
+            "quote": "If Budh is in Sahaj Bhava, while Sahaj’s Lord and Chandra are together, as the indicator (Mangal) joins Shani, the effects are: there occurred the birth of an elder sister and there will be younger brothers.",
+            "pdf_pages": [
+              29
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Budh 是否落三宫、三宫主是否与 Chandra 同宫、Mangal 是否与 Shani 同宫。",
+        "stop_fact_keys": [
+          "Budh 是否落三宫",
+          "三宫主是否与 Chandra 同宫",
+          "Mangal 是否与 Shani 同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断姐姐与弟弟的具体数目或出生年份。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "ea85dee40d36611f47105842b386f1962dd8150d0537ff4ec644ae1501dd2a85"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch14-v7-elder-sister-younger-brothers.step-002",
+      "method": {
+        "method": "ch14-v7-elder-sister-younger-brothers",
+        "title": "Budh 落三宫、三宫主与 Chandra 同宫、Mangal 与 Shani 同宫：有姐姐与弟弟，第三个弟弟去世",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我上面有没有姐姐",
+          "我下面会不会有弟弟",
+          "我的弟弟会不会出事"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Budh in Sahaj Bhava Sahaj Lord and Chandra together Mangal joins Shani elder sister",
+            "水星落三宫 三宫主与月亮同宫 火星土星同宫 姐姐 弟弟"
+          ],
+          "counter_queries": [
+            "Sahaj Bhava benefic endowed with co-born",
+            "三宫吉星 兄弟姐妹得保全"
+          ],
+          "boundary_queries": [
+            "number of brothers and sisters combination scope",
+            "兄弟姐妹数目判断的适用边界"
+          ],
+          "method_queries": [
+            "how to judge number of brothers and sisters BPHS",
+            "判断兄弟姐妹人数与排行的步骤"
+          ]
+        },
+        "stop_conditions": [
+          "缺少 Budh 落宫事实时停止。",
+          "缺少三宫主与 Chandra 的同宫事实时停止。",
+          "缺少 Mangal 与 Shani 的同宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch14-v7-elder-sister-younger-brothers.step-002",
+        "action": "在同一组三星条件成立时，核对第三个弟弟的去世结论。",
+        "applicability_scope": "仅限本命盘三宫兄弟姐妹主题；本条只针对同偈同一组条件下排行第三的弟弟，原文未给去世的年龄或年份。",
+        "minimum_supported_claim": "Budh 落三宫、三宫主与 Chandra 同宫、指示星 Mangal 与 Shani 同宫时，第三个弟弟会去世。",
+        "produced_fact_keys": [
+          "第三个弟弟去世的判定"
+        ],
+        "required_fact_keys": [
+          "Budh 是否落三宫",
+          "三宫主是否与 Chandra 同宫",
+          "Mangal 是否与 Shani 同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "Budh 是否落三宫"
+            },
+            {
+              "fact_key": "三宫主是否与 Chandra 同宫"
+            },
+            {
+              "fact_key": "Mangal 是否与 Shani 同宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Budh is in Sahaj Bhava",
+              "claim": "Budh 落三宫"
+            },
+            {
+              "quote": "Sahaj’s Lord and Chandra are together",
+              "claim": "三宫主与 Chandra 同宫"
+            },
+            {
+              "quote": "the indicator (Mangal) joins Shani",
+              "claim": "指示星 Mangal 与 Shani 同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the third brother will die",
+              "claim": "第三个弟弟会去世"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch14:v7-11",
+            "quote": "If Budh is in Sahaj Bhava, while Sahaj’s Lord and Chandra are together, as the indicator (Mangal) joins Shani, the effects are: there occurred the birth of an elder sister and there will be younger brothers. Furthermore, the third brother will die.",
+            "pdf_pages": [
+              29
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Budh 是否落三宫、三宫主是否与 Chandra 同宫、Mangal 是否与 Shani 同宫。",
+        "stop_fact_keys": [
+          "Budh 是否落三宫",
+          "三宫主是否与 Chandra 同宫",
+          "Mangal 是否与 Shani 同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把第三个弟弟的去世推广到其他排行的兄弟姐妹。",
+          "不得据此推断去世发生的年龄或年份。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch14:v7-11"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "e6f4ea3a2512433a74e178bc9329ba0bbe9c93534dca0634244e358d69b32e96"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch14-v8-mangal-rahu-cobirth-loss.step-001",
+      "method": {
+        "method": "ch14-v8-mangal-rahu-cobirth-loss",
+        "title": "Mangal 与 Rahu 同宫、三宫主落弱宫星座：失去弟妹而已得三位兄姐",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会失去弟弟妹妹",
+          "我上面有几个哥哥姐姐"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Mangal yuti with Rahu Sahaj Lord debilitation loss of younger brothers",
+            "火星与罗睺同宫 三宫主落陷 失去弟妹"
+          ],
+          "counter_queries": [
+            "Sahaj Lord in angle Mangal exalted twelve co-born",
+            "三宫主入角宫 火星入旺 兄弟姐妹众多"
+          ],
+          "boundary_queries": [
+            "loss of younger brothers and sisters condition scope",
+            "弟妹丧失判断的适用边界"
+          ],
+          "method_queries": [
+            "how to judge loss of co-born from Mangal Rahu combination",
+            "判断弟妹丧失与兄姐人数的步骤"
+          ]
+        },
+        "stop_conditions": [
+          "缺少 Mangal 与 Rahu 的同宫事实时停止。",
+          "缺少三宫主是否落弱宫星座的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch14-v8-mangal-rahu-cobirth-loss.step-001",
+        "action": "核对 Mangal 是否与 Rahu 同宫、三宫主是否落入弱宫星座，判断弟妹的丧失。",
+        "applicability_scope": "仅限本命盘三宫兄弟姐妹存亡主题；原文未给丧失的年龄、年份或人数。",
+        "minimum_supported_claim": "Mangal 与 Rahu 同宫、三宫主落入弱宫星座时，会失去弟弟和／或妹妹。",
+        "produced_fact_keys": [
+          "弟妹丧失判定"
+        ],
+        "required_fact_keys": [
+          "Mangal 是否与 Rahu 同宫",
+          "三宫主是否落入其弱宫星座"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "Mangal 是否与 Rahu 同宫"
+            },
+            {
+              "fact_key": "三宫主是否落入其弱宫星座"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Mangal be yuti with Rahu",
+              "claim": "Mangal 与 Rahu 同宫"
+            },
+            {
+              "quote": "Sahaj’s Lord is in his debilitation Rāśi",
+              "claim": "三宫主落入弱宫星座"
+            }
+          ],
+          "results": [
+            {
+              "quote": "there will be loss of younger brothers and/or sisters",
+              "claim": "会失去弟弟和／或妹妹"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch14:v7-11",
+            "quote": "Should Mangal be yuti with Rahu, while Sahaj’s Lord is in his debilitation Rāśi, there will be loss of younger brothers and/or sisters",
+            "pdf_pages": [
+              29
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Mangal 是否与 Rahu 同宫、三宫主是否落入其弱宫星座。",
+        "stop_fact_keys": [
+          "Mangal 是否与 Rahu 同宫",
+          "三宫主是否落入其弱宫星座"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断丧失的弟妹人数或发生时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "bd45fa8489f92e08c110bb824dabb45f8f3ba7cdf4d6b0889c7c1300799392c4"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch14-v8-mangal-rahu-cobirth-loss.step-002",
+      "method": {
+        "method": "ch14-v8-mangal-rahu-cobirth-loss",
+        "title": "Mangal 与 Rahu 同宫、三宫主落弱宫星座：失去弟妹而已得三位兄姐",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会失去弟弟妹妹",
+          "我上面有几个哥哥姐姐"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Mangal yuti with Rahu Sahaj Lord debilitation loss of younger brothers",
+            "火星与罗睺同宫 三宫主落陷 失去弟妹"
+          ],
+          "counter_queries": [
+            "Sahaj Lord in angle Mangal exalted twelve co-born",
+            "三宫主入角宫 火星入旺 兄弟姐妹众多"
+          ],
+          "boundary_queries": [
+            "loss of younger brothers and sisters condition scope",
+            "弟妹丧失判断的适用边界"
+          ],
+          "method_queries": [
+            "how to judge loss of co-born from Mangal Rahu combination",
+            "判断弟妹丧失与兄姐人数的步骤"
+          ]
+        },
+        "stop_conditions": [
+          "缺少 Mangal 与 Rahu 的同宫事实时停止。",
+          "缺少三宫主是否落弱宫星座的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch14-v8-mangal-rahu-cobirth-loss.step-002",
+        "action": "在同一组条件成立时，核对命主已得到三位兄姐的结论。",
+        "applicability_scope": "仅限本命盘三宫兄长与姐姐主题；本条只说已经得到的三位兄姐，原文未给其存亡与时间。",
+        "minimum_supported_claim": "Mangal 与 Rahu 同宫、三宫主落入弱宫星座时，命主已得到三位兄姐。",
+        "produced_fact_keys": [
+          "三位兄姐已得判定"
+        ],
+        "required_fact_keys": [
+          "Mangal 是否与 Rahu 同宫",
+          "三宫主是否落入其弱宫星座"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "Mangal 是否与 Rahu 同宫"
+            },
+            {
+              "fact_key": "三宫主是否落入其弱宫星座"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Mangal be yuti with Rahu",
+              "claim": "Mangal 与 Rahu 同宫"
+            },
+            {
+              "quote": "Sahaj’s Lord is in his debilitation Rāśi",
+              "claim": "三宫主落入弱宫星座"
+            }
+          ],
+          "results": [
+            {
+              "quote": "three elder brothers and/or sisters were attained by the native",
+              "claim": "命主已得到三位兄姐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch14:v7-11",
+            "quote": "Should Mangal be yuti with Rahu, while Sahaj’s Lord is in his debilitation Rāśi, there will be loss of younger brothers and/or sisters, while three elder brothers and/or sisters were attained by the native.",
+            "pdf_pages": [
+              29
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Mangal 是否与 Rahu 同宫、三宫主是否落入其弱宫星座。",
+        "stop_fact_keys": [
+          "Mangal 是否与 Rahu 同宫",
+          "三宫主是否落入其弱宫星座"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把三位兄姐的数目改写成其他数目，也不得推断他们的性别比例。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "7773b1658c32607e18ba07e38396079220d0169539c7b40f33eee3cbee18a019"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch14-v9-twelve-cobirth-count.step-001",
+      "method": {
+        "method": "ch14-v9-twelve-cobirth-count",
+        "title": "三宫主落角宫、Mangal 在三角宫入旺并与 Guru 同宫：兄弟姐妹共12人",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我一共有多少个兄弟姐妹",
+          "我的兄弟姐妹里谁活不长"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Sahaj Lord in an angle significator Mangal exalted in a trine yuti with Guru 12 co-born",
+            "三宫主落角宫 火星三角宫入旺 与木星同宫 兄弟姐妹12人"
+          ],
+          "counter_queries": [
+            "There will be 1 co-born Vyaya Lord joins Mangal and Guru",
+            "只有一位兄弟姐妹 十二宫主与火星木星同宫"
+          ],
+          "boundary_queries": [
+            "shortlived longlived co-born out of twelve scope",
+            "十二位兄弟姐妹寿命判断的适用边界"
+          ],
+          "method_queries": [
+            "how to count total co-born in BPHS Sahaj Bhava",
+            "判断兄弟姐妹总数与寿命分布的步骤"
+          ]
+        },
+        "stop_conditions": [
+          "缺少三宫主落角宫事实时停止。",
+          "缺少 Mangal 入旺与同宫事实时停止。",
+          "未先得出总数为12人的判定时，不进入寿命分布步骤。"
+        ]
+      },
+      "step": {
+        "step_id": "ch14-v9-twelve-cobirth-count.step-001",
+        "action": "核对三宫主是否落角宫、指示星 Mangal 是否在三角宫入旺并与 Guru 同宫，得出兄弟姐妹总数。",
+        "applicability_scope": "仅限本命盘三宫兄弟姐妹总数主题；原文只给这一组条件下的总数，未给出生时间。",
+        "minimum_supported_claim": "三宫主落角宫、指示星 Mangal 在三角宫入旺并与 Guru 同宫时，兄弟姐妹总数为12人。",
+        "produced_fact_keys": [
+          "兄弟姐妹总数为12人的判定"
+        ],
+        "required_fact_keys": [
+          "三宫主是否落角宫",
+          "Mangal 是否在三角宫入旺",
+          "Mangal 是否与 Guru 同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "三宫主是否落角宫"
+            },
+            {
+              "fact_key": "Mangal 是否在三角宫入旺"
+            },
+            {
+              "fact_key": "Mangal 是否与 Guru 同宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Sahaj’s Lord is in an angle",
+              "claim": "三宫主落角宫"
+            },
+            {
+              "quote": "the significator (Mangal) is exalted in a trine",
+              "claim": "指示星 Mangal 在三角宫入旺"
+            },
+            {
+              "quote": "be yuti with Guru",
+              "claim": "并与 Guru 同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "12 will be the number of total co-born",
+              "claim": "兄弟姐妹总数为12人"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch14:v7-11",
+            "quote": "If Sahaj’s Lord is in an angle, while the significator (Mangal) is exalted in a trine and be yuti with Guru, 12 will be the number of total co-born.",
+            "pdf_pages": [
+              29
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：三宫主是否落角宫、Mangal 是否在三角宫入旺、Mangal 是否与 Guru 同宫。",
+        "stop_fact_keys": [
+          "三宫主是否落角宫",
+          "Mangal 是否在三角宫入旺",
+          "Mangal 是否与 Guru 同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把12这个总数改成其他数目，也不得据此推断兄弟姐妹的性别。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "02dec44b2f27e4daacbbfd424410d4d788b51aea23b2d3a194fb6d89f09d5c8d"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch14-v9-twelve-cobirth-count.step-002",
+      "method": {
+        "method": "ch14-v9-twelve-cobirth-count",
+        "title": "三宫主落角宫、Mangal 在三角宫入旺并与 Guru 同宫：兄弟姐妹共12人",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我一共有多少个兄弟姐妹",
+          "我的兄弟姐妹里谁活不长"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Sahaj Lord in an angle significator Mangal exalted in a trine yuti with Guru 12 co-born",
+            "三宫主落角宫 火星三角宫入旺 与木星同宫 兄弟姐妹12人"
+          ],
+          "counter_queries": [
+            "There will be 1 co-born Vyaya Lord joins Mangal and Guru",
+            "只有一位兄弟姐妹 十二宫主与火星木星同宫"
+          ],
+          "boundary_queries": [
+            "shortlived longlived co-born out of twelve scope",
+            "十二位兄弟姐妹寿命判断的适用边界"
+          ],
+          "method_queries": [
+            "how to count total co-born in BPHS Sahaj Bhava",
+            "判断兄弟姐妹总数与寿命分布的步骤"
+          ]
+        },
+        "stop_conditions": [
+          "缺少三宫主落角宫事实时停止。",
+          "缺少 Mangal 入旺与同宫事实时停止。",
+          "未先得出总数为12人的判定时，不进入寿命分布步骤。"
+        ]
+      },
+      "step": {
+        "step_id": "ch14-v9-twelve-cobirth-count.step-002",
+        "action": "在总数为12人的判定成立时，核对其中哪几位短寿、有几位长寿。",
+        "applicability_scope": "仅限上一步得出的这12位兄弟姐妹；本条以“Out of these”“the said twelve”承接上一句，原文未给寿命的年龄或年份。",
+        "minimum_supported_claim": "在总数为12人的兄弟姐妹中，其中两位兄姐，以及排行第3、第7、第9、第12的弟妹寿命短，另有六位在这十二人中长寿。",
+        "produced_fact_keys": [
+          "十二位兄弟姐妹中的短寿与长寿分布判定"
+        ],
+        "required_fact_keys": [
+          "兄弟姐妹总数为12人的判定"
+        ],
+        "condition_logic": {
+          "fact_key": "兄弟姐妹总数为12人的判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "12 will be the number of total co-born",
+              "claim": "总数为12人的兄弟姐妹"
+            },
+            {
+              "quote": "two elders",
+              "claim": "两位兄姐"
+            },
+            {
+              "quote": "the 3<sup>rd</sup>",
+              "claim": "第3"
+            },
+            {
+              "quote": "the 7<sup>th</sup>",
+              "claim": "第7"
+            },
+            {
+              "quote": "the 9<sup>th</sup>",
+              "claim": "第9"
+            },
+            {
+              "quote": "the 12<sup>th</sup>",
+              "claim": "第12"
+            }
+          ],
+          "results": [
+            {
+              "quote": "of the younger co-born will be shortlived",
+              "claim": "弟妹寿命短"
+            },
+            {
+              "quote": "six of the said twelve will be longlived",
+              "claim": "另有六位在这十二人中长寿"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch14:v7-11",
+            "quote": "12 will be the number of total co-born. Out of these two elders and the 3<sup>rd</sup> , the 7<sup>th</sup> , the 9<sup>th</sup> and the 12<sup>th</sup> of the younger co-born will be shortlived, while six of the said twelve will be longlived.",
+            "pdf_pages": [
+              29
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：兄弟姐妹总数为12人的判定。",
+        "stop_fact_keys": [
+          "兄弟姐妹总数为12人的判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把短寿名单套用到总数不是12人的盘。",
+          "不得据此推断具体去世年龄或死亡年份。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch14:v7-11"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "df4e5b282e568f90c1ac4bd2b8fb50b1666f6e8572f1fcd2a360371198471286"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch14-v12-single-cobirth.step-001",
+      "method": {
+        "method": "ch14-v12-single-cobirth",
+        "title": "十二宫主（或版本作十一宫主）与 Mangal、Guru 同宫且三宫被 Chandra 占据：只有1位兄弟姐妹",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我是不是只有一个兄弟姐妹",
+          "我家里孩子多不多"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "There will be 1 co-born Vyaya Lord joins Mangal and Guru Sahaj occupied by Chandra",
+            "十二宫主与火星木星同宫 三宫月亮 只有一位兄弟姐妹"
+          ],
+          "counter_queries": [
+            "12 will be the number of total co-born",
+            "兄弟姐妹总数十二人"
+          ],
+          "boundary_queries": [
+            "some texts read as Labh Lord variant reading",
+            "版本异文对兄弟姐妹数目判断的影响"
+          ],
+          "method_queries": [
+            "how to judge single co-born in BPHS",
+            "判断只有一位兄弟姐妹的步骤"
+          ]
+        },
+        "stop_conditions": [
+          "缺少三宫是否被 Chandra 占据的事实时停止。",
+          "缺少十二宫主或十一宫主与 Mangal、Guru 的同宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch14-v12-single-cobirth.step-001",
+        "action": "核对三宫是否被 Chandra 占据，并按版本分支核对十二宫主或十一宫主是否与 Mangal 及 Guru 同宫。",
+        "applicability_scope": "仅限本命盘三宫兄弟姐妹数目主题；原文自带“some texts read”的版本异文，两种读法各自成一支。",
+        "minimum_supported_claim": "十二宫主（Vyaya’s Lord）与 Mangal 及 Guru 同宫，或有些版本作十一宫主（Labh’s Lord），同时三宫被 Chandra 占据时，只有1位兄弟姐妹。",
+        "produced_fact_keys": [
+          "只有1位兄弟姐妹的判定"
+        ],
+        "required_fact_keys": [
+          "三宫是否被 Chandra 占据"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "三宫是否被 Chandra 占据"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "十二宫主是否与 Mangal 及 Guru 同宫"
+                },
+                {
+                  "fact_key": "十一宫主是否与 Mangal 及 Guru 同宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "三宫是否被 Chandra 占据"
+            },
+            "required_fact_keys": [
+              "十二宫主是否与 Mangal 及 Guru 同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十二宫主是否与 Mangal 及 Guru 同宫"
+            },
+            "selection_group": "ch14-v12-single-cobirth.step-001:lord-reading",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十二宫主是否与 Mangal 及 Guru 同宫。"
+          },
+          {
+            "when": {
+              "fact_key": "三宫是否被 Chandra 占据"
+            },
+            "required_fact_keys": [
+              "十一宫主是否与 Mangal 及 Guru 同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十一宫主是否与 Mangal 及 Guru 同宫"
+            },
+            "selection_group": "ch14-v12-single-cobirth.step-001:lord-reading",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十一宫主是否与 Mangal 及 Guru 同宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Vyaya’s Lord",
+              "claim": "十二宫主（Vyaya’s Lord）"
+            },
+            {
+              "quote": "(some texts read, as Labh’s Lord)",
+              "claim": "有些版本作十一宫主（Labh’s Lord）"
+            },
+            {
+              "quote": "joins Mangal and Guru",
+              "claim": "与 Mangal 及 Guru 同宫"
+            },
+            {
+              "quote": "Sahaj Bhava is occupied by Chandra",
+              "claim": "三宫被 Chandra 占据"
+            }
+          ],
+          "results": [
+            {
+              "quote": "There will be 1 co-born",
+              "claim": "只有1位兄弟姐妹"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch14:v12-13",
+            "quote": "There will be 1 co-born, if Vyaya’s Lord (some texts read, as Labh’s Lord) joins Mangal and Guru, while Sahaj Bhava is occupied by Chandra.",
+            "pdf_pages": [
+              29
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：三宫是否被 Chandra 占据。",
+        "stop_fact_keys": [
+          "三宫是否被 Chandra 占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断这位兄弟姐妹的性别、长幼或存亡。",
+          "不得把两种版本读法当成同时成立的条件。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "6f5c9aab0c6e0fbfe79a4cfbc251ffdc6285250152fb4fa62af3f97b5bf7c1d8"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch14:v1": {
+      "evidence_atom_id": "bphs-97:santhanam:ch14:v1",
+      "chapter_number": 14,
+      "chapter_title": "Effects of Sahaj Bhava",
+      "verse_label": "1.",
+      "content_role": "verse",
+      "exact_text": "1. O Brahmin, I now tell you about Sahaj Bhava. Should Sahaj Bhava be yuti with, or drishtied by a benefic, the native will be endowed with co-born and be courageous.",
+      "pdf_pages": [
+        28
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 14 · Sloka 1 · PDF page 28 · bphs-97:santhanam:ch14:v1",
+      "previous_atom_id": null,
+      "next_atom_id": "bphs-97:santhanam:ch14:v2",
+      "context_before": "",
+      "context_after": "2. If Sahaj’s Lord along with Mangal drishties Sahaj Bhava, the native will enjoy good results, due to Sahaj Bhava. Alternativel",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch14:v2": {
+      "evidence_atom_id": "bphs-97:santhanam:ch14:v2",
+      "chapter_number": 14,
+      "chapter_title": "Effects of Sahaj Bhava",
+      "verse_label": "2.",
+      "content_role": "verse",
+      "exact_text": "2. If Sahaj’s Lord along with Mangal drishties Sahaj Bhava, the native will enjoy good results, due to Sahaj Bhava. Alternatively these two Grahas may be in Sahaj itself.",
+      "pdf_pages": [
+        28
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 14 · Sloka 2 · PDF page 28 · bphs-97:santhanam:ch14:v2",
+      "previous_atom_id": "bphs-97:santhanam:ch14:v1",
+      "next_atom_id": "bphs-97:santhanam:ch14:v3",
+      "context_before": " Bhava. Should Sahaj Bhava be yuti with, or drishtied by a benefic, the native will be endowed with co-born and be courageous.\n\n",
+      "context_after": "3. Destruction at once of co-born will come to pass, if the said 2 Grahas are together with a malefic, or in a Rāśi, owned by a ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch14:v3": {
+      "evidence_atom_id": "bphs-97:santhanam:ch14:v3",
+      "chapter_number": 14,
+      "chapter_title": "Effects of Sahaj Bhava",
+      "verse_label": "3.",
+      "content_role": "verse",
+      "exact_text": "3. Destruction at once of co-born will come to pass, if the said 2 Grahas are together with a malefic, or in a Rāśi, owned by a malefic.",
+      "pdf_pages": [
+        28
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 14 · Sloka 3 · PDF page 28 · bphs-97:santhanam:ch14:v3",
+      "previous_atom_id": "bphs-97:santhanam:ch14:v2",
+      "next_atom_id": "bphs-97:santhanam:ch14:v4-4.5",
+      "context_before": "es Sahaj Bhava, the native will enjoy good results, due to Sahaj Bhava. Alternatively these two Grahas may be in Sahaj itself.\n\n",
+      "context_after": "4-4½. Female and Male Co-born. If Sahaj’s Lord is a female Grah, or, if Sahaj Bhava be occupied by female Grahas, one will have ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch14:v4-4.5": {
+      "evidence_atom_id": "bphs-97:santhanam:ch14:v4-4.5",
+      "chapter_number": 14,
+      "chapter_title": "Effects of Sahaj Bhava",
+      "verse_label": "4-4½.",
+      "content_role": "verse",
+      "exact_text": "4-4½. Female and Male Co-born. If Sahaj’s Lord is a female Grah, or, if Sahaj Bhava be occupied by female Grahas, one will have sisters, born after him. Similarly male Grahas and male Rāśis denote younger brothers. Should it be of mixed nature, co-born of both sexes will be obtained. These effects be declared after assessing the strength and weakness of the concerned.",
+      "pdf_pages": [
+        28
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 14 · Sloka 4-4½ · PDF page 28 · bphs-97:santhanam:ch14:v4-4.5",
+      "previous_atom_id": "bphs-97:santhanam:ch14:v3",
+      "next_atom_id": "bphs-97:santhanam:ch14:v5-6",
+      "context_before": " Destruction at once of co-born will come to pass, if the said 2 Grahas are together with a malefic, or in a Rāśi, owned by a malefic.\n\n",
+      "context_after": "5-6. Should Sahaj’s Lord and Mangal be together in Randhr Bhava, destruction of co-\n\n<!-- SOURCE_PAGE 29 -->\n\nborn will result. ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch14:v5-6": {
+      "evidence_atom_id": "bphs-97:santhanam:ch14:v5-6",
+      "chapter_number": 14,
+      "chapter_title": "Effects of Sahaj Bhava",
+      "verse_label": "5-6.",
+      "content_role": "verse",
+      "exact_text": "5-6. Should Sahaj’s Lord and Mangal be together in Randhr Bhava, destruction of co- born will result. Happiness in this respect will come to pass, if Mangal, or Sahaj’s Lord is in an angle, or in a trine, or in exaltation, or friendly divisions.",
+      "pdf_pages": [
+        28,
+        29
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 14 · Sloka 5-6 · PDF pages 28-29 · bphs-97:santhanam:ch14:v5-6",
+      "previous_atom_id": "bphs-97:santhanam:ch14:v4-4.5",
+      "next_atom_id": "bphs-97:santhanam:ch14:v7-11",
+      "context_before": " co-born of both sexes will be obtained. These effects be declared after assessing the strength and weakness of the concerned.\n\n",
+      "context_after": "7-11. Number of Brothers and Sisters. If Budh is in Sahaj Bhava, while Sahaj’s Lord and Chandra are together, as the indicator (",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch14:v7-11": {
+      "evidence_atom_id": "bphs-97:santhanam:ch14:v7-11",
+      "chapter_number": 14,
+      "chapter_title": "Effects of Sahaj Bhava",
+      "verse_label": "7-11.",
+      "content_role": "verse",
+      "exact_text": "7-11. Number of Brothers and Sisters. If Budh is in Sahaj Bhava, while Sahaj’s Lord and Chandra are together, as the indicator (Mangal) joins Shani, the effects are: there occurred the birth of an elder sister and there will be younger brothers. Furthermore, the third brother will die. Should Mangal be yuti with Rahu, while Sahaj’s Lord is in his debilitation Rāśi, there will be loss of younger brothers and/or sisters, while three elder brothers and/or sisters were attained by the native. If Sahaj’s Lord is in an angle, while the significator (Mangal) is exalted in a trine and be yuti with Guru, 12 will be the number of total co-born. Out of these two elders and the 3<sup>rd</sup> , the 7<sup>th</sup> , the 9<sup>th</sup> and the 12<sup>th</sup> of the younger co-born will be shortlived, while six of the said twelve will be longlived.",
+      "pdf_pages": [
+        29
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 14 · Sloka 7-11 · PDF page 29 · bphs-97:santhanam:ch14:v7-11",
+      "previous_atom_id": "bphs-97:santhanam:ch14:v5-6",
+      "next_atom_id": "bphs-97:santhanam:ch14:v12-13",
+      "context_before": " Happiness in this respect will come to pass, if Mangal, or Sahaj’s Lord is in an angle, or in a trine, or in exaltation, or friendly divisions.\n\n",
+      "context_after": "12-13. There will be 1 co-born, if Vyaya’s Lord (some texts read, as Labh’s Lord) joins Mangal and Guru, while Sahaj Bhava is oc",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch14:v12-13": {
+      "evidence_atom_id": "bphs-97:santhanam:ch14:v12-13",
+      "chapter_number": 14,
+      "chapter_title": "Effects of Sahaj Bhava",
+      "verse_label": "12-13.",
+      "content_role": "verse",
+      "exact_text": "12-13. There will be 1 co-born, if Vyaya’s Lord (some texts read, as Labh’s Lord) joins Mangal and Guru, while Sahaj Bhava is occupied by Chandra. If Chandra is lonely placed in Sahaj Bhava with Drishti of male Grahas, there will be younger brothers, while the Drishti of Shukra denotes younger sisters.",
+      "pdf_pages": [
+        29
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 14 · Sloka 12-13 · PDF page 29 · bphs-97:santhanam:ch14:v12-13",
+      "previous_atom_id": "bphs-97:santhanam:ch14:v7-11",
+      "next_atom_id": "bphs-97:santhanam:ch14:v14",
+      "context_before": " Out of these two elders and the 3<sup>rd</sup> , the 7<sup>th</sup> , the 9<sup>th</sup> and the 12<sup>th</sup> of the younger co-born will be shortlived, while six of the said twelve will be longlived.\n\n",
+      "context_after": "14. Adverse Grahas. Surya in Sahaj Bhava will destroy the preborn. The afterborn will be destroyed, if Shani is found in Sahaj B",
+      "content_missing": false
+    }
+  }
+}

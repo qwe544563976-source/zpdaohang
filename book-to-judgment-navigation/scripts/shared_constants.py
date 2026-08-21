@@ -69,6 +69,10 @@ HIGH_RISK_PROPER_NOUNS = (
     "karm", "karma", "labh", "labha", "vyaya",
     # 分盘名（写错分盘＝换一张盘，属最高风险）
     "navamsa", "navans", "dwadasamsa", "drekkana", "decanate",
+    # 星座 Rāśi。它与宫 Bhava 是盘上两种不同对象，混译等于换了个查询对象。
+    # 真实证据：ch21:v2 的 "in its own Rāśi" 被译成"落本宫"，
+    # 而同批知识地图里"宫"对应的是 Bhava。行星主管两个星座，本星座与本宫并不等同。
+    "rasi", "rashi", "rāśi", "raashi",
     # 星座
     "aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio",
     "sagittarius", "capricorn", "aquarius", "pisces",
@@ -172,6 +176,21 @@ TERM_RENDERING_RULES = {
     "navamsa": ("三分盘", "十分盘"),
 }
 
+# 短语级红线：有些错必须连着上下文才认得出，单看一个词会大面积误伤。
+# Rāśi 就是典型——中文的"宫"几乎每句都有（"四宫主""七宫主"），
+# 只查"含 rasi 且含宫"，实测全书语料 34 处命中里绝大多数是正确译法。
+# 真正的错法只有一种：把 own Rāśi（本星座）写成"本宫"。行星主管两个星座，
+# 本星座与本宫不是同一件事；本书里"宫"对应的是 Bhava。
+# 真实证据：ch21:v2「in its own Rāśi/Navāńś」→「落本宫」、
+# ch23:v1-4「be in its own Rashiand/or Navāńś」→「落本宫或…」、ch18:v1、ch16:v1-3。
+PHRASE_RENDERING_RULES = (
+    (
+        re.compile(r"\bown\s+ra[sz]h?i", re.I),
+        ("本宫",),
+        "own Rāśi 是本星座（行星自己主管的星座），不是本宫；本书里宫对应 Bhava",
+    ),
+)
+
 
 def term_rendering_violations(pairs_by_step: dict) -> list[dict]:
     """找出把关键术语译成禁用词的映射对。
@@ -182,6 +201,16 @@ def term_rendering_violations(pairs_by_step: dict) -> list[dict]:
     for step_id, pairs in pairs_by_step.items():
         for quote, claim in pairs:
             normalized = normalize_for_term_match(quote)
+            # 短语级红线：原书排印会丢空格（Rashiand／Rashialong），故不加右词边界。
+            for pattern, forbidden_words, reason in PHRASE_RENDERING_RULES:
+                if not pattern.search(normalized):
+                    continue
+                for word in forbidden_words:
+                    if word in claim:
+                        found.append({
+                            "step_id": step_id, "term": pattern.pattern,
+                            "forbidden_rendering": word, "claim": claim, "reason": reason,
+                        })
             for term, forbidden in TERM_RENDERING_RULES.items():
                 if not re.search(rf"\b{re.escape(term)}\b", normalized):
                     continue

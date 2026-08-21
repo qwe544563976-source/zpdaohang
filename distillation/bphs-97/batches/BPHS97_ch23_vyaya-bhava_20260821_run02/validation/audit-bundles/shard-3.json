@@ -1,0 +1,428 @@
+{
+  "shard": 3,
+  "step_count": 3,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch23-v9-rahu-with-malefics-in-vyaya-hell.step-001",
+      "method": {
+        "method": "ch23-v9-rahu-with-malefics-in-vyaya-hell",
+        "title": "会下地狱：罗睺与火星、土星、太阳同落十二宫",
+        "target_house": 12,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我死后会怎么样",
+          "我盘里十二宫的凶星聚集意味着什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Rahu is in Vyaya along with Mangal, Shani and Surya, the native will go to hell.",
+            "罗睺 火星 土星 太阳 同落十二宫 下地狱"
+          ],
+          "counter_queries": [
+            "If there is a benefic in Vyaya, while its Lord is exalted, or is yuti with, or receives a Drishti from a benefic, one will attain final emancipation.",
+            "Guru heaven, Chandra, or Shukra the world of Manes, Mangal and/or Surya earth (rebirth), Budh and/or Shani hell"
+          ],
+          "boundary_queries": [
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Ascent after Death. According to the following Grahas in Vyaya, Yuvati, Ari, or Randhr Bhava, the native will attain one of the different worlds after death"
+          ],
+          "method_queries": [
+            "Just as these effects are derived from Tanu Bhava in regard to the native, similar deductions be made about co-borns etc. from Sahaj and other Bhavas.",
+            "死后去向要看十二宫里的哪些行星"
+          ]
+        },
+        "stop_conditions": [
+          "四颗行星的落宫事实缺任意一条即停止。",
+          "缺少本盘十二宫落宫名单时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch23-v9-rahu-with-malefics-in-vyaya-hell.step-001",
+        "action": "核对罗睺（Rahu）是否落十二宫（Vyaya），并核对火星（Mangal）、土星（Shani）、太阳（Surya）是否同落十二宫。",
+        "applicability_scope": "仅限本命盘十二宫（Vyaya Bhava）主题；原文要求四颗行星同落十二宫，缺一即不成立；原文未给时间限定。",
+        "minimum_supported_claim": "罗睺（Rahu）与火星（Mangal）、土星（Shani）、太阳（Surya）同落十二宫（Vyaya）时，命主会下地狱。",
+        "produced_fact_keys": [
+          "十二宫四凶聚集的死后去向判定"
+        ],
+        "required_fact_keys": [
+          "罗睺（Rahu）是否落十二宫（Vyaya）",
+          "火星（Mangal）是否落十二宫（Vyaya）",
+          "土星（Shani）是否落十二宫（Vyaya）",
+          "太阳（Surya）是否落十二宫（Vyaya）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "罗睺（Rahu）是否落十二宫（Vyaya）"
+            },
+            {
+              "fact_key": "火星（Mangal）是否落十二宫（Vyaya）"
+            },
+            {
+              "fact_key": "土星（Shani）是否落十二宫（Vyaya）"
+            },
+            {
+              "fact_key": "太阳（Surya）是否落十二宫（Vyaya）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Rahu is in Vyaya along with Mangal, Shani and Surya",
+              "claim": "罗睺（Rahu）与火星（Mangal）、土星（Shani）、太阳（Surya）同落十二宫（Vyaya）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will go to hell",
+              "claim": "命主会下地狱"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch23:v9",
+            "quote": "If Rahu is in Vyaya along with Mangal, Shani and Surya, the native will go to hell.",
+            "pdf_pages": [
+              40
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：罗睺（Rahu）是否落十二宫（Vyaya）、火星（Mangal）是否落十二宫（Vyaya）、土星（Shani）是否落十二宫（Vyaya）、太阳（Surya）是否落十二宫（Vyaya）。",
+        "stop_fact_keys": [
+          "罗睺（Rahu）是否落十二宫（Vyaya）",
+          "火星（Mangal）是否落十二宫（Vyaya）",
+          "土星（Shani）是否落十二宫（Vyaya）",
+          "太阳（Surya）是否落十二宫（Vyaya）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把四星同落缩减为其中任意一两颗落十二宫。",
+          "不得据此推断死亡年份、死因或今生的具体祸福。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "538eb2f7e254e551d25fa36c32adb7fd536076aa5101c629fabcee5e229d03a9"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch23-v9-vyaya-lord-with-surya-hell.step-001",
+      "method": {
+        "method": "ch23-v9-vyaya-lord-with-surya-hell",
+        "title": "会下地狱：十二宫主与太阳同宫",
+        "target_house": 12,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "十二宫主跟太阳在一起会怎么样",
+          "我死后会去哪里"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Similar effect will occur, if Vyaya’s Lord is with Surya.",
+            "十二宫主 与太阳同宫 下地狱"
+          ],
+          "counter_queries": [
+            "If there is a benefic in Vyaya, while its Lord is exalted, or is yuti with, or receives a Drishti from a benefic, one will attain final emancipation.",
+            "Guru heaven, Chandra, or Shukra the world of Manes, Mangal and/or Surya earth (rebirth), Budh and/or Shani hell"
+          ],
+          "boundary_queries": [
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+            "Ascent after Death. According to the following Grahas in Vyaya, Yuvati, Ari, or Randhr Bhava, the native will attain one of the different worlds after death",
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics"
+          ],
+          "method_queries": [
+            "Effects of Vyaya’s Lord in Various Bhavas",
+            "十二宫主与太阳同宫怎么判断"
+          ]
+        },
+        "stop_conditions": [
+          "缺少十二宫主是否与太阳同宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch23-v9-vyaya-lord-with-surya-hell.step-001",
+        "action": "核对十二宫主（Vyaya's Lord）是否与太阳（Surya）同宫。",
+        "applicability_scope": "仅限本命盘十二宫（Vyaya Bhava）主题；本条结果由同偈前句的 Similar effect 承接，逐字短引已把前句结果一并纳入；原文未给时间限定。",
+        "minimum_supported_claim": "十二宫主（Vyaya's Lord）与太阳（Surya）同宫时，命主会下地狱。",
+        "produced_fact_keys": [
+          "十二宫主合太阳的死后去向判定"
+        ],
+        "required_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否与太阳（Surya）同宫"
+        ],
+        "condition_logic": {
+          "fact_key": "十二宫主（Vyaya's Lord）是否与太阳（Surya）同宫"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Vyaya’s Lord is with Surya",
+              "claim": "十二宫主（Vyaya's Lord）与太阳（Surya）同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will go to hell",
+              "claim": "命主会下地狱"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch23:v9",
+            "quote": "the native will go to hell. Similar effect will occur, if Vyaya’s Lord is with Surya.",
+            "pdf_pages": [
+              40
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十二宫主（Vyaya's Lord）是否与太阳（Surya）同宫。",
+        "stop_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否与太阳（Surya）同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「同宫」扩大成相照或互换宫位。",
+          "不得据此推断死亡年份、死因或今生的具体祸福。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "f679d22040530a9d4d347f6c4b0fe2297f93688669c3d2ff2d4c1d4641c1d698"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch23-v10-benefic-in-vyaya-final-emancipation.step-001",
+      "method": {
+        "method": "ch23-v10-benefic-in-vyaya-final-emancipation",
+        "title": "获得最终解脱：十二宫内有吉星，且十二宫主入旺、与吉星同宫或被吉星相照",
+        "target_house": 12,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子有没有解脱的可能",
+          "我的灵性道路怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If there is a benefic in Vyaya, while its Lord is exalted, or is yuti with, or receives a Drishti from a benefic, one will attain final emancipation.",
+            "十二宫 吉星 宫主入旺 最终解脱"
+          ],
+          "counter_queries": [
+            "If Rahu is in Vyaya along with Mangal, Shani and Surya, the native will go to hell.",
+            "Guru heaven, Chandra, or Shukra the world of Manes, Mangal and/or Surya earth (rebirth), Budh and/or Shani hell",
+            "Benefics in both Vyaya and Dhan Bhava cause Subh Yog. Malefics in both Vyaya and Dhan Bhava cause Asubh Yog."
+          ],
+          "boundary_queries": [
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "For the seven Grahas, from Surya on, the exaltation Rāśis are, respectively, Mesh, Vrishabh, Makar, Kanya, Kark, Meen and Tula"
+          ],
+          "method_queries": [
+            "Effects of Vyaya’s Lord in Various Bhavas",
+            "十二宫怎么判断解脱与死后去向"
+          ]
+        },
+        "stop_conditions": [
+          "缺少十二宫是否被吉星占据的事实时停止。",
+          "宫主入旺、合吉星、被吉星相照三项事实全部缺失时停止。",
+          "吉星名册未确定时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch23-v10-benefic-in-vyaya-final-emancipation.step-001",
+        "action": "先核对十二宫（Vyaya）内是否有吉星，再核对十二宫主是否入旺、是否与吉星同宫、是否被吉星相照。",
+        "applicability_scope": "仅限本命盘十二宫（Vyaya Bhava）主题；原文把十二宫内有吉星作为共同前提，后三项为并列择一；原文未给时间限定。",
+        "minimum_supported_claim": "十二宫（Vyaya）内有吉星，并且十二宫主入旺，或与吉星同宫，或被吉星相照时，命主会获得最终的解脱。",
+        "produced_fact_keys": [
+          "十二宫吉星与宫主状态的解脱判定"
+        ],
+        "required_fact_keys": [
+          "十二宫（Vyaya）是否被吉星占据"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "十二宫（Vyaya）是否被吉星占据"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否入旺"
+                },
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否与吉星同宫"
+                },
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否被吉星相照"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "十二宫（Vyaya）是否被吉星占据"
+            },
+            "required_fact_keys": [
+              "十二宫主（Vyaya's Lord）是否入旺"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否入旺"
+            },
+            "selection_group": "ch23-v10-benefic-in-vyaya-final-emancipation.step-001:vyaya-lord-benefic-support",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十二宫主（Vyaya's Lord）是否入旺。"
+          },
+          {
+            "when": {
+              "fact_key": "十二宫（Vyaya）是否被吉星占据"
+            },
+            "required_fact_keys": [
+              "十二宫主（Vyaya's Lord）是否与吉星同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否与吉星同宫"
+            },
+            "selection_group": "ch23-v10-benefic-in-vyaya-final-emancipation.step-001:vyaya-lord-benefic-support",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十二宫主（Vyaya's Lord）是否与吉星同宫。"
+          },
+          {
+            "when": {
+              "fact_key": "十二宫（Vyaya）是否被吉星占据"
+            },
+            "required_fact_keys": [
+              "十二宫主（Vyaya's Lord）是否被吉星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否被吉星相照"
+            },
+            "selection_group": "ch23-v10-benefic-in-vyaya-final-emancipation.step-001:vyaya-lord-benefic-support",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十二宫主（Vyaya's Lord）是否被吉星相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "there is a benefic in Vyaya",
+              "claim": "十二宫（Vyaya）内有吉星"
+            },
+            {
+              "quote": "its Lord is exalted",
+              "claim": "十二宫主入旺"
+            },
+            {
+              "quote": "is yuti with",
+              "claim": "与吉星同宫"
+            },
+            {
+              "quote": "receives a Drishti from a benefic",
+              "claim": "被吉星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "one will attain final emancipation",
+              "claim": "命主会获得最终的解脱"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch23:v10",
+            "quote": "If there is a benefic in Vyaya, while its Lord is exalted, or is yuti with, or receives a Drishti from a benefic, one will attain final emancipation.",
+            "pdf_pages": [
+              40
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十二宫（Vyaya）是否被吉星占据。",
+        "stop_fact_keys": [
+          "十二宫（Vyaya）是否被吉星占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得省掉十二宫内有吉星这个共同前提，只凭宫主状态下判断。",
+          "不得据此推断出家、修行方式或解脱的时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "e4db7d1b98530d8439815fc093c7e260ee277ec0d7caba14a1f4228a3842da3e"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch23:v9": {
+      "evidence_atom_id": "bphs-97:santhanam:ch23:v9",
+      "chapter_number": 23,
+      "chapter_title": "Effects of Vyaya Bhava",
+      "verse_label": "9.",
+      "content_role": "verse",
+      "exact_text": "9. If Rahu is in Vyaya along with Mangal, Shani and Surya, the native will go to hell. Similar effect will occur, if Vyaya’s Lord is with Surya.",
+      "pdf_pages": [
+        40
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 23 · Sloka 9 · PDF page 40 · bphs-97:santhanam:ch23:v9",
+      "previous_atom_id": "bphs-97:santhanam:ch23:v8",
+      "next_atom_id": "bphs-97:santhanam:ch23:v10",
+      "context_before": " Grahas placed in the visible half of the zodiac will give explicit results, while the ones in the invisible half will confer secret results.\n\n",
+      "context_after": "10. If there is a benefic in Vyaya, while its Lord is exalted, or is yuti with, or receives a Drishti from a benefic, one will a",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch23:v10": {
+      "evidence_atom_id": "bphs-97:santhanam:ch23:v10",
+      "chapter_number": 23,
+      "chapter_title": "Effects of Vyaya Bhava",
+      "verse_label": "10.",
+      "content_role": "verse",
+      "exact_text": "10. If there is a benefic in Vyaya, while its Lord is exalted, or is yuti with, or receives a Drishti from a benefic, one will attain final emancipation.",
+      "pdf_pages": [
+        40
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 23 · Sloka 10 · PDF page 40 · bphs-97:santhanam:ch23:v10",
+      "previous_atom_id": "bphs-97:santhanam:ch23:v9",
+      "next_atom_id": "bphs-97:santhanam:ch23:v11",
+      "context_before": "yaya along with Mangal, Shani and Surya, the native will go to hell. Similar effect will occur, if Vyaya’s Lord is with Surya.\n\n",
+      "context_after": "11. One will wander from country to country, if Vyaya’s Lord and Vyaya Bhava are with malefics and Vyaya’s Lord gives a Drishti ",
+      "content_missing": false
+    }
+  }
+}

@@ -1,0 +1,66 @@
+# 儿子数量：十子、九子、八子与两种七子组合
+
+> 本文件由 `query-recipes.json` 自动生成。机器配方是唯一真相；禁止手改本文件改变路由或执行许可。
+
+## 用户会怎样问
+
+- 我会有几个儿子
+- 我孩子多不多
+- 我能生几个孩子
+
+## 方法路由
+
+- 可执行方法：[]
+- 候选方法：["ch16-v24-32-number-of-sons"]
+- 事实接入状态：`unmapped`
+- 允许执行：`false`
+
+## 必查事实
+
+- 四宫是否被凶星占据
+- 六宫是否被凶星占据
+- 五宫主是否深度入旺
+- 五宫主是否与上升主同宫
+- 木星是否与另一吉星同宫
+- 木星是否深度入旺
+- 罗睺是否与二宫主同宫
+- 九宫是否被九宫主占据
+- 五宫主是否有力
+- 二宫主是否落十宫
+- 土星是否落九宫
+- 五宫主是否落五宫
+- 五宫主是否与二宫主同宫
+
+## 按情况检查的事实
+
+- 木星是否落五宫
+- 木星是否落九宫
+
+## 四路查书计划
+
+### 支持路
+
+- There will be 10 sons Bandhu Ari occupied by malefics deep exaltation
+- Nine will be the number of sons Guru deep exaltation Rahu Dhan’s Lord
+- 五宫主落五宫 与二宫主同宫 七子三亡
+
+### 反例或取消路
+
+- Only one son is denoted malefic in Putr Bhava
+- 五宫有凶星 子女数量减少
+
+### 适用边界路
+
+- number of sons rules scope Putr Bhava BPHS
+- 儿子数量断语的适用边界
+
+### 判断方法路
+
+- how to count number of children from Putr Bhava
+- 判断子女数量要检查哪些行星组合
+
+## 停止条件
+
+- 缺少四宫、六宫凶星占据事实时停止。
+- 缺少五宫主庙旺、力量与同宫关系事实时停止。
+- 缺少木星与土星落宫事实时停止。

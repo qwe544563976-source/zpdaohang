@@ -380,6 +380,45 @@ def evidence_refs(step: dict[str, Any], atoms: dict[str, dict]) -> list[dict[str
     ]
 
 
+# 抽取端每个步骤字段的去向。装配是"另起一个新字典逐字段抄写"，漏抄一个就静默丢信息，
+# 而闸门校验的是抽取输入、看不见装配输出——已经栽过两次：
+# 第 1 批漏抄 context_bindings／context_reference／time_scope，第 4 批漏抄 concession_conditions。
+# 靠人记住不管用，所以在这里登记去向，加了 schema 字段却没登记就当场停工。
+STEP_FIELD_DESTINATIONS = {
+    # 原样抄进交付件
+    "action": "action", "applicability_scope": "applicability_scope",
+    "minimum_supported_claim": "minimum_supported_claim", "claim_terms": "claim_terms",
+    "produced_fact_keys": "produced_fact_keys", "required_fact_keys": "required_fact_keys",
+    "condition_logic": "condition_logic", "source_status": "source_status",
+    "exception_relations": "exception_relations", "forbidden_extensions": "forbidden_extensions",
+    "context_reference": "context_reference", "context_bindings": "context_bindings",
+    "time_scope": "time_scope", "concession_conditions": "concession_conditions",
+    # 装配时改写成别的字段（有明确去向，不算丢）
+    "evidence": "evidence_refs",
+    "conditional_requirements": "conditional_fact_requirements",
+    "alternative_groups": "condition_logic",
+}
+
+
+def check_no_field_silently_dropped(
+    step: dict[str, Any], assembled: dict[str, Any], method_id: str, number: int
+) -> None:
+    """抽取端写了内容的字段，必须在交付件里有落点。"""
+    for field, destination in STEP_FIELD_DESTINATIONS.items():
+        if step.get(field) and destination not in assembled:
+            raise BuildError(
+                f"方法 {method_id} 步骤 {number}：抽取端 {field!r} 有内容，"
+                f"但交付件里没有它的去向 {destination!r}——装配漏抄了字段"
+            )
+    unregistered = set(step) - set(STEP_FIELD_DESTINATIONS)
+    if unregistered:
+        raise BuildError(
+            f"方法 {method_id} 步骤 {number}：抽取端字段 {sorted(unregistered)} 没有在 "
+            "STEP_FIELD_DESTINATIONS 里登记去向。新增 schema 字段时必须同时登记，"
+            "否则装配会静默丢掉它。"
+        )
+
+
 def assemble_step(method_id: str, number: int, step: dict[str, Any], atoms: dict[str, dict]) -> dict[str, Any]:
     base_logic = step["condition_logic"]
     condition_nodes = [base_logic]
@@ -437,7 +476,11 @@ def assemble_step(method_id: str, number: int, step: dict[str, Any], atoms: dict
         # 时间限定同理：全书大量断语的答案本体就是那个年份（"第26岁得痨病"）。
         # 丢了结构化 time_scope，下游只能去正则中文标题，等于没有可读字段。
         "time_scope": step["time_scope"],
+        # 让步条件（原文的 "though in combustion"、"even if…still"）必须有结构载体。
+        # 只留在散文字段里，下游看到的就是一条裸 if，"即使…仍然"随时会被重新读成"必须满足"。
+        "concession_conditions": step["concession_conditions"],
     }
+    check_no_field_silently_dropped(step, assembled, method_id, number)
     # Q1：步骤级内容指纹。审计凭证逐步骤绑定 step_hash；
     # 改第 7 步只让第 7 步的凭证失效，其余步骤"已通过"保持有效。
     assembled["step_hash"] = compute_step_hash(assembled)

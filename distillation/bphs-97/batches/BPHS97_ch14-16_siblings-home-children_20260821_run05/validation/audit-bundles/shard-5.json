@@ -1,0 +1,1507 @@
+{
+  "shard": 5,
+  "step_count": 11,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch16-v21-v23-age-of-losing-child.step-001",
+      "method": {
+        "method": "ch16-v21-v23-age-of-losing-child",
+        "title": "失子年龄：罗睺五宫、木星上升起第5宫凶星与曼迪落上升三种组合",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会失去孩子",
+          "我几岁的时候子女方面有凶险",
+          "我的子女缘会不会中途断掉"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Rahu in Putr Guru debilitation lose child at the age of 32",
+            "凶星在木星起第5宫和上升起第5宫 33岁36岁失子",
+            "Mandi in Lagna Lagn’s Lord in fall loss of child 56"
+          ],
+          "counter_queries": [
+            "benefic drishti on Putr Bhava protects children",
+            "五宫受吉星保护 失子断语不成立"
+          ],
+          "boundary_queries": [
+            "loss of children specific ages scope Putr Bhava",
+            "失子年龄断语只限原文所给年龄的边界"
+          ],
+          "method_queries": [
+            "how to judge loss of children timing in BPHS",
+            "判断失子时间要检查哪些组合"
+          ]
+        },
+        "stop_conditions": [
+          "缺少罗睺、五宫主与木星状态事实时停止。",
+          "缺少木星起第5宫与上升起第5宫的凶星事实时停止。",
+          "缺少曼迪落宫与上升主庙陷事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v21-v23-age-of-losing-child.step-001",
+        "action": "核对罗睺是否落五宫、五宫主是否与凶星同宫、木星是否落陷，判断32岁失子。",
+        "applicability_scope": "仅限本命五宫失子年龄主题；原文只给32岁这一个年龄，未给上升或大运限定。",
+        "minimum_supported_claim": "罗睺落五宫、五宫主与凶星同宫、木星落陷时，此人在32岁失去子女。",
+        "produced_fact_keys": [
+          "32岁失子判定"
+        ],
+        "required_fact_keys": [
+          "罗睺是否落五宫",
+          "五宫主是否与凶星同宫",
+          "木星是否落陷"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "罗睺是否落五宫"
+            },
+            {
+              "fact_key": "五宫主是否与凶星同宫"
+            },
+            {
+              "fact_key": "木星是否落陷"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Rahu is in Putr",
+              "claim": "罗睺落五宫"
+            },
+            {
+              "quote": "Putr’s Lord is in Yuti with a malefic",
+              "claim": "五宫主与凶星同宫"
+            },
+            {
+              "quote": "Guru is in debilitation",
+              "claim": "木星落陷"
+            }
+          ],
+          "results": [
+            {
+              "quote": "The native will at the age of 32 lose his child",
+              "claim": "此人在32岁失去子女"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v21",
+            "quote": "The native will at the age of 32 lose his child, if Rahu is in Putr, Putr’s Lord is in Yuti with a malefic and Guru is in debilitation.",
+            "pdf_pages": [
+              31
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：罗睺是否落五宫、五宫主是否与凶星同宫、木星是否落陷。",
+        "stop_fact_keys": [
+          "罗睺是否落五宫",
+          "五宫主是否与凶星同宫",
+          "木星是否落陷"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把32岁扩大成其他年龄或整段大运。",
+          "不得据此推断失去几个子女或子女死因。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文指定的年龄/年份",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b5ee9e0c1e92737e533013f6603fc457be2c1e7490279bfca8d9dec5cc2ddb93"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch16-v21-v23-age-of-losing-child.step-002",
+      "method": {
+        "method": "ch16-v21-v23-age-of-losing-child",
+        "title": "失子年龄：罗睺五宫、木星上升起第5宫凶星与曼迪落上升三种组合",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会失去孩子",
+          "我几岁的时候子女方面有凶险",
+          "我的子女缘会不会中途断掉"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Rahu in Putr Guru debilitation lose child at the age of 32",
+            "凶星在木星起第5宫和上升起第5宫 33岁36岁失子",
+            "Mandi in Lagna Lagn’s Lord in fall loss of child 56"
+          ],
+          "counter_queries": [
+            "benefic drishti on Putr Bhava protects children",
+            "五宫受吉星保护 失子断语不成立"
+          ],
+          "boundary_queries": [
+            "loss of children specific ages scope Putr Bhava",
+            "失子年龄断语只限原文所给年龄的边界"
+          ],
+          "method_queries": [
+            "how to judge loss of children timing in BPHS",
+            "判断失子时间要检查哪些组合"
+          ]
+        },
+        "stop_conditions": [
+          "缺少罗睺、五宫主与木星状态事实时停止。",
+          "缺少木星起第5宫与上升起第5宫的凶星事实时停止。",
+          "缺少曼迪落宫与上升主庙陷事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v21-v23-age-of-losing-child.step-002",
+        "action": "核对是否有凶星落木星起第5宫、是否另有凶星落上升起第5宫，判断33岁与36岁失子。",
+        "applicability_scope": "仅限本命失子年龄主题；原文只给33岁和36岁两个年龄，未给上升或大运限定。",
+        "minimum_supported_claim": "有凶星落木星起第5宫、另有凶星落上升起第5宫时，会在33岁和36岁失去子女。",
+        "produced_fact_keys": [
+          "33岁与36岁失子判定"
+        ],
+        "required_fact_keys": [
+          "是否有凶星落木星起第5宫",
+          "是否另有凶星落上升起第5宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "是否有凶星落木星起第5宫"
+            },
+            {
+              "fact_key": "是否另有凶星落上升起第5宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "a malefic is in the 5<sup>th</sup> from Guru",
+              "claim": "有凶星落木星起第5宫"
+            },
+            {
+              "quote": "another is in the 5<sup>th</sup> from Lagn",
+              "claim": "另有凶星落上升起第5宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "There will be loss of children at 33 and 36",
+              "claim": "会在33岁和36岁失去子女"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v22",
+            "quote": "There will be loss of children at 33 and 36, if a malefic is in the 5<sup>th</sup> from Guru, while another is in the 5<sup>th</sup> from Lagn.",
+            "pdf_pages": [
+              31
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：是否有凶星落木星起第5宫、是否另有凶星落上升起第5宫。",
+        "stop_fact_keys": [
+          "是否有凶星落木星起第5宫",
+          "是否另有凶星落上升起第5宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把33岁和36岁扩大成其他年龄。",
+          "不得据此推断失去子女的数量或原因。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文指定的年龄/年份",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "8e96644e357fde6538381667aa3677d2e6b5d25016c957c4b52f7d3f17b0622f"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch16-v21-v23-age-of-losing-child.step-003",
+      "method": {
+        "method": "ch16-v21-v23-age-of-losing-child",
+        "title": "失子年龄：罗睺五宫、木星上升起第5宫凶星与曼迪落上升三种组合",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会失去孩子",
+          "我几岁的时候子女方面有凶险",
+          "我的子女缘会不会中途断掉"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Rahu in Putr Guru debilitation lose child at the age of 32",
+            "凶星在木星起第5宫和上升起第5宫 33岁36岁失子",
+            "Mandi in Lagna Lagn’s Lord in fall loss of child 56"
+          ],
+          "counter_queries": [
+            "benefic drishti on Putr Bhava protects children",
+            "五宫受吉星保护 失子断语不成立"
+          ],
+          "boundary_queries": [
+            "loss of children specific ages scope Putr Bhava",
+            "失子年龄断语只限原文所给年龄的边界"
+          ],
+          "method_queries": [
+            "how to judge loss of children timing in BPHS",
+            "判断失子时间要检查哪些组合"
+          ]
+        },
+        "stop_conditions": [
+          "缺少罗睺、五宫主与木星状态事实时停止。",
+          "缺少木星起第5宫与上升起第5宫的凶星事实时停止。",
+          "缺少曼迪落宫与上升主庙陷事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v21-v23-age-of-losing-child.step-003",
+        "action": "核对曼迪是否落上升宫、上升主是否落陷，判断56岁因失子而悲伤。",
+        "applicability_scope": "仅限本命失子年龄主题；原文只给56岁这一个年龄，未给上升星座或大运限定。",
+        "minimum_supported_claim": "曼迪落上升宫、上升主落陷时，此人在56岁因失子而悲伤。",
+        "produced_fact_keys": [
+          "56岁失子悲伤判定"
+        ],
+        "required_fact_keys": [
+          "曼迪是否落上升宫",
+          "上升主是否落陷"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "曼迪是否落上升宫"
+            },
+            {
+              "fact_key": "上升主是否落陷"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Mandi be in Lagna",
+              "claim": "曼迪落上升宫"
+            },
+            {
+              "quote": "Lagn’s Lord is in fall",
+              "claim": "上升主落陷"
+            }
+          ],
+          "results": [
+            {
+              "quote": "grief on account of loss of child at the age of 56",
+              "claim": "在56岁因失子而悲伤"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v23",
+            "quote": "Should Mandi be in Lagna, while Lagn’s Lord is in fall, grief on account of loss of child at the age of 56 will come to pass.",
+            "pdf_pages": [
+              31
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：曼迪是否落上升宫、上升主是否落陷。",
+        "stop_fact_keys": [
+          "曼迪是否落上升宫",
+          "上升主是否落陷"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把56岁扩大成其他年龄或整段大运。",
+          "不得据此推断子女死亡原因或数量。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文指定的年龄/年份",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "e9392b92b08db1c75f81291b527e56ad46e8966b80a4b3a1cec57c4c0bb036d8"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch16-v24-32-number-of-sons.step-001",
+      "method": {
+        "method": "ch16-v24-32-number-of-sons",
+        "title": "儿子数量：十子、九子、八子与两种七子组合",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会有几个儿子",
+          "我孩子多不多",
+          "我能生几个孩子"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "There will be 10 sons Bandhu Ari occupied by malefics deep exaltation",
+            "Nine will be the number of sons Guru deep exaltation Rahu Dhan’s Lord",
+            "五宫主落五宫 与二宫主同宫 七子三亡"
+          ],
+          "counter_queries": [
+            "Only one son is denoted malefic in Putr Bhava",
+            "五宫有凶星 子女数量减少"
+          ],
+          "boundary_queries": [
+            "number of sons rules scope Putr Bhava BPHS",
+            "儿子数量断语的适用边界"
+          ],
+          "method_queries": [
+            "how to count number of children from Putr Bhava",
+            "判断子女数量要检查哪些行星组合"
+          ]
+        },
+        "stop_conditions": [
+          "缺少四宫、六宫凶星占据事实时停止。",
+          "缺少五宫主庙旺、力量与同宫关系事实时停止。",
+          "缺少木星与土星落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v24-32-number-of-sons.step-001",
+        "action": "核对四宫与六宫的凶星占据、五宫主深度入旺并与上升主同宫、木星与另一吉星同宫，判断是否主十个儿子。",
+        "applicability_scope": "仅限本命五宫儿子数量主题；原文只给十个儿子这一个数量结论，未给时间或上升限定。",
+        "minimum_supported_claim": "四宫与六宫被凶星占据、五宫主深度入旺并与上升主同宫、木星与另一吉星同宫时，会有10个儿子。",
+        "produced_fact_keys": [
+          "十子判定"
+        ],
+        "required_fact_keys": [
+          "四宫是否被凶星占据",
+          "六宫是否被凶星占据",
+          "五宫主是否深度入旺",
+          "五宫主是否与上升主同宫",
+          "木星是否与另一吉星同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "四宫是否被凶星占据"
+            },
+            {
+              "fact_key": "六宫是否被凶星占据"
+            },
+            {
+              "fact_key": "五宫主是否深度入旺"
+            },
+            {
+              "fact_key": "五宫主是否与上升主同宫"
+            },
+            {
+              "fact_key": "木星是否与另一吉星同宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Bandhu Bhava and Ari Bhava are occupied by malefics",
+              "claim": "四宫与六宫被凶星占据"
+            },
+            {
+              "quote": "Putr’s Lord is in deep exaltation, joining Lagn’s Lord",
+              "claim": "五宫主深度入旺并与上升主同宫"
+            },
+            {
+              "quote": "Guru is with another benefic",
+              "claim": "木星与另一吉星同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "There will be 10 sons",
+              "claim": "会有10个儿子"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v24-32",
+            "quote": "There will be 10 sons, if Bandhu Bhava and Ari Bhava are occupied by malefics, while Putr’s Lord is in deep exaltation, joining Lagn’s Lord, as Guru is with another benefic.",
+            "pdf_pages": [
+              31,
+              32
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：四宫是否被凶星占据、六宫是否被凶星占据、五宫主是否深度入旺、五宫主是否与上升主同宫、木星是否与另一吉星同宫。",
+        "stop_fact_keys": [
+          "四宫是否被凶星占据",
+          "六宫是否被凶星占据",
+          "五宫主是否深度入旺",
+          "五宫主是否与上升主同宫",
+          "木星是否与另一吉星同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把10个儿子改写成其他数量或算作子女总数。",
+          "不得据此推断子女出生时间或性别比例。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "ad88ddce0ed368e96296bc0454f6e4190640bfa8c71f39ba8327c9cd1f90a4ae"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch16-v24-32-number-of-sons.step-002",
+      "method": {
+        "method": "ch16-v24-32-number-of-sons",
+        "title": "儿子数量：十子、九子、八子与两种七子组合",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会有几个儿子",
+          "我孩子多不多",
+          "我能生几个孩子"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "There will be 10 sons Bandhu Ari occupied by malefics deep exaltation",
+            "Nine will be the number of sons Guru deep exaltation Rahu Dhan’s Lord",
+            "五宫主落五宫 与二宫主同宫 七子三亡"
+          ],
+          "counter_queries": [
+            "Only one son is denoted malefic in Putr Bhava",
+            "五宫有凶星 子女数量减少"
+          ],
+          "boundary_queries": [
+            "number of sons rules scope Putr Bhava BPHS",
+            "儿子数量断语的适用边界"
+          ],
+          "method_queries": [
+            "how to count number of children from Putr Bhava",
+            "判断子女数量要检查哪些行星组合"
+          ]
+        },
+        "stop_conditions": [
+          "缺少四宫、六宫凶星占据事实时停止。",
+          "缺少五宫主庙旺、力量与同宫关系事实时停止。",
+          "缺少木星与土星落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v24-32-number-of-sons.step-002",
+        "action": "核对木星是否深度入旺、罗睺是否与二宫主同宫、九宫是否被九宫主占据，判断是否主九个儿子。",
+        "applicability_scope": "仅限本命五宫儿子数量主题；原文只给九个儿子这一个数量结论，未给时间或上升限定。",
+        "minimum_supported_claim": "木星深度入旺、罗睺与二宫主同宫、九宫被其宫主占据时，会有九个儿子。",
+        "produced_fact_keys": [
+          "九子判定"
+        ],
+        "required_fact_keys": [
+          "木星是否深度入旺",
+          "罗睺是否与二宫主同宫",
+          "九宫是否被九宫主占据"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "木星是否深度入旺"
+            },
+            {
+              "fact_key": "罗睺是否与二宫主同宫"
+            },
+            {
+              "fact_key": "九宫是否被九宫主占据"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Guru is in deep exaltation",
+              "claim": "木星深度入旺"
+            },
+            {
+              "quote": "Rahu is with Dhan’s Lord",
+              "claim": "罗睺与二宫主同宫"
+            },
+            {
+              "quote": "Dharm is occupied by its own Lord",
+              "claim": "九宫被其宫主占据"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Nine will be the number of sons",
+              "claim": "会有九个儿子"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v24-32",
+            "quote": "Nine will be the number of sons, that one will beget, if Guru is in deep exaltation, as Rahu is with Dhan’s Lord and Dharm is occupied by its own Lord.",
+            "pdf_pages": [
+              31,
+              32
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：木星是否深度入旺、罗睺是否与二宫主同宫、九宫是否被九宫主占据。",
+        "stop_fact_keys": [
+          "木星是否深度入旺",
+          "罗睺是否与二宫主同宫",
+          "九宫是否被九宫主占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把九个儿子改写成其他数量或算作子女总数。",
+          "不得据此推断子女出生时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "c96d06180beaea3f11de9c801a8eb9f9097e035bb0e22b41bce1d8ae3827f34e"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch16-v24-32-number-of-sons.step-003",
+      "method": {
+        "method": "ch16-v24-32-number-of-sons",
+        "title": "儿子数量：十子、九子、八子与两种七子组合",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会有几个儿子",
+          "我孩子多不多",
+          "我能生几个孩子"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "There will be 10 sons Bandhu Ari occupied by malefics deep exaltation",
+            "Nine will be the number of sons Guru deep exaltation Rahu Dhan’s Lord",
+            "五宫主落五宫 与二宫主同宫 七子三亡"
+          ],
+          "counter_queries": [
+            "Only one son is denoted malefic in Putr Bhava",
+            "五宫有凶星 子女数量减少"
+          ],
+          "boundary_queries": [
+            "number of sons rules scope Putr Bhava BPHS",
+            "儿子数量断语的适用边界"
+          ],
+          "method_queries": [
+            "how to count number of children from Putr Bhava",
+            "判断子女数量要检查哪些行星组合"
+          ]
+        },
+        "stop_conditions": [
+          "缺少四宫、六宫凶星占据事实时停止。",
+          "缺少五宫主庙旺、力量与同宫关系事实时停止。",
+          "缺少木星与土星落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v24-32-number-of-sons.step-003",
+        "action": "核对木星是否落五宫或九宫、五宫主是否有力、二宫主是否落十宫，判断是否主八个儿子。",
+        "applicability_scope": "仅限本命五宫儿子数量主题；原文只给八个儿子这一个数量结论，木星落宫只列五宫与九宫两处。",
+        "minimum_supported_claim": "木星落五宫或九宫、五宫主有力、二宫主落十宫时，会有八个儿子。",
+        "produced_fact_keys": [
+          "八子判定"
+        ],
+        "required_fact_keys": [
+          "五宫主是否有力",
+          "二宫主是否落十宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "五宫主是否有力"
+                },
+                {
+                  "fact_key": "二宫主是否落十宫"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "木星是否落五宫"
+                },
+                {
+                  "fact_key": "木星是否落九宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "五宫主是否有力"
+                },
+                {
+                  "fact_key": "二宫主是否落十宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "木星是否落五宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "木星是否落五宫"
+            },
+            "selection_group": "ch16-v24-32-number-of-sons.step-003:guru-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：木星是否落五宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "五宫主是否有力"
+                },
+                {
+                  "fact_key": "二宫主是否落十宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "木星是否落九宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "木星是否落九宫"
+            },
+            "selection_group": "ch16-v24-32-number-of-sons.step-003:guru-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：木星是否落九宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Guru is in Putr, or Dharm Bhava",
+              "claim": "木星落五宫或九宫"
+            },
+            {
+              "quote": "Putr’s Lord is endowed with strength",
+              "claim": "五宫主有力"
+            },
+            {
+              "quote": "Dhan’s Lord is in Karm Bhava",
+              "claim": "二宫主落十宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "There will be eight sons",
+              "claim": "会有八个儿子"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v24-32",
+            "quote": "There will be eight sons, if Guru is in Putr, or Dharm Bhava, while Putr’s Lord is endowed with strength and Dhan’s Lord is in Karm Bhava.",
+            "pdf_pages": [
+              31,
+              32
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：五宫主是否有力、二宫主是否落十宫。",
+        "stop_fact_keys": [
+          "五宫主是否有力",
+          "二宫主是否落十宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把木星落五宫、九宫以外的位置也算作本条件。",
+          "不得把八个儿子改写成其他数量或算作子女总数。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "ddd61623bf9e783a98cc5777c08cd6678bbf4d161ede3cf93c0068faa6eed968"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch16-v24-32-number-of-sons.step-004",
+      "method": {
+        "method": "ch16-v24-32-number-of-sons",
+        "title": "儿子数量：十子、九子、八子与两种七子组合",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会有几个儿子",
+          "我孩子多不多",
+          "我能生几个孩子"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "There will be 10 sons Bandhu Ari occupied by malefics deep exaltation",
+            "Nine will be the number of sons Guru deep exaltation Rahu Dhan’s Lord",
+            "五宫主落五宫 与二宫主同宫 七子三亡"
+          ],
+          "counter_queries": [
+            "Only one son is denoted malefic in Putr Bhava",
+            "五宫有凶星 子女数量减少"
+          ],
+          "boundary_queries": [
+            "number of sons rules scope Putr Bhava BPHS",
+            "儿子数量断语的适用边界"
+          ],
+          "method_queries": [
+            "how to count number of children from Putr Bhava",
+            "判断子女数量要检查哪些行星组合"
+          ]
+        },
+        "stop_conditions": [
+          "缺少四宫、六宫凶星占据事实时停止。",
+          "缺少五宫主庙旺、力量与同宫关系事实时停止。",
+          "缺少木星与土星落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v24-32-number-of-sons.step-004",
+        "action": "核对土星是否落九宫、五宫主是否落五宫本宫，判断是否主七个儿子并两次生双胞胎。",
+        "applicability_scope": "仅限本命五宫儿子数量主题；原文只给七个儿子并两次双生这一个结论，未给时间限定。",
+        "minimum_supported_claim": "土星落九宫、五宫主落五宫本宫时，会有7个儿子，其中两次生双胞胎。",
+        "produced_fact_keys": [
+          "七子双生判定"
+        ],
+        "required_fact_keys": [
+          "土星是否落九宫",
+          "五宫主是否落五宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "土星是否落九宫"
+            },
+            {
+              "fact_key": "五宫主是否落五宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Shani in Dharm Bhava",
+              "claim": "土星落九宫"
+            },
+            {
+              "quote": "Putr’s Lord is in Putr itself",
+              "claim": "五宫主落五宫本宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "gives 7 sons, out of which twins will be born twice",
+              "claim": "会有7个儿子，其中两次生双胞胎"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v24-32",
+            "quote": "Shani in Dharm Bhava, while Putr’s Lord is in Putr itself, gives 7 sons, out of which twins will be born twice.",
+            "pdf_pages": [
+              31,
+              32
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：土星是否落九宫、五宫主是否落五宫。",
+        "stop_fact_keys": [
+          "土星是否落九宫",
+          "五宫主是否落五宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把7个儿子或两次双生改写成其他数量。",
+          "不得据此推断双胞胎出生的具体时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "11e1253aa5645a323d2b7bc9ff090f924c7d548c63441a9bd7eff6833e6d7298"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch16-v24-32-number-of-sons.step-005",
+      "method": {
+        "method": "ch16-v24-32-number-of-sons",
+        "title": "儿子数量：十子、九子、八子与两种七子组合",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会有几个儿子",
+          "我孩子多不多",
+          "我能生几个孩子"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "There will be 10 sons Bandhu Ari occupied by malefics deep exaltation",
+            "Nine will be the number of sons Guru deep exaltation Rahu Dhan’s Lord",
+            "五宫主落五宫 与二宫主同宫 七子三亡"
+          ],
+          "counter_queries": [
+            "Only one son is denoted malefic in Putr Bhava",
+            "五宫有凶星 子女数量减少"
+          ],
+          "boundary_queries": [
+            "number of sons rules scope Putr Bhava BPHS",
+            "儿子数量断语的适用边界"
+          ],
+          "method_queries": [
+            "how to count number of children from Putr Bhava",
+            "判断子女数量要检查哪些行星组合"
+          ]
+        },
+        "stop_conditions": [
+          "缺少四宫、六宫凶星占据事实时停止。",
+          "缺少五宫主庙旺、力量与同宫关系事实时停止。",
+          "缺少木星与土星落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v24-32-number-of-sons.step-005",
+        "action": "核对五宫主是否落五宫并与二宫主同宫，判断是否主七个儿子而其中三个去世。",
+        "applicability_scope": "仅限本命五宫儿子数量与存殁主题；原文只给七子三亡这一个结论，未给时间限定。",
+        "minimum_supported_claim": "五宫主落五宫并与二宫主同宫时，会生7个儿子，其中3个会去世。",
+        "produced_fact_keys": [
+          "七子三亡判定"
+        ],
+        "required_fact_keys": [
+          "五宫主是否落五宫",
+          "五宫主是否与二宫主同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "五宫主是否落五宫"
+            },
+            {
+              "fact_key": "五宫主是否与二宫主同宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Putr’s Lord is in Putr in Yuti with Dhan’s Lord",
+              "claim": "五宫主落五宫并与二宫主同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "there will be birth of 7 sons, out of which 3 will pass away",
+              "claim": "会生7个儿子，其中3个会去世"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v24-32",
+            "quote": "If Putr’s Lord is in Putr in Yuti with Dhan’s Lord, there will be birth of 7 sons, out of which 3 will pass away.",
+            "pdf_pages": [
+              31,
+              32
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：五宫主是否落五宫、五宫主是否与二宫主同宫。",
+        "stop_fact_keys": [
+          "五宫主是否落五宫",
+          "五宫主是否与二宫主同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把7个儿子或去世3个改写成其他数量。",
+          "不得据此推断去世发生的年龄或原因。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "532c541ee3cd06687d52ffcbbb19a103d36cfea21901c6a0e46bda5fffb90970"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch16-v24-32-only-one-son.step-001",
+      "method": {
+        "method": "ch16-v24-32-only-one-son",
+        "title": "只主一子：五宫有凶星且木土互在对方起第5宫",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我是不是只能有一个孩子",
+          "我子女会不会很少"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Only one son is denoted malefic in Putr Bhava Guru 5th from Shani",
+            "五宫有凶星 木星土星互在第5宫 只主一子"
+          ],
+          "counter_queries": [
+            "Putr’s Lord in deep exaltation many sons",
+            "五宫主深度入旺 子女众多"
+          ],
+          "boundary_queries": [
+            "one son only rule scope Putr Bhava",
+            "只主一子断语的适用边界"
+          ],
+          "method_queries": [
+            "how to judge a single child yoga from Putr Bhava",
+            "判断独子组合要检查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫内凶星占据事实时停止。",
+          "缺少木星与土星相对位置事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v24-32-only-one-son.step-001",
+        "action": "核对五宫是否有凶星，并核对木星与土星是否互在对方起第5宫，判断是否只主一个儿子。",
+        "applicability_scope": "仅限本命五宫儿子数量主题；原文只给只主一子这一个结论，未给时间或上升限定。",
+        "minimum_supported_claim": "五宫中有凶星，且木星落土星起第5宫或土星落木星起第5宫时，只主一个儿子。",
+        "produced_fact_keys": [
+          "独子判定"
+        ],
+        "required_fact_keys": [
+          "五宫是否有凶星占据"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "五宫是否有凶星占据"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "木星是否落土星起第5宫"
+                },
+                {
+                  "fact_key": "土星是否落木星起第5宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "五宫是否有凶星占据"
+            },
+            "required_fact_keys": [
+              "木星是否落土星起第5宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "木星是否落土星起第5宫"
+            },
+            "selection_group": "ch16-v24-32-only-one-son.step-001:guru-shani-fifth",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：木星是否落土星起第5宫。"
+          },
+          {
+            "when": {
+              "fact_key": "五宫是否有凶星占据"
+            },
+            "required_fact_keys": [
+              "土星是否落木星起第5宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "土星是否落木星起第5宫"
+            },
+            "selection_group": "ch16-v24-32-only-one-son.step-001:guru-shani-fifth",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：土星是否落木星起第5宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "a malefic in Putr Bhava",
+              "claim": "五宫中有凶星"
+            },
+            {
+              "quote": "Guru is in the 5<sup>th</sup> from Shani",
+              "claim": "木星落土星起第5宫"
+            },
+            {
+              "quote": "or vice versa",
+              "claim": "土星落木星起第5宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Only one son is denoted",
+              "claim": "只主一个儿子"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v24-32",
+            "quote": "Only one son is denoted, if there be a malefic in Putr Bhava, while Guru is in the 5<sup>th</sup> from Shani, or vice versa.",
+            "pdf_pages": [
+              31,
+              32
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：五宫是否有凶星占据。",
+        "stop_fact_keys": [
+          "五宫是否有凶星占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把只主一子扩大成子女总数或女儿数量的断语。",
+          "不得据此推断该子出生的年份。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "1273e74ebfd5779850a7f03e9b2cbb235c30dacb25acfece25f312d5cb742485"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch16-v24-32-child-through-later-wife.step-001",
+      "method": {
+        "method": "ch16-v24-32-child-through-later-wife",
+        "title": "子嗣出自后妻：五宫有凶星或土星落木星起第5宫",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的孩子会是第几任配偶生的",
+          "我第一段婚姻会不会没有孩子"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "offspring only through his second or third wife malefic in Putr Bhava",
+            "五宫有凶星 土星在木星第5宫 后妻得子"
+          ],
+          "counter_queries": [
+            "benefic in Putr Bhava children from first wife",
+            "五宫有吉星 第一位妻子得子"
+          ],
+          "boundary_queries": [
+            "second or third wife offspring rule scope",
+            "子嗣出自后妻断语的适用边界"
+          ],
+          "method_queries": [
+            "how to judge which wife gives children BPHS",
+            "判断子嗣来自哪位配偶要看什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫内凶星事实时停止。",
+          "缺少土星相对木星位置事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v24-32-child-through-later-wife.step-001",
+        "action": "先取得本盘凶星名单，再核对五宫内是否有凶星、或土星是否落木星起第5宫，判断子嗣是否只能出自第二或第三位妻子。",
+        "applicability_scope": "仅限本命五宫子嗣来源主题；原文只讲第二或第三位妻子，未给时间或上升限定。",
+        "minimum_supported_claim": "五宫中有凶星，或土星落木星起第5宫时，此人只能通过第二或第三位妻子得到子嗣。",
+        "produced_fact_keys": [
+          "子嗣出自第二或第三位妻子判定"
+        ],
+        "required_fact_keys": [
+          "本盘中哪些行星被判为凶星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘中哪些行星被判为凶星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "五宫是否有凶星在内"
+                },
+                {
+                  "fact_key": "土星是否落于木星起第5宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘中哪些行星被判为凶星"
+            },
+            "required_fact_keys": [
+              "五宫是否有凶星在内"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫是否有凶星在内"
+            },
+            "selection_group": "ch16-v24-32-child-through-later-wife.step-001:either-condition",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫是否有凶星在内。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘中哪些行星被判为凶星"
+            },
+            "required_fact_keys": [
+              "土星是否落于木星起第5宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "土星是否落于木星起第5宫"
+            },
+            "selection_group": "ch16-v24-32-child-through-later-wife.step-001:either-condition",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：土星是否落于木星起第5宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Putr Bhava has a malefic in it",
+              "claim": "五宫中有凶星"
+            },
+            {
+              "quote": "Shani is in the 5<sup>th</sup> from Guru",
+              "claim": "土星落木星起第5宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will beget offspring only through his second, or third wife",
+              "claim": "此人只能通过第二或第三位妻子得到子嗣"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v24-32",
+            "quote": "If Putr Bhava has a malefic in it, or, if Shani is in the 5<sup>th</sup> from Guru, the native will beget offspring only through his second, or third wife.",
+            "pdf_pages": [
+              31,
+              32
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中哪些行星被判为凶星。",
+        "stop_fact_keys": [
+          "本盘中哪些行星被判为凶星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断离婚、再婚的时间或原因。",
+          "不得把第二或第三位妻子扩大成更多次婚姻。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b98d54561f6772486aaa93c7f6727cf059f931551bc4a4585a80f120652dc15e"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch16-v24-32-successive-loss-of-children.step-001",
+      "method": {
+        "method": "ch16-v24-32-successive-loss-of-children",
+        "title": "长寿而子女相继去世：五宫凶星、木土同落五宫、上升主落二宫、五宫主与火星同宫",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的孩子会不会养不活",
+          "我子女缘为什么这么坎坷"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Guru yuti with Shani in Putr Bhava lose his children one after the other",
+            "五宫凶星 木星土星同落五宫 火星与五宫主 子女相继去世"
+          ],
+          "counter_queries": [
+            "benefic protection of Putr Bhava children survive",
+            "五宫得吉星保护 子女得以存活"
+          ],
+          "boundary_queries": [
+            "live long but lose children rule scope Putr Bhava",
+            "长寿而子女去世断语的适用边界"
+          ],
+          "method_queries": [
+            "how to judge survival of children from Putr Bhava",
+            "判断子女能否存活要看哪些组合"
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫占据者事实时停止。",
+          "缺少木星与土星落宫事实时停止。",
+          "缺少上升主与五宫主的落宫和同宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch16-v24-32-successive-loss-of-children.step-001",
+        "action": "核对五宫凶星占据、木星与土星是否同落五宫、上升主是否落二宫、五宫主是否与火星同宫，判断本人寿命与子女存殁。",
+        "applicability_scope": "仅限本命五宫子女存殁与本人寿长主题；原文未给年龄、时间或上升限定。",
+        "minimum_supported_claim": "五宫被凶星占据、木星与土星同落五宫、上升主落二宫、五宫主与火星同宫时，此人长寿，但子女一个接一个出生后去世。",
+        "produced_fact_keys": [
+          "长寿而子女相继去世判定"
+        ],
+        "required_fact_keys": [
+          "五宫是否被凶星占据",
+          "木星是否与土星同落五宫",
+          "上升主是否落二宫",
+          "五宫主是否与火星同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "五宫是否被凶星占据"
+            },
+            {
+              "fact_key": "木星是否与土星同落五宫"
+            },
+            {
+              "fact_key": "上升主是否落二宫"
+            },
+            {
+              "fact_key": "五宫主是否与火星同宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Putr be occupied by a malefic",
+              "claim": "五宫被凶星占据"
+            },
+            {
+              "quote": "Guru is yuti with Shani in Putr Bhava",
+              "claim": "木星与土星同落五宫"
+            },
+            {
+              "quote": "Lagn’s Lord is in Dhan Bhava",
+              "claim": "上升主落二宫"
+            },
+            {
+              "quote": "Putr’s Lord is yuti with Mangal",
+              "claim": "五宫主与火星同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "one will live long, but lose his children one after the other, as they are born",
+              "claim": "此人长寿，但子女一个接一个出生后去世"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch16:v24-32",
+            "quote": "Should Putr be occupied by a malefic, while Guru is yuti with Shani in Putr Bhava, as Lagn’s Lord is in Dhan Bhava and Putr’s Lord is yuti with Mangal, one will live long, but lose his children one after the other, as they are born.",
+            "pdf_pages": [
+              31,
+              32
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：五宫是否被凶星占据、木星是否与土星同落五宫、上升主是否落二宫、五宫主是否与火星同宫。",
+        "stop_fact_keys": [
+          "五宫是否被凶星占据",
+          "木星是否与土星同落五宫",
+          "上升主是否落二宫",
+          "五宫主是否与火星同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断子女去世的年龄、数量或原因。",
+          "不得把长寿写成具体寿数。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "a7b8d99d27a83136f3b49cbac3202ceddc4d35e7cb97156fd0388962de4fe05d"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch16:v21": {
+      "evidence_atom_id": "bphs-97:santhanam:ch16:v21",
+      "chapter_number": 16,
+      "chapter_title": "Effects of Putr Bhava",
+      "verse_label": "21.",
+      "content_role": "verse",
+      "exact_text": "21. The native will at the age of 32 lose his child, if Rahu is in Putr, Putr’s Lord is in Yuti with a malefic and Guru is in debilitation.",
+      "pdf_pages": [
+        31
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 16 · Sloka 21 · PDF page 31 · bphs-97:santhanam:ch16:v21",
+      "previous_atom_id": "bphs-97:santhanam:ch16:v20",
+      "next_atom_id": "bphs-97:santhanam:ch16:v22",
+      "context_before": " If Guru is in Dharm Bhava, while Shukra is in the 9<sup>th</sup> from Guru along with Lagn’s Lord, one will beget a child at the age of 40.\n\n",
+      "context_after": "22. There will be loss of children at 33 and 36, if a malefic is in the 5<sup>th</sup> from Guru, while another is in the 5<sup>",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch16:v22": {
+      "evidence_atom_id": "bphs-97:santhanam:ch16:v22",
+      "chapter_number": 16,
+      "chapter_title": "Effects of Putr Bhava",
+      "verse_label": "22.",
+      "content_role": "verse",
+      "exact_text": "22. There will be loss of children at 33 and 36, if a malefic is in the 5<sup>th</sup> from Guru, while another is in the 5<sup>th</sup> from Lagn.",
+      "pdf_pages": [
+        31
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 16 · Sloka 22 · PDF page 31 · bphs-97:santhanam:ch16:v22",
+      "previous_atom_id": "bphs-97:santhanam:ch16:v21",
+      "next_atom_id": "bphs-97:santhanam:ch16:v23",
+      "context_before": " The native will at the age of 32 lose his child, if Rahu is in Putr, Putr’s Lord is in Yuti with a malefic and Guru is in debilitation.\n\n",
+      "context_after": "23. Should Mandi be in Lagna, while Lagn’s Lord is in fall, grief on account of loss of child at the age of 56 will come to pass",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch16:v23": {
+      "evidence_atom_id": "bphs-97:santhanam:ch16:v23",
+      "chapter_number": 16,
+      "chapter_title": "Effects of Putr Bhava",
+      "verse_label": "23.",
+      "content_role": "verse",
+      "exact_text": "23. Should Mandi be in Lagna, while Lagn’s Lord is in fall, grief on account of loss of child at the age of 56 will come to pass.",
+      "pdf_pages": [
+        31
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 16 · Sloka 23 · PDF page 31 · bphs-97:santhanam:ch16:v23",
+      "previous_atom_id": "bphs-97:santhanam:ch16:v22",
+      "next_atom_id": "bphs-97:santhanam:ch16:v24-32",
+      "context_before": " There will be loss of children at 33 and 36, if a malefic is in the 5<sup>th</sup> from Guru, while another is in the 5<sup>th</sup> from Lagn.\n\n",
+      "context_after": "24-32. Number of Children. There will be 10 sons, if Bandhu Bhava and Ari Bhava are occupied by malefics, while Putr’s Lord is i",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch16:v24-32": {
+      "evidence_atom_id": "bphs-97:santhanam:ch16:v24-32",
+      "chapter_number": 16,
+      "chapter_title": "Effects of Putr Bhava",
+      "verse_label": "24-32.",
+      "content_role": "verse",
+      "exact_text": "24-32. Number of Children. There will be 10 sons, if Bandhu Bhava and Ari Bhava are occupied by malefics, while Putr’s Lord is in deep exaltation, joining Lagn’s Lord, as Guru is with another benefic. Nine will be the number of sons, that one will beget, if Guru is in deep exaltation, as Rahu is with Dhan’s Lord and Dharm is occupied by its own Lord. There will be eight sons, if Guru is in Putr, or Dharm Bhava, while Putr’s Lord is endowed with strength and Dhan’s Lord is in Karm Bhava. Shani in Dharm Bhava, while Putr’s Lord is in Putr itself, gives 7 sons, out of which twins will be born twice. If Putr’s Lord is in Putr in Yuti with Dhan’s Lord, there will be birth of 7 sons, out of which 3 will pass away. Only one son is denoted, if there be a malefic in Putr Bhava, while Guru is in the 5<sup>th</sup> from Shani, or vice versa. If Putr Bhava has a malefic in it, or, if Shani is in the 5<sup>th</sup> from Guru, the native will beget offspring only through his second, or third wife. Should Putr be occupied by a malefic, while Guru is yuti with Shani in Putr Bhava, as Lagn’s Lord is in Dhan Bhava and Putr’s Lord is yuti with Mangal, one will live long, but lose his children one after the other, as they are born.",
+      "pdf_pages": [
+        31,
+        32
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 16 · Sloka 24-32 · PDF pages 31-32 · bphs-97:santhanam:ch16:v24-32",
+      "previous_atom_id": "bphs-97:santhanam:ch16:v23",
+      "next_atom_id": null,
+      "context_before": " Should Mandi be in Lagna, while Lagn’s Lord is in fall, grief on account of loss of child at the age of 56 will come to pass.\n\n",
+      "context_after": "",
+      "content_missing": false
+    }
+  }
+}

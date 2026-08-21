@@ -1,0 +1,377 @@
+{
+  "shard": 2,
+  "step_count": 3,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch23-v5-6-vyaya-lord-angle-trine-spouse.step-001",
+      "method": {
+        "method": "ch23-v5-6-vyaya-lord-angle-trine-spouse",
+        "title": "会得到配偶：十二宫主落角宫或三角宫",
+        "target_house": 12,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我能不能成家",
+          "我会不会有配偶"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If he be in an angle, or trine, the native will beget a spouse.",
+            "十二宫主 落角宫 三角宫 得配偶"
+          ],
+          "counter_queries": [
+            "If Yuvati Lord is devoid of strength and is relegated to Ari, 8<sup>th</sup> , or Vyaya, or, if Yuvati Lord is in fall, the native’s wife will be destroyed",
+            "And, if Vyaya’s Lord is in Ari, or Randhr Bhava, or be in enemy’s Navāńś, in debilitation Navāńś, or in Randhr Bhava in Navāńś, one will be devoid of happiness from wife"
+          ],
+          "boundary_queries": [
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "Putr and Dharm Bhava are known by the name Kon (or trine)",
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc."
+          ],
+          "method_queries": [
+            "Effects of Vyaya’s Lord in Various Bhavas",
+            "判断婚姻要看哪一宫的宫主落在角宫或三角宫"
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘十二宫主落在哪一宫的事实时停止。",
+          "角宫与三角宫两个分支事实都缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch23-v5-6-vyaya-lord-angle-trine-spouse.step-001",
+        "action": "取本盘十二宫主（Vyaya's Lord）落在哪一宫，再判断它是否落角宫或三角宫。",
+        "applicability_scope": "仅限本命盘十二宫（Vyaya Bhava）主题下的得配偶断语；原文本句用代词 he，承接同偈前句的 Vyaya’s Lord，未另指其他行星；原文未给结婚时间。",
+        "minimum_supported_claim": "十二宫主（Vyaya's Lord）落角宫或三角宫时，命主会得到配偶。",
+        "produced_fact_keys": [
+          "十二宫主落角宫三角宫的得配偶判定"
+        ],
+        "required_fact_keys": [
+          "本盘十二宫主（Vyaya's Lord）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘十二宫主（Vyaya's Lord）落在哪一宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否落角宫"
+                },
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否落三角宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘十二宫主（Vyaya's Lord）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "十二宫主（Vyaya's Lord）是否落角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否落角宫"
+            },
+            "selection_group": "ch23-v5-6-vyaya-lord-angle-trine-spouse.step-001:angle-or-trine",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十二宫主（Vyaya's Lord）是否落角宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘十二宫主（Vyaya's Lord）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "十二宫主（Vyaya's Lord）是否落三角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否落三角宫"
+            },
+            "selection_group": "ch23-v5-6-vyaya-lord-angle-trine-spouse.step-001:angle-or-trine",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十二宫主（Vyaya's Lord）是否落三角宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If he be in an angle, or trine",
+              "claim": "十二宫主（Vyaya's Lord）落角宫或三角宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will beget a spouse",
+              "claim": "命主会得到配偶"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch23:v5-6",
+            "quote": "If he be in an angle, or trine, the native will beget a spouse.",
+            "pdf_pages": [
+              40
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘十二宫主（Vyaya's Lord）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘十二宫主（Vyaya's Lord）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断结婚年份、配偶人数或配偶特征。",
+          "不得把代词 he 改挂到同偈前句主语 Vyaya’s Lord 以外的行星。",
+          "不得把角宫与三角宫改写成必须同时成立。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch23:v5-6"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "step_hash": "bf49f8d083cd6229c14060f96c9118f5b032e6d4518cf7678f18e159ec1f511d"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch23-v8-visible-half-explicit-results.step-001",
+      "method": {
+        "method": "ch23-v8-visible-half-explicit-results",
+        "title": "结果显于外：行星落在黄道的可见半",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "这颗星的作用会不会明摆着看得见",
+          "我盘里的行星是明着起作用还是暗着起作用"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Grahas placed in the visible half of the zodiac will give explicit results",
+            "行星 黄道可见半 明显的结果"
+          ],
+          "counter_queries": [
+            "while the ones in the invisible half will confer secret results",
+            "Full, half, one third, one fourth, one fifth and one sixth are the deductions of contributions, made by malefics, placed in the visible half of the zodiac"
+          ],
+          "boundary_queries": [
+            "if Lagn Lord is in the invisible half (i.e. from Lagn cusp to descendental cusp)",
+            "Deductions for Grahas in the Visible Half of the Zodiac"
+          ],
+          "method_queries": [
+            "Just as these effects are derived from Tanu Bhava in regard to the native, similar deductions be made about co-borns etc. from Sahaj and other Bhavas.",
+            "判断行星结果显隐要先定黄道的可见半与不可见半"
+          ]
+        },
+        "stop_conditions": [
+          "黄道可见半（visible half）的宫位范围界定未确定时停止。",
+          "缺少所论行星是否落在可见半的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch23-v8-visible-half-explicit-results.step-001",
+        "action": "核对所论行星（Graha）是否落在黄道的可见半（visible half），落在可见半的行星给出明显的结果。",
+        "applicability_scope": "本句只区分结果显与隐，不判吉凶；原文本句没有给出黄道可见半（visible half）的宫位范围界定，界定未确定即停判；原文未给时间限定。",
+        "minimum_supported_claim": "行星落在黄道的可见半（visible half）时，会给出明显的结果。",
+        "produced_fact_keys": [
+          "行星所在黄道半区的结果显隐判定"
+        ],
+        "required_fact_keys": [
+          "所论行星（Graha）是否落在黄道可见半（visible half）"
+        ],
+        "condition_logic": {
+          "fact_key": "所论行星（Graha）是否落在黄道可见半（visible half）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "placed in the visible half of the zodiac",
+              "claim": "落在黄道的可见半（visible half）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will give explicit results",
+              "claim": "会给出明显的结果"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch23:v8",
+            "quote": "Grahas placed in the visible half of the zodiac will give explicit results",
+            "pdf_pages": [
+              40
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：所论行星（Graha）是否落在黄道可见半（visible half）。",
+        "stop_fact_keys": [
+          "所论行星（Graha）是否落在黄道可见半（visible half）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得自行把可见半认定为某几个宫位；原文本句未给界定。",
+          "不得把「明显的结果」读成好结果或坏结果。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "step_hash": "1f5b0d57d526680df1b69e0e2a1de0cf390d0ba172de04a0808c50bca3e3fa72"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch23-v8-invisible-half-secret-results.step-001",
+      "method": {
+        "method": "ch23-v8-invisible-half-secret-results",
+        "title": "结果隐于内：行星落在黄道的不可见半",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "这颗星的作用是不是暗着来的",
+          "为什么有些事情看不出征兆"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "while the ones in the invisible half will confer secret results",
+            "行星 黄道不可见半 隐秘的结果"
+          ],
+          "counter_queries": [
+            "Grahas placed in the visible half of the zodiac will give explicit results",
+            "Full, half, one third, one fourth, one fifth and one sixth are the deductions of contributions, made by malefics, placed in the visible half of the zodiac"
+          ],
+          "boundary_queries": [
+            "if Lagn Lord is in the invisible half (i.e. from Lagn cusp to descendental cusp)",
+            "Deductions for Grahas in the Visible Half of the Zodiac"
+          ],
+          "method_queries": [
+            "Just as these effects are derived from Tanu Bhava in regard to the native, similar deductions be made about co-borns etc. from Sahaj and other Bhavas.",
+            "黄道不可见半的界定在哪一章"
+          ]
+        },
+        "stop_conditions": [
+          "黄道不可见半（invisible half）的宫位范围界定未确定时停止。",
+          "缺少所论行星是否落在不可见半的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch23-v8-invisible-half-secret-results.step-001",
+        "action": "核对所论行星（Graha）是否落在黄道的不可见半（invisible half），落在不可见半的行星给出隐秘的结果。",
+        "applicability_scope": "本句只区分结果显与隐，不判吉凶；原文本句没有给出黄道不可见半（invisible half）的宫位范围界定，界定未确定即停判；原文未给时间限定。",
+        "minimum_supported_claim": "行星落在黄道的不可见半（invisible half）时，会给出隐秘的结果。",
+        "produced_fact_keys": [
+          "行星落不可见半的结果隐秘判定"
+        ],
+        "required_fact_keys": [
+          "所论行星（Graha）是否落在黄道不可见半（invisible half）"
+        ],
+        "condition_logic": {
+          "fact_key": "所论行星（Graha）是否落在黄道不可见半（invisible half）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "in the invisible half",
+              "claim": "落在黄道的不可见半（invisible half）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will confer secret results",
+              "claim": "会给出隐秘的结果"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch23:v8",
+            "quote": "the ones in the invisible half will confer secret results",
+            "pdf_pages": [
+              40
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：所论行星（Graha）是否落在黄道不可见半（invisible half）。",
+        "stop_fact_keys": [
+          "所论行星（Graha）是否落在黄道不可见半（invisible half）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得自行把不可见半认定为某几个宫位；原文本句未给界定。",
+          "不得把「隐秘的结果」读成没有结果或坏结果。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "step_hash": "f9a35c64afaf4c8ff6d229230b299c54e23450b971691e8c969d71c5631eef4b"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch23:v5-6": {
+      "evidence_atom_id": "bphs-97:santhanam:ch23:v5-6",
+      "chapter_number": 23,
+      "chapter_title": "Effects of Vyaya Bhava",
+      "verse_label": "5-6.",
+      "content_role": "verse",
+      "exact_text": "5-6. And, if Vyaya’s Lord is in Ari, or Randhr Bhava, or be in enemy’s Navāńś, in debilitation Navāńś, or in Randhr Bhava in Navāńś, one will be devoid of happiness from wife, be troubled by expenses and deprived of general happiness. If he be in an angle, or trine, the native will beget a spouse.",
+      "pdf_pages": [
+        40
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 23 · Sloka 5-6 · PDF page 40 · bphs-97:santhanam:ch23:v5-6",
+      "previous_atom_id": "bphs-97:santhanam:ch23:v1-4",
+      "next_atom_id": "bphs-97:santhanam:ch23:v7",
+      "context_before": " or in Labh/Dharm/Putr Bhava in Rāśi/Navāńś. The said native will live with rich clothes and ornaments, be learned and Lordly.\n\n",
+      "context_after": "7. Just as these effects are derived from Tanu Bhava in regard to the native, similar deductions be made about co-borns etc. fro",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch23:v8": {
+      "evidence_atom_id": "bphs-97:santhanam:ch23:v8",
+      "chapter_number": 23,
+      "chapter_title": "Effects of Vyaya Bhava",
+      "verse_label": "8.",
+      "content_role": "verse",
+      "exact_text": "8. Grahas placed in the visible half of the zodiac will give explicit results, while the ones in the invisible half will confer secret results.",
+      "pdf_pages": [
+        40
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 23 · Sloka 8 · PDF page 40 · bphs-97:santhanam:ch23:v8",
+      "previous_atom_id": "bphs-97:santhanam:ch23:v7",
+      "next_atom_id": "bphs-97:santhanam:ch23:v9",
+      "context_before": "e derived from Tanu Bhava in regard to the native, similar deductions be made about co-borns etc. from Sahaj and other Bhavas.\n\n",
+      "context_after": "9. If Rahu is in Vyaya along with Mangal, Shani and Surya, the native will go to hell. Similar effect will occur, if Vyaya’s Lor",
+      "content_missing": false
+    }
+  }
+}

@@ -1,0 +1,706 @@
+{
+  "shard": 1,
+  "step_count": 3,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch23-v1-4-good-account-expenses.step-001",
+      "method": {
+        "method": "ch23-v1-4-good-account-expenses",
+        "title": "开支花在好用途上：十二宫主与吉星同宫、落自己主管的宫位或入旺，或十二宫被吉星占据",
+        "target_house": 12,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的钱都花到哪里去了",
+          "我这辈子的开销是好是坏"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "There will be expenses on good accounts, if Vyaya’s Lord is with a benefic, or in his own Bhava, or exalted",
+            "十二宫主 与吉星同宫 入旺 开支 好的用途"
+          ],
+          "counter_queries": [
+            "If Vyaya’s Lord is in Vyaya Bhava, the native will only face heavy expenditure, will not have physical felicity, be irritable and spiteful.",
+            "Earnings will be through sinful measures, if Vyaya is occupied by Shani, or Mangal etc. and is not receiving a Drishti from a benefic.",
+            "If Lagn’s Lord is in Vyaya Bhava and is devoid of benefic Drishti and/or Yuti, the native will be bereft of physical happiness, will spend unfruitfully and be given to much anger."
+          ],
+          "boundary_queries": [
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "For the seven Grahas, from Surya on, the exaltation Rāśis are, respectively, Mesh, Vrishabh, Makar, Kanya, Kark, Meen and Tula",
+            "It is half beneficial in its own Bhava"
+          ],
+          "method_queries": [
+            "Effects of Vyaya’s Lord in Various Bhavas",
+            "判断十二宫开支要先看十二宫主与吉星的关系"
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘十二宫主是哪颗行星的事实时停止。",
+          "四个择一条件的事实全部缺失时停止。",
+          "吉星名册未确定时，与吉星有关的两个分支停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch23-v1-4-good-account-expenses.step-001",
+        "action": "先取本盘十二宫主（Vyaya's Lord）是哪颗行星，再逐一核对它是否与吉星同宫、是否落自己主管的宫位、是否入旺，以及十二宫（Vyaya）内是否有吉星。",
+        "applicability_scope": "仅限本命盘十二宫（Vyaya Bhava）的开支性质主题；原文只给出四个并列择一条件，未给时间限定，也未给开支的数额或对象。",
+        "minimum_supported_claim": "十二宫主（Vyaya's Lord）与吉星同宫，或落自己主管的宫位（own Bhava），或入旺，或者十二宫（Vyaya）被吉星占据时，开支会花在好的用途上。",
+        "produced_fact_keys": [
+          "十二宫主状态下的开支性质判定"
+        ],
+        "required_fact_keys": [
+          "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否与吉星同宫"
+                },
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否落自己主管的宫位（own Bhava）"
+                },
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否入旺"
+                },
+                {
+                  "fact_key": "十二宫（Vyaya）是否被吉星占据"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "十二宫主（Vyaya's Lord）是否与吉星同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否与吉星同宫"
+            },
+            "selection_group": "ch23-v1-4-good-account-expenses.step-001:good-expense-condition",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十二宫主（Vyaya's Lord）是否与吉星同宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "十二宫主（Vyaya's Lord）是否落自己主管的宫位（own Bhava）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否落自己主管的宫位（own Bhava）"
+            },
+            "selection_group": "ch23-v1-4-good-account-expenses.step-001:good-expense-condition",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十二宫主（Vyaya's Lord）是否落自己主管的宫位（own Bhava）。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "十二宫主（Vyaya's Lord）是否入旺"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否入旺"
+            },
+            "selection_group": "ch23-v1-4-good-account-expenses.step-001:good-expense-condition",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十二宫主（Vyaya's Lord）是否入旺。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "十二宫（Vyaya）是否被吉星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十二宫（Vyaya）是否被吉星占据"
+            },
+            "selection_group": "ch23-v1-4-good-account-expenses.step-001:good-expense-condition",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十二宫（Vyaya）是否被吉星占据。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Vyaya’s Lord is with a benefic",
+              "claim": "十二宫主（Vyaya's Lord）与吉星同宫"
+            },
+            {
+              "quote": "in his own Bhava",
+              "claim": "落自己主管的宫位（own Bhava）"
+            },
+            {
+              "quote": "exalted",
+              "claim": "入旺"
+            },
+            {
+              "quote": "if a benefic occupies Vyaya",
+              "claim": "十二宫（Vyaya）被吉星占据"
+            }
+          ],
+          "results": [
+            {
+              "quote": "There will be expenses on good accounts",
+              "claim": "开支会花在好的用途上"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch23:v1-4",
+            "quote": "There will be expenses on good accounts, if Vyaya’s Lord is with a benefic, or in his own Bhava, or exalted, or, if a benefic occupies Vyaya.",
+            "pdf_pages": [
+              40
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘十二宫主（Vyaya's Lord）是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断开支的金额、时间或具体项目。",
+          "不得把「好的用途」扩大成发财、致富或进项增加。",
+          "不得把四个择一条件改写成必须同时成立。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "step_hash": "148014297acd2f4bc2ad8b03ab826f404b953d0a8aa9743a8184013453e2af68"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch23-v1-4-chandra-vyaya-lord-comforts.step-001",
+      "method": {
+        "method": "ch23-v1-4-chandra-vyaya-lord-comforts",
+        "title": "房屋床铺与享乐：月亮为十二宫主，且入旺、落本宫本九分盘，或落十一宫、九宫、五宫",
+        "target_house": 12,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我住的地方好不好",
+          "我这辈子享不享受得到好东西"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "One will own beautiful houses and beds and be endowed with superior scented articles and pleasures, if Chandra happens to be Vyaya’s Lord",
+            "月亮 十二宫主 入旺 本宫 九分盘 房屋 床铺 香品"
+          ],
+          "counter_queries": [
+            "If Vyaya’s Lord is in Vyaya Bhava, the native will only face heavy expenditure, will not have physical felicity, be irritable and spiteful.",
+            "if Chandra is weak, or is associated with malefics, or, if Chandra is in Ari, Randhr, or Vyaya",
+            "And, if Vyaya’s Lord is in Ari, or Randhr Bhava, or be in enemy’s Navāńś, in debilitation Navāńś, or in Randhr Bhava in Navāńś, one will be devoid of happiness from wife"
+          ],
+          "boundary_queries": [
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+            "For the seven Grahas, from Surya on, the exaltation Rāśis are, respectively, Mesh, Vrishabh, Makar, Kanya, Kark, Meen and Tula",
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)"
+          ],
+          "method_queries": [
+            "Effects of Vyaya’s Lord in Various Bhavas",
+            "十二宫主是月亮时怎么判断居所与享乐"
+          ]
+        },
+        "stop_conditions": [
+          "缺少十二宫主是否为月亮（Chandra）的事实时停止。",
+          "月亮的入旺、本宫、本九分盘星座与三宫位落宫事实全部缺失时停止。",
+          "九分盘（Navamsa D9）未起盘时，九分盘相关分支停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch23-v1-4-chandra-vyaya-lord-comforts.step-001",
+        "action": "先确认十二宫（Vyaya）的宫主是不是月亮（Chandra），再核对月亮是否入旺、是否落本宫或自己主管的九分盘（Navamsa D9）星座，以及是否在本盘或九分盘中落十一宫（Labh）、九宫（Dharm）、五宫（Putr）。",
+        "applicability_scope": "仅限本命盘十二宫（Vyaya Bhava）主题下、且十二宫主恰为月亮（Chandra）的命盘；原文对本盘与九分盘并列写作 in Rāśi/Navāńś，两张盘各自成立即可；原文未给时间限定。后半句「The said native」承接同偈前句所指的同一命主，逐字短引已把前句一并纳入。",
+        "minimum_supported_claim": "月亮（Chandra）是十二宫（Vyaya）的宫主，并且入旺，或落本宫或落自己主管的九分盘（Navamsa D9）星座，或在本盘或九分盘（Navamsa D9）中落十一宫（Labh）、九宫（Dharm）或五宫（Putr）时，会拥有美好的房屋与床铺，并享有上等的香品与享乐；该命主会穿戴华贵的衣饰、有学问、有尊贵地位。",
+        "produced_fact_keys": [
+          "月亮为十二宫主时的居所与享乐判定"
+        ],
+        "required_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否为月亮（Chandra）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "十二宫主（Vyaya's Lord）是否为月亮（Chandra）"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "月亮（Chandra）是否入旺"
+                },
+                {
+                  "fact_key": "月亮（Chandra）是否落本宫"
+                },
+                {
+                  "fact_key": "月亮（Chandra）是否落在自己主管的九分盘（Navamsa D9）星座"
+                },
+                {
+                  "fact_key": "月亮（Chandra）是否落十一宫（Labh）"
+                },
+                {
+                  "fact_key": "月亮（Chandra）是否落九宫（Dharm）"
+                },
+                {
+                  "fact_key": "月亮（Chandra）是否落五宫（Putr）"
+                },
+                {
+                  "fact_key": "月亮（Chandra）在九分盘（Navamsa D9）中是否落十一宫（Labh）"
+                },
+                {
+                  "fact_key": "月亮（Chandra）在九分盘（Navamsa D9）中是否落九宫（Dharm）"
+                },
+                {
+                  "fact_key": "月亮（Chandra）在九分盘（Navamsa D9）中是否落五宫（Putr）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否为月亮（Chandra）"
+            },
+            "required_fact_keys": [
+              "月亮（Chandra）是否入旺"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "月亮（Chandra）是否入旺"
+            },
+            "selection_group": "ch23-v1-4-chandra-vyaya-lord-comforts.step-001:chandra-dignity-or-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：月亮（Chandra）是否入旺。"
+          },
+          {
+            "when": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否为月亮（Chandra）"
+            },
+            "required_fact_keys": [
+              "月亮（Chandra）是否落本宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "月亮（Chandra）是否落本宫"
+            },
+            "selection_group": "ch23-v1-4-chandra-vyaya-lord-comforts.step-001:chandra-dignity-or-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：月亮（Chandra）是否落本宫。"
+          },
+          {
+            "when": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否为月亮（Chandra）"
+            },
+            "required_fact_keys": [
+              "月亮（Chandra）是否落在自己主管的九分盘（Navamsa D9）星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "月亮（Chandra）是否落在自己主管的九分盘（Navamsa D9）星座"
+            },
+            "selection_group": "ch23-v1-4-chandra-vyaya-lord-comforts.step-001:chandra-dignity-or-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：月亮（Chandra）是否落在自己主管的九分盘（Navamsa D9）星座。"
+          },
+          {
+            "when": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否为月亮（Chandra）"
+            },
+            "required_fact_keys": [
+              "月亮（Chandra）是否落十一宫（Labh）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "月亮（Chandra）是否落十一宫（Labh）"
+            },
+            "selection_group": "ch23-v1-4-chandra-vyaya-lord-comforts.step-001:chandra-dignity-or-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：月亮（Chandra）是否落十一宫（Labh）。"
+          },
+          {
+            "when": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否为月亮（Chandra）"
+            },
+            "required_fact_keys": [
+              "月亮（Chandra）是否落九宫（Dharm）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "月亮（Chandra）是否落九宫（Dharm）"
+            },
+            "selection_group": "ch23-v1-4-chandra-vyaya-lord-comforts.step-001:chandra-dignity-or-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：月亮（Chandra）是否落九宫（Dharm）。"
+          },
+          {
+            "when": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否为月亮（Chandra）"
+            },
+            "required_fact_keys": [
+              "月亮（Chandra）是否落五宫（Putr）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "月亮（Chandra）是否落五宫（Putr）"
+            },
+            "selection_group": "ch23-v1-4-chandra-vyaya-lord-comforts.step-001:chandra-dignity-or-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：月亮（Chandra）是否落五宫（Putr）。"
+          },
+          {
+            "when": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否为月亮（Chandra）"
+            },
+            "required_fact_keys": [
+              "月亮（Chandra）在九分盘（Navamsa D9）中是否落十一宫（Labh）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "月亮（Chandra）在九分盘（Navamsa D9）中是否落十一宫（Labh）"
+            },
+            "selection_group": "ch23-v1-4-chandra-vyaya-lord-comforts.step-001:chandra-dignity-or-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：月亮（Chandra）在九分盘（Navamsa D9）中是否落十一宫（Labh）。"
+          },
+          {
+            "when": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否为月亮（Chandra）"
+            },
+            "required_fact_keys": [
+              "月亮（Chandra）在九分盘（Navamsa D9）中是否落九宫（Dharm）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "月亮（Chandra）在九分盘（Navamsa D9）中是否落九宫（Dharm）"
+            },
+            "selection_group": "ch23-v1-4-chandra-vyaya-lord-comforts.step-001:chandra-dignity-or-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：月亮（Chandra）在九分盘（Navamsa D9）中是否落九宫（Dharm）。"
+          },
+          {
+            "when": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否为月亮（Chandra）"
+            },
+            "required_fact_keys": [
+              "月亮（Chandra）在九分盘（Navamsa D9）中是否落五宫（Putr）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "月亮（Chandra）在九分盘（Navamsa D9）中是否落五宫（Putr）"
+            },
+            "selection_group": "ch23-v1-4-chandra-vyaya-lord-comforts.step-001:chandra-dignity-or-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：月亮（Chandra）在九分盘（Navamsa D9）中是否落五宫（Putr）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Chandra happens to be Vyaya’s Lord",
+              "claim": "月亮（Chandra）是十二宫（Vyaya）的宫主"
+            },
+            {
+              "quote": "be exalted",
+              "claim": "入旺"
+            },
+            {
+              "quote": "be in its own Rashiand/or Navāńś",
+              "claim": "落本宫或落自己主管的九分盘（Navamsa D9）星座"
+            },
+            {
+              "quote": "in Labh/Dharm/Putr Bhava in Rāśi/Navāńś",
+              "claim": "在本盘或九分盘（Navamsa D9）中落十一宫（Labh）、九宫（Dharm）或五宫（Putr）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "One will own beautiful houses and beds and be endowed with superior scented articles and pleasures",
+              "claim": "会拥有美好的房屋与床铺，并享有上等的香品与享乐"
+            },
+            {
+              "quote": "The said native will live with rich clothes and ornaments, be learned and Lordly.",
+              "claim": "该命主会穿戴华贵的衣饰、有学问、有尊贵地位"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch23:v1-4",
+            "quote": "One will own beautiful houses and beds and be endowed with superior scented articles and pleasures, if Chandra happens to be Vyaya’s Lord and be exalted, or be in its own Rashiand/or Navāńś, or in Labh/Dharm/Putr Bhava in Rāśi/Navāńś. The said native will live with rich clothes and ornaments, be learned and Lordly.",
+            "pdf_pages": [
+              40
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十二宫主（Vyaya's Lord）是否为月亮（Chandra）。",
+        "stop_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否为月亮（Chandra）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把这条月亮的规则改挂到别的行星身上；原文限定十二宫主恰为月亮（Chandra）。",
+          "不得据此推断房产数量、价值或购置时间。",
+          "不得把并列的择一条件改写成必须同时成立。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "step_hash": "b8c7203100c20619910a5bd984b5299e1fe2f84ff86cc0ff3b62def5cbcebe12"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch23-v5-6-vyaya-lord-affliction-loss.step-001",
+      "method": {
+        "method": "ch23-v5-6-vyaya-lord-affliction-loss",
+        "title": "妻子之乐缺失与开支之困：十二宫主落六宫、八宫，或落敌方／落陷的九分盘星座，或九分盘中落八宫",
+        "target_house": 12,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和配偶之间为什么不快乐",
+          "我为什么总为开销发愁"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "And, if Vyaya’s Lord is in Ari, or Randhr Bhava, or be in enemy’s Navāńś, in debilitation Navāńś, or in Randhr Bhava in Navāńś",
+            "十二宫主 落六宫 落八宫 敌宫九分盘 妻子之乐 开支之困"
+          ],
+          "counter_queries": [
+            "If Vyaya’s Lord is in Randhr Bhava, the native will always gain, will speak affably, will enjoy a medium span of life and be endowed with all good qualities.",
+            "If Vyaya’s Lord is in Ari Bhava, the native will incur enmity with his own men, be given to anger, be sinful, miserable and will go to others’ wives.",
+            "There will be expenses on good accounts, if Vyaya’s Lord is with a benefic, or in his own Bhava, or exalted"
+          ],
+          "boundary_queries": [
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+            "The Grahas ruling such Rāśis are its friends, apart from the Lord of its exaltation Rāśi. Lords other than these are its enemies.",
+            "For the seven Grahas, from Surya on, the exaltation Rāśis are, respectively, Mesh, Vrishabh, Makar, Kanya, Kark, Meen and Tula",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "Effects of Vyaya’s Lord in Various Bhavas",
+            "十二宫主落凶宫时该怎么判断"
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘十二宫主是哪颗行星的事实时停止。",
+          "五个择一条件的事实全部缺失时停止。",
+          "九分盘（Navamsa D9）未起盘时，三个九分盘分支停止。",
+          "行星敌友关系未确定时，敌方九分盘星座分支停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch23-v5-6-vyaya-lord-affliction-loss.step-001",
+        "action": "先取本盘十二宫主（Vyaya's Lord）是哪颗行星，再核对它是否落六宫（Ari）或八宫（Randhr），是否落敌方行星主管的九分盘（Navamsa D9）星座、自己落陷的九分盘星座，或在九分盘中落八宫（Randhr）。",
+        "applicability_scope": "仅限本命盘十二宫（Vyaya Bhava）主题；原文断语写作 devoid of happiness from wife，是以有妻的命主立说，女命是否适用原文未说明；原文未给时间限定。",
+        "minimum_supported_claim": "十二宫主（Vyaya's Lord）落六宫（Ari）或八宫（Randhr），或落敌方行星主管的九分盘（Navamsa D9）星座，或落自己落陷的九分盘（Navamsa D9）星座，或在九分盘（Navamsa D9）中落八宫（Randhr）时，命主没有来自妻子的幸福，为开支所困，并失去一般的幸福。",
+        "produced_fact_keys": [
+          "十二宫主受损时的配偶之乐与开支判定"
+        ],
+        "required_fact_keys": [
+          "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否落六宫（Ari）"
+                },
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否落八宫（Randhr）"
+                },
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否落敌方行星主管的九分盘（Navamsa D9）星座"
+                },
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否落自己落陷的九分盘（Navamsa D9）星座"
+                },
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）在九分盘（Navamsa D9）中是否落八宫（Randhr）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "十二宫主（Vyaya's Lord）是否落六宫（Ari）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否落六宫（Ari）"
+            },
+            "selection_group": "ch23-v5-6-vyaya-lord-affliction-loss.step-001:vyaya-lord-affliction",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十二宫主（Vyaya's Lord）是否落六宫（Ari）。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "十二宫主（Vyaya's Lord）是否落八宫（Randhr）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否落八宫（Randhr）"
+            },
+            "selection_group": "ch23-v5-6-vyaya-lord-affliction-loss.step-001:vyaya-lord-affliction",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十二宫主（Vyaya's Lord）是否落八宫（Randhr）。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "十二宫主（Vyaya's Lord）是否落敌方行星主管的九分盘（Navamsa D9）星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否落敌方行星主管的九分盘（Navamsa D9）星座"
+            },
+            "selection_group": "ch23-v5-6-vyaya-lord-affliction-loss.step-001:vyaya-lord-affliction",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十二宫主（Vyaya's Lord）是否落敌方行星主管的九分盘（Navamsa D9）星座。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "十二宫主（Vyaya's Lord）是否落自己落陷的九分盘（Navamsa D9）星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十二宫主（Vyaya's Lord）是否落自己落陷的九分盘（Navamsa D9）星座"
+            },
+            "selection_group": "ch23-v5-6-vyaya-lord-affliction-loss.step-001:vyaya-lord-affliction",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十二宫主（Vyaya's Lord）是否落自己落陷的九分盘（Navamsa D9）星座。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "十二宫主（Vyaya's Lord）在九分盘（Navamsa D9）中是否落八宫（Randhr）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十二宫主（Vyaya's Lord）在九分盘（Navamsa D9）中是否落八宫（Randhr）"
+            },
+            "selection_group": "ch23-v5-6-vyaya-lord-affliction-loss.step-001:vyaya-lord-affliction",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十二宫主（Vyaya's Lord）在九分盘（Navamsa D9）中是否落八宫（Randhr）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Vyaya’s Lord is in Ari, or Randhr Bhava",
+              "claim": "十二宫主（Vyaya's Lord）落六宫（Ari）或八宫（Randhr）"
+            },
+            {
+              "quote": "in enemy’s Navāńś",
+              "claim": "落敌方行星主管的九分盘（Navamsa D9）星座"
+            },
+            {
+              "quote": "in debilitation Navāńś",
+              "claim": "落自己落陷的九分盘（Navamsa D9）星座"
+            },
+            {
+              "quote": "in Randhr Bhava in Navāńś",
+              "claim": "在九分盘（Navamsa D9）中落八宫（Randhr）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "one will be devoid of happiness from wife, be troubled by expenses and deprived of general happiness",
+              "claim": "命主没有来自妻子的幸福，为开支所困，并失去一般的幸福"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch23:v5-6",
+            "quote": "And, if Vyaya’s Lord is in Ari, or Randhr Bhava, or be in enemy’s Navāńś, in debilitation Navāńś, or in Randhr Bhava in Navāńś, one will be devoid of happiness from wife, be troubled by expenses and deprived of general happiness.",
+            "pdf_pages": [
+              40
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘十二宫主（Vyaya's Lord）是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「没有来自妻子的幸福」升级为离婚、丧偶或无法结婚。",
+          "不得据此推断开支的金额或发生年份。",
+          "不得把五个择一条件改写成必须同时成立。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "step_hash": "fd1fcd3fc2086e721cea30bfd1f5fa0c99ab7a2e8c82d4691c3f64d4234048ab"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch23:v1-4": {
+      "evidence_atom_id": "bphs-97:santhanam:ch23:v1-4",
+      "chapter_number": 23,
+      "chapter_title": "Effects of Vyaya Bhava",
+      "verse_label": "1-4.",
+      "content_role": "verse",
+      "exact_text": "1-4. O Brahmin, now I tell you about the effects of Vyaya Bhava. There will be expenses on good accounts, if Vyaya’s Lord is with a benefic, or in his own Bhava, or exalted, or, if a benefic occupies Vyaya. One will own beautiful houses and beds and be endowed with superior scented articles and pleasures, if Chandra happens to be Vyaya’s Lord and be exalted, or be in its own Rashiand/or Navāńś, or in Labh/Dharm/Putr Bhava in Rāśi/Navāńś. The said native will live with rich clothes and ornaments, be learned and Lordly.",
+      "pdf_pages": [
+        40
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 23 · Sloka 1-4 · PDF page 40 · bphs-97:santhanam:ch23:v1-4",
+      "previous_atom_id": null,
+      "next_atom_id": "bphs-97:santhanam:ch23:v5-6",
+      "context_before": "",
+      "context_after": "5-6. And, if Vyaya’s Lord is in Ari, or Randhr Bhava, or be in enemy’s Navāńś, in debilitation Navāńś, or in Randhr Bhava in Nav",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch23:v5-6": {
+      "evidence_atom_id": "bphs-97:santhanam:ch23:v5-6",
+      "chapter_number": 23,
+      "chapter_title": "Effects of Vyaya Bhava",
+      "verse_label": "5-6.",
+      "content_role": "verse",
+      "exact_text": "5-6. And, if Vyaya’s Lord is in Ari, or Randhr Bhava, or be in enemy’s Navāńś, in debilitation Navāńś, or in Randhr Bhava in Navāńś, one will be devoid of happiness from wife, be troubled by expenses and deprived of general happiness. If he be in an angle, or trine, the native will beget a spouse.",
+      "pdf_pages": [
+        40
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 23 · Sloka 5-6 · PDF page 40 · bphs-97:santhanam:ch23:v5-6",
+      "previous_atom_id": "bphs-97:santhanam:ch23:v1-4",
+      "next_atom_id": "bphs-97:santhanam:ch23:v7",
+      "context_before": " or in Labh/Dharm/Putr Bhava in Rāśi/Navāńś. The said native will live with rich clothes and ornaments, be learned and Lordly.\n\n",
+      "context_after": "7. Just as these effects are derived from Tanu Bhava in regard to the native, similar deductions be made about co-borns etc. fro",
+      "content_missing": false
+    }
+  }
+}

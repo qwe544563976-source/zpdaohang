@@ -1,0 +1,1013 @@
+{
+  "shard": 2,
+  "step_count": 7,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch21-v7-shani-mangal-karm-lord-in-yuvati.step-001",
+      "method": {
+        "method": "ch21-v7-shani-mangal-karm-lord-in-yuvati",
+        "title": "贪恋肉欲与贪吃：土星火星与十宫主同落七宫，七宫主又与凶星同宫",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我为什么在情欲和口腹上把不住",
+          "七宫聚了土星火星会怎样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Shani, Mangal and Karm’s Lord are in Yuvati, as Yuvati’s Lord is with a malefic, the native will be fond of carnal pleasures",
+            "土星 火星 十宫主 落七宫 七宫主与凶星同宫 肉欲"
+          ],
+          "counter_queries": [
+            "If Karm’s Lord is in Yuvati Bhava, the native will be endowed with happiness through wife, be intelligent, virtuous, eloquent, truthful and religious",
+            "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife",
+            "十宫主落七宫 妻子带来幸福"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "If Yuvati Bhava, or its Lord is yuti with a malefic the native’s wife will incur evils",
+            "Kendras, Konas etc. defined. The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)"
+          ],
+          "method_queries": [
+            "Effects of Karm’s Lord in Various Bhavas",
+            "判断七宫聚集凶星要查哪些位置"
+          ]
+        },
+        "stop_conditions": [
+          "缺少土星、火星或十宫主落七宫其中任一事实时停止。",
+          "缺少七宫主与凶星同宫的事实时停止。",
+          "凶星名册未取得时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch21-v7-shani-mangal-karm-lord-in-yuvati.step-001",
+        "action": "核对土星（Shani）、火星（Mangal）与十宫主（Karm's Lord）是否都落七宫（Yuvati），并核对七宫主是否与凶星同宫。",
+        "applicability_scope": "仅限四项条件同时成立这一种配置；原文以 his 指代命主，未给时间限定，凶星名册须另查原文定义。本章效果原文自述以 Brahma、Garga 等人之言转述（同章 v1）。",
+        "minimum_supported_claim": "土星、火星与十宫主同落七宫，而七宫主又与凶星同宫时，命主会贪恋肉欲享乐，并贪于填饱肚子。",
+        "produced_fact_keys": [
+          "土星火星十宫主聚七宫的肉欲与口腹判定"
+        ],
+        "required_fact_keys": [
+          "土星（Shani）是否落七宫（Yuvati）",
+          "火星（Mangal）是否落七宫（Yuvati）",
+          "十宫主（Karm's Lord）是否落七宫（Yuvati）",
+          "七宫主（Yuvati's Lord）是否与凶星同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "土星（Shani）是否落七宫（Yuvati）"
+            },
+            {
+              "fact_key": "火星（Mangal）是否落七宫（Yuvati）"
+            },
+            {
+              "fact_key": "十宫主（Karm's Lord）是否落七宫（Yuvati）"
+            },
+            {
+              "fact_key": "七宫主（Yuvati's Lord）是否与凶星同宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Shani, Mangal and Karm’s Lord are in Yuvati",
+              "claim": "土星、火星与十宫主同落七宫"
+            },
+            {
+              "quote": "as Yuvati’s Lord is with a malefic",
+              "claim": "七宫主又与凶星同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be fond of carnal pleasures and of filling his belly",
+              "claim": "会贪恋肉欲享乐，并贪于填饱肚子"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch21:v7",
+            "quote": "If Shani, Mangal and Karm’s Lord are in Yuvati, as Yuvati’s Lord is with a malefic, the native will be fond of carnal pleasures and of filling his belly.",
+            "pdf_pages": [
+              38
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：土星（Shani）是否落七宫（Yuvati）、火星（Mangal）是否落七宫（Yuvati）、十宫主（Karm's Lord）是否落七宫（Yuvati）、七宫主（Yuvati's Lord）是否与凶星同宫。",
+        "stop_fact_keys": [
+          "土星（Shani）是否落七宫（Yuvati）",
+          "火星（Mangal）是否落七宫（Yuvati）",
+          "十宫主（Karm's Lord）是否落七宫（Yuvati）",
+          "七宫主（Yuvati's Lord）是否与凶星同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断婚姻状况、配偶品行或疾病。",
+          "不得把三颗行星同落七宫放宽成其中任意一颗落七宫。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "58e29378d355f582f8d2c2181691302c3ffbae4fb96b108d51a571e7e5accfdd"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch21-v8-10-karm-lord-exalted-with-guru.step-001",
+      "method": {
+        "method": "ch21-v8-10-karm-lord-exalted-with-guru",
+        "title": "荣誉财富与勇武：十宫主入旺并与木星同宫，同时九宫主落十宫",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子能不能有地位和财富",
+          "十宫主入旺又碰上木星会怎样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Karm’s Lord be in exaltation and be in the company of Guru, as Dharm’s Lord is in Karm the native will be endowed with honour, wealth and valour",
+            "十宫主入旺 与木星同宫 九宫主落十宫 荣誉 财富 勇武"
+          ],
+          "counter_queries": [
+            "If Karm’s Lord is devoid of strength, the native will face obstructions in his work",
+            "Should Karm and Labh Bhava be both occupied by malefics, the native will indulge only in bad deeds",
+            "十宫主无力 事业受阻"
+          ],
+          "boundary_queries": [
+            "If Dharm’s Lord is in Karm Bhava, the native will be a king, or equal to him, or be a minister, or an Army chief",
+            "Exaltation and Debilitation. For the seven Grahas, from Surya on, the exaltation Rāśis are, respectively, Mesh, Vrishabh, Makar, Kanya, Kark, Meen and Tula",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava"
+          ],
+          "method_queries": [
+            "Effects of Karm’s Lord in Various Bhavas",
+            "判断荣誉与财富要核对十宫主与九宫主"
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主入旺事实时停止。",
+          "缺少十宫主与木星同宫的事实时停止。",
+          "缺少九宫主落十宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch21-v8-10-karm-lord-exalted-with-guru.step-001",
+        "action": "核对十宫主（Karm's Lord）是否入旺、是否与木星（Guru）同宫，并核对九宫主（Dharm's Lord）是否落十宫（Karm）。",
+        "applicability_scope": "仅限三项条件同时成立这一种配置；原文未给上升与时间限定。本章效果原文自述以 Brahma、Garga 等人之言转述（同章 v1）。",
+        "minimum_supported_claim": "十宫主入旺并与木星同宫，同时九宫主落十宫时，命主会获得荣誉、财富与勇武。",
+        "produced_fact_keys": [
+          "十宫主入旺与木星同宫的荣誉财富判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm's Lord）是否入旺",
+          "十宫主（Karm's Lord）是否与木星（Guru）同宫",
+          "九宫主（Dharm's Lord）是否落十宫（Karm）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "十宫主（Karm's Lord）是否入旺"
+            },
+            {
+              "fact_key": "十宫主（Karm's Lord）是否与木星（Guru）同宫"
+            },
+            {
+              "fact_key": "九宫主（Dharm's Lord）是否落十宫（Karm）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Karm’s Lord be in exaltation",
+              "claim": "十宫主入旺"
+            },
+            {
+              "quote": "be in the company of Guru",
+              "claim": "与木星同宫"
+            },
+            {
+              "quote": "as Dharm’s Lord is in Karm",
+              "claim": "九宫主落十宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be endowed with honour, wealth and valour",
+              "claim": "会获得荣誉、财富与勇武"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch21:v8-10",
+            "quote": "Should Karm’s Lord be in exaltation and be in the company of Guru, as Dharm’s Lord is in Karm the native will be endowed with honour, wealth and valour.",
+            "pdf_pages": [
+              38
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm's Lord）是否入旺、十宫主（Karm's Lord）是否与木星（Guru）同宫、九宫主（Dharm's Lord）是否落十宫（Karm）。",
+        "stop_fact_keys": [
+          "十宫主（Karm's Lord）是否入旺",
+          "十宫主（Karm's Lord）是否与木星（Guru）同宫",
+          "九宫主（Dharm's Lord）是否落十宫（Karm）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断官职级别、财富数额或应期。",
+          "不得把三项条件拆成任取其一。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b2af66390a227d728a7d6a71a63ecdd55221ee9bfc0d64d97395e88b3c7b0eee"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch21-v8-10-karm-labh-lords-happy-life.step-001",
+      "method": {
+        "method": "ch21-v8-10-karm-labh-lords-happy-life",
+        "title": "过上幸福的生活：十一宫主落十宫且十宫主落上升宫，或两宫主在角宫同宫",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子过得幸不幸福",
+          "十宫主与十一宫主互涉有什么效果"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "One will lead a happy life, if Labh’s Lord is in Karm and Karm’s Lord is in Lagna, or, if the Lord of Karm Bhava is yuti with the Lord of Labh Bhava in an angle",
+            "十一宫主落十宫 十宫主落上升 两宫主角宫同宫 幸福生活"
+          ],
+          "counter_queries": [
+            "If Karm’s Lord is in Randhr Bhava, the native will be devoid of acts, long-lived and intent on blaming others",
+            "Should Rahu, Surya, Shani and Mangal be in Labh Bhava, the native will incur cessation of his duties",
+            "十宫主落八宫 无所作为"
+          ],
+          "boundary_queries": [
+            "Kendras, Konas etc. defined. The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "If Labh’s Lord is in Karm Bhava, the native will be honoured by the king, be virtuous, attached to his religion",
+            "Indications of Labh Bhava. All articles, son’s wife, income, prosperity, quadrupeds etc. are to be understood from Labh Bhava"
+          ],
+          "method_queries": [
+            "Effects of Karm’s Lord in Various Bhavas",
+            "判断十宫主与十一宫主互涉要查哪些位置"
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主落宫事实时停止。",
+          "缺少被命中那一组配置里的任一事实时停止。",
+          "角宫的宫位界定未取得时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch21-v8-10-karm-labh-lords-happy-life.step-001",
+        "action": "取十宫主（Karm's Lord）所落的宫，核对是十一宫主落十宫且十宫主落上升宫，还是十宫主与十一宫主在角宫同宫。",
+        "applicability_scope": "仅限原文这一句给出的两种配置；原文未给上升与时间限定，也没有列出角宫的具体宫位。本章效果原文自述以 Brahma、Garga 等人之言转述（同章 v1）。",
+        "minimum_supported_claim": "十一宫主落十宫且十宫主落上升宫，或十宫主与十一宫主在角宫同宫时，命主会过上幸福的生活。",
+        "produced_fact_keys": [
+          "十宫主与十一宫主互涉的幸福生活判定"
+        ],
+        "required_fact_keys": [
+          "本盘十宫主（Karm's Lord）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘十宫主（Karm's Lord）落在哪一宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "十一宫主（Labh's Lord）是否落十宫（Karm）"
+                    },
+                    {
+                      "fact_key": "十宫主（Karm's Lord）是否落上升宫（Lagna）"
+                    }
+                  ]
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "十宫主（Karm's Lord）是否与十一宫主（Labh's Lord）同宫"
+                    },
+                    {
+                      "fact_key": "十宫主（Karm's Lord）是否落角宫"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘十宫主（Karm's Lord）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "十一宫主（Labh's Lord）是否落十宫（Karm）",
+              "十宫主（Karm's Lord）是否落上升宫（Lagna）"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "十一宫主（Labh's Lord）是否落十宫（Karm）"
+                },
+                {
+                  "fact_key": "十宫主（Karm's Lord）是否落上升宫（Lagna）"
+                }
+              ]
+            },
+            "selection_group": "ch21-v8-10-karm-labh-lords-happy-life.step-001:karm-labh-configuration",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十一宫主（Labh's Lord）是否落十宫（Karm）、十宫主（Karm's Lord）是否落上升宫（Lagna）。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘十宫主（Karm's Lord）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "十宫主（Karm's Lord）是否与十一宫主（Labh's Lord）同宫",
+              "十宫主（Karm's Lord）是否落角宫"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "十宫主（Karm's Lord）是否与十一宫主（Labh's Lord）同宫"
+                },
+                {
+                  "fact_key": "十宫主（Karm's Lord）是否落角宫"
+                }
+              ]
+            },
+            "selection_group": "ch21-v8-10-karm-labh-lords-happy-life.step-001:karm-labh-configuration",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十宫主（Karm's Lord）是否与十一宫主（Labh's Lord）同宫、十宫主（Karm's Lord）是否落角宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if Labh’s Lord is in Karm",
+              "claim": "十一宫主落十宫"
+            },
+            {
+              "quote": "Karm’s Lord is in Lagna",
+              "claim": "十宫主落上升宫"
+            },
+            {
+              "quote": "the Lord of Karm Bhava is yuti with the Lord of Labh Bhava",
+              "claim": "十宫主与十一宫主"
+            },
+            {
+              "quote": "in an angle",
+              "claim": "在角宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "One will lead a happy life",
+              "claim": "会过上幸福的生活"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch21:v8-10",
+            "quote": "One will lead a happy life, if Labh’s Lord is in Karm and Karm’s Lord is in Lagna, or, if the Lord of Karm Bhava is yuti with the Lord of Labh Bhava in an angle.",
+            "pdf_pages": [
+              38
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘十宫主（Karm's Lord）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘十宫主（Karm's Lord）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财富数额、婚姻或寿命。",
+          "不得把两种配置里的任一半条件单独当成成立条件。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "329333d7928da6a8d18c9076c712fe44bd936ff5b3c2fa8006910abc2b4f201e"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch21-v8-10-karm-lord-in-meen-with-guru.step-001",
+      "method": {
+        "method": "ch21-v8-10-karm-lord-in-meen-with-guru",
+        "title": "衣物装饰与幸福：十宫主有力、落双鱼座并与木星同宫",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会有好衣服好首饰",
+          "十宫主落双鱼座与木星同宫有什么效果"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Karm’s Lord in strength be in Meen along Guru, the native will doubtless obtain robes, ornaments and happiness",
+            "十宫主 有力 落双鱼座 与木星同宫 衣物 装饰品"
+          ],
+          "counter_queries": [
+            "If Karm’s Lord is devoid of strength, the native will face obstructions in his work",
+            "If Karm’s Lord is in Vyaya Bhava, the native will spend through royal abodes, will have fear from enemies",
+            "十宫主无力 工作受阻"
+          ],
+          "boundary_queries": [
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+            "Exaltation and Debilitation. For the seven Grahas, from Surya on, the exaltation Rāśis are, respectively, Mesh, Vrishabh, Makar, Kanya, Kark, Meen and Tula",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava"
+          ],
+          "method_queries": [
+            "Effects of Karm’s Lord in Various Bhavas",
+            "判断十宫主落双鱼座并与木星同宫要查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主力量事实时停止。",
+          "力量判准由排盘窗口定义，未给出取值时停止。",
+          "缺少十宫主落双鱼座或与木星同宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch21-v8-10-karm-lord-in-meen-with-guru.step-001",
+        "action": "核对十宫主（Karm's Lord）是否有力、是否落双鱼座（Meen），并核对它是否与木星（Guru）同宫。",
+        "applicability_scope": "仅限三项条件同时成立这一种配置；「有力」的判准原文本句未给；原文未给时间限定。本章效果原文自述以 Brahma、Garga 等人之言转述（同章 v1）。",
+        "minimum_supported_claim": "十宫主有力、落双鱼座并与木星同宫时，命主必定得到衣物、装饰品与幸福。",
+        "produced_fact_keys": [
+          "十宫主落双鱼座与木星同宫的衣物装饰判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm's Lord）是否有力",
+          "十宫主（Karm's Lord）是否落双鱼座（Meen）",
+          "十宫主（Karm's Lord）是否与木星（Guru）同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "十宫主（Karm's Lord）是否有力"
+            },
+            {
+              "fact_key": "十宫主（Karm's Lord）是否落双鱼座（Meen）"
+            },
+            {
+              "fact_key": "十宫主（Karm's Lord）是否与木星（Guru）同宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Karm’s Lord in strength be in Meen",
+              "claim": "十宫主有力、落双鱼座"
+            },
+            {
+              "quote": "along Guru",
+              "claim": "与木星同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will doubtless obtain robes, ornaments and happiness",
+              "claim": "必定得到衣物、装饰品与幸福"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch21:v8-10",
+            "quote": "Should Karm’s Lord in strength be in Meen along Guru, the native will doubtless obtain robes, ornaments and happiness.",
+            "pdf_pages": [
+              38
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm's Lord）是否有力、十宫主（Karm's Lord）是否落双鱼座（Meen）、十宫主（Karm's Lord）是否与木星（Guru）同宫。",
+        "stop_fact_keys": [
+          "十宫主（Karm's Lord）是否有力",
+          "十宫主（Karm's Lord）是否落双鱼座（Meen）",
+          "十宫主（Karm's Lord）是否与木星（Guru）同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财物数量、价格或取得时间。",
+          "不得把双鱼座（Meen）换成木星主管的另一个星座。",
+          "原文本句没有给出「有力」的判准，不得自行发明力量算法。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "91117b1f16ccfa31960f56b382d637886891e34428b2596291240f954d5dabe2"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch21-v11-four-grahas-in-labh-cessation.step-001",
+      "method": {
+        "method": "ch21-v11-four-grahas-in-labh-cessation",
+        "title": "职务中断：罗睺、太阳、土星与火星同落十一宫",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的工作会不会中断",
+          "十一宫聚了这四颗星会怎样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Rahu, Surya, Shani and Mangal be in Labh Bhava, the native will incur cessation of his duties",
+            "罗睺 太阳 土星 火星 同落十一宫 职务中断"
+          ],
+          "counter_queries": [
+            "Should Labh’s Lord be in Labh itself, or be in an angle, or in a trine from Lagna, there will be many gains",
+            "If Labh’s Lord is in Karm Bhava, the native will be honoured by the king, be virtuous",
+            "十一宫主落十一宫 收益丰厚"
+          ],
+          "boundary_queries": [
+            "Indications of Labh Bhava. All articles, son’s wife, income, prosperity, quadrupeds etc. are to be understood from Labh Bhava",
+            "Sahaj, Ari, Karm and Labh are Upachayas",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics"
+          ],
+          "method_queries": [
+            "I now explain effects relating to Labh Bhava, the auspiciousness of which Bhava will make one happy at all times",
+            "判断十一宫聚集行星的效果要查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少罗睺、太阳、土星或火星落十一宫其中任一事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch21-v11-four-grahas-in-labh-cessation.step-001",
+        "action": "核对罗睺（Rahu）、太阳（Surya）、土星（Shani）与火星（Mangal）是否都落十一宫（Labh）。",
+        "applicability_scope": "仅限四颗行星同落十一宫这一种配置；原文以 his 指代命主，未给时间限定。本章效果原文自述以 Brahma、Garga 等人之言转述（同章 v1）。",
+        "minimum_supported_claim": "罗睺、太阳、土星与火星同落十一宫时，命主的职务会中断。",
+        "produced_fact_keys": [
+          "四颗行星聚十一宫的职务中断判定"
+        ],
+        "required_fact_keys": [
+          "罗睺（Rahu）是否落十一宫（Labh）",
+          "太阳（Surya）是否落十一宫（Labh）",
+          "土星（Shani）是否落十一宫（Labh）",
+          "火星（Mangal）是否落十一宫（Labh）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "罗睺（Rahu）是否落十一宫（Labh）"
+            },
+            {
+              "fact_key": "太阳（Surya）是否落十一宫（Labh）"
+            },
+            {
+              "fact_key": "土星（Shani）是否落十一宫（Labh）"
+            },
+            {
+              "fact_key": "火星（Mangal）是否落十一宫（Labh）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Rahu, Surya, Shani and Mangal be in Labh Bhava",
+              "claim": "罗睺、太阳、土星与火星同落十一宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will incur cessation of his duties",
+              "claim": "命主的职务会中断"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch21:v11",
+            "quote": "Should Rahu, Surya, Shani and Mangal be in Labh Bhava, the native will incur cessation of his duties.",
+            "pdf_pages": [
+              38
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：罗睺（Rahu）是否落十一宫（Labh）、太阳（Surya）是否落十一宫（Labh）、土星（Shani）是否落十一宫（Labh）、火星（Mangal）是否落十一宫（Labh）。",
+        "stop_fact_keys": [
+          "罗睺（Rahu）是否落十一宫（Labh）",
+          "太阳（Surya）是否落十一宫（Labh）",
+          "土星（Shani）是否落十一宫（Labh）",
+          "火星（Mangal）是否落十一宫（Labh）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断中断的时间、原因或是否复职。",
+          "不得把四颗行星同落放宽成其中几颗落十一宫。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "359b3fca93f90f51f66075033cd450efc65a606d0c365b43fd3bce51e4bd8f89"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch21-v12-guru-meen-shukr-learned-wealthy.step-001",
+      "method": {
+        "method": "ch21-v12-guru-meen-shukr-learned-wealthy",
+        "title": "有学问且富有：木星落双鱼座与金星同宫，上升主有力且月亮入旺",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会有学问又有钱",
+          "木星落双鱼座跟金星同宫是什么效果"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "One will be learned and wealthy, if Guru is in Meen along with Shukr, while Lagn’s Lord is strong and Chandra is in exaltation",
+            "木星落双鱼座 与金星同宫 上升主有力 月亮入旺 有学问 富有"
+          ],
+          "counter_queries": [
+            "Please tell me such Yogas, causing utter poverty",
+            "If Karm’s Lord is devoid of strength, the native will face obstructions in his work",
+            "导致贫穷的组合"
+          ],
+          "boundary_queries": [
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+            "Exaltation and Debilitation. For the seven Grahas, from Surya on, the exaltation Rāśis are, respectively, Mesh, Vrishabh, Makar, Kanya, Kark, Meen and Tula",
+            "I now tell you of special combinations, giving wealth. One born to these Yogas will surely become wealthy"
+          ],
+          "method_queries": [
+            "Effects of Karm’s Lord in Various Bhavas",
+            "判断学问与财富要核对哪些行星"
+          ]
+        },
+        "stop_conditions": [
+          "缺少木星落双鱼座或与金星同宫的事实时停止。",
+          "缺少上升主力量事实时停止，力量判准由排盘窗口定义。",
+          "缺少月亮入旺的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch21-v12-guru-meen-shukr-learned-wealthy.step-001",
+        "action": "核对木星（Guru）是否落双鱼座（Meen）并与金星（Shukra）同宫，同时核对上升主是否有力、月亮（Chandra）是否入旺。",
+        "applicability_scope": "仅限四项条件同时成立这一种配置；「有力」的判准原文本句未给；原文未给时间限定。本章效果原文自述以 Brahma、Garga 等人之言转述（同章 v1）。",
+        "minimum_supported_claim": "木星落双鱼座并与金星同宫，同时上升主有力、月亮入旺时，命主会有学问且富有。",
+        "produced_fact_keys": [
+          "木星落双鱼座与金星同宫的学问财富判定"
+        ],
+        "required_fact_keys": [
+          "木星（Guru）是否落双鱼座（Meen）",
+          "木星（Guru）是否与金星（Shukra）同宫",
+          "上升主（Lagn's Lord）是否有力",
+          "月亮（Chandra）是否入旺"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "木星（Guru）是否落双鱼座（Meen）"
+            },
+            {
+              "fact_key": "木星（Guru）是否与金星（Shukra）同宫"
+            },
+            {
+              "fact_key": "上升主（Lagn's Lord）是否有力"
+            },
+            {
+              "fact_key": "月亮（Chandra）是否入旺"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if Guru is in Meen along with Shukr",
+              "claim": "木星落双鱼座并与金星同宫"
+            },
+            {
+              "quote": "while Lagn’s Lord is strong",
+              "claim": "上升主有力"
+            },
+            {
+              "quote": "Chandra is in exaltation",
+              "claim": "月亮入旺"
+            }
+          ],
+          "results": [
+            {
+              "quote": "One will be learned and wealthy",
+              "claim": "会有学问且富有"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch21:v12",
+            "quote": "One will be learned and wealthy, if Guru is in Meen along with Shukr, while Lagn’s Lord is strong and Chandra is in exaltation.",
+            "pdf_pages": [
+              38
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：木星（Guru）是否落双鱼座（Meen）、木星（Guru）是否与金星（Shukra）同宫、上升主（Lagn's Lord）是否有力、月亮（Chandra）是否入旺。",
+        "stop_fact_keys": [
+          "木星（Guru）是否落双鱼座（Meen）",
+          "木星（Guru）是否与金星（Shukra）同宫",
+          "上升主（Lagn's Lord）是否有力",
+          "月亮（Chandra）是否入旺"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断学历、职业或财富数额。",
+          "不得把四项条件拆成任取其一。",
+          "原文本句没有给出「有力」的判准，不得自行发明力量算法。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "a40215e2c3e13108d9ae9c8e577236e87ab044916f20db8e37447eece5680257"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch21-v13-precious-stones.step-001",
+      "method": {
+        "method": "ch21-v13-precious-stones",
+        "title": "获得宝石：十宫主落十一宫、十一宫主落一宫、金星落十宫",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子会不会有贵重宝石",
+          "我的珠宝首饰运怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Karm’s Lord be in Labh, while Labh’s Lord is in Tanu Bhava and Shukra is in Karm, the native will be endowed with precious stones",
+            "十宫主落十一宫 十一宫主落一宫 金星落十宫 宝石"
+          ],
+          "counter_queries": [
+            "There will be no gains in spite of numerous efforts, if Labh’s Lord is in fall, in combustion, or be in Ari, Randhr, or Vyaya Bhava with a malefic",
+            "Should Rahu, Surya, Shani and Mangal be in Labh Bhava, the native will incur cessation of his duties"
+          ],
+          "boundary_queries": [
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava"
+          ],
+          "method_queries": [
+            "If Karm’s Lord is in Labh Bhava, the native will be endowed with wealth, happiness and sons",
+            "判断十宫（Karm）与十一宫（Labh）互涉应检查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主落宫事实时停止。",
+          "缺少十一宫主落宫事实时停止。",
+          "缺少金星落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch21-v13-precious-stones.step-001",
+        "action": "核对十宫主（Karm's Lord）、十一宫主（Labh's Lord）与金星（Shukra）三者的落宫，判断命主是否获得宝石。",
+        "applicability_scope": "仅限本命盘十宫（Karm）主题下的宝石所得；原文三个条件是同时成立的合取；原文未给数量、时间与上升限定；一宫在本偈的原文写法是 Tanu Bhava。",
+        "minimum_supported_claim": "十宫主落十一宫、十一宫主落一宫（Tanu Bhava）、金星落十宫时，命主获得宝石。",
+        "produced_fact_keys": [
+          "十宫主落十一宫得宝石判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm's Lord）是否落十一宫（Labh）",
+          "十一宫主（Labh's Lord）是否落上升宫（Lagna）",
+          "金星（Shukra）是否落十宫（Karm）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "十宫主（Karm's Lord）是否落十一宫（Labh）"
+            },
+            {
+              "fact_key": "十一宫主（Labh's Lord）是否落上升宫（Lagna）"
+            },
+            {
+              "fact_key": "金星（Shukra）是否落十宫（Karm）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Karm’s Lord be in Labh",
+              "claim": "十宫主落十一宫"
+            },
+            {
+              "quote": "Labh’s Lord is in Tanu Bhava",
+              "claim": "十一宫主落一宫（Tanu Bhava）"
+            },
+            {
+              "quote": "Shukra is in Karm",
+              "claim": "金星落十宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "endowed with precious stones",
+              "claim": "命主获得宝石"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch21:v13",
+            "quote": "Should Karm’s Lord be in Labh, while Labh’s Lord is in Tanu Bhava and Shukra is in Karm, the native will be endowed with precious stones.",
+            "pdf_pages": [
+              38
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm's Lord）是否落十一宫（Labh）、十一宫主（Labh's Lord）是否落上升宫（Lagna）、金星（Shukra）是否落十宫（Karm）。",
+        "stop_fact_keys": [
+          "十宫主（Karm's Lord）是否落十一宫（Labh）",
+          "十一宫主（Labh's Lord）是否落上升宫（Lagna）",
+          "金星（Shukra）是否落十宫（Karm）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断宝石的种类、数量、来源或所得年份。",
+          "不得把三个落宫条件中的任何一个单独当成得宝石的判据。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "d00b65c6ba5915623c139047a26839ea73089d2cabe12d93fe81dd963f0c9ad7"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch21:v7": {
+      "evidence_atom_id": "bphs-97:santhanam:ch21:v7",
+      "chapter_number": 21,
+      "chapter_title": "Effects of Karm Bhava",
+      "verse_label": "7.",
+      "content_role": "verse",
+      "exact_text": "7. If Shani, Mangal and Karm’s Lord are in Yuvati, as Yuvati’s Lord is with a malefic, the native will be fond of carnal pleasures and of filling his belly.",
+      "pdf_pages": [
+        38
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 21 · Sloka 7 · PDF page 38 · bphs-97:santhanam:ch21:v7",
+      "previous_atom_id": "bphs-97:santhanam:ch21:v6",
+      "next_atom_id": "bphs-97:santhanam:ch21:v8-10",
+      "context_before": " If the Lord of Karm Bhava is relegated to Randhr Bhava along with Rahu, the native will hate others; be a great fool and will do bad deeds.\n\n",
+      "context_after": "8-10 Should Karm’s Lord be in exaltation and be in the company of Guru, as Dharm’s Lord is in Karm the native will be endowed with honour, wealth and valour.",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch21:v8-10": {
+      "evidence_atom_id": "bphs-97:santhanam:ch21:v8-10",
+      "chapter_number": 21,
+      "chapter_title": "Effects of Karm Bhava",
+      "verse_label": "8-10",
+      "content_role": "verse",
+      "exact_text": "8-10 Should Karm’s Lord be in exaltation and be in the company of Guru, as Dharm’s Lord is in Karm the native will be endowed with honour, wealth and valour. One will lead a happy life, if Labh’s Lord is in Karm and Karm’s Lord is in Lagna, or, if the Lord of Karm Bhava is yuti with the Lord of Labh Bhava in an angle. Should Karm’s Lord in strength be in Meen along Guru, the native will doubtless obtain robes, ornaments and happiness.",
+      "pdf_pages": [
+        38
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 21 · Sloka 8-10 · PDF page 38 · bphs-97:santhanam:ch21:v8-10",
+      "previous_atom_id": "bphs-97:santhanam:ch21:v7",
+      "next_atom_id": "bphs-97:santhanam:ch21:v11",
+      "context_before": " If Shani, Mangal and Karm’s Lord are in Yuvati, as Yuvati’s Lord is with a malefic, the native will be fond of carnal pleasures and of filling his belly.\n\n",
+      "context_after": "11. Should Rahu, Surya, Shani and Mangal be in Labh Bhava, the native will incur cessation of his duties.\n\n12. One will be learn",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch21:v11": {
+      "evidence_atom_id": "bphs-97:santhanam:ch21:v11",
+      "chapter_number": 21,
+      "chapter_title": "Effects of Karm Bhava",
+      "verse_label": "11.",
+      "content_role": "verse",
+      "exact_text": "11. Should Rahu, Surya, Shani and Mangal be in Labh Bhava, the native will incur cessation of his duties.",
+      "pdf_pages": [
+        38
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 21 · Sloka 11 · PDF page 38 · bphs-97:santhanam:ch21:v11",
+      "previous_atom_id": "bphs-97:santhanam:ch21:v8-10",
+      "next_atom_id": "bphs-97:santhanam:ch21:v12",
+      "context_before": " angle. Should Karm’s Lord in strength be in Meen along Guru, the native will doubtless obtain robes, ornaments and happiness.\n\n",
+      "context_after": "12. One will be learned and wealthy, if Guru is in Meen along with Shukr, while Lagn’s Lord is strong and Chandra is in exaltati",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch21:v12": {
+      "evidence_atom_id": "bphs-97:santhanam:ch21:v12",
+      "chapter_number": 21,
+      "chapter_title": "Effects of Karm Bhava",
+      "verse_label": "12.",
+      "content_role": "verse",
+      "exact_text": "12. One will be learned and wealthy, if Guru is in Meen along with Shukr, while Lagn’s Lord is strong and Chandra is in exaltation.",
+      "pdf_pages": [
+        38
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 21 · Sloka 12 · PDF page 38 · bphs-97:santhanam:ch21:v12",
+      "previous_atom_id": "bphs-97:santhanam:ch21:v11",
+      "next_atom_id": "bphs-97:santhanam:ch21:v13",
+      "context_before": "ents and happiness.\n\n11. Should Rahu, Surya, Shani and Mangal be in Labh Bhava, the native will incur cessation of his duties.\n\n",
+      "context_after": "13. Should Karm’s Lord be in Labh, while Labh’s Lord is in Tanu Bhava and Shukra is in Karm, the native will be endowed with pre",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch21:v13": {
+      "evidence_atom_id": "bphs-97:santhanam:ch21:v13",
+      "chapter_number": 21,
+      "chapter_title": "Effects of Karm Bhava",
+      "verse_label": "13.",
+      "content_role": "verse",
+      "exact_text": "13. Should Karm’s Lord be in Labh, while Labh’s Lord is in Tanu Bhava and Shukra is in Karm, the native will be endowed with precious stones.",
+      "pdf_pages": [
+        38
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 21 · Sloka 13 · PDF page 38 · bphs-97:santhanam:ch21:v13",
+      "previous_atom_id": "bphs-97:santhanam:ch21:v12",
+      "next_atom_id": "bphs-97:santhanam:ch21:v14",
+      "context_before": " One will be learned and wealthy, if Guru is in Meen along with Shukr, while Lagn’s Lord is strong and Chandra is in exaltation.\n\n",
+      "context_after": "14. If the Karm’s Lord is exalted in an angle, or a trine and is yuti with Guru, or receives a Drishti from Guru, one will be en",
+      "content_missing": false
+    }
+  }
+}

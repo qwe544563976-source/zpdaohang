@@ -1,0 +1,2611 @@
+{
+  "shard": 3,
+  "step_count": 19,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch17-v23-smallpox-karm-year.step-001",
+      "method": {
+        "method": "ch17-v23-smallpox-karm-year",
+        "title": "Karm 年与第30岁的天花：土星落八宫、火星落七宫",
+        "target_house": 6,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会出天花一类的急性病",
+          "三十岁前后健康怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Shani in Randhr, as Mangal is in Yuvati, all cause small-pox in Karm year and in 30th year of age",
+            "土星八宫 火星七宫 天花 Karm 年"
+          ],
+          "counter_queries": [
+            "Guru in similar case will destroy any disease",
+            "Lagn Lord is singly capable of counteracting all evils"
+          ],
+          "boundary_queries": [
+            "Evils, causing premature end, exist up to the 24th year of one’s age",
+            "Effects of Dashas 急病发作按大运定时"
+          ],
+          "method_queries": [
+            "Indications of Ari Bhava diseases",
+            "判断急性病年份应检查土星火星落宫"
+          ]
+        },
+        "stop_conditions": [
+          "缺少土星落八宫事实时停止。",
+          "缺少火星落七宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch17-v23-smallpox-karm-year.step-001",
+        "action": "核对土星是否落八宫、火星是否落七宫。",
+        "applicability_scope": "仅限本命盘天花主题；原文以 Karm 年称呼年份，未换算成具体年岁，另给第30岁。",
+        "minimum_supported_claim": "土星落八宫、火星落七宫时，Karm 年与第30岁会出天花。",
+        "produced_fact_keys": [
+          "天花凶年判定"
+        ],
+        "required_fact_keys": [
+          "土星（Shani）是否落八宫（Randhr）",
+          "火星（Mangal）是否落七宫（Yuvati）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "土星（Shani）是否落八宫（Randhr）"
+            },
+            {
+              "fact_key": "火星（Mangal）是否落七宫（Yuvati）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Shani in Randhr",
+              "claim": "土星落八宫"
+            },
+            {
+              "quote": "Mangal is in Yuvati",
+              "claim": "火星落七宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "cause small-pox in Karm year and in 30<sup>th</sup> year of age",
+              "claim": "Karm 年与第30岁会出天花"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch17:v23-25",
+            "quote": "Shani in Randhr, as Mangal is in Yuvati, all cause small-pox in Karm year and in 30<sup>th</sup> year of age.",
+            "pdf_pages": [
+              33
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：土星（Shani）是否落八宫（Randhr）、火星（Mangal）是否落七宫（Yuvati）。",
+        "stop_fact_keys": [
+          "土星（Shani）是否落八宫（Randhr）",
+          "火星（Mangal）是否落七宫（Yuvati）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 Karm 年自行换算成本条没写出的年岁。",
+          "不得据此推断轻重与转归。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "Karm 年与第30岁",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "7ecdaeb0407a1c19dc29bd563517293042957ac1324b00ba7852191909066c61"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch17-v23-blood-vessel-age-18-22.step-001",
+      "method": {
+        "method": "ch17-v23-blood-vessel-age-18-22",
+        "title": "第18年与第22年的血管与泌尿疾病：八宫主与罗睺会于八宫起的角宫或三角宫、且八宫主在九分盘落八宫",
+        "target_house": 6,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我十八到二十二岁健康怎么样",
+          "血管和泌尿方面会不会出问题"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If 8th Lord joins Rahu in an angle/trine from Randhr Bhava and be in Randhr in Navamsa swelling of blood vessels urinary disorders",
+            "八宫主 罗睺 角宫 三角宫 九分盘 血管 泌尿"
+          ],
+          "counter_queries": [
+            "Guru in similar case will destroy any disease",
+            "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed"
+          ],
+          "boundary_queries": [
+            "Divisional Considerations Navamsa 九分盘的取用范围",
+            "Evils, causing premature end, exist up to the 24th year of one’s age"
+          ],
+          "method_queries": [
+            "Indications of Ari Bhava diseases",
+            "判断分盘落宫应怎样与本命盘配合"
+          ]
+        },
+        "stop_conditions": [
+          "缺少八宫主与罗睺同宫事实时停止。",
+          "缺少八宫主在九分盘落宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch17-v23-blood-vessel-age-18-22.step-001",
+        "action": "核对八宫主与罗睺的会合位置（自八宫起算）以及八宫主在九分盘（Navamsa D9）中的落宫。",
+        "applicability_scope": "仅限本命盘血管与泌尿疾病主题；原文的角宫、三角宫自八宫起算，年份写作第18年与第22年。",
+        "minimum_supported_claim": "八宫主与罗睺在八宫起的角宫或三角宫会合、且八宫主在九分盘中落八宫时，第18年与第22年会有血管肿胀、泌尿疾病等。",
+        "produced_fact_keys": [
+          "八宫主罗睺会合的血管泌尿疾病判定"
+        ],
+        "required_fact_keys": [
+          "八宫主（Randhr's Lord）是否与罗睺（Rahu）同宫",
+          "八宫主（Randhr's Lord）在九分盘（Navamsa D9）中是否落八宫（Randhr）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否与罗睺（Rahu）同宫"
+                },
+                {
+                  "fact_key": "八宫主（Randhr's Lord）在九分盘（Navamsa D9）中是否落八宫（Randhr）"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "八宫主（Randhr's Lord）与罗睺（Rahu）会合之处是否为八宫（Randhr）起的角宫"
+                },
+                {
+                  "fact_key": "八宫主（Randhr's Lord）与罗睺（Rahu）会合之处是否为八宫（Randhr）起的三角宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否与罗睺（Rahu）同宫"
+                },
+                {
+                  "fact_key": "八宫主（Randhr's Lord）在九分盘（Navamsa D9）中是否落八宫（Randhr）"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "八宫主（Randhr's Lord）与罗睺（Rahu）会合之处是否为八宫（Randhr）起的角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "八宫主（Randhr's Lord）与罗睺（Rahu）会合之处是否为八宫（Randhr）起的角宫"
+            },
+            "selection_group": "ch17-v23-blood-vessel-age-18-22.step-001:join-position",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：八宫主（Randhr's Lord）与罗睺（Rahu）会合之处是否为八宫（Randhr）起的角宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否与罗睺（Rahu）同宫"
+                },
+                {
+                  "fact_key": "八宫主（Randhr's Lord）在九分盘（Navamsa D9）中是否落八宫（Randhr）"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "八宫主（Randhr's Lord）与罗睺（Rahu）会合之处是否为八宫（Randhr）起的三角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "八宫主（Randhr's Lord）与罗睺（Rahu）会合之处是否为八宫（Randhr）起的三角宫"
+            },
+            "selection_group": "ch17-v23-blood-vessel-age-18-22.step-001:join-position",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：八宫主（Randhr's Lord）与罗睺（Rahu）会合之处是否为八宫（Randhr）起的三角宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "8<sup>th</sup> Lord joins Rahu",
+              "claim": "八宫主与罗睺"
+            },
+            {
+              "quote": "in an angle/trine from Randhr Bhava",
+              "claim": "在八宫起的角宫或三角宫会合"
+            },
+            {
+              "quote": "be in Randhr in Navamsa",
+              "claim": "八宫主在九分盘中落八宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "troubled by swelling of blood vessels, urinary disorders etc. during the 18<sup>th</sup> year and the 22<sup>nd</sup> year",
+              "claim": "第18年与第22年会有血管肿胀、泌尿疾病等"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch17:v23-25",
+            "quote": "If 8<sup>th</sup> Lord joins Rahu in an angle/trine from Randhr Bhava and be in Randhr in Navamsa, the subject will be troubled by swelling of blood vessels, urinary disorders etc. during the 18<sup>th</sup> year and the 22<sup>nd</sup> year.",
+            "pdf_pages": [
+              33
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：八宫主（Randhr's Lord）是否与罗睺（Rahu）同宫、八宫主（Randhr's Lord）在九分盘（Navamsa D9）中是否落八宫（Randhr）。",
+        "stop_fact_keys": [
+          "八宫主（Randhr's Lord）是否与罗睺（Rahu）同宫",
+          "八宫主（Randhr's Lord）在九分盘（Navamsa D9）中是否落八宫（Randhr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把角宫、三角宫改从上升起算。",
+          "不得据此推断病症名称之外的其他疾病或年份。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "第18年与第22年",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "91ed28a4ec6b04ef72e22b45aec94097ba6602ac8dfc621b1a6b4b8685770b4c"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch17-v26-wealth-loss-year-31.step-001",
+      "method": {
+        "method": "ch17-v26-wealth-loss-year-31",
+        "title": "第31年因敌破财：十一宫主与六宫主互换星座",
+        "target_house": 6,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会因为对头破财",
+          "三十一岁前后财运怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Loss of wealth will come to pass during the 31st year, if Labh and 6th Lords exchange their Rāśis",
+            "十一宫主 六宫主 互换星座 破财 第31年"
+          ],
+          "counter_queries": [
+            "Combinations for Wealth 招财组合",
+            "Lagn Lord is singly capable of counteracting all evils"
+          ],
+          "boundary_queries": [
+            "Combinations for Penury 贫穷组合的判据",
+            "Effects of Labh’s Lord in Various Bhavas 十一宫主落各宫"
+          ],
+          "method_queries": [
+            "Indications of Ari Bhava enemies",
+            "判断破财年份应检查哪两宫的宫主"
+          ]
+        },
+        "stop_conditions": [
+          "缺少十一宫主与六宫主互换星座的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch17-v26-wealth-loss-year-31.step-001",
+        "action": "核对十一宫主与六宫主是否互换星座。",
+        "applicability_scope": "仅限本命盘因敌破财主题；原文只给第31年，未说明损失数额与来源细节。",
+        "minimum_supported_claim": "十一宫主与六宫主互换星座时，第31年会有财物损失。",
+        "produced_fact_keys": [
+          "第31年破财判定"
+        ],
+        "required_fact_keys": [
+          "十一宫主（Labh's Lord）与六宫主（Ari's Lord）是否互换星座"
+        ],
+        "condition_logic": {
+          "fact_key": "十一宫主（Labh's Lord）与六宫主（Ari's Lord）是否互换星座"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Labh and 6<sup>th</sup> Lords exchange their Rāśis",
+              "claim": "十一宫主与六宫主互换星座"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Loss of wealth will come to pass during the 31<sup>st</sup> year",
+              "claim": "第31年会有财物损失"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch17:v26",
+            "quote": "Loss of wealth will come to pass during the 31<sup>st</sup> year, if Labh and 6<sup>th</sup> Lords exchange their Rāśis.",
+            "pdf_pages": [
+              33
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十一宫主（Labh's Lord）与六宫主（Ari's Lord）是否互换星座。",
+        "stop_fact_keys": [
+          "十一宫主（Labh's Lord）与六宫主（Ari's Lord）是否互换星座"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断损失数额、财物种类或是否可追回。",
+          "不得把第31年推广到其他年份。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "第31年",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "d322cea2ff5c02b9ca78e2c2608c73a46655497627b81b1b0857a40448960d15"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch17-v27-inimical-sons.step-001",
+      "method": {
+        "method": "ch17-v27-inimical-sons",
+        "title": "亲生子成仇：五宫主落六宫、六宫主与木星同宫、十二宫主落上升宫",
+        "target_house": 6,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和儿子会不会反目",
+          "子女将来会不会成为我的对头"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "One’s own sons will be his enemies, if Putr Lord is in Ari, while Ari Lord is with Guru",
+            "五宫主落六宫 六宫主木星同宫 十二宫主上升 子成仇"
+          ],
+          "counter_queries": [
+            "Effects of Putr Bhava 子女幸福 五宫主入旺",
+            "a single, but strong Guru in Lagn will ward off all the evils"
+          ],
+          "boundary_queries": [
+            "Female Horoscopy 女命的判法差异",
+            "Effects of Putr’s Lord in Various Bhavas 五宫主落各宫"
+          ],
+          "method_queries": [
+            "Indications of Ari Bhava enemies",
+            "判断亲子关系应检查五宫与六宫的哪些关系"
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫主落六宫事实时停止。",
+          "缺少六宫主与木星同宫事实时停止。",
+          "缺少十二宫主落上升宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch17-v27-inimical-sons.step-001",
+        "action": "核对五宫主落宫、六宫主与木星的同宫、十二宫主落宫三项是否同时成立。",
+        "applicability_scope": "原文以男命立说（his enemies），三项条件须同时成立；未给时间限定。",
+        "minimum_supported_claim": "五宫主落六宫、六宫主与木星同宫、同时十二宫主落上升宫时，自己的儿子会成为他的仇敌。",
+        "produced_fact_keys": [
+          "亲生子成仇判定"
+        ],
+        "required_fact_keys": [
+          "五宫主（Putr's Lord）是否落六宫（Ari）",
+          "六宫主（Ari's Lord）是否与木星（Guru）同宫",
+          "十二宫主（Vyaya's Lord）是否落上升宫（Lagna）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "五宫主（Putr's Lord）是否落六宫（Ari）"
+            },
+            {
+              "fact_key": "六宫主（Ari's Lord）是否与木星（Guru）同宫"
+            },
+            {
+              "fact_key": "十二宫主（Vyaya's Lord）是否落上升宫（Lagna）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Putr Lord is in Ari",
+              "claim": "五宫主落六宫"
+            },
+            {
+              "quote": "Ari Lord is with Guru",
+              "claim": "六宫主与木星同宫"
+            },
+            {
+              "quote": "Simultaneously Vyaya Lord should be in Lagn",
+              "claim": "同时十二宫主落上升宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "One’s own sons will be his enemies",
+              "claim": "自己的儿子会成为他的仇敌"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch17:v27",
+            "quote": "One’s own sons will be his enemies, if Putr Lord is in Ari, while Ari Lord is with Guru.",
+            "pdf_pages": [
+              33
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch17:v27",
+            "quote": "Simultaneously Vyaya Lord should be in Lagn.",
+            "pdf_pages": [
+              33
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：五宫主（Putr's Lord）是否落六宫（Ari）、六宫主（Ari's Lord）是否与木星（Guru）同宫、十二宫主（Vyaya's Lord）是否落上升宫（Lagna）。",
+        "stop_fact_keys": [
+          "五宫主（Putr's Lord）是否落六宫（Ari）",
+          "六宫主（Ari's Lord）是否与木星（Guru）同宫",
+          "十二宫主（Vyaya's Lord）是否落上升宫（Lagna）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断子女数目、成仇的时间或后果。",
+          "不得在三项条件不全时套用本条。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "bbee6b05d04d5dc25fe1eeb6d37fce8d22265cf31d4fbc885f7b40257aff1b66"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch17-v28-fear-from-dogs.step-001",
+      "method": {
+        "method": "ch17-v28-fear-from-dogs",
+        "title": "怕狗：上升主与六宫主互换宫位，第10年与第19年",
+        "target_house": 6,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会被狗吓到或被狗咬",
+          "我哪一年容易有动物方面的惊险"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Lagna Lord and the 6th Lord are in exchange fear from dogs",
+            "上升主与六宫主互换宫位 怕狗 第10年 第19年"
+          ],
+          "counter_queries": [
+            "Labh and 6th Lords exchange their Rāśis loss of wealth 31st year",
+            "Lords of 6th and 12th are in exchange of their Rāśis spleenary disorders age 29 30"
+          ],
+          "boundary_queries": [
+            "troubled by animals at the age of eight Chandra yuti Ari Lord",
+            "Ari Bhava UNFORTUNATE YEARS danger through fire birds"
+          ],
+          "method_queries": [
+            "Effects of Ari Bhava diseases ulcers effects",
+            "判断六宫（Ari）灾厄应检查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升主与六宫主是否互换宫位的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch17-v28-fear-from-dogs.step-001",
+        "action": "核对上升主（Lagn's Lord）与六宫主（Ari's Lord）是否互换宫位，判断怕狗之事。",
+        "applicability_scope": "仅限本命盘六宫（Ari）灾厄主题；原文只把结果系在第10年与第19年，未给其他年份。",
+        "minimum_supported_claim": "上升主与六宫主互换宫位时，第10年与第19年会有来自狗的恐惧。",
+        "produced_fact_keys": [
+          "上升主与六宫主互换主怕狗判定"
+        ],
+        "required_fact_keys": [
+          "上升主（Lagn's Lord）是否与六宫主（Ari's Lord）互换宫位"
+        ],
+        "condition_logic": {
+          "fact_key": "上升主（Lagn's Lord）是否与六宫主（Ari's Lord）互换宫位"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "the Lagna Lord and the 6<sup>th</sup> Lord are in exchange",
+              "claim": "上升主与六宫主互换宫位"
+            }
+          ],
+          "results": [
+            {
+              "quote": "fear from dogs during the 10<sup>th</sup> and 19<sup>th</sup> year",
+              "claim": "第10年与第19年会有来自狗的恐惧"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch17:v28",
+            "quote": "There will be fear from dogs during the 10<sup>th</sup> and 19<sup>th</sup> year, if the Lagna Lord and the 6<sup>th</sup> Lord are in exchange.",
+            "pdf_pages": [
+              33
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：上升主（Lagn's Lord）是否与六宫主（Ari's Lord）互换宫位。",
+        "stop_fact_keys": [
+          "上升主（Lagn's Lord）是否与六宫主（Ari's Lord）互换宫位"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断被咬伤的程度、部位或其他动物的灾厄。",
+          "不得把第10年与第19年之外的年份也算进本条。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定第10年与第19年",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "ce6f9b237f18a7a2cbae97d3063ff704172379f3c729b1845ea952cc88b100ed"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v1-marital-happiness.step-001",
+      "method": {
+        "method": "ch18-v1-marital-happiness",
+        "title": "婚姻幸福：七宫主落本星座（own Rāśi，即金星主管的星座）或入旺",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的婚姻幸福吗",
+          "我能不能通过配偶得到幸福"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Yuvati Lord is in his own Rāśi, or in exaltation full happiness through his wife",
+            "七宫主落本星座（own Rāśi，即金星主管的星座） 入旺 婚姻圆满幸福"
+          ],
+          "counter_queries": [
+            "Chandra is in Yuvati, Yuvati Lord is in Vyaya Karaka bereft of strength not endowed with marital happiness",
+            "Yuvati Lord be in Ari, 8th, or Vyaya the wife will be sickly"
+          ],
+          "boundary_queries": [
+            "This however does not apply to own Bhava, or exaltation placement, as above",
+            "Yuvati Lord is devoid of strength and is relegated to Ari, 8th, or Vyaya loss of spouse",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "effects of the 7th Bhava Yuvati Lord placement",
+            "判断七宫（Yuvati）婚姻应检查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少七宫主身份事实时停止。",
+          "七宫主落本星座（own Rāśi，即金星主管的星座）与入旺两个分支事实都缺时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v1-marital-happiness.step-001",
+        "action": "先定出七宫主（Yuvati's Lord）是哪颗行星，再核对它是否落本星座（own Rāśi）或入旺。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）婚姻主题；原文以「his wife」立说，属男命框架；原文未给婚期或配偶数目。",
+        "minimum_supported_claim": "七宫主落本星座（own Rāśi，即金星主管的星座）或入旺时，命主通过妻子（与婚姻）得到圆满幸福。",
+        "produced_fact_keys": [
+          "七宫主尊贵主婚姻圆满判定"
+        ],
+        "required_fact_keys": [
+          "本盘七宫主是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘七宫主是哪颗行星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "七宫主（Yuvati's Lord）是否落本星座（own Rāśi）"
+                },
+                {
+                  "fact_key": "七宫主（Yuvati's Lord）是否入旺"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘七宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "七宫主（Yuvati's Lord）是否落本星座（own Rāśi）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "七宫主（Yuvati's Lord）是否落本星座（own Rāśi）"
+            },
+            "selection_group": "ch18-v1-marital-happiness.step-001:dignity",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：七宫主（Yuvati's Lord）是否落本星座（own Rāśi）。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘七宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "七宫主（Yuvati's Lord）是否入旺"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "七宫主（Yuvati's Lord）是否入旺"
+            },
+            "selection_group": "ch18-v1-marital-happiness.step-001:dignity",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：七宫主（Yuvati's Lord）是否入旺。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Yuvati Lord is in his own Rāśi",
+              "claim": "七宫主落本星座（own Rāśi，即金星主管的星座）"
+            },
+            {
+              "quote": "in exaltation",
+              "claim": "入旺"
+            }
+          ],
+          "results": [
+            {
+              "quote": "one will derive full happiness through his wife (and marriage)",
+              "claim": "命主通过妻子（与婚姻）得到圆满幸福"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v1",
+            "quote": "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife (and marriage).",
+            "pdf_pages": [
+              33
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘七宫主是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘七宫主是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断结婚时间、配偶人数或子女。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "e25d8067a36bead06559ce8524b544d73cd4e4f4c082c858c4490555ad497e1f"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v2-sick-wife.step-001",
+      "method": {
+        "method": "ch18-v2-sick-wife",
+        "title": "妻子多病：七宫主落六宫、八宫或十二宫（落本宫或入旺时不适用）",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我配偶的身体健康吗",
+          "我妻子会不会常年生病"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Yuvati Lord be in Ari, 8th, or Vyaya, the wife will be sickly",
+            "七宫主落六宫 八宫 十二宫 妻子多病"
+          ],
+          "counter_queries": [
+            "Yuvati Lord is in his own Rāśi, or in exaltation full happiness through his wife",
+            "Yuvati Lord be endowed with strength drishtied by a benefic wealthy honourable happy"
+          ],
+          "boundary_queries": [
+            "This however does not apply to own Bhava, or exaltation placement, as above",
+            "Yuvati Lord is devoid of strength and is relegated to Ari, 8th, or Vyaya the native’s wife will be destroyed",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "effects of the 7th Bhava Yuvati Lord placement sick wife",
+            "判断七宫（Yuvati）配偶健康应检查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少七宫主落宫事实时停止。",
+          "缺少七宫主落本宫或入旺的排除事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v2-sick-wife.step-001",
+        "action": "核对七宫主（Yuvati's Lord）落在哪一宫，并先排除它落本宫或入旺的情形。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）配偶健康主题；原文以「the wife」立说，属男命框架；原文未给发病时间。",
+        "minimum_supported_claim": "七宫主落六宫、八宫或十二宫时妻子多病；但七宫主落本宫或入旺时不适用。",
+        "produced_fact_keys": [
+          "七宫主落凶宫主妻多病判定"
+        ],
+        "required_fact_keys": [
+          "本盘七宫主落在哪一宫",
+          "七宫主（Yuvati's Lord）是否落本宫",
+          "七宫主（Yuvati's Lord）是否入旺"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘七宫主落在哪一宫"
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "七宫主（Yuvati's Lord）是否落本宫"
+                    }
+                  ]
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "七宫主（Yuvati's Lord）是否入旺"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "七宫主（Yuvati's Lord）是否落六宫（Ari）"
+                },
+                {
+                  "fact_key": "七宫主（Yuvati's Lord）是否落八宫（Randhr）"
+                },
+                {
+                  "fact_key": "七宫主（Yuvati's Lord）是否落十二宫（Vyaya）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘七宫主落在哪一宫"
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "七宫主（Yuvati's Lord）是否落本宫"
+                    }
+                  ]
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "七宫主（Yuvati's Lord）是否入旺"
+                    }
+                  ]
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "七宫主（Yuvati's Lord）是否落六宫（Ari）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "七宫主（Yuvati's Lord）是否落六宫（Ari）"
+            },
+            "selection_group": "ch18-v2-sick-wife.step-001:placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：七宫主（Yuvati's Lord）是否落六宫（Ari）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘七宫主落在哪一宫"
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "七宫主（Yuvati's Lord）是否落本宫"
+                    }
+                  ]
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "七宫主（Yuvati's Lord）是否入旺"
+                    }
+                  ]
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "七宫主（Yuvati's Lord）是否落八宫（Randhr）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "七宫主（Yuvati's Lord）是否落八宫（Randhr）"
+            },
+            "selection_group": "ch18-v2-sick-wife.step-001:placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：七宫主（Yuvati's Lord）是否落八宫（Randhr）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘七宫主落在哪一宫"
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "七宫主（Yuvati's Lord）是否落本宫"
+                    }
+                  ]
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "七宫主（Yuvati's Lord）是否入旺"
+                    }
+                  ]
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "七宫主（Yuvati's Lord）是否落十二宫（Vyaya）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "七宫主（Yuvati's Lord）是否落十二宫（Vyaya）"
+            },
+            "selection_group": "ch18-v2-sick-wife.step-001:placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：七宫主（Yuvati's Lord）是否落十二宫（Vyaya）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Yuvati Lord be in Ari",
+              "claim": "七宫主落六宫"
+            },
+            {
+              "quote": "8<sup>th</sup>",
+              "claim": "八宫"
+            },
+            {
+              "quote": "Vyaya",
+              "claim": "十二宫"
+            },
+            {
+              "quote": "does not apply to own Bhava",
+              "claim": "七宫主落本宫"
+            },
+            {
+              "quote": "exaltation placement",
+              "claim": "入旺"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the wife will be sickly",
+              "claim": "妻子多病"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v2",
+            "quote": "Should Yuvati Lord be in Ari, 8<sup>th</sup> , or Vyaya, the wife will be sickly. This however does not apply to own Bhava, or exaltation placement, as above.",
+            "pdf_pages": [
+              33
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘七宫主落在哪一宫、七宫主（Yuvati's Lord）是否落本宫、七宫主（Yuvati's Lord）是否入旺。",
+        "stop_fact_keys": [
+          "本盘七宫主落在哪一宫",
+          "七宫主（Yuvati's Lord）是否落本宫",
+          "七宫主（Yuvati's Lord）是否入旺"
+        ],
+        "exception_relations": [
+          {
+            "type": "exception",
+            "evidence_atom_ids": [
+              "bphs-97:santhanam:ch18:v2",
+              "bphs-97:santhanam:ch18:v1"
+            ],
+            "condition_logic": {
+              "fact_key": "七宫主（Yuvati's Lord）是否落本宫"
+            }
+          },
+          {
+            "type": "exception",
+            "evidence_atom_ids": [
+              "bphs-97:santhanam:ch18:v2",
+              "bphs-97:santhanam:ch18:v1"
+            ],
+            "condition_logic": {
+              "fact_key": "七宫主（Yuvati's Lord）是否入旺"
+            }
+          }
+        ],
+        "forbidden_extensions": [
+          "不得据此推断病名、病程或配偶寿命。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch18:v1"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "f6bc079574cda23d706bc190dd364b0691e10656308f32d74b93e406fe852438"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v3-shukra-in-yuvati-libidinous.step-001",
+      "method": {
+        "method": "ch18-v3-shukra-in-yuvati-libidinous",
+        "title": "极度好色：金星落七宫",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我在情欲上是什么倾向",
+          "金星落七宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Shukra is in Yuvati, the native will be exceedingly libidinous",
+            "金星落七宫 极度好色"
+          ],
+          "counter_queries": [
+            "The native will beget a spouse endowed with (the seven principal) virtues 7th Lord is exalted",
+            "Yuvati Bhava is occupied, or owned by Shani/Mangal beget a harlot attached to other illegally"
+          ],
+          "boundary_queries": [
+            "Shukra yuti a malefic in any Bhava loss of wife",
+            "Shukra in Yuvati marriage timing dispositor"
+          ],
+          "method_queries": [
+            "effects of the 7th Bhava Shukra placement",
+            "判断七宫（Yuvati）里的行星应检查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少金星落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v3-shukra-in-yuvati-libidinous.step-001",
+        "action": "核对金星（Shukra）是否落七宫（Yuvati）。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）情欲主题；原文未给时间与对象。",
+        "minimum_supported_claim": "金星落七宫时，命主极度好色。",
+        "produced_fact_keys": [
+          "金星落七宫主极度好色判定"
+        ],
+        "required_fact_keys": [
+          "金星（Shukra）是否落七宫（Yuvati）"
+        ],
+        "condition_logic": {
+          "fact_key": "金星（Shukra）是否落七宫（Yuvati）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Shukra is in Yuvati",
+              "claim": "金星落七宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be exceedingly libidinous",
+              "claim": "命主极度好色"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v3",
+            "quote": "If Shukra is in Yuvati, the native will be exceedingly libidinous.",
+            "pdf_pages": [
+              33
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：金星（Shukra）是否落七宫（Yuvati）。",
+        "stop_fact_keys": [
+          "金星（Shukra）是否落七宫（Yuvati）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断婚姻数目、外遇对象或时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "288cf2da444975c116f7338eda8b3abee3482e02c31e59a232575110e6844329"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v3-shukra-with-malefic-loss-of-wife.step-001",
+      "method": {
+        "method": "ch18-v3-shukra-with-malefic-loss-of-wife",
+        "title": "失去妻子：金星与凶星同宫",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会失去配偶",
+          "金星和凶星同宫对婚姻有什么影响"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Shukra yuti a malefic in any Bhava, it will cause loss of wife",
+            "金星与凶星同宫 失去妻子"
+          ],
+          "counter_queries": [
+            "Yuvati Lord is in his own Rāśi, or in exaltation full happiness through his wife",
+            "The native will beget a spouse endowed with (the seven principal) virtues expand his dynasty"
+          ],
+          "boundary_queries": [
+            "TIMING OF WIFE’S DEATH Loss of wife will occur in the 18th year, or 33rd year Yuvati Lord is in fall Shukra is in Randhr",
+            "lf Ari, 7th and 8th are in their order occupied by Mangal, Rahu and Shani the native’s wife will not live",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "effects of the 7th Bhava loss of wife Shukra",
+            "判断配偶存续应检查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少金星是否与凶星同宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v3-shukra-with-malefic-loss-of-wife.step-001",
+        "action": "核对金星（Shukra）是否在任何一宫里与凶星同宫。",
+        "applicability_scope": "仅限本命盘配偶存续主题；原文说的是任何一宫（in any Bhava），不限七宫；原文以「wife」立说，属男命框架；原文未给时间。",
+        "minimum_supported_claim": "金星在任何一宫与凶星同宫时，会导致失去妻子。",
+        "produced_fact_keys": [
+          "金星与凶星同宫主失妻判定"
+        ],
+        "required_fact_keys": [
+          "金星（Shukra）是否与凶星同宫"
+        ],
+        "condition_logic": {
+          "fact_key": "金星（Shukra）是否与凶星同宫"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Shukra yuti a malefic in any Bhava",
+              "claim": "金星在任何一宫与凶星同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "it will cause loss of wife",
+              "claim": "会导致失去妻子"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v3",
+            "quote": "If Shukra yuti a malefic in any Bhava, it will cause loss of wife.",
+            "pdf_pages": [
+              33
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：金星（Shukra）是否与凶星同宫。",
+        "stop_fact_keys": [
+          "金星（Shukra）是否与凶星同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断失去妻子的年份、死因或再婚。",
+          "不得把「任何一宫」缩小成只看七宫。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "5be882d71317814d875541a7d556e8c537e6f5cf389f5120d53bd5c98745b786"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v4-5-strong-yuvati-lord-prosperity.step-001",
+      "method": {
+        "method": "ch18-v4-5-strong-yuvati-lord-prosperity",
+        "title": "富有有荣誉：七宫主有力且与吉星同宫或受吉星相照",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子会不会富有体面",
+          "七宫主有力对我意味着什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Yuvati Lord be endowed with strength be yuti with, or be drishtied by a benefic wealthy honourable happy fortunate",
+            "七宫主有力 与吉星同宫 受吉星相照 富有"
+          ],
+          "counter_queries": [
+            "Conversely, if Yuvati Lord is in fall, or is combust, or is in an enemy’s Rāśi sick wives and many wives",
+            "If Yuvati Bhava, or its Lord is yuti with a malefic the native’s wife will incur evils"
+          ],
+          "boundary_queries": [
+            "Yuvati Bhava, or its Lord is bereft of strength",
+            "Yuvati Lord is devoid of strength and is relegated to Ari, 8th, or Vyaya",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)"
+          ],
+          "method_queries": [
+            "THE 7th LORD effects strength benefic drishti",
+            "判断七宫主强弱应检查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少七宫主强弱事实时停止（该事实的判准待排盘窗口定义）。",
+          "与吉星同宫、受吉星相照两个分支事实都缺时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v4-5-strong-yuvati-lord-prosperity.step-001",
+        "action": "核对七宫主（Yuvati's Lord）是否有力，并核对它与吉星是同宫还是受吉星相照。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）主星强弱主题；原文只说 endowed with strength，未给判准；原文未给时间。",
+        "minimum_supported_claim": "七宫主有力，并与吉星同宫或受吉星相照时，命主富有、有荣誉、幸福且幸运。",
+        "produced_fact_keys": [
+          "七宫主有力得吉主富贵判定"
+        ],
+        "required_fact_keys": [
+          "七宫主（Yuvati's Lord）是否有力"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "七宫主（Yuvati's Lord）是否有力"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "七宫主（Yuvati's Lord）是否与吉星同宫"
+                },
+                {
+                  "fact_key": "七宫主（Yuvati's Lord）是否被吉星相照"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "七宫主（Yuvati's Lord）是否有力"
+            },
+            "required_fact_keys": [
+              "七宫主（Yuvati's Lord）是否与吉星同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "七宫主（Yuvati's Lord）是否与吉星同宫"
+            },
+            "selection_group": "ch18-v4-5-strong-yuvati-lord-prosperity.step-001:benefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：七宫主（Yuvati's Lord）是否与吉星同宫。"
+          },
+          {
+            "when": {
+              "fact_key": "七宫主（Yuvati's Lord）是否有力"
+            },
+            "required_fact_keys": [
+              "七宫主（Yuvati's Lord）是否被吉星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "七宫主（Yuvati's Lord）是否被吉星相照"
+            },
+            "selection_group": "ch18-v4-5-strong-yuvati-lord-prosperity.step-001:benefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：七宫主（Yuvati's Lord）是否被吉星相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Yuvati Lord be endowed with strength",
+              "claim": "七宫主有力"
+            },
+            {
+              "quote": "be yuti with",
+              "claim": "与吉星同宫"
+            },
+            {
+              "quote": "be drishtied by a benefic",
+              "claim": "受吉星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be wealthy, honourable, happy and fortunate",
+              "claim": "命主富有、有荣誉、幸福且幸运"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v4-5",
+            "quote": "Should Yuvati Lord be endowed with strength and be yuti with, or be drishtied by a benefic, the native will be wealthy, honourable, happy and fortunate.",
+            "pdf_pages": [
+              33
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：七宫主（Yuvati's Lord）是否有力。",
+        "stop_fact_keys": [
+          "七宫主（Yuvati's Lord）是否有力"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财富数额、职位或应期。",
+          "不得自行发明「有力」的判准。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "ccf624a3edcddde351516cc9c49577d6e52eb89b4c1ac2411cb556de4b27aca9"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v4-5-weak-yuvati-lord-sick-many-wives.step-001",
+      "method": {
+        "method": "ch18-v4-5-weak-yuvati-lord-sick-many-wives",
+        "title": "妻多病且多妻：七宫主落陷、燃烧或落敌方行星的星座",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会有多个配偶",
+          "七宫主落陷或燃烧对婚姻有什么影响"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Yuvati Lord is in fall, or is combust, or is in an enemy’s Rāśi sick wives and many wives",
+            "七宫主落陷 燃烧 敌方星座 多妻 妻子多病"
+          ],
+          "counter_queries": [
+            "Yuvati Lord be endowed with strength be drishtied by a benefic wealthy honourable happy fortunate",
+            "Yuvati Lord is in his own Rāśi, or in exaltation full happiness through his wife"
+          ],
+          "boundary_queries": [
+            "One will have two wives, if Yuvati Lord is in fall, or in a malefic Rashialong with a malefic",
+            "If Mangal and Shukra are in Yuvati, or, if Shani is Yuvati the native will have 3 wives",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "THE 7th LORD fall combust enemy Rāśi effects",
+            "判断七宫主失格应检查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少七宫主身份事实时停止。",
+          "落陷、燃烧、落敌方星座三个分支事实都缺时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v4-5-weak-yuvati-lord-sick-many-wives.step-001",
+        "action": "先定出七宫主（Yuvati's Lord）是哪颗行星，再核对它是否落陷、燃烧或落敌方行星主管的星座。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）婚姻主题；原文以「wives」立说，属男命框架；原文未给妻子数目与时间。",
+        "minimum_supported_claim": "七宫主落陷、燃烧或落敌方行星主管的星座时，命主会得到多病的妻子与多位妻子。",
+        "produced_fact_keys": [
+          "七宫主失格主妻病多妻判定"
+        ],
+        "required_fact_keys": [
+          "本盘七宫主是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘七宫主是哪颗行星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "七宫主（Yuvati's Lord）是否落陷"
+                },
+                {
+                  "fact_key": "七宫主（Yuvati's Lord）是否燃烧"
+                },
+                {
+                  "fact_key": "七宫主（Yuvati's Lord）是否落敌方行星主管的星座"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘七宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "七宫主（Yuvati's Lord）是否落陷"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "七宫主（Yuvati's Lord）是否落陷"
+            },
+            "selection_group": "ch18-v4-5-weak-yuvati-lord-sick-many-wives.step-001:dignity-loss",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：七宫主（Yuvati's Lord）是否落陷。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘七宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "七宫主（Yuvati's Lord）是否燃烧"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "七宫主（Yuvati's Lord）是否燃烧"
+            },
+            "selection_group": "ch18-v4-5-weak-yuvati-lord-sick-many-wives.step-001:dignity-loss",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：七宫主（Yuvati's Lord）是否燃烧。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘七宫主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "七宫主（Yuvati's Lord）是否落敌方行星主管的星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "七宫主（Yuvati's Lord）是否落敌方行星主管的星座"
+            },
+            "selection_group": "ch18-v4-5-weak-yuvati-lord-sick-many-wives.step-001:dignity-loss",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：七宫主（Yuvati's Lord）是否落敌方行星主管的星座。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Yuvati Lord is in fall",
+              "claim": "七宫主落陷"
+            },
+            {
+              "quote": "is combust",
+              "claim": "燃烧"
+            },
+            {
+              "quote": "is in an enemy’s Rāśi",
+              "claim": "落敌方行星主管的星座"
+            }
+          ],
+          "results": [
+            {
+              "quote": "one will acquire sick wives and many wives",
+              "claim": "命主会得到多病的妻子与多位妻子"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v4-5",
+            "quote": "Conversely, if Yuvati Lord is in fall, or is combust, or is in an enemy’s Rāśi, one will acquire sick wives and many wives.",
+            "pdf_pages": [
+              33
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘七宫主是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘七宫主是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体妻子人数、婚期或离异。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "cda32b86ab234423004e27b8a81c40c4ff46f7002f7470bea03c9c7ad1554334"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v6-many-wives-shani-shukra-rasi.step-001",
+      "method": {
+        "method": "ch18-v6-many-wives-shani-shukra-rasi",
+        "title": "多妻：七宫主落土星或金星主管的星座并受吉星相照",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会不止一次结婚",
+          "七宫主落土星或金星的星座说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Yuvati Lord is in a Rashiof Shani, or of Shukra and be drishtied by a benefic, there will be many wives",
+            "七宫主落土星星座 金星星座 受吉星相照 多妻"
+          ],
+          "counter_queries": [
+            "The native will beget a spouse endowed with (the seven principal) virtues 7th Lord is exalted strong Lagna Lord",
+            "Yuvati Lord is in his own Rāśi, or in exaltation full happiness through his wife"
+          ],
+          "boundary_queries": [
+            "One will have two wives Yuvati Bhava, or the 7th Navamsa belong to a eunuch planet",
+            "There will be many wives, if Shukra is in a Dual Rāśi, while its Lord is in exaltation",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "PLURALITY OF WIVES Yuvati Lord Rashi Shani Shukra",
+            "判断妻子数目应检查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少七宫主是否受吉星相照的事实时停止。",
+          "土星星座、金星星座两个分支事实都缺时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v6-many-wives-shani-shukra-rasi.step-001",
+        "action": "核对七宫主（Yuvati's Lord）是否受吉星相照，并核对它落的是土星还是金星主管的星座。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）婚姻数目主题；原文以「wives」立说，属男命框架；原文此处印作「Rashiof」（Rashi of），未给妻子的具体人数。",
+        "minimum_supported_claim": "七宫主落土星主管的星座或金星主管的星座、并受吉星相照时，会有多位妻子。",
+        "produced_fact_keys": [
+          "七宫主落土金星座受吉照主多妻判定"
+        ],
+        "required_fact_keys": [
+          "七宫主（Yuvati's Lord）是否被吉星相照"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "七宫主（Yuvati's Lord）是否被吉星相照"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "七宫主（Yuvati's Lord）是否落土星（Shani）主管的星座"
+                },
+                {
+                  "fact_key": "七宫主（Yuvati's Lord）是否落金星（Shukra）主管的星座"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "七宫主（Yuvati's Lord）是否被吉星相照"
+            },
+            "required_fact_keys": [
+              "七宫主（Yuvati's Lord）是否落土星（Shani）主管的星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "七宫主（Yuvati's Lord）是否落土星（Shani）主管的星座"
+            },
+            "selection_group": "ch18-v6-many-wives-shani-shukra-rasi.step-001:rasi-owner",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：七宫主（Yuvati's Lord）是否落土星（Shani）主管的星座。"
+          },
+          {
+            "when": {
+              "fact_key": "七宫主（Yuvati's Lord）是否被吉星相照"
+            },
+            "required_fact_keys": [
+              "七宫主（Yuvati's Lord）是否落金星（Shukra）主管的星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "七宫主（Yuvati's Lord）是否落金星（Shukra）主管的星座"
+            },
+            "selection_group": "ch18-v6-many-wives-shani-shukra-rasi.step-001:rasi-owner",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：七宫主（Yuvati's Lord）是否落金星（Shukra）主管的星座。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Yuvati Lord is in a Rashiof Shani",
+              "claim": "七宫主落土星主管的星座"
+            },
+            {
+              "quote": "of Shukra",
+              "claim": "金星主管的星座"
+            },
+            {
+              "quote": "be drishtied by a benefic",
+              "claim": "受吉星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "there will be many wives",
+              "claim": "会有多位妻子"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v6",
+            "quote": "If Yuvati Lord is in a Rashiof Shani, or of Shukra and be drishtied by a benefic, there will be many wives.",
+            "pdf_pages": [
+              33
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：七宫主（Yuvati's Lord）是否被吉星相照。",
+        "stop_fact_keys": [
+          "七宫主（Yuvati's Lord）是否被吉星相照"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断妻子的具体人数、婚期或先后顺序。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "3447cd468e7942810d12a0bd26e53bfb12fcdde0fdb733a183abb98a012cf067"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v6-many-wives-exalted-yuvati-lord.step-001",
+      "method": {
+        "method": "ch18-v6-many-wives-exalted-yuvati-lord",
+        "title": "多妻：七宫主入旺（承同偈「同样的效果」）",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "七宫主入旺会不会也主多妻",
+          "我会不会有多位配偶"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Yuvati Lord be particularly in exaltation, the same effects will come to pass",
+            "七宫主入旺 同样效果 多妻"
+          ],
+          "counter_queries": [
+            "Yuvati Lord is in his own Rāśi, or in exaltation one will derive full happiness through his wife",
+            "The native will beget a spouse endowed with (the seven principal) virtues 7th Lord is exalted"
+          ],
+          "boundary_queries": [
+            "If Yuvati Lord is in a Rashiof Shani, or of Shukra and be drishtied by a benefic, there will be many wives",
+            "There will be many wives, if Shukra is in a Dual Rāśi, while its Lord is in exaltation, as Yuvati Lord is endowed with strength",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "PLURALITY OF WIVES exaltation same effects",
+            "判断妻子数目应检查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少七宫主是否入旺的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v6-many-wives-exalted-yuvati-lord.step-001",
+        "action": "核对七宫主（Yuvati's Lord）是否入旺。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）婚姻数目主题；本句以「the same effects」承接同偈前句「there will be many wives」；原文以「wives」立说，属男命框架。",
+        "minimum_supported_claim": "七宫主特别处于入旺时，同样会有多位妻子。",
+        "produced_fact_keys": [
+          "七宫主入旺主多妻判定"
+        ],
+        "required_fact_keys": [
+          "七宫主（Yuvati's Lord）是否入旺"
+        ],
+        "condition_logic": {
+          "fact_key": "七宫主（Yuvati's Lord）是否入旺"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Yuvati Lord be particularly in exaltation",
+              "claim": "七宫主特别处于入旺"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the same effects will come to pass",
+              "claim": "同样会有多位妻子"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v6",
+            "quote": "Should Yuvati Lord be particularly in exaltation, the same effects will come to pass.",
+            "pdf_pages": [
+              33
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：七宫主（Yuvati's Lord）是否入旺。",
+        "stop_fact_keys": [
+          "七宫主（Yuvati's Lord）是否入旺"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断妻子的具体人数或婚期。",
+          "「同样的效果」只能指同偈前句的多妻，不得扩到别处的断语。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch18:v6"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "cd5b68af280bc10231fe5446c7719ff444d059ea4e53db681a8b4aaf0837385c"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v7-8-5-surya-barren-females.step-001",
+      "method": {
+        "method": "ch18-v7-8-5-surya-barren-females",
+        "title": "结交不孕女性：太阳落七宫",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "太阳落七宫说明我会和什么样的人来往",
+          "我会结交什么样的女性"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "The native will befriend barren females, if Surya is in Yuvati",
+            "太阳落七宫 结交不孕女性"
+          ],
+          "counter_queries": [
+            "The native will beget a spouse endowed with (the seven principal) virtues who will expand his dynasty by sons and grandsons",
+            "Wife of a Brahmin, or a pregnant female will be in the native’s association, if Guru is in Yuvati"
+          ],
+          "boundary_queries": [
+            "MlSCELLANEOUS MATTERS Yuvati Surya Chandra Mangal Budh Guru Shani placement females",
+            "If Surya is in Yuvati, while his dispositor is yuti with Shukr marriage 7th or 11th year",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "effects of Grahas placed in Yuvati Bhava",
+            "判断七宫（Yuvati）内的行星应检查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少太阳落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v7-8-5-surya-barren-females.step-001",
+        "action": "核对太阳（Surya）是否落七宫（Yuvati）。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）交往对象主题；原文以命主与女性交往立说，属男命框架；原文未给时间。",
+        "minimum_supported_claim": "太阳落七宫时，命主与不孕女性结交。",
+        "produced_fact_keys": [
+          "太阳落七宫主结交不孕女性判定"
+        ],
+        "required_fact_keys": [
+          "太阳（Surya）是否落七宫（Yuvati）"
+        ],
+        "condition_logic": {
+          "fact_key": "太阳（Surya）是否落七宫（Yuvati）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Surya is in Yuvati",
+              "claim": "太阳落七宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "The native will befriend barren females",
+              "claim": "命主与不孕女性结交"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v7-8.5",
+            "quote": "The native will befriend barren females, if Surya is in Yuvati.",
+            "pdf_pages": [
+              33,
+              34
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：太阳（Surya）是否落七宫（Yuvati）。",
+        "stop_fact_keys": [
+          "太阳（Surya）是否落七宫（Yuvati）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断婚姻成立与否、子女或时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "5cc9030916283541181b317256b6ccb33c1c60a22f0ea5fb1c8786f34fe48638"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v7-8-5-chandra-rasi-female.step-001",
+      "method": {
+        "method": "ch18-v7-8-5-chandra-rasi-female",
+        "title": "交往女性与七宫星座相应：月亮落七宫",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "月亮落七宫说明我会和什么样的人来往",
+          "我配偶或交往对象是什么类型"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Chandra therein will cause association with such female, as corresponding to the Rāśi, becoming Yuvati",
+            "月亮落七宫 交往女性 与七宫星座相应"
+          ],
+          "counter_queries": [
+            "Shani indicates sick and weak spouse",
+            "Base females and females, having attained their courses, are denoted by Shani, Rahu/Ketu in Yuvati"
+          ],
+          "boundary_queries": [
+            "The Rāśi, becoming Ari Bhava, will lead to the knowledge of the concerned limb",
+            "MlSCELLANEOUS MATTERS Yuvati Rāśi becoming Yuvati",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "effects of Grahas placed in Yuvati Bhava",
+            "判断七宫（Yuvati）所落星座应检查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少月亮落宫事实时停止。",
+          "缺少七宫所落星座事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v7-8-5-chandra-rasi-female.step-001",
+        "action": "核对月亮（Chandra）是否落七宫（Yuvati），并取七宫所落星座。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）交往对象主题；「therein」承接同偈前句的落七宫框架；原文以命主与女性交往立说，属男命框架；原文只说与星座相应，未给具体女性特征。",
+        "minimum_supported_claim": "月亮落七宫时，命主交往的女性与七宫（Yuvati）所落星座相应。",
+        "produced_fact_keys": [
+          "月亮落七宫主交往对象随星座判定"
+        ],
+        "required_fact_keys": [
+          "月亮（Chandra）是否落七宫（Yuvati）",
+          "本盘七宫（Yuvati）落在哪个星座"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "月亮（Chandra）是否落七宫（Yuvati）"
+            },
+            {
+              "fact_key": "本盘七宫（Yuvati）落在哪个星座"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Chandra therein",
+              "claim": "月亮落七宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "association with such female, as corresponding to the Rāśi, becoming Yuvati",
+              "claim": "命主交往的女性与七宫（Yuvati）所落星座相应"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v7-8.5",
+            "quote": "Chandra therein will cause association with such female, as corresponding to the Rāśi, becoming Yuvati.",
+            "pdf_pages": [
+              33,
+              34
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：月亮（Chandra）是否落七宫（Yuvati）、本盘七宫（Yuvati）落在哪个星座。",
+        "stop_fact_keys": [
+          "月亮（Chandra）是否落七宫（Yuvati）",
+          "本盘七宫（Yuvati）落在哪个星座"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得替原文补出各星座对应的具体女性特征。",
+          "不得据此推断婚期或婚姻成立与否。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch18:v7-8.5"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "e4f2637af34387d37b4e57fb47c16c0b47f0a73bb6aaf6970e1fd6803ff0c187"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v7-8-5-mangal-marriageable-or-barren.step-001",
+      "method": {
+        "method": "ch18-v7-8-5-mangal-marriageable-or-barren",
+        "title": "交往适婚少女或不孕女性：火星落七宫",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "火星落七宫说明我会和什么样的人来往",
+          "我会和什么样的女性有交集"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Mangal, placed in Yuvati, will denote association with marriageable girls (those with menses), or with barren females",
+            "火星落七宫 适婚少女 不孕女性"
+          ],
+          "counter_queries": [
+            "The native will beget a spouse endowed with (the seven principal) virtues 7th Lord is exalted strong Lagna Lord",
+            "If Yuvati Bhava is occupied, or owned by Shani/Mangal, the native will beget a harlot, as his spouse"
+          ],
+          "boundary_queries": [
+            "Mangal denotes a female with attractive breasts",
+            "The native’s wife will die within three days of marriage due to snake bite Rahu in Dhan and Mangal in Yuvati",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "effects of Grahas placed in Yuvati Bhava",
+            "判断七宫（Yuvati）内的行星应检查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少火星落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v7-8-5-mangal-marriageable-or-barren.step-001",
+        "action": "核对火星（Mangal）是否落七宫（Yuvati）。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）交往对象主题；原文以命主与女性交往立说，属男命框架；原文两种对象并存，未给取舍判准。",
+        "minimum_supported_claim": "火星落七宫时，命主与适婚少女（已行经者）或不孕女性交往。",
+        "produced_fact_keys": [
+          "火星落七宫主交往对象判定"
+        ],
+        "required_fact_keys": [
+          "火星（Mangal）是否落七宫（Yuvati）"
+        ],
+        "condition_logic": {
+          "fact_key": "火星（Mangal）是否落七宫（Yuvati）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Mangal, placed in Yuvati",
+              "claim": "火星落七宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "association with marriageable girls (those with menses), or with barren females",
+              "claim": "命主与适婚少女（已行经者）或不孕女性交往"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v7-8.5",
+            "quote": "Mangal, placed in Yuvati, will denote association with marriageable girls (those with menses), or with barren females.",
+            "pdf_pages": [
+              33,
+              34
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：火星（Mangal）是否落七宫（Yuvati）。",
+        "stop_fact_keys": [
+          "火星（Mangal）是否落七宫（Yuvati）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得自行判定两类对象取哪一类，原文没给判准。",
+          "不得据此推断婚期或子女。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "7b6250c68e0fcafecfc453cef99b3aec2065b044f46c47191c13f5d03d51653b"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v7-8-5-budh-harlots-traders.step-001",
+      "method": {
+        "method": "ch18-v7-8-5-budh-harlots-traders",
+        "title": "交往妓女、卑贱女性与商人族群女性：水星（承同偈落七宫框架）",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "水星落七宫说明我会和什么样的人来往",
+          "我的交往对象是什么阶层"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Budh indicates harlots, mean females and females, belonging to traders’ community",
+            "水星落七宫 妓女 商人族群女性"
+          ],
+          "counter_queries": [
+            "The native will beget a spouse endowed with (the seven principal) virtues who will expand his dynasty",
+            "Wife of a Brahmin, or a pregnant female will be in the native’s association, if Guru is in Yuvati"
+          ],
+          "boundary_queries": [
+            "MlSCELLANEOUS MATTERS Mangal, placed in Yuvati, will denote association",
+            "Base females and females, having attained their courses, are denoted by Shani, Rahu/Ketu in Yuvati",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "effects of Grahas placed in Yuvati Bhava",
+            "判断七宫（Yuvati）内的行星应检查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少水星落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v7-8-5-budh-harlots-traders.step-001",
+        "action": "核对水星（Budh）是否落七宫（Yuvati）。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）交往对象主题；本句未重复落宫，承同偈「in Yuvati」的框架；原文以命主与女性交往立说，属男命框架。",
+        "minimum_supported_claim": "承同偈落七宫（Yuvati）的框架，水星表示妓女、卑贱女性以及属于商人族群的女性。",
+        "produced_fact_keys": [
+          "水星落七宫主交往对象判定"
+        ],
+        "required_fact_keys": [
+          "水星（Budh）是否落七宫（Yuvati）"
+        ],
+        "condition_logic": {
+          "fact_key": "水星（Budh）是否落七宫（Yuvati）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Budh indicates",
+              "claim": "水星"
+            }
+          ],
+          "results": [
+            {
+              "quote": "harlots, mean females and females, belonging to traders’ community",
+              "claim": "妓女、卑贱女性以及属于商人族群的女性"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v7-8.5",
+            "quote": "Budh indicates harlots, mean females and females, belonging to traders’ community.",
+            "pdf_pages": [
+              33,
+              34
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：水星（Budh）是否落七宫（Yuvati）。",
+        "stop_fact_keys": [
+          "水星（Budh）是否落七宫（Yuvati）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断婚姻成立与否、婚期或配偶人数。",
+          "承接框架只限同偈的落七宫，不得改挂到别的宫。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch18:v7-8.5"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "5528a9b10cc4412d292e26df13cc7d459b8b79e1622570171db73587f8669a90"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v7-8-5-guru-brahmin-wife-pregnant-female.step-001",
+      "method": {
+        "method": "ch18-v7-8-5-guru-brahmin-wife-pregnant-female",
+        "title": "交往婆罗门之妻或孕妇：木星落七宫",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "木星落七宫说明我会和什么样的人来往",
+          "我身边会出现什么样的女性"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Wife of a Brahmin, or a pregnant female will be in the native’s association, if Guru is in Yuvati",
+            "木星落七宫 婆罗门之妻 孕妇"
+          ],
+          "counter_queries": [
+            "Budh indicates harlots, mean females and females, belonging to traders’ community",
+            "Base females and females, having attained their courses, are denoted by Shani, Rahu/Ketu in Yuvati"
+          ],
+          "boundary_queries": [
+            "Guru will bring a spouse with hard and prominent breasts",
+            "MlSCELLANEOUS MATTERS Yuvati Guru placement",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "effects of Grahas placed in Yuvati Bhava",
+            "判断七宫（Yuvati）内的行星应检查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少木星落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v7-8-5-guru-brahmin-wife-pregnant-female.step-001",
+        "action": "核对木星（Guru）是否落七宫（Yuvati）。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）交往对象主题；原文以命主与女性交往立说，属男命框架；原文两种对象并存，未给取舍判准。",
+        "minimum_supported_claim": "木星落七宫时，命主会与婆罗门之妻或孕妇交往。",
+        "produced_fact_keys": [
+          "木星落七宫主交往对象判定"
+        ],
+        "required_fact_keys": [
+          "木星（Guru）是否落七宫（Yuvati）"
+        ],
+        "condition_logic": {
+          "fact_key": "木星（Guru）是否落七宫（Yuvati）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Guru is in Yuvati",
+              "claim": "木星落七宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Wife of a Brahmin, or a pregnant female will be in the native’s association",
+              "claim": "命主会与婆罗门之妻或孕妇交往"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v7-8.5",
+            "quote": "Wife of a Brahmin, or a pregnant female will be in the native’s association, if Guru is in Yuvati.",
+            "pdf_pages": [
+              33,
+              34
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：木星（Guru）是否落七宫（Yuvati）。",
+        "stop_fact_keys": [
+          "木星（Guru）是否落七宫（Yuvati）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得自行判定两类对象取哪一类，原文没给判准。",
+          "不得据此推断婚姻成立与否或子女。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "e1e44efad54e94de5d676487f52be7aa5fe4acf97e6eedca0751c5d8f8743cbc"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch18-v7-8-5-shani-rahu-ketu-base-females.step-001",
+      "method": {
+        "method": "ch18-v7-8-5-shani-rahu-ketu-base-females",
+        "title": "交往卑贱女性与已行经女性：土星、罗睺或计都落七宫",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "土星或罗睺计都落七宫说明我会和什么样的人来往",
+          "我的交往对象是什么阶层"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Base females and females, having attained their courses, are denoted by Shani, Rahu/Ketu in Yuvati",
+            "土星 罗睺 计都 落七宫 卑贱女性"
+          ],
+          "counter_queries": [
+            "The native will beget a spouse endowed with (the seven principal) virtues who will expand his dynasty",
+            "Wife of a Brahmin, or a pregnant female will be in the native’s association, if Guru is in Yuvati"
+          ],
+          "boundary_queries": [
+            "Shani indicates sick and weak spouse",
+            "If Yuvati Bhava is occupied, or owned by Shani/Mangal, the native will beget a harlot, as his spouse",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "effects of Grahas placed in Yuvati Bhava",
+            "判断七宫（Yuvati）内的行星应检查什么"
+          ]
+        },
+        "stop_conditions": [
+          "缺少七宫内行星事实时停止。",
+          "土星、罗睺、计都三个分支事实都缺时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch18-v7-8-5-shani-rahu-ketu-base-females.step-001",
+        "action": "取出七宫（Yuvati）内的行星，核对其中是否有土星（Shani）、罗睺（Rahu）或计都（Ketu）。",
+        "applicability_scope": "仅限本命盘七宫（Yuvati）交往对象主题；原文以命主与女性交往立说，属男命框架；原文未给时间。",
+        "minimum_supported_claim": "土星、罗睺或计都落七宫时，命主交往的是卑贱女性以及已行经的女性。",
+        "produced_fact_keys": [
+          "土星罗睺计都落七宫主交往对象判定"
+        ],
+        "required_fact_keys": [
+          "本盘七宫（Yuvati）内有哪些行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘七宫（Yuvati）内有哪些行星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "土星（Shani）是否落七宫（Yuvati）"
+                },
+                {
+                  "fact_key": "罗睺（Rahu）是否落七宫（Yuvati）"
+                },
+                {
+                  "fact_key": "计都（Ketu）是否落七宫（Yuvati）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘七宫（Yuvati）内有哪些行星"
+            },
+            "required_fact_keys": [
+              "土星（Shani）是否落七宫（Yuvati）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "土星（Shani）是否落七宫（Yuvati）"
+            },
+            "selection_group": "ch18-v7-8-5-shani-rahu-ketu-base-females.step-001:occupant",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：土星（Shani）是否落七宫（Yuvati）。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘七宫（Yuvati）内有哪些行星"
+            },
+            "required_fact_keys": [
+              "罗睺（Rahu）是否落七宫（Yuvati）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "罗睺（Rahu）是否落七宫（Yuvati）"
+            },
+            "selection_group": "ch18-v7-8-5-shani-rahu-ketu-base-females.step-001:occupant",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：罗睺（Rahu）是否落七宫（Yuvati）。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘七宫（Yuvati）内有哪些行星"
+            },
+            "required_fact_keys": [
+              "计都（Ketu）是否落七宫（Yuvati）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "计都（Ketu）是否落七宫（Yuvati）"
+            },
+            "selection_group": "ch18-v7-8-5-shani-rahu-ketu-base-females.step-001:occupant",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：计都（Ketu）是否落七宫（Yuvati）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "denoted by Shani, Rahu/Ketu in Yuvati",
+              "claim": "土星、罗睺或计都落七宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Base females and females, having attained their courses",
+              "claim": "卑贱女性以及已行经的女性"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch18:v7-8.5",
+            "quote": "Base females and females, having attained their courses, are denoted by Shani, Rahu/Ketu in Yuvati.",
+            "pdf_pages": [
+              33,
+              34
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘七宫（Yuvati）内有哪些行星。",
+        "stop_fact_keys": [
+          "本盘七宫（Yuvati）内有哪些行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断婚姻成立与否、婚期或配偶人数。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "ff34c6f78f9c33152065e048eccd4ca60c67472063d3721504614b594ed8255c"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch17:v23-25": {
+      "evidence_atom_id": "bphs-97:santhanam:ch17:v23-25",
+      "chapter_number": 17,
+      "chapter_title": "Effects of Ari Bhava",
+      "verse_label": "23-25.",
+      "content_role": "verse",
+      "exact_text": "23-25. UNFORTUNATE YEARS (continued). Danger through water will have to be feared during Putr and Dharm years, if Surya is in Ari, or Randhr, while Chandra is in Vyaya from the said Surya. Shani in Randhr, as Mangal is in Yuvati, all cause small-pox in Karm year and in 30<sup>th</sup> year of age. If 8<sup>th</sup> Lord joins Rahu in an angle/trine from Randhr Bhava and be in Randhr in Navamsa, the subject will be troubled by swelling of blood vessels, urinary disorders etc. during the 18<sup>th</sup> year and the 22<sup>nd</sup> year.",
+      "pdf_pages": [
+        33
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 17 · Sloka 23-25 · PDF page 33 · bphs-97:santhanam:ch17:v23-25",
+      "previous_atom_id": "bphs-97:santhanam:ch17:v20-22",
+      "next_atom_id": "bphs-97:santhanam:ch17:v26",
+      "context_before": " O Brahmin, if Rahu is in Ari, while Shani is in Randhr from the said Rahu, the child will have danger through fire at the age of 1 and 2, while in Sahaj year birds will bring some evils.\n\n",
+      "context_after": "26. LOSS THROUGH ENEMIES. Loss of wealth will come to pass during the 31<sup>st</sup> year, if Labh and 6<sup>th</sup> Lords exc",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch17:v26": {
+      "evidence_atom_id": "bphs-97:santhanam:ch17:v26",
+      "chapter_number": 17,
+      "chapter_title": "Effects of Ari Bhava",
+      "verse_label": "26.",
+      "content_role": "verse",
+      "exact_text": "26. LOSS THROUGH ENEMIES. Loss of wealth will come to pass during the 31<sup>st</sup> year, if Labh and 6<sup>th</sup> Lords exchange their Rāśis.",
+      "pdf_pages": [
+        33
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 17 · Sloka 26 · PDF page 33 · bphs-97:santhanam:ch17:v26",
+      "previous_atom_id": "bphs-97:santhanam:ch17:v23-25",
+      "next_atom_id": "bphs-97:santhanam:ch17:v27",
+      "context_before": "be troubled by swelling of blood vessels, urinary disorders etc. during the 18<sup>th</sup> year and the 22<sup>nd</sup> year.\n\n",
+      "context_after": "27. INIMICAL SONS. One’s own sons will be his enemies, if Putr Lord is in Ari, while Ari Lord is with Guru. Simultaneously Vyaya",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch17:v27": {
+      "evidence_atom_id": "bphs-97:santhanam:ch17:v27",
+      "chapter_number": 17,
+      "chapter_title": "Effects of Ari Bhava",
+      "verse_label": "27.",
+      "content_role": "verse",
+      "exact_text": "27. INIMICAL SONS. One’s own sons will be his enemies, if Putr Lord is in Ari, while Ari Lord is with Guru. Simultaneously Vyaya Lord should be in Lagn.",
+      "pdf_pages": [
+        33
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 17 · Sloka 27 · PDF page 33 · bphs-97:santhanam:ch17:v27",
+      "previous_atom_id": "bphs-97:santhanam:ch17:v26",
+      "next_atom_id": "bphs-97:santhanam:ch17:v28",
+      "context_before": "MIES. Loss of wealth will come to pass during the 31<sup>st</sup> year, if Labh and 6<sup>th</sup> Lords exchange their Rāśis.\n\n",
+      "context_after": "28. FEAR FROM DOGS. There will be fear from dogs during the 10<sup>th</sup> and 19<sup>th</sup> year, if the Lagna Lord and the ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch17:v28": {
+      "evidence_atom_id": "bphs-97:santhanam:ch17:v28",
+      "chapter_number": 17,
+      "chapter_title": "Effects of Ari Bhava",
+      "verse_label": "28.",
+      "content_role": "verse",
+      "exact_text": "28. FEAR FROM DOGS. There will be fear from dogs during the 10<sup>th</sup> and 19<sup>th</sup> year, if the Lagna Lord and the 6<sup>th</sup> Lord are in exchange.",
+      "pdf_pages": [
+        33
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 17 · Sloka 28 · PDF page 33 · bphs-97:santhanam:ch17:v28",
+      "previous_atom_id": "bphs-97:santhanam:ch17:v27",
+      "next_atom_id": null,
+      "context_before": "wn sons will be his enemies, if Putr Lord is in Ari, while Ari Lord is with Guru. Simultaneously Vyaya Lord should be in Lagn.\n\n",
+      "context_after": "",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch18:v1": {
+      "evidence_atom_id": "bphs-97:santhanam:ch18:v1",
+      "chapter_number": 18,
+      "chapter_title": "Effects of Yuvati Bhava",
+      "verse_label": "1.",
+      "content_role": "verse",
+      "exact_text": "1. O excellent of the Brahmins, listen to me, detailing the effects of the 7<sup>th</sup> Bhava. If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife (and marriage).",
+      "pdf_pages": [
+        33
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 18 · Sloka 1 · PDF page 33 · bphs-97:santhanam:ch18:v1",
+      "previous_atom_id": null,
+      "next_atom_id": "bphs-97:santhanam:ch18:v2",
+      "context_before": "",
+      "context_after": "2. SICK WIFE. Should Yuvati Lord be in Ari, 8<sup>th</sup> , or Vyaya, the wife will be sickly. This however does not apply to o",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch18:v2": {
+      "evidence_atom_id": "bphs-97:santhanam:ch18:v2",
+      "chapter_number": 18,
+      "chapter_title": "Effects of Yuvati Bhava",
+      "verse_label": "2.",
+      "content_role": "verse",
+      "exact_text": "2. SICK WIFE. Should Yuvati Lord be in Ari, 8<sup>th</sup> , or Vyaya, the wife will be sickly. This however does not apply to own Bhava, or exaltation placement, as above.",
+      "pdf_pages": [
+        33
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 18 · Sloka 2 · PDF page 33 · bphs-97:santhanam:ch18:v2",
+      "previous_atom_id": "bphs-97:santhanam:ch18:v1",
+      "next_atom_id": "bphs-97:santhanam:ch18:v3",
+      "context_before": "p> Bhava. If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife (and marriage).\n\n",
+      "context_after": "3. Excessive·Libidinousness/Death·of·Wife. If Shukra is in Yuvati, the native will be exceedingly libidinous. If Shukra yuti a m",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch18:v3": {
+      "evidence_atom_id": "bphs-97:santhanam:ch18:v3",
+      "chapter_number": 18,
+      "chapter_title": "Effects of Yuvati Bhava",
+      "verse_label": "3.",
+      "content_role": "verse",
+      "exact_text": "3. Excessive·Libidinousness/Death·of·Wife. If Shukra is in Yuvati, the native will be exceedingly libidinous. If Shukra yuti a malefic in any Bhava, it will cause loss of wife.",
+      "pdf_pages": [
+        33
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 18 · Sloka 3 · PDF page 33 · bphs-97:santhanam:ch18:v3",
+      "previous_atom_id": "bphs-97:santhanam:ch18:v2",
+      "next_atom_id": "bphs-97:santhanam:ch18:v4-5",
+      "context_before": "sup>th</sup> , or Vyaya, the wife will be sickly. This however does not apply to own Bhava, or exaltation placement, as above.\n\n",
+      "context_after": "4-5. THE 7<sup>TH</sup> LORD. Should Yuvati Lord be endowed with strength and be yuti with, or be drishtied by a benefic, the na",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch18:v4-5": {
+      "evidence_atom_id": "bphs-97:santhanam:ch18:v4-5",
+      "chapter_number": 18,
+      "chapter_title": "Effects of Yuvati Bhava",
+      "verse_label": "4-5.",
+      "content_role": "verse",
+      "exact_text": "4-5. THE 7<sup>TH</sup> LORD. Should Yuvati Lord be endowed with strength and be yuti with, or be drishtied by a benefic, the native will be wealthy, honourable, happy and fortunate. Conversely, if Yuvati Lord is in fall, or is combust, or is in an enemy’s Rāśi, one will acquire sick wives and many wives.",
+      "pdf_pages": [
+        33
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 18 · Sloka 4-5 · PDF page 33 · bphs-97:santhanam:ch18:v4-5",
+      "previous_atom_id": "bphs-97:santhanam:ch18:v3",
+      "next_atom_id": "bphs-97:santhanam:ch18:v6",
+      "context_before": "ra is in Yuvati, the native will be exceedingly libidinous. If Shukra yuti a malefic in any Bhava, it will cause loss of wife.\n\n",
+      "context_after": "6. PLURALITY OF WIVES. If Yuvati Lord is in a Rashiof Shani, or of Shukra and be drishtied by a benefic, there will be many wive",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch18:v6": {
+      "evidence_atom_id": "bphs-97:santhanam:ch18:v6",
+      "chapter_number": 18,
+      "chapter_title": "Effects of Yuvati Bhava",
+      "verse_label": "6.",
+      "content_role": "verse",
+      "exact_text": "6. PLURALITY OF WIVES. If Yuvati Lord is in a Rashiof Shani, or of Shukra and be drishtied by a benefic, there will be many wives. Should Yuvati Lord be particularly in exaltation, the same effects will come to pass.",
+      "pdf_pages": [
+        33
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 18 · Sloka 6 · PDF page 33 · bphs-97:santhanam:ch18:v6",
+      "previous_atom_id": "bphs-97:santhanam:ch18:v4-5",
+      "next_atom_id": "bphs-97:santhanam:ch18:v7-8.5",
+      "context_before": "e. Conversely, if Yuvati Lord is in fall, or is combust, or is in an enemy’s Rāśi, one will acquire sick wives and many wives.\n\n",
+      "context_after": "7-8½. MlSCELLANEOUS MATTERS. The native will befriend barren females, if Surya is in Yuvati. Chandra therein will cause associat",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch18:v7-8.5": {
+      "evidence_atom_id": "bphs-97:santhanam:ch18:v7-8.5",
+      "chapter_number": 18,
+      "chapter_title": "Effects of Yuvati Bhava",
+      "verse_label": "7-8½.",
+      "content_role": "verse",
+      "exact_text": "7-8½. MlSCELLANEOUS MATTERS. The native will befriend barren females, if Surya is in Yuvati. Chandra therein will cause association with such female, as corresponding to the Rāśi, becoming Yuvati. Mangal, placed in Yuvati, will denote association with marriageable girls (those with menses), or with barren females. Budh indicates harlots, mean females and females, belonging to traders’ community. Wife of a Brahmin, or a pregnant female will be in the native’s association, if Guru is in Yuvati. Base females and females, having attained their courses, are denoted by Shani, Rahu/Ketu in Yuvati.",
+      "pdf_pages": [
+        33,
+        34
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 18 · Sloka 7-8½ · PDF pages 33-34 · bphs-97:santhanam:ch18:v7-8.5",
+      "previous_atom_id": "bphs-97:santhanam:ch18:v6",
+      "next_atom_id": "bphs-97:santhanam:ch18:v8-9.5",
+      "context_before": " by a benefic, there will be many wives. Should Yuvati Lord be particularly in exaltation, the same effects will come to pass.\n\n",
+      "context_after": "8-9½. Mangal denotes a female with attractive breasts. Shani indicates sick and weak spouse. Guru will bring a spouse with hard ",
+      "content_missing": false
+    }
+  }
+}
