@@ -104,10 +104,19 @@ def main() -> int:
         methods = raw["methods"] if isinstance(raw, dict) else raw
         if not isinstance(methods, list) or not methods:
             raise ValueError("片段里没有 methods 数组")
+        # 抽取员会反复自验，每次全量解析 2024 条原子（3.45MB）纯属浪费；
+        # 只解析本片段真正引用到的那几条。
+        wanted = set(json.loads(args.scope.read_text(encoding="utf-8"))) if args.scope else set()
+        wanted |= set(referenced_atom_ids(methods))
         atoms = {}
         for line in ATOMS.read_text(encoding="utf-8").splitlines():
-            if line.strip():
-                atom = json.loads(line)
+            if not line.strip():
+                continue
+            # 先按编号子串粗筛，避开对无关行做完整 JSON 解析
+            if not any(atom_id in line for atom_id in wanted):
+                continue
+            atom = json.loads(line)
+            if atom["evidence_atom_id"] in wanted:
                 atoms[atom["evidence_atom_id"]] = atom
 
         scope = json.loads(args.scope.read_text(encoding="utf-8")) if args.scope else referenced_atom_ids(methods)
