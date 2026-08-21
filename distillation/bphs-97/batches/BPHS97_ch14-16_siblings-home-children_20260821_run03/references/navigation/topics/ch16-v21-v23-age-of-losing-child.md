@@ -1,0 +1,59 @@
+# 失子年龄：罗睺五宫、木星上升起第5宫凶星与曼迪落上升三种组合
+
+> 本文件由 `query-recipes.json` 自动生成。机器配方是唯一真相；禁止手改本文件改变路由或执行许可。
+
+## 用户会怎样问
+
+- 我会不会失去孩子
+- 我几岁的时候子女方面有凶险
+- 我的子女缘会不会中途断掉
+
+## 方法路由
+
+- 可执行方法：[]
+- 候选方法：["ch16-v21-v23-age-of-losing-child"]
+- 事实接入状态：`unmapped`
+- 允许执行：`false`
+
+## 必查事实
+
+- 罗睺是否落五宫
+- 五宫主是否与凶星同宫
+- 木星是否落陷
+- 是否有凶星落木星起第5宫
+- 是否另有凶星落上升起第5宫
+- 曼迪是否落上升宫
+- 上升主是否落陷
+
+## 按情况检查的事实
+
+- 无
+
+## 四路查书计划
+
+### 支持路
+
+- Rahu in Putr Guru debilitation lose child at the age of 32
+- 凶星在木星起第5宫和上升起第5宫 33岁36岁失子
+- Mandi in Lagna Lagn’s Lord in fall loss of child 56
+
+### 反例或取消路
+
+- benefic drishti on Putr Bhava protects children
+- 五宫受吉星保护 失子断语不成立
+
+### 适用边界路
+
+- loss of children specific ages scope Putr Bhava
+- 失子年龄断语只限原文所给年龄的边界
+
+### 判断方法路
+
+- how to judge loss of children timing in BPHS
+- 判断失子时间要检查哪些组合
+
+## 停止条件
+
+- 缺少罗睺、五宫主与木星状态事实时停止。
+- 缺少木星起第5宫与上升起第5宫的凶星事实时停止。
+- 缺少曼迪落宫与上升主庙陷事实时停止。

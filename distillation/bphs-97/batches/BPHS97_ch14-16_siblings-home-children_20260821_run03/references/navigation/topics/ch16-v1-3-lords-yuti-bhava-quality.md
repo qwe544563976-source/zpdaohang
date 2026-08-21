@@ -1,0 +1,52 @@
+# 得子早晚与缺陷：五宫主与上升主同宫所落宫位的吉凶
+
+> 本文件由 `query-recipes.json` 自动生成。机器配方是唯一真相；禁止手改本文件改变路由或执行许可。
+
+## 用户会怎样问
+
+- 我什么时候能有孩子
+- 我在孩子这件事上会不会出岔子
+
+## 方法路由
+
+- 可执行方法：[]
+- 候选方法：["ch16-v1-3-lords-yuti-bhava-quality"]
+- 事实接入状态：`unmapped`
+- 允许执行：`false`
+
+## 必查事实
+
+- 五宫主是否与上升主同宫
+- 五宫主与上升主同宫之处是否为吉宫
+- 五宫主与上升主同宫之处是否为凶宫
+
+## 按情况检查的事实
+
+- 无
+
+## 四路查书计划
+
+### 支持路
+
+- Yuti of Putr’s Lord with Lagn’s Lord good Bhava early children
+- 五宫主 上升主 同宫 吉宫 早得子
+
+### 反例或取消路
+
+- Putr’s Lord with Lagn’s Lord evil Bhava defect children
+- 两主落凶宫同宫 子女有缺陷
+
+### 适用边界路
+
+- good Bhava evil Bhava definition for Putr yuti rule
+- 吉宫与凶宫在这条同宫规则中的界定
+
+### 判断方法路
+
+- how to judge yuti of Putr and Lagn Lords
+- 怎样判断五宫主与上升主同宫
+
+## 停止条件
+
+- 缺少两主是否同宫的事实时停止。
+- 缺少同宫之处吉凶属性的事实时停止。

@@ -1,0 +1,53 @@
+# 养子女：五宫由土星或水星主管，并被土星与曼迪占据或相照
+
+> 本文件由 `query-recipes.json` 自动生成。机器配方是唯一真相；禁止手改本文件改变路由或执行许可。
+
+## 用户会怎样问
+
+- 我会不会领养孩子
+- 我的孩子是不是不是亲生的
+
+## 方法路由
+
+- 可执行方法：[]
+- 候选方法：["ch16-v9-adopted-issues-shani-budh"]
+- 事实接入状态：`unmapped`
+- 允许执行：`false`
+
+## 必查事实
+
+- 本盘第五宫落在哪个星座
+
+## 按情况检查的事实
+
+- 第五宫是否由土星（Shani）主管
+- 第五宫是否由水星（Budh）主管
+- 第五宫是否被土星与曼迪（Mandi）占据
+- 第五宫是否被土星与曼迪（Mandi）相照
+
+## 四路查书计划
+
+### 支持路
+
+- Putr Bhava owned by Shani Budh drishtied by Shani and Mandi adopted issues
+- 五宫由土星或水星主管 土星曼迪占据相照 养子女
+
+### 反例或取消路
+
+- Putr Bhava strong Guru own children
+- 五宫得木星力量 亲生子女 反例
+
+### 适用边界路
+
+- adopted issues rule scope Mandi drishti
+- 养子女断语的适用边界与曼迪相照
+
+### 判断方法路
+
+- how to find the lord and occupants of Putr Bhava
+- 怎样确定五宫宫主与五宫内的行星
+
+## 停止条件
+
+- 缺少第五宫星座与宫主事实时停止。
+- 缺少土星与曼迪对第五宫的占据或相照事实时停止。

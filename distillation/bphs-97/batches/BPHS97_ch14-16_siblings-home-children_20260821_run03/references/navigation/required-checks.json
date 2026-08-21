@@ -1,0 +1,748 @@
+{
+  "pilot_only": false,
+  "publishable": false,
+  "topics": {
+    "ch14-v1-cobirth-benefic": {
+      "question_type": "三宫与吉星同宫或受吉星相照：得兄弟姐妹并有勇气",
+      "required_facts": [
+        "本命盘中哪些行星被判为吉星"
+      ],
+      "conditional_facts": [
+        "三宫是否与吉星同宫",
+        "三宫是否被吉星相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本命盘吉星判定事实时停止。",
+        "缺少三宫同宫与相照行星事实时停止。"
+      ]
+    },
+    "ch14-v2-lord-mangal-good-results": {
+      "question_type": "三宫主与 Mangal 相照或落三宫：因三宫得好结果",
+      "required_facts": [
+        "三宫主是哪颗行星"
+      ],
+      "conditional_facts": [
+        "三宫主与 Mangal 是否一同相照三宫",
+        "三宫主与 Mangal 是否同落三宫内"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少三宫主行星身份事实时停止。",
+        "缺少三宫主与 Mangal 的相照或落宫事实时停止。"
+      ]
+    },
+    "ch14-v3-cobirth-destruction-malefic": {
+      "question_type": "三宫主与 Mangal 遇凶星或落凶星星座：兄弟姐妹立即毁灭",
+      "required_facts": [
+        "本命盘中哪些行星被判为凶星"
+      ],
+      "conditional_facts": [
+        "三宫主与 Mangal 是否与凶星同宫",
+        "三宫主与 Mangal 是否落在凶星所主的星座"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本命盘凶星判定事实时停止。",
+        "缺少前述两颗行星的同宫与所落星座事实时停止。"
+      ]
+    },
+    "ch14-v4-cobirth-gender": {
+      "question_type": "三宫的阴阳属性：兄弟姐妹的性别",
+      "required_facts": [
+        "三宫主是哪颗行星",
+        "三宫涉及的行星与星座是否阴阳混合"
+      ],
+      "conditional_facts": [
+        "三宫主是否为阴性行星",
+        "三宫是否被阴性行星占据",
+        "三宫主是否为阳性行星",
+        "三宫是否被阳性行星占据",
+        "三宫所在星座是否为阳性星座"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少三宫主行星身份事实时停止。",
+        "缺少三宫内行星与三宫星座的阴阳属性事实时停止。"
+      ]
+    },
+    "ch14-v5-lord-mangal-randhr-destruction": {
+      "question_type": "三宫主与 Mangal 同落八宫：兄弟姐妹遭毁灭",
+      "required_facts": [
+        "三宫主与 Mangal 是否同落八宫（Randhr Bhava）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少三宫主与 Mangal 的落宫事实时停止。",
+        "无法确定八宫（Randhr Bhava）所在星座时停止。"
+      ]
+    },
+    "ch14-v6-cobirth-happiness": {
+      "question_type": "Mangal 或三宫主入角宫、三角宫、入旺或友好分盘：兄弟姐妹方面得幸福",
+      "required_facts": [
+        "三宫主是哪颗行星"
+      ],
+      "conditional_facts": [
+        "Mangal 是否落于角宫",
+        "Mangal 是否落于三角宫",
+        "Mangal 是否入旺",
+        "Mangal 是否落于友好分盘",
+        "三宫主是否落于角宫",
+        "三宫主是否落于三角宫",
+        "三宫主是否入旺",
+        "三宫主是否落于友好分盘"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少三宫主行星身份事实时停止。",
+        "缺少 Mangal 与三宫主的落宫、庙旺与分盘事实时停止。"
+      ]
+    },
+    "ch14-v7-elder-sister-younger-brothers": {
+      "question_type": "Budh 落三宫、三宫主与 Chandra 同宫、Mangal 与 Shani 同宫：有姐姐与弟弟，第三个弟弟去世",
+      "required_facts": [
+        "Budh 是否落三宫",
+        "三宫主是否与 Chandra 同宫",
+        "Mangal 是否与 Shani 同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少 Budh 落宫事实时停止。",
+        "缺少三宫主与 Chandra 的同宫事实时停止。",
+        "缺少 Mangal 与 Shani 的同宫事实时停止。"
+      ]
+    },
+    "ch14-v8-mangal-rahu-cobirth-loss": {
+      "question_type": "Mangal 与 Rahu 同宫、三宫主落弱宫星座：失去弟妹而已得三位兄姐",
+      "required_facts": [
+        "Mangal 是否与 Rahu 同宫",
+        "三宫主是否落入其弱宫星座"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少 Mangal 与 Rahu 的同宫事实时停止。",
+        "缺少三宫主是否落弱宫星座的事实时停止。"
+      ]
+    },
+    "ch14-v9-twelve-cobirth-count": {
+      "question_type": "三宫主落角宫、Mangal 在三角宫入旺并与 Guru 同宫：兄弟姐妹共12人",
+      "required_facts": [
+        "三宫主是否落角宫",
+        "Mangal 是否在三角宫入旺",
+        "Mangal 是否与 Guru 同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少三宫主落角宫事实时停止。",
+        "缺少 Mangal 入旺与同宫事实时停止。",
+        "未先得出总数为12人的判定时，不进入寿命分布步骤。"
+      ]
+    },
+    "ch14-v12-single-cobirth": {
+      "question_type": "十二宫主（或版本作十一宫主）与 Mangal、Guru 同宫且三宫被 Chandra 占据：只有1位兄弟姐妹",
+      "required_facts": [
+        "三宫是否被 Chandra 占据"
+      ],
+      "conditional_facts": [
+        "十二宫主是否与 Mangal 及 Guru 同宫",
+        "十一宫主是否与 Mangal 及 Guru 同宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少三宫是否被 Chandra 占据的事实时停止。",
+        "缺少十二宫主或十一宫主与 Mangal、Guru 的同宫事实时停止。"
+      ]
+    },
+    "ch14-v13-chandra-alone-cobirth-gender": {
+      "question_type": "Chandra 单独落三宫：受阳性行星相照主弟弟，受 Shukra 相照主妹妹",
+      "required_facts": [
+        "Chandra 是否单独落三宫",
+        "三宫是否受阳性行星相照",
+        "三宫是否受 Shukra 相照"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少 Chandra 是否单独落三宫的事实时停止。",
+        "缺少三宫相照行星的阴阳与 Shukra 相照事实时停止。"
+      ]
+    },
+    "ch14-v14-adverse-grahas": {
+      "question_type": "三宫的凶星：Surya 毁兄姐、Shani 毁弟妹、Mangal 两者皆毁",
+      "required_facts": [
+        "Surya 是否落三宫",
+        "Shani 是否落三宫",
+        "Mangal 是否落三宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少 Surya、Shani、Mangal 的落宫事实时停止。",
+        "无法确定三宫（Sahaj Bhava）所在星座时停止。"
+      ]
+    },
+    "ch14-v15-strength-before-announcing": {
+      "question_type": "先估量强弱再宣布兄弟姐妹结果",
+      "required_facts": [
+        "三宫相关行星与瑜伽组合的强弱"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少三宫相关行星与瑜伽组合的强弱事实时停止。",
+        "强弱未估量前不得宣布兄弟姐妹结论。"
+      ]
+    },
+    "ch15-v2-housing-comfort": {
+      "question_type": "住房舒适：四宫被宫主或上升主占据且受吉星相照",
+      "required_facts": [
+        "四宫是否受吉星相照"
+      ],
+      "conditional_facts": [
+        "四宫是否被四宫主占据",
+        "四宫是否被上升主占据"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少四宫占据者事实时停止。",
+        "缺少四宫相位事实时停止。"
+      ]
+    },
+    "ch15-v3-putr-lord-comforts": {
+      "question_type": "土地车乘房屋与乐器之乐：五宫主落本宫、本分盘或入旺",
+      "required_facts": [
+        "五宫主（Putr’s Lord）是哪一颗行星"
+      ],
+      "conditional_facts": [
+        "五宫主（Putr’s Lord）是否落在自己的宫",
+        "五宫主（Putr’s Lord）是否落在自己的 Navāńś",
+        "五宫主（Putr’s Lord）是否入旺"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "无法确定五宫主是哪一颗行星时停止。",
+        "缺少五宫主的落宫、Navāńś 或旺弱事实时停止。"
+      ]
+    },
+    "ch15-v4-beautiful-mansions": {
+      "question_type": "华美宅第：十宫主与四宫主在角宫或三角宫会合",
+      "required_facts": [
+        "十宫主（Karm’s Lord）是否与四宫主（Bandhu’s Lord）会合"
+      ],
+      "conditional_facts": [
+        "十宫主与四宫主的会合处是否为角宫",
+        "十宫主与四宫主的会合处是否为三角宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少十宫主与四宫主是否会合的事实时停止。",
+        "缺少会合处是角宫还是三角宫的事实时停止。"
+      ]
+    },
+    "ch15-v5-honour-from-relatives": {
+      "question_type": "受亲属尊敬：水星落上升且四宫主为吉星并受吉星相照",
+      "required_facts": [
+        "水星（Budh）是否落上升（Lagna）",
+        "四宫主（Bandhu’s Lord）本身是否为吉星",
+        "四宫主（Bandhu’s Lord）是否受另一颗吉星相照"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少水星落宫事实时停止。",
+        "缺少四宫主吉凶属性或相位事实时停止。"
+      ]
+    },
+    "ch15-v6-v7-mother-condition": {
+      "question_type": "母亲长寿与幸福：四宫吉星占据、四宫主入旺、母星有力与角宫组合",
+      "required_facts": [
+        "四宫（Bandhu Bhava）是否被吉星占据",
+        "四宫主是否落入其入旺星座",
+        "母亲的指示星是否有力",
+        "四宫主（Bandhu’s Lord）是否落角宫",
+        "金星（Shukra）是否落角宫",
+        "水星（Budh）是否入旺"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少四宫占据者或四宫主旺弱事实时停止。",
+        "缺少母亲指示星强弱事实时停止。",
+        "缺少金星与水星的落宫和旺弱事实时停止。"
+      ]
+    },
+    "ch15-v8-cows-and-buffaloes": {
+      "question_type": "牲畜瑜伽：日在四宫、月土在九宫、火在十一宫",
+      "required_facts": [
+        "太阳（Surya）是否落四宫（Bandhu）",
+        "月亮（Chandra）是否落九宫（Dharm）",
+        "土星（Shani）是否落九宫（Dharm）",
+        "火星（Mangal）是否落十一宫（Labh Bhava）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "四颗行星的落宫事实缺任何一条时停止。",
+        "只有部分位置成立时不得下此瑜伽结论。"
+      ]
+    },
+    "ch15-v9-dumbness": {
+      "question_type": "哑：四宫为动星座且四宫主与火星同处六宫或八宫",
+      "required_facts": [
+        "四宫（Bandhu Bhava）是否为动星座",
+        "四宫主是否与火星（Mangal）同处一宫"
+      ],
+      "conditional_facts": [
+        "四宫主与火星同处之宫是否为六宫（Ari）",
+        "四宫主与火星同处之宫是否为八宫（Randhr Bhava）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少四宫星座属性事实时停止。",
+        "缺少四宫主与火星是否同宫及所在宫位事实时停止。"
+      ]
+    },
+    "ch15-v10-14-conveyance-year": {
+      "question_type": "得车乘的年份：第12年、第32年与第42年的四组条件",
+      "required_facts": [
+        "上升主（Lagn’s Lord）是否为吉星",
+        "金星（Shukr）是否落十二宫（Vyaya Bhava）",
+        "太阳（Surya）是否落四宫（Bandhu Bhava）",
+        "四宫主（Bandhu’s Lord）是否入旺",
+        "四宫主（Bandhu’s Lord）是否与金星（Shukr）同处",
+        "四宫主（Bandhu’s Lord）是否与十宫主（Karm’s Lord）会合",
+        "四宫主与十宫主的会合处是否为四宫主的入旺 Navāńś",
+        "十一宫主（Labh’s Lord）与四宫主（Bandhu’s Lord）是否互换宫位"
+      ],
+      "conditional_facts": [
+        "四宫主（Bandhu’s Lord）是否落陷",
+        "四宫主（Bandhu’s Lord）是否落十一宫（Labh Bhava）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升主吉凶属性或金星落宫事实时停止。",
+        "缺少四宫主的落宫、旺弱或互换事实时停止。",
+        "条件组不完整时不得给出年份结论。"
+      ]
+    },
+    "ch15-v10-14-conveyance-benefic-malefic": {
+      "question_type": "车乘的吉凶与安全：吉星或凶星与四宫及其宫主的四种关系",
+      "required_facts": [
+        "命盘中哪些行星为吉星",
+        "命盘中哪些行星为凶星"
+      ],
+      "conditional_facts": [
+        "是否有吉星落四宫（Bandhu）",
+        "是否有吉星相照四宫（Bandhu）",
+        "是否有吉星与四宫主（Lord of Bandhu）同处",
+        "是否有吉星相照四宫主（Lord of Bandhu Bhava）",
+        "是否有凶星落四宫（Bandhu）",
+        "是否有凶星相照四宫（Bandhu）",
+        "是否有凶星与四宫主（Lord of Bandhu）同处",
+        "是否有凶星相照四宫主（Lord of Bandhu Bhava）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "无法确定哪些行星为吉星或凶星时停止。",
+        "缺少吉星或凶星与四宫及四宫主关系的事实时停止。",
+        "只知道行星吉凶但不知其与四宫的具体关系时不得下结论。"
+      ]
+    },
+    "ch16-v1-3-lords-own-rasi-angle-trine": {
+      "question_type": "子女幸福：上升主与五宫主同落本宫星座、角宫或三角宫",
+      "required_facts": [
+        "本盘上升主与五宫主分别是哪颗行星"
+      ],
+      "conditional_facts": [
+        "上升主与五宫主是否都落在各自主管的星座",
+        "上升主与五宫主是否都落在角宫",
+        "上升主与五宫主是否都落在三角宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升主或五宫主的行星身份事实时停止。",
+        "缺少两主落宫与落座事实时停止。"
+      ]
+    },
+    "ch16-v1-3-putr-lord-dusthana-no-offspring": {
+      "question_type": "无子嗣：五宫主落六宫、八宫或十二宫",
+      "required_facts": [
+        "本盘五宫主是哪颗行星"
+      ],
+      "conditional_facts": [
+        "五宫主是否落在第六宫（Ari Bhava）",
+        "五宫主是否落在第八宫（Randhr Bhava）",
+        "五宫主是否落在第十二宫（Vyaya Bhava）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少五宫主行星身份事实时停止。",
+        "缺少五宫主落宫事实时停止。"
+      ]
+    },
+    "ch16-v1-3-putr-lord-combust-no-children": {
+      "question_type": "无子女：五宫主燃烧、或与凶星同宫且力弱",
+      "required_facts": [
+        "本盘五宫主是哪颗行星"
+      ],
+      "conditional_facts": [
+        "五宫主是否处于燃烧（combust）状态",
+        "五宫主是否与凶星同宫并且力量微弱",
+        "是否偶然获得了子女"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少五宫主行星身份事实时停止。",
+        "缺少五宫主燃烧或凶星同宫的事实时停止。"
+      ]
+    },
+    "ch16-v1-3-lords-yuti-bhava-quality": {
+      "question_type": "得子早晚与缺陷：五宫主与上升主同宫所落宫位的吉凶",
+      "required_facts": [
+        "五宫主是否与上升主同宫",
+        "五宫主与上升主同宫之处是否为吉宫",
+        "五宫主与上升主同宫之处是否为凶宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少两主是否同宫的事实时停止。",
+        "缺少同宫之处吉凶属性的事实时停止。"
+      ]
+    },
+    "ch16-v4-first-child-loss": {
+      "question_type": "长子去世：五宫主落六宫且上升主与火星同宫",
+      "required_facts": [
+        "五宫主是否落在第六宫（Ari Bhava）",
+        "上升主是否与火星（Mangal）同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少五宫主落宫事实时停止。",
+        "缺少上升主与火星是否同宫的事实时停止。"
+      ]
+    },
+    "ch16-v5-single-child-budh-ketu": {
+      "question_type": "只生一子：五宫主落陷于六八十二宫且水星与计都在五宫",
+      "required_facts": [
+        "五宫主是否处于落陷状态",
+        "水星（Budh）与计都（Ketu）是否同在第五宫"
+      ],
+      "conditional_facts": [
+        "五宫主是否落陷于第六宫（Ari Bhava）",
+        "五宫主是否落陷于第八宫（Randhr Bhava）",
+        "五宫主是否落陷于第十二宫（Vyaya Bhava）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少五宫主落陷与落宫事实时停止。",
+        "缺少水星与计都落宫事实时停止。"
+      ]
+    },
+    "ch16-v6-single-child-shani-budh": {
+      "question_type": "只生一子：五宫主落陷不照五宫且土星与水星在五宫",
+      "required_facts": [
+        "五宫主是否处于落陷状态",
+        "五宫主是否不与第五宫形成相照",
+        "土星（Shani）与水星（Budh）是否同在第五宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少五宫主落陷事实时停止。",
+        "缺少五宫相照与土星水星落宫事实时停止。"
+      ]
+    },
+    "ch16-v7-progeny-after-ordeal": {
+      "question_type": "求子艰辛：九宫主落上升、五宫主落陷、计都与水星在五宫",
+      "required_facts": [
+        "九宫主是否落在上升（Lagna）",
+        "五宫主是否处于落陷状态",
+        "计都（Ketu）与水星（Budh）是否同在第五宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少九宫主落宫事实时停止。",
+        "缺少五宫主落陷或计都水星落宫事实时停止。"
+      ]
+    },
+    "ch16-v8-issues-with-difficulty": {
+      "question_type": "得子艰难：五宫主落凶宫、敌星座、落陷或落回五宫",
+      "required_facts": [
+        "本盘五宫主是哪颗行星"
+      ],
+      "conditional_facts": [
+        "五宫主是否落在第六宫（Ari Bhava）",
+        "五宫主是否落在第八宫（Randhr Bhava）",
+        "五宫主是否落在第十二宫（Vyaya Bhava）",
+        "五宫主是否落在敌星座",
+        "五宫主是否处于落陷状态",
+        "五宫主是否落在第五宫本宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少五宫主行星身份事实时停止。",
+        "缺少五宫主落宫或庙陷友敌事实时停止。"
+      ]
+    },
+    "ch16-v9-adopted-issues-shani-budh": {
+      "question_type": "养子女：五宫由土星或水星主管，并被土星与曼迪占据或相照",
+      "required_facts": [
+        "本盘第五宫落在哪个星座"
+      ],
+      "conditional_facts": [
+        "第五宫是否由土星（Shani）主管",
+        "第五宫是否由水星（Budh）主管",
+        "第五宫是否被土星与曼迪（Mandi）占据",
+        "第五宫是否被土星与曼迪（Mandi）相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少第五宫星座与宫主事实时停止。",
+        "缺少土星与曼迪对第五宫的占据或相照事实时停止。"
+      ]
+    },
+    "ch16-v10-three-mothers-two-fathers": {
+      "question_type": "由三母或两父抚养：太阳与月亮同星座且同九分盘",
+      "required_facts": [
+        "太阳（Surya）与月亮（Chandra）是否同落一个星座",
+        "太阳（Surya）与月亮（Chandra）是否同落一个九分盘（Navāńś）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少太阳与月亮的星座事实时停止。",
+        "缺少太阳与月亮的九分盘事实时停止。"
+      ]
+    },
+    "ch16-v11-adopted-issue-six-grahas": {
+      "question_type": "养子女：五宫聚六星、五宫主落十二宫、月亮与上升有力",
+      "required_facts": [
+        "第五宫（Putr）内是否有六颗行星",
+        "五宫主是否落在第十二宫（Vyaya Bhava）",
+        "月亮（Chandra）与上升（Lagn）是否都有力量"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少第五宫内行星数量事实时停止。",
+        "缺少五宫主落宫或月亮上升力量事实时停止。"
+      ]
+    },
+    "ch16-v12-many-children": {
+      "question_type": "子女众多：五宫主有力且五宫受有力的水星木星金星相照",
+      "required_facts": [
+        "五宫主是否有力量",
+        "第五宫（Putr）是否受有力的水星（Budh）、木星（Guru）与金星（Shukr）相照"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少五宫主力量事实时停止。",
+        "缺少水星木星金星对第五宫相照的事实时停止。"
+      ]
+    },
+    "ch16-v13-daughters-chandra": {
+      "question_type": "生女儿：五宫主与月亮同宫或落月亮的三分盘",
+      "required_facts": [
+        "本盘五宫主是哪颗行星"
+      ],
+      "conditional_facts": [
+        "五宫主是否与月亮（Chandra）同宫",
+        "五宫主是否落在月亮主管的三分盘（Decanate）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少五宫主行星身份事实时停止。",
+        "缺少五宫主与月亮的同宫或三分盘事实时停止。"
+      ]
+    },
+    "ch16-v14-questionable-birth": {
+      "question_type": "子女出身可疑：五宫主落动星座、土星落五宫、罗睺与月亮同宫",
+      "required_facts": [
+        "五宫主是否落动星座",
+        "土星是否落五宫",
+        "罗睺是否与月亮同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少五宫主所落星座性质事实时停止。",
+        "缺少土星落宫事实时停止。",
+        "缺少罗睺与月亮同宫关系事实时停止。"
+      ]
+    },
+    "ch16-v15-born-of-others-loins": {
+      "question_type": "出自他人血脉：月亮落上升起第8宫、木星落月亮起第8宫并有凶星相照或同宫",
+      "required_facts": [
+        "月亮是否落上升起第8宫",
+        "木星是否落月亮起第8宫"
+      ],
+      "conditional_facts": [
+        "该组合是否受凶星相照",
+        "该组合是否与凶星同宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少月亮相对上升宫位事实时停止。",
+        "缺少木星相对月亮宫位事实时停止。",
+        "缺少凶星相照与同宫两项分支事实时停止。"
+      ]
+    },
+    "ch16-v16-obtainment-of-children": {
+      "question_type": "得子有望：五宫主入旺、落二五九宫或与木星同宫相照",
+      "required_facts": [
+        "五宫主是否入旺",
+        "本盘五宫主落在哪一宫",
+        "本盘五宫主是哪颗行星"
+      ],
+      "conditional_facts": [
+        "五宫主是否落二宫",
+        "五宫主是否落五宫",
+        "五宫主是否落九宫",
+        "五宫主是否与木星同宫",
+        "五宫主是否被木星相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少五宫主旺陷状态状态事实时停止。",
+        "缺少五宫主落宫事实时停止。",
+        "缺少五宫主与木星同宫或相照事实时停止。"
+      ]
+    },
+    "ch16-v17-children-of-mean-deeds": {
+      "question_type": "子女行为卑劣：五宫被三或四凶星占据且五宫主落陷",
+      "required_facts": [
+        "五宫主是否落陷",
+        "五宫内是否有吉星（含水星）"
+      ],
+      "conditional_facts": [
+        "五宫是否被三颗凶星占据",
+        "五宫是否被四颗凶星占据"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少五宫内凶星数量事实时停止。",
+        "缺少五宫主庙陷状态事实时停止。",
+        "缺少五宫内是否有吉星（含水星）事实时停止。"
+      ]
+    },
+    "ch16-v18-v20-age-of-begetting-child": {
+      "question_type": "得子年龄：五宫木星金星与上升主的三种组合",
+      "required_facts": [
+        "五宫是否被木星占据",
+        "五宫主是否与金星同宫",
+        "五宫主是否落角宫",
+        "木星是否与五宫主同宫",
+        "木星是否落九宫",
+        "金星是否与上升主同落木星起第9宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少五宫占据者事实时停止。",
+        "缺少五宫主与金星、木星的同宫关系事实时停止。",
+        "缺少木星落宫与金星、上升主相对位置事实时停止。"
+      ]
+    },
+    "ch16-v21-v23-age-of-losing-child": {
+      "question_type": "失子年龄：罗睺五宫、木星上升起第5宫凶星与曼迪落上升三种组合",
+      "required_facts": [
+        "罗睺是否落五宫",
+        "五宫主是否与凶星同宫",
+        "木星是否落陷",
+        "是否有凶星落木星起第5宫",
+        "是否另有凶星落上升起第5宫",
+        "曼迪是否落上升宫",
+        "上升主是否落陷"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少罗睺、五宫主与木星状态事实时停止。",
+        "缺少木星起第5宫与上升起第5宫的凶星事实时停止。",
+        "缺少曼迪落宫与上升主庙陷事实时停止。"
+      ]
+    },
+    "ch16-v24-32-number-of-sons": {
+      "question_type": "儿子数量：十子、九子、八子与两种七子组合",
+      "required_facts": [
+        "四宫是否被凶星占据",
+        "六宫是否被凶星占据",
+        "五宫主是否深度入旺",
+        "五宫主是否与上升主同宫",
+        "木星是否与另一吉星同宫",
+        "木星是否深度入旺",
+        "罗睺是否与二宫主同宫",
+        "九宫是否被九宫主占据",
+        "五宫主是否有力",
+        "二宫主是否落十宫",
+        "土星是否落九宫",
+        "五宫主是否落五宫",
+        "五宫主是否与二宫主同宫"
+      ],
+      "conditional_facts": [
+        "木星是否落五宫",
+        "木星是否落九宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少四宫、六宫凶星占据事实时停止。",
+        "缺少五宫主庙旺、力量与同宫关系事实时停止。",
+        "缺少木星与土星落宫事实时停止。"
+      ]
+    },
+    "ch16-v24-32-only-one-son": {
+      "question_type": "只主一子：五宫有凶星且木土互在对方起第5宫",
+      "required_facts": [
+        "五宫是否有凶星占据"
+      ],
+      "conditional_facts": [
+        "木星是否落土星起第5宫",
+        "土星是否落木星起第5宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少五宫内凶星占据事实时停止。",
+        "缺少木星与土星相对位置事实时停止。"
+      ]
+    },
+    "ch16-v24-32-child-through-later-wife": {
+      "question_type": "子嗣出自后妻：五宫有凶星或土星落木星起第5宫",
+      "required_facts": [
+        "本盘中哪些行星被判为凶星"
+      ],
+      "conditional_facts": [
+        "五宫是否有凶星在内",
+        "土星是否落于木星起第5宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少五宫内凶星事实时停止。",
+        "缺少土星相对木星位置事实时停止。"
+      ]
+    },
+    "ch16-v24-32-successive-loss-of-children": {
+      "question_type": "长寿而子女相继去世：五宫凶星、木土同落五宫、上升主落二宫、五宫主与火星同宫",
+      "required_facts": [
+        "五宫是否被凶星占据",
+        "木星是否与土星同落五宫",
+        "上升主是否落二宫",
+        "五宫主是否与火星同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少五宫占据者事实时停止。",
+        "缺少木星与土星落宫事实时停止。",
+        "缺少上升主与五宫主的落宫和同宫事实时停止。"
+      ]
+    }
+  }
+}

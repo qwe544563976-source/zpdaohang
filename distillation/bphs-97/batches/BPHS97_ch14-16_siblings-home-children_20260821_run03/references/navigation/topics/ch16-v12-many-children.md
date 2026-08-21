@@ -1,0 +1,51 @@
+# 子女众多：五宫主有力且五宫受有力的水星木星金星相照
+
+> 本文件由 `query-recipes.json` 自动生成。机器配方是唯一真相；禁止手改本文件改变路由或执行许可。
+
+## 用户会怎样问
+
+- 我会有几个孩子
+- 我是不是子女缘旺
+
+## 方法路由
+
+- 可执行方法：[]
+- 候选方法：["ch16-v12-many-children"]
+- 事实接入状态：`unmapped`
+- 允许执行：`false`
+
+## 必查事实
+
+- 五宫主是否有力量
+- 第五宫（Putr）是否受有力的水星（Budh）、木星（Guru）与金星（Shukr）相照
+
+## 按情况检查的事实
+
+- 无
+
+## 四路查书计划
+
+### 支持路
+
+- Putr’s Lord strong Putr drishtied by strong Budh Guru Shukr many children
+- 五宫主有力 五宫受水星木星金星相照 子女众多
+
+### 反例或取消路
+
+- Putr’s Lord in fall no children
+- 五宫主落陷 无子 反例
+
+### 适用边界路
+
+- many children rule scope strength requirement
+- 多子断语对力量条件的要求与边界
+
+### 判断方法路
+
+- how to check drishti of Budh Guru Shukr on Putr Bhava
+- 怎样查水星木星金星对五宫的相照
+
+## 停止条件
+
+- 缺少五宫主力量事实时停止。
+- 缺少水星木星金星对第五宫相照的事实时停止。
