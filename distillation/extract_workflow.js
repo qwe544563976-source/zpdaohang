@@ -91,7 +91,8 @@ log(`抽取 ${BATCHES.length} 批，一批一个 agent：${BATCHES.map(b => b.la
 
 const results = await parallel(BATCHES.map(batch => () =>
   agent(
-    RULES.replace(/BATCH_LABEL/g, batch.label).replace(/BATCH_TOPIC/g, batch.topic || ''),
+    RULES.replace(/BATCH_LABEL/g, batch.label).replace(/BATCH_TOPIC/g, batch.topic || '')
+      + (batch.note ? `\n## 本批修理说明（先读，带着问题去改）\n${batch.note}\n` : ''),
     { label: `抽取:${batch.label}`, phase: '抽取', schema: SCHEMA }
   )
 ))
