@@ -10,7 +10,10 @@ export const meta = {
 const REPO = '/home/user/zpdaohang'
 const TARGET = args?.target
 const ATOMS = `${REPO}/distillation/_local/evidence_atoms.jsonl`
-const GROUPS = `${REPO}/distillation/_local/groups`
+const BATCH = args?.batch || ''
+// 第一批的分组落在 _local/groups；批量起用 _local/batches/<批次>/groups
+const GROUPS = BATCH ? `${REPO}/distillation/_local/batches/${BATCH}/groups`
+                     : `${REPO}/distillation/_local/groups`
 
 if (!TARGET) throw new Error('必须通过 args.target 传入批次目录')
 const stepIds = args?.step_ids
@@ -103,21 +106,21 @@ const USEFULNESS = `${COMMON}
 const COMPLETENESS = `${COMMON}
 # 你的角色：完整性审计员——对照原文查漏
 
-本批的原文分组在：${GROUPS}/g1-ch14.json、g2-ch15.json、g3-ch16a.json、g4-ch16b.json
-（共 41 条原子，第 14、15、16 章全部）。
+本批的原文分组目录：${GROUPS}／（逐个读完目录下所有 *.json，那是本批全部原文）。
+`ls ${GROUPS}` 先看有哪几组。
 
 逐条原文过一遍，回答：
 1. **有没有规则被漏掉**？一条原文里如果有 3 组独立的"条件→结果"，方法是不是只做了 2 组？
-   长偈（ch14 v7-11、ch15 v10-14、ch16 v1-3、ch16 v24-32）尤其要数清楚。
+   长偈（一条原子含多个偈号、正文特别长的）尤其要数清楚。
    把你数出来的规则条数和方法实际做出的步骤数对照，不一致就说清差在哪。
 2. **拆分是否恰当**？该拆的没拆（多条独立规则挤在一步）、不该拆的拆了
    （一条完整的条件-结果被切成两半，各自不成立）？
 3. **有没有原文根本没有判断规则却被做成了方法**？
    例如纯过渡句"三宫已讲完，现在听四宫"。这类应该标 knowledge_only 而不是做成方法。
    （生成器现在支持 source_records 的 disposition 字段声明非方法去向）
-4. **版本注记有没有保住**？例如 ch14 v12-13 原文写 "(some texts read, as Labh's Lord)"，
-   方法有没有如实保留这个版本差异，还是擅自选了一个？
-5. **本批 41 条原子，逐条给去向**：做成方法 / 应标 knowledge_only / 有规则但漏做。
+4. **版本注记有没有保住**？原文写 "(some texts read, as ...)" 这类版本异文，
+   方法有没有如实保留，还是擅自选了一个？
+5. **本批每一条原子逐条给去向**：做成方法 / 应标 knowledge_only / 有规则但漏做。
 
 ## 交付
 返回 JSON：{"verdict":"COMPLETE|GAPS_FOUND","summary":"一句话结论",
@@ -152,7 +155,11 @@ const ENTRY_SCHEMA = {
   },
 }
 
-const SHARDS = 4
+// 第二轮只确认修复：实用性与完整性在第一轮已全批扫过，重跑纯属浪费。
+// 实测第一轮 725k tokens、第二轮 709k——步骤从 73 降到 15，token 却几乎没降，
+// 就是因为这两个视角每次都全批重看。
+const ROUND = args?.round || 1
+const SHARDS = args?.shards || 4
 const shards = []
 const size = Math.ceil(stepIds.length / SHARDS)
 for (let i = 0; i < stepIds.length; i += size) shards.push(stepIds.slice(i, i + size))
@@ -163,9 +170,10 @@ const correctness = await parallel(shards.map((shard, index) => () =>
     { label: `对照原文:${index + 1}/${shards.length}`, phase: '对照原文审计', schema: ENTRY_SCHEMA })
 ))
 
-phase('实用性与完整性')
+const skipWholeBatchLenses = ROUND > 1
+if (!skipWholeBatchLenses) phase('实用性与完整性')
 
-const [usefulness, completeness] = await parallel([
+const [usefulness, completeness] = skipWholeBatchLenses ? [null, null] : await parallel([
   () => agent(USEFULNESS, {
     label: '实用性:能否当路标', phase: '实用性与完整性',
     schema: {
@@ -202,7 +210,11 @@ const entries = alive.flatMap(r => r.entries || [])
 const rejected = entries.filter(e => e.verdict === 'REJECT')
 
 log(`对照原文：回收 ${entries.length}/${stepIds.length} 个判定，REJECT ${rejected.length} 个`)
-log(`实用性：${usefulness?.verdict} ｜ 完整性：${completeness?.verdict}`)
+if (skipWholeBatchLenses) {
+  log('第二轮：跳过实用性与完整性全批复核（第一轮已扫过），只确认修复')
+} else {
+  log(`实用性：${usefulness?.verdict} ｜ 完整性：${completeness?.verdict}`)
+}
 
 return {
   expected_steps: stepIds.length,
