@@ -412,18 +412,22 @@ def main() -> int:
     )
     (target / "SKILL.md").write_text(
         f"# {args.batch_id}\n\n"
-        "BPHS 97 章版第 14~16 章（三宫兄弟姐妹、四宫住房母亲车乘、五宫子女）正式方法批次。\n\n"
+        # 批次封面必须写本批自己的章节。写死会一路带着第 1 批的章名走到第 69 批，
+        # 下游只读封面就会被指向错的书页——第 2 批实测已经发生。
+        f"BPHS 97 章版正式方法批次：{'；'.join(topic_order)}。\n\n"
         "- 唯一方法真相：`references/navigation/method-recipes.json`\n"
         "- 唯一主题真相：`references/navigation/query-recipes.json`\n"
         "- 人读文件全部由验证器 `--render-derived` 生成，手改即判失败。\n"
         "- 本批全部方法 `executable_in_pilot=false`：JH8 排盘事实尚未接通，只做证据绑定，不进执行主路。\n",
         encoding="utf-8",
     )
+    fragment_count = len(list(args.fragments.resolve().glob("*.json")))
     (target / "PIPELINE_STATE.md").write_text(
         f"# {args.batch_id} 进度\n\n"
-        "- 已完成：正式书包复核、四组并行抽取并各自通过生成器强校验、合并装配、知识地图、机器验收。\n"
+        f"- 已完成：正式书包复核、{fragment_count} 组并行抽取并各自通过生成器强校验、"
+        "合并装配、知识地图、机器验收。\n"
         "- 待办：独立语义审计（未参与生成的窗口）→ 并入用户本机全书总账。\n"
-        "- 本批不含大运流年、多星同聚或复杂瑜伽，但按新工具首批规则逐步全审。\n",
+        "- 复审口径：逐步全审，不得抽审；两轮审核（第一轮找问题，第二轮确认修复）。\n",
         encoding="utf-8",
     )
 

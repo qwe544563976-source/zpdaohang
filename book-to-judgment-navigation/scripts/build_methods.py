@@ -427,6 +427,16 @@ def assemble_step(method_id: str, number: int, step: dict[str, Any], atoms: dict
         "stop_fact_keys": list(required),
         "exception_relations": step["exception_relations"],
         "forbidden_extensions": step["forbidden_extensions"],
+        # 承接关系必须随步骤进交付件。抽取端本来就写对了（context_bindings 指向被承接的
+        # 原子），但装配时这里另起一个新字典、忘了抄，交付出去就只剩一个"凭空多出来的条件"。
+        # 例：ch18:v8-9½「Mangal denotes a female with attractive breasts.」通篇没有"七宫"，
+        # 落七宫这个前提来自上一偈 ch18:v7-8½——绑定一丢，下游就看不出这个条件从哪来。
+        # 这正是登记簿里"代词或承接关系丢失"家族，闸门只校验抽取输入，管不到装配输出丢字段。
+        "context_reference": step["context_reference"],
+        "context_bindings": step["context_bindings"],
+        # 时间限定同理：全书大量断语的答案本体就是那个年份（"第26岁得痨病"）。
+        # 丢了结构化 time_scope，下游只能去正则中文标题，等于没有可读字段。
+        "time_scope": step["time_scope"],
     }
     # Q1：步骤级内容指纹。审计凭证逐步骤绑定 step_hash；
     # 改第 7 步只让第 7 步的凭证失效，其余步骤"已通过"保持有效。
