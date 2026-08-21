@@ -1,0 +1,52 @@
+# 受亲属尊敬：水星落上升且四宫主为吉星并受吉星相照
+
+> 本文件由 `query-recipes.json` 自动生成。机器配方是唯一真相；禁止手改本文件改变路由或执行许可。
+
+## 用户会怎样问
+
+- 我在亲戚里有没有地位
+- 我和亲属关系好不好
+
+## 方法路由
+
+- 可执行方法：[]
+- 候选方法：["ch15-v5-honour-from-relatives"]
+- 事实接入状态：`unmapped`
+- 允许执行：`false`
+
+## 必查事实
+
+- 水星（Budh）是否落上升（Lagna）
+- 四宫主（Bandhu’s Lord）本身是否为吉星
+- 四宫主（Bandhu’s Lord）是否受另一颗吉星相照
+
+## 按情况检查的事实
+
+- 无
+
+## 四路查书计划
+
+### 支持路
+
+- Budh in Lagna Bandhu’s Lord benefic drishti honoured by relatives
+- 水星落上升 四宫主吉星 受亲属尊敬
+
+### 反例或取消路
+
+- Bandhu’s Lord malefic quarrels with relatives
+- 四宫主为凶星 与亲属不和
+
+### 适用边界路
+
+- which relatives are meant by Bandhu Bhava
+- 亲属尊敬这一断语的适用边界
+
+### 判断方法路
+
+- how to judge relations with relatives in BPHS
+- 判断亲属关系要查哪些条件
+
+## 停止条件
+
+- 缺少水星落宫事实时停止。
+- 缺少四宫主吉凶属性或相位事实时停止。

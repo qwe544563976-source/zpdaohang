@@ -1,0 +1,56 @@
+# 母亲长寿与幸福：四宫吉星占据、四宫主入旺、母星有力与角宫组合
+
+> 本文件由 `query-recipes.json` 自动生成。机器配方是唯一真相；禁止手改本文件改变路由或执行许可。
+
+## 用户会怎样问
+
+- 我妈妈身体好不好
+- 我妈妈这辈子过得幸不幸福
+
+## 方法路由
+
+- 可执行方法：[]
+- 候选方法：["ch15-v6-v7-mother-condition"]
+- 事实接入状态：`unmapped`
+- 允许执行：`false`
+
+## 必查事实
+
+- 四宫（Bandhu Bhava）是否被吉星占据
+- 四宫主是否落入其入旺星座
+- 母亲的指示星是否有力
+- 四宫主（Bandhu’s Lord）是否落角宫
+- 金星（Shukra）是否落角宫
+- 水星（Budh）是否入旺
+
+## 按情况检查的事实
+
+- 无
+
+## 四路查书计划
+
+### 支持路
+
+- Bandhu Bhava benefic exaltation indicator of mother long-living mother
+- 四宫主入旺 母亲长寿 母亲幸福
+
+### 反例或取消路
+
+- Bandhu Bhava afflicted early loss of mother
+- 四宫受克 母亲早亡
+
+### 适用边界路
+
+- who is the indicator of mother in this rule
+- 母亲寿命与幸福断语的适用边界
+
+### 判断方法路
+
+- how to judge mother from fourth house BPHS
+- 判断母亲状况要查哪些条件
+
+## 停止条件
+
+- 缺少四宫占据者或四宫主旺弱事实时停止。
+- 缺少母亲指示星强弱事实时停止。
+- 缺少金星与水星的落宫和旺弱事实时停止。
