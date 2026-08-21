@@ -1,0 +1,2044 @@
+{
+  "shard": 1,
+  "step_count": 9,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch12-v1-2-lagna-lord-afflicted-felicity-diminish.step-001",
+      "method": {
+        "method": "ch12-v1-2-lagna-lord-afflicted-felicity-diminish",
+        "title": "身体安适减少：上升主与凶星同宫，或落八宫、六宫、十二宫",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我身体上的舒服程度怎么样",
+          "上升主落六八十二宫会怎样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Lagn Lord be yuti with a malefic, or be in Randhr, 6th, or 12th, physical felicity will diminish",
+            "上升主与凶星同宫或落八宫六宫十二宫 身体安适减少"
+          ],
+          "counter_queries": [
+            "If he is in an angle, or trine there will be at all times comforts of the body",
+            "With a benefic in an angle, or trine all diseases will disappear",
+            "Effects of Lagn’s Lord in Various Bhavas (up to Sloka 12). Should Lagn’s Lord be in Lagn itself, the native will be endowed with physical happiness and prowess"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Putr and Dharm Bhava are known by the name Kon (or trine). Evil Bhavas, or Dusthan Bhavas are Ari, Randhr and Vyaya Bhava",
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)"
+          ],
+          "method_queries": [
+            "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour, weakness, happiness, grief and innate nature are all to be guessed through the ascending Rāśi",
+            "Effects of Tanu Bhava",
+            "判断身体安适要先看上升主落在哪一宫"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch12-v1-2-lagna-lord-afflicted-felicity-diminish.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should Lagn Lord be yuti with a malefic"
+            },
+            {
+              "step_id": "ch12-v1-2-lagna-lord-afflicted-felicity-diminish.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "be in Randhr"
+            },
+            {
+              "step_id": "ch12-v1-2-lagna-lord-afflicted-felicity-diminish.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "6th"
+            },
+            {
+              "step_id": "ch12-v1-2-lagna-lord-afflicted-felicity-diminish.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "12th"
+            },
+            {
+              "step_id": "ch12-v1-2-lagna-lord-afflicted-felicity-diminish.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "physical felicity will diminish"
+            },
+            {
+              "step_id": "ch12-v1-2-lagna-lord-afflicted-felicity-diminish.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should Lagn Lord be yuti with a malefic physical felicity will diminish"
+            },
+            {
+              "step_id": "ch12-v1-2-lagna-lord-afflicted-felicity-diminish.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "be in Randhr physical felicity will diminish"
+            },
+            {
+              "step_id": "ch12-v1-2-lagna-lord-afflicted-felicity-diminish.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "6th physical felicity will diminish"
+            },
+            {
+              "step_id": "ch12-v1-2-lagna-lord-afflicted-felicity-diminish.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "12th physical felicity will diminish"
+            },
+            {
+              "step_id": "ch12-v1-2-lagna-lord-afflicted-felicity-diminish.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "be in 8th house"
+            },
+            {
+              "step_id": "ch12-v1-2-lagna-lord-afflicted-felicity-diminish.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "be in 8th house physical felicity will diminish"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升主身份事实时停止。",
+          "四个分支事实全缺时停止。",
+          "凶星名册未定时停止（吉凶判准见第3章 v11）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch12-v1-2-lagna-lord-afflicted-felicity-diminish.step-001",
+        "action": "先定出上升主是哪颗行星，再核对它是否与凶星同宫，或落在八宫、六宫、十二宫其中之一。",
+        "applicability_scope": "仅限本命盘一宫（Tanu Bhava）身体安适主题；原文没有给时间限定，也没有限定上升星座。",
+        "minimum_supported_claim": "上升主（Lagn Lord）与凶星同宫，或落八宫（Randhr）、六宫、十二宫时，身体上的安适会减少。",
+        "produced_fact_keys": [
+          "上升主受克的身体安适判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升主（Lagn's Lord）是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "上升主（Lagn's Lord）是否与凶星同宫"
+                },
+                {
+                  "fact_key": "上升主（Lagn's Lord）是否落八宫（Randhr）"
+                },
+                {
+                  "fact_key": "上升主（Lagn's Lord）是否落六宫（Ari）"
+                },
+                {
+                  "fact_key": "上升主（Lagn's Lord）是否落十二宫（Vyaya）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "上升主（Lagn's Lord）是否与凶星同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升主（Lagn's Lord）是否与凶星同宫"
+            },
+            "selection_group": "ch12-v1-2-lagna-lord-afflicted-felicity-diminish.step-001:affliction",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升主（Lagn's Lord）是否与凶星同宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "上升主（Lagn's Lord）是否落八宫（Randhr）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升主（Lagn's Lord）是否落八宫（Randhr）"
+            },
+            "selection_group": "ch12-v1-2-lagna-lord-afflicted-felicity-diminish.step-001:affliction",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升主（Lagn's Lord）是否落八宫（Randhr）。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "上升主（Lagn's Lord）是否落六宫（Ari）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升主（Lagn's Lord）是否落六宫（Ari）"
+            },
+            "selection_group": "ch12-v1-2-lagna-lord-afflicted-felicity-diminish.step-001:affliction",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升主（Lagn's Lord）是否落六宫（Ari）。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "上升主（Lagn's Lord）是否落十二宫（Vyaya）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升主（Lagn's Lord）是否落十二宫（Vyaya）"
+            },
+            "selection_group": "ch12-v1-2-lagna-lord-afflicted-felicity-diminish.step-001:affliction",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升主（Lagn's Lord）是否落十二宫（Vyaya）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Lagn Lord be yuti with a malefic",
+              "claim": "上升主（Lagn Lord）与凶星同宫"
+            },
+            {
+              "quote": "be in Randhr",
+              "claim": "落八宫（Randhr）"
+            },
+            {
+              "quote": "6<sup>th</sup>",
+              "claim": "六宫"
+            },
+            {
+              "quote": "12<sup>th</sup>",
+              "claim": "十二宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "physical felicity will diminish",
+              "claim": "身体上的安适会减少"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch12:v1-2",
+            "quote": "Should Lagn Lord be yuti with a malefic, or be in Randhr, 6<sup>th</sup> , or 12<sup>th</sup> , physical felicity will diminish.",
+            "pdf_pages": [
+              26
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升主（Lagn's Lord）是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘上升主（Lagn's Lord）是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体疾病、部位或发病时间，本句只说安适减少。",
+          "不得把 diminish 读成失去或危及性命。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "a31ca2e1cf2fa125d117d145a5ee2557e0be884166b41f1d4ca806e3d4b4ee58"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch12-v1-2-lagna-lord-angle-trine-comforts.step-001",
+      "method": {
+        "method": "ch12-v1-2-lagna-lord-angle-trine-comforts",
+        "title": "身体舒适：上升主落角宫或三角宫",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我身体一直舒不舒服",
+          "上升主落角宫三角宫代表什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If he is in an angle, or trine there will be at all times comforts of the body",
+            "上升主落角宫或三角宫 随时有身体舒适"
+          ],
+          "counter_queries": [
+            "Should Lagn Lord be yuti with a malefic, or be in Randhr, 6th, or 12th, physical felicity will diminish",
+            "If Lagn Lord is in debilitation, combustion, or enemy’s Rāśi, there will be diseases"
+          ],
+          "boundary_queries": [
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "Putr and Dharm Bhava are known by the name Kon (or trine). Evil Bhavas, or Dusthan Bhavas are Ari, Randhr and Vyaya Bhava",
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)"
+          ],
+          "method_queries": [
+            "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour, weakness, happiness, grief and innate nature are all to be guessed through the ascending Rāśi",
+            "Effects of Lagn’s Lord in Various Bhavas (up to Sloka 12). Should Lagn’s Lord be in Lagn itself, the native will be endowed with physical happiness and prowess",
+            "判断身体舒适要看上升主落角宫还是三角宫"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch12-v1-2-lagna-lord-angle-trine-comforts.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "he is in an angle"
+            },
+            {
+              "step_id": "ch12-v1-2-lagna-lord-angle-trine-comforts.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or trine"
+            },
+            {
+              "step_id": "ch12-v1-2-lagna-lord-angle-trine-comforts.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "there will be at all times comforts of the body"
+            },
+            {
+              "step_id": "ch12-v1-2-lagna-lord-angle-trine-comforts.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "he is in an angle there will be at all times comforts of the body"
+            },
+            {
+              "step_id": "ch12-v1-2-lagna-lord-angle-trine-comforts.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or trine there will be at all times comforts of the body"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升主落宫事实时停止。",
+          "角宫与三角宫两个分支事实全缺时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch12-v1-2-lagna-lord-angle-trine-comforts.step-001",
+        "action": "核对上升主落在角宫还是三角宫。",
+        "applicability_scope": "仅限本命盘一宫（Tanu Bhava）身体舒适主题；本句的 he 承接同偈前句的 Lagn Lord。",
+        "minimum_supported_claim": "上升主（Lagn Lord）落角宫或落三角宫时，随时都有身体上的舒适。",
+        "produced_fact_keys": [
+          "上升主落角宫三角宫的身体舒适判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升主（Lagn's Lord）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘上升主（Lagn's Lord）落在哪一宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "上升主（Lagn's Lord）是否落角宫"
+                },
+                {
+                  "fact_key": "上升主（Lagn's Lord）是否落三角宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘上升主（Lagn's Lord）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "上升主（Lagn's Lord）是否落角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升主（Lagn's Lord）是否落角宫"
+            },
+            "selection_group": "ch12-v1-2-lagna-lord-angle-trine-comforts.step-001:placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升主（Lagn's Lord）是否落角宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升主（Lagn's Lord）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "上升主（Lagn's Lord）是否落三角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升主（Lagn's Lord）是否落三角宫"
+            },
+            "selection_group": "ch12-v1-2-lagna-lord-angle-trine-comforts.step-001:placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升主（Lagn's Lord）是否落三角宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "he is in an angle",
+              "claim": "上升主（Lagn Lord）落角宫"
+            },
+            {
+              "quote": "or trine",
+              "claim": "落三角宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "there will be at all times comforts of the body",
+              "claim": "随时都有身体上的舒适"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch12:v1-2",
+            "quote": "If he is in an angle, or trine there will be at all times comforts of the body.",
+            "pdf_pages": [
+              26
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升主（Lagn's Lord）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘上升主（Lagn's Lord）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断寿命、财富或疾病，本句只说身体舒适。",
+          "不得把角宫或三角宫换成从上升以外的位置起算，原文本句没有另给起点。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "dcf302210f2000cc4d96424c28e404112330f0110df566cc5922b68b2a872afc"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch12-v1-2-lagna-lord-weak-diseases.step-001",
+      "method": {
+        "method": "ch12-v1-2-lagna-lord-weak-diseases",
+        "title": "有疾病：上升主落陷、燃烧或落敌星座",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会有病",
+          "上升主落陷燃烧代表什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Lagn Lord is in debilitation, combustion, or enemy’s Rāśi, there will be diseases",
+            "上升主落陷 燃烧 敌星座 疾病"
+          ],
+          "counter_queries": [
+            "With a benefic in an angle, or trine all diseases will disappear",
+            "Lagn’s angles (i.e. Bandhu, Yuvati, or the 10th), or its trine (Putr, Dharm), containing a benefic, is a powerful remedy for all, related to health"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+            "O Brahmin, following are the effects, produced by Ari Bhava, relating to diseases, ulcers etc. Listen to this attentively"
+          ],
+          "method_queries": [
+            "When Lagn is occupied by the Lords of Ari and Randhr Bhava along with Surya, the native will be afflicted by fever and tumours",
+            "Should Lagn’s Lord be in a Rashiof Mangal, or of Budh and has a Drishti on Budh, there will be diseases of the face",
+            "判断疾病要看上升主的旺弱与燃烧"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch12-v1-2-lagna-lord-weak-diseases.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Lagn Lord is in debilitation"
+            },
+            {
+              "step_id": "ch12-v1-2-lagna-lord-weak-diseases.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "combustion"
+            },
+            {
+              "step_id": "ch12-v1-2-lagna-lord-weak-diseases.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "enemy’s Rāśi"
+            },
+            {
+              "step_id": "ch12-v1-2-lagna-lord-weak-diseases.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "there will be diseases"
+            },
+            {
+              "step_id": "ch12-v1-2-lagna-lord-weak-diseases.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Lagn Lord is in debilitation there will be diseases"
+            },
+            {
+              "step_id": "ch12-v1-2-lagna-lord-weak-diseases.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "combustion there will be diseases"
+            },
+            {
+              "step_id": "ch12-v1-2-lagna-lord-weak-diseases.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "enemy’s Rāśi there will be diseases"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升主身份事实时停止。",
+          "三个分支事实全缺时停止。",
+          "落陷、燃烧、敌星座的判准未定时停止（强弱判准见第27章 Shad Bal）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch12-v1-2-lagna-lord-weak-diseases.step-001",
+        "action": "核对上升主是否落陷、是否燃烧、是否落在敌方主管的星座。",
+        "applicability_scope": "仅限本命盘一宫（Tanu Bhava）疾病主题；原文没有指明是哪一类疾病，也没有给发病时间。",
+        "minimum_supported_claim": "上升主（Lagn Lord）落陷、燃烧，或落敌星座（enemy’s Rāśi）时，会有疾病。",
+        "produced_fact_keys": [
+          "上升主失位的疾病判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升主（Lagn's Lord）是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "上升主（Lagn's Lord）是否落陷"
+                },
+                {
+                  "fact_key": "上升主（Lagn's Lord）是否燃烧"
+                },
+                {
+                  "fact_key": "上升主（Lagn's Lord）是否落敌星座（enemy's Rāśi）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "上升主（Lagn's Lord）是否落陷"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升主（Lagn's Lord）是否落陷"
+            },
+            "selection_group": "ch12-v1-2-lagna-lord-weak-diseases.step-001:weakness",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升主（Lagn's Lord）是否落陷。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "上升主（Lagn's Lord）是否燃烧"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升主（Lagn's Lord）是否燃烧"
+            },
+            "selection_group": "ch12-v1-2-lagna-lord-weak-diseases.step-001:weakness",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升主（Lagn's Lord）是否燃烧。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "上升主（Lagn's Lord）是否落敌星座（enemy's Rāśi）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升主（Lagn's Lord）是否落敌星座（enemy's Rāśi）"
+            },
+            "selection_group": "ch12-v1-2-lagna-lord-weak-diseases.step-001:weakness",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升主（Lagn's Lord）是否落敌星座（enemy's Rāśi）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Lagn Lord is in debilitation",
+              "claim": "上升主（Lagn Lord）落陷"
+            },
+            {
+              "quote": "combustion",
+              "claim": "燃烧"
+            },
+            {
+              "quote": "enemy’s Rāśi",
+              "claim": "落敌星座（enemy’s Rāśi）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "there will be diseases",
+              "claim": "会有疾病"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch12:v1-2",
+            "quote": "If Lagn Lord is in debilitation, combustion, or enemy’s Rāśi, there will be diseases.",
+            "pdf_pages": [
+              26
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升主（Lagn's Lord）是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘上升主（Lagn's Lord）是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得指名具体病症或部位，原文只写 diseases。",
+          "不得把 enemy’s Rāśi 读成本星座或本宫，它指行星所落的敌方星座。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "eed93cca1e7bc32cea688194297da29cc33fdcc227e5fb2ed959dcc102dbf905"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch12-v1-2-benefic-in-angle-trine-diseases-disappear.step-001",
+      "method": {
+        "method": "ch12-v1-2-benefic-in-angle-trine-diseases-disappear",
+        "title": "疾病消失：吉星落角宫或三角宫",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的病会不会好",
+          "吉星落角宫三角宫有什么用"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "With a benefic in an angle, or trine all diseases will disappear",
+            "吉星落角宫或三角宫 所有疾病消失"
+          ],
+          "counter_queries": [
+            "If Lagn Lord is in debilitation, combustion, or enemy’s Rāśi, there will be diseases",
+            "When Lagn is occupied by the Lords of Ari and Randhr Bhava along with Surya, the native will be afflicted by fever and tumours"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "Putr and Dharm Bhava are known by the name Kon (or trine). Evil Bhavas, or Dusthan Bhavas are Ari, Randhr and Vyaya Bhava"
+          ],
+          "method_queries": [
+            "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour, weakness, happiness, grief and innate nature are all to be guessed through the ascending Rāśi",
+            "If 3 Kendras are occupied by benefics, Maal Yog is produced, while malefics so placed will cause Bhujang, or Sarpa Yog",
+            "判断疾病能否消退要看角宫三角宫有没有吉星"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch12-v1-2-benefic-in-angle-trine-diseases-disappear.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "a benefic in an angle"
+            },
+            {
+              "step_id": "ch12-v1-2-benefic-in-angle-trine-diseases-disappear.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or trine"
+            },
+            {
+              "step_id": "ch12-v1-2-benefic-in-angle-trine-diseases-disappear.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "all diseases will disappear"
+            },
+            {
+              "step_id": "ch12-v1-2-benefic-in-angle-trine-diseases-disappear.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "a benefic in an angle all diseases will disappear"
+            },
+            {
+              "step_id": "ch12-v1-2-benefic-in-angle-trine-diseases-disappear.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or trine all diseases will disappear"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少吉星名册事实时停止。",
+          "角宫与三角宫两个分支事实全缺时停止。",
+          "吉星名册未定时停止（吉凶判准见第3章 v11）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch12-v1-2-benefic-in-angle-trine-diseases-disappear.step-001",
+        "action": "核对角宫或三角宫里是否有吉星。",
+        "applicability_scope": "仅限本命盘一宫（Tanu Bhava）疾病主题；本句没有说所指的是哪一种病，也没有给时间。",
+        "minimum_supported_claim": "有吉星落角宫，或有吉星落三角宫时，所有疾病都会消失。",
+        "produced_fact_keys": [
+          "角宫三角宫吉星的疾病消失判定"
+        ],
+        "required_fact_keys": [
+          "本盘中哪些行星被判为吉星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "角宫（Kendr）是否被吉星占据"
+                },
+                {
+                  "fact_key": "三角宫（Kon）是否被吉星占据"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            "required_fact_keys": [
+              "角宫（Kendr）是否被吉星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "角宫（Kendr）是否被吉星占据"
+            },
+            "selection_group": "ch12-v1-2-benefic-in-angle-trine-diseases-disappear.step-001:benefic-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：角宫（Kendr）是否被吉星占据。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            "required_fact_keys": [
+              "三角宫（Kon）是否被吉星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "三角宫（Kon）是否被吉星占据"
+            },
+            "selection_group": "ch12-v1-2-benefic-in-angle-trine-diseases-disappear.step-001:benefic-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：三角宫（Kon）是否被吉星占据。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "a benefic in an angle",
+              "claim": "有吉星落角宫"
+            },
+            {
+              "quote": "or trine",
+              "claim": "有吉星落三角宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "all diseases will disappear",
+              "claim": "所有疾病都会消失"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch12:v1-2",
+            "quote": "With a benefic in an angle, or trine all diseases will disappear.",
+            "pdf_pages": [
+              26
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中哪些行星被判为吉星。",
+        "stop_fact_keys": [
+          "本盘中哪些行星被判为吉星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此断出病愈的时间或需要几颗吉星，原文都没有写。",
+          "不得把这条当成对任何一条凶象的通用化解，本句只针对疾病。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "22fa84720e588d754019654c8790bf88a78aefcf1c866ce435ea653cc9be88b4"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch12-v1-2-benefic-in-lagna-angles-trines-health-remedy.step-001",
+      "method": {
+        "method": "ch12-v1-2-benefic-in-lagna-angles-trines-health-remedy",
+        "title": "健康的有力补救：上升的角宫或三角宫内有吉星",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的健康有没有靠山",
+          "四宫七宫十宫五宫九宫有吉星代表什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Lagn’s angles (i.e. Bandhu, Yuvati, or the 10th), or its trine (Putr, Dharm), containing a benefic, is a powerful remedy for all, related to health",
+            "上升角宫三角宫有吉星 健康的有力补救"
+          ],
+          "counter_queries": [
+            "There will not be bodily health, if Lagna, or Chandra be drishtied by, or yuti with a malefic, being devoid of a benefics Drishti",
+            "Malefics, occupying Tanu and Yuvati Bhava, while Chandra is yuti with a malefic with no relief from a benefic, will also cause premature death"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "Putr and Dharm Bhava are known by the name Kon (or trine). Evil Bhavas, or Dusthan Bhavas are Ari, Randhr and Vyaya Bhava"
+          ],
+          "method_queries": [
+            "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour, weakness, happiness, grief and innate nature are all to be guessed through the ascending Rāśi",
+            "Effects of Tanu Bhava",
+            "判断健康的补救要看四宫七宫十宫五宫九宫有没有吉星"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch12-v1-2-benefic-in-lagna-angles-trines-health-remedy.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Lagn’s angles (i.e. Bandhu, Yuvati, or the 10th )"
+            },
+            {
+              "step_id": "ch12-v1-2-benefic-in-lagna-angles-trines-health-remedy.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or its trine (Putr, Dharm)"
+            },
+            {
+              "step_id": "ch12-v1-2-benefic-in-lagna-angles-trines-health-remedy.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "containing a benefic"
+            },
+            {
+              "step_id": "ch12-v1-2-benefic-in-lagna-angles-trines-health-remedy.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "is a powerful remedy for all, related to health"
+            },
+            {
+              "step_id": "ch12-v1-2-benefic-in-lagna-angles-trines-health-remedy.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Lagn’s angles (i.e. Bandhu, Yuvati, or the 10th ) is a powerful remedy for all, related to health"
+            },
+            {
+              "step_id": "ch12-v1-2-benefic-in-lagna-angles-trines-health-remedy.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or its trine (Putr, Dharm) is a powerful remedy for all, related to health"
+            },
+            {
+              "step_id": "ch12-v1-2-benefic-in-lagna-angles-trines-health-remedy.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "containing a benefic is a powerful remedy for all, related to health"
+            },
+            {
+              "step_id": "ch12-v1-2-benefic-in-lagna-angles-trines-health-remedy.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "1st house’s angles (i.e. 4th house, 7th house, or the 10th )"
+            },
+            {
+              "step_id": "ch12-v1-2-benefic-in-lagna-angles-trines-health-remedy.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "or its trine (5th house, 9th house)"
+            },
+            {
+              "step_id": "ch12-v1-2-benefic-in-lagna-angles-trines-health-remedy.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "1st house’s angles (i.e. 4th house, 7th house, or the 10th ) is a powerful remedy for all, related to health"
+            },
+            {
+              "step_id": "ch12-v1-2-benefic-in-lagna-angles-trines-health-remedy.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "or its trine (5th house, 9th house) is a powerful remedy for all, related to health"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少吉星名册事实时停止。",
+          "五个宫位分支事实全缺时停止。",
+          "吉星名册未定时停止（吉凶判准见第3章 v11）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch12-v1-2-benefic-in-lagna-angles-trines-health-remedy.step-001",
+        "action": "逐一核对上升的角宫（四宫、七宫、十宫）与上升的三角宫（五宫、九宫）里有没有吉星。",
+        "applicability_scope": "仅限本命盘与健康有关的事项；原文本句自列了角宫与三角宫的具体宫位，不再另作推广。",
+        "minimum_supported_claim": "上升的角宫（四宫 Bandhu、七宫 Yuvati、十宫）或上升的三角宫（五宫 Putr、九宫 Dharm）中有吉星时，对一切与健康有关的事都是有力的补救。",
+        "produced_fact_keys": [
+          "上升角宫三角宫吉星的健康补救判定"
+        ],
+        "required_fact_keys": [
+          "本盘中哪些行星被判为吉星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "四宫（Bandhu）是否被吉星占据"
+                },
+                {
+                  "fact_key": "七宫（Yuvati）是否被吉星占据"
+                },
+                {
+                  "fact_key": "十宫（Karm）是否被吉星占据"
+                },
+                {
+                  "fact_key": "五宫（Putr）是否被吉星占据"
+                },
+                {
+                  "fact_key": "九宫（Dharm）是否被吉星占据"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            "required_fact_keys": [
+              "四宫（Bandhu）是否被吉星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "四宫（Bandhu）是否被吉星占据"
+            },
+            "selection_group": "ch12-v1-2-benefic-in-lagna-angles-trines-health-remedy.step-001:benefic-bhava",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：四宫（Bandhu）是否被吉星占据。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            "required_fact_keys": [
+              "七宫（Yuvati）是否被吉星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "七宫（Yuvati）是否被吉星占据"
+            },
+            "selection_group": "ch12-v1-2-benefic-in-lagna-angles-trines-health-remedy.step-001:benefic-bhava",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：七宫（Yuvati）是否被吉星占据。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            "required_fact_keys": [
+              "十宫（Karm）是否被吉星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十宫（Karm）是否被吉星占据"
+            },
+            "selection_group": "ch12-v1-2-benefic-in-lagna-angles-trines-health-remedy.step-001:benefic-bhava",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十宫（Karm）是否被吉星占据。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            "required_fact_keys": [
+              "五宫（Putr）是否被吉星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫（Putr）是否被吉星占据"
+            },
+            "selection_group": "ch12-v1-2-benefic-in-lagna-angles-trines-health-remedy.step-001:benefic-bhava",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫（Putr）是否被吉星占据。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            "required_fact_keys": [
+              "九宫（Dharm）是否被吉星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "九宫（Dharm）是否被吉星占据"
+            },
+            "selection_group": "ch12-v1-2-benefic-in-lagna-angles-trines-health-remedy.step-001:benefic-bhava",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：九宫（Dharm）是否被吉星占据。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Lagn’s angles (i.e. Bandhu, Yuvati, or the 10<sup>th</sup> )",
+              "claim": "上升的角宫（四宫 Bandhu、七宫 Yuvati、十宫）"
+            },
+            {
+              "quote": "or its trine (Putr, Dharm)",
+              "claim": "上升的三角宫（五宫 Putr、九宫 Dharm）"
+            },
+            {
+              "quote": "containing a benefic",
+              "claim": "中有吉星"
+            }
+          ],
+          "results": [
+            {
+              "quote": "is a powerful remedy for all, related to health",
+              "claim": "对一切与健康有关的事都是有力的补救"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch12:v1-2",
+            "quote": "Lagn’s angles (i.e. Bandhu, Yuvati, or the 10<sup>th</sup> ), or its trine (Putr, Dharm), containing a benefic, is a powerful remedy for all, related to health.",
+            "pdf_pages": [
+              26
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中哪些行星被判为吉星。",
+        "stop_fact_keys": [
+          "本盘中哪些行星被判为吉星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 remedy for all, related to health 扩成对财富、寿命或子女的补救。",
+          "不得据此断出补救生效的时间或程度。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "5dd945322c0ea3dd5f27336f1f7b881992651f762ec0d0cd3e824fc3f8acb4c1"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch12-v3-lagna-or-chandra-afflicted-no-bodily-health.step-001",
+      "method": {
+        "method": "ch12-v3-lagna-or-chandra-afflicted-no-bodily-health",
+        "title": "身体不健康：上升或月亮受凶星相照或同宫且无吉星相照",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我身体健不健康",
+          "上升和月亮被凶星冲代表什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "There will not be bodily health, if Lagna, or Chandra be drishtied by, or yuti with a malefic, being devoid of a benefics Drishti",
+            "上升或月亮被凶星相照同宫且无吉星相照 身体不健康"
+          ],
+          "counter_queries": [
+            "Felicity of the body will be enjoyed, if Lagn is drishtied by, or yuti with a benefic",
+            "With a benefic in an angle, or trine all diseases will disappear"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Malefics, occupying Tanu and Yuvati Bhava, while Chandra is yuti with a malefic with no relief from a benefic, will also cause premature death",
+            "Chandra in Tanu, Randhr, Vyaya, or Yuvati Bhava and hemmed between malefics will confer premature death"
+          ],
+          "method_queries": [
+            "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour, weakness, happiness, grief and innate nature are all to be guessed through the ascending Rāśi",
+            "Whatever results are to be known from Bandhu, Tanu, Dhan, Labh and Dharm should also be known from the 4th of Chandra, from Kark Rashiitself and from the 2nd, 11th and 9th from Chandra, respectively",
+            "判断身体健康要同时看上升和月亮受不受克"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch12-v3-lagna-or-chandra-afflicted-no-bodily-health.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Lagna"
+            },
+            {
+              "step_id": "ch12-v3-lagna-or-chandra-afflicted-no-bodily-health.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or Chandra"
+            },
+            {
+              "step_id": "ch12-v3-lagna-or-chandra-afflicted-no-bodily-health.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "be drishtied by"
+            },
+            {
+              "step_id": "ch12-v3-lagna-or-chandra-afflicted-no-bodily-health.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or yuti with a malefic"
+            },
+            {
+              "step_id": "ch12-v3-lagna-or-chandra-afflicted-no-bodily-health.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "being devoid of a benefics Drishti"
+            },
+            {
+              "step_id": "ch12-v3-lagna-or-chandra-afflicted-no-bodily-health.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "There will not be bodily health"
+            },
+            {
+              "step_id": "ch12-v3-lagna-or-chandra-afflicted-no-bodily-health.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Lagna There will not be bodily health"
+            },
+            {
+              "step_id": "ch12-v3-lagna-or-chandra-afflicted-no-bodily-health.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or Chandra There will not be bodily health"
+            },
+            {
+              "step_id": "ch12-v3-lagna-or-chandra-afflicted-no-bodily-health.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "be drishtied by There will not be bodily health"
+            },
+            {
+              "step_id": "ch12-v3-lagna-or-chandra-afflicted-no-bodily-health.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or yuti with a malefic There will not be bodily health"
+            },
+            {
+              "step_id": "ch12-v3-lagna-or-chandra-afflicted-no-bodily-health.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "being devoid of a benefics Drishti There will not be bodily health"
+            },
+            {
+              "step_id": "ch12-v3-lagna-or-chandra-afflicted-no-bodily-health.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if 1st house"
+            },
+            {
+              "step_id": "ch12-v3-lagna-or-chandra-afflicted-no-bodily-health.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "or moon"
+            },
+            {
+              "step_id": "ch12-v3-lagna-or-chandra-afflicted-no-bodily-health.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if 1st house There will not be bodily health"
+            },
+            {
+              "step_id": "ch12-v3-lagna-or-chandra-afflicted-no-bodily-health.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "or moon There will not be bodily health"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少吉星或凶星名册事实时停止。",
+          "四个受克分支事实全缺时停止。",
+          "凶星名册未定时停止（吉凶判准见第3章 v11）。",
+          "吉星名册未定时停止（吉凶判准见第3章 v11）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch12-v3-lagna-or-chandra-afflicted-no-bodily-health.step-001",
+        "action": "分别对上升与月亮核对：是否被凶星相照、是否与凶星同宫，且同时得不到吉星相照。",
+        "applicability_scope": "仅限本命盘一宫（Tanu Bhava）身体健康主题；原文的 being devoid of a benefics Drishti 跟着同一个主语（上升或月亮），不得改挂到另一方。",
+        "minimum_supported_claim": "上升（Lagna）或月亮（Chandra）被凶星相照或与凶星同宫，同时又得不到吉星相照时，身体不会健康。",
+        "produced_fact_keys": [
+          "上升或月亮受克的身体健康判定"
+        ],
+        "required_fact_keys": [
+          "本盘中哪些行星被判为凶星",
+          "本盘中哪些行星被判为吉星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘中哪些行星被判为凶星"
+                },
+                {
+                  "fact_key": "本盘中哪些行星被判为吉星"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "上升（Lagn）是否被凶星相照"
+                    },
+                    {
+                      "operator": "NOT",
+                      "operands": [
+                        {
+                          "fact_key": "上升（Lagn）是否被吉星相照"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "一宫（Tanu）是否被凶星占据"
+                    },
+                    {
+                      "operator": "NOT",
+                      "operands": [
+                        {
+                          "fact_key": "上升（Lagn）是否被吉星相照"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "月亮（Chandra）是否被凶星相照"
+                    },
+                    {
+                      "operator": "NOT",
+                      "operands": [
+                        {
+                          "fact_key": "月亮（Chandra）是否被吉星相照"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "月亮（Chandra）是否与凶星同宫"
+                    },
+                    {
+                      "operator": "NOT",
+                      "operands": [
+                        {
+                          "fact_key": "月亮（Chandra）是否被吉星相照"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘中哪些行星被判为凶星"
+                },
+                {
+                  "fact_key": "本盘中哪些行星被判为吉星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "上升（Lagn）是否被凶星相照",
+              "上升（Lagn）是否被吉星相照"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "上升（Lagn）是否被凶星相照"
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "上升（Lagn）是否被吉星相照"
+                    }
+                  ]
+                }
+              ]
+            },
+            "selection_group": "ch12-v3-lagna-or-chandra-afflicted-no-bodily-health.step-001:afflicted-subject",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升（Lagn）是否被凶星相照、上升（Lagn）是否被吉星相照。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘中哪些行星被判为凶星"
+                },
+                {
+                  "fact_key": "本盘中哪些行星被判为吉星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "一宫（Tanu）是否被凶星占据",
+              "上升（Lagn）是否被吉星相照"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "一宫（Tanu）是否被凶星占据"
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "上升（Lagn）是否被吉星相照"
+                    }
+                  ]
+                }
+              ]
+            },
+            "selection_group": "ch12-v3-lagna-or-chandra-afflicted-no-bodily-health.step-001:afflicted-subject",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：一宫（Tanu）是否被凶星占据、上升（Lagn）是否被吉星相照。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘中哪些行星被判为凶星"
+                },
+                {
+                  "fact_key": "本盘中哪些行星被判为吉星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "月亮（Chandra）是否被凶星相照",
+              "月亮（Chandra）是否被吉星相照"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "月亮（Chandra）是否被凶星相照"
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "月亮（Chandra）是否被吉星相照"
+                    }
+                  ]
+                }
+              ]
+            },
+            "selection_group": "ch12-v3-lagna-or-chandra-afflicted-no-bodily-health.step-001:afflicted-subject",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：月亮（Chandra）是否被凶星相照、月亮（Chandra）是否被吉星相照。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘中哪些行星被判为凶星"
+                },
+                {
+                  "fact_key": "本盘中哪些行星被判为吉星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "月亮（Chandra）是否与凶星同宫",
+              "月亮（Chandra）是否被吉星相照"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "月亮（Chandra）是否与凶星同宫"
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "月亮（Chandra）是否被吉星相照"
+                    }
+                  ]
+                }
+              ]
+            },
+            "selection_group": "ch12-v3-lagna-or-chandra-afflicted-no-bodily-health.step-001:afflicted-subject",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：月亮（Chandra）是否与凶星同宫、月亮（Chandra）是否被吉星相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if Lagna",
+              "claim": "上升（Lagna）"
+            },
+            {
+              "quote": "or Chandra",
+              "claim": "月亮（Chandra）"
+            },
+            {
+              "quote": "be drishtied by",
+              "claim": "被凶星相照"
+            },
+            {
+              "quote": "or yuti with a malefic",
+              "claim": "与凶星同宫"
+            },
+            {
+              "quote": "being devoid of a benefics Drishti",
+              "claim": "得不到吉星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "There will not be bodily health",
+              "claim": "身体不会健康"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch12:v3",
+            "quote": "There will not be bodily health, if Lagna, or Chandra be drishtied by, or yuti with a malefic, being devoid of a benefics Drishti.",
+            "pdf_pages": [
+              26
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中哪些行星被判为凶星、本盘中哪些行星被判为吉星。",
+        "stop_fact_keys": [
+          "本盘中哪些行星被判为凶星",
+          "本盘中哪些行星被判为吉星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此断出寿夭、死因或具体病症，原文只说不会有身体健康。",
+          "不得把无吉星相照这一条挪到与受克对象不同的另一方身上。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "4250b3dc2d1d76d0b35e97bb2821a37e614151e63d6a64c29fa69335925d6f68"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch12-v4-benefic-in-lagna-pleasing-appearance.step-001",
+      "method": {
+        "method": "ch12-v4-benefic-in-lagna-pleasing-appearance",
+        "title": "相貌悦目：一宫内有吉星",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我长得好不好看",
+          "一宫有吉星代表什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "A benefic in Lagn will give a pleasing appearance, while a malefic will make one bereft of good appearance",
+            "一宫有吉星 相貌悦目"
+          ],
+          "counter_queries": [
+            "while a malefic will make one bereft of good appearance",
+            "There will not be bodily health, if Lagna, or Chandra be drishtied by, or yuti with a malefic, being devoid of a benefics Drishti"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour, weakness, happiness, grief and innate nature are all to be guessed through the ascending Rāśi"
+          ],
+          "method_queries": [
+            "Effects of Tanu Bhava",
+            "The physique from Lagna, wealth from Hora, happiness through co-born from Dreshkan",
+            "判断相貌要看一宫里有吉星还是凶星"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch12-v4-benefic-in-lagna-pleasing-appearance.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "A benefic in Lagn"
+            },
+            {
+              "step_id": "ch12-v4-benefic-in-lagna-pleasing-appearance.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will give a pleasing appearance"
+            },
+            {
+              "step_id": "ch12-v4-benefic-in-lagna-pleasing-appearance.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "A benefic in Lagn will give a pleasing appearance"
+            },
+            {
+              "step_id": "ch12-v4-benefic-in-lagna-pleasing-appearance.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "A benefic in 1st house"
+            },
+            {
+              "step_id": "ch12-v4-benefic-in-lagna-pleasing-appearance.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "A benefic in 1st house will give a pleasing appearance"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少一宫吉星占据事实时停止。",
+          "吉星名册未定时停止（吉凶判准见第3章 v11）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch12-v4-benefic-in-lagna-pleasing-appearance.step-001",
+        "action": "核对一宫（Lagn）里是否有吉星。",
+        "applicability_scope": "仅限本命盘一宫（Tanu Bhava）相貌主题；原文没有说是哪一颗吉星，也没有给程度。",
+        "minimum_supported_claim": "一宫（Lagn）内有吉星时，会给人悦目的相貌。",
+        "produced_fact_keys": [
+          "一宫吉星的相貌判定"
+        ],
+        "required_fact_keys": [
+          "一宫（Tanu）是否被吉星占据"
+        ],
+        "condition_logic": {
+          "fact_key": "一宫（Tanu）是否被吉星占据"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "A benefic in Lagn",
+              "claim": "一宫（Lagn）内有吉星"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will give a pleasing appearance",
+              "claim": "会给人悦目的相貌"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch12:v4",
+            "quote": "A benefic in Lagn will give a pleasing appearance",
+            "pdf_pages": [
+              26
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：一宫（Tanu）是否被吉星占据。",
+        "stop_fact_keys": [
+          "一宫（Tanu）是否被吉星占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断肤色、身高或体型，原文只说相貌悦目。",
+          "不得把这条推广到月亮所在的宫，本句只写 Lagn。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b43167c70520c3001a686ebf56b239bfc4d9ee12905aaf530bfa0c0662328043"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch12-v4-malefic-in-lagna-bereft-appearance.step-001",
+      "method": {
+        "method": "ch12-v4-malefic-in-lagna-bereft-appearance",
+        "title": "没有好相貌：一宫内有凶星",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我相貌上有没有欠缺",
+          "一宫有凶星代表什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "A benefic in Lagn will give a pleasing appearance, while a malefic will make one bereft of good appearance",
+            "一宫有凶星 没有好相貌"
+          ],
+          "counter_queries": [
+            "A benefic in Lagn will give a pleasing appearance",
+            "Felicity of the body will be enjoyed, if Lagn is drishtied by, or yuti with a benefic"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour, weakness, happiness, grief and innate nature are all to be guessed through the ascending Rāśi"
+          ],
+          "method_queries": [
+            "Effects of Tanu Bhava",
+            "Now I will describe to you the effects of moles, marks, spots and signs, found on the body of women and men",
+            "判断相貌要看一宫里有吉星还是凶星"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch12-v4-malefic-in-lagna-bereft-appearance.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in Lagn"
+            },
+            {
+              "step_id": "ch12-v4-malefic-in-lagna-bereft-appearance.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while a malefic"
+            },
+            {
+              "step_id": "ch12-v4-malefic-in-lagna-bereft-appearance.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will make one bereft of good appearance"
+            },
+            {
+              "step_id": "ch12-v4-malefic-in-lagna-bereft-appearance.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in Lagn will make one bereft of good appearance"
+            },
+            {
+              "step_id": "ch12-v4-malefic-in-lagna-bereft-appearance.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while a malefic will make one bereft of good appearance"
+            },
+            {
+              "step_id": "ch12-v4-malefic-in-lagna-bereft-appearance.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "in 1st house"
+            },
+            {
+              "step_id": "ch12-v4-malefic-in-lagna-bereft-appearance.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "in 1st house will make one bereft of good appearance"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少一宫凶星占据事实时停止。",
+          "凶星名册未定时停止（吉凶判准见第3章 v11）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch12-v4-malefic-in-lagna-bereft-appearance.step-001",
+        "action": "核对一宫（Lagn）里是否有凶星。",
+        "applicability_scope": "仅限本命盘一宫（Tanu Bhava）相貌主题；本句的 a malefic 承接同句前半的 in Lagn，落宫来自前半句。",
+        "minimum_supported_claim": "一宫（Lagn）内有凶星时，会使人没有好相貌。",
+        "produced_fact_keys": [
+          "一宫凶星的相貌判定"
+        ],
+        "required_fact_keys": [
+          "一宫（Tanu）是否被凶星占据"
+        ],
+        "condition_logic": {
+          "fact_key": "一宫（Tanu）是否被凶星占据"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "in Lagn",
+              "claim": "一宫（Lagn）"
+            },
+            {
+              "quote": "while a malefic",
+              "claim": "内有凶星"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will make one bereft of good appearance",
+              "claim": "会使人没有好相貌"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch12:v4",
+            "quote": "A benefic in Lagn will give a pleasing appearance, while a malefic will make one bereft of good appearance.",
+            "pdf_pages": [
+              26
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：一宫（Tanu）是否被凶星占据。",
+        "stop_fact_keys": [
+          "一宫（Tanu）是否被凶星占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断残疾、伤痕或具体缺陷，原文只说没有好相貌。",
+          "不得据此推断相貌变化的时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "f87db997d60d985047e51215435e7cc6c7e1459da6deb1c66016212302b0758f"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch12-v4-lagna-benefic-drishti-or-yuti-felicity.step-001",
+      "method": {
+        "method": "ch12-v4-lagna-benefic-drishti-or-yuti-felicity",
+        "title": "身体安适：上升被吉星相照或一宫内有吉星",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我身体上过得舒不舒服",
+          "上升被吉星照代表什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Felicity of the body will be enjoyed, if Lagn is drishtied by, or yuti with a benefic",
+            "上升被吉星相照或一宫有吉星 身体安适"
+          ],
+          "counter_queries": [
+            "There will not be bodily health, if Lagna, or Chandra be drishtied by, or yuti with a malefic, being devoid of a benefics Drishti",
+            "Should Lagn Lord be yuti with a malefic, or be in Randhr, 6th, or 12th, physical felicity will diminish"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour, weakness, happiness, grief and innate nature are all to be guessed through the ascending Rāśi"
+          ],
+          "method_queries": [
+            "Effects of Tanu Bhava",
+            "Effects of Lagn’s Lord in Various Bhavas (up to Sloka 12). Should Lagn’s Lord be in Lagn itself, the native will be endowed with physical happiness and prowess",
+            "判断身体安适要看上升有没有吉星照或同宫"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch12-v4-lagna-benefic-drishti-or-yuti-felicity.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Lagn is drishtied by"
+            },
+            {
+              "step_id": "ch12-v4-lagna-benefic-drishti-or-yuti-felicity.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or yuti with a benefic"
+            },
+            {
+              "step_id": "ch12-v4-lagna-benefic-drishti-or-yuti-felicity.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Felicity of the body will be enjoyed"
+            },
+            {
+              "step_id": "ch12-v4-lagna-benefic-drishti-or-yuti-felicity.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Lagn is drishtied by Felicity of the body will be enjoyed"
+            },
+            {
+              "step_id": "ch12-v4-lagna-benefic-drishti-or-yuti-felicity.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or yuti with a benefic Felicity of the body will be enjoyed"
+            },
+            {
+              "step_id": "ch12-v4-lagna-benefic-drishti-or-yuti-felicity.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if 1st house is drishtied by"
+            },
+            {
+              "step_id": "ch12-v4-lagna-benefic-drishti-or-yuti-felicity.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if 1st house is drishtied by Felicity of the body will be enjoyed"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少吉星名册事实时停止。",
+          "相照与同宫两个分支事实全缺时停止。",
+          "吉星名册未定时停止（吉凶判准见第3章 v11）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch12-v4-lagna-benefic-drishti-or-yuti-felicity.step-001",
+        "action": "核对上升是否被吉星相照，或一宫里是否有吉星。",
+        "applicability_scope": "仅限本命盘一宫（Tanu Bhava）身体安适主题；原文没有给时间限定。",
+        "minimum_supported_claim": "上升（Lagn）被吉星相照，或一宫内有吉星时，会享有身体的安适。",
+        "produced_fact_keys": [
+          "上升得吉星的身体安适判定"
+        ],
+        "required_fact_keys": [
+          "本盘中哪些行星被判为吉星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "上升（Lagn）是否被吉星相照"
+                },
+                {
+                  "fact_key": "一宫（Tanu）是否被吉星占据"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            "required_fact_keys": [
+              "上升（Lagn）是否被吉星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升（Lagn）是否被吉星相照"
+            },
+            "selection_group": "ch12-v4-lagna-benefic-drishti-or-yuti-felicity.step-001:benefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升（Lagn）是否被吉星相照。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            "required_fact_keys": [
+              "一宫（Tanu）是否被吉星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "一宫（Tanu）是否被吉星占据"
+            },
+            "selection_group": "ch12-v4-lagna-benefic-drishti-or-yuti-felicity.step-001:benefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：一宫（Tanu）是否被吉星占据。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if Lagn is drishtied by",
+              "claim": "上升（Lagn）被吉星相照"
+            },
+            {
+              "quote": "or yuti with a benefic",
+              "claim": "一宫内有吉星"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Felicity of the body will be enjoyed",
+              "claim": "会享有身体的安适"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch12:v4",
+            "quote": "Felicity of the body will be enjoyed, if Lagn is drishtied by, or yuti with a benefic.",
+            "pdf_pages": [
+              26
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中哪些行星被判为吉星。",
+        "stop_fact_keys": [
+          "本盘中哪些行星被判为吉星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财富、寿命或子女，本句只说身体安适。",
+          "不得据此推断安适出现的年份或大运。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "fd8735052b432ad0ddea09f23aa5ba93896baed7cc40864197cf582a4f917803"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch12:v1-2": {
+      "evidence_atom_id": "bphs-97:santhanam:ch12:v1-2",
+      "chapter_number": 12,
+      "chapter_title": "Effects of Tanu Bhava",
+      "verse_label": "1-2.",
+      "content_role": "verse",
+      "exact_text": "1-2. Physical comforts. Should Lagn Lord be yuti with a malefic, or be in Randhr, 6<sup>th</sup> , or 12<sup>th</sup> , physical felicity will diminish. If he is in an angle, or trine there will be at all times comforts of the body. If Lagn Lord is in debilitation, combustion, or enemy’s Rāśi, there will be diseases. With a benefic in an angle, or trine all diseases will disappear. Lagn’s angles (i.e. Bandhu, Yuvati, or the 10<sup>th</sup> ), or its trine (Putr, Dharm), containing a benefic, is a powerful remedy for all, related to health.",
+      "pdf_pages": [
+        26
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 12 · Sloka 1-2 · PDF page 26 · bphs-97:santhanam:ch12:v1-2",
+      "previous_atom_id": null,
+      "next_atom_id": "bphs-97:santhanam:ch12:v3",
+      "context_before": "",
+      "context_after": "3. There will not be bodily health, if Lagna, or Chandra be drishtied by, or yuti with a malefic, being devoid of a benefics Dri",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch12:v3": {
+      "evidence_atom_id": "bphs-97:santhanam:ch12:v3",
+      "chapter_number": 12,
+      "chapter_title": "Effects of Tanu Bhava",
+      "verse_label": "3.",
+      "content_role": "verse",
+      "exact_text": "3. There will not be bodily health, if Lagna, or Chandra be drishtied by, or yuti with a malefic, being devoid of a benefics Drishti.",
+      "pdf_pages": [
+        26
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 12 · Sloka 3 · PDF page 26 · bphs-97:santhanam:ch12:v3",
+      "previous_atom_id": "bphs-97:santhanam:ch12:v1-2",
+      "next_atom_id": "bphs-97:santhanam:ch12:v4",
+      "context_before": " Bandhu, Yuvati, or the 10<sup>th</sup> ), or its trine (Putr, Dharm), containing a benefic, is a powerful remedy for all, related to health.\n\n",
+      "context_after": "4. Bodily Beauty. A benefic in Lagn will give a pleasing appearance, while a malefic will make one bereft of good appearance. Fe",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch12:v4": {
+      "evidence_atom_id": "bphs-97:santhanam:ch12:v4",
+      "chapter_number": 12,
+      "chapter_title": "Effects of Tanu Bhava",
+      "verse_label": "4.",
+      "content_role": "verse",
+      "exact_text": "4. Bodily Beauty. A benefic in Lagn will give a pleasing appearance, while a malefic will make one bereft of good appearance. Felicity of the body will be enjoyed, if Lagn is drishtied by, or yuti with a benefic.",
+      "pdf_pages": [
+        26
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 12 · Sloka 4 · PDF page 26 · bphs-97:santhanam:ch12:v4",
+      "previous_atom_id": "bphs-97:santhanam:ch12:v3",
+      "next_atom_id": "bphs-97:santhanam:ch12:v5-7",
+      "context_before": " There will not be bodily health, if Lagna, or Chandra be drishtied by, or yuti with a malefic, being devoid of a benefics Drishti.\n\n",
+      "context_after": "5-7. Other Benefits. If Lagn Lord, Budh, Guru, or Shukra be in an angle, or in a trine, the native will be long lived, wealthy, ",
+      "content_missing": false
+    }
+  }
+}

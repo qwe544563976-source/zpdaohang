@@ -1,0 +1,656 @@
+{
+  "pilot_only": false,
+  "publishable": false,
+  "topics": {
+    "ch12-v1-2-lagna-lord-afflicted-felicity-diminish": {
+      "question_type": "身体安适减少：上升主与凶星同宫，或落八宫、六宫、十二宫",
+      "required_facts": [
+        "本盘上升主（Lagn's Lord）是哪颗行星"
+      ],
+      "conditional_facts": [
+        "上升主（Lagn's Lord）是否与凶星同宫",
+        "上升主（Lagn's Lord）是否落八宫（Randhr）",
+        "上升主（Lagn's Lord）是否落六宫（Ari）",
+        "上升主（Lagn's Lord）是否落十二宫（Vyaya）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升主身份事实时停止。",
+        "四个分支事实全缺时停止。",
+        "凶星名册未定时停止（吉凶判准见第3章 v11）。"
+      ]
+    },
+    "ch12-v1-2-lagna-lord-angle-trine-comforts": {
+      "question_type": "身体舒适：上升主落角宫或三角宫",
+      "required_facts": [
+        "本盘上升主（Lagn's Lord）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "上升主（Lagn's Lord）是否落角宫",
+        "上升主（Lagn's Lord）是否落三角宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升主落宫事实时停止。",
+        "角宫与三角宫两个分支事实全缺时停止。"
+      ]
+    },
+    "ch12-v1-2-lagna-lord-weak-diseases": {
+      "question_type": "有疾病：上升主落陷、燃烧或落敌星座",
+      "required_facts": [
+        "本盘上升主（Lagn's Lord）是哪颗行星"
+      ],
+      "conditional_facts": [
+        "上升主（Lagn's Lord）是否落陷",
+        "上升主（Lagn's Lord）是否燃烧",
+        "上升主（Lagn's Lord）是否落敌星座（enemy's Rāśi）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升主身份事实时停止。",
+        "三个分支事实全缺时停止。",
+        "落陷、燃烧、敌星座的判准未定时停止（强弱判准见第27章 Shad Bal）。"
+      ]
+    },
+    "ch12-v1-2-benefic-in-angle-trine-diseases-disappear": {
+      "question_type": "疾病消失：吉星落角宫或三角宫",
+      "required_facts": [
+        "本盘中哪些行星被判为吉星"
+      ],
+      "conditional_facts": [
+        "角宫（Kendr）是否被吉星占据",
+        "三角宫（Kon）是否被吉星占据"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少吉星名册事实时停止。",
+        "角宫与三角宫两个分支事实全缺时停止。",
+        "吉星名册未定时停止（吉凶判准见第3章 v11）。"
+      ]
+    },
+    "ch12-v1-2-benefic-in-lagna-angles-trines-health-remedy": {
+      "question_type": "健康的有力补救：上升的角宫或三角宫内有吉星",
+      "required_facts": [
+        "本盘中哪些行星被判为吉星"
+      ],
+      "conditional_facts": [
+        "四宫（Bandhu）是否被吉星占据",
+        "七宫（Yuvati）是否被吉星占据",
+        "十宫（Karm）是否被吉星占据",
+        "五宫（Putr）是否被吉星占据",
+        "九宫（Dharm）是否被吉星占据"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少吉星名册事实时停止。",
+        "五个宫位分支事实全缺时停止。",
+        "吉星名册未定时停止（吉凶判准见第3章 v11）。"
+      ]
+    },
+    "ch12-v3-lagna-or-chandra-afflicted-no-bodily-health": {
+      "question_type": "身体不健康：上升或月亮受凶星相照或同宫且无吉星相照",
+      "required_facts": [
+        "本盘中哪些行星被判为凶星",
+        "本盘中哪些行星被判为吉星"
+      ],
+      "conditional_facts": [
+        "上升（Lagn）是否被凶星相照",
+        "一宫（Tanu）是否被凶星占据",
+        "月亮（Chandra）是否被凶星相照",
+        "月亮（Chandra）是否与凶星同宫",
+        "上升（Lagn）是否被吉星相照",
+        "月亮（Chandra）是否被吉星相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少吉星或凶星名册事实时停止。",
+        "四个受克分支事实全缺时停止。",
+        "凶星名册未定时停止（吉凶判准见第3章 v11）。",
+        "吉星名册未定时停止（吉凶判准见第3章 v11）。"
+      ]
+    },
+    "ch12-v4-benefic-in-lagna-pleasing-appearance": {
+      "question_type": "相貌悦目：一宫内有吉星",
+      "required_facts": [
+        "一宫（Tanu）是否被吉星占据"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少一宫吉星占据事实时停止。",
+        "吉星名册未定时停止（吉凶判准见第3章 v11）。"
+      ]
+    },
+    "ch12-v4-malefic-in-lagna-bereft-appearance": {
+      "question_type": "没有好相貌：一宫内有凶星",
+      "required_facts": [
+        "一宫（Tanu）是否被凶星占据"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少一宫凶星占据事实时停止。",
+        "凶星名册未定时停止（吉凶判准见第3章 v11）。"
+      ]
+    },
+    "ch12-v4-lagna-benefic-drishti-or-yuti-felicity": {
+      "question_type": "身体安适：上升被吉星相照或一宫内有吉星",
+      "required_facts": [
+        "本盘中哪些行星被判为吉星"
+      ],
+      "conditional_facts": [
+        "上升（Lagn）是否被吉星相照",
+        "一宫（Tanu）是否被吉星占据"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少吉星名册事实时停止。",
+        "相照与同宫两个分支事实全缺时停止。",
+        "吉星名册未定时停止（吉凶判准见第3章 v11）。"
+      ]
+    },
+    "ch12-v5-7-four-grahas-angle-trine-benefits": {
+      "question_type": "长寿富有聪明受王喜爱：上升主或水木金落角宫、三角宫",
+      "required_facts": [
+        "本盘一宫（Lagn）落在哪个星座"
+      ],
+      "conditional_facts": [
+        "上升主（Lagn's Lord）是否落角宫",
+        "上升主（Lagn's Lord）是否落三角宫",
+        "水星（Budh）是否落角宫",
+        "水星（Budh）是否落三角宫",
+        "木星（Guru）是否落角宫",
+        "木星（Guru）是否落三角宫",
+        "金星（Shukra）是否落角宫",
+        "金星（Shukra）是否落三角宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升星座事实时停止。",
+        "八个分支事实全缺时停止。"
+      ]
+    },
+    "ch12-v5-7-lagna-lord-movable-rasi-benefic-drishti": {
+      "question_type": "名声财富享乐：上升主落动星座并被吉星相照",
+      "required_facts": [
+        "上升主（Lagn's Lord）是否落动星座（Movable Rāśi）",
+        "上升主（Lagn's Lord）是否被吉星相照"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升主落动星座的事实时停止。",
+        "缺少上升主被吉星相照的事实时停止。",
+        "吉星名册未定时停止（吉凶判准见第3章 v11）。"
+      ]
+    },
+    "ch12-v5-7-budh-guru-shukra-royal-marks": {
+      "question_type": "具王者标记：水木金与月亮同落一宫，或落从上升起算的角宫",
+      "required_facts": [
+        "本盘一宫（Lagn）落在哪个星座"
+      ],
+      "conditional_facts": [
+        "水星（Budh）是否落一宫（Tanu）",
+        "木星（Guru）是否落一宫（Tanu）",
+        "金星（Shukra）是否落一宫（Tanu）",
+        "月亮（Chandra）是否落一宫（Tanu）",
+        "水星（Budh）是否落角宫",
+        "木星（Guru）是否落角宫",
+        "金星（Shukra）是否落角宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升星座事实时停止。",
+        "六个分支事实全缺时停止。"
+      ]
+    },
+    "ch12-v5-7-budh-guru-shukra-royal-fortunes": {
+      "question_type": "享王者富贵：水木金落从上升起算的四七十宫，或与月亮同落一宫",
+      "required_facts": [
+        "本盘一宫（Lagn）落在哪个星座"
+      ],
+      "conditional_facts": [
+        "水星（Budh）是否落四宫（Bandhu）",
+        "水星（Budh）是否落七宫（Yuvati）",
+        "水星（Budh）是否落十宫（Karm）",
+        "木星（Guru）是否落四宫（Bandhu）",
+        "木星（Guru）是否落七宫（Yuvati）",
+        "木星（Guru）是否落十宫（Karm）",
+        "金星（Shukra）是否落四宫（Bandhu）",
+        "金星（Shukra）是否落七宫（Yuvati）",
+        "金星（Shukra）是否落十宫（Karm）",
+        "水星（Budh）是否落一宫（Tanu）",
+        "木星（Guru）是否落一宫（Tanu）",
+        "金星（Shukra）是否落一宫（Tanu）",
+        "月亮（Chandra）是否落一宫（Tanu）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升星座事实时停止。",
+        "十二个分支事实全缺时停止。"
+      ]
+    },
+    "ch12-v8-coiled-birth": {
+      "question_type": "出生带缠绕：上升为白羊金牛狮子之一且宫内有土星或火星",
+      "required_facts": [
+        "本盘一宫（Lagn）内有哪些行星"
+      ],
+      "conditional_facts": [
+        "本盘一宫（Lagn）所在星座是否为白羊座（Mesh）",
+        "本盘一宫（Lagn）所在星座是否为金牛座（Vrishabh）",
+        "本盘一宫（Lagn）所在星座是否为狮子座（Simh）",
+        "土星（Shani）是否落一宫（Tanu）",
+        "火星（Mangal）是否落一宫（Tanu）",
+        "本盘一宫（Lagn）落在哪个星座",
+        "本盘一宫（Lagn）在九分盘（Navamsa D9）中落在哪个星座"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少一宫行星名单事实时停止。",
+        "三个上升星座分支事实全缺时停止。",
+        "土星与火星两个占据分支事实全缺时停止。",
+        "肢体与星座、九分盘的对照关系原文未给，部位判定未确定即停判。"
+      ]
+    },
+    "ch12-v9-birth-of-twins": {
+      "question_type": "生为双胞胎之一：太阳落四足星座且其余行星有力落双体星座",
+      "required_facts": [
+        "太阳（Surya）是否落四足星座（quadruped Rāśi）",
+        "其余行星（others）是否落双体星座（Dual Rāśi）",
+        "其余行星（others）是否有力"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "原文只写 others，未界定其范围，范围未定即停判。",
+        "缺少太阳落四足星座的事实时停止。",
+        "有力的判准未定时停止（强弱判准见第27章 Shad Bal）。"
+      ]
+    },
+    "ch12-v10-surya-chandra-same-navamsa-three-mothers": {
+      "question_type": "由三位母亲抚养：太阳与月亮同宫并落同一九分盘",
+      "required_facts": [
+        "太阳（Surya）是否与月亮（Chandra）同宫",
+        "太阳（Surya）与月亮（Chandra）是否落在同一个九分盘（Navamsa D9）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少太阳月亮同宫事实时停止。",
+        "缺少太阳月亮同九分盘事实时停止。"
+      ]
+    },
+    "ch12-v11-effects-also-from-chandra": {
+      "question_type": "断语也要以月亮起算：适用于上升的效果同样用于月亮",
+      "required_facts": [
+        "本盘月亮（Chandra）落在哪一宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少月亮落宫事实时停止。",
+        "本偈没有给出具体断语内容，需要结论时须回到对应章节的原文。"
+      ]
+    },
+    "ch12-v12-14-first-decanate-limb-order": {
+      "question_type": "第一个三分盘上升：各宫对应头眼耳鼻太阳穴下巴脸",
+      "required_facts": [
+        "本盘一宫（Lagn）是否落在所在星座的第一个三分盘（Drekkana D3）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升是否落第一个三分盘的事实时停止。",
+        "肢体次序的起算宫位原文未给，具体宫位对应未确定即停判。"
+      ]
+    },
+    "ch12-v12-14-second-decanate-limb-order": {
+      "question_type": "第二个三分盘上升：各宫对应颈肩臂体侧心胃脐",
+      "required_facts": [
+        "本盘一宫（Lagn）是否落在所在星座的第二个三分盘（Drekkana D3）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升是否落第二个三分盘的事实时停止。",
+        "肢体次序的起算宫位原文未给，具体宫位对应未确定即停判。"
+      ]
+    },
+    "ch12-v12-14-third-decanate-limb-order": {
+      "question_type": "第三个三分盘上升：各宫对应骨盆肛门阴茎睾丸大腿膝小腿足",
+      "required_facts": [
+        "本盘一宫（Lagn）是否落在所在星座的第三个三分盘（Drekkana D3）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升是否落第三个三分盘的事实时停止。",
+        "肢体次序的起算宫位原文未给，具体宫位对应未确定即停判。"
+      ]
+    },
+    "ch12-v12-14-risen-portion-body-side": {
+      "question_type": "身体左右侧：已升起的部分主左侧，未升起的部分主右侧",
+      "required_facts": [
+        "本盘一宫（Lagn）在所在星座中已升起的度数是多少"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升已升起度数的事实时停止。"
+      ]
+    },
+    "ch12-v15-malefic-limb-ulcers-or-scars": {
+      "question_type": "肢体有溃疡或疤痕：该肢体对应的宫被凶星占据",
+      "required_facts": [
+        "本盘一宫（Lagn）所在星座的三分盘（Drekkana D3）给出的宫位肢体对应是哪一组",
+        "该肢体所对应的宫（Bhava）是否被凶星占据"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升三分盘宫位肢体对应表时停止（对应表见第12章 v12-14）。",
+        "缺少该宫是否被凶星占据的事实时停止。",
+        "凶星名册未定时停止（吉凶判准见第3章 v11）。"
+      ]
+    },
+    "ch12-v15-benefic-limb-mark": {
+      "question_type": "肢体有痣一类的记号：该肢体与吉星有关联",
+      "required_facts": [
+        "本盘一宫（Lagn）所在星座的三分盘（Drekkana D3）给出的宫位肢体对应是哪一组",
+        "该肢体所对应的宫（Bhava）是否与吉星有关联（related to a benefic）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "原文这半句只写 related to a benefic，关联方式未确定即停判。",
+        "缺少上升三分盘宫位肢体对应表时停止（对应表见第12章 v12-14）。",
+        "吉星名册未定时停止（吉凶判准见第3章 v11）。"
+      ]
+    },
+    "ch12-v15-saravali-effects-from-birth": {
+      "question_type": "记号自出生起就有：所涉行星落本星座或本九分盘",
+      "required_facts": [
+        "与该肢体关联的行星是哪一颗"
+      ],
+      "conditional_facts": [
+        "与该肢体关联的行星是否落本星座（own Rāśi）",
+        "与该肢体关联的行星是否落本九分盘（own Navāńś）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少与该肢体关联的行星身份事实时停止。",
+        "本星座与本九分盘两个分支事实全缺时停止。",
+        "此条出自转引 Saravali，需要与 BPHS 自断区分时须回查原书。"
+      ]
+    },
+    "ch12-v15-saravali-effects-in-course-of-life": {
+      "question_type": "记号在一生中才显现：所涉行星既不落本星座也不落本九分盘",
+      "required_facts": [
+        "与该肢体关联的行星是否落本星座（own Rāśi）",
+        "与该肢体关联的行星是否落本九分盘（own Navāńś）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少行星是否落本星座、是否落本九分盘的事实时停止。",
+        "此条出自转引 Saravali，需要与 BPHS 自断区分时须回查原书。"
+      ]
+    },
+    "ch13-v1-2-dhan-lord-good-placement-promotes-wealth": {
+      "question_type": "促进财富：二宫主落二宫、角宫或三角宫",
+      "required_facts": [
+        "本盘二宫主（Dhan's Lord）是哪颗行星"
+      ],
+      "conditional_facts": [
+        "二宫主（Dhan's Lord）是否落二宫（Dhan）",
+        "二宫主（Dhan's Lord）是否落角宫",
+        "二宫主（Dhan's Lord）是否落三角宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少二宫主身份事实时停止。",
+        "三个落宫分支事实全缺时停止。"
+      ]
+    },
+    "ch13-v1-2-dhan-lord-dusthana-financial-decline": {
+      "question_type": "经济衰退：二宫主落六宫、八宫或十二宫",
+      "required_facts": [
+        "本盘二宫主（Dhan's Lord）是哪颗行星"
+      ],
+      "conditional_facts": [
+        "二宫主（Dhan's Lord）是否落六宫（Ari）",
+        "二宫主（Dhan's Lord）是否落八宫（Randhr）",
+        "二宫主（Dhan's Lord）是否落十二宫（Vyaya）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少二宫主身份事实时停止。",
+        "三个落宫分支事实全缺时停止。"
+      ]
+    },
+    "ch13-v1-2-benefic-in-dhan-gives-wealth": {
+      "question_type": "给予财富：二宫内有吉星",
+      "required_facts": [
+        "二宫（Dhan）是否被吉星占据"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少二宫吉星占据事实时停止。",
+        "吉星名册未定时停止（吉凶判准见第3章 v11）。"
+      ]
+    },
+    "ch13-v1-2-malefic-in-dhan-destroys-wealth": {
+      "question_type": "毁掉财富：二宫内有凶星",
+      "required_facts": [
+        "二宫（Dhan）是否被凶星占据"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少二宫凶星占据事实时停止。",
+        "凶星名册未定时停止（吉凶判准见第3章 v11）。"
+      ]
+    },
+    "ch13-v3-guru-in-dhan-wealth": {
+      "question_type": "富有：木星身为二宫主落二宫，或木星与火星同宫",
+      "required_facts": [
+        "本盘木星（Guru）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "木星（Guru）是否落二宫（Dhan）",
+        "木星（Guru）是否为二宫主（Dhan's Lord）",
+        "木星（Guru）是否与火星（Mangal）同宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少木星（Guru）落宫事实时停止。",
+        "「木星身为二宫主落二宫」与「木星与火星同宫」两个分支事实都缺时停止。"
+      ]
+    },
+    "ch13-v4-dhan-labh-lords-wealth": {
+      "question_type": "得财：二宫主与十一宫主互居，或会合于角宫、三角宫",
+      "required_facts": [
+        "本盘二宫主（Dhan's Lord）是哪颗行星",
+        "本盘十一宫主（Labh's Lord）是哪颗行星"
+      ],
+      "conditional_facts": [
+        "二宫主（Dhan's Lord）是否落十一宫（Labh）",
+        "十一宫主（Labh's Lord）是否落二宫（Dhan）",
+        "二宫主（Dhan's Lord）与十一宫主（Labh's Lord）会合之处是否为角宫",
+        "二宫主（Dhan's Lord）与十一宫主（Labh's Lord）会合之处是否为三角宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少二宫主、十一宫主的行星身份事实时停止。",
+        "互居、会合角宫、会合三角宫三个分支事实全缺时停止。"
+      ]
+    },
+    "ch13-v5-dhan-lord-angle-labh-lord-wealth": {
+      "question_type": "富有：二宫主落角宫，十一宫主落其三角宫或得木星金星相照、同宫",
+      "required_facts": [
+        "二宫主（Dhan's Lord）是否落角宫"
+      ],
+      "conditional_facts": [
+        "十一宫主（Labh's Lord）是否落从二宫主（Dhan's Lord）所在宫起算的三角宫",
+        "十一宫主（Labh's Lord）是否被木星（Guru）相照",
+        "十一宫主（Labh's Lord）是否被金星（Shukra）相照",
+        "十一宫主（Labh's Lord）是否与木星（Guru）同宫",
+        "十一宫主（Labh's Lord）是否与金星（Shukra）同宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少二宫主是否落角宫的事实时停止。",
+        "十一宫主的三个分支事实（落三角宫、被木星金星相照、与木星金星同宫）全缺时停止。"
+      ]
+    },
+    "ch13-v6-7-lords-in-evil-bhava-penniless": {
+      "question_type": "贫穷：二宫主与十一宫主同落凶宫且二宫被凶星占据",
+      "required_facts": [
+        "二宫主（Dhan's Lord）是否落凶宫（evil Bhava）",
+        "十一宫主（Labh's Lord）是否落凶宫（evil Bhava）",
+        "二宫（Dhan）是否被凶星占据"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "凶宫（evil Bhava）的宫位范围原文本句未界定，未确定即停判。",
+        "缺少二宫主或十一宫主落宫事实时停止。",
+        "缺少二宫是否被凶星占据的事实时停止。",
+        "凶星名册未定时停止（吉凶判准见第3章 v11）。"
+      ]
+    },
+    "ch13-v6-7-lords-combust-penury-from-birth": {
+      "question_type": "自幼贫困行乞：二宫主与十一宫主都燃烧或都与凶星同宫",
+      "required_facts": [
+        "本盘二宫主（Dhan's Lord）是哪颗行星",
+        "本盘十一宫主（Labh's Lord）是哪颗行星"
+      ],
+      "conditional_facts": [
+        "二宫主（Dhan's Lord）是否燃烧",
+        "十一宫主（Labh's Lord）是否燃烧",
+        "二宫主（Dhan's Lord）是否与凶星同宫",
+        "十一宫主（Labh's Lord）是否与凶星同宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少二宫主、十一宫主的行星身份事实时停止。",
+        "燃烧与凶星同宫两个分支事实都缺时停止。",
+        "凶星名册未定时停止（吉凶判准见第3章 v11）。"
+      ]
+    },
+    "ch13-v8-royal-punishment-wealth-loss": {
+      "question_type": "因王家刑罚失财：二宫主十一宫主落六八十二宫且火星落十一宫、罗睺落二宫",
+      "required_facts": [
+        "火星（Mangal）是否落十一宫（Labh）",
+        "罗睺（Rahu）是否落二宫（Dhan）",
+        "本盘二宫主（Dhan's Lord）落在哪一宫",
+        "本盘十一宫主（Labh's Lord）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "二宫主（Dhan's Lord）是否落六宫（Ari）",
+        "二宫主（Dhan's Lord）是否落八宫（Randhr）",
+        "二宫主（Dhan's Lord）是否落十二宫（Vyaya）",
+        "十一宫主（Labh's Lord）是否落六宫（Ari）",
+        "十一宫主（Labh's Lord）是否落八宫（Randhr）",
+        "十一宫主（Labh's Lord）是否落十二宫（Vyaya）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少火星落十一宫、罗睺落二宫任一事实时停止。",
+        "缺少二宫主或十一宫主落宫事实时停止。",
+        "二宫主的三个落宫分支事实全缺，或十一宫主的三个落宫分支事实全缺时停止。"
+      ]
+    },
+    "ch13-v9-religious-charitable-expenses": {
+      "question_type": "开销用于宗教慈善：木星落十一宫、金星落二宫、十二宫有吉星且二宫主与吉星同宫",
+      "required_facts": [
+        "木星（Guru）是否落十一宫（Labh）",
+        "金星（Shukra）是否落二宫（Dhan）",
+        "十二宫（Vyaya）是否被吉星占据",
+        "二宫主（Dhan's Lord）是否与吉星同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "四个条件事实缺任一时停止。",
+        "吉星名册未定时停止（吉凶判准见第3章 v11）。"
+      ]
+    },
+    "ch13-v10-dhan-lord-dignity-fame": {
+      "question_type": "照顾族人并成名：二宫主落本星座或入旺",
+      "required_facts": [
+        "本盘二宫主（Dhan's Lord）是哪颗行星"
+      ],
+      "conditional_facts": [
+        "二宫主（Dhan's Lord）是否落本星座（own Rāśi）",
+        "二宫主（Dhan's Lord）是否入旺"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少二宫主行星身份事实时停止。",
+        "落本星座与入旺两个分支事实都缺时停止。"
+      ]
+    },
+    "ch13-v11-high-varga-effortless-wealth": {
+      "question_type": "不劳而获的财富：二宫主与吉星同宫且处于高等级分盘",
+      "required_facts": [
+        "二宫主（Dhan's Lord）是否与吉星同宫"
+      ],
+      "conditional_facts": [
+        "二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Paravatāńś 等级",
+        "二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Devalokāńś 等级",
+        "二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Brahmalokāńś 等级",
+        "二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Sakravahanāńś 等级",
+        "二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Sridhamāńś 等级"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少二宫主与吉星同宫的事实时停止。",
+        "五个 Varga 等级分支事实全缺时停止。",
+        "吉星名册未定时停止（吉凶判准见第3章 v11）。"
+      ]
+    },
+    "ch13-v12-strong-dhan-lord-beautiful-eyes": {
+      "question_type": "眼睛美丽：二宫主有力",
+      "required_facts": [
+        "二宫主（Dhan's Lord）是否有力"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少二宫主强弱事实时停止（该判准待排盘窗口定义）。"
+      ]
+    },
+    "ch13-v12-dhan-lord-dusthana-eye-disease": {
+      "question_type": "眼病或眼部畸形：二宫主落六宫、八宫或十二宫",
+      "required_facts": [
+        "本盘二宫主（Dhan's Lord）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "二宫主（Dhan's Lord）是否落六宫（Ari）",
+        "二宫主（Dhan's Lord）是否落八宫（Randhr）",
+        "二宫主（Dhan's Lord）是否落十二宫（Vyaya）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少二宫主落宫事实时停止。",
+        "六宫、八宫、十二宫三个分支事实全缺时停止。"
+      ]
+    },
+    "ch13-v13-dhan-and-lord-with-malefics-untruthful": {
+      "question_type": "搬弄是非说谎并患风病：二宫内有凶星且二宫主与凶星同宫",
+      "required_facts": [
+        "二宫（Dhan）是否被凶星占据",
+        "二宫主（Dhan's Lord）是否与凶星同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少二宫是否被凶星占据的事实时停止。",
+        "缺少二宫主是否与凶星同宫的事实时停止。",
+        "凶星名册未定时停止（吉凶判准见第3章 v11）。"
+      ]
+    }
+  }
+}

@@ -1,0 +1,1430 @@
+{
+  "shard": 3,
+  "step_count": 9,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch12-v12-14-first-decanate-limb-order.step-001",
+      "method": {
+        "method": "ch12-v12-14-first-decanate-limb-order",
+        "title": "第一个三分盘上升：各宫对应头眼耳鼻太阳穴下巴脸",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我身上哪些部位由哪一宫管",
+          "上升第一个三分盘代表哪些身体部位"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Head, eyes, ears, nose, temple, chin and face is the order of limbs, denoted (by the various Bhavas), when the first decanate of a Rashiascends.",
+            "上升第一个三分盘 宫位与肢体对应"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "One third of a Rashiis called Dreshkan. These are totally 36, counted from Mesh, repeating thrice at the rate of 12 per round",
+            "Dreshkan Bal. Male, female and hermaphrodite Grahas, respectively, get a quarter Rupa according to placements in the first, second and third decanates",
+            "The Sixteen Divisions of a Rāśi"
+          ],
+          "method_queries": [
+            "The physique from Lagna, wealth from Hora, happiness through co-born from Dreshkan",
+            "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour, weakness, happiness, grief and innate nature are all to be guessed through the ascending Rāśi",
+            "判断身体部位要先看上升落第几个三分盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch12-v12-14-first-decanate-limb-order.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "when the first decanate of a Rashiascends"
+            },
+            {
+              "step_id": "ch12-v12-14-first-decanate-limb-order.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Head, eyes, ears, nose, temple, chin and face is the order of limbs, denoted (by the various Bhavas)"
+            },
+            {
+              "step_id": "ch12-v12-14-first-decanate-limb-order.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "when the first decanate of a Rashiascends Head, eyes, ears, nose, temple, chin and face is the order of limbs, denoted (by the various Bhavas)"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升是否落第一个三分盘的事实时停止。",
+          "肢体次序的起算宫位原文未给，具体宫位对应未确定即停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch12-v12-14-first-decanate-limb-order.step-001",
+        "action": "核对上升是否落在所在星座的第一个三分盘（Drekkana D3），若是则取这一组宫位与肢体的对应。",
+        "applicability_scope": "仅限本命盘上升三分盘（Drekkana D3）与身体部位的对应；原文只给出肢体次序，没有说这一串从哪一宫起算。",
+        "minimum_supported_claim": "上升落在星座的第一个三分盘（first decanate）时，各宫依次代表头、眼、耳、鼻、太阳穴、下巴和脸。",
+        "produced_fact_keys": [
+          "第一个三分盘上升时的宫位肢体对应"
+        ],
+        "required_fact_keys": [
+          "本盘一宫（Lagn）是否落在所在星座的第一个三分盘（Drekkana D3）"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘一宫（Lagn）是否落在所在星座的第一个三分盘（Drekkana D3）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "when the first decanate of a Rashiascends",
+              "claim": "上升落在星座的第一个三分盘（first decanate）时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Head, eyes, ears, nose, temple, chin and face is the order of limbs, denoted (by the various Bhavas)",
+              "claim": "各宫依次代表头、眼、耳、鼻、太阳穴、下巴和脸"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch12:v12-14",
+            "quote": "Head, eyes, ears, nose, temple, chin and face is the order of limbs, denoted (by the various Bhavas), when the first decanate of a Rashiascends.",
+            "pdf_pages": [
+              27
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘一宫（Lagn）是否落在所在星座的第一个三分盘（Drekkana D3）。",
+        "stop_fact_keys": [
+          "本盘一宫（Lagn）是否落在所在星座的第一个三分盘（Drekkana D3）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把这一组肢体次序用在其他三分盘上升的盘上。",
+          "不得自行指定这一串肢体从哪一宫起算，原文没有写。",
+          "不得据此直接断出疾病或吉凶，本偈只给对应关系。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "4e8363ff12e4652b7d966ccf716b2ba4d77a1743962bbe2ceea7452449e7e364"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch12-v12-14-second-decanate-limb-order.step-001",
+      "method": {
+        "method": "ch12-v12-14-second-decanate-limb-order",
+        "title": "第二个三分盘上升：各宫对应颈肩臂体侧心胃脐",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我身上哪些部位由哪一宫管",
+          "上升第二个三分盘代表哪些身体部位"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "In the case of the second decanate ascending the order is neck, shoulder, arm, side, heart, stomach and navel.",
+            "上升第二个三分盘 宫位与肢体对应"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "One third of a Rashiis called Dreshkan. These are totally 36, counted from Mesh, repeating thrice at the rate of 12 per round",
+            "Dreshkan Bal. Male, female and hermaphrodite Grahas, respectively, get a quarter Rupa according to placements in the first, second and third decanates",
+            "The Sixteen Divisions of a Rāśi"
+          ],
+          "method_queries": [
+            "The physique from Lagna, wealth from Hora, happiness through co-born from Dreshkan",
+            "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour, weakness, happiness, grief and innate nature are all to be guessed through the ascending Rāśi",
+            "判断身体部位要先看上升落第几个三分盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch12-v12-14-second-decanate-limb-order.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "In the case of the second decanate ascending"
+            },
+            {
+              "step_id": "ch12-v12-14-second-decanate-limb-order.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the order is neck, shoulder, arm, side, heart, stomach and navel"
+            },
+            {
+              "step_id": "ch12-v12-14-second-decanate-limb-order.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "In the case of the second decanate ascending the order is neck, shoulder, arm, side, heart, stomach and navel"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升是否落第二个三分盘的事实时停止。",
+          "肢体次序的起算宫位原文未给，具体宫位对应未确定即停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch12-v12-14-second-decanate-limb-order.step-001",
+        "action": "核对上升是否落在所在星座的第二个三分盘（Drekkana D3），若是则取这一组宫位与肢体的对应。",
+        "applicability_scope": "仅限本命盘上升三分盘（Drekkana D3）与身体部位的对应；原文只给出肢体次序，没有说这一串从哪一宫起算。",
+        "minimum_supported_claim": "上升落在星座的第二个三分盘（second decanate）时，各宫依次代表颈、肩、臂、体侧、心、胃和脐。",
+        "produced_fact_keys": [
+          "第二个三分盘上升时的宫位肢体对应"
+        ],
+        "required_fact_keys": [
+          "本盘一宫（Lagn）是否落在所在星座的第二个三分盘（Drekkana D3）"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘一宫（Lagn）是否落在所在星座的第二个三分盘（Drekkana D3）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "In the case of the second decanate ascending",
+              "claim": "上升落在星座的第二个三分盘（second decanate）时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the order is neck, shoulder, arm, side, heart, stomach and navel",
+              "claim": "各宫依次代表颈、肩、臂、体侧、心、胃和脐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch12:v12-14",
+            "quote": "In the case of the second decanate ascending the order is neck, shoulder, arm, side, heart, stomach and navel.",
+            "pdf_pages": [
+              27
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘一宫（Lagn）是否落在所在星座的第二个三分盘（Drekkana D3）。",
+        "stop_fact_keys": [
+          "本盘一宫（Lagn）是否落在所在星座的第二个三分盘（Drekkana D3）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把这一组肢体次序用在其他三分盘上升的盘上。",
+          "不得自行指定这一串肢体从哪一宫起算，原文没有写。",
+          "不得据此直接断出疾病或吉凶，本偈只给对应关系。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "5ea453253445c3f2564474424c74f368766cab45123ed4f2bcc8e1fe62df8070"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch12-v12-14-third-decanate-limb-order.step-001",
+      "method": {
+        "method": "ch12-v12-14-third-decanate-limb-order",
+        "title": "第三个三分盘上升：各宫对应骨盆肛门阴茎睾丸大腿膝小腿足",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我身上哪些部位由哪一宫管",
+          "上升第三个三分盘代表哪些身体部位"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "The order for the third decanate ascending is pelvis, anus/penis, testicles, thigh, knee, calf and foot.",
+            "上升第三个三分盘 宫位与肢体对应"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "One third of a Rashiis called Dreshkan. These are totally 36, counted from Mesh, repeating thrice at the rate of 12 per round",
+            "Dreshkan Bal. Male, female and hermaphrodite Grahas, respectively, get a quarter Rupa according to placements in the first, second and third decanates",
+            "The Sixteen Divisions of a Rāśi"
+          ],
+          "method_queries": [
+            "The physique from Lagna, wealth from Hora, happiness through co-born from Dreshkan",
+            "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour, weakness, happiness, grief and innate nature are all to be guessed through the ascending Rāśi",
+            "判断身体部位要先看上升落第几个三分盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch12-v12-14-third-decanate-limb-order.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "The order for the third decanate ascending"
+            },
+            {
+              "step_id": "ch12-v12-14-third-decanate-limb-order.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "is pelvis, anus/penis, testicles, thigh, knee, calf and foot"
+            },
+            {
+              "step_id": "ch12-v12-14-third-decanate-limb-order.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "The order for the third decanate ascending is pelvis, anus/penis, testicles, thigh, knee, calf and foot"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升是否落第三个三分盘的事实时停止。",
+          "肢体次序的起算宫位原文未给，具体宫位对应未确定即停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch12-v12-14-third-decanate-limb-order.step-001",
+        "action": "核对上升是否落在所在星座的第三个三分盘（Drekkana D3），若是则取这一组宫位与肢体的对应。",
+        "applicability_scope": "仅限本命盘上升三分盘（Drekkana D3）与身体部位的对应；原文只给出肢体次序，没有说这一串从哪一宫起算。",
+        "minimum_supported_claim": "上升落在星座的第三个三分盘（third decanate）时，各宫依次代表骨盆、肛门/阴茎、睾丸、大腿、膝、小腿和足。",
+        "produced_fact_keys": [
+          "第三个三分盘上升时的宫位肢体对应"
+        ],
+        "required_fact_keys": [
+          "本盘一宫（Lagn）是否落在所在星座的第三个三分盘（Drekkana D3）"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘一宫（Lagn）是否落在所在星座的第三个三分盘（Drekkana D3）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "The order for the third decanate ascending",
+              "claim": "上升落在星座的第三个三分盘（third decanate）时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "is pelvis, anus/penis, testicles, thigh, knee, calf and foot",
+              "claim": "各宫依次代表骨盆、肛门/阴茎、睾丸、大腿、膝、小腿和足"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch12:v12-14",
+            "quote": "The order for the third decanate ascending is pelvis, anus/penis, testicles, thigh, knee, calf and foot.",
+            "pdf_pages": [
+              27
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘一宫（Lagn）是否落在所在星座的第三个三分盘（Drekkana D3）。",
+        "stop_fact_keys": [
+          "本盘一宫（Lagn）是否落在所在星座的第三个三分盘（Drekkana D3）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把这一组肢体次序用在其他三分盘上升的盘上。",
+          "不得自行指定这一串肢体从哪一宫起算，原文没有写。",
+          "不得据此直接断出疾病或吉凶，本偈只给对应关系。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "7f5210f73e46ebda97146c624a75445ba3c6e5d3672f5e297f296402cfe95cf7"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch12-v12-14-risen-portion-body-side.step-001",
+      "method": {
+        "method": "ch12-v12-14-risen-portion-body-side",
+        "title": "身体左右侧：已升起的部分主左侧，未升起的部分主右侧",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "身体左边右边怎么分",
+          "上升已升起的度数代表哪一侧"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "The portion already risen indicates left side of the body (while the one yet to rise, i.e. the invisible half, denotes the right side of the body)",
+            "上升已升起部分主左侧 未升起部分主右侧"
+          ],
+          "counter_queries": [
+            "A mole, spot, or figure, formed by hair on the left side of a woman and right side of a man is auspicious"
+          ],
+          "boundary_queries": [
+            "One third of a Rashiis called Dreshkan. These are totally 36, counted from Mesh, repeating thrice at the rate of 12 per round",
+            "Dreshkan Bal. Male, female and hermaphrodite Grahas, respectively, get a quarter Rupa according to placements in the first, second and third decanates"
+          ],
+          "method_queries": [
+            "Now I will describe to you the effects of moles, marks, spots and signs, found on the body of women and men",
+            "Effects of Moles, Marks, Signs etc. for Men and Women",
+            "判断身体左右侧要看上升升起了多少"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch12-v12-14-risen-portion-body-side.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "The portion already risen"
+            },
+            {
+              "step_id": "ch12-v12-14-risen-portion-body-side.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while the one yet to rise, i.e. the invisible half"
+            },
+            {
+              "step_id": "ch12-v12-14-risen-portion-body-side.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "indicates left side of the body"
+            },
+            {
+              "step_id": "ch12-v12-14-risen-portion-body-side.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "denotes the right side of the body"
+            },
+            {
+              "step_id": "ch12-v12-14-risen-portion-body-side.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "The portion already risen indicates left side of the body"
+            },
+            {
+              "step_id": "ch12-v12-14-risen-portion-body-side.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while the one yet to rise, i.e. the invisible half indicates left side of the body"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升已升起度数的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch12-v12-14-risen-portion-body-side.step-001",
+        "action": "取上升在所在星座中已升起的度数，据此分出身体的左右两侧。",
+        "applicability_scope": "仅限本命盘身体左右侧的划分；括号内关于未升起一半的说明在原文中以括注形式出现，保留其括注身份。",
+        "minimum_supported_claim": "上升星座中已经升起的部分代表身体左侧，尚未升起的那一半（不可见的一半）代表身体右侧。",
+        "produced_fact_keys": [
+          "上升已升起部分的身体左右侧划分"
+        ],
+        "required_fact_keys": [
+          "本盘一宫（Lagn）在所在星座中已升起的度数是多少"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘一宫（Lagn）在所在星座中已升起的度数是多少"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "The portion already risen",
+              "claim": "上升星座中已经升起的部分"
+            },
+            {
+              "quote": "while the one yet to rise, i.e. the invisible half",
+              "claim": "尚未升起的那一半（不可见的一半）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "indicates left side of the body",
+              "claim": "代表身体左侧"
+            },
+            {
+              "quote": "denotes the right side of the body",
+              "claim": "代表身体右侧"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch12:v12-14",
+            "quote": "The portion already risen indicates left side of the body (while the one yet to rise, i.e. the invisible half, denotes the right side of the body).",
+            "pdf_pages": [
+              27
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘一宫（Lagn）在所在星座中已升起的度数是多少。",
+        "stop_fact_keys": [
+          "本盘一宫（Lagn）在所在星座中已升起的度数是多少"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此断出左右侧的吉凶，本偈只给左右侧的归属。",
+          "不得把这条左右划分套到男女之别上，原文本句没有区分性别。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "15bbc101f10ada7a05c0a62d55f2cd5f7d47bc644613ef752b5377be17b252d6"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch12-v15-malefic-limb-ulcers-or-scars.step-001",
+      "method": {
+        "method": "ch12-v15-malefic-limb-ulcers-or-scars",
+        "title": "肢体有溃疡或疤痕：该肢体对应的宫被凶星占据",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我身上的疤是怎么来的",
+          "凶星占的宫对应哪个部位会有伤"
+        ],
+        "facts": null,
+        "dependencies": [
+          "ch12-v12-14-first-decanate-limb-order",
+          "ch12-v12-14-second-decanate-limb-order",
+          "ch12-v12-14-third-decanate-limb-order"
+        ],
+        "retrieval_plan": {
+          "support_queries": [
+            "The limb, related to a malefic by occupation, will have ulcers, or scars",
+            "凶星占据的宫对应肢体 溃疡疤痕"
+          ],
+          "counter_queries": [
+            "while the one, related to a benefic, will have a mark (like moles etc)"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "One third of a Rashiis called Dreshkan. These are totally 36, counted from Mesh, repeating thrice at the rate of 12 per round",
+            "Effects of Moles, Marks, Signs etc. for Men and Women"
+          ],
+          "method_queries": [
+            "Now I will describe to you the effects of moles, marks, spots and signs, found on the body of women and men",
+            "O Brahmin, following are the effects, produced by Ari Bhava, relating to diseases, ulcers etc. Listen to this attentively",
+            "判断肢体伤痕要先取上升三分盘的宫位肢体对应"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch12-v15-malefic-limb-ulcers-or-scars.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "The limb, related to a malefic by occupation"
+            },
+            {
+              "step_id": "ch12-v15-malefic-limb-ulcers-or-scars.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will have ulcers, or scars"
+            },
+            {
+              "step_id": "ch12-v15-malefic-limb-ulcers-or-scars.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "So say the Jyotishis"
+            },
+            {
+              "step_id": "ch12-v15-malefic-limb-ulcers-or-scars.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "The limb, related to a malefic by occupation will have ulcers, or scars"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升三分盘宫位肢体对应表时停止（对应表见第12章 v12-14）。",
+          "缺少该宫是否被凶星占据的事实时停止。",
+          "凶星名册未定时停止（吉凶判准见第3章 v11）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch12-v15-malefic-limb-ulcers-or-scars.step-001",
+        "action": "先按上升三分盘取出宫位与肢体的对应，再核对该肢体所对应的宫是否被凶星占据。",
+        "applicability_scope": "仅限本命盘肢体伤痕主题；本句的 The limb 承接第12章 v12-14 给出的宫位肢体对应表；结句 So say the Jyotishis 表明这是占星家们的转述，结论强度不与作者自断等同。",
+        "minimum_supported_claim": "被凶星以占据方式关联到的那个肢体，会有溃疡或疤痕；这是占星家们的说法。",
+        "produced_fact_keys": [
+          "凶星占据宫位对应肢体的伤痕判定"
+        ],
+        "required_fact_keys": [
+          "本盘一宫（Lagn）所在星座的三分盘（Drekkana D3）给出的宫位肢体对应是哪一组",
+          "该肢体所对应的宫（Bhava）是否被凶星占据"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘一宫（Lagn）所在星座的三分盘（Drekkana D3）给出的宫位肢体对应是哪一组"
+            },
+            {
+              "fact_key": "该肢体所对应的宫（Bhava）是否被凶星占据"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "The limb, related to a malefic by occupation",
+              "claim": "被凶星以占据方式关联到的那个肢体"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will have ulcers, or scars",
+              "claim": "会有溃疡或疤痕"
+            },
+            {
+              "quote": "So say the Jyotishis",
+              "claim": "这是占星家们的说法"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch12:v15",
+            "quote": "The limb, related to a malefic by occupation, will have ulcers, or scars",
+            "pdf_pages": [
+              27
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch12:v15",
+            "quote": "So say the Jyotishis",
+            "pdf_pages": [
+              27
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘一宫（Lagn）所在星座的三分盘（Drekkana D3）给出的宫位肢体对应是哪一组、该肢体所对应的宫（Bhava）是否被凶星占据。",
+        "stop_fact_keys": [
+          "本盘一宫（Lagn）所在星座的三分盘（Drekkana D3）给出的宫位肢体对应是哪一组",
+          "该肢体所对应的宫（Bhava）是否被凶星占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把占据以外的关联方式（相照、主管）也算作本句的凶星关联，原文这半句写的是 by occupation。",
+          "不得据此断出伤痕出现的时间，那是括注引述 Saravali 的另一条。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch12:v12-14"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "5ac2c0509ed678ac214887ade675ec8d840f439ef56cccfb3a37494c8e64d6a8"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch12-v15-benefic-limb-mark.step-001",
+      "method": {
+        "method": "ch12-v15-benefic-limb-mark",
+        "title": "肢体有痣一类的记号：该肢体与吉星有关联",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我身上的痣代表什么",
+          "吉星关联的部位会怎样"
+        ],
+        "facts": null,
+        "dependencies": [
+          "ch12-v12-14-first-decanate-limb-order",
+          "ch12-v12-14-second-decanate-limb-order",
+          "ch12-v12-14-third-decanate-limb-order"
+        ],
+        "retrieval_plan": {
+          "support_queries": [
+            "while the one, related to a benefic, will have a mark (like moles etc)",
+            "吉星关联的肢体 痣一类的记号"
+          ],
+          "counter_queries": [
+            "The limb, related to a malefic by occupation, will have ulcers, or scars"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "One third of a Rashiis called Dreshkan. These are totally 36, counted from Mesh, repeating thrice at the rate of 12 per round",
+            "Effects of Moles, Marks, Signs etc. for Men and Women"
+          ],
+          "method_queries": [
+            "Now I will describe to you the effects of moles, marks, spots and signs, found on the body of women and men",
+            "A mole, spot, or figure, formed by hair on the left side of a woman and right side of a man is auspicious",
+            "判断肢体记号要先取上升三分盘的宫位肢体对应"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch12-v15-benefic-limb-mark.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while the one, related to a benefic"
+            },
+            {
+              "step_id": "ch12-v15-benefic-limb-mark.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will have a mark (like moles etc)"
+            },
+            {
+              "step_id": "ch12-v15-benefic-limb-mark.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "So say the Jyotishis"
+            },
+            {
+              "step_id": "ch12-v15-benefic-limb-mark.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while the one, related to a benefic will have a mark (like moles etc)"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "原文这半句只写 related to a benefic，关联方式未确定即停判。",
+          "缺少上升三分盘宫位肢体对应表时停止（对应表见第12章 v12-14）。",
+          "吉星名册未定时停止（吉凶判准见第3章 v11）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch12-v15-benefic-limb-mark.step-001",
+        "action": "先按上升三分盘取出宫位与肢体的对应，再核对该肢体所对应的宫是否与吉星有关联。",
+        "applicability_scope": "仅限本命盘肢体记号主题；本句的 the one 承接第12章 v12-14 给出的宫位肢体对应表；原文这半句只写 related to a benefic，没有像凶星那半句一样写 by occupation，关联方式未确定即停判；结句 So say the Jyotishis 表明这是占星家们的转述。",
+        "minimum_supported_claim": "被吉星关联到的那个肢体，会有一个记号（例如痣一类）；这是占星家们的说法。",
+        "produced_fact_keys": [
+          "吉星关联宫位对应肢体的记号判定"
+        ],
+        "required_fact_keys": [
+          "本盘一宫（Lagn）所在星座的三分盘（Drekkana D3）给出的宫位肢体对应是哪一组",
+          "该肢体所对应的宫（Bhava）是否与吉星有关联（related to a benefic）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘一宫（Lagn）所在星座的三分盘（Drekkana D3）给出的宫位肢体对应是哪一组"
+            },
+            {
+              "fact_key": "该肢体所对应的宫（Bhava）是否与吉星有关联（related to a benefic）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "while the one, related to a benefic",
+              "claim": "被吉星关联到的那个肢体"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will have a mark (like moles etc)",
+              "claim": "会有一个记号（例如痣一类）"
+            },
+            {
+              "quote": "So say the Jyotishis",
+              "claim": "这是占星家们的说法"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch12:v15",
+            "quote": "while the one, related to a benefic, will have a mark (like moles etc)",
+            "pdf_pages": [
+              27
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch12:v15",
+            "quote": "So say the Jyotishis",
+            "pdf_pages": [
+              27
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘一宫（Lagn）所在星座的三分盘（Drekkana D3）给出的宫位肢体对应是哪一组、该肢体所对应的宫（Bhava）是否与吉星有关联（related to a benefic）。",
+        "stop_fact_keys": [
+          "本盘一宫（Lagn）所在星座的三分盘（Drekkana D3）给出的宫位肢体对应是哪一组",
+          "该肢体所对应的宫（Bhava）是否与吉星有关联（related to a benefic）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得比照凶星那半句替吉星补出 by occupation，原文这半句没有写关联方式。",
+          "不得指定记号的颜色、大小或形状，原文只举了痣一类。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch12:v12-14"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "58be0bff2c126ab549f0b3a2400a6d675e8004a4f68c431f3fce093ef3f592f3"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch12-v15-saravali-effects-from-birth.step-001",
+      "method": {
+        "method": "ch12-v15-saravali-effects-from-birth",
+        "title": "记号自出生起就有：所涉行星落本星座或本九分盘",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我身上的痕迹是天生的还是后来的",
+          "行星落本星座会怎样影响记号出现的时间"
+        ],
+        "facts": null,
+        "dependencies": [
+          "ch12-v15-malefic-limb-ulcers-or-scars",
+          "ch12-v15-benefic-limb-mark"
+        ],
+        "retrieval_plan": {
+          "support_queries": [
+            "that a malefic, or a benefic, if be in own Rāśi, or Navāńś, the effects will be right from birth",
+            "行星落本星座或本九分盘 记号自出生起就有"
+          ],
+          "counter_queries": [
+            "In other cases it will be in the course of one’s life, that these effects will come to pass"
+          ],
+          "boundary_queries": [
+            "Effects of Moles, Marks, Signs etc. for Men and Women",
+            "The Navāńś calculation are for a Movable Rashifrom there itself, for a Fixed Rashifrom the 9th thereof and for a Dual Rashifrom the 5th thereof",
+            "The Sixteen Divisions of a Rāśi"
+          ],
+          "method_queries": [
+            "Now I will describe to you the effects of moles, marks, spots and signs, found on the body of women and men",
+            "One third of a Rashiis called Dreshkan. These are totally 36, counted from Mesh, repeating thrice at the rate of 12 per round",
+            "判断记号出现的时间要看所涉行星落不落本星座本九分盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch12-v15-saravali-effects-from-birth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Also see Sloka 6, Ch. 4 of Saravali"
+            },
+            {
+              "step_id": "ch12-v15-saravali-effects-from-birth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "that a malefic, or a benefic"
+            },
+            {
+              "step_id": "ch12-v15-saravali-effects-from-birth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if be in own Rāśi"
+            },
+            {
+              "step_id": "ch12-v15-saravali-effects-from-birth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or Navāńś"
+            },
+            {
+              "step_id": "ch12-v15-saravali-effects-from-birth.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the effects will be right from birth"
+            },
+            {
+              "step_id": "ch12-v15-saravali-effects-from-birth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Also see Sloka 6, Ch. 4 of Saravali the effects will be right from birth"
+            },
+            {
+              "step_id": "ch12-v15-saravali-effects-from-birth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "that a malefic, or a benefic the effects will be right from birth"
+            },
+            {
+              "step_id": "ch12-v15-saravali-effects-from-birth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if be in own Rāśi the effects will be right from birth"
+            },
+            {
+              "step_id": "ch12-v15-saravali-effects-from-birth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or Navāńś the effects will be right from birth"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少与该肢体关联的行星身份事实时停止。",
+          "本星座与本九分盘两个分支事实全缺时停止。",
+          "此条出自转引 Saravali，需要与 BPHS 自断区分时须回查原书。"
+        ]
+      },
+      "step": {
+        "step_id": "ch12-v15-saravali-effects-from-birth.step-001",
+        "action": "核对与该肢体关联的那颗行星是否落在自己主管的星座，或落在自己的九分盘。",
+        "applicability_scope": "此句是英译者在括注中转引 Saravali 第4章第6颂的说法，不是 BPHS 作者自断，结论强度不与作者自断等同；承接第12章 v15 前句的凶星与吉星关联。",
+        "minimum_supported_claim": "英译者括注转引 Saravali 第4章第6颂：凶星或吉星落自己主管的星座（own Rāśi）或落自己的九分盘（Navāńś）时，这些效果从出生起就有。",
+        "produced_fact_keys": [
+          "肢体记号自出生起显现的判定"
+        ],
+        "required_fact_keys": [
+          "与该肢体关联的行星是哪一颗"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "与该肢体关联的行星是哪一颗"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "与该肢体关联的行星是否落本星座（own Rāśi）"
+                },
+                {
+                  "fact_key": "与该肢体关联的行星是否落本九分盘（own Navāńś）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "与该肢体关联的行星是哪一颗"
+            },
+            "required_fact_keys": [
+              "与该肢体关联的行星是否落本星座（own Rāśi）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "与该肢体关联的行星是否落本星座（own Rāśi）"
+            },
+            "selection_group": "ch12-v15-saravali-effects-from-birth.step-001:own-varga",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：与该肢体关联的行星是否落本星座（own Rāśi）。"
+          },
+          {
+            "when": {
+              "fact_key": "与该肢体关联的行星是哪一颗"
+            },
+            "required_fact_keys": [
+              "与该肢体关联的行星是否落本九分盘（own Navāńś）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "与该肢体关联的行星是否落本九分盘（own Navāńś）"
+            },
+            "selection_group": "ch12-v15-saravali-effects-from-birth.step-001:own-varga",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：与该肢体关联的行星是否落本九分盘（own Navāńś）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Also see Sloka 6, Ch. 4 of Saravali",
+              "claim": "英译者括注转引 Saravali 第4章第6颂"
+            },
+            {
+              "quote": "that a malefic, or a benefic",
+              "claim": "凶星或吉星"
+            },
+            {
+              "quote": "if be in own Rāśi",
+              "claim": "落自己主管的星座（own Rāśi）"
+            },
+            {
+              "quote": "or Navāńś",
+              "claim": "落自己的九分盘（Navāńś）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the effects will be right from birth",
+              "claim": "这些效果从出生起就有"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch12:v15",
+            "quote": "Also see Sloka 6, Ch. 4 of Saravali, which states, that a malefic, or a benefic, if be in own Rāśi, or Navāńś, the effects will be right from birth.",
+            "pdf_pages": [
+              27
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：与该肢体关联的行星是哪一颗。",
+        "stop_fact_keys": [
+          "与该肢体关联的行星是哪一颗"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把这条转引的 Saravali 说法当成 BPHS 作者自断。",
+          "不得把 own Rāśi 读成本宫，它指行星自己主管的星座。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch12:v15"
+        ],
+        "time_scope": {
+          "kind": "period",
+          "label": "效果自出生起就有",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "7ca312307ae728e202c128c7a3278d59d947bdedc3d62fe9a2e3c9aa56e9b0f6"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch12-v15-saravali-effects-in-course-of-life.step-001",
+      "method": {
+        "method": "ch12-v15-saravali-effects-in-course-of-life",
+        "title": "记号在一生中才显现：所涉行星既不落本星座也不落本九分盘",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我身上的痕迹会不会后来才出现",
+          "不落本星座本九分盘时记号什么时候出现"
+        ],
+        "facts": null,
+        "dependencies": [
+          "ch12-v15-saravali-effects-from-birth"
+        ],
+        "retrieval_plan": {
+          "support_queries": [
+            "In other cases it will be in the course of one’s life, that these effects will come to pass",
+            "不落本星座本九分盘 记号在一生中才显现"
+          ],
+          "counter_queries": [
+            "that a malefic, or a benefic, if be in own Rāśi, or Navāńś, the effects will be right from birth"
+          ],
+          "boundary_queries": [
+            "Effects of Moles, Marks, Signs etc. for Men and Women",
+            "The Navāńś calculation are for a Movable Rashifrom there itself, for a Fixed Rashifrom the 9th thereof and for a Dual Rashifrom the 5th thereof",
+            "The Sixteen Divisions of a Rāśi"
+          ],
+          "method_queries": [
+            "Now I will describe to you the effects of moles, marks, spots and signs, found on the body of women and men",
+            "One third of a Rashiis called Dreshkan. These are totally 36, counted from Mesh, repeating thrice at the rate of 12 per round",
+            "判断记号出现的时间要看所涉行星落不落本星座本九分盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch12-v15-saravali-effects-in-course-of-life.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "In other cases"
+            },
+            {
+              "step_id": "ch12-v15-saravali-effects-in-course-of-life.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "it will be in the course of one’s life, that these effects will come to pass"
+            },
+            {
+              "step_id": "ch12-v15-saravali-effects-in-course-of-life.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "In other cases it will be in the course of one’s life, that these effects will come to pass"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少行星是否落本星座、是否落本九分盘的事实时停止。",
+          "此条出自转引 Saravali，需要与 BPHS 自断区分时须回查原书。"
+        ]
+      },
+      "step": {
+        "step_id": "ch12-v15-saravali-effects-in-course-of-life.step-001",
+        "action": "在与该肢体关联的行星既不落本星座也不落本九分盘时，把效果的出现时间判为一生的过程中。",
+        "applicability_scope": "此句是英译者在括注中转引 Saravali 第4章第6颂的说法，不是 BPHS 作者自断；原文的 In other cases 直接指前一句所述 落本星座或本九分盘 之外的情形。",
+        "minimum_supported_claim": "上述以外的情形下，这些效果会在命主一生的过程中才显现。",
+        "produced_fact_keys": [
+          "肢体记号在一生中显现的判定"
+        ],
+        "required_fact_keys": [
+          "与该肢体关联的行星是否落本星座（own Rāśi）",
+          "与该肢体关联的行星是否落本九分盘（own Navāńś）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "与该肢体关联的行星是否落本星座（own Rāśi）"
+                }
+              ]
+            },
+            {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "与该肢体关联的行星是否落本九分盘（own Navāńś）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "In other cases",
+              "claim": "上述以外的情形下"
+            }
+          ],
+          "results": [
+            {
+              "quote": "it will be in the course of one’s life, that these effects will come to pass",
+              "claim": "这些效果会在命主一生的过程中才显现"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch12:v15",
+            "quote": "In other cases it will be in the course of one’s life, that these effects will come to pass",
+            "pdf_pages": [
+              27
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：与该肢体关联的行星是否落本星座（own Rāśi）、与该肢体关联的行星是否落本九分盘（own Navāńś）。",
+        "stop_fact_keys": [
+          "与该肢体关联的行星是否落本星座（own Rāśi）",
+          "与该肢体关联的行星是否落本九分盘（own Navāńś）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 in the course of one’s life 落实成某个年份或大运，原文没有给。",
+          "不得把这条转引的 Saravali 说法当成 BPHS 作者自断。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch12:v15"
+        ],
+        "time_scope": {
+          "kind": "period",
+          "label": "在命主一生的过程中",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "169023eca784e889471115764b5da1c4267171b540eed172cfb882aaaa93f887"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch13-v1-2-dhan-lord-good-placement-promotes-wealth.step-001",
+      "method": {
+        "method": "ch13-v1-2-dhan-lord-good-placement-promotes-wealth",
+        "title": "促进财富：二宫主落二宫、角宫或三角宫",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的财运基础怎么样",
+          "二宫主落哪几宫对钱有利"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If the Lord of Dhan is in Dhan, or is in an angle, or in trine, he will promote one’s wealth (or monetary state)",
+            "二宫主落二宫角宫三角宫 促进财富"
+          ],
+          "counter_queries": [
+            "Should he be in Ari/8th /12th , financial conditions will decline",
+            "One will be penniless, if the Lord of Dhan Bhava is in an evil Bhava, while the Lord of Labh Bhava is also so placed and Dhan Bhava is occupied by a malefic",
+            "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless"
+          ],
+          "boundary_queries": [
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "Putr and Dharm Bhava are known by the name Kon (or trine). Evil Bhavas, or Dusthan Bhavas are Ari, Randhr and Vyaya Bhava",
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava"
+          ],
+          "method_queries": [
+            "Effects of Dhan Bhava",
+            "Now I tell you some Yogas for poverty along with conditions of their nullifications",
+            "判断财运要先看二宫主落在哪一宫"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch13-v1-2-dhan-lord-good-placement-promotes-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If the Lord of Dhan is in Dhan"
+            },
+            {
+              "step_id": "ch13-v1-2-dhan-lord-good-placement-promotes-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or is in an angle"
+            },
+            {
+              "step_id": "ch13-v1-2-dhan-lord-good-placement-promotes-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or in trine"
+            },
+            {
+              "step_id": "ch13-v1-2-dhan-lord-good-placement-promotes-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "he will promote one’s wealth (or monetary state)"
+            },
+            {
+              "step_id": "ch13-v1-2-dhan-lord-good-placement-promotes-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If the Lord of Dhan is in Dhan he will promote one’s wealth (or monetary state)"
+            },
+            {
+              "step_id": "ch13-v1-2-dhan-lord-good-placement-promotes-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or is in an angle he will promote one’s wealth (or monetary state)"
+            },
+            {
+              "step_id": "ch13-v1-2-dhan-lord-good-placement-promotes-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or in trine he will promote one’s wealth (or monetary state)"
+            },
+            {
+              "step_id": "ch13-v1-2-dhan-lord-good-placement-promotes-wealth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If the 2nd lord is in 2nd house"
+            },
+            {
+              "step_id": "ch13-v1-2-dhan-lord-good-placement-promotes-wealth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If the 2nd lord is in 2nd house he will promote one’s wealth (or monetary state)"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少二宫主身份事实时停止。",
+          "三个落宫分支事实全缺时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch13-v1-2-dhan-lord-good-placement-promotes-wealth.step-001",
+        "action": "先定出二宫主是哪颗行星，再核对它是否落二宫、角宫或三角宫。",
+        "applicability_scope": "仅限本命盘二宫（Dhan Bhava）财富主题；原文没有给时间限定。",
+        "minimum_supported_claim": "二宫主（Lord of Dhan）落二宫（Dhan）、落角宫或落三角宫时，会促进命主的财富（或经济状况）。",
+        "produced_fact_keys": [
+          "二宫主吉位的财富促进判定"
+        ],
+        "required_fact_keys": [
+          "本盘二宫主（Dhan's Lord）是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘二宫主（Dhan's Lord）是哪颗行星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "二宫主（Dhan's Lord）是否落二宫（Dhan）"
+                },
+                {
+                  "fact_key": "二宫主（Dhan's Lord）是否落角宫"
+                },
+                {
+                  "fact_key": "二宫主（Dhan's Lord）是否落三角宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘二宫主（Dhan's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）是否落二宫（Dhan）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "二宫主（Dhan's Lord）是否落二宫（Dhan）"
+            },
+            "selection_group": "ch13-v1-2-dhan-lord-good-placement-promotes-wealth.step-001:dhan-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）是否落二宫（Dhan）。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘二宫主（Dhan's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）是否落角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "二宫主（Dhan's Lord）是否落角宫"
+            },
+            "selection_group": "ch13-v1-2-dhan-lord-good-placement-promotes-wealth.step-001:dhan-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）是否落角宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘二宫主（Dhan's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）是否落三角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "二宫主（Dhan's Lord）是否落三角宫"
+            },
+            "selection_group": "ch13-v1-2-dhan-lord-good-placement-promotes-wealth.step-001:dhan-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）是否落三角宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If the Lord of Dhan is in Dhan",
+              "claim": "二宫主（Lord of Dhan）落二宫（Dhan）"
+            },
+            {
+              "quote": "or is in an angle",
+              "claim": "落角宫"
+            },
+            {
+              "quote": "or in trine",
+              "claim": "落三角宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "he will promote one’s wealth (or monetary state)",
+              "claim": "会促进命主的财富（或经济状况）"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch13:v1-2",
+            "quote": "If the Lord of Dhan is in Dhan, or is in an angle, or in trine, he will promote one’s wealth (or monetary state).",
+            "pdf_pages": [
+              27
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘二宫主（Dhan's Lord）是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘二宫主（Dhan's Lord）是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财富数额或得财时间，原文只说促进。",
+          "不得把 promote 读成保证富有。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "08e0250ab7e42b476d9e475892d1703cc1b272982ca31ef51b940546a0a8c5e2"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch12:v12-14": {
+      "evidence_atom_id": "bphs-97:santhanam:ch12:v12-14",
+      "chapter_number": 12,
+      "chapter_title": "Effects of Tanu Bhava",
+      "verse_label": "12-14.",
+      "content_role": "verse",
+      "exact_text": "12-14. Decanates and Bodily Limbs. Head, eyes, ears, nose, temple, chin and face is the order of limbs, denoted (by the various Bhavas), when the first decanate of a Rashiascends. In the case of the second decanate ascending the order is neck, shoulder, arm, side, heart, stomach and navel. The order for the third decanate ascending is pelvis, anus/penis, testicles, thigh, knee, calf and foot. The portion already risen indicates left side of the body (while the one yet to rise, i.e. the invisible half, denotes the right side of the body).",
+      "pdf_pages": [
+        27
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 12 · Sloka 12-14 · PDF page 27 · bphs-97:santhanam:ch12:v12-14",
+      "previous_atom_id": "bphs-97:santhanam:ch12:v11",
+      "next_atom_id": "bphs-97:santhanam:ch12:v15",
+      "context_before": "ts on Chandra also, as are applicable to Lagn. Now explained are clues to know of ulcers, identity marks etc. on one’s person.\n\n",
+      "context_after": "15. Limbs Affected. The limb, related to a malefic by occupation, will have ulcers, or scars, while the one, related to a benefi",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch12:v15": {
+      "evidence_atom_id": "bphs-97:santhanam:ch12:v15",
+      "chapter_number": 12,
+      "chapter_title": "Effects of Tanu Bhava",
+      "verse_label": "15.",
+      "content_role": "verse",
+      "exact_text": "15. Limbs Affected. The limb, related to a malefic by occupation, will have ulcers, or scars, while the one, related to a benefic, will have a mark (like moles etc). So say the Jyotishis. (Also see Sloka 6, Ch. 4 of Saravali, which states, that a malefic, or a benefic, if be in own Rāśi, or Navāńś, the effects will be right from birth. In other cases it will be in the course of one’s life, that these effects will come to pass)",
+      "pdf_pages": [
+        27
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 12 · Sloka 15 · PDF page 27 · bphs-97:santhanam:ch12:v15",
+      "previous_atom_id": "bphs-97:santhanam:ch12:v12-14",
+      "next_atom_id": null,
+      "context_before": "isen indicates left side of the body (while the one yet to rise, i.e. the invisible half, denotes the right side of the body).\n\n",
+      "context_after": "",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch13:v1-2": {
+      "evidence_atom_id": "bphs-97:santhanam:ch13:v1-2",
+      "chapter_number": 13,
+      "chapter_title": "Effects of Dhan Bhava",
+      "verse_label": "1-2.",
+      "content_role": "verse",
+      "exact_text": "1-2. Combinations for Wealth. O excellent of the Brahmins, listen to me, speaking on the effects of Dhan Bhava. If the Lord of Dhan is in Dhan, or is in an angle, or in trine, he will promote one’s wealth (or monetary state). Should he be in Ari/8<sup>th</sup> /12<sup>th</sup> , financial conditions will decline. A benefic in Dhan will give wealth, while a malefic instead will destroy wealth.",
+      "pdf_pages": [
+        27
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 13 · Sloka 1-2 · PDF page 27 · bphs-97:santhanam:ch13:v1-2",
+      "previous_atom_id": null,
+      "next_atom_id": "bphs-97:santhanam:ch13:v3",
+      "context_before": "",
+      "context_after": "3. One will be wealthy, if Guru is in Dhan, as the Lord of Dhan, or is with Mangal.\n\n4. If Dhan Lord is in Labh, while the Lord ",
+      "content_missing": false
+    }
+  }
+}

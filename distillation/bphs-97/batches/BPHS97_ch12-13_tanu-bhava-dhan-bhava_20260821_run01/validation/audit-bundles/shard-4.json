@@ -1,0 +1,2309 @@
+{
+  "shard": 4,
+  "step_count": 9,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch13-v1-2-dhan-lord-dusthana-financial-decline.step-001",
+      "method": {
+        "method": "ch13-v1-2-dhan-lord-dusthana-financial-decline",
+        "title": "经济衰退：二宫主落六宫、八宫或十二宫",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会破财",
+          "二宫主落六八十二宫代表什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should he be in Ari/8th /12th , financial conditions will decline",
+            "二宫主落六宫八宫十二宫 经济衰退"
+          ],
+          "counter_queries": [
+            "If the Lord of Dhan is in Dhan, or is in an angle, or in trine, he will promote one’s wealth (or monetary state)",
+            "Should Budh give a Drishti to Mangal and Shani in Dhan Bhava, there will be great wealth"
+          ],
+          "boundary_queries": [
+            "Putr and Dharm Bhava are known by the name Kon (or trine). Evil Bhavas, or Dusthan Bhavas are Ari, Randhr and Vyaya Bhava",
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics"
+          ],
+          "method_queries": [
+            "Effects of Dhan Bhava",
+            "Now I tell you some Yogas for poverty along with conditions of their nullifications",
+            "判断破财要看二宫主落不落六八十二宫"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch13-v1-2-dhan-lord-dusthana-financial-decline.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should he be in Ari"
+            },
+            {
+              "step_id": "ch13-v1-2-dhan-lord-dusthana-financial-decline.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "8th"
+            },
+            {
+              "step_id": "ch13-v1-2-dhan-lord-dusthana-financial-decline.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "12th"
+            },
+            {
+              "step_id": "ch13-v1-2-dhan-lord-dusthana-financial-decline.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "financial conditions will decline"
+            },
+            {
+              "step_id": "ch13-v1-2-dhan-lord-dusthana-financial-decline.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should he be in Ari financial conditions will decline"
+            },
+            {
+              "step_id": "ch13-v1-2-dhan-lord-dusthana-financial-decline.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "8th financial conditions will decline"
+            },
+            {
+              "step_id": "ch13-v1-2-dhan-lord-dusthana-financial-decline.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "12th financial conditions will decline"
+            },
+            {
+              "step_id": "ch13-v1-2-dhan-lord-dusthana-financial-decline.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Should he be in 6th house"
+            },
+            {
+              "step_id": "ch13-v1-2-dhan-lord-dusthana-financial-decline.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Should he be in 6th house financial conditions will decline"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少二宫主身份事实时停止。",
+          "三个落宫分支事实全缺时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch13-v1-2-dhan-lord-dusthana-financial-decline.step-001",
+        "action": "先定出二宫主是哪颗行星，再核对它是否落六宫、八宫或十二宫。",
+        "applicability_scope": "仅限本命盘二宫（Dhan Bhava）财富主题；本句的 he 承接同偈前句的 the Lord of Dhan。",
+        "minimum_supported_claim": "二宫主（the Lord of Dhan）落六宫（Ari）、八宫或十二宫时，经济状况会衰退。",
+        "produced_fact_keys": [
+          "二宫主落凶宫的经济衰退判定"
+        ],
+        "required_fact_keys": [
+          "本盘二宫主（Dhan's Lord）是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘二宫主（Dhan's Lord）是哪颗行星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "二宫主（Dhan's Lord）是否落六宫（Ari）"
+                },
+                {
+                  "fact_key": "二宫主（Dhan's Lord）是否落八宫（Randhr）"
+                },
+                {
+                  "fact_key": "二宫主（Dhan's Lord）是否落十二宫（Vyaya）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘二宫主（Dhan's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）是否落六宫（Ari）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "二宫主（Dhan's Lord）是否落六宫（Ari）"
+            },
+            "selection_group": "ch13-v1-2-dhan-lord-dusthana-financial-decline.step-001:dhan-lord-dusthana",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）是否落六宫（Ari）。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘二宫主（Dhan's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）是否落八宫（Randhr）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "二宫主（Dhan's Lord）是否落八宫（Randhr）"
+            },
+            "selection_group": "ch13-v1-2-dhan-lord-dusthana-financial-decline.step-001:dhan-lord-dusthana",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）是否落八宫（Randhr）。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘二宫主（Dhan's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）是否落十二宫（Vyaya）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "二宫主（Dhan's Lord）是否落十二宫（Vyaya）"
+            },
+            "selection_group": "ch13-v1-2-dhan-lord-dusthana-financial-decline.step-001:dhan-lord-dusthana",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）是否落十二宫（Vyaya）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should he be in Ari",
+              "claim": "二宫主（the Lord of Dhan）落六宫（Ari）"
+            },
+            {
+              "quote": "8<sup>th</sup>",
+              "claim": "八宫"
+            },
+            {
+              "quote": "12<sup>th</sup>",
+              "claim": "十二宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "financial conditions will decline",
+              "claim": "经济状况会衰退"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch13:v1-2",
+            "quote": "Should he be in Ari/8<sup>th</sup> /12<sup>th</sup> , financial conditions will decline.",
+            "pdf_pages": [
+              27
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘二宫主（Dhan's Lord）是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘二宫主（Dhan's Lord）是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 decline 读成一贫如洗，原文只说经济状况衰退。",
+          "不得据此推断衰退的年份或大运。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "1e7a949e9636c9301ee508e2f950abc457023a8d2cbab4f840767515e4e27b2e"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch13-v1-2-benefic-in-dhan-gives-wealth.step-001",
+      "method": {
+        "method": "ch13-v1-2-benefic-in-dhan-gives-wealth",
+        "title": "给予财富：二宫内有吉星",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "二宫有吉星代表什么",
+          "我有没有进财的底子"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "A benefic in Dhan will give wealth, while a malefic instead will destroy wealth",
+            "二宫有吉星 给予财富"
+          ],
+          "counter_queries": [
+            "while a malefic instead will destroy wealth",
+            "One will be penniless, if the Lord of Dhan Bhava is in an evil Bhava, while the Lord of Labh Bhava is also so placed and Dhan Bhava is occupied by a malefic"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava"
+          ],
+          "method_queries": [
+            "Effects of Dhan Bhava",
+            "Now I tell you some Yogas for poverty along with conditions of their nullifications",
+            "判断财运要看二宫里有吉星还是凶星"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch13-v1-2-benefic-in-dhan-gives-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "A benefic in Dhan"
+            },
+            {
+              "step_id": "ch13-v1-2-benefic-in-dhan-gives-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will give wealth"
+            },
+            {
+              "step_id": "ch13-v1-2-benefic-in-dhan-gives-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "A benefic in Dhan will give wealth"
+            },
+            {
+              "step_id": "ch13-v1-2-benefic-in-dhan-gives-wealth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "A benefic in 2nd house"
+            },
+            {
+              "step_id": "ch13-v1-2-benefic-in-dhan-gives-wealth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "A benefic in 2nd house will give wealth"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少二宫吉星占据事实时停止。",
+          "吉星名册未定时停止（吉凶判准见第3章 v11）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch13-v1-2-benefic-in-dhan-gives-wealth.step-001",
+        "action": "核对二宫（Dhan）里是否有吉星。",
+        "applicability_scope": "仅限本命盘二宫（Dhan Bhava）财富主题；原文没有说是哪一颗吉星，也没有给数额。",
+        "minimum_supported_claim": "二宫（Dhan）内有吉星时，会给予财富。",
+        "produced_fact_keys": [
+          "二宫吉星的财富判定"
+        ],
+        "required_fact_keys": [
+          "二宫（Dhan）是否被吉星占据"
+        ],
+        "condition_logic": {
+          "fact_key": "二宫（Dhan）是否被吉星占据"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "A benefic in Dhan",
+              "claim": "二宫（Dhan）内有吉星"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will give wealth",
+              "claim": "会给予财富"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch13:v1-2",
+            "quote": "A benefic in Dhan will give wealth",
+            "pdf_pages": [
+              27
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：二宫（Dhan）是否被吉星占据。",
+        "stop_fact_keys": [
+          "二宫（Dhan）是否被吉星占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财富数额或来源，原文只说给予财富。",
+          "不得把这条推广到十一宫，本句只写 Dhan。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "05f05ae85b29a7944422cf06c4c783c9820b3d16e21c77e482d552029e70565f"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch13-v1-2-malefic-in-dhan-destroys-wealth.step-001",
+      "method": {
+        "method": "ch13-v1-2-malefic-in-dhan-destroys-wealth",
+        "title": "毁掉财富：二宫内有凶星",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "二宫有凶星代表什么",
+          "我的钱会不会守不住"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "A benefic in Dhan will give wealth, while a malefic instead will destroy wealth",
+            "二宫有凶星 毁掉财富"
+          ],
+          "counter_queries": [
+            "Should Budh give a Drishti to Mangal and Shani in Dhan Bhava, there will be great wealth",
+            "Surya in Dhan Bhava, receiving a Drishti from Shani, will cause penury, while, if Surya is in Dhan Bhava and does not receive a Drishti from Shani, riches and fame will be obtained"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava"
+          ],
+          "method_queries": [
+            "Effects of Dhan Bhava",
+            "Now I tell you some Yogas for poverty along with conditions of their nullifications",
+            "判断破财要看二宫里有没有凶星"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch13-v1-2-malefic-in-dhan-destroys-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in Dhan"
+            },
+            {
+              "step_id": "ch13-v1-2-malefic-in-dhan-destroys-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while a malefic instead"
+            },
+            {
+              "step_id": "ch13-v1-2-malefic-in-dhan-destroys-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will destroy wealth"
+            },
+            {
+              "step_id": "ch13-v1-2-malefic-in-dhan-destroys-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in Dhan will destroy wealth"
+            },
+            {
+              "step_id": "ch13-v1-2-malefic-in-dhan-destroys-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while a malefic instead will destroy wealth"
+            },
+            {
+              "step_id": "ch13-v1-2-malefic-in-dhan-destroys-wealth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "in 2nd house"
+            },
+            {
+              "step_id": "ch13-v1-2-malefic-in-dhan-destroys-wealth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "in 2nd house will destroy wealth"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少二宫凶星占据事实时停止。",
+          "凶星名册未定时停止（吉凶判准见第3章 v11）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch13-v1-2-malefic-in-dhan-destroys-wealth.step-001",
+        "action": "核对二宫（Dhan）里是否有凶星。",
+        "applicability_scope": "仅限本命盘二宫（Dhan Bhava）财富主题；本句的 a malefic 承接同句前半的 in Dhan，落宫来自前半句。",
+        "minimum_supported_claim": "二宫（Dhan）内有凶星时，会毁掉财富。",
+        "produced_fact_keys": [
+          "二宫凶星的破财判定"
+        ],
+        "required_fact_keys": [
+          "二宫（Dhan）是否被凶星占据"
+        ],
+        "condition_logic": {
+          "fact_key": "二宫（Dhan）是否被凶星占据"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "in Dhan",
+              "claim": "二宫（Dhan）"
+            },
+            {
+              "quote": "while a malefic instead",
+              "claim": "内有凶星"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will destroy wealth",
+              "claim": "会毁掉财富"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch13:v1-2",
+            "quote": "A benefic in Dhan will give wealth, while a malefic instead will destroy wealth.",
+            "pdf_pages": [
+              27
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：二宫（Dhan）是否被凶星占据。",
+        "stop_fact_keys": [
+          "二宫（Dhan）是否被凶星占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断破财的时间或数额。",
+          "不得把 destroy wealth 读成终身贫穷。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "301b4377c0a2d243d8edaf0e9e2ba987d014cb250d9705b406823fdcd8ecfcbe"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch13-v3-guru-in-dhan-wealth.step-001",
+      "method": {
+        "method": "ch13-v3-guru-in-dhan-wealth",
+        "title": "富有：木星身为二宫主落二宫，或木星与火星同宫",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子有没有钱",
+          "木星落二宫对我的财富意味着什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "One will be wealthy, if Guru is in Dhan, as the Lord of Dhan, or is with Mangal",
+            "木星身为二宫主落二宫 木星与火星同宫 富有"
+          ],
+          "counter_queries": [
+            "One will be penniless, if the Lord of Dhan Bhava is in an evil Bhava, while the Lord of Labh Bhava is also so placed and Dhan Bhava is occupied by a malefic",
+            "Should Mangal and Shani be together in Dhan Bhava, the native’s wealth will be destroyed",
+            "A benefic in Dhan will give wealth, while a malefic instead will destroy wealth"
+          ],
+          "boundary_queries": [
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava",
+            "If the Lord of Dhan is in Dhan, or is in an angle, or in trine, he will promote one’s wealth (or monetary state)"
+          ],
+          "method_queries": [
+            "If Dhan’s Lord is in Dhan Bhava, the native will be wealthy, proud, will have two, or more wives and be bereft of progeny",
+            "The native will be wealthy, if one among Chandra, Guru, Shukra and Budh is exalted in Dhan Bhava",
+            "判断财富要看二宫和二宫主落在哪里"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch13-v3-guru-in-dhan-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Guru is in Dhan"
+            },
+            {
+              "step_id": "ch13-v3-guru-in-dhan-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "as the Lord of Dhan"
+            },
+            {
+              "step_id": "ch13-v3-guru-in-dhan-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or is with Mangal"
+            },
+            {
+              "step_id": "ch13-v3-guru-in-dhan-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "One will be wealthy"
+            },
+            {
+              "step_id": "ch13-v3-guru-in-dhan-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Guru is in Dhan One will be wealthy"
+            },
+            {
+              "step_id": "ch13-v3-guru-in-dhan-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "as the Lord of Dhan One will be wealthy"
+            },
+            {
+              "step_id": "ch13-v3-guru-in-dhan-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or is with Mangal One will be wealthy"
+            },
+            {
+              "step_id": "ch13-v3-guru-in-dhan-wealth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "jupiter is in 2nd house"
+            },
+            {
+              "step_id": "ch13-v3-guru-in-dhan-wealth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "as the 2nd lord"
+            },
+            {
+              "step_id": "ch13-v3-guru-in-dhan-wealth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "or is with mars"
+            },
+            {
+              "step_id": "ch13-v3-guru-in-dhan-wealth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "jupiter is in 2nd house One will be wealthy"
+            },
+            {
+              "step_id": "ch13-v3-guru-in-dhan-wealth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "as the 2nd lord One will be wealthy"
+            },
+            {
+              "step_id": "ch13-v3-guru-in-dhan-wealth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "or is with mars One will be wealthy"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少木星（Guru）落宫事实时停止。",
+          "「木星身为二宫主落二宫」与「木星与火星同宫」两个分支事实都缺时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch13-v3-guru-in-dhan-wealth.step-001",
+        "action": "先取木星（Guru）的落宫，再分别核对「木星身为二宫主落二宫」与「木星与火星同宫」两种情形，判断财富。",
+        "applicability_scope": "仅限本命盘二宫（Dhan Bhava）财富主题；原文第二个可选条件写作 or is with Mangal，只说木星与火星同宫、未复述落宫，此处按原文字面处理，不补落宫限定。",
+        "minimum_supported_claim": "木星（Guru）身为二宫主（Lord of Dhan）落二宫（Dhan），或木星与火星（Mangal）同宫时，命主富有。",
+        "produced_fact_keys": [
+          "木星与二宫的富有判定"
+        ],
+        "required_fact_keys": [
+          "本盘木星（Guru）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘木星（Guru）落在哪一宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "木星（Guru）是否落二宫（Dhan）"
+                    },
+                    {
+                      "fact_key": "木星（Guru）是否为二宫主（Dhan's Lord）"
+                    }
+                  ]
+                },
+                {
+                  "fact_key": "木星（Guru）是否与火星（Mangal）同宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘木星（Guru）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "木星（Guru）是否落二宫（Dhan）",
+              "木星（Guru）是否为二宫主（Dhan's Lord）"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "木星（Guru）是否落二宫（Dhan）"
+                },
+                {
+                  "fact_key": "木星（Guru）是否为二宫主（Dhan's Lord）"
+                }
+              ]
+            },
+            "selection_group": "ch13-v3-guru-in-dhan-wealth.step-001:guru-wealth-configuration",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：木星（Guru）是否落二宫（Dhan）、木星（Guru）是否为二宫主（Dhan's Lord）。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘木星（Guru）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "木星（Guru）是否与火星（Mangal）同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "木星（Guru）是否与火星（Mangal）同宫"
+            },
+            "selection_group": "ch13-v3-guru-in-dhan-wealth.step-001:guru-wealth-configuration",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：木星（Guru）是否与火星（Mangal）同宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Guru is in Dhan",
+              "claim": "落二宫（Dhan）"
+            },
+            {
+              "quote": "as the Lord of Dhan",
+              "claim": "身为二宫主（Lord of Dhan）"
+            },
+            {
+              "quote": "or is with Mangal",
+              "claim": "木星与火星（Mangal）同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "One will be wealthy",
+              "claim": "命主富有"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch13:v3",
+            "quote": "One will be wealthy, if Guru is in Dhan, as the Lord of Dhan, or is with Mangal.",
+            "pdf_pages": [
+              27
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘木星（Guru）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘木星（Guru）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财富数额、来源或得财时间。",
+          "不得把两个可选条件合并成必须同时成立。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "823b043ed593208ee0d1b5542d6f8192f80e2834d5bc979c384f293bf01706a9"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch13-v4-dhan-labh-lords-wealth.step-001",
+      "method": {
+        "method": "ch13-v4-dhan-labh-lords-wealth",
+        "title": "得财：二宫主与十一宫主互居，或会合于角宫、三角宫",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我能不能挣到钱",
+          "二宫主和十一宫主的关系对财运有什么影响"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dhan Lord is in Labh, while the Lord of Labh in Dhan, wealth will be acquired by the native",
+            "Alternately these two Lords may join in an angle, or in a trine",
+            "二宫主落十一宫 十一宫主落二宫 得财"
+          ],
+          "counter_queries": [
+            "One will be penniless, if the Lord of Dhan Bhava is in an evil Bhava, while the Lord of Labh Bhava is also so placed",
+            "Should the Lords of Dhan and Labh Bhava be relegated to Ari, Randhr, or Vyaya Bhava",
+            "There will be penury right from birth and the native will have to beg even for his food, if the Lords of Dhan and Labh Bhava are both combust, or with malefics"
+          ],
+          "boundary_queries": [
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava",
+            "Indications of Labh Bhava",
+            "If the Lord of Dhan is in Dhan, or is in an angle, or in trine, he will promote one’s wealth (or monetary state)"
+          ],
+          "method_queries": [
+            "I now tell you of special combinations, giving wealth. One born to these Yogas will surely become wealthy",
+            "If Dhan’s Lord is in Dhan Bhava, the native will be wealthy, proud, will have two, or more wives and be bereft of progeny",
+            "判断财富要看二宫主与十一宫主的关系"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch13-v4-dhan-labh-lords-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dhan Lord is in Labh"
+            },
+            {
+              "step_id": "ch13-v4-dhan-labh-lords-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the Lord of Labh in Dhan"
+            },
+            {
+              "step_id": "ch13-v4-dhan-labh-lords-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "these two Lords may join in an angle"
+            },
+            {
+              "step_id": "ch13-v4-dhan-labh-lords-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or in a trine"
+            },
+            {
+              "step_id": "ch13-v4-dhan-labh-lords-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "wealth will be acquired by the native"
+            },
+            {
+              "step_id": "ch13-v4-dhan-labh-lords-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dhan Lord is in Labh wealth will be acquired by the native"
+            },
+            {
+              "step_id": "ch13-v4-dhan-labh-lords-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the Lord of Labh in Dhan wealth will be acquired by the native"
+            },
+            {
+              "step_id": "ch13-v4-dhan-labh-lords-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "these two Lords may join in an angle wealth will be acquired by the native"
+            },
+            {
+              "step_id": "ch13-v4-dhan-labh-lords-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or in a trine wealth will be acquired by the native"
+            },
+            {
+              "step_id": "ch13-v4-dhan-labh-lords-wealth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Dhan Lord is in 11th house"
+            },
+            {
+              "step_id": "ch13-v4-dhan-labh-lords-wealth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "the 11th lord in 2nd house"
+            },
+            {
+              "step_id": "ch13-v4-dhan-labh-lords-wealth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Dhan Lord is in 11th house wealth will be acquired by the native"
+            },
+            {
+              "step_id": "ch13-v4-dhan-labh-lords-wealth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "the 11th lord in 2nd house wealth will be acquired by the native"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少二宫主、十一宫主的行星身份事实时停止。",
+          "互居、会合角宫、会合三角宫三个分支事实全缺时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch13-v4-dhan-labh-lords-wealth.step-001",
+        "action": "先确定二宫主与十一宫主分别是哪颗行星，再核对两者互居，或两者会合于角宫、会合于三角宫。",
+        "applicability_scope": "仅限本命盘二宫（Dhan Bhava）财富主题；原文未给时间、上升或数额限定。",
+        "minimum_supported_claim": "二宫主（Dhan Lord）落十一宫（Labh）、十一宫主（Lord of Labh）落二宫（Dhan）时，命主获得财富；这两个宫主也可以会合于角宫，或会合于三角宫。",
+        "produced_fact_keys": [
+          "二宫主与十一宫主的得财判定"
+        ],
+        "required_fact_keys": [
+          "本盘二宫主（Dhan's Lord）是哪颗行星",
+          "本盘十一宫主（Labh's Lord）是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘二宫主（Dhan's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十一宫主（Labh's Lord）是哪颗行星"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "二宫主（Dhan's Lord）是否落十一宫（Labh）"
+                    },
+                    {
+                      "fact_key": "十一宫主（Labh's Lord）是否落二宫（Dhan）"
+                    }
+                  ]
+                },
+                {
+                  "fact_key": "二宫主（Dhan's Lord）与十一宫主（Labh's Lord）会合之处是否为角宫"
+                },
+                {
+                  "fact_key": "二宫主（Dhan's Lord）与十一宫主（Labh's Lord）会合之处是否为三角宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘二宫主（Dhan's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十一宫主（Labh's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）是否落十一宫（Labh）",
+              "十一宫主（Labh's Lord）是否落二宫（Dhan）"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "二宫主（Dhan's Lord）是否落十一宫（Labh）"
+                },
+                {
+                  "fact_key": "十一宫主（Labh's Lord）是否落二宫（Dhan）"
+                }
+              ]
+            },
+            "selection_group": "ch13-v4-dhan-labh-lords-wealth.step-001:dhan-labh-lord-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）是否落十一宫（Labh）、十一宫主（Labh's Lord）是否落二宫（Dhan）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘二宫主（Dhan's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十一宫主（Labh's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）与十一宫主（Labh's Lord）会合之处是否为角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "二宫主（Dhan's Lord）与十一宫主（Labh's Lord）会合之处是否为角宫"
+            },
+            "selection_group": "ch13-v4-dhan-labh-lords-wealth.step-001:dhan-labh-lord-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）与十一宫主（Labh's Lord）会合之处是否为角宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘二宫主（Dhan's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十一宫主（Labh's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）与十一宫主（Labh's Lord）会合之处是否为三角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "二宫主（Dhan's Lord）与十一宫主（Labh's Lord）会合之处是否为三角宫"
+            },
+            "selection_group": "ch13-v4-dhan-labh-lords-wealth.step-001:dhan-labh-lord-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）与十一宫主（Labh's Lord）会合之处是否为三角宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dhan Lord is in Labh",
+              "claim": "二宫主（Dhan Lord）落十一宫（Labh）"
+            },
+            {
+              "quote": "the Lord of Labh in Dhan",
+              "claim": "十一宫主（Lord of Labh）落二宫（Dhan）"
+            },
+            {
+              "quote": "these two Lords may join in an angle",
+              "claim": "这两个宫主也可以会合于角宫"
+            },
+            {
+              "quote": "or in a trine",
+              "claim": "或会合于三角宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "wealth will be acquired by the native",
+              "claim": "命主获得财富"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch13:v4",
+            "quote": "If Dhan Lord is in Labh, while the Lord of Labh in Dhan, wealth will be acquired by the native. Alternately these two Lords may join in an angle, or in a trine.",
+            "pdf_pages": [
+              27
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘二宫主（Dhan's Lord）是哪颗行星、本盘十一宫主（Labh's Lord）是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘二宫主（Dhan's Lord）是哪颗行星",
+          "本盘十一宫主（Labh's Lord）是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财富数额、来源或得财时间。",
+          "不得把「互居」与「会合」两种情形合并成必须同时成立。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "200853277ac1c932a7651ba710f7228a8fe56ead311c269ae32288ba68d25f78"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch13-v5-dhan-lord-angle-labh-lord-wealth.step-001",
+      "method": {
+        "method": "ch13-v5-dhan-lord-angle-labh-lord-wealth",
+        "title": "富有：二宫主落角宫，十一宫主落其三角宫或得木星金星相照、同宫",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的财富状况好不好",
+          "二宫主落角宫时财运怎么看"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If the Lord of Dhan is in an angle, while Labh Lord is in a trine thereof, or is drishtied by, or yuti with Guru and Shukr, the subject will be wealthy",
+            "二宫主落角宫 十一宫主落三角宫 木星金星相照 富有"
+          ],
+          "counter_queries": [
+            "One will be penniless, if the Lord of Dhan Bhava is in an evil Bhava, while the Lord of Labh Bhava is also so placed and Dhan Bhava is occupied by a malefic",
+            "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless",
+            "Should he be in Ari/8"
+          ],
+          "boundary_queries": [
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava",
+            "If the Lord of Dhan is in Dhan, or is in an angle, or in trine, he will promote one’s wealth (or monetary state)",
+            "Indications of Labh Bhava"
+          ],
+          "method_queries": [
+            "I now tell you of special combinations, giving wealth. One born to these Yogas will surely become wealthy",
+            "The native will be wealthy, if one among Chandra, Guru, Shukra and Budh is exalted in Dhan Bhava",
+            "判断财富要看二宫主与十一宫主是否落角宫三角宫"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch13-v5-dhan-lord-angle-labh-lord-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the Lord of Dhan is in an angle"
+            },
+            {
+              "step_id": "ch13-v5-dhan-lord-angle-labh-lord-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Labh Lord is in a trine thereof"
+            },
+            {
+              "step_id": "ch13-v5-dhan-lord-angle-labh-lord-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "is drishtied by"
+            },
+            {
+              "step_id": "ch13-v5-dhan-lord-angle-labh-lord-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "yuti with Guru and Shukr"
+            },
+            {
+              "step_id": "ch13-v5-dhan-lord-angle-labh-lord-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the subject will be wealthy"
+            },
+            {
+              "step_id": "ch13-v5-dhan-lord-angle-labh-lord-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the Lord of Dhan is in an angle the subject will be wealthy"
+            },
+            {
+              "step_id": "ch13-v5-dhan-lord-angle-labh-lord-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Labh Lord is in a trine thereof the subject will be wealthy"
+            },
+            {
+              "step_id": "ch13-v5-dhan-lord-angle-labh-lord-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "is drishtied by the subject will be wealthy"
+            },
+            {
+              "step_id": "ch13-v5-dhan-lord-angle-labh-lord-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "yuti with Guru and Shukr the subject will be wealthy"
+            },
+            {
+              "step_id": "ch13-v5-dhan-lord-angle-labh-lord-wealth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "the 2nd lord is in an angle"
+            },
+            {
+              "step_id": "ch13-v5-dhan-lord-angle-labh-lord-wealth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "yuti with jupiter and venus"
+            },
+            {
+              "step_id": "ch13-v5-dhan-lord-angle-labh-lord-wealth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "the 2nd lord is in an angle the subject will be wealthy"
+            },
+            {
+              "step_id": "ch13-v5-dhan-lord-angle-labh-lord-wealth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "yuti with jupiter and venus the subject will be wealthy"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少二宫主是否落角宫的事实时停止。",
+          "十一宫主的三个分支事实（落三角宫、被木星金星相照、与木星金星同宫）全缺时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch13-v5-dhan-lord-angle-labh-lord-wealth.step-001",
+        "action": "先核对二宫主是否落角宫，再核对十一宫主是否落其三角宫、是否被木星与金星相照、是否与木星与金星同宫。",
+        "applicability_scope": "仅限本命盘二宫（Dhan Bhava）财富主题；原文 in a trine thereof 的起点是二宫主所落的那个角宫，drishtied by 与 yuti with 两种情形按原文承接同一主语十一宫主（Labh Lord）。",
+        "minimum_supported_claim": "二宫主（Lord of Dhan）落角宫，同时十一宫主（Labh Lord）落其三角宫，或被木星（Guru）与金星（Shukr）相照，或与木星和金星同宫时，命主富有。",
+        "produced_fact_keys": [
+          "二宫主落角宫的富有判定"
+        ],
+        "required_fact_keys": [
+          "二宫主（Dhan's Lord）是否落角宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "二宫主（Dhan's Lord）是否落角宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "十一宫主（Labh's Lord）是否落从二宫主（Dhan's Lord）所在宫起算的三角宫"
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "十一宫主（Labh's Lord）是否被木星（Guru）相照"
+                    },
+                    {
+                      "fact_key": "十一宫主（Labh's Lord）是否被金星（Shukra）相照"
+                    }
+                  ]
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "十一宫主（Labh's Lord）是否与木星（Guru）同宫"
+                    },
+                    {
+                      "fact_key": "十一宫主（Labh's Lord）是否与金星（Shukra）同宫"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "二宫主（Dhan's Lord）是否落角宫"
+            },
+            "required_fact_keys": [
+              "十一宫主（Labh's Lord）是否落从二宫主（Dhan's Lord）所在宫起算的三角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十一宫主（Labh's Lord）是否落从二宫主（Dhan's Lord）所在宫起算的三角宫"
+            },
+            "selection_group": "ch13-v5-dhan-lord-angle-labh-lord-wealth.step-001:labh-lord-support",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十一宫主（Labh's Lord）是否落从二宫主（Dhan's Lord）所在宫起算的三角宫。"
+          },
+          {
+            "when": {
+              "fact_key": "二宫主（Dhan's Lord）是否落角宫"
+            },
+            "required_fact_keys": [
+              "十一宫主（Labh's Lord）是否被木星（Guru）相照",
+              "十一宫主（Labh's Lord）是否被金星（Shukra）相照"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "十一宫主（Labh's Lord）是否被木星（Guru）相照"
+                },
+                {
+                  "fact_key": "十一宫主（Labh's Lord）是否被金星（Shukra）相照"
+                }
+              ]
+            },
+            "selection_group": "ch13-v5-dhan-lord-angle-labh-lord-wealth.step-001:labh-lord-support",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十一宫主（Labh's Lord）是否被木星（Guru）相照、十一宫主（Labh's Lord）是否被金星（Shukra）相照。"
+          },
+          {
+            "when": {
+              "fact_key": "二宫主（Dhan's Lord）是否落角宫"
+            },
+            "required_fact_keys": [
+              "十一宫主（Labh's Lord）是否与木星（Guru）同宫",
+              "十一宫主（Labh's Lord）是否与金星（Shukra）同宫"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "十一宫主（Labh's Lord）是否与木星（Guru）同宫"
+                },
+                {
+                  "fact_key": "十一宫主（Labh's Lord）是否与金星（Shukra）同宫"
+                }
+              ]
+            },
+            "selection_group": "ch13-v5-dhan-lord-angle-labh-lord-wealth.step-001:labh-lord-support",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十一宫主（Labh's Lord）是否与木星（Guru）同宫、十一宫主（Labh's Lord）是否与金星（Shukra）同宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "the Lord of Dhan is in an angle",
+              "claim": "二宫主（Lord of Dhan）落角宫"
+            },
+            {
+              "quote": "Labh Lord is in a trine thereof",
+              "claim": "十一宫主（Labh Lord）落其三角宫"
+            },
+            {
+              "quote": "is drishtied by",
+              "claim": "被木星（Guru）与金星（Shukr）相照"
+            },
+            {
+              "quote": "yuti with Guru and Shukr",
+              "claim": "与木星和金星同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the subject will be wealthy",
+              "claim": "命主富有"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch13:v5",
+            "quote": "If the Lord of Dhan is in an angle, while Labh Lord is in a trine thereof, or is drishtied by, or yuti with Guru and Shukr, the subject will be wealthy.",
+            "pdf_pages": [
+              28
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：二宫主（Dhan's Lord）是否落角宫。",
+        "stop_fact_keys": [
+          "二宫主（Dhan's Lord）是否落角宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财富数额或得财时间。",
+          "不得把原文要求的「木星与金星」两颗行星减成任一颗。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "82d1dd690f5c977e7f13b68e0b2ae2d8127c2794fb3335bded93a8a5963051fc"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch13-v6-7-lords-in-evil-bhava-penniless.step-001",
+      "method": {
+        "method": "ch13-v6-7-lords-in-evil-bhava-penniless",
+        "title": "贫穷：二宫主与十一宫主同落凶宫且二宫被凶星占据",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会一直没钱",
+          "什么样的盘会贫穷"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "One will be penniless, if the Lord of Dhan Bhava is in an evil Bhava, while the Lord of Labh Bhava is also so placed and Dhan Bhava is occupied by a malefic",
+            "二宫主 十一宫主 落凶宫 二宫有凶星 贫穷"
+          ],
+          "counter_queries": [
+            "If Dhan Lord is in Labh, while the Lord of Labh in Dhan, wealth will be acquired by the native",
+            "Surya in Dhan Bhava, receiving a Drishti from Shani, will cause penury, while, if Surya is in Dhan Bhava and does not receive a Drishti from Shani, riches and fame will be obtained",
+            "Should Budh give a Drishti to Mangal and Shani in Dhan Bhava, there will be great wealth"
+          ],
+          "boundary_queries": [
+            "Note the Grahas, that are ruling the Rāśis, occupied by the Lords of Ari, Randhr and Vyaya Bhava. If the said dispositors are in such evil Bhavas in turn and are associated with, or receive a Drishti from malefics, the native will be miserable and indigent",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu … are malefics, while the rest are benefics",
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava"
+          ],
+          "method_queries": [
+            "Now I tell you some Yogas for poverty along with conditions of their nullifications",
+            "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless",
+            "判断贫穷要看二宫主与十一宫主落在哪一宫"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch13-v6-7-lords-in-evil-bhava-penniless.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the Lord of Dhan Bhava is in an evil Bhava"
+            },
+            {
+              "step_id": "ch13-v6-7-lords-in-evil-bhava-penniless.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the Lord of Labh Bhava is also so placed"
+            },
+            {
+              "step_id": "ch13-v6-7-lords-in-evil-bhava-penniless.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dhan Bhava is occupied by a malefic"
+            },
+            {
+              "step_id": "ch13-v6-7-lords-in-evil-bhava-penniless.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "One will be penniless"
+            },
+            {
+              "step_id": "ch13-v6-7-lords-in-evil-bhava-penniless.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the Lord of Dhan Bhava is in an evil Bhava One will be penniless"
+            },
+            {
+              "step_id": "ch13-v6-7-lords-in-evil-bhava-penniless.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the Lord of Labh Bhava is also so placed One will be penniless"
+            },
+            {
+              "step_id": "ch13-v6-7-lords-in-evil-bhava-penniless.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dhan Bhava is occupied by a malefic One will be penniless"
+            },
+            {
+              "step_id": "ch13-v6-7-lords-in-evil-bhava-penniless.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "the 2nd lord Bhava is in an evil Bhava"
+            },
+            {
+              "step_id": "ch13-v6-7-lords-in-evil-bhava-penniless.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "the 11th lord Bhava is also so placed"
+            },
+            {
+              "step_id": "ch13-v6-7-lords-in-evil-bhava-penniless.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "2nd house is occupied by a malefic"
+            },
+            {
+              "step_id": "ch13-v6-7-lords-in-evil-bhava-penniless.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "the 2nd lord Bhava is in an evil Bhava One will be penniless"
+            },
+            {
+              "step_id": "ch13-v6-7-lords-in-evil-bhava-penniless.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "the 11th lord Bhava is also so placed One will be penniless"
+            },
+            {
+              "step_id": "ch13-v6-7-lords-in-evil-bhava-penniless.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "2nd house is occupied by a malefic One will be penniless"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "凶宫（evil Bhava）的宫位范围原文本句未界定，未确定即停判。",
+          "缺少二宫主或十一宫主落宫事实时停止。",
+          "缺少二宫是否被凶星占据的事实时停止。",
+          "凶星名册未定时停止（吉凶判准见第3章 v11）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch13-v6-7-lords-in-evil-bhava-penniless.step-001",
+        "action": "核对二宫主与十一宫主是否都落凶宫（evil Bhava），并核对二宫是否被凶星占据。",
+        "applicability_scope": "仅限本命盘二宫（Dhan Bhava）财富主题；原文只写 evil Bhava，本句没有列出具体是哪几宫，凶宫范围未确定即停判。",
+        "minimum_supported_claim": "二宫主落凶宫（evil Bhava）、十一宫主也落凶宫，且二宫（Dhan Bhava）被凶星占据时，命主没有钱财。",
+        "produced_fact_keys": [
+          "二宫主与十一宫主落凶宫的贫穷判定"
+        ],
+        "required_fact_keys": [
+          "二宫主（Dhan's Lord）是否落凶宫（evil Bhava）",
+          "十一宫主（Labh's Lord）是否落凶宫（evil Bhava）",
+          "二宫（Dhan）是否被凶星占据"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "二宫主（Dhan's Lord）是否落凶宫（evil Bhava）"
+            },
+            {
+              "fact_key": "十一宫主（Labh's Lord）是否落凶宫（evil Bhava）"
+            },
+            {
+              "fact_key": "二宫（Dhan）是否被凶星占据"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "the Lord of Dhan Bhava is in an evil Bhava",
+              "claim": "二宫主落凶宫（evil Bhava）"
+            },
+            {
+              "quote": "the Lord of Labh Bhava is also so placed",
+              "claim": "十一宫主也落凶宫"
+            },
+            {
+              "quote": "Dhan Bhava is occupied by a malefic",
+              "claim": "二宫（Dhan Bhava）被凶星占据"
+            }
+          ],
+          "results": [
+            {
+              "quote": "One will be penniless",
+              "claim": "命主没有钱财"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch13:v6-7",
+            "quote": "One will be penniless, if the Lord of Dhan Bhava is in an evil Bhava, while the Lord of Labh Bhava is also so placed and Dhan Bhava is occupied by a malefic.",
+            "pdf_pages": [
+              28
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：二宫主（Dhan's Lord）是否落凶宫（evil Bhava）、十一宫主（Labh's Lord）是否落凶宫（evil Bhava）、二宫（Dhan）是否被凶星占据。",
+        "stop_fact_keys": [
+          "二宫主（Dhan's Lord）是否落凶宫（evil Bhava）",
+          "十一宫主（Labh's Lord）是否落凶宫（evil Bhava）",
+          "二宫（Dhan）是否被凶星占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得自行把 evil Bhava 认定为某几个宫位，本句没有列举，未确定即停判。",
+          "不得据此推断贫穷的起止时间或程度。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "82346d704653336e8fde0a1d17aaac231d6ed5b4b9483da8a3cd235a980e20a9"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch13-v6-7-lords-combust-penury-from-birth.step-001",
+      "method": {
+        "method": "ch13-v6-7-lords-combust-penury-from-birth",
+        "title": "自幼贫困行乞：二宫主与十一宫主都燃烧或都与凶星同宫",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我是不是从小就穷",
+          "二宫主十一宫主受克会怎样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "There will be penury right from birth and the native will have to beg even for his food, if the Lords of Dhan and Labh Bhava are both combust, or with malefics",
+            "二宫主 十一宫主 燃烧 与凶星同宫 自幼贫困 乞讨"
+          ],
+          "counter_queries": [
+            "If Dhan Lord is in Labh, while the Lord of Labh in Dhan, wealth will be acquired by the native",
+            "One will be wealthy, if Guru is in Dhan, as the Lord of Dhan, or is with Mangal",
+            "Surya in Dhan Bhava, receiving a Drishti from Shani, will cause penury, while, if Surya is in Dhan Bhava and does not receive a Drishti from Shani, riches and fame will be obtained"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu … are malefics, while the rest are benefics",
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava",
+            "Note the Grahas, that are ruling the Rāśis, occupied by the Lords of Ari, Randhr and Vyaya Bhava. If the said dispositors are in such evil Bhavas in turn and are associated with, or receive a Drishti from malefics, the native will be miserable and indigent"
+          ],
+          "method_queries": [
+            "Now I tell you some Yogas for poverty along with conditions of their nullifications",
+            "If inauspicious Bhavas are occupied by benefics, while auspicious Bhavas are occupied by malefics, the native will be indigent and will be distressed even in the matter of food",
+            "判断贫困要看二宫主与十一宫主是否燃烧或与凶星同宫"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch13-v6-7-lords-combust-penury-from-birth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the Lords of Dhan and Labh Bhava are both combust"
+            },
+            {
+              "step_id": "ch13-v6-7-lords-combust-penury-from-birth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or with malefics"
+            },
+            {
+              "step_id": "ch13-v6-7-lords-combust-penury-from-birth.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "There will be penury right from birth"
+            },
+            {
+              "step_id": "ch13-v6-7-lords-combust-penury-from-birth.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will have to beg even for his food"
+            },
+            {
+              "step_id": "ch13-v6-7-lords-combust-penury-from-birth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the Lords of Dhan and Labh Bhava are both combust There will be penury right from birth"
+            },
+            {
+              "step_id": "ch13-v6-7-lords-combust-penury-from-birth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or with malefics There will be penury right from birth"
+            },
+            {
+              "step_id": "ch13-v6-7-lords-combust-penury-from-birth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "the Lords of 2nd house and 11th house are both combust"
+            },
+            {
+              "step_id": "ch13-v6-7-lords-combust-penury-from-birth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "the Lords of 2nd house and 11th house are both combust There will be penury right from birth"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少二宫主、十一宫主的行星身份事实时停止。",
+          "燃烧与凶星同宫两个分支事实都缺时停止。",
+          "凶星名册未定时停止（吉凶判准见第3章 v11）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch13-v6-7-lords-combust-penury-from-birth.step-001",
+        "action": "先确定二宫主与十一宫主是哪两颗行星，再核对两者是否都燃烧，或都与凶星同宫。",
+        "applicability_scope": "仅限本命盘二宫（Dhan Bhava）财富主题；原文两个条件都要求两个宫主同时成立，不是任一宫主成立即可。",
+        "minimum_supported_claim": "二宫主与十一宫主都燃烧，或都与凶星同宫时，命主自出生起即贫困，甚至要乞讨食物。",
+        "produced_fact_keys": [
+          "二宫主与十一宫主受克的自幼贫困判定"
+        ],
+        "required_fact_keys": [
+          "本盘二宫主（Dhan's Lord）是哪颗行星",
+          "本盘十一宫主（Labh's Lord）是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘二宫主（Dhan's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十一宫主（Labh's Lord）是哪颗行星"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "二宫主（Dhan's Lord）是否燃烧"
+                    },
+                    {
+                      "fact_key": "十一宫主（Labh's Lord）是否燃烧"
+                    }
+                  ]
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "二宫主（Dhan's Lord）是否与凶星同宫"
+                    },
+                    {
+                      "fact_key": "十一宫主（Labh's Lord）是否与凶星同宫"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘二宫主（Dhan's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十一宫主（Labh's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）是否燃烧",
+              "十一宫主（Labh's Lord）是否燃烧"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "二宫主（Dhan's Lord）是否燃烧"
+                },
+                {
+                  "fact_key": "十一宫主（Labh's Lord）是否燃烧"
+                }
+              ]
+            },
+            "selection_group": "ch13-v6-7-lords-combust-penury-from-birth.step-001:both-lords-affliction",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）是否燃烧、十一宫主（Labh's Lord）是否燃烧。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘二宫主（Dhan's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十一宫主（Labh's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）是否与凶星同宫",
+              "十一宫主（Labh's Lord）是否与凶星同宫"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "二宫主（Dhan's Lord）是否与凶星同宫"
+                },
+                {
+                  "fact_key": "十一宫主（Labh's Lord）是否与凶星同宫"
+                }
+              ]
+            },
+            "selection_group": "ch13-v6-7-lords-combust-penury-from-birth.step-001:both-lords-affliction",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）是否与凶星同宫、十一宫主（Labh's Lord）是否与凶星同宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "the Lords of Dhan and Labh Bhava are both combust",
+              "claim": "二宫主与十一宫主都燃烧"
+            },
+            {
+              "quote": "or with malefics",
+              "claim": "或都与凶星同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "There will be penury right from birth",
+              "claim": "命主自出生起即贫困"
+            },
+            {
+              "quote": "the native will have to beg even for his food",
+              "claim": "甚至要乞讨食物"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch13:v6-7",
+            "quote": "There will be penury right from birth and the native will have to beg even for his food, if the Lords of Dhan and Labh Bhava are both combust, or with malefics.",
+            "pdf_pages": [
+              28
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘二宫主（Dhan's Lord）是哪颗行星、本盘十一宫主（Labh's Lord）是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘二宫主（Dhan's Lord）是哪颗行星",
+          "本盘十一宫主（Labh's Lord）是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「两个宫主都燃烧」减成只有一个宫主燃烧。",
+          "不得据此推断贫困持续多久或何时结束。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "d92bbf819a00189227675c50d6d70d5dce4d7998f6f716f7b4974854cb0954d6"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch13-v8-royal-punishment-wealth-loss.step-001",
+      "method": {
+        "method": "ch13-v8-royal-punishment-wealth-loss",
+        "title": "因王家刑罚失财：二宫主十一宫主落六八十二宫且火星落十一宫、罗睺落二宫",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会因为官非罚没而破财",
+          "什么组合会因为官方处罚失去钱财"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should the Lords of Dhan and Labh Bhava be relegated to Ari, Randhr, or Vyaya Bhava, while Mangal is in Labh Bhava and Rahu is in Dhan Bhava, the native will lose his wealth on account of royal punishments",
+            "二宫主十一宫主落六宫八宫十二宫 火星落十一宫 罗睺落二宫 王家刑罚 失财"
+          ],
+          "counter_queries": [
+            "If Dhan Lord is in Labh, while the Lord of Labh in Dhan, wealth will be acquired by the native",
+            "If the Lord of Dhan is in an angle, while Labh Lord is in a trine thereof, or is drishtied by, or yuti with Guru and Shukr, the subject will be wealthy",
+            "If Karm’s Lord is in Dhan Bhava, the native will be wealthy, virtuous, honoured by the king, charitable"
+          ],
+          "boundary_queries": [
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava",
+            "Note the Grahas, that are ruling the Rāśis, occupied by the Lords of Ari, Randhr and Vyaya Bhava. If the said dispositors are in such evil Bhavas in turn and are associated with, or receive a Drishti from malefics, the native will be miserable and indigent",
+            "Indications of Labh Bhava"
+          ],
+          "method_queries": [
+            "Now I tell you some Yogas for poverty along with conditions of their nullifications",
+            "If the Lord of Dhan is in Dhan, or is in an angle, or in trine, he will promote one’s wealth (or monetary state)",
+            "判断破财要看二宫主与十一宫主落在哪一宫"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch13-v8-royal-punishment-wealth-loss.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the Lords of Dhan and Labh Bhava be relegated to Ari, Randhr, or Vyaya Bhava"
+            },
+            {
+              "step_id": "ch13-v8-royal-punishment-wealth-loss.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Mangal is in Labh Bhava"
+            },
+            {
+              "step_id": "ch13-v8-royal-punishment-wealth-loss.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Rahu is in Dhan Bhava"
+            },
+            {
+              "step_id": "ch13-v8-royal-punishment-wealth-loss.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will lose his wealth on account of royal punishments"
+            },
+            {
+              "step_id": "ch13-v8-royal-punishment-wealth-loss.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the Lords of Dhan and Labh Bhava be relegated to Ari, Randhr, or Vyaya Bhava the native will lose his wealth on account of royal punishments"
+            },
+            {
+              "step_id": "ch13-v8-royal-punishment-wealth-loss.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Mangal is in Labh Bhava the native will lose his wealth on account of royal punishments"
+            },
+            {
+              "step_id": "ch13-v8-royal-punishment-wealth-loss.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Rahu is in Dhan Bhava the native will lose his wealth on account of royal punishments"
+            },
+            {
+              "step_id": "ch13-v8-royal-punishment-wealth-loss.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "the Lords of 2nd house and 11th house be relegated to 6th house, 8th house, or 12th house"
+            },
+            {
+              "step_id": "ch13-v8-royal-punishment-wealth-loss.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "mars is in 11th house"
+            },
+            {
+              "step_id": "ch13-v8-royal-punishment-wealth-loss.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "rahu is in 2nd house"
+            },
+            {
+              "step_id": "ch13-v8-royal-punishment-wealth-loss.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "the Lords of 2nd house and 11th house be relegated to 6th house, 8th house, or 12th house the native will lose his wealth on account of royal punishments"
+            },
+            {
+              "step_id": "ch13-v8-royal-punishment-wealth-loss.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "mars is in 11th house the native will lose his wealth on account of royal punishments"
+            },
+            {
+              "step_id": "ch13-v8-royal-punishment-wealth-loss.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "rahu is in 2nd house the native will lose his wealth on account of royal punishments"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少火星落十一宫、罗睺落二宫任一事实时停止。",
+          "缺少二宫主或十一宫主落宫事实时停止。",
+          "二宫主的三个落宫分支事实全缺，或十一宫主的三个落宫分支事实全缺时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch13-v8-royal-punishment-wealth-loss.step-001",
+        "action": "先核对火星（Mangal）落十一宫、罗睺（Rahu）落二宫，再分别核对二宫主与十一宫主是否落六宫、八宫或十二宫。",
+        "applicability_scope": "仅限本命盘二宫（Dhan Bhava）财富主题；原文未给时间或大运限定，也未说明刑罚的具体形式。",
+        "minimum_supported_claim": "二宫主与十一宫主都落六宫（Ari）、八宫（Randhr）或十二宫（Vyaya）之一，同时火星（Mangal）落十一宫（Labh）、罗睺（Rahu）落二宫（Dhan）时，命主因王家刑罚而失去财富。",
+        "produced_fact_keys": [
+          "王家刑罚失财判定"
+        ],
+        "required_fact_keys": [
+          "火星（Mangal）是否落十一宫（Labh）",
+          "罗睺（Rahu）是否落二宫（Dhan）",
+          "本盘二宫主（Dhan's Lord）落在哪一宫",
+          "本盘十一宫主（Labh's Lord）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "火星（Mangal）是否落十一宫（Labh）"
+                },
+                {
+                  "fact_key": "罗睺（Rahu）是否落二宫（Dhan）"
+                },
+                {
+                  "fact_key": "本盘二宫主（Dhan's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘十一宫主（Labh's Lord）落在哪一宫"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "二宫主（Dhan's Lord）是否落六宫（Ari）"
+                },
+                {
+                  "fact_key": "二宫主（Dhan's Lord）是否落八宫（Randhr）"
+                },
+                {
+                  "fact_key": "二宫主（Dhan's Lord）是否落十二宫（Vyaya）"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "十一宫主（Labh's Lord）是否落六宫（Ari）"
+                },
+                {
+                  "fact_key": "十一宫主（Labh's Lord）是否落八宫（Randhr）"
+                },
+                {
+                  "fact_key": "十一宫主（Labh's Lord）是否落十二宫（Vyaya）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "火星（Mangal）是否落十一宫（Labh）"
+                },
+                {
+                  "fact_key": "罗睺（Rahu）是否落二宫（Dhan）"
+                },
+                {
+                  "fact_key": "本盘二宫主（Dhan's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘十一宫主（Labh's Lord）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）是否落六宫（Ari）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "二宫主（Dhan's Lord）是否落六宫（Ari）"
+            },
+            "selection_group": "ch13-v8-royal-punishment-wealth-loss.step-001:dhan-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）是否落六宫（Ari）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "火星（Mangal）是否落十一宫（Labh）"
+                },
+                {
+                  "fact_key": "罗睺（Rahu）是否落二宫（Dhan）"
+                },
+                {
+                  "fact_key": "本盘二宫主（Dhan's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘十一宫主（Labh's Lord）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）是否落八宫（Randhr）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "二宫主（Dhan's Lord）是否落八宫（Randhr）"
+            },
+            "selection_group": "ch13-v8-royal-punishment-wealth-loss.step-001:dhan-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）是否落八宫（Randhr）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "火星（Mangal）是否落十一宫（Labh）"
+                },
+                {
+                  "fact_key": "罗睺（Rahu）是否落二宫（Dhan）"
+                },
+                {
+                  "fact_key": "本盘二宫主（Dhan's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘十一宫主（Labh's Lord）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）是否落十二宫（Vyaya）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "二宫主（Dhan's Lord）是否落十二宫（Vyaya）"
+            },
+            "selection_group": "ch13-v8-royal-punishment-wealth-loss.step-001:dhan-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）是否落十二宫（Vyaya）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "火星（Mangal）是否落十一宫（Labh）"
+                },
+                {
+                  "fact_key": "罗睺（Rahu）是否落二宫（Dhan）"
+                },
+                {
+                  "fact_key": "本盘二宫主（Dhan's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘十一宫主（Labh's Lord）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "十一宫主（Labh's Lord）是否落六宫（Ari）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十一宫主（Labh's Lord）是否落六宫（Ari）"
+            },
+            "selection_group": "ch13-v8-royal-punishment-wealth-loss.step-001:labh-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十一宫主（Labh's Lord）是否落六宫（Ari）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "火星（Mangal）是否落十一宫（Labh）"
+                },
+                {
+                  "fact_key": "罗睺（Rahu）是否落二宫（Dhan）"
+                },
+                {
+                  "fact_key": "本盘二宫主（Dhan's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘十一宫主（Labh's Lord）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "十一宫主（Labh's Lord）是否落八宫（Randhr）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十一宫主（Labh's Lord）是否落八宫（Randhr）"
+            },
+            "selection_group": "ch13-v8-royal-punishment-wealth-loss.step-001:labh-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十一宫主（Labh's Lord）是否落八宫（Randhr）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "火星（Mangal）是否落十一宫（Labh）"
+                },
+                {
+                  "fact_key": "罗睺（Rahu）是否落二宫（Dhan）"
+                },
+                {
+                  "fact_key": "本盘二宫主（Dhan's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘十一宫主（Labh's Lord）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "十一宫主（Labh's Lord）是否落十二宫（Vyaya）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十一宫主（Labh's Lord）是否落十二宫（Vyaya）"
+            },
+            "selection_group": "ch13-v8-royal-punishment-wealth-loss.step-001:labh-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十一宫主（Labh's Lord）是否落十二宫（Vyaya）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "the Lords of Dhan and Labh Bhava be relegated to Ari, Randhr, or Vyaya Bhava",
+              "claim": "二宫主与十一宫主都落六宫（Ari）、八宫（Randhr）或十二宫（Vyaya）之一"
+            },
+            {
+              "quote": "Mangal is in Labh Bhava",
+              "claim": "火星（Mangal）落十一宫（Labh）"
+            },
+            {
+              "quote": "Rahu is in Dhan Bhava",
+              "claim": "罗睺（Rahu）落二宫（Dhan）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will lose his wealth on account of royal punishments",
+              "claim": "命主因王家刑罚而失去财富"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch13:v8",
+            "quote": "Should the Lords of Dhan and Labh Bhava be relegated to Ari, Randhr, or Vyaya Bhava, while Mangal is in Labh Bhava and Rahu is in Dhan Bhava, the native will lose his wealth on account of royal punishments.",
+            "pdf_pages": [
+              28
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：火星（Mangal）是否落十一宫（Labh）、罗睺（Rahu）是否落二宫（Dhan）、本盘二宫主（Dhan's Lord）落在哪一宫、本盘十一宫主（Labh's Lord）落在哪一宫。",
+        "stop_fact_keys": [
+          "火星（Mangal）是否落十一宫（Labh）",
+          "罗睺（Rahu）是否落二宫（Dhan）",
+          "本盘二宫主（Dhan's Lord）落在哪一宫",
+          "本盘十一宫主（Labh's Lord）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得省去火星落十一宫、罗睺落二宫两个条件，只凭宫主落六八十二宫就下断语。",
+          "不得据此推断失财的时间、金额或刑罚种类。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "aa5b2fb7e80e81977be45ae284b5511f8a5d91da1734a030d01d0616650d12f9"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch13:v1-2": {
+      "evidence_atom_id": "bphs-97:santhanam:ch13:v1-2",
+      "chapter_number": 13,
+      "chapter_title": "Effects of Dhan Bhava",
+      "verse_label": "1-2.",
+      "content_role": "verse",
+      "exact_text": "1-2. Combinations for Wealth. O excellent of the Brahmins, listen to me, speaking on the effects of Dhan Bhava. If the Lord of Dhan is in Dhan, or is in an angle, or in trine, he will promote one’s wealth (or monetary state). Should he be in Ari/8<sup>th</sup> /12<sup>th</sup> , financial conditions will decline. A benefic in Dhan will give wealth, while a malefic instead will destroy wealth.",
+      "pdf_pages": [
+        27
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 13 · Sloka 1-2 · PDF page 27 · bphs-97:santhanam:ch13:v1-2",
+      "previous_atom_id": null,
+      "next_atom_id": "bphs-97:santhanam:ch13:v3",
+      "context_before": "",
+      "context_after": "3. One will be wealthy, if Guru is in Dhan, as the Lord of Dhan, or is with Mangal.\n\n4. If Dhan Lord is in Labh, while the Lord ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch13:v3": {
+      "evidence_atom_id": "bphs-97:santhanam:ch13:v3",
+      "chapter_number": 13,
+      "chapter_title": "Effects of Dhan Bhava",
+      "verse_label": "3.",
+      "content_role": "verse",
+      "exact_text": "3. One will be wealthy, if Guru is in Dhan, as the Lord of Dhan, or is with Mangal.",
+      "pdf_pages": [
+        27
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 13 · Sloka 3 · PDF page 27 · bphs-97:santhanam:ch13:v3",
+      "previous_atom_id": "bphs-97:santhanam:ch13:v1-2",
+      "next_atom_id": "bphs-97:santhanam:ch13:v4",
+      "context_before": "th</sup> , financial conditions will decline. A benefic in Dhan will give wealth, while a malefic instead will destroy wealth.\n\n",
+      "context_after": "4. If Dhan Lord is in Labh, while the Lord of Labh in Dhan, wealth will be acquired by the native. Alternately these two Lords m",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch13:v4": {
+      "evidence_atom_id": "bphs-97:santhanam:ch13:v4",
+      "chapter_number": 13,
+      "chapter_title": "Effects of Dhan Bhava",
+      "verse_label": "4.",
+      "content_role": "verse",
+      "exact_text": "4. If Dhan Lord is in Labh, while the Lord of Labh in Dhan, wealth will be acquired by the native. Alternately these two Lords may join in an angle, or in a trine.",
+      "pdf_pages": [
+        27
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 13 · Sloka 4 · PDF page 27 · bphs-97:santhanam:ch13:v4",
+      "previous_atom_id": "bphs-97:santhanam:ch13:v3",
+      "next_atom_id": "bphs-97:santhanam:ch13:v5",
+      "context_before": "le a malefic instead will destroy wealth.\n\n3. One will be wealthy, if Guru is in Dhan, as the Lord of Dhan, or is with Mangal.\n\n",
+      "context_after": "5. If the Lord of Dhan is in an angle, while Labh Lord is in a trine thereof, or is drishtied by, or yuti with Guru and Shukr, t",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch13:v5": {
+      "evidence_atom_id": "bphs-97:santhanam:ch13:v5",
+      "chapter_number": 13,
+      "chapter_title": "Effects of Dhan Bhava",
+      "verse_label": "5.",
+      "content_role": "verse",
+      "exact_text": "5. If the Lord of Dhan is in an angle, while Labh Lord is in a trine thereof, or is drishtied by, or yuti with Guru and Shukr, the subject will be wealthy.",
+      "pdf_pages": [
+        28
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 13 · Sloka 5 · PDF page 28 · bphs-97:santhanam:ch13:v5",
+      "previous_atom_id": "bphs-97:santhanam:ch13:v4",
+      "next_atom_id": "bphs-97:santhanam:ch13:v6-7",
+      "context_before": "alth will be acquired by the native. Alternately these two Lords may join in an angle, or in a trine.\n\n<!-- SOURCE_PAGE 28 -->\n\n",
+      "context_after": "6-7. Yogas for Poverty. One will be penniless, if the Lord of Dhan Bhava is in an evil Bhava, while the Lord of Labh Bhava is al",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch13:v6-7": {
+      "evidence_atom_id": "bphs-97:santhanam:ch13:v6-7",
+      "chapter_number": 13,
+      "chapter_title": "Effects of Dhan Bhava",
+      "verse_label": "6-7.",
+      "content_role": "verse",
+      "exact_text": "6-7. Yogas for Poverty. One will be penniless, if the Lord of Dhan Bhava is in an evil Bhava, while the Lord of Labh Bhava is also so placed and Dhan Bhava is occupied by a malefic. There will be penury right from birth and the native will have to beg even for his food, if the Lords of Dhan and Labh Bhava are both combust, or with malefics.",
+      "pdf_pages": [
+        28
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 13 · Sloka 6-7 · PDF page 28 · bphs-97:santhanam:ch13:v6-7",
+      "previous_atom_id": "bphs-97:santhanam:ch13:v5",
+      "next_atom_id": "bphs-97:santhanam:ch13:v8",
+      "context_before": " If the Lord of Dhan is in an angle, while Labh Lord is in a trine thereof, or is drishtied by, or yuti with Guru and Shukr, the subject will be wealthy.\n\n",
+      "context_after": "8. Loss of Wealth through the King. Should the Lords of Dhan and Labh Bhava be relegated to Ari, Randhr, or Vyaya Bhava, while M",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch13:v8": {
+      "evidence_atom_id": "bphs-97:santhanam:ch13:v8",
+      "chapter_number": 13,
+      "chapter_title": "Effects of Dhan Bhava",
+      "verse_label": "8.",
+      "content_role": "verse",
+      "exact_text": "8. Loss of Wealth through the King. Should the Lords of Dhan and Labh Bhava be relegated to Ari, Randhr, or Vyaya Bhava, while Mangal is in Labh Bhava and Rahu is in Dhan Bhava, the native will lose his wealth on account of royal punishments.",
+      "pdf_pages": [
+        28
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 13 · Sloka 8 · PDF page 28 · bphs-97:santhanam:ch13:v8",
+      "previous_atom_id": "bphs-97:santhanam:ch13:v6-7",
+      "next_atom_id": "bphs-97:santhanam:ch13:v9",
+      "context_before": " There will be penury right from birth and the native will have to beg even for his food, if the Lords of Dhan and Labh Bhava are both combust, or with malefics.\n\n",
+      "context_after": "9. Expenses on Good Accounts. When Guru is in Labh, Shukra is in Dhan and a benefic is placed in Vyaya Bhava, while Dhan’s Lord ",
+      "content_missing": false
+    }
+  }
+}

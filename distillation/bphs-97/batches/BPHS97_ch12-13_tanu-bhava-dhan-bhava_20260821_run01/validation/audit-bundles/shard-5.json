@@ -1,0 +1,1286 @@
+{
+  "shard": 5,
+  "step_count": 6,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch13-v9-religious-charitable-expenses.step-001",
+      "method": {
+        "method": "ch13-v9-religious-charitable-expenses",
+        "title": "开销用于宗教慈善：木星落十一宫、金星落二宫、十二宫有吉星且二宫主与吉星同宫",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的钱会花在什么地方",
+          "我会不会把钱用在宗教或慈善上"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "When Guru is in Labh, Shukra is in Dhan and a benefic is placed in Vyaya Bhava, while Dhan’s Lord is yuti with a benefic, there will be expenses on religious, or charitable grounds",
+            "木星落十一宫 金星落二宫 十二宫吉星 二宫主与吉星同宫 宗教慈善开销"
+          ],
+          "counter_queries": [
+            "a malefic in the 12<sup>th</sup> from Karakāńś will cause bad expenses",
+            "And, if Vyaya’s Lord is in Ari, or Randhr Bhava, or be in enemy’s Navāńś, in debilitation Navāńś, or in Randhr Bhava in Navāńś, one will be devoid of happiness from wife, be troubled by expenses",
+            "Should the Lords of Dhan and Labh Bhava be relegated to Ari, Randhr, or Vyaya Bhava"
+          ],
+          "boundary_queries": [
+            "From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu … are malefics, while the rest are benefics",
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava"
+          ],
+          "method_queries": [
+            "There will be expenses on good accounts, if Vyaya’s Lord is with a benefic, or in his own Bhava, or exalted, or, if a benefic occupies Vyaya",
+            "If Lagn’s Lord is in Vyaya, while Vyaya’s Lord is in Lagn with Shukr, expenses will be on religious grounds",
+            "判断开销去向要看十二宫和二宫主"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch13-v9-religious-charitable-expenses.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Guru is in Labh"
+            },
+            {
+              "step_id": "ch13-v9-religious-charitable-expenses.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Shukra is in Dhan"
+            },
+            {
+              "step_id": "ch13-v9-religious-charitable-expenses.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "a benefic is placed in Vyaya Bhava"
+            },
+            {
+              "step_id": "ch13-v9-religious-charitable-expenses.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dhan’s Lord is yuti with a benefic"
+            },
+            {
+              "step_id": "ch13-v9-religious-charitable-expenses.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "there will be expenses on religious, or charitable grounds"
+            },
+            {
+              "step_id": "ch13-v9-religious-charitable-expenses.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Guru is in Labh there will be expenses on religious, or charitable grounds"
+            },
+            {
+              "step_id": "ch13-v9-religious-charitable-expenses.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Shukra is in Dhan there will be expenses on religious, or charitable grounds"
+            },
+            {
+              "step_id": "ch13-v9-religious-charitable-expenses.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "a benefic is placed in Vyaya Bhava there will be expenses on religious, or charitable grounds"
+            },
+            {
+              "step_id": "ch13-v9-religious-charitable-expenses.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dhan’s Lord is yuti with a benefic there will be expenses on religious, or charitable grounds"
+            },
+            {
+              "step_id": "ch13-v9-religious-charitable-expenses.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "jupiter is in 11th house"
+            },
+            {
+              "step_id": "ch13-v9-religious-charitable-expenses.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "venus is in 2nd house"
+            },
+            {
+              "step_id": "ch13-v9-religious-charitable-expenses.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "a benefic is placed in 12th house"
+            },
+            {
+              "step_id": "ch13-v9-religious-charitable-expenses.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "2nd lord is yuti with a benefic"
+            },
+            {
+              "step_id": "ch13-v9-religious-charitable-expenses.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "jupiter is in 11th house there will be expenses on religious, or charitable grounds"
+            },
+            {
+              "step_id": "ch13-v9-religious-charitable-expenses.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "venus is in 2nd house there will be expenses on religious, or charitable grounds"
+            },
+            {
+              "step_id": "ch13-v9-religious-charitable-expenses.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "a benefic is placed in 12th house there will be expenses on religious, or charitable grounds"
+            },
+            {
+              "step_id": "ch13-v9-religious-charitable-expenses.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "2nd lord is yuti with a benefic there will be expenses on religious, or charitable grounds"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "四个条件事实缺任一时停止。",
+          "吉星名册未定时停止（吉凶判准见第3章 v11）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch13-v9-religious-charitable-expenses.step-001",
+        "action": "核对木星落十一宫、金星落二宫、十二宫内有吉星、二宫主与吉星同宫四项是否同时成立，判断开销去向。",
+        "applicability_scope": "仅限本命盘二宫（Dhan Bhava）财富主题；原文四个条件同时要求，未给时间限定。",
+        "minimum_supported_claim": "木星（Guru）落十一宫（Labh）、金星（Shukra）落二宫（Dhan）、十二宫（Vyaya Bhava）内有吉星，且二宫主与吉星同宫时，命主的开销花在宗教或慈善用途上。",
+        "produced_fact_keys": [
+          "宗教慈善开销判定"
+        ],
+        "required_fact_keys": [
+          "木星（Guru）是否落十一宫（Labh）",
+          "金星（Shukra）是否落二宫（Dhan）",
+          "十二宫（Vyaya）是否被吉星占据",
+          "二宫主（Dhan's Lord）是否与吉星同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "木星（Guru）是否落十一宫（Labh）"
+            },
+            {
+              "fact_key": "金星（Shukra）是否落二宫（Dhan）"
+            },
+            {
+              "fact_key": "十二宫（Vyaya）是否被吉星占据"
+            },
+            {
+              "fact_key": "二宫主（Dhan's Lord）是否与吉星同宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Guru is in Labh",
+              "claim": "木星（Guru）落十一宫（Labh）"
+            },
+            {
+              "quote": "Shukra is in Dhan",
+              "claim": "金星（Shukra）落二宫（Dhan）"
+            },
+            {
+              "quote": "a benefic is placed in Vyaya Bhava",
+              "claim": "十二宫（Vyaya Bhava）内有吉星"
+            },
+            {
+              "quote": "Dhan’s Lord is yuti with a benefic",
+              "claim": "二宫主与吉星同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "there will be expenses on religious, or charitable grounds",
+              "claim": "命主的开销花在宗教或慈善用途上"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch13:v9",
+            "quote": "When Guru is in Labh, Shukra is in Dhan and a benefic is placed in Vyaya Bhava, while Dhan’s Lord is yuti with a benefic, there will be expenses on religious, or charitable grounds.",
+            "pdf_pages": [
+              28
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：木星（Guru）是否落十一宫（Labh）、金星（Shukra）是否落二宫（Dhan）、十二宫（Vyaya）是否被吉星占据、二宫主（Dhan's Lord）是否与吉星同宫。",
+        "stop_fact_keys": [
+          "木星（Guru）是否落十一宫（Labh）",
+          "金星（Shukra）是否落二宫（Dhan）",
+          "十二宫（Vyaya）是否被吉星占据",
+          "二宫主（Dhan's Lord）是否与吉星同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把四个条件减成任意一两条成立即可。",
+          "不得据此推断开销的金额、频次或时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "487bb767d7c8f9a69d9d492aed7a48ab86391de4b059441a236ce7aff5a13866"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch13-v10-dhan-lord-dignity-fame.step-001",
+      "method": {
+        "method": "ch13-v10-dhan-lord-dignity-fame",
+        "title": "照顾族人并成名：二宫主落本星座或入旺",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会出名",
+          "二宫主入旺或落本星座代表什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dhan’s Lord is in own Rāśi, or is exalted, the native will look after his people, will help others and also will become famous",
+            "二宫主落本星座 入旺 照顾族人 成名"
+          ],
+          "counter_queries": [
+            "One will be penniless, if the Lord of Dhan Bhava is in an evil Bhava, while the Lord of Labh Bhava is also so placed",
+            "If Dhan Bhava and its Lord are yuti with malefics, the native will be a talebearer, will speak untruth",
+            "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless"
+          ],
+          "boundary_queries": [
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava",
+            "If the Lord of Dhan is in Dhan, or is in an angle, or in trine, he will promote one’s wealth (or monetary state)",
+            "The native will be wealthy, if one among Chandra, Guru, Shukra and Budh is exalted in Dhan Bhava"
+          ],
+          "method_queries": [
+            "If Dhan’s Lord is in Dhan Bhava, the native will be wealthy, proud, will have two, or more wives and be bereft of progeny",
+            "If Dhan’s Lord is in Putr Bhava, the native will be wealthy",
+            "判断名声要看二宫主的庙旺状态"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch13-v10-dhan-lord-dignity-fame.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dhan’s Lord is in own Rāśi"
+            },
+            {
+              "step_id": "ch13-v10-dhan-lord-dignity-fame.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or is exalted"
+            },
+            {
+              "step_id": "ch13-v10-dhan-lord-dignity-fame.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will look after his people"
+            },
+            {
+              "step_id": "ch13-v10-dhan-lord-dignity-fame.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will help others"
+            },
+            {
+              "step_id": "ch13-v10-dhan-lord-dignity-fame.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will become famous"
+            },
+            {
+              "step_id": "ch13-v10-dhan-lord-dignity-fame.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dhan’s Lord is in own Rāśi the native will look after his people"
+            },
+            {
+              "step_id": "ch13-v10-dhan-lord-dignity-fame.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or is exalted the native will look after his people"
+            },
+            {
+              "step_id": "ch13-v10-dhan-lord-dignity-fame.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "2nd lord is in own Rāśi"
+            },
+            {
+              "step_id": "ch13-v10-dhan-lord-dignity-fame.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "2nd lord is in own Rāśi the native will look after his people"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少二宫主行星身份事实时停止。",
+          "落本星座与入旺两个分支事实都缺时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch13-v10-dhan-lord-dignity-fame.step-001",
+        "action": "先确定二宫主是哪颗行星，再核对它是否落本星座（own Rāśi），或是否入旺。",
+        "applicability_scope": "仅限本命盘二宫（Dhan Bhava）主题；原文未给时间限定，也未说明成名的领域。",
+        "minimum_supported_claim": "二宫主（Dhan’s Lord）落本星座（own Rāśi），或入旺时，命主照顾自己的人、帮助他人，并且成名。",
+        "produced_fact_keys": [
+          "二宫主得位的名声判定"
+        ],
+        "required_fact_keys": [
+          "本盘二宫主（Dhan's Lord）是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘二宫主（Dhan's Lord）是哪颗行星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "二宫主（Dhan's Lord）是否落本星座（own Rāśi）"
+                },
+                {
+                  "fact_key": "二宫主（Dhan's Lord）是否入旺"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘二宫主（Dhan's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）是否落本星座（own Rāśi）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "二宫主（Dhan's Lord）是否落本星座（own Rāśi）"
+            },
+            "selection_group": "ch13-v10-dhan-lord-dignity-fame.step-001:dhan-lord-dignity",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）是否落本星座（own Rāśi）。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘二宫主（Dhan's Lord）是哪颗行星"
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）是否入旺"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "二宫主（Dhan's Lord）是否入旺"
+            },
+            "selection_group": "ch13-v10-dhan-lord-dignity-fame.step-001:dhan-lord-dignity",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）是否入旺。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dhan’s Lord is in own Rāśi",
+              "claim": "二宫主（Dhan’s Lord）落本星座（own Rāśi）"
+            },
+            {
+              "quote": "or is exalted",
+              "claim": "入旺"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will look after his people",
+              "claim": "命主照顾自己的人"
+            },
+            {
+              "quote": "will help others",
+              "claim": "帮助他人"
+            },
+            {
+              "quote": "will become famous",
+              "claim": "成名"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch13:v10",
+            "quote": "If Dhan’s Lord is in own Rāśi, or is exalted, the native will look after his people, will help others and also will become famous.",
+            "pdf_pages": [
+              28
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘二宫主（Dhan's Lord）是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘二宫主（Dhan's Lord）是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 own Rāśi（本星座）当成本宫（Bhava）来判。",
+          "不得据此推断名声的领域、范围或成名时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "1045774d2c46cde7f58b21d4517085cd226f17d25cca44ce42c784f7368ae69b"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch13-v11-high-varga-effortless-wealth.step-001",
+      "method": {
+        "method": "ch13-v11-high-varga-effortless-wealth",
+        "title": "不劳而获的财富：二宫主与吉星同宫且处于高等级分盘",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我家里的钱是不是来得轻松",
+          "二宫主在高等级分盘里代表什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dhan’s Lord is yuti with a benefic and is in a good division, like Paravatāńś, there will be effortlessly all kinds of wealth in the native’s family",
+            "二宫主与吉星同宫 Paravatāńś 高等级 Varga 不劳而获 财富"
+          ],
+          "counter_queries": [
+            "One will be penniless, if the Lord of Dhan Bhava is in an evil Bhava, while the Lord of Labh Bhava is also so placed and Dhan Bhava is occupied by a malefic",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avast",
+            "There will be penury right from birth and the native will have to beg even for his food"
+          ],
+          "boundary_queries": [
+            "In the Dasha Varg scheme the designations commence from Parijata etc., such as 2 good Vargas - Parijatha, 3 Uttama, 4 Gopur, 5 Simhasan, 6 Paravata, 7 Devaloka, 8 Brahmaloka, 9 Sakravahana and 10 Vargas - Shridham",
+            "Add Dashāńś, Shodashāńś and Shashtiāńś to the said Sapt Varg Divisions to get the scheme of Dasha Varg",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu … are malefics, while the rest are benefics"
+          ],
+          "method_queries": [
+            "Lagn’s Lord in Parijatāńś will make one happy, in Vargottama will give immunity to diseases, in Gopurāńś will make one rich with wealth and grains",
+            "If the Lord of a Kendr is in Parijatāńś, the native will be liberal, if in Uttamāńś, will be highly liberal, if in Gopurāńś, will be endowed with prowess",
+            "判断分盘等级要看十种分盘中有几个好 Varga"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch13-v11-high-varga-effortless-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dhan’s Lord is yuti with a benefic"
+            },
+            {
+              "step_id": "ch13-v11-high-varga-effortless-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "is in a good division, like Paravatāńś"
+            },
+            {
+              "step_id": "ch13-v11-high-varga-effortless-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dhan’s Lord should be in Paravatāńś, or in Devalokāńś, Brahmalokāńś, Sakravahanāńś, or Sridhamāńś in the Dash Varg scheme"
+            },
+            {
+              "step_id": "ch13-v11-high-varga-effortless-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "there will be effortlessly all kinds of wealth in the native’s family"
+            },
+            {
+              "step_id": "ch13-v11-high-varga-effortless-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dhan’s Lord is yuti with a benefic there will be effortlessly all kinds of wealth in the native’s family"
+            },
+            {
+              "step_id": "ch13-v11-high-varga-effortless-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "is in a good division, like Paravatāńś there will be effortlessly all kinds of wealth in the native’s family"
+            },
+            {
+              "step_id": "ch13-v11-high-varga-effortless-wealth.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dhan’s Lord should be in Paravatāńś, or in Devalokāńś, Brahmalokāńś, Sakravahanāńś, or Sridhamāńś in the Dash Varg scheme there will be effortlessly all kinds of wealth in the native’s family"
+            },
+            {
+              "step_id": "ch13-v11-high-varga-effortless-wealth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "2nd lord is yuti with a benefic"
+            },
+            {
+              "step_id": "ch13-v11-high-varga-effortless-wealth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "2nd lord should be in Paravatāńś, or in Devalokāńś, Brahmalokāńś, Sakravahanāńś, or Sridhamāńś in the Dash Varg scheme"
+            },
+            {
+              "step_id": "ch13-v11-high-varga-effortless-wealth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "2nd lord is yuti with a benefic there will be effortlessly all kinds of wealth in the native’s family"
+            },
+            {
+              "step_id": "ch13-v11-high-varga-effortless-wealth.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "2nd lord should be in Paravatāńś, or in Devalokāńś, Brahmalokāńś, Sakravahanāńś, or Sridhamāńś in the Dash Varg scheme there will be effortlessly all kinds of wealth in the native’s family"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少二宫主与吉星同宫的事实时停止。",
+          "五个 Varga 等级分支事实全缺时停止。",
+          "吉星名册未定时停止（吉凶判准见第3章 v11）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch13-v11-high-varga-effortless-wealth.step-001",
+        "action": "先核对二宫主是否与吉星同宫，再核对它在 Dash Varg 分盘方案中是否达到 Paravatāńś 一类高等级。",
+        "applicability_scope": "仅限本命盘二宫（Dhan Bhava）财富主题；括号内 Paravatāńś、Devalokāńś、Brahmalokāńś、Sakravahanāńś、Sridhamāńś 名单出自英译者 Santhanam 的注文（“Paravatāńśdau” of the text denotes…），其结论强度不与作者自断等同。",
+        "minimum_supported_claim": "二宫主（Dhan’s Lord）与吉星同宫，并处于 Paravatāńś 这类良好分盘等级时，命主家中不费力气就得到各种财富；英译者注把这类等级列为 Dash Varg 分盘方案中的 Paravatāńś、Devalokāńś、Brahmalokāńś、Sakravahanāńś、Sridhamāńś。",
+        "produced_fact_keys": [
+          "二宫主高等级分盘的不劳而获判定"
+        ],
+        "required_fact_keys": [
+          "二宫主（Dhan's Lord）是否与吉星同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "二宫主（Dhan's Lord）是否与吉星同宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Paravatāńś 等级"
+                },
+                {
+                  "fact_key": "二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Devalokāńś 等级"
+                },
+                {
+                  "fact_key": "二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Brahmalokāńś 等级"
+                },
+                {
+                  "fact_key": "二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Sakravahanāńś 等级"
+                },
+                {
+                  "fact_key": "二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Sridhamāńś 等级"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "二宫主（Dhan's Lord）是否与吉星同宫"
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Paravatāńś 等级"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Paravatāńś 等级"
+            },
+            "selection_group": "ch13-v11-high-varga-effortless-wealth.step-001:dash-varg-grade",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Paravatāńś 等级。"
+          },
+          {
+            "when": {
+              "fact_key": "二宫主（Dhan's Lord）是否与吉星同宫"
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Devalokāńś 等级"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Devalokāńś 等级"
+            },
+            "selection_group": "ch13-v11-high-varga-effortless-wealth.step-001:dash-varg-grade",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Devalokāńś 等级。"
+          },
+          {
+            "when": {
+              "fact_key": "二宫主（Dhan's Lord）是否与吉星同宫"
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Brahmalokāńś 等级"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Brahmalokāńś 等级"
+            },
+            "selection_group": "ch13-v11-high-varga-effortless-wealth.step-001:dash-varg-grade",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Brahmalokāńś 等级。"
+          },
+          {
+            "when": {
+              "fact_key": "二宫主（Dhan's Lord）是否与吉星同宫"
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Sakravahanāńś 等级"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Sakravahanāńś 等级"
+            },
+            "selection_group": "ch13-v11-high-varga-effortless-wealth.step-001:dash-varg-grade",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Sakravahanāńś 等级。"
+          },
+          {
+            "when": {
+              "fact_key": "二宫主（Dhan's Lord）是否与吉星同宫"
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Sridhamāńś 等级"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Sridhamāńś 等级"
+            },
+            "selection_group": "ch13-v11-high-varga-effortless-wealth.step-001:dash-varg-grade",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）在 Dash Varg 分盘方案中是否达到 Sridhamāńś 等级。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dhan’s Lord is yuti with a benefic",
+              "claim": "二宫主（Dhan’s Lord）与吉星同宫"
+            },
+            {
+              "quote": "is in a good division, like Paravatāńś",
+              "claim": "处于 Paravatāńś 这类良好分盘等级"
+            },
+            {
+              "quote": "Dhan’s Lord should be in Paravatāńś, or in Devalokāńś, Brahmalokāńś, Sakravahanāńś, or Sridhamāńś in the Dash Varg scheme",
+              "claim": "Dash Varg 分盘方案中的 Paravatāńś、Devalokāńś、Brahmalokāńś、Sakravahanāńś、Sridhamāńś"
+            }
+          ],
+          "results": [
+            {
+              "quote": "there will be effortlessly all kinds of wealth in the native’s family",
+              "claim": "命主家中不费力气就得到各种财富"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch13:v11",
+            "quote": "If Dhan’s Lord is yuti with a benefic and is in a good division, like Paravatāńś, there will be effortlessly all kinds of wealth in the native’s family.",
+            "pdf_pages": [
+              28
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch13:v11",
+            "quote": "Dhan’s Lord should be in Paravatāńś, or in Devalokāńś, Brahmalokāńś, Sakravahanāńś, or Sridhamāńś in the Dash Varg scheme",
+            "pdf_pages": [
+              28
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：二宫主（Dhan's Lord）是否与吉星同宫。",
+        "stop_fact_keys": [
+          "二宫主（Dhan's Lord）是否与吉星同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把英译者注列出的 Varga 名单当成作者自断的独立断语。",
+          "不得据此推断财富数额或得财时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "150c8b744a5d06eaa9166d0ef77b13492fd9f5323675ef2cb00a4b9f96e4df7f"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch13-v12-strong-dhan-lord-beautiful-eyes.step-001",
+      "method": {
+        "method": "ch13-v12-strong-dhan-lord-beautiful-eyes",
+        "title": "眼睛美丽：二宫主有力",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的眼睛好不好看",
+          "二宫主有力对相貌有什么影响"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dhan Lord is endowed with strength, the native will possess beautiful eyes",
+            "二宫主有力 眼睛美丽"
+          ],
+          "counter_queries": [
+            "Should the said Grah be in Ari, Randhr, or Vyaya Bhava, there will be disease, or deformity of eyes",
+            "If Vyatipat is in Randhr Bhava, the native will have deformity of eyes, be ugly, unfortunate, spiteful to Brahmins and be troubled by disorders of blood",
+            "If Pranapad is in Vyaya Bhava, the native will be mean, wicked, defective-limbed, will hate Brahmins and relatives and suffer from eye diseases, or be one-eyed"
+          ],
+          "boundary_queries": [
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava",
+            "Head, eyes, ears, nose, temple, chin and face is the order of limbs, denoted (by the various Bhavas), when the first decanate of a Rashiascends"
+          ],
+          "method_queries": [
+            "Surya with such lordship and in such a Bhava denotes such affectation of head, Chandra of the face, Mangal of the neck, Budh of the navel, Guru of the nose, Shukra of the eyes",
+            "判断二宫主是否有力应检查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch13-v12-strong-dhan-lord-beautiful-eyes.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dhan Lord is endowed with strength"
+            },
+            {
+              "step_id": "ch13-v12-strong-dhan-lord-beautiful-eyes.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will possess beautiful eyes"
+            },
+            {
+              "step_id": "ch13-v12-strong-dhan-lord-beautiful-eyes.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dhan Lord is endowed with strength the native will possess beautiful eyes"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少二宫主强弱事实时停止（该判准待排盘窗口定义）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch13-v12-strong-dhan-lord-beautiful-eyes.step-001",
+        "action": "核对二宫主（Dhan Lord）是否有力，判断眼睛外观。",
+        "applicability_scope": "仅限本命盘二宫（Dhan Bhava）眼睛主题；原文只说 endowed with strength，本句没有给强弱判准。",
+        "minimum_supported_claim": "二宫主（Dhan Lord）有力时，命主眼睛美丽。",
+        "produced_fact_keys": [
+          "二宫主有力的眼睛判定"
+        ],
+        "required_fact_keys": [
+          "二宫主（Dhan's Lord）是否有力"
+        ],
+        "condition_logic": {
+          "fact_key": "二宫主（Dhan's Lord）是否有力"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dhan Lord is endowed with strength",
+              "claim": "二宫主（Dhan Lord）有力"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will possess beautiful eyes",
+              "claim": "命主眼睛美丽"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch13:v12",
+            "quote": "If Dhan Lord is endowed with strength, the native will possess beautiful eyes.",
+            "pdf_pages": [
+              28
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：二宫主（Dhan's Lord）是否有力。",
+        "stop_fact_keys": [
+          "二宫主（Dhan's Lord）是否有力"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断视力好坏或眼部疾病的有无。",
+          "不得自行给「有力」发明判准，本句没有给。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "7e133e59fbff9320645d62a4e8e1716a5c0b66d0dc03766822d52add7526fb68"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch13-v12-dhan-lord-dusthana-eye-disease.step-001",
+      "method": {
+        "method": "ch13-v12-dhan-lord-dusthana-eye-disease",
+        "title": "眼病或眼部畸形：二宫主落六宫、八宫或十二宫",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的眼睛会不会有毛病",
+          "二宫主落六八十二宫对眼睛有什么影响"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should the said Grah be in Ari, Randhr, or Vyaya Bhava, there will be disease, or deformity of eyes",
+            "二宫主落六宫八宫十二宫 眼病 眼部畸形"
+          ],
+          "counter_queries": [
+            "If Dhan Lord is endowed with strength, the native will possess beautiful eyes",
+            "One born in Vapi Yog will be capable of accumulating wealth, be endowed with lasting wealth and happiness and sons, be free from eye afflictions",
+            "If Dhum is in Lagna, the native will be valiant, endowed with beautiful eyes"
+          ],
+          "boundary_queries": [
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava",
+            "Note the Grahas, that are ruling the Rāśis, occupied by the Lords of Ari, Randhr and Vyaya Bhava. If the said dispositors are in such evil Bhavas in turn and are associated with, or receive a Drishti from malefics, the native will be miserable and indigent",
+            "Head, eyes, ears, nose, temple, chin and face is the order of limbs, denoted (by the various Bhavas), when the first decanate of a Rashiascends"
+          ],
+          "method_queries": [
+            "The limb, related to a malefic by occupation, will have ulcers, or scars",
+            "Surya with such lordship and in such a Bhava denotes such affectation of head, Chandra of the face, Mangal of the neck, Budh of the navel, Guru of the nose, Shukra of the eyes",
+            "判断眼睛问题要看二宫主落在哪一宫"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch13-v12-dhan-lord-dusthana-eye-disease.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should the said Grah be in Ari, Randhr, or Vyaya Bhava"
+            },
+            {
+              "step_id": "ch13-v12-dhan-lord-dusthana-eye-disease.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "there will be disease, or deformity of eyes"
+            },
+            {
+              "step_id": "ch13-v12-dhan-lord-dusthana-eye-disease.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should the said Grah be in Ari, Randhr, or Vyaya Bhava there will be disease, or deformity of eyes"
+            },
+            {
+              "step_id": "ch13-v12-dhan-lord-dusthana-eye-disease.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Should the said Grah be in 6th house, 8th house, or 12th house"
+            },
+            {
+              "step_id": "ch13-v12-dhan-lord-dusthana-eye-disease.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Should the said Grah be in 6th house, 8th house, or 12th house there will be disease, or deformity of eyes"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少二宫主落宫事实时停止。",
+          "六宫、八宫、十二宫三个分支事实全缺时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch13-v12-dhan-lord-dusthana-eye-disease.step-001",
+        "action": "取本偈前句所说的那颗行星（二宫主）的落宫，核对它是否落六宫、八宫或十二宫。",
+        "applicability_scope": "仅限本命盘二宫（Dhan Bhava）眼睛主题；原文 the said Grah 承接本偈前句的 Dhan Lord（二宫主），已绑定该原子。",
+        "minimum_supported_claim": "上一句所说的二宫主落六宫（Ari）、八宫（Randhr）或十二宫（Vyaya）之一时，命主眼睛有病或畸形。",
+        "produced_fact_keys": [
+          "二宫主落六八十二宫的眼病判定"
+        ],
+        "required_fact_keys": [
+          "本盘二宫主（Dhan's Lord）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘二宫主（Dhan's Lord）落在哪一宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "二宫主（Dhan's Lord）是否落六宫（Ari）"
+                },
+                {
+                  "fact_key": "二宫主（Dhan's Lord）是否落八宫（Randhr）"
+                },
+                {
+                  "fact_key": "二宫主（Dhan's Lord）是否落十二宫（Vyaya）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘二宫主（Dhan's Lord）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）是否落六宫（Ari）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "二宫主（Dhan's Lord）是否落六宫（Ari）"
+            },
+            "selection_group": "ch13-v12-dhan-lord-dusthana-eye-disease.step-001:dhan-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）是否落六宫（Ari）。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘二宫主（Dhan's Lord）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）是否落八宫（Randhr）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "二宫主（Dhan's Lord）是否落八宫（Randhr）"
+            },
+            "selection_group": "ch13-v12-dhan-lord-dusthana-eye-disease.step-001:dhan-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）是否落八宫（Randhr）。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘二宫主（Dhan's Lord）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）是否落十二宫（Vyaya）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "二宫主（Dhan's Lord）是否落十二宫（Vyaya）"
+            },
+            "selection_group": "ch13-v12-dhan-lord-dusthana-eye-disease.step-001:dhan-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）是否落十二宫（Vyaya）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should the said Grah be in Ari, Randhr, or Vyaya Bhava",
+              "claim": "落六宫（Ari）、八宫（Randhr）或十二宫（Vyaya）之一"
+            }
+          ],
+          "results": [
+            {
+              "quote": "there will be disease, or deformity of eyes",
+              "claim": "命主眼睛有病或畸形"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch13:v12",
+            "quote": "Should the said Grah be in Ari, Randhr, or Vyaya Bhava, there will be disease, or deformity of eyes.",
+            "pdf_pages": [
+              28
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘二宫主（Dhan's Lord）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘二宫主（Dhan's Lord）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 the said Grah 当成二宫主以外的行星。",
+          "不得据此推断眼病的种类、程度或发病时间。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch13:v12"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "ae02baab96583fe5f72bc2661dd33c041be3cb25e0ccc272f518d6bd4f37b37a"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch13-v13-dhan-and-lord-with-malefics-untruthful.step-001",
+      "method": {
+        "method": "ch13-v13-dhan-and-lord-with-malefics-untruthful",
+        "title": "搬弄是非说谎并患风病：二宫内有凶星且二宫主与凶星同宫",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我说话是不是容易惹麻烦",
+          "二宫和二宫主受凶星影响会怎样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dhan Bhava and its Lord are yuti with malefics, the native will be a talebearer, will speak untruth and will be afflicted by windy diseases",
+            "二宫有凶星 二宫主与凶星同宫 搬弄是非 说谎 风病"
+          ],
+          "counter_queries": [
+            "If Dhan’s Lord is in own Rāśi, or is exalted, the native will look after his people, will help others and also will become famous",
+            "A benefic in Dhan will give wealth, while a malefic instead will destroy wealth",
+            "If Karm’s Lord is in Sahaj Bhava, the native will enjoy happiness from brothers and servants, be valorous, virtuous, eloquent and truthful"
+          ],
+          "boundary_queries": [
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu … are malefics, while the rest are benefics",
+            "if Vyaya and Dhan Bhava are occupied by malefics and devoid of a Drishti from a benefic, or of Yuti with a benefic, the native will be shortlived"
+          ],
+          "method_queries": [
+            "Similarly Shukra will cause diseases through females, Shani windy diseases, Rahu danger through low-caste-men and Ketu navel diseases",
+            "If the Lord of Dhan is in Dhan, or is in an angle, or in trine, he will promote one’s wealth (or monetary state)",
+            "判断言语与风病要看二宫和二宫主与凶星的关系"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch13-v13-dhan-and-lord-with-malefics-untruthful.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dhan Bhava and its Lord are yuti with malefics"
+            },
+            {
+              "step_id": "ch13-v13-dhan-and-lord-with-malefics-untruthful.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be a talebearer"
+            },
+            {
+              "step_id": "ch13-v13-dhan-and-lord-with-malefics-untruthful.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will speak untruth"
+            },
+            {
+              "step_id": "ch13-v13-dhan-and-lord-with-malefics-untruthful.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be afflicted by windy diseases"
+            },
+            {
+              "step_id": "ch13-v13-dhan-and-lord-with-malefics-untruthful.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dhan Bhava and its Lord are yuti with malefics the native will be a talebearer"
+            },
+            {
+              "step_id": "ch13-v13-dhan-and-lord-with-malefics-untruthful.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "2nd house and its Lord are yuti with malefics"
+            },
+            {
+              "step_id": "ch13-v13-dhan-and-lord-with-malefics-untruthful.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "2nd house and its Lord are yuti with malefics the native will be a talebearer"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少二宫是否被凶星占据的事实时停止。",
+          "缺少二宫主是否与凶星同宫的事实时停止。",
+          "凶星名册未定时停止（吉凶判准见第3章 v11）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch13-v13-dhan-and-lord-with-malefics-untruthful.step-001",
+        "action": "核对二宫（Dhan Bhava）内是否有凶星，并核对二宫主是否与凶星同宫。",
+        "applicability_scope": "仅限本命盘二宫（Dhan Bhava）主题；原文要求二宫与二宫主两侧同时与凶星相处，未给时间限定。",
+        "minimum_supported_claim": "二宫（Dhan Bhava）内有凶星、二宫主也与凶星同宫时，命主搬弄是非、说谎，并受风病（windy diseases）之苦。",
+        "produced_fact_keys": [
+          "二宫与二宫主受凶星的言语与风病判定"
+        ],
+        "required_fact_keys": [
+          "二宫（Dhan）是否被凶星占据",
+          "二宫主（Dhan's Lord）是否与凶星同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "二宫（Dhan）是否被凶星占据"
+            },
+            {
+              "fact_key": "二宫主（Dhan's Lord）是否与凶星同宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dhan Bhava and its Lord are yuti with malefics",
+              "claim": "二宫（Dhan Bhava）内有凶星、二宫主也与凶星同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be a talebearer",
+              "claim": "命主搬弄是非"
+            },
+            {
+              "quote": "will speak untruth",
+              "claim": "说谎"
+            },
+            {
+              "quote": "will be afflicted by windy diseases",
+              "claim": "受风病（windy diseases）之苦"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch13:v13",
+            "quote": "If Dhan Bhava and its Lord are yuti with malefics, the native will be a talebearer, will speak untruth and will be afflicted by windy diseases.",
+            "pdf_pages": [
+              28
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：二宫（Dhan）是否被凶星占据、二宫主（Dhan's Lord）是否与凶星同宫。",
+        "stop_fact_keys": [
+          "二宫（Dhan）是否被凶星占据",
+          "二宫主（Dhan's Lord）是否与凶星同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得只凭二宫有凶星、或只凭二宫主与凶星同宫其中一侧就下断语。",
+          "不得据此推断风病的具体病名或发病时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "e620f27dfa8716e8d2f74f3e0bd37b4d8383ed9631798af0a35c20738b6356c6"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch13:v9": {
+      "evidence_atom_id": "bphs-97:santhanam:ch13:v9",
+      "chapter_number": 13,
+      "chapter_title": "Effects of Dhan Bhava",
+      "verse_label": "9.",
+      "content_role": "verse",
+      "exact_text": "9. Expenses on Good Accounts. When Guru is in Labh, Shukra is in Dhan and a benefic is placed in Vyaya Bhava, while Dhan’s Lord is yuti with a benefic, there will be expenses on religious, or charitable grounds.",
+      "pdf_pages": [
+        28
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 13 · Sloka 9 · PDF page 28 · bphs-97:santhanam:ch13:v9",
+      "previous_atom_id": "bphs-97:santhanam:ch13:v8",
+      "next_atom_id": "bphs-97:santhanam:ch13:v10",
+      "context_before": " Should the Lords of Dhan and Labh Bhava be relegated to Ari, Randhr, or Vyaya Bhava, while Mangal is in Labh Bhava and Rahu is in Dhan Bhava, the native will lose his wealth on account of royal punishments.\n\n",
+      "context_after": "10. Fame etc. If Dhan’s Lord is in own Rāśi, or is exalted, the native will look after his people, will help others and also wil",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch13:v10": {
+      "evidence_atom_id": "bphs-97:santhanam:ch13:v10",
+      "chapter_number": 13,
+      "chapter_title": "Effects of Dhan Bhava",
+      "verse_label": "10.",
+      "content_role": "verse",
+      "exact_text": "10. Fame etc. If Dhan’s Lord is in own Rāśi, or is exalted, the native will look after his people, will help others and also will become famous.",
+      "pdf_pages": [
+        28
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 13 · Sloka 10 · PDF page 28 · bphs-97:santhanam:ch13:v10",
+      "previous_atom_id": "bphs-97:santhanam:ch13:v9",
+      "next_atom_id": "bphs-97:santhanam:ch13:v11",
+      "context_before": " When Guru is in Labh, Shukra is in Dhan and a benefic is placed in Vyaya Bhava, while Dhan’s Lord is yuti with a benefic, there will be expenses on religious, or charitable grounds.\n\n",
+      "context_after": "11. Effortless Aquisition. If Dhan’s Lord is yuti with a benefic and is in a good division, like Paravatāńś, there will be effor",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch13:v11": {
+      "evidence_atom_id": "bphs-97:santhanam:ch13:v11",
+      "chapter_number": 13,
+      "chapter_title": "Effects of Dhan Bhava",
+      "verse_label": "11.",
+      "content_role": "verse",
+      "exact_text": "11. Effortless Aquisition. If Dhan’s Lord is yuti with a benefic and is in a good division, like Paravatāńś, there will be effortlessly all kinds of wealth in the native’s family. (“Paravatāńśdau” of the text denotes Paravat, or such other higher Vargas: Dhan’s Lord should be in Paravatāńś, or in Devalokāńś, Brahmalokāńś, Sakravahanāńś, or Sridhamāńś in the Dash Varg scheme)",
+      "pdf_pages": [
+        28
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 13 · Sloka 11 · PDF page 28 · bphs-97:santhanam:ch13:v11",
+      "previous_atom_id": "bphs-97:santhanam:ch13:v10",
+      "next_atom_id": "bphs-97:santhanam:ch13:v12",
+      "context_before": " If Dhan’s Lord is in own Rāśi, or is exalted, the native will look after his people, will help others and also will become famous.\n\n",
+      "context_after": "12. Eyes. If Dhan Lord is endowed with strength, the native will possess beautiful eyes. Should the said Grah be in Ari, Randhr,",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch13:v12": {
+      "evidence_atom_id": "bphs-97:santhanam:ch13:v12",
+      "chapter_number": 13,
+      "chapter_title": "Effects of Dhan Bhava",
+      "verse_label": "12.",
+      "content_role": "verse",
+      "exact_text": "12. Eyes. If Dhan Lord is endowed with strength, the native will possess beautiful eyes. Should the said Grah be in Ari, Randhr, or Vyaya Bhava, there will be disease, or deformity of eyes.",
+      "pdf_pages": [
+        28
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 13 · Sloka 12 · PDF page 28 · bphs-97:santhanam:ch13:v12",
+      "previous_atom_id": "bphs-97:santhanam:ch13:v11",
+      "next_atom_id": "bphs-97:santhanam:ch13:v13",
+      "context_before": " If Dhan’s Lord is yuti with a benefic and is in a good division, like Paravatāńś, there will be effortlessly all kinds of wealth in the native’s family. (“Paravatāńśdau” of the text denotes Paravat, or such other higher Vargas: Dhan’s Lord should be in Paravatāńś, or in Devalokāńś, Brahmalokāńś, Sakravahanāńś, or Sridhamāńś in the Dash Varg scheme)\n\n",
+      "context_after": "13. Untruthful Person. If Dhan Bhava and its Lord are yuti with malefics, the native will be a talebearer, will speak untruth an",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch13:v13": {
+      "evidence_atom_id": "bphs-97:santhanam:ch13:v13",
+      "chapter_number": 13,
+      "chapter_title": "Effects of Dhan Bhava",
+      "verse_label": "13.",
+      "content_role": "verse",
+      "exact_text": "13. Untruthful Person. If Dhan Bhava and its Lord are yuti with malefics, the native will be a talebearer, will speak untruth and will be afflicted by windy diseases.",
+      "pdf_pages": [
+        28
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 13 · Sloka 13 · PDF page 28 · bphs-97:santhanam:ch13:v13",
+      "previous_atom_id": "bphs-97:santhanam:ch13:v12",
+      "next_atom_id": null,
+      "context_before": "l possess beautiful eyes. Should the said Grah be in Ari, Randhr, or Vyaya Bhava, there will be disease, or deformity of eyes.\n\n",
+      "context_after": "",
+      "content_missing": false
+    }
+  }
+}
