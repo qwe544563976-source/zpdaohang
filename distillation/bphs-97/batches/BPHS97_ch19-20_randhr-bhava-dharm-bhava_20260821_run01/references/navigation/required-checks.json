@@ -1,0 +1,673 @@
+{
+  "pilot_only": false,
+  "publishable": false,
+  "topics": {
+    "ch19-v1-randhr-lord-angle-long-life": {
+      "question_type": "长寿：八宫主落角宫",
+      "required_facts": [
+        "八宫主（Randhr's Lord）是否落角宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少八宫主落角宫事实时停止。"
+      ]
+    },
+    "ch19-v2-randhr-lord-in-randhr-short-life": {
+      "question_type": "短寿：八宫主落八宫并与上升主或凶星同宫",
+      "required_facts": [
+        "八宫主（Randhr's Lord）是否落八宫（Randhr）"
+      ],
+      "conditional_facts": [
+        "八宫主（Randhr's Lord）是否与上升主（Lagn's Lord）同宫",
+        "八宫主（Randhr's Lord）是否与凶星同宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少八宫主是否落八宫的事实时停止。",
+        "与上升主同宫、与凶星同宫两个分支事实都缺时停止。",
+        "凶星名册未定时停止（吉凶星判准见第3章 v11）。"
+      ]
+    },
+    "ch19-v3-shani-karm-lord-longevity-check": {
+      "question_type": "寿命考察点：土星与十宫主，十宫主落八宫并与凶星或上升主同宫",
+      "required_facts": [
+        "十宫主（Karm's Lord）是否落八宫（Randhr）"
+      ],
+      "conditional_facts": [
+        "十宫主（Karm's Lord）是否与凶星同宫",
+        "十宫主（Karm's Lord）是否与上升主（Lagn's Lord）同宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少十宫主是否落八宫的事实时停止。",
+        "与凶星同宫、与上升主同宫两个分支事实都缺时停止。",
+        "原文本句未给寿长寿短的结论，只可作为寿命考察点，不得据本方法输出吉凶。"
+      ]
+    },
+    "ch19-v4-7-ari-vyaya-lords-long-life": {
+      "question_type": "长寿：六宫主与十二宫主的三种安排",
+      "required_facts": [
+        "本盘六宫主（Ari's Lord）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "六宫主（Ari's Lord）是否落十二宫（Vyaya）",
+        "六宫主（Ari's Lord）是否落六宫（Ari）",
+        "十二宫主（Vyaya's Lord）是否落十二宫（Vyaya）",
+        "六宫主（Ari's Lord）与十二宫主（Vyaya's Lord）是否共同占据上升宫（Lagna）与八宫（Randhr）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少六宫主落宫事实时停止。",
+        "三个分支事实都缺时停止。",
+        "原文未写明第三种安排里两位宫主各落哪一宫，需要指定落宫时停判。"
+      ]
+    },
+    "ch19-v4-7-three-lords-dignity-long-life": {
+      "question_type": "长寿：五宫主、八宫主与上升主各得本九分盘星座、本星座或友星座",
+      "required_facts": [
+        "本盘五宫主（Putr's Lord）是哪颗行星",
+        "本盘八宫主（Randhr's Lord）是哪颗行星",
+        "本盘上升主（Lagn's Lord）是哪颗行星"
+      ],
+      "conditional_facts": [
+        "五宫主（Putr's Lord）是否落在自己主管的九分盘（Navamsa D9）星座",
+        "五宫主（Putr's Lord）是否落本星座（own Rāśi）",
+        "五宫主（Putr's Lord）是否落友方行星主管的星座",
+        "八宫主（Randhr's Lord）是否落在自己主管的九分盘（Navamsa D9）星座",
+        "八宫主（Randhr's Lord）是否落本星座（own Rāśi）",
+        "八宫主（Randhr's Lord）是否落友方行星主管的星座",
+        "上升主（Lagn's Lord）是否落在自己主管的九分盘（Navamsa D9）星座",
+        "上升主（Lagn's Lord）是否落本星座（own Rāśi）",
+        "上升主（Lagn's Lord）是否落友方行星主管的星座"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少五宫主、八宫主或上升主的行星身份事实时停止。",
+        "某位宫主的三个得地分支事实都缺时停止。",
+        "九分盘（Navamsa D9）盘面缺失时停止。"
+      ]
+    },
+    "ch19-v4-7-four-grahas-angle-trine-labh-long-life": {
+      "question_type": "长寿：上升主、八宫主、十宫主与土星各落角宫、三角宫或十一宫",
+      "required_facts": [
+        "本盘上升主（Lagn's Lord）落在哪一宫",
+        "本盘八宫主（Randhr's Lord）落在哪一宫",
+        "本盘十宫主（Karm's Lord）落在哪一宫",
+        "本盘土星（Shani）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "上升主（Lagn's Lord）是否落角宫",
+        "上升主（Lagn's Lord）是否落三角宫",
+        "上升主（Lagn's Lord）是否落十一宫（Labh）",
+        "八宫主（Randhr's Lord）是否落角宫",
+        "八宫主（Randhr's Lord）是否落三角宫",
+        "八宫主（Randhr's Lord）是否落十一宫（Labh）",
+        "十宫主（Karm's Lord）是否落角宫",
+        "十宫主（Karm's Lord）是否落三角宫",
+        "十宫主（Karm's Lord）是否落十一宫（Labh）",
+        "土星（Shani）是否落角宫",
+        "土星（Shani）是否落三角宫",
+        "土星（Shani）是否落十一宫（Labh）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升主、八宫主、十宫主或土星的落宫事实时停止。",
+        "四者中任何一位的三个落宫分支事实都缺时停止。"
+      ]
+    },
+    "ch19-v4-7-longevity-strength-estimate": {
+      "question_type": "定寿命前先估量相关行星的强弱",
+      "required_facts": [
+        "与寿命有关的行星（Grahas）的强弱如何"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少行星强弱事实时停止（该判准待排盘窗口定义，见第27章 Shad Bal）。",
+        "本方法只作前置检查，不得单独输出寿命长短结论。"
+      ]
+    },
+    "ch19-v8-13-life-span-20-32": {
+      "question_type": "寿数20至32岁：上升主力量微弱而八宫主落角宫",
+      "required_facts": [
+        "上升主（Lagn's Lord）是否有力",
+        "八宫主（Randhr's Lord）是否落角宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升主强弱事实时停止（该判准待排盘窗口定义）。",
+        "缺少八宫主落角宫事实时停止。"
+      ]
+    },
+    "ch19-v8-13-randhr-lord-in-fall-short-life": {
+      "question_type": "短寿：八宫主落陷、八宫有凶星、上升宫缺乏力量",
+      "required_facts": [
+        "八宫主（Randhr's Lord）是否落陷",
+        "八宫（Randhr）是否被凶星占据",
+        "上升宫（Tanu Bhava）是否有力"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少八宫主落陷事实时停止。",
+        "缺少八宫凶星占据事实时停止。",
+        "缺少上升宫强弱事实时停止（该判准待排盘窗口定义）。"
+      ]
+    },
+    "ch19-v8-13-instant-death-at-birth": {
+      "question_type": "出生时即刻去世：八宫、八宫主与十二宫都与凶星会合",
+      "required_facts": [
+        "八宫（Randhr）是否被凶星占据",
+        "八宫主（Randhr's Lord）是否与凶星同宫",
+        "十二宫（Vyaya）是否被凶星占据"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少八宫、八宫主或十二宫的凶星事实时停止。",
+        "凶星名册未定时停止（吉凶星判准见第3章 v11）。"
+      ]
+    },
+    "ch19-v8-13-immediate-end-yoga": {
+      "question_type": "立即终结的瑜伽：凶星在角宫或三角宫、吉星在六宫或八宫、上升宫有落陷八宫主",
+      "required_facts": [
+        "八宫主（Randhr's Lord）是否落上升宫（Lagna）",
+        "八宫主（Randhr's Lord）是否落陷"
+      ],
+      "conditional_facts": [
+        "角宫是否被凶星占据",
+        "三角宫是否被凶星占据",
+        "六宫（Ari）是否被吉星占据",
+        "八宫（Randhr）是否被吉星占据"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升宫内八宫主落宫或落陷事实时停止。",
+        "凶星落角宫、落三角宫两个分支事实都缺时停止。",
+        "吉星落六宫、落八宫两个分支事实都缺时停止。",
+        "吉凶星名册未定时停止（判准见第3章 v11）。"
+      ]
+    },
+    "ch19-v8-13-putr-randhr-malefics-very-brief": {
+      "question_type": "寿数极短：五宫、八宫与八宫主都与凶星会合",
+      "required_facts": [
+        "五宫（Putr）是否被凶星占据",
+        "八宫（Randhr）是否被凶星占据",
+        "八宫主（Randhr's Lord）是否与凶星同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少五宫、八宫或八宫主的凶星事实时停止。",
+        "凶星名册未定时停止（判准见第3章 v11）。"
+      ]
+    },
+    "ch19-v8-13-death-within-a-month": {
+      "question_type": "出生后一个月内去世：八宫主落八宫、月亮与凶星同宫且无吉星相照",
+      "required_facts": [
+        "八宫主（Randhr's Lord）是否落八宫（Randhr）",
+        "月亮（Chandra）是否与凶星同宫",
+        "月亮（Chandra）是否被吉星相照"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少八宫主落宫事实时停止。",
+        "缺少月亮同宫或受相照的事实时停止。",
+        "吉凶星名册未定时停止（判准见第3章 v11）。"
+      ]
+    },
+    "ch19-v14-15-lagn-lord-exalted-long-life": {
+      "question_type": "长寿：上升主入旺、月亮落十一宫、木星落八宫",
+      "required_facts": [
+        "上升主（Lagn's Lord）是否入旺",
+        "月亮（Chandra）是否落十一宫（Labh）",
+        "木星（Guru）是否落八宫（Randhr）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升主入旺事实时停止。",
+        "缺少月亮或木星落宫事实时停止。"
+      ]
+    },
+    "ch19-v14-15-strong-lagn-lord-benefic-drishti": {
+      "question_type": "富有、有德且长寿：上升主极为有力并受角宫吉星相照",
+      "required_facts": [
+        "上升主（Lagn's Lord）是否极为有力",
+        "上升主（Lagn's Lord）是否被落角宫的吉星相照"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升主强弱事实时停止（该判准待排盘窗口定义）。",
+        "缺少上升主受角宫吉星相照的事实时停止。",
+        "吉星名册未定时停止（判准见第3章 v11）。"
+      ]
+    },
+    "ch20-v1-dharm-lord-strong-in-dharm-fortunate": {
+      "question_type": "有福（或富足）：九宫主有力地落在九宫",
+      "required_facts": [
+        "九宫主（Dharm's Lord）是否落九宫（Dharm）",
+        "九宫主（Dharm's Lord）是否有力"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少九宫主落宫事实时停止。",
+        "缺少九宫主强弱事实时停止（该判准待排盘窗口定义）。"
+      ]
+    },
+    "ch20-v2-guru-in-dharm-extremely-fortunate": {
+      "question_type": "极为有福：木星落九宫、九宫主落角宫、上升主有力",
+      "required_facts": [
+        "木星（Guru）是否落九宫（Dharm）",
+        "九宫主（Dharm's Lord）是否落角宫",
+        "上升主（Lagn's Lord）是否有力"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少木星或九宫主落宫事实时停止。",
+        "缺少上升主强弱事实时停止（该判准待排盘窗口定义）。"
+      ]
+    },
+    "ch20-v3-fortunate-father": {
+      "question_type": "父亲有福：九宫主有力、金星落九宫、木星落上升起的角宫",
+      "required_facts": [
+        "九宫主（Dharm's Lord）是否有力",
+        "金星（Shukra）是否落九宫（Dharm）",
+        "木星（Guru）是否落上升宫（Tanu Bhava）起算的角宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少九宫主强弱事实时停止（该判准待排盘窗口定义）。",
+        "缺少金星或木星落宫事实时停止。"
+      ]
+    },
+    "ch20-v4-indigent-father": {
+      "question_type": "父亲贫穷：九宫主落陷、九宫起的二宫或四宫被火星占据",
+      "required_facts": [
+        "九宫主（Dharm's Lord）是否落陷"
+      ],
+      "conditional_facts": [
+        "从九宫（Dharm）起算的第二宫是否被火星（Mangal）占据",
+        "从九宫（Dharm）起算的第四宫是否被火星（Mangal）占据"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少九宫主落陷事实时停止。",
+        "九宫起第二宫、第四宫两个火星分支事实都缺时停止。"
+      ]
+    },
+    "ch20-v5-long-living-father": {
+      "question_type": "父亲长寿：九宫主深度入旺、金星落上升起的角宫、木星落九分盘上升起的第九宫",
+      "required_facts": [
+        "九宫主（Dharm's Lord）是否深度入旺",
+        "金星（Shukra）是否落上升宫（Tanu Bhava）起算的角宫",
+        "木星（Guru）是否落九分盘（Navamsa D9）上升起算的第九宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少九宫主深度入旺事实时停止。",
+        "缺少金星或木星落宫事实时停止。",
+        "九分盘（Navamsa D9）盘面缺失时停止。"
+      ]
+    },
+    "ch20-v6-royal-status-father": {
+      "question_type": "父亲有王者之位：九宫主落角宫并受木星相照",
+      "required_facts": [
+        "九宫主（Dharm's Lord）是否落角宫",
+        "九宫主（Dharm's Lord）是否被木星（Guru）相照"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少九宫主落角宫事实时停止。",
+        "缺少九宫主受木星相照的事实时停止。"
+      ]
+    },
+    "ch20-v7-rich-famous-father": {
+      "question_type": "父亲富有且有名望：九宫主落十宫、十宫主受吉星相照",
+      "required_facts": [
+        "九宫主（Dharm's Lord）是否落十宫（Karm）",
+        "十宫主（Karm's Lord）是否被吉星相照"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少九宫主（Dharm's Lord）落宫事实时停止。",
+        "缺少十宫主（Karm's Lord）是否被吉星相照的事实时停止。",
+        "本盘吉星名册未按本书吉凶星定义确定时停止。"
+      ]
+    },
+    "ch20-v8-9-virtuous-devoted-to-father": {
+      "question_type": "品行端正且孝敬父亲：太阳深度入旺、九宫主落十一宫",
+      "required_facts": [
+        "太阳（Surya）是否深度入旺",
+        "九宫主（Dharm's Lord）是否落十一宫（Labh）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少太阳（Surya）是否深度入旺的事实时停止。",
+        "缺少九宫主（Dharm's Lord）落宫事实时停止。"
+      ]
+    },
+    "ch20-v8-9-devoted-to-father-guru-relation": {
+      "question_type": "孝敬父亲：太阳落三角宫、九宫主落七宫并与木星同宫或受木星相照",
+      "required_facts": [
+        "太阳（Surya）是否落三角宫",
+        "九宫主（Dharm's Lord）是否落七宫（Yuvati）"
+      ],
+      "conditional_facts": [
+        "九宫主（Dharm's Lord）是否与木星（Guru）同宫",
+        "九宫主（Dharm's Lord）是否被木星（Guru）相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少太阳（Surya）是否落三角宫的事实时停止。",
+        "缺少九宫主（Dharm's Lord）落宫事实时停止。",
+        "同宫与相照两个分支事实都缺失时停止。"
+      ]
+    },
+    "ch20-v10-fortunes-after-32": {
+      "question_type": "第32岁之后得财运、车乘与名声：九宫主落二宫、二宫主落九宫",
+      "required_facts": [
+        "九宫主（Dharm's Lord）是否落二宫（Dhan）",
+        "二宫主（Dhan's Lord）是否落九宫（Dharm）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少九宫主（Dharm's Lord）落宫事实时停止。",
+        "缺少二宫主（Dhan's Lord）落宫事实时停止。"
+      ]
+    },
+    "ch20-v11-enmity-with-father": {
+      "question_type": "父子互相为敌且父亲性情卑劣：上升主落九宫并与六宫主同宫",
+      "required_facts": [
+        "上升主（Lagn's Lord）是否落九宫（Dharm）",
+        "上升主（Lagn's Lord）是否与六宫主（Ari's Lord）同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升主（Lagn's Lord）落宫事实时停止。",
+        "缺少上升主与六宫主是否同宫的事实时停止。"
+      ]
+    },
+    "ch20-v12-begged-food": {
+      "question_type": "靠乞讨得食：十宫主与三宫主皆无力、九宫主落陷或燃烧",
+      "required_facts": [
+        "十宫主（Karm's Lord）是否有力",
+        "三宫主（Sahaj's Lord）是否有力"
+      ],
+      "conditional_facts": [
+        "九宫主（Dharm's Lord）是否落陷",
+        "九宫主（Dharm's Lord）是否燃烧"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少十宫主（Karm's Lord）强弱事实时停止。",
+        "缺少三宫主（Sahaj's Lord）强弱事实时停止。",
+        "行星强弱判准未按本书力量定义确定时停止。",
+        "落陷与燃烧两个分支事实都缺失时停止。"
+      ]
+    },
+    "ch20-v13-25-father-died-before-birth": {
+      "question_type": "父亲在命主出生前已去世：太阳落六宫、八宫或十二宫，八宫主落九宫、十二宫主落上升宫、六宫主落五宫",
+      "required_facts": [
+        "本盘太阳（Surya）落在哪一宫",
+        "八宫主（Randhr's Lord）是否落九宫（Dharm）",
+        "十二宫主（Vyaya's Lord）是否落上升宫（Lagna）",
+        "六宫主（Ari's Lord）是否落五宫（Putr）"
+      ],
+      "conditional_facts": [
+        "太阳（Surya）是否落六宫（Ari）",
+        "太阳（Surya）是否落八宫（Randhr）",
+        "太阳（Surya）是否落十二宫（Vyaya）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少太阳（Surya）落宫事实时停止。",
+        "缺少八宫主、十二宫主或六宫主任何一项落宫事实时停止。"
+      ]
+    },
+    "ch20-v13-25-father-death-within-first-year": {
+      "question_type": "父亲在命主出生后一年内去世：太阳落八宫、八宫主落九宫",
+      "required_facts": [
+        "太阳（Surya）是否落八宫（Randhr）",
+        "八宫主（Randhr's Lord）是否落九宫（Dharm）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少太阳（Surya）落宫事实时停止。",
+        "缺少八宫主（Randhr's Lord）落宫事实时停止。"
+      ]
+    },
+    "ch20-v13-25-father-end-year-3-16": {
+      "question_type": "父亲在命主第3年或第16年走到生命终点：十二宫主落九宫、九宫主落自己落陷的九分盘星座",
+      "required_facts": [
+        "十二宫主（Vyaya's Lord）是否落九宫（Dharm）",
+        "九宫主（Dharm's Lord）是否落自己落陷的九分盘（Navamsa D9）星座"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少十二宫主（Vyaya's Lord）落宫事实时停止。",
+        "缺少九宫主（Dharm's Lord）在九分盘（Navamsa D9）中的星座事实时停止。"
+      ]
+    },
+    "ch20-v13-25-father-death-year-2-12": {
+      "question_type": "父亲在第2年或第12年去世：上升主落八宫、八宫主与太阳同宫",
+      "required_facts": [
+        "上升主（Lagn's Lord）是否落八宫（Randhr）",
+        "八宫主（Randhr's Lord）是否与太阳（Surya）同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升主（Lagn's Lord）落宫事实时停止。",
+        "缺少八宫主与太阳（Surya）是否同宫的事实时停止。"
+      ]
+    },
+    "ch20-v13-25-father-death-year-16-18": {
+      "question_type": "父亲在第16年或第18年去世：罗睺落九宫起第八宫、太阳落九宫起第九宫",
+      "required_facts": [
+        "罗睺（Rahu）是否落从九宫（Dharm）起算的第八宫",
+        "太阳（Surya）是否落从九宫（Dharm）起算的第九宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少罗睺（Rahu）落宫事实时停止。",
+        "缺少太阳（Surya）落宫事实时停止。"
+      ]
+    },
+    "ch20-v13-25-father-death-year-7-19": {
+      "question_type": "父亲在第7年或第19年去世：土星落月亮起第九宫、太阳与罗睺同宫",
+      "required_facts": [
+        "土星（Shani）是否落从月亮（Chandra）起算的第九宫",
+        "太阳（Surya）是否与罗睺（Rahu）同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少土星（Shani）落宫事实时停止。",
+        "缺少太阳（Surya）与罗睺（Rahu）是否同宫的事实时停止。"
+      ]
+    },
+    "ch20-v13-25-lose-father-year-44": {
+      "question_type": "命主第44年失去父亲：九宫主落十二宫、十二宫主落九宫",
+      "required_facts": [
+        "九宫主（Dharm's Lord）是否落十二宫（Vyaya）",
+        "十二宫主（Vyaya's Lord）是否落九宫（Dharm）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少九宫主（Dharm's Lord）落宫事实时停止。",
+        "缺少十二宫主（Vyaya's Lord）落宫事实时停止。"
+      ]
+    },
+    "ch20-v13-25-lose-father-year-35-41": {
+      "question_type": "命主第35年或第41年失去父亲：上升主落八宫、月亮落太阳主管的九分盘星座",
+      "required_facts": [
+        "上升主（Lagn's Lord）是否落八宫（Randhr）",
+        "月亮（Chandra）是否落太阳（Surya）主管的九分盘（Navamsa D9）星座"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升主（Lagn's Lord）落宫事实时停止。",
+        "缺少月亮（Chandra）在九分盘（Navamsa D9）中的星座事实时停止。"
+      ]
+    },
+    "ch20-v13-25-lose-father-year-50": {
+      "question_type": "命主第50年失去父亲：太阳本身是九宫主并与火星、土星同宫",
+      "required_facts": [
+        "九宫主（Dharm's Lord）是否为太阳（Surya）",
+        "太阳（Surya）是否与火星（Mangal）同宫",
+        "太阳（Surya）是否与土星（Shani）同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少九宫主（Dharm's Lord）是哪颗行星的事实时停止。",
+        "缺少太阳（Surya）与火星（Mangal）或土星（Shani）是否同宫的事实时停止。"
+      ]
+    },
+    "ch20-v13-25-father-fatal-year-6-25": {
+      "question_type": "命主第6年或第25年对父亲致命：太阳落九宫起第七宫、罗睺落三宫起第七宫",
+      "required_facts": [
+        "太阳（Surya）是否落从九宫（Dharm）起算的第七宫",
+        "罗睺（Rahu）是否落从三宫（Sahaj）起算的第七宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少太阳（Surya）落宫事实时停止。",
+        "缺少罗睺（Rahu）落宫事实时停止。"
+      ]
+    },
+    "ch20-v13-25-father-fatal-age-21-26-30": {
+      "question_type": "21岁、26岁或30岁对父亲致命：土星落八宫起第七宫、太阳落土星起第七宫",
+      "required_facts": [
+        "土星（Shani）是否落从八宫（Randhr）起算的第七宫",
+        "太阳（Surya）是否落从土星（Shani）起算的第七宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少土星（Shani）落宫事实时停止。",
+        "缺少太阳（Surya）落宫事实时停止。",
+        "原文未标明这三个年岁属于谁，需要落到具体某人的年岁时停止。"
+      ]
+    },
+    "ch20-v13-25-lose-father-age-26-30": {
+      "question_type": "命主26岁或30岁失去父亲：九宫主落陷、其星座主落九宫",
+      "required_facts": [
+        "九宫主（Dharm's Lord）是否落陷",
+        "九宫主（Dharm's Lord）的星座主是否落九宫（Dharm）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少九宫主（Dharm's Lord）是否落陷的事实时停止。",
+        "缺少九宫主星座主落宫事实时停止。"
+      ]
+    },
+    "ch20-v26-abundant-fortunes-shukra": {
+      "question_type": "享有丰厚财运：金星深度入旺并与九宫主同宫、土星落三宫",
+      "required_facts": [
+        "金星（Shukra）是否深度入旺",
+        "金星（Shukra）是否与九宫主（Dharm's Lord）同宫",
+        "土星（Shani）是否落三宫（Sahaj）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少金星（Shukra）是否深度入旺的事实时停止。",
+        "缺少金星与九宫主（Dharm's Lord）是否同宫的事实时停止。",
+        "缺少土星（Shani）落宫事实时停止。"
+      ]
+    },
+    "ch20-v27-28-fortunes-after-20": {
+      "question_type": "第20年之后得丰厚财运：木星落九宫、九宫主落角宫",
+      "required_facts": [
+        "木星（Guru）是否落九宫（Dharm）",
+        "九宫主（Dharm's Lord）是否落角宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少木星（Guru）落宫事实时停止。",
+        "缺少九宫主（Dharm's Lord）落宫事实时停止。"
+      ]
+    },
+    "ch20-v27-28-fortunes-after-36": {
+      "question_type": "第36年之后得丰厚财运：水星深度入旺、九宫主落九宫本身",
+      "required_facts": [
+        "水星（Budh）是否深度入旺",
+        "九宫主（Dharm's Lord）是否落九宫（Dharm）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少水星（Budh）是否深度入旺的事实时停止。",
+        "缺少九宫主（Dharm's Lord）落宫事实时停止。"
+      ]
+    },
+    "ch20-v29-gains-of-wealth-and-conveyances": {
+      "question_type": "得财富与车乘：上升主落九宫、九宫主落上升宫、木星落七宫",
+      "required_facts": [
+        "上升主（Lagn's Lord）是否落九宫（Dharm）",
+        "九宫主（Dharm's Lord）是否落上升宫（Lagna）",
+        "木星（Guru）是否落七宫（Yuvati）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升主（Lagn's Lord）落宫事实时停止。",
+        "缺少九宫主（Dharm's Lord）落宫事实时停止。",
+        "缺少木星（Guru）落宫事实时停止。"
+      ]
+    },
+    "ch20-v30-devoid-of-fortunes": {
+      "question_type": "没有财运：罗睺落九宫起第九宫、其星座主落八宫、九宫主落陷",
+      "required_facts": [
+        "罗睺（Rahu）是否落从九宫（Dharm）起算的第九宫",
+        "罗睺（Rahu）的星座主是否落八宫（Randhr）",
+        "九宫主（Dharm's Lord）是否落陷"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少罗睺（Rahu）落宫事实时停止。",
+        "缺少罗睺星座主落宫事实时停止。",
+        "缺少九宫主（Dharm's Lord）是否落陷的事实时停止。"
+      ]
+    },
+    "ch20-v31-food-by-begging": {
+      "question_type": "靠乞讨取得食物：土星与月亮同落九宫、上升主落陷",
+      "required_facts": [
+        "土星（Shani）是否落九宫（Dharm）",
+        "月亮（Chandra）是否与土星（Shani）同宫",
+        "上升主（Lagn's Lord）是否落陷"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少土星（Shani）落宫事实时停止。",
+        "缺少月亮（Chandra）与土星是否同宫的事实时停止。",
+        "缺少上升主（Lagn's Lord）是否落陷的事实时停止。"
+      ]
+    }
+  }
+}

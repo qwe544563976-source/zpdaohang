@@ -1,0 +1,1151 @@
+{
+  "shard": 4,
+  "step_count": 9,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch20-v13-25-father-died-before-birth.step-001",
+      "method": {
+        "method": "ch20-v13-25-father-died-before-birth",
+        "title": "父亲在命主出生前已去世：太阳落六宫、八宫或十二宫，八宫主落九宫、十二宫主落上升宫、六宫主落五宫",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我父亲是不是在我出生前就不在了",
+          "太阳落六宫、八宫或十二宫又几个宫主如此排列说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "The father of the native would have passed away prior to the native’s birth, if Surya is in Ari, Randhr, or Vyaya Bhava, as Randhr’s Lord is in Dharm Bhava, Vyaya’s Lord is in Tanu Bhava and Ari’s Lord is in Putr Bhava.",
+            "太阳落六宫 八宫 十二宫 八宫主落九宫 十二宫主落上升宫 六宫主落五宫 父亲出生前去世"
+          ],
+          "counter_queries": [
+            "Long-living Father. Should Dharm’s Lord be in deep exaltation, while Shukra is in an angle from Tanu Bhava and Guru is in the 9<sup>th</sup> from Navāńś Lagna, the father of the native will enjoy a long span of life",
+            "If Dharm’s Lord is an angle and receives a Drishti from Guru, the native’s father will be a king endowed with conveyances, or be equal to a king"
+          ],
+          "boundary_queries": [
+            "If Surya receives a Drishti from Shani and be in Mesh, or in Vrischik Navāńś, the father would have given up the family before birth of the child, or would have passed away",
+            "Should Dhan Bhava be occupied by Rahu, Budh, Shukr, Surya and Shani, the child’s birth has been after its father’s death",
+            "The 9<sup>th</sup> from Surya denotes father"
+          ],
+          "method_queries": [
+            "Surya is the indicator of father for all beings, while the mother is indicated by Chandra",
+            "判断父亲存亡要看太阳（Surya）与九宫（Dharm）的哪些配置"
+          ]
+        },
+        "stop_conditions": [
+          "缺少太阳（Surya）落宫事实时停止。",
+          "缺少八宫主、十二宫主或六宫主任何一项落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v13-25-father-died-before-birth.step-001",
+        "action": "先取太阳（Surya）落在哪一宫，再核对八宫主（Randhr's Lord）落九宫（Dharm）、十二宫主（Vyaya's Lord）落上升宫（Tanu）、六宫主（Ari's Lord）落五宫（Putr）三项是否同时成立。",
+        "applicability_scope": "仅限本命盘九宫（Dharm）父亲主题；原文以「Combinations for Father’s Death」立目，末句「Thus the Jyotishis may know the effects」把这组组合交由 Jyotishis 判读；原文未给上升限定。",
+        "minimum_supported_claim": "太阳（Surya）落六宫（Ari）、八宫（Randhr）或十二宫（Vyaya），同时八宫主（Randhr's Lord）落九宫（Dharm）、十二宫主（Vyaya's Lord）落上升宫（Tanu）、六宫主（Ari's Lord）落五宫（Putr）时，命主的父亲在命主出生之前就已去世。",
+        "produced_fact_keys": [
+          "太阳落六宫八宫或十二宫且三个宫主如此排列主父亲出生前去世判定"
+        ],
+        "required_fact_keys": [
+          "本盘太阳（Surya）落在哪一宫",
+          "八宫主（Randhr's Lord）是否落九宫（Dharm）",
+          "十二宫主（Vyaya's Lord）是否落上升宫（Lagna）",
+          "六宫主（Ari's Lord）是否落五宫（Putr）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘太阳（Surya）落在哪一宫"
+                },
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否落九宫（Dharm）"
+                },
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否落上升宫（Lagna）"
+                },
+                {
+                  "fact_key": "六宫主（Ari's Lord）是否落五宫（Putr）"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "太阳（Surya）是否落六宫（Ari）"
+                },
+                {
+                  "fact_key": "太阳（Surya）是否落八宫（Randhr）"
+                },
+                {
+                  "fact_key": "太阳（Surya）是否落十二宫（Vyaya）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘太阳（Surya）落在哪一宫"
+                },
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否落九宫（Dharm）"
+                },
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否落上升宫（Lagna）"
+                },
+                {
+                  "fact_key": "六宫主（Ari's Lord）是否落五宫（Putr）"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "太阳（Surya）是否落六宫（Ari）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "太阳（Surya）是否落六宫（Ari）"
+            },
+            "selection_group": "ch20-v13-25-father-died-before-birth.step-001:surya-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：太阳（Surya）是否落六宫（Ari）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘太阳（Surya）落在哪一宫"
+                },
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否落九宫（Dharm）"
+                },
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否落上升宫（Lagna）"
+                },
+                {
+                  "fact_key": "六宫主（Ari's Lord）是否落五宫（Putr）"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "太阳（Surya）是否落八宫（Randhr）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "太阳（Surya）是否落八宫（Randhr）"
+            },
+            "selection_group": "ch20-v13-25-father-died-before-birth.step-001:surya-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：太阳（Surya）是否落八宫（Randhr）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘太阳（Surya）落在哪一宫"
+                },
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否落九宫（Dharm）"
+                },
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否落上升宫（Lagna）"
+                },
+                {
+                  "fact_key": "六宫主（Ari's Lord）是否落五宫（Putr）"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "太阳（Surya）是否落十二宫（Vyaya）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "太阳（Surya）是否落十二宫（Vyaya）"
+            },
+            "selection_group": "ch20-v13-25-father-died-before-birth.step-001:surya-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：太阳（Surya）是否落十二宫（Vyaya）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Surya is in Ari, Randhr, or Vyaya Bhava",
+              "claim": "太阳（Surya）落六宫（Ari）、八宫（Randhr）或十二宫（Vyaya）"
+            },
+            {
+              "quote": "Randhr’s Lord is in Dharm Bhava",
+              "claim": "八宫主（Randhr's Lord）落九宫（Dharm）"
+            },
+            {
+              "quote": "Vyaya’s Lord is in Tanu Bhava",
+              "claim": "十二宫主（Vyaya's Lord）落上升宫（Tanu）"
+            },
+            {
+              "quote": "Ari’s Lord is in Putr Bhava",
+              "claim": "六宫主（Ari's Lord）落五宫（Putr）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "The father of the native would have passed away prior to the native’s birth",
+              "claim": "命主的父亲在命主出生之前就已去世"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v13-25",
+            "quote": "The father of the native would have passed away prior to the native’s birth, if Surya is in Ari, Randhr, or Vyaya Bhava, as Randhr’s Lord is in Dharm Bhava, Vyaya’s Lord is in Tanu Bhava and Ari’s Lord is in Putr Bhava.",
+            "pdf_pages": [
+              37
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘太阳（Surya）落在哪一宫、八宫主（Randhr's Lord）是否落九宫（Dharm）、十二宫主（Vyaya's Lord）是否落上升宫（Lagna）、六宫主（Ari's Lord）是否落五宫（Putr）。",
+        "stop_fact_keys": [
+          "本盘太阳（Surya）落在哪一宫",
+          "八宫主（Randhr's Lord）是否落九宫（Dharm）",
+          "十二宫主（Vyaya's Lord）是否落上升宫（Lagna）",
+          "六宫主（Ari's Lord）是否落五宫（Putr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断父亲的死因或命主出生前多久去世。",
+          "不得把太阳落其他宫位的情形也算进本条。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定在命主出生之前",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "41c4eb57c9a23a88e01576eb6df7fdbd2c83680791715921d6b0b1af8d067955"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v13-25-father-death-within-first-year.step-001",
+      "method": {
+        "method": "ch20-v13-25-father-death-within-first-year",
+        "title": "父亲在命主出生后一年内去世：太阳落八宫、八宫主落九宫",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我父亲会不会在我很小的时候就不在了",
+          "太阳落八宫又八宫主落九宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Surya be in Randhr Bhava, while Randhr’s Lord is in Dharm, the native’s father will pass away within a year of his birth.",
+            "太阳落八宫 八宫主落九宫 父亲出生一年内去世"
+          ],
+          "counter_queries": [
+            "Long-living Father. Should Dharm’s Lord be in deep exaltation, while Shukra is in an angle from Tanu Bhava and Guru is in the 9<sup>th</sup> from Navāńś Lagna, the father of the native will enjoy a long span of life",
+            "Fortunate (Affluent) Father. If Dharm’s Lord is with strength, as Shukra is in Dharm, while Guru is in an angle from Tanu Bhava, the native’s father is fortunate"
+          ],
+          "boundary_queries": [
+            "The father will not see the native till his (the native’s) 23<sup>rd</sup> year, if Rahu and Guru are together in an inimical Rashiidentical with Tanu, or Bandhu Bhava",
+            "Evil to Father (up to Sloka 42). One’s father will incur early death, if Shani, Mangal and Chandra in their orders are in Tanu, Yuvati and Ari Bhava",
+            "The 9<sup>th</sup> from Surya denotes father"
+          ],
+          "method_queries": [
+            "Surya is the indicator of father for all beings, while the mother is indicated by Chandra",
+            "判断父亲早亡的年岁要看太阳（Surya）与八宫（Randhr）的哪些配置"
+          ]
+        },
+        "stop_conditions": [
+          "缺少太阳（Surya）落宫事实时停止。",
+          "缺少八宫主（Randhr's Lord）落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v13-25-father-death-within-first-year.step-001",
+        "action": "核对太阳（Surya）是否落八宫（Randhr），并核对八宫主（Randhr's Lord）是否落九宫（Dharm）。",
+        "applicability_scope": "仅限本命盘九宫（Dharm）父亲主题；原文以「Combinations for Father’s Death」立目，末句「Thus the Jyotishis may know the effects」把这组组合交由 Jyotishis 判读；原文未给上升限定。原文「within a year of his birth」的 his，按同偈前句的「the native’s birth」读作命主出生。",
+        "minimum_supported_claim": "太阳（Surya）落八宫（Randhr）、且八宫主（Randhr's Lord）落九宫（Dharm）时，命主的父亲会在命主出生后一年之内去世。",
+        "produced_fact_keys": [
+          "太阳落八宫且八宫主落九宫主父亲一年内去世判定"
+        ],
+        "required_fact_keys": [
+          "太阳（Surya）是否落八宫（Randhr）",
+          "八宫主（Randhr's Lord）是否落九宫（Dharm）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "太阳（Surya）是否落八宫（Randhr）"
+            },
+            {
+              "fact_key": "八宫主（Randhr's Lord）是否落九宫（Dharm）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Surya be in Randhr Bhava",
+              "claim": "太阳（Surya）落八宫（Randhr）"
+            },
+            {
+              "quote": "Randhr’s Lord is in Dharm",
+              "claim": "八宫主（Randhr's Lord）落九宫（Dharm）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native’s father will pass away within a year of his birth",
+              "claim": "命主的父亲会在命主出生后一年之内去世"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v13-25",
+            "quote": "Should Surya be in Randhr Bhava, while Randhr’s Lord is in Dharm, the native’s father will pass away within a year of his birth.",
+            "pdf_pages": [
+              37
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：太阳（Surya）是否落八宫（Randhr）、八宫主（Randhr's Lord）是否落九宫（Dharm）。",
+        "stop_fact_keys": [
+          "太阳（Surya）是否落八宫（Randhr）",
+          "八宫主（Randhr's Lord）是否落九宫（Dharm）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断父亲的死因。",
+          "不得把出生一年之后的时间也算进本条。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch20:v13-25"
+        ],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定命主出生后一年之内",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "fa3d3c420bc36e64ac67fd88159bff57a4f2956547bb9cb64b18f75bff639331"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v13-25-father-end-year-3-16.step-001",
+      "method": {
+        "method": "ch20-v13-25-father-end-year-3-16",
+        "title": "父亲在命主第3年或第16年走到生命终点：十二宫主落九宫、九宫主落自己落陷的九分盘星座",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我父亲的寿限大概在什么时候",
+          "九宫主在九分盘落陷说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If the Lord of Vyaya Bhava is in Dharm Bhava, while Dharm’s Lord is in its debilitation Navāńś, the native’s father will face his end during the 3<sup>rd</sup> , or the 16<sup>th</sup> year of the native.",
+            "十二宫主落九宫 九宫主落陷九分盘 父亲第3年 第16年"
+          ],
+          "counter_queries": [
+            "Long-living Father. Should Dharm’s Lord be in deep exaltation, while Shukra is in an angle from Tanu Bhava and Guru is in the 9<sup>th</sup> from Navāńś Lagna, the father of the native will enjoy a long span of life",
+            "If Dharm’s Lord is an angle and receives a Drishti from Guru, the native’s father will be a king endowed with conveyances, or be equal to a king"
+          ],
+          "boundary_queries": [
+            "If Dharm’s Lord is in its debilitation Rāśi, while his dispositor is in Dharm Bhava, the native will lose his father at the age of 26, or 30",
+            "Evil to Father (up to Sloka 42). One’s father will incur early death, if Shani, Mangal and Chandra in their orders are in Tanu, Yuvati and Ari Bhava"
+          ],
+          "method_queries": [
+            "Surya is the indicator of father for all beings, while the mother is indicated by Chandra",
+            "判断父亲寿限要看九宫主（Dharm's Lord）在九分盘（Navamsa D9）中的状态"
+          ]
+        },
+        "stop_conditions": [
+          "缺少十二宫主（Vyaya's Lord）落宫事实时停止。",
+          "缺少九宫主（Dharm's Lord）在九分盘（Navamsa D9）中的星座事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v13-25-father-end-year-3-16.step-001",
+        "action": "核对十二宫主（Vyaya's Lord）是否落九宫（Dharm），并核对九宫主（Dharm's Lord）是否落在自己落陷的九分盘（Navamsa D9）星座。",
+        "applicability_scope": "仅限本命盘九宫（Dharm）父亲主题；原文以「Combinations for Father’s Death」立目，末句「Thus the Jyotishis may know the effects」把这组组合交由 Jyotishis 判读；原文未给上升限定。",
+        "minimum_supported_claim": "十二宫主（Vyaya's Lord）落九宫（Dharm）、且九宫主（Dharm's Lord）落自己落陷的九分盘（Navamsa D9）星座时，命主的父亲在命主第3年或第16年走到生命终点。",
+        "produced_fact_keys": [
+          "十二宫主落九宫且九宫主九分盘落陷主父亲第3或16年终判定"
+        ],
+        "required_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否落九宫（Dharm）",
+          "九宫主（Dharm's Lord）是否落自己落陷的九分盘（Navamsa D9）星座"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "十二宫主（Vyaya's Lord）是否落九宫（Dharm）"
+            },
+            {
+              "fact_key": "九宫主（Dharm's Lord）是否落自己落陷的九分盘（Navamsa D9）星座"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "the Lord of Vyaya Bhava is in Dharm Bhava",
+              "claim": "十二宫主（Vyaya's Lord）落九宫（Dharm）"
+            },
+            {
+              "quote": "Dharm’s Lord is in its debilitation Navāńś",
+              "claim": "九宫主（Dharm's Lord）落自己落陷的九分盘（Navamsa D9）星座"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native’s father will face his end during the 3<sup>rd</sup> , or the 16<sup>th</sup> year of the native",
+              "claim": "命主的父亲在命主第3年或第16年走到生命终点"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v13-25",
+            "quote": "If the Lord of Vyaya Bhava is in Dharm Bhava, while Dharm’s Lord is in its debilitation Navāńś, the native’s father will face his end during the 3<sup>rd</sup> , or the 16<sup>th</sup> year of the native.",
+            "pdf_pages": [
+              37
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十二宫主（Vyaya's Lord）是否落九宫（Dharm）、九宫主（Dharm's Lord）是否落自己落陷的九分盘（Navamsa D9）星座。",
+        "stop_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否落九宫（Dharm）",
+          "九宫主（Dharm's Lord）是否落自己落陷的九分盘（Navamsa D9）星座"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断父亲的死因。",
+          "不得把第3年与第16年之外的年份也算进本条。",
+          "不得把九分盘（Navamsa D9）的落陷换成本盘星座的落陷。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定命主第3年或第16年",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "4c3b084dca4df6c9fb6b65870243e62eb12a11c084219ca8e5012b6de604cbe7"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v13-25-father-death-year-2-12.step-001",
+      "method": {
+        "method": "ch20-v13-25-father-death-year-2-12",
+        "title": "父亲在第2年或第12年去世：上升主落八宫、八宫主与太阳同宫",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我父亲会不会在我童年时去世",
+          "上升主落八宫又八宫主会太阳说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Death of father will occur in the 2<sup>nd</sup> , or the 12<sup>th</sup> year, if Lagn’s Lord is in Randhr Bhava, as Randhr’s Lord is with Surya.",
+            "上升主落八宫 八宫主与太阳同宫 父亲第2年 第12年 去世"
+          ],
+          "counter_queries": [
+            "Long-living Father. Should Dharm’s Lord be in deep exaltation, while Shukra is in an angle from Tanu Bhava and Guru is in the 9<sup>th</sup> from Navāńś Lagna, the father of the native will enjoy a long span of life",
+            "Fortunate (Affluent) Father. If Dharm’s Lord is with strength, as Shukra is in Dharm, while Guru is in an angle from Tanu Bhava, the native’s father is fortunate"
+          ],
+          "boundary_queries": [
+            "The father will not see the native till his (the native’s) 23<sup>rd</sup> year, if Rahu and Guru are together in an inimical Rashiidentical with Tanu, or Bandhu Bhava",
+            "If Lagn’s Lord is in Randhr Bhava, as Chandra is in Surya’s Navāńś, the native in his 35<sup>th</sup> , or 41<sup>st</sup> year will lose his father"
+          ],
+          "method_queries": [
+            "Surya is the indicator of father for all beings, while the mother is indicated by Chandra",
+            "判断父亲去世年岁要看上升主（Lagn's Lord）与八宫（Randhr）的哪些配置"
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升主（Lagn's Lord）落宫事实时停止。",
+          "缺少八宫主与太阳（Surya）是否同宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v13-25-father-death-year-2-12.step-001",
+        "action": "核对上升主（Lagn's Lord）是否落八宫（Randhr），并核对八宫主（Randhr's Lord）是否与太阳（Surya）同宫。",
+        "applicability_scope": "仅限本命盘九宫（Dharm）父亲主题；原文以「Combinations for Father’s Death」立目，末句「Thus the Jyotishis may know the effects」把这组组合交由 Jyotishis 判读；原文未给上升限定。",
+        "minimum_supported_claim": "上升主（Lagn's Lord）落八宫（Randhr）、且八宫主（Randhr's Lord）与太阳（Surya）同宫时，父亲在第2年或第12年去世。",
+        "produced_fact_keys": [
+          "上升主落八宫且八宫主会太阳主父亲第2或12年去世判定"
+        ],
+        "required_fact_keys": [
+          "上升主（Lagn's Lord）是否落八宫（Randhr）",
+          "八宫主（Randhr's Lord）是否与太阳（Surya）同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "上升主（Lagn's Lord）是否落八宫（Randhr）"
+            },
+            {
+              "fact_key": "八宫主（Randhr's Lord）是否与太阳（Surya）同宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Lagn’s Lord is in Randhr Bhava",
+              "claim": "上升主（Lagn's Lord）落八宫（Randhr）"
+            },
+            {
+              "quote": "Randhr’s Lord is with Surya",
+              "claim": "八宫主（Randhr's Lord）与太阳（Surya）同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Death of father will occur in the 2<sup>nd</sup> , or the 12<sup>th</sup> year",
+              "claim": "父亲在第2年或第12年去世"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v13-25",
+            "quote": "Death of father will occur in the 2<sup>nd</sup> , or the 12<sup>th</sup> year, if Lagn’s Lord is in Randhr Bhava, as Randhr’s Lord is with Surya.",
+            "pdf_pages": [
+              37
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：上升主（Lagn's Lord）是否落八宫（Randhr）、八宫主（Randhr's Lord）是否与太阳（Surya）同宫。",
+        "stop_fact_keys": [
+          "上升主（Lagn's Lord）是否落八宫（Randhr）",
+          "八宫主（Randhr's Lord）是否与太阳（Surya）同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断父亲的死因。",
+          "不得把第2年与第12年之外的年份也算进本条。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定第2年或第12年",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "ea0fc19209d746661de4aa4a24303777da19adff834397edeb4a3515cef79200"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v13-25-father-death-year-16-18.step-001",
+      "method": {
+        "method": "ch20-v13-25-father-death-year-16-18",
+        "title": "父亲在第16年或第18年去世：罗睺落九宫起第八宫、太阳落九宫起第九宫",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我父亲会不会在我少年时去世",
+          "罗睺与太阳从九宫起算的位置说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Rahu be in the 8<sup>th</sup> from Dharm, as Surya is in the 9<sup>th</sup> from Dharm, death of father will take place in the 16<sup>th</sup> , or the 18<sup>th</sup> year of the native.",
+            "罗睺落九宫起第八宫 太阳落九宫起第九宫 父亲第16年 第18年"
+          ],
+          "counter_queries": [
+            "Long-living Father. Should Dharm’s Lord be in deep exaltation, while Shukra is in an angle from Tanu Bhava and Guru is in the 9<sup>th</sup> from Navāńś Lagna, the father of the native will enjoy a long span of life",
+            "If Dharm’s Lord is an angle and receives a Drishti from Guru, the native’s father will be a king endowed with conveyances, or be equal to a king"
+          ],
+          "boundary_queries": [
+            "If Shani is in the 7<sup>th</sup> from Randhr Bhava, as Surya is in the 7<sup>th</sup> from Shani, the ages of 21, 26, or 30 will be fatal for the father",
+            "The 9<sup>th</sup> from Surya denotes father"
+          ],
+          "method_queries": [
+            "Dharm Bhava and the 9<sup>th</sup> from Surya deal with one’s father",
+            "判断父亲去世年岁要看从九宫（Dharm）起算的哪些宫位"
+          ]
+        },
+        "stop_conditions": [
+          "缺少罗睺（Rahu）落宫事实时停止。",
+          "缺少太阳（Surya）落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v13-25-father-death-year-16-18.step-001",
+        "action": "核对罗睺（Rahu）是否落在从九宫（Dharm）起算的第八宫，并核对太阳（Surya）是否落在从九宫（Dharm）起算的第九宫。",
+        "applicability_scope": "仅限本命盘九宫（Dharm）父亲主题；原文以「Combinations for Father’s Death」立目，末句「Thus the Jyotishis may know the effects」把这组组合交由 Jyotishis 判读；原文未给上升限定。",
+        "minimum_supported_claim": "罗睺（Rahu）落从九宫（Dharm）起算的第八宫、且太阳（Surya）落从九宫（Dharm）起算的第九宫时，父亲在命主第16年或第18年去世。",
+        "produced_fact_keys": [
+          "罗睺落九宫起第八宫且太阳落九宫起第九宫主父亲第16或18年去世判定"
+        ],
+        "required_fact_keys": [
+          "罗睺（Rahu）是否落从九宫（Dharm）起算的第八宫",
+          "太阳（Surya）是否落从九宫（Dharm）起算的第九宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "罗睺（Rahu）是否落从九宫（Dharm）起算的第八宫"
+            },
+            {
+              "fact_key": "太阳（Surya）是否落从九宫（Dharm）起算的第九宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Rahu be in the 8<sup>th</sup> from Dharm",
+              "claim": "罗睺（Rahu）落从九宫（Dharm）起算的第八宫"
+            },
+            {
+              "quote": "Surya is in the 9<sup>th</sup> from Dharm",
+              "claim": "太阳（Surya）落从九宫（Dharm）起算的第九宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "death of father will take place in the 16<sup>th</sup> , or the 18<sup>th</sup> year of the native",
+              "claim": "父亲在命主第16年或第18年去世"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v13-25",
+            "quote": "Should Rahu be in the 8<sup>th</sup> from Dharm, as Surya is in the 9<sup>th</sup> from Dharm, death of father will take place in the 16<sup>th</sup> , or the 18<sup>th</sup> year of the native.",
+            "pdf_pages": [
+              37
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：罗睺（Rahu）是否落从九宫（Dharm）起算的第八宫、太阳（Surya）是否落从九宫（Dharm）起算的第九宫。",
+        "stop_fact_keys": [
+          "罗睺（Rahu）是否落从九宫（Dharm）起算的第八宫",
+          "太阳（Surya）是否落从九宫（Dharm）起算的第九宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断父亲的死因。",
+          "不得把第16年与第18年之外的年份也算进本条。",
+          "不得把从九宫起算的宫位换成从上升起算的宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定命主第16年或第18年",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "818a4d7c5696a8844eca6bc40ce44bef64233e72a41761c90a2364aad3740188"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v13-25-father-death-year-7-19.step-001",
+      "method": {
+        "method": "ch20-v13-25-father-death-year-7-19",
+        "title": "父亲在第7年或第19年去世：土星落月亮起第九宫、太阳与罗睺同宫",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我父亲会不会在我很年轻时去世",
+          "土星在月亮起第九宫又太阳与罗睺同宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Shani is in the 9<sup>th</sup> from Chandra, as Surya is with Rahu, the native’s father will die in the 7<sup>th</sup> , or the 19<sup>th</sup> year of the native.",
+            "土星落月亮起第九宫 太阳与罗睺同宫 父亲第7年 第19年 去世"
+          ],
+          "counter_queries": [
+            "Long-living Father. Should Dharm’s Lord be in deep exaltation, while Shukra is in an angle from Tanu Bhava and Guru is in the 9<sup>th</sup> from Navāńś Lagna, the father of the native will enjoy a long span of life",
+            "Fortunate (Affluent) Father. If Dharm’s Lord is with strength, as Shukra is in Dharm, while Guru is in an angle from Tanu Bhava, the native’s father is fortunate"
+          ],
+          "boundary_queries": [
+            "Evil to Father (up to Sloka 42). One’s father will incur early death, if Shani, Mangal and Chandra in their orders are in Tanu, Yuvati and Ari Bhava",
+            "The stronger among Surya and Shukra indicates the father"
+          ],
+          "method_queries": [
+            "Surya is the indicator of father for all beings, while the mother is indicated by Chandra",
+            "判断父亲去世年岁要看从月亮（Chandra）起算的宫位与太阳（Surya）的会合"
+          ]
+        },
+        "stop_conditions": [
+          "缺少土星（Shani）落宫事实时停止。",
+          "缺少太阳（Surya）与罗睺（Rahu）是否同宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v13-25-father-death-year-7-19.step-001",
+        "action": "核对土星（Shani）是否落在从月亮（Chandra）起算的第九宫，并核对太阳（Surya）是否与罗睺（Rahu）同宫。",
+        "applicability_scope": "仅限本命盘九宫（Dharm）父亲主题；原文以「Combinations for Father’s Death」立目，末句「Thus the Jyotishis may know the effects」把这组组合交由 Jyotishis 判读；原文未给上升限定。",
+        "minimum_supported_claim": "土星（Shani）落从月亮（Chandra）起算的第九宫、且太阳（Surya）与罗睺（Rahu）同宫时，命主的父亲在命主第7年或第19年去世。",
+        "produced_fact_keys": [
+          "土星落月亮起第九宫且太阳会罗睺主父亲第7或19年去世判定"
+        ],
+        "required_fact_keys": [
+          "土星（Shani）是否落从月亮（Chandra）起算的第九宫",
+          "太阳（Surya）是否与罗睺（Rahu）同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "土星（Shani）是否落从月亮（Chandra）起算的第九宫"
+            },
+            {
+              "fact_key": "太阳（Surya）是否与罗睺（Rahu）同宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Shani is in the 9<sup>th</sup> from Chandra",
+              "claim": "土星（Shani）落从月亮（Chandra）起算的第九宫"
+            },
+            {
+              "quote": "Surya is with Rahu",
+              "claim": "太阳（Surya）与罗睺（Rahu）同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native’s father will die in the 7<sup>th</sup> , or the 19<sup>th</sup> year of the native",
+              "claim": "命主的父亲在命主第7年或第19年去世"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v13-25",
+            "quote": "If Shani is in the 9<sup>th</sup> from Chandra, as Surya is with Rahu, the native’s father will die in the 7<sup>th</sup> , or the 19<sup>th</sup> year of the native.",
+            "pdf_pages": [
+              37
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：土星（Shani）是否落从月亮（Chandra）起算的第九宫、太阳（Surya）是否与罗睺（Rahu）同宫。",
+        "stop_fact_keys": [
+          "土星（Shani）是否落从月亮（Chandra）起算的第九宫",
+          "太阳（Surya）是否与罗睺（Rahu）同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断父亲的死因。",
+          "不得把第7年与第19年之外的年份也算进本条。",
+          "不得把从月亮起算的第九宫换成本盘九宫（Dharm）。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定命主第7年或第19年",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "aea1b0bb430302136bc0f138af2d5dce05ad90f5fed1d2186c8106b6d0e3863d"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v13-25-lose-father-year-44.step-001",
+      "method": {
+        "method": "ch20-v13-25-lose-father-year-44",
+        "title": "命主第44年失去父亲：九宫主落十二宫、十二宫主落九宫",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我父亲的寿命大概到什么时候",
+          "九宫主与十二宫主互落说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "The native in his 44<sup>th</sup> year will lose his father, if Dharm’s Lord is in Vyaya, as Vyaya’s Lord is in Dharm.",
+            "九宫主落十二宫 十二宫主落九宫 第44年 失去父亲"
+          ],
+          "counter_queries": [
+            "Long-living Father. Should Dharm’s Lord be in deep exaltation, while Shukra is in an angle from Tanu Bhava and Guru is in the 9<sup>th</sup> from Navāńś Lagna, the father of the native will enjoy a long span of life",
+            "If Dharm’s Lord is an angle and receives a Drishti from Guru, the native’s father will be a king endowed with conveyances, or be equal to a king"
+          ],
+          "boundary_queries": [
+            "If Dharm’s Lord is in its debilitation Rāśi, while his dispositor is in Dharm Bhava, the native will lose his father at the age of 26, or 30",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava"
+          ],
+          "method_queries": [
+            "Dharm Bhava and the 9<sup>th</sup> from Surya deal with one’s father",
+            "判断失去父亲的年岁要看九宫主（Dharm's Lord）与十二宫主（Vyaya's Lord）的互落"
+          ]
+        },
+        "stop_conditions": [
+          "缺少九宫主（Dharm's Lord）落宫事实时停止。",
+          "缺少十二宫主（Vyaya's Lord）落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v13-25-lose-father-year-44.step-001",
+        "action": "核对九宫主（Dharm's Lord）是否落十二宫（Vyaya），并核对十二宫主（Vyaya's Lord）是否落九宫（Dharm）。",
+        "applicability_scope": "仅限本命盘九宫（Dharm）父亲主题；原文以「Combinations for Father’s Death」立目，末句「Thus the Jyotishis may know the effects」把这组组合交由 Jyotishis 判读；原文未给上升限定。",
+        "minimum_supported_claim": "九宫主（Dharm's Lord）落十二宫（Vyaya）、且十二宫主（Vyaya's Lord）落九宫（Dharm）时，命主在第44年失去父亲。",
+        "produced_fact_keys": [
+          "九宫主落十二宫且十二宫主落九宫主第44年失去父亲判定"
+        ],
+        "required_fact_keys": [
+          "九宫主（Dharm's Lord）是否落十二宫（Vyaya）",
+          "十二宫主（Vyaya's Lord）是否落九宫（Dharm）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "九宫主（Dharm's Lord）是否落十二宫（Vyaya）"
+            },
+            {
+              "fact_key": "十二宫主（Vyaya's Lord）是否落九宫（Dharm）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dharm’s Lord is in Vyaya",
+              "claim": "九宫主（Dharm's Lord）落十二宫（Vyaya）"
+            },
+            {
+              "quote": "Vyaya’s Lord is in Dharm",
+              "claim": "十二宫主（Vyaya's Lord）落九宫（Dharm）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "The native in his 44<sup>th</sup> year will lose his father",
+              "claim": "命主在第44年失去父亲"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v13-25",
+            "quote": "The native in his 44<sup>th</sup> year will lose his father, if Dharm’s Lord is in Vyaya, as Vyaya’s Lord is in Dharm.",
+            "pdf_pages": [
+              37
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：九宫主（Dharm's Lord）是否落十二宫（Vyaya）、十二宫主（Vyaya's Lord）是否落九宫（Dharm）。",
+        "stop_fact_keys": [
+          "九宫主（Dharm's Lord）是否落十二宫（Vyaya）",
+          "十二宫主（Vyaya's Lord）是否落九宫（Dharm）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断父亲的死因。",
+          "不得把第44年之外的年份也算进本条。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定命主第44年",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "8f4d33caf85b9589121ef3f348607ee0d3157f7d1b4494520c692dcaafd63c7c"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v13-25-lose-father-year-35-41.step-001",
+      "method": {
+        "method": "ch20-v13-25-lose-father-year-35-41",
+        "title": "命主第35年或第41年失去父亲：上升主落八宫、月亮落太阳主管的九分盘星座",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我父亲会在我中年时离开吗",
+          "月亮落太阳的九分盘星座说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Lagn’s Lord is in Randhr Bhava, as Chandra is in Surya’s Navāńś, the native in his 35<sup>th</sup> , or 41<sup>st</sup> year will lose his father.",
+            "上升主落八宫 月亮落太阳九分盘 第35年 第41年 失去父亲"
+          ],
+          "counter_queries": [
+            "Long-living Father. Should Dharm’s Lord be in deep exaltation, while Shukra is in an angle from Tanu Bhava and Guru is in the 9<sup>th</sup> from Navāńś Lagna, the father of the native will enjoy a long span of life",
+            "Fortunate (Affluent) Father. If Dharm’s Lord is with strength, as Shukra is in Dharm, while Guru is in an angle from Tanu Bhava, the native’s father is fortunate"
+          ],
+          "boundary_queries": [
+            "Death of father will occur in the 2<sup>nd</sup> , or the 12<sup>th</sup> year, if Lagn’s Lord is in Randhr Bhava, as Randhr’s Lord is with Surya",
+            "The 9<sup>th</sup> from Surya denotes father"
+          ],
+          "method_queries": [
+            "Surya is the indicator of father for all beings, while the mother is indicated by Chandra",
+            "判断失去父亲的年岁要看上升主（Lagn's Lord）与月亮（Chandra）在九分盘（Navamsa D9）中的位置"
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升主（Lagn's Lord）落宫事实时停止。",
+          "缺少月亮（Chandra）在九分盘（Navamsa D9）中的星座事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v13-25-lose-father-year-35-41.step-001",
+        "action": "核对上升主（Lagn's Lord）是否落八宫（Randhr），并核对月亮（Chandra）是否落在太阳（Surya）主管的九分盘（Navamsa D9）星座。",
+        "applicability_scope": "仅限本命盘九宫（Dharm）父亲主题；原文以「Combinations for Father’s Death」立目，末句「Thus the Jyotishis may know the effects」把这组组合交由 Jyotishis 判读；原文未给上升限定。",
+        "minimum_supported_claim": "上升主（Lagn's Lord）落八宫（Randhr）、且月亮（Chandra）落太阳（Surya）主管的九分盘（Navamsa D9）星座时，命主在第35年或第41年失去父亲。",
+        "produced_fact_keys": [
+          "上升主落八宫且月亮落太阳九分盘星座主第35或41年失去父亲判定"
+        ],
+        "required_fact_keys": [
+          "上升主（Lagn's Lord）是否落八宫（Randhr）",
+          "月亮（Chandra）是否落太阳（Surya）主管的九分盘（Navamsa D9）星座"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "上升主（Lagn's Lord）是否落八宫（Randhr）"
+            },
+            {
+              "fact_key": "月亮（Chandra）是否落太阳（Surya）主管的九分盘（Navamsa D9）星座"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Lagn’s Lord is in Randhr Bhava",
+              "claim": "上升主（Lagn's Lord）落八宫（Randhr）"
+            },
+            {
+              "quote": "Chandra is in Surya’s Navāńś",
+              "claim": "月亮（Chandra）落太阳（Surya）主管的九分盘（Navamsa D9）星座"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native in his 35<sup>th</sup> , or 41<sup>st</sup> year will lose his father",
+              "claim": "命主在第35年或第41年失去父亲"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v13-25",
+            "quote": "If Lagn’s Lord is in Randhr Bhava, as Chandra is in Surya’s Navāńś, the native in his 35<sup>th</sup> , or 41<sup>st</sup> year will lose his father.",
+            "pdf_pages": [
+              37
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：上升主（Lagn's Lord）是否落八宫（Randhr）、月亮（Chandra）是否落太阳（Surya）主管的九分盘（Navamsa D9）星座。",
+        "stop_fact_keys": [
+          "上升主（Lagn's Lord）是否落八宫（Randhr）",
+          "月亮（Chandra）是否落太阳（Surya）主管的九分盘（Navamsa D9）星座"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断父亲的死因。",
+          "不得把第35年与第41年之外的年份也算进本条。",
+          "不得把九分盘（Navamsa D9）的星座换成本盘星座。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定命主第35年或第41年",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b04bacb170a1630e04a75238eec936e5a4845be2b0791ff623ec243699023b9c"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v13-25-lose-father-year-50.step-001",
+      "method": {
+        "method": "ch20-v13-25-lose-father-year-50",
+        "title": "命主第50年失去父亲：太阳本身是九宫主并与火星、土星同宫",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我到中年以后父亲还在吗",
+          "太阳作为九宫主又与火星土星同宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "One will lose his father in the 50<sup>th</sup> year, if Surya, being the Lord of Dharm, is conjunct Mangal and Shani.",
+            "太阳是九宫主 与火星土星同宫 第50年 失去父亲"
+          ],
+          "counter_queries": [
+            "Long-living Father. Should Dharm’s Lord be in deep exaltation, while Shukra is in an angle from Tanu Bhava and Guru is in the 9<sup>th</sup> from Navāńś Lagna, the father of the native will enjoy a long span of life",
+            "If Dharm’s Lord is an angle and receives a Drishti from Guru, the native’s father will be a king endowed with conveyances, or be equal to a king"
+          ],
+          "boundary_queries": [
+            "Evil to Father (up to Sloka 42). One’s father will incur early death, if Shani, Mangal and Chandra in their orders are in Tanu, Yuvati and Ari Bhava",
+            "The stronger among Surya and Shukra indicates the father"
+          ],
+          "method_queries": [
+            "Surya is the indicator of father for all beings, while the mother is indicated by Chandra",
+            "判断失去父亲的年岁要看太阳（Surya）兼任九宫主（Dharm's Lord）时的会合"
+          ]
+        },
+        "stop_conditions": [
+          "缺少九宫主（Dharm's Lord）是哪颗行星的事实时停止。",
+          "缺少太阳（Surya）与火星（Mangal）或土星（Shani）是否同宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v13-25-lose-father-year-50.step-001",
+        "action": "先核对九宫主（Dharm's Lord）是不是太阳（Surya），再核对太阳是否与火星（Mangal）以及土星（Shani）同宫。",
+        "applicability_scope": "仅限本命盘九宫（Dharm）父亲主题；原文以「Combinations for Father’s Death」立目，末句「Thus the Jyotishis may know the effects」把这组组合交由 Jyotishis 判读；原文未给上升限定。",
+        "minimum_supported_claim": "太阳（Surya）本身就是九宫主（Dharm's Lord），并与火星（Mangal）及土星（Shani）同宫时，命主在第50年失去父亲。",
+        "produced_fact_keys": [
+          "太阳为九宫主并会火星土星主第50年失去父亲判定"
+        ],
+        "required_fact_keys": [
+          "九宫主（Dharm's Lord）是否为太阳（Surya）",
+          "太阳（Surya）是否与火星（Mangal）同宫",
+          "太阳（Surya）是否与土星（Shani）同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "九宫主（Dharm's Lord）是否为太阳（Surya）"
+            },
+            {
+              "fact_key": "太阳（Surya）是否与火星（Mangal）同宫"
+            },
+            {
+              "fact_key": "太阳（Surya）是否与土星（Shani）同宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Surya, being the Lord of Dharm",
+              "claim": "太阳（Surya）本身就是九宫主（Dharm's Lord）"
+            },
+            {
+              "quote": "is conjunct Mangal and Shani",
+              "claim": "并与火星（Mangal）及土星（Shani）同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "One will lose his father in the 50<sup>th</sup> year",
+              "claim": "命主在第50年失去父亲"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v13-25",
+            "quote": "One will lose his father in the 50<sup>th</sup> year, if Surya, being the Lord of Dharm, is conjunct Mangal and Shani.",
+            "pdf_pages": [
+              37
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：九宫主（Dharm's Lord）是否为太阳（Surya）、太阳（Surya）是否与火星（Mangal）同宫、太阳（Surya）是否与土星（Shani）同宫。",
+        "stop_fact_keys": [
+          "九宫主（Dharm's Lord）是否为太阳（Surya）",
+          "太阳（Surya）是否与火星（Mangal）同宫",
+          "太阳（Surya）是否与土星（Shani）同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断父亲的死因。",
+          "不得把第50年之外的年份也算进本条。",
+          "不得把「与火星及土星同宫」放宽成只与其中一颗同宫。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定命主第50年",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "ce88a6e66bacec2936b211ea1f4399b67a5887ca63f4161e508303a409be6afd"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch20:v13-25": {
+      "evidence_atom_id": "bphs-97:santhanam:ch20:v13-25",
+      "chapter_number": 20,
+      "chapter_title": "Effects of Dharm Bhava",
+      "verse_label": "13-25.",
+      "content_role": "verse",
+      "exact_text": "13-25. Combinations for Father’s Death. The father of the native would have passed away prior to the native’s birth, if Surya is in Ari, Randhr, or Vyaya Bhava, as Randhr’s Lord is in Dharm Bhava, Vyaya’s Lord is in Tanu Bhava and Ari’s Lord is in Putr Bhava. Should Surya be in Randhr Bhava, while Randhr’s Lord is in Dharm, the native’s father will pass away within a year of his birth. If the Lord of Vyaya Bhava is in Dharm Bhava, while Dharm’s Lord is in its debilitation Navāńś, the native’s father will face his end during the 3<sup>rd</sup> , or the 16<sup>th</sup> year of the native. Death of father will occur in the 2<sup>nd</sup> , or the 12<sup>th</sup> year, if Lagn’s Lord is in Randhr Bhava, as Randhr’s Lord is with Surya. Should Rahu be in the 8<sup>th</sup> from Dharm, as Surya is in the 9<sup>th</sup> from Dharm, death of father will take place in the 16<sup>th</sup> , or the 18<sup>th</sup> year of the native. If Shani is in the 9<sup>th</sup> from Chandra, as Surya is with Rahu, the native’s father will die in the 7<sup>th</sup> , or the 19<sup>th</sup> year of the native. The native in his 44<sup>th</sup> year will lose his father, if Dharm’s Lord is in Vyaya, as Vyaya’s Lord is in Dharm. If Lagn’s Lord is in Randhr Bhava, as Chandra is in Surya’s Navāńś, the native in his 35<sup>th</sup> , or 41<sup>st</sup> year will lose his father. One will lose his father in the 50<sup>th</sup> year, if Surya, being the Lord of Dharm, is conjunct Mangal and Shani. If Surya is in the 7<sup>th</sup> from Dharm Bhava, as Rahu is in the 7<sup>th</sup> from Sahaj Bhava, the 6<sup>th</sup> , or 25<sup>th</sup> year of the native will be fatal for father. If Shani is in the 7<sup>th</sup> from Randhr Bhava, as Surya is in the 7<sup>th</sup> from Shani, the ages of 21, 26, or 30 will be fatal for the father. If Dharm’s Lord is in its debilitation Rāśi, while his dispositor is in Dharm Bhava, the native will lose his father at the age of 26, or 30. Thus the Jyotishis may know the effects.",
+      "pdf_pages": [
+        37
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 20 · Sloka 13-25 · PDF page 37 · bphs-97:santhanam:ch20:v13-25",
+      "previous_atom_id": "bphs-97:santhanam:ch20:v12",
+      "next_atom_id": "bphs-97:santhanam:ch20:v26",
+      "context_before": " If Karm’s Lord and Sahaj’s Lord are bereft of strength, while Dharm’s Lord is in fall, or combust the native will go begging for his food.\n\n",
+      "context_after": "26. Fortunes. One will enjoy abundant fortunes, if Shukra is in deep exaltation and be in the company of Dharm’s Lord, as Shani ",
+      "content_missing": false
+    }
+  }
+}

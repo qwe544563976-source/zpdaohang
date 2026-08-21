@@ -1,0 +1,1310 @@
+{
+  "shard": 2,
+  "step_count": 9,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch19-v8-13-instant-death-at-birth.step-001",
+      "method": {
+        "method": "ch19-v8-13-instant-death-at-birth",
+        "title": "出生时即刻去世：八宫、八宫主与十二宫都与凶星会合",
+        "target_house": 8,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "八宫十二宫都有凶星意味着什么",
+          "出生时的凶险组合有哪些"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Death will be instant at birth, if Randhr Bhava, Randhr’s Lord and Vyaya Bhava are all conjunct malefics",
+            "八宫 八宫主 十二宫 皆与凶星 出生即刻去世"
+          ],
+          "counter_queries": [
+            "a single, but strong Guru in Lagn will ward off all the evils",
+            "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed, as Surya eliminates darkness",
+            "If malefics are surrounded by benefics, while angles, or trines are themselves beneficoccupied, evils disappear soon"
+          ],
+          "boundary_queries": [
+            "Evils, causing premature end, exist up to the 24th year of one’s age. As such, no definite calculation of life span should be made till such year of age",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu … are malefics, while the rest are benefics",
+            "Should Shani, Surya and Mangal be in Vyaya, Dharm and Randhr Bhava without Drishti from a benefic, the child will face instant death"
+          ],
+          "method_queries": [
+            "first of all estimate the evils and checking factors thereof through Lagn and then declare the effects of the 12 Bhavas",
+            "Other Clues to Longevity This is based on the positions of Lagn’s Lord, Randhr’s Lord, Shani, Chandra, natal Lagn and Hora Lagn",
+            "出生凶险组合与解厄怎么一起看"
+          ]
+        },
+        "stop_conditions": [
+          "缺少八宫、八宫主或十二宫的凶星事实时停止。",
+          "凶星名册未定时停止（吉凶星判准见第3章 v11）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch19-v8-13-instant-death-at-birth.step-001",
+        "action": "核对八宫（Randhr）、八宫主（Randhr's Lord）与十二宫（Vyaya）是否都与凶星会合。",
+        "applicability_scope": "仅限本命盘寿命主题；原文断在出生当时，未给其他时间限定。",
+        "minimum_supported_claim": "八宫、八宫主与十二宫都与凶星会合时，出生时即刻去世。",
+        "produced_fact_keys": [
+          "三处皆会凶星的出生即刻去世判定"
+        ],
+        "required_fact_keys": [
+          "八宫（Randhr）是否被凶星占据",
+          "八宫主（Randhr's Lord）是否与凶星同宫",
+          "十二宫（Vyaya）是否被凶星占据"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "八宫（Randhr）是否被凶星占据"
+            },
+            {
+              "fact_key": "八宫主（Randhr's Lord）是否与凶星同宫"
+            },
+            {
+              "fact_key": "十二宫（Vyaya）是否被凶星占据"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Randhr Bhava",
+              "claim": "八宫"
+            },
+            {
+              "quote": "Randhr’s Lord",
+              "claim": "八宫主"
+            },
+            {
+              "quote": "Vyaya Bhava",
+              "claim": "十二宫"
+            },
+            {
+              "quote": "are all conjunct malefics",
+              "claim": "都与凶星会合"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Death will be instant at birth",
+              "claim": "出生时即刻去世"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch19:v8-13",
+            "quote": "Death will be instant at birth, if Randhr Bhava, Randhr’s Lord and Vyaya Bhava are all conjunct malefics.",
+            "pdf_pages": [
+              36
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：八宫（Randhr）是否被凶星占据、八宫主（Randhr's Lord）是否与凶星同宫、十二宫（Vyaya）是否被凶星占据。",
+        "stop_fact_keys": [
+          "八宫（Randhr）是否被凶星占据",
+          "八宫主（Randhr's Lord）是否与凶星同宫",
+          "十二宫（Vyaya）是否被凶星占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断死因或去世的具体时刻。",
+          "不得只凭三项中的一两项成立就下断语。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "出生当时",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "0ef49c49b86011f7ce42433ef77332c8d6efa17b2dc34057834dc2ef7d0de547"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch19-v8-13-immediate-end-yoga.step-001",
+      "method": {
+        "method": "ch19-v8-13-immediate-end-yoga",
+        "title": "立即终结的瑜伽：凶星在角宫或三角宫、吉星在六宫或八宫、上升宫有落陷八宫主",
+        "target_house": 8,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "凶星落角宫吉星落六宫是什么组合",
+          "上升宫里有落陷的八宫主意味着什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Malefics in angles and/or trines and benefics in Ari and/or Randhr Bhava, while Tanu Bhava has in it Randhr’s Lord in fall: this Yoga will cause immediate end",
+            "凶星角宫三角宫 吉星六宫八宫 上升宫落陷八宫主 立即终结"
+          ],
+          "counter_queries": [
+            "If malefics are surrounded by benefics, while angles, or trines are themselves beneficoccupied, evils disappear soon",
+            "a single, but strong Guru in Lagn will ward off all the evils",
+            "One having benefics in Kendras and/or Konas, while malefics are in Sahaj, Ari and Labh Bhava will obtain super-natural life-span"
+          ],
+          "boundary_queries": [
+            "Evils, causing premature end, exist up to the 24th year of one’s age. As such, no definite calculation of life span should be made till such year of age",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu … are malefics, while the rest are benefics",
+            "The life-span in Bal Risht is 8 years, in Yog Risht 20 years, in short, medium and long lives, respectively, 32, 64 and 120 years"
+          ],
+          "method_queries": [
+            "first of all estimate the evils and checking factors thereof through Lagn and then declare the effects of the 12 Bhavas",
+            "Other Clues to Longevity This is based on the positions of Lagn’s Lord, Randhr’s Lord, Shani, Chandra, natal Lagn and Hora Lagn",
+            "角宫三角宫的吉凶星分布怎么看寿命"
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升宫内八宫主落宫或落陷事实时停止。",
+          "凶星落角宫、落三角宫两个分支事实都缺时停止。",
+          "吉星落六宫、落八宫两个分支事实都缺时停止。",
+          "吉凶星名册未定时停止（判准见第3章 v11）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch19-v8-13-immediate-end-yoga.step-001",
+        "action": "核对上升宫内是否有落陷的八宫主（Randhr's Lord），再核对凶星是否在角宫或三角宫、吉星是否在六宫或八宫。",
+        "applicability_scope": "仅限本命盘寿命主题；原文未写明角宫、三角宫从哪一宫起算，本方法照原文不作指定；原文未给时间限定。",
+        "minimum_supported_claim": "凶星落角宫或三角宫、吉星落六宫或八宫，同时上升宫内有落陷的八宫主时，此瑜伽会造成立即终结。",
+        "produced_fact_keys": [
+          "凶星角宫吉星六八宫加落陷八宫主的立即终结判定"
+        ],
+        "required_fact_keys": [
+          "八宫主（Randhr's Lord）是否落上升宫（Lagna）",
+          "八宫主（Randhr's Lord）是否落陷"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否落上升宫（Lagna）"
+                },
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否落陷"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "角宫是否被凶星占据"
+                },
+                {
+                  "fact_key": "三角宫是否被凶星占据"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "六宫（Ari）是否被吉星占据"
+                },
+                {
+                  "fact_key": "八宫（Randhr）是否被吉星占据"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否落上升宫（Lagna）"
+                },
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否落陷"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "角宫是否被凶星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "角宫是否被凶星占据"
+            },
+            "selection_group": "ch19-v8-13-immediate-end-yoga.step-001:malefic-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：角宫是否被凶星占据。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否落上升宫（Lagna）"
+                },
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否落陷"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "三角宫是否被凶星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "三角宫是否被凶星占据"
+            },
+            "selection_group": "ch19-v8-13-immediate-end-yoga.step-001:malefic-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：三角宫是否被凶星占据。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否落上升宫（Lagna）"
+                },
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否落陷"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "六宫（Ari）是否被吉星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "六宫（Ari）是否被吉星占据"
+            },
+            "selection_group": "ch19-v8-13-immediate-end-yoga.step-001:benefic-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：六宫（Ari）是否被吉星占据。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否落上升宫（Lagna）"
+                },
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否落陷"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "八宫（Randhr）是否被吉星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "八宫（Randhr）是否被吉星占据"
+            },
+            "selection_group": "ch19-v8-13-immediate-end-yoga.step-001:benefic-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：八宫（Randhr）是否被吉星占据。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Malefics in angles",
+              "claim": "凶星落角宫"
+            },
+            {
+              "quote": "trines",
+              "claim": "三角宫"
+            },
+            {
+              "quote": "benefics in Ari",
+              "claim": "吉星落六宫"
+            },
+            {
+              "quote": "Randhr Bhava",
+              "claim": "八宫"
+            },
+            {
+              "quote": "Tanu Bhava has in it Randhr’s Lord in fall",
+              "claim": "上升宫内有落陷的八宫主"
+            }
+          ],
+          "results": [
+            {
+              "quote": "this Yoga will cause immediate end",
+              "claim": "此瑜伽会造成立即终结"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch19:v8-13",
+            "quote": "Malefics in angles and/or trines and benefics in Ari and/or Randhr Bhava, while Tanu Bhava has in it Randhr’s Lord in fall: this Yoga will cause immediate end.",
+            "pdf_pages": [
+              36
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：八宫主（Randhr's Lord）是否落上升宫（Lagna）、八宫主（Randhr's Lord）是否落陷。",
+        "stop_fact_keys": [
+          "八宫主（Randhr's Lord）是否落上升宫（Lagna）",
+          "八宫主（Randhr's Lord）是否落陷"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断终结的具体时刻或原因。",
+          "不得把原文的上升宫落陷八宫主这一条前提略去。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "182d7d105ea20162de895e8c5478cd9c361c398922dc712b146b8e582514e667"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch19-v8-13-putr-randhr-malefics-very-brief.step-001",
+      "method": {
+        "method": "ch19-v8-13-putr-randhr-malefics-very-brief",
+        "title": "寿数极短：五宫、八宫与八宫主都与凶星会合",
+        "target_house": 8,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "五宫八宫都有凶星寿命会怎样",
+          "八宫主与凶星同宫严不严重"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Putr and Randhr Bhava and Randhr’s Lord are all conjunct malefics, the life span will be very brief",
+            "五宫 八宫 八宫主 皆与凶星 寿数极短"
+          ],
+          "counter_queries": [
+            "If the Lords of Putr, Randhr and Tanu Bhava are in own Navāńśas, own Rāśis, or in friendly Rāśis, the native will enjoy a long span of life",
+            "a single, but strong Guru in Lagn will ward off all the evils"
+          ],
+          "boundary_queries": [
+            "Evils, causing premature end, exist up to the 24th year of one’s age. As such, no definite calculation of life span should be made till such year of age",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu … are malefics, while the rest are benefics",
+            "The life-span in Bal Risht is 8 years, in Yog Risht 20 years, in short, medium and long lives, respectively, 32, 64 and 120 years"
+          ],
+          "method_queries": [
+            "Other Clues to Longevity This is based on the positions of Lagn’s Lord, Randhr’s Lord, Shani, Chandra, natal Lagn and Hora Lagn",
+            "The strength and weakness of the Grahas concerned be estimated in deciding longevity",
+            "多宫同时会凶星怎么判寿命"
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫、八宫或八宫主的凶星事实时停止。",
+          "凶星名册未定时停止（判准见第3章 v11）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch19-v8-13-putr-randhr-malefics-very-brief.step-001",
+        "action": "核对五宫（Putr）、八宫（Randhr）与八宫主（Randhr's Lord）是否都与凶星会合。",
+        "applicability_scope": "仅限本命盘寿命主题；原文只说寿数极短，未给具体年岁或时间。",
+        "minimum_supported_claim": "五宫、八宫与八宫主都与凶星会合时，寿数极短。",
+        "produced_fact_keys": [
+          "五宫八宫及八宫主皆会凶星的极短寿判定"
+        ],
+        "required_fact_keys": [
+          "五宫（Putr）是否被凶星占据",
+          "八宫（Randhr）是否被凶星占据",
+          "八宫主（Randhr's Lord）是否与凶星同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "五宫（Putr）是否被凶星占据"
+            },
+            {
+              "fact_key": "八宫（Randhr）是否被凶星占据"
+            },
+            {
+              "fact_key": "八宫主（Randhr's Lord）是否与凶星同宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Putr",
+              "claim": "五宫"
+            },
+            {
+              "quote": "Randhr Bhava",
+              "claim": "八宫"
+            },
+            {
+              "quote": "Randhr’s Lord",
+              "claim": "八宫主"
+            },
+            {
+              "quote": "are all conjunct malefics",
+              "claim": "都与凶星会合"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the life span will be very brief",
+              "claim": "寿数极短"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch19:v8-13",
+            "quote": "If Putr and Randhr Bhava and Randhr’s Lord are all conjunct malefics, the life span will be very brief.",
+            "pdf_pages": [
+              36
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：五宫（Putr）是否被凶星占据、八宫（Randhr）是否被凶星占据、八宫主（Randhr's Lord）是否与凶星同宫。",
+        "stop_fact_keys": [
+          "五宫（Putr）是否被凶星占据",
+          "八宫（Randhr）是否被凶星占据",
+          "八宫主（Randhr's Lord）是否与凶星同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「寿数极短」折算成具体年岁。",
+          "不得只凭三项中的一两项成立就下断语。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "838eff2f9e519efc325dad7f25cbd531daa533e84a3c97445aa41103559181d5"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch19-v8-13-death-within-a-month.step-001",
+      "method": {
+        "method": "ch19-v8-13-death-within-a-month",
+        "title": "出生后一个月内去世：八宫主落八宫、月亮与凶星同宫且无吉星相照",
+        "target_house": 8,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "月亮与凶星同宫又没有吉星照会怎样",
+          "婴儿期最凶的组合是什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Within a month of birth, death will befall the child, if Randhr’s Lord is in Randhr itself, while Chandra is with malefics and be bereft of beneficial Drishti",
+            "八宫主落八宫 月亮与凶星同宫 无吉星相照 出生一个月内去世"
+          ],
+          "counter_queries": [
+            "Should Chandra be in Ari, Randhr, or Vyaya Bhava and receives a Drishti from a malefic, the child will die soon. If in the process there be a Drishti from a benefic, it may live up to 8",
+            "a single, but strong Guru in Lagn will ward off all the evils",
+            "It will prove auspicious for the mother as well as the native, if Mangal joins, or is drishtied by Guru"
+          ],
+          "boundary_queries": [
+            "Evils, causing premature end, exist up to the 24th year of one’s age. As such, no definite calculation of life span should be made till such year of age",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu … are malefics, while the rest are benefics",
+            "Chandra is capable of causing early end, if she is with a malefic in Yuvati, Randhr, or Tanu Bhava and unrelated to a benefic"
+          ],
+          "method_queries": [
+            "first of all estimate the evils and checking factors thereof through Lagn and then declare the effects of the 12 Bhavas",
+            "Other Clues to Longevity This is based on the positions of Lagn’s Lord, Randhr’s Lord, Shani, Chandra, natal Lagn and Hora Lagn",
+            "婴儿夭险要看月亮的哪些状态"
+          ]
+        },
+        "stop_conditions": [
+          "缺少八宫主落宫事实时停止。",
+          "缺少月亮同宫或受相照的事实时停止。",
+          "吉凶星名册未定时停止（判准见第3章 v11）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch19-v8-13-death-within-a-month.step-001",
+        "action": "核对八宫主（Randhr's Lord）是否落八宫，并核对月亮（Chandra）是否与凶星同宫且未受吉星相照。",
+        "applicability_scope": "仅限本命盘寿命主题；原文把结果限在出生后一个月内。",
+        "minimum_supported_claim": "八宫主落八宫、月亮与凶星同宫且未受吉星相照时，孩子在出生后一个月内去世。",
+        "produced_fact_keys": [
+          "八宫主落八宫月亮受凶的一月内去世判定"
+        ],
+        "required_fact_keys": [
+          "八宫主（Randhr's Lord）是否落八宫（Randhr）",
+          "月亮（Chandra）是否与凶星同宫",
+          "月亮（Chandra）是否被吉星相照"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "八宫主（Randhr's Lord）是否落八宫（Randhr）"
+            },
+            {
+              "fact_key": "月亮（Chandra）是否与凶星同宫"
+            },
+            {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "月亮（Chandra）是否被吉星相照"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Randhr’s Lord is in Randhr itself",
+              "claim": "八宫主落八宫"
+            },
+            {
+              "quote": "Chandra is with malefics",
+              "claim": "月亮与凶星同宫"
+            },
+            {
+              "quote": "be bereft of beneficial Drishti",
+              "claim": "未受吉星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Within a month of birth, death will befall the child",
+              "claim": "孩子在出生后一个月内去世"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch19:v8-13",
+            "quote": "Within a month of birth, death will befall the child, if Randhr’s Lord is in Randhr itself, while Chandra is with malefics and be bereft of beneficial Drishti.",
+            "pdf_pages": [
+              36
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：八宫主（Randhr's Lord）是否落八宫（Randhr）、月亮（Chandra）是否与凶星同宫、月亮（Chandra）是否被吉星相照。",
+        "stop_fact_keys": [
+          "八宫主（Randhr's Lord）是否落八宫（Randhr）",
+          "月亮（Chandra）是否与凶星同宫",
+          "月亮（Chandra）是否被吉星相照"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把一个月的期限改写成别的时段。",
+          "不得据此推断死因。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "出生后一个月内",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "84f5bd9d0a4965565f20dcdddeb21ce814c28f99f9fdbd90b4a51fd5e6e8c55c"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch19-v14-15-lagn-lord-exalted-long-life.step-001",
+      "method": {
+        "method": "ch19-v14-15-lagn-lord-exalted-long-life",
+        "title": "长寿：上升主入旺、月亮落十一宫、木星落八宫",
+        "target_house": 8,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "上升主入旺我会不会长寿",
+          "月亮落十一宫木星落八宫是什么格局"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "One will be long-lived, if Lagn’s Lord is in exaltation, while Chandra and Guru are, respectively, in Labh and Randhr Bhava",
+            "上升主入旺 月亮十一宫 木星八宫 长寿"
+          ],
+          "counter_queries": [
+            "One’s span of life will be between 20 and 32 years, if Lagn’s Lord is weak, while Randhr’s Lord is an angle",
+            "Should Randhr’s Lord join Lagn’s Lord, or a malefic and be in Randhr itself, the native will be short lived"
+          ],
+          "boundary_queries": [
+            "Evils, causing premature end, exist up to the 24th year of one’s age. As such, no definite calculation of life span should be made till such year of age",
+            "The life-span in Bal Risht is 8 years, in Yog Risht 20 years, in short, medium and long lives, respectively, 32, 64 and 120 years",
+            "If Guru is in Lagna, or in Yuvati Bhava and receives a Drishti from, or is yuti with only benefics, the class of longevity will increase"
+          ],
+          "method_queries": [
+            "Other Clues to Longevity This is based on the positions of Lagn’s Lord, Randhr’s Lord, Shani, Chandra, natal Lagn and Hora Lagn",
+            "The strength and weakness of the Grahas concerned be estimated in deciding longevity",
+            "上升主入旺在寿命判断里怎么用"
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升主入旺事实时停止。",
+          "缺少月亮或木星落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch19-v14-15-lagn-lord-exalted-long-life.step-001",
+        "action": "核对上升主（Lagn's Lord）是否入旺，并核对月亮（Chandra）落十一宫、木星（Guru）落八宫。",
+        "applicability_scope": "仅限本命盘寿命主题；原文 respectively 指月亮落十一宫、木星落八宫，本方法按此对应接线；原文未给时间限定。",
+        "minimum_supported_claim": "上升主入旺、月亮落十一宫、木星落八宫时，命主长寿。",
+        "produced_fact_keys": [
+          "上升主入旺月木分落的长寿判定"
+        ],
+        "required_fact_keys": [
+          "上升主（Lagn's Lord）是否入旺",
+          "月亮（Chandra）是否落十一宫（Labh）",
+          "木星（Guru）是否落八宫（Randhr）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "上升主（Lagn's Lord）是否入旺"
+            },
+            {
+              "fact_key": "月亮（Chandra）是否落十一宫（Labh）"
+            },
+            {
+              "fact_key": "木星（Guru）是否落八宫（Randhr）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Lagn’s Lord is in exaltation",
+              "claim": "上升主入旺"
+            },
+            {
+              "quote": "Chandra",
+              "claim": "月亮"
+            },
+            {
+              "quote": "Labh",
+              "claim": "十一宫"
+            },
+            {
+              "quote": "Guru",
+              "claim": "木星"
+            },
+            {
+              "quote": "Randhr Bhava",
+              "claim": "八宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "One will be long-lived",
+              "claim": "命主长寿"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch19:v14-15",
+            "quote": "One will be long-lived, if Lagn’s Lord is in exaltation, while Chandra and Guru are, respectively, in Labh and Randhr Bhava.",
+            "pdf_pages": [
+              36
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：上升主（Lagn's Lord）是否入旺、月亮（Chandra）是否落十一宫（Labh）、木星（Guru）是否落八宫（Randhr）。",
+        "stop_fact_keys": [
+          "上升主（Lagn's Lord）是否入旺",
+          "月亮（Chandra）是否落十一宫（Labh）",
+          "木星（Guru）是否落八宫（Randhr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把月亮与木星的落宫对调——原文写明 respectively。",
+          "不得据此推出具体寿数年岁。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "c3e62764d73a207b963d3b841c288156a818116d0a404da6b73a921c6f3d3488"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch19-v14-15-strong-lagn-lord-benefic-drishti.step-001",
+      "method": {
+        "method": "ch19-v14-15-strong-lagn-lord-benefic-drishti",
+        "title": "富有、有德且长寿：上升主极为有力并受角宫吉星相照",
+        "target_house": 8,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "上升主很强对我这辈子意味着什么",
+          "受吉星相照能不能既富又长寿"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Lagn’s Lord is exceedingly strong and receives a Drishti from a benefic, which is placed in an angle, the person concerned will be wealthy, virtuous and long-lived",
+            "上升主极强 角宫吉星相照 富有 有德 长寿"
+          ],
+          "counter_queries": [
+            "One’s span of life will be between 20 and 32 years, if Lagn’s Lord is weak, while Randhr’s Lord is an angle",
+            "If Karm’s Lord and Sahaj’s Lord are bereft of strength, while Dharm’s Lord is in fall, or combust the native will go begging for his food"
+          ],
+          "boundary_queries": [
+            "Evils, causing premature end, exist up to the 24th year of one’s age. As such, no definite calculation of life span should be made till such year of age",
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu … are malefics, while the rest are benefics"
+          ],
+          "method_queries": [
+            "Other Clues to Longevity This is based on the positions of Lagn’s Lord, Randhr’s Lord, Shani, Chandra, natal Lagn and Hora Lagn",
+            "Lagn Lord is singly capable of counteracting all evils, if he is strongly placed in an angle",
+            "上升主强弱与吉星相照怎么合起来看"
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升主强弱事实时停止（该判准待排盘窗口定义）。",
+          "缺少上升主受角宫吉星相照的事实时停止。",
+          "吉星名册未定时停止（判准见第3章 v11）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch19-v14-15-strong-lagn-lord-benefic-drishti.step-001",
+        "action": "核对上升主（Lagn's Lord）是否极为有力，以及它是否受到落在角宫的吉星相照。",
+        "applicability_scope": "仅限本命盘寿命与福分主题；原文作 exceedingly strong，程度高于同章别处的 endowed with strength，本方法另立事实，强弱判准原文本句未给（待排盘窗口定义）；原文未给时间限定。",
+        "minimum_supported_claim": "上升主极为有力并受到落在角宫的吉星相照时，命主富有、有德且长寿。",
+        "produced_fact_keys": [
+          "上升主极强得吉照的富有有德长寿判定"
+        ],
+        "required_fact_keys": [
+          "上升主（Lagn's Lord）是否极为有力",
+          "上升主（Lagn's Lord）是否被落角宫的吉星相照"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "上升主（Lagn's Lord）是否极为有力"
+            },
+            {
+              "fact_key": "上升主（Lagn's Lord）是否被落角宫的吉星相照"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Lagn’s Lord is exceedingly strong",
+              "claim": "上升主极为有力"
+            },
+            {
+              "quote": "receives a Drishti from a benefic, which is placed in an angle",
+              "claim": "受到落在角宫的吉星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the person concerned will be wealthy, virtuous and long-lived",
+              "claim": "命主富有、有德且长寿"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch19:v14-15",
+            "quote": "If Lagn’s Lord is exceedingly strong and receives a Drishti from a benefic, which is placed in an angle, the person concerned will be wealthy, virtuous and long-lived.",
+            "pdf_pages": [
+              36
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：上升主（Lagn's Lord）是否极为有力、上升主（Lagn's Lord）是否被落角宫的吉星相照。",
+        "stop_fact_keys": [
+          "上升主（Lagn's Lord）是否极为有力",
+          "上升主（Lagn's Lord）是否被落角宫的吉星相照"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把相照的吉星换成不落角宫的吉星——原文限定该吉星落角宫。",
+          "不得自行发明「极为有力」的判准。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "3ace0789b8eab7768c0c88eed8821518468fe1700cfd1708b8b086fc4a7581e0"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v1-dharm-lord-strong-in-dharm-fortunate.step-001",
+      "method": {
+        "method": "ch20-v1-dharm-lord-strong-in-dharm-fortunate",
+        "title": "有福（或富足）：九宫主有力地落在九宫",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子有没有福气",
+          "九宫主落九宫是什么意思"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "One will be fortunate (or affluent), if Dharm’s Lord is in Dharm Bhava with strength",
+            "九宫主落九宫 有力 有福 富足"
+          ],
+          "counter_queries": [
+            "If Rahu is in the 9th from Dharm Bhava, as his dispositor is in Randhr Bhava and Dharm’s Lord is in fall, the native be devoid of fortunes",
+            "If Karm’s Lord and Sahaj’s Lord are bereft of strength, while Dharm’s Lord is in fall, or combust the native will go begging for his food"
+          ],
+          "boundary_queries": [
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines",
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+            "Abundant fortunes be acquired after the 20th year, if Dharm has Guru in it, as its Lord is in an angle from Lagn"
+          ],
+          "method_queries": [
+            "these are the effects related to Dharm Bhava. I have explained briefly. These may be estimated with the help of the state of the Lords of Lagn and Dharm Bhava",
+            "Effects of Dharm’s Lord in Various Bhavas",
+            "判断福分要看九宫主的什么状态"
+          ]
+        },
+        "stop_conditions": [
+          "缺少九宫主落宫事实时停止。",
+          "缺少九宫主强弱事实时停止（该判准待排盘窗口定义）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v1-dharm-lord-strong-in-dharm-fortunate.step-001",
+        "action": "核对九宫主（Dharm's Lord）是否落九宫，并核对它是否有力。",
+        "applicability_scope": "仅限本命盘九宫（Dharm Bhava）福分主题；「有福（或富足）」的括号为原文自带的并列译法，本方法照录不作取舍；「有力」的判准原文本句未给（待排盘窗口定义）；原文未给时间限定。",
+        "minimum_supported_claim": "九宫主落九宫且有力时，命主有福（或富足）。",
+        "produced_fact_keys": [
+          "九宫主有力落九宫的有福判定"
+        ],
+        "required_fact_keys": [
+          "九宫主（Dharm's Lord）是否落九宫（Dharm）",
+          "九宫主（Dharm's Lord）是否有力"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "九宫主（Dharm's Lord）是否落九宫（Dharm）"
+            },
+            {
+              "fact_key": "九宫主（Dharm's Lord）是否有力"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dharm’s Lord is in Dharm Bhava",
+              "claim": "九宫主落九宫"
+            },
+            {
+              "quote": "with strength",
+              "claim": "有力"
+            }
+          ],
+          "results": [
+            {
+              "quote": "One will be fortunate (or affluent)",
+              "claim": "命主有福（或富足）"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v1",
+            "quote": "One will be fortunate (or affluent), if Dharm’s Lord is in Dharm Bhava with strength.",
+            "pdf_pages": [
+              36
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：九宫主（Dharm's Lord）是否落九宫（Dharm）、九宫主（Dharm's Lord）是否有力。",
+        "stop_fact_keys": [
+          "九宫主（Dharm's Lord）是否落九宫（Dharm）",
+          "九宫主（Dharm's Lord）是否有力"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得省去「有力」这一前提，只凭九宫主落九宫就下断语。",
+          "不得据此推断具体财富数量或得福年份。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "f81b18b765ef8e5bd4a3b13913d1e4058a80f82c98d23197191986433bec9475"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v2-guru-in-dharm-extremely-fortunate.step-001",
+      "method": {
+        "method": "ch20-v2-guru-in-dharm-extremely-fortunate",
+        "title": "极为有福：木星落九宫、九宫主落角宫、上升主有力",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "木星落九宫是不是很有福",
+          "什么组合算极为有福"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Guru be in Dharm Bhava, while Dharm’s Lord is in an angle and Lagn’s Lord is endowed with strength, one will be extremely fortunate",
+            "木星落九宫 九宫主落角宫 上升主有力 极为有福"
+          ],
+          "counter_queries": [
+            "If Rahu is in the 9th from Dharm Bhava, as his dispositor is in Randhr Bhava and Dharm’s Lord is in fall, the native be devoid of fortunes",
+            "Should Shani be in Dharm Bhava along with Chandra, as Lagn’s Lord is in fall, the native will acquire food by begging"
+          ],
+          "boundary_queries": [
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines",
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+            "Abundant fortunes be acquired after the 20th year, if Dharm has Guru in it, as its Lord is in an angle from Lagn"
+          ],
+          "method_queries": [
+            "these are the effects related to Dharm Bhava. I have explained briefly. These may be estimated with the help of the state of the Lords of Lagn and Dharm Bhava",
+            "Effects of Dharm’s Lord in Various Bhavas",
+            "九宫的福分要看木星与上升主吗"
+          ]
+        },
+        "stop_conditions": [
+          "缺少木星或九宫主落宫事实时停止。",
+          "缺少上升主强弱事实时停止（该判准待排盘窗口定义）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v2-guru-in-dharm-extremely-fortunate.step-001",
+        "action": "核对木星（Guru）是否落九宫、九宫主（Dharm's Lord）是否落角宫、上升主（Lagn's Lord）是否有力。",
+        "applicability_scope": "仅限本命盘九宫（Dharm Bhava）福分主题；「有力」的判准原文本句未给（待排盘窗口定义）；原文未给时间限定。",
+        "minimum_supported_claim": "木星落九宫、九宫主落角宫、上升主有力时，命主极为有福。",
+        "produced_fact_keys": [
+          "木星落九宫三条件的极为有福判定"
+        ],
+        "required_fact_keys": [
+          "木星（Guru）是否落九宫（Dharm）",
+          "九宫主（Dharm's Lord）是否落角宫",
+          "上升主（Lagn's Lord）是否有力"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "木星（Guru）是否落九宫（Dharm）"
+            },
+            {
+              "fact_key": "九宫主（Dharm's Lord）是否落角宫"
+            },
+            {
+              "fact_key": "上升主（Lagn's Lord）是否有力"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Guru be in Dharm Bhava",
+              "claim": "木星落九宫"
+            },
+            {
+              "quote": "Dharm’s Lord is in an angle",
+              "claim": "九宫主落角宫"
+            },
+            {
+              "quote": "Lagn’s Lord is endowed with strength",
+              "claim": "上升主有力"
+            }
+          ],
+          "results": [
+            {
+              "quote": "one will be extremely fortunate",
+              "claim": "命主极为有福"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v2",
+            "quote": "Should Guru be in Dharm Bhava, while Dharm’s Lord is in an angle and Lagn’s Lord is endowed with strength, one will be extremely fortunate.",
+            "pdf_pages": [
+              36
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：木星（Guru）是否落九宫（Dharm）、九宫主（Dharm's Lord）是否落角宫、上升主（Lagn's Lord）是否有力。",
+        "stop_fact_keys": [
+          "木星（Guru）是否落九宫（Dharm）",
+          "九宫主（Dharm's Lord）是否落角宫",
+          "上升主（Lagn's Lord）是否有力"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得只凭木星落九宫一项就下断语。",
+          "不得据此推断得福的具体年份或财富数量。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "d351c5c245ac967a64ca061a475c6108a55c8cf92d3143ad121735d7c617d2b5"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v3-fortunate-father.step-001",
+      "method": {
+        "method": "ch20-v3-fortunate-father",
+        "title": "父亲有福：九宫主有力、金星落九宫、木星落上升起的角宫",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我父亲这辈子有没有福气",
+          "金星落九宫对父亲有什么影响"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dharm’s Lord is with strength, as Shukra is in Dharm, while Guru is in an angle from Tanu Bhava, the native’s father is fortunate",
+            "九宫主有力 金星落九宫 木星角宫 父亲有福"
+          ],
+          "counter_queries": [
+            "If Dharm’s Lord is debilitated, while the 2nd and/or the 4th from Dharm Bhava is occupied by Mangal, the native’s father is poor",
+            "There will be mutual enmity between the father and the native, if Lagn’s Lord is in Dharm Bhava, but with the Lord of Ari"
+          ],
+          "boundary_queries": [
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines",
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)"
+          ],
+          "method_queries": [
+            "these are the effects related to Dharm Bhava. I have explained briefly. These may be estimated with the help of the state of the Lords of Lagn and Dharm Bhava",
+            "Should Dharm’s Lord be in Karm Bhava, while Karm’s Lord receives a Drishti from a benefic the native’s father will be very rich and famous",
+            "判断父亲的境遇要看九宫还是十宫"
+          ]
+        },
+        "stop_conditions": [
+          "缺少九宫主强弱事实时停止（该判准待排盘窗口定义）。",
+          "缺少金星或木星落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v3-fortunate-father.step-001",
+        "action": "核对九宫主（Dharm's Lord）是否有力、金星（Shukra）是否落九宫、木星（Guru）是否落自上升宫起算的角宫。",
+        "applicability_scope": "仅限本命盘九宫（Dharm Bhava）主题下父亲的福分；原文把角宫的起算宫位写明为 Tanu Bhava；「有力」的判准原文本句未给（待排盘窗口定义）；原文未给时间限定。",
+        "minimum_supported_claim": "九宫主有力、金星落九宫、木星落自上升宫（Tanu Bhava）起算的角宫时，命主的父亲有福。",
+        "produced_fact_keys": [
+          "九宫主有力金木得位的父亲有福判定"
+        ],
+        "required_fact_keys": [
+          "九宫主（Dharm's Lord）是否有力",
+          "金星（Shukra）是否落九宫（Dharm）",
+          "木星（Guru）是否落上升宫（Tanu Bhava）起算的角宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "九宫主（Dharm's Lord）是否有力"
+            },
+            {
+              "fact_key": "金星（Shukra）是否落九宫（Dharm）"
+            },
+            {
+              "fact_key": "木星（Guru）是否落上升宫（Tanu Bhava）起算的角宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dharm’s Lord is with strength",
+              "claim": "九宫主有力"
+            },
+            {
+              "quote": "Shukra is in Dharm",
+              "claim": "金星落九宫"
+            },
+            {
+              "quote": "Guru is in an angle from Tanu Bhava",
+              "claim": "木星落自上升宫（Tanu Bhava）起算的角宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native’s father is fortunate",
+              "claim": "命主的父亲有福"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v3",
+            "quote": "If Dharm’s Lord is with strength, as Shukra is in Dharm, while Guru is in an angle from Tanu Bhava, the native’s father is fortunate.",
+            "pdf_pages": [
+              36
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：九宫主（Dharm's Lord）是否有力、金星（Shukra）是否落九宫（Dharm）、木星（Guru）是否落上升宫（Tanu Bhava）起算的角宫。",
+        "stop_fact_keys": [
+          "九宫主（Dharm's Lord）是否有力",
+          "金星（Shukra）是否落九宫（Dharm）",
+          "木星（Guru）是否落上升宫（Tanu Bhava）起算的角宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把角宫的起算点从上升宫换成别的宫位。",
+          "不得据此推断父亲的财富数量或具体年份。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "355c00561fd26317e91ad18cd4a53b6e2e3cdaf3f8799bfb8ed3f8a6b21da774"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch19:v8-13": {
+      "evidence_atom_id": "bphs-97:santhanam:ch19:v8-13",
+      "chapter_number": 19,
+      "chapter_title": "Effects of Randhr Bhava",
+      "verse_label": "8-13.",
+      "content_role": "verse",
+      "exact_text": "8-13. Short Life. One’s span of life will be between 20 and 32 years, if Lagn’s Lord is weak, while Randhr’s Lord is an angle. The native will only be short-lived, if Randhr’s Lord is in fall, while Randhr Bhava has a malefic in it and Tanu Bhava is bereft of strength. Death will be instant at birth, if Randhr Bhava, Randhr’s Lord and Vyaya Bhava are all conjunct malefics. Malefics in angles and/or trines and benefics in Ari and/or Randhr Bhava, while Tanu Bhava has in it Randhr’s Lord in fall: this Yoga will cause immediate end. If Putr and Randhr Bhava and Randhr’s Lord are all conjunct malefics, the life span will be very brief. Within a month of birth, death will befall the child, if Randhr’s Lord is in Randhr itself, while Chandra is with malefics and be bereft of beneficial Drishti.",
+      "pdf_pages": [
+        36
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 19 · Sloka 8-13 · PDF page 36 · bphs-97:santhanam:ch19:v8-13",
+      "previous_atom_id": "bphs-97:santhanam:ch19:v4-7",
+      "next_atom_id": "bphs-97:santhanam:ch19:v14-15",
+      "context_before": "as, dealing with the issue of longevity. The strength and weakness of the Grahas concerned be estimated in deciding longevity.\n\n",
+      "context_after": "14-15. Long Life (again). One will be long-lived, if Lagn’s Lord is in exaltation, while Chandra and Guru are, respectively, in ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch19:v14-15": {
+      "evidence_atom_id": "bphs-97:santhanam:ch19:v14-15",
+      "chapter_number": 19,
+      "chapter_title": "Effects of Randhr Bhava",
+      "verse_label": "14-15.",
+      "content_role": "verse",
+      "exact_text": "14-15. Long Life (again). One will be long-lived, if Lagn’s Lord is in exaltation, while Chandra and Guru are, respectively, in Labh and Randhr Bhava. If Lagn’s Lord is exceedingly strong and receives a Drishti from a benefic, which is placed in an angle, the person concerned will be wealthy, virtuous and long-lived.",
+      "pdf_pages": [
+        36
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 19 · Sloka 14-15 · PDF page 36 · bphs-97:santhanam:ch19:v14-15",
+      "previous_atom_id": "bphs-97:santhanam:ch19:v8-13",
+      "next_atom_id": null,
+      "context_before": " Within a month of birth, death will befall the child, if Randhr’s Lord is in Randhr itself, while Chandra is with malefics and be bereft of beneficial Drishti.\n\n",
+      "context_after": "",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch20:v1": {
+      "evidence_atom_id": "bphs-97:santhanam:ch20:v1",
+      "chapter_number": 20,
+      "chapter_title": "Effects of Dharm Bhava",
+      "verse_label": "(1)",
+      "content_role": "verse",
+      "exact_text": "(1) Combinations for Fortunes. O Brahmin, now listen to the effects of Dharm Bhava. One will be fortunate (or affluent), if Dharm’s Lord is in Dharm Bhava with strength.",
+      "pdf_pages": [
+        36
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 20 · Sloka (1) · PDF page 36 · bphs-97:santhanam:ch20:v1",
+      "previous_atom_id": null,
+      "next_atom_id": "bphs-97:santhanam:ch20:v2",
+      "context_before": "",
+      "context_after": "(2) Should Guru be in Dharm Bhava, while Dharm’s Lord is in an angle and Lagn’s Lord is endowed with strength, one will be extremely fortunate.",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch20:v2": {
+      "evidence_atom_id": "bphs-97:santhanam:ch20:v2",
+      "chapter_number": 20,
+      "chapter_title": "Effects of Dharm Bhava",
+      "verse_label": "(2)",
+      "content_role": "verse",
+      "exact_text": "(2) Should Guru be in Dharm Bhava, while Dharm’s Lord is in an angle and Lagn’s Lord is endowed with strength, one will be extremely fortunate.",
+      "pdf_pages": [
+        36
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 20 · Sloka (2) · PDF page 36 · bphs-97:santhanam:ch20:v2",
+      "previous_atom_id": "bphs-97:santhanam:ch20:v1",
+      "next_atom_id": "bphs-97:santhanam:ch20:v3",
+      "context_before": "ow listen to the effects of Dharm Bhava. One will be fortunate (or affluent), if Dharm’s Lord is in Dharm Bhava with strength.\n\n",
+      "context_after": "3. Fortunate (Affluent) Father. If Dharm’s Lord is with strength, as Shukra is in Dharm, while Guru is in an angle from Tanu Bha",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch20:v3": {
+      "evidence_atom_id": "bphs-97:santhanam:ch20:v3",
+      "chapter_number": 20,
+      "chapter_title": "Effects of Dharm Bhava",
+      "verse_label": "3.",
+      "content_role": "verse",
+      "exact_text": "3. Fortunate (Affluent) Father. If Dharm’s Lord is with strength, as Shukra is in Dharm, while Guru is in an angle from Tanu Bhava, the native’s father is fortunate.",
+      "pdf_pages": [
+        36
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 20 · Sloka 3 · PDF page 36 · bphs-97:santhanam:ch20:v3",
+      "previous_atom_id": "bphs-97:santhanam:ch20:v2",
+      "next_atom_id": "bphs-97:santhanam:ch20:v4",
+      "context_before": "(2) Should Guru be in Dharm Bhava, while Dharm’s Lord is in an angle and Lagn’s Lord is endowed with strength, one will be extremely fortunate.\n\n",
+      "context_after": "4. Indigent Father. If Dharm’s Lord is debilitated, while the 2<sup>nd</sup> and/or the 4<sup>th</sup> from Dharm Bhava is occup",
+      "content_missing": false
+    }
+  }
+}

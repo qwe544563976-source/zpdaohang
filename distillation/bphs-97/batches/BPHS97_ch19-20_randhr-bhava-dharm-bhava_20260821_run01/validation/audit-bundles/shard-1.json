@@ -1,0 +1,1941 @@
+{
+  "shard": 1,
+  "step_count": 9,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch19-v1-randhr-lord-angle-long-life.step-001",
+      "method": {
+        "method": "ch19-v1-randhr-lord-angle-long-life",
+        "title": "长寿：八宫主落角宫",
+        "target_house": 8,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子寿命长不长",
+          "从八宫看我的寿元如何"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Randhr’s Lord is in an angle, long life is indicated",
+            "八宫主落角宫 长寿"
+          ],
+          "counter_queries": [
+            "Should Randhr’s Lord join Lagn’s Lord, or a malefic and be in Randhr itself, the native will be short lived",
+            "The native will only be short-lived, if Randhr’s Lord is in fall, while Randhr Bhava has a malefic in it",
+            "Good Yogas increase the life-span and bad Yogas decrease the same"
+          ],
+          "boundary_queries": [
+            "Evils, causing premature end, exist up to the 24th year of one’s age. As such, no definite calculation of life span should be made till such year of age",
+            "Randhr Bhava indicates longevity, battle, enemies, forts, wealth of the dead",
+            "The life-span in Bal Risht is 8 years, in Yog Risht 20 years, in short, medium and long lives, respectively, 32, 64 and 120 years"
+          ],
+          "method_queries": [
+            "Other Clues to Longevity This is based on the positions of Lagn’s Lord, Randhr’s Lord, Shani, Chandra, natal Lagn and Hora Lagn",
+            "The strength and weakness of the Grahas concerned be estimated in deciding longevity",
+            "判断寿命要看八宫主落在哪一宫"
+          ]
+        },
+        "stop_conditions": [
+          "缺少八宫主落角宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch19-v1-randhr-lord-angle-long-life.step-001",
+        "action": "核对八宫主（Randhr's Lord）是否落角宫，判断寿命长短。",
+        "applicability_scope": "仅限本命盘八宫（Randhr Bhava）寿命主题；原文未给具体寿数、时间或上升限定。",
+        "minimum_supported_claim": "八宫主落角宫时，主长寿。",
+        "produced_fact_keys": [
+          "八宫主落角宫的长寿判定"
+        ],
+        "required_fact_keys": [
+          "八宫主（Randhr's Lord）是否落角宫"
+        ],
+        "condition_logic": {
+          "fact_key": "八宫主（Randhr's Lord）是否落角宫"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Randhr’s Lord is in an angle",
+              "claim": "八宫主落角宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "long life is indicated",
+              "claim": "主长寿"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch19:v1",
+            "quote": "If Randhr’s Lord is in an angle, long life is indicated.",
+            "pdf_pages": [
+              35
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：八宫主（Randhr's Lord）是否落角宫。",
+        "stop_fact_keys": [
+          "八宫主（Randhr's Lord）是否落角宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推出具体寿数年岁。",
+          "不得把「长寿」倒过来当作「八宫主不落角宫即短寿」。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "11b9579ea5785b4d15ed67ffbbd001274e9a2b6550eb7517d74e9a8df954965a"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch19-v2-randhr-lord-in-randhr-short-life.step-001",
+      "method": {
+        "method": "ch19-v2-randhr-lord-in-randhr-short-life",
+        "title": "短寿：八宫主落八宫并与上升主或凶星同宫",
+        "target_house": 8,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会短寿",
+          "八宫主落八宫对我的寿命意味着什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Randhr’s Lord join Lagn’s Lord, or a malefic and be in Randhr itself, the native will be short lived",
+            "八宫主落八宫 与上升主同宫 与凶星同宫 短寿"
+          ],
+          "counter_queries": [
+            "If Randhr’s Lord is in an angle, long life is indicated",
+            "One will be long-lived, if Lagn’s Lord is in exaltation, while Chandra and Guru are, respectively, in Labh and Randhr Bhava",
+            "a single, but strong Guru in Lagn will ward off all the evils"
+          ],
+          "boundary_queries": [
+            "Evils, causing premature end, exist up to the 24th year of one’s age. As such, no definite calculation of life span should be made till such year of age",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu … are malefics, while the rest are benefics",
+            "Randhr Bhava indicates longevity, battle, enemies, forts, wealth of the dead"
+          ],
+          "method_queries": [
+            "Other Clues to Longevity This is based on the positions of Lagn’s Lord, Randhr’s Lord, Shani, Chandra, natal Lagn and Hora Lagn",
+            "Similarly consider Shani and Karm’s Lord in the matter of longevity",
+            "判断短寿要看八宫主与谁同宫"
+          ]
+        },
+        "stop_conditions": [
+          "缺少八宫主是否落八宫的事实时停止。",
+          "与上升主同宫、与凶星同宫两个分支事实都缺时停止。",
+          "凶星名册未定时停止（吉凶星判准见第3章 v11）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch19-v2-randhr-lord-in-randhr-short-life.step-001",
+        "action": "先核对八宫主（Randhr's Lord）是否落八宫，再核对它与上升主或凶星是否同宫。",
+        "applicability_scope": "仅限本命盘八宫（Randhr Bhava）寿命主题；原文未给具体寿数或时间限定。",
+        "minimum_supported_claim": "八宫主落八宫，并与上升主同宫或与凶星同宫时，命主短寿。",
+        "produced_fact_keys": [
+          "八宫主落八宫得上升主或凶星的短寿判定"
+        ],
+        "required_fact_keys": [
+          "八宫主（Randhr's Lord）是否落八宫（Randhr）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "八宫主（Randhr's Lord）是否落八宫（Randhr）"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否与上升主（Lagn's Lord）同宫"
+                },
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否与凶星同宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "八宫主（Randhr's Lord）是否落八宫（Randhr）"
+            },
+            "required_fact_keys": [
+              "八宫主（Randhr's Lord）是否与上升主（Lagn's Lord）同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "八宫主（Randhr's Lord）是否与上升主（Lagn's Lord）同宫"
+            },
+            "selection_group": "ch19-v2-randhr-lord-in-randhr-short-life.step-001:randhr-lord-companion",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：八宫主（Randhr's Lord）是否与上升主（Lagn's Lord）同宫。"
+          },
+          {
+            "when": {
+              "fact_key": "八宫主（Randhr's Lord）是否落八宫（Randhr）"
+            },
+            "required_fact_keys": [
+              "八宫主（Randhr's Lord）是否与凶星同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "八宫主（Randhr's Lord）是否与凶星同宫"
+            },
+            "selection_group": "ch19-v2-randhr-lord-in-randhr-short-life.step-001:randhr-lord-companion",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：八宫主（Randhr's Lord）是否与凶星同宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Randhr’s Lord",
+              "claim": "八宫主"
+            },
+            {
+              "quote": "be in Randhr itself",
+              "claim": "落八宫"
+            },
+            {
+              "quote": "join Lagn’s Lord",
+              "claim": "与上升主同宫"
+            },
+            {
+              "quote": "or a malefic",
+              "claim": "或与凶星同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be short lived",
+              "claim": "命主短寿"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch19:v2",
+            "quote": "Should Randhr’s Lord join Lagn’s Lord, or a malefic and be in Randhr itself, the native will be short lived.",
+            "pdf_pages": [
+              35
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：八宫主（Randhr's Lord）是否落八宫（Randhr）。",
+        "stop_fact_keys": [
+          "八宫主（Randhr's Lord）是否落八宫（Randhr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推出具体寿数年岁或死亡时间。",
+          "不得把原文的「落八宫」条件省去，只凭同宫成立就下断语。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "247bfd0bffb44fe4bc37ac93d852d5fcd28062b5661854bd93a7a0d6f9998f23"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch19-v3-shani-karm-lord-longevity-check.step-001",
+      "method": {
+        "method": "ch19-v3-shani-karm-lord-longevity-check",
+        "title": "寿命考察点：土星与十宫主，十宫主落八宫并与凶星或上升主同宫",
+        "target_house": 8,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "看寿命还要看哪些星",
+          "十宫主落八宫要不要纳入寿命判断"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Similarly consider Shani and Karm’s Lord in the matter of longevity Karm’s Lord is in Randhr along with a malefic Grah and/or Lagn’s Lord",
+            "十宫主落八宫 与凶星同宫 上升主 寿命"
+          ],
+          "counter_queries": [
+            "If Randhr’s Lord is in an angle, long life is indicated",
+            "Should the Lords of Lagna, Randhr and Karm Bhava and Shani are all disposed severally in an angle, in a trine, or in Labh Bhava, the subject will live long"
+          ],
+          "boundary_queries": [
+            "Evils, causing premature end, exist up to the 24th year of one’s age. As such, no definite calculation of life span should be made till such year of age",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu … are malefics, while the rest are benefics",
+            "Randhr Bhava indicates longevity, battle, enemies, forts, wealth of the dead"
+          ],
+          "method_queries": [
+            "Other Clues to Longevity This is based on the positions of Lagn’s Lord, Randhr’s Lord, Shani, Chandra, natal Lagn and Hora Lagn",
+            "Should Randhr’s Lord join Lagn’s Lord, or a malefic and be in Randhr itself, the native will be short lived",
+            "寿命判断中土星与十宫主怎么看"
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主是否落八宫的事实时停止。",
+          "与凶星同宫、与上升主同宫两个分支事实都缺时停止。",
+          "原文本句未给寿长寿短的结论，只可作为寿命考察点，不得据本方法输出吉凶。"
+        ]
+      },
+      "step": {
+        "step_id": "ch19-v3-shani-karm-lord-longevity-check.step-001",
+        "action": "在寿命题目下另行核对土星（Shani）与十宫主（Karm's Lord）：先看十宫主是否落八宫，再看它与凶星或上升主是否同宫。",
+        "applicability_scope": "仅限本命盘寿命主题；「Similarly」承接上一偈（ch19 v2）的短寿判语所在的考察框架。原文本句只给出要考察的对象与配置，没有写出寿长寿短的结论，本方法据此不给吉凶断语。原文也没有写明土星要落在哪里，故本方法不为土星接入任何落宫事实。",
+        "minimum_supported_claim": "在寿命的问题上同样要考察土星与十宫主：十宫主落八宫，并与凶星同宫或与上升主同宫。",
+        "produced_fact_keys": [
+          "十宫主落八宫的寿命考察点判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm's Lord）是否落八宫（Randhr）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "十宫主（Karm's Lord）是否落八宫（Randhr）"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "十宫主（Karm's Lord）是否与凶星同宫"
+                },
+                {
+                  "fact_key": "十宫主（Karm's Lord）是否与上升主（Lagn's Lord）同宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "十宫主（Karm's Lord）是否落八宫（Randhr）"
+            },
+            "required_fact_keys": [
+              "十宫主（Karm's Lord）是否与凶星同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十宫主（Karm's Lord）是否与凶星同宫"
+            },
+            "selection_group": "ch19-v3-shani-karm-lord-longevity-check.step-001:karm-lord-companion",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十宫主（Karm's Lord）是否与凶星同宫。"
+          },
+          {
+            "when": {
+              "fact_key": "十宫主（Karm's Lord）是否落八宫（Randhr）"
+            },
+            "required_fact_keys": [
+              "十宫主（Karm's Lord）是否与上升主（Lagn's Lord）同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十宫主（Karm's Lord）是否与上升主（Lagn's Lord）同宫"
+            },
+            "selection_group": "ch19-v3-shani-karm-lord-longevity-check.step-001:karm-lord-companion",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十宫主（Karm's Lord）是否与上升主（Lagn's Lord）同宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Karm’s Lord is in Randhr",
+              "claim": "十宫主落八宫"
+            },
+            {
+              "quote": "along with a malefic Grah",
+              "claim": "与凶星同宫"
+            },
+            {
+              "quote": "and/or Lagn’s Lord",
+              "claim": "或与上升主同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Similarly consider Shani and Karm’s Lord in the matter of longevity",
+              "claim": "在寿命的问题上同样要考察土星与十宫主"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch19:v3",
+            "quote": "Similarly consider Shani and Karm’s Lord in the matter of longevity. Karm’s Lord is in Randhr along with a malefic Grah and/or Lagn’s Lord.",
+            "pdf_pages": [
+              36
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm's Lord）是否落八宫（Randhr）。",
+        "stop_fact_keys": [
+          "十宫主（Karm's Lord）是否落八宫（Randhr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据「Similarly」把上一偈的短寿结论当成本句已给的结论。",
+          "不得替原文补出土星（Shani）的落宫、强弱或与他星的关系条件。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch19:v2"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "70af239f1ae7820c5cc5fc16e4742a03eec4bb80b891e632202ea54fb8c96b9f"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch19-v4-7-ari-vyaya-lords-long-life.step-001",
+      "method": {
+        "method": "ch19-v4-7-ari-vyaya-lords-long-life",
+        "title": "长寿：六宫主与十二宫主的三种安排",
+        "target_house": 8,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "六宫主落十二宫我会不会长寿",
+          "六宫主与十二宫主怎么摆算长寿"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "There will be long life, if Ari’s Lord is in Vyaya, or, if Ari’s Lord is in Ari, as Vyaya’s Lord is in Vyaya",
+            "六宫主落十二宫 十二宫主落十二宫 上升 八宫 长寿"
+          ],
+          "counter_queries": [
+            "Malefics in angles and/or trines and benefics in Ari and/or Randhr Bhava, while Tanu Bhava has in it Randhr’s Lord in fall: this Yoga will cause immediate end",
+            "Should Chandra be in Ari, Randhr, or Vyaya Bhava and receives a Drishti from a malefic, the child will die soon",
+            "Good Yogas increase the life-span and bad Yogas decrease the same"
+          ],
+          "boundary_queries": [
+            "Evils, causing premature end, exist up to the 24th year of one’s age. As such, no definite calculation of life span should be made till such year of age",
+            "The life-span in Bal Risht is 8 years, in Yog Risht 20 years, in short, medium and long lives, respectively, 32, 64 and 120 years",
+            "Randhr Bhava indicates longevity, battle, enemies, forts, wealth of the dead"
+          ],
+          "method_queries": [
+            "Other Clues to Longevity This is based on the positions of Lagn’s Lord, Randhr’s Lord, Shani, Chandra, natal Lagn and Hora Lagn",
+            "The strength and weakness of the Grahas concerned be estimated in deciding longevity",
+            "长寿瑜伽要看六宫主与十二宫主的哪几种落宫"
+          ]
+        },
+        "stop_conditions": [
+          "缺少六宫主落宫事实时停止。",
+          "三个分支事实都缺时停止。",
+          "原文未写明第三种安排里两位宫主各落哪一宫，需要指定落宫时停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch19-v4-7-ari-vyaya-lords-long-life.step-001",
+        "action": "核对六宫主（Ari's Lord）与十二宫主（Vyaya's Lord）的落宫，看是否落入原文列出的三种长寿安排之一。",
+        "applicability_scope": "仅限本命盘寿命主题；原文第三种安排只说六宫主与十二宫主落在上升宫与八宫，没有写明何者落哪一宫（同章 v14-15 要指明对应时会写 respectively），故本方法不作指定；原文未给时间限定。",
+        "minimum_supported_claim": "六宫主落十二宫，或六宫主落六宫而十二宫主落十二宫，或六宫主与十二宫主共同占据上升宫与八宫时，主长寿。",
+        "produced_fact_keys": [
+          "六宫主与十二宫主安排的长寿判定"
+        ],
+        "required_fact_keys": [
+          "本盘六宫主（Ari's Lord）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘六宫主（Ari's Lord）落在哪一宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "六宫主（Ari's Lord）是否落十二宫（Vyaya）"
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "六宫主（Ari's Lord）是否落六宫（Ari）"
+                    },
+                    {
+                      "fact_key": "十二宫主（Vyaya's Lord）是否落十二宫（Vyaya）"
+                    }
+                  ]
+                },
+                {
+                  "fact_key": "六宫主（Ari's Lord）与十二宫主（Vyaya's Lord）是否共同占据上升宫（Lagna）与八宫（Randhr）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘六宫主（Ari's Lord）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "六宫主（Ari's Lord）是否落十二宫（Vyaya）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "六宫主（Ari's Lord）是否落十二宫（Vyaya）"
+            },
+            "selection_group": "ch19-v4-7-ari-vyaya-lords-long-life.step-001:ari-vyaya-long-life-yoga",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：六宫主（Ari's Lord）是否落十二宫（Vyaya）。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘六宫主（Ari's Lord）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "六宫主（Ari's Lord）是否落六宫（Ari）",
+              "十二宫主（Vyaya's Lord）是否落十二宫（Vyaya）"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "六宫主（Ari's Lord）是否落六宫（Ari）"
+                },
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否落十二宫（Vyaya）"
+                }
+              ]
+            },
+            "selection_group": "ch19-v4-7-ari-vyaya-lords-long-life.step-001:ari-vyaya-long-life-yoga",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：六宫主（Ari's Lord）是否落六宫（Ari）、十二宫主（Vyaya's Lord）是否落十二宫（Vyaya）。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘六宫主（Ari's Lord）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "六宫主（Ari's Lord）与十二宫主（Vyaya's Lord）是否共同占据上升宫（Lagna）与八宫（Randhr）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "六宫主（Ari's Lord）与十二宫主（Vyaya's Lord）是否共同占据上升宫（Lagna）与八宫（Randhr）"
+            },
+            "selection_group": "ch19-v4-7-ari-vyaya-lords-long-life.step-001:ari-vyaya-long-life-yoga",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：六宫主（Ari's Lord）与十二宫主（Vyaya's Lord）是否共同占据上升宫（Lagna）与八宫（Randhr）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Ari’s Lord is in Vyaya",
+              "claim": "六宫主落十二宫"
+            },
+            {
+              "quote": "if Ari’s Lord is in Ari, as Vyaya’s Lord is in Vyaya",
+              "claim": "六宫主落六宫而十二宫主落十二宫"
+            },
+            {
+              "quote": "if Ari’s Lord and Vyaya’s Lord are in Lagn and Randhr",
+              "claim": "六宫主与十二宫主共同占据上升宫与八宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "There will be long life",
+              "claim": "主长寿"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch19:v4-7",
+            "quote": "There will be long life, if Ari’s Lord is in Vyaya, or, if Ari’s Lord is in Ari, as Vyaya’s Lord is in Vyaya, or, if Ari’s Lord and Vyaya’s Lord are in Lagn and Randhr.",
+            "pdf_pages": [
+              36
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘六宫主（Ari's Lord）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘六宫主（Ari's Lord）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得指定六宫主与十二宫主各自落上升宫还是八宫——原文没写。",
+          "不得据此推出具体寿数年岁。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "35557ae11d663caf67a10e653301cfc124895534feb0db8aa56d481c52c6d16a"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch19-v4-7-three-lords-dignity-long-life.step-001",
+      "method": {
+        "method": "ch19-v4-7-three-lords-dignity-long-life",
+        "title": "长寿：五宫主、八宫主与上升主各得本九分盘星座、本星座或友星座",
+        "target_house": 8,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "五宫主八宫主上升主都落得好我会长寿吗",
+          "三位宫主落本星座对寿命有什么用"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If the Lords of Putr, Randhr and Tanu Bhava are in own Navāńśas, own Rāśis, or in friendly Rāśis, the native will enjoy a long span of life",
+            "五宫主 八宫主 上升主 本星座 友星座 九分盘 长寿"
+          ],
+          "counter_queries": [
+            "If Putr and Randhr Bhava and Randhr’s Lord are all conjunct malefics, the life span will be very brief",
+            "The native will only be short-lived, if Randhr’s Lord is in fall, while Randhr Bhava has a malefic in it and Tanu Bhava is bereft of strength"
+          ],
+          "boundary_queries": [
+            "Evils, causing premature end, exist up to the 24th year of one’s age. As such, no definite calculation of life span should be made till such year of age",
+            "The life-span in Bal Risht is 8 years, in Yog Risht 20 years, in short, medium and long lives, respectively, 32, 64 and 120 years",
+            "If Shani is in its own Rāśi, or in exaltation, change in class will not occur"
+          ],
+          "method_queries": [
+            "Other Clues to Longevity This is based on the positions of Lagn’s Lord, Randhr’s Lord, Shani, Chandra, natal Lagn and Hora Lagn",
+            "The strength and weakness of the Grahas concerned be estimated in deciding longevity",
+            "怎样看宫主落本星座、本九分盘星座与友方星座"
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫主、八宫主或上升主的行星身份事实时停止。",
+          "某位宫主的三个得地分支事实都缺时停止。",
+          "九分盘（Navamsa D9）盘面缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch19-v4-7-three-lords-dignity-long-life.step-001",
+        "action": "逐一核对五宫主（Putr's Lord）、八宫主（Randhr's Lord）与上升主（Lagn's Lord）是否各自落在自己主管的九分盘星座、自己主管的星座或友方行星主管的星座。",
+        "applicability_scope": "仅限本命盘寿命主题；原文此处称 Tanu Bhava，即上升所在的第一宫，本方法沿用「上升主」的事实名。原文用复数并列三位宫主与三种得地方式，未写明何者必须落哪一种，故按各自满足其一接线；原文未给时间限定。",
+        "minimum_supported_claim": "五宫主、八宫主与上升主（原文作 Tanu Bhava 之主）各自落自己主管的九分盘星座、自己主管的星座或友方行星主管的星座时，命主享长寿。",
+        "produced_fact_keys": [
+          "三位宫主得地的长寿判定"
+        ],
+        "required_fact_keys": [
+          "本盘五宫主（Putr's Lord）是哪颗行星",
+          "本盘八宫主（Randhr's Lord）是哪颗行星",
+          "本盘上升主（Lagn's Lord）是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "五宫主（Putr's Lord）是否落在自己主管的九分盘（Navamsa D9）星座"
+                },
+                {
+                  "fact_key": "五宫主（Putr's Lord）是否落本星座（own Rāśi）"
+                },
+                {
+                  "fact_key": "五宫主（Putr's Lord）是否落友方行星主管的星座"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否落在自己主管的九分盘（Navamsa D9）星座"
+                },
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否落本星座（own Rāśi）"
+                },
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否落友方行星主管的星座"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "上升主（Lagn's Lord）是否落在自己主管的九分盘（Navamsa D9）星座"
+                },
+                {
+                  "fact_key": "上升主（Lagn's Lord）是否落本星座（own Rāśi）"
+                },
+                {
+                  "fact_key": "上升主（Lagn's Lord）是否落友方行星主管的星座"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "五宫主（Putr's Lord）是否落在自己主管的九分盘（Navamsa D9）星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫主（Putr's Lord）是否落在自己主管的九分盘（Navamsa D9）星座"
+            },
+            "selection_group": "ch19-v4-7-three-lords-dignity-long-life.step-001:putr-lord-dignity",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫主（Putr's Lord）是否落在自己主管的九分盘（Navamsa D9）星座。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "五宫主（Putr's Lord）是否落本星座（own Rāśi）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫主（Putr's Lord）是否落本星座（own Rāśi）"
+            },
+            "selection_group": "ch19-v4-7-three-lords-dignity-long-life.step-001:putr-lord-dignity",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫主（Putr's Lord）是否落本星座（own Rāśi）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "五宫主（Putr's Lord）是否落友方行星主管的星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫主（Putr's Lord）是否落友方行星主管的星座"
+            },
+            "selection_group": "ch19-v4-7-three-lords-dignity-long-life.step-001:putr-lord-dignity",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫主（Putr's Lord）是否落友方行星主管的星座。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "八宫主（Randhr's Lord）是否落在自己主管的九分盘（Navamsa D9）星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "八宫主（Randhr's Lord）是否落在自己主管的九分盘（Navamsa D9）星座"
+            },
+            "selection_group": "ch19-v4-7-three-lords-dignity-long-life.step-001:randhr-lord-dignity",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：八宫主（Randhr's Lord）是否落在自己主管的九分盘（Navamsa D9）星座。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "八宫主（Randhr's Lord）是否落本星座（own Rāśi）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "八宫主（Randhr's Lord）是否落本星座（own Rāśi）"
+            },
+            "selection_group": "ch19-v4-7-three-lords-dignity-long-life.step-001:randhr-lord-dignity",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：八宫主（Randhr's Lord）是否落本星座（own Rāśi）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "八宫主（Randhr's Lord）是否落友方行星主管的星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "八宫主（Randhr's Lord）是否落友方行星主管的星座"
+            },
+            "selection_group": "ch19-v4-7-three-lords-dignity-long-life.step-001:randhr-lord-dignity",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：八宫主（Randhr's Lord）是否落友方行星主管的星座。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "上升主（Lagn's Lord）是否落在自己主管的九分盘（Navamsa D9）星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升主（Lagn's Lord）是否落在自己主管的九分盘（Navamsa D9）星座"
+            },
+            "selection_group": "ch19-v4-7-three-lords-dignity-long-life.step-001:lagn-lord-dignity",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升主（Lagn's Lord）是否落在自己主管的九分盘（Navamsa D9）星座。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "上升主（Lagn's Lord）是否落本星座（own Rāśi）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升主（Lagn's Lord）是否落本星座（own Rāśi）"
+            },
+            "selection_group": "ch19-v4-7-three-lords-dignity-long-life.step-001:lagn-lord-dignity",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升主（Lagn's Lord）是否落本星座（own Rāśi）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "上升主（Lagn's Lord）是否落友方行星主管的星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升主（Lagn's Lord）是否落友方行星主管的星座"
+            },
+            "selection_group": "ch19-v4-7-three-lords-dignity-long-life.step-001:lagn-lord-dignity",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升主（Lagn's Lord）是否落友方行星主管的星座。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "the Lords of Putr, Randhr and Tanu Bhava",
+              "claim": "五宫主、八宫主与上升主（原文作 Tanu Bhava 之主）"
+            },
+            {
+              "quote": "in own Navāńśas",
+              "claim": "自己主管的九分盘星座"
+            },
+            {
+              "quote": "own Rāśis",
+              "claim": "自己主管的星座"
+            },
+            {
+              "quote": "in friendly Rāśis",
+              "claim": "友方行星主管的星座"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will enjoy a long span of life",
+              "claim": "命主享长寿"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch19:v4-7",
+            "quote": "If the Lords of Putr, Randhr and Tanu Bhava are in own Navāńśas, own Rāśis, or in friendly Rāśis, the native will enjoy a long span of life.",
+            "pdf_pages": [
+              36
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘五宫主（Putr's Lord）是哪颗行星、本盘八宫主（Randhr's Lord）是哪颗行星、本盘上升主（Lagn's Lord）是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘五宫主（Putr's Lord）是哪颗行星",
+          "本盘八宫主（Randhr's Lord）是哪颗行星",
+          "本盘上升主（Lagn's Lord）是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 own Rāśi（本星座）当成本宫（Bhava）——行星主管两个星座，二者不是同一件事。",
+          "不得据此推出具体寿数年岁。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "c497773ad2def7bbb636e1544a46a4ea3863a4b33e5b813bade85d13457a30f3"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch19-v4-7-four-grahas-angle-trine-labh-long-life.step-001",
+      "method": {
+        "method": "ch19-v4-7-four-grahas-angle-trine-labh-long-life",
+        "title": "长寿：上升主、八宫主、十宫主与土星各落角宫、三角宫或十一宫",
+        "target_house": 8,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "上升主八宫主十宫主土星都落得好我会长寿吗",
+          "土星落角宫对寿命有没有帮助"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should the Lords of Lagna, Randhr and Karm Bhava and Shani are all disposed severally in an angle, in a trine, or in Labh Bhava, the subject will live long",
+            "上升主 八宫主 十宫主 土星 角宫 三角宫 十一宫 长寿"
+          ],
+          "counter_queries": [
+            "Malefics in angles and/or trines and benefics in Ari and/or Randhr Bhava, while Tanu Bhava has in it Randhr’s Lord in fall: this Yoga will cause immediate end",
+            "Should Shani be a contributor, the class of longevity declines"
+          ],
+          "boundary_queries": [
+            "Evils, causing premature end, exist up to the 24th year of one’s age. As such, no definite calculation of life span should be made till such year of age",
+            "The life-span in Bal Risht is 8 years, in Yog Risht 20 years, in short, medium and long lives, respectively, 32, 64 and 120 years",
+            "One having benefics in Kendras and/or Konas, while malefics are in Sahaj, Ari and Labh Bhava will obtain super-natural life-span"
+          ],
+          "method_queries": [
+            "Other Clues to Longevity This is based on the positions of Lagn’s Lord, Randhr’s Lord, Shani, Chandra, natal Lagn and Hora Lagn",
+            "Similarly consider Shani and Karm’s Lord in the matter of longevity",
+            "寿命判断里角宫三角宫十一宫各起什么作用"
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升主、八宫主、十宫主或土星的落宫事实时停止。",
+          "四者中任何一位的三个落宫分支事实都缺时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch19-v4-7-four-grahas-angle-trine-labh-long-life.step-001",
+        "action": "逐一核对上升主（Lagn's Lord）、八宫主（Randhr's Lord）、十宫主（Karm's Lord）与土星（Shani）是否各自落角宫、三角宫或十一宫（Labh）。",
+        "applicability_scope": "仅限本命盘寿命主题；原文 severally 指四者各自落入这三处之一，未指定何者落何处；原文未写明角宫、三角宫从哪一宫起算，本方法照原文不作指定；原文未给时间限定。",
+        "minimum_supported_claim": "上升主、八宫主、十宫主与土星各自落角宫、三角宫或十一宫时，命主长寿。",
+        "produced_fact_keys": [
+          "四星各落角宫三角宫或十一宫的长寿判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升主（Lagn's Lord）落在哪一宫",
+          "本盘八宫主（Randhr's Lord）落在哪一宫",
+          "本盘十宫主（Karm's Lord）落在哪一宫",
+          "本盘土星（Shani）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘十宫主（Karm's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘土星（Shani）落在哪一宫"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "上升主（Lagn's Lord）是否落角宫"
+                },
+                {
+                  "fact_key": "上升主（Lagn's Lord）是否落三角宫"
+                },
+                {
+                  "fact_key": "上升主（Lagn's Lord）是否落十一宫（Labh）"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否落角宫"
+                },
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否落三角宫"
+                },
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否落十一宫（Labh）"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "十宫主（Karm's Lord）是否落角宫"
+                },
+                {
+                  "fact_key": "十宫主（Karm's Lord）是否落三角宫"
+                },
+                {
+                  "fact_key": "十宫主（Karm's Lord）是否落十一宫（Labh）"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "土星（Shani）是否落角宫"
+                },
+                {
+                  "fact_key": "土星（Shani）是否落三角宫"
+                },
+                {
+                  "fact_key": "土星（Shani）是否落十一宫（Labh）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘十宫主（Karm's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘土星（Shani）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "上升主（Lagn's Lord）是否落角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升主（Lagn's Lord）是否落角宫"
+            },
+            "selection_group": "ch19-v4-7-four-grahas-angle-trine-labh-long-life.step-001:lagn-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升主（Lagn's Lord）是否落角宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘十宫主（Karm's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘土星（Shani）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "上升主（Lagn's Lord）是否落三角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升主（Lagn's Lord）是否落三角宫"
+            },
+            "selection_group": "ch19-v4-7-four-grahas-angle-trine-labh-long-life.step-001:lagn-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升主（Lagn's Lord）是否落三角宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘十宫主（Karm's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘土星（Shani）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "上升主（Lagn's Lord）是否落十一宫（Labh）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升主（Lagn's Lord）是否落十一宫（Labh）"
+            },
+            "selection_group": "ch19-v4-7-four-grahas-angle-trine-labh-long-life.step-001:lagn-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升主（Lagn's Lord）是否落十一宫（Labh）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘十宫主（Karm's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘土星（Shani）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "八宫主（Randhr's Lord）是否落角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "八宫主（Randhr's Lord）是否落角宫"
+            },
+            "selection_group": "ch19-v4-7-four-grahas-angle-trine-labh-long-life.step-001:randhr-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：八宫主（Randhr's Lord）是否落角宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘十宫主（Karm's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘土星（Shani）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "八宫主（Randhr's Lord）是否落三角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "八宫主（Randhr's Lord）是否落三角宫"
+            },
+            "selection_group": "ch19-v4-7-four-grahas-angle-trine-labh-long-life.step-001:randhr-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：八宫主（Randhr's Lord）是否落三角宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘十宫主（Karm's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘土星（Shani）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "八宫主（Randhr's Lord）是否落十一宫（Labh）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "八宫主（Randhr's Lord）是否落十一宫（Labh）"
+            },
+            "selection_group": "ch19-v4-7-four-grahas-angle-trine-labh-long-life.step-001:randhr-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：八宫主（Randhr's Lord）是否落十一宫（Labh）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘十宫主（Karm's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘土星（Shani）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "十宫主（Karm's Lord）是否落角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十宫主（Karm's Lord）是否落角宫"
+            },
+            "selection_group": "ch19-v4-7-four-grahas-angle-trine-labh-long-life.step-001:karm-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十宫主（Karm's Lord）是否落角宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘十宫主（Karm's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘土星（Shani）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "十宫主（Karm's Lord）是否落三角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十宫主（Karm's Lord）是否落三角宫"
+            },
+            "selection_group": "ch19-v4-7-four-grahas-angle-trine-labh-long-life.step-001:karm-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十宫主（Karm's Lord）是否落三角宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘十宫主（Karm's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘土星（Shani）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "十宫主（Karm's Lord）是否落十一宫（Labh）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十宫主（Karm's Lord）是否落十一宫（Labh）"
+            },
+            "selection_group": "ch19-v4-7-four-grahas-angle-trine-labh-long-life.step-001:karm-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十宫主（Karm's Lord）是否落十一宫（Labh）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘十宫主（Karm's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘土星（Shani）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "土星（Shani）是否落角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "土星（Shani）是否落角宫"
+            },
+            "selection_group": "ch19-v4-7-four-grahas-angle-trine-labh-long-life.step-001:shani-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：土星（Shani）是否落角宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘十宫主（Karm's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘土星（Shani）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "土星（Shani）是否落三角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "土星（Shani）是否落三角宫"
+            },
+            "selection_group": "ch19-v4-7-four-grahas-angle-trine-labh-long-life.step-001:shani-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：土星（Shani）是否落三角宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘十宫主（Karm's Lord）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘土星（Shani）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "土星（Shani）是否落十一宫（Labh）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "土星（Shani）是否落十一宫（Labh）"
+            },
+            "selection_group": "ch19-v4-7-four-grahas-angle-trine-labh-long-life.step-001:shani-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：土星（Shani）是否落十一宫（Labh）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "the Lords of Lagna, Randhr and Karm Bhava and Shani",
+              "claim": "上升主、八宫主、十宫主与土星"
+            },
+            {
+              "quote": "all disposed severally in an angle",
+              "claim": "各自落角宫"
+            },
+            {
+              "quote": "in a trine",
+              "claim": "三角宫"
+            },
+            {
+              "quote": "or in Labh Bhava",
+              "claim": "或十一宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the subject will live long",
+              "claim": "命主长寿"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch19:v4-7",
+            "quote": "Should the Lords of Lagna, Randhr and Karm Bhava and Shani are all disposed severally in an angle, in a trine, or in Labh Bhava, the subject will live long.",
+            "pdf_pages": [
+              36
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升主（Lagn's Lord）落在哪一宫、本盘八宫主（Randhr's Lord）落在哪一宫、本盘十宫主（Karm's Lord）落在哪一宫、本盘土星（Shani）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘上升主（Lagn's Lord）落在哪一宫",
+          "本盘八宫主（Randhr's Lord）落在哪一宫",
+          "本盘十宫主（Karm's Lord）落在哪一宫",
+          "本盘土星（Shani）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得指定四者中谁必须落角宫、谁必须落三角宫——原文只说各自落其一。",
+          "不得据此推出具体寿数年岁。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "33a86c55539e2bfedb17d8fd7f23ff5f8cc6a5dd1ee3d151404660bec119d035"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch19-v4-7-longevity-strength-estimate.step-001",
+      "method": {
+        "method": "ch19-v4-7-longevity-strength-estimate",
+        "title": "定寿命前先估量相关行星的强弱",
+        "target_house": 8,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "定寿命之前要先看什么",
+          "寿命瑜伽是不是只有书里列的这几条"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Like these, there are many other Yogas, dealing with the issue of longevity. The strength and weakness of the Grahas concerned be estimated in deciding longevity",
+            "定寿命 估量行星强弱"
+          ],
+          "counter_queries": [
+            "Knowing that longevity is difficult even for gods. Many exponents have laid down various methods of longevity calculations",
+            "Evils, causing premature end, exist up to the 24th year of one’s age. As such, no definite calculation of life span should be made till such year of age"
+          ],
+          "boundary_queries": [
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+            "According to which of the three, Lagna, Surya, or Chandra is stronger than the other two, Ańśayu, Pindayu, or Nisargayu should be, respectively, chosen",
+            "The life-span in Bal Risht is 8 years, in Yog Risht 20 years, in short, medium and long lives, respectively, 32, 64 and 120 years"
+          ],
+          "method_queries": [
+            "Other Clues to Longevity This is based on the positions of Lagn’s Lord, Randhr’s Lord, Shani, Chandra, natal Lagn and Hora Lagn",
+            "for the benefit of mankind I narrate methods of ascertaining longevity",
+            "行星强弱怎么算 六力"
+          ]
+        },
+        "stop_conditions": [
+          "缺少行星强弱事实时停止（该判准待排盘窗口定义，见第27章 Shad Bal）。",
+          "本方法只作前置检查，不得单独输出寿命长短结论。"
+        ]
+      },
+      "step": {
+        "step_id": "ch19-v4-7-longevity-strength-estimate.step-001",
+        "action": "在下寿命结论前，先估量与寿命有关的行星（Grahas）的强弱。",
+        "applicability_scope": "承接同偈前面列出的各条寿命瑜伽（「Like these」）；原文只说要估量强弱，没有给出强弱的判准，本方法不自拟算法。",
+        "minimum_supported_claim": "在判定寿命时要估量相关行星的强弱；原文另说这类寿命瑜伽还有许多。",
+        "produced_fact_keys": [
+          "寿命判断的强弱前置检查判定"
+        ],
+        "required_fact_keys": [
+          "与寿命有关的行星（Grahas）的强弱如何"
+        ],
+        "condition_logic": {
+          "fact_key": "与寿命有关的行星（Grahas）的强弱如何"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "in deciding longevity",
+              "claim": "在判定寿命时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "The strength and weakness of the Grahas concerned be estimated",
+              "claim": "要估量相关行星的强弱"
+            },
+            {
+              "quote": "there are many other Yogas, dealing with the issue of longevity",
+              "claim": "这类寿命瑜伽还有许多"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch19:v4-7",
+            "quote": "Like these, there are many other Yogas, dealing with the issue of longevity. The strength and weakness of the Grahas concerned be estimated in deciding longevity.",
+            "pdf_pages": [
+              36
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：与寿命有关的行星（Grahas）的强弱如何。",
+        "stop_fact_keys": [
+          "与寿命有关的行星（Grahas）的强弱如何"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得自行发明强弱的判准；原文本句没给算法。",
+          "不得据「还有许多瑜伽」把本书未写出的组合当作原文已给的规则。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch19:v4-7"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "8c25f7ae284b69a103abb443ab79ec4c60cda3cf13525a449e8c0a1444b02575"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch19-v8-13-life-span-20-32.step-001",
+      "method": {
+        "method": "ch19-v8-13-life-span-20-32",
+        "title": "寿数20至32岁：上升主力量微弱而八宫主落角宫",
+        "target_house": 8,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的寿数大概在什么区间",
+          "上升主弱八宫主落角宫会怎样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "One’s span of life will be between 20 and 32 years, if Lagn’s Lord is weak, while Randhr’s Lord is an angle",
+            "上升主无力 八宫主落角宫 寿数20到32岁"
+          ],
+          "counter_queries": [
+            "If Randhr’s Lord is in an angle, long life is indicated",
+            "If Lagn’s Lord is exceedingly strong and receives a Drishti from a benefic, which is placed in an angle, the person concerned will be wealthy, virtuous and long-lived",
+            "Lagn Lord is singly capable of counteracting all evils, if he is strongly placed in an angle"
+          ],
+          "boundary_queries": [
+            "Evils, causing premature end, exist up to the 24th year of one’s age. As such, no definite calculation of life span should be made till such year of age",
+            "The life-span in Bal Risht is 8 years, in Yog Risht 20 years, in short, medium and long lives, respectively, 32, 64 and 120 years",
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)"
+          ],
+          "method_queries": [
+            "Other Clues to Longevity This is based on the positions of Lagn’s Lord, Randhr’s Lord, Shani, Chandra, natal Lagn and Hora Lagn",
+            "The strength and weakness of the Grahas concerned be estimated in deciding longevity",
+            "上升主的强弱怎么判定"
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升主强弱事实时停止（该判准待排盘窗口定义）。",
+          "缺少八宫主落角宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch19-v8-13-life-span-20-32.step-001",
+        "action": "核对上升主（Lagn's Lord）的强弱与八宫主（Randhr's Lord）是否落角宫，判断寿数区间。",
+        "applicability_scope": "仅限本命盘寿命主题；「力量微弱」按原文 weak 接线，用「上升主是否有力」的否定表示，强弱判准原文本句未给（待排盘窗口定义）；原文只给20至32岁这个区间。",
+        "minimum_supported_claim": "上升主力量微弱、而八宫主落角宫时，寿数在20岁至32岁之间。",
+        "produced_fact_keys": [
+          "上升主微弱八宫主落角宫的寿数区间判定"
+        ],
+        "required_fact_keys": [
+          "上升主（Lagn's Lord）是否有力",
+          "八宫主（Randhr's Lord）是否落角宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "上升主（Lagn's Lord）是否有力"
+                }
+              ]
+            },
+            {
+              "fact_key": "八宫主（Randhr's Lord）是否落角宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Lagn’s Lord is weak",
+              "claim": "上升主力量微弱"
+            },
+            {
+              "quote": "Randhr’s Lord is an angle",
+              "claim": "八宫主落角宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "One’s span of life will be between 20 and 32 years",
+              "claim": "寿数在20岁至32岁之间"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch19:v8-13",
+            "quote": "One’s span of life will be between 20 and 32 years, if Lagn’s Lord is weak, while Randhr’s Lord is an angle.",
+            "pdf_pages": [
+              36
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：上升主（Lagn's Lord）是否有力、八宫主（Randhr's Lord）是否落角宫。",
+        "stop_fact_keys": [
+          "上升主（Lagn's Lord）是否有力",
+          "八宫主（Randhr's Lord）是否落角宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把20至32岁的区间收窄成某一个具体年岁。",
+          "不得自行发明「有力」的判准。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "20岁至32岁之间",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "adeed69b9d2c6742a554bed176a728eb402fd0e90c903e0b934936eef2bb466e"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch19-v8-13-randhr-lord-in-fall-short-life.step-001",
+      "method": {
+        "method": "ch19-v8-13-randhr-lord-in-fall-short-life",
+        "title": "短寿：八宫主落陷、八宫有凶星、上升宫缺乏力量",
+        "target_house": 8,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "八宫主落陷会不会短寿",
+          "上升宫没有力量对寿命有什么影响"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "The native will only be short-lived, if Randhr’s Lord is in fall, while Randhr Bhava has a malefic in it and Tanu Bhava is bereft of strength",
+            "八宫主落陷 八宫有凶星 上升宫无力 短寿"
+          ],
+          "counter_queries": [
+            "If Randhr’s Lord is in an angle, long life is indicated",
+            "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed",
+            "If a Kendr contains a benefic, while Lagn’s Lord is yuti with, or receives a Drishti from a benefic, or Guru in particular, the native will live a full span of life"
+          ],
+          "boundary_queries": [
+            "Evils, causing premature end, exist up to the 24th year of one’s age. As such, no definite calculation of life span should be made till such year of age",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu … are malefics, while the rest are benefics",
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)"
+          ],
+          "method_queries": [
+            "Other Clues to Longevity This is based on the positions of Lagn’s Lord, Randhr’s Lord, Shani, Chandra, natal Lagn and Hora Lagn",
+            "The strength and weakness of the Grahas concerned be estimated in deciding longevity",
+            "八宫落陷与上升宫力量怎么一起看"
+          ]
+        },
+        "stop_conditions": [
+          "缺少八宫主落陷事实时停止。",
+          "缺少八宫凶星占据事实时停止。",
+          "缺少上升宫强弱事实时停止（该判准待排盘窗口定义）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch19-v8-13-randhr-lord-in-fall-short-life.step-001",
+        "action": "核对八宫主（Randhr's Lord）是否落陷、八宫内是否有凶星、上升宫（Tanu Bhava）是否缺乏力量。",
+        "applicability_scope": "仅限本命盘寿命主题；「缺乏力量」按原文 bereft of strength 接线，用「上升宫是否有力」的否定表示，判准原文本句未给（待排盘窗口定义）；原文未给具体寿数。",
+        "minimum_supported_claim": "八宫主落陷、八宫内有凶星、上升宫缺乏力量时，命主只会短寿。",
+        "produced_fact_keys": [
+          "八宫主落陷三条件的短寿判定"
+        ],
+        "required_fact_keys": [
+          "八宫主（Randhr's Lord）是否落陷",
+          "八宫（Randhr）是否被凶星占据",
+          "上升宫（Tanu Bhava）是否有力"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "八宫主（Randhr's Lord）是否落陷"
+            },
+            {
+              "fact_key": "八宫（Randhr）是否被凶星占据"
+            },
+            {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "上升宫（Tanu Bhava）是否有力"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Randhr’s Lord is in fall",
+              "claim": "八宫主落陷"
+            },
+            {
+              "quote": "Randhr Bhava has a malefic in it",
+              "claim": "八宫内有凶星"
+            },
+            {
+              "quote": "Tanu Bhava is bereft of strength",
+              "claim": "上升宫缺乏力量"
+            }
+          ],
+          "results": [
+            {
+              "quote": "The native will only be short-lived",
+              "claim": "命主只会短寿"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch19:v8-13",
+            "quote": "The native will only be short-lived, if Randhr’s Lord is in fall, while Randhr Bhava has a malefic in it and Tanu Bhava is bereft of strength.",
+            "pdf_pages": [
+              36
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：八宫主（Randhr's Lord）是否落陷、八宫（Randhr）是否被凶星占据、上升宫（Tanu Bhava）是否有力。",
+        "stop_fact_keys": [
+          "八宫主（Randhr's Lord）是否落陷",
+          "八宫（Randhr）是否被凶星占据",
+          "上升宫（Tanu Bhava）是否有力"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推出具体寿数年岁或死亡时间。",
+          "不得自行发明宫位「有力」的判准。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "1fd33a254a193751fa4dce6058eb22506b9bde109a52cd428a816f5d46d3ed6c"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch19:v1": {
+      "evidence_atom_id": "bphs-97:santhanam:ch19:v1",
+      "chapter_number": 19,
+      "chapter_title": "Effects of Randhr Bhava",
+      "verse_label": "1.",
+      "content_role": "verse",
+      "exact_text": "1. Long Life. O excellent of the Brahmins, listen to me speak on the effects of Randhr Bhava. If Randhr’s Lord is in an angle, long life is indicated.",
+      "pdf_pages": [
+        35
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 19 · Sloka 1 · PDF page 35 · bphs-97:santhanam:ch19:v1",
+      "previous_atom_id": null,
+      "next_atom_id": "bphs-97:santhanam:ch19:v2",
+      "context_before": "",
+      "context_after": "2. Short Life. Should Randhr’s Lord join Lagn’s Lord, or a malefic and be in Randhr itself, the native will be short lived.\n\n<!-",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch19:v2": {
+      "evidence_atom_id": "bphs-97:santhanam:ch19:v2",
+      "chapter_number": 19,
+      "chapter_title": "Effects of Randhr Bhava",
+      "verse_label": "2.",
+      "content_role": "verse",
+      "exact_text": "2. Short Life. Should Randhr’s Lord join Lagn’s Lord, or a malefic and be in Randhr itself, the native will be short lived.",
+      "pdf_pages": [
+        35
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 19 · Sloka 2 · PDF page 35 · bphs-97:santhanam:ch19:v2",
+      "previous_atom_id": "bphs-97:santhanam:ch19:v1",
+      "next_atom_id": "bphs-97:santhanam:ch19:v3",
+      "context_before": "t of the Brahmins, listen to me speak on the effects of Randhr Bhava. If Randhr’s Lord is in an angle, long life is indicated.\n\n",
+      "context_after": "3. Shani and Karm’s Lord about Longevity. Similarly consider Shani and Karm’s Lord in the matter of longevity. Karm’s Lord is in",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch19:v3": {
+      "evidence_atom_id": "bphs-97:santhanam:ch19:v3",
+      "chapter_number": 19,
+      "chapter_title": "Effects of Randhr Bhava",
+      "verse_label": "3.",
+      "content_role": "verse",
+      "exact_text": "3. Shani and Karm’s Lord about Longevity. Similarly consider Shani and Karm’s Lord in the matter of longevity. Karm’s Lord is in Randhr along with a malefic Grah and/or Lagn’s Lord.",
+      "pdf_pages": [
+        36
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 19 · Sloka 3 · PDF page 36 · bphs-97:santhanam:ch19:v3",
+      "previous_atom_id": "bphs-97:santhanam:ch19:v2",
+      "next_atom_id": "bphs-97:santhanam:ch19:v4-7",
+      "context_before": " Should Randhr’s Lord join Lagn’s Lord, or a malefic and be in Randhr itself, the native will be short lived.\n\n<!-- SOURCE_PAGE 36 -->\n\n",
+      "context_after": "4-7. Long Life. There will be long life, if Ari’s Lord is in Vyaya, or, if Ari’s Lord is in Ari, as Vyaya’s Lord is in Vyaya, or",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch19:v4-7": {
+      "evidence_atom_id": "bphs-97:santhanam:ch19:v4-7",
+      "chapter_number": 19,
+      "chapter_title": "Effects of Randhr Bhava",
+      "verse_label": "4-7.",
+      "content_role": "verse",
+      "exact_text": "4-7. Long Life. There will be long life, if Ari’s Lord is in Vyaya, or, if Ari’s Lord is in Ari, as Vyaya’s Lord is in Vyaya, or, if Ari’s Lord and Vyaya’s Lord are in Lagn and Randhr. If the Lords of Putr, Randhr and Tanu Bhava are in own Navāńśas, own Rāśis, or in friendly Rāśis, the native will enjoy a long span of life. Should the Lords of Lagna, Randhr and Karm Bhava and Shani are all disposed severally in an angle, in a trine, or in Labh Bhava, the subject will live long. Like these, there are many other Yogas, dealing with the issue of longevity. The strength and weakness of the Grahas concerned be estimated in deciding longevity.",
+      "pdf_pages": [
+        36
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 19 · Sloka 4-7 · PDF page 36 · bphs-97:santhanam:ch19:v4-7",
+      "previous_atom_id": "bphs-97:santhanam:ch19:v3",
+      "next_atom_id": "bphs-97:santhanam:ch19:v8-13",
+      "context_before": "sider Shani and Karm’s Lord in the matter of longevity. Karm’s Lord is in Randhr along with a malefic Grah and/or Lagn’s Lord.\n\n",
+      "context_after": "8-13. Short Life. One’s span of life will be between 20 and 32 years, if Lagn’s Lord is weak, while Randhr’s Lord is an angle. T",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch19:v8-13": {
+      "evidence_atom_id": "bphs-97:santhanam:ch19:v8-13",
+      "chapter_number": 19,
+      "chapter_title": "Effects of Randhr Bhava",
+      "verse_label": "8-13.",
+      "content_role": "verse",
+      "exact_text": "8-13. Short Life. One’s span of life will be between 20 and 32 years, if Lagn’s Lord is weak, while Randhr’s Lord is an angle. The native will only be short-lived, if Randhr’s Lord is in fall, while Randhr Bhava has a malefic in it and Tanu Bhava is bereft of strength. Death will be instant at birth, if Randhr Bhava, Randhr’s Lord and Vyaya Bhava are all conjunct malefics. Malefics in angles and/or trines and benefics in Ari and/or Randhr Bhava, while Tanu Bhava has in it Randhr’s Lord in fall: this Yoga will cause immediate end. If Putr and Randhr Bhava and Randhr’s Lord are all conjunct malefics, the life span will be very brief. Within a month of birth, death will befall the child, if Randhr’s Lord is in Randhr itself, while Chandra is with malefics and be bereft of beneficial Drishti.",
+      "pdf_pages": [
+        36
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 19 · Sloka 8-13 · PDF page 36 · bphs-97:santhanam:ch19:v8-13",
+      "previous_atom_id": "bphs-97:santhanam:ch19:v4-7",
+      "next_atom_id": "bphs-97:santhanam:ch19:v14-15",
+      "context_before": "as, dealing with the issue of longevity. The strength and weakness of the Grahas concerned be estimated in deciding longevity.\n\n",
+      "context_after": "14-15. Long Life (again). One will be long-lived, if Lagn’s Lord is in exaltation, while Chandra and Guru are, respectively, in ",
+      "content_missing": false
+    }
+  }
+}

@@ -1,0 +1,1154 @@
+{
+  "shard": 5,
+  "step_count": 9,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch20-v13-25-father-fatal-year-6-25.step-001",
+      "method": {
+        "method": "ch20-v13-25-father-fatal-year-6-25",
+        "title": "命主第6年或第25年对父亲致命：太阳落九宫起第七宫、罗睺落三宫起第七宫",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "哪几年对我父亲比较凶险",
+          "太阳与罗睺各自起第七宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Surya is in the 7<sup>th</sup> from Dharm Bhava, as Rahu is in the 7<sup>th</sup> from Sahaj Bhava, the 6<sup>th</sup> , or 25<sup>th</sup> year of the native will be fatal for father.",
+            "太阳落九宫起第七宫 罗睺落三宫起第七宫 第6年 第25年 对父亲致命"
+          ],
+          "counter_queries": [
+            "Long-living Father. Should Dharm’s Lord be in deep exaltation, while Shukra is in an angle from Tanu Bhava and Guru is in the 9<sup>th</sup> from Navāńś Lagna, the father of the native will enjoy a long span of life",
+            "Fortunate (Affluent) Father. If Dharm’s Lord is with strength, as Shukra is in Dharm, while Guru is in an angle from Tanu Bhava, the native’s father is fortunate"
+          ],
+          "boundary_queries": [
+            "Should Rahu be in the 8<sup>th</sup> from Dharm, as Surya is in the 9<sup>th</sup> from Dharm, death of father will take place in the 16<sup>th</sup> , or the 18<sup>th</sup> year of the native",
+            "The 9<sup>th</sup> from Surya denotes father"
+          ],
+          "method_queries": [
+            "Dharm Bhava and the 9<sup>th</sup> from Surya deal with one’s father",
+            "判断对父亲凶险的年岁要看从九宫（Dharm）与三宫（Sahaj）起算的宫位"
+          ]
+        },
+        "stop_conditions": [
+          "缺少太阳（Surya）落宫事实时停止。",
+          "缺少罗睺（Rahu）落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v13-25-father-fatal-year-6-25.step-001",
+        "action": "核对太阳（Surya）是否落在从九宫（Dharm）起算的第七宫，并核对罗睺（Rahu）是否落在从三宫（Sahaj）起算的第七宫。",
+        "applicability_scope": "仅限本命盘九宫（Dharm）父亲主题；原文以「Combinations for Father’s Death」立目，末句「Thus the Jyotishis may know the effects」把这组组合交由 Jyotishis 判读；原文未给上升限定。",
+        "minimum_supported_claim": "太阳（Surya）落从九宫（Dharm）起算的第七宫、且罗睺（Rahu）落从三宫（Sahaj）起算的第七宫时，命主第6年或第25年对父亲是致命的。",
+        "produced_fact_keys": [
+          "太阳落九宫起第七宫且罗睺落三宫起第七宫主第6或25年对父致命判定"
+        ],
+        "required_fact_keys": [
+          "太阳（Surya）是否落从九宫（Dharm）起算的第七宫",
+          "罗睺（Rahu）是否落从三宫（Sahaj）起算的第七宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "太阳（Surya）是否落从九宫（Dharm）起算的第七宫"
+            },
+            {
+              "fact_key": "罗睺（Rahu）是否落从三宫（Sahaj）起算的第七宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Surya is in the 7<sup>th</sup> from Dharm Bhava",
+              "claim": "太阳（Surya）落从九宫（Dharm）起算的第七宫"
+            },
+            {
+              "quote": "Rahu is in the 7<sup>th</sup> from Sahaj Bhava",
+              "claim": "罗睺（Rahu）落从三宫（Sahaj）起算的第七宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the 6<sup>th</sup> , or 25<sup>th</sup> year of the native will be fatal for father",
+              "claim": "命主第6年或第25年对父亲是致命的"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v13-25",
+            "quote": "If Surya is in the 7<sup>th</sup> from Dharm Bhava, as Rahu is in the 7<sup>th</sup> from Sahaj Bhava, the 6<sup>th</sup> , or 25<sup>th</sup> year of the native will be fatal for father.",
+            "pdf_pages": [
+              37
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：太阳（Surya）是否落从九宫（Dharm）起算的第七宫、罗睺（Rahu）是否落从三宫（Sahaj）起算的第七宫。",
+        "stop_fact_keys": [
+          "太阳（Surya）是否落从九宫（Dharm）起算的第七宫",
+          "罗睺（Rahu）是否落从三宫（Sahaj）起算的第七宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断父亲的死因。",
+          "不得把第6年与第25年之外的年份也算进本条。",
+          "不得把从九宫或三宫起算的宫位换成从上升起算的宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定命主第6年或第25年",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "bee6254efa4f10c33e85288a673017cf9b71889e0ef309c719b28aa4438976b7"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v13-25-father-fatal-age-21-26-30.step-001",
+      "method": {
+        "method": "ch20-v13-25-father-fatal-age-21-26-30",
+        "title": "21岁、26岁或30岁对父亲致命：土星落八宫起第七宫、太阳落土星起第七宫",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我父亲哪几岁比较危险",
+          "土星与太阳各自起第七宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Shani is in the 7<sup>th</sup> from Randhr Bhava, as Surya is in the 7<sup>th</sup> from Shani, the ages of 21, 26, or 30 will be fatal for the father.",
+            "土星落八宫起第七宫 太阳落土星起第七宫 21岁 26岁 30岁 对父亲致命"
+          ],
+          "counter_queries": [
+            "Long-living Father. Should Dharm’s Lord be in deep exaltation, while Shukra is in an angle from Tanu Bhava and Guru is in the 9<sup>th</sup> from Navāńś Lagna, the father of the native will enjoy a long span of life",
+            "If Dharm’s Lord is an angle and receives a Drishti from Guru, the native’s father will be a king endowed with conveyances, or be equal to a king"
+          ],
+          "boundary_queries": [
+            "If Dharm’s Lord is in its debilitation Rāśi, while his dispositor is in Dharm Bhava, the native will lose his father at the age of 26, or 30",
+            "Evil to Father (up to Sloka 42). One’s father will incur early death, if Shani, Mangal and Chandra in their orders are in Tanu, Yuvati and Ari Bhava"
+          ],
+          "method_queries": [
+            "Surya is the indicator of father for all beings, while the mother is indicated by Chandra",
+            "判断对父亲凶险的年岁要看土星（Shani）与太阳（Surya）互起第七宫的配置"
+          ]
+        },
+        "stop_conditions": [
+          "缺少土星（Shani）落宫事实时停止。",
+          "缺少太阳（Surya）落宫事实时停止。",
+          "原文未标明这三个年岁属于谁，需要落到具体某人的年岁时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v13-25-father-fatal-age-21-26-30.step-001",
+        "action": "核对土星（Shani）是否落在从八宫（Randhr）起算的第七宫，并核对太阳（Surya）是否落在从土星起算的第七宫。",
+        "applicability_scope": "仅限本命盘九宫（Dharm）父亲主题；原文以「Combinations for Father’s Death」立目，末句「Thus the Jyotishis may know the effects」把这组组合交由 Jyotishis 判读；原文未给上升限定。",
+        "minimum_supported_claim": "土星（Shani）落从八宫（Randhr）起算的第七宫、且太阳（Surya）落从土星（Shani）起算的第七宫时，21岁、26岁或30岁对父亲是致命的。",
+        "produced_fact_keys": [
+          "土星落八宫起第七宫且太阳落土星起第七宫主21岁26岁30岁对父致命判定"
+        ],
+        "required_fact_keys": [
+          "土星（Shani）是否落从八宫（Randhr）起算的第七宫",
+          "太阳（Surya）是否落从土星（Shani）起算的第七宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "土星（Shani）是否落从八宫（Randhr）起算的第七宫"
+            },
+            {
+              "fact_key": "太阳（Surya）是否落从土星（Shani）起算的第七宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Shani is in the 7<sup>th</sup> from Randhr Bhava",
+              "claim": "土星（Shani）落从八宫（Randhr）起算的第七宫"
+            },
+            {
+              "quote": "Surya is in the 7<sup>th</sup> from Shani",
+              "claim": "太阳（Surya）落从土星（Shani）起算的第七宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the ages of 21, 26, or 30 will be fatal for the father",
+              "claim": "21岁、26岁或30岁对父亲是致命的"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v13-25",
+            "quote": "If Shani is in the 7<sup>th</sup> from Randhr Bhava, as Surya is in the 7<sup>th</sup> from Shani, the ages of 21, 26, or 30 will be fatal for the father.",
+            "pdf_pages": [
+              37
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：土星（Shani）是否落从八宫（Randhr）起算的第七宫、太阳（Surya）是否落从土星（Shani）起算的第七宫。",
+        "stop_fact_keys": [
+          "土星（Shani）是否落从八宫（Randhr）起算的第七宫",
+          "太阳（Surya）是否落从土星（Shani）起算的第七宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断父亲的死因。",
+          "不得把21岁、26岁、30岁之外的年岁也算进本条。",
+          "不得把从八宫或从土星起算的宫位换成从上升起算的宫位。",
+          "原文此句只写 the ages of 21, 26, or 30，没写是谁的年岁；不得替它补出年岁归属。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定21岁、26岁或30岁",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "0b65b5f4b15c0b631d8d1d1726da2b2f07b532b6c7895f982a88d1c9be3abeb6"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v13-25-lose-father-age-26-30.step-001",
+      "method": {
+        "method": "ch20-v13-25-lose-father-age-26-30",
+        "title": "命主26岁或30岁失去父亲：九宫主落陷、其星座主落九宫",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "父亲会在我二三十岁时离开吗",
+          "九宫主落陷又其星座主落九宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dharm’s Lord is in its debilitation Rāśi, while his dispositor is in Dharm Bhava, the native will lose his father at the age of 26, or 30.",
+            "九宫主落陷星座 星座主落九宫 26岁 30岁 失去父亲"
+          ],
+          "counter_queries": [
+            "Long-living Father. Should Dharm’s Lord be in deep exaltation, while Shukra is in an angle from Tanu Bhava and Guru is in the 9<sup>th</sup> from Navāńś Lagna, the father of the native will enjoy a long span of life",
+            "Fortunate (Affluent) Father. If Dharm’s Lord is with strength, as Shukra is in Dharm, while Guru is in an angle from Tanu Bhava, the native’s father is fortunate"
+          ],
+          "boundary_queries": [
+            "If the Lord of Vyaya Bhava is in Dharm Bhava, while Dharm’s Lord is in its debilitation Navāńś, the native’s father will face his end during the 3<sup>rd</sup> , or the 16<sup>th</sup> year of the native",
+            "Indigent Father. If Dharm’s Lord is debilitated, while the 2<sup>nd</sup> and/or the 4<sup>th</sup> from Dharm Bhava is occupied by Mangal, the native’s father is poor"
+          ],
+          "method_queries": [
+            "Dharm Bhava and the 9<sup>th</sup> from Surya deal with one’s father",
+            "判断失去父亲的年岁要看九宫主（Dharm's Lord）落陷与其星座主的位置"
+          ]
+        },
+        "stop_conditions": [
+          "缺少九宫主（Dharm's Lord）是否落陷的事实时停止。",
+          "缺少九宫主星座主落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v13-25-lose-father-age-26-30.step-001",
+        "action": "核对九宫主（Dharm's Lord）是否落在自己落陷的星座（Rāśi），并核对九宫主的星座主是否落九宫（Dharm）。",
+        "applicability_scope": "仅限本命盘九宫（Dharm）父亲主题；原文以「Combinations for Father’s Death」立目，末句「Thus the Jyotishis may know the effects」把这组组合交由 Jyotishis 判读；原文未给上升限定。原文「his dispositor」的 his，句内先行词是九宫主（Dharm's Lord）。",
+        "minimum_supported_claim": "九宫主（Dharm's Lord）落自己落陷的星座（Rāśi）、且其星座主落九宫（Dharm）时，命主在26岁或30岁失去父亲。",
+        "produced_fact_keys": [
+          "九宫主落陷且其星座主落九宫主26岁或30岁失去父亲判定"
+        ],
+        "required_fact_keys": [
+          "九宫主（Dharm's Lord）是否落陷",
+          "九宫主（Dharm's Lord）的星座主是否落九宫（Dharm）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "九宫主（Dharm's Lord）是否落陷"
+            },
+            {
+              "fact_key": "九宫主（Dharm's Lord）的星座主是否落九宫（Dharm）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dharm’s Lord is in its debilitation Rāśi",
+              "claim": "九宫主（Dharm's Lord）落自己落陷的星座（Rāśi）"
+            },
+            {
+              "quote": "his dispositor is in Dharm Bhava",
+              "claim": "其星座主落九宫（Dharm）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will lose his father at the age of 26, or 30",
+              "claim": "命主在26岁或30岁失去父亲"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v13-25",
+            "quote": "If Dharm’s Lord is in its debilitation Rāśi, while his dispositor is in Dharm Bhava, the native will lose his father at the age of 26, or 30.",
+            "pdf_pages": [
+              37
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：九宫主（Dharm's Lord）是否落陷、九宫主（Dharm's Lord）的星座主是否落九宫（Dharm）。",
+        "stop_fact_keys": [
+          "九宫主（Dharm's Lord）是否落陷",
+          "九宫主（Dharm's Lord）的星座主是否落九宫（Dharm）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断父亲的死因。",
+          "不得把26岁与30岁之外的年岁也算进本条。",
+          "不得把落陷星座（Rāśi）读成落陷九分盘（Navamsa D9）星座。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch20:v13-25"
+        ],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定命主26岁或30岁",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b1c2cc2072104c903d5761a839c27e95ac43413cb2d2df6b5a8996622c251ca1"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v26-abundant-fortunes-shukra.step-001",
+      "method": {
+        "method": "ch20-v26-abundant-fortunes-shukra",
+        "title": "享有丰厚财运：金星深度入旺并与九宫主同宫、土星落三宫",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子财运好不好",
+          "金星深度入旺又与九宫主同宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "One will enjoy abundant fortunes, if Shukra is in deep exaltation and be in the company of Dharm’s Lord, as Shani is in Sahaj.",
+            "金星深度入旺 与九宫主同宫 土星落三宫 丰厚财运"
+          ],
+          "counter_queries": [
+            "If Rahu is in the 9<sup>th</sup> from Dharm Bhava, as his dispositor is in Randhr Bhava and Dharm’s Lord is in fall, the native be devoid of fortunes",
+            "If Karm’s Lord and Sahaj’s Lord are bereft of strength, while Dharm’s Lord is in fall, or combust the native will go begging for his food"
+          ],
+          "boundary_queries": [
+            "One will be fortunate (or affluent), if Dharm’s Lord is in Dharm Bhava with strength",
+            "Should Guru be in Dharm Bhava, while Dharm’s Lord is in an angle and Lagn’s Lord is endowed with strength, one will be extremely fortunate",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava"
+          ],
+          "method_queries": [
+            "These may be estimated with the help of the state of the Lords of Lagn and Dharm Bhava and in other manners as well",
+            "判断财运要看九宫主（Dharm's Lord）与金星（Shukra）的哪些配置"
+          ]
+        },
+        "stop_conditions": [
+          "缺少金星（Shukra）是否深度入旺的事实时停止。",
+          "缺少金星与九宫主（Dharm's Lord）是否同宫的事实时停止。",
+          "缺少土星（Shani）落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v26-abundant-fortunes-shukra.step-001",
+        "action": "核对金星（Shukra）是否深度入旺、是否与九宫主（Dharm's Lord）同宫，并核对土星（Shani）是否落三宫（Sahaj）。",
+        "applicability_scope": "仅限本命盘九宫（Dharm）财运主题；原文未给时间或上升限定。",
+        "minimum_supported_claim": "金星（Shukra）深度入旺、与九宫主（Dharm's Lord）同宫、且土星（Shani）落三宫（Sahaj）时，命主享有丰厚的财运。",
+        "produced_fact_keys": [
+          "金星深度入旺会九宫主且土星落三宫主财运丰厚判定"
+        ],
+        "required_fact_keys": [
+          "金星（Shukra）是否深度入旺",
+          "金星（Shukra）是否与九宫主（Dharm's Lord）同宫",
+          "土星（Shani）是否落三宫（Sahaj）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "金星（Shukra）是否深度入旺"
+            },
+            {
+              "fact_key": "金星（Shukra）是否与九宫主（Dharm's Lord）同宫"
+            },
+            {
+              "fact_key": "土星（Shani）是否落三宫（Sahaj）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Shukra is in deep exaltation",
+              "claim": "金星（Shukra）深度入旺"
+            },
+            {
+              "quote": "be in the company of Dharm’s Lord",
+              "claim": "与九宫主（Dharm's Lord）同宫"
+            },
+            {
+              "quote": "Shani is in Sahaj",
+              "claim": "土星（Shani）落三宫（Sahaj）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "One will enjoy abundant fortunes",
+              "claim": "命主享有丰厚的财运"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v26",
+            "quote": "One will enjoy abundant fortunes, if Shukra is in deep exaltation and be in the company of Dharm’s Lord, as Shani is in Sahaj.",
+            "pdf_pages": [
+              37
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：金星（Shukra）是否深度入旺、金星（Shukra）是否与九宫主（Dharm's Lord）同宫、土星（Shani）是否落三宫（Sahaj）。",
+        "stop_fact_keys": [
+          "金星（Shukra）是否深度入旺",
+          "金星（Shukra）是否与九宫主（Dharm's Lord）同宫",
+          "土星（Shani）是否落三宫（Sahaj）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财富数额或得财时间。",
+          "不得把「深度入旺」放宽成一般入旺。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "4cae6aa3d6e971967e76081dcd16b7097dc150db063671ae19674156b05e1aae"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v27-28-fortunes-after-20.step-001",
+      "method": {
+        "method": "ch20-v27-28-fortunes-after-20",
+        "title": "第20年之后得丰厚财运：木星落九宫、九宫主落角宫",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的财运什么时候开始好转",
+          "木星落九宫又九宫主落角宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Abundant fortunes be acquired after the 20<sup>th</sup> year, if Dharm has Guru in it, as its Lord is in an angle from Lagn.",
+            "木星落九宫 九宫主落角宫 第20年之后 丰厚财运"
+          ],
+          "counter_queries": [
+            "If Rahu is in the 9<sup>th</sup> from Dharm Bhava, as his dispositor is in Randhr Bhava and Dharm’s Lord is in fall, the native be devoid of fortunes",
+            "Should Shani be in Dharm Bhava along with Chandra, as Lagn’s Lord is in fall, the native will acquire food by begging"
+          ],
+          "boundary_queries": [
+            "Should Guru be in Dharm Bhava, while Dharm’s Lord is in an angle and Lagn’s Lord is endowed with strength, one will be extremely fortunate",
+            "One will be fortunate (or affluent), if Dharm’s Lord is in Dharm Bhava with strength",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava"
+          ],
+          "method_queries": [
+            "These may be estimated with the help of the state of the Lords of Lagn and Dharm Bhava and in other manners as well",
+            "判断财运起运年岁要看木星（Guru）与九宫主（Dharm's Lord）的落宫"
+          ]
+        },
+        "stop_conditions": [
+          "缺少木星（Guru）落宫事实时停止。",
+          "缺少九宫主（Dharm's Lord）落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v27-28-fortunes-after-20.step-001",
+        "action": "核对木星（Guru）是否落九宫（Dharm），并核对九宫主（Dharm's Lord）是否落上升起算的角宫。",
+        "applicability_scope": "仅限本命盘九宫（Dharm）财运主题；原文「its Lord」的 its，句内先行词是九宫（Dharm）；原文把获得时间系在第20年之后。",
+        "minimum_supported_claim": "木星（Guru）落九宫（Dharm）、且九宫主落上升（Lagn）起算的角宫时，第20年之后会获得丰厚的财运。",
+        "produced_fact_keys": [
+          "木星落九宫且九宫主落角宫主第20年后财运丰厚判定"
+        ],
+        "required_fact_keys": [
+          "木星（Guru）是否落九宫（Dharm）",
+          "九宫主（Dharm's Lord）是否落角宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "木星（Guru）是否落九宫（Dharm）"
+            },
+            {
+              "fact_key": "九宫主（Dharm's Lord）是否落角宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dharm has Guru in it",
+              "claim": "木星（Guru）落九宫（Dharm）"
+            },
+            {
+              "quote": "its Lord is in an angle from Lagn",
+              "claim": "九宫主落上升（Lagn）起算的角宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Abundant fortunes be acquired after the 20<sup>th</sup> year",
+              "claim": "第20年之后会获得丰厚的财运"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v27-28",
+            "quote": "Abundant fortunes be acquired after the 20<sup>th</sup> year, if Dharm has Guru in it, as its Lord is in an angle from Lagn.",
+            "pdf_pages": [
+              37
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：木星（Guru）是否落九宫（Dharm）、九宫主（Dharm's Lord）是否落角宫。",
+        "stop_fact_keys": [
+          "木星（Guru）是否落九宫（Dharm）",
+          "九宫主（Dharm's Lord）是否落角宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财富数额或来源。",
+          "不得把第20年之前的时间也算进本条。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch20:v27-28"
+        ],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定第20年之后",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "cf1d06c7db6a57fc96d0be83ce67152c6b26f7d54656a814aa705fae243ef157"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v27-28-fortunes-after-36.step-001",
+      "method": {
+        "method": "ch20-v27-28-fortunes-after-36",
+        "title": "第36年之后得丰厚财运：水星深度入旺、九宫主落九宫本身",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我三十几岁以后财运如何",
+          "水星深度入旺又九宫主落本宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Budh be in his deep exaltation, as Dharm’s Lord is in Dharm itself, abundant fortunes will be earned after the 36<sup>th</sup> year.",
+            "水星深度入旺 九宫主落九宫 第36年之后 丰厚财运"
+          ],
+          "counter_queries": [
+            "If Rahu is in the 9<sup>th</sup> from Dharm Bhava, as his dispositor is in Randhr Bhava and Dharm’s Lord is in fall, the native be devoid of fortunes",
+            "If Karm’s Lord and Sahaj’s Lord are bereft of strength, while Dharm’s Lord is in fall, or combust the native will go begging for his food"
+          ],
+          "boundary_queries": [
+            "One will be fortunate (or affluent), if Dharm’s Lord is in Dharm Bhava with strength",
+            "Should Guru be in Dharm Bhava, while Dharm’s Lord is in an angle and Lagn’s Lord is endowed with strength, one will be extremely fortunate",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava"
+          ],
+          "method_queries": [
+            "These may be estimated with the help of the state of the Lords of Lagn and Dharm Bhava and in other manners as well",
+            "判断财运起运年岁要看九宫主（Dharm's Lord）落本宫与水星（Budh）的状态"
+          ]
+        },
+        "stop_conditions": [
+          "缺少水星（Budh）是否深度入旺的事实时停止。",
+          "缺少九宫主（Dharm's Lord）落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v27-28-fortunes-after-36.step-001",
+        "action": "核对水星（Budh）是否深度入旺，并核对九宫主（Dharm's Lord）是否落九宫（Dharm）本身。",
+        "applicability_scope": "仅限本命盘九宫（Dharm）财运主题；原文把获得时间系在第36年之后。",
+        "minimum_supported_claim": "水星（Budh）深度入旺、且九宫主（Dharm's Lord）落九宫（Dharm）本身时，第36年之后会赚得丰厚的财运。",
+        "produced_fact_keys": [
+          "水星深度入旺且九宫主落九宫主第36年后财运丰厚判定"
+        ],
+        "required_fact_keys": [
+          "水星（Budh）是否深度入旺",
+          "九宫主（Dharm's Lord）是否落九宫（Dharm）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "水星（Budh）是否深度入旺"
+            },
+            {
+              "fact_key": "九宫主（Dharm's Lord）是否落九宫（Dharm）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Budh be in his deep exaltation",
+              "claim": "水星（Budh）深度入旺"
+            },
+            {
+              "quote": "Dharm’s Lord is in Dharm itself",
+              "claim": "九宫主（Dharm's Lord）落九宫（Dharm）本身"
+            }
+          ],
+          "results": [
+            {
+              "quote": "abundant fortunes will be earned after the 36<sup>th</sup> year",
+              "claim": "第36年之后会赚得丰厚的财运"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v27-28",
+            "quote": "Should Budh be in his deep exaltation, as Dharm’s Lord is in Dharm itself, abundant fortunes will be earned after the 36<sup>th</sup> year.",
+            "pdf_pages": [
+              37
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：水星（Budh）是否深度入旺、九宫主（Dharm's Lord）是否落九宫（Dharm）。",
+        "stop_fact_keys": [
+          "水星（Budh）是否深度入旺",
+          "九宫主（Dharm's Lord）是否落九宫（Dharm）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财富数额或来源。",
+          "不得把第36年之前的时间也算进本条。",
+          "不得把「深度入旺」放宽成一般入旺。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定第36年之后",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "f442fdd41dfb235885dba7934155faf2f8a2cd0a52f04e8c8fea5b0568bd1230"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v29-gains-of-wealth-and-conveyances.step-001",
+      "method": {
+        "method": "ch20-v29-gains-of-wealth-and-conveyances",
+        "title": "得财富与车乘：上升主落九宫、九宫主落上升宫、木星落七宫",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我能不能置办车产",
+          "上升主与九宫主互落又木星落七宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Lagn’s Lord be in Dharm, as Dharm’s Lord is in Lagn and Guru is in Yuvati, there will be gains of wealth and conveyances.",
+            "上升主落九宫 九宫主落上升宫 木星落七宫 财富 车乘"
+          ],
+          "counter_queries": [
+            "If Rahu is in the 9<sup>th</sup> from Dharm Bhava, as his dispositor is in Randhr Bhava and Dharm’s Lord is in fall, the native be devoid of fortunes",
+            "Should Shani be in Dharm Bhava along with Chandra, as Lagn’s Lord is in fall, the native will acquire food by begging"
+          ],
+          "boundary_queries": [
+            "One will be fortunate (or affluent), if Dharm’s Lord is in Dharm Bhava with strength",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava"
+          ],
+          "method_queries": [
+            "These may be estimated with the help of the state of the Lords of Lagn and Dharm Bhava and in other manners as well",
+            "判断财富与车乘要看上升主（Lagn's Lord）与九宫主（Dharm's Lord）的互落"
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升主（Lagn's Lord）落宫事实时停止。",
+          "缺少九宫主（Dharm's Lord）落宫事实时停止。",
+          "缺少木星（Guru）落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v29-gains-of-wealth-and-conveyances.step-001",
+        "action": "核对上升主（Lagn's Lord）是否落九宫（Dharm）、九宫主（Dharm's Lord）是否落上升宫（Lagn），并核对木星（Guru）是否落七宫（Yuvati）。",
+        "applicability_scope": "仅限本命盘九宫（Dharm）财运主题；原文未给时间或上升限定。",
+        "minimum_supported_claim": "上升主（Lagn's Lord）落九宫（Dharm）、九宫主（Dharm's Lord）落上升宫（Lagn）、且木星（Guru）落七宫（Yuvati）时，会有财富与车乘的获得。",
+        "produced_fact_keys": [
+          "上升主九宫主互落且木星落七宫主得财富车乘判定"
+        ],
+        "required_fact_keys": [
+          "上升主（Lagn's Lord）是否落九宫（Dharm）",
+          "九宫主（Dharm's Lord）是否落上升宫（Lagna）",
+          "木星（Guru）是否落七宫（Yuvati）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "上升主（Lagn's Lord）是否落九宫（Dharm）"
+            },
+            {
+              "fact_key": "九宫主（Dharm's Lord）是否落上升宫（Lagna）"
+            },
+            {
+              "fact_key": "木星（Guru）是否落七宫（Yuvati）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Lagn’s Lord be in Dharm",
+              "claim": "上升主（Lagn's Lord）落九宫（Dharm）"
+            },
+            {
+              "quote": "Dharm’s Lord is in Lagn",
+              "claim": "九宫主（Dharm's Lord）落上升宫（Lagn）"
+            },
+            {
+              "quote": "Guru is in Yuvati",
+              "claim": "木星（Guru）落七宫（Yuvati）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "there will be gains of wealth and conveyances",
+              "claim": "会有财富与车乘的获得"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v29",
+            "quote": "Should Lagn’s Lord be in Dharm, as Dharm’s Lord is in Lagn and Guru is in Yuvati, there will be gains of wealth and conveyances.",
+            "pdf_pages": [
+              37
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：上升主（Lagn's Lord）是否落九宫（Dharm）、九宫主（Dharm's Lord）是否落上升宫（Lagna）、木星（Guru）是否落七宫（Yuvati）。",
+        "stop_fact_keys": [
+          "上升主（Lagn's Lord）是否落九宫（Dharm）",
+          "九宫主（Dharm's Lord）是否落上升宫（Lagna）",
+          "木星（Guru）是否落七宫（Yuvati）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财富数额、车乘种类或得财年岁。",
+          "不得只凭上升主与九宫主互落就下断语，木星落七宫是原文并列的条件。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "df7d9c879b9cfca57728957a74556cbb6269cf9fe939d0a2f4c2d466f7489043"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v30-devoid-of-fortunes.step-001",
+      "method": {
+        "method": "ch20-v30-devoid-of-fortunes",
+        "title": "没有财运：罗睺落九宫起第九宫、其星座主落八宫、九宫主落陷",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我为什么一直没有财运",
+          "罗睺落九宫起第九宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Rahu is in the 9<sup>th</sup> from Dharm Bhava, as his dispositor is in Randhr Bhava and Dharm’s Lord is in fall, the native be devoid of fortunes.",
+            "罗睺落九宫起第九宫 星座主落八宫 九宫主落陷 没有财运"
+          ],
+          "counter_queries": [
+            "One will be fortunate (or affluent), if Dharm’s Lord is in Dharm Bhava with strength",
+            "Should Guru be in Dharm Bhava, while Dharm’s Lord is in an angle and Lagn’s Lord is endowed with strength, one will be extremely fortunate"
+          ],
+          "boundary_queries": [
+            "One will enjoy abundant fortunes, if Shukra is in deep exaltation and be in the company of Dharm’s Lord, as Shani is in Sahaj",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava"
+          ],
+          "method_queries": [
+            "These may be estimated with the help of the state of the Lords of Lagn and Dharm Bhava and in other manners as well",
+            "判断财运匮乏要看罗睺（Rahu）与九宫主（Dharm's Lord）的哪些状态"
+          ]
+        },
+        "stop_conditions": [
+          "缺少罗睺（Rahu）落宫事实时停止。",
+          "缺少罗睺星座主落宫事实时停止。",
+          "缺少九宫主（Dharm's Lord）是否落陷的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v30-devoid-of-fortunes.step-001",
+        "action": "核对罗睺（Rahu）是否落在从九宫（Dharm）起算的第九宫、罗睺的星座主是否落八宫（Randhr），并核对九宫主（Dharm's Lord）是否落陷。",
+        "applicability_scope": "仅限本命盘九宫（Dharm）财运主题；原文「his dispositor」的 his，句内先行词是罗睺（Rahu）；原文未给时间限定。",
+        "minimum_supported_claim": "罗睺（Rahu）落从九宫（Dharm）起算的第九宫、其星座主落八宫（Randhr）、且九宫主（Dharm's Lord）落陷时，命主没有财运。",
+        "produced_fact_keys": [
+          "罗睺落九宫起第九宫且星座主落八宫九宫主落陷主没有财运判定"
+        ],
+        "required_fact_keys": [
+          "罗睺（Rahu）是否落从九宫（Dharm）起算的第九宫",
+          "罗睺（Rahu）的星座主是否落八宫（Randhr）",
+          "九宫主（Dharm's Lord）是否落陷"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "罗睺（Rahu）是否落从九宫（Dharm）起算的第九宫"
+            },
+            {
+              "fact_key": "罗睺（Rahu）的星座主是否落八宫（Randhr）"
+            },
+            {
+              "fact_key": "九宫主（Dharm's Lord）是否落陷"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Rahu is in the 9<sup>th</sup> from Dharm Bhava",
+              "claim": "罗睺（Rahu）落从九宫（Dharm）起算的第九宫"
+            },
+            {
+              "quote": "his dispositor is in Randhr Bhava",
+              "claim": "其星座主落八宫（Randhr）"
+            },
+            {
+              "quote": "Dharm’s Lord is in fall",
+              "claim": "九宫主（Dharm's Lord）落陷"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native be devoid of fortunes",
+              "claim": "命主没有财运"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v30",
+            "quote": "If Rahu is in the 9<sup>th</sup> from Dharm Bhava, as his dispositor is in Randhr Bhava and Dharm’s Lord is in fall, the native be devoid of fortunes.",
+            "pdf_pages": [
+              38
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：罗睺（Rahu）是否落从九宫（Dharm）起算的第九宫、罗睺（Rahu）的星座主是否落八宫（Randhr）、九宫主（Dharm's Lord）是否落陷。",
+        "stop_fact_keys": [
+          "罗睺（Rahu）是否落从九宫（Dharm）起算的第九宫",
+          "罗睺（Rahu）的星座主是否落八宫（Randhr）",
+          "九宫主（Dharm's Lord）是否落陷"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断贫困的程度或起止年岁。",
+          "不得把从九宫（Dharm）起算的第九宫换成从上升（Lagn）起算的宫位。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch20:v30"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "efd58c69c3249e135f57d541c1bf3798fb33fa166b31a2eed21ecc25add439e9"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v31-food-by-begging.step-001",
+      "method": {
+        "method": "ch20-v31-food-by-begging",
+        "title": "靠乞讨取得食物：土星与月亮同落九宫、上升主落陷",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会生计无着",
+          "土星月亮同落九宫又上升主落陷说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Shani be in Dharm Bhava along with Chandra, as Lagn’s Lord is in fall, the native will acquire food by begging.",
+            "土星落九宫 与月亮同宫 上升主落陷 乞讨取得食物"
+          ],
+          "counter_queries": [
+            "One will be fortunate (or affluent), if Dharm’s Lord is in Dharm Bhava with strength",
+            "Abundant fortunes be acquired after the 20<sup>th</sup> year, if Dharm has Guru in it, as its Lord is in an angle from Lagn"
+          ],
+          "boundary_queries": [
+            "If Karm’s Lord and Sahaj’s Lord are bereft of strength, while Dharm’s Lord is in fall, or combust the native will go begging for his food",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava"
+          ],
+          "method_queries": [
+            "These may be estimated with the help of the state of the Lords of Lagn and Dharm Bhava and in other manners as well",
+            "判断生计困顿要看九宫（Dharm）的占据者与上升主（Lagn's Lord）的状态"
+          ]
+        },
+        "stop_conditions": [
+          "缺少土星（Shani）落宫事实时停止。",
+          "缺少月亮（Chandra）与土星是否同宫的事实时停止。",
+          "缺少上升主（Lagn's Lord）是否落陷的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v31-food-by-begging.step-001",
+        "action": "核对土星（Shani）是否落九宫（Dharm）、月亮（Chandra）是否与土星同宫，并核对上升主（Lagn's Lord）是否落陷。",
+        "applicability_scope": "仅限本命盘九宫（Dharm）生计主题；原文未给时间或上升限定。",
+        "minimum_supported_claim": "土星（Shani）落九宫（Dharm）、月亮（Chandra）与土星同宫、且上升主（Lagn's Lord）落陷时，命主靠乞讨取得食物。",
+        "produced_fact_keys": [
+          "土星月亮同落九宫且上升主落陷主乞讨得食判定"
+        ],
+        "required_fact_keys": [
+          "土星（Shani）是否落九宫（Dharm）",
+          "月亮（Chandra）是否与土星（Shani）同宫",
+          "上升主（Lagn's Lord）是否落陷"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "土星（Shani）是否落九宫（Dharm）"
+            },
+            {
+              "fact_key": "月亮（Chandra）是否与土星（Shani）同宫"
+            },
+            {
+              "fact_key": "上升主（Lagn's Lord）是否落陷"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Shani be in Dharm Bhava along with Chandra",
+              "claim": "土星（Shani）落九宫（Dharm）、月亮（Chandra）与土星同宫"
+            },
+            {
+              "quote": "Lagn’s Lord is in fall",
+              "claim": "上升主（Lagn's Lord）落陷"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will acquire food by begging",
+              "claim": "命主靠乞讨取得食物"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v31",
+            "quote": "Should Shani be in Dharm Bhava along with Chandra, as Lagn’s Lord is in fall, the native will acquire food by begging.",
+            "pdf_pages": [
+              38
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：土星（Shani）是否落九宫（Dharm）、月亮（Chandra）是否与土星（Shani）同宫、上升主（Lagn's Lord）是否落陷。",
+        "stop_fact_keys": [
+          "土星（Shani）是否落九宫（Dharm）",
+          "月亮（Chandra）是否与土星（Shani）同宫",
+          "上升主（Lagn's Lord）是否落陷"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断乞讨发生的年岁或时长。",
+          "不得只凭土星落九宫就下断语，月亮同宫与上升主落陷是原文并列的条件。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "2620787ef398e10d3b01804df845fed763177fc562aa43fc77569b1cd1a6f4e0"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch20:v13-25": {
+      "evidence_atom_id": "bphs-97:santhanam:ch20:v13-25",
+      "chapter_number": 20,
+      "chapter_title": "Effects of Dharm Bhava",
+      "verse_label": "13-25.",
+      "content_role": "verse",
+      "exact_text": "13-25. Combinations for Father’s Death. The father of the native would have passed away prior to the native’s birth, if Surya is in Ari, Randhr, or Vyaya Bhava, as Randhr’s Lord is in Dharm Bhava, Vyaya’s Lord is in Tanu Bhava and Ari’s Lord is in Putr Bhava. Should Surya be in Randhr Bhava, while Randhr’s Lord is in Dharm, the native’s father will pass away within a year of his birth. If the Lord of Vyaya Bhava is in Dharm Bhava, while Dharm’s Lord is in its debilitation Navāńś, the native’s father will face his end during the 3<sup>rd</sup> , or the 16<sup>th</sup> year of the native. Death of father will occur in the 2<sup>nd</sup> , or the 12<sup>th</sup> year, if Lagn’s Lord is in Randhr Bhava, as Randhr’s Lord is with Surya. Should Rahu be in the 8<sup>th</sup> from Dharm, as Surya is in the 9<sup>th</sup> from Dharm, death of father will take place in the 16<sup>th</sup> , or the 18<sup>th</sup> year of the native. If Shani is in the 9<sup>th</sup> from Chandra, as Surya is with Rahu, the native’s father will die in the 7<sup>th</sup> , or the 19<sup>th</sup> year of the native. The native in his 44<sup>th</sup> year will lose his father, if Dharm’s Lord is in Vyaya, as Vyaya’s Lord is in Dharm. If Lagn’s Lord is in Randhr Bhava, as Chandra is in Surya’s Navāńś, the native in his 35<sup>th</sup> , or 41<sup>st</sup> year will lose his father. One will lose his father in the 50<sup>th</sup> year, if Surya, being the Lord of Dharm, is conjunct Mangal and Shani. If Surya is in the 7<sup>th</sup> from Dharm Bhava, as Rahu is in the 7<sup>th</sup> from Sahaj Bhava, the 6<sup>th</sup> , or 25<sup>th</sup> year of the native will be fatal for father. If Shani is in the 7<sup>th</sup> from Randhr Bhava, as Surya is in the 7<sup>th</sup> from Shani, the ages of 21, 26, or 30 will be fatal for the father. If Dharm’s Lord is in its debilitation Rāśi, while his dispositor is in Dharm Bhava, the native will lose his father at the age of 26, or 30. Thus the Jyotishis may know the effects.",
+      "pdf_pages": [
+        37
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 20 · Sloka 13-25 · PDF page 37 · bphs-97:santhanam:ch20:v13-25",
+      "previous_atom_id": "bphs-97:santhanam:ch20:v12",
+      "next_atom_id": "bphs-97:santhanam:ch20:v26",
+      "context_before": " If Karm’s Lord and Sahaj’s Lord are bereft of strength, while Dharm’s Lord is in fall, or combust the native will go begging for his food.\n\n",
+      "context_after": "26. Fortunes. One will enjoy abundant fortunes, if Shukra is in deep exaltation and be in the company of Dharm’s Lord, as Shani ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch20:v26": {
+      "evidence_atom_id": "bphs-97:santhanam:ch20:v26",
+      "chapter_number": 20,
+      "chapter_title": "Effects of Dharm Bhava",
+      "verse_label": "26.",
+      "content_role": "verse",
+      "exact_text": "26. Fortunes. One will enjoy abundant fortunes, if Shukra is in deep exaltation and be in the company of Dharm’s Lord, as Shani is in Sahaj.",
+      "pdf_pages": [
+        37
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 20 · Sloka 26 · PDF page 37 · bphs-97:santhanam:ch20:v26",
+      "previous_atom_id": "bphs-97:santhanam:ch20:v13-25",
+      "next_atom_id": "bphs-97:santhanam:ch20:v27-28",
+      "context_before": "ispositor is in Dharm Bhava, the native will lose his father at the age of 26, or 30. Thus the Jyotishis may know the effects.\n\n",
+      "context_after": "27-28. Fortunate Periods. Abundant fortunes be acquired after the 20<sup>th</sup> year, if Dharm has Guru in it, as its Lord is ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch20:v27-28": {
+      "evidence_atom_id": "bphs-97:santhanam:ch20:v27-28",
+      "chapter_number": 20,
+      "chapter_title": "Effects of Dharm Bhava",
+      "verse_label": "27-28.",
+      "content_role": "verse",
+      "exact_text": "27-28. Fortunate Periods. Abundant fortunes be acquired after the 20<sup>th</sup> year, if Dharm has Guru in it, as its Lord is in an angle from Lagn. Should Budh be in his deep exaltation, as Dharm’s Lord is in Dharm itself, abundant fortunes will be earned after the 36<sup>th</sup> year.",
+      "pdf_pages": [
+        37
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 20 · Sloka 27-28 · PDF page 37 · bphs-97:santhanam:ch20:v27-28",
+      "previous_atom_id": "bphs-97:santhanam:ch20:v26",
+      "next_atom_id": "bphs-97:santhanam:ch20:v29",
+      "context_before": " One will enjoy abundant fortunes, if Shukra is in deep exaltation and be in the company of Dharm’s Lord, as Shani is in Sahaj.\n\n",
+      "context_after": "29. Should Lagn’s Lord be in Dharm, as Dharm’s Lord is in Lagn and Guru is in Yuvati, there will be gains of wealth and conveyan",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch20:v29": {
+      "evidence_atom_id": "bphs-97:santhanam:ch20:v29",
+      "chapter_number": 20,
+      "chapter_title": "Effects of Dharm Bhava",
+      "verse_label": "29.",
+      "content_role": "verse",
+      "exact_text": "29. Should Lagn’s Lord be in Dharm, as Dharm’s Lord is in Lagn and Guru is in Yuvati, there will be gains of wealth and conveyances.",
+      "pdf_pages": [
+        37
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 20 · Sloka 29 · PDF page 37 · bphs-97:santhanam:ch20:v29",
+      "previous_atom_id": "bphs-97:santhanam:ch20:v27-28",
+      "next_atom_id": "bphs-97:santhanam:ch20:v30",
+      "context_before": " Should Budh be in his deep exaltation, as Dharm’s Lord is in Dharm itself, abundant fortunes will be earned after the 36<sup>th</sup> year.\n\n",
+      "context_after": "30. Lack of Fortunes. If Rahu is in the 9<sup>th</sup> from Dharm Bhava, as his dispositor is in Randhr Bhava and Dharm’s Lord i",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch20:v30": {
+      "evidence_atom_id": "bphs-97:santhanam:ch20:v30",
+      "chapter_number": 20,
+      "chapter_title": "Effects of Dharm Bhava",
+      "verse_label": "30.",
+      "content_role": "verse",
+      "exact_text": "30. Lack of Fortunes. If Rahu is in the 9<sup>th</sup> from Dharm Bhava, as his dispositor is in Randhr Bhava and Dharm’s Lord is in fall, the native be devoid of fortunes.",
+      "pdf_pages": [
+        38
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 20 · Sloka 30 · PDF page 38 · bphs-97:santhanam:ch20:v30",
+      "previous_atom_id": "bphs-97:santhanam:ch20:v29",
+      "next_atom_id": "bphs-97:santhanam:ch20:v31",
+      "context_before": " Should Lagn’s Lord be in Dharm, as Dharm’s Lord is in Lagn and Guru is in Yuvati, there will be gains of wealth and conveyances.\n\n<!-- SOURCE_PAGE 38 -->\n\n",
+      "context_after": "31. Food by Begging. Should Shani be in Dharm Bhava along with Chandra, as Lagn’s Lord is in fall, the native will acquire food ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch20:v31": {
+      "evidence_atom_id": "bphs-97:santhanam:ch20:v31",
+      "chapter_number": 20,
+      "chapter_title": "Effects of Dharm Bhava",
+      "verse_label": "31.",
+      "content_role": "verse",
+      "exact_text": "31. Food by Begging. Should Shani be in Dharm Bhava along with Chandra, as Lagn’s Lord is in fall, the native will acquire food by begging.",
+      "pdf_pages": [
+        38
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 20 · Sloka 31 · PDF page 38 · bphs-97:santhanam:ch20:v31",
+      "previous_atom_id": "bphs-97:santhanam:ch20:v30",
+      "next_atom_id": "bphs-97:santhanam:ch20:v32",
+      "context_before": " If Rahu is in the 9<sup>th</sup> from Dharm Bhava, as his dispositor is in Randhr Bhava and Dharm’s Lord is in fall, the native be devoid of fortunes.\n\n",
+      "context_after": "32. O Brahmin, these are the effects related to Dharm Bhava. I have explained briefly. These may be estimated with the help of t",
+      "content_missing": false
+    }
+  }
+}
