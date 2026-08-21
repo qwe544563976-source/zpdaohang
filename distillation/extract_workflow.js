@@ -51,6 +51,15 @@ ${REPO}/book-to-judgment-navigation/references/method-extraction.schema.json
 目录 ${REPO}/distillation/_local/batches/BATCH_LABEL/groups/
 先 ls 看有哪几组，逐个读完所有 *.json——那是本批全部原文，一条都不能漏。
 
+## 实况优先（凌驾于工单的两条铁律）
+1. **工单与目录实况矛盾时，以实况为准**，并在 notes 开头报告矛盾。
+   真实先例：工单写"g1 已抽完只补 g2"、目录里实际只有 g2——照工单干就废一批；
+   上一个 agent 按实况自己纠正了，这是标准行为。
+2. **修理类说明里"我猜的病因和修法"不可信，只有机器报错原文可信**。
+   动手前先复现报错；复现不出来就不改，在 notes 里报告"复现不出＋磁盘现状"。
+   真实先例：一份修理单给的诊断根本不成立，agent 复核后拒绝乱改，只修真拦住它的
+   逐字闸门问题——这是标准行为。另一个 agent 按错误诊断硬改，白干一轮。
+
 ## 交付方式（必须自验通过才算完成）
 1. 把 methods 数组（纯数组，不要外层对象）按组写到
    ${REPO}/distillation/_local/batches/BATCH_LABEL/fragments/<组名>.json
@@ -69,8 +78,11 @@ ${REPO}/book-to-judgment-navigation/references/method-extraction.schema.json
    写进 ${REPO}/distillation/_local/batches/BATCH_LABEL/knowledge_only.json：
    {"atoms":[{"evidence_atom_id":"…","reason":"…","semantic_class":"foundational_knowledge","disposition":"knowledge_only"}]}
    不要去改全局的 KNOWLEDGE_ONLY_ATOMS.json。
-5. 返回 JSON：{"batch","groups_written","methods","steps","atoms_covered","knowledge_only","notes"}
-   notes 写拆分依据、争议点、没把握的地方——审计会重点看这些。
+5. 返回 JSON：{"batch","groups_written","methods","steps","atoms_covered","knowledge_only",
+   "check_passed","check_summary","notes"}
+   check_passed／check_summary 必须**原样抄机器最后一次自验的真实结果**
+   （passed 布尔值＋报告关键行）。没过就如实填 false——口头说修完、机器没过，
+   下游装配一跑就现形，还多废一轮。notes 写拆分依据、争议点、没把握的地方。
 
 ## 本批
 批次：BATCH_LABEL
@@ -80,12 +92,15 @@ ${REPO}/book-to-judgment-navigation/references/method-extraction.schema.json
 
 const SCHEMA = {
   type: 'object', additionalProperties: false,
-  required: ['batch', 'groups_written', 'methods', 'steps', 'atoms_covered', 'knowledge_only', 'notes'],
+  required: ['batch', 'groups_written', 'methods', 'steps', 'atoms_covered', 'knowledge_only',
+             'check_passed', 'check_summary', 'notes'],
   properties: {
     batch: { type: 'string' },
     groups_written: { type: 'array', items: { type: 'string' } },
     methods: { type: 'integer' }, steps: { type: 'integer' },
     atoms_covered: { type: 'integer' }, knowledge_only: { type: 'integer' },
+    check_passed: { type: 'boolean' },
+    check_summary: { type: 'string' },
     notes: { type: 'string' },
   },
 }

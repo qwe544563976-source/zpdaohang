@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 """为整本书批量准备下一批（或下几批）的输入：导出分组、派生批次编号与主题。
 
-输出可直接作为 full_batch_workflow.js 的 args.batches。
+输出可直接作为 extract_workflow.js 的 args.batches——**组状态由本程序从目录实况
+生成，不许手写**。真实教训（2026-08-21 两连踩）：工单手写"g1 已抽完只补 g2"，
+目录实况正好相反，一批装配白跑、一批 agent 靠自己看目录才没被带偏。
+凡手写状态必然出错，和"手写章名错位一章"同病。
 
 用法：
-    python distillation/prepare_batches.py --next 3
+    python distillation/prepare_batches.py --next 3        # 取接下来未完成的 3 批
     python distillation/prepare_batches.py ch19-20 ch21-22
     python distillation/prepare_batches.py --status
 """
@@ -102,13 +105,24 @@ def main() -> int:
         # 批次编号里的主题串一律由原子自带章名派生；手写章名已经错位过一次。
         chapters = sorted(exported["chapter_titles"], key=int)
         slug = "-".join(slugify(chapter_term(titles[int(n)])) for n in chapters)[:60].strip("-")
+        groups = [g["group"] for g in exported["groups"]]
+        # 组状态：机器看目录，谁也不许手写
+        fragments_dir = LOCAL_BATCHES / label / "fragments"
+        have = sorted(f.stem for f in fragments_dir.glob("*.json")) if fragments_dir.is_dir() else []
+        missing = [g for g in groups if g not in have]
+        note = (
+            f"目录实况（机器生成，勿手写勿转述记忆）：已有片段 {'、'.join(have) or '无'}；"
+            f"缺 {'、'.join(missing) or '无'}。已存在的组文件跳过不动，只补缺的组。"
+        )
         prepared.append({
             "label": label,
             "batch_id": f"BPHS97_{label}_{slug}_{RUN_DATE}_run01",
-            "groups": [g["group"] for g in exported["groups"]],
+            "groups": groups,
             "topic": exported["topic_from_atoms"],
+            "note": note,
             "atoms": exported["atom_count"],
             "high_risk": exported["high_risk"],
+            "fully_extracted": not missing and bool(have),
         })
 
     print(json.dumps({"passed": True, "batches": prepared}, ensure_ascii=False, indent=2))
