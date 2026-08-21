@@ -21,6 +21,9 @@ import subprocess
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import check_term_drift  # noqa: E402  同目录工具，供装配时顺手跑一遍译名漂移
+
 REPO = Path(__file__).resolve().parents[1]
 SKILL = REPO / "book-to-judgment-navigation"
 BUILDER = SKILL / "scripts" / "build_methods.py"
@@ -207,7 +210,7 @@ def slugify(text: str) -> str:
     return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", text.lower())).strip("-") or "topic"
 
 
-def knowledge_maps(target: Path, scope: list[str], atoms: dict[str, dict]) -> None:
+def knowledge_maps(target: Path, scope: list[str], atoms: dict[str, dict]) -> list[str]:
     verify_bhava_order(atoms)
     chapters: dict[int, dict] = {}
     for atom_id in scope:
@@ -283,6 +286,7 @@ def knowledge_maps(target: Path, scope: list[str], atoms: dict[str, dict]) -> No
         "terms": glossary,
     })
 
+    return [entry["title"] for entry in topics.values()]
 
 def write_json(path: Path, value: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -348,7 +352,7 @@ def main() -> int:
         print(json.dumps({"stage": "build", **build}, ensure_ascii=False, indent=2))
         return 1
 
-    knowledge_maps(target, scope, atoms)
+    topic_order = knowledge_maps(target, scope, atoms)
 
     write_json(target / "WORK_ORDER.json", {
         "job_name": args.batch_id,
@@ -372,8 +376,9 @@ def main() -> int:
             "evidence_atom_scope": atom_scope,
         },
         "target_dir": str(target),
-        "topic_order": ["三宫兄弟姐妹", "四宫住房母亲车乘", "五宫子女"],
-        "review_requirement": "首批使用 v2 新工具，逐步全审，不得抽审",
+        # 主题顺序与复审要求都按本批实际情况生成：写死会跟着第 1 批走到第 69 批。
+        "topic_order": topic_order,
+        "review_requirement": "逐步全审，不得抽审；两轮审核（第一轮找问题，第二轮确认修复）",
     })
 
     write_json(target / "DISTILLATION_SOURCE.json", {
@@ -430,6 +435,13 @@ def main() -> int:
     validate = run([sys.executable, str(VALIDATOR), str(target), "--require-v2"], "validate --require-v2")
 
     recipes = json.loads((target / "references" / "navigation" / "method-recipes.json").read_text(encoding="utf-8"))
+
+    # 译名漂移是全批统计才现形的问题，一步步看方法看不出来（第 1 批 exalted 入旺 7 : 入庙 3 : 庙旺 1）。
+    # 不拦装配：它是提示不是判据，真有两种译法也可能是对的，交给审计员看。
+    # 但要落盘，让审计员一开工就知道该盯哪几步，不必自己全批数一遍。
+    drift = check_term_drift.scan(recipes)
+    write_json(target / "validation" / "term-drift-report.json", drift)
+
     print(json.dumps({
         "batch_id": args.batch_id,
         "target": str(target),
@@ -437,9 +449,16 @@ def main() -> int:
         "rendered_files": rendered_files,
         "validate_returncode": validate["returncode"],
         "validate": validate["report"],
+        "term_drift": drift,
         "methods": len(recipes.get("methods", [])),
         "steps": sum(len(m.get("steps", [])) for m in recipes.get("methods", [])),
     }, ensure_ascii=False, indent=2))
+    if not drift["passed"]:
+        print(
+            f"[译名漂移] {len(drift['drifts'])} 个术语在本批有多种译法，"
+            f"已写入 validation/term-drift-report.json，审计时优先看少数派步骤",
+            file=sys.stderr,
+        )
     return 0 if validate["returncode"] == 0 else 1
 
 
