@@ -160,6 +160,22 @@ const ENTRY_SCHEMA = {
 // 实测第一轮 725k tokens、第二轮 709k——步骤从 73 降到 15，token 却几乎没降，
 // 就是因为这两个视角每次都全批重看。
 const ROUND = args?.round || 1
+// 第二轮通常只锁被改动的步骤。但若装配侧改了字段（例：承接关系与时间限定
+// 原先被装配丢掉，补回后全部步骤指纹都变），凭证要全批重发，这时传 full_recheck
+// 让第二轮按第一轮的深度重审，并额外核对新进交付件的字段。
+const FULL_RECHECK = args?.full_recheck === true
+const RECHECK_NOTE = FULL_RECHECK ? `
+## 本轮的特殊背景（务必读）
+上一轮之后，生成器补回了两个原先被装配丢掉的字段，因此**每一步的指纹都变了**，
+凭证必须全批重发。除了照常逐字对照原文，请额外核对这两个字段：
+- \`context_bindings\`／\`context_reference\`：该步的条件若有一部分来自**别的偈**
+  （例：ch18:v8-9½「Mangal denotes a female with attractive breasts.」通篇没有"七宫"，
+  落七宫来自上一偈 ch18:v7-8½），绑定指向的原子对不对？该绑没绑？绑错了要 REJECT。
+- \`time_scope\`：label 写的年份／期间与原文一致吗？原文没有时间限定的应为 kind=none，
+  凭空多出时间限定要 REJECT。
+另有两步是上一轮 REJECT 后改的，请重点复核有没有改出新的"多说"：
+ch17-v9-relatives-similar-estimate.step-001、ch18-v31-marriage-23-26.step-001。
+` : ''
 const SHARDS = args?.shards || 4
 const shards = []
 const size = Math.ceil(stepIds.length / SHARDS)
@@ -167,7 +183,7 @@ for (let i = 0; i < stepIds.length; i += size) shards.push(stepIds.slice(i, i + 
 log(`应审步骤 ${stepIds.length} 个，分 ${shards.length} 片逐字对照原文全审`)
 
 const correctness = await parallel(shards.map((shard, index) => () =>
-  agent(CORRECTNESS.replace('SHARD_STEP_IDS', shard.map(id => `- ${id}`).join('\n')),
+  agent(CORRECTNESS.replace('SHARD_STEP_IDS', shard.map(id => `- ${id}`).join('\n')) + RECHECK_NOTE,
     { label: `对照原文:${index + 1}/${shards.length}`, phase: '对照原文审计', schema: ENTRY_SCHEMA })
 ))
 
