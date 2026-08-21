@@ -10,6 +10,7 @@ import json
 import math
 import os
 import random
+import re
 import sys
 import tempfile
 from collections import Counter
@@ -487,6 +488,39 @@ def assemble_step(method_id: str, number: int, step: dict[str, Any], atoms: dict
     return assembled
 
 
+ASCII_QUERY = re.compile(r"^[\x00-\x7f\u00c0-\u024f\u1e00-\u1eff’‘“”]+$")
+
+
+def build_retrieval_plan(method: dict[str, Any], verbatim_corpus: str,
+                         findings: list[dict[str, str]]) -> dict[str, Any]:
+    """V3 查询装配：派生步级支持查询＋逐字校验模型写的英文查询。
+
+    - derived_step_queries：程序从每步 claim_terms 生成，绑定 step_id，模型零参与；
+    - 模型写的四路里，凡是英文查询必须是冻结原文（规范化后）的连续子串——
+      这一条同时拦住：宽泛章节复述、原文没有的 D9/落陷/燃烧/化解、方向颠倒后
+      原文不存在的组合。中文查询是导航标签，不参与逐字校验；
+    - 命中问题记入 findings，由调用方决定拦或报（新批次拦，旧批次重装配时报）。
+    """
+    plan = dict(method["retrieval_plan"])
+    derived: list[dict[str, str]] = []
+    for number, step in enumerate(method["steps"], 1):
+        step_id = f"{method['method']}.step-{number:03d}"
+        derived.extend(shared_constants.derive_step_queries(step_id, step["claim_terms"]))
+    plan["derived_step_queries"] = derived
+    for lane in ("support_queries", "counter_queries", "boundary_queries", "method_queries"):
+        kept = []
+        for query in plan.get(lane) or []:
+            if ASCII_QUERY.match(query) and not shared_constants.is_verbatim_in(query, verbatim_corpus):
+                # 词词无出处的英文查询（宽泛意译、关键词拼盘、编造的否定词）：
+                # 从交付件里剔除并登记。派生查询已提供步级精准锚点，剔除零召回损失；
+                # 抽取员自验（--check-only）时这类会直接判不通过，逼着在源头写对。
+                findings.append({"method": method["method"], "lane": lane, "query": query})
+            else:
+                kept.append(query)
+        plan[lane] = kept
+    return plan
+
+
 def assemble(extraction: dict[str, Any], atoms: dict[str, dict]) -> tuple[dict[str, Any], dict[str, Any]]:
     batch = extraction["batch"]
     source_scope = set(extraction["source_scope"])
@@ -540,6 +574,16 @@ def assemble(extraction: dict[str, Any], atoms: dict[str, dict]) -> tuple[dict[s
         )
 
     review_mode, review_reason = effective_review(batch)
+    # V3 逐字闸门用的规范化全书语料：查询必须能在冻结原文里逐字命中，
+    # 编出来的 D9/落陷/化解、宽泛章节复述在这里一律现形。
+    # 语料＝正文 exact_text ＋ 章名 chapter_title（都是冻结内容；
+    # 边界路合法引用章名，实测 ch20:v5 引第 6 章章名做分盘续查线索）。
+    verbatim_corpus = " \n ".join(
+        [shared_constants.normalize_for_verbatim(atom.get("exact_text", "")) for atom in atoms.values()]
+        + sorted({shared_constants.normalize_for_verbatim(atom.get("chapter_title", ""))
+                  for atom in atoms.values() if atom.get("chapter_title")})
+    )
+    query_findings: list[dict[str, str]] = []
     methods = []
     for method in extraction["methods"]:
         facts = method["facts"]
@@ -562,7 +606,10 @@ def assemble(extraction: dict[str, Any], atoms: dict[str, dict]) -> tuple[dict[s
                 assemble_step(method["method"], number, step, atoms)
                 for number, step in enumerate(method["steps"], 1)
             ],
-            "retrieval_plan": method["retrieval_plan"],
+            # V3：支持路查询由程序从逐字短引确定性派生（步级靶向、方向正确、
+            # 词词有原文出处、梵英双轨），模型写的四路保留但受逐字闸门约束。
+            # retrieval_plan 在方法层、不进 step_hash——查询升级不作废审计凭证。
+            "retrieval_plan": build_retrieval_plan(method, verbatim_corpus, query_findings),
             "stop_conditions": method["stop_conditions"],
             "executable_in_pilot": False,
             # Q17 留插座：PVR（整盘步骤脊梁）未加工前一律 null，不猜结构。
@@ -631,6 +678,9 @@ def assemble(extraction: dict[str, Any], atoms: dict[str, dict]) -> tuple[dict[s
         "steps": sum(len(item["steps"]) for item in methods),
         "source_scope_count": len(source_scope),
         "executable_methods": 0,
+        # V3 逐字闸门结果：模型写的英文查询里，无法在冻结原文逐字命中的条目。
+        # 空列表＝全部查询词词有出处。
+        "query_verbatim_findings": query_findings,
         "errors": [],
     }
     return output, report
@@ -738,6 +788,14 @@ def main() -> int:
         validate_schema(extraction)
         atoms, _package = resolve_atoms(args.accepted_package.resolve(), extraction["batch"])
         output, report = assemble(extraction, atoms)
+        if args.check_only and report.get("query_verbatim_findings"):
+            # 自验模式对宽词零容忍：装配虽会机械剔除，但抽取员必须在源头写对，
+            # 否则四路只剩派生查询、模型该给的反例/边界线索悄悄流失。
+            report["passed"] = False
+            report["errors"] = [
+                f"{f['method']} 的 {f['lane']} 含词词无出处的英文查询：{f['query'][:70]!r}"
+                for f in report["query_verbatim_findings"]
+            ]
         if not args.check_only:
             output_path = args.output.resolve()
             standard_root = (

@@ -1568,9 +1568,14 @@ def validate_method(
     if not isinstance(retrieval_plan, dict):
         errors.append(f"{label} 缺少 retrieval_plan")
     else:
+        # V3：空车道是诚实结果（原文没写反例/边界就不许硬凑），不再要求四路全非空。
+        # 但支持路不能整个失守：抽取员写的支持路为空时，必须有程序派生的步级查询顶上。
         for lane in QUERY_LANES:
-            if not non_empty_list(retrieval_plan.get(lane)):
-                errors.append(f"{label} 缺少非空查询路线 {lane}")
+            if not isinstance(retrieval_plan.get(lane), list):
+                errors.append(f"{label} 的查询路线 {lane} 必须是数组")
+        if not non_empty_list(retrieval_plan.get("support_queries")) \
+                and not non_empty_list(retrieval_plan.get("derived_step_queries")):
+            errors.append(f"{label} 支持路为空且没有派生步级查询——该方法完全无法被检索")
 
     upstream_issue_ids = item.get("upstream_issue_ids")
     upstream_issue_ids = upstream_issue_ids if isinstance(upstream_issue_ids, list) else []
@@ -2179,9 +2184,17 @@ def validate_topics(
         missing = REQUIRED_TOPIC_FIELDS - set(item)
         if missing:
             errors.append(f"{label} 缺字段：{sorted(missing)}")
-        for field in ("user_intents", "required_facts", "stop_conditions") + QUERY_LANES:
+        for field in ("user_intents", "required_facts", "stop_conditions"):
             if not non_empty_list(item.get(field)):
                 errors.append(f"{label} 缺少非空数组 {field}")
+        # V3：主题层四路同方法层——空车道是诚实结果，但必须是数组；
+        # 支持路可由派生步级查询兜底。
+        for lane in QUERY_LANES:
+            if not isinstance(item.get(lane), list):
+                errors.append(f"{label} 的查询路线 {lane} 必须是数组")
+        if not non_empty_list(item.get("support_queries")) \
+                and not non_empty_list(item.get("derived_step_queries")):
+            errors.append(f"{label} 支持路为空且没有派生步级查询")
         conditional_facts = item.get("conditional_facts")
         if not isinstance(conditional_facts, list):
             errors.append(f"{label} 的 conditional_facts 必须是数组")
@@ -2252,6 +2265,48 @@ def validate_pilot_policy(
         for topic, item in topics.items():
             if isinstance(item, dict) and item.get("execution_allowed") is True:
                 errors.append(f"试验状态禁止生产执行，但主题 {topic} 被允许执行")
+
+
+def validate_v3_queries(methods: list[dict], source_path, errors: list[str]) -> None:
+    """V3 查询的验证器侧独立复核（与生成器同一共享函数、各自独立执行）。"""
+    import re as _re
+    if not source_path:
+        return  # 原文路径缺失由前置检查报，不在这里重复
+    try:
+        lines = Path(source_path).read_text(encoding="utf-8").splitlines()
+    except OSError:
+        return  # 原文文件缺失由前置检查报，不在这里重复
+    parts, titles = [], set()
+    for line in lines:
+        if not line.strip():
+            continue
+        atom = json.loads(line)
+        parts.append(shared_constants.normalize_for_verbatim(atom.get("exact_text", "")))
+        if atom.get("chapter_title"):
+            titles.add(shared_constants.normalize_for_verbatim(atom["chapter_title"]))
+    corpus = " \n ".join(parts + sorted(titles))
+    ascii_query = _re.compile(r"^[\x00-\x7f\u00c0-\u024f\u1e00-\u1eff’‘“”]+$")
+    for method in methods:
+        plan = method.get("retrieval_plan")
+        if not isinstance(plan, dict):
+            continue
+        label = f"方法 {method.get('method')}"
+        derived = plan.get("derived_step_queries")
+        if isinstance(derived, list):
+            expected: list[dict] = []
+            for number, step in enumerate(method.get("steps") or [], 1):
+                claim_terms = step.get("claim_terms") if isinstance(step, dict) else None
+                if isinstance(claim_terms, dict):
+                    expected.extend(shared_constants.derive_step_queries(
+                        f"{method.get('method')}.step-{number:03d}", claim_terms
+                    ))
+            if derived != expected:
+                errors.append(f"{label} 的 derived_step_queries 与从 claim_terms 重新派生的结果不一致（疑被手改）")
+        for lane in ("support_queries", "counter_queries", "boundary_queries", "method_queries"):
+            for query in plan.get(lane) or []:
+                if isinstance(query, str) and ascii_query.match(query) \
+                        and not shared_constants.is_verbatim_in(query, corpus):
+                    errors.append(f"{label} 的 {lane} 含无法在冻结原文逐字命中的英文查询：{query[:70]!r}")
 
 
 def validate(root: Path, require_v2: bool = False) -> dict:
@@ -2340,6 +2395,11 @@ def validate(root: Path, require_v2: bool = False) -> dict:
     )
     methods = recipe_data.get("methods")
     methods = methods if isinstance(methods, list) else []
+    # V3 独立复核（不信任生成器自报）：
+    # 1) derived_step_queries 若存在，必须与"从 claim_terms 重新派生"逐字节一致——
+    #    claim_terms 受步骤指纹保护，所以这一条同时保证派生查询没被手改；
+    # 2) 四路英文查询在全书冻结原文（含章名）上重跑逐字命中。
+    validate_v3_queries(methods, source_path, errors)
     enforce_v2 = recipe_data.get("schema_version") == "judgment-method-recipes/v2" or require_v2
     if require_v2 and recipe_data.get("schema_version") != "judgment-method-recipes/v2":
         errors.append("本批要求 v2，但方法配方不是由唯一正式生成器重新生成")

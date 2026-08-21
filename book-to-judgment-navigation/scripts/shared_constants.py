@@ -306,3 +306,156 @@ def map_high_risk_terms(
                 }
             )
     return rows, uncovered
+
+
+# ---------------------------------------------------------------------------
+# 第三部分：V3 查询派生（2026-08-21 拆网定案后老板拍板的升级）
+#
+# V2 的丢分根因：四路查询靠模型看完方法后自由发挥，必然产生宽泛章节词、
+# 主体方向颠倒、原文没写的 D9/落陷/化解被硬塞进反例路。
+# V3 铁律：支持路查询由程序从步骤已保存的逐字短引（claim_terms）确定性生成，
+# 模型不再自由发挥。短引本身经过机器逐字校验（必须是 exact_text 子串），
+# 所以派生查询天然做到：步级精确靶向、方向正确、词词有原文出处。
+#
+# 通用与书籍专属分开：派生函数是通用内核；下面两张表是 BPHS（Santhanam 译本）
+# 专属术语表——换一本书换这两张表，函数不动。
+# ---------------------------------------------------------------------------
+
+# BPHS 十二宫名 → 宫位序数。次序出自原文 ch07:v37-38 自列的十二宫名
+# （装配时 make_batch.verify_bhava_order 回原文核对同一张表的次序）。
+BHAVA_ORDINALS = {
+    "tanu": 1, "thanu": 1, "dhan": 2, "sahaj": 3, "bandhu": 4, "putr": 5,
+    "ari": 6, "yuvati": 7, "randhr": 8, "dharm": 9, "karm": 10, "karma": 10,
+    "labh": 11, "vyaya": 12, "lagn": 1, "lagna": 1,
+}
+# BPHS 行星梵文名 → 现代英文名（双轨检索：FTS5 吃梵文原词，语义检索吃英文）
+GRAHA_ENGLISH = {
+    "surya": "sun", "chandra": "moon", "mangal": "mars", "budh": "mercury",
+    "guru": "jupiter", "shukra": "venus", "shukr": "venus", "shani": "saturn",
+    "rahu": "rahu", "ketu": "ketu",
+}
+
+_ORDINAL_SUFFIX = {1: "1st", 2: "2nd", 3: "3rd"}
+
+
+def _ordinal(number: int) -> str:
+    return _ORDINAL_SUFFIX.get(number, f"{number}th")
+
+
+def bilingual_variant(text: str, bhava_ordinals: dict | None = None,
+                      graha_english: dict | None = None) -> str | None:
+    """把含梵文宫名/曜名的逐字引文翻成现代英文序数写法，供语义检索用。
+
+    例：`Dharm's Lord be in Karm Bhava` → `9th lord be in 10th house`。
+    纯确定性替换，没有任何一处替换发生就返回 None（不产出无信息的复读）。
+    """
+    bhava_ordinals = BHAVA_ORDINALS if bhava_ordinals is None else bhava_ordinals
+    graha_english = GRAHA_ENGLISH if graha_english is None else graha_english
+    result = re.sub(r"</?sup>", "", text)
+    changed = False
+
+    def sub(pattern: str, repl_fn) -> None:
+        nonlocal result, changed
+        new = re.sub(pattern, repl_fn, result, flags=re.I)
+        if new != result:
+            changed = True
+            result = new
+
+    names = "|".join(sorted(bhava_ordinals, key=len, reverse=True))
+    # X's Lord / Lord of X → Nth lord
+    sub(rf"\b({names})['’]s\s+Lord", lambda m: f"{_ordinal(bhava_ordinals[m.group(1).lower()])} lord")
+    sub(rf"\bLord\s+of\s+({names})\b", lambda m: f"{_ordinal(bhava_ordinals[m.group(1).lower()])} lord")
+    # X Bhava / 裸宫名 → Nth house
+    sub(rf"\b({names})\s+Bhava\b", lambda m: f"{_ordinal(bhava_ordinals[m.group(1).lower()])} house")
+    sub(rf"\b({names})\b(?!\s*(?:Bhava|house|lord))",
+        lambda m: f"{_ordinal(bhava_ordinals[m.group(1).lower()])} house")
+    # 行星梵文名 → 英文名
+    graha = "|".join(sorted(graha_english, key=len, reverse=True))
+    sub(rf"\b({graha})\b", lambda m: graha_english[m.group(1).lower()])
+    return result if changed else None
+
+
+def derive_step_queries(step_id: str, claim_terms: dict) -> list[dict]:
+    """从一步的逐字短引确定性生成支持路查询（V3 内核，模型零参与）。
+
+    每条查询独立成串（不写混合长句）：
+    - 每条条件短引单独一条（逐字，FTS5 直接命中）；
+    - 每条结果短引单独一条（逐字）；
+    - 每条条件＋第一条结果拼一条精准组合（含条件词与结果词，供重排核对完整关系）；
+    - 每条逐字查询若含梵文术语，追加一条英文序数变体（双轨）。
+    """
+    conditions = [item["quote"] for item in claim_terms.get("conditions", []) if item.get("quote")]
+    results = [item["quote"] for item in claim_terms.get("results", []) if item.get("quote")]
+    derived: list[dict] = []
+    seen: set[str] = set()
+
+    def add(query: str, origin: str) -> None:
+        cleaned = re.sub(r"</?sup>", "", query).strip()
+        if cleaned and cleaned not in seen:
+            seen.add(cleaned)
+            derived.append({"step_id": step_id, "lane": "support", "origin": origin, "query": cleaned})
+
+    for quote in conditions:
+        add(quote, "verbatim_condition")
+    for quote in results:
+        add(quote, "verbatim_result")
+    if results:
+        for quote in conditions:
+            add(f"{quote} {results[0]}", "verbatim_condition_plus_result")
+    for item in list(derived):
+        variant = bilingual_variant(item["query"])
+        if variant and variant.casefold() != item["query"].casefold():
+            add(variant, "bilingual_" + item["origin"])
+    return derived
+
+
+def normalize_for_verbatim(text: str) -> str:
+    """逐字校验用的规范化：去 <sup> 标签、去音符、小写、去标点、压空白。
+
+    标点不敏感：抽取员常把原文里相邻两句拼成一条查询（丢掉中间的句号），
+    内容仍然逐字——实测 ch19-20 有 18 条这类"句号级差异"，不该按编造拦。
+    去掉标点后，编造的内容（原文根本没有的词序）依旧接不上，闸门效力不变。"""
+    cleaned = re.sub(r"</?sup>", "", text)
+    cleaned = normalize_for_term_match(cleaned)
+    cleaned = re.sub(r"[.,;:!?()\[\]{}\"'’‘“”/\\-]", " ", cleaned)
+    return re.sub(r"\s+", " ", cleaned).strip()
+
+
+def is_verbatim_in(query: str, normalized_corpus: str) -> bool:
+    """查询是否词词有原文出处。
+
+    合格的两种形态（实测 ch19-20 全部 487 条派生查询与 15 条方法路查询归入这两类）：
+    1. 整条是冻结原文（规范化后）的连续子串；
+    2. 拆成不超过 3 段，每段要么是 ≥4 个词的连续逐字片段，要么是单个高风险
+       专名表里的词（例：标题「The Sixteen Divisions of a Rāśi」＋「Navāńś」）。
+    编造的查询（如 `Dharm Lord debilitated combust afflicted`）拼不出 ≥4 词的
+    连续片段，仍然被拦。
+    """
+    normalized = normalize_for_verbatim(query)
+    if not normalized:
+        return False
+    if normalized in normalized_corpus:
+        return True
+    words = normalized.split()
+    fragments = 0
+    index = 0
+    while index < len(words):
+        # 贪心找从 index 起最长的连续命中片段
+        best = 0
+        for end in range(index + 1, len(words) + 1):
+            if " ".join(words[index:end]) in normalized_corpus:
+                best = end
+            else:
+                break
+        length = best - index
+        if length >= 4:
+            fragments += 1
+            index = best
+        elif length >= 1 and words[index] in HIGH_RISK_PROPER_NOUNS:
+            fragments += 1
+            index += 1
+        else:
+            return False
+        if fragments > 3:
+            return False
+    return True

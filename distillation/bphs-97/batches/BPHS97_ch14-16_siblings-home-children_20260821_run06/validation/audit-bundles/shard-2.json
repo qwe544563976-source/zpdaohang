@@ -1,0 +1,3500 @@
+{
+  "shard": 2,
+  "step_count": 15,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-001",
+      "method": {
+        "method": "ch14-v13-chandra-alone-cobirth-gender",
+        "title": "Chandra 单独落三宫：受阳性行星相照主弟弟，受 Shukra 相照主妹妹",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会有弟弟还是妹妹",
+          "月亮单独落在三宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "月亮单独落三宫 阳性行星相照 弟弟 金星相照 妹妹"
+          ],
+          "counter_queries": [
+            "三宫凶星 弟妹被毁"
+          ],
+          "boundary_queries": [
+            "月亮独落三宫判断的适用边界"
+          ],
+          "method_queries": [
+            "判断弟妹性别的步骤"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Chandra is lonely placed in Sahaj Bhava"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "with Drishti of male Grahas"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "there will be younger brothers"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Chandra is lonely placed in Sahaj Bhava there will be younger brothers"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "with Drishti of male Grahas there will be younger brothers"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If moon is lonely placed in 3rd house"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If moon is lonely placed in 3rd house there will be younger brothers"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Chandra is lonely placed in Sahaj Bhava"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the Drishti of Shukra"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "denotes younger sisters"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Chandra is lonely placed in Sahaj Bhava denotes younger sisters"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the Drishti of Shukra denotes younger sisters"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If moon is lonely placed in 3rd house"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "the Drishti of venus"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If moon is lonely placed in 3rd house denotes younger sisters"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "the Drishti of venus denotes younger sisters"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少 Chandra 是否单独落三宫的事实时停止。",
+          "缺少三宫相照行星的阴阳与 Shukra 相照事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-001",
+        "action": "核对 Chandra 是否单独落三宫并受阳性行星相照。",
+        "applicability_scope": "仅限本命盘三宫兄弟姐妹性别主题；原文未给弟弟的数目与时间。",
+        "minimum_supported_claim": "Chandra 单独落三宫并受阳性行星相照时，会有弟弟。",
+        "produced_fact_keys": [
+          "Chandra 单独落三宫主有弟弟判定"
+        ],
+        "required_fact_keys": [
+          "Chandra 是否单独落三宫",
+          "三宫是否受阳性行星相照"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "Chandra 是否单独落三宫"
+            },
+            {
+              "fact_key": "三宫是否受阳性行星相照"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Chandra is lonely placed in Sahaj Bhava",
+              "claim": "Chandra 单独落三宫"
+            },
+            {
+              "quote": "with Drishti of male Grahas",
+              "claim": "并受阳性行星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "there will be younger brothers",
+              "claim": "会有弟弟"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch14:v12-13",
+            "quote": "If Chandra is lonely placed in Sahaj Bhava with Drishti of male Grahas, there will be younger brothers",
+            "pdf_pages": [
+              29
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Chandra 是否单独落三宫、三宫是否受阳性行星相照。",
+        "stop_fact_keys": [
+          "Chandra 是否单独落三宫",
+          "三宫是否受阳性行星相照"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断弟弟的数目或出生年份。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "519ce51023f8207548cf4806e1e4dcb2eaf283345e1c6de054d6b0dc4da1e316"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-002",
+      "method": {
+        "method": "ch14-v13-chandra-alone-cobirth-gender",
+        "title": "Chandra 单独落三宫：受阳性行星相照主弟弟，受 Shukra 相照主妹妹",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会有弟弟还是妹妹",
+          "月亮单独落在三宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "月亮单独落三宫 阳性行星相照 弟弟 金星相照 妹妹"
+          ],
+          "counter_queries": [
+            "三宫凶星 弟妹被毁"
+          ],
+          "boundary_queries": [
+            "月亮独落三宫判断的适用边界"
+          ],
+          "method_queries": [
+            "判断弟妹性别的步骤"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Chandra is lonely placed in Sahaj Bhava"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "with Drishti of male Grahas"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "there will be younger brothers"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Chandra is lonely placed in Sahaj Bhava there will be younger brothers"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "with Drishti of male Grahas there will be younger brothers"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If moon is lonely placed in 3rd house"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If moon is lonely placed in 3rd house there will be younger brothers"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Chandra is lonely placed in Sahaj Bhava"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the Drishti of Shukra"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "denotes younger sisters"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Chandra is lonely placed in Sahaj Bhava denotes younger sisters"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the Drishti of Shukra denotes younger sisters"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If moon is lonely placed in 3rd house"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "the Drishti of venus"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If moon is lonely placed in 3rd house denotes younger sisters"
+            },
+            {
+              "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "the Drishti of venus denotes younger sisters"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少 Chandra 是否单独落三宫的事实时停止。",
+          "缺少三宫相照行星的阴阳与 Shukra 相照事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch14-v13-chandra-alone-cobirth-gender.step-002",
+        "action": "核对 Chandra 单独落三宫时是否受 Shukra 相照。",
+        "applicability_scope": "仅限本命盘三宫兄弟姐妹性别主题；本条承接同句“Chandra 单独落三宫”的前提，原文未给妹妹的数目与时间。",
+        "minimum_supported_claim": "Chandra 单独落三宫，受 Shukra 相照时，主有妹妹。",
+        "produced_fact_keys": [
+          "Chandra 单独落三宫主有妹妹判定"
+        ],
+        "required_fact_keys": [
+          "Chandra 是否单独落三宫",
+          "三宫是否受 Shukra 相照"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "Chandra 是否单独落三宫"
+            },
+            {
+              "fact_key": "三宫是否受 Shukra 相照"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Chandra is lonely placed in Sahaj Bhava",
+              "claim": "Chandra 单独落三宫"
+            },
+            {
+              "quote": "the Drishti of Shukra",
+              "claim": "受 Shukra 相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "denotes younger sisters",
+              "claim": "主有妹妹"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch14:v12-13",
+            "quote": "If Chandra is lonely placed in Sahaj Bhava with Drishti of male Grahas, there will be younger brothers, while the Drishti of Shukra denotes younger sisters.",
+            "pdf_pages": [
+              29
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Chandra 是否单独落三宫、三宫是否受 Shukra 相照。",
+        "stop_fact_keys": [
+          "Chandra 是否单独落三宫",
+          "三宫是否受 Shukra 相照"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断妹妹的数目或出生年份。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch14:v12-13"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "c9aa8ef3ee68ac05ec63c6c9bd93eb8b4318f9cda0bafcb932cc427b167cc873"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch14-v14-adverse-grahas.step-001",
+      "method": {
+        "method": "ch14-v14-adverse-grahas",
+        "title": "三宫的凶星：Surya 毁兄姐、Shani 毁弟妹、Mangal 两者皆毁",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的哥哥姐姐会不会有事",
+          "我的弟弟妹妹保得住吗"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "太阳落三宫 毁兄姐 土星落三宫 毁弟妹 火星两者皆毁"
+          ],
+          "counter_queries": [
+            "三宫吉星同宫 兄弟姐妹得保全"
+          ],
+          "boundary_queries": [
+            "三宫凶星判断的适用边界"
+          ],
+          "method_queries": [
+            "判断三宫凶星对兄弟姐妹影响的步骤"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Surya in Sahaj Bhava"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will destroy the preborn"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Surya in Sahaj Bhava will destroy the preborn"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "sun in 3rd house"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "sun in 3rd house will destroy the preborn"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Shani is found in Sahaj Bhava"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The afterborn will be destroyed"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Shani is found in Sahaj Bhava The afterborn will be destroyed"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if saturn is found in 3rd house"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if saturn is found in 3rd house The afterborn will be destroyed"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "In the same situation Mangal"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will destroy both the preborn and later-born"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "In the same situation Mangal will destroy both the preborn and later-born"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "In the same situation mars"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "In the same situation mars will destroy both the preborn and later-born"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少 Surya、Shani、Mangal 的落宫事实时停止。",
+          "无法确定三宫（Sahaj Bhava）所在星座时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch14-v14-adverse-grahas.step-001",
+        "action": "核对 Surya 是否落三宫。",
+        "applicability_scope": "仅限本命盘三宫先出生兄姐的存亡主题；原文未给毁灭的年龄或年份。",
+        "minimum_supported_claim": "Surya 落三宫，会毁灭先出生的兄姐。",
+        "produced_fact_keys": [
+          "Surya 落三宫毁灭兄姐判定"
+        ],
+        "required_fact_keys": [
+          "Surya 是否落三宫"
+        ],
+        "condition_logic": {
+          "fact_key": "Surya 是否落三宫"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Surya in Sahaj Bhava",
+              "claim": "Surya 落三宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will destroy the preborn",
+              "claim": "会毁灭先出生的兄姐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch14:v14",
+            "quote": "Surya in Sahaj Bhava will destroy the preborn.",
+            "pdf_pages": [
+              29
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Surya 是否落三宫。",
+        "stop_fact_keys": [
+          "Surya 是否落三宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把先出生兄姐的结论套用到后出生的弟妹。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "72564c30e17211b32755f1a9942a5d41889389a368e1406623a672da343dca97"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch14-v14-adverse-grahas.step-002",
+      "method": {
+        "method": "ch14-v14-adverse-grahas",
+        "title": "三宫的凶星：Surya 毁兄姐、Shani 毁弟妹、Mangal 两者皆毁",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的哥哥姐姐会不会有事",
+          "我的弟弟妹妹保得住吗"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "太阳落三宫 毁兄姐 土星落三宫 毁弟妹 火星两者皆毁"
+          ],
+          "counter_queries": [
+            "三宫吉星同宫 兄弟姐妹得保全"
+          ],
+          "boundary_queries": [
+            "三宫凶星判断的适用边界"
+          ],
+          "method_queries": [
+            "判断三宫凶星对兄弟姐妹影响的步骤"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Surya in Sahaj Bhava"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will destroy the preborn"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Surya in Sahaj Bhava will destroy the preborn"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "sun in 3rd house"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "sun in 3rd house will destroy the preborn"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Shani is found in Sahaj Bhava"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The afterborn will be destroyed"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Shani is found in Sahaj Bhava The afterborn will be destroyed"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if saturn is found in 3rd house"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if saturn is found in 3rd house The afterborn will be destroyed"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "In the same situation Mangal"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will destroy both the preborn and later-born"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "In the same situation Mangal will destroy both the preborn and later-born"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "In the same situation mars"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "In the same situation mars will destroy both the preborn and later-born"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少 Surya、Shani、Mangal 的落宫事实时停止。",
+          "无法确定三宫（Sahaj Bhava）所在星座时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch14-v14-adverse-grahas.step-002",
+        "action": "核对 Shani 是否落三宫。",
+        "applicability_scope": "仅限本命盘三宫后出生弟妹的存亡主题；原文未给毁灭的年龄或年份。",
+        "minimum_supported_claim": "Shani 落三宫，后出生的弟妹会被毁灭。",
+        "produced_fact_keys": [
+          "Shani 落三宫毁灭弟妹判定"
+        ],
+        "required_fact_keys": [
+          "Shani 是否落三宫"
+        ],
+        "condition_logic": {
+          "fact_key": "Shani 是否落三宫"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if Shani is found in Sahaj Bhava",
+              "claim": "Shani 落三宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "The afterborn will be destroyed",
+              "claim": "后出生的弟妹会被毁灭"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch14:v14",
+            "quote": "The afterborn will be destroyed, if Shani is found in Sahaj Bhava.",
+            "pdf_pages": [
+              29
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Shani 是否落三宫。",
+        "stop_fact_keys": [
+          "Shani 是否落三宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把后出生弟妹的结论套用到先出生的兄姐。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "3785f2ff51dae5110a38332bd6a2d0b485ee56036797cbb9460057cf612cd95b"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch14-v14-adverse-grahas.step-003",
+      "method": {
+        "method": "ch14-v14-adverse-grahas",
+        "title": "三宫的凶星：Surya 毁兄姐、Shani 毁弟妹、Mangal 两者皆毁",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的哥哥姐姐会不会有事",
+          "我的弟弟妹妹保得住吗"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "太阳落三宫 毁兄姐 土星落三宫 毁弟妹 火星两者皆毁"
+          ],
+          "counter_queries": [
+            "三宫吉星同宫 兄弟姐妹得保全"
+          ],
+          "boundary_queries": [
+            "三宫凶星判断的适用边界"
+          ],
+          "method_queries": [
+            "判断三宫凶星对兄弟姐妹影响的步骤"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Surya in Sahaj Bhava"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will destroy the preborn"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Surya in Sahaj Bhava will destroy the preborn"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "sun in 3rd house"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "sun in 3rd house will destroy the preborn"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Shani is found in Sahaj Bhava"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The afterborn will be destroyed"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Shani is found in Sahaj Bhava The afterborn will be destroyed"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if saturn is found in 3rd house"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if saturn is found in 3rd house The afterborn will be destroyed"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "In the same situation Mangal"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will destroy both the preborn and later-born"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "In the same situation Mangal will destroy both the preborn and later-born"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "In the same situation mars"
+            },
+            {
+              "step_id": "ch14-v14-adverse-grahas.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "In the same situation mars will destroy both the preborn and later-born"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少 Surya、Shani、Mangal 的落宫事实时停止。",
+          "无法确定三宫（Sahaj Bhava）所在星座时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch14-v14-adverse-grahas.step-003",
+        "action": "核对 Mangal 是否同样落三宫。",
+        "applicability_scope": "仅限本命盘三宫兄弟姐妹存亡主题；本句以“In the same situation”承接前两句的落三宫情形，原文未给年龄或年份。",
+        "minimum_supported_claim": "Mangal 在同样落三宫的情况下，会毁灭先出生与后出生的兄弟姐妹。",
+        "produced_fact_keys": [
+          "Mangal 落三宫毁灭先后出生兄弟姐妹判定"
+        ],
+        "required_fact_keys": [
+          "Mangal 是否落三宫"
+        ],
+        "condition_logic": {
+          "fact_key": "Mangal 是否落三宫"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "In the same situation Mangal",
+              "claim": "Mangal 在同样落三宫的情况下"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will destroy both the preborn and later-born",
+              "claim": "会毁灭先出生与后出生的兄弟姐妹"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch14:v14",
+            "quote": "In the same situation Mangal will destroy both the preborn and later-born.",
+            "pdf_pages": [
+              29
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Mangal 是否落三宫。",
+        "stop_fact_keys": [
+          "Mangal 是否落三宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断毁灭的先后次序、人数或发生时间。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch14:v14"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "dd04af7d8bed7dc2a5abbcf1f6adc2e196f5cad50434966b3c7ce1ed19d6929a"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch14-v15-strength-before-announcing.step-001",
+      "method": {
+        "method": "ch14-v15-strength-before-announcing",
+        "title": "先估量强弱再宣布兄弟姐妹结果",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "兄弟姐妹的结论怎么下才靠谱",
+          "看兄弟姐妹还要看什么才敢下结论"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "After estimating the strength and weakness of such Yogas effects related to brothers and sisters be announced",
+            "先估量强弱 再宣布兄弟姐妹结果"
+          ],
+          "counter_queries": [
+            "不看强弱直接断兄弟姐妹的反例"
+          ],
+          "boundary_queries": [
+            "强弱估量在兄弟姐妹判断中的适用边界"
+          ],
+          "method_queries": [
+            "宣布兄弟姐妹结论前的强弱估量步骤"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch14-v15-strength-before-announcing.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "after assessing the strength and weakness of the concerned"
+            },
+            {
+              "step_id": "ch14-v15-strength-before-announcing.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "After estimating the strength and weakness of such Yogas"
+            },
+            {
+              "step_id": "ch14-v15-strength-before-announcing.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "These effects be declared"
+            },
+            {
+              "step_id": "ch14-v15-strength-before-announcing.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the effects, related to brothers and sisters, be announced"
+            },
+            {
+              "step_id": "ch14-v15-strength-before-announcing.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "after assessing the strength and weakness of the concerned These effects be declared"
+            },
+            {
+              "step_id": "ch14-v15-strength-before-announcing.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "After estimating the strength and weakness of such Yogas These effects be declared"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少三宫相关行星与瑜伽组合的强弱事实时停止。",
+          "强弱未估量前不得宣布兄弟姐妹结论。"
+        ]
+      },
+      "step": {
+        "step_id": "ch14-v15-strength-before-announcing.step-001",
+        "action": "在宣布兄弟姐妹相关结果之前，先估量相关行星与瑜伽组合的强弱。",
+        "applicability_scope": "仅限本章三宫兄弟姐妹结果的宣布程序；原文只说先估强弱再宣布，未给强弱的计算方法与时间。",
+        "minimum_supported_claim": "要先估量相关者的强弱，也要先估量这些瑜伽的强弱，然后才宣布这些结果，即宣布兄弟姐妹相关的结果。",
+        "produced_fact_keys": [
+          "兄弟姐妹结果宣布前的强弱评估判定"
+        ],
+        "required_fact_keys": [
+          "三宫相关行星与瑜伽组合的强弱"
+        ],
+        "condition_logic": {
+          "fact_key": "三宫相关行星与瑜伽组合的强弱"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "repeated_support",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "after assessing the strength and weakness of the concerned",
+              "claim": "先估量相关者的强弱"
+            },
+            {
+              "quote": "After estimating the strength and weakness of such Yogas",
+              "claim": "先估量这些瑜伽的强弱"
+            }
+          ],
+          "results": [
+            {
+              "quote": "These effects be declared",
+              "claim": "才宣布这些结果"
+            },
+            {
+              "quote": "the effects, related to brothers and sisters, be announced",
+              "claim": "宣布兄弟姐妹相关的结果"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch14:v4-4.5",
+            "quote": "These effects be declared after assessing the strength and weakness of the concerned.",
+            "pdf_pages": [
+              28
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch14:v15",
+            "quote": "After estimating the strength and weakness of such Yogas, the effects, related to brothers and sisters, be announced.",
+            "pdf_pages": [
+              29
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：三宫相关行星与瑜伽组合的强弱。",
+        "stop_fact_keys": [
+          "三宫相关行星与瑜伽组合的强弱"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此自行发明强弱的计算办法或打分标准。",
+          "不得把本条的宣布程序当成兄弟姐妹有无的独立断语。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch14:v4-4.5",
+          "bphs-97:santhanam:ch14:v14"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "84423f9728ef4a1aa0e70bb7081c902ed520d618c3455e3a7ce5efcefcb80cd5"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch15-v2-housing-comfort.step-001",
+      "method": {
+        "method": "ch15-v2-housing-comfort",
+        "title": "住房舒适：四宫被宫主或上升主占据且受吉星相照",
+        "target_house": 4,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子住房条件怎么样",
+          "我能不能住得舒服"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "四宫主落四宫 住房舒适"
+          ],
+          "counter_queries": [
+            "四宫受凶星 住房不利"
+          ],
+          "boundary_queries": [
+            "住房判断的适用边界"
+          ],
+          "method_queries": [
+            "判断四宫应检查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch15-v2-housing-comfort.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Bandhu is occupied by its Lord"
+            },
+            {
+              "step_id": "ch15-v2-housing-comfort.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "by Lagn’s Lord"
+            },
+            {
+              "step_id": "ch15-v2-housing-comfort.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "be drishtied by a benefic"
+            },
+            {
+              "step_id": "ch15-v2-housing-comfort.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "residential comforts in full degree"
+            },
+            {
+              "step_id": "ch15-v2-housing-comfort.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Bandhu is occupied by its Lord residential comforts in full degree"
+            },
+            {
+              "step_id": "ch15-v2-housing-comfort.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "by Lagn’s Lord residential comforts in full degree"
+            },
+            {
+              "step_id": "ch15-v2-housing-comfort.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "be drishtied by a benefic residential comforts in full degree"
+            },
+            {
+              "step_id": "ch15-v2-housing-comfort.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "4th house is occupied by its Lord"
+            },
+            {
+              "step_id": "ch15-v2-housing-comfort.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "by 1st lord"
+            },
+            {
+              "step_id": "ch15-v2-housing-comfort.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "4th house is occupied by its Lord residential comforts in full degree"
+            },
+            {
+              "step_id": "ch15-v2-housing-comfort.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "by 1st lord residential comforts in full degree"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少四宫占据者事实时停止。",
+          "缺少四宫相位事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch15-v2-housing-comfort.step-001",
+        "action": "核对四宫（Bandhu Bhava）的占据者与吉星相照，判断住房舒适程度。",
+        "applicability_scope": "仅限本命盘四宫住房主题；原文未给时间或上升限定。",
+        "minimum_supported_claim": "四宫被其宫主或上升主占据、并受吉星相照时，住房舒适圆满。",
+        "produced_fact_keys": [
+          "四宫住房舒适判定"
+        ],
+        "required_fact_keys": [
+          "四宫是否受吉星相照"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "四宫是否受吉星相照"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "四宫是否被四宫主占据"
+                },
+                {
+                  "fact_key": "四宫是否被上升主占据"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "四宫是否受吉星相照"
+            },
+            "required_fact_keys": [
+              "四宫是否被四宫主占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "四宫是否被四宫主占据"
+            },
+            "selection_group": "ch15-v2-housing-comfort.step-001:occupier",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：四宫是否被四宫主占据。"
+          },
+          {
+            "when": {
+              "fact_key": "四宫是否受吉星相照"
+            },
+            "required_fact_keys": [
+              "四宫是否被上升主占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "四宫是否被上升主占据"
+            },
+            "selection_group": "ch15-v2-housing-comfort.step-001:occupier",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：四宫是否被上升主占据。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Bandhu is occupied by its Lord",
+              "claim": "四宫被其宫主"
+            },
+            {
+              "quote": "by Lagn’s Lord",
+              "claim": "上升主"
+            },
+            {
+              "quote": "be drishtied by a benefic",
+              "claim": "受吉星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "residential comforts in full degree",
+              "claim": "住房舒适圆满"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch15:v2",
+            "quote": "One will have residential comforts in full degree, if Bandhu is occupied by its Lord, or by Lagn’s Lord and be drishtied by a benefic.",
+            "pdf_pages": [
+              29
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：四宫是否受吉星相照。",
+        "stop_fact_keys": [
+          "四宫是否受吉星相照"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断房产数量、价值或购房时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "3982a5c6bd0db33ab3918f09db8ea26cea0c6fd54b6786db127d647cbd4c99cc"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch15-v3-putr-lord-comforts.step-001",
+      "method": {
+        "method": "ch15-v3-putr-lord-comforts",
+        "title": "土地车乘房屋与乐器之乐：五宫主落本宫、本分盘或入旺",
+        "target_house": 4,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会有房有车",
+          "我这辈子物质享受怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "五宫主 入本宫 入旺 土地 车乘 房屋 乐器"
+          ],
+          "counter_queries": [
+            "五宫主落陷 失去土地车乘"
+          ],
+          "boundary_queries": [
+            "五宫主规则的适用边界"
+          ],
+          "method_queries": [
+            "判断土地车乘房屋之乐要查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch15-v3-putr-lord-comforts.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should Putr’s Lord be in his own Bhava"
+            },
+            {
+              "step_id": "ch15-v3-putr-lord-comforts.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or in own Navāńś"
+            },
+            {
+              "step_id": "ch15-v3-putr-lord-comforts.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or in exaltation"
+            },
+            {
+              "step_id": "ch15-v3-putr-lord-comforts.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "endowed with comforts, related to lands, conveyances, houses etc. and musical instruments"
+            },
+            {
+              "step_id": "ch15-v3-putr-lord-comforts.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should Putr’s Lord be in his own Bhava endowed with comforts, related to lands, conveyances, houses etc. and musical instruments"
+            },
+            {
+              "step_id": "ch15-v3-putr-lord-comforts.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or in own Navāńś endowed with comforts, related to lands, conveyances, houses etc. and musical instruments"
+            },
+            {
+              "step_id": "ch15-v3-putr-lord-comforts.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or in exaltation endowed with comforts, related to lands, conveyances, houses etc. and musical instruments"
+            },
+            {
+              "step_id": "ch15-v3-putr-lord-comforts.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Should 5th lord be in his own Bhava"
+            },
+            {
+              "step_id": "ch15-v3-putr-lord-comforts.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Should 5th lord be in his own Bhava endowed with comforts, related to lands, conveyances, houses etc. and musical instruments"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "无法确定五宫主是哪一颗行星时停止。",
+          "缺少五宫主的落宫、Navāńś 或旺弱事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch15-v3-putr-lord-comforts.step-001",
+        "action": "先定出五宫主（Putr’s Lord）是哪一颗行星，再核对它是否落本宫、落本 Navāńś 或入旺。",
+        "applicability_scope": "仅限原文列出的五宫主三种状态与土地车乘房屋乐器之乐；原文未给时间限定。",
+        "minimum_supported_claim": "五宫主（Putr’s Lord）落自己的宫、落自己的 Navāńś、或入旺时，命主享有土地、车乘、房屋等以及乐器方面的舒适。",
+        "produced_fact_keys": [
+          "五宫主带来的土地车乘房屋乐器舒适判定"
+        ],
+        "required_fact_keys": [
+          "五宫主（Putr’s Lord）是哪一颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "五宫主（Putr’s Lord）是哪一颗行星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "五宫主（Putr’s Lord）是否落在自己的宫"
+                },
+                {
+                  "fact_key": "五宫主（Putr’s Lord）是否落在自己的 Navāńś"
+                },
+                {
+                  "fact_key": "五宫主（Putr’s Lord）是否入旺"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "五宫主（Putr’s Lord）是哪一颗行星"
+            },
+            "required_fact_keys": [
+              "五宫主（Putr’s Lord）是否落在自己的宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫主（Putr’s Lord）是否落在自己的宫"
+            },
+            "selection_group": "ch15-v3-putr-lord-comforts.step-001:putr-lord-state",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫主（Putr’s Lord）是否落在自己的宫。"
+          },
+          {
+            "when": {
+              "fact_key": "五宫主（Putr’s Lord）是哪一颗行星"
+            },
+            "required_fact_keys": [
+              "五宫主（Putr’s Lord）是否落在自己的 Navāńś"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫主（Putr’s Lord）是否落在自己的 Navāńś"
+            },
+            "selection_group": "ch15-v3-putr-lord-comforts.step-001:putr-lord-state",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫主（Putr’s Lord）是否落在自己的 Navāńś。"
+          },
+          {
+            "when": {
+              "fact_key": "五宫主（Putr’s Lord）是哪一颗行星"
+            },
+            "required_fact_keys": [
+              "五宫主（Putr’s Lord）是否入旺"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫主（Putr’s Lord）是否入旺"
+            },
+            "selection_group": "ch15-v3-putr-lord-comforts.step-001:putr-lord-state",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫主（Putr’s Lord）是否入旺。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Putr’s Lord be in his own Bhava",
+              "claim": "五宫主（Putr’s Lord）落自己的宫"
+            },
+            {
+              "quote": "or in own Navāńś",
+              "claim": "落自己的 Navāńś"
+            },
+            {
+              "quote": "or in exaltation",
+              "claim": "入旺"
+            }
+          ],
+          "results": [
+            {
+              "quote": "endowed with comforts, related to lands, conveyances, houses etc. and musical instruments",
+              "claim": "享有土地、车乘、房屋等以及乐器方面的舒适"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch15:v3",
+            "quote": "Should Putr’s Lord be in his own Bhava, or in own Navāńś, or in exaltation, the native will be endowed with comforts, related to lands, conveyances, houses etc. and musical instruments.",
+            "pdf_pages": [
+              29
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：五宫主（Putr’s Lord）是哪一颗行星。",
+        "stop_fact_keys": [
+          "五宫主（Putr’s Lord）是哪一颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断房产或车辆的数量、价格与取得时间。",
+          "不得把这条五宫主的规则改挂到四宫主身上。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "a15f2890af9739556a14a734cfeff7a2f23de1e3669c7d9f0bf1b3504bff10a6"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch15-v4-beautiful-mansions.step-001",
+      "method": {
+        "method": "ch15-v4-beautiful-mansions",
+        "title": "华美宅第：十宫主与四宫主在角宫或三角宫会合",
+        "target_house": 4,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我能不能住上好房子",
+          "我会不会有豪宅"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "十宫主 四宫主 会合 角宫 三角宫 宅第"
+          ],
+          "counter_queries": [
+            "四宫主受克 无好房子"
+          ],
+          "boundary_queries": [
+            "角宫三角宫会合规则的适用边界"
+          ],
+          "method_queries": [
+            "判断能否得好房子要查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch15-v4-beautiful-mansions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Karm’s Lord joins Bandhu’s Lord"
+            },
+            {
+              "step_id": "ch15-v4-beautiful-mansions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in an angle"
+            },
+            {
+              "step_id": "ch15-v4-beautiful-mansions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or in a trine"
+            },
+            {
+              "step_id": "ch15-v4-beautiful-mansions.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "acquire beautiful mansions"
+            },
+            {
+              "step_id": "ch15-v4-beautiful-mansions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Karm’s Lord joins Bandhu’s Lord acquire beautiful mansions"
+            },
+            {
+              "step_id": "ch15-v4-beautiful-mansions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in an angle acquire beautiful mansions"
+            },
+            {
+              "step_id": "ch15-v4-beautiful-mansions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or in a trine acquire beautiful mansions"
+            },
+            {
+              "step_id": "ch15-v4-beautiful-mansions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "10th lord joins 4th lord"
+            },
+            {
+              "step_id": "ch15-v4-beautiful-mansions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "10th lord joins 4th lord acquire beautiful mansions"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主与四宫主是否会合的事实时停止。",
+          "缺少会合处是角宫还是三角宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch15-v4-beautiful-mansions.step-001",
+        "action": "核对十宫主（Karm’s Lord）与四宫主（Bandhu’s Lord）是否会合，并核对会合处是角宫还是三角宫。",
+        "applicability_scope": "仅限十宫主与四宫主会合于角宫或三角宫这一组合与宅第结果；原文未给时间限定。",
+        "minimum_supported_claim": "十宫主（Karm’s Lord）与四宫主（Bandhu’s Lord）在角宫、或在三角宫会合时，命主将获得华美的宅第。",
+        "produced_fact_keys": [
+          "华美宅第判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm’s Lord）是否与四宫主（Bandhu’s Lord）会合"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "十宫主（Karm’s Lord）是否与四宫主（Bandhu’s Lord）会合"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "十宫主与四宫主的会合处是否为角宫"
+                },
+                {
+                  "fact_key": "十宫主与四宫主的会合处是否为三角宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "十宫主（Karm’s Lord）是否与四宫主（Bandhu’s Lord）会合"
+            },
+            "required_fact_keys": [
+              "十宫主与四宫主的会合处是否为角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十宫主与四宫主的会合处是否为角宫"
+            },
+            "selection_group": "ch15-v4-beautiful-mansions.step-001:join-place",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十宫主与四宫主的会合处是否为角宫。"
+          },
+          {
+            "when": {
+              "fact_key": "十宫主（Karm’s Lord）是否与四宫主（Bandhu’s Lord）会合"
+            },
+            "required_fact_keys": [
+              "十宫主与四宫主的会合处是否为三角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十宫主与四宫主的会合处是否为三角宫"
+            },
+            "selection_group": "ch15-v4-beautiful-mansions.step-001:join-place",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十宫主与四宫主的会合处是否为三角宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Karm’s Lord joins Bandhu’s Lord",
+              "claim": "十宫主（Karm’s Lord）与四宫主（Bandhu’s Lord）"
+            },
+            {
+              "quote": "in an angle",
+              "claim": "在角宫"
+            },
+            {
+              "quote": "or in a trine",
+              "claim": "或在三角宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "acquire beautiful mansions",
+              "claim": "获得华美的宅第"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch15:v4",
+            "quote": "If Karm’s Lord joins Bandhu’s Lord in an angle, or in a trine, the native will acquire beautiful mansions.",
+            "pdf_pages": [
+              29
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm’s Lord）是否与四宫主（Bandhu’s Lord）会合。",
+        "stop_fact_keys": [
+          "十宫主（Karm’s Lord）是否与四宫主（Bandhu’s Lord）会合"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断宅第的数量、地点或取得年份。",
+          "不得把角宫、三角宫以外的位置也算作成立条件。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "73d7bd125842eccb367a3506ed609c57970374fcd5b1aca4c77674e510334d45"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch15-v5-honour-from-relatives.step-001",
+      "method": {
+        "method": "ch15-v5-honour-from-relatives",
+        "title": "受亲属尊敬：水星落上升且四宫主为吉星并受吉星相照",
+        "target_house": 4,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我在亲戚里有没有地位",
+          "我和亲属关系好不好"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "水星落上升 四宫主吉星 受亲属尊敬"
+          ],
+          "counter_queries": [
+            "四宫主为凶星 与亲属不和"
+          ],
+          "boundary_queries": [
+            "亲属尊敬这一断语的适用边界"
+          ],
+          "method_queries": [
+            "判断亲属关系要查哪些条件"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch15-v5-honour-from-relatives.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should Budh be in Lagna"
+            },
+            {
+              "step_id": "ch15-v5-honour-from-relatives.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while Bandhu’s Lord, being a benefic"
+            },
+            {
+              "step_id": "ch15-v5-honour-from-relatives.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "is drishtied by another benefic"
+            },
+            {
+              "step_id": "ch15-v5-honour-from-relatives.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "honoured by his relatives"
+            },
+            {
+              "step_id": "ch15-v5-honour-from-relatives.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should Budh be in Lagna honoured by his relatives"
+            },
+            {
+              "step_id": "ch15-v5-honour-from-relatives.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while Bandhu’s Lord, being a benefic honoured by his relatives"
+            },
+            {
+              "step_id": "ch15-v5-honour-from-relatives.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "is drishtied by another benefic honoured by his relatives"
+            },
+            {
+              "step_id": "ch15-v5-honour-from-relatives.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Should mercury be in 1st house"
+            },
+            {
+              "step_id": "ch15-v5-honour-from-relatives.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "while 4th lord, being a benefic"
+            },
+            {
+              "step_id": "ch15-v5-honour-from-relatives.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Should mercury be in 1st house honoured by his relatives"
+            },
+            {
+              "step_id": "ch15-v5-honour-from-relatives.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "while 4th lord, being a benefic honoured by his relatives"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少水星落宫事实时停止。",
+          "缺少四宫主吉凶属性或相位事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch15-v5-honour-from-relatives.step-001",
+        "action": "同时核对水星是否落上升、四宫主是否为吉星、以及四宫主是否受另一吉星相照。",
+        "applicability_scope": "仅限本命盘中亲属尊敬这一结果；原文未给时间限定。",
+        "minimum_supported_claim": "水星（Budh）落上升（Lagna）、四宫主（Bandhu’s Lord）本身是吉星、并受另一吉星相照时，命主将受亲属尊敬。",
+        "produced_fact_keys": [
+          "受亲属尊敬判定"
+        ],
+        "required_fact_keys": [
+          "水星（Budh）是否落上升（Lagna）",
+          "四宫主（Bandhu’s Lord）本身是否为吉星",
+          "四宫主（Bandhu’s Lord）是否受另一颗吉星相照"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "水星（Budh）是否落上升（Lagna）"
+            },
+            {
+              "fact_key": "四宫主（Bandhu’s Lord）本身是否为吉星"
+            },
+            {
+              "fact_key": "四宫主（Bandhu’s Lord）是否受另一颗吉星相照"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Budh be in Lagna",
+              "claim": "水星（Budh）落上升（Lagna）"
+            },
+            {
+              "quote": "while Bandhu’s Lord, being a benefic",
+              "claim": "四宫主（Bandhu’s Lord）本身是吉星"
+            },
+            {
+              "quote": "is drishtied by another benefic",
+              "claim": "受另一吉星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "honoured by his relatives",
+              "claim": "受亲属尊敬"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch15:v5",
+            "quote": "Should Budh be in Lagna, while Bandhu’s Lord, being a benefic, is drishtied by another benefic, the native will be honoured by his relatives.",
+            "pdf_pages": [
+              29
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：水星（Budh）是否落上升（Lagna）、四宫主（Bandhu’s Lord）本身是否为吉星、四宫主（Bandhu’s Lord）是否受另一颗吉星相照。",
+        "stop_fact_keys": [
+          "水星（Budh）是否落上升（Lagna）",
+          "四宫主（Bandhu’s Lord）本身是否为吉星",
+          "四宫主（Bandhu’s Lord）是否受另一颗吉星相照"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断亲属人数、亲属身份或来往时间。",
+          "三个条件缺一不可，不得只凭其中一条下结论。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "3fc3c1f9011cb2ee84790c4ca25afae2ff30a8ad410ac62c9ad6ed4138487c4a"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch15-v6-v7-mother-condition.step-001",
+      "method": {
+        "method": "ch15-v6-v7-mother-condition",
+        "title": "母亲长寿与幸福：四宫吉星占据、四宫主入旺、母星有力与角宫组合",
+        "target_house": 4,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我妈妈身体好不好",
+          "我妈妈这辈子过得幸不幸福"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "四宫主入旺 母亲长寿 母亲幸福"
+          ],
+          "counter_queries": [
+            "四宫受克 母亲早亡"
+          ],
+          "boundary_queries": [
+            "母亲寿命与幸福断语的适用边界"
+          ],
+          "method_queries": [
+            "判断母亲状况要查哪些条件"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Bandhu Bhava is occupied by a benefic"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while its Lord is in his exaltation Rāśi"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "as the indicator of mother is endowed with strength"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "have a long-living mother"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Bandhu Bhava is occupied by a benefic have a long-living mother"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while its Lord is in his exaltation Rāśi have a long-living mother"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "as the indicator of mother is endowed with strength have a long-living mother"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "4th house is occupied by a benefic"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "4th house is occupied by a benefic have a long-living mother"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Bandhu’s Lord is in an angle"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while Shukra is also in an angle"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "as Budh is exalted"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The native’s mother will be happy"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Bandhu’s Lord is in an angle The native’s mother will be happy"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while Shukra is also in an angle The native’s mother will be happy"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "as Budh is exalted The native’s mother will be happy"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if 4th lord is in an angle"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "while venus is also in an angle"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "as mercury is exalted"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if 4th lord is in an angle The native’s mother will be happy"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "while venus is also in an angle The native’s mother will be happy"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "as mercury is exalted The native’s mother will be happy"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少四宫占据者或四宫主旺弱事实时停止。",
+          "缺少母亲指示星强弱事实时停止。",
+          "缺少金星与水星的落宫和旺弱事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch15-v6-v7-mother-condition.step-001",
+        "action": "核对四宫是否被吉星占据、四宫主是否落入旺星座、母亲指示星是否有力，判断母亲寿命。",
+        "applicability_scope": "仅限母亲寿命长短这一结果；原文未给具体年数或时间限定。",
+        "minimum_supported_claim": "四宫（Bandhu Bhava）被吉星占据、四宫主落其入旺星座（exaltation Rāśi）、且母亲的指示星有力时，命主的母亲长寿。",
+        "produced_fact_keys": [
+          "母亲长寿判定"
+        ],
+        "required_fact_keys": [
+          "四宫（Bandhu Bhava）是否被吉星占据",
+          "四宫主是否落入其入旺星座",
+          "母亲的指示星是否有力"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "四宫（Bandhu Bhava）是否被吉星占据"
+            },
+            {
+              "fact_key": "四宫主是否落入其入旺星座"
+            },
+            {
+              "fact_key": "母亲的指示星是否有力"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Bandhu Bhava is occupied by a benefic",
+              "claim": "四宫（Bandhu Bhava）被吉星占据"
+            },
+            {
+              "quote": "while its Lord is in his exaltation Rāśi",
+              "claim": "四宫主落其入旺星座（exaltation Rāśi）"
+            },
+            {
+              "quote": "as the indicator of mother is endowed with strength",
+              "claim": "母亲的指示星有力"
+            }
+          ],
+          "results": [
+            {
+              "quote": "have a long-living mother",
+              "claim": "母亲长寿"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch15:v6",
+            "quote": "If Bandhu Bhava is occupied by a benefic, while its Lord is in his exaltation Rāśi, as the indicator of mother is endowed with strength, the native will have a long-living mother.",
+            "pdf_pages": [
+              29
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：四宫（Bandhu Bhava）是否被吉星占据、四宫主是否落入其入旺星座、母亲的指示星是否有力。",
+        "stop_fact_keys": [
+          "四宫（Bandhu Bhava）是否被吉星占据",
+          "四宫主是否落入其入旺星座",
+          "母亲的指示星是否有力"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推算母亲的具体寿数或去世时间。",
+          "不得把长寿结论扩展成母亲健康无病。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "34a0efae7e931fc736df425f49cb6c70f634962b8fe476017ff18657444e2df5"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch15-v6-v7-mother-condition.step-002",
+      "method": {
+        "method": "ch15-v6-v7-mother-condition",
+        "title": "母亲长寿与幸福：四宫吉星占据、四宫主入旺、母星有力与角宫组合",
+        "target_house": 4,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我妈妈身体好不好",
+          "我妈妈这辈子过得幸不幸福"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "四宫主入旺 母亲长寿 母亲幸福"
+          ],
+          "counter_queries": [
+            "四宫受克 母亲早亡"
+          ],
+          "boundary_queries": [
+            "母亲寿命与幸福断语的适用边界"
+          ],
+          "method_queries": [
+            "判断母亲状况要查哪些条件"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Bandhu Bhava is occupied by a benefic"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while its Lord is in his exaltation Rāśi"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "as the indicator of mother is endowed with strength"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "have a long-living mother"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Bandhu Bhava is occupied by a benefic have a long-living mother"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while its Lord is in his exaltation Rāśi have a long-living mother"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "as the indicator of mother is endowed with strength have a long-living mother"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "4th house is occupied by a benefic"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "4th house is occupied by a benefic have a long-living mother"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Bandhu’s Lord is in an angle"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while Shukra is also in an angle"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "as Budh is exalted"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The native’s mother will be happy"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Bandhu’s Lord is in an angle The native’s mother will be happy"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while Shukra is also in an angle The native’s mother will be happy"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "as Budh is exalted The native’s mother will be happy"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if 4th lord is in an angle"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "while venus is also in an angle"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "as mercury is exalted"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if 4th lord is in an angle The native’s mother will be happy"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "while venus is also in an angle The native’s mother will be happy"
+            },
+            {
+              "step_id": "ch15-v6-v7-mother-condition.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "as mercury is exalted The native’s mother will be happy"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少四宫占据者或四宫主旺弱事实时停止。",
+          "缺少母亲指示星强弱事实时停止。",
+          "缺少金星与水星的落宫和旺弱事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch15-v6-v7-mother-condition.step-002",
+        "action": "另行核对四宫主是否落角宫、金星是否也落角宫、水星是否入旺，判断母亲是否幸福。",
+        "applicability_scope": "仅限母亲是否幸福这一结果；原文未给时间限定。",
+        "minimum_supported_claim": "四宫主（Bandhu’s Lord）落角宫、金星（Shukra）也落角宫、水星（Budh）入旺时，命主的母亲会幸福。",
+        "produced_fact_keys": [
+          "母亲幸福判定"
+        ],
+        "required_fact_keys": [
+          "四宫主（Bandhu’s Lord）是否落角宫",
+          "金星（Shukra）是否落角宫",
+          "水星（Budh）是否入旺"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "四宫主（Bandhu’s Lord）是否落角宫"
+            },
+            {
+              "fact_key": "金星（Shukra）是否落角宫"
+            },
+            {
+              "fact_key": "水星（Budh）是否入旺"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if Bandhu’s Lord is in an angle",
+              "claim": "四宫主（Bandhu’s Lord）落角宫"
+            },
+            {
+              "quote": "while Shukra is also in an angle",
+              "claim": "金星（Shukra）也落角宫"
+            },
+            {
+              "quote": "as Budh is exalted",
+              "claim": "水星（Budh）入旺"
+            }
+          ],
+          "results": [
+            {
+              "quote": "The native’s mother will be happy",
+              "claim": "命主的母亲会幸福"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch15:v7",
+            "quote": "The native’s mother will be happy, if Bandhu’s Lord is in an angle, while Shukra is also in an angle, as Budh is exalted.",
+            "pdf_pages": [
+              29
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：四宫主（Bandhu’s Lord）是否落角宫、金星（Shukra）是否落角宫、水星（Budh）是否入旺。",
+        "stop_fact_keys": [
+          "四宫主（Bandhu’s Lord）是否落角宫",
+          "金星（Shukra）是否落角宫",
+          "水星（Budh）是否入旺"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把母亲幸福扩展成母亲长寿或母亲富有。",
+          "三个条件缺一不可，不得只凭其中一条下结论。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "5bbc7d58d10474b6f2379a2af8be5c011d7d20691c15a71eeb03f38d4067f14f"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch15-v8-cows-and-buffaloes.step-001",
+      "method": {
+        "method": "ch15-v8-cows-and-buffaloes",
+        "title": "牲畜瑜伽：日在四宫、月土在九宫、火在十一宫",
+        "target_house": 4,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会有牲畜家产",
+          "我有没有养牛的运"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "太阳四宫 月土九宫 火十一宫 牲畜瑜伽"
+          ],
+          "counter_queries": [
+            "牲畜损失 相关组合"
+          ],
+          "boundary_queries": [
+            "此瑜伽是否要求四个位置同时成立"
+          ],
+          "method_queries": [
+            "判断牲畜家产要查什么组合"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch15-v8-cows-and-buffaloes.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Surya in Bandhu"
+            },
+            {
+              "step_id": "ch15-v8-cows-and-buffaloes.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Chandra and Shani in Dharm"
+            },
+            {
+              "step_id": "ch15-v8-cows-and-buffaloes.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Mangal in Labh Bhava"
+            },
+            {
+              "step_id": "ch15-v8-cows-and-buffaloes.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "this Yoga will confer cows and buffaloes on the native"
+            },
+            {
+              "step_id": "ch15-v8-cows-and-buffaloes.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Surya in Bandhu this Yoga will confer cows and buffaloes on the native"
+            },
+            {
+              "step_id": "ch15-v8-cows-and-buffaloes.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Chandra and Shani in Dharm this Yoga will confer cows and buffaloes on the native"
+            },
+            {
+              "step_id": "ch15-v8-cows-and-buffaloes.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Mangal in Labh Bhava this Yoga will confer cows and buffaloes on the native"
+            },
+            {
+              "step_id": "ch15-v8-cows-and-buffaloes.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "sun in 4th house"
+            },
+            {
+              "step_id": "ch15-v8-cows-and-buffaloes.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "moon and saturn in 9th house"
+            },
+            {
+              "step_id": "ch15-v8-cows-and-buffaloes.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "mars in 11th house"
+            },
+            {
+              "step_id": "ch15-v8-cows-and-buffaloes.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "sun in 4th house this Yoga will confer cows and buffaloes on the native"
+            },
+            {
+              "step_id": "ch15-v8-cows-and-buffaloes.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "moon and saturn in 9th house this Yoga will confer cows and buffaloes on the native"
+            },
+            {
+              "step_id": "ch15-v8-cows-and-buffaloes.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "mars in 11th house this Yoga will confer cows and buffaloes on the native"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "四颗行星的落宫事实缺任何一条时停止。",
+          "只有部分位置成立时不得下此瑜伽结论。"
+        ]
+      },
+      "step": {
+        "step_id": "ch15-v8-cows-and-buffaloes.step-001",
+        "action": "核对太阳、月亮、土星、火星是否同时落在原文指定的四个位置，判断此瑜伽是否成立。",
+        "applicability_scope": "仅限原文这一组四星同时成立的瑜伽与牲畜结果；原文未给时间限定。",
+        "minimum_supported_claim": "太阳（Surya）落四宫（Bandhu）、月亮（Chandra）与土星（Shani）落九宫（Dharm）、火星（Mangal）落十一宫（Labh Bhava）时，此瑜伽给命主带来母牛与水牛。",
+        "produced_fact_keys": [
+          "牲畜瑜伽成立判定"
+        ],
+        "required_fact_keys": [
+          "太阳（Surya）是否落四宫（Bandhu）",
+          "月亮（Chandra）是否落九宫（Dharm）",
+          "土星（Shani）是否落九宫（Dharm）",
+          "火星（Mangal）是否落十一宫（Labh Bhava）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "太阳（Surya）是否落四宫（Bandhu）"
+            },
+            {
+              "fact_key": "月亮（Chandra）是否落九宫（Dharm）"
+            },
+            {
+              "fact_key": "土星（Shani）是否落九宫（Dharm）"
+            },
+            {
+              "fact_key": "火星（Mangal）是否落十一宫（Labh Bhava）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Surya in Bandhu",
+              "claim": "太阳（Surya）落四宫（Bandhu）"
+            },
+            {
+              "quote": "Chandra and Shani in Dharm",
+              "claim": "月亮（Chandra）与土星（Shani）落九宫（Dharm）"
+            },
+            {
+              "quote": "Mangal in Labh Bhava",
+              "claim": "火星（Mangal）落十一宫（Labh Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "this Yoga will confer cows and buffaloes on the native",
+              "claim": "此瑜伽给命主带来母牛与水牛"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch15:v8",
+            "quote": "Surya in Bandhu, Chandra and Shani in Dharm and Mangal in Labh Bhava; this Yoga will confer cows and buffaloes on the native.",
+            "pdf_pages": [
+              30
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：太阳（Surya）是否落四宫（Bandhu）、月亮（Chandra）是否落九宫（Dharm）、土星（Shani）是否落九宫（Dharm）、火星（Mangal）是否落十一宫（Labh Bhava）。",
+        "stop_fact_keys": [
+          "太阳（Surya）是否落四宫（Bandhu）",
+          "月亮（Chandra）是否落九宫（Dharm）",
+          "土星（Shani）是否落九宫（Dharm）",
+          "火星（Mangal）是否落十一宫（Labh Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断牲畜数量或得畜年份。",
+          "四个位置必须同时成立，不得只凭其中一两个位置下结论。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "895fd7a23ed6e34c9088951e5d97cc011d886197e5f4cd0b878f3a9537c9cfa3"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch15-v9-dumbness.step-001",
+      "method": {
+        "method": "ch15-v9-dumbness",
+        "title": "哑：四宫为动星座且四宫主与火星同处六宫或八宫",
+        "target_house": 4,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的言语功能有没有问题",
+          "命里有没有不能说话的凶象"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "四宫动星座 四宫主火星同宫 六宫八宫 哑"
+          ],
+          "counter_queries": [
+            "吉星相照 化解四宫主受克"
+          ],
+          "boundary_queries": [
+            "动星座与同宫位置的适用边界"
+          ],
+          "method_queries": [
+            "判断言语缺陷要查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch15-v9-dumbness.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should Bandhu Bhava be a Movable one"
+            },
+            {
+              "step_id": "ch15-v9-dumbness.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while its Lord and Mangal are together in Ari"
+            },
+            {
+              "step_id": "ch15-v9-dumbness.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or Randhr Bhava"
+            },
+            {
+              "step_id": "ch15-v9-dumbness.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be dumb"
+            },
+            {
+              "step_id": "ch15-v9-dumbness.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should Bandhu Bhava be a Movable one the native will be dumb"
+            },
+            {
+              "step_id": "ch15-v9-dumbness.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while its Lord and Mangal are together in Ari the native will be dumb"
+            },
+            {
+              "step_id": "ch15-v9-dumbness.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or Randhr Bhava the native will be dumb"
+            },
+            {
+              "step_id": "ch15-v9-dumbness.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Should 4th house be a Movable one"
+            },
+            {
+              "step_id": "ch15-v9-dumbness.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "while its Lord and mars are together in 6th house"
+            },
+            {
+              "step_id": "ch15-v9-dumbness.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "or 8th house"
+            },
+            {
+              "step_id": "ch15-v9-dumbness.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Should 4th house be a Movable one the native will be dumb"
+            },
+            {
+              "step_id": "ch15-v9-dumbness.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "while its Lord and mars are together in 6th house the native will be dumb"
+            },
+            {
+              "step_id": "ch15-v9-dumbness.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "or 8th house the native will be dumb"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少四宫星座属性事实时停止。",
+          "缺少四宫主与火星是否同宫及所在宫位事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch15-v9-dumbness.step-001",
+        "action": "核对四宫是否落在动星座，并核对四宫主与火星是否同处六宫或八宫。",
+        "applicability_scope": "仅限原文给出的哑这一结果；原文未给时间限定，也未给程度或治愈说明。",
+        "minimum_supported_claim": "四宫（Bandhu Bhava）为动星座、其宫主与火星（Mangal）同处六宫（Ari）、或同处八宫（Randhr Bhava）时，命主将为哑。",
+        "produced_fact_keys": [
+          "哑之凶象判定"
+        ],
+        "required_fact_keys": [
+          "四宫（Bandhu Bhava）是否为动星座",
+          "四宫主是否与火星（Mangal）同处一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "四宫（Bandhu Bhava）是否为动星座"
+                },
+                {
+                  "fact_key": "四宫主是否与火星（Mangal）同处一宫"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "四宫主与火星同处之宫是否为六宫（Ari）"
+                },
+                {
+                  "fact_key": "四宫主与火星同处之宫是否为八宫（Randhr Bhava）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "四宫（Bandhu Bhava）是否为动星座"
+                },
+                {
+                  "fact_key": "四宫主是否与火星（Mangal）同处一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "四宫主与火星同处之宫是否为六宫（Ari）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "四宫主与火星同处之宫是否为六宫（Ari）"
+            },
+            "selection_group": "ch15-v9-dumbness.step-001:conjunction-house",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：四宫主与火星同处之宫是否为六宫（Ari）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "四宫（Bandhu Bhava）是否为动星座"
+                },
+                {
+                  "fact_key": "四宫主是否与火星（Mangal）同处一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "四宫主与火星同处之宫是否为八宫（Randhr Bhava）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "四宫主与火星同处之宫是否为八宫（Randhr Bhava）"
+            },
+            "selection_group": "ch15-v9-dumbness.step-001:conjunction-house",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：四宫主与火星同处之宫是否为八宫（Randhr Bhava）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Bandhu Bhava be a Movable one",
+              "claim": "四宫（Bandhu Bhava）为动星座"
+            },
+            {
+              "quote": "while its Lord and Mangal are together in Ari",
+              "claim": "其宫主与火星（Mangal）同处六宫（Ari）"
+            },
+            {
+              "quote": "or Randhr Bhava",
+              "claim": "或同处八宫（Randhr Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be dumb",
+              "claim": "命主将为哑"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch15:v9",
+            "quote": "Should Bandhu Bhava be a Movable one, while its Lord and Mangal are together in Ari, or Randhr Bhava, the native will be dumb.",
+            "pdf_pages": [
+              30
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：四宫（Bandhu Bhava）是否为动星座、四宫主是否与火星（Mangal）同处一宫。",
+        "stop_fact_keys": [
+          "四宫（Bandhu Bhava）是否为动星座",
+          "四宫主是否与火星（Mangal）同处一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把这条扩展成其他言语疾病或听力问题。",
+          "不得据此推断发生年龄或可否治愈。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "679ca9cd9f538567fef83756e8f4b7b19e81f84b8eda8b4d4af98a870034259e"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch15-v10-14-conveyance-year.step-001",
+      "method": {
+        "method": "ch15-v10-14-conveyance-year",
+        "title": "得车乘的年份：第12年、第32年与第42年的四组条件",
+        "target_house": 4,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我什么时候能买车",
+          "我哪一年会有代步工具"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "第12年 第32年 第42年 得车乘 四宫主"
+          ],
+          "counter_queries": [
+            "四宫受凶星 车辆损失 事故"
+          ],
+          "boundary_queries": [
+            "原文给的年份是否只对应该组条件"
+          ],
+          "method_queries": [
+            "判断得车乘年份要查什么条件"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Lagn’s Lord is a benefic"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while Bandhu’s Lord is in fall"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or in Labh Bhava"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the significator (Shukr) is in Vyaya Bhava"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "obtain conveyances in his 12th year"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Lagn’s Lord is a benefic obtain conveyances in his 12th year"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while Bandhu’s Lord is in fall obtain conveyances in his 12th year"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or in Labh Bhava obtain conveyances in his 12th year"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the significator (Shukr) is in Vyaya Bhava obtain conveyances in his 12th year"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If 1st lord is a benefic"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "while 4th lord is in fall"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "or in 11th house"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "the significator (venus) is in 12th house"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If 1st lord is a benefic obtain conveyances in his 12th year"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "while 4th lord is in fall obtain conveyances in his 12th year"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "or in 11th house obtain conveyances in his 12th year"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "the significator (venus) is in 12th house obtain conveyances in his 12th year"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should Surya be in Bandhu Bhava"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "as Bandhu’s Lord is exalted and be with Shukr"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "acquire conveyances in his 32nd year"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should Surya be in Bandhu Bhava acquire conveyances in his 32nd year"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "as Bandhu’s Lord is exalted and be with Shukr acquire conveyances in his 32nd year"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Should sun be in 4th house"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "as 4th lord is exalted and be with venus"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Should sun be in 4th house acquire conveyances in his 32nd year"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "as 4th lord is exalted and be with venus acquire conveyances in his 32nd year"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Bandhu’s Lord joins Karm’s Lord"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in his (4th Lord’s) exaltation Navāńś"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "It will be in the 42nd year, that one will be endowed with conveyances"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Bandhu’s Lord joins Karm’s Lord It will be in the 42nd year, that one will be endowed with conveyances"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in his (4th Lord’s) exaltation Navāńś It will be in the 42nd year, that one will be endowed with conveyances"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if 4th lord joins 10th lord"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if 4th lord joins 10th lord It will be in the 42nd year, that one will be endowed with conveyances"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "An exchange between Labh’s and Bandhu’s Lords"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will confer conveyances in the 12th year"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "An exchange between Labh’s and Bandhu’s Lords will confer conveyances in the 12th year"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "An exchange between 11th house’s and 4th lords"
+            },
+            {
+              "step_id": "ch15-v10-14-conveyance-year.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "An exchange between 11th house’s and 4th lords will confer conveyances in the 12th year"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升主吉凶属性或金星落宫事实时停止。",
+          "缺少四宫主的落宫、旺弱或互换事实时停止。",
+          "条件组不完整时不得给出年份结论。"
+        ]
+      },
+      "step": {
+        "step_id": "ch15-v10-14-conveyance-year.step-001",
+        "action": "核对上升主是否为吉星、金星是否落十二宫，并核对四宫主是落陷还是落十一宫。",
+        "applicability_scope": "仅限原文这一组条件与第 12 年得车乘的断语；原文未说明其他年份。",
+        "minimum_supported_claim": "上升主（Lagn’s Lord）为吉星、四宫主（Bandhu’s Lord）落陷或落十一宫（Labh Bhava）、且指示星金星（Shukr）落十二宫（Vyaya Bhava）时，命主在其第 12 年得到车乘。",
+        "produced_fact_keys": [
+          "第12年得车乘判定（上升主为吉星的组合）"
+        ],
+        "required_fact_keys": [
+          "上升主（Lagn’s Lord）是否为吉星",
+          "金星（Shukr）是否落十二宫（Vyaya Bhava）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "上升主（Lagn’s Lord）是否为吉星"
+                },
+                {
+                  "fact_key": "金星（Shukr）是否落十二宫（Vyaya Bhava）"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "四宫主（Bandhu’s Lord）是否落陷"
+                },
+                {
+                  "fact_key": "四宫主（Bandhu’s Lord）是否落十一宫（Labh Bhava）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "上升主（Lagn’s Lord）是否为吉星"
+                },
+                {
+                  "fact_key": "金星（Shukr）是否落十二宫（Vyaya Bhava）"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "四宫主（Bandhu’s Lord）是否落陷"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "四宫主（Bandhu’s Lord）是否落陷"
+            },
+            "selection_group": "ch15-v10-14-conveyance-year.step-001:bandhu-lord-state",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：四宫主（Bandhu’s Lord）是否落陷。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "上升主（Lagn’s Lord）是否为吉星"
+                },
+                {
+                  "fact_key": "金星（Shukr）是否落十二宫（Vyaya Bhava）"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "四宫主（Bandhu’s Lord）是否落十一宫（Labh Bhava）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "四宫主（Bandhu’s Lord）是否落十一宫（Labh Bhava）"
+            },
+            "selection_group": "ch15-v10-14-conveyance-year.step-001:bandhu-lord-state",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：四宫主（Bandhu’s Lord）是否落十一宫（Labh Bhava）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Lagn’s Lord is a benefic",
+              "claim": "上升主（Lagn’s Lord）为吉星"
+            },
+            {
+              "quote": "while Bandhu’s Lord is in fall",
+              "claim": "四宫主（Bandhu’s Lord）落陷"
+            },
+            {
+              "quote": "or in Labh Bhava",
+              "claim": "或落十一宫（Labh Bhava）"
+            },
+            {
+              "quote": "the significator (Shukr) is in Vyaya Bhava",
+              "claim": "指示星金星（Shukr）落十二宫（Vyaya Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "obtain conveyances in his 12<sup>th</sup> year",
+              "claim": "在其第 12 年得到车乘"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch15:v10-14",
+            "quote": "If Lagn’s Lord is a benefic, while Bandhu’s Lord is in fall, or in Labh Bhava and the significator (Shukr) is in Vyaya Bhava, the native will obtain conveyances in his 12<sup>th</sup> year.",
+            "pdf_pages": [
+              30
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：上升主（Lagn’s Lord）是否为吉星、金星（Shukr）是否落十二宫（Vyaya Bhava）。",
+        "stop_fact_keys": [
+          "上升主（Lagn’s Lord）是否为吉星",
+          "金星（Shukr）是否落十二宫（Vyaya Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把第 12 年改写成任何其他年份或大运时段。",
+          "不得据此推断车辆种类、数量或价格。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文指定的年龄/年份",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "8ef7e5c3c3a3769a2d1e753fd503069c712139bf789fec03a4d3d77618402262"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch14:v4-4.5": {
+      "evidence_atom_id": "bphs-97:santhanam:ch14:v4-4.5",
+      "chapter_number": 14,
+      "chapter_title": "Effects of Sahaj Bhava",
+      "verse_label": "4-4½.",
+      "content_role": "verse",
+      "exact_text": "4-4½. Female and Male Co-born. If Sahaj’s Lord is a female Grah, or, if Sahaj Bhava be occupied by female Grahas, one will have sisters, born after him. Similarly male Grahas and male Rāśis denote younger brothers. Should it be of mixed nature, co-born of both sexes will be obtained. These effects be declared after assessing the strength and weakness of the concerned.",
+      "pdf_pages": [
+        28
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 14 · Sloka 4-4½ · PDF page 28 · bphs-97:santhanam:ch14:v4-4.5",
+      "previous_atom_id": "bphs-97:santhanam:ch14:v3",
+      "next_atom_id": "bphs-97:santhanam:ch14:v5-6",
+      "context_before": " Destruction at once of co-born will come to pass, if the said 2 Grahas are together with a malefic, or in a Rāśi, owned by a malefic.\n\n",
+      "context_after": "5-6. Should Sahaj’s Lord and Mangal be together in Randhr Bhava, destruction of co-\n\n<!-- SOURCE_PAGE 29 -->\n\nborn will result. ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch14:v12-13": {
+      "evidence_atom_id": "bphs-97:santhanam:ch14:v12-13",
+      "chapter_number": 14,
+      "chapter_title": "Effects of Sahaj Bhava",
+      "verse_label": "12-13.",
+      "content_role": "verse",
+      "exact_text": "12-13. There will be 1 co-born, if Vyaya’s Lord (some texts read, as Labh’s Lord) joins Mangal and Guru, while Sahaj Bhava is occupied by Chandra. If Chandra is lonely placed in Sahaj Bhava with Drishti of male Grahas, there will be younger brothers, while the Drishti of Shukra denotes younger sisters.",
+      "pdf_pages": [
+        29
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 14 · Sloka 12-13 · PDF page 29 · bphs-97:santhanam:ch14:v12-13",
+      "previous_atom_id": "bphs-97:santhanam:ch14:v7-11",
+      "next_atom_id": "bphs-97:santhanam:ch14:v14",
+      "context_before": " Out of these two elders and the 3<sup>rd</sup> , the 7<sup>th</sup> , the 9<sup>th</sup> and the 12<sup>th</sup> of the younger co-born will be shortlived, while six of the said twelve will be longlived.\n\n",
+      "context_after": "14. Adverse Grahas. Surya in Sahaj Bhava will destroy the preborn. The afterborn will be destroyed, if Shani is found in Sahaj B",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch14:v14": {
+      "evidence_atom_id": "bphs-97:santhanam:ch14:v14",
+      "chapter_number": 14,
+      "chapter_title": "Effects of Sahaj Bhava",
+      "verse_label": "14.",
+      "content_role": "verse",
+      "exact_text": "14. Adverse Grahas. Surya in Sahaj Bhava will destroy the preborn. The afterborn will be destroyed, if Shani is found in Sahaj Bhava. In the same situation Mangal will destroy both the preborn and later-born.",
+      "pdf_pages": [
+        29
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 14 · Sloka 14 · PDF page 29 · bphs-97:santhanam:ch14:v14",
+      "previous_atom_id": "bphs-97:santhanam:ch14:v12-13",
+      "next_atom_id": "bphs-97:santhanam:ch14:v15",
+      "context_before": " If Chandra is lonely placed in Sahaj Bhava with Drishti of male Grahas, there will be younger brothers, while the Drishti of Shukra denotes younger sisters.\n\n",
+      "context_after": "15. After estimating the strength and weakness of such Yogas, the effects, related to brothers and sisters, be announced.\n\n## **",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch14:v15": {
+      "evidence_atom_id": "bphs-97:santhanam:ch14:v15",
+      "chapter_number": 14,
+      "chapter_title": "Effects of Sahaj Bhava",
+      "verse_label": "15.",
+      "content_role": "verse",
+      "exact_text": "15. After estimating the strength and weakness of such Yogas, the effects, related to brothers and sisters, be announced.",
+      "pdf_pages": [
+        29
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 14 · Sloka 15 · PDF page 29 · bphs-97:santhanam:ch14:v15",
+      "previous_atom_id": "bphs-97:santhanam:ch14:v14",
+      "next_atom_id": null,
+      "context_before": "ill be destroyed, if Shani is found in Sahaj Bhava. In the same situation Mangal will destroy both the preborn and later-born.\n\n",
+      "context_after": "",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch15:v2": {
+      "evidence_atom_id": "bphs-97:santhanam:ch15:v2",
+      "chapter_number": 15,
+      "chapter_title": "Effects of Bandhu Bhava",
+      "verse_label": "2.",
+      "content_role": "verse",
+      "exact_text": "2. Housing Comforts. One will have residential comforts in full degree, if Bandhu is occupied by its Lord, or by Lagn’s Lord and be drishtied by a benefic.",
+      "pdf_pages": [
+        29
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 15 · Sloka 2 · PDF page 29 · bphs-97:santhanam:ch15:v2",
+      "previous_atom_id": "bphs-97:santhanam:ch15:v1",
+      "next_atom_id": "bphs-97:santhanam:ch15:v3",
+      "context_before": "t of the Brahmins, thus have been briefly told the effects of Sahaj Bhava. Now listen to the results, related to Bandhu Bhava.\n\n",
+      "context_after": "3. Miscellaneous. Should Putr’s Lord be in his own Bhava, or in own Navāńś, or in exaltation, the native will be endowed with co",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch15:v3": {
+      "evidence_atom_id": "bphs-97:santhanam:ch15:v3",
+      "chapter_number": 15,
+      "chapter_title": "Effects of Bandhu Bhava",
+      "verse_label": "3.",
+      "content_role": "verse",
+      "exact_text": "3. Miscellaneous. Should Putr’s Lord be in his own Bhava, or in own Navāńś, or in exaltation, the native will be endowed with comforts, related to lands, conveyances, houses etc. and musical instruments.",
+      "pdf_pages": [
+        29
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 15 · Sloka 3 · PDF page 29 · bphs-97:santhanam:ch15:v3",
+      "previous_atom_id": "bphs-97:santhanam:ch15:v2",
+      "next_atom_id": "bphs-97:santhanam:ch15:v4",
+      "context_before": " One will have residential comforts in full degree, if Bandhu is occupied by its Lord, or by Lagn’s Lord and be drishtied by a benefic.\n\n",
+      "context_after": "4. Housing Comforts. If Karm’s Lord joins Bandhu’s Lord in an angle, or in a trine, the native will acquire beautiful mansions.\n",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch15:v4": {
+      "evidence_atom_id": "bphs-97:santhanam:ch15:v4",
+      "chapter_number": 15,
+      "chapter_title": "Effects of Bandhu Bhava",
+      "verse_label": "4.",
+      "content_role": "verse",
+      "exact_text": "4. Housing Comforts. If Karm’s Lord joins Bandhu’s Lord in an angle, or in a trine, the native will acquire beautiful mansions.",
+      "pdf_pages": [
+        29
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 15 · Sloka 4 · PDF page 29 · bphs-97:santhanam:ch15:v4",
+      "previous_atom_id": "bphs-97:santhanam:ch15:v3",
+      "next_atom_id": "bphs-97:santhanam:ch15:v5",
+      "context_before": "r in exaltation, the native will be endowed with comforts, related to lands, conveyances, houses etc. and musical instruments.\n\n",
+      "context_after": "5. Relatives. Should Budh be in Lagna, while Bandhu’s Lord, being a benefic, is drishtied by another benefic, the native will be",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch15:v5": {
+      "evidence_atom_id": "bphs-97:santhanam:ch15:v5",
+      "chapter_number": 15,
+      "chapter_title": "Effects of Bandhu Bhava",
+      "verse_label": "5.",
+      "content_role": "verse",
+      "exact_text": "5. Relatives. Should Budh be in Lagna, while Bandhu’s Lord, being a benefic, is drishtied by another benefic, the native will be honoured by his relatives.",
+      "pdf_pages": [
+        29
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 15 · Sloka 5 · PDF page 29 · bphs-97:santhanam:ch15:v5",
+      "previous_atom_id": "bphs-97:santhanam:ch15:v4",
+      "next_atom_id": "bphs-97:santhanam:ch15:v6",
+      "context_before": ". Housing Comforts. If Karm’s Lord joins Bandhu’s Lord in an angle, or in a trine, the native will acquire beautiful mansions.\n\n",
+      "context_after": "6. Long-living Mother. If Bandhu Bhava is occupied by a benefic, while its Lord is in his exaltation Rāśi, as the indicator of m",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch15:v6": {
+      "evidence_atom_id": "bphs-97:santhanam:ch15:v6",
+      "chapter_number": 15,
+      "chapter_title": "Effects of Bandhu Bhava",
+      "verse_label": "6.",
+      "content_role": "verse",
+      "exact_text": "6. Long-living Mother. If Bandhu Bhava is occupied by a benefic, while its Lord is in his exaltation Rāśi, as the indicator of mother is endowed with strength, the native will have a long-living mother.",
+      "pdf_pages": [
+        29
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 15 · Sloka 6 · PDF page 29 · bphs-97:santhanam:ch15:v6",
+      "previous_atom_id": "bphs-97:santhanam:ch15:v5",
+      "next_atom_id": "bphs-97:santhanam:ch15:v7",
+      "context_before": " Should Budh be in Lagna, while Bandhu’s Lord, being a benefic, is drishtied by another benefic, the native will be honoured by his relatives.\n\n",
+      "context_after": "7. Happiness of Mother. The native’s mother will be happy, if Bandhu’s Lord is in an angle, while Shukra is also in an angle, as",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch15:v7": {
+      "evidence_atom_id": "bphs-97:santhanam:ch15:v7",
+      "chapter_number": 15,
+      "chapter_title": "Effects of Bandhu Bhava",
+      "verse_label": "7.",
+      "content_role": "verse",
+      "exact_text": "7. Happiness of Mother. The native’s mother will be happy, if Bandhu’s Lord is in an angle, while Shukra is also in an angle, as Budh is exalted.",
+      "pdf_pages": [
+        29
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 15 · Sloka 7 · PDF page 29 · bphs-97:santhanam:ch15:v7",
+      "previous_atom_id": "bphs-97:santhanam:ch15:v6",
+      "next_atom_id": "bphs-97:santhanam:ch15:v8",
+      "context_before": " If Bandhu Bhava is occupied by a benefic, while its Lord is in his exaltation Rāśi, as the indicator of mother is endowed with strength, the native will have a long-living mother.\n\n",
+      "context_after": "8. Quadrupeds. Surya in Bandhu, Chandra and Shani in Dharm and Mangal in Labh Bhava; this Yoga will confer cows and buffaloes on",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch15:v8": {
+      "evidence_atom_id": "bphs-97:santhanam:ch15:v8",
+      "chapter_number": 15,
+      "chapter_title": "Effects of Bandhu Bhava",
+      "verse_label": "8.",
+      "content_role": "verse",
+      "exact_text": "8. Quadrupeds. Surya in Bandhu, Chandra and Shani in Dharm and Mangal in Labh Bhava; this Yoga will confer cows and buffaloes on the native.",
+      "pdf_pages": [
+        30
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 15 · Sloka 8 · PDF page 30 · bphs-97:santhanam:ch15:v8",
+      "previous_atom_id": "bphs-97:santhanam:ch15:v7",
+      "next_atom_id": "bphs-97:santhanam:ch15:v9",
+      "context_before": " The native’s mother will be happy, if Bandhu’s Lord is in an angle, while Shukra is also in an angle, as Budh is exalted.\n\n<!-- SOURCE_PAGE 30 -->\n\n",
+      "context_after": "9. Dumbness. Should Bandhu Bhava be a Movable one, while its Lord and Mangal are together in Ari, or Randhr Bhava, the native wi",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch15:v9": {
+      "evidence_atom_id": "bphs-97:santhanam:ch15:v9",
+      "chapter_number": 15,
+      "chapter_title": "Effects of Bandhu Bhava",
+      "verse_label": "9.",
+      "content_role": "verse",
+      "exact_text": "9. Dumbness. Should Bandhu Bhava be a Movable one, while its Lord and Mangal are together in Ari, or Randhr Bhava, the native will be dumb.",
+      "pdf_pages": [
+        30
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 15 · Sloka 9 · PDF page 30 · bphs-97:santhanam:ch15:v9",
+      "previous_atom_id": "bphs-97:santhanam:ch15:v8",
+      "next_atom_id": "bphs-97:santhanam:ch15:v10-14",
+      "context_before": " Surya in Bandhu, Chandra and Shani in Dharm and Mangal in Labh Bhava; this Yoga will confer cows and buffaloes on the native.\n\n",
+      "context_after": "10-14. Conveyances. If Lagn’s Lord is a benefic, while Bandhu’s Lord is in fall, or in Labh Bhava and the significator (Shukr) i",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch15:v10-14": {
+      "evidence_atom_id": "bphs-97:santhanam:ch15:v10-14",
+      "chapter_number": 15,
+      "chapter_title": "Effects of Bandhu Bhava",
+      "verse_label": "10-14.",
+      "content_role": "verse",
+      "exact_text": "10-14. Conveyances. If Lagn’s Lord is a benefic, while Bandhu’s Lord is in fall, or in Labh Bhava and the significator (Shukr) is in Vyaya Bhava, the native will obtain conveyances in his 12<sup>th</sup> year. Should Surya be in Bandhu Bhava, as Bandhu’s Lord is exalted and be with Shukr, one will acquire conveyances in his 32<sup>nd</sup> year. It will be in the 42<sup>nd</sup> year, that one will be endowed with conveyances, if Bandhu’s Lord joins Karm’s Lord in his (4<sup>th</sup> Lord’s) exaltation Navāńś. An exchange between Labh’s and Bandhu’s Lords will confer conveyances in the 12<sup>th</sup> year. A benefic, related to Bandhu Bhava (and to its Lord), will bring with him auspicious effects (regarding conveyances), while a malefic will produce only malefic effects (in respect of conveyances). Should a benefic be in Bandhu, drishti Bandhu, or in yuti with the Lord of Bandhu, or a Drishti on the Lord of Bandhu Bhava, then the native will be happy with conveyances and be free from accidents and dangers. A malefic, replacing the said benefic, will cause losses, concerning vehicles and reduce one to severe accidents.",
+      "pdf_pages": [
+        30
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 15 · Sloka 10-14 · PDF page 30 · bphs-97:santhanam:ch15:v10-14",
+      "previous_atom_id": "bphs-97:santhanam:ch15:v9",
+      "next_atom_id": null,
+      "context_before": " Should Bandhu Bhava be a Movable one, while its Lord and Mangal are together in Ari, or Randhr Bhava, the native will be dumb.\n\n",
+      "context_after": "",
+      "content_missing": false
+    }
+  }
+}

@@ -1,0 +1,1909 @@
+{
+  "shard": 3,
+  "step_count": 9,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch20-v4-indigent-father.step-001",
+      "method": {
+        "method": "ch20-v4-indigent-father",
+        "title": "父亲贫穷：九宫主落陷、九宫起的二宫或四宫被火星占据",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我父亲会不会经济困难",
+          "九宫主落陷对父亲有什么影响"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dharm’s Lord is debilitated, while the 2nd and/or the 4th from Dharm Bhava is occupied by Mangal, the native’s father is poor",
+            "九宫主落陷 火星占九宫起二宫四宫 父亲贫穷"
+          ],
+          "counter_queries": [
+            "If Dharm’s Lord is with strength, as Shukra is in Dharm, while Guru is in an angle from Tanu Bhava, the native’s father is fortunate",
+            "Should Dharm’s Lord be in Karm Bhava, while Karm’s Lord receives a Drishti from a benefic the native’s father will be very rich and famous"
+          ],
+          "boundary_queries": [
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines",
+            "Combinations for Father’s Death"
+          ],
+          "method_queries": [
+            "these are the effects related to Dharm Bhava. I have explained briefly. These may be estimated with the help of the state of the Lords of Lagn and Dharm Bhava",
+            "Effects of Dharm’s Lord in Various Bhavas",
+            "从九宫起算的宫位怎么数"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch20-v4-indigent-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dharm’s Lord is debilitated"
+            },
+            {
+              "step_id": "ch20-v4-indigent-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the 2nd and/or the 4th from Dharm Bhava is occupied by Mangal"
+            },
+            {
+              "step_id": "ch20-v4-indigent-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native’s father is poor"
+            },
+            {
+              "step_id": "ch20-v4-indigent-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dharm’s Lord is debilitated the native’s father is poor"
+            },
+            {
+              "step_id": "ch20-v4-indigent-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the 2nd and/or the 4th from Dharm Bhava is occupied by Mangal the native’s father is poor"
+            },
+            {
+              "step_id": "ch20-v4-indigent-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "9th lord is debilitated"
+            },
+            {
+              "step_id": "ch20-v4-indigent-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "the 2nd and/or the 4th from 9th house is occupied by mars"
+            },
+            {
+              "step_id": "ch20-v4-indigent-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "9th lord is debilitated the native’s father is poor"
+            },
+            {
+              "step_id": "ch20-v4-indigent-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "the 2nd and/or the 4th from 9th house is occupied by mars the native’s father is poor"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少九宫主落陷事实时停止。",
+          "九宫起第二宫、第四宫两个火星分支事实都缺时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v4-indigent-father.step-001",
+        "action": "核对九宫主（Dharm's Lord）是否落陷，再核对从九宫起算的第二宫或第四宫是否被火星（Mangal）占据。",
+        "applicability_scope": "仅限本命盘九宫（Dharm Bhava）主题下父亲的贫富；原文的二宫、四宫都从九宫起算；原文未给时间限定。",
+        "minimum_supported_claim": "九宫主落陷、而从九宫起算的第二宫或第四宫被火星占据时，命主的父亲贫穷。",
+        "produced_fact_keys": [
+          "九宫主落陷火星临九宫二四的父亲贫穷判定"
+        ],
+        "required_fact_keys": [
+          "九宫主（Dharm's Lord）是否落陷"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "九宫主（Dharm's Lord）是否落陷"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "从九宫（Dharm）起算的第二宫是否被火星（Mangal）占据"
+                },
+                {
+                  "fact_key": "从九宫（Dharm）起算的第四宫是否被火星（Mangal）占据"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "九宫主（Dharm's Lord）是否落陷"
+            },
+            "required_fact_keys": [
+              "从九宫（Dharm）起算的第二宫是否被火星（Mangal）占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "从九宫（Dharm）起算的第二宫是否被火星（Mangal）占据"
+            },
+            "selection_group": "ch20-v4-indigent-father.step-001:mangal-from-dharm",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：从九宫（Dharm）起算的第二宫是否被火星（Mangal）占据。"
+          },
+          {
+            "when": {
+              "fact_key": "九宫主（Dharm's Lord）是否落陷"
+            },
+            "required_fact_keys": [
+              "从九宫（Dharm）起算的第四宫是否被火星（Mangal）占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "从九宫（Dharm）起算的第四宫是否被火星（Mangal）占据"
+            },
+            "selection_group": "ch20-v4-indigent-father.step-001:mangal-from-dharm",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：从九宫（Dharm）起算的第四宫是否被火星（Mangal）占据。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dharm’s Lord is debilitated",
+              "claim": "九宫主落陷"
+            },
+            {
+              "quote": "the 2<sup>nd</sup> and/or the 4<sup>th</sup> from Dharm Bhava is occupied by Mangal",
+              "claim": "从九宫起算的第二宫或第四宫被火星占据"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native’s father is poor",
+              "claim": "命主的父亲贫穷"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v4",
+            "quote": "If Dharm’s Lord is debilitated, while the 2<sup>nd</sup> and/or the 4<sup>th</sup> from Dharm Bhava is occupied by Mangal, the native’s father is poor.",
+            "pdf_pages": [
+              36
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：九宫主（Dharm's Lord）是否落陷。",
+        "stop_fact_keys": [
+          "九宫主（Dharm's Lord）是否落陷"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把二宫、四宫改从上升宫起算——原文写明从九宫起。",
+          "不得据此推断父亲贫穷的时间或程度。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b3aa2c0760b9dd8c905be11c76351d868840c098244f481d395fa544309a5e93"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v5-long-living-father.step-001",
+      "method": {
+        "method": "ch20-v5-long-living-father",
+        "title": "父亲长寿：九宫主深度入旺、金星落上升起的角宫、木星落九分盘上升起的第九宫",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我父亲寿命长不长",
+          "九宫主深度入旺代表什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Dharm’s Lord be in deep exaltation, while Shukra is in an angle from Tanu Bhava and Guru is in the 9th from Navāńś Lagna, the father of the native will enjoy a long span of life",
+            "九宫主深度入旺 金星角宫 木星九分盘上升起第九宫 父亲长寿"
+          ],
+          "counter_queries": [
+            "Combinations for Father’s Death. The father of the native would have passed away prior to the native’s birth, if Surya is in Ari, Randhr, or Vyaya Bhava",
+            "If Dharm’s Lord is debilitated, while the 2nd and/or the 4th from Dharm Bhava is occupied by Mangal, the native’s father is poor"
+          ],
+          "boundary_queries": [
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines",
+            "The Sixteen Divisions of a Rāśi Navāńś"
+          ],
+          "method_queries": [
+            "these are the effects related to Dharm Bhava. I have explained briefly. These may be estimated with the help of the state of the Lords of Lagn and Dharm Bhava",
+            "Other Clues to Longevity This is based on the positions of Lagn’s Lord, Randhr’s Lord, Shani, Chandra, natal Lagn and Hora Lagn",
+            "九分盘上升怎么起算"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch20-v5-long-living-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dharm’s Lord be in deep exaltation"
+            },
+            {
+              "step_id": "ch20-v5-long-living-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Shukra is in an angle from Tanu Bhava"
+            },
+            {
+              "step_id": "ch20-v5-long-living-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Guru is in the 9th from Navāńś Lagna"
+            },
+            {
+              "step_id": "ch20-v5-long-living-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the father of the native will enjoy a long span of life"
+            },
+            {
+              "step_id": "ch20-v5-long-living-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dharm’s Lord be in deep exaltation the father of the native will enjoy a long span of life"
+            },
+            {
+              "step_id": "ch20-v5-long-living-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Shukra is in an angle from Tanu Bhava the father of the native will enjoy a long span of life"
+            },
+            {
+              "step_id": "ch20-v5-long-living-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Guru is in the 9th from Navāńś Lagna the father of the native will enjoy a long span of life"
+            },
+            {
+              "step_id": "ch20-v5-long-living-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "9th lord be in deep exaltation"
+            },
+            {
+              "step_id": "ch20-v5-long-living-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "venus is in an angle from 1st house"
+            },
+            {
+              "step_id": "ch20-v5-long-living-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "jupiter is in the 9th from Navāńś 1st house"
+            },
+            {
+              "step_id": "ch20-v5-long-living-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "9th lord be in deep exaltation the father of the native will enjoy a long span of life"
+            },
+            {
+              "step_id": "ch20-v5-long-living-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "venus is in an angle from 1st house the father of the native will enjoy a long span of life"
+            },
+            {
+              "step_id": "ch20-v5-long-living-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "jupiter is in the 9th from Navāńś 1st house the father of the native will enjoy a long span of life"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少九宫主深度入旺事实时停止。",
+          "缺少金星或木星落宫事实时停止。",
+          "九分盘（Navamsa D9）盘面缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v5-long-living-father.step-001",
+        "action": "核对九宫主（Dharm's Lord）是否深度入旺、金星（Shukra）是否落自上升宫起算的角宫、木星（Guru）是否落自九分盘上升起算的第九宫。",
+        "applicability_scope": "仅限本命盘九宫（Dharm Bhava）主题下父亲的寿命；原文把角宫的起算宫位写明为 Tanu Bhava，把第九宫的起算点写明为 Navāńś Lagna（九分盘上升）；原文未给具体寿数。",
+        "minimum_supported_claim": "九宫主深度入旺、金星落自上升宫（Tanu Bhava）起算的角宫、木星落自九分盘上升起算的第九宫时，命主的父亲享长寿。",
+        "produced_fact_keys": [
+          "九宫主深度入旺金木得位的父亲长寿判定"
+        ],
+        "required_fact_keys": [
+          "九宫主（Dharm's Lord）是否深度入旺",
+          "金星（Shukra）是否落上升宫（Tanu Bhava）起算的角宫",
+          "木星（Guru）是否落九分盘（Navamsa D9）上升起算的第九宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "九宫主（Dharm's Lord）是否深度入旺"
+            },
+            {
+              "fact_key": "金星（Shukra）是否落上升宫（Tanu Bhava）起算的角宫"
+            },
+            {
+              "fact_key": "木星（Guru）是否落九分盘（Navamsa D9）上升起算的第九宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dharm’s Lord be in deep exaltation",
+              "claim": "九宫主深度入旺"
+            },
+            {
+              "quote": "Shukra is in an angle from Tanu Bhava",
+              "claim": "金星落自上升宫（Tanu Bhava）起算的角宫"
+            },
+            {
+              "quote": "Guru is in the 9<sup>th</sup> from Navāńś Lagna",
+              "claim": "木星落自九分盘上升起算的第九宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the father of the native will enjoy a long span of life",
+              "claim": "命主的父亲享长寿"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v5",
+            "quote": "Should Dharm’s Lord be in deep exaltation, while Shukra is in an angle from Tanu Bhava and Guru is in the 9<sup>th</sup> from Navāńś Lagna, the father of the native will enjoy a long span of life.",
+            "pdf_pages": [
+              36
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：九宫主（Dharm's Lord）是否深度入旺、金星（Shukra）是否落上升宫（Tanu Bhava）起算的角宫、木星（Guru）是否落九分盘（Navamsa D9）上升起算的第九宫。",
+        "stop_fact_keys": [
+          "九宫主（Dharm's Lord）是否深度入旺",
+          "金星（Shukra）是否落上升宫（Tanu Bhava）起算的角宫",
+          "木星（Guru）是否落九分盘（Navamsa D9）上升起算的第九宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把木星的第九宫改从本命上升起算——原文写明从九分盘上升起。",
+          "不得把「深度入旺」放宽成一般的入旺。",
+          "不得据此推出父亲的具体寿数年岁。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "2725ff86e6337fb45ac3d43b01d0710ffa154284b62f297ecc2f61a4f49d4e37"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v6-royal-status-father.step-001",
+      "method": {
+        "method": "ch20-v6-royal-status-father",
+        "title": "父亲有王者之位：九宫主落角宫并受木星相照",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我父亲的社会地位会不会很高",
+          "九宫主受木星相照代表什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dharm’s Lord is an angle and receives a Drishti from Guru, the native’s father will be a king endowed with conveyances, or be equal to a king",
+            "九宫主落角宫 木星相照 父亲如国王"
+          ],
+          "counter_queries": [
+            "If Dharm’s Lord is debilitated, while the 2nd and/or the 4th from Dharm Bhava is occupied by Mangal, the native’s father is poor",
+            "There will be mutual enmity between the father and the native, if Lagn’s Lord is in Dharm Bhava, but with the Lord of Ari"
+          ],
+          "boundary_queries": [
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines",
+            "Effects of Dharm’s Lord in Various Bhavas"
+          ],
+          "method_queries": [
+            "these are the effects related to Dharm Bhava. I have explained briefly. These may be estimated with the help of the state of the Lords of Lagn and Dharm Bhava",
+            "Should Dharm’s Lord be in Karm Bhava, while Karm’s Lord receives a Drishti from a benefic the native’s father will be very rich and famous",
+            "判断父亲地位要看九宫主的哪些状态"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch20-v6-royal-status-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dharm’s Lord is an angle"
+            },
+            {
+              "step_id": "ch20-v6-royal-status-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "receives a Drishti from Guru"
+            },
+            {
+              "step_id": "ch20-v6-royal-status-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native’s father will be a king endowed with conveyances, or be equal to a king"
+            },
+            {
+              "step_id": "ch20-v6-royal-status-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dharm’s Lord is an angle the native’s father will be a king endowed with conveyances, or be equal to a king"
+            },
+            {
+              "step_id": "ch20-v6-royal-status-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "receives a Drishti from Guru the native’s father will be a king endowed with conveyances, or be equal to a king"
+            },
+            {
+              "step_id": "ch20-v6-royal-status-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "9th lord is an angle"
+            },
+            {
+              "step_id": "ch20-v6-royal-status-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "receives a Drishti from jupiter"
+            },
+            {
+              "step_id": "ch20-v6-royal-status-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "9th lord is an angle the native’s father will be a king endowed with conveyances, or be equal to a king"
+            },
+            {
+              "step_id": "ch20-v6-royal-status-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "receives a Drishti from jupiter the native’s father will be a king endowed with conveyances, or be equal to a king"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少九宫主落角宫事实时停止。",
+          "缺少九宫主受木星相照的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v6-royal-status-father.step-001",
+        "action": "核对九宫主（Dharm's Lord）是否落角宫，并核对它是否受木星（Guru）相照。",
+        "applicability_scope": "仅限本命盘九宫（Dharm Bhava）主题下父亲的地位；「或与国王相当」是原文自带的并列说法，本方法照录；原文未给时间限定。",
+        "minimum_supported_claim": "九宫主落角宫并受木星相照时，命主的父亲会是拥有车乘的国王，或与国王相当。",
+        "produced_fact_keys": [
+          "九宫主落角宫受木星照的父亲王者地位判定"
+        ],
+        "required_fact_keys": [
+          "九宫主（Dharm's Lord）是否落角宫",
+          "九宫主（Dharm's Lord）是否被木星（Guru）相照"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "九宫主（Dharm's Lord）是否落角宫"
+            },
+            {
+              "fact_key": "九宫主（Dharm's Lord）是否被木星（Guru）相照"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dharm’s Lord is an angle",
+              "claim": "九宫主落角宫"
+            },
+            {
+              "quote": "receives a Drishti from Guru",
+              "claim": "受木星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native’s father will be a king endowed with conveyances, or be equal to a king",
+              "claim": "命主的父亲会是拥有车乘的国王，或与国王相当"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v6",
+            "quote": "If Dharm’s Lord is an angle and receives a Drishti from Guru, the native’s father will be a king endowed with conveyances, or be equal to a king.",
+            "pdf_pages": [
+              36
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：九宫主（Dharm's Lord）是否落角宫、九宫主（Dharm's Lord）是否被木星（Guru）相照。",
+        "stop_fact_keys": [
+          "九宫主（Dharm's Lord）是否落角宫",
+          "九宫主（Dharm's Lord）是否被木星（Guru）相照"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把相照的木星换成别的吉星。",
+          "不得据此推断父亲的具体官职、财富或年份。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "63cd2d8dffa5cd3a5ff1217f3271006c9337429973846b6d64fe4c478cfebc14"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v7-rich-famous-father.step-001",
+      "method": {
+        "method": "ch20-v7-rich-famous-father",
+        "title": "父亲富有且有名望：九宫主落十宫、十宫主受吉星相照",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我父亲的家境和名声怎么样",
+          "九宫主落十宫说明父亲什么状况"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Dharm’s Lord be in Karm Bhava, while Karm’s Lord receives a Drishti from a benefic the native’s father will be very rich and famous.",
+            "九宫主落十宫 十宫主受吉星相照 父亲富有 有名望"
+          ],
+          "counter_queries": [
+            "Indigent Father. If Dharm’s Lord is debilitated, while the 2<sup>nd</sup> and/or the 4<sup>th</sup> from Dharm Bhava is occupied by Mangal, the native’s father is poor",
+            "Malefics in Ari and Vyaya Bhava will bring evils to mother. The child’s father will receive similar effects, if Bandhu and Karm Bhava are captured by malefics"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu … are malefics, while the rest are benefics",
+            "Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava",
+            "Fortunate (Affluent) Father. If Dharm’s Lord is with strength, as Shukra is in Dharm, while Guru is in an angle from Tanu Bhava, the native’s father is fortunate"
+          ],
+          "method_queries": [
+            "Dharm Bhava and the 9<sup>th</sup> from Surya deal with one’s father",
+            "判断父亲的财富与名望要看九宫（Dharm）与十宫（Karm）的哪些配置"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch20-v7-rich-famous-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dharm’s Lord be in Karm Bhava"
+            },
+            {
+              "step_id": "ch20-v7-rich-famous-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Karm’s Lord receives a Drishti from a benefic"
+            },
+            {
+              "step_id": "ch20-v7-rich-famous-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native’s father will be very rich and famous"
+            },
+            {
+              "step_id": "ch20-v7-rich-famous-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dharm’s Lord be in Karm Bhava the native’s father will be very rich and famous"
+            },
+            {
+              "step_id": "ch20-v7-rich-famous-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Karm’s Lord receives a Drishti from a benefic the native’s father will be very rich and famous"
+            },
+            {
+              "step_id": "ch20-v7-rich-famous-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "9th lord be in 10th house"
+            },
+            {
+              "step_id": "ch20-v7-rich-famous-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "10th lord receives a Drishti from a benefic"
+            },
+            {
+              "step_id": "ch20-v7-rich-famous-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "9th lord be in 10th house the native’s father will be very rich and famous"
+            },
+            {
+              "step_id": "ch20-v7-rich-famous-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "10th lord receives a Drishti from a benefic the native’s father will be very rich and famous"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少九宫主（Dharm's Lord）落宫事实时停止。",
+          "缺少十宫主（Karm's Lord）是否被吉星相照的事实时停止。",
+          "本盘吉星名册未按本书吉凶星定义确定时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v7-rich-famous-father.step-001",
+        "action": "核对九宫主（Dharm's Lord）是否落十宫（Karm），并核对十宫主（Karm's Lord）是否受吉星相照。",
+        "applicability_scope": "仅限本命盘九宫（Dharm）父亲主题；原文未给时间或上升限定；吉星名册须按本书自己的吉凶星定义取得。",
+        "minimum_supported_claim": "九宫主（Dharm's Lord）落十宫（Karm）、且十宫主（Karm's Lord）受吉星相照时，命主的父亲非常富有且有名望。",
+        "produced_fact_keys": [
+          "九宫主落十宫且十宫主受吉星相照主父亲富有闻名判定"
+        ],
+        "required_fact_keys": [
+          "九宫主（Dharm's Lord）是否落十宫（Karm）",
+          "十宫主（Karm's Lord）是否被吉星相照"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "九宫主（Dharm's Lord）是否落十宫（Karm）"
+            },
+            {
+              "fact_key": "十宫主（Karm's Lord）是否被吉星相照"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dharm’s Lord be in Karm Bhava",
+              "claim": "九宫主（Dharm's Lord）落十宫（Karm）"
+            },
+            {
+              "quote": "Karm’s Lord receives a Drishti from a benefic",
+              "claim": "十宫主（Karm's Lord）受吉星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native’s father will be very rich and famous",
+              "claim": "命主的父亲非常富有且有名望"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v7",
+            "quote": "Should Dharm’s Lord be in Karm Bhava, while Karm’s Lord receives a Drishti from a benefic the native’s father will be very rich and famous.",
+            "pdf_pages": [
+              37
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：九宫主（Dharm's Lord）是否落十宫（Karm）、十宫主（Karm's Lord）是否被吉星相照。",
+        "stop_fact_keys": [
+          "九宫主（Dharm's Lord）是否落十宫（Karm）",
+          "十宫主（Karm's Lord）是否被吉星相照"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断父亲的财富数额、职业或成名途径。",
+          "不得把富有与名望的断语从父亲移到命主本人。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "216d712470bfc11dc850089ec4bccac2f499bc33f30d02218814a9d81c304d1c"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v8-9-virtuous-devoted-to-father.step-001",
+      "method": {
+        "method": "ch20-v8-9-virtuous-devoted-to-father",
+        "title": "品行端正且孝敬父亲：太阳深度入旺、九宫主落十一宫",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和父亲的关系怎么样",
+          "太阳深度入旺又九宫主落十一宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Surya be in deep exaltation, as Dharm’s Lord is in Labh Bhava, the native will be virtuous, dear to the king and devoted to father.",
+            "太阳深度入旺 九宫主落十一宫 品行端正 孝敬父亲"
+          ],
+          "counter_queries": [
+            "There will be mutual enmity between the father and the native, if Lagn’s Lord is in Dharm Bhava, but with the Lord of Ari",
+            "If Ari’s Lord is in Karm Bhava, the native will be well known among his men, will not be respectfully disposed to his father"
+          ],
+          "boundary_queries": [
+            "Surya is the indicator of father for all beings, while the mother is indicated by Chandra",
+            "The 9<sup>th</sup> from Surya denotes father"
+          ],
+          "method_queries": [
+            "Dharm Bhava and the 9<sup>th</sup> from Surya deal with one’s father",
+            "判断与父亲的亲疏要看太阳（Surya）与九宫主（Dharm's Lord）的哪些配置"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch20-v8-9-virtuous-devoted-to-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Surya be in deep exaltation"
+            },
+            {
+              "step_id": "ch20-v8-9-virtuous-devoted-to-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dharm’s Lord is in Labh Bhava"
+            },
+            {
+              "step_id": "ch20-v8-9-virtuous-devoted-to-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be virtuous, dear to the king and devoted to father"
+            },
+            {
+              "step_id": "ch20-v8-9-virtuous-devoted-to-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Surya be in deep exaltation the native will be virtuous, dear to the king and devoted to father"
+            },
+            {
+              "step_id": "ch20-v8-9-virtuous-devoted-to-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dharm’s Lord is in Labh Bhava the native will be virtuous, dear to the king and devoted to father"
+            },
+            {
+              "step_id": "ch20-v8-9-virtuous-devoted-to-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "sun be in deep exaltation"
+            },
+            {
+              "step_id": "ch20-v8-9-virtuous-devoted-to-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "9th lord is in 11th house"
+            },
+            {
+              "step_id": "ch20-v8-9-virtuous-devoted-to-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "sun be in deep exaltation the native will be virtuous, dear to the king and devoted to father"
+            },
+            {
+              "step_id": "ch20-v8-9-virtuous-devoted-to-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "9th lord is in 11th house the native will be virtuous, dear to the king and devoted to father"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少太阳（Surya）是否深度入旺的事实时停止。",
+          "缺少九宫主（Dharm's Lord）落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v8-9-virtuous-devoted-to-father.step-001",
+        "action": "核对太阳（Surya）是否深度入旺，并核对九宫主（Dharm's Lord）是否落十一宫（Labh）。",
+        "applicability_scope": "仅限本命盘九宫（Dharm）父亲主题；原文未给时间或上升限定。",
+        "minimum_supported_claim": "太阳（Surya）深度入旺、且九宫主（Dharm's Lord）落十一宫（Labh）时，命主品行端正、为国王所喜爱、并孝敬父亲。",
+        "produced_fact_keys": [
+          "太阳深度入旺且九宫主落十一宫主品行端正孝敬父亲判定"
+        ],
+        "required_fact_keys": [
+          "太阳（Surya）是否深度入旺",
+          "九宫主（Dharm's Lord）是否落十一宫（Labh）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "太阳（Surya）是否深度入旺"
+            },
+            {
+              "fact_key": "九宫主（Dharm's Lord）是否落十一宫（Labh）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Surya be in deep exaltation",
+              "claim": "太阳（Surya）深度入旺"
+            },
+            {
+              "quote": "Dharm’s Lord is in Labh Bhava",
+              "claim": "九宫主（Dharm's Lord）落十一宫（Labh）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be virtuous, dear to the king and devoted to father",
+              "claim": "命主品行端正、为国王所喜爱、并孝敬父亲"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v8-9",
+            "quote": "Should Surya be in deep exaltation, as Dharm’s Lord is in Labh Bhava, the native will be virtuous, dear to the king and devoted to father.",
+            "pdf_pages": [
+              37
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：太阳（Surya）是否深度入旺、九宫主（Dharm's Lord）是否落十一宫（Labh）。",
+        "stop_fact_keys": [
+          "太阳（Surya）是否深度入旺",
+          "九宫主（Dharm's Lord）是否落十一宫（Labh）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断父亲的寿命、财富或命主的官职。",
+          "不得把「深度入旺」放宽成一般入旺。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "ccb7d7935eea1a40b2fe916790a0651bb35bb00b52164b348ecc8c03becc4a27"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v8-9-devoted-to-father-guru-relation.step-001",
+      "method": {
+        "method": "ch20-v8-9-devoted-to-father-guru-relation",
+        "title": "孝敬父亲：太阳落三角宫、九宫主落七宫并与木星同宫或受木星相照",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会孝顺父亲",
+          "九宫主落七宫又与木星有关系说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Surya is in a trine from Lagna, while Dharm’s Lord is in Yuvati in yuti with, or receiving a Drishti from Guru, the native will be devoted to his father.",
+            "太阳落三角宫 九宫主落七宫 与木星同宫 被木星相照 孝敬父亲"
+          ],
+          "counter_queries": [
+            "There will be mutual enmity between the father and the native, if Lagn’s Lord is in Dharm Bhava, but with the Lord of Ari",
+            "If Sahaj’s Lord is in Vyaya, the native will spend on evil deeds, will have a wicked father"
+          ],
+          "boundary_queries": [
+            "Surya is the indicator of father for all beings, while the mother is indicated by Chandra",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava"
+          ],
+          "method_queries": [
+            "Dharm Bhava and the 9<sup>th</sup> from Surya deal with one’s father",
+            "判断父子关系要看太阳（Surya）、九宫主（Dharm's Lord）与木星（Guru）的哪些关系"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch20-v8-9-devoted-to-father-guru-relation.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Surya is in a trine from Lagna"
+            },
+            {
+              "step_id": "ch20-v8-9-devoted-to-father-guru-relation.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dharm’s Lord is in Yuvati"
+            },
+            {
+              "step_id": "ch20-v8-9-devoted-to-father-guru-relation.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in yuti with, or receiving a Drishti from Guru"
+            },
+            {
+              "step_id": "ch20-v8-9-devoted-to-father-guru-relation.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be devoted to his father"
+            },
+            {
+              "step_id": "ch20-v8-9-devoted-to-father-guru-relation.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Surya is in a trine from Lagna the native will be devoted to his father"
+            },
+            {
+              "step_id": "ch20-v8-9-devoted-to-father-guru-relation.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dharm’s Lord is in Yuvati the native will be devoted to his father"
+            },
+            {
+              "step_id": "ch20-v8-9-devoted-to-father-guru-relation.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in yuti with, or receiving a Drishti from Guru the native will be devoted to his father"
+            },
+            {
+              "step_id": "ch20-v8-9-devoted-to-father-guru-relation.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "sun is in a trine from 1st house"
+            },
+            {
+              "step_id": "ch20-v8-9-devoted-to-father-guru-relation.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "9th lord is in 7th house"
+            },
+            {
+              "step_id": "ch20-v8-9-devoted-to-father-guru-relation.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "in yuti with, or receiving a Drishti from jupiter"
+            },
+            {
+              "step_id": "ch20-v8-9-devoted-to-father-guru-relation.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "sun is in a trine from 1st house the native will be devoted to his father"
+            },
+            {
+              "step_id": "ch20-v8-9-devoted-to-father-guru-relation.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "9th lord is in 7th house the native will be devoted to his father"
+            },
+            {
+              "step_id": "ch20-v8-9-devoted-to-father-guru-relation.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "in yuti with, or receiving a Drishti from jupiter the native will be devoted to his father"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少太阳（Surya）是否落三角宫的事实时停止。",
+          "缺少九宫主（Dharm's Lord）落宫事实时停止。",
+          "同宫与相照两个分支事实都缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v8-9-devoted-to-father-guru-relation.step-001",
+        "action": "核对太阳（Surya）是否落上升起算的三角宫、九宫主（Dharm's Lord）是否落七宫（Yuvati），再看九宫主与木星（Guru）是同宫还是被其相照。",
+        "applicability_scope": "仅限本命盘九宫（Dharm）父亲主题；原文断语是「the native will be devoted to his father」，his 指命主；原文未给时间限定。",
+        "minimum_supported_claim": "太阳（Surya）落上升（Lagna）起算的三角宫、九宫主（Dharm's Lord）落七宫（Yuvati）、且与木星（Guru）同宫，或被木星（Guru）相照时，命主孝敬他的父亲。",
+        "produced_fact_keys": [
+          "太阳落三角宫且九宫主落七宫会木星主孝敬父亲判定"
+        ],
+        "required_fact_keys": [
+          "太阳（Surya）是否落三角宫",
+          "九宫主（Dharm's Lord）是否落七宫（Yuvati）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "太阳（Surya）是否落三角宫"
+                },
+                {
+                  "fact_key": "九宫主（Dharm's Lord）是否落七宫（Yuvati）"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "九宫主（Dharm's Lord）是否与木星（Guru）同宫"
+                },
+                {
+                  "fact_key": "九宫主（Dharm's Lord）是否被木星（Guru）相照"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "太阳（Surya）是否落三角宫"
+                },
+                {
+                  "fact_key": "九宫主（Dharm's Lord）是否落七宫（Yuvati）"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "九宫主（Dharm's Lord）是否与木星（Guru）同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "九宫主（Dharm's Lord）是否与木星（Guru）同宫"
+            },
+            "selection_group": "ch20-v8-9-devoted-to-father-guru-relation.step-001:guru-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：九宫主（Dharm's Lord）是否与木星（Guru）同宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "太阳（Surya）是否落三角宫"
+                },
+                {
+                  "fact_key": "九宫主（Dharm's Lord）是否落七宫（Yuvati）"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "九宫主（Dharm's Lord）是否被木星（Guru）相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "九宫主（Dharm's Lord）是否被木星（Guru）相照"
+            },
+            "selection_group": "ch20-v8-9-devoted-to-father-guru-relation.step-001:guru-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：九宫主（Dharm's Lord）是否被木星（Guru）相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Surya is in a trine from Lagna",
+              "claim": "太阳（Surya）落上升（Lagna）起算的三角宫"
+            },
+            {
+              "quote": "Dharm’s Lord is in Yuvati",
+              "claim": "九宫主（Dharm's Lord）落七宫（Yuvati）"
+            },
+            {
+              "quote": "in yuti with, or receiving a Drishti from Guru",
+              "claim": "与木星（Guru）同宫，或被木星（Guru）相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be devoted to his father",
+              "claim": "命主孝敬他的父亲"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v8-9",
+            "quote": "If Surya is in a trine from Lagna, while Dharm’s Lord is in Yuvati in yuti with, or receiving a Drishti from Guru, the native will be devoted to his father.",
+            "pdf_pages": [
+              37
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：太阳（Surya）是否落三角宫、九宫主（Dharm's Lord）是否落七宫（Yuvati）。",
+        "stop_fact_keys": [
+          "太阳（Surya）是否落三角宫",
+          "九宫主（Dharm's Lord）是否落七宫（Yuvati）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断父亲的寿命、财富或婚姻。",
+          "不得把同宫与相照合并成一个条件，两者是原文给的两种取径。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "68a7793bc9a89e2a0293c74dd4ad7cd1b2957cdb4250c6a4ae6f8806ca24ebd2"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v10-fortunes-after-32.step-001",
+      "method": {
+        "method": "ch20-v10-fortunes-after-32",
+        "title": "第32岁之后得财运、车乘与名声：九宫主落二宫、二宫主落九宫",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我什么时候开始转运",
+          "九宫主与二宫主互落说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Acquisition of fortunes, conveyances and fame will follow the 32<sup>nd</sup> year of age, if Dharm’s Lord is in Dhan, while Dhan’s Lord is in Dharm.",
+            "九宫主落二宫 二宫主落九宫 第32年 财运 车乘 名声"
+          ],
+          "counter_queries": [
+            "If Rahu is in the 9<sup>th</sup> from Dharm Bhava, as his dispositor is in Randhr Bhava and Dharm’s Lord is in fall, the native be devoid of fortunes",
+            "If Karm’s Lord and Sahaj’s Lord are bereft of strength, while Dharm’s Lord is in fall, or combust the native will go begging for his food"
+          ],
+          "boundary_queries": [
+            "One will be fortunate (or affluent), if Dharm’s Lord is in Dharm Bhava with strength",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava"
+          ],
+          "method_queries": [
+            "These may be estimated with the help of the state of the Lords of Lagn and Dharm Bhava and in other manners as well",
+            "判断财运起运年岁要看九宫（Dharm）与二宫（Dhan）的哪些互落"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch20-v10-fortunes-after-32.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dharm’s Lord is in Dhan"
+            },
+            {
+              "step_id": "ch20-v10-fortunes-after-32.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dhan’s Lord is in Dharm"
+            },
+            {
+              "step_id": "ch20-v10-fortunes-after-32.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Acquisition of fortunes, conveyances and fame will follow the 32nd year of age"
+            },
+            {
+              "step_id": "ch20-v10-fortunes-after-32.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dharm’s Lord is in Dhan Acquisition of fortunes, conveyances and fame will follow the 32nd year of age"
+            },
+            {
+              "step_id": "ch20-v10-fortunes-after-32.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dhan’s Lord is in Dharm Acquisition of fortunes, conveyances and fame will follow the 32nd year of age"
+            },
+            {
+              "step_id": "ch20-v10-fortunes-after-32.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "9th lord is in 2nd house"
+            },
+            {
+              "step_id": "ch20-v10-fortunes-after-32.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "2nd lord is in 9th house"
+            },
+            {
+              "step_id": "ch20-v10-fortunes-after-32.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "9th lord is in 2nd house Acquisition of fortunes, conveyances and fame will follow the 32nd year of age"
+            },
+            {
+              "step_id": "ch20-v10-fortunes-after-32.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "2nd lord is in 9th house Acquisition of fortunes, conveyances and fame will follow the 32nd year of age"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少九宫主（Dharm's Lord）落宫事实时停止。",
+          "缺少二宫主（Dhan's Lord）落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v10-fortunes-after-32.step-001",
+        "action": "核对九宫主（Dharm's Lord）是否落二宫（Dhan），并核对二宫主（Dhan's Lord）是否落九宫（Dharm）。",
+        "applicability_scope": "仅限本命盘九宫（Dharm）财运主题；原文把获得时间系在第32岁之后。",
+        "minimum_supported_claim": "九宫主（Dharm's Lord）落二宫（Dhan）、且二宫主（Dhan's Lord）落九宫（Dharm）时，第32岁之后会有财运、车乘与名声的获得。",
+        "produced_fact_keys": [
+          "九宫主落二宫且二宫主落九宫主第32岁后得财运车乘名声判定"
+        ],
+        "required_fact_keys": [
+          "九宫主（Dharm's Lord）是否落二宫（Dhan）",
+          "二宫主（Dhan's Lord）是否落九宫（Dharm）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "九宫主（Dharm's Lord）是否落二宫（Dhan）"
+            },
+            {
+              "fact_key": "二宫主（Dhan's Lord）是否落九宫（Dharm）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dharm’s Lord is in Dhan",
+              "claim": "九宫主（Dharm's Lord）落二宫（Dhan）"
+            },
+            {
+              "quote": "Dhan’s Lord is in Dharm",
+              "claim": "二宫主（Dhan's Lord）落九宫（Dharm）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Acquisition of fortunes, conveyances and fame will follow the 32<sup>nd</sup> year of age",
+              "claim": "第32岁之后会有财运、车乘与名声的获得"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v10",
+            "quote": "Acquisition of fortunes, conveyances and fame will follow the 32<sup>nd</sup> year of age, if Dharm’s Lord is in Dhan, while Dhan’s Lord is in Dharm.",
+            "pdf_pages": [
+              37
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：九宫主（Dharm's Lord）是否落二宫（Dhan）、二宫主（Dhan's Lord）是否落九宫（Dharm）。",
+        "stop_fact_keys": [
+          "九宫主（Dharm's Lord）是否落二宫（Dhan）",
+          "二宫主（Dhan's Lord）是否落九宫（Dharm）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财富数额或车乘种类。",
+          "不得把第32岁之前的时间也算进本条。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文限定第32岁之后",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "89f610609e7cea9f29ec502640fc85b7f78a2b6f4f93d5d33679017cd4a5e6d3"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v11-enmity-with-father.step-001",
+      "method": {
+        "method": "ch20-v11-enmity-with-father",
+        "title": "父子互相为敌且父亲性情卑劣：上升主落九宫并与六宫主同宫",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和父亲会不会不和",
+          "上升主落九宫又与六宫主同宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "There will be mutual enmity between the father and the native, if Lagn’s Lord is in Dharm Bhava, but with the Lord of Ari.",
+            "上升主落九宫 与六宫主同宫 父子为敌 父亲性情卑劣"
+          ],
+          "counter_queries": [
+            "Should Surya be in deep exaltation, as Dharm’s Lord is in Labh Bhava, the native will be virtuous, dear to the king and devoted to father",
+            "If Karm’s Lord is in Dhan Bhava, the native will be wealthy, virtuous, honoured by the king, charitable and will enjoy happiness from father and others"
+          ],
+          "boundary_queries": [
+            "Surya is the indicator of father for all beings, while the mother is indicated by Chandra",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava"
+          ],
+          "method_queries": [
+            "Dharm Bhava and the 9<sup>th</sup> from Surya deal with one’s father",
+            "判断父子关系要看上升主（Lagn's Lord）与六宫主（Ari's Lord）的哪些配置"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch20-v11-enmity-with-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Lagn’s Lord is in Dharm Bhava"
+            },
+            {
+              "step_id": "ch20-v11-enmity-with-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "with the Lord of Ari"
+            },
+            {
+              "step_id": "ch20-v11-enmity-with-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "There will be mutual enmity between the father and the native"
+            },
+            {
+              "step_id": "ch20-v11-enmity-with-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native’s father will be of contemptible disposition"
+            },
+            {
+              "step_id": "ch20-v11-enmity-with-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Lagn’s Lord is in Dharm Bhava There will be mutual enmity between the father and the native"
+            },
+            {
+              "step_id": "ch20-v11-enmity-with-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "with the Lord of Ari There will be mutual enmity between the father and the native"
+            },
+            {
+              "step_id": "ch20-v11-enmity-with-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "1st lord is in 9th house"
+            },
+            {
+              "step_id": "ch20-v11-enmity-with-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "with the 6th lord"
+            },
+            {
+              "step_id": "ch20-v11-enmity-with-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "1st lord is in 9th house There will be mutual enmity between the father and the native"
+            },
+            {
+              "step_id": "ch20-v11-enmity-with-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "with the 6th lord There will be mutual enmity between the father and the native"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升主（Lagn's Lord）落宫事实时停止。",
+          "缺少上升主与六宫主是否同宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v11-enmity-with-father.step-001",
+        "action": "核对上升主（Lagn's Lord）是否落九宫（Dharm），并核对它是否与六宫主（Ari's Lord）同宫。",
+        "applicability_scope": "仅限本命盘九宫（Dharm）父亲主题；原文第二句以「Further」承接同偈前句，共用同一组条件；原文未给时间或上升限定。",
+        "minimum_supported_claim": "上升主（Lagn's Lord）落九宫（Dharm）、且与六宫主（Ari's Lord）同宫时，父亲与命主之间互相为敌，命主的父亲性情卑劣。",
+        "produced_fact_keys": [
+          "上升主落九宫会六宫主主父子为敌且父性情卑劣判定"
+        ],
+        "required_fact_keys": [
+          "上升主（Lagn's Lord）是否落九宫（Dharm）",
+          "上升主（Lagn's Lord）是否与六宫主（Ari's Lord）同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "上升主（Lagn's Lord）是否落九宫（Dharm）"
+            },
+            {
+              "fact_key": "上升主（Lagn's Lord）是否与六宫主（Ari's Lord）同宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Lagn’s Lord is in Dharm Bhava",
+              "claim": "上升主（Lagn's Lord）落九宫（Dharm）"
+            },
+            {
+              "quote": "with the Lord of Ari",
+              "claim": "与六宫主（Ari's Lord）同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "There will be mutual enmity between the father and the native",
+              "claim": "父亲与命主之间互相为敌"
+            },
+            {
+              "quote": "the native’s father will be of contemptible disposition",
+              "claim": "命主的父亲性情卑劣"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v11",
+            "quote": "There will be mutual enmity between the father and the native, if Lagn’s Lord is in Dharm Bhava, but with the Lord of Ari. Further, the native’s father will be of contemptible disposition.",
+            "pdf_pages": [
+              37
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：上升主（Lagn's Lord）是否落九宫（Dharm）、上升主（Lagn's Lord）是否与六宫主（Ari's Lord）同宫。",
+        "stop_fact_keys": [
+          "上升主（Lagn's Lord）是否落九宫（Dharm）",
+          "上升主（Lagn's Lord）是否与六宫主（Ari's Lord）同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断父亲的寿命或财产纠纷。",
+          "不得把「互相为敌」加重成断绝关系或诉讼。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch20:v11"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "defe691990f54c28b07b1a33b872ae231e3441e1e5d87831faf23677eb86c9cd"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch20-v12-begged-food.step-001",
+      "method": {
+        "method": "ch20-v12-begged-food",
+        "title": "靠乞讨得食：十宫主与三宫主皆无力、九宫主落陷或燃烧",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会穷到要靠人接济",
+          "十宫主三宫主都无力又九宫主受损说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Karm’s Lord and Sahaj’s Lord are bereft of strength, while Dharm’s Lord is in fall, or combust the native will go begging for his food.",
+            "十宫主无力 三宫主无力 九宫主落陷 燃烧 乞讨得食"
+          ],
+          "counter_queries": [
+            "One will be fortunate (or affluent), if Dharm’s Lord is in Dharm Bhava with strength",
+            "One will enjoy abundant fortunes, if Shukra is in deep exaltation and be in the company of Dharm’s Lord, as Shani is in Sahaj"
+          ],
+          "boundary_queries": [
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+            "Should Shani be in Dharm Bhava along with Chandra, as Lagn’s Lord is in fall, the native will acquire food by begging",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava"
+          ],
+          "method_queries": [
+            "These may be estimated with the help of the state of the Lords of Lagn and Dharm Bhava and in other manners as well",
+            "判断生计困顿要看十宫主（Karm's Lord）、三宫主（Sahaj's Lord）与九宫主（Dharm's Lord）的哪些状态"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch20-v12-begged-food.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Karm’s Lord and Sahaj’s Lord are bereft of strength"
+            },
+            {
+              "step_id": "ch20-v12-begged-food.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dharm’s Lord is in fall, or combust"
+            },
+            {
+              "step_id": "ch20-v12-begged-food.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will go begging for his food"
+            },
+            {
+              "step_id": "ch20-v12-begged-food.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Karm’s Lord and Sahaj’s Lord are bereft of strength the native will go begging for his food"
+            },
+            {
+              "step_id": "ch20-v12-begged-food.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dharm’s Lord is in fall, or combust the native will go begging for his food"
+            },
+            {
+              "step_id": "ch20-v12-begged-food.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "10th lord and 3rd lord are bereft of strength"
+            },
+            {
+              "step_id": "ch20-v12-begged-food.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "9th lord is in fall, or combust"
+            },
+            {
+              "step_id": "ch20-v12-begged-food.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "10th lord and 3rd lord are bereft of strength the native will go begging for his food"
+            },
+            {
+              "step_id": "ch20-v12-begged-food.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "9th lord is in fall, or combust the native will go begging for his food"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主（Karm's Lord）强弱事实时停止。",
+          "缺少三宫主（Sahaj's Lord）强弱事实时停止。",
+          "行星强弱判准未按本书力量定义确定时停止。",
+          "落陷与燃烧两个分支事实都缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch20-v12-begged-food.step-001",
+        "action": "核对十宫主（Karm's Lord）与三宫主（Sahaj's Lord）是否都没有力量，再看九宫主（Dharm's Lord）是落陷还是燃烧。",
+        "applicability_scope": "仅限本命盘九宫（Dharm）生计主题；原文未给时间限定；行星强弱须按本书自己的力量判准取得。",
+        "minimum_supported_claim": "十宫主（Karm's Lord）与三宫主（Sahaj's Lord）都没有力量、且九宫主（Dharm's Lord）落陷，或燃烧时，命主要靠乞讨得食。",
+        "produced_fact_keys": [
+          "十宫主三宫主无力且九宫主落陷或燃烧主乞食判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm's Lord）是否有力",
+          "三宫主（Sahaj's Lord）是否有力"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "十宫主（Karm's Lord）是否有力"
+                    }
+                  ]
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "三宫主（Sahaj's Lord）是否有力"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "九宫主（Dharm's Lord）是否落陷"
+                },
+                {
+                  "fact_key": "九宫主（Dharm's Lord）是否燃烧"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "十宫主（Karm's Lord）是否有力"
+                    }
+                  ]
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "三宫主（Sahaj's Lord）是否有力"
+                    }
+                  ]
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "九宫主（Dharm's Lord）是否落陷"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "九宫主（Dharm's Lord）是否落陷"
+            },
+            "selection_group": "ch20-v12-begged-food.step-001:dharm-lord-affliction",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：九宫主（Dharm's Lord）是否落陷。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "十宫主（Karm's Lord）是否有力"
+                    }
+                  ]
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "三宫主（Sahaj's Lord）是否有力"
+                    }
+                  ]
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "九宫主（Dharm's Lord）是否燃烧"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "九宫主（Dharm's Lord）是否燃烧"
+            },
+            "selection_group": "ch20-v12-begged-food.step-001:dharm-lord-affliction",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：九宫主（Dharm's Lord）是否燃烧。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Karm’s Lord and Sahaj’s Lord are bereft of strength",
+              "claim": "十宫主（Karm's Lord）与三宫主（Sahaj's Lord）都没有力量"
+            },
+            {
+              "quote": "Dharm’s Lord is in fall, or combust",
+              "claim": "九宫主（Dharm's Lord）落陷，或燃烧"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will go begging for his food",
+              "claim": "命主要靠乞讨得食"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch20:v12",
+            "quote": "If Karm’s Lord and Sahaj’s Lord are bereft of strength, while Dharm’s Lord is in fall, or combust the native will go begging for his food.",
+            "pdf_pages": [
+              37
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm's Lord）是否有力、三宫主（Sahaj's Lord）是否有力。",
+        "stop_fact_keys": [
+          "十宫主（Karm's Lord）是否有力",
+          "三宫主（Sahaj's Lord）是否有力"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断乞讨发生的年岁或时长。",
+          "不得把落陷与燃烧合并成一个条件。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "33ae386bb734acccae00cd037f991976fde1b3563117ab3d4c066413d29ab423"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch20:v4": {
+      "evidence_atom_id": "bphs-97:santhanam:ch20:v4",
+      "chapter_number": 20,
+      "chapter_title": "Effects of Dharm Bhava",
+      "verse_label": "4.",
+      "content_role": "verse",
+      "exact_text": "4. Indigent Father. If Dharm’s Lord is debilitated, while the 2<sup>nd</sup> and/or the 4<sup>th</sup> from Dharm Bhava is occupied by Mangal, the native’s father is poor.",
+      "pdf_pages": [
+        36
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 20 · Sloka 4 · PDF page 36 · bphs-97:santhanam:ch20:v4",
+      "previous_atom_id": "bphs-97:santhanam:ch20:v3",
+      "next_atom_id": "bphs-97:santhanam:ch20:v5",
+      "context_before": " If Dharm’s Lord is with strength, as Shukra is in Dharm, while Guru is in an angle from Tanu Bhava, the native’s father is fortunate.\n\n",
+      "context_after": "5. Long-living Father. Should Dharm’s Lord be in deep exaltation, while Shukra is in an angle from Tanu Bhava and Guru is in the",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch20:v5": {
+      "evidence_atom_id": "bphs-97:santhanam:ch20:v5",
+      "chapter_number": 20,
+      "chapter_title": "Effects of Dharm Bhava",
+      "verse_label": "5.",
+      "content_role": "verse",
+      "exact_text": "5. Long-living Father. Should Dharm’s Lord be in deep exaltation, while Shukra is in an angle from Tanu Bhava and Guru is in the 9<sup>th</sup> from Navāńś Lagna, the father of the native will enjoy a long span of life.",
+      "pdf_pages": [
+        36
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 20 · Sloka 5 · PDF page 36 · bphs-97:santhanam:ch20:v5",
+      "previous_atom_id": "bphs-97:santhanam:ch20:v4",
+      "next_atom_id": "bphs-97:santhanam:ch20:v6",
+      "context_before": " If Dharm’s Lord is debilitated, while the 2<sup>nd</sup> and/or the 4<sup>th</sup> from Dharm Bhava is occupied by Mangal, the native’s father is poor.\n\n",
+      "context_after": "6. Royal Status for Father. If Dharm’s Lord is an angle and receives a Drishti from Guru, the native’s father will be a king end",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch20:v6": {
+      "evidence_atom_id": "bphs-97:santhanam:ch20:v6",
+      "chapter_number": 20,
+      "chapter_title": "Effects of Dharm Bhava",
+      "verse_label": "6.",
+      "content_role": "verse",
+      "exact_text": "6. Royal Status for Father. If Dharm’s Lord is an angle and receives a Drishti from Guru, the native’s father will be a king endowed with conveyances, or be equal to a king.",
+      "pdf_pages": [
+        36
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 20 · Sloka 6 · PDF page 36 · bphs-97:santhanam:ch20:v6",
+      "previous_atom_id": "bphs-97:santhanam:ch20:v5",
+      "next_atom_id": "bphs-97:santhanam:ch20:v7",
+      "context_before": " Should Dharm’s Lord be in deep exaltation, while Shukra is in an angle from Tanu Bhava and Guru is in the 9<sup>th</sup> from Navāńś Lagna, the father of the native will enjoy a long span of life.\n\n",
+      "context_after": "7. Wealthy and Famous Father. Should Dharm’s Lord be in Karm Bhava, while Karm’s Lord receives a Drishti from a benefic the nati",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch20:v7": {
+      "evidence_atom_id": "bphs-97:santhanam:ch20:v7",
+      "chapter_number": 20,
+      "chapter_title": "Effects of Dharm Bhava",
+      "verse_label": "7.",
+      "content_role": "verse",
+      "exact_text": "7. Wealthy and Famous Father. Should Dharm’s Lord be in Karm Bhava, while Karm’s Lord receives a Drishti from a benefic the native’s father will be very rich and famous.",
+      "pdf_pages": [
+        37
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 20 · Sloka 7 · PDF page 37 · bphs-97:santhanam:ch20:v7",
+      "previous_atom_id": "bphs-97:santhanam:ch20:v6",
+      "next_atom_id": "bphs-97:santhanam:ch20:v8-9",
+      "context_before": " If Dharm’s Lord is an angle and receives a Drishti from Guru, the native’s father will be a king endowed with conveyances, or be equal to a king.\n\n<!-- SOURCE_PAGE 37 -->\n\n",
+      "context_after": "8-9. Virtuous and Devoted to Father. Should Surya be in deep exaltation, as Dharm’s Lord is in Labh Bhava, the native will be vi",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch20:v8-9": {
+      "evidence_atom_id": "bphs-97:santhanam:ch20:v8-9",
+      "chapter_number": 20,
+      "chapter_title": "Effects of Dharm Bhava",
+      "verse_label": "8-9.",
+      "content_role": "verse",
+      "exact_text": "8-9. Virtuous and Devoted to Father. Should Surya be in deep exaltation, as Dharm’s Lord is in Labh Bhava, the native will be virtuous, dear to the king and devoted to father. If Surya is in a trine from Lagna, while Dharm’s Lord is in Yuvati in yuti with, or receiving a Drishti from Guru, the native will be devoted to his father.",
+      "pdf_pages": [
+        37
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 20 · Sloka 8-9 · PDF page 37 · bphs-97:santhanam:ch20:v8-9",
+      "previous_atom_id": "bphs-97:santhanam:ch20:v7",
+      "next_atom_id": "bphs-97:santhanam:ch20:v10",
+      "context_before": " Should Dharm’s Lord be in Karm Bhava, while Karm’s Lord receives a Drishti from a benefic the native’s father will be very rich and famous.\n\n",
+      "context_after": "10. Fortunes etc. Acquisition of fortunes, conveyances and fame will follow the 32<sup>nd</sup> year of age, if Dharm’s Lord is ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch20:v10": {
+      "evidence_atom_id": "bphs-97:santhanam:ch20:v10",
+      "chapter_number": 20,
+      "chapter_title": "Effects of Dharm Bhava",
+      "verse_label": "10.",
+      "content_role": "verse",
+      "exact_text": "10. Fortunes etc. Acquisition of fortunes, conveyances and fame will follow the 32<sup>nd</sup> year of age, if Dharm’s Lord is in Dhan, while Dhan’s Lord is in Dharm.",
+      "pdf_pages": [
+        37
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 20 · Sloka 10 · PDF page 37 · bphs-97:santhanam:ch20:v10",
+      "previous_atom_id": "bphs-97:santhanam:ch20:v8-9",
+      "next_atom_id": "bphs-97:santhanam:ch20:v11",
+      "context_before": " If Surya is in a trine from Lagna, while Dharm’s Lord is in Yuvati in yuti with, or receiving a Drishti from Guru, the native will be devoted to his father.\n\n",
+      "context_after": "11. Inimical to Father. There will be mutual enmity between the father and the native, if Lagn’s Lord is in Dharm Bhava, but wit",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch20:v11": {
+      "evidence_atom_id": "bphs-97:santhanam:ch20:v11",
+      "chapter_number": 20,
+      "chapter_title": "Effects of Dharm Bhava",
+      "verse_label": "11.",
+      "content_role": "verse",
+      "exact_text": "11. Inimical to Father. There will be mutual enmity between the father and the native, if Lagn’s Lord is in Dharm Bhava, but with the Lord of Ari. Further, the native’s father will be of contemptible disposition.",
+      "pdf_pages": [
+        37
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 20 · Sloka 11 · PDF page 37 · bphs-97:santhanam:ch20:v11",
+      "previous_atom_id": "bphs-97:santhanam:ch20:v10",
+      "next_atom_id": "bphs-97:santhanam:ch20:v12",
+      "context_before": " Acquisition of fortunes, conveyances and fame will follow the 32<sup>nd</sup> year of age, if Dharm’s Lord is in Dhan, while Dhan’s Lord is in Dharm.\n\n",
+      "context_after": "12. Begged Food. If Karm’s Lord and Sahaj’s Lord are bereft of strength, while Dharm’s Lord is in fall, or combust the native wi",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch20:v12": {
+      "evidence_atom_id": "bphs-97:santhanam:ch20:v12",
+      "chapter_number": 20,
+      "chapter_title": "Effects of Dharm Bhava",
+      "verse_label": "12.",
+      "content_role": "verse",
+      "exact_text": "12. Begged Food. If Karm’s Lord and Sahaj’s Lord are bereft of strength, while Dharm’s Lord is in fall, or combust the native will go begging for his food.",
+      "pdf_pages": [
+        37
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 20 · Sloka 12 · PDF page 37 · bphs-97:santhanam:ch20:v12",
+      "previous_atom_id": "bphs-97:santhanam:ch20:v11",
+      "next_atom_id": "bphs-97:santhanam:ch20:v13-25",
+      "context_before": " if Lagn’s Lord is in Dharm Bhava, but with the Lord of Ari. Further, the native’s father will be of contemptible disposition.\n\n",
+      "context_after": "13-25. Combinations for Father’s Death. The father of the native would have passed away prior to the native’s birth, if Surya is",
+      "content_missing": false
+    }
+  }
+}

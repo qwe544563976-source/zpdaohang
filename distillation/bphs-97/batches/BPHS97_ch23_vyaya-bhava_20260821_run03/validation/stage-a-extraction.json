@@ -1,0 +1,1979 @@
+{
+  "schema_version": "judgment-method-extraction/v2",
+  "batch": {
+    "batch_id": "BPHS97_ch23_vyaya-bhava_20260821_run03",
+    "book_id": "bphs-97",
+    "edition_id": "santhanam",
+    "artifact_scope": "FORMAL",
+    "pilot_only": false,
+    "publishable": false,
+    "book_strategy": "rule_book",
+    "chapter_features": [
+      "simple_house_placement"
+    ],
+    "requested_review": "full",
+    "consecutive_clean_batches": 0,
+    "review_cycle_position": 1
+  },
+  "source_scope": [
+    "bphs-97:santhanam:ch23:v1-4",
+    "bphs-97:santhanam:ch23:v5-6",
+    "bphs-97:santhanam:ch23:v7",
+    "bphs-97:santhanam:ch23:v8",
+    "bphs-97:santhanam:ch23:v9",
+    "bphs-97:santhanam:ch23:v10",
+    "bphs-97:santhanam:ch23:v11",
+    "bphs-97:santhanam:ch23:v12",
+    "bphs-97:santhanam:ch23:v13",
+    "bphs-97:santhanam:ch23:v14"
+  ],
+  "source_records": [
+    {
+      "evidence_atom_id": "bphs-97:santhanam:ch23:v1-4",
+      "semantic_class": "condition_result",
+      "risk_flags": []
+    },
+    {
+      "evidence_atom_id": "bphs-97:santhanam:ch23:v5-6",
+      "semantic_class": "condition_result",
+      "risk_flags": []
+    },
+    {
+      "evidence_atom_id": "bphs-97:santhanam:ch23:v7",
+      "semantic_class": "foundational_knowledge",
+      "risk_flags": [],
+      "disposition": "knowledge_only"
+    },
+    {
+      "evidence_atom_id": "bphs-97:santhanam:ch23:v8",
+      "semantic_class": "condition_result",
+      "risk_flags": []
+    },
+    {
+      "evidence_atom_id": "bphs-97:santhanam:ch23:v9",
+      "semantic_class": "condition_result",
+      "risk_flags": []
+    },
+    {
+      "evidence_atom_id": "bphs-97:santhanam:ch23:v10",
+      "semantic_class": "condition_result",
+      "risk_flags": []
+    },
+    {
+      "evidence_atom_id": "bphs-97:santhanam:ch23:v11",
+      "semantic_class": "condition_result",
+      "risk_flags": []
+    },
+    {
+      "evidence_atom_id": "bphs-97:santhanam:ch23:v12",
+      "semantic_class": "condition_result",
+      "risk_flags": []
+    },
+    {
+      "evidence_atom_id": "bphs-97:santhanam:ch23:v13",
+      "semantic_class": "condition_result",
+      "risk_flags": []
+    },
+    {
+      "evidence_atom_id": "bphs-97:santhanam:ch23:v14",
+      "semantic_class": "condition_result",
+      "risk_flags": []
+    }
+  ],
+  "methods": [
+    {
+      "method": "ch23-v1-4-good-account-expenses",
+      "title": "开支花在好用途上：十二宫主与吉星同宫、落自己主管的宫位或入旺，或十二宫被吉星占据",
+      "target_house": 12,
+      "generalization_scope": "general_rule",
+      "source_status": "single_explicit_source",
+      "fact_binding_status": "unmapped",
+      "upstream_issue_ids": [],
+      "user_intents": [
+        "我的钱都花到哪里去了",
+        "我这辈子的开销是好是坏"
+      ],
+      "facts": [
+        {
+          "key": "本盘十二宫主（Vyaya's Lord）是哪颗行星",
+          "availability": "always",
+          "role": "context"
+        },
+        {
+          "key": "十二宫主（Vyaya's Lord）是否与吉星同宫",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "十二宫主（Vyaya's Lord）是否落自己主管的宫位（own Bhava）",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "十二宫主（Vyaya's Lord）是否入旺",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "十二宫（Vyaya）是否被吉星占据",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        }
+      ],
+      "dependencies": [],
+      "steps": [
+        {
+          "action": "先取本盘十二宫主（Vyaya's Lord）是哪颗行星，再逐一核对它是否与吉星同宫、是否落自己主管的宫位、是否入旺，以及十二宫（Vyaya）内是否有吉星。",
+          "applicability_scope": "仅限本命盘十二宫（Vyaya Bhava）的开支性质主题；原文只给出四个并列择一条件，未给时间限定，也未给开支的数额或对象。",
+          "minimum_supported_claim": "十二宫主（Vyaya's Lord）与吉星同宫，或落自己主管的宫位（own Bhava），或入旺，或者十二宫（Vyaya）被吉星占据时，开支会花在好的用途上。",
+          "claim_terms": {
+            "conditions": [
+              {
+                "quote": "Vyaya’s Lord is with a benefic",
+                "claim": "十二宫主（Vyaya's Lord）与吉星同宫"
+              },
+              {
+                "quote": "in his own Bhava",
+                "claim": "落自己主管的宫位（own Bhava）"
+              },
+              {
+                "quote": "exalted",
+                "claim": "入旺"
+              },
+              {
+                "quote": "if a benefic occupies Vyaya",
+                "claim": "十二宫（Vyaya）被吉星占据"
+              }
+            ],
+            "results": [
+              {
+                "quote": "There will be expenses on good accounts",
+                "claim": "开支会花在好的用途上"
+              }
+            ]
+          },
+          "time_scope": {
+            "kind": "none",
+            "label": "原文没有时间限定",
+            "fact_keys": []
+          },
+          "produced_fact_keys": [
+            "十二宫主状态下的开支性质判定"
+          ],
+          "required_fact_keys": [
+            "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+          ],
+          "condition_logic": {
+            "fact_key": "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+          },
+          "conditional_requirements": [],
+          "alternative_groups": [
+            {
+              "group_id": "good-expense-condition",
+              "branches": [
+                {
+                  "branch_id": "lord-with-benefic",
+                  "condition_logic": {
+                    "fact_key": "十二宫主（Vyaya's Lord）是否与吉星同宫"
+                  },
+                  "required_fact_keys": [
+                    "十二宫主（Vyaya's Lord）是否与吉星同宫"
+                  ]
+                },
+                {
+                  "branch_id": "lord-own-bhava",
+                  "condition_logic": {
+                    "fact_key": "十二宫主（Vyaya's Lord）是否落自己主管的宫位（own Bhava）"
+                  },
+                  "required_fact_keys": [
+                    "十二宫主（Vyaya's Lord）是否落自己主管的宫位（own Bhava）"
+                  ]
+                },
+                {
+                  "branch_id": "lord-exalted",
+                  "condition_logic": {
+                    "fact_key": "十二宫主（Vyaya's Lord）是否入旺"
+                  },
+                  "required_fact_keys": [
+                    "十二宫主（Vyaya's Lord）是否入旺"
+                  ]
+                },
+                {
+                  "branch_id": "benefic-in-vyaya",
+                  "condition_logic": {
+                    "fact_key": "十二宫（Vyaya）是否被吉星占据"
+                  },
+                  "required_fact_keys": [
+                    "十二宫（Vyaya）是否被吉星占据"
+                  ]
+                }
+              ]
+            }
+          ],
+          "concession_conditions": [],
+          "context_reference": false,
+          "context_bindings": [],
+          "source_status": "single_explicit_source",
+          "evidence": [
+            {
+              "evidence_atom_id": "bphs-97:santhanam:ch23:v1-4",
+              "quote": "There will be expenses on good accounts, if Vyaya’s Lord is with a benefic, or in his own Bhava, or exalted, or, if a benefic occupies Vyaya."
+            }
+          ],
+          "exception_relations": [],
+          "forbidden_extensions": [
+            "不得据此推断开支的金额、时间或具体项目。",
+            "不得把「好的用途」扩大成发财、致富或进项增加。",
+            "不得把四个择一条件改写成必须同时成立。"
+          ]
+        }
+      ],
+      "retrieval_plan": {
+        "support_queries": [
+          "There will be expenses on good accounts, if Vyaya’s Lord is with a benefic, or in his own Bhava, or exalted",
+          "十二宫主 与吉星同宫 入旺 开支 好的用途"
+        ],
+        "counter_queries": [
+          "If Vyaya’s Lord is in Vyaya Bhava, the native will only face heavy expenditure, will not have physical felicity, be irritable and spiteful.",
+          "Earnings will be through sinful measures, if Vyaya is occupied by Shani, or Mangal etc. and is not receiving a Drishti from a benefic.",
+          "If Lagn’s Lord is in Vyaya Bhava and is devoid of benefic Drishti and/or Yuti, the native will be bereft of physical happiness, will spend unfruitfully and be given to much anger."
+        ],
+        "boundary_queries": [
+          "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+          "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+          "For the seven Grahas, from Surya on, the exaltation Rāśis are, respectively, Mesh, Vrishabh, Makar, Kanya, Kark, Meen and Tula",
+          "It is half beneficial in its own Bhava"
+        ],
+        "method_queries": [
+          "Effects of Vyaya’s Lord in Various Bhavas",
+          "判断十二宫开支要先看十二宫主与吉星的关系"
+        ]
+      },
+      "stop_conditions": [
+        "缺少本盘十二宫主是哪颗行星的事实时停止。",
+        "四个择一条件的事实全部缺失时停止。",
+        "吉星名册未确定时，与吉星有关的两个分支停止。"
+      ],
+      "spine_slot_hint": null
+    },
+    {
+      "method": "ch23-v1-4-chandra-vyaya-lord-comforts",
+      "title": "房屋床铺与享乐：月亮为十二宫主，且入旺、落本宫本九分盘，或落十一宫、九宫、五宫",
+      "target_house": 12,
+      "generalization_scope": "general_rule",
+      "source_status": "single_explicit_source",
+      "fact_binding_status": "unmapped",
+      "upstream_issue_ids": [],
+      "user_intents": [
+        "我住的地方好不好",
+        "我这辈子享不享受得到好东西"
+      ],
+      "facts": [
+        {
+          "key": "十二宫主（Vyaya's Lord）是否为月亮（Chandra）",
+          "availability": "always",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "月亮（Chandra）是否入旺",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "月亮（Chandra）是否落本星座（own Rāśi）",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "月亮（Chandra）是否落在自己主管的九分盘（Navamsa D9）星座",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "月亮（Chandra）是否落十一宫（Labh）",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "月亮（Chandra）是否落九宫（Dharm）",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "月亮（Chandra）是否落五宫（Putr）",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "月亮（Chandra）在九分盘（Navamsa D9）中是否落十一宫（Labh）",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "月亮（Chandra）在九分盘（Navamsa D9）中是否落九宫（Dharm）",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "月亮（Chandra）在九分盘（Navamsa D9）中是否落五宫（Putr）",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        }
+      ],
+      "dependencies": [],
+      "steps": [
+        {
+          "action": "先确认十二宫（Vyaya）的宫主是不是月亮（Chandra），再核对月亮是否入旺、是否落本星座（own Rāśi）或自己主管的九分盘（Navamsa D9）星座，以及是否在本盘或九分盘中落十一宫（Labh）、九宫（Dharm）、五宫（Putr）。",
+          "applicability_scope": "仅限本命盘十二宫（Vyaya Bhava）主题下、且十二宫主恰为月亮（Chandra）的命盘；原文对本盘与九分盘并列写作 in Rāśi/Navāńś，两张盘各自成立即可；原文未给时间限定。后半句「The said native」承接同偈前句所指的同一命主，逐字短引已把前句一并纳入。",
+          "minimum_supported_claim": "月亮（Chandra）是十二宫（Vyaya）的宫主，并且入旺，或落本星座（own Rāśi）或落自己主管的九分盘（Navamsa D9）星座，或在本盘或九分盘（Navamsa D9）中落十一宫（Labh）、九宫（Dharm）或五宫（Putr）时，会拥有美好的房屋与床铺，并享有上等的香品与享乐；该命主会穿戴华贵的衣饰、有学问、有尊贵地位。",
+          "claim_terms": {
+            "conditions": [
+              {
+                "quote": "Chandra happens to be Vyaya’s Lord",
+                "claim": "月亮（Chandra）是十二宫（Vyaya）的宫主"
+              },
+              {
+                "quote": "be exalted",
+                "claim": "入旺"
+              },
+              {
+                "quote": "be in its own Rashiand/or Navāńś",
+                "claim": "落本星座（own Rāśi）或落自己主管的九分盘（Navamsa D9）星座"
+              },
+              {
+                "quote": "in Labh/Dharm/Putr Bhava in Rāśi/Navāńś",
+                "claim": "在本盘或九分盘（Navamsa D9）中落十一宫（Labh）、九宫（Dharm）或五宫（Putr）"
+              }
+            ],
+            "results": [
+              {
+                "quote": "One will own beautiful houses and beds and be endowed with superior scented articles and pleasures",
+                "claim": "会拥有美好的房屋与床铺，并享有上等的香品与享乐"
+              },
+              {
+                "quote": "The said native will live with rich clothes and ornaments, be learned and Lordly.",
+                "claim": "该命主会穿戴华贵的衣饰、有学问、有尊贵地位"
+              }
+            ]
+          },
+          "time_scope": {
+            "kind": "none",
+            "label": "原文没有时间限定",
+            "fact_keys": []
+          },
+          "produced_fact_keys": [
+            "月亮为十二宫主时的居所与享乐判定"
+          ],
+          "required_fact_keys": [
+            "十二宫主（Vyaya's Lord）是否为月亮（Chandra）"
+          ],
+          "condition_logic": {
+            "fact_key": "十二宫主（Vyaya's Lord）是否为月亮（Chandra）"
+          },
+          "conditional_requirements": [],
+          "alternative_groups": [
+            {
+              "group_id": "chandra-dignity-or-placement",
+              "branches": [
+                {
+                  "branch_id": "chandra-exalted",
+                  "condition_logic": {
+                    "fact_key": "月亮（Chandra）是否入旺"
+                  },
+                  "required_fact_keys": [
+                    "月亮（Chandra）是否入旺"
+                  ]
+                },
+                {
+                  "branch_id": "chandra-own-rasi",
+                  "condition_logic": {
+                    "fact_key": "月亮（Chandra）是否落本星座（own Rāśi）"
+                  },
+                  "required_fact_keys": [
+                    "月亮（Chandra）是否落本星座（own Rāśi）"
+                  ]
+                },
+                {
+                  "branch_id": "chandra-own-navamsa",
+                  "condition_logic": {
+                    "fact_key": "月亮（Chandra）是否落在自己主管的九分盘（Navamsa D9）星座"
+                  },
+                  "required_fact_keys": [
+                    "月亮（Chandra）是否落在自己主管的九分盘（Navamsa D9）星座"
+                  ]
+                },
+                {
+                  "branch_id": "chandra-labh-rasi",
+                  "condition_logic": {
+                    "fact_key": "月亮（Chandra）是否落十一宫（Labh）"
+                  },
+                  "required_fact_keys": [
+                    "月亮（Chandra）是否落十一宫（Labh）"
+                  ]
+                },
+                {
+                  "branch_id": "chandra-dharm-rasi",
+                  "condition_logic": {
+                    "fact_key": "月亮（Chandra）是否落九宫（Dharm）"
+                  },
+                  "required_fact_keys": [
+                    "月亮（Chandra）是否落九宫（Dharm）"
+                  ]
+                },
+                {
+                  "branch_id": "chandra-putr-rasi",
+                  "condition_logic": {
+                    "fact_key": "月亮（Chandra）是否落五宫（Putr）"
+                  },
+                  "required_fact_keys": [
+                    "月亮（Chandra）是否落五宫（Putr）"
+                  ]
+                },
+                {
+                  "branch_id": "chandra-labh-navamsa",
+                  "condition_logic": {
+                    "fact_key": "月亮（Chandra）在九分盘（Navamsa D9）中是否落十一宫（Labh）"
+                  },
+                  "required_fact_keys": [
+                    "月亮（Chandra）在九分盘（Navamsa D9）中是否落十一宫（Labh）"
+                  ]
+                },
+                {
+                  "branch_id": "chandra-dharm-navamsa",
+                  "condition_logic": {
+                    "fact_key": "月亮（Chandra）在九分盘（Navamsa D9）中是否落九宫（Dharm）"
+                  },
+                  "required_fact_keys": [
+                    "月亮（Chandra）在九分盘（Navamsa D9）中是否落九宫（Dharm）"
+                  ]
+                },
+                {
+                  "branch_id": "chandra-putr-navamsa",
+                  "condition_logic": {
+                    "fact_key": "月亮（Chandra）在九分盘（Navamsa D9）中是否落五宫（Putr）"
+                  },
+                  "required_fact_keys": [
+                    "月亮（Chandra）在九分盘（Navamsa D9）中是否落五宫（Putr）"
+                  ]
+                }
+              ]
+            }
+          ],
+          "concession_conditions": [],
+          "context_reference": false,
+          "context_bindings": [],
+          "source_status": "single_explicit_source",
+          "evidence": [
+            {
+              "evidence_atom_id": "bphs-97:santhanam:ch23:v1-4",
+              "quote": "One will own beautiful houses and beds and be endowed with superior scented articles and pleasures, if Chandra happens to be Vyaya’s Lord and be exalted, or be in its own Rashiand/or Navāńś, or in Labh/Dharm/Putr Bhava in Rāśi/Navāńś. The said native will live with rich clothes and ornaments, be learned and Lordly."
+            }
+          ],
+          "exception_relations": [],
+          "forbidden_extensions": [
+            "不得把这条月亮的规则改挂到别的行星身上；原文限定十二宫主恰为月亮（Chandra）。",
+            "不得据此推断房产数量、价值或购置时间。",
+            "不得把并列的择一条件改写成必须同时成立。"
+          ]
+        }
+      ],
+      "retrieval_plan": {
+        "support_queries": [
+          "One will own beautiful houses and beds and be endowed with superior scented articles and pleasures, if Chandra happens to be Vyaya’s Lord",
+          "月亮 十二宫主 入旺 本宫 九分盘 房屋 床铺 香品"
+        ],
+        "counter_queries": [
+          "If Vyaya’s Lord is in Vyaya Bhava, the native will only face heavy expenditure, will not have physical felicity, be irritable and spiteful.",
+          "if Chandra is weak, or is associated with malefics, or, if Chandra is in Ari, Randhr, or Vyaya",
+          "And, if Vyaya’s Lord is in Ari, or Randhr Bhava, or be in enemy’s Navāńś, in debilitation Navāńś, or in Randhr Bhava in Navāńś, one will be devoid of happiness from wife"
+        ],
+        "boundary_queries": [
+          "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+          "For the seven Grahas, from Surya on, the exaltation Rāśis are, respectively, Mesh, Vrishabh, Makar, Kanya, Kark, Meen and Tula",
+          "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)"
+        ],
+        "method_queries": [
+          "Effects of Vyaya’s Lord in Various Bhavas",
+          "十二宫主是月亮时怎么判断居所与享乐"
+        ]
+      },
+      "stop_conditions": [
+        "缺少十二宫主是否为月亮（Chandra）的事实时停止。",
+        "月亮的入旺、本宫、本九分盘星座与三宫位落宫事实全部缺失时停止。",
+        "九分盘（Navamsa D9）未起盘时，九分盘相关分支停止。"
+      ],
+      "spine_slot_hint": null
+    },
+    {
+      "method": "ch23-v5-6-vyaya-lord-affliction-loss",
+      "title": "妻子之乐缺失与开支之困：十二宫主落六宫、八宫，或落敌方／落陷的九分盘星座，或九分盘中落八宫",
+      "target_house": 12,
+      "generalization_scope": "general_rule",
+      "source_status": "single_explicit_source",
+      "fact_binding_status": "unmapped",
+      "upstream_issue_ids": [],
+      "user_intents": [
+        "我和配偶之间为什么不快乐",
+        "我为什么总为开销发愁"
+      ],
+      "facts": [
+        {
+          "key": "本盘十二宫主（Vyaya's Lord）是哪颗行星",
+          "availability": "always",
+          "role": "context"
+        },
+        {
+          "key": "十二宫主（Vyaya's Lord）是否落六宫（Ari）",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "十二宫主（Vyaya's Lord）是否落八宫（Randhr）",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "十二宫主（Vyaya's Lord）是否落敌方行星主管的九分盘（Navamsa D9）星座",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "十二宫主（Vyaya's Lord）是否落自己落陷的九分盘（Navamsa D9）星座",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "十二宫主（Vyaya's Lord）在九分盘（Navamsa D9）中是否落八宫（Randhr）",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        }
+      ],
+      "dependencies": [],
+      "steps": [
+        {
+          "action": "先取本盘十二宫主（Vyaya's Lord）是哪颗行星，再核对它是否落六宫（Ari）或八宫（Randhr），是否落敌方行星主管的九分盘（Navamsa D9）星座、自己落陷的九分盘星座，或在九分盘中落八宫（Randhr）。",
+          "applicability_scope": "仅限本命盘十二宫（Vyaya Bhava）主题；原文断语写作 devoid of happiness from wife，是以有妻的命主立说，女命是否适用原文未说明；原文未给时间限定。",
+          "minimum_supported_claim": "十二宫主（Vyaya's Lord）落六宫（Ari）或八宫（Randhr），或落敌方行星主管的九分盘（Navamsa D9）星座，或落自己落陷的九分盘（Navamsa D9）星座，或在九分盘（Navamsa D9）中落八宫（Randhr）时，命主没有来自妻子的幸福，为开支所困，并失去一般的幸福。",
+          "claim_terms": {
+            "conditions": [
+              {
+                "quote": "Vyaya’s Lord is in Ari, or Randhr Bhava",
+                "claim": "十二宫主（Vyaya's Lord）落六宫（Ari）或八宫（Randhr）"
+              },
+              {
+                "quote": "in enemy’s Navāńś",
+                "claim": "落敌方行星主管的九分盘（Navamsa D9）星座"
+              },
+              {
+                "quote": "in debilitation Navāńś",
+                "claim": "落自己落陷的九分盘（Navamsa D9）星座"
+              },
+              {
+                "quote": "in Randhr Bhava in Navāńś",
+                "claim": "在九分盘（Navamsa D9）中落八宫（Randhr）"
+              }
+            ],
+            "results": [
+              {
+                "quote": "one will be devoid of happiness from wife, be troubled by expenses and deprived of general happiness",
+                "claim": "命主没有来自妻子的幸福，为开支所困，并失去一般的幸福"
+              }
+            ]
+          },
+          "time_scope": {
+            "kind": "none",
+            "label": "原文没有时间限定",
+            "fact_keys": []
+          },
+          "produced_fact_keys": [
+            "十二宫主受损时的配偶之乐与开支判定"
+          ],
+          "required_fact_keys": [
+            "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+          ],
+          "condition_logic": {
+            "fact_key": "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+          },
+          "conditional_requirements": [],
+          "alternative_groups": [
+            {
+              "group_id": "vyaya-lord-affliction",
+              "branches": [
+                {
+                  "branch_id": "lord-in-ari",
+                  "condition_logic": {
+                    "fact_key": "十二宫主（Vyaya's Lord）是否落六宫（Ari）"
+                  },
+                  "required_fact_keys": [
+                    "十二宫主（Vyaya's Lord）是否落六宫（Ari）"
+                  ]
+                },
+                {
+                  "branch_id": "lord-in-randhr",
+                  "condition_logic": {
+                    "fact_key": "十二宫主（Vyaya's Lord）是否落八宫（Randhr）"
+                  },
+                  "required_fact_keys": [
+                    "十二宫主（Vyaya's Lord）是否落八宫（Randhr）"
+                  ]
+                },
+                {
+                  "branch_id": "lord-enemy-navamsa",
+                  "condition_logic": {
+                    "fact_key": "十二宫主（Vyaya's Lord）是否落敌方行星主管的九分盘（Navamsa D9）星座"
+                  },
+                  "required_fact_keys": [
+                    "十二宫主（Vyaya's Lord）是否落敌方行星主管的九分盘（Navamsa D9）星座"
+                  ]
+                },
+                {
+                  "branch_id": "lord-debilitation-navamsa",
+                  "condition_logic": {
+                    "fact_key": "十二宫主（Vyaya's Lord）是否落自己落陷的九分盘（Navamsa D9）星座"
+                  },
+                  "required_fact_keys": [
+                    "十二宫主（Vyaya's Lord）是否落自己落陷的九分盘（Navamsa D9）星座"
+                  ]
+                },
+                {
+                  "branch_id": "lord-randhr-in-navamsa",
+                  "condition_logic": {
+                    "fact_key": "十二宫主（Vyaya's Lord）在九分盘（Navamsa D9）中是否落八宫（Randhr）"
+                  },
+                  "required_fact_keys": [
+                    "十二宫主（Vyaya's Lord）在九分盘（Navamsa D9）中是否落八宫（Randhr）"
+                  ]
+                }
+              ]
+            }
+          ],
+          "concession_conditions": [],
+          "context_reference": false,
+          "context_bindings": [],
+          "source_status": "single_explicit_source",
+          "evidence": [
+            {
+              "evidence_atom_id": "bphs-97:santhanam:ch23:v5-6",
+              "quote": "And, if Vyaya’s Lord is in Ari, or Randhr Bhava, or be in enemy’s Navāńś, in debilitation Navāńś, or in Randhr Bhava in Navāńś, one will be devoid of happiness from wife, be troubled by expenses and deprived of general happiness."
+            }
+          ],
+          "exception_relations": [],
+          "forbidden_extensions": [
+            "不得把「没有来自妻子的幸福」升级为离婚、丧偶或无法结婚。",
+            "不得据此推断开支的金额或发生年份。",
+            "不得把五个择一条件改写成必须同时成立。"
+          ]
+        }
+      ],
+      "retrieval_plan": {
+        "support_queries": [
+          "And, if Vyaya’s Lord is in Ari, or Randhr Bhava, or be in enemy’s Navāńś, in debilitation Navāńś, or in Randhr Bhava in Navāńś",
+          "十二宫主 落六宫 落八宫 敌宫九分盘 妻子之乐 开支之困"
+        ],
+        "counter_queries": [
+          "If Vyaya’s Lord is in Randhr Bhava, the native will always gain, will speak affably, will enjoy a medium span of life and be endowed with all good qualities.",
+          "If Vyaya’s Lord is in Ari Bhava, the native will incur enmity with his own men, be given to anger, be sinful, miserable and will go to others’ wives.",
+          "There will be expenses on good accounts, if Vyaya’s Lord is with a benefic, or in his own Bhava, or exalted"
+        ],
+        "boundary_queries": [
+          "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+          "The Grahas ruling such Rāśis are its friends, apart from the Lord of its exaltation Rāśi. Lords other than these are its enemies.",
+          "For the seven Grahas, from Surya on, the exaltation Rāśis are, respectively, Mesh, Vrishabh, Makar, Kanya, Kark, Meen and Tula",
+          "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+        ],
+        "method_queries": [
+          "Effects of Vyaya’s Lord in Various Bhavas",
+          "十二宫主落凶宫时该怎么判断"
+        ]
+      },
+      "stop_conditions": [
+        "缺少本盘十二宫主是哪颗行星的事实时停止。",
+        "五个择一条件的事实全部缺失时停止。",
+        "九分盘（Navamsa D9）未起盘时，三个九分盘分支停止。",
+        "行星敌友关系未确定时，敌方九分盘星座分支停止。"
+      ],
+      "spine_slot_hint": null
+    },
+    {
+      "method": "ch23-v5-6-vyaya-lord-angle-trine-spouse",
+      "title": "会得到配偶：十二宫主落角宫或三角宫",
+      "target_house": 12,
+      "generalization_scope": "general_rule",
+      "source_status": "single_explicit_source",
+      "fact_binding_status": "unmapped",
+      "upstream_issue_ids": [],
+      "user_intents": [
+        "我能不能成家",
+        "我会不会有配偶"
+      ],
+      "facts": [
+        {
+          "key": "本盘十二宫主（Vyaya's Lord）落在哪一宫",
+          "availability": "always",
+          "role": "context"
+        },
+        {
+          "key": "十二宫主（Vyaya's Lord）是否落角宫",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "十二宫主（Vyaya's Lord）是否落三角宫",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        }
+      ],
+      "dependencies": [],
+      "steps": [
+        {
+          "action": "取本盘十二宫主（Vyaya's Lord）落在哪一宫，再判断它是否落角宫或三角宫。",
+          "applicability_scope": "仅限本命盘十二宫（Vyaya Bhava）主题下的得配偶断语；原文本句用代词 he，承接同偈前句的 Vyaya’s Lord，未另指其他行星；原文未给结婚时间。",
+          "minimum_supported_claim": "十二宫主（Vyaya's Lord）落角宫或三角宫时，命主会得到配偶。",
+          "claim_terms": {
+            "conditions": [
+              {
+                "quote": "If he be in an angle, or trine",
+                "claim": "十二宫主（Vyaya's Lord）落角宫或三角宫"
+              }
+            ],
+            "results": [
+              {
+                "quote": "the native will beget a spouse",
+                "claim": "命主会得到配偶"
+              }
+            ]
+          },
+          "time_scope": {
+            "kind": "none",
+            "label": "原文没有时间限定",
+            "fact_keys": []
+          },
+          "produced_fact_keys": [
+            "十二宫主落角宫三角宫的得配偶判定"
+          ],
+          "required_fact_keys": [
+            "本盘十二宫主（Vyaya's Lord）落在哪一宫"
+          ],
+          "condition_logic": {
+            "fact_key": "本盘十二宫主（Vyaya's Lord）落在哪一宫"
+          },
+          "conditional_requirements": [],
+          "alternative_groups": [
+            {
+              "group_id": "angle-or-trine",
+              "branches": [
+                {
+                  "branch_id": "in-angle",
+                  "condition_logic": {
+                    "fact_key": "十二宫主（Vyaya's Lord）是否落角宫"
+                  },
+                  "required_fact_keys": [
+                    "十二宫主（Vyaya's Lord）是否落角宫"
+                  ]
+                },
+                {
+                  "branch_id": "in-trine",
+                  "condition_logic": {
+                    "fact_key": "十二宫主（Vyaya's Lord）是否落三角宫"
+                  },
+                  "required_fact_keys": [
+                    "十二宫主（Vyaya's Lord）是否落三角宫"
+                  ]
+                }
+              ]
+            }
+          ],
+          "concession_conditions": [],
+          "context_reference": true,
+          "context_bindings": [
+            "bphs-97:santhanam:ch23:v5-6"
+          ],
+          "source_status": "single_explicit_source",
+          "evidence": [
+            {
+              "evidence_atom_id": "bphs-97:santhanam:ch23:v5-6",
+              "quote": "If he be in an angle, or trine, the native will beget a spouse."
+            }
+          ],
+          "exception_relations": [],
+          "forbidden_extensions": [
+            "不得据此推断结婚年份、配偶人数或配偶特征。",
+            "不得把代词 he 改挂到同偈前句主语 Vyaya’s Lord 以外的行星。",
+            "不得把角宫与三角宫改写成必须同时成立。"
+          ]
+        }
+      ],
+      "retrieval_plan": {
+        "support_queries": [
+          "If he be in an angle, or trine, the native will beget a spouse.",
+          "十二宫主 落角宫 三角宫 得配偶"
+        ],
+        "counter_queries": [
+          "If Yuvati Lord is devoid of strength and is relegated to Ari, 8<sup>th</sup> , or Vyaya, or, if Yuvati Lord is in fall, the native’s wife will be destroyed",
+          "And, if Vyaya’s Lord is in Ari, or Randhr Bhava, or be in enemy’s Navāńś, in debilitation Navāńś, or in Randhr Bhava in Navāńś, one will be devoid of happiness from wife"
+        ],
+        "boundary_queries": [
+          "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+          "Putr and Dharm Bhava are known by the name Kon (or trine)",
+          "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc."
+        ],
+        "method_queries": [
+          "Effects of Vyaya’s Lord in Various Bhavas",
+          "判断婚姻要看哪一宫的宫主落在角宫或三角宫"
+        ]
+      },
+      "stop_conditions": [
+        "缺少本盘十二宫主落在哪一宫的事实时停止。",
+        "角宫与三角宫两个分支事实都缺失时停止。"
+      ],
+      "spine_slot_hint": null
+    },
+    {
+      "method": "ch23-v8-visible-half-explicit-results",
+      "title": "结果显于外：行星落在黄道的可见半",
+      "generalization_scope": "general_rule",
+      "source_status": "single_explicit_source",
+      "fact_binding_status": "unmapped",
+      "upstream_issue_ids": [],
+      "user_intents": [
+        "这颗星的作用会不会明摆着看得见",
+        "我盘里的行星是明着起作用还是暗着起作用"
+      ],
+      "facts": [
+        {
+          "key": "所论行星（Graha）是否落在黄道可见半（visible half）",
+          "availability": "always",
+          "role": "evidence_condition"
+        }
+      ],
+      "dependencies": [],
+      "steps": [
+        {
+          "action": "核对所论行星（Graha）是否落在黄道的可见半（visible half），落在可见半的行星给出明显的结果。",
+          "applicability_scope": "本句只区分结果显与隐，不判吉凶；原文本句没有给出黄道可见半（visible half）的宫位范围界定，界定未确定即停判；原文未给时间限定。",
+          "minimum_supported_claim": "行星落在黄道的可见半（visible half）时，会给出明显的结果。",
+          "claim_terms": {
+            "conditions": [
+              {
+                "quote": "placed in the visible half of the zodiac",
+                "claim": "落在黄道的可见半（visible half）"
+              }
+            ],
+            "results": [
+              {
+                "quote": "will give explicit results",
+                "claim": "会给出明显的结果"
+              }
+            ]
+          },
+          "time_scope": {
+            "kind": "none",
+            "label": "原文没有时间限定",
+            "fact_keys": []
+          },
+          "produced_fact_keys": [
+            "行星所在黄道半区的结果显隐判定"
+          ],
+          "required_fact_keys": [
+            "所论行星（Graha）是否落在黄道可见半（visible half）"
+          ],
+          "condition_logic": {
+            "fact_key": "所论行星（Graha）是否落在黄道可见半（visible half）"
+          },
+          "conditional_requirements": [],
+          "alternative_groups": [],
+          "concession_conditions": [],
+          "context_reference": false,
+          "context_bindings": [],
+          "source_status": "single_explicit_source",
+          "evidence": [
+            {
+              "evidence_atom_id": "bphs-97:santhanam:ch23:v8",
+              "quote": "Grahas placed in the visible half of the zodiac will give explicit results"
+            }
+          ],
+          "exception_relations": [],
+          "forbidden_extensions": [
+            "不得自行把可见半认定为某几个宫位；原文本句未给界定。",
+            "不得把「明显的结果」读成好结果或坏结果。"
+          ]
+        }
+      ],
+      "retrieval_plan": {
+        "support_queries": [
+          "Grahas placed in the visible half of the zodiac will give explicit results",
+          "行星 黄道可见半 明显的结果"
+        ],
+        "counter_queries": [
+          "while the ones in the invisible half will confer secret results",
+          "Full, half, one third, one fourth, one fifth and one sixth are the deductions of contributions, made by malefics, placed in the visible half of the zodiac"
+        ],
+        "boundary_queries": [
+          "if Lagn Lord is in the invisible half (i.e. from Lagn cusp to descendental cusp)",
+          "Deductions for Grahas in the Visible Half of the Zodiac"
+        ],
+        "method_queries": [
+          "Just as these effects are derived from Tanu Bhava in regard to the native, similar deductions be made about co-borns etc. from Sahaj and other Bhavas.",
+          "判断行星结果显隐要先定黄道的可见半与不可见半"
+        ]
+      },
+      "stop_conditions": [
+        "黄道可见半（visible half）的宫位范围界定未确定时停止。",
+        "缺少所论行星是否落在可见半的事实时停止。"
+      ],
+      "spine_slot_hint": null
+    },
+    {
+      "method": "ch23-v8-invisible-half-secret-results",
+      "title": "结果隐于内：行星落在黄道的不可见半",
+      "generalization_scope": "general_rule",
+      "source_status": "single_explicit_source",
+      "fact_binding_status": "unmapped",
+      "upstream_issue_ids": [],
+      "user_intents": [
+        "这颗星的作用是不是暗着来的",
+        "为什么有些事情看不出征兆"
+      ],
+      "facts": [
+        {
+          "key": "所论行星（Graha）是否落在黄道不可见半（invisible half）",
+          "availability": "always",
+          "role": "evidence_condition"
+        }
+      ],
+      "dependencies": [],
+      "steps": [
+        {
+          "action": "核对所论行星（Graha）是否落在黄道的不可见半（invisible half），落在不可见半的行星给出隐秘的结果。",
+          "applicability_scope": "本句只区分结果显与隐，不判吉凶；原文本句没有给出黄道不可见半（invisible half）的宫位范围界定，界定未确定即停判；原文未给时间限定。",
+          "minimum_supported_claim": "行星落在黄道的不可见半（invisible half）时，会给出隐秘的结果。",
+          "claim_terms": {
+            "conditions": [
+              {
+                "quote": "in the invisible half",
+                "claim": "落在黄道的不可见半（invisible half）"
+              }
+            ],
+            "results": [
+              {
+                "quote": "will confer secret results",
+                "claim": "会给出隐秘的结果"
+              }
+            ]
+          },
+          "time_scope": {
+            "kind": "none",
+            "label": "原文没有时间限定",
+            "fact_keys": []
+          },
+          "produced_fact_keys": [
+            "行星落不可见半的结果隐秘判定"
+          ],
+          "required_fact_keys": [
+            "所论行星（Graha）是否落在黄道不可见半（invisible half）"
+          ],
+          "condition_logic": {
+            "fact_key": "所论行星（Graha）是否落在黄道不可见半（invisible half）"
+          },
+          "conditional_requirements": [],
+          "alternative_groups": [],
+          "concession_conditions": [],
+          "context_reference": false,
+          "context_bindings": [],
+          "source_status": "single_explicit_source",
+          "evidence": [
+            {
+              "evidence_atom_id": "bphs-97:santhanam:ch23:v8",
+              "quote": "the ones in the invisible half will confer secret results"
+            }
+          ],
+          "exception_relations": [],
+          "forbidden_extensions": [
+            "不得自行把不可见半认定为某几个宫位；原文本句未给界定。",
+            "不得把「隐秘的结果」读成没有结果或坏结果。"
+          ]
+        }
+      ],
+      "retrieval_plan": {
+        "support_queries": [
+          "while the ones in the invisible half will confer secret results",
+          "行星 黄道不可见半 隐秘的结果"
+        ],
+        "counter_queries": [
+          "Grahas placed in the visible half of the zodiac will give explicit results",
+          "Full, half, one third, one fourth, one fifth and one sixth are the deductions of contributions, made by malefics, placed in the visible half of the zodiac"
+        ],
+        "boundary_queries": [
+          "if Lagn Lord is in the invisible half (i.e. from Lagn cusp to descendental cusp)",
+          "Deductions for Grahas in the Visible Half of the Zodiac"
+        ],
+        "method_queries": [
+          "Just as these effects are derived from Tanu Bhava in regard to the native, similar deductions be made about co-borns etc. from Sahaj and other Bhavas.",
+          "黄道不可见半的界定在哪一章"
+        ]
+      },
+      "stop_conditions": [
+        "黄道不可见半（invisible half）的宫位范围界定未确定时停止。",
+        "缺少所论行星是否落在不可见半的事实时停止。"
+      ],
+      "spine_slot_hint": null
+    },
+    {
+      "method": "ch23-v9-rahu-with-malefics-in-vyaya-hell",
+      "title": "会下地狱：罗睺与火星、土星、太阳同落十二宫",
+      "target_house": 12,
+      "generalization_scope": "general_rule",
+      "source_status": "single_explicit_source",
+      "fact_binding_status": "unmapped",
+      "upstream_issue_ids": [],
+      "user_intents": [
+        "我死后会怎么样",
+        "我盘里十二宫的凶星聚集意味着什么"
+      ],
+      "facts": [
+        {
+          "key": "罗睺（Rahu）是否落十二宫（Vyaya）",
+          "availability": "always",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "火星（Mangal）是否落十二宫（Vyaya）",
+          "availability": "always",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "土星（Shani）是否落十二宫（Vyaya）",
+          "availability": "always",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "太阳（Surya）是否落十二宫（Vyaya）",
+          "availability": "always",
+          "role": "evidence_condition"
+        }
+      ],
+      "dependencies": [],
+      "steps": [
+        {
+          "action": "核对罗睺（Rahu）是否落十二宫（Vyaya），并核对火星（Mangal）、土星（Shani）、太阳（Surya）是否同落十二宫。",
+          "applicability_scope": "仅限本命盘十二宫（Vyaya Bhava）主题；原文要求四颗行星同落十二宫，缺一即不成立；原文未给时间限定。",
+          "minimum_supported_claim": "罗睺（Rahu）与火星（Mangal）、土星（Shani）、太阳（Surya）同落十二宫（Vyaya）时，命主会下地狱。",
+          "claim_terms": {
+            "conditions": [
+              {
+                "quote": "Rahu is in Vyaya along with Mangal, Shani and Surya",
+                "claim": "罗睺（Rahu）与火星（Mangal）、土星（Shani）、太阳（Surya）同落十二宫（Vyaya）"
+              }
+            ],
+            "results": [
+              {
+                "quote": "the native will go to hell",
+                "claim": "命主会下地狱"
+              }
+            ]
+          },
+          "time_scope": {
+            "kind": "none",
+            "label": "原文没有时间限定",
+            "fact_keys": []
+          },
+          "produced_fact_keys": [
+            "十二宫四凶聚集的死后去向判定"
+          ],
+          "required_fact_keys": [
+            "罗睺（Rahu）是否落十二宫（Vyaya）",
+            "火星（Mangal）是否落十二宫（Vyaya）",
+            "土星（Shani）是否落十二宫（Vyaya）",
+            "太阳（Surya）是否落十二宫（Vyaya）"
+          ],
+          "condition_logic": {
+            "operator": "AND",
+            "operands": [
+              {
+                "fact_key": "罗睺（Rahu）是否落十二宫（Vyaya）"
+              },
+              {
+                "fact_key": "火星（Mangal）是否落十二宫（Vyaya）"
+              },
+              {
+                "fact_key": "土星（Shani）是否落十二宫（Vyaya）"
+              },
+              {
+                "fact_key": "太阳（Surya）是否落十二宫（Vyaya）"
+              }
+            ]
+          },
+          "conditional_requirements": [],
+          "alternative_groups": [],
+          "concession_conditions": [],
+          "context_reference": false,
+          "context_bindings": [],
+          "source_status": "single_explicit_source",
+          "evidence": [
+            {
+              "evidence_atom_id": "bphs-97:santhanam:ch23:v9",
+              "quote": "If Rahu is in Vyaya along with Mangal, Shani and Surya, the native will go to hell."
+            }
+          ],
+          "exception_relations": [],
+          "forbidden_extensions": [
+            "不得把四星同落缩减为其中任意一两颗落十二宫。",
+            "不得据此推断死亡年份、死因或今生的具体祸福。"
+          ]
+        }
+      ],
+      "retrieval_plan": {
+        "support_queries": [
+          "If Rahu is in Vyaya along with Mangal, Shani and Surya, the native will go to hell.",
+          "罗睺 火星 土星 太阳 同落十二宫 下地狱"
+        ],
+        "counter_queries": [
+          "If there is a benefic in Vyaya, while its Lord is exalted, or is yuti with, or receives a Drishti from a benefic, one will attain final emancipation.",
+          "Guru heaven, Chandra, or Shukra the world of Manes, Mangal and/or Surya earth (rebirth), Budh and/or Shani hell"
+        ],
+        "boundary_queries": [
+          "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+          "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+          "Ascent after Death. According to the following Grahas in Vyaya, Yuvati, Ari, or Randhr Bhava, the native will attain one of the different worlds after death"
+        ],
+        "method_queries": [
+          "Just as these effects are derived from Tanu Bhava in regard to the native, similar deductions be made about co-borns etc. from Sahaj and other Bhavas.",
+          "死后去向要看十二宫里的哪些行星"
+        ]
+      },
+      "stop_conditions": [
+        "四颗行星的落宫事实缺任意一条即停止。",
+        "缺少本盘十二宫落宫名单时停止。"
+      ],
+      "spine_slot_hint": null
+    },
+    {
+      "method": "ch23-v9-vyaya-lord-with-surya-hell",
+      "title": "会下地狱：十二宫主与太阳同宫",
+      "target_house": 12,
+      "generalization_scope": "general_rule",
+      "source_status": "single_explicit_source",
+      "fact_binding_status": "unmapped",
+      "upstream_issue_ids": [],
+      "user_intents": [
+        "十二宫主跟太阳在一起会怎么样",
+        "我死后会去哪里"
+      ],
+      "facts": [
+        {
+          "key": "十二宫主（Vyaya's Lord）是否与太阳（Surya）同宫",
+          "availability": "always",
+          "role": "evidence_condition"
+        }
+      ],
+      "dependencies": [],
+      "steps": [
+        {
+          "action": "核对十二宫主（Vyaya's Lord）是否与太阳（Surya）同宫。",
+          "applicability_scope": "仅限本命盘十二宫（Vyaya Bhava）主题；本条结果由同偈前句的 Similar effect 承接，逐字短引已把前句结果一并纳入；原文未给时间限定。",
+          "minimum_supported_claim": "十二宫主（Vyaya's Lord）与太阳（Surya）同宫时，命主会下地狱。",
+          "claim_terms": {
+            "conditions": [
+              {
+                "quote": "Vyaya’s Lord is with Surya",
+                "claim": "十二宫主（Vyaya's Lord）与太阳（Surya）同宫"
+              }
+            ],
+            "results": [
+              {
+                "quote": "the native will go to hell",
+                "claim": "命主会下地狱"
+              }
+            ]
+          },
+          "time_scope": {
+            "kind": "none",
+            "label": "原文没有时间限定",
+            "fact_keys": []
+          },
+          "produced_fact_keys": [
+            "十二宫主合太阳的死后去向判定"
+          ],
+          "required_fact_keys": [
+            "十二宫主（Vyaya's Lord）是否与太阳（Surya）同宫"
+          ],
+          "condition_logic": {
+            "fact_key": "十二宫主（Vyaya's Lord）是否与太阳（Surya）同宫"
+          },
+          "conditional_requirements": [],
+          "alternative_groups": [],
+          "concession_conditions": [],
+          "context_reference": false,
+          "context_bindings": [],
+          "source_status": "single_explicit_source",
+          "evidence": [
+            {
+              "evidence_atom_id": "bphs-97:santhanam:ch23:v9",
+              "quote": "the native will go to hell. Similar effect will occur, if Vyaya’s Lord is with Surya."
+            }
+          ],
+          "exception_relations": [],
+          "forbidden_extensions": [
+            "不得把「同宫」扩大成相照或互换宫位。",
+            "不得据此推断死亡年份、死因或今生的具体祸福。"
+          ]
+        }
+      ],
+      "retrieval_plan": {
+        "support_queries": [
+          "Similar effect will occur, if Vyaya’s Lord is with Surya.",
+          "十二宫主 与太阳同宫 下地狱"
+        ],
+        "counter_queries": [
+          "If there is a benefic in Vyaya, while its Lord is exalted, or is yuti with, or receives a Drishti from a benefic, one will attain final emancipation.",
+          "Guru heaven, Chandra, or Shukra the world of Manes, Mangal and/or Surya earth (rebirth), Budh and/or Shani hell"
+        ],
+        "boundary_queries": [
+          "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+          "Ascent after Death. According to the following Grahas in Vyaya, Yuvati, Ari, or Randhr Bhava, the native will attain one of the different worlds after death",
+          "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics"
+        ],
+        "method_queries": [
+          "Effects of Vyaya’s Lord in Various Bhavas",
+          "十二宫主与太阳同宫怎么判断"
+        ]
+      },
+      "stop_conditions": [
+        "缺少十二宫主是否与太阳同宫的事实时停止。"
+      ],
+      "spine_slot_hint": null
+    },
+    {
+      "method": "ch23-v10-benefic-in-vyaya-final-emancipation",
+      "title": "获得最终解脱：十二宫内有吉星，且十二宫主入旺、与吉星同宫或被吉星相照",
+      "target_house": 12,
+      "generalization_scope": "general_rule",
+      "source_status": "single_explicit_source",
+      "fact_binding_status": "unmapped",
+      "upstream_issue_ids": [],
+      "user_intents": [
+        "我这辈子有没有解脱的可能",
+        "我的灵性道路怎么样"
+      ],
+      "facts": [
+        {
+          "key": "十二宫（Vyaya）是否被吉星占据",
+          "availability": "always",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "十二宫主（Vyaya's Lord）是否入旺",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "十二宫主（Vyaya's Lord）是否与吉星同宫",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "十二宫主（Vyaya's Lord）是否被吉星相照",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        }
+      ],
+      "dependencies": [],
+      "steps": [
+        {
+          "action": "先核对十二宫（Vyaya）内是否有吉星，再核对十二宫主是否入旺、是否与吉星同宫、是否被吉星相照。",
+          "applicability_scope": "仅限本命盘十二宫（Vyaya Bhava）主题；原文把十二宫内有吉星作为共同前提，后三项为并列择一；原文未给时间限定。",
+          "minimum_supported_claim": "十二宫（Vyaya）内有吉星，并且十二宫主入旺，或与吉星同宫，或被吉星相照时，命主会获得最终的解脱。",
+          "claim_terms": {
+            "conditions": [
+              {
+                "quote": "there is a benefic in Vyaya",
+                "claim": "十二宫（Vyaya）内有吉星"
+              },
+              {
+                "quote": "its Lord is exalted",
+                "claim": "十二宫主入旺"
+              },
+              {
+                "quote": "is yuti with",
+                "claim": "与吉星同宫"
+              },
+              {
+                "quote": "receives a Drishti from a benefic",
+                "claim": "被吉星相照"
+              }
+            ],
+            "results": [
+              {
+                "quote": "one will attain final emancipation",
+                "claim": "命主会获得最终的解脱"
+              }
+            ]
+          },
+          "time_scope": {
+            "kind": "none",
+            "label": "原文没有时间限定",
+            "fact_keys": []
+          },
+          "produced_fact_keys": [
+            "十二宫吉星与宫主状态的解脱判定"
+          ],
+          "required_fact_keys": [
+            "十二宫（Vyaya）是否被吉星占据"
+          ],
+          "condition_logic": {
+            "fact_key": "十二宫（Vyaya）是否被吉星占据"
+          },
+          "conditional_requirements": [],
+          "alternative_groups": [
+            {
+              "group_id": "vyaya-lord-benefic-support",
+              "branches": [
+                {
+                  "branch_id": "lord-exalted",
+                  "condition_logic": {
+                    "fact_key": "十二宫主（Vyaya's Lord）是否入旺"
+                  },
+                  "required_fact_keys": [
+                    "十二宫主（Vyaya's Lord）是否入旺"
+                  ]
+                },
+                {
+                  "branch_id": "lord-yuti-benefic",
+                  "condition_logic": {
+                    "fact_key": "十二宫主（Vyaya's Lord）是否与吉星同宫"
+                  },
+                  "required_fact_keys": [
+                    "十二宫主（Vyaya's Lord）是否与吉星同宫"
+                  ]
+                },
+                {
+                  "branch_id": "lord-drishtied-benefic",
+                  "condition_logic": {
+                    "fact_key": "十二宫主（Vyaya's Lord）是否被吉星相照"
+                  },
+                  "required_fact_keys": [
+                    "十二宫主（Vyaya's Lord）是否被吉星相照"
+                  ]
+                }
+              ]
+            }
+          ],
+          "concession_conditions": [],
+          "context_reference": false,
+          "context_bindings": [],
+          "source_status": "single_explicit_source",
+          "evidence": [
+            {
+              "evidence_atom_id": "bphs-97:santhanam:ch23:v10",
+              "quote": "If there is a benefic in Vyaya, while its Lord is exalted, or is yuti with, or receives a Drishti from a benefic, one will attain final emancipation."
+            }
+          ],
+          "exception_relations": [],
+          "forbidden_extensions": [
+            "不得省掉十二宫内有吉星这个共同前提，只凭宫主状态下判断。",
+            "不得据此推断出家、修行方式或解脱的时间。"
+          ]
+        }
+      ],
+      "retrieval_plan": {
+        "support_queries": [
+          "If there is a benefic in Vyaya, while its Lord is exalted, or is yuti with, or receives a Drishti from a benefic, one will attain final emancipation.",
+          "十二宫 吉星 宫主入旺 最终解脱"
+        ],
+        "counter_queries": [
+          "If Rahu is in Vyaya along with Mangal, Shani and Surya, the native will go to hell.",
+          "Guru heaven, Chandra, or Shukra the world of Manes, Mangal and/or Surya earth (rebirth), Budh and/or Shani hell",
+          "Benefics in both Vyaya and Dhan Bhava cause Subh Yog. Malefics in both Vyaya and Dhan Bhava cause Asubh Yog."
+        ],
+        "boundary_queries": [
+          "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+          "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+          "For the seven Grahas, from Surya on, the exaltation Rāśis are, respectively, Mesh, Vrishabh, Makar, Kanya, Kark, Meen and Tula"
+        ],
+        "method_queries": [
+          "Effects of Vyaya’s Lord in Various Bhavas",
+          "十二宫怎么判断解脱与死后去向"
+        ]
+      },
+      "stop_conditions": [
+        "缺少十二宫是否被吉星占据的事实时停止。",
+        "宫主入旺、合吉星、被吉星相照三项事实全部缺失时停止。",
+        "吉星名册未确定时停止。"
+      ],
+      "spine_slot_hint": null
+    },
+    {
+      "method": "ch23-v11-malefic-afflicted-vyaya-wandering",
+      "title": "在各国之间漂泊：十二宫主与十二宫皆有凶星，且宫主相照凶星或被凶星相照",
+      "target_house": 12,
+      "generalization_scope": "general_rule",
+      "source_status": "single_explicit_source",
+      "fact_binding_status": "unmapped",
+      "upstream_issue_ids": [],
+      "user_intents": [
+        "我会不会长期在外奔波",
+        "我是不是要离乡背井"
+      ],
+      "facts": [
+        {
+          "key": "十二宫主（Vyaya's Lord）是否与凶星同宫",
+          "availability": "always",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "十二宫（Vyaya）是否被凶星占据",
+          "availability": "always",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "十二宫主（Vyaya's Lord）是否相照凶星",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "十二宫主（Vyaya's Lord）是否被凶星相照",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        }
+      ],
+      "dependencies": [],
+      "steps": [
+        {
+          "action": "先核对十二宫主（Vyaya's Lord）是否与凶星同宫、十二宫（Vyaya）内是否有凶星，再核对十二宫主是否相照凶星或被凶星相照。",
+          "applicability_scope": "仅限本命盘十二宫（Vyaya Bhava）主题；原文把同宫与占据两项并列为共同前提，相照方向为择一；原文未给时间限定，也未给国别或次数。",
+          "minimum_supported_claim": "十二宫主（Vyaya's Lord）与凶星同宫、十二宫（Vyaya）内有凶星，并且十二宫主相照凶星或被凶星相照时，命主会从一个国家漂泊到另一个国家。",
+          "claim_terms": {
+            "conditions": [
+              {
+                "quote": "Vyaya’s Lord and Vyaya Bhava are with malefics",
+                "claim": "十二宫主（Vyaya's Lord）与凶星同宫、十二宫（Vyaya）内有凶星"
+              },
+              {
+                "quote": "Vyaya’s Lord gives a Drishti to, or receives a Drishti from malefics",
+                "claim": "十二宫主相照凶星或被凶星相照"
+              }
+            ],
+            "results": [
+              {
+                "quote": "One will wander from country to country",
+                "claim": "命主会从一个国家漂泊到另一个国家"
+              }
+            ]
+          },
+          "time_scope": {
+            "kind": "none",
+            "label": "原文没有时间限定",
+            "fact_keys": []
+          },
+          "produced_fact_keys": [
+            "十二宫受凶时的迁徙漂泊判定"
+          ],
+          "required_fact_keys": [
+            "十二宫主（Vyaya's Lord）是否与凶星同宫",
+            "十二宫（Vyaya）是否被凶星占据"
+          ],
+          "condition_logic": {
+            "operator": "AND",
+            "operands": [
+              {
+                "fact_key": "十二宫主（Vyaya's Lord）是否与凶星同宫"
+              },
+              {
+                "fact_key": "十二宫（Vyaya）是否被凶星占据"
+              }
+            ]
+          },
+          "conditional_requirements": [],
+          "alternative_groups": [
+            {
+              "group_id": "malefic-drishti-direction",
+              "branches": [
+                {
+                  "branch_id": "lord-gives-drishti",
+                  "condition_logic": {
+                    "fact_key": "十二宫主（Vyaya's Lord）是否相照凶星"
+                  },
+                  "required_fact_keys": [
+                    "十二宫主（Vyaya's Lord）是否相照凶星"
+                  ]
+                },
+                {
+                  "branch_id": "lord-receives-drishti",
+                  "condition_logic": {
+                    "fact_key": "十二宫主（Vyaya's Lord）是否被凶星相照"
+                  },
+                  "required_fact_keys": [
+                    "十二宫主（Vyaya's Lord）是否被凶星相照"
+                  ]
+                }
+              ]
+            }
+          ],
+          "concession_conditions": [],
+          "context_reference": false,
+          "context_bindings": [],
+          "source_status": "single_explicit_source",
+          "evidence": [
+            {
+              "evidence_atom_id": "bphs-97:santhanam:ch23:v11",
+              "quote": "One will wander from country to country, if Vyaya’s Lord and Vyaya Bhava are with malefics and Vyaya’s Lord gives a Drishti to, or receives a Drishti from malefics."
+            }
+          ],
+          "exception_relations": [],
+          "forbidden_extensions": [
+            "不得省掉同宫与占据两项共同前提，只凭相照下判断。",
+            "不得据此推断移民、国别或出行年份。"
+          ]
+        }
+      ],
+      "retrieval_plan": {
+        "support_queries": [
+          "One will wander from country to country, if Vyaya’s Lord and Vyaya Bhava are with malefics",
+          "十二宫主 与凶星同宫 十二宫有凶星 相照 各国漂泊"
+        ],
+        "counter_queries": [
+          "One will move in his own country, if Vyaya’s Lord and Vyaya Bhava are with benefics and Vyaya’s Lord gives a Drishti to, or receives a Drishti from benefics.",
+          "If Bandhu, Karm and Vyaya Bhava are all occupied by malefics, both the parents will leave the child to its own fate and wander from place to place."
+        ],
+        "boundary_queries": [
+          "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+          "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+          "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava."
+        ],
+        "method_queries": [
+          "Effects of Vyaya’s Lord in Various Bhavas",
+          "判断远行漂泊要看十二宫的哪几项"
+        ]
+      },
+      "stop_conditions": [
+        "缺少十二宫主是否与凶星同宫的事实时停止。",
+        "缺少十二宫是否被凶星占据的事实时停止。",
+        "两个相照方向的事实都缺失时停止。",
+        "凶星名册未确定时停止。"
+      ],
+      "spine_slot_hint": null
+    },
+    {
+      "method": "ch23-v12-benefic-supported-vyaya-own-country",
+      "title": "在自己国内活动：十二宫主与十二宫皆有吉星，且宫主相照吉星或被吉星相照",
+      "target_house": 12,
+      "generalization_scope": "general_rule",
+      "source_status": "single_explicit_source",
+      "fact_binding_status": "unmapped",
+      "upstream_issue_ids": [],
+      "user_intents": [
+        "我会不会一直待在本地",
+        "我适不适合出国"
+      ],
+      "facts": [
+        {
+          "key": "十二宫主（Vyaya's Lord）是否与吉星同宫",
+          "availability": "always",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "十二宫（Vyaya）是否被吉星占据",
+          "availability": "always",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "十二宫主（Vyaya's Lord）是否相照吉星",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "十二宫主（Vyaya's Lord）是否被吉星相照",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        }
+      ],
+      "dependencies": [],
+      "steps": [
+        {
+          "action": "先核对十二宫主（Vyaya's Lord）是否与吉星同宫、十二宫（Vyaya）内是否有吉星，再核对十二宫主是否相照吉星或被吉星相照。",
+          "applicability_scope": "仅限本命盘十二宫（Vyaya Bhava）主题；原文把同宫与占据两项并列为共同前提，相照方向为择一；原文未给时间限定。",
+          "minimum_supported_claim": "十二宫主（Vyaya's Lord）与吉星同宫、十二宫（Vyaya）内有吉星，并且十二宫主相照吉星或被吉星相照时，命主会在自己的国家内活动。",
+          "claim_terms": {
+            "conditions": [
+              {
+                "quote": "Vyaya’s Lord and Vyaya Bhava are with benefics",
+                "claim": "十二宫主（Vyaya's Lord）与吉星同宫、十二宫（Vyaya）内有吉星"
+              },
+              {
+                "quote": "Vyaya’s Lord gives a Drishti to, or receives a Drishti from benefics",
+                "claim": "十二宫主相照吉星或被吉星相照"
+              }
+            ],
+            "results": [
+              {
+                "quote": "One will move in his own country",
+                "claim": "命主会在自己的国家内活动"
+              }
+            ]
+          },
+          "time_scope": {
+            "kind": "none",
+            "label": "原文没有时间限定",
+            "fact_keys": []
+          },
+          "produced_fact_keys": [
+            "十二宫受吉时的本国活动判定"
+          ],
+          "required_fact_keys": [
+            "十二宫主（Vyaya's Lord）是否与吉星同宫",
+            "十二宫（Vyaya）是否被吉星占据"
+          ],
+          "condition_logic": {
+            "operator": "AND",
+            "operands": [
+              {
+                "fact_key": "十二宫主（Vyaya's Lord）是否与吉星同宫"
+              },
+              {
+                "fact_key": "十二宫（Vyaya）是否被吉星占据"
+              }
+            ]
+          },
+          "conditional_requirements": [],
+          "alternative_groups": [
+            {
+              "group_id": "benefic-drishti-direction",
+              "branches": [
+                {
+                  "branch_id": "lord-gives-drishti",
+                  "condition_logic": {
+                    "fact_key": "十二宫主（Vyaya's Lord）是否相照吉星"
+                  },
+                  "required_fact_keys": [
+                    "十二宫主（Vyaya's Lord）是否相照吉星"
+                  ]
+                },
+                {
+                  "branch_id": "lord-receives-drishti",
+                  "condition_logic": {
+                    "fact_key": "十二宫主（Vyaya's Lord）是否被吉星相照"
+                  },
+                  "required_fact_keys": [
+                    "十二宫主（Vyaya's Lord）是否被吉星相照"
+                  ]
+                }
+              ]
+            }
+          ],
+          "concession_conditions": [],
+          "context_reference": false,
+          "context_bindings": [],
+          "source_status": "single_explicit_source",
+          "evidence": [
+            {
+              "evidence_atom_id": "bphs-97:santhanam:ch23:v12",
+              "quote": "One will move in his own country, if Vyaya’s Lord and Vyaya Bhava are with benefics and Vyaya’s Lord gives a Drishti to, or receives a Drishti from benefics."
+            }
+          ],
+          "exception_relations": [],
+          "forbidden_extensions": [
+            "不得省掉同宫与占据两项共同前提，只凭相照下判断。",
+            "不得把「在自己的国家内活动」读成不能出国或必定富裕。"
+          ]
+        }
+      ],
+      "retrieval_plan": {
+        "support_queries": [
+          "One will move in his own country, if Vyaya’s Lord and Vyaya Bhava are with benefics",
+          "十二宫主 与吉星同宫 十二宫有吉星 相照 本国活动"
+        ],
+        "counter_queries": [
+          "One will wander from country to country, if Vyaya’s Lord and Vyaya Bhava are with malefics and Vyaya’s Lord gives a Drishti to, or receives a Drishti from malefics.",
+          "If Bandhu, Karm and Vyaya Bhava are all occupied by malefics, both the parents will leave the child to its own fate and wander from place to place."
+        ],
+        "boundary_queries": [
+          "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+          "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+          "Benefics in both Vyaya and Dhan Bhava cause Subh Yog. Malefics in both Vyaya and Dhan Bhava cause Asubh Yog."
+        ],
+        "method_queries": [
+          "Effects of Vyaya’s Lord in Various Bhavas",
+          "十二宫受吉星支持时怎么判断行止"
+        ]
+      },
+      "stop_conditions": [
+        "缺少十二宫主是否与吉星同宫的事实时停止。",
+        "缺少十二宫是否被吉星占据的事实时停止。",
+        "两个相照方向的事实都缺失时停止。",
+        "吉星名册未确定时停止。"
+      ],
+      "spine_slot_hint": null
+    },
+    {
+      "method": "ch23-v13-shani-mangal-in-vyaya-sinful-earnings",
+      "title": "收入靠罪恶手段：十二宫被土星或火星占据且无吉星相照",
+      "target_house": 12,
+      "generalization_scope": "general_rule",
+      "source_status": "single_explicit_source",
+      "fact_binding_status": "unmapped",
+      "upstream_issue_ids": [],
+      "user_intents": [
+        "我的钱是怎么来的",
+        "我会不会走上不正当的路子"
+      ],
+      "facts": [
+        {
+          "key": "十二宫（Vyaya）是否被吉星相照",
+          "availability": "always",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "土星（Shani）是否落十二宫（Vyaya）",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "火星（Mangal）是否落十二宫（Vyaya）",
+          "availability": "conditional",
+          "role": "evidence_condition"
+        }
+      ],
+      "dependencies": [],
+      "steps": [
+        {
+          "action": "先核对十二宫（Vyaya）是否受吉星相照，确认没有吉星相照后，再核对十二宫内是否有土星（Shani）或火星（Mangal）。",
+          "applicability_scope": "仅限本命盘十二宫（Vyaya Bhava）的收入来源主题；原文占据者只写出 Shani, or Mangal etc.，etc. 所指未列出，未列出的行星不确定即停判；原文未给时间限定。",
+          "minimum_supported_claim": "十二宫（Vyaya）被土星（Shani）占据，或被火星（Mangal）占据，且没有受到吉星相照时，收入将通过罪恶的手段取得。",
+          "claim_terms": {
+            "conditions": [
+              {
+                "quote": "Vyaya is occupied by Shani",
+                "claim": "十二宫（Vyaya）被土星（Shani）占据"
+              },
+              {
+                "quote": "or Mangal etc.",
+                "claim": "或被火星（Mangal）占据"
+              },
+              {
+                "quote": "is not receiving a Drishti from a benefic",
+                "claim": "且没有受到吉星相照"
+              }
+            ],
+            "results": [
+              {
+                "quote": "Earnings will be through sinful measures",
+                "claim": "收入将通过罪恶的手段取得"
+              }
+            ]
+          },
+          "time_scope": {
+            "kind": "none",
+            "label": "原文没有时间限定",
+            "fact_keys": []
+          },
+          "produced_fact_keys": [
+            "十二宫凶星占据无吉照的收入来源判定"
+          ],
+          "required_fact_keys": [
+            "十二宫（Vyaya）是否被吉星相照"
+          ],
+          "condition_logic": {
+            "operator": "NOT",
+            "operands": [
+              {
+                "fact_key": "十二宫（Vyaya）是否被吉星相照"
+              }
+            ]
+          },
+          "conditional_requirements": [],
+          "alternative_groups": [
+            {
+              "group_id": "vyaya-occupant",
+              "branches": [
+                {
+                  "branch_id": "shani-in-vyaya",
+                  "condition_logic": {
+                    "fact_key": "土星（Shani）是否落十二宫（Vyaya）"
+                  },
+                  "required_fact_keys": [
+                    "土星（Shani）是否落十二宫（Vyaya）"
+                  ]
+                },
+                {
+                  "branch_id": "mangal-in-vyaya",
+                  "condition_logic": {
+                    "fact_key": "火星（Mangal）是否落十二宫（Vyaya）"
+                  },
+                  "required_fact_keys": [
+                    "火星（Mangal）是否落十二宫（Vyaya）"
+                  ]
+                }
+              ]
+            }
+          ],
+          "concession_conditions": [],
+          "context_reference": false,
+          "context_bindings": [],
+          "source_status": "single_explicit_source",
+          "evidence": [
+            {
+              "evidence_atom_id": "bphs-97:santhanam:ch23:v13",
+              "quote": "Earnings will be through sinful measures, if Vyaya is occupied by Shani, or Mangal etc. and is not receiving a Drishti from a benefic."
+            }
+          ],
+          "exception_relations": [],
+          "forbidden_extensions": [
+            "不得把原文的 etc. 自行补成全部凶星或某几颗指定行星。",
+            "不得省掉「没有吉星相照」这一前提。",
+            "不得据此推断犯罪、刑罚或收入数额。"
+          ]
+        }
+      ],
+      "retrieval_plan": {
+        "support_queries": [
+          "Earnings will be through sinful measures, if Vyaya is occupied by Shani, or Mangal etc. and is not receiving a Drishti from a benefic.",
+          "十二宫 土星 火星 占据 没有吉星相照 罪恶的收入"
+        ],
+        "counter_queries": [
+          "There will be expenses on good accounts, if Vyaya’s Lord is with a benefic, or in his own Bhava, or exalted, or, if a benefic occupies Vyaya.",
+          "If Gulik is in Vyaya Bhava, the native will indulge in base deeds, be sinful, defectivelimbed, unfortunate, indolent and will join mean people.",
+          "If Vyaya’s Lord is in Ari Bhava, the native will incur enmity with his own men, be given to anger, be sinful, miserable and will go to others’ wives."
+        ],
+        "boundary_queries": [
+          "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+          "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+          "Benefics in both Vyaya and Dhan Bhava cause Subh Yog. Malefics in both Vyaya and Dhan Bhava cause Asubh Yog."
+        ],
+        "method_queries": [
+          "Just as these effects are derived from Tanu Bhava in regard to the native, similar deductions be made about co-borns etc. from Sahaj and other Bhavas.",
+          "十二宫被凶星占据又无吉照该怎么判断"
+        ]
+      },
+      "stop_conditions": [
+        "缺少十二宫是否被吉星相照的事实时停止。",
+        "土星与火星的十二宫落宫事实都缺失时停止。",
+        "原文 etc. 所指的其余行星未确定时，对这些行星停判。"
+      ],
+      "spine_slot_hint": null
+    },
+    {
+      "method": "ch23-v14-lagn-vyaya-lords-exchange-religious-expenses",
+      "title": "开支花在宗教上：上升主落十二宫、十二宫主落上升宫并与金星同宫",
+      "target_house": 12,
+      "generalization_scope": "general_rule",
+      "source_status": "single_explicit_source",
+      "fact_binding_status": "unmapped",
+      "upstream_issue_ids": [],
+      "user_intents": [
+        "我的钱会不会花在宗教上",
+        "我是不是会为信仰花钱"
+      ],
+      "facts": [
+        {
+          "key": "上升主（Lagn's Lord）是否落十二宫（Vyaya）",
+          "availability": "always",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "十二宫主（Vyaya's Lord）是否落上升宫（Lagna）",
+          "availability": "always",
+          "role": "evidence_condition"
+        },
+        {
+          "key": "十二宫主（Vyaya's Lord）是否与金星（Shukra）同宫",
+          "availability": "always",
+          "role": "evidence_condition"
+        }
+      ],
+      "dependencies": [],
+      "steps": [
+        {
+          "action": "核对上升主（Lagn's Lord）是否落十二宫（Vyaya），并核对十二宫主（Vyaya's Lord）是否落上升宫且与金星（Shukra）同宫。",
+          "applicability_scope": "仅限本命盘十二宫（Vyaya Bhava）的开支用途主题；原文三项条件同时成立才下断语；原文未给时间限定，也未给开支金额。",
+          "minimum_supported_claim": "上升主（Lagn's Lord）落十二宫（Vyaya），同时十二宫主（Vyaya's Lord）落上升宫（Lagn）并与金星（Shukr）同宫时，开支会花在宗教方面。",
+          "claim_terms": {
+            "conditions": [
+              {
+                "quote": "Lagn’s Lord is in Vyaya",
+                "claim": "上升主（Lagn's Lord）落十二宫（Vyaya）"
+              },
+              {
+                "quote": "Vyaya’s Lord is in Lagn with Shukr",
+                "claim": "十二宫主（Vyaya's Lord）落上升宫（Lagn）并与金星（Shukr）同宫"
+              }
+            ],
+            "results": [
+              {
+                "quote": "expenses will be on religious grounds",
+                "claim": "开支会花在宗教方面"
+              }
+            ]
+          },
+          "time_scope": {
+            "kind": "none",
+            "label": "原文没有时间限定",
+            "fact_keys": []
+          },
+          "produced_fact_keys": [
+            "上升主与十二宫主互换加金星的宗教开支判定"
+          ],
+          "required_fact_keys": [
+            "上升主（Lagn's Lord）是否落十二宫（Vyaya）",
+            "十二宫主（Vyaya's Lord）是否落上升宫（Lagna）",
+            "十二宫主（Vyaya's Lord）是否与金星（Shukra）同宫"
+          ],
+          "condition_logic": {
+            "operator": "AND",
+            "operands": [
+              {
+                "fact_key": "上升主（Lagn's Lord）是否落十二宫（Vyaya）"
+              },
+              {
+                "fact_key": "十二宫主（Vyaya's Lord）是否落上升宫（Lagna）"
+              },
+              {
+                "fact_key": "十二宫主（Vyaya's Lord）是否与金星（Shukra）同宫"
+              }
+            ]
+          },
+          "conditional_requirements": [],
+          "alternative_groups": [],
+          "concession_conditions": [],
+          "context_reference": false,
+          "context_bindings": [],
+          "source_status": "single_explicit_source",
+          "evidence": [
+            {
+              "evidence_atom_id": "bphs-97:santhanam:ch23:v14",
+              "quote": "If Lagn’s Lord is in Vyaya, while Vyaya’s Lord is in Lagn with Shukr, expenses will be on religious grounds."
+            }
+          ],
+          "exception_relations": [],
+          "forbidden_extensions": [
+            "不得缺少金星（Shukra）同宫这一条就下断语。",
+            "不得把「宗教方面的开支」读成必定虔诚、出家或破财。"
+          ]
+        }
+      ],
+      "retrieval_plan": {
+        "support_queries": [
+          "If Lagn’s Lord is in Vyaya, while Vyaya’s Lord is in Lagn with Shukr, expenses will be on religious grounds.",
+          "上升主落十二宫 十二宫主落上升 金星同宫 宗教开支"
+        ],
+        "counter_queries": [
+          "If Lagn’s Lord is in Vyaya Bhava and is devoid of benefic Drishti and/or Yuti, the native will be bereft of physical happiness, will spend unfruitfully and be given to much anger.",
+          "If Vyaya’s Lord is in Tanu Bhava, the native will be a spendthrift, be weak in constitution, will suffer from phlegmatic disorders and be devoid of wealth and learning."
+        ],
+        "boundary_queries": [
+          "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+          "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+          "Indications of Tanu Bhava"
+        ],
+        "method_queries": [
+          "Effects of Vyaya’s Lord in Various Bhavas",
+          "上升主与十二宫主互换宫位怎么判断"
+        ]
+      },
+      "stop_conditions": [
+        "三项落宫与同宫事实缺任意一条即停止。",
+        "缺少本盘上升主与十二宫主身份时停止。"
+      ],
+      "spine_slot_hint": null
+    }
+  ]
+}
