@@ -226,6 +226,13 @@ def validate_claim(step_label: str, step: dict[str, Any], evidence_quotes: str) 
     matched = [fragment for fragment in EMPTY_CLAIM_FRAGMENTS if fragment.casefold() in lowered]
     if matched:
         raise BuildError(f"{step_label} 的最小意思是空话模板：{matched[0]}")
+    inflated = shared_constants.result_verb_inflation_reason(claim)
+    if inflated:
+        raise BuildError(
+            f"{step_label} 的最小意思把结果写得比原文重：{inflated}。"
+            "原文没给年龄、死因或宗族含义时，中文不得替它补上；"
+            "照原文写中性词（去世、失去、没有子女）。"
+        )
     pairs: list[tuple[str, str]] = []
     for lane in ("conditions", "results"):
         for pair in step["claim_terms"][lane]:
@@ -456,6 +463,28 @@ def assemble(extraction: dict[str, Any], atoms: dict[str, dict]) -> tuple[dict[s
     repeated = sorted(claim for claim, count in Counter(claims).items() if count >= 3)
     if repeated:
         raise BuildError(f"同一批次至少三个步骤重复同一句最小意思：{repeated[0]}")
+
+    # 同一英文词在批内被译成两个中文词，单看每一步都通顺，只有跨方法统计才暴露。
+    # 真实证据：exalted 8 处译"入旺"、3 处译"庙"；trine 37 处"三角宫"、1 处"三分宫"。
+    pairs_by_step: dict[str, list[tuple[str, str]]] = {}
+    for method in extraction["methods"]:
+        for number, step in enumerate(method["steps"], 1):
+            pairs_by_step[f"{method['method']}.step-{number:03d}"] = [
+                (pair["quote"], pair["claim"])
+                for lane in ("conditions", "results")
+                for pair in step["claim_terms"][lane]
+            ]
+    violations = shared_constants.term_rendering_violations(pairs_by_step)
+    if violations:
+        details = "；".join(
+            f"{v['step_id']} 把 {v['term']} 译成含「{v['forbidden_rendering']}」的「{v['claim']}」"
+            for v in violations[:5]
+        )
+        raise BuildError(
+            f"关键术语译名越界：{details}。"
+            "庙是本宫（own sign）、旺是入旺（exaltation）；三分盘是 Drekkana D3、"
+            "九分盘是 Navamsa D9、十分盘是 Dasamsa D10。译错等于换一张盘或换一种状态。"
+        )
 
     review_mode, review_reason = effective_review(batch)
     methods = []

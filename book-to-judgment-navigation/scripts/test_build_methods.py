@@ -567,3 +567,60 @@ class RealBphsTermCoverageTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class AuditDrivenGateTests(unittest.TestCase):
+    """第一轮独立审计暴露的三类机器盲区，补成真闸门。
+
+    这三类此前只能靠人审抓到；批量阶段主窗口不可能逐条看 2024 条原文，
+    抓不到就等于没人抓。
+    """
+
+    def test_result_verb_inflation_is_rejected(self) -> None:
+        """真实证据：`3 will pass away` → 「3 个会夭亡」，凭空补上未成年而死。"""
+        data = extraction()
+        step = data["methods"][0]["steps"][0]
+        step["minimum_supported_claim"] = "土星弱时子女会夭亡。"
+        step["claim_terms"]["conditions"][0]["claim"] = "土星弱"
+        step["claim_terms"]["results"][0]["claim"] = "子女会夭亡"
+        MODULE.validate_schema(data)
+        with self.assertRaisesRegex(MODULE.BuildError, "把结果写得比原文重"):
+            MODULE.assemble(data, ATOMS)
+
+    def test_neutral_result_verb_passes(self) -> None:
+        data = extraction()
+        step = data["methods"][0]["steps"][0]
+        step["minimum_supported_claim"] = "土星弱时子女会去世。"
+        step["claim_terms"]["conditions"][0]["claim"] = "土星弱"
+        step["claim_terms"]["results"][0]["claim"] = "子女会去世"
+        MODULE.validate_schema(data)
+        MODULE.assemble(data, ATOMS)
+
+    def test_implicit_conjunction_in_fact_name_is_rejected(self) -> None:
+        """真实证据：「四宫**及其**宫主」把原文的四选一写成两者都要。"""
+        self.assertEqual(
+            MODULE.shared_constants.disjunctive_fact_reason("是否有吉星与四宫及其宫主发生关系"),
+            "及其",
+        )
+
+    def test_exalted_rendered_as_own_sign_is_rejected(self) -> None:
+        """真实证据：exalted 被译成「入庙旺」——庙是 own sign，旺才是 exaltation。"""
+        found = MODULE.shared_constants.term_rendering_violations({
+            "a.step-001": [("If Putr's Lord is exalted", "五宫主入庙旺")],
+        })
+        self.assertEqual(len(found), 1)
+        self.assertEqual(found[0]["term"], "exalted")
+
+    def test_trine_rendered_as_divisional_chart_is_rejected(self) -> None:
+        """真实证据：trine 被译成「三分宫」，而三分盘是同批 Decanate/D3 的译名。"""
+        found = MODULE.shared_constants.term_rendering_violations({
+            "a.step-001": [("or in a trine", "或在三分宫")],
+        })
+        self.assertEqual(len(found), 1)
+
+    def test_correct_renderings_pass(self) -> None:
+        self.assertEqual(MODULE.shared_constants.term_rendering_violations({
+            "a.step-001": [("is exalted", "五宫主入旺")],
+            "b.step-001": [("or in a trine", "或在三角宫")],
+            "c.step-001": [("in her Decanate", "落在月亮的三分盘")],
+        }), [])

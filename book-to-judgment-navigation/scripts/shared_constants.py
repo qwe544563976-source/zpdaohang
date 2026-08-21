@@ -151,7 +151,90 @@ def high_risk_term_covered(term: str, quote_terms: list[str]) -> bool:
 # 真实证据：ch16 v16 的「五宫主是否落二宫、五宫或九宫之一」、
 # 「五宫主是否与木星同宫或被木星相照」，ch16 v24-32 的
 # 「五宫有凶星或土星落木星起第5宫是否成立」。
-DISJUNCTIVE_FACT_PATTERN = re.compile(r"或|之一|和/或|任一|任意一")
+# "及其"「与…及…」这类隐性合取同样把多个条件压进一个事实名。
+# 真实证据：ch15 v10-14 的「是否有吉星与四宫（Bandhu Bhava）及其宫主发生关系」——
+# 原文是四选一（落四宫／相照四宫／与四宫主同宫／相照四宫主），"及其"把它写成了
+# 四宫与四宫主都要，比原文严，且四种关系合并后排盘无法直接取值。
+DISJUNCTIVE_FACT_PATTERN = re.compile(r"或|之一|和/或|任一|任意一|及其")
+
+# 术语译名红线：不比较整句主张词（同一个 yuti 出现在不同短语里，主张词本就不同），
+# 只对"译错就等于换一张盘/换一种状态"的词卡死禁用译名。
+# 真实证据（第一批）：exalted 被译成"入庙旺"（庙是 own sign，旺是 exaltation，
+# 触发面从入旺扩大到入庙或入旺）；trine 被译成"三分宫"，而"三分盘"正是同批
+# Decanate/D3 的译名，只差一字。
+TERM_RENDERING_RULES = {
+    "exalted": ("庙",),
+    "exaltation": ("庙",),
+    "debilitated": ("庙",),
+    "trine": ("三分宫", "三分盘"),
+    "decanate": ("十分盘", "九分盘"),
+    "drekkana": ("十分盘", "九分盘"),
+    "navamsa": ("三分盘", "十分盘"),
+}
+
+
+def term_rendering_violations(pairs_by_step: dict) -> list[dict]:
+    """找出把关键术语译成禁用词的映射对。
+
+    pairs_by_step: {步骤编号: [(引文词, 主张词), ...]}
+    """
+    found: list[dict] = []
+    for step_id, pairs in pairs_by_step.items():
+        for quote, claim in pairs:
+            normalized = normalize_for_term_match(quote)
+            for term, forbidden in TERM_RENDERING_RULES.items():
+                if not re.search(rf"\b{re.escape(term)}\b", normalized):
+                    continue
+                for word in forbidden:
+                    if word in claim:
+                        found.append({
+                            "step_id": step_id, "term": term,
+                            "forbidden_rendering": word, "claim": claim,
+                        })
+    return found
+
+
+# 结果动词的中文加码：原文只说"去世/失去"，中文写成"夭亡/夭折"就凭空补上了年龄限定。
+# 四类高风险词只覆盖专名／数值／单位／时间，覆盖不到结果动词。
+# 真实证据：ch16 v24-32 的 `3 will pass away` → "3 个会夭亡"；ch14 v7-11 的
+# `the third brother will die` → "第三个弟弟会夭折"。
+RESULT_VERB_INFLATION = (
+    ("夭亡", "pass away / die 未给年龄，「夭」专指未成年而死"),
+    ("夭折", "pass away / die 未给年龄，「夭」专指未成年而死"),
+    ("早夭", "原文未给年龄"),
+    ("暴毙", "原文未给死因或急缓"),
+    ("绝嗣", "原文若只说 no children，不含绝嗣的宗族含义"),
+)
+
+
+def result_verb_inflation_reason(text: object) -> str | None:
+    """最小意思里有没有把结果动词写得比原文重。"""
+    if not isinstance(text, str):
+        return None
+    for word, reason in RESULT_VERB_INFLATION:
+        if word in text:
+            return f"{word}（{reason}）"
+    return None
+
+
+def term_translation_conflicts(pairs_by_step: dict) -> list[dict]:
+    """跨方法找同一英文词的中文译名冲突。
+
+    pairs_by_step: {步骤编号: [(引文词, 主张词), ...]}
+    返回 [{"term", "renderings": {中文: [步骤…]}}]，只报真出现分歧的词。
+    """
+    seen: dict[str, dict[str, list[str]]] = {}
+    for step_id, pairs in pairs_by_step.items():
+        for quote, claim in pairs:
+            normalized = normalize_for_term_match(quote)
+            for term in TERM_CONSISTENCY_WATCHLIST:
+                if re.search(rf"\b{re.escape(term)}\b", normalized):
+                    seen.setdefault(term, {}).setdefault(claim, []).append(step_id)
+    conflicts = []
+    for term, renderings in seen.items():
+        if len(renderings) > 1:
+            conflicts.append({"term": term, "renderings": renderings})
+    return conflicts
 
 
 def disjunctive_fact_reason(value: object) -> str | None:
