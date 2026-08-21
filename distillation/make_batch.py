@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import shutil
 import subprocess
 import sys
@@ -131,7 +132,83 @@ def build_extraction(batch_id: str, scope: list[str], atoms: dict[str, dict], fr
     }
 
 
+# 十二宫名与序号：出自原文 ch07:v37-38「Thanu, Dhan, Sahaj, Bandhu, Putr, Ari,
+# Yuvati, Randhr, Dharm, Karma, Labh and Vyaya are in order the names of Bhavas」。
+# 这不是我定的对照表，是书自己给的次序；verify_bhava_order() 每次装配都回原文核一遍，
+# 对不上就停工，不允许我记错了还一路生成下去。
+BHAVA_ORDER_SOURCE = "bphs-97:santhanam:ch07:v37-38"
+BHAVA_ORDER = (
+    "Thanu", "Dhan", "Sahaj", "Bandhu", "Putr", "Ari",
+    "Yuvati", "Randhr", "Dharm", "Karma", "Labh", "Vyaya",
+)
+# 第 12~23 章是十二宫效果章，依次对应第 1~12 宫（章号 - 11）。
+BHAVA_CHAPTER_OFFSET = 11
+# 章名前缀只是行文连接词，去掉后剩下的才是这一章真正的主题词。
+TITLE_PREFIXES = (
+    "Effects of the ", "Effects of ", "Remedies from the ", "Remedies from ",
+    "Remedies for ", "Combinations for ", "Evaluation of the ", "Evaluation Of ",
+    "Evaluation of ", "Determination of ", "Working out of ", "Judgement of ",
+)
+
+
+def verify_bhava_order(atoms: dict[str, dict]) -> None:
+    """回原文核对十二宫次序；核不上就停工，绝不带着可能记错的对照表继续生成。"""
+    atom = atoms.get(BHAVA_ORDER_SOURCE)
+    if atom is None:  # 该原子不在本次可见范围内时跳过，不假装核对过
+        return
+    text = atom["exact_text"]
+    positions = []
+    for name in BHAVA_ORDER:
+        index = text.find(name)
+        if index < 0:
+            raise SystemExit(f"十二宫次序核对失败：原文 {BHAVA_ORDER_SOURCE} 里找不到宫名 {name}")
+        positions.append(index)
+    if positions != sorted(positions):
+        raise SystemExit(f"十二宫次序核对失败：程序内的次序与原文 {BHAVA_ORDER_SOURCE} 不一致")
+
+
+def normalize_sanskrit(name: str) -> str:
+    """吃掉梵文转写的送气音异体：辅音后面的 h 去掉（Thanu→tanu、Randhr→randr）。
+    元音后的 h 保留（Sahaj 不能变成 saaj）。十二宫名规范化后仍两两不同。"""
+    text = name.lower()
+    return re.sub(r"(?<=[bcdgjkpqstz])h", "", text)
+
+
+def bhava_house_number(chapter: int, title: str, atoms: dict[str, dict]) -> int | None:
+    """第 12~23 章按章号推宫位序号，并要求章名里的宫名与该序号对得上。"""
+    house = chapter - BHAVA_CHAPTER_OFFSET
+    if not 1 <= house <= 12:
+        return None
+    match = re.search(r"([A-Za-z\u0100-\u017f\u1e00-\u1eff]+)\s+Bhava", title)
+    if not match:
+        return None
+    named = normalize_sanskrit(match.group(1))
+    expected = normalize_sanskrit(BHAVA_ORDER[house - 1])
+    # 书里同一个宫有拼写异体：送气音写不写 h（Thanu/Tanu、Randhr/Randr）、
+    # 尾音收不收（Karma/Karm、Dharm/Dharma）。规范化加互为前缀能吃掉这两类，
+    # 差一个字母不该让整批停工；真错位（章名写的是另一个宫）才停。
+    if not (named.startswith(expected) or expected.startswith(named)):
+        raise SystemExit(
+            f"章名与宫位序号对不上：第 {chapter} 章「{title}」按次序应是 "
+            f"{BHAVA_ORDER[house - 1]}（第 {house} 宫），章名里写的是 {match.group(1)}"
+        )
+    return house
+
+
+def chapter_term(title: str) -> str:
+    """章名去掉行文前缀后剩下的主题词，作为术语表词条。"""
+    for prefix in TITLE_PREFIXES:
+        if title.lower().startswith(prefix.lower()):
+            return title[len(prefix):].strip(" .")
+    return title.strip(" .")
+
+
+def slugify(text: str) -> str:
+    return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", text.lower())).strip("-") or "topic"
+
+
 def knowledge_maps(target: Path, scope: list[str], atoms: dict[str, dict]) -> None:
+    verify_bhava_order(atoms)
     chapters: dict[int, dict] = {}
     for atom_id in scope:
         atom = atoms[atom_id]
@@ -149,33 +226,37 @@ def knowledge_maps(target: Path, scope: list[str], atoms: dict[str, dict]) -> No
             if page not in entry["pdf_pages"]:
                 entry["pdf_pages"].append(page)
 
-    # 主题与术语只在本批真有原文时才生成：知识地图里不允许出现没有原文编号的空条目。
-    TOPIC_SPECS = (
-        ("sahaj-bhava-co-born", "三宫：兄弟姐妹", 14),
-        ("bandhu-bhava-home-mother-vehicle", "四宫：住房、母亲、车乘", 15),
-        ("putr-bhava-children", "五宫：子女", 16),
-    )
-    TERM_SPECS = (
-        ("Sahaj Bhava", "三宫；兄弟姐妹、勇气等事项。", 14),
-        ("Bandhu Bhava", "四宫；住房、母亲、车乘等事项。", 15),
-        ("Putr Bhava", "五宫；子女、智力等事项。", 16),
-    )
-
+    # 主题与术语一律从原子自带的 chapter_title 派生。
+    # 原先这里是写死 ch14~16 的三条表，第 2 批就撞墙：ch17-18 一条都匹配不上，
+    # 装配直接死在"本批范围内没有可建主题或术语的原文"。97 章分 69 批，
+    # 写死等于每批都要手改一次，而手写章名已经错过一次（ch17 是六宫不是七宫）。
     def scoped(chapter: int) -> list[str]:
         return [atom_id for atom_id in scope if atoms[atom_id]["chapter_number"] == chapter]
 
-    topics = {
-        name: {"title": title, "chapter_numbers": [chapter], "evidence_atom_ids": scoped(chapter)}
-        for name, title, chapter in TOPIC_SPECS
-        if scoped(chapter)
-    }
-    glossary = [
-        {"term": term, "explanation": explanation, "evidence_atom_ids": scoped(chapter)[:3]}
-        for term, explanation, chapter in TERM_SPECS
-        if scoped(chapter)
-    ]
+    topics = {}
+    glossary = []
+    for chapter in sorted({atoms[atom_id]["chapter_number"] for atom_id in scope}):
+        ids = scoped(chapter)
+        if not ids:
+            continue
+        title = atoms[ids[0]]["chapter_title"]
+        term = chapter_term(title)
+        house = bhava_house_number(chapter, title, atoms)
+        label = f"第{house}宫（{term}）" if house else term
+        topics[f"ch{chapter:02d}-{slugify(term)}"] = {
+            "title": f"第{chapter}章 {title}" + (f"｜{label}" if house else ""),
+            "chapter_numbers": [chapter],
+            "evidence_atom_ids": ids,
+        }
+        # 解释只写位置，不写星占含义：知识地图的术语解释按契约"只是导航辅助，永远不是证据"，
+        # 写"三宫主管兄弟姐妹、勇气"就是在交付件里塞没有出处的教义。
+        # 宫位序号有出处，可以写——出处就是原文自己的十二宫名次序。
+        explanation = f"本书第 {chapter} 章「{title}」的主题；本批收录该章 {len(ids)} 条原文。"
+        if house:
+            explanation = f"第 {house} 宫；" + explanation + f"（宫序依原文 {BHAVA_ORDER_SOURCE} 的十二宫名次序）"
+        glossary.append({"term": term, "explanation": explanation, "evidence_atom_ids": ids[:3]})
     if not topics or not glossary:
-        raise SystemExit("本批范围内没有可建主题或术语的原文")
+        raise SystemExit("本批范围内没有原文，无法建主题或术语")
 
     write_json(target / "references" / "knowledge" / "chapter-map.json", {
         "schema_version": "knowledge-chapter-map/v1",

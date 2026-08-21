@@ -1,0 +1,3063 @@
+{
+  "schema_version": "judgment-query-recipes/v2",
+  "pilot_only": false,
+  "publishable": false,
+  "topics": {
+    "ch17-v2-ari-lord-ulcers": {
+      "title": "身上的溃疡与瘀伤：六宫主落六宫、上升宫或八宫",
+      "user_intents": [
+        "我身上会不会长疮或有瘀伤",
+        "我这辈子容易受什么外伤"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v2-ari-lord-ulcers"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘六宫主（Ari's Lord）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "六宫主（Ari's Lord）是否落六宫（Ari）",
+        "六宫主（Ari's Lord）是否落上升宫（Lagna）",
+        "六宫主（Ari's Lord）是否落八宫（Randhr）"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Ari’s Lord be in Ari itself, or in Lagna, or Randhr ulcers bruises",
+        "六宫主落六宫 上升 八宫 溃疡 瘀伤"
+      ],
+      "counter_queries": [
+        "The limb, related to a benefic, will have a mark ch12 Limbs Affected",
+        "Guru in Lagn will ward off all the evils antidotes for evils",
+        "吉星相关的部位只留印记而非溃疡"
+      ],
+      "boundary_queries": [
+        "Indications of Ari Bhava ulcers enemies maternal uncle",
+        "Effects of Ari’s Lord in Various Bhavas 六宫主落各宫"
+      ],
+      "method_queries": [
+        "how to judge Ari Bhava ulcers clues to know of ulcers identity marks",
+        "判断六宫溃疡应检查哪些位置"
+      ],
+      "stop_conditions": [
+        "缺少六宫主落宫事实时停止。"
+      ]
+    },
+    "ch17-v2-rasi-limb-clue": {
+      "title": "受累肢体的线索：成为六宫的那个星座",
+      "user_intents": [
+        "我身上的疮或伤会出现在哪个部位",
+        "六宫怎么看受影响的身体部位"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v2-rasi-limb-clue"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘六宫（Ari Bhava）落在哪个星座"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "The Rāśi, becoming Ari Bhava, will lead to the knowledge of the concerned limb",
+        "六宫星座 受累肢体"
+      ],
+      "counter_queries": [
+        "The limb, related to a benefic, will have a mark (like moles etc)",
+        "吉星所属部位只是痣记不是溃疡"
+      ],
+      "boundary_queries": [
+        "Limbs of Kaal Purush 12 Rāśis head face arms heart stomach",
+        "Decanates and Bodily Limbs head eyes ears nose temple chin"
+      ],
+      "method_queries": [
+        "clues to know of ulcers, identity marks etc. on one’s person",
+        "如何由星座与分盘定身体部位"
+      ],
+      "stop_conditions": [
+        "缺少六宫所在星座事实时停止。"
+      ]
+    },
+    "ch17-v3-relative-ulcers": {
+      "title": "亲属的溃疡瘀伤：亲属指示星或其宫主与六宫主同宫、落六宫或落八宫",
+      "user_intents": [
+        "我父亲身上会不会有疮或伤",
+        "家里长辈的健康外伤怎么看"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v3-relative-ulcers"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "所论亲属的指示星（Karak）是哪颗行星",
+        "所论亲属对应宫位的宫主是哪颗行星"
+      ],
+      "conditional_facts": [
+        "所论亲属的指示星（Karak）是否与六宫主（Ari's Lord）同宫",
+        "所论亲属的指示星（Karak）是否落六宫（Ari）",
+        "所论亲属的指示星（Karak）是否落八宫（Randhr）",
+        "所论亲属对应宫位的宫主是否与六宫主（Ari's Lord）同宫",
+        "所论亲属对应宫位的宫主是否落六宫（Ari）",
+        "所论亲属对应宫位的宫主是否落八宫（Randhr）"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "The Karak of a relative, or the Lord of such a Bhava, joining Ari’s Lord ulcers to such a relative",
+        "亲属指示星 落六宫 八宫 溃疡"
+      ],
+      "counter_queries": [
+        "The limb, related to a benefic, will have a mark So say the Jyotishis",
+        "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed"
+      ],
+      "boundary_queries": [
+        "Constant Karakatwas the stronger among Surya and Shukra indicates the father",
+        "The 9th from Surya denotes father, the 4th from Chandra mother"
+      ],
+      "method_queries": [
+        "Bhavas Related these constant significances are derivable from the Bhavas",
+        "如何为每位亲属选定指示星与宫位"
+      ],
+      "stop_conditions": [
+        "缺少所论亲属的指示星身份事实时停止。",
+        "缺少所论亲属宫位宫主身份事实时停止。"
+      ]
+    },
+    "ch17-v3-graha-limb-map": {
+      "title": "亲属受累部位对照：具此主管关系并落六宫或八宫的行星各主一处肢体",
+      "user_intents": [
+        "我父亲身上哪个部位容易出问题",
+        "亲属的伤病在身体哪个部位"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v3-graha-limb-map"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "所论亲属的指示星（Karak）是哪颗行星",
+        "所论亲属对应宫位的宫主是哪颗行星"
+      ],
+      "conditional_facts": [
+        "所论亲属的指示星（Karak）是否为太阳（Surya）",
+        "所论亲属对应宫位的宫主是否为太阳（Surya）",
+        "太阳（Surya）是否落六宫（Ari）",
+        "太阳（Surya）是否落八宫（Randhr）",
+        "所论亲属的指示星（Karak）是否为月亮（Chandra）",
+        "所论亲属对应宫位的宫主是否为月亮（Chandra）",
+        "月亮（Chandra）是否落六宫（Ari）",
+        "月亮（Chandra）是否落八宫（Randhr）",
+        "所论亲属的指示星（Karak）是否为火星（Mangal）",
+        "所论亲属对应宫位的宫主是否为火星（Mangal）",
+        "火星（Mangal）是否落六宫（Ari）",
+        "火星（Mangal）是否落八宫（Randhr）",
+        "所论亲属的指示星（Karak）是否为水星（Budh）",
+        "所论亲属对应宫位的宫主是否为水星（Budh）",
+        "水星（Budh）是否落六宫（Ari）",
+        "水星（Budh）是否落八宫（Randhr）",
+        "所论亲属的指示星（Karak）是否为木星（Guru）",
+        "所论亲属对应宫位的宫主是否为木星（Guru）",
+        "木星（Guru）是否落六宫（Ari）",
+        "木星（Guru）是否落八宫（Randhr）",
+        "所论亲属的指示星（Karak）是否为金星（Shukra）",
+        "所论亲属对应宫位的宫主是否为金星（Shukra）",
+        "金星（Shukra）是否落六宫（Ari）",
+        "金星（Shukra）是否落八宫（Randhr）",
+        "所论亲属的指示星（Karak）是否为土星（Shani）",
+        "所论亲属对应宫位的宫主是否为土星（Shani）",
+        "土星（Shani）是否落六宫（Ari）",
+        "土星（Shani）是否落八宫（Randhr）",
+        "所论亲属的指示星（Karak）是否为罗睺（Rahu）",
+        "所论亲属对应宫位的宫主是否为罗睺（Rahu）",
+        "罗睺（Rahu）是否落六宫（Ari）",
+        "罗睺（Rahu）是否落八宫（Randhr）",
+        "所论亲属的指示星（Karak）是否为计都（Ketu）",
+        "所论亲属对应宫位的宫主是否为计都（Ketu）",
+        "计都（Ketu）是否落六宫（Ari）",
+        "计都（Ketu）是否落八宫（Randhr）"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Surya with such lordship and in such a Bhava denotes such affectation of head, Chandra of the face",
+        "太阳主头 月亮主面 火星主颈 水星主脐 受累部位"
+      ],
+      "counter_queries": [
+        "The limb, related to a benefic, will have a mark (like moles etc)",
+        "吉星所属部位只留印记"
+      ],
+      "boundary_queries": [
+        "Limbs of Kaal Purush head, face, arms, heart, stomach, hip",
+        "Decanates and Bodily Limbs first decanate of a Rashi ascends"
+      ],
+      "method_queries": [
+        "Constant Karakatwas the stronger among Surya and Shukra indicates the father",
+        "判断亲属受累部位应先定哪颗指示星"
+      ],
+      "stop_conditions": [
+        "缺少所论亲属的指示星身份事实时停止。",
+        "缺少所论亲属宫位宫主身份事实时停止。"
+      ]
+    },
+    "ch17-v6-facial-diseases": {
+      "title": "面部疾病：上升主落火星或水星的星座并相照水星",
+      "user_intents": [
+        "我脸上会不会有病",
+        "我的面部健康怎么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v6-facial-diseases"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "上升主（Lagna's Lord）是否相照水星（Budh）"
+      ],
+      "conditional_facts": [
+        "上升主（Lagna's Lord）是否落火星（Mangal）主管的星座",
+        "上升主（Lagna's Lord）是否落水星（Budh）主管的星座"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Should Lagn’s Lord be in a Rashiof Mangal, or of Budh and has a Drishti on Budh diseases of the face",
+        "上升主 火星星座 水星星座 相照水星 面部疾病"
+      ],
+      "counter_queries": [
+        "Guru in similar case will destroy any disease",
+        "Lagn Lord is singly capable of counteracting all evils"
+      ],
+      "boundary_queries": [
+        "Evaluation of Drishtis of Grahas 相照的取值范围",
+        "Decanates and Bodily Limbs head eyes ears nose temple chin and face"
+      ],
+      "method_queries": [
+        "Indications of Ari Bhava ulcers enemies",
+        "判断面部与头部疾病应检查哪些行星"
+      ],
+      "stop_conditions": [
+        "缺少上升主相照水星的事实时停止。"
+      ]
+    },
+    "ch17-v7-leprosy-lagna-lord": {
+      "title": "麻风：火星或水星主管上升星座并与月亮、罗睺、土星同宫",
+      "user_intents": [
+        "我会不会得麻风一类的重皮肤病",
+        "上升主与凶星同宫会怎么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v7-leprosy-lagna-lord"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘上升主（Lagna's Lord）是哪颗行星",
+        "上升主（Lagna's Lord）是否与月亮（Chandra）同宫",
+        "上升主（Lagna's Lord）是否与罗睺（Rahu）同宫",
+        "上升主（Lagna's Lord）是否与土星（Shani）同宫"
+      ],
+      "conditional_facts": [
+        "上升主（Lagna's Lord）是否为火星（Mangal）",
+        "上升主（Lagna's Lord）是否为水星（Budh）"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Mangal, or Budh, having ownership of the ascending Rashi joining Chandra, Rahu and Shani will cause leprosy",
+        "上升主为火星或水星 与月亮罗睺土星同宫 麻风"
+      ],
+      "counter_queries": [
+        "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed",
+        "Guru in similar case will destroy any disease"
+      ],
+      "boundary_queries": [
+        "Shani and Chandra together in Ari bloodleprosy at the age of 45",
+        "Antar Dashas leprosy 大运中出现麻风的时点"
+      ],
+      "method_queries": [
+        "Indications of Ari Bhava diseases ulcers",
+        "判断皮肤重症应检查上升主与哪些行星"
+      ],
+      "stop_conditions": [
+        "缺少上升主身份事实时停止。",
+        "缺少上升主与月亮、罗睺、土星同宫事实时停止。"
+      ]
+    },
+    "ch17-v7-white-leprosy": {
+      "title": "白麻风：月亮落上升宫（非巨蟹座）并与罗睺同宫",
+      "user_intents": [
+        "我会不会得麻风一类的重皮肤病",
+        "月亮与罗睺同宫在上升会怎么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v7-white-leprosy"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "月亮（Chandra）是否落上升宫（Lagna）",
+        "本盘上升（Lagna）所在星座是否为巨蟹座（Cancer）",
+        "月亮（Chandra）是否与罗睺（Rahu）同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "there will occur white leprosy Chandra in Lagna not Cancer",
+        "月亮落上升 罗睺同宫 会有白麻风"
+      ],
+      "counter_queries": [
+        "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed",
+        "a single, but strong Guru in Lagn will ward off all the evils"
+      ],
+      "boundary_queries": [
+        "Mangal, or Budh, having ownership of the ascending Rashi will cause leprosy",
+        "Evils, causing premature end, exist up to the 24th year of one’s age"
+      ],
+      "method_queries": [
+        "Indications of Ari Bhava diseases",
+        "判断麻风种类应看月亮与哪颗行星同宫"
+      ],
+      "stop_conditions": [
+        "缺少月亮落宫事实时停止。",
+        "缺少上升星座事实时停止。",
+        "缺少月亮与罗睺同宫事实时停止。"
+      ]
+    },
+    "ch17-v7-black-leprosy": {
+      "title": "黑麻风：月亮落上升宫（非巨蟹座）并与土星同宫",
+      "user_intents": [
+        "我会不会得麻风一类的重皮肤病",
+        "月亮与土星同宫在上升会怎么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v7-black-leprosy"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "月亮（Chandra）是否落上升宫（Lagna）",
+        "本盘上升（Lagna）所在星座是否为巨蟹座（Cancer）",
+        "月亮（Chandra）是否与土星（Shani）同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "will cause black leprosy Chandra in Lagna not Cancer",
+        "月亮落上升 土星同宫 会有黑麻风"
+      ],
+      "counter_queries": [
+        "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed",
+        "a single, but strong Guru in Lagn will ward off all the evils"
+      ],
+      "boundary_queries": [
+        "Mangal, or Budh, having ownership of the ascending Rashi will cause leprosy",
+        "Evils, causing premature end, exist up to the 24th year of one’s age"
+      ],
+      "method_queries": [
+        "Indications of Ari Bhava diseases",
+        "判断麻风种类应看月亮与哪颗行星同宫"
+      ],
+      "stop_conditions": [
+        "缺少月亮落宫事实时停止。",
+        "缺少上升星座事实时停止。",
+        "缺少月亮与土星同宫事实时停止。"
+      ]
+    },
+    "ch17-v7-blood-leprosy": {
+      "title": "血麻风：月亮落上升宫（非巨蟹座）并与火星同宫",
+      "user_intents": [
+        "我会不会得麻风一类的重皮肤病",
+        "月亮与火星同宫在上升会怎么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v7-blood-leprosy"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "月亮（Chandra）是否落上升宫（Lagna）",
+        "本盘上升（Lagna）所在星座是否为巨蟹座（Cancer）",
+        "月亮（Chandra）是否与火星（Mangal）同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "will afflict one with bloodleprosy Chandra in Lagna not Cancer",
+        "月亮落上升 火星同宫 会有血麻风"
+      ],
+      "counter_queries": [
+        "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed",
+        "a single, but strong Guru in Lagn will ward off all the evils"
+      ],
+      "boundary_queries": [
+        "Mangal, or Budh, having ownership of the ascending Rashi will cause leprosy",
+        "Evils, causing premature end, exist up to the 24th year of one’s age"
+      ],
+      "method_queries": [
+        "Indications of Ari Bhava diseases",
+        "判断麻风种类应看月亮与哪颗行星同宫"
+      ],
+      "stop_conditions": [
+        "缺少月亮落宫事实时停止。",
+        "缺少上升星座事实时停止。",
+        "缺少月亮与火星同宫事实时停止。"
+      ]
+    },
+    "ch17-v9-lagna-lords-graha-diseases": {
+      "title": "疾病总论：上升宫聚六宫主与八宫主时，同落其中的行星各主一类病害",
+      "user_intents": [
+        "我容易得哪一类病",
+        "上升宫聚了六宫主八宫主会怎么样",
+        "哪颗星在上升会带来什么病"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v9-lagna-lords-graha-diseases"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "六宫主（Ari's Lord）是否落上升宫（Lagna）",
+        "八宫主（Randhr's Lord）是否落上升宫（Lagna）",
+        "太阳（Surya）是否落上升宫（Lagna）",
+        "火星（Mangal）是否落上升宫（Lagna）",
+        "水星（Budh）是否落上升宫（Lagna）",
+        "木星（Guru）是否落上升宫（Lagna）",
+        "金星（Shukra）是否落上升宫（Lagna）",
+        "土星（Shani）是否落上升宫（Lagna）",
+        "罗睺（Rahu）是否落上升宫（Lagna）",
+        "计都（Ketu）是否落上升宫（Lagna）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "When Lagn is occupied by the Lords of Ari and Randhr Bhava along with Surya fever and tumours",
+        "上升宫 六宫主 八宫主 同宫 发热 肿瘤 风疾"
+      ],
+      "counter_queries": [
+        "Guru in similar case will destroy any disease",
+        "Lagn Lord is singly capable of counteracting all evils, if he is strongly placed in an angle"
+      ],
+      "boundary_queries": [
+        "Effects of Ari’s Lord in Various Bhavas 六宫主落各宫的效果",
+        "Evils, causing premature end, exist up to the 24th year of one’s age"
+      ],
+      "method_queries": [
+        "Indications of Ari Bhava doubts about death enemies ulcers",
+        "判断疾病种类应看上升宫里有哪些行星"
+      ],
+      "stop_conditions": [
+        "缺少六宫主落上升宫事实时停止。",
+        "缺少八宫主落上升宫事实时停止。",
+        "缺少各行星是否落上升宫的事实时停止。"
+      ]
+    },
+    "ch17-v9-chandra-water-danger": {
+      "title": "水厄与痰疾：月亮与六宫主、八宫主同宫",
+      "user_intents": [
+        "我会不会有水上的危险",
+        "我容易有痰湿一类的毛病"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v9-chandra-water-danger"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "月亮（Chandra）是否与六宫主（Ari's Lord）同宫",
+        "月亮（Chandra）是否与八宫主（Randhr's Lord）同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Chandra in Yuti with the Lords of Ari and Randhr Bhava dangers through water phlegmatic disorders",
+        "月亮 六宫主 八宫主 同宫 水厄 痰疾"
+      ],
+      "counter_queries": [
+        "Guru in similar case will destroy any disease",
+        "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed"
+      ],
+      "boundary_queries": [
+        "Danger through water will have to be feared during Putr and Dharm years",
+        "Chandra is very windy and phlegmatic 月亮的体质属性"
+      ],
+      "method_queries": [
+        "Indications of Ari Bhava diseases",
+        "判断水厄应检查月亮与哪些宫主的关系"
+      ],
+      "stop_conditions": [
+        "缺少月亮与六宫主同宫事实时停止。",
+        "缺少月亮与八宫主同宫事实时停止。"
+      ]
+    },
+    "ch17-v9-relatives-similar-estimate": {
+      "title": "亲属的同类推断：从各自的指示星与宫位照此估量",
+      "user_intents": [
+        "同样的病能不能推到我父亲身上",
+        "亲属的疾病该从哪里看"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v9-relatives-similar-estimate"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "所论亲属的指示星（Karak）是哪颗行星",
+        "所论亲属对应的宫位（Bhava）是第几宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Similar estimates be made from the respective significators and Bhavas for relatives, like father",
+        "亲属 指示星 宫位 同样推断"
+      ],
+      "counter_queries": [
+        "The limb, related to a benefic, will have a mark (like moles etc)",
+        "Guru in similar case will destroy any disease"
+      ],
+      "boundary_queries": [
+        "Constant Karakatwas the stronger among Surya and Shukra indicates the father",
+        "The 9th from Surya denotes father, the 4th from Chandra mother"
+      ],
+      "method_queries": [
+        "Bhavas Related these constant significances are derivable from the Bhavas, counted from the said constant Karakatwas",
+        "如何换算亲属的宫位与指示星"
+      ],
+      "stop_conditions": [
+        "缺少所论亲属的指示星身份事实时停止。",
+        "缺少所论亲属对应宫位事实时停止。"
+      ]
+    },
+    "ch17-v13-lifelong-illness": {
+      "title": "终生疾病：土星与罗睺同宫、六宫主及六宫皆与凶星同处",
+      "user_intents": [
+        "我是不是一辈子病不断",
+        "我的健康底子怎么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v13-lifelong-illness"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘中哪些行星被判为凶星",
+        "土星（Shani）是否与罗睺（Rahu）同宫",
+        "六宫主（Ari's Lord）是否与凶星同宫",
+        "六宫（Ari）是否被凶星占据"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "The native will be afflicted by illness throughout life, if Shani is with Rahu Ari Lord 6th Bhava yuti with malefics",
+        "土星罗睺同宫 六宫主凶星 一生疾病"
+      ],
+      "counter_queries": [
+        "Lagn Lord is singly capable of counteracting all evils, if he is strongly placed in an angle",
+        "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed"
+      ],
+      "boundary_queries": [
+        "Evils, causing premature end, exist up to the 24th year of one’s age",
+        "Effects of Ari’s Lord in Various Bhavas"
+      ],
+      "method_queries": [
+        "Indications of Ari Bhava doubts about death enemies",
+        "判断长期健康应检查六宫与哪些凶星的关系"
+      ],
+      "stop_conditions": [
+        "缺少本盘凶星名册事实时停止。",
+        "缺少土星与罗睺同宫事实时停止。",
+        "缺少六宫主与凶星同宫事实时停止。",
+        "缺少六宫被凶星占据事实时停止。"
+      ]
+    },
+    "ch17-v13-fever-age-6-12": {
+      "title": "第6岁与第12岁的重热病：火星落六宫、六宫主落八宫",
+      "user_intents": [
+        "我小时候会不会发高烧",
+        "六岁十二岁前后健康怎么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v13-fever-age-6-12"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "火星（Mangal）是否落六宫（Ari）",
+        "六宫主（Ari's Lord）是否落八宫（Randhr）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "One will suffer from (severe) fever at the age of 6 and at the age of 12, if Mangal is in Ari, while Ari Lord is in Randhr.",
+        "火星落六宫、六宫主落八宫 第6岁与第12岁会患（重）热病"
+      ],
+      "counter_queries": [
+        "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed",
+        "Lagn Lord is singly capable of counteracting all evils, if he is strongly placed in an angle"
+      ],
+      "boundary_queries": [
+        "Evils, causing premature end, exist up to the 24th year of one’s age",
+        "第6岁与第12岁 与 Vimshottari 大运定时的关系"
+      ],
+      "method_queries": [
+        "Indications of Ari Bhava ulcers enemies maternal uncle",
+        "判断第6岁与第12岁的凶事应检查哪些宫主与落宫"
+      ],
+      "stop_conditions": [
+        "缺少火星（Mangal）是否落六宫（Ari）事实时停止。",
+        "缺少六宫主（Ari's Lord）是否落八宫（Randhr）事实时停止。"
+      ]
+    },
+    "ch17-v13-consumption-age-26": {
+      "title": "第26岁的痨病：罗睺落六宫、上升主落八宫、曼迪落角宫",
+      "user_intents": [
+        "我二十六岁前后健康有没有大问题",
+        "罗睺在六宫会怎么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v13-consumption-age-26"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "罗睺（Rahu）是否落六宫（Ari）",
+        "上升主（Lagna's Lord）是否落八宫（Randhr）",
+        "曼迪（Mandi）是否落角宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If Rahu is in Ari, Lagna Lord is in Randhr and Mandi is in an angle, consumption will trouble the native at the age of 26.",
+        "罗睺落六宫、上升主落八宫、曼迪落角宫 第26岁会患痨病"
+      ],
+      "counter_queries": [
+        "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed",
+        "Lagn Lord is singly capable of counteracting all evils, if he is strongly placed in an angle"
+      ],
+      "boundary_queries": [
+        "Evils, causing premature end, exist up to the 24th year of one’s age",
+        "第26岁 与 Vimshottari 大运定时的关系"
+      ],
+      "method_queries": [
+        "Indications of Ari Bhava ulcers enemies maternal uncle",
+        "判断第26岁的凶事应检查哪些宫主与落宫"
+      ],
+      "stop_conditions": [
+        "缺少罗睺（Rahu）是否落六宫（Ari）事实时停止。",
+        "缺少上升主（Lagna's Lord）是否落八宫（Randhr）事实时停止。",
+        "缺少曼迪（Mandi）是否落角宫事实时停止。"
+      ]
+    },
+    "ch17-v13-spleen-age-29-30": {
+      "title": "第29岁与第30岁的脾病：六宫主与十二宫主互换星座",
+      "user_intents": [
+        "我三十岁前后会不会生病",
+        "六宫主与十二宫主互换会怎么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v13-spleen-age-29-30"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "六宫主（Ari's Lord）与十二宫主（Vyaya's Lord）是否互换星座"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Spleenary disorders will be experienced at the age of 29 and 30, if the Lords of 6th and 12th are in exchange of their Rāśis.",
+        "六宫主与十二宫主互换星座 第29岁与第30岁会有脾脏疾病"
+      ],
+      "counter_queries": [
+        "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed",
+        "Lagn Lord is singly capable of counteracting all evils, if he is strongly placed in an angle"
+      ],
+      "boundary_queries": [
+        "Evils, causing premature end, exist up to the 24th year of one’s age",
+        "第29岁与第30岁 与 Vimshottari 大运定时的关系"
+      ],
+      "method_queries": [
+        "Indications of Ari Bhava ulcers enemies maternal uncle",
+        "判断第29岁与第30岁的凶事应检查哪些宫主与落宫"
+      ],
+      "stop_conditions": [
+        "缺少六宫主（Ari's Lord）与十二宫主（Vyaya's Lord）是否互换星座事实时停止。"
+      ]
+    },
+    "ch17-v13-bloodleprosy-age-45": {
+      "title": "第45岁的血麻风：土星与月亮同落六宫",
+      "user_intents": [
+        "我四十五岁前后健康怎么样",
+        "土星月亮同落六宫会怎么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v13-bloodleprosy-age-45"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "土星（Shani）是否落六宫（Ari）",
+        "月亮（Chandra）是否落六宫（Ari）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Shani and Chandra together in Ari will inflict bloodleprosy at the age of 45.",
+        "土星与月亮同落六宫 第45岁会有血麻风"
+      ],
+      "counter_queries": [
+        "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed",
+        "Lagn Lord is singly capable of counteracting all evils, if he is strongly placed in an angle"
+      ],
+      "boundary_queries": [
+        "Evils, causing premature end, exist up to the 24th year of one’s age",
+        "第45岁 与 Vimshottari 大运定时的关系"
+      ],
+      "method_queries": [
+        "Indications of Ari Bhava ulcers enemies maternal uncle",
+        "判断第45岁的凶事应检查哪些宫主与落宫"
+      ],
+      "stop_conditions": [
+        "缺少土星（Shani）是否落六宫（Ari）事实时停止。",
+        "缺少月亮（Chandra）是否落六宫（Ari）事实时停止。"
+      ]
+    },
+    "ch17-v13-windy-age-59": {
+      "title": "第59岁的风疾：土星与敌星同宫、上升主落上升宫",
+      "user_intents": [
+        "我快六十岁时会不会有风湿一类的毛病",
+        "上升主落上升宫会怎么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v13-windy-age-59"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "土星（Shani）是否与敌星同宫",
+        "上升主（Lagna's Lord）是否落上升宫（Lagna）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If Shani is with an inimical planet, while Lagn Lord is in Lagn itself, windy disorders (like rheumatism) will trouble the native at the age of 59.",
+        "土星与敌星同宫、上升主落上升宫 第59岁会有风性疾病（如风湿）"
+      ],
+      "counter_queries": [
+        "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed",
+        "Lagn Lord is singly capable of counteracting all evils, if he is strongly placed in an angle"
+      ],
+      "boundary_queries": [
+        "Evils, causing premature end, exist up to the 24th year of one’s age",
+        "第59岁 与 Vimshottari 大运定时的关系"
+      ],
+      "method_queries": [
+        "Indications of Ari Bhava ulcers enemies maternal uncle",
+        "判断第59岁的凶事应检查哪些宫主与落宫"
+      ],
+      "stop_conditions": [
+        "缺少土星（Shani）是否与敌星同宫事实时停止。",
+        "缺少上升主（Lagna's Lord）是否落上升宫（Lagna）事实时停止。"
+      ]
+    },
+    "ch17-v13-leprosy-age-19-22": {
+      "title": "第19岁与第22岁的麻风：月亮落人马座或双鱼座、木星落上升起第六宫",
+      "user_intents": [
+        "我二十岁上下健康会不会出事",
+        "月亮在人马或双鱼会怎么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v13-leprosy-age-19-22"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘月亮（Chandra）落在哪个星座",
+        "木星（Guru）是否落上升起第六宫（Ari）"
+      ],
+      "conditional_facts": [
+        "月亮（Chandra）是否落人马座（Dhanu）",
+        "月亮（Chandra）是否落双鱼座（Meen）"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If the Chandra is in Dhanu/Meen, while Guru is in Ari from Lagna leprosy at the age of 19 and 22",
+        "月亮人马 双鱼 木星六宫 麻风 19岁 22岁"
+      ],
+      "counter_queries": [
+        "Guru in similar case will destroy any disease",
+        "a single, but strong Guru in Lagn will ward off all the evils"
+      ],
+      "boundary_queries": [
+        "Mangal, or Budh, having ownership of the ascending Rashi will cause leprosy",
+        "Evils, causing premature end, exist up to the 24th year of one’s age"
+      ],
+      "method_queries": [
+        "Indications of Ari Bhava diseases",
+        "判断麻风应检查月亮星座与木星落宫"
+      ],
+      "stop_conditions": [
+        "缺少月亮所落星座事实时停止。",
+        "缺少木星落上升起第六宫事实时停止。"
+      ]
+    },
+    "ch17-v20-animal-trouble-age-8": {
+      "title": "第8岁受动物侵扰：月亮与六宫主同宫、八宫主落六宫、十二宫主落上升宫",
+      "user_intents": [
+        "孩子八岁前后会不会被动物伤到",
+        "小时候有没有意外伤害"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v20-animal-trouble-age-8"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "月亮（Chandra）是否与六宫主（Ari's Lord）同宫",
+        "八宫主（Randhr's Lord）是否落六宫（Ari）",
+        "十二宫主（Vyaya's Lord）是否落上升宫（Lagna）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Should Chandra be yuti with Ari Lord troubled by animals at the age of eight",
+        "月亮六宫主同宫 八宫主落六宫 八岁 动物"
+      ],
+      "counter_queries": [
+        "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed",
+        "Lagn Lord is singly capable of counteracting all evils"
+      ],
+      "boundary_queries": [
+        "Evils, causing premature end, exist up to the 24th year of one’s age",
+        "Short-life Combinations Chandra in Ari, Randhr, or Vyaya Bhava"
+      ],
+      "method_queries": [
+        "Indications of Ari Bhava enemies doubts about death",
+        "判断童年凶年应检查哪些宫主"
+      ],
+      "stop_conditions": [
+        "缺少月亮与六宫主同宫事实时停止。",
+        "缺少八宫主落六宫事实时停止。",
+        "缺少十二宫主落上升宫事实时停止。"
+      ]
+    },
+    "ch17-v20-fire-and-bird-danger": {
+      "title": "罗睺落六宫、土星落罗睺起第八宫：第1岁第2岁的火厄与 Sahaj 年的鸟患",
+      "user_intents": [
+        "孩子一两岁会不会有火的危险",
+        "小孩早年有哪些凶年"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v20-fire-and-bird-danger"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "罗睺（Rahu）是否落六宫（Ari）",
+        "土星（Shani）是否落罗睺（Rahu）起第八宫（Randhr）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "if Rahu is in Ari, while Shani is in Randhr from the said Rahu danger through fire at the age of 1 and 2",
+        "罗睺六宫 土星罗睺起第八宫 火厄 Sahaj 年 鸟"
+      ],
+      "counter_queries": [
+        "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed",
+        "a single, but strong Guru in Lagn will ward off all the evils"
+      ],
+      "boundary_queries": [
+        "Evils, causing premature end, exist up to the 24th year of one’s age",
+        "Short-life Combinations child will die soon"
+      ],
+      "method_queries": [
+        "Indications of Ari Bhava enemies doubts about death",
+        "判断幼年凶年应从哪一颗星起算"
+      ],
+      "stop_conditions": [
+        "缺少罗睺落六宫事实时停止。",
+        "缺少土星相对罗睺落宫的事实时停止。"
+      ]
+    },
+    "ch17-v23-water-danger-putr-dharm-years": {
+      "title": "Putr 年与 Dharm 年的水厄：太阳落六宫或八宫、月亮落太阳起第十二宫",
+      "user_intents": [
+        "我会不会有落水的危险",
+        "哪些年份要防水"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v23-water-danger-putr-dharm-years"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘太阳（Surya）落在哪一宫",
+        "月亮（Chandra）是否落太阳（Surya）起第十二宫（Vyaya）"
+      ],
+      "conditional_facts": [
+        "太阳（Surya）是否落六宫（Ari）",
+        "太阳（Surya）是否落八宫（Randhr）"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Danger through water will have to be feared during Putr and Dharm years, if Surya is in Ari, or Randhr",
+        "太阳落六宫 八宫 月亮太阳起第十二宫 水厄"
+      ],
+      "counter_queries": [
+        "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed",
+        "Guru in similar case will destroy any disease"
+      ],
+      "boundary_queries": [
+        "Chandra in Yuti with the Lords of Ari and Randhr Bhava dangers through water",
+        "Evils, causing premature end, exist up to the 24th year of one’s age"
+      ],
+      "method_queries": [
+        "Indications of Ari Bhava doubts about death",
+        "判断水厄年份应从哪颗星起算宫位"
+      ],
+      "stop_conditions": [
+        "缺少太阳落宫事实时停止。",
+        "缺少月亮相对太阳落宫的事实时停止。"
+      ]
+    },
+    "ch17-v23-smallpox-karm-year": {
+      "title": "Karm 年与第30岁的天花：土星落八宫、火星落七宫",
+      "user_intents": [
+        "我会不会出天花一类的急性病",
+        "三十岁前后健康怎么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v23-smallpox-karm-year"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "土星（Shani）是否落八宫（Randhr）",
+        "火星（Mangal）是否落七宫（Yuvati）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Shani in Randhr, as Mangal is in Yuvati, all cause small-pox in Karm year and in 30th year of age",
+        "土星八宫 火星七宫 天花 Karm 年"
+      ],
+      "counter_queries": [
+        "Guru in similar case will destroy any disease",
+        "Lagn Lord is singly capable of counteracting all evils"
+      ],
+      "boundary_queries": [
+        "Evils, causing premature end, exist up to the 24th year of one’s age",
+        "Effects of Dashas 急病发作按大运定时"
+      ],
+      "method_queries": [
+        "Indications of Ari Bhava diseases",
+        "判断急性病年份应检查土星火星落宫"
+      ],
+      "stop_conditions": [
+        "缺少土星落八宫事实时停止。",
+        "缺少火星落七宫事实时停止。"
+      ]
+    },
+    "ch17-v23-blood-vessel-age-18-22": {
+      "title": "第18年与第22年的血管与泌尿疾病：八宫主与罗睺会于八宫起的角宫或三角宫、且八宫主在九分盘落八宫",
+      "user_intents": [
+        "我十八到二十二岁健康怎么样",
+        "血管和泌尿方面会不会出问题"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v23-blood-vessel-age-18-22"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "八宫主（Randhr's Lord）是否与罗睺（Rahu）同宫",
+        "八宫主（Randhr's Lord）在九分盘（Navamsa D9）中是否落八宫（Randhr）"
+      ],
+      "conditional_facts": [
+        "八宫主（Randhr's Lord）与罗睺（Rahu）会合之处是否为八宫（Randhr）起的角宫",
+        "八宫主（Randhr's Lord）与罗睺（Rahu）会合之处是否为八宫（Randhr）起的三角宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If 8th Lord joins Rahu in an angle/trine from Randhr Bhava and be in Randhr in Navamsa swelling of blood vessels urinary disorders",
+        "八宫主 罗睺 角宫 三角宫 九分盘 血管 泌尿"
+      ],
+      "counter_queries": [
+        "Guru in similar case will destroy any disease",
+        "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed"
+      ],
+      "boundary_queries": [
+        "Divisional Considerations Navamsa 九分盘的取用范围",
+        "Evils, causing premature end, exist up to the 24th year of one’s age"
+      ],
+      "method_queries": [
+        "Indications of Ari Bhava diseases",
+        "判断分盘落宫应怎样与本命盘配合"
+      ],
+      "stop_conditions": [
+        "缺少八宫主与罗睺同宫事实时停止。",
+        "缺少八宫主在九分盘落宫的事实时停止。"
+      ]
+    },
+    "ch17-v26-wealth-loss-year-31": {
+      "title": "第31年因敌破财：十一宫主与六宫主互换星座",
+      "user_intents": [
+        "我会不会因为对头破财",
+        "三十一岁前后财运怎么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v26-wealth-loss-year-31"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "十一宫主（Labh's Lord）与六宫主（Ari's Lord）是否互换星座"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Loss of wealth will come to pass during the 31st year, if Labh and 6th Lords exchange their Rāśis",
+        "十一宫主 六宫主 互换星座 破财 第31年"
+      ],
+      "counter_queries": [
+        "Combinations for Wealth 招财组合",
+        "Lagn Lord is singly capable of counteracting all evils"
+      ],
+      "boundary_queries": [
+        "Combinations for Penury 贫穷组合的判据",
+        "Effects of Labh’s Lord in Various Bhavas 十一宫主落各宫"
+      ],
+      "method_queries": [
+        "Indications of Ari Bhava enemies",
+        "判断破财年份应检查哪两宫的宫主"
+      ],
+      "stop_conditions": [
+        "缺少十一宫主与六宫主互换星座的事实时停止。"
+      ]
+    },
+    "ch17-v27-inimical-sons": {
+      "title": "亲生子成仇：五宫主落六宫、六宫主与木星同宫、十二宫主落上升宫",
+      "user_intents": [
+        "我和儿子会不会反目",
+        "子女将来会不会成为我的对头"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v27-inimical-sons"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "五宫主（Putr's Lord）是否落六宫（Ari）",
+        "六宫主（Ari's Lord）是否与木星（Guru）同宫",
+        "十二宫主（Vyaya's Lord）是否落上升宫（Lagna）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "One’s own sons will be his enemies, if Putr Lord is in Ari, while Ari Lord is with Guru",
+        "五宫主落六宫 六宫主木星同宫 十二宫主上升 子成仇"
+      ],
+      "counter_queries": [
+        "Effects of Putr Bhava 子女幸福 五宫主入旺",
+        "a single, but strong Guru in Lagn will ward off all the evils"
+      ],
+      "boundary_queries": [
+        "Female Horoscopy 女命的判法差异",
+        "Effects of Putr’s Lord in Various Bhavas 五宫主落各宫"
+      ],
+      "method_queries": [
+        "Indications of Ari Bhava enemies",
+        "判断亲子关系应检查五宫与六宫的哪些关系"
+      ],
+      "stop_conditions": [
+        "缺少五宫主落六宫事实时停止。",
+        "缺少六宫主与木星同宫事实时停止。",
+        "缺少十二宫主落上升宫事实时停止。"
+      ]
+    },
+    "ch17-v28-fear-from-dogs": {
+      "title": "怕狗：上升主与六宫主互换宫位，第10年与第19年",
+      "user_intents": [
+        "我会不会被狗吓到或被狗咬",
+        "我哪一年容易有动物方面的惊险"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch17-v28-fear-from-dogs"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "上升主（Lagn's Lord）是否与六宫主（Ari's Lord）互换宫位"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Lagna Lord and the 6th Lord are in exchange fear from dogs",
+        "上升主与六宫主互换宫位 怕狗 第10年 第19年"
+      ],
+      "counter_queries": [
+        "Labh and 6th Lords exchange their Rāśis loss of wealth 31st year",
+        "Lords of 6th and 12th are in exchange of their Rāśis spleenary disorders age 29 30"
+      ],
+      "boundary_queries": [
+        "troubled by animals at the age of eight Chandra yuti Ari Lord",
+        "Ari Bhava UNFORTUNATE YEARS danger through fire birds"
+      ],
+      "method_queries": [
+        "Effects of Ari Bhava diseases ulcers effects",
+        "判断六宫（Ari）灾厄应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少上升主与六宫主是否互换宫位的事实时停止。"
+      ]
+    },
+    "ch18-v1-marital-happiness": {
+      "title": "婚姻幸福：七宫主落本宫或入旺",
+      "user_intents": [
+        "我的婚姻幸福吗",
+        "我能不能通过配偶得到幸福"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v1-marital-happiness"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘七宫主是哪颗行星"
+      ],
+      "conditional_facts": [
+        "七宫主（Yuvati's Lord）是否落本宫",
+        "七宫主（Yuvati's Lord）是否入旺"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Yuvati Lord is in his own Rāśi, or in exaltation full happiness through his wife",
+        "七宫主落本宫 入旺 婚姻圆满幸福"
+      ],
+      "counter_queries": [
+        "Chandra is in Yuvati, Yuvati Lord is in Vyaya Karaka bereft of strength not endowed with marital happiness",
+        "Yuvati Lord be in Ari, 8th, or Vyaya the wife will be sickly"
+      ],
+      "boundary_queries": [
+        "This however does not apply to own Bhava, or exaltation placement, as above",
+        "Yuvati Lord is devoid of strength and is relegated to Ari, 8th, or Vyaya loss of spouse"
+      ],
+      "method_queries": [
+        "effects of the 7th Bhava Yuvati Lord placement",
+        "判断七宫（Yuvati）婚姻应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少七宫主身份事实时停止。",
+        "七宫主落本宫与入旺两个分支事实都缺时停止。"
+      ]
+    },
+    "ch18-v2-sick-wife": {
+      "title": "妻子多病：七宫主落六宫、八宫或十二宫（落本宫或入旺时不适用）",
+      "user_intents": [
+        "我配偶的身体健康吗",
+        "我妻子会不会常年生病"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v2-sick-wife"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘七宫主落在哪一宫",
+        "七宫主（Yuvati's Lord）是否落本宫",
+        "七宫主（Yuvati's Lord）是否入旺"
+      ],
+      "conditional_facts": [
+        "七宫主（Yuvati's Lord）是否落六宫（Ari）",
+        "七宫主（Yuvati's Lord）是否落八宫（Randhr）",
+        "七宫主（Yuvati's Lord）是否落十二宫（Vyaya）"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Should Yuvati Lord be in Ari, 8th, or Vyaya, the wife will be sickly",
+        "七宫主落六宫 八宫 十二宫 妻子多病"
+      ],
+      "counter_queries": [
+        "Yuvati Lord is in his own Rāśi, or in exaltation full happiness through his wife",
+        "Yuvati Lord be endowed with strength drishtied by a benefic wealthy honourable happy"
+      ],
+      "boundary_queries": [
+        "This however does not apply to own Bhava, or exaltation placement, as above",
+        "Yuvati Lord is devoid of strength and is relegated to Ari, 8th, or Vyaya the native’s wife will be destroyed"
+      ],
+      "method_queries": [
+        "effects of the 7th Bhava Yuvati Lord placement sick wife",
+        "判断七宫（Yuvati）配偶健康应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少七宫主落宫事实时停止。",
+        "缺少七宫主落本宫或入旺的排除事实时停止。"
+      ]
+    },
+    "ch18-v3-shukra-in-yuvati-libidinous": {
+      "title": "极度好色：金星落七宫",
+      "user_intents": [
+        "我在情欲上是什么倾向",
+        "金星落七宫说明什么"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v3-shukra-in-yuvati-libidinous"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "金星（Shukra）是否落七宫（Yuvati）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If Shukra is in Yuvati, the native will be exceedingly libidinous",
+        "金星落七宫 极度好色"
+      ],
+      "counter_queries": [
+        "The native will beget a spouse endowed with (the seven principal) virtues 7th Lord is exalted",
+        "Yuvati Bhava is occupied, or owned by Shani/Mangal beget a harlot attached to other illegally"
+      ],
+      "boundary_queries": [
+        "Shukra yuti a malefic in any Bhava loss of wife",
+        "Shukra in Yuvati marriage timing dispositor"
+      ],
+      "method_queries": [
+        "effects of the 7th Bhava Shukra placement",
+        "判断七宫（Yuvati）里的行星应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少金星落宫事实时停止。"
+      ]
+    },
+    "ch18-v3-shukra-with-malefic-loss-of-wife": {
+      "title": "失去妻子：金星与凶星同宫",
+      "user_intents": [
+        "我会不会失去配偶",
+        "金星和凶星同宫对婚姻有什么影响"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v3-shukra-with-malefic-loss-of-wife"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "金星（Shukra）是否与凶星同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If Shukra yuti a malefic in any Bhava, it will cause loss of wife",
+        "金星与凶星同宫 失去妻子"
+      ],
+      "counter_queries": [
+        "Yuvati Lord is in his own Rāśi, or in exaltation full happiness through his wife",
+        "The native will beget a spouse endowed with (the seven principal) virtues expand his dynasty"
+      ],
+      "boundary_queries": [
+        "TIMING OF WIFE’S DEATH Loss of wife will occur in the 18th year, or 33rd year Yuvati Lord is in fall Shukra is in Randhr",
+        "lf Ari, 7th and 8th are in their order occupied by Mangal, Rahu and Shani the native’s wife will not live"
+      ],
+      "method_queries": [
+        "effects of the 7th Bhava loss of wife Shukra",
+        "判断配偶存续应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少金星是否与凶星同宫的事实时停止。"
+      ]
+    },
+    "ch18-v4-5-strong-yuvati-lord-prosperity": {
+      "title": "富有有荣誉：七宫主有力且与吉星同宫或受吉星相照",
+      "user_intents": [
+        "我这辈子会不会富有体面",
+        "七宫主有力对我意味着什么"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v4-5-strong-yuvati-lord-prosperity"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "七宫主（Yuvati's Lord）是否有力"
+      ],
+      "conditional_facts": [
+        "七宫主（Yuvati's Lord）是否与吉星同宫",
+        "七宫主（Yuvati's Lord）是否被吉星相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Yuvati Lord be endowed with strength be yuti with, or be drishtied by a benefic wealthy honourable happy fortunate",
+        "七宫主有力 与吉星同宫 受吉星相照 富有"
+      ],
+      "counter_queries": [
+        "Conversely, if Yuvati Lord is in fall, or is combust, or is in an enemy’s Rāśi sick wives and many wives",
+        "If Yuvati Bhava, or its Lord is yuti with a malefic the native’s wife will incur evils"
+      ],
+      "boundary_queries": [
+        "Yuvati Bhava, or its Lord is bereft of strength",
+        "Yuvati Lord is devoid of strength and is relegated to Ari, 8th, or Vyaya"
+      ],
+      "method_queries": [
+        "THE 7th LORD effects strength benefic drishti",
+        "判断七宫主强弱应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少七宫主强弱事实时停止（该事实的判准待排盘窗口定义）。",
+        "与吉星同宫、受吉星相照两个分支事实都缺时停止。"
+      ]
+    },
+    "ch18-v4-5-weak-yuvati-lord-sick-many-wives": {
+      "title": "妻多病且多妻：七宫主落陷、燃烧或落敌方行星的星座",
+      "user_intents": [
+        "我会不会有多个配偶",
+        "七宫主落陷或燃烧对婚姻有什么影响"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v4-5-weak-yuvati-lord-sick-many-wives"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘七宫主是哪颗行星"
+      ],
+      "conditional_facts": [
+        "七宫主（Yuvati's Lord）是否落陷",
+        "七宫主（Yuvati's Lord）是否燃烧",
+        "七宫主（Yuvati's Lord）是否落敌方行星主管的星座"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Yuvati Lord is in fall, or is combust, or is in an enemy’s Rāśi sick wives and many wives",
+        "七宫主落陷 燃烧 敌方星座 多妻 妻子多病"
+      ],
+      "counter_queries": [
+        "Yuvati Lord be endowed with strength be drishtied by a benefic wealthy honourable happy fortunate",
+        "Yuvati Lord is in his own Rāśi, or in exaltation full happiness through his wife"
+      ],
+      "boundary_queries": [
+        "One will have two wives, if Yuvati Lord is in fall, or in a malefic Rashialong with a malefic",
+        "If Mangal and Shukra are in Yuvati, or, if Shani is Yuvati the native will have 3 wives"
+      ],
+      "method_queries": [
+        "THE 7th LORD fall combust enemy Rāśi effects",
+        "判断七宫主失格应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少七宫主身份事实时停止。",
+        "落陷、燃烧、落敌方星座三个分支事实都缺时停止。"
+      ]
+    },
+    "ch18-v6-many-wives-shani-shukra-rasi": {
+      "title": "多妻：七宫主落土星或金星主管的星座并受吉星相照",
+      "user_intents": [
+        "我会不会不止一次结婚",
+        "七宫主落土星或金星的星座说明什么"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v6-many-wives-shani-shukra-rasi"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "七宫主（Yuvati's Lord）是否被吉星相照"
+      ],
+      "conditional_facts": [
+        "七宫主（Yuvati's Lord）是否落土星（Shani）主管的星座",
+        "七宫主（Yuvati's Lord）是否落金星（Shukra）主管的星座"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If Yuvati Lord is in a Rashiof Shani, or of Shukra and be drishtied by a benefic, there will be many wives",
+        "七宫主落土星星座 金星星座 受吉星相照 多妻"
+      ],
+      "counter_queries": [
+        "The native will beget a spouse endowed with (the seven principal) virtues 7th Lord is exalted strong Lagna Lord",
+        "Yuvati Lord is in his own Rāśi, or in exaltation full happiness through his wife"
+      ],
+      "boundary_queries": [
+        "One will have two wives Yuvati Bhava, or the 7th Navamsa belong to a eunuch planet",
+        "There will be many wives, if Shukra is in a Dual Rāśi, while its Lord is in exaltation"
+      ],
+      "method_queries": [
+        "PLURALITY OF WIVES Yuvati Lord Rashi Shani Shukra",
+        "判断妻子数目应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少七宫主是否受吉星相照的事实时停止。",
+        "土星星座、金星星座两个分支事实都缺时停止。"
+      ]
+    },
+    "ch18-v6-many-wives-exalted-yuvati-lord": {
+      "title": "多妻：七宫主入旺（承同偈「同样的效果」）",
+      "user_intents": [
+        "七宫主入旺会不会也主多妻",
+        "我会不会有多位配偶"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v6-many-wives-exalted-yuvati-lord"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "七宫主（Yuvati's Lord）是否入旺"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Should Yuvati Lord be particularly in exaltation, the same effects will come to pass",
+        "七宫主入旺 同样效果 多妻"
+      ],
+      "counter_queries": [
+        "Yuvati Lord is in his own Rāśi, or in exaltation one will derive full happiness through his wife",
+        "The native will beget a spouse endowed with (the seven principal) virtues 7th Lord is exalted"
+      ],
+      "boundary_queries": [
+        "If Yuvati Lord is in a Rashiof Shani, or of Shukra and be drishtied by a benefic, there will be many wives",
+        "There will be many wives, if Shukra is in a Dual Rāśi, while its Lord is in exaltation, as Yuvati Lord is endowed with strength"
+      ],
+      "method_queries": [
+        "PLURALITY OF WIVES exaltation same effects",
+        "判断妻子数目应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少七宫主是否入旺的事实时停止。"
+      ]
+    },
+    "ch18-v7-8-5-surya-barren-females": {
+      "title": "结交不孕女性：太阳落七宫",
+      "user_intents": [
+        "太阳落七宫说明我会和什么样的人来往",
+        "我会结交什么样的女性"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v7-8-5-surya-barren-females"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "太阳（Surya）是否落七宫（Yuvati）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "The native will befriend barren females, if Surya is in Yuvati",
+        "太阳落七宫 结交不孕女性"
+      ],
+      "counter_queries": [
+        "The native will beget a spouse endowed with (the seven principal) virtues who will expand his dynasty by sons and grandsons",
+        "Wife of a Brahmin, or a pregnant female will be in the native’s association, if Guru is in Yuvati"
+      ],
+      "boundary_queries": [
+        "MlSCELLANEOUS MATTERS Yuvati Surya Chandra Mangal Budh Guru Shani placement females",
+        "If Surya is in Yuvati, while his dispositor is yuti with Shukr marriage 7th or 11th year"
+      ],
+      "method_queries": [
+        "effects of Grahas placed in Yuvati Bhava",
+        "判断七宫（Yuvati）内的行星应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少太阳落宫事实时停止。"
+      ]
+    },
+    "ch18-v7-8-5-chandra-rasi-female": {
+      "title": "交往女性与七宫星座相应：月亮落七宫",
+      "user_intents": [
+        "月亮落七宫说明我会和什么样的人来往",
+        "我配偶或交往对象是什么类型"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v7-8-5-chandra-rasi-female"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "月亮（Chandra）是否落七宫（Yuvati）",
+        "本盘七宫（Yuvati）落在哪个星座"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Chandra therein will cause association with such female, as corresponding to the Rāśi, becoming Yuvati",
+        "月亮落七宫 交往女性 与七宫星座相应"
+      ],
+      "counter_queries": [
+        "Shani indicates sick and weak spouse",
+        "Base females and females, having attained their courses, are denoted by Shani, Rahu/Ketu in Yuvati"
+      ],
+      "boundary_queries": [
+        "The Rāśi, becoming Ari Bhava, will lead to the knowledge of the concerned limb",
+        "MlSCELLANEOUS MATTERS Yuvati Rāśi becoming Yuvati"
+      ],
+      "method_queries": [
+        "effects of Grahas placed in Yuvati Bhava",
+        "判断七宫（Yuvati）所落星座应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少月亮落宫事实时停止。",
+        "缺少七宫所落星座事实时停止。"
+      ]
+    },
+    "ch18-v7-8-5-mangal-marriageable-or-barren": {
+      "title": "交往适婚少女或不孕女性：火星落七宫",
+      "user_intents": [
+        "火星落七宫说明我会和什么样的人来往",
+        "我会和什么样的女性有交集"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v7-8-5-mangal-marriageable-or-barren"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "火星（Mangal）是否落七宫（Yuvati）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Mangal, placed in Yuvati, will denote association with marriageable girls (those with menses), or with barren females",
+        "火星落七宫 适婚少女 不孕女性"
+      ],
+      "counter_queries": [
+        "The native will beget a spouse endowed with (the seven principal) virtues 7th Lord is exalted strong Lagna Lord",
+        "If Yuvati Bhava is occupied, or owned by Shani/Mangal, the native will beget a harlot, as his spouse"
+      ],
+      "boundary_queries": [
+        "Mangal denotes a female with attractive breasts",
+        "The native’s wife will die within three days of marriage due to snake bite Rahu in Dhan and Mangal in Yuvati"
+      ],
+      "method_queries": [
+        "effects of Grahas placed in Yuvati Bhava",
+        "判断七宫（Yuvati）内的行星应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少火星落宫事实时停止。"
+      ]
+    },
+    "ch18-v7-8-5-budh-harlots-traders": {
+      "title": "交往妓女、卑贱女性与商人族群女性：水星（承同偈落七宫框架）",
+      "user_intents": [
+        "水星落七宫说明我会和什么样的人来往",
+        "我的交往对象是什么阶层"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v7-8-5-budh-harlots-traders"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "水星（Budh）是否落七宫（Yuvati）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Budh indicates harlots, mean females and females, belonging to traders’ community",
+        "水星落七宫 妓女 商人族群女性"
+      ],
+      "counter_queries": [
+        "The native will beget a spouse endowed with (the seven principal) virtues who will expand his dynasty",
+        "Wife of a Brahmin, or a pregnant female will be in the native’s association, if Guru is in Yuvati"
+      ],
+      "boundary_queries": [
+        "MlSCELLANEOUS MATTERS Mangal, placed in Yuvati, will denote association",
+        "Base females and females, having attained their courses, are denoted by Shani, Rahu/Ketu in Yuvati"
+      ],
+      "method_queries": [
+        "effects of Grahas placed in Yuvati Bhava",
+        "判断七宫（Yuvati）内的行星应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少水星落宫事实时停止。"
+      ]
+    },
+    "ch18-v7-8-5-guru-brahmin-wife-pregnant-female": {
+      "title": "交往婆罗门之妻或孕妇：木星落七宫",
+      "user_intents": [
+        "木星落七宫说明我会和什么样的人来往",
+        "我身边会出现什么样的女性"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v7-8-5-guru-brahmin-wife-pregnant-female"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "木星（Guru）是否落七宫（Yuvati）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Wife of a Brahmin, or a pregnant female will be in the native’s association, if Guru is in Yuvati",
+        "木星落七宫 婆罗门之妻 孕妇"
+      ],
+      "counter_queries": [
+        "Budh indicates harlots, mean females and females, belonging to traders’ community",
+        "Base females and females, having attained their courses, are denoted by Shani, Rahu/Ketu in Yuvati"
+      ],
+      "boundary_queries": [
+        "Guru will bring a spouse with hard and prominent breasts",
+        "MlSCELLANEOUS MATTERS Yuvati Guru placement"
+      ],
+      "method_queries": [
+        "effects of Grahas placed in Yuvati Bhava",
+        "判断七宫（Yuvati）内的行星应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少木星落宫事实时停止。"
+      ]
+    },
+    "ch18-v7-8-5-shani-rahu-ketu-base-females": {
+      "title": "交往卑贱女性与已行经女性：土星、罗睺或计都落七宫",
+      "user_intents": [
+        "土星或罗睺计都落七宫说明我会和什么样的人来往",
+        "我的交往对象是什么阶层"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v7-8-5-shani-rahu-ketu-base-females"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘七宫（Yuvati）内有哪些行星"
+      ],
+      "conditional_facts": [
+        "土星（Shani）是否落七宫（Yuvati）",
+        "罗睺（Rahu）是否落七宫（Yuvati）",
+        "计都（Ketu）是否落七宫（Yuvati）"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Base females and females, having attained their courses, are denoted by Shani, Rahu/Ketu in Yuvati",
+        "土星 罗睺 计都 落七宫 卑贱女性"
+      ],
+      "counter_queries": [
+        "The native will beget a spouse endowed with (the seven principal) virtues who will expand his dynasty",
+        "Wife of a Brahmin, or a pregnant female will be in the native’s association, if Guru is in Yuvati"
+      ],
+      "boundary_queries": [
+        "Shani indicates sick and weak spouse",
+        "If Yuvati Bhava is occupied, or owned by Shani/Mangal, the native will beget a harlot, as his spouse"
+      ],
+      "method_queries": [
+        "effects of Grahas placed in Yuvati Bhava",
+        "判断七宫（Yuvati）内的行星应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少七宫内行星事实时停止。",
+        "土星、罗睺、计都三个分支事实都缺时停止。"
+      ]
+    },
+    "ch18-v8-9-5-mangal-attractive-breasts": {
+      "title": "配偶乳房迷人：火星（承上偈落七宫框架）",
+      "user_intents": [
+        "火星落七宫时配偶的相貌体态如何",
+        "我配偶长什么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v8-9-5-mangal-attractive-breasts"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "火星（Mangal）是否落七宫（Yuvati）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Mangal denotes a female with attractive breasts",
+        "火星落七宫 配偶乳房迷人"
+      ],
+      "counter_queries": [
+        "Shani indicates sick and weak spouse",
+        "If Yuvati Bhava is occupied, or owned by Shani/Mangal, the native will beget a harlot, as his spouse"
+      ],
+      "boundary_queries": [
+        "Base females and females, having attained their courses, are denoted by Shani, Rahu/Ketu in Yuvati",
+        "Mangal, placed in Yuvati, will denote association with marriageable girls"
+      ],
+      "method_queries": [
+        "effects of Grahas placed in Yuvati Bhava spouse description",
+        "判断配偶体貌应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少火星落宫事实时停止。"
+      ]
+    },
+    "ch18-v8-9-5-shani-sick-weak-spouse": {
+      "title": "配偶多病虚弱：土星（承上偈落七宫框架）",
+      "user_intents": [
+        "土星落七宫时配偶身体怎么样",
+        "我配偶体质好不好"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v8-9-5-shani-sick-weak-spouse"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "土星（Shani）是否落七宫（Yuvati）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Shani indicates sick and weak spouse",
+        "土星落七宫 配偶多病虚弱"
+      ],
+      "counter_queries": [
+        "The native will beget a spouse endowed with (the seven principal) virtues 7th Lord is exalted strong Lagna Lord",
+        "Yuvati Lord is in his own Rāśi, or in exaltation full happiness through his wife"
+      ],
+      "boundary_queries": [
+        "Should Yuvati Lord be in Ari, 8th, or Vyaya, the wife will be sickly",
+        "lf Ari, 7th and 8th are in their order occupied by Mangal, Rahu and Shani the native’s wife will not live"
+      ],
+      "method_queries": [
+        "effects of Grahas placed in Yuvati Bhava spouse description",
+        "判断配偶健康应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少土星落宫事实时停止。"
+      ]
+    },
+    "ch18-v8-9-5-guru-hard-prominent-breasts": {
+      "title": "配偶乳房坚挺突出：木星（承上偈落七宫框架）",
+      "user_intents": [
+        "木星落七宫时配偶的体态如何",
+        "我配偶长什么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v8-9-5-guru-hard-prominent-breasts"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "木星（Guru）是否落七宫（Yuvati）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Guru will bring a spouse with hard and prominent breasts",
+        "木星落七宫 配偶乳房坚挺"
+      ],
+      "counter_queries": [
+        "Shani indicates sick and weak spouse",
+        "Shukra will bring one with bulky and excellent breasts"
+      ],
+      "boundary_queries": [
+        "Wife of a Brahmin, or a pregnant female will be in the native’s association, if Guru is in Yuvati",
+        "Base females and females, having attained their courses, are denoted by Shani, Rahu/Ketu in Yuvati"
+      ],
+      "method_queries": [
+        "effects of Grahas placed in Yuvati Bhava spouse description",
+        "判断配偶体貌应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少木星落宫事实时停止。"
+      ]
+    },
+    "ch18-v8-9-5-shukra-bulky-excellent-breasts": {
+      "title": "配偶乳房丰满优美：金星（承上偈落七宫框架）",
+      "user_intents": [
+        "金星落七宫时配偶的体态如何",
+        "我配偶长什么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v8-9-5-shukra-bulky-excellent-breasts"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "金星（Shukra）是否落七宫（Yuvati）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Shukra will bring one with bulky and excellent breasts",
+        "金星落七宫 配偶乳房丰满"
+      ],
+      "counter_queries": [
+        "Shani indicates sick and weak spouse",
+        "If Shukra is in Yuvati, the native will be exceedingly libidinous"
+      ],
+      "boundary_queries": [
+        "Guru will bring a spouse with hard and prominent breasts",
+        "Mangal denotes a female with attractive breasts"
+      ],
+      "method_queries": [
+        "effects of Grahas placed in Yuvati Bhava spouse description",
+        "判断配偶体貌应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少金星落宫事实时停止。"
+      ]
+    },
+    "ch18-v10-13-5-malefics-controlled-by-spouse": {
+      "title": "受配偶控制且配偶与家族为敌：凶星落十二宫与七宫、减光月落五宫",
+      "user_intents": [
+        "我会不会被配偶压制",
+        "配偶和我家里人合不合得来"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v10-13-5-malefics-controlled-by-spouse"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "十二宫（Vyaya）是否被凶星占据",
+        "七宫（Yuvati）是否被凶星占据",
+        "月亮（Chandra）是否落五宫（Putr）",
+        "月亮（Chandra）是否为减光月"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Malefics in Vyaya and 7th, while decreasing Chandra is in Putr controlled by spouse inimical to the race",
+        "凶星落十二宫 七宫 减光月落五宫 受配偶控制"
+      ],
+      "counter_queries": [
+        "The native will beget a spouse endowed with (the seven principal) virtues who will expand his dynasty by sons and grandsons",
+        "Yuvati Lord is in his own Rāśi, or in exaltation full happiness through his wife"
+      ],
+      "boundary_queries": [
+        "If Yuvati Bhava, or its Lord is yuti with a malefic the native’s wife will incur evils",
+        "If Yuvati Bhava is occupied, or owned by Shani/Mangal, the native will beget a harlot, as his spouse"
+      ],
+      "method_queries": [
+        "effects of Yuvati Bhava malefics spouse control",
+        "判断配偶关系应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少十二宫或七宫的凶星占据事实时停止。",
+        "缺少月亮减光与落五宫事实时停止。"
+      ]
+    },
+    "ch18-v10-13-5-shani-mangal-harlot-spouse": {
+      "title": "娶妓女为配偶或与他人非法私通：七宫被土星或火星占据或主管",
+      "user_intents": [
+        "我的配偶会是什么样的人",
+        "我会不会有非法私通的事"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v10-13-5-shani-mangal-harlot-spouse"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘七宫（Yuvati）内有哪些行星",
+        "本盘七宫主是哪颗行星"
+      ],
+      "conditional_facts": [
+        "土星（Shani）是否落七宫（Yuvati）",
+        "火星（Mangal）是否落七宫（Yuvati）",
+        "七宫主（Yuvati's Lord）是否为土星（Shani）",
+        "七宫主（Yuvati's Lord）是否为火星（Mangal）"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If Yuvati Bhava is occupied, or owned by Shani/Mangal, the native will beget a harlot, as his spouse",
+        "七宫被土星火星占据 主管 妓女配偶 非法私通"
+      ],
+      "counter_queries": [
+        "The native will beget a spouse endowed with (the seven principal) virtues 7th Lord is exalted strong Lagna Lord",
+        "Yuvati Lord is in his own Rāśi, or in exaltation full happiness through his wife"
+      ],
+      "boundary_queries": [
+        "Budh indicates harlots, mean females and females, belonging to traders’ community",
+        "Base females and females, having attained their courses, are denoted by Shani, Rahu/Ketu in Yuvati"
+      ],
+      "method_queries": [
+        "effects of Yuvati Bhava occupied or owned by Shani Mangal",
+        "判断七宫（Yuvati）的占据与主管应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少七宫内行星或七宫主身份事实时停止。",
+        "占据与主管四个分支事实都缺时停止。"
+      ]
+    },
+    "ch18-v10-13-5-shukra-mangal-oral-female": {
+      "title": "「亲吻」女性私处：金星与火星的四种关系",
+      "user_intents": [
+        "金星和火星有关系时性生活是什么样",
+        "我的房事偏好会怎样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v10-13-5-shukra-mangal-oral-female"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘金星（Shukra）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "金星（Shukra）是否落火星（Mangal）主管的九分盘（Navamsa D9）星座",
+        "金星（Shukra）是否落火星（Mangal）主管的星座",
+        "金星（Shukra）是否被火星（Mangal）相照",
+        "金星（Shukra）是否与火星（Mangal）同宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Should Shukra be in a Navamsa of Mangal, or in a Rasi of Mangal, or receive a Drishti from, or be yuti with Mangal",
+        "金星 火星 九分盘 星座 相照 同宫 私处"
+      ],
+      "counter_queries": [
+        "If Shukra is so related to Shani, the native will “kiss” the private parts of the male",
+        "The native will beget a spouse endowed with (the seven principal) virtues"
+      ],
+      "boundary_queries": [
+        "Yuvati Bhava, or the 7th Navamsa belong to a eunuch planet",
+        "If Shukra is in Yuvati, the native will be exceedingly libidinous"
+      ],
+      "method_queries": [
+        "effects of Shukra related to Mangal Navamsa Rasi Drishti yuti",
+        "判断金星与火星的关系应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少金星位置事实时停止。",
+        "九分盘星座、本盘星座、相照、同宫四个分支事实都缺时停止。"
+      ]
+    },
+    "ch18-v10-13-5-shukra-shani-oral-male": {
+      "title": "「亲吻」男性私处：金星与土星的同类关系（承上句「so related」）",
+      "user_intents": [
+        "金星和土星有关系时性生活是什么样",
+        "我的房事偏好会怎样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v10-13-5-shukra-shani-oral-male"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘金星（Shukra）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "金星（Shukra）是否落土星（Shani）主管的九分盘（Navamsa D9）星座",
+        "金星（Shukra）是否落土星（Shani）主管的星座",
+        "金星（Shukra）是否被土星（Shani）相照",
+        "金星（Shukra）是否与土星（Shani）同宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If Shukra is so related to Shani, the native will “kiss” the private parts of the male",
+        "金星 土星 九分盘 星座 相照 同宫 私处"
+      ],
+      "counter_queries": [
+        "Should Shukra be in a Navamsa of Mangal, or in a Rasi of Mangal, or receive a Drishti from, or be yuti with Mangal",
+        "The native will beget a spouse endowed with (the seven principal) virtues"
+      ],
+      "boundary_queries": [
+        "If Shukra is in Randhr, while his dispositor is in a Rashiof Shani, death of wife",
+        "Shani indicates sick and weak spouse"
+      ],
+      "method_queries": [
+        "effects of Shukra related to Shani Navamsa Rasi Drishti yuti",
+        "判断金星与土星的关系应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少金星位置事实时停止。",
+        "九分盘星座、本盘星座、相照、同宫四个分支事实都缺时停止。"
+      ]
+    },
+    "ch18-v14-15-worthy-spouse": {
+      "title": "贤德配偶：七宫主入旺且七宫被有力上升主与吉星占据",
+      "user_intents": [
+        "我的配偶品行怎么样",
+        "我家会不会因为这门婚事而兴旺"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v14-15-worthy-spouse"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "七宫主（Yuvati's Lord）是否入旺",
+        "上升主（Lagn's Lord）是否落七宫（Yuvati）",
+        "上升主（Lagn's Lord）是否有力",
+        "七宫（Yuvati）是否被吉星占据"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "The native will beget a spouse endowed with (the seven principal) virtues 7th Lord is exalted Yuvati occupied by strong Lagna Lord and a benefic",
+        "七宫主入旺 上升主有力落七宫 吉星占据 贤德配偶"
+      ],
+      "counter_queries": [
+        "If Yuvati Bhava, or its Lord is yuti with a malefic the native’s wife will incur evils",
+        "If Yuvati Bhava is occupied, or owned by Shani/Mangal, the native will beget a harlot, as his spouse"
+      ],
+      "boundary_queries": [
+        "Yuvati Bhava, or its Lord is bereft of strength",
+        "Yuvati Lord is devoid of strength and is relegated to Ari, 8th, or Vyaya"
+      ],
+      "method_queries": [
+        "WORTHY SPOUSE Yuvati occupied by Lagna Lord benefic",
+        "判断配偶品行应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少七宫主入旺事实时停止。",
+        "缺少上升主落七宫或其强弱事实时停止（强弱判准待排盘窗口定义）。",
+        "缺少七宫吉星占据事实时停止。"
+      ]
+    },
+    "ch18-v16-evils-to-spouse": {
+      "title": "妻子遭灾：七宫或其宫主与凶星同宫，无力时尤甚",
+      "user_intents": [
+        "我配偶会不会遇到灾祸",
+        "七宫逢凶星对配偶有多大影响"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v16-evils-to-spouse"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘七宫（Yuvati）内有哪些行星",
+        "本盘七宫主是哪颗行星"
+      ],
+      "conditional_facts": [
+        "七宫（Yuvati）是否被凶星占据",
+        "七宫主（Yuvati's Lord）是否与凶星同宫",
+        "七宫（Yuvati）是否有力",
+        "七宫主（Yuvati's Lord）是否有力"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If Yuvati Bhava, or its Lord is yuti with a malefic the native’s wife will incur evils",
+        "七宫与凶星同宫 七宫主与凶星同宫 妻子遭灾"
+      ],
+      "counter_queries": [
+        "Yuvati Lord is in his own Rāśi, or in exaltation full happiness through his wife",
+        "The native will beget a spouse endowed with (the seven principal) virtues 7th Lord is exalted"
+      ],
+      "boundary_queries": [
+        "Yuvati Lord is devoid of strength and is relegated to Ari, 8th, or Vyaya the native’s wife will be destroyed",
+        "Yuvati Bhava, or its Lord is bereft of strength especially"
+      ],
+      "method_queries": [
+        "EVILS TO SPOUSE Yuvati Bhava malefic strength",
+        "判断配偶灾厄应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少七宫内行星或七宫主身份事实时停止。",
+        "七宫逢凶与七宫主逢凶两个分支事实都缺时停止。",
+        "缺少七宫或七宫主的强弱事实时第二步停止（该判准待排盘窗口定义）。"
+      ]
+    },
+    "ch18-v17-weak-yuvati-lord-loss-of-spouse": {
+      "title": "失去妻子：七宫主无力并被贬落六宫、八宫或十二宫",
+      "user_intents": [
+        "我妻子会不会早早去世",
+        "七宫主无力又落凶宫对配偶意味着什么"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v17-weak-yuvati-lord-loss-of-spouse"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘七宫主落在哪一宫",
+        "七宫主（Yuvati's Lord）是否有力"
+      ],
+      "conditional_facts": [
+        "七宫主（Yuvati's Lord）是否落六宫（Ari）",
+        "七宫主（Yuvati's Lord）是否落八宫（Randhr）",
+        "七宫主（Yuvati's Lord）是否落十二宫（Vyaya）"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If Yuvati Lord is devoid of strength and is relegated to Ari, 8th, or Vyaya the native’s wife will be destroyed",
+        "七宫主无力 落六宫 八宫 十二宫 失去妻子"
+      ],
+      "counter_queries": [
+        "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife",
+        "the 7th Lord is exalted, while Yuvati is occupied by strong Lagna Lord and a benefic worthy spouse"
+      ],
+      "boundary_queries": [
+        "Should Yuvati Lord be in Ari, 8th, or Vyaya, the wife will be sickly This however does not apply to own Bhava, or exaltation placement",
+        "TIMING OF WIFE’S DEATH Loss of wife will occur in the 18th year, or 33rd year of age of the native"
+      ],
+      "method_queries": [
+        "listen to me, detailing the effects of the 7th Bhava Yuvati Lord placement",
+        "判断配偶存殁要看七宫主的强弱与落宫"
+      ],
+      "stop_conditions": [
+        "缺少七宫主落宫事实时停止。",
+        "缺少七宫主强弱事实时停止（该判准待排盘窗口定义）。",
+        "六宫、八宫、十二宫三个落宫分支事实都缺时停止。"
+      ]
+    },
+    "ch18-v17-fallen-yuvati-lord-loss-of-spouse": {
+      "title": "失去妻子：七宫主落陷",
+      "user_intents": [
+        "七宫主落陷会不会克妻",
+        "我配偶会不会早早去世"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v17-fallen-yuvati-lord-loss-of-spouse"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "七宫主（Yuvati's Lord）是否落陷"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "if Yuvati Lord is in fall, the native’s wife will be destroyed",
+        "七宫主落陷 失去妻子"
+      ],
+      "counter_queries": [
+        "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife",
+        "Should Yuvati Lord be endowed with strength and be yuti with, or be drishtied by a benefic wealthy honourable happy"
+      ],
+      "boundary_queries": [
+        "Conversely, if Yuvati Lord is in fall, or is combust, or is in an enemy’s Rāśi, one will acquire sick wives and many wives",
+        "Loss of wife will occur in the 18th year, or 33rd year of age of the native, if Yuvati Lord is in fall, while Shukra is in Randhr"
+      ],
+      "method_queries": [
+        "effects of the 7th Bhava Yuvati Lord in fall debilitated",
+        "判断配偶存殁要看七宫主的尊贵状态"
+      ],
+      "stop_conditions": [
+        "缺少七宫主是否落陷的事实时停止。"
+      ]
+    },
+    "ch18-v18-no-marital-happiness": {
+      "title": "没有婚姻幸福：月亮落七宫、七宫主落十二宫、指示星金星无力",
+      "user_intents": [
+        "我的婚姻会不会幸福",
+        "月亮落七宫又七宫主落十二宫会怎样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v18-no-marital-happiness"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "月亮（Chandra）是否落七宫（Yuvati）",
+        "七宫主（Yuvati's Lord）是否落十二宫（Vyaya）",
+        "金星（Shukra）是否有力"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If Chandra is in Yuvati, as Yuvati Lord is in Vyaya and the Karaka (indicator Shukr) is bereft of strength",
+        "月亮落七宫 七宫主落十二宫 金星无力 没有婚姻幸福"
+      ],
+      "counter_queries": [
+        "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife (and marriage)",
+        "The native will beget a spouse endowed with (the seven principal) virtues, who will expand his dynasty by sons and grandsons"
+      ],
+      "boundary_queries": [
+        "If Yuvati Bhava, or its Lord is yuti with a malefic the native’s wife will incur evils, especially, if bereft of strength",
+        "Malefics in Vyaya and 7th, while decreasing Chandra is in Putr the native will be controlled by spouse"
+      ],
+      "method_queries": [
+        "LACK OF CONJUGAL FELICITY Karaka Shukr 7th lord judgment",
+        "判断婚姻幸福要看月亮、七宫主与指示星金星"
+      ],
+      "stop_conditions": [
+        "缺少月亮落宫事实时停止。",
+        "缺少七宫主落宫事实时停止。",
+        "缺少金星强弱事实时停止（该判准待排盘窗口定义）。"
+      ]
+    },
+    "ch18-v19-21-two-wives": {
+      "title": "两位妻子：七宫主落陷或落凶星星座并与凶星同宫，同时七宫或九分盘第七宫属中性行星",
+      "user_intents": [
+        "我会不会有两位妻子",
+        "七宫主落陷又逢中性行星主七宫会怎样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v19-21-two-wives"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘七宫主是哪颗行星"
+      ],
+      "conditional_facts": [
+        "七宫主（Yuvati's Lord）是否落陷",
+        "七宫主（Yuvati's Lord）是否落凶星主管的星座",
+        "七宫主（Yuvati's Lord）是否与凶星同宫",
+        "七宫主（Yuvati's Lord）是否为中性行星（eunuch planet）",
+        "九分盘（Navamsa D9）第七宫（Yuvati）的星座主星是否为中性行星（eunuch planet）"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "One will have two wives, if Yuvati Lord is in fall, or in a malefic Rashi along with a malefic",
+        "七宫主落陷 凶星星座 中性行星 两位妻子"
+      ],
+      "counter_queries": [
+        "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife (and marriage)",
+        "The native will beget a spouse endowed with (the seven principal) virtues 7th Lord is exalted"
+      ],
+      "boundary_queries": [
+        "Conversely, if Yuvati Lord is in fall, or is combust, or is in an enemy’s Rāśi, one will acquire sick wives and many wives",
+        "If Yuvati Lord is in a Rashi of Shani, or of Shukra and be drishtied by a benefic, there will be many wives"
+      ],
+      "method_queries": [
+        "PLURALITY OF WIVES eunuch planet 7th Navamsa judgment",
+        "判断妻子数目要看七宫主的尊贵状态与七宫归属"
+      ],
+      "stop_conditions": [
+        "缺少七宫主身份事实时停止。",
+        "落陷与「落凶星星座并与凶星同宫」两个分支事实都缺时停止。",
+        "七宫与九分盘第七宫的中性行星归属事实都缺时停止（中性行星名单待排盘窗口定义）。"
+      ]
+    },
+    "ch18-v19-21-three-wives": {
+      "title": "三位妻子：火星与金星同落七宫，或土星落七宫而上升主落八宫",
+      "user_intents": [
+        "我会不会有三位妻子",
+        "火星金星同落七宫主什么"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v19-21-three-wives"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘七宫（Yuvati）内有哪些行星"
+      ],
+      "conditional_facts": [
+        "火星（Mangal）是否落七宫（Yuvati）",
+        "金星（Shukra）是否落七宫（Yuvati）",
+        "土星（Shani）是否落七宫（Yuvati）",
+        "上升主（Lagn's Lord）是否落八宫（Randhr）"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If Mangal and Shukra are in Yuvati, or, if Shani is Yuvati, while the Lord of Lagn is in Randhr, the native will have 3 wives",
+        "火星金星落七宫 土星落七宫 上升主落八宫 三位妻子"
+      ],
+      "counter_queries": [
+        "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife (and marriage)",
+        "One will have two wives, if Yuvati Lord is in fall, or in a malefic Rashi along with a malefic"
+      ],
+      "boundary_queries": [
+        "There will be many wives, if Shukra is in a Dual Rāśi, while its Lord is in exaltation",
+        "THREE MARRIAGES Should Chandra be in Yuvati from Shukr, while Budh is in Yuvati from Chandra"
+      ],
+      "method_queries": [
+        "PLURALITY OF WIVES 3 wives Yuvati occupants judgment",
+        "判断妻子数目要看七宫内的行星组合"
+      ],
+      "stop_conditions": [
+        "缺少七宫内行星事实时停止。",
+        "两个组合分支的事实都缺时停止。"
+      ]
+    },
+    "ch18-v19-21-many-wives": {
+      "title": "多位妻子：金星落双体星座、该星座主星入旺、七宫主有力",
+      "user_intents": [
+        "我会不会有很多位妻子",
+        "金星落双体星座主什么"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v19-21-many-wives"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘金星（Shukra）落在哪个星座",
+        "金星（Shukra）是否落双体星座（Dual Rāśi）",
+        "金星（Shukra）所落星座的主星是否入旺",
+        "七宫主（Yuvati's Lord）是否有力"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "There will be many wives, if Shukra is in a Dual Rāśi, while its Lord is in exaltation, as Yuvati Lord is endowed with strength",
+        "金星落双体星座 星座主星入旺 七宫主有力 多妻"
+      ],
+      "counter_queries": [
+        "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife (and marriage)",
+        "If Yuvati Lord is devoid of strength and is relegated to Ari, 8th, or Vyaya the native’s wife will be destroyed"
+      ],
+      "boundary_queries": [
+        "If Yuvati Lord is in a Rashi of Shani, or of Shukra and be drishtied by a benefic, there will be many wives",
+        "Conversely, if Yuvati Lord is in fall, or is combust, or is in an enemy’s Rāśi, one will acquire sick wives and many wives"
+      ],
+      "method_queries": [
+        "PLURALITY OF WIVES Shukra Dual Rāśi dispositor exaltation",
+        "判断妻子数目要看金星所落星座与其主星"
+      ],
+      "stop_conditions": [
+        "缺少金星所落星座事实时停止。",
+        "缺少该星座主星是否入旺的事实时停止。",
+        "缺少七宫主强弱事实时停止（该判准待排盘窗口定义）。"
+      ]
+    },
+    "ch18-v22-marriage-age-5-9": {
+      "title": "5岁或9岁成婚：七宫主落吉星宫位、金星入旺或落本宫",
+      "user_intents": [
+        "我大概几岁结婚",
+        "七宫主落吉星宫位又金星入旺主什么婚期"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v22-marriage-age-5-9"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘中哪些行星被判为吉星",
+        "七宫主（Yuvati's Lord）是否落吉星主管的宫位（Bhava）"
+      ],
+      "conditional_facts": [
+        "金星（Shukra）是否入旺",
+        "金星（Shukra）是否落本宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If Yuvati Lord is in a benefic’s Bhava, while Shukra is exalted, or is in own Rāśi, the native will marry at the age of 5, or 9",
+        "七宫主落吉星宫位 金星入旺 本宫 5岁 9岁 成婚"
+      ],
+      "counter_queries": [
+        "The native will marry at 30, or 27, if Shukra is in Lagna, while the 7th Lord is in Yuvati itself",
+        "If Chandra is in Yuvati, as Yuvati Lord is in Vyaya and the Karaka (indicator Shukr) is bereft of strength, the native will not be endowed with marital happiness"
+      ],
+      "boundary_queries": [
+        "TIME OF MARRIAGE (upto Sloka 34)",
+        "or in Dharm, as Subha Rashiso means benefic’s Bhava"
+      ],
+      "method_queries": [
+        "how to time marriage from Yuvati Lord and Shukra dignity BPHS",
+        "判断婚期要看七宫主所落宫位与金星的尊贵状态"
+      ],
+      "stop_conditions": [
+        "缺少吉星名册事实时停止。",
+        "缺少七宫主是否落吉星宫位的事实时停止。",
+        "金星入旺与落本宫两个分支事实都缺时停止。"
+      ]
+    },
+    "ch18-v23-marriage-year-7-11": {
+      "title": "第7或第11个年岁成婚：太阳落七宫、太阳所落星座主星与金星同宫",
+      "user_intents": [
+        "我大概几岁结婚",
+        "太阳落七宫对婚期有什么影响"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v23-marriage-year-7-11"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "太阳（Surya）是否落七宫（Yuvati）",
+        "太阳（Surya）所落星座的主星是否与金星（Shukra）同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If Surya is in Yuvati, while his dispositor is yuti with Shukr, there will be marriage at 7th, or 11th year of age",
+        "太阳落七宫 太阳的星座主星与金星同宫 第7年 第11年 成婚"
+      ],
+      "counter_queries": [
+        "Ones 22nd/27th year will confer marriage, if Shukra is in Yuvati from the 8th Bhava (i.e. Dhan from Lagna), while his dispositor is yuti with Mangal",
+        "The native will marry at 30, or 27, if Shukra is in Lagna, while the 7th Lord is in Yuvati itself"
+      ],
+      "boundary_queries": [
+        "TIME OF MARRIAGE (upto Sloka 34)",
+        "The native will befriend barren females, if Surya is in Yuvati"
+      ],
+      "method_queries": [
+        "dispositor yuti with Shukr marriage timing BPHS 7th house",
+        "判断婚期要看太阳落宫与其星座主星的同宫关系"
+      ],
+      "stop_conditions": [
+        "缺少太阳落宫事实时停止。",
+        "缺少太阳所落星座主星与金星是否同宫的事实时停止。"
+      ]
+    },
+    "ch18-v24-marriage-age-10-16": {
+      "title": "10岁或16岁成婚：金星落二宫、七宫主落十一宫",
+      "user_intents": [
+        "我大概几岁结婚",
+        "金星落二宫又七宫主落十一宫主什么婚期"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v24-marriage-age-10-16"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "金星（Shukra）是否落二宫（Dhan）",
+        "七宫主（Yuvati's Lord）是否落十一宫（Labh）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Shukra in Dhan, while Yuvati Lord is in Labh will give marriage at the age of 10, or 16",
+        "金星落二宫 七宫主落十一宫 10岁 16岁 成婚"
+      ],
+      "counter_queries": [
+        "Marriage will be in the 15th year, if Dhan Lord is in Labh, while Lagn Lord is in Karm",
+        "An exchange between the Lords of Dhan and Labh will bring marriage 13 years after birth"
+      ],
+      "boundary_queries": [
+        "TIME OF MARRIAGE (upto Sloka 34)",
+        "Should Yuvati Lord be in Vyaya, while the natal Lord is in Yuvati in Navamsa, marriage will be in 23rd/26th year of age"
+      ],
+      "method_queries": [
+        "Shukra Dhan Yuvati Lord Labh marriage age BPHS",
+        "判断婚期要看金星与七宫主分别落在哪一宫"
+      ],
+      "stop_conditions": [
+        "缺少金星落宫事实时停止。",
+        "缺少七宫主落宫事实时停止。"
+      ]
+    },
+    "ch18-v25-marriage-year-11": {
+      "title": "第11年成婚：金星落角宫、上升主落摩羯座或水瓶座",
+      "user_intents": [
+        "我大概几岁结婚",
+        "金星落角宫又上升主落摩羯或水瓶主什么婚期"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v25-marriage-year-11"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "金星（Shukra）是否落角宫",
+        "本盘上升主（Lagn's Lord）落在哪个星座"
+      ],
+      "conditional_facts": [
+        "上升主（Lagn's Lord）是否落摩羯座（Makar）",
+        "上升主（Lagn's Lord）是否落水瓶座（Kumbh）"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Marriage will take place during the 11th year, if Shukra is in an angle from Lagna, while Lagn Lord is in Makar, or Kumbh",
+        "金星落角宫 上升主落摩羯座 水瓶座 第11年 成婚"
+      ],
+      "counter_queries": [
+        "The native will marry at 12, or l9, if Shukra is in an angle from the Lagna, while Shani is in Yuvati counted from Shukr",
+        "The native will marry at 30, or 27, if Shukra is in Lagna, while the 7th Lord is in Yuvati itself"
+      ],
+      "boundary_queries": [
+        "TIME OF MARRIAGE (upto Sloka 34)",
+        "if Shukra is in an angle from the Lagna angle kendra from Lagna marriage"
+      ],
+      "method_queries": [
+        "Shukra in an angle from Lagna Lagn Lord Rāśi marriage timing",
+        "判断婚期要看金星是否落角宫与上升主所落星座"
+      ],
+      "stop_conditions": [
+        "缺少金星是否落角宫的事实时停止。",
+        "缺少上升主所落星座事实时停止。",
+        "摩羯座与水瓶座两个分支事实都缺时停止。"
+      ]
+    },
+    "ch18-v26-marriage-12-l9": {
+      "title": "12或l9（原文如此印）成婚：金星落角宫、土星落金星起第七宫",
+      "user_intents": [
+        "我大概几岁结婚",
+        "土星落金星起第七宫主什么婚期"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v26-marriage-12-l9"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "金星（Shukra）是否落角宫",
+        "土星（Shani）是否落金星（Shukra）起第七宫（Yuvati）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "The native will marry at 12, or l9, if Shukra is in an angle from the Lagna, while Shani is in Yuvati counted from Shukr",
+        "金星落角宫 土星落金星起第七宫 12 成婚"
+      ],
+      "counter_queries": [
+        "Marriage will take place during the 11th year, if Shukra is in an angle from Lagna, while Lagn Lord is in Makar, or Kumbh",
+        "Should Shukra be in Yuvati from Chandra, while Shani is in Yuvati from Shukr, marriage will be in the 18th year"
+      ],
+      "boundary_queries": [
+        "TIME OF MARRIAGE (upto Sloka 34)",
+        "Shukra is in Yuvati from the 8th Bhava (i.e. Dhan from Lagna) counted from"
+      ],
+      "method_queries": [
+        "Shani in Yuvati counted from Shukr marriage timing BPHS",
+        "判断婚期要看从金星起算的第七宫落了哪颗行星"
+      ],
+      "stop_conditions": [
+        "缺少金星是否落角宫的事实时停止。",
+        "缺少土星相对金星落宫的事实时停止。",
+        "原文 l9 的取值存疑，输出年龄前须人工核对原书。"
+      ]
+    },
+    "ch18-v27-marriage-year-18": {
+      "title": "第18年成婚：金星落月亮起第七宫、土星落金星起第七宫",
+      "user_intents": [
+        "我大概几岁结婚",
+        "金星落月亮起第七宫主什么婚期"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v27-marriage-year-18"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "金星（Shukra）是否落月亮（Chandra）起第七宫（Yuvati）",
+        "土星（Shani）是否落金星（Shukra）起第七宫（Yuvati）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Should Shukra be in Yuvati from Chandra, while Shani is in Yuvati from Shukr, marriage will be in the 18th year",
+        "金星落月亮起第七宫 土星落金星起第七宫 第18年 成婚"
+      ],
+      "counter_queries": [
+        "The native will marry at 12, or l9, if Shukra is in an angle from the Lagna, while Shani is in Yuvati counted from Shukr",
+        "Marriage will be in the 15th year, if Dhan Lord is in Labh, while Lagn Lord is in Karm"
+      ],
+      "boundary_queries": [
+        "TIME OF MARRIAGE (upto Sloka 34)",
+        "THREE MARRIAGES Should Chandra be in Yuvati from Shukr, while Budh is in Yuvati from Chandra"
+      ],
+      "method_queries": [
+        "Yuvati from Chandra Yuvati from Shukr counted from planet BPHS",
+        "判断婚期要看从月亮与从金星起算的第七宫"
+      ],
+      "stop_conditions": [
+        "缺少金星相对月亮落宫的事实时停止。",
+        "缺少土星相对金星落宫的事实时停止。"
+      ]
+    },
+    "ch18-v28-marriage-year-15": {
+      "title": "第15年成婚：二宫主落十一宫、上升主落十宫",
+      "user_intents": [
+        "我大概几岁结婚",
+        "二宫主落十一宫又上升主落十宫主什么婚期"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v28-marriage-year-15"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "二宫主（Dhan's Lord）是否落十一宫（Labh）",
+        "上升主（Lagn's Lord）是否落十宫（Karm）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Marriage will be in the 15th year, if Dhan Lord is in Labh, while Lagn Lord is in Karm",
+        "二宫主落十一宫 上升主落十宫 第15年 成婚"
+      ],
+      "counter_queries": [
+        "An exchange between the Lords of Dhan and Labh will bring marriage 13 years after birth",
+        "Shukra in Dhan, while Yuvati Lord is in Labh will give marriage at the age of 10, or 16"
+      ],
+      "boundary_queries": [
+        "TIME OF MARRIAGE (upto Sloka 34)",
+        "Either the 25th year, or the 33rd year will bring marriage, if Randhr Lord is in Yuvati, as Shukra is in Navamsa Lagna"
+      ],
+      "method_queries": [
+        "Dhan Lord in Labh Lagn Lord in Karm marriage year BPHS",
+        "判断婚期要看二宫主与上升主分别落在哪一宫"
+      ],
+      "stop_conditions": [
+        "缺少二宫主落宫事实时停止。",
+        "缺少上升主落宫事实时停止。"
+      ]
+    },
+    "ch18-v29-marriage-13-years-after-birth": {
+      "title": "出生后13年成婚：二宫主与十一宫主互换星座",
+      "user_intents": [
+        "我大概几岁结婚",
+        "二宫主与十一宫主互换主什么婚期"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v29-marriage-13-years-after-birth"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "二宫主（Dhan's Lord）与十一宫主（Labh's Lord）是否互换星座"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "An exchange between the Lords of Dhan and Labh will bring marriage 13 years after birth",
+        "二宫主 十一宫主 互换星座 出生后13年 成婚"
+      ],
+      "counter_queries": [
+        "Marriage will be in the 15th year, if Dhan Lord is in Labh, while Lagn Lord is in Karm",
+        "Shukra in Dhan, while Yuvati Lord is in Labh will give marriage at the age of 10, or 16"
+      ],
+      "boundary_queries": [
+        "TIME OF MARRIAGE (upto Sloka 34)",
+        "exchange between the Lords parivartana Dhan Labh 7th house marriage"
+      ],
+      "method_queries": [
+        "exchange between the Lords of Dhan and Labh marriage timing BPHS",
+        "判断婚期要看二宫主与十一宫主之间的互换关系"
+      ],
+      "stop_conditions": [
+        "缺少二宫主与十一宫主是否互换的事实时停止。"
+      ]
+    },
+    "ch18-v30-marriage-22-27": {
+      "title": "婚期第22年与第27年：金星落八宫起第七宫（即二宫）、其星座主与火星同宫",
+      "user_intents": [
+        "我大概哪一年会结婚",
+        "我的婚期会不会落在第22年或第27年"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v30-marriage-22-27"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "金星（Shukra）是否落二宫（Dhan）",
+        "金星（Shukra）的星座主是否与火星（Mangal）同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Shukra is in Yuvati from the 8th Bhava (i.e. Dhan from Lagna) dispositor yuti with Mangal marriage",
+        "金星落八宫起第七宫 即二宫 星座主与火星同宫 第22年 第27年 婚期"
+      ],
+      "counter_queries": [
+        "An exchange between the Lords of Dhan and Labh will bring marriage 13 years after birth",
+        "Shukra in Dhan, while Yuvati Lord is in Labh will give marriage at the age of 10, or 16"
+      ],
+      "boundary_queries": [
+        "TIME OF MARRIAGE (upto Sloka 34) Yuvati Lord is in a benefic’s Bhava marry at the age of 5, or 9",
+        "Shani is in Yuvati counted from Shukr 从行星起算宫位的算法"
+      ],
+      "method_queries": [
+        "Effects of Yuvati Bhava marriage timing rules Shukra dispositor",
+        "判断婚期应检查哪些行星与宫位"
+      ],
+      "stop_conditions": [
+        "缺少金星（Shukra）落宫事实时停止。",
+        "缺少金星星座主与火星（Mangal）是否同宫的事实时停止。"
+      ]
+    },
+    "ch18-v31-marriage-23-26": {
+      "title": "婚期第23年与第26年：七宫主落十二宫、本命主星在九分盘落七宫",
+      "user_intents": [
+        "七宫主落十二宫时婚期在哪一年",
+        "我的婚期是不是在第23年或第26年"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v31-marriage-23-26"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "七宫主（Yuvati's Lord）是否落十二宫（Vyaya）",
+        "本命主星（natal Lord）在九分盘（Navamsa D9）中是否落七宫（Yuvati）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Should Yuvati Lord be in Vyaya, while the natal Lord is in Yuvati in Navamsa marriage 23rd 26th year",
+        "七宫主落十二宫 本命主星九分盘落七宫 第23年 第26年 婚期"
+      ],
+      "counter_queries": [
+        "Marriage will take place during the 11th year, if Shukra is in an angle from Lagna, while Lagn Lord is in Makar, or Kumbh",
+        "If Chandra is in Yuvati, as Yuvati Lord is in Vyaya the native will not be endowed with marital happiness"
+      ],
+      "boundary_queries": [
+        "TIME OF MARRIAGE (upto Sloka 34)",
+        "natal Lord Lagn Lord Navamsa 七宫 判定口径 版本差异"
+      ],
+      "method_queries": [
+        "Effects of Yuvati Bhava Navamsa placement marriage timing",
+        "判断婚期时怎么用九分盘（Navamsa D9）"
+      ],
+      "stop_conditions": [
+        "缺少七宫主（Yuvati's Lord）落宫事实时停止。",
+        "缺少本命主星在九分盘（Navamsa D9）中落宫的事实时停止。"
+      ]
+    },
+    "ch18-v32-marriage-25-33": {
+      "title": "婚期第25年与第33年：八宫主落七宫、金星落九分盘的上升宫",
+      "user_intents": [
+        "我的婚期在第25年还是第33年",
+        "八宫主落七宫对婚期有什么说法"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v32-marriage-25-33"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "八宫主（Randhr's Lord）是否落七宫（Yuvati）",
+        "金星（Shukra）在九分盘（Navamsa D9）中是否落上升宫（Lagna）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Either the 25th year, or the 33rd year will bring marriage, if Randhr Lord is in Yuvati, as Shukra is in Navamsa Lagna",
+        "八宫主落七宫 金星落九分盘上升 第25年 第33年 婚期"
+      ],
+      "counter_queries": [
+        "Marriage will be in the 15th year, if Dhan Lord is in Labh, while Lagn Lord is in Karm",
+        "Should Shukra be in Yuvati from Chandra, while Shani is in Yuvati from Shukr, marriage will be in the 18th year"
+      ],
+      "boundary_queries": [
+        "TIME OF MARRIAGE (upto Sloka 34)",
+        "Shukra is in Navamsa Lagna 九分盘上升的取法"
+      ],
+      "method_queries": [
+        "Effects of Yuvati Bhava Randhr Lord placement marriage",
+        "判断婚期应检查哪些宫主"
+      ],
+      "stop_conditions": [
+        "缺少八宫主（Randhr's Lord）落宫事实时停止。",
+        "缺少金星（Shukra）在九分盘（Navamsa D9）中落宫的事实时停止。"
+      ]
+    },
+    "ch18-v33-marriage-31-33": {
+      "title": "婚期第31年与第33年：金星落九宫起第九宫（即五宫）、罗睺落五宫或九宫",
+      "user_intents": [
+        "我会在第31年还是第33年结婚",
+        "罗睺落五宫或九宫对婚期有什么说法"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v33-marriage-31-33"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "金星（Shukra）是否落五宫（Putr）"
+      ],
+      "conditional_facts": [
+        "罗睺（Rahu）是否落五宫（Putr）",
+        "罗睺（Rahu）是否落九宫（Dharm）"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Should Shukra be in Dharm from Dharm (i.e. in Putr Bhava), while Rahu is in one of the said Bhavas marriage 31st 33rd year",
+        "金星落九宫起第九宫 即五宫 罗睺落五宫或九宫 第31年 第33年 婚期"
+      ],
+      "counter_queries": [
+        "The native will marry at 30, or 27, if Shukra is in Lagna, while the 7th Lord is in Yuvati itself",
+        "If Surya is in Yuvati, while his dispositor is yuti with Shukr, there will be marriage at 7th, or 11th year of age"
+      ],
+      "boundary_queries": [
+        "Dharm from Dharm (i.e. in Putr Bhava) 从某宫起算另一宫的算法",
+        "TIME OF MARRIAGE (upto Sloka 34)"
+      ],
+      "method_queries": [
+        "Effects of Yuvati Bhava Rahu placement marriage timing",
+        "判断婚期时罗睺（Rahu）落宫怎么用"
+      ],
+      "stop_conditions": [
+        "缺少金星（Shukra）落宫事实时停止。",
+        "选中罗睺（Rahu）分支后缺少该分支落宫事实时停止。"
+      ]
+    },
+    "ch18-v34-marriage-30-27": {
+      "title": "婚期30岁与27岁：金星落上升宫、七宫主落七宫本身",
+      "user_intents": [
+        "我会不会在30岁或27岁结婚",
+        "金星落上升宫、七宫主落本宫时婚期在哪一年"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v34-marriage-30-27"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "金星（Shukra）是否落上升宫（Lagna）",
+        "七宫主（Yuvati's Lord）是否落本宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "The native will marry at 30, or 27, if Shukra is in Lagna, while the 7th Lord is in Yuvati itself",
+        "金星落上升宫 七宫主落本宫 30岁 27岁 婚期"
+      ],
+      "counter_queries": [
+        "Shukra in Dhan, while Yuvati Lord is in Labh will give marriage at the age of 10, or 16",
+        "If Yuvati Lord is in a benefic’s Bhava, while Shukra is exalted, or is in own Rāśi, the native will marry at the age of 5, or 9"
+      ],
+      "boundary_queries": [
+        "TIME OF MARRIAGE (upto Sloka 34)",
+        "If Yuvati’s Lord is in Yuvati Bhava, the native will be endowed with happiness through wife"
+      ],
+      "method_queries": [
+        "Effects of Yuvati Bhava Shukra in Lagna marriage timing",
+        "判断婚期时金星（Shukra）落宫怎么用"
+      ],
+      "stop_conditions": [
+        "缺少金星（Shukra）落宫事实时停止。",
+        "缺少七宫主（Yuvati's Lord）是否落本宫的事实时停止。"
+      ]
+    },
+    "ch18-v35-39-wife-loss-18-33": {
+      "title": "第18年与第33年失去妻子：七宫主落陷、金星落八宫",
+      "user_intents": [
+        "我会不会在某一年失去妻子",
+        "七宫主落陷、金星落八宫对妻子有什么妨害"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v35-39-wife-loss-18-33"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "七宫主（Yuvati's Lord）是否落陷",
+        "金星（Shukra）是否落八宫（Randhr）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "TIMING OF WIFE’S DEATH Loss of wife will occur in the 18th year, or 33rd year of age, if Yuvati Lord is in fall, while Shukra is in Randhr",
+        "七宫主落陷 金星落八宫 第18年 第33年 失去妻子"
+      ],
+      "counter_queries": [
+        "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife (and marriage)",
+        "One will have two wives, if Yuvati Lord is in fall, or in a malefic Rashialong with a malefic"
+      ],
+      "boundary_queries": [
+        "LOSS OF SPOUSE If Yuvati Lord is devoid of strength and is relegated to Ari, 8th, or Vyaya, or, if Yuvati Lord is in fall, the native’s wife will be destroyed",
+        "EVILS TO SPOUSE Yuvati Bhava, or its Lord is yuti with a malefic bereft of strength"
+      ],
+      "method_queries": [
+        "Effects of Yuvati Bhava wife death timing rules",
+        "判断配偶存亡应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少七宫主（Yuvati's Lord）是否落陷的事实时停止。",
+        "缺少金星（Shukra）落宫事实时停止。"
+      ]
+    },
+    "ch18-v35-39-spouse-loss-19": {
+      "title": "第19年失去配偶：七宫主落八宫、十二宫主落七宫",
+      "user_intents": [
+        "我第19年会不会失去配偶",
+        "七宫主落八宫对配偶有什么妨害"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v35-39-spouse-loss-19"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "七宫主（Yuvati's Lord）是否落八宫（Randhr）",
+        "十二宫主（Vyaya's Lord）是否落七宫（Yuvati）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "One will lose his spouse in his 19th year, if Yuvati Lord is in the 8th, while Vyaya Lord is in Yuvati",
+        "七宫主落八宫 十二宫主落七宫 第19年 失去配偶"
+      ],
+      "counter_queries": [
+        "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife (and marriage)",
+        "THREE MARRIAGES there will be marriage in Karm year followed by another in the 22nd year and yet another in the 33rd year"
+      ],
+      "boundary_queries": [
+        "SICK WIFE Should Yuvati Lord be in Ari, 8th, or Vyaya, the wife will be sickly. This however does not apply to own Bhava, or exaltation placement",
+        "LOSS OF SPOUSE Yuvati Lord is devoid of strength and is relegated to Ari, 8th, or Vyaya"
+      ],
+      "method_queries": [
+        "Effects of Yuvati Bhava Vyaya Lord placement spouse",
+        "判断配偶存亡应检查哪些宫主"
+      ],
+      "stop_conditions": [
+        "缺少七宫主（Yuvati's Lord）落宫事实时停止。",
+        "缺少十二宫主（Vyaya's Lord）落宫事实时停止。"
+      ]
+    },
+    "ch18-v35-39-wife-snake-bite": {
+      "title": "妻子婚后三日内因蛇咬去世：罗睺落二宫、火星落七宫",
+      "user_intents": [
+        "我妻子会不会有性命之忧",
+        "罗睺落二宫、火星落七宫说明什么"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v35-39-wife-snake-bite"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "罗睺（Rahu）是否落二宫（Dhan）",
+        "火星（Mangal）是否落七宫（Yuvati）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "The native’s wife will die within three days of marriage due to snake bite, Rahu in Dhan and Mangal in Yuvati",
+        "罗睺落二宫 火星落七宫 婚后三日 蛇咬 妻子去世"
+      ],
+      "counter_queries": [
+        "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife (and marriage)",
+        "WORTHY SPOUSE The native will beget a spouse endowed with (the seven principal) virtues, who will expand his dynasty by sons and grandsons"
+      ],
+      "boundary_queries": [
+        "DEATH OF WlFE lf Ari, 7th and 8th are in their order occupied by Mangal, Rahu and Shani, the native’s wife will not live (long)",
+        "If Mangal and Shukra are in Yuvati, or, if Shani is Yuvati, while the Lord of Lagn is in Randhr, the native will have 3 wives"
+      ],
+      "method_queries": [
+        "Effects of Yuvati Bhava Mangal Rahu placement wife death",
+        "判断配偶灾厄应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少罗睺（Rahu）落宫事实时停止。",
+        "缺少火星（Mangal）落宫事实时停止。"
+      ]
+    },
+    "ch18-v35-39-wife-death-12-21": {
+      "title": "妻子在第12年与第21年去世：金星落八宫、其星座主落土星星座",
+      "user_intents": [
+        "我妻子可能在我哪一年去世",
+        "金星落八宫对妻子寿命有什么说法"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v35-39-wife-death-12-21"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "金星（Shukra）是否落八宫（Randhr）",
+        "金星（Shukra）的星座主是否落土星（Shani）主管的星座"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If Shukra is in Randhr, while his dispositor is in a Rashiof Shani, death of wife will take place during the native’s 12th, or 21st year of age",
+        "金星落八宫 星座主落土星星座 第12年 第21年 妻子去世"
+      ],
+      "counter_queries": [
+        "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife (and marriage)",
+        "If Yuvati Lord is in a Rashiof Shani, or of Shukra and be drishtied by a benefic, there will be many wives"
+      ],
+      "boundary_queries": [
+        "Loss of wife will occur in the 18th year, or 33rd year of age of the native, if Yuvati Lord is in fall, while Shukra is in Randhr",
+        "If Shukra yuti a malefic in any Bhava the native will lose his wife"
+      ],
+      "method_queries": [
+        "Effects of Yuvati Bhava dispositor Rashi of Shani wife death",
+        "判断妻子寿命应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少金星（Shukra）落宫事实时停止。",
+        "缺少金星星座主所落星座的事实时停止。"
+      ]
+    },
+    "ch18-v35-39-wife-loss-13": {
+      "title": "第13年失去妻子：上升主落陷、二宫主落八宫",
+      "user_intents": [
+        "我第13年会不会失去妻子",
+        "上升主落陷对妻子有什么妨害"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v35-39-wife-loss-13"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "上升主（Lagna's Lord）是否落陷",
+        "二宫主（Dhan's Lord）是否落八宫（Randhr）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Should the ascendat Lord be in his Rashiof debilitation, as Dhan Lord is in Randhr, loss of wife will occur in the 13th year of age",
+        "上升主落陷 二宫主落八宫 第13年 失去妻子"
+      ],
+      "counter_queries": [
+        "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife (and marriage)",
+        "THREE MARRIAGES Should Chandra be in Yuvati from Shukr, while Budh is in Yuvati from Chandra"
+      ],
+      "boundary_queries": [
+        "If Lagn’s Lord is a malefic and is placed in Yuvati Bhava, the natives wife will not live (long)",
+        "LOSS OF SPOUSE Yuvati Lord is in fall the native’s wife will be destroyed"
+      ],
+      "method_queries": [
+        "Effects of Yuvati Bhava Lagna Lord debilitation wife loss",
+        "判断上升主落陷会带来什么"
+      ],
+      "stop_conditions": [
+        "缺少上升主（Lagna's Lord）是否落陷的事实时停止。",
+        "缺少二宫主（Dhan's Lord）落宫事实时停止。"
+      ]
+    },
+    "ch18-v40-41-three-marriages": {
+      "title": "三次婚姻：月亮在金星起第七宫、水星在月亮起第七宫、八宫主落五宫",
+      "user_intents": [
+        "我会不会有三次婚姻",
+        "我的几次婚姻分别在哪一年"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v40-41-three-marriages"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "月亮（Chandra）是否落金星（Shukra）起第七宫（Yuvati）",
+        "水星（Budh）是否落月亮（Chandra）起第七宫（Yuvati）",
+        "八宫主（Randhr's Lord）是否落五宫（Putr）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "THREE MARRIAGES Should Chandra be in Yuvati from Shukr, while Budh is in Yuvati from Chandra and Randhr Lord is in Putr marriage in Karm year 22nd 33rd",
+        "月亮在金星起第七宫 水星在月亮起第七宫 八宫主落五宫 三次婚姻 Karm 年"
+      ],
+      "counter_queries": [
+        "One will have two wives, if Yuvati Lord is in fall, or in a malefic Rashialong with a malefic",
+        "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife (and marriage)"
+      ],
+      "boundary_queries": [
+        "PLURALlIY OF WIVES If Mangal and Shukra are in Yuvati, or, if Shani is Yuvati, while the Lord of Lagn is in Randhr, the native will have 3 wives",
+        "Karm year 以宫位名指年份的算法"
+      ],
+      "method_queries": [
+        "Effects of Yuvati Bhava number of wives and marriage timing",
+        "判断婚姻次数应检查什么"
+      ],
+      "stop_conditions": [
+        "缺少月亮（Chandra）相对金星（Shukra）的落宫事实时停止。",
+        "缺少水星（Budh）相对月亮（Chandra）的落宫事实时停止。",
+        "缺少八宫主（Randhr's Lord）落宫事实时停止。"
+      ]
+    },
+    "ch18-v42-wife-short-life": {
+      "title": "妻子不能久活：六宫、七宫、八宫依次被火星、罗睺、土星占据",
+      "user_intents": [
+        "我妻子的寿命长不长",
+        "火星、罗睺、土星分别落六宫七宫八宫说明什么"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch18-v42-wife-short-life"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "火星（Mangal）是否落六宫（Ari）",
+        "罗睺（Rahu）是否落七宫（Yuvati）",
+        "土星（Shani）是否落八宫（Randhr）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "DEATH OF WlFE lf Ari, 7th and 8th are in their order occupied by Mangal, Rahu and Shani, the native’s wife will not live (long)",
+        "六宫火星 七宫罗睺 八宫土星 妻子不能久活"
+      ],
+      "counter_queries": [
+        "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife (and marriage)",
+        "WORTHY SPOUSE the 7th Lord is exalted, while Yuvati is occupied by strong Lagna Lord and a benefic"
+      ],
+      "boundary_queries": [
+        "If Lagn’s Lord is a malefic and is placed in Yuvati Bhava, the natives wife will not live (long)",
+        "LOSS OF SPOUSE Yuvati Lord is devoid of strength and is relegated to Ari, 8th, or Vyaya"
+      ],
+      "method_queries": [
+        "Effects of Yuvati Bhava malefics occupying Ari 7th 8th wife",
+        "判断妻子寿命应检查哪几宫"
+      ],
+      "stop_conditions": [
+        "缺少火星（Mangal）落宫事实时停止。",
+        "缺少罗睺（Rahu）落宫事实时停止。",
+        "缺少土星（Shani）落宫事实时停止。"
+      ]
+    }
+  }
+}
