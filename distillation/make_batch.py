@@ -44,16 +44,50 @@ def load_atoms() -> dict[str, dict]:
     return atoms
 
 
-def load_knowledge_only() -> dict[str, dict]:
-    """经审查确认没有判断规则的正文（过渡句、引言、收尾语）：只入知识地图，不做成方法。"""
-    if not KNOWLEDGE_ONLY.is_file():
+def load_knowledge_only(batch_dir: Path | None = None) -> dict[str, dict]:
+    """经审查确认没有判断规则的正文（过渡句、引言、收尾语）：只入知识地图，不做成方法。
+
+    抽取窗口把本批的判定写进自己批次目录的 knowledge_only.json，装配时**提升**进
+    跨批次汇总清单 KNOWLEDGE_ONLY_ATOMS.json。两件事都必须成立：
+
+    - 批次级是写入口：4 个抽取组并行时各写各的，不会抢同一个共享文件
+      （第 2 批实测：抽取员为了让装配通过只能去改全局清单，那是流程没给合法渠道）；
+    - 汇总清单是永久档：批次目录在 _local/ 下不入库，而"这条原文没有判断规则"
+      是实打实的取舍判断，必须留在可审计的版本库里，不能只存在于工作目录。
+    """
+    merged: dict[str, dict] = {}
+    if KNOWLEDGE_ONLY.is_file():
+        data = json.loads(KNOWLEDGE_ONLY.read_text(encoding="utf-8"))
+        for item in data.get("atoms", []):
+            merged[item["evidence_atom_id"]] = item
+    if batch_dir is not None:
+        merged.update(promote_batch_knowledge_only(batch_dir, merged))
+    return merged
+
+
+def promote_batch_knowledge_only(batch_dir: Path, existing: dict[str, dict]) -> dict[str, dict]:
+    """把批次目录里的 knowledge_only 判定并进汇总清单，返回本批新增的部分。"""
+    local = batch_dir / "knowledge_only.json"
+    if not local.is_file():
         return {}
-    data = json.loads(KNOWLEDGE_ONLY.read_text(encoding="utf-8"))
-    return {item["evidence_atom_id"]: item for item in data.get("atoms", [])}
+    entries = {
+        item["evidence_atom_id"]: item
+        for item in json.loads(local.read_text(encoding="utf-8")).get("atoms", [])
+    }
+    added = {atom_id: item for atom_id, item in entries.items() if atom_id not in existing}
+    if added:
+        registry = json.loads(KNOWLEDGE_ONLY.read_text(encoding="utf-8")) if KNOWLEDGE_ONLY.is_file() else {"atoms": []}
+        registry.setdefault("atoms", []).extend(added.values())
+        registry["atoms"].sort(key=lambda item: item["evidence_atom_id"])
+        KNOWLEDGE_ONLY.write_text(
+            json.dumps(registry, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
+        print(f"[knowledge_only] 已并入汇总清单 {len(added)} 条：{', '.join(sorted(added))}", file=sys.stderr)
+    return entries
 
 
 def build_extraction(batch_id: str, scope: list[str], atoms: dict[str, dict], fragments: Path) -> dict:
-    knowledge_only = load_knowledge_only()
+    knowledge_only = load_knowledge_only(fragments.parent)
     methods: list[dict] = []
     for path in sorted(fragments.glob("*.json")):
         raw = json.loads(path.read_text(encoding="utf-8"))

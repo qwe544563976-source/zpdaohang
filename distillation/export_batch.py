@@ -94,11 +94,21 @@ def main() -> int:
         json.dumps(batch["evidence_atom_ids"], ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
+    # 章名必须取自原子自带的 chapter_title：计划表里的主题是按目录范围粗分的，
+    # 手写具体章名会错位（实测 ch17 是 Ari 六宫、不是七宫），抽取窗口会拿到错的章号。
+    chapter_titles = {}
+    for atom in selected:
+        chapter_titles.setdefault(atom["chapter_number"], atom["chapter_title"])
+    topic_line = "；".join(
+        f"第{num}章 {title}" for num, title in sorted(chapter_titles.items())
+    )
     print(json.dumps({
         "passed": True,
         "batch_label": batch["batch_label"],
         "chapters": batch["chapters"],
         "topic": batch["topic"],
+        "topic_from_atoms": topic_line,
+        "chapter_titles": {str(k): v for k, v in sorted(chapter_titles.items())},
         "high_risk": batch["high_risk"],
         "atom_count": batch["atom_count"],
         "groups": group_files,
