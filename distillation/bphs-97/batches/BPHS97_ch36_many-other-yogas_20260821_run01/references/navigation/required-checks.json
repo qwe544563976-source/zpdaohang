@@ -1,0 +1,503 @@
+{
+  "pilot_only": false,
+  "publishable": false,
+  "topics": {
+    "ch36-v1-2-subh-yog": {
+      "question_type": "Subh Yog：上升宫内有吉星，或十二宫与二宫内都有吉星",
+      "required_facts": [
+        "本盘中哪些行星被判为吉星"
+      ],
+      "conditional_facts": [
+        "上升宫（Lagna）是否被吉星占据",
+        "十二宫（Vyaya）是否被吉星占据",
+        "二宫（Dhan）是否被吉星占据"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘吉星名册事实时停止。",
+        "上升宫、十二宫与二宫三项吉星占据事实全部缺失时停止。",
+        "原文本句未给出吉星判准，吉星名册未取得时停止。"
+      ]
+    },
+    "ch36-v1-2-asubh-yog": {
+      "question_type": "Asubh Yog：上升宫内有凶星，或十二宫与二宫内都有凶星",
+      "required_facts": [
+        "本盘中哪些行星被判为凶星"
+      ],
+      "conditional_facts": [
+        "上升宫（Lagna）是否被凶星占据",
+        "十二宫（Vyaya）是否被凶星占据",
+        "二宫（Dhan）是否被凶星占据"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘凶星名册事实时停止。",
+        "上升宫、十二宫与二宫三项凶星占据事实全部缺失时停止。",
+        "原文本句未给出凶星判准，凶星名册未取得时停止。"
+      ]
+    },
+    "ch36-v3-4-gaj-kesari-yog": {
+      "question_type": "Gaj Kesari Yog：木星落上升或月亮起的角宫，与吉星同宫或受吉星相照，且不落陷、不燃烧、不在敌方星座",
+      "required_facts": [
+        "木星（Guru）是否落陷",
+        "木星（Guru）是否燃烧",
+        "木星（Guru）是否落敌方行星主管的星座"
+      ],
+      "conditional_facts": [
+        "木星（Guru）是否落从上升宫（Lagna）起算的角宫",
+        "木星（Guru）是否落从月亮（Chandra）起算的角宫",
+        "木星（Guru）是否与吉星同宫",
+        "木星（Guru）是否被吉星相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少木星落陷、燃烧或敌方星座任一项事实时停止。",
+        "木星在上升宫起与月亮起两种角宫的落宫事实都缺失时停止。",
+        "木星与吉星同宫、被吉星相照两项事实都缺失时停止。",
+        "原文本句未给出吉星判准，吉星名册未取得时停止。"
+      ]
+    },
+    "ch36-v5-6-amal-yog": {
+      "question_type": "Amal Yog：从上升或月亮起算的第十宫内只有吉星",
+      "required_facts": [
+        "本盘中哪些行星被判为吉星"
+      ],
+      "conditional_facts": [
+        "从上升宫（Lagna）起算的第十宫是否只被吉星占据",
+        "从月亮（Chandra）起算的第十宫是否只被吉星占据"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘吉星名册事实时停止。",
+        "从上升起与从月亮起两种第十宫的占据事实都缺失时停止。",
+        "原文本句未给出吉星判准，吉星名册未取得时停止。"
+      ]
+    },
+    "ch36-v7-8-parvat-yog": {
+      "question_type": "Parvat Yog：角宫内有吉星，且七宫与八宫空无行星或只被吉星占据",
+      "required_facts": [
+        "本盘角宫（Kendra）是否被吉星占据"
+      ],
+      "conditional_facts": [
+        "七宫（Yuvati）是否空无行星",
+        "八宫（Randhr）是否空无行星",
+        "七宫（Yuvati）是否只被吉星占据",
+        "八宫（Randhr）是否只被吉星占据"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少角宫吉星占据事实时停止。",
+        "七宫与八宫的空宫事实与只被吉星占据事实都缺失时停止。",
+        "原文本句未给出吉星判准，吉星名册未取得时停止。"
+      ]
+    },
+    "ch36-v9-10-kahal-yog": {
+      "question_type": "Kahal Yog：四宫主与木星互为角宫且上升主有力，或四宫主落本星座或入旺并与十宫主同宫",
+      "required_facts": [
+        "本盘四宫主（Bandhu's Lord）是哪颗行星"
+      ],
+      "conditional_facts": [
+        "四宫主（Bandhu's Lord）与木星（Guru）是否互为角宫",
+        "上升主（Lagn's Lord）是否有力",
+        "四宫主（Bandhu's Lord）是否落本星座（own Rāśi）",
+        "四宫主（Bandhu's Lord）是否入旺",
+        "四宫主（Bandhu's Lord）是否与十宫主（Karm's Lord）同宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少四宫主身份事实时停止。",
+        "两种成立方式所需的事实都缺失时停止。",
+        "「有力」的判准由排盘窗口定义，未给出取值时停止。"
+      ]
+    },
+    "ch36-v11-12-chamar-yog": {
+      "question_type": "Chamar Yog：上升主在角宫入旺并受木星相照，或上升、九宫、十宫、七宫之一内有两颗吉星",
+      "required_facts": [
+        "本盘上升主（Lagn's Lord）是哪颗行星",
+        "本盘中哪些行星被判为吉星"
+      ],
+      "conditional_facts": [
+        "上升主（Lagn's Lord）是否入旺",
+        "上升主（Lagn's Lord）是否落角宫",
+        "上升主（Lagn's Lord）是否被木星（Guru）相照",
+        "上升宫（Lagna）内是否有两颗吉星",
+        "九宫（Dharm）内是否有两颗吉星",
+        "十宫（Karm）内是否有两颗吉星",
+        "七宫（Yuvati）内是否有两颗吉星"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升主身份或吉星名册事实时停止。",
+        "上升主入旺、落角宫、受木星相照三项与四处两颗吉星事实全部缺失时停止。",
+        "原文本句未给出吉星判准，吉星名册未取得时停止。"
+      ]
+    },
+    "ch36-v13-14-shankh-yog": {
+      "question_type": "Shankh Yog：上升主有力且五宫主与六宫主互为角宫，或上升主与十宫主同落动星座且九宫主有力",
+      "required_facts": [
+        "本盘上升主（Lagn's Lord）是哪颗行星"
+      ],
+      "conditional_facts": [
+        "上升主（Lagn's Lord）是否有力",
+        "五宫主（Putr's Lord）与六宫主（Ari's Lord）是否互为角宫",
+        "上升主（Lagn's Lord）是否与十宫主（Karm's Lord）同落动星座（Movable Rāśi）",
+        "九宫主（Dharm's Lord）是否有力"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升主身份事实时停止。",
+        "两种成立方式所需的事实都缺失时停止。",
+        "「有力」的判准由排盘窗口定义，未给出取值时停止。"
+      ]
+    },
+    "ch36-v15-16-bhairi-yog": {
+      "question_type": "Bhairi Yog：九宫主有力，且十二宫、一宫、二宫、七宫都被占据，或金星木星与上升主都落角宫",
+      "required_facts": [
+        "九宫主（Dharm's Lord）是否有力"
+      ],
+      "conditional_facts": [
+        "十二宫（Vyaya）是否被行星占据",
+        "上升宫（Tanu Bhava）是否被行星占据",
+        "二宫（Dhan）是否被行星占据",
+        "七宫（Yuvati）是否被行星占据",
+        "金星（Shukra）是否落角宫",
+        "木星（Guru）是否落角宫",
+        "上升主（Lagn's Lord）是否落角宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少九宫主力量事实时停止。",
+        "「有力」的判准由排盘窗口定义，未给出取值时停止。",
+        "四宫被占据与三星落角宫两组事实都缺失时停止。"
+      ]
+    },
+    "ch36-v17-mridang-yog": {
+      "question_type": "Mridang Yog：上升主有力，其余行星落角宫、三角宫、本宫或入旺星座",
+      "required_facts": [
+        "上升主（Lagn's Lord）是否有力"
+      ],
+      "conditional_facts": [
+        "其余行星（others）是否落角宫",
+        "其余行星（others）是否落三角宫",
+        "其余行星（others）是否落本宫（own Bhava）",
+        "其余行星（others）是否落入旺星座"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升主力量事实时停止。",
+        "「有力」的判准由排盘窗口定义，未给出取值时停止。",
+        "原文未界定 others（其余行星）指哪些行星，未确定即停判。"
+      ]
+    },
+    "ch36-v18-shrinath-yog": {
+      "question_type": "Shrinath Yog：七宫主落十宫，十宫主入旺并与九宫主同宫",
+      "required_facts": [
+        "七宫主（Yuvati's Lord）是否落十宫（Karm）",
+        "十宫主（Karm's Lord）是否入旺",
+        "十宫主（Karm's Lord）是否与九宫主（Dharm's Lord）同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少七宫主落十宫、十宫主入旺、十宫主与九宫主同宫三项中任一项事实时停止。"
+      ]
+    },
+    "ch36-v19-20-sharad-yog": {
+      "question_type": "Sharad Yog：十宫主落五宫、水星落角宫且有力的太阳落狮子座，或木星与水星之一落月亮起的三角宫且火星落十一宫",
+      "required_facts": [
+        "本盘十宫主（Karm's Lord）是哪颗行星",
+        "本盘月亮（Chandra）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "十宫主（Karm's Lord）是否落五宫（Putr）",
+        "水星（Budh）是否落角宫",
+        "太阳（Surya）是否有力",
+        "太阳（Surya）是否落狮子座（Simh）",
+        "木星（Guru）是否落从月亮（Chandra）起算的三角宫",
+        "水星（Budh）是否落从月亮（Chandra）起算的三角宫",
+        "火星（Mangal）是否落十一宫（Labh）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少十宫主身份或月亮落宫事实时停止。",
+        "两种成立方式所需的事实都缺失时停止。",
+        "「有力」的判准由排盘窗口定义，未给出取值时停止。"
+      ]
+    },
+    "ch36-v21-22-matsya-yog": {
+      "question_type": "Matsya Yog：吉星落九宫与一宫、五宫吉凶混杂、凶星落四宫与八宫",
+      "required_facts": [
+        "九宫（Dharm）是否被吉星占据",
+        "一宫（Tanu）是否被吉星占据",
+        "五宫（Putr）是否被吉凶混杂的行星占据",
+        "四宫（Bandhu）是否被凶星占据",
+        "八宫（Randhr）是否被凶星占据"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少九宫、一宫、五宫、四宫、八宫任一项占据事实时停止。",
+        "吉星与凶星名册未按本书 ch03:v11 取到时停止。",
+        "原文未定义「吉凶混杂的行星」的最少颗数，取值口径未确定即停判。"
+      ]
+    },
+    "ch36-v23-24-kurm-yog": {
+      "question_type": "Kurm Yog：吉星以本宫、入旺或友好星座占据五宫六宫七宫，凶星以本宫或入旺落三宫十一宫一宫",
+      "required_facts": [
+        "五宫（Putr）是否被吉星占据",
+        "六宫（Ari）是否被吉星占据",
+        "七宫（Yuvati）是否被吉星占据",
+        "三宫（Sahaj）是否被凶星占据",
+        "十一宫（Labh）是否被凶星占据",
+        "一宫（Tanu）是否被凶星占据"
+      ],
+      "conditional_facts": [
+        "占据五宫（Putr）、六宫（Ari）、七宫（Yuvati）的吉星是否落本宫",
+        "占据五宫（Putr）、六宫（Ari）、七宫（Yuvati）的吉星是否入旺",
+        "占据五宫（Putr）、六宫（Ari）、七宫（Yuvati）的吉星是否落友好星座（friendly Rāśi）",
+        "落三宫（Sahaj）、十一宫（Labh）、一宫（Tanu）的凶星是否落本宫",
+        "落三宫（Sahaj）、十一宫（Labh）、一宫（Tanu）的凶星是否入旺"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少五宫、六宫、七宫吉星占据事实或三宫、十一宫、一宫凶星占据事实时停止。",
+        "命中吉星尊贵分支后，缺少该分支对应的本宫、入旺或友好星座事实时停止。",
+        "命中凶星尊贵分支后，缺少该分支对应的本宫或入旺事实时停止。",
+        "吉星与凶星名册未按本书 ch03:v11 取到时停止。"
+      ]
+    },
+    "ch36-v25-26-khadg-yog": {
+      "question_type": "Khadg Yog：二宫主与九宫主互换星座，上升主落角宫或三角宫",
+      "required_facts": [
+        "二宫主（Dhan's Lord）与九宫主（Dharm's Lord）是否互换星座"
+      ],
+      "conditional_facts": [
+        "上升主（Lagn's Lord）是否落角宫（Kendr）",
+        "上升主（Lagn's Lord）是否落三角宫（Kon）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少二宫主与九宫主互换星座事实时停止。",
+        "命中上升主分支后，缺少该分支对应的角宫或三角宫落宫事实时停止。",
+        "角宫与三角宫的宫位名单未按本书 ch07:v33-36 取到时停止。"
+      ]
+    },
+    "ch36-v27-28-lakshmi-yog": {
+      "question_type": "Lakshmi Yog：九宫主落角宫且据根本三角、本星座或入旺，上升主有力",
+      "required_facts": [
+        "九宫主（Dharm's Lord）是否落角宫（Kendr）",
+        "上升主（Lagn's Lord）是否有力"
+      ],
+      "conditional_facts": [
+        "九宫主（Dharm's Lord）所落星座是否为其根本三角星座（Mooltrikon Rāśi）",
+        "九宫主（Dharm's Lord）所落星座是否为其本星座（own Rāśi）",
+        "九宫主（Dharm's Lord）是否入旺"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少九宫主落角宫事实或上升主力量事实时停止。",
+        "「有力」的判准由排盘窗口按本书 ch27 的 Shad Bal 定义，未取到取值时停止。",
+        "命中九宫主尊贵分支后，缺少该分支对应的根本三角、本星座或入旺事实时停止。"
+      ]
+    },
+    "ch36-v29-30-kusum-yog": {
+      "question_type": "Kusum Yog：固定星座上升，金星落角宫、月亮偕吉星落三角宫、土星落十宫",
+      "required_facts": [
+        "金星（Shukra）是否落角宫（Kendr）",
+        "月亮（Chandra）是否落三角宫（Kon）",
+        "月亮（Chandra）是否与吉星同宫",
+        "土星（Shani）是否落十宫（Karm）",
+        "上升星座是否为固定星座（Fixed Rāśi）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升星座三分类事实时停止。",
+        "缺少金星落角宫、月亮落三角宫、月亮与吉星同宫或土星落十宫任一事实时停止。",
+        "吉星名册未按本书 ch03:v11 取到时停止。"
+      ]
+    },
+    "ch36-v31-32-kalanidhi-yog": {
+      "question_type": "Kalanidhi Yog：木星落二宫或五宫并受水星与金星相照",
+      "required_facts": [
+        "木星（Guru）是否被水星（Budh）相照",
+        "木星（Guru）是否被金星（Shukr）相照"
+      ],
+      "conditional_facts": [
+        "木星（Guru）是否落二宫（Dhan）",
+        "木星（Guru）是否落五宫（Putr）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少木星被水星相照或被金星相照任一事实时停止。",
+        "命中木星落宫分支后，缺少该分支对应的二宫或五宫落宫事实时停止。",
+        "相照的取值口径未按本书 ch26 的 Drishti 章节取到时停止。"
+      ]
+    },
+    "ch36-v33-34-kalpa-drum-yog": {
+      "question_type": "Kalpa Drum Yog：上升主及其三层星座主全落角宫三角宫或全入旺",
+      "required_facts": [
+        "本盘上升主（Lagn's Lord）是哪颗行星",
+        "上升主（Lagn's Lord）的星座主（dispositor，原文记为 a）是哪颗行星",
+        "原文记为 a 的行星的星座主（dispositor，原文记为 b）是哪颗行星",
+        "原文记为 b 的行星在九分盘（Navamsa D9）中的星座主是哪颗行星"
+      ],
+      "conditional_facts": [
+        "这四颗行星是否都落在从上升（Lagna）起算的角宫（Kendras）与三角宫（Konas）内",
+        "这四颗行星是否都入旺"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少四颗行星中任一颗的身份事实时停止。",
+        "命中落宫分支后，缺少四颗行星全落角宫三角宫的事实时停止。",
+        "命中入旺分支后，缺少四颗行星全部入旺的事实时停止。",
+        "九分盘（Navamsa D9）星座主的取值口径未按本书 ch06 取到时停止。"
+      ]
+    },
+    "ch36-v35-36-hari-yog": {
+      "question_type": "Hari Yog：从二宫主起算的第2、第12、第8位被吉星占据",
+      "required_facts": [
+        "从二宫主（Dhan's Lord）所落宫起算的第2宫是否被吉星占据",
+        "从二宫主（Dhan's Lord）所落宫起算的第12宫是否被吉星占据",
+        "从二宫主（Dhan's Lord）所落宫起算的第8宫是否被吉星占据"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少从二宫主起算的第2、第12或第8位吉星占据事实时停止。",
+        "二宫主落宫未知时停止。",
+        "吉星名册未按本书 ch03:v11 取到时停止。"
+      ]
+    },
+    "ch36-v35-36-hara-yog": {
+      "question_type": "Hara Yog：从七宫主所落星座起算的第4、第9、第8个星座被吉星占据",
+      "required_facts": [
+        "从七宫主（Yuvati's Lord）所落星座起算的第4个星座是否被吉星占据",
+        "从七宫主（Yuvati's Lord）所落星座起算的第9个星座是否被吉星占据",
+        "从七宫主（Yuvati's Lord）所落星座起算的第8个星座是否被吉星占据"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少从七宫主所落星座起算的第4、第9或第8个星座吉星占据事实时停止。",
+        "七宫主所落星座未知时停止。",
+        "吉星名册未按本书 ch03:v11 取到时停止。"
+      ]
+    },
+    "ch36-v35-36-brahma-yog": {
+      "question_type": "Brahma Yog：从上升主所落星座起算的第4、第10、第11个星座被吉星占据",
+      "required_facts": [
+        "从上升主（Lagn's Lord）所落星座起算的第4个星座是否被吉星占据",
+        "从上升主（Lagn's Lord）所落星座起算的第10个星座是否被吉星占据",
+        "从上升主（Lagn's Lord）所落星座起算的第11个星座是否被吉星占据"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少从上升主所落星座起算的第4、第10或第11个星座吉星占据事实时停止。",
+        "上升主所落星座未知时停止。",
+        "吉星名册未按本书 ch03:v11 取到时停止。"
+      ]
+    },
+    "ch36-v37-lagn-adhi-yog": {
+      "question_type": "Lagn Adhi Yog：从上升起算的七宫与八宫有吉星且不受凶星同宫与相照",
+      "required_facts": [
+        "七宫（Yuvati）是否被吉星占据",
+        "八宫（Randhr）是否被吉星占据",
+        "七宫（Yuvati）与八宫（Randhr）内的吉星是否与凶星同宫",
+        "七宫（Yuvati）与八宫（Randhr）内的吉星是否被凶星相照"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少七宫或八宫吉星占据事实时停止。",
+        "缺少吉星与凶星同宫事实或吉星被凶星相照事实时停止。",
+        "吉星与凶星名册未按本书 ch03:v11 取到时停止。"
+      ]
+    },
+    "ch36-v38-39-lagn-lord-parijatamsa": {
+      "question_type": "上升主落 Parijatāńś 的效果",
+      "required_facts": [
+        "上升主（Lagn's Lord）的分盘尊贵是否为 Parijatāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升主分盘尊贵事实时停止。",
+        "分盘尊贵的判定口径未按本书 ch06 的 Varg 分类取到时停止。"
+      ]
+    },
+    "ch36-v38-39-lagn-lord-gopuramsa": {
+      "question_type": "上升主落 Gopurāńś 的效果",
+      "required_facts": [
+        "上升主（Lagn's Lord）的分盘尊贵是否为 Gopurāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升主分盘尊贵事实时停止。",
+        "分盘尊贵的判定口径未按本书 ch06 的 Varg 分类取到时停止。"
+      ]
+    },
+    "ch36-v38-39-lagn-lord-simhasanamsa": {
+      "question_type": "上升主落 Simhasanāńś 的效果",
+      "required_facts": [
+        "上升主（Lagn's Lord）的分盘尊贵是否为 Simhasanāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升主分盘尊贵事实时停止。",
+        "分盘尊贵的判定口径未按本书 ch06 的 Varg 分类取到时停止。"
+      ]
+    },
+    "ch36-v38-39-lagn-lord-paravatamsa": {
+      "question_type": "上升主落 Paravatāńś 的效果",
+      "required_facts": [
+        "上升主（Lagn's Lord）的分盘尊贵是否为 Paravatāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升主分盘尊贵事实时停止。",
+        "分盘尊贵的判定口径未按本书 ch06 的 Varg 分类取到时停止。"
+      ]
+    },
+    "ch36-v38-39-lagn-lord-devalokamsa": {
+      "question_type": "上升主落 Devalokāńś 的效果",
+      "required_facts": [
+        "上升主（Lagn's Lord）的分盘尊贵是否为 Devalokāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升主分盘尊贵事实时停止。",
+        "分盘尊贵的判定口径未按本书 ch06 的 Varg 分类取到时停止。"
+      ]
+    },
+    "ch36-v38-39-lagn-lord-iravatamsa": {
+      "question_type": "上升主落 Iravatāńś 的效果",
+      "required_facts": [
+        "上升主（Lagn's Lord）的分盘尊贵是否为 Iravatāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升主分盘尊贵事实时停止。",
+        "分盘尊贵的判定口径未按本书 ch06 的 Varg 分类取到时停止。"
+      ]
+    },
+    "ch36-v38-39-lagn-lord-vargottama": {
+      "question_type": "上升主为 Vargottama 的效果",
+      "required_facts": [
+        "上升主（Lagn's Lord）是否为 Vargottama"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升主本盘星座或九分盘星座事实时停止。",
+        "九分盘（Navamsa D9）的取值口径未按本书 ch06 取到时停止。"
+      ]
+    }
+  }
+}

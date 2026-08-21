@@ -14,6 +14,10 @@ const BATCHES = args?.batches
 if (!Array.isArray(BATCHES) || !BATCHES.length) {
   throw new Error('必须通过 args.batches 传入：[{label, groups, topic}]')
 }
+// 老板定的规格：一次最多 3 个 agent，模型 opus、推理强度 high。
+if (BATCHES.length > 3) {
+  throw new Error(`一次最多 3 批（老板 2026-08-21 定），传了 ${BATCHES.length} 批`)
+}
 
 const RULES = `
 你是判断方法蒸馏窗口的抽取员。任务：把 BPHS 97 章版（R. Santhanam 英译）的正式原文原子，
@@ -93,7 +97,7 @@ const results = await parallel(BATCHES.map(batch => () =>
   agent(
     RULES.replace(/BATCH_LABEL/g, batch.label).replace(/BATCH_TOPIC/g, batch.topic || '')
       + (batch.note ? `\n## 本批修理说明（先读，带着问题去改）\n${batch.note}\n` : ''),
-    { label: `抽取:${batch.label}`, phase: '抽取', schema: SCHEMA }
+    { label: `抽取:${batch.label}`, phase: '抽取', schema: SCHEMA, model: 'opus', effort: 'high' }
   )
 ))
 

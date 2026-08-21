@@ -1116,6 +1116,11 @@ def check_evidence_ref(
     return valid
 
 
+NEGATION_SCOPE_PATTERN = re.compile(
+    r"\b(devoid\s+of|without|free\s+from|bereft\s+of|not\s+(?:be\s+)?in)\b[^.]*$", re.I
+)
+
+
 def or_outside_results(source_text: str, step: dict) -> bool:
     """原文里的"或"是不是落在条件侧（落在条件侧才必须拆成 selection_group）。
 
@@ -1136,8 +1141,17 @@ def or_outside_results(source_text: str, step: dict) -> bool:
             if isinstance(pair, dict) and isinstance(pair.get("quote"), str)
         ]
     for match in EXPLICIT_OR_PATTERN.finditer(source_text):
-        if not any(match.group(0) in quote for quote in result_quotes):
-            return True
+        if any(match.group(0) in quote for quote in result_quotes):
+            continue
+        # 否定辖域里的"或"是合取，不是任选（德摩根）：
+        # `devoid of Yuti with and/or Drishti from malefics` ＝ 既不同宫也不被照，
+        # 两个排除都要成立，正确写法是 AND 下两个 NOT，不该拆 selection_group。
+        # 真实证据：ch36:v37 的 Lagn Adhi Yog。只认 OR 前同一小句里的显式否定引导词。
+        prefix = source_text[max(0, match.start() - 60):match.start()]
+        prefix = prefix.rsplit(".", 1)[-1].rsplit(",", 1)[-1]
+        if NEGATION_SCOPE_PATTERN.search(prefix):
+            continue
+        return True
     return False
 
 

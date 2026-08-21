@@ -1,0 +1,2243 @@
+{
+  "shard": 1,
+  "step_count": 9,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch36-v1-2-subh-yog.step-001",
+      "method": {
+        "method": "ch36-v1-2-subh-yog",
+        "title": "Subh Yog：上升宫内有吉星，或十二宫与二宫内都有吉星",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这个人口才和品行怎么样",
+          "我命里有没有吉利的组合"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If there be a benefic in Lagna, Subh Yog is produced",
+            "Benefics in both Vyaya and Dhan Bhava cause Subh Yog",
+            "上升宫有吉星 Subh Yog 能言善辩 有德行"
+          ],
+          "counter_queries": [
+            "Malefics in both Vyaya and Dhan Bhava cause Asubh Yog",
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak",
+            "十二宫 二宫 凶星 Asubh Yog"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu",
+            "Guru and Shukra are benefics, while Chandra is mediocre in benefice and Budh is neutral",
+            "Budh, however, is a malefic, if he joins a malefic"
+          ],
+          "method_queries": [
+            "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect",
+            "Thus the auspicious and inauspicious effects, derivable through the Grahas, due to their lordship, according to the rising Rāśi, have to be estimated"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch36-v1-2-subh-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "a benefic in Lagna"
+            },
+            {
+              "step_id": "ch36-v1-2-subh-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Benefics in both Vyaya and Dhan Bhava"
+            },
+            {
+              "step_id": "ch36-v1-2-subh-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Subh Yog is produced"
+            },
+            {
+              "step_id": "ch36-v1-2-subh-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "a benefic in Lagna Subh Yog is produced"
+            },
+            {
+              "step_id": "ch36-v1-2-subh-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Benefics in both Vyaya and Dhan Bhava Subh Yog is produced"
+            },
+            {
+              "step_id": "ch36-v1-2-subh-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "a benefic in 1st house"
+            },
+            {
+              "step_id": "ch36-v1-2-subh-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Benefics in both 12th house and 2nd house"
+            },
+            {
+              "step_id": "ch36-v1-2-subh-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "a benefic in 1st house Subh Yog is produced"
+            },
+            {
+              "step_id": "ch36-v1-2-subh-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Benefics in both 12th house and 2nd house Subh Yog is produced"
+            },
+            {
+              "step_id": "ch36-v1-2-subh-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Subh Yog"
+            },
+            {
+              "step_id": "ch36-v1-2-subh-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be eloquent, charming and virtuous"
+            },
+            {
+              "step_id": "ch36-v1-2-subh-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Subh Yog will be eloquent, charming and virtuous"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘吉星名册事实时停止。",
+          "上升宫、十二宫与二宫三项吉星占据事实全部缺失时停止。",
+          "原文本句未给出吉星判准，吉星名册未取得时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch36-v1-2-subh-yog.step-001",
+        "action": "先取本盘的吉星名册，再核对上升宫（Lagna）内是否有吉星、十二宫（Vyaya）与二宫（Dhan）内是否都有吉星，判定 Subh Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Subh Yog 的成立判定；原文本句未给出吉星的判准，也没有时间限定。",
+        "minimum_supported_claim": "上升宫（Lagna）内有吉星，或十二宫（Vyaya）与二宫（Dhan）内都有吉星，则 Subh Yog 成立。",
+        "produced_fact_keys": [
+          "Subh Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘中哪些行星被判为吉星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "上升宫（Lagna）是否被吉星占据"
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "十二宫（Vyaya）是否被吉星占据"
+                    },
+                    {
+                      "fact_key": "二宫（Dhan）是否被吉星占据"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            "required_fact_keys": [
+              "上升宫（Lagna）是否被吉星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升宫（Lagna）是否被吉星占据"
+            },
+            "selection_group": "ch36-v1-2-subh-yog.step-001:subh-formation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升宫（Lagna）是否被吉星占据。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            "required_fact_keys": [
+              "十二宫（Vyaya）是否被吉星占据",
+              "二宫（Dhan）是否被吉星占据"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "十二宫（Vyaya）是否被吉星占据"
+                },
+                {
+                  "fact_key": "二宫（Dhan）是否被吉星占据"
+                }
+              ]
+            },
+            "selection_group": "ch36-v1-2-subh-yog.step-001:subh-formation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十二宫（Vyaya）是否被吉星占据、二宫（Dhan）是否被吉星占据。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "a benefic in Lagna",
+              "claim": "上升宫（Lagna）内有吉星"
+            },
+            {
+              "quote": "Benefics in both Vyaya and Dhan Bhava",
+              "claim": "十二宫（Vyaya）与二宫（Dhan）内都有吉星"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Subh Yog is produced",
+              "claim": "Subh Yog 成立"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch36:v1-2",
+            "quote": "If there be a benefic in Lagna, Subh Yog is produced",
+            "pdf_pages": [
+              79
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch36:v1-2",
+            "quote": "Benefics in both Vyaya and Dhan Bhava cause Subh Yog.",
+            "pdf_pages": [
+              79
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中哪些行星被判为吉星。",
+        "stop_fact_keys": [
+          "本盘中哪些行星被判为吉星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财富数额、寿命或具体事件。",
+          "原文本句只写上升宫、十二宫与二宫三处，不得把 Subh Yog 的成立条件扩大到别的宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "16694d4fda3f1a06afb3d20176918552bbeea74f7a5020ca79c4bb7e7864d3b1"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch36-v1-2-subh-yog.step-002",
+      "method": {
+        "method": "ch36-v1-2-subh-yog",
+        "title": "Subh Yog：上升宫内有吉星，或十二宫与二宫内都有吉星",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这个人口才和品行怎么样",
+          "我命里有没有吉利的组合"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If there be a benefic in Lagna, Subh Yog is produced",
+            "Benefics in both Vyaya and Dhan Bhava cause Subh Yog",
+            "上升宫有吉星 Subh Yog 能言善辩 有德行"
+          ],
+          "counter_queries": [
+            "Malefics in both Vyaya and Dhan Bhava cause Asubh Yog",
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak",
+            "十二宫 二宫 凶星 Asubh Yog"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu",
+            "Guru and Shukra are benefics, while Chandra is mediocre in benefice and Budh is neutral",
+            "Budh, however, is a malefic, if he joins a malefic"
+          ],
+          "method_queries": [
+            "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect",
+            "Thus the auspicious and inauspicious effects, derivable through the Grahas, due to their lordship, according to the rising Rāśi, have to be estimated"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch36-v1-2-subh-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "a benefic in Lagna"
+            },
+            {
+              "step_id": "ch36-v1-2-subh-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Benefics in both Vyaya and Dhan Bhava"
+            },
+            {
+              "step_id": "ch36-v1-2-subh-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Subh Yog is produced"
+            },
+            {
+              "step_id": "ch36-v1-2-subh-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "a benefic in Lagna Subh Yog is produced"
+            },
+            {
+              "step_id": "ch36-v1-2-subh-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Benefics in both Vyaya and Dhan Bhava Subh Yog is produced"
+            },
+            {
+              "step_id": "ch36-v1-2-subh-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "a benefic in 1st house"
+            },
+            {
+              "step_id": "ch36-v1-2-subh-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Benefics in both 12th house and 2nd house"
+            },
+            {
+              "step_id": "ch36-v1-2-subh-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "a benefic in 1st house Subh Yog is produced"
+            },
+            {
+              "step_id": "ch36-v1-2-subh-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Benefics in both 12th house and 2nd house Subh Yog is produced"
+            },
+            {
+              "step_id": "ch36-v1-2-subh-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Subh Yog"
+            },
+            {
+              "step_id": "ch36-v1-2-subh-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be eloquent, charming and virtuous"
+            },
+            {
+              "step_id": "ch36-v1-2-subh-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Subh Yog will be eloquent, charming and virtuous"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘吉星名册事实时停止。",
+          "上升宫、十二宫与二宫三项吉星占据事实全部缺失时停止。",
+          "原文本句未给出吉星判准，吉星名册未取得时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch36-v1-2-subh-yog.step-002",
+        "action": "在 Subh Yog 成立时读取命主口才与品行的断语。",
+        "applicability_scope": "仅限已判定 Subh Yog 成立的本命盘；原文未给时间限定。",
+        "minimum_supported_claim": "生于 Subh Yog 者能言善辩、有魅力、有德行。",
+        "produced_fact_keys": [
+          "Subh Yog 口才品行断语"
+        ],
+        "required_fact_keys": [
+          "Subh Yog 成立判定"
+        ],
+        "condition_logic": {
+          "fact_key": "Subh Yog 成立判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "One born in Subh Yog",
+              "claim": "生于 Subh Yog 者"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be eloquent, charming and virtuous",
+              "claim": "能言善辩、有魅力、有德行"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch36:v1-2",
+            "quote": "One born in Subh Yog will be eloquent, charming and virtuous",
+            "pdf_pages": [
+              79
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Subh Yog 成立判定。",
+        "stop_fact_keys": [
+          "Subh Yog 成立判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财富、寿命、婚姻或子女。",
+          "原文只写这三项品性，不得据此扩展成其他人生领域的吉断。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "aa2479eb675af8fa0cf3e484e71665d48c68740e2369e3b3095da59f9ecb34a0"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch36-v1-2-asubh-yog.step-001",
+      "method": {
+        "method": "ch36-v1-2-asubh-yog",
+        "title": "Asubh Yog：上升宫内有凶星，或十二宫与二宫内都有凶星",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我命里有没有不吉的组合",
+          "我为什么总被人说品行不好"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "while a malefic in Lagn causes Asubh Yog",
+            "Malefics in both Vyaya and Dhan Bhava cause Asubh Yog",
+            "上升宫有凶星 Asubh Yog 罪恶 吞没他人财富"
+          ],
+          "counter_queries": [
+            "Benefics in both Vyaya and Dhan Bhava cause Subh Yog",
+            "Should Budh give a Drishti to Mangal and Shani in Dhan Bhava, there will be great wealth",
+            "凶星在二宫 木星相照 化解"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu",
+            "Guru and Shukra are benefics, while Chandra is mediocre in benefice and Budh is neutral",
+            "Budh, however, is a malefic, if he joins a malefic"
+          ],
+          "method_queries": [
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones",
+            "Thus the auspicious and inauspicious effects, derivable through the Grahas, due to their lordship, according to the rising Rāśi, have to be estimated"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch36-v1-2-asubh-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "a malefic in Lagn"
+            },
+            {
+              "step_id": "ch36-v1-2-asubh-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Malefics in both Vyaya and Dhan Bhava"
+            },
+            {
+              "step_id": "ch36-v1-2-asubh-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "causes Asubh Yog"
+            },
+            {
+              "step_id": "ch36-v1-2-asubh-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "a malefic in Lagn causes Asubh Yog"
+            },
+            {
+              "step_id": "ch36-v1-2-asubh-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Malefics in both Vyaya and Dhan Bhava causes Asubh Yog"
+            },
+            {
+              "step_id": "ch36-v1-2-asubh-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "a malefic in 1st house"
+            },
+            {
+              "step_id": "ch36-v1-2-asubh-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Malefics in both 12th house and 2nd house"
+            },
+            {
+              "step_id": "ch36-v1-2-asubh-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "a malefic in 1st house causes Asubh Yog"
+            },
+            {
+              "step_id": "ch36-v1-2-asubh-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Malefics in both 12th house and 2nd house causes Asubh Yog"
+            },
+            {
+              "step_id": "ch36-v1-2-asubh-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "his counterpart"
+            },
+            {
+              "step_id": "ch36-v1-2-asubh-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be sensuous, will do sinful acts and will enjoy (swallow) others’ wealth"
+            },
+            {
+              "step_id": "ch36-v1-2-asubh-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "his counterpart will be sensuous, will do sinful acts and will enjoy (swallow) others’ wealth"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘凶星名册事实时停止。",
+          "上升宫、十二宫与二宫三项凶星占据事实全部缺失时停止。",
+          "原文本句未给出凶星判准，凶星名册未取得时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch36-v1-2-asubh-yog.step-001",
+        "action": "先取本盘的凶星名册，再核对上升宫（Lagn）内是否有凶星、十二宫（Vyaya）与二宫（Dhan）内是否都有凶星，判定 Asubh Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Asubh Yog 的成立判定；原文本句未给出凶星的判准，也没有时间限定。",
+        "minimum_supported_claim": "上升宫（Lagn）内有凶星，或十二宫（Vyaya）与二宫（Dhan）内都有凶星，则 Asubh Yog 成立。",
+        "produced_fact_keys": [
+          "Asubh Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘中哪些行星被判为凶星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘中哪些行星被判为凶星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "上升宫（Lagna）是否被凶星占据"
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "十二宫（Vyaya）是否被凶星占据"
+                    },
+                    {
+                      "fact_key": "二宫（Dhan）是否被凶星占据"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘中哪些行星被判为凶星"
+            },
+            "required_fact_keys": [
+              "上升宫（Lagna）是否被凶星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升宫（Lagna）是否被凶星占据"
+            },
+            "selection_group": "ch36-v1-2-asubh-yog.step-001:asubh-formation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升宫（Lagna）是否被凶星占据。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘中哪些行星被判为凶星"
+            },
+            "required_fact_keys": [
+              "十二宫（Vyaya）是否被凶星占据",
+              "二宫（Dhan）是否被凶星占据"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "十二宫（Vyaya）是否被凶星占据"
+                },
+                {
+                  "fact_key": "二宫（Dhan）是否被凶星占据"
+                }
+              ]
+            },
+            "selection_group": "ch36-v1-2-asubh-yog.step-001:asubh-formation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十二宫（Vyaya）是否被凶星占据、二宫（Dhan）是否被凶星占据。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "a malefic in Lagn",
+              "claim": "上升宫（Lagn）内有凶星"
+            },
+            {
+              "quote": "Malefics in both Vyaya and Dhan Bhava",
+              "claim": "十二宫（Vyaya）与二宫（Dhan）内都有凶星"
+            }
+          ],
+          "results": [
+            {
+              "quote": "causes Asubh Yog",
+              "claim": "Asubh Yog 成立"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch36:v1-2",
+            "quote": "while a malefic in Lagn causes Asubh Yog",
+            "pdf_pages": [
+              79
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch36:v1-2",
+            "quote": "Malefics in both Vyaya and Dhan Bhava cause Asubh Yog.",
+            "pdf_pages": [
+              79
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中哪些行星被判为凶星。",
+        "stop_fact_keys": [
+          "本盘中哪些行星被判为凶星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断寿命、疾病或具体灾祸。",
+          "原文本句只写上升宫、十二宫与二宫三处，不得把 Asubh Yog 的成立条件扩大到别的宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "ea040e79940200a2c7f755bd241156e877fa6027cbdb42a7563d61a197a711c3"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch36-v1-2-asubh-yog.step-002",
+      "method": {
+        "method": "ch36-v1-2-asubh-yog",
+        "title": "Asubh Yog：上升宫内有凶星，或十二宫与二宫内都有凶星",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我命里有没有不吉的组合",
+          "我为什么总被人说品行不好"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "while a malefic in Lagn causes Asubh Yog",
+            "Malefics in both Vyaya and Dhan Bhava cause Asubh Yog",
+            "上升宫有凶星 Asubh Yog 罪恶 吞没他人财富"
+          ],
+          "counter_queries": [
+            "Benefics in both Vyaya and Dhan Bhava cause Subh Yog",
+            "Should Budh give a Drishti to Mangal and Shani in Dhan Bhava, there will be great wealth",
+            "凶星在二宫 木星相照 化解"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu",
+            "Guru and Shukra are benefics, while Chandra is mediocre in benefice and Budh is neutral",
+            "Budh, however, is a malefic, if he joins a malefic"
+          ],
+          "method_queries": [
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones",
+            "Thus the auspicious and inauspicious effects, derivable through the Grahas, due to their lordship, according to the rising Rāśi, have to be estimated"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch36-v1-2-asubh-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "a malefic in Lagn"
+            },
+            {
+              "step_id": "ch36-v1-2-asubh-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Malefics in both Vyaya and Dhan Bhava"
+            },
+            {
+              "step_id": "ch36-v1-2-asubh-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "causes Asubh Yog"
+            },
+            {
+              "step_id": "ch36-v1-2-asubh-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "a malefic in Lagn causes Asubh Yog"
+            },
+            {
+              "step_id": "ch36-v1-2-asubh-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Malefics in both Vyaya and Dhan Bhava causes Asubh Yog"
+            },
+            {
+              "step_id": "ch36-v1-2-asubh-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "a malefic in 1st house"
+            },
+            {
+              "step_id": "ch36-v1-2-asubh-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Malefics in both 12th house and 2nd house"
+            },
+            {
+              "step_id": "ch36-v1-2-asubh-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "a malefic in 1st house causes Asubh Yog"
+            },
+            {
+              "step_id": "ch36-v1-2-asubh-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Malefics in both 12th house and 2nd house causes Asubh Yog"
+            },
+            {
+              "step_id": "ch36-v1-2-asubh-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "his counterpart"
+            },
+            {
+              "step_id": "ch36-v1-2-asubh-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be sensuous, will do sinful acts and will enjoy (swallow) others’ wealth"
+            },
+            {
+              "step_id": "ch36-v1-2-asubh-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "his counterpart will be sensuous, will do sinful acts and will enjoy (swallow) others’ wealth"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘凶星名册事实时停止。",
+          "上升宫、十二宫与二宫三项凶星占据事实全部缺失时停止。",
+          "原文本句未给出凶星判准，凶星名册未取得时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch36-v1-2-asubh-yog.step-002",
+        "action": "在 Asubh Yog 成立时读取与 Subh Yog 者相对的那一侧断语。",
+        "applicability_scope": "仅限已判定 Asubh Yog 成立的本命盘；原文此处只写 his counterpart（与生于 Subh Yog 者相对的那一位），并未重复写出 Asubh Yog 之名，本步按同一偈内 Subh／Asubh 的对照关系挂在 Asubh Yog 下；原文未给时间限定。",
+        "minimum_supported_claim": "与生于 Subh Yog 者相对，其对立者耽于感官享乐、会做罪恶之事、并享用（吞没）他人的财富。",
+        "produced_fact_keys": [
+          "Asubh Yog 品行断语"
+        ],
+        "required_fact_keys": [
+          "Asubh Yog 成立判定"
+        ],
+        "condition_logic": {
+          "fact_key": "Asubh Yog 成立判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "his counterpart",
+              "claim": "其对立者"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be sensuous, will do sinful acts and will enjoy (swallow) others’ wealth",
+              "claim": "耽于感官享乐、会做罪恶之事、并享用（吞没）他人的财富"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch36:v1-2",
+            "quote": "One born in Subh Yog will be eloquent, charming and virtuous, while his counterpart will be sensuous, will do sinful acts and will enjoy (swallow) others’ wealth.",
+            "pdf_pages": [
+              79
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Asubh Yog 成立判定。",
+        "stop_fact_keys": [
+          "Asubh Yog 成立判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体罪名、财物数额或事发时间。",
+          "原文只写这三项，不得据此扩展成寿命、疾病或婚姻的断语。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "ecab99b1202922afacdd10a1699395dafd482e7130cdc24067e7308a705f8c1b"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+      "method": {
+        "method": "ch36-v3-4-gaj-kesari-yog",
+        "title": "Gaj Kesari Yog：木星落上升或月亮起的角宫，与吉星同宫或受吉星相照，且不落陷、不燃烧、不在敌方星座",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子有没有名望和财富",
+          "我命里木星的组合好不好"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Guru be in a Kendr from Lagna, or from Chandra and be yuti with, or receiving a Drishti from benefic",
+            "One born in Gaj Kesari Yog will be splendourous, wealthy, intelligent, endowed with many laudable virtues and will please the king",
+            "木星落角宫 与吉星同宫 Gaj Kesari Yog"
+          ],
+          "counter_queries": [
+            "Excluding Surya, should there be no Grah with Chandra, or in the 2nd and/or 12th from Chandra, or in a Kendr from Lagna, Kema Drum Yog is formed",
+            "If Guru is in his debilitation Rāśi, combust, associated with malefics, or in Ari, or Randhr",
+            "木星落陷 燃烧 恶果"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu",
+            "Kendras, Konas etc. defined. The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "Exaltation and Debilitation. For the seven Grahas, from Surya on, the exaltation Rāśis are, respectively, Mesh, Vrishabh, Makar, Kanya, Kark, Meen and Tula"
+          ],
+          "method_queries": [
+            "Evaluation of the Drishtis of the Grahas. Deduct the longitude of the Grah (or Bhava), that receives a Drishti, from that of the Grah, which gives the Drishti",
+            "Thus the auspicious and inauspicious effects, derivable through the Grahas, due to their lordship, according to the rising Rāśi, have to be estimated"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Guru be in a Kendr from Lagna"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or from Chandra"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "be yuti with, or receiving a Drishti from benefic"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "avoiding at the same time debilitation, combustion and inimical Rāśi"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Gaj Kesari Yog is caused"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Guru be in a Kendr from Lagna Gaj Kesari Yog is caused"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or from Chandra Gaj Kesari Yog is caused"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "be yuti with, or receiving a Drishti from benefic Gaj Kesari Yog is caused"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "avoiding at the same time debilitation, combustion and inimical Rāśi Gaj Kesari Yog is caused"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "jupiter be in a Kendr from 1st house"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "or from moon"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "jupiter be in a Kendr from 1st house Gaj Kesari Yog is caused"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "or from moon Gaj Kesari Yog is caused"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Gaj Kesari Yog"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be splendourous, wealthy, intelligent, endowed with many laudable virtues and will please the king"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Gaj Kesari Yog will be splendourous, wealthy, intelligent, endowed with many laudable virtues and will please the king"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少木星落陷、燃烧或敌方星座任一项事实时停止。",
+          "木星在上升宫起与月亮起两种角宫的落宫事实都缺失时停止。",
+          "木星与吉星同宫、被吉星相照两项事实都缺失时停止。",
+          "原文本句未给出吉星判准，吉星名册未取得时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+        "action": "先核对木星（Guru）是否避开了落陷、燃烧与敌方星座，再核对它是否落上升宫（Lagna）起或月亮（Chandra）起的角宫，并与吉星同宫或受吉星相照，判定 Gaj Kesari Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Gaj Kesari Yog 的成立判定；原文本句未给出吉星的判准，也没有时间限定。",
+        "minimum_supported_claim": "木星（Guru）落上升宫（Lagna）起的角宫，或落月亮（Chandra）起的角宫，并与吉星同宫或受吉星相照，同时避开落陷、燃烧与敌方星座（inimical Rāśi），则 Gaj Kesari Yog 成立。",
+        "produced_fact_keys": [
+          "Gaj Kesari Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "木星（Guru）是否落陷",
+          "木星（Guru）是否燃烧",
+          "木星（Guru）是否落敌方行星主管的星座"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "木星（Guru）是否落陷"
+                    }
+                  ]
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "木星（Guru）是否燃烧"
+                    }
+                  ]
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "木星（Guru）是否落敌方行星主管的星座"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "木星（Guru）是否落从上升宫（Lagna）起算的角宫"
+                },
+                {
+                  "fact_key": "木星（Guru）是否落从月亮（Chandra）起算的角宫"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "木星（Guru）是否与吉星同宫"
+                },
+                {
+                  "fact_key": "木星（Guru）是否被吉星相照"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "木星（Guru）是否落陷"
+                    }
+                  ]
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "木星（Guru）是否燃烧"
+                    }
+                  ]
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "木星（Guru）是否落敌方行星主管的星座"
+                    }
+                  ]
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "木星（Guru）是否落从上升宫（Lagna）起算的角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "木星（Guru）是否落从上升宫（Lagna）起算的角宫"
+            },
+            "selection_group": "ch36-v3-4-gaj-kesari-yog.step-001:kendra-reference",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：木星（Guru）是否落从上升宫（Lagna）起算的角宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "木星（Guru）是否落陷"
+                    }
+                  ]
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "木星（Guru）是否燃烧"
+                    }
+                  ]
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "木星（Guru）是否落敌方行星主管的星座"
+                    }
+                  ]
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "木星（Guru）是否落从月亮（Chandra）起算的角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "木星（Guru）是否落从月亮（Chandra）起算的角宫"
+            },
+            "selection_group": "ch36-v3-4-gaj-kesari-yog.step-001:kendra-reference",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：木星（Guru）是否落从月亮（Chandra）起算的角宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "木星（Guru）是否落陷"
+                    }
+                  ]
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "木星（Guru）是否燃烧"
+                    }
+                  ]
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "木星（Guru）是否落敌方行星主管的星座"
+                    }
+                  ]
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "木星（Guru）是否与吉星同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "木星（Guru）是否与吉星同宫"
+            },
+            "selection_group": "ch36-v3-4-gaj-kesari-yog.step-001:benefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：木星（Guru）是否与吉星同宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "木星（Guru）是否落陷"
+                    }
+                  ]
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "木星（Guru）是否燃烧"
+                    }
+                  ]
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "木星（Guru）是否落敌方行星主管的星座"
+                    }
+                  ]
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "木星（Guru）是否被吉星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "木星（Guru）是否被吉星相照"
+            },
+            "selection_group": "ch36-v3-4-gaj-kesari-yog.step-001:benefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：木星（Guru）是否被吉星相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Guru be in a Kendr from Lagna",
+              "claim": "木星（Guru）落上升宫（Lagna）起的角宫"
+            },
+            {
+              "quote": "or from Chandra",
+              "claim": "落月亮（Chandra）起的角宫"
+            },
+            {
+              "quote": "be yuti with, or receiving a Drishti from benefic",
+              "claim": "与吉星同宫或受吉星相照"
+            },
+            {
+              "quote": "avoiding at the same time debilitation, combustion and inimical Rāśi",
+              "claim": "避开落陷、燃烧与敌方星座（inimical Rāśi）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Gaj Kesari Yog is caused",
+              "claim": "Gaj Kesari Yog 成立"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch36:v3-4",
+            "quote": "Should Guru be in a Kendr from Lagna, or from Chandra and be yuti with, or receiving a Drishti from benefic, avoiding at the same time debilitation, combustion and inimical Rāśi, Gaj Kesari Yog is caused.",
+            "pdf_pages": [
+              79
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：木星（Guru）是否落陷、木星（Guru）是否燃烧、木星（Guru）是否落敌方行星主管的星座。",
+        "stop_fact_keys": [
+          "木星（Guru）是否落陷",
+          "木星（Guru）是否燃烧",
+          "木星（Guru）是否落敌方行星主管的星座"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体官职、财富数额或应期。",
+          "原文本句把角宫的起算点限定为上升宫（Lagna）与月亮（Chandra）两处，不得改从别的行星或宫位起算。",
+          "原文本句未给出吉星判准，不得自行指定哪几颗行星算吉星。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "8e02c83336c797efca2331ad83dbf52ad43ca5b635c8439e20200af5a18d1925"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch36-v3-4-gaj-kesari-yog.step-002",
+      "method": {
+        "method": "ch36-v3-4-gaj-kesari-yog",
+        "title": "Gaj Kesari Yog：木星落上升或月亮起的角宫，与吉星同宫或受吉星相照，且不落陷、不燃烧、不在敌方星座",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子有没有名望和财富",
+          "我命里木星的组合好不好"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Guru be in a Kendr from Lagna, or from Chandra and be yuti with, or receiving a Drishti from benefic",
+            "One born in Gaj Kesari Yog will be splendourous, wealthy, intelligent, endowed with many laudable virtues and will please the king",
+            "木星落角宫 与吉星同宫 Gaj Kesari Yog"
+          ],
+          "counter_queries": [
+            "Excluding Surya, should there be no Grah with Chandra, or in the 2nd and/or 12th from Chandra, or in a Kendr from Lagna, Kema Drum Yog is formed",
+            "If Guru is in his debilitation Rāśi, combust, associated with malefics, or in Ari, or Randhr",
+            "木星落陷 燃烧 恶果"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu",
+            "Kendras, Konas etc. defined. The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "Exaltation and Debilitation. For the seven Grahas, from Surya on, the exaltation Rāśis are, respectively, Mesh, Vrishabh, Makar, Kanya, Kark, Meen and Tula"
+          ],
+          "method_queries": [
+            "Evaluation of the Drishtis of the Grahas. Deduct the longitude of the Grah (or Bhava), that receives a Drishti, from that of the Grah, which gives the Drishti",
+            "Thus the auspicious and inauspicious effects, derivable through the Grahas, due to their lordship, according to the rising Rāśi, have to be estimated"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Guru be in a Kendr from Lagna"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or from Chandra"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "be yuti with, or receiving a Drishti from benefic"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "avoiding at the same time debilitation, combustion and inimical Rāśi"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Gaj Kesari Yog is caused"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Guru be in a Kendr from Lagna Gaj Kesari Yog is caused"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or from Chandra Gaj Kesari Yog is caused"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "be yuti with, or receiving a Drishti from benefic Gaj Kesari Yog is caused"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "avoiding at the same time debilitation, combustion and inimical Rāśi Gaj Kesari Yog is caused"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "jupiter be in a Kendr from 1st house"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "or from moon"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "jupiter be in a Kendr from 1st house Gaj Kesari Yog is caused"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "or from moon Gaj Kesari Yog is caused"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Gaj Kesari Yog"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be splendourous, wealthy, intelligent, endowed with many laudable virtues and will please the king"
+            },
+            {
+              "step_id": "ch36-v3-4-gaj-kesari-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Gaj Kesari Yog will be splendourous, wealthy, intelligent, endowed with many laudable virtues and will please the king"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少木星落陷、燃烧或敌方星座任一项事实时停止。",
+          "木星在上升宫起与月亮起两种角宫的落宫事实都缺失时停止。",
+          "木星与吉星同宫、被吉星相照两项事实都缺失时停止。",
+          "原文本句未给出吉星判准，吉星名册未取得时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch36-v3-4-gaj-kesari-yog.step-002",
+        "action": "在 Gaj Kesari Yog 成立时读取命主的光彩、财富与才智断语。",
+        "applicability_scope": "仅限已判定 Gaj Kesari Yog 成立的本命盘；原文未给时间限定。",
+        "minimum_supported_claim": "生于 Gaj Kesari Yog 者光彩照人、富有、聪慧、具备许多值得称道的德行，并会取悦国王。",
+        "produced_fact_keys": [
+          "Gaj Kesari Yog 效果断语"
+        ],
+        "required_fact_keys": [
+          "Gaj Kesari Yog 成立判定"
+        ],
+        "condition_logic": {
+          "fact_key": "Gaj Kesari Yog 成立判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "One born in Gaj Kesari Yog",
+              "claim": "生于 Gaj Kesari Yog 者"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be splendourous, wealthy, intelligent, endowed with many laudable virtues and will please the king",
+              "claim": "光彩照人、富有、聪慧、具备许多值得称道的德行，并会取悦国王"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch36:v3-4",
+            "quote": "One born in Gaj Kesari Yog will be splendourous, wealthy, intelligent, endowed with many laudable virtues and will please the king.",
+            "pdf_pages": [
+              79
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Gaj Kesari Yog 成立判定。",
+        "stop_fact_keys": [
+          "Gaj Kesari Yog 成立判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「取悦国王」推广成一定得到官职、封赏或某个具体职位。",
+          "不得据此推断寿命、婚姻或子女。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "19e43b3780cc34fc4714440cfa9e57fcf013daddbb51abf7065ec75bd26c90de"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch36-v5-6-amal-yog.step-001",
+      "method": {
+        "method": "ch36-v5-6-amal-yog",
+        "title": "Amal Yog：从上升或月亮起算的第十宫内只有吉星",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子名声怎么样",
+          "我在外面能不能受人尊敬"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If there be exclusively a benefic in the 10<sup>th</sup> from Lagna, or Chandra, Amal Yog exists",
+            "Amal Yog will confer fame, lasting till Chandra and stars exist",
+            "第十宫只有吉星 Amal Yog 名声"
+          ],
+          "counter_queries": [
+            "If inauspicious Bhavas are occupied by benefics, while auspicious Bhavas are occupied by malefics, the native will be indigent",
+            "If malefics, excepting the Lords of Karm and Dharm Bhava, happen to be in Lagna, associated with, or receiving a Drishti from Marak Grahas, one will become penniless",
+            "十宫有凶星 名声受损"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu",
+            "Guru and Shukra are benefics, while Chandra is mediocre in benefice and Budh is neutral",
+            "Benefics, owning Kendras, will not give benefic effects, while malefics, owning Kendras, will not remain inauspicious"
+          ],
+          "method_queries": [
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava",
+            "Thus the auspicious and inauspicious effects, derivable through the Grahas, due to their lordship, according to the rising Rāśi, have to be estimated"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "exclusively a benefic in the 10th from Lagna"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or Chandra"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Amal Yog exists"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "exclusively a benefic in the 10th from Lagna Amal Yog exists"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or Chandra Amal Yog exists"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "exclusively a benefic in the 10th from 1st house"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "or moon"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "exclusively a benefic in the 10th from 1st house Amal Yog exists"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "or moon Amal Yog exists"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Amal Yog exists"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "fame, lasting till Chandra and stars exist"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will make the native honoured by the king, enjoy abundant pleasures, charitable, fond of relatives, helpful to others, pious and virtuous"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Amal Yog exists fame, lasting till Chandra and stars exist"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "fame, lasting till moon and stars exist"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Amal Yog exists fame, lasting till moon and stars exist"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘吉星名册事实时停止。",
+          "从上升起与从月亮起两种第十宫的占据事实都缺失时停止。",
+          "原文本句未给出吉星判准，吉星名册未取得时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch36-v5-6-amal-yog.step-001",
+        "action": "先取本盘的吉星名册，再核对从上升宫（Lagna）起算的第十宫、从月亮（Chandra）起算的第十宫内是否只有吉星，判定 Amal Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Amal Yog 的成立判定；原文写 exclusively a benefic（只有吉星），未给出吉星的判准，也没有时间限定。",
+        "minimum_supported_claim": "从上升宫（Lagna）起算的第十宫内只有吉星，或从月亮（Chandra）起算的第十宫内只有吉星，则 Amal Yog 成立。",
+        "produced_fact_keys": [
+          "Amal Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘中哪些行星被判为吉星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "从上升宫（Lagna）起算的第十宫是否只被吉星占据"
+                },
+                {
+                  "fact_key": "从月亮（Chandra）起算的第十宫是否只被吉星占据"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            "required_fact_keys": [
+              "从上升宫（Lagna）起算的第十宫是否只被吉星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "从上升宫（Lagna）起算的第十宫是否只被吉星占据"
+            },
+            "selection_group": "ch36-v5-6-amal-yog.step-001:tenth-reference",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：从上升宫（Lagna）起算的第十宫是否只被吉星占据。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            "required_fact_keys": [
+              "从月亮（Chandra）起算的第十宫是否只被吉星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "从月亮（Chandra）起算的第十宫是否只被吉星占据"
+            },
+            "selection_group": "ch36-v5-6-amal-yog.step-001:tenth-reference",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：从月亮（Chandra）起算的第十宫是否只被吉星占据。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "exclusively a benefic in the 10<sup>th</sup> from Lagna",
+              "claim": "从上升宫（Lagna）起算的第十宫内只有吉星"
+            },
+            {
+              "quote": "or Chandra",
+              "claim": "从月亮（Chandra）起算的第十宫内只有吉星"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Amal Yog exists",
+              "claim": "Amal Yog 成立"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch36:v5-6",
+            "quote": "If there be exclusively a benefic in the 10<sup>th</sup> from Lagna, or Chandra, Amal Yog exists.",
+            "pdf_pages": [
+              79
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中哪些行星被判为吉星。",
+        "stop_fact_keys": [
+          "本盘中哪些行星被判为吉星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 exclusively（只有吉星）放宽成「有吉星即可」。",
+          "原文只写第十宫这一处，不得改到别的宫位起算。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "0b04cf8c2bd0f53f9c70e633b27675efdf61df0edc804765410bd5082354ea42"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch36-v5-6-amal-yog.step-002",
+      "method": {
+        "method": "ch36-v5-6-amal-yog",
+        "title": "Amal Yog：从上升或月亮起算的第十宫内只有吉星",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子名声怎么样",
+          "我在外面能不能受人尊敬"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If there be exclusively a benefic in the 10<sup>th</sup> from Lagna, or Chandra, Amal Yog exists",
+            "Amal Yog will confer fame, lasting till Chandra and stars exist",
+            "第十宫只有吉星 Amal Yog 名声"
+          ],
+          "counter_queries": [
+            "If inauspicious Bhavas are occupied by benefics, while auspicious Bhavas are occupied by malefics, the native will be indigent",
+            "If malefics, excepting the Lords of Karm and Dharm Bhava, happen to be in Lagna, associated with, or receiving a Drishti from Marak Grahas, one will become penniless",
+            "十宫有凶星 名声受损"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu",
+            "Guru and Shukra are benefics, while Chandra is mediocre in benefice and Budh is neutral",
+            "Benefics, owning Kendras, will not give benefic effects, while malefics, owning Kendras, will not remain inauspicious"
+          ],
+          "method_queries": [
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava",
+            "Thus the auspicious and inauspicious effects, derivable through the Grahas, due to their lordship, according to the rising Rāśi, have to be estimated"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "exclusively a benefic in the 10th from Lagna"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or Chandra"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Amal Yog exists"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "exclusively a benefic in the 10th from Lagna Amal Yog exists"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or Chandra Amal Yog exists"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "exclusively a benefic in the 10th from 1st house"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "or moon"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "exclusively a benefic in the 10th from 1st house Amal Yog exists"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "or moon Amal Yog exists"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Amal Yog exists"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "fame, lasting till Chandra and stars exist"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will make the native honoured by the king, enjoy abundant pleasures, charitable, fond of relatives, helpful to others, pious and virtuous"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Amal Yog exists fame, lasting till Chandra and stars exist"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "fame, lasting till moon and stars exist"
+            },
+            {
+              "step_id": "ch36-v5-6-amal-yog.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Amal Yog exists fame, lasting till moon and stars exist"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘吉星名册事实时停止。",
+          "从上升起与从月亮起两种第十宫的占据事实都缺失时停止。",
+          "原文本句未给出吉星判准，吉星名册未取得时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch36-v5-6-amal-yog.step-002",
+        "action": "在 Amal Yog 成立时读取名声与相关效果的断语。",
+        "applicability_scope": "仅限已判定 Amal Yog 成立的本命盘；原文以「持续到月亮与群星存在为止」形容名声的久远，未给具体年数。",
+        "minimum_supported_claim": "Amal Yog 成立时，给予名声，持续到月亮（Chandra）与群星存在为止，并使命主受国王尊敬、享有丰盛的享乐、乐善好施、亲近亲属、乐于助人、虔诚而有德行。",
+        "produced_fact_keys": [
+          "Amal Yog 名声效果断语"
+        ],
+        "required_fact_keys": [
+          "Amal Yog 成立判定"
+        ],
+        "condition_logic": {
+          "fact_key": "Amal Yog 成立判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Amal Yog exists",
+              "claim": "Amal Yog 成立"
+            }
+          ],
+          "results": [
+            {
+              "quote": "fame, lasting till Chandra and stars exist",
+              "claim": "名声，持续到月亮（Chandra）与群星存在为止"
+            },
+            {
+              "quote": "will make the native honoured by the king, enjoy abundant pleasures, charitable, fond of relatives, helpful to others, pious and virtuous",
+              "claim": "使命主受国王尊敬、享有丰盛的享乐、乐善好施、亲近亲属、乐于助人、虔诚而有德行"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch36:v5-6",
+            "quote": "Amal Yog exists",
+            "pdf_pages": [
+              79
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch36:v5-6",
+            "quote": "Amal Yog will confer fame, lasting till Chandra and stars exist and will make the native honoured by the king, enjoy abundant pleasures, charitable, fond of relatives, helpful to others, pious and virtuous.",
+            "pdf_pages": [
+              79
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Amal Yog 成立判定。",
+        "stop_fact_keys": [
+          "Amal Yog 成立判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「持续到月亮与群星存在为止」换算成具体年数或某段大运。",
+          "不得据此推断财富数额、官职或寿命。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b7e3d53b3433890efe287613ebb735ca57ec247c417332466836fcee9079dc52"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch36-v7-8-parvat-yog.step-001",
+      "method": {
+        "method": "ch36-v7-8-parvat-yog",
+        "title": "Parvat Yog：角宫内有吉星，且七宫与八宫空无行星或只被吉星占据",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子财富和名声怎么样",
+          "我有没有当一方领袖的组合"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Benefics in Kendras will produce Parvat Yog, as Yuvati and Randhr Bhava are vacant",
+            "One born in Parvat Yog will be wealthy, eloquent, charitable, learned in Shastras",
+            "角宫吉星 七宫八宫空 Parvat Yog"
+          ],
+          "counter_queries": [
+            "If inauspicious Bhavas are occupied by benefics, while auspicious Bhavas are occupied by malefics, the native will be indigent",
+            "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless",
+            "七宫八宫有凶星 破格"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu",
+            "Kendras, Konas etc. defined. The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "Benefics, owning Kendras, will not give benefic effects, while malefics, owning Kendras, will not remain inauspicious"
+          ],
+          "method_queries": [
+            "Indications of Randhr Bhava",
+            "Thus the auspicious and inauspicious effects, derivable through the Grahas, due to their lordship, according to the rising Rāśi, have to be estimated"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch36-v7-8-parvat-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Benefics in Kendras"
+            },
+            {
+              "step_id": "ch36-v7-8-parvat-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Yuvati and Randhr Bhava are vacant"
+            },
+            {
+              "step_id": "ch36-v7-8-parvat-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "occupied by only benefics"
+            },
+            {
+              "step_id": "ch36-v7-8-parvat-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will produce Parvat Yog"
+            },
+            {
+              "step_id": "ch36-v7-8-parvat-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Benefics in Kendras will produce Parvat Yog"
+            },
+            {
+              "step_id": "ch36-v7-8-parvat-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Yuvati and Randhr Bhava are vacant will produce Parvat Yog"
+            },
+            {
+              "step_id": "ch36-v7-8-parvat-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "occupied by only benefics will produce Parvat Yog"
+            },
+            {
+              "step_id": "ch36-v7-8-parvat-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "7th house and 8th house are vacant"
+            },
+            {
+              "step_id": "ch36-v7-8-parvat-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "7th house and 8th house are vacant will produce Parvat Yog"
+            },
+            {
+              "step_id": "ch36-v7-8-parvat-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Parvat Yog"
+            },
+            {
+              "step_id": "ch36-v7-8-parvat-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be wealthy, eloquent, charitable, learned in Shastras, fond of mirth, famous, splendourous and be the leader of a city"
+            },
+            {
+              "step_id": "ch36-v7-8-parvat-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Parvat Yog will be wealthy, eloquent, charitable, learned in Shastras, fond of mirth, famous, splendourous and be the leader of a city"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少角宫吉星占据事实时停止。",
+          "七宫与八宫的空宫事实与只被吉星占据事实都缺失时停止。",
+          "原文本句未给出吉星判准，吉星名册未取得时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch36-v7-8-parvat-yog.step-001",
+        "action": "先核对角宫（Kendras）内是否有吉星，再核对七宫（Yuvati）与八宫（Randhr）是空无行星还是只被吉星占据，判定 Parvat Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Parvat Yog 的成立判定；原文本句未给出吉星的判准，也没有时间限定。",
+        "minimum_supported_claim": "角宫（Kendras）内有吉星，且七宫（Yuvati）与八宫（Randhr）空无行星，或只被吉星占据，则 Parvat Yog 成立。",
+        "produced_fact_keys": [
+          "Parvat Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘角宫（Kendra）是否被吉星占据"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘角宫（Kendra）是否被吉星占据"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "七宫（Yuvati）是否空无行星"
+                    },
+                    {
+                      "fact_key": "八宫（Randhr）是否空无行星"
+                    }
+                  ]
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "七宫（Yuvati）是否只被吉星占据"
+                    },
+                    {
+                      "fact_key": "八宫（Randhr）是否只被吉星占据"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘角宫（Kendra）是否被吉星占据"
+            },
+            "required_fact_keys": [
+              "七宫（Yuvati）是否空无行星",
+              "八宫（Randhr）是否空无行星"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "七宫（Yuvati）是否空无行星"
+                },
+                {
+                  "fact_key": "八宫（Randhr）是否空无行星"
+                }
+              ]
+            },
+            "selection_group": "ch36-v7-8-parvat-yog.step-001:yuvati-randhr-state",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：七宫（Yuvati）是否空无行星、八宫（Randhr）是否空无行星。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘角宫（Kendra）是否被吉星占据"
+            },
+            "required_fact_keys": [
+              "七宫（Yuvati）是否只被吉星占据",
+              "八宫（Randhr）是否只被吉星占据"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "七宫（Yuvati）是否只被吉星占据"
+                },
+                {
+                  "fact_key": "八宫（Randhr）是否只被吉星占据"
+                }
+              ]
+            },
+            "selection_group": "ch36-v7-8-parvat-yog.step-001:yuvati-randhr-state",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：七宫（Yuvati）是否只被吉星占据、八宫（Randhr）是否只被吉星占据。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Benefics in Kendras",
+              "claim": "角宫（Kendras）内有吉星"
+            },
+            {
+              "quote": "Yuvati and Randhr Bhava are vacant",
+              "claim": "七宫（Yuvati）与八宫（Randhr）空无行星"
+            },
+            {
+              "quote": "occupied by only benefics",
+              "claim": "只被吉星占据"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will produce Parvat Yog",
+              "claim": "Parvat Yog 成立"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch36:v7-8",
+            "quote": "Benefics in Kendras will produce Parvat Yog, as Yuvati and Randhr Bhava are vacant, or are occupied by only benefics.",
+            "pdf_pages": [
+              79
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘角宫（Kendra）是否被吉星占据。",
+        "stop_fact_keys": [
+          "本盘角宫（Kendra）是否被吉星占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把七宫与八宫的条件放宽成只核对其中一宫。",
+          "原文未说明角宫内需要几颗吉星，不得自行加上数量要求。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "cf06016f8045324ac9384a4cac6688544018c41b40e31d4b3b335560103770a1"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch36:v1-2": {
+      "evidence_atom_id": "bphs-97:santhanam:ch36:v1-2",
+      "chapter_number": 36,
+      "chapter_title": "Many Other Yogas",
+      "verse_label": "1-2.",
+      "content_role": "verse",
+      "exact_text": "1-2. Benefic and Malefic Yogas. If there be a benefic in Lagna, Subh Yog is produced, while a malefic in Lagn causes Asubh Yog. Benefics in both Vyaya and Dhan Bhava cause Subh Yog. Malefics in both Vyaya and Dhan Bhava cause Asubh Yog. One born in Subh Yog will be eloquent, charming and virtuous, while his counterpart will be sensuous, will do sinful acts and will enjoy (swallow) others’ wealth.",
+      "pdf_pages": [
+        79
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 36 · Sloka 1-2 · PDF page 79 · bphs-97:santhanam:ch36:v1-2",
+      "previous_atom_id": null,
+      "next_atom_id": "bphs-97:santhanam:ch36:v3-4",
+      "context_before": "",
+      "context_after": "3-4. Gaj Kesari Yog. Should Guru be in a Kendr from Lagna, or from Chandra and be yuti with, or receiving a Drishti from benefic",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch36:v3-4": {
+      "evidence_atom_id": "bphs-97:santhanam:ch36:v3-4",
+      "chapter_number": 36,
+      "chapter_title": "Many Other Yogas",
+      "verse_label": "3-4.",
+      "content_role": "verse",
+      "exact_text": "3-4. Gaj Kesari Yog. Should Guru be in a Kendr from Lagna, or from Chandra and be yuti with, or receiving a Drishti from benefic, avoiding at the same time debilitation, combustion and inimical Rāśi, Gaj Kesari Yog is caused. One born in Gaj Kesari Yog will be splendourous, wealthy, intelligent, endowed with many laudable virtues and will please the king.",
+      "pdf_pages": [
+        79
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 36 · Sloka 3-4 · PDF page 79 · bphs-97:santhanam:ch36:v3-4",
+      "previous_atom_id": "bphs-97:santhanam:ch36:v1-2",
+      "next_atom_id": "bphs-97:santhanam:ch36:v5-6",
+      "context_before": " One born in Subh Yog will be eloquent, charming and virtuous, while his counterpart will be sensuous, will do sinful acts and will enjoy (swallow) others’ wealth.\n\n",
+      "context_after": "5-6. Amal Yog. If there be exclusively a benefic in the 10<sup>th</sup> from Lagna, or Chandra, Amal Yog exists. Amal Yog will c",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch36:v5-6": {
+      "evidence_atom_id": "bphs-97:santhanam:ch36:v5-6",
+      "chapter_number": 36,
+      "chapter_title": "Many Other Yogas",
+      "verse_label": "5-6.",
+      "content_role": "verse",
+      "exact_text": "5-6. Amal Yog. If there be exclusively a benefic in the 10<sup>th</sup> from Lagna, or Chandra, Amal Yog exists. Amal Yog will confer fame, lasting till Chandra and stars exist and will make the native honoured by the king, enjoy abundant pleasures, charitable, fond of relatives, helpful to others, pious and virtuous.",
+      "pdf_pages": [
+        79
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 36 · Sloka 5-6 · PDF page 79 · bphs-97:santhanam:ch36:v5-6",
+      "previous_atom_id": "bphs-97:santhanam:ch36:v3-4",
+      "next_atom_id": "bphs-97:santhanam:ch36:v7-8",
+      "context_before": " One born in Gaj Kesari Yog will be splendourous, wealthy, intelligent, endowed with many laudable virtues and will please the king.\n\n",
+      "context_after": "7-8. Parvat Yog. Benefics in Kendras will produce Parvat Yog, as Yuvati and Randhr Bhava are vacant, or are occupied by only ben",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch36:v7-8": {
+      "evidence_atom_id": "bphs-97:santhanam:ch36:v7-8",
+      "chapter_number": 36,
+      "chapter_title": "Many Other Yogas",
+      "verse_label": "7-8.",
+      "content_role": "verse",
+      "exact_text": "7-8. Parvat Yog. Benefics in Kendras will produce Parvat Yog, as Yuvati and Randhr Bhava are vacant, or are occupied by only benefics. One born in Parvat Yog will be wealthy, eloquent, charitable, learned in Shastras, fond of mirth, famous, splendourous and be the leader of a city.",
+      "pdf_pages": [
+        79
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 36 · Sloka 7-8 · PDF page 79 · bphs-97:santhanam:ch36:v7-8",
+      "previous_atom_id": "bphs-97:santhanam:ch36:v5-6",
+      "next_atom_id": "bphs-97:santhanam:ch36:v9-10",
+      "context_before": " Amal Yog will confer fame, lasting till Chandra and stars exist and will make the native honoured by the king, enjoy abundant pleasures, charitable, fond of relatives, helpful to others, pious and virtuous.\n\n",
+      "context_after": "9-10. Kahal Yog. Should Bandhu’s Lord and Guru be in mutual Kendras, while Lagn’s Lord is strong, Kahal Yog occurs. Alternativel",
+      "content_missing": false
+    }
+  }
+}

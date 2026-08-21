@@ -1,0 +1,3627 @@
+{
+  "schema_version": "judgment-query-recipes/v2",
+  "pilot_only": false,
+  "publishable": false,
+  "topics": {
+    "ch36-v1-2-subh-yog": {
+      "title": "Subh Yog：上升宫内有吉星，或十二宫与二宫内都有吉星",
+      "user_intents": [
+        "我这个人口才和品行怎么样",
+        "我命里有没有吉利的组合"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v1-2-subh-yog"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘中哪些行星被判为吉星"
+      ],
+      "conditional_facts": [
+        "上升宫（Lagna）是否被吉星占据",
+        "十二宫（Vyaya）是否被吉星占据",
+        "二宫（Dhan）是否被吉星占据"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If there be a benefic in Lagna, Subh Yog is produced",
+        "Benefics in both Vyaya and Dhan Bhava cause Subh Yog",
+        "上升宫有吉星 Subh Yog 能言善辩 有德行"
+      ],
+      "counter_queries": [
+        "Malefics in both Vyaya and Dhan Bhava cause Asubh Yog",
+        "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak",
+        "十二宫 二宫 凶星 Asubh Yog"
+      ],
+      "boundary_queries": [
+        "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu",
+        "Guru and Shukra are benefics, while Chandra is mediocre in benefice and Budh is neutral",
+        "Budh, however, is a malefic, if he joins a malefic"
+      ],
+      "method_queries": [
+        "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect",
+        "Thus the auspicious and inauspicious effects, derivable through the Grahas, due to their lordship, according to the rising Rāśi, have to be estimated"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v1-2-subh-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "a benefic in Lagna"
+        },
+        {
+          "step_id": "ch36-v1-2-subh-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Benefics in both Vyaya and Dhan Bhava"
+        },
+        {
+          "step_id": "ch36-v1-2-subh-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Subh Yog is produced"
+        },
+        {
+          "step_id": "ch36-v1-2-subh-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "a benefic in Lagna Subh Yog is produced"
+        },
+        {
+          "step_id": "ch36-v1-2-subh-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Benefics in both Vyaya and Dhan Bhava Subh Yog is produced"
+        },
+        {
+          "step_id": "ch36-v1-2-subh-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "a benefic in 1st house"
+        },
+        {
+          "step_id": "ch36-v1-2-subh-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "Benefics in both 12th house and 2nd house"
+        },
+        {
+          "step_id": "ch36-v1-2-subh-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "a benefic in 1st house Subh Yog is produced"
+        },
+        {
+          "step_id": "ch36-v1-2-subh-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "Benefics in both 12th house and 2nd house Subh Yog is produced"
+        },
+        {
+          "step_id": "ch36-v1-2-subh-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "One born in Subh Yog"
+        },
+        {
+          "step_id": "ch36-v1-2-subh-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "will be eloquent, charming and virtuous"
+        },
+        {
+          "step_id": "ch36-v1-2-subh-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "One born in Subh Yog will be eloquent, charming and virtuous"
+        }
+      ],
+      "stop_conditions": [
+        "缺少本盘吉星名册事实时停止。",
+        "上升宫、十二宫与二宫三项吉星占据事实全部缺失时停止。",
+        "原文本句未给出吉星判准，吉星名册未取得时停止。"
+      ]
+    },
+    "ch36-v1-2-asubh-yog": {
+      "title": "Asubh Yog：上升宫内有凶星，或十二宫与二宫内都有凶星",
+      "user_intents": [
+        "我命里有没有不吉的组合",
+        "我为什么总被人说品行不好"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v1-2-asubh-yog"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘中哪些行星被判为凶星"
+      ],
+      "conditional_facts": [
+        "上升宫（Lagna）是否被凶星占据",
+        "十二宫（Vyaya）是否被凶星占据",
+        "二宫（Dhan）是否被凶星占据"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "while a malefic in Lagn causes Asubh Yog",
+        "Malefics in both Vyaya and Dhan Bhava cause Asubh Yog",
+        "上升宫有凶星 Asubh Yog 罪恶 吞没他人财富"
+      ],
+      "counter_queries": [
+        "Benefics in both Vyaya and Dhan Bhava cause Subh Yog",
+        "Should Budh give a Drishti to Mangal and Shani in Dhan Bhava, there will be great wealth",
+        "凶星在二宫 木星相照 化解"
+      ],
+      "boundary_queries": [
+        "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu",
+        "Guru and Shukra are benefics, while Chandra is mediocre in benefice and Budh is neutral",
+        "Budh, however, is a malefic, if he joins a malefic"
+      ],
+      "method_queries": [
+        "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones",
+        "Thus the auspicious and inauspicious effects, derivable through the Grahas, due to their lordship, according to the rising Rāśi, have to be estimated"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v1-2-asubh-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "a malefic in Lagn"
+        },
+        {
+          "step_id": "ch36-v1-2-asubh-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Malefics in both Vyaya and Dhan Bhava"
+        },
+        {
+          "step_id": "ch36-v1-2-asubh-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "causes Asubh Yog"
+        },
+        {
+          "step_id": "ch36-v1-2-asubh-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "a malefic in Lagn causes Asubh Yog"
+        },
+        {
+          "step_id": "ch36-v1-2-asubh-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Malefics in both Vyaya and Dhan Bhava causes Asubh Yog"
+        },
+        {
+          "step_id": "ch36-v1-2-asubh-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "a malefic in 1st house"
+        },
+        {
+          "step_id": "ch36-v1-2-asubh-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "Malefics in both 12th house and 2nd house"
+        },
+        {
+          "step_id": "ch36-v1-2-asubh-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "a malefic in 1st house causes Asubh Yog"
+        },
+        {
+          "step_id": "ch36-v1-2-asubh-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "Malefics in both 12th house and 2nd house causes Asubh Yog"
+        },
+        {
+          "step_id": "ch36-v1-2-asubh-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "his counterpart"
+        },
+        {
+          "step_id": "ch36-v1-2-asubh-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "will be sensuous, will do sinful acts and will enjoy (swallow) others’ wealth"
+        },
+        {
+          "step_id": "ch36-v1-2-asubh-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "his counterpart will be sensuous, will do sinful acts and will enjoy (swallow) others’ wealth"
+        }
+      ],
+      "stop_conditions": [
+        "缺少本盘凶星名册事实时停止。",
+        "上升宫、十二宫与二宫三项凶星占据事实全部缺失时停止。",
+        "原文本句未给出凶星判准，凶星名册未取得时停止。"
+      ]
+    },
+    "ch36-v3-4-gaj-kesari-yog": {
+      "title": "Gaj Kesari Yog：木星落上升或月亮起的角宫，与吉星同宫或受吉星相照，且不落陷、不燃烧、不在敌方星座",
+      "user_intents": [
+        "我这辈子有没有名望和财富",
+        "我命里木星的组合好不好"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v3-4-gaj-kesari-yog"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "木星（Guru）是否落陷",
+        "木星（Guru）是否燃烧",
+        "木星（Guru）是否落敌方行星主管的星座"
+      ],
+      "conditional_facts": [
+        "木星（Guru）是否落从上升宫（Lagna）起算的角宫",
+        "木星（Guru）是否落从月亮（Chandra）起算的角宫",
+        "木星（Guru）是否与吉星同宫",
+        "木星（Guru）是否被吉星相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Should Guru be in a Kendr from Lagna, or from Chandra and be yuti with, or receiving a Drishti from benefic",
+        "One born in Gaj Kesari Yog will be splendourous, wealthy, intelligent, endowed with many laudable virtues and will please the king",
+        "木星落角宫 与吉星同宫 Gaj Kesari Yog"
+      ],
+      "counter_queries": [
+        "Excluding Surya, should there be no Grah with Chandra, or in the 2nd and/or 12th from Chandra, or in a Kendr from Lagna, Kema Drum Yog is formed",
+        "If Guru is in his debilitation Rāśi, combust, associated with malefics, or in Ari, or Randhr",
+        "木星落陷 燃烧 恶果"
+      ],
+      "boundary_queries": [
+        "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu",
+        "Kendras, Konas etc. defined. The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+        "Exaltation and Debilitation. For the seven Grahas, from Surya on, the exaltation Rāśis are, respectively, Mesh, Vrishabh, Makar, Kanya, Kark, Meen and Tula"
+      ],
+      "method_queries": [
+        "Evaluation of the Drishtis of the Grahas. Deduct the longitude of the Grah (or Bhava), that receives a Drishti, from that of the Grah, which gives the Drishti",
+        "Thus the auspicious and inauspicious effects, derivable through the Grahas, due to their lordship, according to the rising Rāśi, have to be estimated"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Guru be in a Kendr from Lagna"
+        },
+        {
+          "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "or from Chandra"
+        },
+        {
+          "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "be yuti with, or receiving a Drishti from benefic"
+        },
+        {
+          "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "avoiding at the same time debilitation, combustion and inimical Rāśi"
+        },
+        {
+          "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Gaj Kesari Yog is caused"
+        },
+        {
+          "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Guru be in a Kendr from Lagna Gaj Kesari Yog is caused"
+        },
+        {
+          "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "or from Chandra Gaj Kesari Yog is caused"
+        },
+        {
+          "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "be yuti with, or receiving a Drishti from benefic Gaj Kesari Yog is caused"
+        },
+        {
+          "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "avoiding at the same time debilitation, combustion and inimical Rāśi Gaj Kesari Yog is caused"
+        },
+        {
+          "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "jupiter be in a Kendr from 1st house"
+        },
+        {
+          "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "or from moon"
+        },
+        {
+          "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "jupiter be in a Kendr from 1st house Gaj Kesari Yog is caused"
+        },
+        {
+          "step_id": "ch36-v3-4-gaj-kesari-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "or from moon Gaj Kesari Yog is caused"
+        },
+        {
+          "step_id": "ch36-v3-4-gaj-kesari-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "One born in Gaj Kesari Yog"
+        },
+        {
+          "step_id": "ch36-v3-4-gaj-kesari-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "will be splendourous, wealthy, intelligent, endowed with many laudable virtues and will please the king"
+        },
+        {
+          "step_id": "ch36-v3-4-gaj-kesari-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "One born in Gaj Kesari Yog will be splendourous, wealthy, intelligent, endowed with many laudable virtues and will please the king"
+        }
+      ],
+      "stop_conditions": [
+        "缺少木星落陷、燃烧或敌方星座任一项事实时停止。",
+        "木星在上升宫起与月亮起两种角宫的落宫事实都缺失时停止。",
+        "木星与吉星同宫、被吉星相照两项事实都缺失时停止。",
+        "原文本句未给出吉星判准，吉星名册未取得时停止。"
+      ]
+    },
+    "ch36-v5-6-amal-yog": {
+      "title": "Amal Yog：从上升或月亮起算的第十宫内只有吉星",
+      "user_intents": [
+        "我这辈子名声怎么样",
+        "我在外面能不能受人尊敬"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v5-6-amal-yog"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘中哪些行星被判为吉星"
+      ],
+      "conditional_facts": [
+        "从上升宫（Lagna）起算的第十宫是否只被吉星占据",
+        "从月亮（Chandra）起算的第十宫是否只被吉星占据"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If there be exclusively a benefic in the 10<sup>th</sup> from Lagna, or Chandra, Amal Yog exists",
+        "Amal Yog will confer fame, lasting till Chandra and stars exist",
+        "第十宫只有吉星 Amal Yog 名声"
+      ],
+      "counter_queries": [
+        "If inauspicious Bhavas are occupied by benefics, while auspicious Bhavas are occupied by malefics, the native will be indigent",
+        "If malefics, excepting the Lords of Karm and Dharm Bhava, happen to be in Lagna, associated with, or receiving a Drishti from Marak Grahas, one will become penniless",
+        "十宫有凶星 名声受损"
+      ],
+      "boundary_queries": [
+        "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu",
+        "Guru and Shukra are benefics, while Chandra is mediocre in benefice and Budh is neutral",
+        "Benefics, owning Kendras, will not give benefic effects, while malefics, owning Kendras, will not remain inauspicious"
+      ],
+      "method_queries": [
+        "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava",
+        "Thus the auspicious and inauspicious effects, derivable through the Grahas, due to their lordship, according to the rising Rāśi, have to be estimated"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v5-6-amal-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "exclusively a benefic in the 10th from Lagna"
+        },
+        {
+          "step_id": "ch36-v5-6-amal-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "or Chandra"
+        },
+        {
+          "step_id": "ch36-v5-6-amal-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Amal Yog exists"
+        },
+        {
+          "step_id": "ch36-v5-6-amal-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "exclusively a benefic in the 10th from Lagna Amal Yog exists"
+        },
+        {
+          "step_id": "ch36-v5-6-amal-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "or Chandra Amal Yog exists"
+        },
+        {
+          "step_id": "ch36-v5-6-amal-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "exclusively a benefic in the 10th from 1st house"
+        },
+        {
+          "step_id": "ch36-v5-6-amal-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "or moon"
+        },
+        {
+          "step_id": "ch36-v5-6-amal-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "exclusively a benefic in the 10th from 1st house Amal Yog exists"
+        },
+        {
+          "step_id": "ch36-v5-6-amal-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "or moon Amal Yog exists"
+        },
+        {
+          "step_id": "ch36-v5-6-amal-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Amal Yog exists"
+        },
+        {
+          "step_id": "ch36-v5-6-amal-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "fame, lasting till Chandra and stars exist"
+        },
+        {
+          "step_id": "ch36-v5-6-amal-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "will make the native honoured by the king, enjoy abundant pleasures, charitable, fond of relatives, helpful to others, pious and virtuous"
+        },
+        {
+          "step_id": "ch36-v5-6-amal-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Amal Yog exists fame, lasting till Chandra and stars exist"
+        },
+        {
+          "step_id": "ch36-v5-6-amal-yog.step-002",
+          "lane": "support",
+          "origin": "bilingual_verbatim_result",
+          "query": "fame, lasting till moon and stars exist"
+        },
+        {
+          "step_id": "ch36-v5-6-amal-yog.step-002",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "Amal Yog exists fame, lasting till moon and stars exist"
+        }
+      ],
+      "stop_conditions": [
+        "缺少本盘吉星名册事实时停止。",
+        "从上升起与从月亮起两种第十宫的占据事实都缺失时停止。",
+        "原文本句未给出吉星判准，吉星名册未取得时停止。"
+      ]
+    },
+    "ch36-v7-8-parvat-yog": {
+      "title": "Parvat Yog：角宫内有吉星，且七宫与八宫空无行星或只被吉星占据",
+      "user_intents": [
+        "我这辈子财富和名声怎么样",
+        "我有没有当一方领袖的组合"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v7-8-parvat-yog"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘角宫（Kendra）是否被吉星占据"
+      ],
+      "conditional_facts": [
+        "七宫（Yuvati）是否空无行星",
+        "八宫（Randhr）是否空无行星",
+        "七宫（Yuvati）是否只被吉星占据",
+        "八宫（Randhr）是否只被吉星占据"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Benefics in Kendras will produce Parvat Yog, as Yuvati and Randhr Bhava are vacant",
+        "One born in Parvat Yog will be wealthy, eloquent, charitable, learned in Shastras",
+        "角宫吉星 七宫八宫空 Parvat Yog"
+      ],
+      "counter_queries": [
+        "If inauspicious Bhavas are occupied by benefics, while auspicious Bhavas are occupied by malefics, the native will be indigent",
+        "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless",
+        "七宫八宫有凶星 破格"
+      ],
+      "boundary_queries": [
+        "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu",
+        "Kendras, Konas etc. defined. The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+        "Benefics, owning Kendras, will not give benefic effects, while malefics, owning Kendras, will not remain inauspicious"
+      ],
+      "method_queries": [
+        "Indications of Randhr Bhava",
+        "Thus the auspicious and inauspicious effects, derivable through the Grahas, due to their lordship, according to the rising Rāśi, have to be estimated"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v7-8-parvat-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Benefics in Kendras"
+        },
+        {
+          "step_id": "ch36-v7-8-parvat-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Yuvati and Randhr Bhava are vacant"
+        },
+        {
+          "step_id": "ch36-v7-8-parvat-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "occupied by only benefics"
+        },
+        {
+          "step_id": "ch36-v7-8-parvat-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "will produce Parvat Yog"
+        },
+        {
+          "step_id": "ch36-v7-8-parvat-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Benefics in Kendras will produce Parvat Yog"
+        },
+        {
+          "step_id": "ch36-v7-8-parvat-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Yuvati and Randhr Bhava are vacant will produce Parvat Yog"
+        },
+        {
+          "step_id": "ch36-v7-8-parvat-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "occupied by only benefics will produce Parvat Yog"
+        },
+        {
+          "step_id": "ch36-v7-8-parvat-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "7th house and 8th house are vacant"
+        },
+        {
+          "step_id": "ch36-v7-8-parvat-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "7th house and 8th house are vacant will produce Parvat Yog"
+        },
+        {
+          "step_id": "ch36-v7-8-parvat-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "One born in Parvat Yog"
+        },
+        {
+          "step_id": "ch36-v7-8-parvat-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "will be wealthy, eloquent, charitable, learned in Shastras, fond of mirth, famous, splendourous and be the leader of a city"
+        },
+        {
+          "step_id": "ch36-v7-8-parvat-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "One born in Parvat Yog will be wealthy, eloquent, charitable, learned in Shastras, fond of mirth, famous, splendourous and be the leader of a city"
+        }
+      ],
+      "stop_conditions": [
+        "缺少角宫吉星占据事实时停止。",
+        "七宫与八宫的空宫事实与只被吉星占据事实都缺失时停止。",
+        "原文本句未给出吉星判准，吉星名册未取得时停止。"
+      ]
+    },
+    "ch36-v9-10-kahal-yog": {
+      "title": "Kahal Yog：四宫主与木星互为角宫且上升主有力，或四宫主落本星座或入旺并与十宫主同宫",
+      "user_intents": [
+        "我有没有掌管人马、统领一方的组合",
+        "我这个人有没有干劲和胆量"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v9-10-kahal-yog"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘四宫主（Bandhu's Lord）是哪颗行星"
+      ],
+      "conditional_facts": [
+        "四宫主（Bandhu's Lord）与木星（Guru）是否互为角宫",
+        "上升主（Lagn's Lord）是否有力",
+        "四宫主（Bandhu's Lord）是否落本星座（own Rāśi）",
+        "四宫主（Bandhu's Lord）是否入旺",
+        "四宫主（Bandhu's Lord）是否与十宫主（Karm's Lord）同宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Should Bandhu’s Lord and Guru be in mutual Kendras, while Lagn’s Lord is strong, Kahal Yog occurs",
+        "Alternatively Bandhu’s Lord, being in his own, or exaltation Rāśi, should be yuti with Karm’s Lord",
+        "四宫主 木星 互为角宫 Kahal Yog"
+      ],
+      "counter_queries": [
+        "If Lagn’s Lord is yuti with the Lord of Ari, Randhr, or Vyaya Bhava, or with Shani and, if Lagn’s Lord is devoid of a Drishti from a benefic, the native will be penniless",
+        "If the Lords of a Kendr, or a Kon own simultaneously an evil Bhava, he does not cause a Raj Yog by mere relations stipulated",
+        "上升主无力 破格"
+      ],
+      "boundary_queries": [
+        "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+        "Kendras, Konas etc. defined. The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+        "Exaltation and Debilitation. For the seven Grahas, from Surya on, the exaltation Rāśis are, respectively, Mesh, Vrishabh, Makar, Kanya, Kark, Meen and Tula"
+      ],
+      "method_queries": [
+        "Indications of Bandhu Bhava. Conveyances, relatives, mother, happiness, treasure, lands and buildings are to be consulted through Bandhu Bhava",
+        "Thus the auspicious and inauspicious effects, derivable through the Grahas, due to their lordship, according to the rising Rāśi, have to be estimated"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v9-10-kahal-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Bandhu’s Lord and Guru be in mutual Kendras"
+        },
+        {
+          "step_id": "ch36-v9-10-kahal-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "while Lagn’s Lord is strong"
+        },
+        {
+          "step_id": "ch36-v9-10-kahal-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "being in his own, or exaltation Rāśi"
+        },
+        {
+          "step_id": "ch36-v9-10-kahal-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "should be yuti with Karm’s Lord"
+        },
+        {
+          "step_id": "ch36-v9-10-kahal-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Kahal Yog occurs"
+        },
+        {
+          "step_id": "ch36-v9-10-kahal-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Bandhu’s Lord and Guru be in mutual Kendras Kahal Yog occurs"
+        },
+        {
+          "step_id": "ch36-v9-10-kahal-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "while Lagn’s Lord is strong Kahal Yog occurs"
+        },
+        {
+          "step_id": "ch36-v9-10-kahal-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "being in his own, or exaltation Rāśi Kahal Yog occurs"
+        },
+        {
+          "step_id": "ch36-v9-10-kahal-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "should be yuti with Karm’s Lord Kahal Yog occurs"
+        },
+        {
+          "step_id": "ch36-v9-10-kahal-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "4th lord and jupiter be in mutual Kendras"
+        },
+        {
+          "step_id": "ch36-v9-10-kahal-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "while 1st lord is strong"
+        },
+        {
+          "step_id": "ch36-v9-10-kahal-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "should be yuti with 10th lord"
+        },
+        {
+          "step_id": "ch36-v9-10-kahal-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "4th lord and jupiter be in mutual Kendras Kahal Yog occurs"
+        },
+        {
+          "step_id": "ch36-v9-10-kahal-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "while 1st lord is strong Kahal Yog occurs"
+        },
+        {
+          "step_id": "ch36-v9-10-kahal-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "should be yuti with 10th lord Kahal Yog occurs"
+        },
+        {
+          "step_id": "ch36-v9-10-kahal-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Kahal Yog occurs"
+        },
+        {
+          "step_id": "ch36-v9-10-kahal-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "the native will be energetic, adventurous, charming, endowed with a complete Army, consisting of chariots, elephants, horses and infantry and he will Lord over a few villages"
+        },
+        {
+          "step_id": "ch36-v9-10-kahal-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Kahal Yog occurs the native will be energetic, adventurous, charming, endowed with a complete Army, consisting of chariots, elephants, horses and infantry and he will Lord over a few villages"
+        }
+      ],
+      "stop_conditions": [
+        "缺少四宫主身份事实时停止。",
+        "两种成立方式所需的事实都缺失时停止。",
+        "「有力」的判准由排盘窗口定义，未给出取值时停止。"
+      ]
+    },
+    "ch36-v11-12-chamar-yog": {
+      "title": "Chamar Yog：上升主在角宫入旺并受木星相照，或上升、九宫、十宫、七宫之一内有两颗吉星",
+      "user_intents": [
+        "我有没有当官或受权贵尊敬的组合",
+        "我这辈子学问和口才怎么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v11-12-chamar-yog"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘上升主（Lagn's Lord）是哪颗行星",
+        "本盘中哪些行星被判为吉星"
+      ],
+      "conditional_facts": [
+        "上升主（Lagn's Lord）是否入旺",
+        "上升主（Lagn's Lord）是否落角宫",
+        "上升主（Lagn's Lord）是否被木星（Guru）相照",
+        "上升宫（Lagna）内是否有两颗吉星",
+        "九宫（Dharm）内是否有两颗吉星",
+        "十宫（Karm）内是否有两颗吉星",
+        "七宫（Yuvati）内是否有两颗吉星"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If Lagn’s Lord is exalted in a Kendr and receives a Drishti from Guru, Chamar Yog is formed",
+        "This Yog also occurs, if two benefics are in Lagna, or Dharm, or Karm, or Yuvati Bhava",
+        "上升主入旺角宫 木星相照 Chamar Yog"
+      ],
+      "counter_queries": [
+        "If the Lords of a Kendr, or a Kon own simultaneously an evil Bhava, he does not cause a Raj Yog by mere relations stipulated",
+        "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless",
+        "Lordship of Kendr. It has been said, that a malefic, owning a Kendr, will become auspicious, which is true, only when it simultaneously Lords over a Kon"
+      ],
+      "boundary_queries": [
+        "Exaltation and Debilitation. For the seven Grahas, from Surya on, the exaltation Rāśis are, respectively, Mesh, Vrishabh, Makar, Kanya, Kark, Meen and Tula",
+        "Kendras, Konas etc. defined. The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+        "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu"
+      ],
+      "method_queries": [
+        "Evaluation of the Drishtis of the Grahas. Deduct the longitude of the Grah (or Bhava), that receives a Drishti, from that of the Grah, which gives the Drishti",
+        "Thus the auspicious and inauspicious effects, derivable through the Grahas, due to their lordship, according to the rising Rāśi, have to be estimated"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v11-12-chamar-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Lagn’s Lord is exalted in a Kendr"
+        },
+        {
+          "step_id": "ch36-v11-12-chamar-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "receives a Drishti from Guru"
+        },
+        {
+          "step_id": "ch36-v11-12-chamar-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "two benefics are in Lagna, or Dharm, or Karm, or Yuvati Bhava"
+        },
+        {
+          "step_id": "ch36-v11-12-chamar-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Chamar Yog is formed"
+        },
+        {
+          "step_id": "ch36-v11-12-chamar-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Lagn’s Lord is exalted in a Kendr Chamar Yog is formed"
+        },
+        {
+          "step_id": "ch36-v11-12-chamar-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "receives a Drishti from Guru Chamar Yog is formed"
+        },
+        {
+          "step_id": "ch36-v11-12-chamar-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "two benefics are in Lagna, or Dharm, or Karm, or Yuvati Bhava Chamar Yog is formed"
+        },
+        {
+          "step_id": "ch36-v11-12-chamar-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "1st lord is exalted in a Kendr"
+        },
+        {
+          "step_id": "ch36-v11-12-chamar-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "receives a Drishti from jupiter"
+        },
+        {
+          "step_id": "ch36-v11-12-chamar-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "two benefics are in 1st house, or 9th house, or 10th house, or 7th house"
+        },
+        {
+          "step_id": "ch36-v11-12-chamar-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "1st lord is exalted in a Kendr Chamar Yog is formed"
+        },
+        {
+          "step_id": "ch36-v11-12-chamar-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "receives a Drishti from jupiter Chamar Yog is formed"
+        },
+        {
+          "step_id": "ch36-v11-12-chamar-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "two benefics are in 1st house, or 9th house, or 10th house, or 7th house Chamar Yog is formed"
+        },
+        {
+          "step_id": "ch36-v11-12-chamar-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "The effects of Chamar Yog are"
+        },
+        {
+          "step_id": "ch36-v11-12-chamar-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "the native will be a king, or honoured by the king, long lived, scholarly, eloquent and versed in all arts"
+        },
+        {
+          "step_id": "ch36-v11-12-chamar-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "The effects of Chamar Yog are the native will be a king, or honoured by the king, long lived, scholarly, eloquent and versed in all arts"
+        }
+      ],
+      "stop_conditions": [
+        "缺少上升主身份或吉星名册事实时停止。",
+        "上升主入旺、落角宫、受木星相照三项与四处两颗吉星事实全部缺失时停止。",
+        "原文本句未给出吉星判准，吉星名册未取得时停止。"
+      ]
+    },
+    "ch36-v13-14-shankh-yog": {
+      "title": "Shankh Yog：上升主有力且五宫主与六宫主互为角宫，或上升主与十宫主同落动星座且九宫主有力",
+      "user_intents": [
+        "我这辈子财富、配偶和子女怎么样",
+        "我的寿数和福分如何"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v13-14-shankh-yog"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘上升主（Lagn's Lord）是哪颗行星"
+      ],
+      "conditional_facts": [
+        "上升主（Lagn's Lord）是否有力",
+        "五宫主（Putr's Lord）与六宫主（Ari's Lord）是否互为角宫",
+        "上升主（Lagn's Lord）是否与十宫主（Karm's Lord）同落动星座（Movable Rāśi）",
+        "九宫主（Dharm's Lord）是否有力"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If Lagn’s Lord is strong, while the Lords of Putr and Ari Bhava are in mutual Kendras, then what is known, as Shankh Yog, is produced",
+        "Alternatively, if Lagn’s Lord along with Karm’s Lord is in a Movable Rāśi, while Dharm’s Lord is strong, Shankh Yog is obtained",
+        "上升主有力 五宫主 六宫主 互为角宫 Shankh Yog"
+      ],
+      "counter_queries": [
+        "If Lagn’s Lord is yuti with the Lord of Ari, Randhr, or Vyaya Bhava, or with Shani and, if Lagn’s Lord is devoid of a Drishti from a benefic, the native will be penniless",
+        "Should Putr’s and Dharm’s Lords be, respectively, found in Ari and Vyaya Bhava and receive a Drishti from Marak Grahas, the native will be penniless",
+        "If the Lords of a Kendr, or a Kon own simultaneously an evil Bhava, he does not cause a Raj Yog by mere relations stipulated"
+      ],
+      "boundary_queries": [
+        "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+        "Classification of Rāśis. Movable, Fixed and Dual are the names given to the 12 Rāśis in order",
+        "Kendras, Konas etc. defined. The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)"
+      ],
+      "method_queries": [
+        "Indications of Putr Bhava",
+        "Thus the auspicious and inauspicious effects, derivable through the Grahas, due to their lordship, according to the rising Rāśi, have to be estimated"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v13-14-shankh-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Lagn’s Lord is strong"
+        },
+        {
+          "step_id": "ch36-v13-14-shankh-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "the Lords of Putr and Ari Bhava are in mutual Kendras"
+        },
+        {
+          "step_id": "ch36-v13-14-shankh-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Lagn’s Lord along with Karm’s Lord is in a Movable Rāśi"
+        },
+        {
+          "step_id": "ch36-v13-14-shankh-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "while Dharm’s Lord is strong"
+        },
+        {
+          "step_id": "ch36-v13-14-shankh-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Shankh Yog, is produced"
+        },
+        {
+          "step_id": "ch36-v13-14-shankh-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Lagn’s Lord is strong Shankh Yog, is produced"
+        },
+        {
+          "step_id": "ch36-v13-14-shankh-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "the Lords of Putr and Ari Bhava are in mutual Kendras Shankh Yog, is produced"
+        },
+        {
+          "step_id": "ch36-v13-14-shankh-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Lagn’s Lord along with Karm’s Lord is in a Movable Rāśi Shankh Yog, is produced"
+        },
+        {
+          "step_id": "ch36-v13-14-shankh-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "while Dharm’s Lord is strong Shankh Yog, is produced"
+        },
+        {
+          "step_id": "ch36-v13-14-shankh-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "1st lord is strong"
+        },
+        {
+          "step_id": "ch36-v13-14-shankh-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "the Lords of 5th house and 6th house are in mutual Kendras"
+        },
+        {
+          "step_id": "ch36-v13-14-shankh-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "1st lord along with 10th lord is in a Movable Rāśi"
+        },
+        {
+          "step_id": "ch36-v13-14-shankh-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "while 9th lord is strong"
+        },
+        {
+          "step_id": "ch36-v13-14-shankh-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "1st lord is strong Shankh Yog, is produced"
+        },
+        {
+          "step_id": "ch36-v13-14-shankh-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "the Lords of 5th house and 6th house are in mutual Kendras Shankh Yog, is produced"
+        },
+        {
+          "step_id": "ch36-v13-14-shankh-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "1st lord along with 10th lord is in a Movable Rāśi Shankh Yog, is produced"
+        },
+        {
+          "step_id": "ch36-v13-14-shankh-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "while 9th lord is strong Shankh Yog, is produced"
+        },
+        {
+          "step_id": "ch36-v13-14-shankh-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "One born with Shankh Yog"
+        },
+        {
+          "step_id": "ch36-v13-14-shankh-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "will be endowed with wealth, spouse and sons"
+        },
+        {
+          "step_id": "ch36-v13-14-shankh-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "He will be kindly disposed, propitious, intelligent, meritorious and longlived"
+        },
+        {
+          "step_id": "ch36-v13-14-shankh-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "One born with Shankh Yog will be endowed with wealth, spouse and sons"
+        }
+      ],
+      "stop_conditions": [
+        "缺少上升主身份事实时停止。",
+        "两种成立方式所需的事实都缺失时停止。",
+        "「有力」的判准由排盘窗口定义，未给出取值时停止。"
+      ]
+    },
+    "ch36-v15-16-bhairi-yog": {
+      "title": "Bhairi Yog：九宫主有力，且十二宫、一宫、二宫、七宫都被占据，或金星木星与上升主都落角宫",
+      "user_intents": [
+        "我有没有富贵成名的组合",
+        "我这辈子财富、妻子和子女怎么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v15-16-bhairi-yog"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "九宫主（Dharm's Lord）是否有力"
+      ],
+      "conditional_facts": [
+        "十二宫（Vyaya）是否被行星占据",
+        "上升宫（Tanu Bhava）是否被行星占据",
+        "二宫（Dhan）是否被行星占据",
+        "七宫（Yuvati）是否被行星占据",
+        "金星（Shukra）是否落角宫",
+        "木星（Guru）是否落角宫",
+        "上升主（Lagn's Lord）是否落角宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If Vyaya, Tanu, Dhan and Yuvati Bhava are occupied, as Dharm’s Lord is strong, the native obtains Bhairi Yog",
+        "Again another kind of Bhairi Yog is formed, if Shukr, Guru and Lagn’s Lord are in a Kendr",
+        "九宫主有力 金星木星上升主落角宫 Bhairi Yog"
+      ],
+      "counter_queries": [
+        "If Lagn’s Lord is yuti with the Lord of Ari, Randhr, or Vyaya Bhava, or with Shani and, if Lagn’s Lord is devoid of a Drishti from a benefic, the native will be penniless",
+        "If inauspicious Bhavas are occupied by benefics, while auspicious Bhavas are occupied by malefics, the native will be indigent",
+        "If the Lords of a Kendr, or a Kon own simultaneously an evil Bhava, he does not cause a Raj Yog by mere relations stipulated"
+      ],
+      "boundary_queries": [
+        "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+        "Kendras, Konas etc. defined. The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+        "Benefics, owning Kendras, will not give benefic effects, while malefics, owning Kendras, will not remain inauspicious"
+      ],
+      "method_queries": [
+        "Indications of Dharm Bhava",
+        "Thus the auspicious and inauspicious effects, derivable through the Grahas, due to their lordship, according to the rising Rāśi, have to be estimated"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v15-16-bhairi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "If Vyaya, Tanu, Dhan and Yuvati Bhava are occupied"
+        },
+        {
+          "step_id": "ch36-v15-16-bhairi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "as Dharm’s Lord is strong"
+        },
+        {
+          "step_id": "ch36-v15-16-bhairi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "if Shukr, Guru and Lagn’s Lord are in a Kendr"
+        },
+        {
+          "step_id": "ch36-v15-16-bhairi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "the native obtains Bhairi Yog"
+        },
+        {
+          "step_id": "ch36-v15-16-bhairi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "If Vyaya, Tanu, Dhan and Yuvati Bhava are occupied the native obtains Bhairi Yog"
+        },
+        {
+          "step_id": "ch36-v15-16-bhairi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "as Dharm’s Lord is strong the native obtains Bhairi Yog"
+        },
+        {
+          "step_id": "ch36-v15-16-bhairi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "if Shukr, Guru and Lagn’s Lord are in a Kendr the native obtains Bhairi Yog"
+        },
+        {
+          "step_id": "ch36-v15-16-bhairi-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "If 12th house, 1st house, 2nd house and 7th house are occupied"
+        },
+        {
+          "step_id": "ch36-v15-16-bhairi-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "as 9th lord is strong"
+        },
+        {
+          "step_id": "ch36-v15-16-bhairi-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "if venus, jupiter and 1st lord are in a Kendr"
+        },
+        {
+          "step_id": "ch36-v15-16-bhairi-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "If 12th house, 1st house, 2nd house and 7th house are occupied the native obtains Bhairi Yog"
+        },
+        {
+          "step_id": "ch36-v15-16-bhairi-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "as 9th lord is strong the native obtains Bhairi Yog"
+        },
+        {
+          "step_id": "ch36-v15-16-bhairi-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "if venus, jupiter and 1st lord are in a Kendr the native obtains Bhairi Yog"
+        },
+        {
+          "step_id": "ch36-v15-16-bhairi-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "The results of Bhairi Yog are"
+        },
+        {
+          "step_id": "ch36-v15-16-bhairi-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "the native will be endowed with wealth, wife and sons"
+        },
+        {
+          "step_id": "ch36-v15-16-bhairi-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "He will be a king, be famous, virtuous and endowed with good behaviour, happiness and pleasures"
+        },
+        {
+          "step_id": "ch36-v15-16-bhairi-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "The results of Bhairi Yog are the native will be endowed with wealth, wife and sons"
+        }
+      ],
+      "stop_conditions": [
+        "缺少九宫主力量事实时停止。",
+        "「有力」的判准由排盘窗口定义，未给出取值时停止。",
+        "四宫被占据与三星落角宫两组事实都缺失时停止。"
+      ]
+    },
+    "ch36-v17-mridang-yog": {
+      "title": "Mridang Yog：上升主有力，其余行星落角宫、三角宫、本宫或入旺星座",
+      "user_intents": [
+        "我有没有当王者或与王者相等的组合",
+        "我这辈子过得快不快乐"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v17-mridang-yog"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "上升主（Lagn's Lord）是否有力"
+      ],
+      "conditional_facts": [
+        "其余行星（others）是否落角宫",
+        "其余行星（others）是否落三角宫",
+        "其余行星（others）是否落本宫（own Bhava）",
+        "其余行星（others）是否落入旺星座"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If Lagn’s Lord is strong and others occupy Kendras, Konas, own Bhavas, or exaltation Rāśis, Mridang Yog is formed",
+        "The native concerned will be a king, or equal to a king and be happy",
+        "上升主有力 其余行星落角宫三角宫 Mridang Yog"
+      ],
+      "counter_queries": [
+        "If Lagn’s Lord is yuti with the Lord of Ari, Randhr, or Vyaya Bhava, or with Shani and, if Lagn’s Lord is devoid of a Drishti from a benefic, the native will be penniless",
+        "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless",
+        "If the Lords of a Kendr, or a Kon own simultaneously an evil Bhava, he does not cause a Raj Yog by mere relations stipulated"
+      ],
+      "boundary_queries": [
+        "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+        "Kendras, Konas etc. defined. The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+        "Exaltation and Debilitation. For the seven Grahas, from Surya on, the exaltation Rāśis are, respectively, Mesh, Vrishabh, Makar, Kanya, Kark, Meen and Tula"
+      ],
+      "method_queries": [
+        "If one and the same Grah gets the lordships of a Kon, as well as a Kendr, or, if a Grah is in a Kendr, or in a Kon, it will prove specially a Yog Karak",
+        "Thus the auspicious and inauspicious effects, derivable through the Grahas, due to their lordship, according to the rising Rāśi, have to be estimated"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v17-mridang-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Lagn’s Lord is strong"
+        },
+        {
+          "step_id": "ch36-v17-mridang-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "others occupy Kendras, Konas, own Bhavas, or exaltation Rāśis"
+        },
+        {
+          "step_id": "ch36-v17-mridang-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Mridang Yog is formed"
+        },
+        {
+          "step_id": "ch36-v17-mridang-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Lagn’s Lord is strong Mridang Yog is formed"
+        },
+        {
+          "step_id": "ch36-v17-mridang-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "others occupy Kendras, Konas, own Bhavas, or exaltation Rāśis Mridang Yog is formed"
+        },
+        {
+          "step_id": "ch36-v17-mridang-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "1st lord is strong"
+        },
+        {
+          "step_id": "ch36-v17-mridang-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "1st lord is strong Mridang Yog is formed"
+        },
+        {
+          "step_id": "ch36-v17-mridang-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Mridang Yog is formed"
+        },
+        {
+          "step_id": "ch36-v17-mridang-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "The native concerned will be a king, or equal to a king and be happy"
+        },
+        {
+          "step_id": "ch36-v17-mridang-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Mridang Yog is formed The native concerned will be a king, or equal to a king and be happy"
+        }
+      ],
+      "stop_conditions": [
+        "缺少上升主力量事实时停止。",
+        "「有力」的判准由排盘窗口定义，未给出取值时停止。",
+        "原文未界定 others（其余行星）指哪些行星，未确定即停判。"
+      ]
+    },
+    "ch36-v18-shrinath-yog": {
+      "title": "Shrinath Yog：七宫主落十宫，十宫主入旺并与九宫主同宫",
+      "user_intents": [
+        "我有没有极贵重的组合",
+        "我的事业宫组合好不好"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v18-shrinath-yog"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "七宫主（Yuvati's Lord）是否落十宫（Karm）",
+        "十宫主（Karm's Lord）是否入旺",
+        "十宫主（Karm's Lord）是否与九宫主（Dharm's Lord）同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If Yuvati’s Lord is in Karm Bhava, while Karm’s Lord is exalted and yuti with Dharm’s Lord, Shrinath Yog takes place",
+        "The native with Shrinath Yog will be equal to Lord Devendra",
+        "七宫主落十宫 十宫主入旺 九宫主同宫 Shrinath Yog"
+      ],
+      "counter_queries": [
+        "Note the Grahas, that are ruling the Rāśis, occupied by the Lords of Ari, Randhr and Vyaya Bhava",
+        "If inauspicious Bhavas are occupied by benefics, while auspicious Bhavas are occupied by malefics, the native will be indigent",
+        "If the Lords of a Kendr, or a Kon own simultaneously an evil Bhava, he does not cause a Raj Yog by mere relations stipulated"
+      ],
+      "boundary_queries": [
+        "Exaltation and Debilitation. For the seven Grahas, from Surya on, the exaltation Rāśis are, respectively, Mesh, Vrishabh, Makar, Kanya, Kark, Meen and Tula",
+        "Benefics, owning Kendras, will not give benefic effects, while malefics, owning Kendras, will not remain inauspicious",
+        "Kendras, Konas etc. defined. The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)"
+      ],
+      "method_queries": [
+        "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava",
+        "Thus the auspicious and inauspicious effects, derivable through the Grahas, due to their lordship, according to the rising Rāśi, have to be estimated"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v18-shrinath-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Yuvati’s Lord is in Karm Bhava"
+        },
+        {
+          "step_id": "ch36-v18-shrinath-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Karm’s Lord is exalted"
+        },
+        {
+          "step_id": "ch36-v18-shrinath-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "yuti with Dharm’s Lord"
+        },
+        {
+          "step_id": "ch36-v18-shrinath-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Shrinath Yog takes place"
+        },
+        {
+          "step_id": "ch36-v18-shrinath-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Yuvati’s Lord is in Karm Bhava Shrinath Yog takes place"
+        },
+        {
+          "step_id": "ch36-v18-shrinath-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Karm’s Lord is exalted Shrinath Yog takes place"
+        },
+        {
+          "step_id": "ch36-v18-shrinath-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "yuti with Dharm’s Lord Shrinath Yog takes place"
+        },
+        {
+          "step_id": "ch36-v18-shrinath-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "7th lord is in 10th house"
+        },
+        {
+          "step_id": "ch36-v18-shrinath-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "10th lord is exalted"
+        },
+        {
+          "step_id": "ch36-v18-shrinath-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "yuti with 9th lord"
+        },
+        {
+          "step_id": "ch36-v18-shrinath-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "7th lord is in 10th house Shrinath Yog takes place"
+        },
+        {
+          "step_id": "ch36-v18-shrinath-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "10th lord is exalted Shrinath Yog takes place"
+        },
+        {
+          "step_id": "ch36-v18-shrinath-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "yuti with 9th lord Shrinath Yog takes place"
+        },
+        {
+          "step_id": "ch36-v18-shrinath-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "The native with Shrinath Yog"
+        },
+        {
+          "step_id": "ch36-v18-shrinath-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "will be equal to Lord Devendra (god of gods)"
+        },
+        {
+          "step_id": "ch36-v18-shrinath-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "The native with Shrinath Yog will be equal to Lord Devendra (god of gods)"
+        }
+      ],
+      "stop_conditions": [
+        "缺少七宫主落十宫、十宫主入旺、十宫主与九宫主同宫三项中任一项事实时停止。"
+      ]
+    },
+    "ch36-v19-20-sharad-yog": {
+      "title": "Sharad Yog：十宫主落五宫、水星落角宫且有力的太阳落狮子座，或木星与水星之一落月亮起的三角宫且火星落十一宫",
+      "user_intents": [
+        "我这辈子财富、配偶和子女怎么样",
+        "我有没有受上位者赏识的组合"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v19-20-sharad-yog"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘十宫主（Karm's Lord）是哪颗行星",
+        "本盘月亮（Chandra）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "十宫主（Karm's Lord）是否落五宫（Putr）",
+        "水星（Budh）是否落角宫",
+        "太阳（Surya）是否有力",
+        "太阳（Surya）是否落狮子座（Simh）",
+        "木星（Guru）是否落从月亮（Chandra）起算的三角宫",
+        "水星（Budh）是否落从月亮（Chandra）起算的三角宫",
+        "火星（Mangal）是否落十一宫（Labh）"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Should Karm’s Lord be in Putr Bhava, while Budh is in a Kendr, as Surya with strength is in Simh, Sharad Yog is formed",
+        "This will again be obtained, if Guru, or Budh is in a Kon to Chandra, while Mangal is in Labh Bhava",
+        "十宫主落五宫 水星落角宫 太阳落狮子 Sharad Yog"
+      ],
+      "counter_queries": [
+        "Excluding Surya, should there be no Grah with Chandra, or in the 2nd and/or 12th from Chandra, or in a Kendr from Lagna, Kema Drum Yog is formed",
+        "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless",
+        "If inauspicious Bhavas are occupied by benefics, while auspicious Bhavas are occupied by malefics, the native will be indigent"
+      ],
+      "boundary_queries": [
+        "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+        "Kendras, Konas etc. defined. The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+        "Exaltation and Debilitation. For the seven Grahas, from Surya on, the exaltation Rāśis are, respectively, Mesh, Vrishabh, Makar, Kanya, Kark, Meen and Tula"
+      ],
+      "method_queries": [
+        "Indications of Putr Bhava",
+        "Thus the auspicious and inauspicious effects, derivable through the Grahas, due to their lordship, according to the rising Rāśi, have to be estimated"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v19-20-sharad-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Karm’s Lord be in Putr Bhava"
+        },
+        {
+          "step_id": "ch36-v19-20-sharad-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Budh is in a Kendr"
+        },
+        {
+          "step_id": "ch36-v19-20-sharad-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Surya with strength is in Simh"
+        },
+        {
+          "step_id": "ch36-v19-20-sharad-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "if Guru, or Budh is in a Kon to Chandra"
+        },
+        {
+          "step_id": "ch36-v19-20-sharad-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "while Mangal is in Labh Bhava"
+        },
+        {
+          "step_id": "ch36-v19-20-sharad-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Sharad Yog is formed"
+        },
+        {
+          "step_id": "ch36-v19-20-sharad-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Karm’s Lord be in Putr Bhava Sharad Yog is formed"
+        },
+        {
+          "step_id": "ch36-v19-20-sharad-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Budh is in a Kendr Sharad Yog is formed"
+        },
+        {
+          "step_id": "ch36-v19-20-sharad-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Surya with strength is in Simh Sharad Yog is formed"
+        },
+        {
+          "step_id": "ch36-v19-20-sharad-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "if Guru, or Budh is in a Kon to Chandra Sharad Yog is formed"
+        },
+        {
+          "step_id": "ch36-v19-20-sharad-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "while Mangal is in Labh Bhava Sharad Yog is formed"
+        },
+        {
+          "step_id": "ch36-v19-20-sharad-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "10th lord be in 5th house"
+        },
+        {
+          "step_id": "ch36-v19-20-sharad-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "mercury is in a Kendr"
+        },
+        {
+          "step_id": "ch36-v19-20-sharad-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "sun with strength is in Simh"
+        },
+        {
+          "step_id": "ch36-v19-20-sharad-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "if jupiter, or mercury is in a Kon to moon"
+        },
+        {
+          "step_id": "ch36-v19-20-sharad-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "while mars is in 11th house"
+        },
+        {
+          "step_id": "ch36-v19-20-sharad-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "10th lord be in 5th house Sharad Yog is formed"
+        },
+        {
+          "step_id": "ch36-v19-20-sharad-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "mercury is in a Kendr Sharad Yog is formed"
+        },
+        {
+          "step_id": "ch36-v19-20-sharad-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "sun with strength is in Simh Sharad Yog is formed"
+        },
+        {
+          "step_id": "ch36-v19-20-sharad-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "if jupiter, or mercury is in a Kon to moon Sharad Yog is formed"
+        },
+        {
+          "step_id": "ch36-v19-20-sharad-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "while mars is in 11th house Sharad Yog is formed"
+        },
+        {
+          "step_id": "ch36-v19-20-sharad-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "One born in either kind of Yog"
+        },
+        {
+          "step_id": "ch36-v19-20-sharad-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "will obtain wealth, spouse and sons, be happy, scholarly, dear to the king, pious and virtuous"
+        },
+        {
+          "step_id": "ch36-v19-20-sharad-yog.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "One born in either kind of Yog will obtain wealth, spouse and sons, be happy, scholarly, dear to the king, pious and virtuous"
+        }
+      ],
+      "stop_conditions": [
+        "缺少十宫主身份或月亮落宫事实时停止。",
+        "两种成立方式所需的事实都缺失时停止。",
+        "「有力」的判准由排盘窗口定义，未给出取值时停止。"
+      ]
+    },
+    "ch36-v21-22-matsya-yog": {
+      "title": "Matsya Yog：吉星落九宫与一宫、五宫吉凶混杂、凶星落四宫与八宫",
+      "user_intents": [
+        "我有没有做占星师这一行的命",
+        "我的性情与名望怎么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v21-22-matsya-yog"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "九宫（Dharm）是否被吉星占据",
+        "一宫（Tanu）是否被吉星占据",
+        "五宫（Putr）是否被吉凶混杂的行星占据",
+        "四宫（Bandhu）是否被凶星占据",
+        "八宫（Randhr）是否被凶星占据"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Matsya Yog. Benefics in Dharm and Tanu Bhava, mixed Grahas in Putr Bhava and malefics in Bandhu and Randhr Bhava",
+        "Matsya Yog 占星师 Jyotishi 吉星九宫一宫 凶星四宫八宫"
+      ],
+      "counter_queries": [
+        "If there be a benefic in Lagna, Subh Yog is produced, while a malefic in Lagn causes Asubh Yog",
+        "Budh in Dhan Bhava, while malefics occupy Tanu and Vyaya Bhava: this Yoga will destroy the entire family",
+        "The Bhava, which is not drishtied by its Lord, or, whose Lord is with a malefic Grah, or with one of the Lords of evil and such other Bhavas"
+      ],
+      "boundary_queries": [
+        "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+        "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+      ],
+      "method_queries": [
+        "Prosperity, or Annihilation of a Bhava. Predict prosperity of the Bhava, which is yuti with, or drishtied by a benefic",
+        "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v21-22-matsya-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Benefics in Dharm and Tanu Bhava"
+        },
+        {
+          "step_id": "ch36-v21-22-matsya-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "mixed Grahas in Putr Bhava"
+        },
+        {
+          "step_id": "ch36-v21-22-matsya-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "malefics in Bandhu and Randhr Bhava"
+        },
+        {
+          "step_id": "ch36-v21-22-matsya-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "this array of Grahas at birth will produce Matsya Yog"
+        },
+        {
+          "step_id": "ch36-v21-22-matsya-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "the native will be a Jyotishi, be a synonym of kindness, be virtuous, strong, beautiful, famous, learned and pious"
+        },
+        {
+          "step_id": "ch36-v21-22-matsya-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Benefics in Dharm and Tanu Bhava this array of Grahas at birth will produce Matsya Yog"
+        },
+        {
+          "step_id": "ch36-v21-22-matsya-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "mixed Grahas in Putr Bhava this array of Grahas at birth will produce Matsya Yog"
+        },
+        {
+          "step_id": "ch36-v21-22-matsya-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "malefics in Bandhu and Randhr Bhava this array of Grahas at birth will produce Matsya Yog"
+        },
+        {
+          "step_id": "ch36-v21-22-matsya-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "Benefics in 9th house and 1st house"
+        },
+        {
+          "step_id": "ch36-v21-22-matsya-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "mixed Grahas in 5th house"
+        },
+        {
+          "step_id": "ch36-v21-22-matsya-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "malefics in 4th house and 8th house"
+        },
+        {
+          "step_id": "ch36-v21-22-matsya-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "Benefics in 9th house and 1st house this array of Grahas at birth will produce Matsya Yog"
+        },
+        {
+          "step_id": "ch36-v21-22-matsya-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "mixed Grahas in 5th house this array of Grahas at birth will produce Matsya Yog"
+        },
+        {
+          "step_id": "ch36-v21-22-matsya-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "malefics in 4th house and 8th house this array of Grahas at birth will produce Matsya Yog"
+        }
+      ],
+      "stop_conditions": [
+        "缺少九宫、一宫、五宫、四宫、八宫任一项占据事实时停止。",
+        "吉星与凶星名册未按本书 ch03:v11 取到时停止。",
+        "原文未定义「吉凶混杂的行星」的最少颗数，取值口径未确定即停判。"
+      ]
+    },
+    "ch36-v23-24-kurm-yog": {
+      "title": "Kurm Yog：吉星以本宫、入旺或友好星座占据五宫六宫七宫，凶星以本宫或入旺落三宫十一宫一宫",
+      "user_intents": [
+        "我有没有做领袖的命",
+        "我这辈子的地位与名声怎么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v23-24-kurm-yog"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "五宫（Putr）是否被吉星占据",
+        "六宫（Ari）是否被吉星占据",
+        "七宫（Yuvati）是否被吉星占据",
+        "三宫（Sahaj）是否被凶星占据",
+        "十一宫（Labh）是否被凶星占据",
+        "一宫（Tanu）是否被凶星占据"
+      ],
+      "conditional_facts": [
+        "占据五宫（Putr）、六宫（Ari）、七宫（Yuvati）的吉星是否落本宫",
+        "占据五宫（Putr）、六宫（Ari）、七宫（Yuvati）的吉星是否入旺",
+        "占据五宫（Putr）、六宫（Ari）、七宫（Yuvati）的吉星是否落友好星座（friendly Rāśi）",
+        "落三宫（Sahaj）、十一宫（Labh）、一宫（Tanu）的凶星是否落本宫",
+        "落三宫（Sahaj）、十一宫（Labh）、一宫（Tanu）的凶星是否入旺"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Kurm Yog. If Putr, Ari and Yuvati Bhava are occupied by benefic Grahas identical with own Bhava",
+        "Kurm Yog 吉星五宫六宫七宫 凶星三宫十一宫一宫 国王 领袖"
+      ],
+      "counter_queries": [
+        "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak",
+        "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless",
+        "The Bhava, which is not drishtied by its Lord, or, whose Lord is with a malefic Grah, or with one of the Lords of evil and such other Bhavas"
+      ],
+      "boundary_queries": [
+        "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+        "Exaltation and Debilitation. For the seven Grahas, from Surya on, the exaltation Rāśis are, respectively, Mesh, Vrishabh, Makar, Kanya, Kark, Meen and Tula",
+        "The Grahas ruling such Rāśis are its friends, apart from the Lord of its exaltation Rāśi. Lords other than these are its enemies"
+      ],
+      "method_queries": [
+        "Ratio of Effects. A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+        "Prosperity, or Annihilation of a Bhava. Predict prosperity of the Bhava, which is yuti with, or drishtied by a benefic"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v23-24-kurm-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Putr, Ari and Yuvati Bhava are occupied by benefic Grahas"
+        },
+        {
+          "step_id": "ch36-v23-24-kurm-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "identical with own Bhava"
+        },
+        {
+          "step_id": "ch36-v23-24-kurm-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "or exaltation"
+        },
+        {
+          "step_id": "ch36-v23-24-kurm-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "or friendly Rāśi"
+        },
+        {
+          "step_id": "ch36-v23-24-kurm-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "malefics are in Sahaj, Labh and Tanu Bhava"
+        },
+        {
+          "step_id": "ch36-v23-24-kurm-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "in own Bhava, or in exaltation"
+        },
+        {
+          "step_id": "ch36-v23-24-kurm-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Kurm Yog is formed"
+        },
+        {
+          "step_id": "ch36-v23-24-kurm-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "the native will be a king. be courageous, virtuous, famous, helpful, happy. He will be a leader of men."
+        },
+        {
+          "step_id": "ch36-v23-24-kurm-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Putr, Ari and Yuvati Bhava are occupied by benefic Grahas Kurm Yog is formed"
+        },
+        {
+          "step_id": "ch36-v23-24-kurm-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "identical with own Bhava Kurm Yog is formed"
+        },
+        {
+          "step_id": "ch36-v23-24-kurm-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "or exaltation Kurm Yog is formed"
+        },
+        {
+          "step_id": "ch36-v23-24-kurm-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "or friendly Rāśi Kurm Yog is formed"
+        },
+        {
+          "step_id": "ch36-v23-24-kurm-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "malefics are in Sahaj, Labh and Tanu Bhava Kurm Yog is formed"
+        },
+        {
+          "step_id": "ch36-v23-24-kurm-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "in own Bhava, or in exaltation Kurm Yog is formed"
+        },
+        {
+          "step_id": "ch36-v23-24-kurm-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "5th house, 6th house and 7th house are occupied by benefic Grahas"
+        },
+        {
+          "step_id": "ch36-v23-24-kurm-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "malefics are in 3rd house, 11th house and 1st house"
+        },
+        {
+          "step_id": "ch36-v23-24-kurm-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "5th house, 6th house and 7th house are occupied by benefic Grahas Kurm Yog is formed"
+        },
+        {
+          "step_id": "ch36-v23-24-kurm-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "malefics are in 3rd house, 11th house and 1st house Kurm Yog is formed"
+        }
+      ],
+      "stop_conditions": [
+        "缺少五宫、六宫、七宫吉星占据事实或三宫、十一宫、一宫凶星占据事实时停止。",
+        "命中吉星尊贵分支后，缺少该分支对应的本宫、入旺或友好星座事实时停止。",
+        "命中凶星尊贵分支后，缺少该分支对应的本宫或入旺事实时停止。",
+        "吉星与凶星名册未按本书 ch03:v11 取到时停止。"
+      ]
+    },
+    "ch36-v25-26-khadg-yog": {
+      "title": "Khadg Yog：二宫主与九宫主互换星座，上升主落角宫或三角宫",
+      "user_intents": [
+        "我这辈子的财运与福气怎么样",
+        "我在学问和本事上能到什么程度"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v25-26-khadg-yog"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "二宫主（Dhan's Lord）与九宫主（Dharm's Lord）是否互换星座"
+      ],
+      "conditional_facts": [
+        "上升主（Lagn's Lord）是否落角宫（Kendr）",
+        "上升主（Lagn's Lord）是否落三角宫（Kon）"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Khadg Yog. Should there be an exchange of Rāśis between the Lords of Dhan and Dharm Bhava",
+        "Khadg Yog 二宫主 九宫主 互换星座 上升主落角宫"
+      ],
+      "counter_queries": [
+        "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak",
+        "If Lagn’s Lord is yuti with the Lord of Ari, Randhr, or Vyaya Bhava, or with Shani and, if Lagn’s Lord is devoid of a Drishti from a benefic, the native will be penniless"
+      ],
+      "boundary_queries": [
+        "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+        "Putr and Dharm Bhava are known by the name Kon (or trine)"
+      ],
+      "method_queries": [
+        "An exchange of Rāśis between Karm’s Lord and Lagn’s Lord will make the native associated with the king in a great manner",
+        "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v25-26-khadg-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "an exchange of Rāśis between the Lords of Dhan and Dharm Bhava"
+        },
+        {
+          "step_id": "ch36-v25-26-khadg-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Lagn’s Lord is in a Kendr"
+        },
+        {
+          "step_id": "ch36-v25-26-khadg-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "or in a Kon"
+        },
+        {
+          "step_id": "ch36-v25-26-khadg-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Khadg Yog is obtained"
+        },
+        {
+          "step_id": "ch36-v25-26-khadg-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "One with Khadg Yog will be endowed with wealth, fortunes and happiness, be learned in Shastras, be intelligent, mighty, grateful and skilful."
+        },
+        {
+          "step_id": "ch36-v25-26-khadg-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "an exchange of Rāśis between the Lords of Dhan and Dharm Bhava Khadg Yog is obtained"
+        },
+        {
+          "step_id": "ch36-v25-26-khadg-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Lagn’s Lord is in a Kendr Khadg Yog is obtained"
+        },
+        {
+          "step_id": "ch36-v25-26-khadg-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "or in a Kon Khadg Yog is obtained"
+        },
+        {
+          "step_id": "ch36-v25-26-khadg-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "an exchange of Rāśis between the Lords of 2nd house and 9th house"
+        },
+        {
+          "step_id": "ch36-v25-26-khadg-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "1st lord is in a Kendr"
+        },
+        {
+          "step_id": "ch36-v25-26-khadg-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "an exchange of Rāśis between the Lords of 2nd house and 9th house Khadg Yog is obtained"
+        },
+        {
+          "step_id": "ch36-v25-26-khadg-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "1st lord is in a Kendr Khadg Yog is obtained"
+        }
+      ],
+      "stop_conditions": [
+        "缺少二宫主与九宫主互换星座事实时停止。",
+        "命中上升主分支后，缺少该分支对应的角宫或三角宫落宫事实时停止。",
+        "角宫与三角宫的宫位名单未按本书 ch07:v33-36 取到时停止。"
+      ]
+    },
+    "ch36-v27-28-lakshmi-yog": {
+      "title": "Lakshmi Yog：九宫主落角宫且据根本三角、本星座或入旺，上升主有力",
+      "user_intents": [
+        "我这辈子的福气和财富怎么样",
+        "我的社会地位能到什么程度"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v27-28-lakshmi-yog"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "九宫主（Dharm's Lord）是否落角宫（Kendr）",
+        "上升主（Lagn's Lord）是否有力"
+      ],
+      "conditional_facts": [
+        "九宫主（Dharm's Lord）所落星座是否为其根本三角星座（Mooltrikon Rāśi）",
+        "九宫主（Dharm's Lord）所落星座是否为其本星座（own Rāśi）",
+        "九宫主（Dharm's Lord）是否入旺"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Lakshmi Yog. If Dharm’s Lord is in a Kendr identical with his Mooltrikon Rāśi, or own Rāśi, or in exaltation",
+        "Lakshmi Yog 九宫主落角宫 根本三角 本星座 入旺 上升主有力"
+      ],
+      "counter_queries": [
+        "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless",
+        "If Lagn’s Lord is yuti with the Lord of Ari, Randhr, or Vyaya Bhava, or with Shani and, if Lagn’s Lord is devoid of a Drishti from a benefic, the native will be penniless"
+      ],
+      "boundary_queries": [
+        "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+        "Additional Dignities. In Simh the first 20 degrees are Surya’s Mooltrikon, while the rest is his own Bhava",
+        "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)"
+      ],
+      "method_queries": [
+        "Ratio of Effects. A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+        "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v27-28-lakshmi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Dharm’s Lord is in a Kendr"
+        },
+        {
+          "step_id": "ch36-v27-28-lakshmi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "identical with his Mooltrikon Rāśi"
+        },
+        {
+          "step_id": "ch36-v27-28-lakshmi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "or own Rāśi"
+        },
+        {
+          "step_id": "ch36-v27-28-lakshmi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "or in exaltation"
+        },
+        {
+          "step_id": "ch36-v27-28-lakshmi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Lagn’s Lord is endowed with strength"
+        },
+        {
+          "step_id": "ch36-v27-28-lakshmi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Lakshmi Yog occurs"
+        },
+        {
+          "step_id": "ch36-v27-28-lakshmi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "The native with Lakshmi Yog will be charming, virtuous, kingly in status, endowed with many sons and abundant wealth. He will be famous and of high moral merits."
+        },
+        {
+          "step_id": "ch36-v27-28-lakshmi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Dharm’s Lord is in a Kendr Lakshmi Yog occurs"
+        },
+        {
+          "step_id": "ch36-v27-28-lakshmi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "identical with his Mooltrikon Rāśi Lakshmi Yog occurs"
+        },
+        {
+          "step_id": "ch36-v27-28-lakshmi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "or own Rāśi Lakshmi Yog occurs"
+        },
+        {
+          "step_id": "ch36-v27-28-lakshmi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "or in exaltation Lakshmi Yog occurs"
+        },
+        {
+          "step_id": "ch36-v27-28-lakshmi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Lagn’s Lord is endowed with strength Lakshmi Yog occurs"
+        },
+        {
+          "step_id": "ch36-v27-28-lakshmi-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "9th lord is in a Kendr"
+        },
+        {
+          "step_id": "ch36-v27-28-lakshmi-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "1st lord is endowed with strength"
+        },
+        {
+          "step_id": "ch36-v27-28-lakshmi-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "9th lord is in a Kendr Lakshmi Yog occurs"
+        },
+        {
+          "step_id": "ch36-v27-28-lakshmi-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "1st lord is endowed with strength Lakshmi Yog occurs"
+        }
+      ],
+      "stop_conditions": [
+        "缺少九宫主落角宫事实或上升主力量事实时停止。",
+        "「有力」的判准由排盘窗口按本书 ch27 的 Shad Bal 定义，未取到取值时停止。",
+        "命中九宫主尊贵分支后，缺少该分支对应的根本三角、本星座或入旺事实时停止。"
+      ]
+    },
+    "ch36-v29-30-kusum-yog": {
+      "title": "Kusum Yog：固定星座上升，金星落角宫、月亮偕吉星落三角宫、土星落十宫",
+      "user_intents": [
+        "我有没有做大人物的命",
+        "我这辈子的享受和地位怎么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v29-30-kusum-yog"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "金星（Shukra）是否落角宫（Kendr）",
+        "月亮（Chandra）是否落三角宫（Kon）",
+        "月亮（Chandra）是否与吉星同宫",
+        "土星（Shani）是否落十宫（Karm）",
+        "上升星座是否为固定星座（Fixed Rāśi）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Kusum Yog. Shukra in a Kendr, Chandra in a Kon along with a benefic and Shani in Karm Bhava",
+        "Kusum Yog 固定星座上升 金星角宫 月亮三角宫 土星十宫"
+      ],
+      "counter_queries": [
+        "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak",
+        "Budh in Dhan Bhava, while malefics occupy Tanu and Vyaya Bhava: this Yoga will destroy the entire family"
+      ],
+      "boundary_queries": [
+        "Classification of Rāśis. Movable, Fixed and Dual are the names given to the 12 Rāśis in order",
+        "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+        "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics"
+      ],
+      "method_queries": [
+        "Putr and Dharm Bhava are known by the name Kon (or trine)",
+        "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v29-30-kusum-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Shukra in a Kendr"
+        },
+        {
+          "step_id": "ch36-v29-30-kusum-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Chandra in a Kon along with a benefic"
+        },
+        {
+          "step_id": "ch36-v29-30-kusum-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Shani in Karm Bhava"
+        },
+        {
+          "step_id": "ch36-v29-30-kusum-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "for one born in a Fixed Rashiascending"
+        },
+        {
+          "step_id": "ch36-v29-30-kusum-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "these Grahas thus cause Kusum Yog"
+        },
+        {
+          "step_id": "ch36-v29-30-kusum-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Such a native will be a king, or equal to him, be charitable, will enjoy pleasures, be happy, prime among his race men, virtuous and red-lettered."
+        },
+        {
+          "step_id": "ch36-v29-30-kusum-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Shukra in a Kendr these Grahas thus cause Kusum Yog"
+        },
+        {
+          "step_id": "ch36-v29-30-kusum-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Chandra in a Kon along with a benefic these Grahas thus cause Kusum Yog"
+        },
+        {
+          "step_id": "ch36-v29-30-kusum-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Shani in Karm Bhava these Grahas thus cause Kusum Yog"
+        },
+        {
+          "step_id": "ch36-v29-30-kusum-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "for one born in a Fixed Rashiascending these Grahas thus cause Kusum Yog"
+        },
+        {
+          "step_id": "ch36-v29-30-kusum-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "venus in a Kendr"
+        },
+        {
+          "step_id": "ch36-v29-30-kusum-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "moon in a Kon along with a benefic"
+        },
+        {
+          "step_id": "ch36-v29-30-kusum-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "saturn in 10th house"
+        },
+        {
+          "step_id": "ch36-v29-30-kusum-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "venus in a Kendr these Grahas thus cause Kusum Yog"
+        },
+        {
+          "step_id": "ch36-v29-30-kusum-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "moon in a Kon along with a benefic these Grahas thus cause Kusum Yog"
+        },
+        {
+          "step_id": "ch36-v29-30-kusum-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "saturn in 10th house these Grahas thus cause Kusum Yog"
+        }
+      ],
+      "stop_conditions": [
+        "缺少上升星座三分类事实时停止。",
+        "缺少金星落角宫、月亮落三角宫、月亮与吉星同宫或土星落十宫任一事实时停止。",
+        "吉星名册未按本书 ch03:v11 取到时停止。"
+      ]
+    },
+    "ch36-v31-32-kalanidhi-yog": {
+      "title": "Kalanidhi Yog：木星落二宫或五宫并受水星与金星相照",
+      "user_intents": [
+        "我的健康和学问怎么样",
+        "我有没有受贵人尊重的命"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v31-32-kalanidhi-yog"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "木星（Guru）是否被水星（Budh）相照",
+        "木星（Guru）是否被金星（Shukr）相照"
+      ],
+      "conditional_facts": [
+        "木星（Guru）是否落二宫（Dhan）",
+        "木星（Guru）是否落五宫（Putr）"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Kalanidhi Yog. If Guru is placed in Dhan, or Putr Bhava and receives a Drishti from Budh and Shukr",
+        "Kalanidhi Yog 木星落二宫五宫 水星金星相照 无疾病"
+      ],
+      "counter_queries": [
+        "The native will be penniless, if Lagn’s Lord is in Ari Bhava, while Ari’s Lord is in Lagna, yuti with, or receiving a Drishti from a Marak Lord",
+        "The Bhava, which is not drishtied by its Lord, or, whose Lord is with a malefic Grah, or with one of the Lords of evil and such other Bhavas"
+      ],
+      "boundary_queries": [
+        "Drishtis of the Grahas. O Brahmin, I have earlier stated Drishtis, based on Rāśis. The other kind is between Grahas",
+        "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics"
+      ],
+      "method_queries": [
+        "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava",
+        "Indications of Putr Bhava. The learned should deduce from Putr Bhava amulets, sacred spells, learning, knowledge, sons, royalty (or authority), fall of position etc"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v31-32-kalanidhi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Guru is placed in Dhan"
+        },
+        {
+          "step_id": "ch36-v31-32-kalanidhi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "or Putr Bhava"
+        },
+        {
+          "step_id": "ch36-v31-32-kalanidhi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "receives a Drishti from Budh and Shukr"
+        },
+        {
+          "step_id": "ch36-v31-32-kalanidhi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Kalanidhi Yog is caused"
+        },
+        {
+          "step_id": "ch36-v31-32-kalanidhi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "the native will be virtuous, honoured by the kings, bereft of diseases, be happy, wealthy and learned"
+        },
+        {
+          "step_id": "ch36-v31-32-kalanidhi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Guru is placed in Dhan Kalanidhi Yog is caused"
+        },
+        {
+          "step_id": "ch36-v31-32-kalanidhi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "or Putr Bhava Kalanidhi Yog is caused"
+        },
+        {
+          "step_id": "ch36-v31-32-kalanidhi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "receives a Drishti from Budh and Shukr Kalanidhi Yog is caused"
+        },
+        {
+          "step_id": "ch36-v31-32-kalanidhi-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "jupiter is placed in 2nd house"
+        },
+        {
+          "step_id": "ch36-v31-32-kalanidhi-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "or 5th house"
+        },
+        {
+          "step_id": "ch36-v31-32-kalanidhi-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "receives a Drishti from mercury and venus"
+        },
+        {
+          "step_id": "ch36-v31-32-kalanidhi-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "jupiter is placed in 2nd house Kalanidhi Yog is caused"
+        },
+        {
+          "step_id": "ch36-v31-32-kalanidhi-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "or 5th house Kalanidhi Yog is caused"
+        },
+        {
+          "step_id": "ch36-v31-32-kalanidhi-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "receives a Drishti from mercury and venus Kalanidhi Yog is caused"
+        }
+      ],
+      "stop_conditions": [
+        "缺少木星被水星相照或被金星相照任一事实时停止。",
+        "命中木星落宫分支后，缺少该分支对应的二宫或五宫落宫事实时停止。",
+        "相照的取值口径未按本书 ch26 的 Drishti 章节取到时停止。"
+      ]
+    },
+    "ch36-v33-34-kalpa-drum-yog": {
+      "title": "Kalpa Drum Yog：上升主及其三层星座主全落角宫三角宫或全入旺",
+      "user_intents": [
+        "我这辈子的财富和地位怎么样",
+        "我有没有掌权的命"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v33-34-kalpa-drum-yog"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘上升主（Lagn's Lord）是哪颗行星",
+        "上升主（Lagn's Lord）的星座主（dispositor，原文记为 a）是哪颗行星",
+        "原文记为 a 的行星的星座主（dispositor，原文记为 b）是哪颗行星",
+        "原文记为 b 的行星在九分盘（Navamsa D9）中的星座主是哪颗行星"
+      ],
+      "conditional_facts": [
+        "这四颗行星是否都落在从上升（Lagna）起算的角宫（Kendras）与三角宫（Konas）内",
+        "这四颗行星是否都入旺"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Kalpa Drum Yog. Note the following four Grahas: Lagn’s Lord , the dispositor of Lagn’s Lord",
+        "Kalpa Drum Yog 上升主 星座主 九分盘星座主 角宫三角宫 入旺"
+      ],
+      "counter_queries": [
+        "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless",
+        "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+      ],
+      "boundary_queries": [
+        "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+        "Putr and Dharm Bhava are known by the name Kon (or trine)",
+        "Navāńś. The Navāńś calculation are for a Movable Rashifrom there itself, for a Fixed Rashifrom the 9<sup>th</sup> thereof",
+        "Exaltation and Debilitation. For the seven Grahas, from Surya on, the exaltation Rāśis are, respectively, Mesh, Vrishabh, Makar, Kanya, Kark, Meen and Tula"
+      ],
+      "method_queries": [
+        "If four, or five Grahas occupy their exaltation Rāśis, or Mooltrikon Rāśis, even a person of base birth will become king",
+        "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v33-34-kalpa-drum-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Note the following four Grahas: Lagn’s Lord , the dispositor of Lagn’s Lord (a), the dispositor of the Grah “a” (b), the Navāńś dispositor of the Grah “b”"
+        },
+        {
+          "step_id": "ch36-v33-34-kalpa-drum-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "If all these are disposed in Kendras and in Konas from Lagna"
+        },
+        {
+          "step_id": "ch36-v33-34-kalpa-drum-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "or are exalted"
+        },
+        {
+          "step_id": "ch36-v33-34-kalpa-drum-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Kalpa Drum Yog exists"
+        },
+        {
+          "step_id": "ch36-v33-34-kalpa-drum-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "One with Kalpa Drum Yog will be endowed with all kinds of wealth, be a king, pious, strong, fond of war and merciful."
+        },
+        {
+          "step_id": "ch36-v33-34-kalpa-drum-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Note the following four Grahas: Lagn’s Lord , the dispositor of Lagn’s Lord (a), the dispositor of the Grah “a” (b), the Navāńś dispositor of the Grah “b” Kalpa Drum Yog exists"
+        },
+        {
+          "step_id": "ch36-v33-34-kalpa-drum-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "If all these are disposed in Kendras and in Konas from Lagna Kalpa Drum Yog exists"
+        },
+        {
+          "step_id": "ch36-v33-34-kalpa-drum-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "or are exalted Kalpa Drum Yog exists"
+        },
+        {
+          "step_id": "ch36-v33-34-kalpa-drum-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "Note the following four Grahas: 1st lord , the dispositor of 1st lord (a), the dispositor of the Grah “a” (b), the Navāńś dispositor of the Grah “b”"
+        },
+        {
+          "step_id": "ch36-v33-34-kalpa-drum-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "If all these are disposed in Kendras and in Konas from 1st house"
+        },
+        {
+          "step_id": "ch36-v33-34-kalpa-drum-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "Note the following four Grahas: 1st lord , the dispositor of 1st lord (a), the dispositor of the Grah “a” (b), the Navāńś dispositor of the Grah “b” Kalpa Drum Yog exists"
+        },
+        {
+          "step_id": "ch36-v33-34-kalpa-drum-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "If all these are disposed in Kendras and in Konas from 1st house Kalpa Drum Yog exists"
+        }
+      ],
+      "stop_conditions": [
+        "缺少四颗行星中任一颗的身份事实时停止。",
+        "命中落宫分支后，缺少四颗行星全落角宫三角宫的事实时停止。",
+        "命中入旺分支后，缺少四颗行星全部入旺的事实时停止。",
+        "九分盘（Navamsa D9）星座主的取值口径未按本书 ch06 取到时停止。"
+      ]
+    },
+    "ch36-v35-36-hari-yog": {
+      "title": "Hari Yog：从二宫主起算的第2、第12、第8位被吉星占据",
+      "user_intents": [
+        "我这辈子过得顺不顺、有没有财富和子女",
+        "我的学问怎么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v35-36-hari-yog"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "从二宫主（Dhan's Lord）所落宫起算的第2宫是否被吉星占据",
+        "从二宫主（Dhan's Lord）所落宫起算的第12宫是否被吉星占据",
+        "从二宫主（Dhan's Lord）所落宫起算的第8宫是否被吉星占据"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Trimurthi Yogas. Counted from Dhan’s Lord, if benefics occupy the 2nd, 12th and 8th, Hari Yog is formed",
+        "Hari Yog 从二宫主起算 第2 第12 第8 吉星"
+      ],
+      "counter_queries": [
+        "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak",
+        "The Bhava, which is not drishtied by its Lord, or, whose Lord is with a malefic Grah, or with one of the Lords of evil and such other Bhavas"
+      ],
+      "boundary_queries": [
+        "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+        "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+      ],
+      "method_queries": [
+        "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava",
+        "Prosperity, or Annihilation of a Bhava. Predict prosperity of the Bhava, which is yuti with, or drishtied by a benefic"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v35-36-hari-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Counted from Dhan’s Lord"
+        },
+        {
+          "step_id": "ch36-v35-36-hari-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "if benefics occupy the 2nd , 12th and 8th"
+        },
+        {
+          "step_id": "ch36-v35-36-hari-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Hari Yog is formed"
+        },
+        {
+          "step_id": "ch36-v35-36-hari-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "One born in anyone of the said three Yogas will be happy, learned and endowed with wealth and sons."
+        },
+        {
+          "step_id": "ch36-v35-36-hari-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Counted from Dhan’s Lord Hari Yog is formed"
+        },
+        {
+          "step_id": "ch36-v35-36-hari-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "if benefics occupy the 2nd , 12th and 8th Hari Yog is formed"
+        },
+        {
+          "step_id": "ch36-v35-36-hari-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "Counted from 2nd lord"
+        },
+        {
+          "step_id": "ch36-v35-36-hari-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "Counted from 2nd lord Hari Yog is formed"
+        }
+      ],
+      "stop_conditions": [
+        "缺少从二宫主起算的第2、第12或第8位吉星占据事实时停止。",
+        "二宫主落宫未知时停止。",
+        "吉星名册未按本书 ch03:v11 取到时停止。"
+      ]
+    },
+    "ch36-v35-36-hara-yog": {
+      "title": "Hara Yog：从七宫主所落星座起算的第4、第9、第8个星座被吉星占据",
+      "user_intents": [
+        "我这辈子过得顺不顺、有没有财富和子女",
+        "我的婚姻宫位配置对整体运势有什么影响"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v35-36-hara-yog"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "从七宫主（Yuvati's Lord）所落星座起算的第4个星座是否被吉星占据",
+        "从七宫主（Yuvati's Lord）所落星座起算的第9个星座是否被吉星占据",
+        "从七宫主（Yuvati's Lord）所落星座起算的第8个星座是否被吉星占据"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If the 4th, 9th and 8th with reference to the Rāśi, occupied by Yuvati’s Lord, are occupied by benefics, Hara Yog",
+        "Hara Yog 七宫主所落星座 第4 第9 第8 吉星"
+      ],
+      "counter_queries": [
+        "The native will be penniless, if Lagn’s Lord is in Ari Bhava, while Ari’s Lord is in Lagna, yuti with, or receiving a Drishti from a Marak Lord",
+        "The Bhava, which is not drishtied by its Lord, or, whose Lord is with a malefic Grah, or with one of the Lords of evil and such other Bhavas"
+      ],
+      "boundary_queries": [
+        "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+        "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+      ],
+      "method_queries": [
+        "Indications of Yuvati Bhava. Wife, travel, trade, loss of sight, death etc. be known from Yuvati Bhava",
+        "Prosperity, or Annihilation of a Bhava. Predict prosperity of the Bhava, which is yuti with, or drishtied by a benefic"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v35-36-hara-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "with reference to the Rāśi, occupied by Yuvati’s Lord"
+        },
+        {
+          "step_id": "ch36-v35-36-hara-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "the 4th , 9th and 8th"
+        },
+        {
+          "step_id": "ch36-v35-36-hara-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "are occupied by benefics"
+        },
+        {
+          "step_id": "ch36-v35-36-hara-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Hara Yog is obtainable"
+        },
+        {
+          "step_id": "ch36-v35-36-hara-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "One born in anyone of the said three Yogas will be happy, learned and endowed with wealth and sons."
+        },
+        {
+          "step_id": "ch36-v35-36-hara-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "with reference to the Rāśi, occupied by Yuvati’s Lord Hara Yog is obtainable"
+        },
+        {
+          "step_id": "ch36-v35-36-hara-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "the 4th , 9th and 8th Hara Yog is obtainable"
+        },
+        {
+          "step_id": "ch36-v35-36-hara-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "are occupied by benefics Hara Yog is obtainable"
+        },
+        {
+          "step_id": "ch36-v35-36-hara-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "with reference to the Rāśi, occupied by 7th lord"
+        },
+        {
+          "step_id": "ch36-v35-36-hara-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "with reference to the Rāśi, occupied by 7th lord Hara Yog is obtainable"
+        }
+      ],
+      "stop_conditions": [
+        "缺少从七宫主所落星座起算的第4、第9或第8个星座吉星占据事实时停止。",
+        "七宫主所落星座未知时停止。",
+        "吉星名册未按本书 ch03:v11 取到时停止。"
+      ]
+    },
+    "ch36-v35-36-brahma-yog": {
+      "title": "Brahma Yog：从上升主所落星座起算的第4、第10、第11个星座被吉星占据",
+      "user_intents": [
+        "我这辈子过得顺不顺、有没有财富和子女",
+        "我的学问和福气怎么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v35-36-brahma-yog"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "从上升主（Lagn's Lord）所落星座起算的第4个星座是否被吉星占据",
+        "从上升主（Lagn's Lord）所落星座起算的第10个星座是否被吉星占据",
+        "从上升主（Lagn's Lord）所落星座起算的第11个星座是否被吉星占据"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Brahma Yog is generated, if, counted from Lagn’s Lord, benefics are in the 4th, 10th and 11th Rāśis",
+        "Brahma Yog 从上升主所落星座 第4 第10 第11 吉星"
+      ],
+      "counter_queries": [
+        "If Lagn’s Lord is yuti with the Lord of Ari, Randhr, or Vyaya Bhava, or with Shani and, if Lagn’s Lord is devoid of a Drishti from a benefic, the native will be penniless",
+        "The Bhava, which is not drishtied by its Lord, or, whose Lord is with a malefic Grah, or with one of the Lords of evil and such other Bhavas"
+      ],
+      "boundary_queries": [
+        "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+        "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+      ],
+      "method_queries": [
+        "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour",
+        "Prosperity, or Annihilation of a Bhava. Predict prosperity of the Bhava, which is yuti with, or drishtied by a benefic"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v35-36-brahma-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "counted from Lagn’s Lord"
+        },
+        {
+          "step_id": "ch36-v35-36-brahma-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "benefics are in the 4th , 10th and 11th Rāśis"
+        },
+        {
+          "step_id": "ch36-v35-36-brahma-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Brahma Yog is generated"
+        },
+        {
+          "step_id": "ch36-v35-36-brahma-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "One born in anyone of the said three Yogas will be happy, learned and endowed with wealth and sons."
+        },
+        {
+          "step_id": "ch36-v35-36-brahma-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "counted from Lagn’s Lord Brahma Yog is generated"
+        },
+        {
+          "step_id": "ch36-v35-36-brahma-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "benefics are in the 4th , 10th and 11th Rāśis Brahma Yog is generated"
+        },
+        {
+          "step_id": "ch36-v35-36-brahma-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "counted from 1st lord"
+        },
+        {
+          "step_id": "ch36-v35-36-brahma-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "counted from 1st lord Brahma Yog is generated"
+        }
+      ],
+      "stop_conditions": [
+        "缺少从上升主所落星座起算的第4、第10或第11个星座吉星占据事实时停止。",
+        "上升主所落星座未知时停止。",
+        "吉星名册未按本书 ch03:v11 取到时停止。"
+      ]
+    },
+    "ch36-v37-lagn-adhi-yog": {
+      "title": "Lagn Adhi Yog：从上升起算的七宫与八宫有吉星且不受凶星同宫与相照",
+      "user_intents": [
+        "我这辈子能不能成为有分量的人",
+        "我的学问和心境怎么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v37-lagn-adhi-yog"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "七宫（Yuvati）是否被吉星占据",
+        "八宫（Randhr）是否被吉星占据",
+        "七宫（Yuvati）与八宫（Randhr）内的吉星是否与凶星同宫",
+        "七宫（Yuvati）与八宫（Randhr）内的吉星是否被凶星相照"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Lagn Adhi Yog. Should benefics be in Yuvati and Randhr Bhava, counted from Lagn and be devoid of Yuti with and/or Drishti from malefics",
+        "Lagn Adhi Yog 七宫八宫吉星 无凶星同宫 无凶星相照"
+      ],
+      "counter_queries": [
+        "If there be a benefic in Lagna, Subh Yog is produced, while a malefic in Lagn causes Asubh Yog",
+        "The Bhava, which is not drishtied by its Lord, or, whose Lord is with a malefic Grah, or with one of the Lords of evil and such other Bhavas",
+        "If Lagn’s Lord is yuti with the Lord of Ari, Randhr, or Vyaya Bhava, or with Shani and, if Lagn’s Lord is devoid of a Drishti from a benefic, the native will be penniless"
+      ],
+      "boundary_queries": [
+        "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+        "Drishtis of the Grahas. O Brahmin, I have earlier stated Drishtis, based on Rāśis. The other kind is between Grahas"
+      ],
+      "method_queries": [
+        "Prosperity, or Annihilation of a Bhava. Predict prosperity of the Bhava, which is yuti with, or drishtied by a benefic",
+        "Indications of Randhr Bhava. Randhr Bhava indicates longevity, battle, enemies, forts, wealth of the dead"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v37-lagn-adhi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "benefics be in Yuvati and Randhr Bhava, counted from Lagn"
+        },
+        {
+          "step_id": "ch36-v37-lagn-adhi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "be devoid of Yuti with and/or Drishti from malefics"
+        },
+        {
+          "step_id": "ch36-v37-lagn-adhi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Lagn Adhi Yog is produced"
+        },
+        {
+          "step_id": "ch36-v37-lagn-adhi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "making one a great person, learned in Shastras and happy"
+        },
+        {
+          "step_id": "ch36-v37-lagn-adhi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "benefics be in Yuvati and Randhr Bhava, counted from Lagn Lagn Adhi Yog is produced"
+        },
+        {
+          "step_id": "ch36-v37-lagn-adhi-yog.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "be devoid of Yuti with and/or Drishti from malefics Lagn Adhi Yog is produced"
+        },
+        {
+          "step_id": "ch36-v37-lagn-adhi-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "benefics be in 7th house and 8th house, counted from 1st house"
+        },
+        {
+          "step_id": "ch36-v37-lagn-adhi-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_result",
+          "query": "1st house Adhi Yog is produced"
+        },
+        {
+          "step_id": "ch36-v37-lagn-adhi-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "benefics be in 7th house and 8th house, counted from 1st house 1st house Adhi Yog is produced"
+        },
+        {
+          "step_id": "ch36-v37-lagn-adhi-yog.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "be devoid of Yuti with and/or Drishti from malefics 1st house Adhi Yog is produced"
+        }
+      ],
+      "stop_conditions": [
+        "缺少七宫或八宫吉星占据事实时停止。",
+        "缺少吉星与凶星同宫事实或吉星被凶星相照事实时停止。",
+        "吉星与凶星名册未按本书 ch03:v11 取到时停止。"
+      ]
+    },
+    "ch36-v38-39-lagn-lord-parijatamsa": {
+      "title": "上升主落 Parijatāńś 的效果",
+      "user_intents": [
+        "我这辈子过得开不开心",
+        "上升主的分盘尊贵说明什么"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v38-39-lagn-lord-parijatamsa"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "上升主（Lagn's Lord）的分盘尊贵是否为 Parijatāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Effects of Lagn’s Lord’s Division Dignities. Lagn’s Lord in Parijatāńś will make one happy, in Vargottama will give immunity to diseases",
+        "上升主 分盘尊贵 Parijatāńś 效果"
+      ],
+      "counter_queries": [
+        "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas",
+        "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless"
+      ],
+      "boundary_queries": [
+        "In the Dasha Varg scheme the designations commence from Parijata etc., such as 2 good Vargas - Parijatha, 3 Uttama, 4 Gopur, 5 Simhasan, 6 Paravata, 7 Devaloka, 8 Brahmaloka, 9 Sakravahana and 10 Vargas - Shridham",
+        "Navāńś. The Navāńś calculation are for a Movable Rashifrom there itself, for a Fixed Rashifrom the 9<sup>th</sup> thereof"
+      ],
+      "method_queries": [
+        "If the Lord of a Kendr is in Parijatāńś, the native will be liberal, if in Uttamāńś, will be highly liberal, if in Gopurāńś, will be endowed with prowess",
+        "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v38-39-lagn-lord-parijatamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Effects of Lagn’s Lord’s Division Dignities"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-parijatamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "in Parijatāńś"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-parijatamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "will make one happy"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-parijatamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Effects of Lagn’s Lord’s Division Dignities will make one happy"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-parijatamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "in Parijatāńś will make one happy"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-parijatamsa.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "Effects of 1st lord’s Division Dignities"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-parijatamsa.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "Effects of 1st lord’s Division Dignities will make one happy"
+        }
+      ],
+      "stop_conditions": [
+        "缺少上升主分盘尊贵事实时停止。",
+        "分盘尊贵的判定口径未按本书 ch06 的 Varg 分类取到时停止。"
+      ]
+    },
+    "ch36-v38-39-lagn-lord-gopuramsa": {
+      "title": "上升主落 Gopurāńś 的效果",
+      "user_intents": [
+        "我这辈子的财富和口粮怎么样",
+        "上升主的分盘尊贵说明什么"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v38-39-lagn-lord-gopuramsa"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "上升主（Lagn's Lord）的分盘尊贵是否为 Gopurāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Effects of Lagn’s Lord’s Division Dignities. Lagn’s Lord in Parijatāńś will make one happy, in Vargottama will give immunity to diseases",
+        "上升主 分盘尊贵 Gopurāńś 效果"
+      ],
+      "counter_queries": [
+        "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas",
+        "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless"
+      ],
+      "boundary_queries": [
+        "In the Dasha Varg scheme the designations commence from Parijata etc., such as 2 good Vargas - Parijatha, 3 Uttama, 4 Gopur, 5 Simhasan, 6 Paravata, 7 Devaloka, 8 Brahmaloka, 9 Sakravahana and 10 Vargas - Shridham",
+        "Navāńś. The Navāńś calculation are for a Movable Rashifrom there itself, for a Fixed Rashifrom the 9<sup>th</sup> thereof"
+      ],
+      "method_queries": [
+        "If the Lord of a Kendr is in Parijatāńś, the native will be liberal, if in Uttamāńś, will be highly liberal, if in Gopurāńś, will be endowed with prowess",
+        "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v38-39-lagn-lord-gopuramsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Effects of Lagn’s Lord’s Division Dignities"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-gopuramsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "in Gopurāńś"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-gopuramsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "will make one rich with wealth and grains"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-gopuramsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Effects of Lagn’s Lord’s Division Dignities will make one rich with wealth and grains"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-gopuramsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "in Gopurāńś will make one rich with wealth and grains"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-gopuramsa.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "Effects of 1st lord’s Division Dignities"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-gopuramsa.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "Effects of 1st lord’s Division Dignities will make one rich with wealth and grains"
+        }
+      ],
+      "stop_conditions": [
+        "缺少上升主分盘尊贵事实时停止。",
+        "分盘尊贵的判定口径未按本书 ch06 的 Varg 分类取到时停止。"
+      ]
+    },
+    "ch36-v38-39-lagn-lord-simhasanamsa": {
+      "title": "上升主落 Simhasanāńś 的效果",
+      "user_intents": [
+        "我有没有掌权做主的命",
+        "上升主的分盘尊贵说明什么"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v38-39-lagn-lord-simhasanamsa"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "上升主（Lagn's Lord）的分盘尊贵是否为 Simhasanāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Effects of Lagn’s Lord’s Division Dignities. Lagn’s Lord in Parijatāńś will make one happy, in Vargottama will give immunity to diseases",
+        "上升主 分盘尊贵 Simhasanāńś 效果"
+      ],
+      "counter_queries": [
+        "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas",
+        "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless"
+      ],
+      "boundary_queries": [
+        "In the Dasha Varg scheme the designations commence from Parijata etc., such as 2 good Vargas - Parijatha, 3 Uttama, 4 Gopur, 5 Simhasan, 6 Paravata, 7 Devaloka, 8 Brahmaloka, 9 Sakravahana and 10 Vargas - Shridham",
+        "Navāńś. The Navāńś calculation are for a Movable Rashifrom there itself, for a Fixed Rashifrom the 9<sup>th</sup> thereof"
+      ],
+      "method_queries": [
+        "If the Lord of a Kendr is in Parijatāńś, the native will be liberal, if in Uttamāńś, will be highly liberal, if in Gopurāńś, will be endowed with prowess",
+        "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v38-39-lagn-lord-simhasanamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Effects of Lagn’s Lord’s Division Dignities"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-simhasanamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "in Simhasanāńś"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-simhasanamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "will make one a king"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-simhasanamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Effects of Lagn’s Lord’s Division Dignities will make one a king"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-simhasanamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "in Simhasanāńś will make one a king"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-simhasanamsa.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "Effects of 1st lord’s Division Dignities"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-simhasanamsa.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "Effects of 1st lord’s Division Dignities will make one a king"
+        }
+      ],
+      "stop_conditions": [
+        "缺少上升主分盘尊贵事实时停止。",
+        "分盘尊贵的判定口径未按本书 ch06 的 Varg 分类取到时停止。"
+      ]
+    },
+    "ch36-v38-39-lagn-lord-paravatamsa": {
+      "title": "上升主落 Paravatāńś 的效果",
+      "user_intents": [
+        "我适不适合走做学问这条路",
+        "上升主的分盘尊贵说明什么"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v38-39-lagn-lord-paravatamsa"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "上升主（Lagn's Lord）的分盘尊贵是否为 Paravatāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Effects of Lagn’s Lord’s Division Dignities. Lagn’s Lord in Parijatāńś will make one happy, in Vargottama will give immunity to diseases",
+        "上升主 分盘尊贵 Paravatāńś 效果"
+      ],
+      "counter_queries": [
+        "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas",
+        "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless"
+      ],
+      "boundary_queries": [
+        "In the Dasha Varg scheme the designations commence from Parijata etc., such as 2 good Vargas - Parijatha, 3 Uttama, 4 Gopur, 5 Simhasan, 6 Paravata, 7 Devaloka, 8 Brahmaloka, 9 Sakravahana and 10 Vargas - Shridham",
+        "Navāńś. The Navāńś calculation are for a Movable Rashifrom there itself, for a Fixed Rashifrom the 9<sup>th</sup> thereof"
+      ],
+      "method_queries": [
+        "If the Lord of a Kendr is in Parijatāńś, the native will be liberal, if in Uttamāńś, will be highly liberal, if in Gopurāńś, will be endowed with prowess",
+        "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v38-39-lagn-lord-paravatamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Effects of Lagn’s Lord’s Division Dignities"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-paravatamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "in Paravatāńś"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-paravatamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "will make one a scholar"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-paravatamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Effects of Lagn’s Lord’s Division Dignities will make one a scholar"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-paravatamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "in Paravatāńś will make one a scholar"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-paravatamsa.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "Effects of 1st lord’s Division Dignities"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-paravatamsa.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "Effects of 1st lord’s Division Dignities will make one a scholar"
+        }
+      ],
+      "stop_conditions": [
+        "缺少上升主分盘尊贵事实时停止。",
+        "分盘尊贵的判定口径未按本书 ch06 的 Varg 分类取到时停止。"
+      ]
+    },
+    "ch36-v38-39-lagn-lord-devalokamsa": {
+      "title": "上升主落 Devalokāńś 的效果",
+      "user_intents": [
+        "我这辈子的富足程度和车马怎么样",
+        "上升主的分盘尊贵说明什么"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v38-39-lagn-lord-devalokamsa"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "上升主（Lagn's Lord）的分盘尊贵是否为 Devalokāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Effects of Lagn’s Lord’s Division Dignities. Lagn’s Lord in Parijatāńś will make one happy, in Vargottama will give immunity to diseases",
+        "上升主 分盘尊贵 Devalokāńś 效果"
+      ],
+      "counter_queries": [
+        "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas",
+        "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless"
+      ],
+      "boundary_queries": [
+        "In the Dasha Varg scheme the designations commence from Parijata etc., such as 2 good Vargas - Parijatha, 3 Uttama, 4 Gopur, 5 Simhasan, 6 Paravata, 7 Devaloka, 8 Brahmaloka, 9 Sakravahana and 10 Vargas - Shridham",
+        "Navāńś. The Navāńś calculation are for a Movable Rashifrom there itself, for a Fixed Rashifrom the 9<sup>th</sup> thereof"
+      ],
+      "method_queries": [
+        "If the Lord of a Kendr is in Parijatāńś, the native will be liberal, if in Uttamāńś, will be highly liberal, if in Gopurāńś, will be endowed with prowess",
+        "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v38-39-lagn-lord-devalokamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Effects of Lagn’s Lord’s Division Dignities"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-devalokamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "in Devalokāńś"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-devalokamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "will make one opulent and endowed with conveyances"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-devalokamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Effects of Lagn’s Lord’s Division Dignities will make one opulent and endowed with conveyances"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-devalokamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "in Devalokāńś will make one opulent and endowed with conveyances"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-devalokamsa.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "Effects of 1st lord’s Division Dignities"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-devalokamsa.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "Effects of 1st lord’s Division Dignities will make one opulent and endowed with conveyances"
+        }
+      ],
+      "stop_conditions": [
+        "缺少上升主分盘尊贵事实时停止。",
+        "分盘尊贵的判定口径未按本书 ch06 的 Varg 分类取到时停止。"
+      ]
+    },
+    "ch36-v38-39-lagn-lord-iravatamsa": {
+      "title": "上升主落 Iravatāńś 的效果",
+      "user_intents": [
+        "我这辈子有没有名声",
+        "上升主的分盘尊贵说明什么"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v38-39-lagn-lord-iravatamsa"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "上升主（Lagn's Lord）的分盘尊贵是否为 Iravatāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Effects of Lagn’s Lord’s Division Dignities. Lagn’s Lord in Parijatāńś will make one happy, in Vargottama will give immunity to diseases",
+        "上升主 分盘尊贵 Iravatāńś 效果"
+      ],
+      "counter_queries": [
+        "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas",
+        "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless"
+      ],
+      "boundary_queries": [
+        "In the Dasha Varg scheme the designations commence from Parijata etc., such as 2 good Vargas - Parijatha, 3 Uttama, 4 Gopur, 5 Simhasan, 6 Paravata, 7 Devaloka, 8 Brahmaloka, 9 Sakravahana and 10 Vargas - Shridham",
+        "Navāńś. The Navāńś calculation are for a Movable Rashifrom there itself, for a Fixed Rashifrom the 9<sup>th</sup> thereof"
+      ],
+      "method_queries": [
+        "If the Lord of a Kendr is in Parijatāńś, the native will be liberal, if in Uttamāńś, will be highly liberal, if in Gopurāńś, will be endowed with prowess",
+        "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v38-39-lagn-lord-iravatamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Effects of Lagn’s Lord’s Division Dignities"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-iravatamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "in Iravatāńś"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-iravatamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "will make one famous and honoured by kings"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-iravatamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Effects of Lagn’s Lord’s Division Dignities will make one famous and honoured by kings"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-iravatamsa.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "in Iravatāńś will make one famous and honoured by kings"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-iravatamsa.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "Effects of 1st lord’s Division Dignities"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-iravatamsa.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "Effects of 1st lord’s Division Dignities will make one famous and honoured by kings"
+        }
+      ],
+      "stop_conditions": [
+        "缺少上升主分盘尊贵事实时停止。",
+        "分盘尊贵的判定口径未按本书 ch06 的 Varg 分类取到时停止。"
+      ]
+    },
+    "ch36-v38-39-lagn-lord-vargottama": {
+      "title": "上升主为 Vargottama 的效果",
+      "user_intents": [
+        "我的身体容易生病吗",
+        "上升主落同一星座同一九分盘说明什么"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch36-v38-39-lagn-lord-vargottama"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "上升主（Lagn's Lord）是否为 Vargottama"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Effects of Lagn’s Lord’s Division Dignities. Lagn’s Lord in Parijatāńś will make one happy, in Vargottama will give immunity to diseases",
+        "上升主 Vargottama 免于疾病 同一星座同一九分盘"
+      ],
+      "counter_queries": [
+        "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas",
+        "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless"
+      ],
+      "boundary_queries": [
+        "In the Dasha Varg scheme the designations commence from Parijata etc., such as 2 good Vargas - Parijatha, 3 Uttama, 4 Gopur, 5 Simhasan, 6 Paravata, 7 Devaloka, 8 Brahmaloka, 9 Sakravahana and 10 Vargas - Shridham",
+        "Navāńś. The Navāńś calculation are for a Movable Rashifrom there itself, for a Fixed Rashifrom the 9<sup>th</sup> thereof",
+        "This happens, when Lagn in the RashiKundali and the Navāńś Lagn are in the same Rāśi"
+      ],
+      "method_queries": [
+        "If the Lord of a Kendr is in Parijatāńś, the native will be liberal, if in Uttamāńś, will be highly liberal, if in Gopurāńś, will be endowed with prowess",
+        "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch36-v38-39-lagn-lord-vargottama.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Effects of Lagn’s Lord’s Division Dignities"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-vargottama.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "in Vargottama"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-vargottama.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Vargottama indicates a Grah, occupying the same Rashiand the same Navāńś"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-vargottama.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "will give immunity to diseases"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-vargottama.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Effects of Lagn’s Lord’s Division Dignities will give immunity to diseases"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-vargottama.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "in Vargottama will give immunity to diseases"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-vargottama.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Vargottama indicates a Grah, occupying the same Rashiand the same Navāńś will give immunity to diseases"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-vargottama.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "Effects of 1st lord’s Division Dignities"
+        },
+        {
+          "step_id": "ch36-v38-39-lagn-lord-vargottama.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "Effects of 1st lord’s Division Dignities will give immunity to diseases"
+        }
+      ],
+      "stop_conditions": [
+        "缺少上升主本盘星座或九分盘星座事实时停止。",
+        "九分盘（Navamsa D9）的取值口径未按本书 ch06 取到时停止。"
+      ]
+    }
+  }
+}
