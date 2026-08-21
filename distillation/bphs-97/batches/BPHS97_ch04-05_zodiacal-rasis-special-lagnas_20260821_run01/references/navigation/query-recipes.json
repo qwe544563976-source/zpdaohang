@@ -1,0 +1,1776 @@
+{
+  "schema_version": "judgment-query-recipes/v2",
+  "pilot_only": false,
+  "publishable": false,
+  "topics": {
+    "ch04-v25-30-nishek-lagn": {
+      "title": "受胎上升（Nishek Lagn）推算：土星与曼迪的角距加上升宫与九宫宫始之差",
+      "user_intents": [
+        "我大概是什么时候受胎的",
+        "我在母胎里的处境好不好",
+        "能不能从受胎盘看父母的寿命和生死"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch04-v25-30-nishek-lagn"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘上升（Lagn）是否已知",
+        "土星（Shani）的黄经是多少度",
+        "曼迪（Mandi）的黄经是多少度",
+        "本盘上升宫（Lagn Bhava）宫始点与九宫（Dharm）宫始点的差是多少度",
+        "本盘上升主（Lagn's Lord）是否落在不可见半（自上升宫始点至下降宫始点）"
+      ],
+      "conditional_facts": [
+        "月亮（Chandra）在其所落星座内已行进多少度"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Note the angular distance between Shani and Mandi (Gulik). Add this to the difference between the Lagn Bhava (Madhya, or cusp) and the 9th Bhava (cusp)",
+        "The resultant product in Rāśis, degrees etc. will represent the months, days etc., that elapsed between Nishek and birth",
+        "add the degrees etc., Chandra moved in the particular Rāśi, occupied by her, to the above-mentioned product",
+        "受胎上升 土星 曼迪 角距 上升宫始 九宫宫始"
+      ],
+      "counter_queries": [
+        "Combinations for Father’s Death. The father of the native would have passed away prior to the native’s birth",
+        "父母的死亡 另有专门组合 不经受胎上升"
+      ],
+      "boundary_queries": [
+        "These durations differently apply to different places (commensurate with variable day and night durations)",
+        "The natal Lagn is to be calculated according to birth place, while Bhava Lagna, Hora Lagn etc. are common to all places",
+        "Grahas placed in the visible half of the zodiac will give explicit results, while the ones in the invisible half will confer secret results"
+      ],
+      "method_queries": [
+        "Calculations of Gulik etc. The portions of Surya etc. up to Shani denote the periods of Gulik and others",
+        "Gulik’s Position. The degree, ascending at the time of start of Gulik’s portion (as above), will be the longitude of Gulik at a given place",
+        "now is a step explained to arrive at the Nishek Lagna, when the natal Lagn is known",
+        "怎么起受胎盘 Nishek"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "when the natal Lagn is known"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "to arrive at the Nishek Lagna"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "the angular distance between Shani and Mandi"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "when the natal Lagn is known to arrive at the Nishek Lagna"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "when the natal 1st house is known"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_result",
+          "query": "to arrive at the Nishek 1st house"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_result",
+          "query": "the angular distance between saturn and Mandi"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "when the natal 1st house is known to arrive at the Nishek 1st house"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "the difference between the Lagn Bhava (Madhya, or cusp) and the 9th Bhava (cusp)"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "The resultant product in Rāśis, degrees etc. will represent the months, days etc., that elapsed between Nishek and birth."
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "the difference between the Lagn Bhava (Madhya, or cusp) and the 9th Bhava (cusp) The resultant product in Rāśis, degrees etc. will represent the months, days etc., that elapsed between Nishek and birth."
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-002",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "the difference between the 1st house (Madhya, or cusp) and the 9th Bhava (cusp)"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-002",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "the difference between the 1st house (Madhya, or cusp) and the 9th Bhava (cusp) The resultant product in Rāśis, degrees etc. will represent the months, days etc., that elapsed between Nishek and birth."
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-003",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "if Lagn Lord is in the invisible half (i.e. from Lagn cusp to descendental cusp)"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-003",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "add the degrees etc., Chandra moved in the particular Rāśi, occupied by her, to the above-mentioned product"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-003",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "if Lagn Lord is in the invisible half (i.e. from Lagn cusp to descendental cusp) add the degrees etc., Chandra moved in the particular Rāśi, occupied by her, to the above-mentioned product"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-003",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "if Lagn Lord is in the invisible half (i.e. from 1st house cusp to descendental cusp)"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-003",
+          "lane": "support",
+          "origin": "bilingual_verbatim_result",
+          "query": "add the degrees etc., moon moved in the particular Rāśi, occupied by her, to the above-mentioned product"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-003",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "if Lagn Lord is in the invisible half (i.e. from 1st house cusp to descendental cusp) add the degrees etc., moon moved in the particular Rāśi, occupied by her, to the above-mentioned product"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-004",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Then Lagn at Nishek can be worked out"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-004",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "the good and bad, experienced by the native in the womb, can be guessed"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-004",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Then Lagn at Nishek can be worked out the good and bad, experienced by the native in the womb, can be guessed"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-004",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "Then 1st house at Nishek can be worked out"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-004",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "Then 1st house at Nishek can be worked out the good and bad, experienced by the native in the womb, can be guessed"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-005",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "with the help of Nishek Lagn effects"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-005",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "like longevity, death etc. of the parents"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-005",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "with the help of Nishek Lagn effects like longevity, death etc. of the parents"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-005",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "with the help of Nishek 1st house effects"
+        },
+        {
+          "step_id": "ch04-v25-30-nishek-lagn.step-005",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "with the help of Nishek 1st house effects like longevity, death etc. of the parents"
+        }
+      ],
+      "stop_conditions": [
+        "本命上升（Lagn）未知时停止——原文以『when the natal Lagn is known』为前提。",
+        "缺少土星（Shani）位置或曼迪（Mandi）位置时停止。",
+        "缺少上升宫（Lagn Bhava）宫始点与九宫（Dharm）宫始点之差时停止。",
+        "原文未规定角距的取向，取向未确定即停判。",
+        "上升主是否落不可见半未确定时，第 3 步的加值停判。",
+        "原文未给母胎吉凶与父母寿命、死亡的具体判准，判准未确定即停判。"
+      ]
+    },
+    "ch05-v2-3-bhava-lagn": {
+      "title": "宫上升（Bhava Lagn）起法：日出到出生每 5 Ghatis 一个，商加日出时太阳黄经",
+      "user_intents": [
+        "我的宫上升（Bhava Lagn）在哪里",
+        "Bhava Lagn 怎么起",
+        "特殊上升点怎么算"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch05-v2-3-bhava-lagn"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘从日出到出生经过了多少 Ghati",
+        "本盘日出时刻太阳（Surya）的黄经是多少度"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "From sunrise to the time of birth every 5 Ghatis (or 120 minutes) constitute one Bhava Lagn",
+        "Divide the time of birth (in Ghatis, Vighatis etc.) from sunrise by 5 and add the quotient etc. to Surya’s longitude, as at sunrise. This is called Bhava Lagn",
+        "宫上升 Bhava Lagn 起法 日出 太阳黄经"
+      ],
+      "counter_queries": [
+        "Hora Lagn repeats itself every 2½ Ghatis (i. e. 60 minutes)",
+        "Now listen to the method of working out Ghati Lagn. This Lagn changes along with every Ghati (24 minutes) from the sunrise",
+        "特殊上升之间 除数不同 Hora Ghati"
+      ],
+      "boundary_queries": [
+        "The natal Lagn is to be calculated according to birth place, while Bhava Lagna, Hora Lagn etc. are common to all places",
+        "Note birth time in Ghatis and Vighatis. Consider the number of Ghatis past, as number of Rāśis, or Ghati Lagnas",
+        "Keeping the Grahas at birth, as it is, prepare various Bhava Kundalis with respect to each special Lagn and analyze, as done for the natal Lagn"
+      ],
+      "method_queries": [
+        "Oh excellent of the Brahmins, I explain below again some special Lagnas, viz. Bhava Lagna, Hora Lagn and Ghati Lagn",
+        "Use of Special Lagnas. Keeping the Grahas at birth, as it is, prepare various Bhava Kundalis",
+        "特殊上升 Bhava Hora Ghati 怎么算"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch05-v2-3-bhava-lagn.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "From sunrise to the time of birth every 5 Ghatis (or 120 minutes)"
+        },
+        {
+          "step_id": "ch05-v2-3-bhava-lagn.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "constitute one Bhava Lagn"
+        },
+        {
+          "step_id": "ch05-v2-3-bhava-lagn.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "From sunrise to the time of birth every 5 Ghatis (or 120 minutes) constitute one Bhava Lagn"
+        },
+        {
+          "step_id": "ch05-v2-3-bhava-lagn.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_result",
+          "query": "constitute one Bhava 1st house"
+        },
+        {
+          "step_id": "ch05-v2-3-bhava-lagn.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "From sunrise to the time of birth every 5 Ghatis (or 120 minutes) constitute one Bhava 1st house"
+        },
+        {
+          "step_id": "ch05-v2-3-bhava-lagn.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Divide the time of birth (in Ghatis, Vighatis etc.) from sunrise by 5"
+        },
+        {
+          "step_id": "ch05-v2-3-bhava-lagn.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "add the quotient etc. to Surya’s longitude, as at sunrise. This is called Bhava Lagn."
+        },
+        {
+          "step_id": "ch05-v2-3-bhava-lagn.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Divide the time of birth (in Ghatis, Vighatis etc.) from sunrise by 5 add the quotient etc. to Surya’s longitude, as at sunrise. This is called Bhava Lagn."
+        },
+        {
+          "step_id": "ch05-v2-3-bhava-lagn.step-002",
+          "lane": "support",
+          "origin": "bilingual_verbatim_result",
+          "query": "add the quotient etc. to sun’s longitude, as at sunrise. This is called Bhava 1st house."
+        },
+        {
+          "step_id": "ch05-v2-3-bhava-lagn.step-002",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "Divide the time of birth (in Ghatis, Vighatis etc.) from sunrise by 5 add the quotient etc. to sun’s longitude, as at sunrise. This is called Bhava 1st house."
+        }
+      ],
+      "stop_conditions": [
+        "缺少本盘从日出到出生的 Ghati 数时停止。",
+        "缺少日出时刻太阳（Surya）黄经时停止。",
+        "日出时刻本身未定（出生地或出生钟点不明）时停止。",
+        "原文这一偈只给宫上升（Bhava Lagn）的起法、未给吉凶断法，要断吉凶须另查原文，本方法停判。"
+      ]
+    },
+    "ch05-v4-5-hora-lagn": {
+      "title": "时上升（Hora Lagn）起法：日出到出生每 2½ Ghatis 一个，商加日出时太阳黄经",
+      "user_intents": [
+        "我的时上升（Hora Lagn）在哪里",
+        "Hora Lagn 怎么起",
+        "特殊上升点怎么算"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch05-v4-5-hora-lagn"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘从日出到出生经过了多少 Ghati",
+        "本盘日出时刻太阳（Surya）的黄经是多少度"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Hora Lagn repeats itself every 2½ Ghatis 60 minutes from sunrise",
+        "Divide the time past up to birth from sunrise by 2½ add the quotient Surya longitude",
+        "时上升 Hora Lagn 起法 日出 太阳黄经"
+      ],
+      "counter_queries": [
+        "From sunrise to the time of birth every 5 Ghatis constitute one Bhava Lagn",
+        "Now listen to the method of working out Ghati Lagn. This Lagn changes along with every Ghati (24 minutes) from the sunrise",
+        "特殊上升 除数不同 Bhava Lagn Ghati Lagn 起法差别"
+      ],
+      "boundary_queries": [
+        "The natal Lagn is to be calculated according to birth place Bhava Lagna Hora Lagn common to all places",
+        "Out of the two, viz. natal Lagn and Hora Lagna, whichever is stronger, from there Varnad starts",
+        "Ghati Vighati 时间单位 与 日出 起算"
+      ],
+      "method_queries": [
+        "Use of Special Lagnas prepare various Bhava Kundalis with respect to each special Lagn",
+        "I explain below again some special Lagnas, viz. Bhava Lagna, Hora Lagn and Ghati Lagn",
+        "时上升 Hora Lagn 起出来以后怎么用"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch05-v4-5-hora-lagn.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Again from sunrise till the time of birth"
+        },
+        {
+          "step_id": "ch05-v4-5-hora-lagn.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Hora Lagn repeats itself every 2½ Ghatis (i. e. 60 minutes)"
+        },
+        {
+          "step_id": "ch05-v4-5-hora-lagn.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Again from sunrise till the time of birth Hora Lagn repeats itself every 2½ Ghatis (i. e. 60 minutes)"
+        },
+        {
+          "step_id": "ch05-v4-5-hora-lagn.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_result",
+          "query": "Hora 1st house repeats itself every 2½ Ghatis (i. e. 60 minutes)"
+        },
+        {
+          "step_id": "ch05-v4-5-hora-lagn.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "Again from sunrise till the time of birth Hora 1st house repeats itself every 2½ Ghatis (i. e. 60 minutes)"
+        },
+        {
+          "step_id": "ch05-v4-5-hora-lagn.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Divide the time past up to birth from sunrise by 2½"
+        },
+        {
+          "step_id": "ch05-v4-5-hora-lagn.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "add the quotient etc. in Rāśis, degrees and so on to the longitude of Surya, as at the sunrise"
+        },
+        {
+          "step_id": "ch05-v4-5-hora-lagn.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "This will yield Hora Lagn in Rāśi, degrees etc."
+        },
+        {
+          "step_id": "ch05-v4-5-hora-lagn.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Divide the time past up to birth from sunrise by 2½ add the quotient etc. in Rāśis, degrees and so on to the longitude of Surya, as at the sunrise"
+        },
+        {
+          "step_id": "ch05-v4-5-hora-lagn.step-002",
+          "lane": "support",
+          "origin": "bilingual_verbatim_result",
+          "query": "add the quotient etc. in Rāśis, degrees and so on to the longitude of sun, as at the sunrise"
+        },
+        {
+          "step_id": "ch05-v4-5-hora-lagn.step-002",
+          "lane": "support",
+          "origin": "bilingual_verbatim_result",
+          "query": "This will yield Hora 1st house in Rāśi, degrees etc."
+        },
+        {
+          "step_id": "ch05-v4-5-hora-lagn.step-002",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "Divide the time past up to birth from sunrise by 2½ add the quotient etc. in Rāśis, degrees and so on to the longitude of sun, as at the sunrise"
+        }
+      ],
+      "stop_conditions": [
+        "缺少本盘从日出到出生的 Ghati 数时停止。",
+        "缺少日出时刻太阳（Surya）黄经时停止。",
+        "日出时刻本身未定（出生地或出生钟点不明）时停止。",
+        "原文这一偈只给时上升（Hora Lagn）的起法、未给吉凶断法，要断吉凶须另查原文，本方法停判。"
+      ]
+    },
+    "ch05-v6-8-ghati-lagn": {
+      "title": "刻上升（Ghati Lagn）起法：每 Ghati 一个，Vighatis 除 2 化度分，加日出时太阳黄经",
+      "user_intents": [
+        "我的刻上升（Ghati Lagn）在哪里",
+        "Ghati Lagn 怎么起",
+        "特殊上升怎么按 Ghati 算"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch05-v6-8-ghati-lagn"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘从日出到出生经过了多少 Ghati",
+        "本盘从日出到出生经过了多少 Vighati",
+        "本盘日出时刻太阳（Surya）的黄经是多少度"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Ghati Lagn (Ghatik Lagn). Now listen to the method of working out Ghati Lagn. This Lagn changes along with every Ghati (24 minutes) from the sunrise",
+        "The Vighatis be divided by 2 to arrive at degrees and minutes of arc, past in the said Ghati Lagn",
+        "刻上升 Ghati Lagn 起法 Vighatis 除以 2"
+      ],
+      "counter_queries": [
+        "From sunrise to the time of birth every 5 Ghatis constitute one Bhava Lagn",
+        "Hora Lagn repeats itself every 2½ Ghatis divide by 2½",
+        "特殊上升 起法差别 Bhava Hora Ghati 除数"
+      ],
+      "boundary_queries": [
+        "So say Maharishis, like Narada",
+        "The natal Lagn is to be calculated according to birth place Bhava Lagna Hora Lagn common to all places",
+        "Ghati Vighati 一日 六十 Ghati 换算"
+      ],
+      "method_queries": [
+        "Use of Special Lagnas prepare various Bhava Kundalis with respect to each special Lagn",
+        "Now listen to the method of working out Ghati Lagn",
+        "刻上升 Ghati Lagn 起出来以后怎么用"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch05-v6-8-ghati-lagn.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Note birth time in Ghatis and Vighatis."
+        },
+        {
+          "step_id": "ch05-v6-8-ghati-lagn.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "This Lagn changes along with every Ghati (24 minutes) from the sunrise."
+        },
+        {
+          "step_id": "ch05-v6-8-ghati-lagn.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Consider the number of Ghatis past, as number of Rāśis, or Ghati Lagnas."
+        },
+        {
+          "step_id": "ch05-v6-8-ghati-lagn.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Note birth time in Ghatis and Vighatis. This Lagn changes along with every Ghati (24 minutes) from the sunrise."
+        },
+        {
+          "step_id": "ch05-v6-8-ghati-lagn.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_result",
+          "query": "This 1st house changes along with every Ghati (24 minutes) from the sunrise."
+        },
+        {
+          "step_id": "ch05-v6-8-ghati-lagn.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "Note birth time in Ghatis and Vighatis. This 1st house changes along with every Ghati (24 minutes) from the sunrise."
+        },
+        {
+          "step_id": "ch05-v6-8-ghati-lagn.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "The Vighatis be divided by 2"
+        },
+        {
+          "step_id": "ch05-v6-8-ghati-lagn.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "to arrive at degrees and minutes of arc, past in the said Ghati Lagn"
+        },
+        {
+          "step_id": "ch05-v6-8-ghati-lagn.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "The Vighatis be divided by 2 to arrive at degrees and minutes of arc, past in the said Ghati Lagn"
+        },
+        {
+          "step_id": "ch05-v6-8-ghati-lagn.step-002",
+          "lane": "support",
+          "origin": "bilingual_verbatim_result",
+          "query": "to arrive at degrees and minutes of arc, past in the said Ghati 1st house"
+        },
+        {
+          "step_id": "ch05-v6-8-ghati-lagn.step-002",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "The Vighatis be divided by 2 to arrive at degrees and minutes of arc, past in the said Ghati 1st house"
+        },
+        {
+          "step_id": "ch05-v6-8-ghati-lagn.step-003",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "The product so arrived in Rāśis, degrees and minutes"
+        },
+        {
+          "step_id": "ch05-v6-8-ghati-lagn.step-003",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "be added to Surya’s longitude, as at sunrise, to get the exact location of Ghati Lagn"
+        },
+        {
+          "step_id": "ch05-v6-8-ghati-lagn.step-003",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "The product so arrived in Rāśis, degrees and minutes be added to Surya’s longitude, as at sunrise, to get the exact location of Ghati Lagn"
+        },
+        {
+          "step_id": "ch05-v6-8-ghati-lagn.step-003",
+          "lane": "support",
+          "origin": "bilingual_verbatim_result",
+          "query": "be added to sun’s longitude, as at sunrise, to get the exact location of Ghati 1st house"
+        },
+        {
+          "step_id": "ch05-v6-8-ghati-lagn.step-003",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "The product so arrived in Rāśis, degrees and minutes be added to sun’s longitude, as at sunrise, to get the exact location of Ghati 1st house"
+        }
+      ],
+      "stop_conditions": [
+        "缺少本盘从日出到出生的 Ghati 数时停止。",
+        "缺少本盘从日出到出生的 Vighati 数时停止。",
+        "缺少日出时刻太阳（Surya）黄经时停止。",
+        "日出时刻本身未定（出生地或出生钟点不明）时停止。",
+        "原文这一偈只给刻上升（Ghati Lagn）的起法、未给吉凶断法，要断吉凶须另查原文，本方法停判。"
+      ]
+    },
+    "ch05-v9-use-of-special-lagnas": {
+      "title": "特殊上升的用法：行星位置不动，逐个特殊上升起宫盘，照本命上升的办法分析",
+      "user_intents": [
+        "特殊上升起出来以后怎么用",
+        "Bhava Lagn、Hora Lagn 这些盘怎么看",
+        "特殊上升要不要重新排行星"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch05-v9-use-of-special-lagnas"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘出生时各行星（Grahas）的黄经分别是多少度",
+        "本盘各特殊上升（special Lagn）的黄经分别是多少度"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Use of Special Lagnas Keeping the Grahas at birth prepare various Bhava Kundalis",
+        "prepare various Bhava Kundalis with respect to each special Lagn and analyze, as done for the natal Lagn",
+        "特殊上升 宫盘 照本命上升分析"
+      ],
+      "counter_queries": [
+        "These Varnad Dashas are only for Bhavas Rāśis and not their occupants",
+        "The natal Lagn is to be calculated according to birth place",
+        "本命上升 与 特殊上升 判断范围不同"
+      ],
+      "boundary_queries": [
+        "I explain below again some special Lagnas viz. Bhava Lagna Hora Lagn and Ghati Lagn",
+        "Bhava Madhya cusp Bhava Kundali 起宫 方式",
+        "special Lagnas 适用范围 出生地 共通"
+      ],
+      "method_queries": [
+        "analyze, as done for the natal Lagn",
+        "Effects of Varnad. Now listen to the use of the above",
+        "怎么分析本命上升盘 各宫 各星"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch05-v9-use-of-special-lagnas.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Keeping the Grahas at birth, as it is"
+        },
+        {
+          "step_id": "ch05-v9-use-of-special-lagnas.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "prepare various Bhava Kundalis with respect to each special Lagn"
+        },
+        {
+          "step_id": "ch05-v9-use-of-special-lagnas.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Keeping the Grahas at birth, as it is prepare various Bhava Kundalis with respect to each special Lagn"
+        },
+        {
+          "step_id": "ch05-v9-use-of-special-lagnas.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_result",
+          "query": "prepare various Bhava Kundalis with respect to each special 1st house"
+        },
+        {
+          "step_id": "ch05-v9-use-of-special-lagnas.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "Keeping the Grahas at birth, as it is prepare various Bhava Kundalis with respect to each special 1st house"
+        },
+        {
+          "step_id": "ch05-v9-use-of-special-lagnas.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "prepare various Bhava Kundalis with respect to each special Lagn"
+        },
+        {
+          "step_id": "ch05-v9-use-of-special-lagnas.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "analyze, as done for the natal Lagn"
+        },
+        {
+          "step_id": "ch05-v9-use-of-special-lagnas.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "prepare various Bhava Kundalis with respect to each special Lagn analyze, as done for the natal Lagn"
+        },
+        {
+          "step_id": "ch05-v9-use-of-special-lagnas.step-002",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "prepare various Bhava Kundalis with respect to each special 1st house"
+        },
+        {
+          "step_id": "ch05-v9-use-of-special-lagnas.step-002",
+          "lane": "support",
+          "origin": "bilingual_verbatim_result",
+          "query": "analyze, as done for the natal 1st house"
+        },
+        {
+          "step_id": "ch05-v9-use-of-special-lagnas.step-002",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "prepare various Bhava Kundalis with respect to each special 1st house analyze, as done for the natal 1st house"
+        }
+      ],
+      "stop_conditions": [
+        "缺少出生时诸行星位置时停止。",
+        "各特殊上升的位置未算出时停止（须先按本章前文的起法算出）。",
+        "原文没有给特殊上升宫盘的具体断法，断法未确定即停判。"
+      ]
+    },
+    "ch05-v10-13-5-varnad-for-lagn": {
+      "title": "上升的 Varnad（Varnad for Lagn）推算：本命上升与时上升各按奇偶计数，再合成后回数",
+      "user_intents": [
+        "我的 Varnad 是哪个星座",
+        "Varnad Dasha 怎么起",
+        "Varnad 怎么从上升和时上升算出来"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch05-v10-13-5-varnad-for-lagn"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘上升（Lagn）落在哪个星座",
+        "本盘时上升（Hora Lagn）落在哪个星座"
+      ],
+      "conditional_facts": [
+        "本盘上升（Lagn）所在星座是否为奇数星座（odd Rāśi）",
+        "本盘上升（Lagn）所在星座是否为偶数星座（even Rāśi）",
+        "本盘时上升（Hora Lagn）所在星座是否为奇数（odd）",
+        "本盘时上升（Hora Lagn）所在星座是否为偶数（even）",
+        "本盘上升（Lagn）的 Varnad 计数值是否为奇数",
+        "本盘上升（Lagn）的 Varnad 计数值是否为偶数",
+        "本盘时上升（Hora Lagn）的 Varnad 计数值是否为奇数",
+        "本盘时上升（Hora Lagn）的 Varnad 计数值是否为偶数",
+        "本盘 Varnad 推算所得的最后一个数是否为奇数",
+        "本盘 Varnad 推算所得的最后一个数是否为偶数"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "I now detail Varnad Dasha, just by knowing which one can deal with the longevity of a native",
+        "The Rashiso known will be the Varnad for Lagn",
+        "Varnad 推算 奇数星座 白羊 双鱼 逆数"
+      ],
+      "counter_queries": [
+        "Out of the two natal Lagn and Hora Lagna whichever is stronger from there Varnad starts",
+        "These Varnad Dashas are only for Bhavas Rāśis and not their occupants",
+        "Varnad 与其他大运 起法不同 Vimshottari"
+      ],
+      "boundary_queries": [
+        "Similar assessments be made with reference to the Varnad of each Bhava commencing the first",
+        "The natal Lagn is to be calculated according to birth place",
+        "odd Rāśi even Rāśi 奇数星座 偶数星座 界定"
+      ],
+      "method_queries": [
+        "I now detail Varnad Dasha longevity of a native",
+        "Hora Lagn repeats itself every 2½ Ghatis divide by 2½",
+        "Varnad for Lagn 算出来以后怎么用"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "If the natal Lagn is an odd Rāśi"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "If the natal Lagn is an even Rāśi"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "count directly from Mesh to natal Lagn"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "count from Meen to the natal Lagn in the reverse order"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "If the natal Lagn is an odd Rāśi count directly from Mesh to natal Lagn"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "If the natal Lagn is an even Rāśi count directly from Mesh to natal Lagn"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "If the natal 1st house is an odd Rāśi"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "If the natal 1st house is an even Rāśi"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_result",
+          "query": "count directly from Mesh to natal 1st house"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_result",
+          "query": "count from Meen to the natal 1st house in the reverse order"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "If the natal 1st house is an odd Rāśi count directly from Mesh to natal 1st house"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "If the natal 1st house is an even Rāśi count directly from Mesh to natal 1st house"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "if the Hora Lagn is an odd one"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "If the Hora Lagn is an even one"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "count from Mesh to Hora Lagn in direct order"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "count from Meen to Hora Lagn in the reverse order"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "if the Hora Lagn is an odd one count from Mesh to Hora Lagn in direct order"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "If the Hora Lagn is an even one count from Mesh to Hora Lagn in direct order"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-002",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "if the Hora 1st house is an odd one"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-002",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "If the Hora 1st house is an even one"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-002",
+          "lane": "support",
+          "origin": "bilingual_verbatim_result",
+          "query": "count from Mesh to Hora 1st house in direct order"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-002",
+          "lane": "support",
+          "origin": "bilingual_verbatim_result",
+          "query": "count from Meen to Hora 1st house in the reverse order"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-002",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "if the Hora 1st house is an odd one count from Mesh to Hora 1st house in direct order"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-002",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "If the Hora 1st house is an even one count from Mesh to Hora 1st house in direct order"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-003",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "If both the products are odd Rāśis, or even Rāśis"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-003",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "If one is odd and the other is even"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-003",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "then add both the figures"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-003",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "then know the difference between the two products"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-003",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "If both the products are odd Rāśis, or even Rāśis then add both the figures"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-003",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "If one is odd and the other is even then add both the figures"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-004",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "If the latest product in this process is an odd one"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-004",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "if an even one"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-004",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "count so many Rāśis from Mesh in a direct manner"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-004",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "count so many Rāśis from Meen in reverse order"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-004",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "The Rashiso known will be the Varnad for Lagn."
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-004",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "If the latest product in this process is an odd one count so many Rāśis from Mesh in a direct manner"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-004",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "if an even one count so many Rāśis from Mesh in a direct manner"
+        },
+        {
+          "step_id": "ch05-v10-13-5-varnad-for-lagn.step-004",
+          "lane": "support",
+          "origin": "bilingual_verbatim_result",
+          "query": "The Rashiso known will be the Varnad for 1st house."
+        }
+      ],
+      "stop_conditions": [
+        "缺少本命上升所在星座时停止。",
+        "缺少时上升（Hora Lagn）所在星座时停止——本推算要用到它。",
+        "两个计数值的奇偶未定时停止。",
+        "合成后最后一个数的奇偶未定时停止。"
+      ]
+    },
+    "ch05-v14-15-varnad-start-direction-years": {
+      "title": "Varnad 大运的起算处、顺逆方向与上升大运年数",
+      "user_intents": [
+        "Varnad 大运从哪里起",
+        "Varnad 大运往哪个方向数",
+        "上升大运有多少年"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch05-v14-15-varnad-start-direction-years"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘上升（Lagn）与时上升（Hora Lagn）两者中哪一个更有力",
+        "本盘上升（Lagn）落在哪个星座",
+        "本盘上升的 Varnad 星座（Varnad for Lagn）是哪个星座",
+        "本盘上升（Lagn）与其 Varnad 之间相隔几个星座"
+      ],
+      "conditional_facts": [
+        "本盘上升（Lagn）是否比时上升（Hora Lagn）更有力",
+        "本盘时上升（Hora Lagn）是否比本盘上升（Lagn）更有力",
+        "本盘上升（Lagn）所在星座是否为奇数星座（odd Rāśi）",
+        "本盘上升（Lagn）所在星座是否为偶数星座（even Rāśi）"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Out of the two natal Lagn and Hora Lagna whichever is stronger from there Varnad starts",
+        "Lagn Dasha years will equal the number of Rāśis intervening between the natal Lagn and Varnad",
+        "Varnad 大运 年数 顺时针 逆时针"
+      ],
+      "counter_queries": [
+        "These Varnad Dashas are only for Bhavas Rāśis and not their occupants",
+        "The sub period of each Dasha will be one twelfth of the Dasha",
+        "Sool Dasha Rudra Grah 寿命 另一套大运"
+      ],
+      "boundary_queries": [
+        "Shad Bal consists of the following Sthan Bal positional Dig Bal directional Kaal Bal Temporal",
+        "Similar assessments be made with reference to the Varnad of each Bhava commencing the first",
+        "The natal Lagn is to be calculated according to birth place"
+      ],
+      "method_queries": [
+        "I now detail Varnad Dasha If the natal Lagn is an odd Rāśi count directly from Mesh",
+        "Now listen to the use of the above",
+        "Varnad 大运 排出来以后怎么断"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch05-v14-15-varnad-start-direction-years.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Out of the two, viz. natal Lagn and Hora Lagna, whichever is stronger"
+        },
+        {
+          "step_id": "ch05-v14-15-varnad-start-direction-years.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "from there Varnad starts"
+        },
+        {
+          "step_id": "ch05-v14-15-varnad-start-direction-years.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Out of the two, viz. natal Lagn and Hora Lagna, whichever is stronger from there Varnad starts"
+        },
+        {
+          "step_id": "ch05-v14-15-varnad-start-direction-years.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "Out of the two, viz. natal 1st house and Hora 1st house, whichever is stronger"
+        },
+        {
+          "step_id": "ch05-v14-15-varnad-start-direction-years.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "Out of the two, viz. natal 1st house and Hora 1st house, whichever is stronger from there Varnad starts"
+        },
+        {
+          "step_id": "ch05-v14-15-varnad-start-direction-years.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "If the natal Lagn is an odd Rāśi"
+        },
+        {
+          "step_id": "ch05-v14-15-varnad-start-direction-years.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "the counting of Dashas is clockwise, otherwise anticlockwise"
+        },
+        {
+          "step_id": "ch05-v14-15-varnad-start-direction-years.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "If the natal Lagn is an odd Rāśi the counting of Dashas is clockwise, otherwise anticlockwise"
+        },
+        {
+          "step_id": "ch05-v14-15-varnad-start-direction-years.step-002",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "If the natal 1st house is an odd Rāśi"
+        },
+        {
+          "step_id": "ch05-v14-15-varnad-start-direction-years.step-002",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "If the natal 1st house is an odd Rāśi the counting of Dashas is clockwise, otherwise anticlockwise"
+        },
+        {
+          "step_id": "ch05-v14-15-varnad-start-direction-years.step-003",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "intervening between the natal Lagn and Varnad"
+        },
+        {
+          "step_id": "ch05-v14-15-varnad-start-direction-years.step-003",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Lagn Dasha years will equal the number of Rāśis, intervening between the natal Lagn and Varnad."
+        },
+        {
+          "step_id": "ch05-v14-15-varnad-start-direction-years.step-003",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Similarly for other Bhavas."
+        },
+        {
+          "step_id": "ch05-v14-15-varnad-start-direction-years.step-003",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "intervening between the natal Lagn and Varnad Lagn Dasha years will equal the number of Rāśis, intervening between the natal Lagn and Varnad."
+        },
+        {
+          "step_id": "ch05-v14-15-varnad-start-direction-years.step-003",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "intervening between the natal 1st house and Varnad"
+        },
+        {
+          "step_id": "ch05-v14-15-varnad-start-direction-years.step-003",
+          "lane": "support",
+          "origin": "bilingual_verbatim_result",
+          "query": "1st house Dasha years will equal the number of Rāśis, intervening between the natal 1st house and Varnad."
+        },
+        {
+          "step_id": "ch05-v14-15-varnad-start-direction-years.step-003",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "intervening between the natal 1st house and Varnad 1st house Dasha years will equal the number of Rāśis, intervening between the natal 1st house and Varnad."
+        }
+      ],
+      "stop_conditions": [
+        "原文未给本命上升与时上升的强弱判准，判准未确定即停判（须另查 Shad Bal 一类原文）。",
+        "本命上升所在星座的奇偶未定时，大运方向停判。",
+        "缺少上升的 Varnad 星座时停止。",
+        "缺少本命上升与 Varnad 之间相隔星座数时停止。"
+      ]
+    },
+    "ch05-v16-20-varnad-kon-malefic-longevity": {
+      "title": "上升 Varnad 的三角宫被凶星占据或相照：命主只活到该星座的大运",
+      "user_intents": [
+        "我大概能活到什么时候",
+        "哪一步大运对我最危险",
+        "Varnad 怎么看寿命"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch05-v16-20-varnad-kon-malefic-longevity"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘上升的 Varnad 星座（Varnad for Lagn）是哪个星座",
+        "本盘中哪些行星被判为凶星"
+      ],
+      "conditional_facts": [
+        "自本盘上升的 Varnad 起算的三角宫（Kon）是否被凶星占据",
+        "自本盘上升的 Varnad 起算的三角宫（Kon）是否被凶星相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Should a Kon from Lagn’s Varnad be occupied or drishtied by a malefic live only up to the Dasha",
+        "Rudra Grah in Sool Dasha capable of causing evils Grahas related to Varnad’s Kon",
+        "Varnad 三角宫 凶星 占据 相照 寿命"
+      ],
+      "counter_queries": [
+        "These Varnad Dashas are only for Bhavas Rāśis and not their occupants",
+        "I have narrated 3 different methods of longevity. Listen to me about the choice among the three systems",
+        "Sool Dasha Rudra Grah 取法 与 例外"
+      ],
+      "boundary_queries": [
+        "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+        "drishti aspects of the Grahas Kon trine 三角宫 相照 规则",
+        "The Dasha of the Sool Rashi will inflict greater evils"
+      ],
+      "method_queries": [
+        "The Varnad Lagn be considered, as natal Lagna, while the 7<sup>th</sup> from Varnad will denote the longevity of the spouse",
+        "just by knowing which one can deal with the longevity of a native",
+        "怎么判断哪一颗是凶星"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch05-v16-20-varnad-kon-malefic-longevity.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Should a Kon from Lagn’s Varnad be occupied"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-kon-malefic-longevity.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "or drishtied by a malefic"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-kon-malefic-longevity.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "the native will live only up to the Dasha of the said Rāśi"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-kon-malefic-longevity.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Should a Kon from Lagn’s Varnad be occupied the native will live only up to the Dasha of the said Rāśi"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-kon-malefic-longevity.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "or drishtied by a malefic the native will live only up to the Dasha of the said Rāśi"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-kon-malefic-longevity.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "Should a Kon from 1st house’s Varnad be occupied"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-kon-malefic-longevity.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "Should a Kon from 1st house’s Varnad be occupied the native will live only up to the Dasha of the said Rāśi"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-kon-malefic-longevity.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Just, as the Rudra Grah in Sool Dasha is capable of causing evils"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-kon-malefic-longevity.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "the above-mentioned Grahas related to Varnad’s Kon be treated"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-kon-malefic-longevity.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Just, as the Rudra Grah in Sool Dasha is capable of causing evils the above-mentioned Grahas related to Varnad’s Kon be treated"
+        }
+      ],
+      "stop_conditions": [
+        "缺少上升的 Varnad 星座时停止。",
+        "凶星名册未定时停止——本偈没有界定谁是凶星。",
+        "三角宫（Kon）的占据与相照事实缺一时，对应分支停判。",
+        "原文没有给 Rudra Grah 与 Sool 大运的取法，取法未确定即停判。"
+      ]
+    },
+    "ch05-v16-20-varnad-as-lagna-relatives": {
+      "title": "以 Varnad 为上升看亲属寿命：7 配偶、11 兄姐、3 弟妹、5 子、4 母、9 父",
+      "user_intents": [
+        "我配偶的寿命从哪一宫看",
+        "父母的寿命看哪一宫",
+        "兄弟姐妹和儿子的寿命看哪一宫"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch05-v16-20-varnad-as-lagna-relatives"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘上升的 Varnad 星座（Varnad for Lagn）是哪个星座"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "The Varnad Lagn be considered, as natal Lagna, while the 7<sup>th</sup> from Varnad will denote the longevity of the spouse",
+        "the 11<sup>th</sup> longevity of elder brothers and sisters, the 3<sup>rd</sup> longevity of younger brothers and sisters, the 5<sup>th</sup> the longevity of sons, the 4<sup>th</sup> longevity of mother and the 9<sup>th</sup> longevity of father",
+        "Varnad 起算 亲属 寿命 配偶 父母"
+      ],
+      "counter_queries": [
+        "These Varnad Dashas are only for Bhavas Rāśis and not their occupants",
+        "I have narrated 3 different methods of longevity. Listen to me about the choice among the three systems",
+        "Combinations for Father’s Death. The father of the native would have passed away prior to the native’s birth",
+        "亲属寿命 另有断法 不经 Varnad"
+      ],
+      "boundary_queries": [
+        "Should a Kon from Lagn’s Varnad be occupied or drishtied by a malefic",
+        "Similar assessments be made with reference to the Varnad of each Bhava commencing the first",
+        "Now be kind enough to throw light on Stri Jatak (female horoscopy)",
+        "Varnad Lagn 与本命上升 起算 差别"
+      ],
+      "method_queries": [
+        "Out of the two, viz. natal Lagn and Hora Lagna, whichever is stronger, from there Varnad starts",
+        "I now detail Varnad Dasha longevity of a native",
+        "以某一宫为上升 起算 各宫 方法"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch05-v16-20-varnad-as-lagna-relatives.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "The Varnad Lagn"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-as-lagna-relatives.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "be considered, as natal Lagna"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-as-lagna-relatives.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "The Varnad Lagn be considered, as natal Lagna"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-as-lagna-relatives.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "The Varnad 1st house"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-as-lagna-relatives.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_result",
+          "query": "be considered, as natal 1st house"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-as-lagna-relatives.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "The Varnad 1st house be considered, as natal 1st house"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-as-lagna-relatives.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "the 7th from Varnad"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-as-lagna-relatives.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "will denote the longevity of the spouse"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-as-lagna-relatives.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "the 7th from Varnad will denote the longevity of the spouse"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-as-lagna-relatives.step-003",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "the 11th"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-as-lagna-relatives.step-003",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "longevity of elder brothers and sisters"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-as-lagna-relatives.step-003",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "the 11th longevity of elder brothers and sisters"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-as-lagna-relatives.step-004",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "the 3rd"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-as-lagna-relatives.step-004",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "longevity of younger brothers and sisters"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-as-lagna-relatives.step-004",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "the 3rd longevity of younger brothers and sisters"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-as-lagna-relatives.step-005",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "the 5th"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-as-lagna-relatives.step-005",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "the longevity of sons"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-as-lagna-relatives.step-005",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "the 5th the longevity of sons"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-as-lagna-relatives.step-006",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "the 4th"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-as-lagna-relatives.step-006",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "longevity of mother"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-as-lagna-relatives.step-006",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "the 4th longevity of mother"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-as-lagna-relatives.step-007",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "the 9th"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-as-lagna-relatives.step-007",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "longevity of father"
+        },
+        {
+          "step_id": "ch05-v16-20-varnad-as-lagna-relatives.step-007",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "the 9th longevity of father"
+        }
+      ],
+      "stop_conditions": [
+        "缺少上升的 Varnad 星座时停止。",
+        "原文只指出各宫所主的寿命对象，没有给判寿命的方法，判法未确定即停判。",
+        "各宫 Varnad 大运的年数须另按本章前偈算出，缺则停判。"
+      ]
+    },
+    "ch05-v16-20-sool-rashi-dasha-evils": {
+      "title": "Sool 星座（Sool Rashi）的大运凶害更大",
+      "user_intents": [
+        "哪一步大运凶害最重",
+        "Sool 星座的大运会怎么样",
+        "Varnad 里最凶的一段是哪段"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch05-v16-20-sool-rashi-dasha-evils"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘的 Sool 星座（Sool Rashi）是哪个星座"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "The Dasha of the Sool Rashi will inflict greater evils",
+        "Rudra Grah in Sool Dasha is capable of causing evils",
+        "Sool 星座 大运 凶害更大"
+      ],
+      "counter_queries": [
+        "These Varnad Dashas are only for Bhavas Rāśis and not their occupants",
+        "Now I am going to describe the Sthir Dasha. In this Dasha system 7, 8 and 9 years are the Dasha spans of the Movable (Char), Fixed (Sthir) and Dual (Dvisva Bhava) Rāśis",
+        "其他星座大运系统 起法与年数 不同"
+      ],
+      "boundary_queries": [
+        "Sool Dasha Rudra Grah 本书何处有界定",
+        "Should a Kon from Lagn’s Varnad be occupied or drishtied by a malefic",
+        "Varnad Dasha 与 Sool Dasha 的关系"
+      ],
+      "method_queries": [
+        "Just, as the Rudra Grah in Sool Dasha is capable of causing evils, the above-mentioned Grahas related to Varnad’s Kon be treated",
+        "Effects of Varnad. Now listen to the use of the above",
+        "大运凶害轻重 怎么比较"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch05-v16-20-sool-rashi-dasha-evils.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "The Dasha of the Sool Rashi"
+        },
+        {
+          "step_id": "ch05-v16-20-sool-rashi-dasha-evils.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "inflict greater evils"
+        },
+        {
+          "step_id": "ch05-v16-20-sool-rashi-dasha-evils.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "The Dasha of the Sool Rashi inflict greater evils"
+        }
+      ],
+      "stop_conditions": [
+        "Sool 星座（Sool Rashi）未定时停止——本偈没有给它的取法。",
+        "原文没有说明凶害的具体内容，具体断语停判。"
+      ]
+    },
+    "ch05-v21-24-varnad-of-each-bhava": {
+      "title": "各宫 Varnad 的评断、只判宫不判居留行星、子期长度与顺逆",
+      "user_intents": [
+        "每一宫的 Varnad 怎么用",
+        "Varnad 大运的子期有多长",
+        "Varnad 大运判宫还是判行星"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch05-v21-24-varnad-of-each-bhava"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘各宫（Bhava）的 Varnad 星座分别是哪个",
+        "本盘各 Varnad 大运的年数分别是多少",
+        "本盘上升（Lagn）落在哪个星座"
+      ],
+      "conditional_facts": [
+        "本盘上升（Lagn）所在星座是否为奇数星座（odd Rāśi）",
+        "本盘上升（Lagn）所在星座是否为偶数星座（even Rāśi）"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Similar assessments be made with reference to the Varnad of each Bhava commencing the first",
+        "The sub period of each Dasha will be one twelfth of the Dasha and the order will also be clockwise, or anti-clockwise, as explained earlier",
+        "各宫 Varnad 评断 子期 十二分之一"
+      ],
+      "counter_queries": [
+        "These Varnad Dashas are only for Bhavas Rāśis and not their occupants",
+        "Now I am going to describe the Sthir Dasha. In this Dasha system 7, 8 and 9 years are the Dasha spans of the Movable (Char), Fixed (Sthir) and Dual (Dvisva Bhava) Rāśis",
+        "子期 是否按行星分配 另有说法"
+      ],
+      "boundary_queries": [
+        "Lagn Dasha years will equal the number of Rāśis intervening between the natal Lagn and Varnad",
+        "If the natal Lagn is an odd Rāśi the counting of Dashas is clockwise otherwise anticlockwise",
+        "The natal Lagn is to be calculated according to birth place"
+      ],
+      "method_queries": [
+        "Effects of Varnad. Now listen to the use of the above",
+        "The Varnad Lagn be considered, as natal Lagna, while the 7<sup>th</sup> from Varnad will denote the longevity of the spouse",
+        "Varnad 各宫 怎么排大运"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch05-v21-24-varnad-of-each-bhava.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "with reference to the Varnad of each Bhava, commencing the first"
+        },
+        {
+          "step_id": "ch05-v21-24-varnad-of-each-bhava.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Similar assessments be made"
+        },
+        {
+          "step_id": "ch05-v21-24-varnad-of-each-bhava.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "the evils and goods due to a nativity be known"
+        },
+        {
+          "step_id": "ch05-v21-24-varnad-of-each-bhava.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "with reference to the Varnad of each Bhava, commencing the first Similar assessments be made"
+        },
+        {
+          "step_id": "ch05-v21-24-varnad-of-each-bhava.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "These Varnad Dashas"
+        },
+        {
+          "step_id": "ch05-v21-24-varnad-of-each-bhava.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "are only for Bhavas (Rāśis) and not their occupants"
+        },
+        {
+          "step_id": "ch05-v21-24-varnad-of-each-bhava.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "These Varnad Dashas are only for Bhavas (Rāśis) and not their occupants"
+        },
+        {
+          "step_id": "ch05-v21-24-varnad-of-each-bhava.step-003",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "The sub period of each Dasha"
+        },
+        {
+          "step_id": "ch05-v21-24-varnad-of-each-bhava.step-003",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "will be one twelfth of the Dasha"
+        },
+        {
+          "step_id": "ch05-v21-24-varnad-of-each-bhava.step-003",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "The sub period of each Dasha will be one twelfth of the Dasha"
+        },
+        {
+          "step_id": "ch05-v21-24-varnad-of-each-bhava.step-004",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "If the natal Lagn is an odd Rāśi"
+        },
+        {
+          "step_id": "ch05-v21-24-varnad-of-each-bhava.step-004",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "the order will also be clockwise, or anti-clockwise, as explained earlier"
+        },
+        {
+          "step_id": "ch05-v21-24-varnad-of-each-bhava.step-004",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "the counting of Dashas is clockwise, otherwise anticlockwise"
+        },
+        {
+          "step_id": "ch05-v21-24-varnad-of-each-bhava.step-004",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "If the natal Lagn is an odd Rāśi the order will also be clockwise, or anti-clockwise, as explained earlier"
+        },
+        {
+          "step_id": "ch05-v21-24-varnad-of-each-bhava.step-004",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "If the natal 1st house is an odd Rāśi"
+        },
+        {
+          "step_id": "ch05-v21-24-varnad-of-each-bhava.step-004",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "If the natal 1st house is an odd Rāśi the order will also be clockwise, or anti-clockwise, as explained earlier"
+        }
+      ],
+      "stop_conditions": [
+        "缺少各宫的 Varnad 星座时停止。",
+        "缺少各 Varnad 大运的年数时，子期长度停判。",
+        "本命上升所在星座的奇偶未定时，子期次序停判。",
+        "原文没有说明子期分配到哪些宫，分配对象未确定即停判。"
+      ]
+    },
+    "ch05-v21-24-lagna-place-dependence": {
+      "title": "本命上升按出生地推算，宫上升、时上升等对一切地点相同",
+      "user_intents": [
+        "特殊上升要不要按出生地校正",
+        "换个地方出生 Bhava Lagn 会不会变",
+        "本命上升和特殊上升算法上差在哪"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch05-v21-24-lagna-place-dependence"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘的出生地点是哪里",
+        "本盘各特殊上升（special Lagn）的黄经分别是多少度"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "The natal Lagn is to be calculated according to birth place while Bhava Lagna Hora Lagn etc. are common to all places",
+        "本命上升 出生地 特殊上升 共通"
+      ],
+      "counter_queries": [
+        "From sunrise to the time of birth every 5 Ghatis constitute one Bhava Lagn",
+        "Hora Lagn repeats itself every 2½ Ghatis from sunrise Surya longitude",
+        "日出时刻 随地点 而变 起算"
+      ],
+      "boundary_queries": [
+        "Use of Special Lagnas prepare various Bhava Kundalis with respect to each special Lagn",
+        "Varnad Dasha natal Lagn Hora Lagn 用到 出生地",
+        "本命上升 与 特殊上升 的适用地点差别"
+      ],
+      "method_queries": [
+        "Lagn is a very important point in the horoscope. It is the Rāśi, that rises in the East, on the latitude of birth",
+        "I explain below again some special Lagnas viz. Bhava Lagna Hora Lagn and Ghati Lagn",
+        "特殊上升 与 本命上升 算法差别"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch05-v21-24-lagna-place-dependence.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "The natal Lagn"
+        },
+        {
+          "step_id": "ch05-v21-24-lagna-place-dependence.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "is to be calculated according to birth place"
+        },
+        {
+          "step_id": "ch05-v21-24-lagna-place-dependence.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "The natal Lagn is to be calculated according to birth place"
+        },
+        {
+          "step_id": "ch05-v21-24-lagna-place-dependence.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "The natal 1st house"
+        },
+        {
+          "step_id": "ch05-v21-24-lagna-place-dependence.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "The natal 1st house is to be calculated according to birth place"
+        },
+        {
+          "step_id": "ch05-v21-24-lagna-place-dependence.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "while Bhava Lagna, Hora Lagn etc."
+        },
+        {
+          "step_id": "ch05-v21-24-lagna-place-dependence.step-002",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "are common to all places"
+        },
+        {
+          "step_id": "ch05-v21-24-lagna-place-dependence.step-002",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "while Bhava Lagna, Hora Lagn etc. are common to all places"
+        },
+        {
+          "step_id": "ch05-v21-24-lagna-place-dependence.step-002",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "while Bhava 1st house, Hora 1st house etc."
+        },
+        {
+          "step_id": "ch05-v21-24-lagna-place-dependence.step-002",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "while Bhava 1st house, Hora 1st house etc. are common to all places"
+        }
+      ],
+      "stop_conditions": [
+        "缺少出生地点时，本命上升的推算停止。",
+        "原文没有给按出生地推算本命上升的算式，算式未确定即停判。",
+        "原文对 etc. 之外的上升点没有交代，是否与地点无关未确定即停判。"
+      ]
+    }
+  }
+}

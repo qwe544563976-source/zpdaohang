@@ -1,0 +1,213 @@
+{
+  "pilot_only": false,
+  "publishable": false,
+  "topics": {
+    "ch04-v25-30-nishek-lagn": {
+      "question_type": "受胎上升（Nishek Lagn）推算：土星与曼迪的角距加上升宫与九宫宫始之差",
+      "required_facts": [
+        "本盘上升（Lagn）是否已知",
+        "土星（Shani）的黄经是多少度",
+        "曼迪（Mandi）的黄经是多少度",
+        "本盘上升宫（Lagn Bhava）宫始点与九宫（Dharm）宫始点的差是多少度",
+        "本盘上升主（Lagn's Lord）是否落在不可见半（自上升宫始点至下降宫始点）"
+      ],
+      "conditional_facts": [
+        "月亮（Chandra）在其所落星座内已行进多少度"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "本命上升（Lagn）未知时停止——原文以『when the natal Lagn is known』为前提。",
+        "缺少土星（Shani）位置或曼迪（Mandi）位置时停止。",
+        "缺少上升宫（Lagn Bhava）宫始点与九宫（Dharm）宫始点之差时停止。",
+        "原文未规定角距的取向，取向未确定即停判。",
+        "上升主是否落不可见半未确定时，第 3 步的加值停判。",
+        "原文未给母胎吉凶与父母寿命、死亡的具体判准，判准未确定即停判。"
+      ]
+    },
+    "ch05-v2-3-bhava-lagn": {
+      "question_type": "宫上升（Bhava Lagn）起法：日出到出生每 5 Ghatis 一个，商加日出时太阳黄经",
+      "required_facts": [
+        "本盘从日出到出生经过了多少 Ghati",
+        "本盘日出时刻太阳（Surya）的黄经是多少度"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘从日出到出生的 Ghati 数时停止。",
+        "缺少日出时刻太阳（Surya）黄经时停止。",
+        "日出时刻本身未定（出生地或出生钟点不明）时停止。",
+        "原文这一偈只给宫上升（Bhava Lagn）的起法、未给吉凶断法，要断吉凶须另查原文，本方法停判。"
+      ]
+    },
+    "ch05-v4-5-hora-lagn": {
+      "question_type": "时上升（Hora Lagn）起法：日出到出生每 2½ Ghatis 一个，商加日出时太阳黄经",
+      "required_facts": [
+        "本盘从日出到出生经过了多少 Ghati",
+        "本盘日出时刻太阳（Surya）的黄经是多少度"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘从日出到出生的 Ghati 数时停止。",
+        "缺少日出时刻太阳（Surya）黄经时停止。",
+        "日出时刻本身未定（出生地或出生钟点不明）时停止。",
+        "原文这一偈只给时上升（Hora Lagn）的起法、未给吉凶断法，要断吉凶须另查原文，本方法停判。"
+      ]
+    },
+    "ch05-v6-8-ghati-lagn": {
+      "question_type": "刻上升（Ghati Lagn）起法：每 Ghati 一个，Vighatis 除 2 化度分，加日出时太阳黄经",
+      "required_facts": [
+        "本盘从日出到出生经过了多少 Ghati",
+        "本盘从日出到出生经过了多少 Vighati",
+        "本盘日出时刻太阳（Surya）的黄经是多少度"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘从日出到出生的 Ghati 数时停止。",
+        "缺少本盘从日出到出生的 Vighati 数时停止。",
+        "缺少日出时刻太阳（Surya）黄经时停止。",
+        "日出时刻本身未定（出生地或出生钟点不明）时停止。",
+        "原文这一偈只给刻上升（Ghati Lagn）的起法、未给吉凶断法，要断吉凶须另查原文，本方法停判。"
+      ]
+    },
+    "ch05-v9-use-of-special-lagnas": {
+      "question_type": "特殊上升的用法：行星位置不动，逐个特殊上升起宫盘，照本命上升的办法分析",
+      "required_facts": [
+        "本盘出生时各行星（Grahas）的黄经分别是多少度",
+        "本盘各特殊上升（special Lagn）的黄经分别是多少度"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少出生时诸行星位置时停止。",
+        "各特殊上升的位置未算出时停止（须先按本章前文的起法算出）。",
+        "原文没有给特殊上升宫盘的具体断法，断法未确定即停判。"
+      ]
+    },
+    "ch05-v10-13-5-varnad-for-lagn": {
+      "question_type": "上升的 Varnad（Varnad for Lagn）推算：本命上升与时上升各按奇偶计数，再合成后回数",
+      "required_facts": [
+        "本盘上升（Lagn）落在哪个星座",
+        "本盘时上升（Hora Lagn）落在哪个星座"
+      ],
+      "conditional_facts": [
+        "本盘上升（Lagn）所在星座是否为奇数星座（odd Rāśi）",
+        "本盘上升（Lagn）所在星座是否为偶数星座（even Rāśi）",
+        "本盘时上升（Hora Lagn）所在星座是否为奇数（odd）",
+        "本盘时上升（Hora Lagn）所在星座是否为偶数（even）",
+        "本盘上升（Lagn）的 Varnad 计数值是否为奇数",
+        "本盘上升（Lagn）的 Varnad 计数值是否为偶数",
+        "本盘时上升（Hora Lagn）的 Varnad 计数值是否为奇数",
+        "本盘时上升（Hora Lagn）的 Varnad 计数值是否为偶数",
+        "本盘 Varnad 推算所得的最后一个数是否为奇数",
+        "本盘 Varnad 推算所得的最后一个数是否为偶数"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本命上升所在星座时停止。",
+        "缺少时上升（Hora Lagn）所在星座时停止——本推算要用到它。",
+        "两个计数值的奇偶未定时停止。",
+        "合成后最后一个数的奇偶未定时停止。"
+      ]
+    },
+    "ch05-v14-15-varnad-start-direction-years": {
+      "question_type": "Varnad 大运的起算处、顺逆方向与上升大运年数",
+      "required_facts": [
+        "本盘上升（Lagn）与时上升（Hora Lagn）两者中哪一个更有力",
+        "本盘上升（Lagn）落在哪个星座",
+        "本盘上升的 Varnad 星座（Varnad for Lagn）是哪个星座",
+        "本盘上升（Lagn）与其 Varnad 之间相隔几个星座"
+      ],
+      "conditional_facts": [
+        "本盘上升（Lagn）是否比时上升（Hora Lagn）更有力",
+        "本盘时上升（Hora Lagn）是否比本盘上升（Lagn）更有力",
+        "本盘上升（Lagn）所在星座是否为奇数星座（odd Rāśi）",
+        "本盘上升（Lagn）所在星座是否为偶数星座（even Rāśi）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "原文未给本命上升与时上升的强弱判准，判准未确定即停判（须另查 Shad Bal 一类原文）。",
+        "本命上升所在星座的奇偶未定时，大运方向停判。",
+        "缺少上升的 Varnad 星座时停止。",
+        "缺少本命上升与 Varnad 之间相隔星座数时停止。"
+      ]
+    },
+    "ch05-v16-20-varnad-kon-malefic-longevity": {
+      "question_type": "上升 Varnad 的三角宫被凶星占据或相照：命主只活到该星座的大运",
+      "required_facts": [
+        "本盘上升的 Varnad 星座（Varnad for Lagn）是哪个星座",
+        "本盘中哪些行星被判为凶星"
+      ],
+      "conditional_facts": [
+        "自本盘上升的 Varnad 起算的三角宫（Kon）是否被凶星占据",
+        "自本盘上升的 Varnad 起算的三角宫（Kon）是否被凶星相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升的 Varnad 星座时停止。",
+        "凶星名册未定时停止——本偈没有界定谁是凶星。",
+        "三角宫（Kon）的占据与相照事实缺一时，对应分支停判。",
+        "原文没有给 Rudra Grah 与 Sool 大运的取法，取法未确定即停判。"
+      ]
+    },
+    "ch05-v16-20-varnad-as-lagna-relatives": {
+      "question_type": "以 Varnad 为上升看亲属寿命：7 配偶、11 兄姐、3 弟妹、5 子、4 母、9 父",
+      "required_facts": [
+        "本盘上升的 Varnad 星座（Varnad for Lagn）是哪个星座"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升的 Varnad 星座时停止。",
+        "原文只指出各宫所主的寿命对象，没有给判寿命的方法，判法未确定即停判。",
+        "各宫 Varnad 大运的年数须另按本章前偈算出，缺则停判。"
+      ]
+    },
+    "ch05-v16-20-sool-rashi-dasha-evils": {
+      "question_type": "Sool 星座（Sool Rashi）的大运凶害更大",
+      "required_facts": [
+        "本盘的 Sool 星座（Sool Rashi）是哪个星座"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "Sool 星座（Sool Rashi）未定时停止——本偈没有给它的取法。",
+        "原文没有说明凶害的具体内容，具体断语停判。"
+      ]
+    },
+    "ch05-v21-24-varnad-of-each-bhava": {
+      "question_type": "各宫 Varnad 的评断、只判宫不判居留行星、子期长度与顺逆",
+      "required_facts": [
+        "本盘各宫（Bhava）的 Varnad 星座分别是哪个",
+        "本盘各 Varnad 大运的年数分别是多少",
+        "本盘上升（Lagn）落在哪个星座"
+      ],
+      "conditional_facts": [
+        "本盘上升（Lagn）所在星座是否为奇数星座（odd Rāśi）",
+        "本盘上升（Lagn）所在星座是否为偶数星座（even Rāśi）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少各宫的 Varnad 星座时停止。",
+        "缺少各 Varnad 大运的年数时，子期长度停判。",
+        "本命上升所在星座的奇偶未定时，子期次序停判。",
+        "原文没有说明子期分配到哪些宫，分配对象未确定即停判。"
+      ]
+    },
+    "ch05-v21-24-lagna-place-dependence": {
+      "question_type": "本命上升按出生地推算，宫上升、时上升等对一切地点相同",
+      "required_facts": [
+        "本盘的出生地点是哪里",
+        "本盘各特殊上升（special Lagn）的黄经分别是多少度"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少出生地点时，本命上升的推算停止。",
+        "原文没有给按出生地推算本命上升的算式，算式未确定即停判。",
+        "原文对 etc. 之外的上升点没有交代，是否与地点无关未确定即停判。"
+      ]
+    }
+  }
+}
