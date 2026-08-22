@@ -1,0 +1,558 @@
+{
+  "shard": 2,
+  "step_count": 3,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch10-v5-benefic-drishti-night-bright-half.step-001",
+      "method": {
+        "method": "ch10-v5-benefic-drishti-night-bright-half",
+        "title": "消解凶恶：明半月夜生者上升受吉星相照",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "夜里出生上升被吉星照有什么用",
+          "我盘里的凶象有没有被摧毁"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "All evils are destroyed, if a benefic drishties Lagn of one born during the night in the bright half",
+            "明半月夜生 上升被吉星相照 一切凶恶被摧毁"
+          ],
+          "counter_queries": [
+            "If Shani and Mangal give a Drishti to Lagna, as the luminaries are yuti with Rahu (elsewhere), the child will live a fortnight"
+          ],
+          "boundary_queries": [
+            "Definition of Sandhya. 3 Ghatis before the sight of the semi disc (half) of the rising Surya and a similar duration, following Surya’s set, are called, as morning twilight and evening twilight, respectively",
+            "昼夜与明暗半月的界定"
+          ],
+          "method_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "O Brahmin, first of all estimate the evils and checking factors thereof through Lagn and then declare the effects of the 12 Bhavas",
+            "怎样判断上升是否被吉星相照"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch10-v5-benefic-drishti-night-bright-half.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "of one born during the night in the bright half"
+            },
+            {
+              "step_id": "ch10-v5-benefic-drishti-night-bright-half.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "a benefic drishties Lagn"
+            },
+            {
+              "step_id": "ch10-v5-benefic-drishti-night-bright-half.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "All evils are destroyed"
+            },
+            {
+              "step_id": "ch10-v5-benefic-drishti-night-bright-half.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "of one born during the night in the bright half All evils are destroyed"
+            },
+            {
+              "step_id": "ch10-v5-benefic-drishti-night-bright-half.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "a benefic drishties Lagn All evils are destroyed"
+            },
+            {
+              "step_id": "ch10-v5-benefic-drishti-night-bright-half.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "a benefic drishties 1st house"
+            },
+            {
+              "step_id": "ch10-v5-benefic-drishti-night-bright-half.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "a benefic drishties 1st house All evils are destroyed"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少出生昼夜事实时停止。",
+          "缺少出生月相（明半月／暗半月）事实时停止。",
+          "缺少上升是否被吉星相照的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch10-v5-benefic-drishti-night-bright-half.step-001",
+        "action": "核对出生是否在明半月（bright half）的夜间，并核对上升（Lagn）是否被吉星相照。",
+        "applicability_scope": "仅限第 10 章消解凶恶（Antidotes for Evils）主题；本条只适用于明半月夜生者，原文未给时间限定。",
+        "minimum_supported_claim": "生于明半月（bright half）夜间者，其上升（Lagn）被吉星相照时，一切凶恶被摧毁。",
+        "produced_fact_keys": [
+          "明半月夜生上升受吉照消解凶恶判定"
+        ],
+        "required_fact_keys": [
+          "本盘出生时段是白天（day）还是夜间（night）",
+          "本盘出生时的月相属暗半月（dark half）还是明半月（bright half）",
+          "上升（Lagn）是否被吉星相照"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘出生时段是白天（day）还是夜间（night）"
+            },
+            {
+              "fact_key": "本盘出生时的月相属暗半月（dark half）还是明半月（bright half）"
+            },
+            {
+              "fact_key": "上升（Lagn）是否被吉星相照"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "of one born during the night in the bright half",
+              "claim": "生于明半月（bright half）夜间者"
+            },
+            {
+              "quote": "a benefic drishties Lagn",
+              "claim": "上升（Lagn）被吉星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "All evils are destroyed",
+              "claim": "一切凶恶被摧毁"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch10:v5",
+            "quote": "All evils are destroyed, if a benefic drishties Lagn of one born during the night in the bright half.",
+            "pdf_pages": [
+              25
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘出生时段是白天（day）还是夜间（night）、本盘出生时的月相属暗半月（dark half）还是明半月（bright half）、上升（Lagn）是否被吉星相照。",
+        "stop_fact_keys": [
+          "本盘出生时段是白天（day）还是夜间（night）",
+          "本盘出生时的月相属暗半月（dark half）还是明半月（bright half）",
+          "上升（Lagn）是否被吉星相照"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把本条搬到白天出生或暗半月出生的盘上。",
+          "不得据此推断被摧毁的是哪一类凶恶、何时摧毁。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "1f760ac6feaa4185afc18f8ce04598a9906f2991b2a6503f199dd30ad9b2ae4f"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch10-v5-malefic-drishti-day-dark-half.step-001",
+      "method": {
+        "method": "ch10-v5-malefic-drishti-day-dark-half",
+        "title": "消解凶恶：暗半月昼生者上升受凶星相照（承本偈前句）",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "白天出生上升被凶星照怎么看",
+          "凶星相照上升是不是一定不好"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Similarly a malefic’s Drishti on Lagn of one born during day time in the dark half",
+            "暗半月昼生 上升被凶星相照 一切凶恶被摧毁"
+          ],
+          "counter_queries": [
+            "If Shani and Mangal give a Drishti to Lagna, as the luminaries are yuti with Rahu (elsewhere), the child will live a fortnight",
+            "Should Chandra be in Ari, Randhr, or Vyaya Bhava and receives a Drishti from a malefic, the child will die soon"
+          ],
+          "boundary_queries": [
+            "Definition of Sandhya. 3 Ghatis before the sight of the semi disc (half) of the rising Surya and a similar duration, following Surya’s set, are called, as morning twilight and evening twilight, respectively",
+            "昼夜与明暗半月的界定"
+          ],
+          "method_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "O Brahmin, first of all estimate the evils and checking factors thereof through Lagn and then declare the effects of the 12 Bhavas",
+            "怎样判断上升是否被凶星相照"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch10-v5-malefic-drishti-day-dark-half.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Similarly"
+            },
+            {
+              "step_id": "ch10-v5-malefic-drishti-day-dark-half.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "of one born during day time in the dark half"
+            },
+            {
+              "step_id": "ch10-v5-malefic-drishti-day-dark-half.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "a malefic’s Drishti on Lagn"
+            },
+            {
+              "step_id": "ch10-v5-malefic-drishti-day-dark-half.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "All evils are destroyed"
+            },
+            {
+              "step_id": "ch10-v5-malefic-drishti-day-dark-half.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Similarly All evils are destroyed"
+            },
+            {
+              "step_id": "ch10-v5-malefic-drishti-day-dark-half.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "of one born during day time in the dark half All evils are destroyed"
+            },
+            {
+              "step_id": "ch10-v5-malefic-drishti-day-dark-half.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "a malefic’s Drishti on Lagn All evils are destroyed"
+            },
+            {
+              "step_id": "ch10-v5-malefic-drishti-day-dark-half.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "a malefic’s Drishti on 1st house"
+            },
+            {
+              "step_id": "ch10-v5-malefic-drishti-day-dark-half.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "a malefic’s Drishti on 1st house All evils are destroyed"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少出生昼夜事实时停止。",
+          "缺少出生月相（明半月／暗半月）事实时停止。",
+          "缺少上升是否被凶星相照的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch10-v5-malefic-drishti-day-dark-half.step-001",
+        "action": "核对出生是否在暗半月（dark half）的白天，并核对上升（Lagn）是否被凶星相照。",
+        "applicability_scope": "仅限第 10 章消解凶恶（Antidotes for Evils）主题；本句以 Similarly 承本偈前句，结果词取自前句「All evils are destroyed」；本条只适用于暗半月昼生者，原文未给时间限定。",
+        "minimum_supported_claim": "承本偈前句，生于暗半月（dark half）白天者，其上升（Lagn）被凶星相照时，一切凶恶被摧毁。",
+        "produced_fact_keys": [
+          "暗半月昼生上升受凶照消解凶恶判定"
+        ],
+        "required_fact_keys": [
+          "本盘出生时段是白天（day）还是夜间（night）",
+          "本盘出生时的月相属暗半月（dark half）还是明半月（bright half）",
+          "上升（Lagn）是否被凶星相照"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘出生时段是白天（day）还是夜间（night）"
+            },
+            {
+              "fact_key": "本盘出生时的月相属暗半月（dark half）还是明半月（bright half）"
+            },
+            {
+              "fact_key": "上升（Lagn）是否被凶星相照"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Similarly",
+              "claim": "承本偈前句"
+            },
+            {
+              "quote": "of one born during day time in the dark half",
+              "claim": "生于暗半月（dark half）白天者"
+            },
+            {
+              "quote": "a malefic’s Drishti on Lagn",
+              "claim": "上升（Lagn）被凶星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "All evils are destroyed",
+              "claim": "一切凶恶被摧毁"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch10:v5",
+            "quote": "All evils are destroyed",
+            "pdf_pages": [
+              25
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch10:v5",
+            "quote": "Similarly a malefic’s Drishti on Lagn of one born during day time in the dark half.",
+            "pdf_pages": [
+              25
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘出生时段是白天（day）还是夜间（night）、本盘出生时的月相属暗半月（dark half）还是明半月（bright half）、上升（Lagn）是否被凶星相照。",
+        "stop_fact_keys": [
+          "本盘出生时段是白天（day）还是夜间（night）",
+          "本盘出生时的月相属暗半月（dark half）还是明半月（bright half）",
+          "上升（Lagn）是否被凶星相照"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把本条搬到夜间出生或明半月出生的盘上。",
+          "不得据此推断凶星相照在别处也一律消解凶恶。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch10:v5"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "a1b37c37973dee09ff8ed2ce494e4e0d6dc9743679f626258c47dee0bb3e81d5"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch10-v6-surya-in-vyaya-tul-lagna-hundred-years.step-001",
+      "method": {
+        "method": "ch10-v6-surya-in-vyaya-tul-lagna-hundred-years",
+        "title": "百年寿命：天秤上升者太阳落十二宫",
+        "target_house": 12,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我能活多久",
+          "天秤上升太阳落十二宫怎么看寿命"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Surya in Vyaya will confer a hundred-year life span on one born in Tul Lagn",
+            "天秤上升 太阳落十二宫 百年寿命"
+          ],
+          "counter_queries": [
+            "If Lagn’s Lord is in Ari, Randhr, or Vyaya Bhava, yuti with malefics and devoid of Yuti with and/or Drishti from a benefic, short life will come to pass",
+            "If malefics are in Kendras, devoid of Yuti with, or a Drishti from benefics, while Lagn’s Lord is not strong, only short life will result"
+          ],
+          "boundary_queries": [
+            "Evils, causing premature end, exist up to the 24<sup>th</sup> year of one’s age. As such, no definite calculation of life span should be made till such year of age",
+            "The life-span in Bal Risht is 8 years, in Yog Risht 20 years, in short, medium and long lives, respectively, 32, 64 and 120 years"
+          ],
+          "method_queries": [
+            "O Brahmin, for the benefit of mankind I narrate methods of ascertaining longevity",
+            "Longevity",
+            "怎样推算寿命"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch10-v6-surya-in-vyaya-tul-lagna-hundred-years.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Surya in Vyaya"
+            },
+            {
+              "step_id": "ch10-v6-surya-in-vyaya-tul-lagna-hundred-years.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "one born in Tul Lagn"
+            },
+            {
+              "step_id": "ch10-v6-surya-in-vyaya-tul-lagna-hundred-years.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will confer a hundred-year life span"
+            },
+            {
+              "step_id": "ch10-v6-surya-in-vyaya-tul-lagna-hundred-years.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Surya in Vyaya will confer a hundred-year life span"
+            },
+            {
+              "step_id": "ch10-v6-surya-in-vyaya-tul-lagna-hundred-years.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "one born in Tul Lagn will confer a hundred-year life span"
+            },
+            {
+              "step_id": "ch10-v6-surya-in-vyaya-tul-lagna-hundred-years.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "sun in 12th house"
+            },
+            {
+              "step_id": "ch10-v6-surya-in-vyaya-tul-lagna-hundred-years.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "one born in Tul 1st house"
+            },
+            {
+              "step_id": "ch10-v6-surya-in-vyaya-tul-lagna-hundred-years.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "sun in 12th house will confer a hundred-year life span"
+            },
+            {
+              "step_id": "ch10-v6-surya-in-vyaya-tul-lagna-hundred-years.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "one born in Tul 1st house will confer a hundred-year life span"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升星座事实时停止。",
+          "缺少太阳落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch10-v6-surya-in-vyaya-tul-lagna-hundred-years.step-001",
+        "action": "核对上升是否为天秤（Tul Lagn），并核对太阳（Surya）是否落十二宫（Vyaya）。",
+        "applicability_scope": "仅限天秤上升（Tul Lagn）的本命盘；原文只给这一组条件与百年寿命的断语，未给别的上升或别的寿命档次。",
+        "minimum_supported_claim": "生于天秤上升（Tul Lagn）者，太阳（Surya）落十二宫（Vyaya）时，得百年寿命。",
+        "produced_fact_keys": [
+          "天秤上升太阳落十二宫百年寿命判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升（Lagna）所在星座是否为天秤座（Tul）",
+          "太阳（Surya）是否落十二宫（Vyaya）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘上升（Lagna）所在星座是否为天秤座（Tul）"
+            },
+            {
+              "fact_key": "太阳（Surya）是否落十二宫（Vyaya）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Surya in Vyaya",
+              "claim": "太阳（Surya）落十二宫（Vyaya）"
+            },
+            {
+              "quote": "one born in Tul Lagn",
+              "claim": "生于天秤上升（Tul Lagn）者"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will confer a hundred-year life span",
+              "claim": "得百年寿命"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch10:v6",
+            "quote": "Surya in Vyaya will confer a hundred-year life span on one born in Tul Lagn.",
+            "pdf_pages": [
+              25
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升（Lagna）所在星座是否为天秤座（Tul）、太阳（Surya）是否落十二宫（Vyaya）。",
+        "stop_fact_keys": [
+          "本盘上升（Lagna）所在星座是否为天秤座（Tul）",
+          "太阳（Surya）是否落十二宫（Vyaya）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把本条推广到天秤以外的上升。",
+          "不得把百年改写成别的年数或寿命档次。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定；百年是结果本身，不是判断的适用时段",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "788ac6529d60d662ee875b0a22c68e1970e177f109fe9a415fe3888e2d936e28"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch10:v5": {
+      "evidence_atom_id": "bphs-97:santhanam:ch10:v5",
+      "chapter_number": 10,
+      "chapter_title": "Antidotes for Evils",
+      "verse_label": "5.",
+      "content_role": "verse",
+      "exact_text": "5. All evils are destroyed, if a benefic drishties Lagn of one born during the night in the bright half. Similarly a malefic’s Drishti on Lagn of one born during day time in the dark half.",
+      "pdf_pages": [
+        25
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 10 · Sloka 5 · PDF page 25 · bphs-97:santhanam:ch10:v5",
+      "previous_atom_id": "bphs-97:santhanam:ch10:v4",
+      "next_atom_id": "bphs-97:santhanam:ch10:v6",
+      "context_before": " Lagn Lord is singly capable of counteracting all evils, if he is strongly placed in an angle, just as Lord Shiva, the holder of the Bow destroyed the three cities, built of gold, silver and iron for the demons by Maya.\n\n",
+      "context_after": "6. Surya in Vyaya will confer a hundred-year life span on one born in Tul Lagn.\n\n7. It will prove auspicious for the mother as w",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch10:v6": {
+      "evidence_atom_id": "bphs-97:santhanam:ch10:v6",
+      "chapter_number": 10,
+      "chapter_title": "Antidotes for Evils",
+      "verse_label": "6.",
+      "content_role": "verse",
+      "exact_text": "6. Surya in Vyaya will confer a hundred-year life span on one born in Tul Lagn.",
+      "pdf_pages": [
+        25
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 10 · Sloka 6 · PDF page 25 · bphs-97:santhanam:ch10:v6",
+      "previous_atom_id": "bphs-97:santhanam:ch10:v5",
+      "next_atom_id": "bphs-97:santhanam:ch10:v7",
+      "context_before": " born during the night in the bright half. Similarly a malefic’s Drishti on Lagn of one born during day time in the dark half.\n\n",
+      "context_after": "7. It will prove auspicious for the mother as well as the native, if Mangal joins, or is drishtied by Guru.\n\n8. If malefics are ",
+      "content_missing": false
+    }
+  }
+}

@@ -1,0 +1,559 @@
+{
+  "shard": 4,
+  "step_count": 3,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001",
+      "method": {
+        "method": "ch11-v14-16-bhava-wellbeing-by-lord-state",
+        "title": "宫之安泰：宫主处于 Yuvavastha、Prabuddhavastha、Kismaravastha 之一或落十宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "宫主的状态怎么影响这一宫",
+          "宫主落十宫对这一宫有什么用"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Also, when its Lord is in Yuvavastha, or Prabuddhavastha, or in Kismaravastha, or in Karm Bhava, the Bhavas well-being is indicated",
+            "宫主处于 Yuvavastha 或落十宫 该宫安泰"
+          ],
+          "counter_queries": [
+            "The Bhava, which is not drishtied by its Lord, or, whose Lord is with a malefic Grah"
+          ],
+          "boundary_queries": [
+            "The learned should estimate the effects, due to a Bhava, in the manner, cited above, after ascertaining the strength and weakness",
+            "本译本未界定 Yuvavastha、Prabuddhavastha、Kismaravastha"
+          ],
+          "method_queries": [
+            "the Avasthas, or states of the Grahas are to be considered in the context of the effects of the Grahas",
+            "Infant, youthful, adolescent, old and dead are the states of the Grahas",
+            "The Lord of the Bhava is equally important, when estimating the indications of a particular Bhava",
+            "行星的 Avastha 怎么定"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "when its Lord is in Yuvavastha"
+            },
+            {
+              "step_id": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or Prabuddhavastha"
+            },
+            {
+              "step_id": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or in Kismaravastha"
+            },
+            {
+              "step_id": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or in Karm Bhava"
+            },
+            {
+              "step_id": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the Bhavas well-being is indicated"
+            },
+            {
+              "step_id": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "when its Lord is in Yuvavastha the Bhavas well-being is indicated"
+            },
+            {
+              "step_id": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or Prabuddhavastha the Bhavas well-being is indicated"
+            },
+            {
+              "step_id": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or in Kismaravastha the Bhavas well-being is indicated"
+            },
+            {
+              "step_id": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or in Karm Bhava the Bhavas well-being is indicated"
+            },
+            {
+              "step_id": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "or in 10th house"
+            },
+            {
+              "step_id": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "or in 10th house the Bhavas well-being is indicated"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少该宫之主是哪颗行星的事实时停止。",
+          "Yuvavastha、Prabuddhavastha、Kismaravastha 三名在本译本未获界定，取不到值即停止。",
+          "四个分支的事实全部取不到时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001",
+        "action": "核对该宫之主是否处于 Yuvavastha、Prabuddhavastha、Kismaravastha 三种状态之一，或是否落十宫（Karm Bhava）。",
+        "applicability_scope": "适用于十二宫中任一宫；本句以 its Lord 承前句「the Bhava」；本译本没有在别处界定 Yuvavastha、Prabuddhavastha、Kismaravastha 这三个状态名，未确定即停判。",
+        "minimum_supported_claim": "该宫之主处于 Yuvavastha、Prabuddhavastha、Kismaravastha 之一，或落十宫（Karm Bhava）时，该宫安泰（well-being）。",
+        "produced_fact_keys": [
+          "该宫之主状态带来的安泰判定"
+        ],
+        "required_fact_keys": [
+          "本盘该宫（Bhava）之主是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘该宫（Bhava）之主是哪颗行星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "该宫之主（Bhava's Lord）是否处于 Yuvavastha"
+                },
+                {
+                  "fact_key": "该宫之主（Bhava's Lord）是否处于 Prabuddhavastha"
+                },
+                {
+                  "fact_key": "该宫之主（Bhava's Lord）是否处于 Kismaravastha"
+                },
+                {
+                  "fact_key": "该宫之主（Bhava's Lord）是否落十宫（Karm Bhava）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘该宫（Bhava）之主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "该宫之主（Bhava's Lord）是否处于 Yuvavastha"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "该宫之主（Bhava's Lord）是否处于 Yuvavastha"
+            },
+            "selection_group": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001:lord-state",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：该宫之主（Bhava's Lord）是否处于 Yuvavastha。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘该宫（Bhava）之主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "该宫之主（Bhava's Lord）是否处于 Prabuddhavastha"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "该宫之主（Bhava's Lord）是否处于 Prabuddhavastha"
+            },
+            "selection_group": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001:lord-state",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：该宫之主（Bhava's Lord）是否处于 Prabuddhavastha。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘该宫（Bhava）之主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "该宫之主（Bhava's Lord）是否处于 Kismaravastha"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "该宫之主（Bhava's Lord）是否处于 Kismaravastha"
+            },
+            "selection_group": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001:lord-state",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：该宫之主（Bhava's Lord）是否处于 Kismaravastha。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘该宫（Bhava）之主是哪颗行星"
+            },
+            "required_fact_keys": [
+              "该宫之主（Bhava's Lord）是否落十宫（Karm Bhava）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "该宫之主（Bhava's Lord）是否落十宫（Karm Bhava）"
+            },
+            "selection_group": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001:lord-state",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：该宫之主（Bhava's Lord）是否落十宫（Karm Bhava）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "when its Lord is in Yuvavastha",
+              "claim": "该宫之主处于 Yuvavastha"
+            },
+            {
+              "quote": "or Prabuddhavastha",
+              "claim": "Prabuddhavastha"
+            },
+            {
+              "quote": "or in Kismaravastha",
+              "claim": "Kismaravastha"
+            },
+            {
+              "quote": "or in Karm Bhava",
+              "claim": "落十宫（Karm Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the Bhavas well-being is indicated",
+              "claim": "该宫安泰（well-being）"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch11:v14-16",
+            "quote": "Also, when its Lord is in Yuvavastha, or Prabuddhavastha, or in Kismaravastha, or in Karm Bhava, the Bhavas well-being is indicated.",
+            "pdf_pages": [
+              26
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘该宫（Bhava）之主是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘该宫（Bhava）之主是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 Yuvavastha、Prabuddhavastha、Kismaravastha 自行等同于第 45 章的任何一种 Avastha——原文没有作这个对应。",
+          "不得把「安泰」具体化成某一件事或某个程度。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch11:v14-16"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "2da7055ed2aae6df36d8c16117ef80e8e7ac8c25baeefc5473c3b5d094a2e489"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch11-v14-16-bhava-not-drishtied-by-its-lord.step-001",
+      "method": {
+        "method": "ch11-v14-16-bhava-not-drishtied-by-its-lord",
+        "title": "宫之毁灭一侧：该宫不被其宫主相照",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "宫主不照本宫要紧吗",
+          "我这一宫会不会受损"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "The Bhava, which is not drishtied by its Lord, or, whose Lord is with a malefic Grah",
+            "该宫不被其宫主相照 宫之毁灭"
+          ],
+          "counter_queries": [
+            "Predict prosperity of the Bhava, which is yuti with, or drishtied by a benefic"
+          ],
+          "boundary_queries": [
+            "The learned should estimate the effects, due to a Bhava, in the manner, cited above, after ascertaining the strength and weakness",
+            "本偈末句在本译本没有谓语"
+          ],
+          "method_queries": [
+            "The Lord of the Bhava is equally important, when estimating the indications of a particular Bhava",
+            "怎样判断宫主与本宫的关系"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch11-v14-16-bhava-not-drishtied-by-its-lord.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "The Bhava, which is not drishtied by its Lord"
+            },
+            {
+              "step_id": "ch11-v14-16-bhava-not-drishtied-by-its-lord.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Annihilation of a Bhava"
+            },
+            {
+              "step_id": "ch11-v14-16-bhava-not-drishtied-by-its-lord.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "The Bhava, which is not drishtied by its Lord Annihilation of a Bhava"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少该宫之主是哪颗行星的事实时停止。",
+          "缺少该宫是否被其宫主相照的事实时停止。",
+          "要断出毁灭的具体后果时停止——原文末句无谓语。"
+        ]
+      },
+      "step": {
+        "step_id": "ch11-v14-16-bhava-not-drishtied-by-its-lord.step-001",
+        "action": "核对该宫（Bhava）是否被其宫主相照。",
+        "applicability_scope": "适用于十二宫中任一宫；本译本末句只列条件、没有谓语，结果词只取自本偈标题「Prosperity, or Annihilation of a Bhava」，结论强度以此为限。",
+        "minimum_supported_claim": "该宫不被其宫主相照时，属本偈标题所说的宫之毁灭（Annihilation of a Bhava）一侧。",
+        "produced_fact_keys": [
+          "该宫不受宫主相照的毁灭一侧判定"
+        ],
+        "required_fact_keys": [
+          "本盘该宫（Bhava）之主是哪颗行星",
+          "该宫（Bhava）是否被其宫主相照"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘该宫（Bhava）之主是哪颗行星"
+            },
+            {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "该宫（Bhava）是否被其宫主相照"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "The Bhava, which is not drishtied by its Lord",
+              "claim": "该宫不被其宫主相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Annihilation of a Bhava",
+              "claim": "宫之毁灭（Annihilation of a Bhava）一侧"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch11:v14-16",
+            "quote": "Prosperity, or Annihilation of a Bhava.",
+            "pdf_pages": [
+              26
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch11:v14-16",
+            "quote": "The Bhava, which is not drishtied by its Lord",
+            "pdf_pages": [
+              26
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘该宫（Bhava）之主是哪颗行星、该宫（Bhava）是否被其宫主相照。",
+        "stop_fact_keys": [
+          "本盘该宫（Bhava）之主是哪颗行星",
+          "该宫（Bhava）是否被其宫主相照"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得替原文补出毁灭的程度、事项或应期——本译本末句没有谓语。",
+          "不得把本条读成「该宫必定应验凶事」。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch11:v14-16"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "272e24cde60df762196fefe3d120d6d98fa4c9ad8ca72c735163635e7357995b"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch11-v14-16-bhava-lord-with-malefic.step-001",
+      "method": {
+        "method": "ch11-v14-16-bhava-lord-with-malefic",
+        "title": "宫之毁灭一侧：该宫之主与凶星同宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "宫主与凶星同宫怎么看",
+          "我这一宫会不会受损"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "The Bhava, which is not drishtied by its Lord, or, whose Lord is with a malefic Grah",
+            "宫主与凶星同宫 宫之毁灭"
+          ],
+          "counter_queries": [
+            "Predict prosperity of the Bhava, which is yuti with, or drishtied by a benefic"
+          ],
+          "boundary_queries": [
+            "The learned should estimate the effects, due to a Bhava, in the manner, cited above, after ascertaining the strength and weakness",
+            "本偈末句在本译本没有谓语"
+          ],
+          "method_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "The Lord of the Bhava is equally important, when estimating the indications of a particular Bhava",
+            "哪些行星算凶星"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch11-v14-16-bhava-lord-with-malefic.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "whose Lord is with a malefic Grah"
+            },
+            {
+              "step_id": "ch11-v14-16-bhava-lord-with-malefic.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Annihilation of a Bhava"
+            },
+            {
+              "step_id": "ch11-v14-16-bhava-lord-with-malefic.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "whose Lord is with a malefic Grah Annihilation of a Bhava"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少该宫之主是哪颗行星的事实时停止。",
+          "缺少宫主是否与凶星同宫的事实时停止。",
+          "要断出毁灭的具体后果时停止——原文末句无谓语。"
+        ]
+      },
+      "step": {
+        "step_id": "ch11-v14-16-bhava-lord-with-malefic.step-001",
+        "action": "核对该宫之主（Bhava's Lord）是否与凶星同宫。",
+        "applicability_scope": "适用于十二宫中任一宫；主语承本偈「whose Lord」；本译本末句只列条件、没有谓语，结果词只取自本偈标题「Prosperity, or Annihilation of a Bhava」，结论强度以此为限。",
+        "minimum_supported_claim": "该宫之主与凶星同宫时，属本偈标题所说的宫之毁灭（Annihilation of a Bhava）一侧。",
+        "produced_fact_keys": [
+          "宫主与凶星同宫的毁灭一侧判定"
+        ],
+        "required_fact_keys": [
+          "本盘该宫（Bhava）之主是哪颗行星",
+          "该宫之主（Bhava's Lord）是否与凶星同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘该宫（Bhava）之主是哪颗行星"
+            },
+            {
+              "fact_key": "该宫之主（Bhava's Lord）是否与凶星同宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "whose Lord is with a malefic Grah",
+              "claim": "该宫之主与凶星同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Annihilation of a Bhava",
+              "claim": "宫之毁灭（Annihilation of a Bhava）一侧"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch11:v14-16",
+            "quote": "Prosperity, or Annihilation of a Bhava.",
+            "pdf_pages": [
+              26
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch11:v14-16",
+            "quote": "whose Lord is with a malefic Grah",
+            "pdf_pages": [
+              26
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘该宫（Bhava）之主是哪颗行星、该宫之主（Bhava's Lord）是否与凶星同宫。",
+        "stop_fact_keys": [
+          "本盘该宫（Bhava）之主是哪颗行星",
+          "该宫之主（Bhava's Lord）是否与凶星同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得替原文补出毁灭的程度、事项或应期——本译本末句没有谓语。",
+          "不得把凶星扩大到原文吉凶名册以外的行星。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch11:v14-16"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "3c77f2e63fc3ee8e5e656b6b10161061c13190f5f5c4d343a8767772e57b4c74"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch11:v14-16": {
+      "evidence_atom_id": "bphs-97:santhanam:ch11:v14-16",
+      "chapter_number": 11,
+      "chapter_title": "Judgement of Bhavas",
+      "verse_label": "14-16.",
+      "content_role": "verse",
+      "exact_text": "14-16. Prosperity, or Annihilation of a Bhava. Predict prosperity of the Bhava, which is yuti with, or drishtied by a benefic. Also, when its Lord is in Yuvavastha, or Prabuddhavastha, or in Kismaravastha, or in Karm Bhava, the Bhavas well-being is indicated. The Bhava, which is not drishtied by its Lord, or, whose Lord is with a malefic Grah, or with one of the Lords of evil and such other Bhavas (i.e. 3<sup>rd</sup> , 6<sup>th</sup> , 8<sup>th</sup> , 11<sup>th</sup> and 12<sup>th</sup> ), or is defeated in a war between Grahas, or is in one of the three Avasthas, viz, Vriddhavastha, Mritavastha and Suptavastha.",
+      "pdf_pages": [
+        26
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 11 · Sloka 14-16 · PDF page 26 · bphs-97:santhanam:ch11:v14-16",
+      "previous_atom_id": "bphs-97:santhanam:ch11:v13",
+      "next_atom_id": null,
+      "context_before": "hava.\n\n13. Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.\n\n",
+      "context_after": "",
+      "content_missing": false
+    }
+  }
+}

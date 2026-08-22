@@ -1,0 +1,649 @@
+{
+  "shard": 3,
+  "step_count": 3,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch10-v7-mangal-with-guru-auspicious-for-mother.step-001",
+      "method": {
+        "method": "ch10-v7-mangal-with-guru-auspicious-for-mother",
+        "title": "对母亲与本人皆吉：火星与木星同宫或被木星相照",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "火星木星的关系对母亲有什么影响",
+          "我母亲的处境怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "It will prove auspicious for the mother as well as the native, if Mangal joins, or is drishtied by Guru",
+            "火星与木星同宫或被木星相照 对母亲与本人吉利"
+          ],
+          "counter_queries": [
+            "The mother of the native will incur evils (will die soon), if Chandra at birth receives a Drishti from three malefics",
+            "Malefics in Ari and Vyaya Bhava will bring evils to mother"
+          ],
+          "boundary_queries": [
+            "Indications of Bandhu Bhava. Conveyances, relatives, mother, happiness, treasure, lands and buildings are to be consulted through Bandhu Bhava",
+            "母亲之事从哪一宫看"
+          ],
+          "method_queries": [
+            "Surya is the indicator of father for all beings, while the mother is indicated by Chandra",
+            "Benefics, giving a Drishti to Chandra, will bring good to the mother",
+            "怎样判断母亲的吉凶"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch10-v7-mangal-with-guru-auspicious-for-mother.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Mangal joins"
+            },
+            {
+              "step_id": "ch10-v7-mangal-with-guru-auspicious-for-mother.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or is drishtied by Guru"
+            },
+            {
+              "step_id": "ch10-v7-mangal-with-guru-auspicious-for-mother.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "It will prove auspicious for the mother as well as the native"
+            },
+            {
+              "step_id": "ch10-v7-mangal-with-guru-auspicious-for-mother.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Mangal joins It will prove auspicious for the mother as well as the native"
+            },
+            {
+              "step_id": "ch10-v7-mangal-with-guru-auspicious-for-mother.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or is drishtied by Guru It will prove auspicious for the mother as well as the native"
+            },
+            {
+              "step_id": "ch10-v7-mangal-with-guru-auspicious-for-mother.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if mars joins"
+            },
+            {
+              "step_id": "ch10-v7-mangal-with-guru-auspicious-for-mother.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "or is drishtied by jupiter"
+            },
+            {
+              "step_id": "ch10-v7-mangal-with-guru-auspicious-for-mother.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if mars joins It will prove auspicious for the mother as well as the native"
+            },
+            {
+              "step_id": "ch10-v7-mangal-with-guru-auspicious-for-mother.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "or is drishtied by jupiter It will prove auspicious for the mother as well as the native"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少火星或木星落宫事实时停止。",
+          "原文没有指明火星应落哪一宫，若要按某一宫限定使用，本方法停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch10-v7-mangal-with-guru-auspicious-for-mother.step-001",
+        "action": "核对火星（Mangal）是否与木星（Guru）同宫，或是否被木星（Guru）相照。",
+        "applicability_scope": "仅限第 10 章消解凶恶（Antidotes for Evils）主题；原文没有指明火星落在哪一宫，也没有指明这是承接哪一条凶象，未确定即停判；原文未给时间限定。",
+        "minimum_supported_claim": "火星（Mangal）与木星（Guru）同宫，或被木星（Guru）相照时，对母亲与本人都将是吉利的。",
+        "produced_fact_keys": [
+          "火星与木星相涉对母亲与本人的吉利判定"
+        ],
+        "required_fact_keys": [
+          "本盘火星（Mangal）落在哪一宫",
+          "本盘木星（Guru）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘火星（Mangal）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘木星（Guru）落在哪一宫"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "火星（Mangal）是否与木星（Guru）同宫"
+                },
+                {
+                  "fact_key": "火星（Mangal）是否被木星（Guru）相照"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘火星（Mangal）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘木星（Guru）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "火星（Mangal）是否与木星（Guru）同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "火星（Mangal）是否与木星（Guru）同宫"
+            },
+            "selection_group": "ch10-v7-mangal-with-guru-auspicious-for-mother.step-001:mangal-guru-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：火星（Mangal）是否与木星（Guru）同宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘火星（Mangal）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘木星（Guru）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "火星（Mangal）是否被木星（Guru）相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "火星（Mangal）是否被木星（Guru）相照"
+            },
+            "selection_group": "ch10-v7-mangal-with-guru-auspicious-for-mother.step-001:mangal-guru-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：火星（Mangal）是否被木星（Guru）相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if Mangal joins",
+              "claim": "火星（Mangal）与木星（Guru）同宫"
+            },
+            {
+              "quote": "or is drishtied by Guru",
+              "claim": "或被木星（Guru）相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "It will prove auspicious for the mother as well as the native",
+              "claim": "对母亲与本人都将是吉利的"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch10:v7",
+            "quote": "It will prove auspicious for the mother as well as the native, if Mangal joins, or is drishtied by Guru.",
+            "pdf_pages": [
+              25
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘火星（Mangal）落在哪一宫、本盘木星（Guru）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘火星（Mangal）落在哪一宫",
+          "本盘木星（Guru）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得替原文补出火星应落哪一宫——原文这一句没有写。",
+          "不得据此推断对母亲吉利的具体事项（寿命、健康、财物等）。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "77a60db54926ddbadde30626c14e62167a46803973470e2ff11d0b1d512c015a"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch10-v8-malefics-surrounded-by-benefics.step-001",
+      "method": {
+        "method": "ch10-v8-malefics-surrounded-by-benefics",
+        "title": "凶恶速消：凶星被吉星包围且角宫或三角宫被吉星占据",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘里的凶象会不会很快过去",
+          "凶星被吉星夹住有什么用"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If malefics are surrounded by benefics, while angles, or trines are themselves beneficoccupied, evils disappear soon",
+            "凶星被吉星包围 角宫三角宫被吉星占据 凶恶很快消失"
+          ],
+          "counter_queries": [
+            "Malefic in Vyaya and Ari Bhava, or in Randhr and Dhan Bhava, while Lagn is hemmed between other malefics, will bring early death",
+            "Chandra in Tanu, Randhr, Vyaya, or Yuvati Bhava and hemmed between malefics will confer premature death"
+          ],
+          "boundary_queries": [
+            "O Brahmin, first of all estimate the evils and checking factors thereof through Lagn and then declare the effects of the 12 Bhavas",
+            "凶恶与消解因素的先后次序"
+          ],
+          "method_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "I now narrate the antidotes for such evils as well, which will be helpful to assess the extent of inauspiciousness",
+            "怎样判断吉星凶星的分布"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch10-v8-malefics-surrounded-by-benefics.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If malefics are surrounded by benefics"
+            },
+            {
+              "step_id": "ch10-v8-malefics-surrounded-by-benefics.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while angles, or trines are themselves beneficoccupied"
+            },
+            {
+              "step_id": "ch10-v8-malefics-surrounded-by-benefics.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "evils disappear soon"
+            },
+            {
+              "step_id": "ch10-v8-malefics-surrounded-by-benefics.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "evils will not follow from the Bhavas concerned"
+            },
+            {
+              "step_id": "ch10-v8-malefics-surrounded-by-benefics.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If malefics are surrounded by benefics evils disappear soon"
+            },
+            {
+              "step_id": "ch10-v8-malefics-surrounded-by-benefics.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while angles, or trines are themselves beneficoccupied evils disappear soon"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少凶星是否被吉星包围的事实时停止。",
+          "角宫与三角宫的吉星占据事实都取不到时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch10-v8-malefics-surrounded-by-benefics.step-001",
+        "action": "核对凶星是否被吉星包围，并核对角宫或三角宫本身是否被吉星占据。",
+        "applicability_scope": "仅限第 10 章消解凶恶（Antidotes for Evils）主题；原文只说 soon，没有给具体时间。",
+        "minimum_supported_claim": "凶星被吉星包围，同时角宫或三角宫本身被吉星占据时，凶恶很快消失，而且相关诸宫不再产生凶恶。",
+        "produced_fact_keys": [
+          "凶星受吉星包围凶恶速消判定"
+        ],
+        "required_fact_keys": [
+          "本盘中的凶星是否被吉星包围（surrounded by benefics）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘中的凶星是否被吉星包围（surrounded by benefics）"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "角宫（Kendr）是否被吉星占据"
+                },
+                {
+                  "fact_key": "三角宫（Kon）是否被吉星占据"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘中的凶星是否被吉星包围（surrounded by benefics）"
+            },
+            "required_fact_keys": [
+              "角宫（Kendr）是否被吉星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "角宫（Kendr）是否被吉星占据"
+            },
+            "selection_group": "ch10-v8-malefics-surrounded-by-benefics.step-001:kendra-or-trine-benefic-occupied",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：角宫（Kendr）是否被吉星占据。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘中的凶星是否被吉星包围（surrounded by benefics）"
+            },
+            "required_fact_keys": [
+              "三角宫（Kon）是否被吉星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "三角宫（Kon）是否被吉星占据"
+            },
+            "selection_group": "ch10-v8-malefics-surrounded-by-benefics.step-001:kendra-or-trine-benefic-occupied",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：三角宫（Kon）是否被吉星占据。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If malefics are surrounded by benefics",
+              "claim": "凶星被吉星包围"
+            },
+            {
+              "quote": "while angles, or trines are themselves beneficoccupied",
+              "claim": "角宫或三角宫本身被吉星占据"
+            }
+          ],
+          "results": [
+            {
+              "quote": "evils disappear soon",
+              "claim": "凶恶很快消失"
+            },
+            {
+              "quote": "evils will not follow from the Bhavas concerned",
+              "claim": "相关诸宫不再产生凶恶"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch10:v8",
+            "quote": "If malefics are surrounded by benefics, while angles, or trines are themselves beneficoccupied, evils disappear soon. Not only this, evils will not follow from the Bhavas concerned.",
+            "pdf_pages": [
+              25
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中的凶星是否被吉星包围（surrounded by benefics）。",
+        "stop_fact_keys": [
+          "本盘中的凶星是否被吉星包围（surrounded by benefics）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 soon 折算成具体年数或大运。",
+          "不得把「相关诸宫」扩大成全盘所有宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文只说 soon，没有给具体时间",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "db769436858172ef35feeade93c21d14e315b847214930192dd8b731588c1f46"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch11-v14-16-bhava-prosperity-by-benefic.step-001",
+      "method": {
+        "method": "ch11-v14-16-bhava-prosperity-by-benefic",
+        "title": "宫之兴旺：该宫与吉星同宫或被吉星相照",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这一宫是好是坏",
+          "怎么看某一宫兴不兴旺"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Predict prosperity of the Bhava, which is yuti with, or drishtied by a benefic",
+            "该宫与吉星同宫或被吉星相照 该宫兴旺"
+          ],
+          "counter_queries": [
+            "The Bhava, which is not drishtied by its Lord, or, whose Lord is with a malefic Grah"
+          ],
+          "boundary_queries": [
+            "The learned should estimate the effects, due to a Bhava, in the manner, cited above, after ascertaining the strength and weakness",
+            "宫的吉凶要连同强弱一起估量"
+          ],
+          "method_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "The Lord of the Bhava is equally important, when estimating the indications of a particular Bhava",
+            "怎样判断一个宫的兴衰"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch11-v14-16-bhava-prosperity-by-benefic.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "which is yuti with"
+            },
+            {
+              "step_id": "ch11-v14-16-bhava-prosperity-by-benefic.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "drishtied by a benefic"
+            },
+            {
+              "step_id": "ch11-v14-16-bhava-prosperity-by-benefic.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Predict prosperity of the Bhava"
+            },
+            {
+              "step_id": "ch11-v14-16-bhava-prosperity-by-benefic.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "which is yuti with Predict prosperity of the Bhava"
+            },
+            {
+              "step_id": "ch11-v14-16-bhava-prosperity-by-benefic.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "drishtied by a benefic Predict prosperity of the Bhava"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "未指明要判哪一宫时停止。",
+          "该宫的吉星同宫与吉星相照事实都取不到时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch11-v14-16-bhava-prosperity-by-benefic.step-001",
+        "action": "核对待判之宫（Bhava）是否与吉星同宫，或是否被吉星相照。",
+        "applicability_scope": "适用于十二宫中任一宫；原文只给兴旺与否的方向，未给程度、事项或时间。",
+        "minimum_supported_claim": "该宫与吉星同宫，或被吉星相照时，该宫兴旺（prosperity）。",
+        "produced_fact_keys": [
+          "该宫受吉星相涉的兴旺判定"
+        ],
+        "required_fact_keys": [
+          "本次判断的是哪一宫（Bhava）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本次判断的是哪一宫（Bhava）"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "该宫（Bhava）是否与吉星同宫"
+                },
+                {
+                  "fact_key": "该宫（Bhava）是否被吉星相照"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本次判断的是哪一宫（Bhava）"
+            },
+            "required_fact_keys": [
+              "该宫（Bhava）是否与吉星同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "该宫（Bhava）是否与吉星同宫"
+            },
+            "selection_group": "ch11-v14-16-bhava-prosperity-by-benefic.step-001:benefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：该宫（Bhava）是否与吉星同宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本次判断的是哪一宫（Bhava）"
+            },
+            "required_fact_keys": [
+              "该宫（Bhava）是否被吉星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "该宫（Bhava）是否被吉星相照"
+            },
+            "selection_group": "ch11-v14-16-bhava-prosperity-by-benefic.step-001:benefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：该宫（Bhava）是否被吉星相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "which is yuti with",
+              "claim": "该宫与吉星同宫"
+            },
+            {
+              "quote": "drishtied by a benefic",
+              "claim": "被吉星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Predict prosperity of the Bhava",
+              "claim": "该宫兴旺（prosperity）"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch11:v14-16",
+            "quote": "Predict prosperity of the Bhava, which is yuti with, or drishtied by a benefic.",
+            "pdf_pages": [
+              26
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本次判断的是哪一宫（Bhava）。",
+        "stop_fact_keys": [
+          "本次判断的是哪一宫（Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「兴旺」具体化成某一件事（财、子、寿等），原文只给方向。",
+          "不得据此推断兴旺的程度或应期。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "31cfbe426100a9ca7d1510d8642bf12e3b90d4772fdcf979cb589d0763ae6b50"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch10:v7": {
+      "evidence_atom_id": "bphs-97:santhanam:ch10:v7",
+      "chapter_number": 10,
+      "chapter_title": "Antidotes for Evils",
+      "verse_label": "7.",
+      "content_role": "verse",
+      "exact_text": "7. It will prove auspicious for the mother as well as the native, if Mangal joins, or is drishtied by Guru.",
+      "pdf_pages": [
+        25
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 10 · Sloka 7 · PDF page 25 · bphs-97:santhanam:ch10:v7",
+      "previous_atom_id": "bphs-97:santhanam:ch10:v6",
+      "next_atom_id": "bphs-97:santhanam:ch10:v8",
+      "context_before": "of one born during day time in the dark half.\n\n6. Surya in Vyaya will confer a hundred-year life span on one born in Tul Lagn.\n\n",
+      "context_after": "8. If malefics are surrounded by benefics, while angles, or trines are themselves beneficoccupied, evils disappear soon. Not onl",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch10:v8": {
+      "evidence_atom_id": "bphs-97:santhanam:ch10:v8",
+      "chapter_number": 10,
+      "chapter_title": "Antidotes for Evils",
+      "verse_label": "8.",
+      "content_role": "verse",
+      "exact_text": "8. If malefics are surrounded by benefics, while angles, or trines are themselves beneficoccupied, evils disappear soon. Not only this, evils will not follow from the Bhavas concerned.",
+      "pdf_pages": [
+        25
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 10 · Sloka 8 · PDF page 25 · bphs-97:santhanam:ch10:v8",
+      "previous_atom_id": "bphs-97:santhanam:ch10:v7",
+      "next_atom_id": null,
+      "context_before": "born in Tul Lagn.\n\n7. It will prove auspicious for the mother as well as the native, if Mangal joins, or is drishtied by Guru.\n\n",
+      "context_after": "",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch11:v14-16": {
+      "evidence_atom_id": "bphs-97:santhanam:ch11:v14-16",
+      "chapter_number": 11,
+      "chapter_title": "Judgement of Bhavas",
+      "verse_label": "14-16.",
+      "content_role": "verse",
+      "exact_text": "14-16. Prosperity, or Annihilation of a Bhava. Predict prosperity of the Bhava, which is yuti with, or drishtied by a benefic. Also, when its Lord is in Yuvavastha, or Prabuddhavastha, or in Kismaravastha, or in Karm Bhava, the Bhavas well-being is indicated. The Bhava, which is not drishtied by its Lord, or, whose Lord is with a malefic Grah, or with one of the Lords of evil and such other Bhavas (i.e. 3<sup>rd</sup> , 6<sup>th</sup> , 8<sup>th</sup> , 11<sup>th</sup> and 12<sup>th</sup> ), or is defeated in a war between Grahas, or is in one of the three Avasthas, viz, Vriddhavastha, Mritavastha and Suptavastha.",
+      "pdf_pages": [
+        26
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 11 · Sloka 14-16 · PDF page 26 · bphs-97:santhanam:ch11:v14-16",
+      "previous_atom_id": "bphs-97:santhanam:ch11:v13",
+      "next_atom_id": null,
+      "context_before": "hava.\n\n13. Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.\n\n",
+      "context_after": "",
+      "content_missing": false
+    }
+  }
+}

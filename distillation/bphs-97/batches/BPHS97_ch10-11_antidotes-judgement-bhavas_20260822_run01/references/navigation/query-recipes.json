@@ -1,0 +1,1151 @@
+{
+  "schema_version": "judgment-query-recipes/v2",
+  "pilot_only": false,
+  "publishable": false,
+  "topics": {
+    "ch10-v2-benefic-in-angle-destroys-evils": {
+      "title": "消解凶恶：水星、木星、金星之一落自上升起算的角宫",
+      "user_intents": [
+        "我盘里的凶象有没有被化解",
+        "吉星落角宫能不能消灾"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch10-v2-benefic-in-angle-destroys-evils"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘上升（Lagn）落在哪个星座"
+      ],
+      "conditional_facts": [
+        "水星（Budh）是否落角宫",
+        "木星（Guru）是否落角宫",
+        "金星（Shukra）是否落角宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed",
+        "水星木星金星之一落角宫 一切凶恶被摧毁"
+      ],
+      "counter_queries": [
+        "Malefic in Vyaya and Ari Bhava, or in Randhr and Dhan Bhava, while Lagn is hemmed between other malefics, will bring early death",
+        "Should Shani, Surya and Mangal be in Vyaya, Dharm and Randhr Bhava without Drishti from a benefic, the child will face instant death"
+      ],
+      "boundary_queries": [
+        "O Brahmin, first of all estimate the evils and checking factors thereof through Lagn and then declare the effects of the 12 Bhavas",
+        "凶恶与消解因素要先从上升看起"
+      ],
+      "method_queries": [
+        "I now narrate the antidotes for such evils as well, which will be helpful to assess the extent of inauspiciousness",
+        "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+        "怎样判断盘中的凶恶是否被消解"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch10-v2-benefic-in-angle-destroys-evils.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Should one among Budh, Guru and Shukra be in an angle from Lagna"
+        },
+        {
+          "step_id": "ch10-v2-benefic-in-angle-destroys-evils.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "all evils are destroyed"
+        },
+        {
+          "step_id": "ch10-v2-benefic-in-angle-destroys-evils.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Should one among Budh, Guru and Shukra be in an angle from Lagna all evils are destroyed"
+        },
+        {
+          "step_id": "ch10-v2-benefic-in-angle-destroys-evils.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "Should one among mercury, jupiter and venus be in an angle from 1st house"
+        },
+        {
+          "step_id": "ch10-v2-benefic-in-angle-destroys-evils.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "Should one among mercury, jupiter and venus be in an angle from 1st house all evils are destroyed"
+        }
+      ],
+      "stop_conditions": [
+        "缺少本盘上升星座事实、无法定出角宫时停止。",
+        "三颗行星的落角宫事实全部取不到时停止。"
+      ]
+    },
+    "ch10-v3-strong-guru-in-lagna-wards-off-evils": {
+      "title": "消解凶恶：单独一颗有力的木星落上升",
+      "user_intents": [
+        "木星落上升能不能挡灾",
+        "我盘里的凶象有没有被化解"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch10-v3-strong-guru-in-lagna-wards-off-evils"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "木星（Guru）是否落上升宫（Lagna）",
+        "木星（Guru）是否有力"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "a single, but strong Guru in Lagn will ward off all the evils",
+        "有力的木星落上升 挡去一切凶恶"
+      ],
+      "counter_queries": [
+        "The native will at the time of his marriage lose his father, if Guru is in Tanu Bhava, while Shani, Surya, Mangal and Budh are together in Dhan Bhava",
+        "One will immediately go to the abode of Yama, if Shani is in Tanu Bhava, while Chandra and Guru are in their order in Randhr and Sahaj Bhava"
+      ],
+      "boundary_queries": [
+        "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+        "「有力」的判准出自六力（Shad Bal）章"
+      ],
+      "method_queries": [
+        "O Brahmin, first of all estimate the evils and checking factors thereof through Lagn and then declare the effects of the 12 Bhavas",
+        "I now narrate the antidotes for such evils as well, which will be helpful to assess the extent of inauspiciousness",
+        "怎样判断木星是否有力"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch10-v3-strong-guru-in-lagna-wards-off-evils.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "a single, but strong Guru in Lagn"
+        },
+        {
+          "step_id": "ch10-v3-strong-guru-in-lagna-wards-off-evils.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "will ward off all the evils"
+        },
+        {
+          "step_id": "ch10-v3-strong-guru-in-lagna-wards-off-evils.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "a single, but strong Guru in Lagn will ward off all the evils"
+        },
+        {
+          "step_id": "ch10-v3-strong-guru-in-lagna-wards-off-evils.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "a single, but strong jupiter in 1st house"
+        },
+        {
+          "step_id": "ch10-v3-strong-guru-in-lagna-wards-off-evils.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "a single, but strong jupiter in 1st house will ward off all the evils"
+        }
+      ],
+      "stop_conditions": [
+        "缺少木星落宫事实时停止。",
+        "缺少木星强弱事实时停止（「有力」的判准由排盘窗口定义）。"
+      ]
+    },
+    "ch10-v4-strong-lagna-lord-in-angle": {
+      "title": "消解凶恶：上升主有力地落在角宫",
+      "user_intents": [
+        "上升主落角宫有什么用",
+        "我盘里的凶象有没有被抵消"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch10-v4-strong-lagna-lord-in-angle"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "上升主（Lagn's Lord）是否落角宫",
+        "上升主（Lagn's Lord）是否有力"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Lagn Lord is singly capable of counteracting all evils, if he is strongly placed in an angle",
+        "上升主有力落角宫 抵消一切凶恶"
+      ],
+      "counter_queries": [
+        "If malefics are in Kendras, devoid of Yuti with, or a Drishti from benefics, while Lagn’s Lord is not strong, only short life will result",
+        "If Lagn’s Lord is in Ari, Randhr, or Vyaya Bhava, yuti with malefics and devoid of Yuti with and/or Drishti from a benefic, short life will come to pass"
+      ],
+      "boundary_queries": [
+        "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+        "「有力」的判准出自六力（Shad Bal）章"
+      ],
+      "method_queries": [
+        "If the stronger among Lagn’s Lord and Randhr’s Lord is placed in a Kendr, long life is indicated",
+        "O Brahmin, first of all estimate the evils and checking factors thereof through Lagn and then declare the effects of the 12 Bhavas",
+        "怎样判断上升主是否有力、是否落角宫"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch10-v4-strong-lagna-lord-in-angle.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "if he is strongly placed in an angle"
+        },
+        {
+          "step_id": "ch10-v4-strong-lagna-lord-in-angle.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Lagn Lord is singly capable of counteracting all evils"
+        },
+        {
+          "step_id": "ch10-v4-strong-lagna-lord-in-angle.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "if he is strongly placed in an angle Lagn Lord is singly capable of counteracting all evils"
+        }
+      ],
+      "stop_conditions": [
+        "缺少上升主落角宫事实时停止。",
+        "缺少上升主强弱事实时停止（「有力」的判准由排盘窗口定义）。"
+      ]
+    },
+    "ch10-v5-benefic-drishti-night-bright-half": {
+      "title": "消解凶恶：明半月夜生者上升受吉星相照",
+      "user_intents": [
+        "夜里出生上升被吉星照有什么用",
+        "我盘里的凶象有没有被摧毁"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch10-v5-benefic-drishti-night-bright-half"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘出生时段是白天（day）还是夜间（night）",
+        "本盘出生时的月相属暗半月（dark half）还是明半月（bright half）",
+        "上升（Lagn）是否被吉星相照"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "All evils are destroyed, if a benefic drishties Lagn of one born during the night in the bright half",
+        "明半月夜生 上升被吉星相照 一切凶恶被摧毁"
+      ],
+      "counter_queries": [
+        "If Shani and Mangal give a Drishti to Lagna, as the luminaries are yuti with Rahu (elsewhere), the child will live a fortnight"
+      ],
+      "boundary_queries": [
+        "Definition of Sandhya. 3 Ghatis before the sight of the semi disc (half) of the rising Surya and a similar duration, following Surya’s set, are called, as morning twilight and evening twilight, respectively",
+        "昼夜与明暗半月的界定"
+      ],
+      "method_queries": [
+        "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+        "O Brahmin, first of all estimate the evils and checking factors thereof through Lagn and then declare the effects of the 12 Bhavas",
+        "怎样判断上升是否被吉星相照"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch10-v5-benefic-drishti-night-bright-half.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "of one born during the night in the bright half"
+        },
+        {
+          "step_id": "ch10-v5-benefic-drishti-night-bright-half.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "a benefic drishties Lagn"
+        },
+        {
+          "step_id": "ch10-v5-benefic-drishti-night-bright-half.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "All evils are destroyed"
+        },
+        {
+          "step_id": "ch10-v5-benefic-drishti-night-bright-half.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "of one born during the night in the bright half All evils are destroyed"
+        },
+        {
+          "step_id": "ch10-v5-benefic-drishti-night-bright-half.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "a benefic drishties Lagn All evils are destroyed"
+        },
+        {
+          "step_id": "ch10-v5-benefic-drishti-night-bright-half.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "a benefic drishties 1st house"
+        },
+        {
+          "step_id": "ch10-v5-benefic-drishti-night-bright-half.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "a benefic drishties 1st house All evils are destroyed"
+        }
+      ],
+      "stop_conditions": [
+        "缺少出生昼夜事实时停止。",
+        "缺少出生月相（明半月／暗半月）事实时停止。",
+        "缺少上升是否被吉星相照的事实时停止。"
+      ]
+    },
+    "ch10-v5-malefic-drishti-day-dark-half": {
+      "title": "消解凶恶：暗半月昼生者上升受凶星相照（承本偈前句）",
+      "user_intents": [
+        "白天出生上升被凶星照怎么看",
+        "凶星相照上升是不是一定不好"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch10-v5-malefic-drishti-day-dark-half"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘出生时段是白天（day）还是夜间（night）",
+        "本盘出生时的月相属暗半月（dark half）还是明半月（bright half）",
+        "上升（Lagn）是否被凶星相照"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Similarly a malefic’s Drishti on Lagn of one born during day time in the dark half",
+        "暗半月昼生 上升被凶星相照 一切凶恶被摧毁"
+      ],
+      "counter_queries": [
+        "If Shani and Mangal give a Drishti to Lagna, as the luminaries are yuti with Rahu (elsewhere), the child will live a fortnight",
+        "Should Chandra be in Ari, Randhr, or Vyaya Bhava and receives a Drishti from a malefic, the child will die soon"
+      ],
+      "boundary_queries": [
+        "Definition of Sandhya. 3 Ghatis before the sight of the semi disc (half) of the rising Surya and a similar duration, following Surya’s set, are called, as morning twilight and evening twilight, respectively",
+        "昼夜与明暗半月的界定"
+      ],
+      "method_queries": [
+        "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+        "O Brahmin, first of all estimate the evils and checking factors thereof through Lagn and then declare the effects of the 12 Bhavas",
+        "怎样判断上升是否被凶星相照"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch10-v5-malefic-drishti-day-dark-half.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Similarly"
+        },
+        {
+          "step_id": "ch10-v5-malefic-drishti-day-dark-half.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "of one born during day time in the dark half"
+        },
+        {
+          "step_id": "ch10-v5-malefic-drishti-day-dark-half.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "a malefic’s Drishti on Lagn"
+        },
+        {
+          "step_id": "ch10-v5-malefic-drishti-day-dark-half.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "All evils are destroyed"
+        },
+        {
+          "step_id": "ch10-v5-malefic-drishti-day-dark-half.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Similarly All evils are destroyed"
+        },
+        {
+          "step_id": "ch10-v5-malefic-drishti-day-dark-half.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "of one born during day time in the dark half All evils are destroyed"
+        },
+        {
+          "step_id": "ch10-v5-malefic-drishti-day-dark-half.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "a malefic’s Drishti on Lagn All evils are destroyed"
+        },
+        {
+          "step_id": "ch10-v5-malefic-drishti-day-dark-half.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "a malefic’s Drishti on 1st house"
+        },
+        {
+          "step_id": "ch10-v5-malefic-drishti-day-dark-half.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "a malefic’s Drishti on 1st house All evils are destroyed"
+        }
+      ],
+      "stop_conditions": [
+        "缺少出生昼夜事实时停止。",
+        "缺少出生月相（明半月／暗半月）事实时停止。",
+        "缺少上升是否被凶星相照的事实时停止。"
+      ]
+    },
+    "ch10-v6-surya-in-vyaya-tul-lagna-hundred-years": {
+      "title": "百年寿命：天秤上升者太阳落十二宫",
+      "user_intents": [
+        "我能活多久",
+        "天秤上升太阳落十二宫怎么看寿命"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch10-v6-surya-in-vyaya-tul-lagna-hundred-years"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘上升（Lagna）所在星座是否为天秤座（Tul）",
+        "太阳（Surya）是否落十二宫（Vyaya）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Surya in Vyaya will confer a hundred-year life span on one born in Tul Lagn",
+        "天秤上升 太阳落十二宫 百年寿命"
+      ],
+      "counter_queries": [
+        "If Lagn’s Lord is in Ari, Randhr, or Vyaya Bhava, yuti with malefics and devoid of Yuti with and/or Drishti from a benefic, short life will come to pass",
+        "If malefics are in Kendras, devoid of Yuti with, or a Drishti from benefics, while Lagn’s Lord is not strong, only short life will result"
+      ],
+      "boundary_queries": [
+        "Evils, causing premature end, exist up to the 24<sup>th</sup> year of one’s age. As such, no definite calculation of life span should be made till such year of age",
+        "The life-span in Bal Risht is 8 years, in Yog Risht 20 years, in short, medium and long lives, respectively, 32, 64 and 120 years"
+      ],
+      "method_queries": [
+        "O Brahmin, for the benefit of mankind I narrate methods of ascertaining longevity",
+        "Longevity",
+        "怎样推算寿命"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch10-v6-surya-in-vyaya-tul-lagna-hundred-years.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "Surya in Vyaya"
+        },
+        {
+          "step_id": "ch10-v6-surya-in-vyaya-tul-lagna-hundred-years.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "one born in Tul Lagn"
+        },
+        {
+          "step_id": "ch10-v6-surya-in-vyaya-tul-lagna-hundred-years.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "will confer a hundred-year life span"
+        },
+        {
+          "step_id": "ch10-v6-surya-in-vyaya-tul-lagna-hundred-years.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "Surya in Vyaya will confer a hundred-year life span"
+        },
+        {
+          "step_id": "ch10-v6-surya-in-vyaya-tul-lagna-hundred-years.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "one born in Tul Lagn will confer a hundred-year life span"
+        },
+        {
+          "step_id": "ch10-v6-surya-in-vyaya-tul-lagna-hundred-years.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "sun in 12th house"
+        },
+        {
+          "step_id": "ch10-v6-surya-in-vyaya-tul-lagna-hundred-years.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "one born in Tul 1st house"
+        },
+        {
+          "step_id": "ch10-v6-surya-in-vyaya-tul-lagna-hundred-years.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "sun in 12th house will confer a hundred-year life span"
+        },
+        {
+          "step_id": "ch10-v6-surya-in-vyaya-tul-lagna-hundred-years.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "one born in Tul 1st house will confer a hundred-year life span"
+        }
+      ],
+      "stop_conditions": [
+        "缺少上升星座事实时停止。",
+        "缺少太阳落宫事实时停止。"
+      ]
+    },
+    "ch10-v7-mangal-with-guru-auspicious-for-mother": {
+      "title": "对母亲与本人皆吉：火星与木星同宫或被木星相照",
+      "user_intents": [
+        "火星木星的关系对母亲有什么影响",
+        "我母亲的处境怎么样"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch10-v7-mangal-with-guru-auspicious-for-mother"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘火星（Mangal）落在哪一宫",
+        "本盘木星（Guru）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "火星（Mangal）是否与木星（Guru）同宫",
+        "火星（Mangal）是否被木星（Guru）相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "It will prove auspicious for the mother as well as the native, if Mangal joins, or is drishtied by Guru",
+        "火星与木星同宫或被木星相照 对母亲与本人吉利"
+      ],
+      "counter_queries": [
+        "The mother of the native will incur evils (will die soon), if Chandra at birth receives a Drishti from three malefics",
+        "Malefics in Ari and Vyaya Bhava will bring evils to mother"
+      ],
+      "boundary_queries": [
+        "Indications of Bandhu Bhava. Conveyances, relatives, mother, happiness, treasure, lands and buildings are to be consulted through Bandhu Bhava",
+        "母亲之事从哪一宫看"
+      ],
+      "method_queries": [
+        "Surya is the indicator of father for all beings, while the mother is indicated by Chandra",
+        "Benefics, giving a Drishti to Chandra, will bring good to the mother",
+        "怎样判断母亲的吉凶"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch10-v7-mangal-with-guru-auspicious-for-mother.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "if Mangal joins"
+        },
+        {
+          "step_id": "ch10-v7-mangal-with-guru-auspicious-for-mother.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "or is drishtied by Guru"
+        },
+        {
+          "step_id": "ch10-v7-mangal-with-guru-auspicious-for-mother.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "It will prove auspicious for the mother as well as the native"
+        },
+        {
+          "step_id": "ch10-v7-mangal-with-guru-auspicious-for-mother.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "if Mangal joins It will prove auspicious for the mother as well as the native"
+        },
+        {
+          "step_id": "ch10-v7-mangal-with-guru-auspicious-for-mother.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "or is drishtied by Guru It will prove auspicious for the mother as well as the native"
+        },
+        {
+          "step_id": "ch10-v7-mangal-with-guru-auspicious-for-mother.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "if mars joins"
+        },
+        {
+          "step_id": "ch10-v7-mangal-with-guru-auspicious-for-mother.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "or is drishtied by jupiter"
+        },
+        {
+          "step_id": "ch10-v7-mangal-with-guru-auspicious-for-mother.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "if mars joins It will prove auspicious for the mother as well as the native"
+        },
+        {
+          "step_id": "ch10-v7-mangal-with-guru-auspicious-for-mother.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "or is drishtied by jupiter It will prove auspicious for the mother as well as the native"
+        }
+      ],
+      "stop_conditions": [
+        "缺少火星或木星落宫事实时停止。",
+        "原文没有指明火星应落哪一宫，若要按某一宫限定使用，本方法停判。"
+      ]
+    },
+    "ch10-v8-malefics-surrounded-by-benefics": {
+      "title": "凶恶速消：凶星被吉星包围且角宫或三角宫被吉星占据",
+      "user_intents": [
+        "我盘里的凶象会不会很快过去",
+        "凶星被吉星夹住有什么用"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch10-v8-malefics-surrounded-by-benefics"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘中的凶星是否被吉星包围（surrounded by benefics）"
+      ],
+      "conditional_facts": [
+        "角宫（Kendr）是否被吉星占据",
+        "三角宫（Kon）是否被吉星占据"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "If malefics are surrounded by benefics, while angles, or trines are themselves beneficoccupied, evils disappear soon",
+        "凶星被吉星包围 角宫三角宫被吉星占据 凶恶很快消失"
+      ],
+      "counter_queries": [
+        "Malefic in Vyaya and Ari Bhava, or in Randhr and Dhan Bhava, while Lagn is hemmed between other malefics, will bring early death",
+        "Chandra in Tanu, Randhr, Vyaya, or Yuvati Bhava and hemmed between malefics will confer premature death"
+      ],
+      "boundary_queries": [
+        "O Brahmin, first of all estimate the evils and checking factors thereof through Lagn and then declare the effects of the 12 Bhavas",
+        "凶恶与消解因素的先后次序"
+      ],
+      "method_queries": [
+        "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+        "I now narrate the antidotes for such evils as well, which will be helpful to assess the extent of inauspiciousness",
+        "怎样判断吉星凶星的分布"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch10-v8-malefics-surrounded-by-benefics.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "If malefics are surrounded by benefics"
+        },
+        {
+          "step_id": "ch10-v8-malefics-surrounded-by-benefics.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "while angles, or trines are themselves beneficoccupied"
+        },
+        {
+          "step_id": "ch10-v8-malefics-surrounded-by-benefics.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "evils disappear soon"
+        },
+        {
+          "step_id": "ch10-v8-malefics-surrounded-by-benefics.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "evils will not follow from the Bhavas concerned"
+        },
+        {
+          "step_id": "ch10-v8-malefics-surrounded-by-benefics.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "If malefics are surrounded by benefics evils disappear soon"
+        },
+        {
+          "step_id": "ch10-v8-malefics-surrounded-by-benefics.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "while angles, or trines are themselves beneficoccupied evils disappear soon"
+        }
+      ],
+      "stop_conditions": [
+        "缺少凶星是否被吉星包围的事实时停止。",
+        "角宫与三角宫的吉星占据事实都取不到时停止。"
+      ]
+    },
+    "ch11-v14-16-bhava-prosperity-by-benefic": {
+      "title": "宫之兴旺：该宫与吉星同宫或被吉星相照",
+      "user_intents": [
+        "我这一宫是好是坏",
+        "怎么看某一宫兴不兴旺"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch11-v14-16-bhava-prosperity-by-benefic"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本次判断的是哪一宫（Bhava）"
+      ],
+      "conditional_facts": [
+        "该宫（Bhava）是否与吉星同宫",
+        "该宫（Bhava）是否被吉星相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Predict prosperity of the Bhava, which is yuti with, or drishtied by a benefic",
+        "该宫与吉星同宫或被吉星相照 该宫兴旺"
+      ],
+      "counter_queries": [
+        "The Bhava, which is not drishtied by its Lord, or, whose Lord is with a malefic Grah"
+      ],
+      "boundary_queries": [
+        "The learned should estimate the effects, due to a Bhava, in the manner, cited above, after ascertaining the strength and weakness",
+        "宫的吉凶要连同强弱一起估量"
+      ],
+      "method_queries": [
+        "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+        "The Lord of the Bhava is equally important, when estimating the indications of a particular Bhava",
+        "怎样判断一个宫的兴衰"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch11-v14-16-bhava-prosperity-by-benefic.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "which is yuti with"
+        },
+        {
+          "step_id": "ch11-v14-16-bhava-prosperity-by-benefic.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "drishtied by a benefic"
+        },
+        {
+          "step_id": "ch11-v14-16-bhava-prosperity-by-benefic.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Predict prosperity of the Bhava"
+        },
+        {
+          "step_id": "ch11-v14-16-bhava-prosperity-by-benefic.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "which is yuti with Predict prosperity of the Bhava"
+        },
+        {
+          "step_id": "ch11-v14-16-bhava-prosperity-by-benefic.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "drishtied by a benefic Predict prosperity of the Bhava"
+        }
+      ],
+      "stop_conditions": [
+        "未指明要判哪一宫时停止。",
+        "该宫的吉星同宫与吉星相照事实都取不到时停止。"
+      ]
+    },
+    "ch11-v14-16-bhava-wellbeing-by-lord-state": {
+      "title": "宫之安泰：宫主处于 Yuvavastha、Prabuddhavastha、Kismaravastha 之一或落十宫",
+      "user_intents": [
+        "宫主的状态怎么影响这一宫",
+        "宫主落十宫对这一宫有什么用"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch11-v14-16-bhava-wellbeing-by-lord-state"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘该宫（Bhava）之主是哪颗行星"
+      ],
+      "conditional_facts": [
+        "该宫之主（Bhava's Lord）是否处于 Yuvavastha",
+        "该宫之主（Bhava's Lord）是否处于 Prabuddhavastha",
+        "该宫之主（Bhava's Lord）是否处于 Kismaravastha",
+        "该宫之主（Bhava's Lord）是否落十宫（Karm Bhava）"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "Also, when its Lord is in Yuvavastha, or Prabuddhavastha, or in Kismaravastha, or in Karm Bhava, the Bhavas well-being is indicated",
+        "宫主处于 Yuvavastha 或落十宫 该宫安泰"
+      ],
+      "counter_queries": [
+        "The Bhava, which is not drishtied by its Lord, or, whose Lord is with a malefic Grah"
+      ],
+      "boundary_queries": [
+        "The learned should estimate the effects, due to a Bhava, in the manner, cited above, after ascertaining the strength and weakness",
+        "本译本未界定 Yuvavastha、Prabuddhavastha、Kismaravastha"
+      ],
+      "method_queries": [
+        "the Avasthas, or states of the Grahas are to be considered in the context of the effects of the Grahas",
+        "Infant, youthful, adolescent, old and dead are the states of the Grahas",
+        "The Lord of the Bhava is equally important, when estimating the indications of a particular Bhava",
+        "行星的 Avastha 怎么定"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "when its Lord is in Yuvavastha"
+        },
+        {
+          "step_id": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "or Prabuddhavastha"
+        },
+        {
+          "step_id": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "or in Kismaravastha"
+        },
+        {
+          "step_id": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "or in Karm Bhava"
+        },
+        {
+          "step_id": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "the Bhavas well-being is indicated"
+        },
+        {
+          "step_id": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "when its Lord is in Yuvavastha the Bhavas well-being is indicated"
+        },
+        {
+          "step_id": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "or Prabuddhavastha the Bhavas well-being is indicated"
+        },
+        {
+          "step_id": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "or in Kismaravastha the Bhavas well-being is indicated"
+        },
+        {
+          "step_id": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "or in Karm Bhava the Bhavas well-being is indicated"
+        },
+        {
+          "step_id": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition",
+          "query": "or in 10th house"
+        },
+        {
+          "step_id": "ch11-v14-16-bhava-wellbeing-by-lord-state.step-001",
+          "lane": "support",
+          "origin": "bilingual_verbatim_condition_plus_result",
+          "query": "or in 10th house the Bhavas well-being is indicated"
+        }
+      ],
+      "stop_conditions": [
+        "缺少该宫之主是哪颗行星的事实时停止。",
+        "Yuvavastha、Prabuddhavastha、Kismaravastha 三名在本译本未获界定，取不到值即停止。",
+        "四个分支的事实全部取不到时停止。"
+      ]
+    },
+    "ch11-v14-16-bhava-not-drishtied-by-its-lord": {
+      "title": "宫之毁灭一侧：该宫不被其宫主相照",
+      "user_intents": [
+        "宫主不照本宫要紧吗",
+        "我这一宫会不会受损"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch11-v14-16-bhava-not-drishtied-by-its-lord"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘该宫（Bhava）之主是哪颗行星",
+        "该宫（Bhava）是否被其宫主相照"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "The Bhava, which is not drishtied by its Lord, or, whose Lord is with a malefic Grah",
+        "该宫不被其宫主相照 宫之毁灭"
+      ],
+      "counter_queries": [
+        "Predict prosperity of the Bhava, which is yuti with, or drishtied by a benefic"
+      ],
+      "boundary_queries": [
+        "The learned should estimate the effects, due to a Bhava, in the manner, cited above, after ascertaining the strength and weakness",
+        "本偈末句在本译本没有谓语"
+      ],
+      "method_queries": [
+        "The Lord of the Bhava is equally important, when estimating the indications of a particular Bhava",
+        "怎样判断宫主与本宫的关系"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch11-v14-16-bhava-not-drishtied-by-its-lord.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "The Bhava, which is not drishtied by its Lord"
+        },
+        {
+          "step_id": "ch11-v14-16-bhava-not-drishtied-by-its-lord.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Annihilation of a Bhava"
+        },
+        {
+          "step_id": "ch11-v14-16-bhava-not-drishtied-by-its-lord.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "The Bhava, which is not drishtied by its Lord Annihilation of a Bhava"
+        }
+      ],
+      "stop_conditions": [
+        "缺少该宫之主是哪颗行星的事实时停止。",
+        "缺少该宫是否被其宫主相照的事实时停止。",
+        "要断出毁灭的具体后果时停止——原文末句无谓语。"
+      ]
+    },
+    "ch11-v14-16-bhava-lord-with-malefic": {
+      "title": "宫之毁灭一侧：该宫之主与凶星同宫",
+      "user_intents": [
+        "宫主与凶星同宫怎么看",
+        "我这一宫会不会受损"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch11-v14-16-bhava-lord-with-malefic"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘该宫（Bhava）之主是哪颗行星",
+        "该宫之主（Bhava's Lord）是否与凶星同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "The Bhava, which is not drishtied by its Lord, or, whose Lord is with a malefic Grah",
+        "宫主与凶星同宫 宫之毁灭"
+      ],
+      "counter_queries": [
+        "Predict prosperity of the Bhava, which is yuti with, or drishtied by a benefic"
+      ],
+      "boundary_queries": [
+        "The learned should estimate the effects, due to a Bhava, in the manner, cited above, after ascertaining the strength and weakness",
+        "本偈末句在本译本没有谓语"
+      ],
+      "method_queries": [
+        "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+        "The Lord of the Bhava is equally important, when estimating the indications of a particular Bhava",
+        "哪些行星算凶星"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch11-v14-16-bhava-lord-with-malefic.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "whose Lord is with a malefic Grah"
+        },
+        {
+          "step_id": "ch11-v14-16-bhava-lord-with-malefic.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Annihilation of a Bhava"
+        },
+        {
+          "step_id": "ch11-v14-16-bhava-lord-with-malefic.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "whose Lord is with a malefic Grah Annihilation of a Bhava"
+        }
+      ],
+      "stop_conditions": [
+        "缺少该宫之主是哪颗行星的事实时停止。",
+        "缺少宫主是否与凶星同宫的事实时停止。",
+        "要断出毁灭的具体后果时停止——原文末句无谓语。"
+      ]
+    },
+    "ch11-v14-16-bhava-lord-with-evil-bhava-lords": {
+      "title": "宫之毁灭一侧：该宫之主与三、六、八、十一、十二宫之主同宫",
+      "user_intents": [
+        "宫主和六宫主八宫主同宫怎么看",
+        "我这一宫会不会受损"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch11-v14-16-bhava-lord-with-evil-bhava-lords"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘该宫（Bhava）之主是哪颗行星"
+      ],
+      "conditional_facts": [
+        "该宫之主（Bhava's Lord）是否与三宫主（Sahaj's Lord）同宫",
+        "该宫之主（Bhava's Lord）是否与六宫主（Ari's Lord）同宫",
+        "该宫之主（Bhava's Lord）是否与八宫主（Randhr's Lord）同宫",
+        "该宫之主（Bhava's Lord）是否与十一宫主（Labh's Lord）同宫",
+        "该宫之主（Bhava's Lord）是否与十二宫主（Vyaya's Lord）同宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "or with one of the Lords of evil and such other Bhavas",
+        "宫主与三六八十一十二宫之主同宫 宫之毁灭"
+      ],
+      "counter_queries": [
+        "Predict prosperity of the Bhava, which is yuti with, or drishtied by a benefic"
+      ],
+      "boundary_queries": [
+        "The learned should estimate the effects, due to a Bhava, in the manner, cited above, after ascertaining the strength and weakness",
+        "本偈末句在本译本没有谓语"
+      ],
+      "method_queries": [
+        "The Lord of the Bhava is equally important, when estimating the indications of a particular Bhava",
+        "Names of Bhavas. Thanu, Dhan, Sahaj, Bandhu, Putr, Ari, Yuvati, Randhr, Dharm, Karma, Labh and Vyaya are in order the names of Bhavas",
+        "哪几宫属凶恶诸宫"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch11-v14-16-bhava-lord-with-evil-bhava-lords.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "with one of the Lords of evil and such other Bhavas (i.e. 3rd , 6th , 8th , 11th and 12th )"
+        },
+        {
+          "step_id": "ch11-v14-16-bhava-lord-with-evil-bhava-lords.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Annihilation of a Bhava"
+        },
+        {
+          "step_id": "ch11-v14-16-bhava-lord-with-evil-bhava-lords.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "with one of the Lords of evil and such other Bhavas (i.e. 3rd , 6th , 8th , 11th and 12th ) Annihilation of a Bhava"
+        }
+      ],
+      "stop_conditions": [
+        "缺少该宫之主是哪颗行星的事实时停止。",
+        "五个宫主同宫分支的事实全部取不到时停止。",
+        "要断出毁灭的具体后果时停止——原文末句无谓语。"
+      ]
+    },
+    "ch11-v14-16-bhava-lord-defeated-in-graha-war": {
+      "title": "宫之毁灭一侧：该宫之主在星战中败北",
+      "user_intents": [
+        "宫主打星战输了怎么看",
+        "我这一宫会不会受损"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch11-v14-16-bhava-lord-defeated-in-graha-war"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘该宫（Bhava）之主是哪颗行星",
+        "该宫之主（Bhava's Lord）是否在星战（war between Grahas）中败北"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "or is defeated in a war between Grahas",
+        "宫主在星战中败北 宫之毁灭"
+      ],
+      "counter_queries": [
+        "Predict prosperity of the Bhava, which is yuti with, or drishtied by a benefic"
+      ],
+      "boundary_queries": [
+        "The learned should estimate the effects, due to a Bhava, in the manner, cited above, after ascertaining the strength and weakness",
+        "本偈末句在本译本没有谓语"
+      ],
+      "method_queries": [
+        "War Between Grahas. Should there be a war between the starry Grahas, the difference between the Shad Balas of the two should be added to the victor’s Shad Bal and deducted from the Shad Bal of the vanquished",
+        "The Lord of the Bhava is equally important, when estimating the indications of a particular Bhava",
+        "行星之战怎么定胜负"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch11-v14-16-bhava-lord-defeated-in-graha-war.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "is defeated in a war between Grahas"
+        },
+        {
+          "step_id": "ch11-v14-16-bhava-lord-defeated-in-graha-war.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Annihilation of a Bhava"
+        },
+        {
+          "step_id": "ch11-v14-16-bhava-lord-defeated-in-graha-war.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "is defeated in a war between Grahas Annihilation of a Bhava"
+        }
+      ],
+      "stop_conditions": [
+        "缺少该宫之主是哪颗行星的事实时停止。",
+        "缺少星战胜负事实时停止（胜负判准见第 27 章，由排盘窗口给值）。",
+        "要断出毁灭的具体后果时停止——原文末句无谓语。"
+      ]
+    },
+    "ch11-v14-16-bhava-lord-in-declining-avastha": {
+      "title": "宫之毁灭一侧：该宫之主处于 Vriddhavastha、Mritavastha、Suptavastha 之一",
+      "user_intents": [
+        "宫主处在衰败状态怎么看",
+        "我这一宫会不会受损"
+      ],
+      "method_ids": [],
+      "candidate_method_ids": [
+        "ch11-v14-16-bhava-lord-in-declining-avastha"
+      ],
+      "execution_allowed": false,
+      "required_facts": [
+        "本盘该宫（Bhava）之主是哪颗行星"
+      ],
+      "conditional_facts": [
+        "该宫之主（Bhava's Lord）是否处于 Vriddhavastha",
+        "该宫之主（Bhava's Lord）是否处于 Mritavastha",
+        "该宫之主（Bhava's Lord）是否处于 Suptavastha"
+      ],
+      "fact_binding_status": "unmapped",
+      "support_queries": [
+        "or is in one of the three Avasthas, viz, Vriddhavastha, Mritavastha and Suptavastha",
+        "宫主处于衰败 Avastha 宫之毁灭"
+      ],
+      "counter_queries": [
+        "Predict prosperity of the Bhava, which is yuti with, or drishtied by a benefic"
+      ],
+      "boundary_queries": [
+        "The learned should estimate the effects, due to a Bhava, in the manner, cited above, after ascertaining the strength and weakness",
+        "本偈末句在本译本没有谓语"
+      ],
+      "method_queries": [
+        "the Avasthas, or states of the Grahas are to be considered in the context of the effects of the Grahas",
+        "Infant, youthful, adolescent, old and dead are the states of the Grahas",
+        "The Lord of the Bhava is equally important, when estimating the indications of a particular Bhava",
+        "行星的 Avastha 怎么定"
+      ],
+      "derived_step_queries": [
+        {
+          "step_id": "ch11-v14-16-bhava-lord-in-declining-avastha.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition",
+          "query": "is in one of the three Avasthas, viz, Vriddhavastha, Mritavastha and Suptavastha"
+        },
+        {
+          "step_id": "ch11-v14-16-bhava-lord-in-declining-avastha.step-001",
+          "lane": "support",
+          "origin": "verbatim_result",
+          "query": "Annihilation of a Bhava"
+        },
+        {
+          "step_id": "ch11-v14-16-bhava-lord-in-declining-avastha.step-001",
+          "lane": "support",
+          "origin": "verbatim_condition_plus_result",
+          "query": "is in one of the three Avasthas, viz, Vriddhavastha, Mritavastha and Suptavastha Annihilation of a Bhava"
+        }
+      ],
+      "stop_conditions": [
+        "缺少该宫之主是哪颗行星的事实时停止。",
+        "三个 Avastha 分支的事实全部取不到时停止（本偈未界定这三个状态名）。",
+        "要断出毁灭的具体后果时停止——原文末句无谓语。"
+      ]
+    }
+  }
+}

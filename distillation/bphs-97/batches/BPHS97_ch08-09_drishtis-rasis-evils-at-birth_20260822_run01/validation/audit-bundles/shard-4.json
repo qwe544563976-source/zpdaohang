@@ -1,0 +1,2398 @@
+{
+  "shard": 4,
+  "step_count": 12,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch09-v27-surya-exalted-or-debilitated-in-yuvati-goat-milk.step-001",
+      "method": {
+        "method": "ch09-v27-surya-exalted-or-debilitated-in-yuvati-goat-milk",
+        "title": "太阳落七宫且入旺或落陷：孩子不吃母乳而吃羊奶",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "孩子能不能吃到母乳",
+          "太阳落七宫入旺落陷怎么断"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "The child will not live on mother’s milk, but on that of she-goat, if Surya is exalted, or debilitated in Yuvati Bhava",
+            "太阳七宫 入旺 落陷 羊奶"
+          ],
+          "counter_queries": [
+            "Benefics, giving a Drishti to Chandra, will bring good to the mother.",
+            "It will prove auspicious for the mother as well as the native, if Mangal joins, or is drishtied by Guru."
+          ],
+          "boundary_queries": [
+            "Evils to Mother (up to Sloka 33)",
+            "Thanu, Dhan, Sahaj, Bandhu, Putr, Ari, Yuvati, Randhr, Dharm, Karma, Labh and Vyaya are in order the names of Bhavas",
+            "The stronger among Surya and Shukra indicates the father, while the stronger among Chandra and Mangal indicates the mother."
+          ],
+          "method_queries": [
+            "Evils at Birth",
+            "The 9<sup>th</sup> from Surya denotes father, the 4<sup>th</sup> from Chandra mother",
+            "入旺落陷怎么定",
+            "母亲用哪颗星看"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch09-v27-surya-exalted-or-debilitated-in-yuvati-goat-milk.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Surya is exalted"
+            },
+            {
+              "step_id": "ch09-v27-surya-exalted-or-debilitated-in-yuvati-goat-milk.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or debilitated in Yuvati Bhava"
+            },
+            {
+              "step_id": "ch09-v27-surya-exalted-or-debilitated-in-yuvati-goat-milk.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The child will not live on mother’s milk, but on that of she-goat"
+            },
+            {
+              "step_id": "ch09-v27-surya-exalted-or-debilitated-in-yuvati-goat-milk.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Surya is exalted The child will not live on mother’s milk, but on that of she-goat"
+            },
+            {
+              "step_id": "ch09-v27-surya-exalted-or-debilitated-in-yuvati-goat-milk.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or debilitated in Yuvati Bhava The child will not live on mother’s milk, but on that of she-goat"
+            },
+            {
+              "step_id": "ch09-v27-surya-exalted-or-debilitated-in-yuvati-goat-milk.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if sun is exalted"
+            },
+            {
+              "step_id": "ch09-v27-surya-exalted-or-debilitated-in-yuvati-goat-milk.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "or debilitated in 7th house"
+            },
+            {
+              "step_id": "ch09-v27-surya-exalted-or-debilitated-in-yuvati-goat-milk.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if sun is exalted The child will not live on mother’s milk, but on that of she-goat"
+            },
+            {
+              "step_id": "ch09-v27-surya-exalted-or-debilitated-in-yuvati-goat-milk.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "or debilitated in 7th house The child will not live on mother’s milk, but on that of she-goat"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少太阳落宫事实时停止。",
+          "缺少太阳的入旺、落陷状态时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch09-v27-surya-exalted-or-debilitated-in-yuvati-goat-milk.step-001",
+        "action": "核对太阳是否落七宫，并核对它在该处是入旺还是落陷。",
+        "applicability_scope": "仅限本命盘对哺乳的判断；原文只给这一条件下的哺乳来源。",
+        "minimum_supported_claim": "太阳（Surya）在七宫（Yuvati Bhava）入旺或落陷时，孩子不靠母乳而靠母山羊的奶存活。",
+        "produced_fact_keys": [
+          "太阳落七宫的哺乳来源判定"
+        ],
+        "required_fact_keys": [
+          "太阳（Surya）是否落七宫（Yuvati Bhava）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "太阳（Surya）是否落七宫（Yuvati Bhava）"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "太阳（Surya）是否入旺"
+                },
+                {
+                  "fact_key": "太阳（Surya）是否落陷"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "太阳（Surya）是否落七宫（Yuvati Bhava）"
+            },
+            "required_fact_keys": [
+              "太阳（Surya）是否入旺"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "太阳（Surya）是否入旺"
+            },
+            "selection_group": "ch09-v27-surya-exalted-or-debilitated-in-yuvati-goat-milk.step-001:surya-dignity",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：太阳（Surya）是否入旺。"
+          },
+          {
+            "when": {
+              "fact_key": "太阳（Surya）是否落七宫（Yuvati Bhava）"
+            },
+            "required_fact_keys": [
+              "太阳（Surya）是否落陷"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "太阳（Surya）是否落陷"
+            },
+            "selection_group": "ch09-v27-surya-exalted-or-debilitated-in-yuvati-goat-milk.step-001:surya-dignity",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：太阳（Surya）是否落陷。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if Surya is exalted",
+              "claim": "太阳（Surya）"
+            },
+            {
+              "quote": "or debilitated in Yuvati Bhava",
+              "claim": "在七宫（Yuvati Bhava）入旺或落陷时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "The child will not live on mother’s milk, but on that of she-goat",
+              "claim": "孩子不靠母乳而靠母山羊的奶存活"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch09:v27",
+            "quote": "The child will not live on mother’s milk, but on that of she-goat, if Surya is exalted, or debilitated in Yuvati Bhava.",
+            "pdf_pages": [
+              23
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：太阳（Surya）是否落七宫（Yuvati Bhava）。",
+        "stop_fact_keys": [
+          "太阳（Surya）是否落七宫（Yuvati Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据本偈推断母亲的生死——原文只说孩子的哺乳来源。",
+          "不得把入旺与落陷之外的状态也算进来。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "58bfd1b796cb26cbaf0f1d64559cead85e9c222b29789fc38657e80bdfdddbe0"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch09-v28-malefic-in-fourth-from-chandra-inimical-rasi-no-benefic-in-kendra.step-001",
+      "method": {
+        "method": "ch09-v28-malefic-in-fourth-from-chandra-inimical-rasi-no-benefic-in-kendra",
+        "title": "自月亮起第 4 位为敌星座且有凶星、角宫无吉星：孩子早失母亲",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "自月亮起第四宫有凶星怎么断",
+          "角宫没有吉星会怎样",
+          "会不会早年失去母亲"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should a malefic be in the 4<sup>th</sup> , identical with an inimical Rāśi, counted from Chandra, while there is no benefic in a Kendra, the child will lose its mother in a premature manner",
+            "自月亮第四位 敌星座 凶星 角宫无吉星 失母"
+          ],
+          "counter_queries": [
+            "Benefics, giving a Drishti to Chandra, will bring good to the mother.",
+            "It will prove auspicious for the mother as well as the native, if Mangal joins, or is drishtied by Guru.",
+            "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed, as Surya eliminates darkness."
+          ],
+          "boundary_queries": [
+            "Evils to Mother (up to Sloka 33)",
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "The 9<sup>th</sup> from Surya denotes father, the 4<sup>th</sup> from Chandra mother"
+          ],
+          "method_queries": [
+            "Evils at Birth",
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "敌星座怎么定"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch09-v28-malefic-in-fourth-from-chandra-inimical-rasi-no-benefic-in-kendra.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should a malefic be in the 4th"
+            },
+            {
+              "step_id": "ch09-v28-malefic-in-fourth-from-chandra-inimical-rasi-no-benefic-in-kendra.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "identical with an inimical Rāśi, counted from Chandra"
+            },
+            {
+              "step_id": "ch09-v28-malefic-in-fourth-from-chandra-inimical-rasi-no-benefic-in-kendra.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while there is no benefic in a Kendra"
+            },
+            {
+              "step_id": "ch09-v28-malefic-in-fourth-from-chandra-inimical-rasi-no-benefic-in-kendra.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the child will lose its mother in a premature manner"
+            },
+            {
+              "step_id": "ch09-v28-malefic-in-fourth-from-chandra-inimical-rasi-no-benefic-in-kendra.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should a malefic be in the 4th the child will lose its mother in a premature manner"
+            },
+            {
+              "step_id": "ch09-v28-malefic-in-fourth-from-chandra-inimical-rasi-no-benefic-in-kendra.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "identical with an inimical Rāśi, counted from Chandra the child will lose its mother in a premature manner"
+            },
+            {
+              "step_id": "ch09-v28-malefic-in-fourth-from-chandra-inimical-rasi-no-benefic-in-kendra.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while there is no benefic in a Kendra the child will lose its mother in a premature manner"
+            },
+            {
+              "step_id": "ch09-v28-malefic-in-fourth-from-chandra-inimical-rasi-no-benefic-in-kendra.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "identical with an inimical Rāśi, counted from moon"
+            },
+            {
+              "step_id": "ch09-v28-malefic-in-fourth-from-chandra-inimical-rasi-no-benefic-in-kendra.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "identical with an inimical Rāśi, counted from moon the child will lose its mother in a premature manner"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "原文只写 an inimical Rāśi，未指明与谁为敌；该判准未确定即停判。",
+          "缺少自月亮起算第 4 位的占据者事实时停止。",
+          "缺少角宫内吉星事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch09-v28-malefic-in-fourth-from-chandra-inimical-rasi-no-benefic-in-kendra.step-001",
+        "action": "核对自月亮起算第 4 位的凶星与星座属性，并核对角宫内有无吉星。",
+        "applicability_scope": "仅限本命盘对母亲的凶象；原文只写 an inimical Rāśi，没有指明是与谁为敌，未确定即停判。",
+        "minimum_supported_claim": "自月亮（Chandra）起算的第 4 位有凶星、该处又是敌星座（inimical Rāśi），同时没有吉星落角宫（Kendra）时，孩子会提早失去母亲。",
+        "produced_fact_keys": [
+          "自月亮起第四位受克的母亲凶象判定"
+        ],
+        "required_fact_keys": [
+          "自月亮（Chandra）起算的第 4 位是否有凶星",
+          "自月亮（Chandra）起算的第 4 个星座（Rāśi）是否为敌星座（inimical Rāśi）",
+          "是否有吉星落角宫（Kendra）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "自月亮（Chandra）起算的第 4 位是否有凶星"
+            },
+            {
+              "fact_key": "自月亮（Chandra）起算的第 4 个星座（Rāśi）是否为敌星座（inimical Rāśi）"
+            },
+            {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "是否有吉星落角宫（Kendra）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should a malefic be in the 4<sup>th</sup>",
+              "claim": "自月亮（Chandra）起算的第 4 位有凶星"
+            },
+            {
+              "quote": "identical with an inimical Rāśi, counted from Chandra",
+              "claim": "该处又是敌星座（inimical Rāśi）"
+            },
+            {
+              "quote": "while there is no benefic in a Kendra",
+              "claim": "同时没有吉星落角宫（Kendra）时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the child will lose its mother in a premature manner",
+              "claim": "孩子会提早失去母亲"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch09:v28",
+            "quote": "Should a malefic be in the 4<sup>th</sup> , identical with an inimical Rāśi, counted from Chandra, while there is no benefic in a Kendra, the child will lose its mother in a premature manner.",
+            "pdf_pages": [
+              23,
+              24
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：自月亮（Chandra）起算的第 4 位是否有凶星、自月亮（Chandra）起算的第 4 个星座（Rāśi）是否为敌星座（inimical Rāśi）、是否有吉星落角宫（Kendra）。",
+        "stop_fact_keys": [
+          "自月亮（Chandra）起算的第 4 位是否有凶星",
+          "自月亮（Chandra）起算的第 4 个星座（Rāśi）是否为敌星座（inimical Rāśi）",
+          "是否有吉星落角宫（Kendra）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得替原文指定敌星座（inimical Rāśi）是与哪一颗行星为敌——原文没有写，未确定即停判。",
+          "不得把角宫（Kendra）的起算点改成月亮——原文这一句只说『没有吉星落角宫』。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "f6e8a3cd82ad5d0908784725bf2dfcb4ef0655bb3f34b50f68b5aeaef0bbb3df"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch09-v29-malefics-in-ari-and-vyaya-evils-to-mother.step-001",
+      "method": {
+        "method": "ch09-v29-malefics-in-ari-and-vyaya-evils-to-mother",
+        "title": "凶星落六宫与十二宫：给母亲带来凶事",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "凶星落六宫十二宫对母亲有什么影响",
+          "母亲的凶象怎么看"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Malefics in Ari and Vyaya Bhava will bring evils to mother",
+            "凶星 六宫十二宫 母亲 凶事"
+          ],
+          "counter_queries": [
+            "Benefics, giving a Drishti to Chandra, will bring good to the mother.",
+            "It will prove auspicious for the mother as well as the native, if Mangal joins, or is drishtied by Guru.",
+            "If malefics are surrounded by benefics, while angles, or trines are themselves beneficoccupied, evils disappear soon."
+          ],
+          "boundary_queries": [
+            "Evils to Mother (up to Sloka 33)",
+            "Evil Bhavas, or Dusthan Bhavas are Ari, Randhr and Vyaya Bhava",
+            "The stronger among Surya and Shukra indicates the father, while the stronger among Chandra and Mangal indicates the mother."
+          ],
+          "method_queries": [
+            "Evils at Birth",
+            "The 9<sup>th</sup> from Surya denotes father, the 4<sup>th</sup> from Chandra mother",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "母亲用哪颗星看"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch09-v29-malefics-in-ari-and-vyaya-evils-to-mother.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Malefics in Ari"
+            },
+            {
+              "step_id": "ch09-v29-malefics-in-ari-and-vyaya-evils-to-mother.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "and Vyaya Bhava"
+            },
+            {
+              "step_id": "ch09-v29-malefics-in-ari-and-vyaya-evils-to-mother.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will bring evils to mother"
+            },
+            {
+              "step_id": "ch09-v29-malefics-in-ari-and-vyaya-evils-to-mother.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Malefics in Ari will bring evils to mother"
+            },
+            {
+              "step_id": "ch09-v29-malefics-in-ari-and-vyaya-evils-to-mother.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "and Vyaya Bhava will bring evils to mother"
+            },
+            {
+              "step_id": "ch09-v29-malefics-in-ari-and-vyaya-evils-to-mother.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Malefics in 6th house"
+            },
+            {
+              "step_id": "ch09-v29-malefics-in-ari-and-vyaya-evils-to-mother.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "and 12th house"
+            },
+            {
+              "step_id": "ch09-v29-malefics-in-ari-and-vyaya-evils-to-mother.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Malefics in 6th house will bring evils to mother"
+            },
+            {
+              "step_id": "ch09-v29-malefics-in-ari-and-vyaya-evils-to-mother.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "and 12th house will bring evils to mother"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少六宫、十二宫的凶星占据事实时停止。",
+          "吉星与凶星的名册未定时停止（判准见第 3 章 Benefics and Malefics）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch09-v29-malefics-in-ari-and-vyaya-evils-to-mother.step-001",
+        "action": "核对六宫与十二宫是否被凶星占据。",
+        "applicability_scope": "仅限本命盘对母亲的凶象；原文只说带来凶事，不给凶事的具体内容。",
+        "minimum_supported_claim": "凶星落六宫（Ari）与十二宫（Vyaya Bhava）时，会给母亲带来凶事。",
+        "produced_fact_keys": [
+          "六宫十二宫凶星的母亲凶象判定"
+        ],
+        "required_fact_keys": [
+          "六宫（Ari Bhava）是否被凶星占据",
+          "十二宫（Vyaya Bhava）是否被凶星占据"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "六宫（Ari Bhava）是否被凶星占据"
+            },
+            {
+              "fact_key": "十二宫（Vyaya Bhava）是否被凶星占据"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Malefics in Ari",
+              "claim": "凶星落六宫（Ari）"
+            },
+            {
+              "quote": "and Vyaya Bhava",
+              "claim": "与十二宫（Vyaya Bhava）时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will bring evils to mother",
+              "claim": "会给母亲带来凶事"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch09:v29",
+            "quote": "Malefics in Ari and Vyaya Bhava will bring evils to mother.",
+            "pdf_pages": [
+              24
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：六宫（Ari Bhava）是否被凶星占据、十二宫（Vyaya Bhava）是否被凶星占据。",
+        "stop_fact_keys": [
+          "六宫（Ari Bhava）是否被凶星占据",
+          "十二宫（Vyaya Bhava）是否被凶星占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把『凶事』补成去世等原文没写的具体结果。",
+          "不得把两宫减为其中一宫。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b0118093dc4942c20ddb49762e0fa2f9dfe6aee77e9c78347550a34aec8c464a"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch09-v29-malefics-in-bandhu-and-karm-evils-to-father.step-001",
+      "method": {
+        "method": "ch09-v29-malefics-in-bandhu-and-karm-evils-to-father",
+        "title": "凶星占据四宫与十宫：父亲得到同样的（凶）效果",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "凶星落四宫十宫对父亲有什么影响",
+          "父亲的凶象怎么看"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "The child’s father will receive similar effects, if Bandhu and Karm Bhava are captured by malefics",
+            "凶星 四宫十宫 父亲 凶事"
+          ],
+          "counter_queries": [
+            "If malefics are surrounded by benefics, while angles, or trines are themselves beneficoccupied, evils disappear soon.",
+            "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed, as Surya eliminates darkness."
+          ],
+          "boundary_queries": [
+            "Evil to Father (up to Sloka 42)",
+            "The stronger among Surya and Shukra indicates the father, while the stronger among Chandra and Mangal indicates the mother.",
+            "The 9<sup>th</sup> from Surya denotes father, the 4<sup>th</sup> from Chandra mother"
+          ],
+          "method_queries": [
+            "Evils at Birth",
+            "The 9<sup>th</sup> from Surya denotes father, the 4<sup>th</sup> from Chandra mother",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "父亲用哪颗星看"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch09-v29-malefics-in-bandhu-and-karm-evils-to-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Bandhu"
+            },
+            {
+              "step_id": "ch09-v29-malefics-in-bandhu-and-karm-evils-to-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "and Karm Bhava are captured by malefics"
+            },
+            {
+              "step_id": "ch09-v29-malefics-in-bandhu-and-karm-evils-to-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Malefics in Ari and Vyaya Bhava will bring evils to mother"
+            },
+            {
+              "step_id": "ch09-v29-malefics-in-bandhu-and-karm-evils-to-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The child’s father will receive similar effects"
+            },
+            {
+              "step_id": "ch09-v29-malefics-in-bandhu-and-karm-evils-to-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Bandhu The child’s father will receive similar effects"
+            },
+            {
+              "step_id": "ch09-v29-malefics-in-bandhu-and-karm-evils-to-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "and Karm Bhava are captured by malefics The child’s father will receive similar effects"
+            },
+            {
+              "step_id": "ch09-v29-malefics-in-bandhu-and-karm-evils-to-father.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Malefics in Ari and Vyaya Bhava will bring evils to mother The child’s father will receive similar effects"
+            },
+            {
+              "step_id": "ch09-v29-malefics-in-bandhu-and-karm-evils-to-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if 4th house"
+            },
+            {
+              "step_id": "ch09-v29-malefics-in-bandhu-and-karm-evils-to-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "and 10th house are captured by malefics"
+            },
+            {
+              "step_id": "ch09-v29-malefics-in-bandhu-and-karm-evils-to-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Malefics in 6th house and 12th house will bring evils to mother"
+            },
+            {
+              "step_id": "ch09-v29-malefics-in-bandhu-and-karm-evils-to-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if 4th house The child’s father will receive similar effects"
+            },
+            {
+              "step_id": "ch09-v29-malefics-in-bandhu-and-karm-evils-to-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "and 10th house are captured by malefics The child’s father will receive similar effects"
+            },
+            {
+              "step_id": "ch09-v29-malefics-in-bandhu-and-karm-evils-to-father.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Malefics in 6th house and 12th house will bring evils to mother The child’s father will receive similar effects"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少四宫、十宫的凶星占据事实时停止。",
+          "『同样的效果』所指的内容由同偈前句给出，前句结论未取得时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch09-v29-malefics-in-bandhu-and-karm-evils-to-father.step-001",
+        "action": "核对四宫与十宫是否被凶星占据。",
+        "applicability_scope": "仅限本命盘对父亲的凶象；原文以『同样的效果』承接同偈前句『给母亲带来凶事』，本身不另给内容。",
+        "minimum_supported_claim": "凶星落六宫 Ari 与十二宫 Vyaya Bhava 给母亲带来凶事；四宫（Bandhu）与十宫（Karm Bhava）被凶星占据时，孩子的父亲会得到相同的效果。",
+        "produced_fact_keys": [
+          "四宫十宫凶星的父亲凶象判定"
+        ],
+        "required_fact_keys": [
+          "四宫（Bandhu Bhava）是否被凶星占据",
+          "十宫（Karm Bhava）是否被凶星占据"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "四宫（Bandhu Bhava）是否被凶星占据"
+            },
+            {
+              "fact_key": "十宫（Karm Bhava）是否被凶星占据"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if Bandhu",
+              "claim": "四宫（Bandhu）"
+            },
+            {
+              "quote": "and Karm Bhava are captured by malefics",
+              "claim": "与十宫（Karm Bhava）被凶星占据时"
+            },
+            {
+              "quote": "Malefics in Ari and Vyaya Bhava will bring evils to mother",
+              "claim": "凶星落六宫 Ari 与十二宫 Vyaya Bhava 给母亲带来凶事"
+            }
+          ],
+          "results": [
+            {
+              "quote": "The child’s father will receive similar effects",
+              "claim": "孩子的父亲会得到相同的效果"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch09:v29",
+            "quote": "Malefics in Ari and Vyaya Bhava will bring evils to mother. The child’s father will receive similar effects, if Bandhu and Karm Bhava are captured by malefics.",
+            "pdf_pages": [
+              24
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：四宫（Bandhu Bhava）是否被凶星占据、十宫（Karm Bhava）是否被凶星占据。",
+        "stop_fact_keys": [
+          "四宫（Bandhu Bhava）是否被凶星占据",
+          "十宫（Karm Bhava）是否被凶星占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把『同样的效果』展开成原文没写的具体结果（去世、疾病或分离）。",
+          "不得把两宫减为其中一宫。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch09:v29"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "8bcf3a27edc0eda7fd40674b6a6278b6c2411de3dd4cd9ec78de9d1303d8dd91"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch09-v30-budh-in-dhan-malefics-in-tanu-and-vyaya-destroys-family.step-001",
+      "method": {
+        "method": "ch09-v30-budh-in-dhan-malefics-in-tanu-and-vyaya-destroys-family",
+        "title": "水星落二宫、凶星占一宫与十二宫：此瑜伽毁掉整个家族",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "水星落二宫又有凶星占一宫十二宫怎么断",
+          "家族败落的组合"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Budh in Dhan Bhava, while malefics occupy Tanu and Vyaya Bhava: this Yoga will destroy the entire family",
+            "水星二宫 凶星一宫十二宫 家族"
+          ],
+          "counter_queries": [
+            "If malefics are surrounded by benefics, while angles, or trines are themselves beneficoccupied, evils disappear soon.",
+            "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed, as Surya eliminates darkness.",
+            "Lagn Lord is singly capable of counteracting all evils, if he is strongly placed in an angle"
+          ],
+          "boundary_queries": [
+            "Evils, causing premature end, exist up to the 24<sup>th</sup> year of one’s age. As such, no definite calculation of life span should be made till such year of age.",
+            "Thanu, Dhan, Sahaj, Bandhu, Putr, Ari, Yuvati, Randhr, Dharm, Karma, Labh and Vyaya are in order the names of Bhavas",
+            "Evils to Mother (up to Sloka 33)"
+          ],
+          "method_queries": [
+            "Evils at Birth",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Those are the evils (due to a native). I now narrate the antidotes for such evils as well, which will be helpful to assess the extent of inauspiciousness.",
+            "家族凶象怎么看"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch09-v30-budh-in-dhan-malefics-in-tanu-and-vyaya-destroys-family.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Budh in Dhan Bhava"
+            },
+            {
+              "step_id": "ch09-v30-budh-in-dhan-malefics-in-tanu-and-vyaya-destroys-family.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while malefics occupy Tanu"
+            },
+            {
+              "step_id": "ch09-v30-budh-in-dhan-malefics-in-tanu-and-vyaya-destroys-family.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "and Vyaya Bhava"
+            },
+            {
+              "step_id": "ch09-v30-budh-in-dhan-malefics-in-tanu-and-vyaya-destroys-family.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "this Yoga will destroy the entire family"
+            },
+            {
+              "step_id": "ch09-v30-budh-in-dhan-malefics-in-tanu-and-vyaya-destroys-family.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Budh in Dhan Bhava this Yoga will destroy the entire family"
+            },
+            {
+              "step_id": "ch09-v30-budh-in-dhan-malefics-in-tanu-and-vyaya-destroys-family.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while malefics occupy Tanu this Yoga will destroy the entire family"
+            },
+            {
+              "step_id": "ch09-v30-budh-in-dhan-malefics-in-tanu-and-vyaya-destroys-family.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "and Vyaya Bhava this Yoga will destroy the entire family"
+            },
+            {
+              "step_id": "ch09-v30-budh-in-dhan-malefics-in-tanu-and-vyaya-destroys-family.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "mercury in 2nd house"
+            },
+            {
+              "step_id": "ch09-v30-budh-in-dhan-malefics-in-tanu-and-vyaya-destroys-family.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "while malefics occupy 1st house"
+            },
+            {
+              "step_id": "ch09-v30-budh-in-dhan-malefics-in-tanu-and-vyaya-destroys-family.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "and 12th house"
+            },
+            {
+              "step_id": "ch09-v30-budh-in-dhan-malefics-in-tanu-and-vyaya-destroys-family.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "mercury in 2nd house this Yoga will destroy the entire family"
+            },
+            {
+              "step_id": "ch09-v30-budh-in-dhan-malefics-in-tanu-and-vyaya-destroys-family.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "while malefics occupy 1st house this Yoga will destroy the entire family"
+            },
+            {
+              "step_id": "ch09-v30-budh-in-dhan-malefics-in-tanu-and-vyaya-destroys-family.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "and 12th house this Yoga will destroy the entire family"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少水星落宫事实时停止。",
+          "缺少一宫、十二宫的凶星占据事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch09-v30-budh-in-dhan-malefics-in-tanu-and-vyaya-destroys-family.step-001",
+        "action": "核对水星是否落二宫，并核对一宫与十二宫是否被凶星占据。",
+        "applicability_scope": "仅限本命盘出生时的凶象；原文把这一组合称作一个 Yoga。",
+        "minimum_supported_claim": "水星（Budh）落二宫（Dhan Bhava），同时凶星占据一宫（Tanu）与十二宫（Vyaya Bhava）时，这个瑜伽（Yoga）会毁掉整个家族。",
+        "produced_fact_keys": [
+          "水星落二宫兼一宫十二宫受克的家族凶象判定"
+        ],
+        "required_fact_keys": [
+          "水星（Budh）是否落二宫（Dhan Bhava）",
+          "一宫（Tanu Bhava）是否被凶星占据",
+          "十二宫（Vyaya Bhava）是否被凶星占据"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "水星（Budh）是否落二宫（Dhan Bhava）"
+            },
+            {
+              "fact_key": "一宫（Tanu Bhava）是否被凶星占据"
+            },
+            {
+              "fact_key": "十二宫（Vyaya Bhava）是否被凶星占据"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Budh in Dhan Bhava",
+              "claim": "水星（Budh）落二宫（Dhan Bhava）"
+            },
+            {
+              "quote": "while malefics occupy Tanu",
+              "claim": "同时凶星占据一宫（Tanu）"
+            },
+            {
+              "quote": "and Vyaya Bhava",
+              "claim": "与十二宫（Vyaya Bhava）时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "this Yoga will destroy the entire family",
+              "claim": "这个瑜伽（Yoga）会毁掉整个家族"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch09:v30",
+            "quote": "Budh in Dhan Bhava, while malefics occupy Tanu and Vyaya Bhava: this Yoga will destroy the entire family.",
+            "pdf_pages": [
+              24
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：水星（Budh）是否落二宫（Dhan Bhava）、一宫（Tanu Bhava）是否被凶星占据、十二宫（Vyaya Bhava）是否被凶星占据。",
+        "stop_fact_keys": [
+          "水星（Budh）是否落二宫（Dhan Bhava）",
+          "一宫（Tanu Bhava）是否被凶星占据",
+          "十二宫（Vyaya Bhava）是否被凶星占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把『整个家族』限缩或扩大成原文没写的具体亲属。",
+          "不得漏掉一宫与十二宫都要有凶星这一前提。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "0fec57e13c5d40e44aea5861a343ea4a1fb28d492a6e0e283c8f2fef2e71d9c4"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch09-v31-guru-shani-rahu-in-tanu-dhan-sahaj-mother-early-death.step-001",
+      "method": {
+        "method": "ch09-v31-guru-shani-rahu-in-tanu-dhan-sahaj-mother-early-death",
+        "title": "木星、土星、罗睺依次落一宫、二宫、三宫：母亲早去世",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "木星土星罗睺分落一二三宫怎么断",
+          "母亲早亡的组合"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Guru, Shani and Rahu, respectively, posited in Tanu, Dhan and Sahaj Bhava will cause mother’s death early",
+            "木星一宫 土星二宫 罗睺三宫 母亲早亡"
+          ],
+          "counter_queries": [
+            "Benefics, giving a Drishti to Chandra, will bring good to the mother.",
+            "It will prove auspicious for the mother as well as the native, if Mangal joins, or is drishtied by Guru.",
+            "a single, but strong Guru in Lagn will ward off all the evils"
+          ],
+          "boundary_queries": [
+            "Evils to Mother (up to Sloka 33)",
+            "Evils, causing premature end, exist up to the 24<sup>th</sup> year of one’s age. As such, no definite calculation of life span should be made till such year of age.",
+            "The stronger among Surya and Shukra indicates the father, while the stronger among Chandra and Mangal indicates the mother."
+          ],
+          "method_queries": [
+            "Evils at Birth",
+            "The 9<sup>th</sup> from Surya denotes father, the 4<sup>th</sup> from Chandra mother",
+            "Thanu, Dhan, Sahaj, Bandhu, Putr, Ari, Yuvati, Randhr, Dharm, Karma, Labh and Vyaya are in order the names of Bhavas",
+            "母亲的凶象怎么看"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch09-v31-guru-shani-rahu-in-tanu-dhan-sahaj-mother-early-death.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Guru, Shani and Rahu, respectively, posited in Tanu, Dhan and Sahaj Bhava"
+            },
+            {
+              "step_id": "ch09-v31-guru-shani-rahu-in-tanu-dhan-sahaj-mother-early-death.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will cause mother’s death early"
+            },
+            {
+              "step_id": "ch09-v31-guru-shani-rahu-in-tanu-dhan-sahaj-mother-early-death.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Guru, Shani and Rahu, respectively, posited in Tanu, Dhan and Sahaj Bhava will cause mother’s death early"
+            },
+            {
+              "step_id": "ch09-v31-guru-shani-rahu-in-tanu-dhan-sahaj-mother-early-death.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "jupiter, saturn and rahu, respectively, posited in 1st house, 2nd house and 3rd house"
+            },
+            {
+              "step_id": "ch09-v31-guru-shani-rahu-in-tanu-dhan-sahaj-mother-early-death.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "jupiter, saturn and rahu, respectively, posited in 1st house, 2nd house and 3rd house will cause mother’s death early"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少三颗行星任一落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch09-v31-guru-shani-rahu-in-tanu-dhan-sahaj-mother-early-death.step-001",
+        "action": "核对木星、土星、罗睺是否依次落一宫、二宫与三宫。",
+        "applicability_scope": "仅限本命盘对母亲的凶象；原文写明 respectively（依次对应）。",
+        "minimum_supported_claim": "木星（Guru）、土星（Shani）与罗睺（Rahu）依次落一宫（Tanu）、二宫（Dhan）与三宫（Sahaj Bhava）时，会致母亲早去世。",
+        "produced_fact_keys": [
+          "木土罗睺三落宫的母亲早亡判定"
+        ],
+        "required_fact_keys": [
+          "木星（Guru）是否落一宫（Tanu Bhava）",
+          "土星（Shani）是否落二宫（Dhan Bhava）",
+          "罗睺（Rahu）是否落三宫（Sahaj Bhava）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "木星（Guru）是否落一宫（Tanu Bhava）"
+            },
+            {
+              "fact_key": "土星（Shani）是否落二宫（Dhan Bhava）"
+            },
+            {
+              "fact_key": "罗睺（Rahu）是否落三宫（Sahaj Bhava）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Guru, Shani and Rahu, respectively, posited in Tanu, Dhan and Sahaj Bhava",
+              "claim": "木星（Guru）、土星（Shani）与罗睺（Rahu）依次落一宫（Tanu）、二宫（Dhan）与三宫（Sahaj Bhava）时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will cause mother’s death early",
+              "claim": "会致母亲早去世"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch09:v31",
+            "quote": "Guru, Shani and Rahu, respectively, posited in Tanu, Dhan and Sahaj Bhava will cause mother’s death early.",
+            "pdf_pages": [
+              24
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：木星（Guru）是否落一宫（Tanu Bhava）、土星（Shani）是否落二宫（Dhan Bhava）、罗睺（Rahu）是否落三宫（Sahaj Bhava）。",
+        "stop_fact_keys": [
+          "木星（Guru）是否落一宫（Tanu Bhava）",
+          "土星（Shani）是否落二宫（Dhan Bhava）",
+          "罗睺（Rahu）是否落三宫（Sahaj Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得打乱三颗行星与三个宫的对应次序——原文写明 respectively。",
+          "不得把『早去世』补成具体年岁。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "4b357e328f767783e51c4cdb37344e32a5cdcedb9ed11f71a82f62e1e4323df7"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch09-v32-malefics-in-konas-from-decreasing-chandra-mother-gives-up-child.step-001",
+      "method": {
+        "method": "ch09-v32-malefics-in-konas-from-decreasing-chandra-mother-gives-up-child",
+        "title": "自渐亏月亮起的三角宫有凶星且不与吉星同宫：母亲会舍弃孩子",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "母亲会不会舍弃孩子",
+          "自月亮起三角宫有凶星怎么断"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Doubtlessly the mother will give up the child, if it has malefics in Konas, counted from the decreasing Chandra",
+            "渐亏月亮 三角宫 凶星 母亲舍弃孩子"
+          ],
+          "counter_queries": [
+            "Benefics, giving a Drishti to Chandra, will bring good to the mother.",
+            "It will prove auspicious for the mother as well as the native, if Mangal joins, or is drishtied by Guru.",
+            "If malefics are surrounded by benefics, while angles, or trines are themselves beneficoccupied, evils disappear soon."
+          ],
+          "boundary_queries": [
+            "Evils to Mother (up to Sloka 33)",
+            "Putr and Dharm Bhava are known by the name Kon (or trine)",
+            "The stronger among Surya and Shukra indicates the father, while the stronger among Chandra and Mangal indicates the mother."
+          ],
+          "method_queries": [
+            "Evils at Birth",
+            "Putr and Dharm Bhava are known by the name Kon (or trine)",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "三角宫是哪几宫"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch09-v32-malefics-in-konas-from-decreasing-chandra-mother-gives-up-child.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if it has malefics in Konas, counted from the decreasing Chandra"
+            },
+            {
+              "step_id": "ch09-v32-malefics-in-konas-from-decreasing-chandra-mother-gives-up-child.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "No benefic shall be yuti with the said malefics"
+            },
+            {
+              "step_id": "ch09-v32-malefics-in-konas-from-decreasing-chandra-mother-gives-up-child.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Doubtlessly the mother will give up the child"
+            },
+            {
+              "step_id": "ch09-v32-malefics-in-konas-from-decreasing-chandra-mother-gives-up-child.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if it has malefics in Konas, counted from the decreasing Chandra Doubtlessly the mother will give up the child"
+            },
+            {
+              "step_id": "ch09-v32-malefics-in-konas-from-decreasing-chandra-mother-gives-up-child.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "No benefic shall be yuti with the said malefics Doubtlessly the mother will give up the child"
+            },
+            {
+              "step_id": "ch09-v32-malefics-in-konas-from-decreasing-chandra-mother-gives-up-child.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if it has malefics in Konas, counted from the decreasing moon"
+            },
+            {
+              "step_id": "ch09-v32-malefics-in-konas-from-decreasing-chandra-mother-gives-up-child.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if it has malefics in Konas, counted from the decreasing moon Doubtlessly the mother will give up the child"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少月亮盈亏状态时停止。",
+          "缺少自月亮起算三角宫的占据者事实时停止。",
+          "吉星与凶星的名册未定时停止（判准见第 3 章 Benefics and Malefics）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch09-v32-malefics-in-konas-from-decreasing-chandra-mother-gives-up-child.step-001",
+        "action": "核对自渐亏月亮起算的三角宫内有无凶星，并核对这些凶星有无吉星同宫。",
+        "applicability_scope": "仅限本命盘对母子关系的判断；原文另加『无疑』的强度语。",
+        "minimum_supported_claim": "自渐亏的月亮（decreasing Chandra）起算的三角宫（Konas）内有凶星，且没有吉星与这些凶星同宫时，母亲无疑会舍弃孩子。",
+        "produced_fact_keys": [
+          "自渐亏月亮起三角宫受克的母子分离判定"
+        ],
+        "required_fact_keys": [
+          "自渐亏的月亮（decreasing Chandra）起算的三角宫（Konas）内是否有凶星",
+          "这些凶星是否与吉星同宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "自渐亏的月亮（decreasing Chandra）起算的三角宫（Konas）内是否有凶星"
+            },
+            {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "这些凶星是否与吉星同宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if it has malefics in Konas, counted from the decreasing Chandra",
+              "claim": "自渐亏的月亮（decreasing Chandra）起算的三角宫（Konas）内有凶星"
+            },
+            {
+              "quote": "No benefic shall be yuti with the said malefics",
+              "claim": "且没有吉星与这些凶星同宫时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Doubtlessly the mother will give up the child",
+              "claim": "母亲无疑会舍弃孩子"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch09:v32",
+            "quote": "Doubtlessly the mother will give up the child, if it has malefics in Konas, counted from the decreasing Chandra. No benefic shall be yuti with the said malefics.",
+            "pdf_pages": [
+              24
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：自渐亏的月亮（decreasing Chandra）起算的三角宫（Konas）内是否有凶星、这些凶星是否与吉星同宫。",
+        "stop_fact_keys": [
+          "自渐亏的月亮（decreasing Chandra）起算的三角宫（Konas）内是否有凶星",
+          "这些凶星是否与吉星同宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把『舍弃孩子』改写成母亲去世。",
+          "不得把三角宫（Konas）的起算点从渐亏的月亮换成上升。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "8b4a7d3c2c19ddc31661d141d3f0471d102d3a1059f2c318dd638bd210a3c50c"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch09-v33-mangal-shani-in-kendra-from-chandra-same-navamsa-two-mothers.step-001",
+      "method": {
+        "method": "ch09-v33-mangal-shani-in-kendra-from-chandra-same-navamsa-two-mothers",
+        "title": "火星与土星同处自月亮起的角宫且同一九分盘分段：命主有两位母亲，且短寿",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "会不会有两个母亲",
+          "火星土星同宫在九分盘同段怎么断"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Mangal and Shani are together in a Kendra with reference to Chandra and occupy one and the same Navāńś, the child will have two mothers",
+            "火星土星 自月亮角宫 同一九分盘 两位母亲"
+          ],
+          "counter_queries": [
+            "Benefics, giving a Drishti to Chandra, will bring good to the mother.",
+            "It will prove auspicious for the mother as well as the native, if Mangal joins, or is drishtied by Guru.",
+            "Surya in Vyaya will confer a hundred-year life span on one born in Tul Lagn."
+          ],
+          "boundary_queries": [
+            "Evils to Mother (up to Sloka 33)",
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "Evils, causing premature end, exist up to the 24<sup>th</sup> year of one’s age. As such, no definite calculation of life span should be made till such year of age."
+          ],
+          "method_queries": [
+            "Evils at Birth",
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "Navāńś. The Navāńś calculation are for a Movable Rashifrom there itself, for a Fixed Rashifrom the 9<sup>th</sup> thereof",
+            "九分盘怎么起"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch09-v33-mangal-shani-in-kendra-from-chandra-same-navamsa-two-mothers.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Mangal and Shani are together in a Kendra with reference to Chandra"
+            },
+            {
+              "step_id": "ch09-v33-mangal-shani-in-kendra-from-chandra-same-navamsa-two-mothers.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "and occupy one and the same Navāńś"
+            },
+            {
+              "step_id": "ch09-v33-mangal-shani-in-kendra-from-chandra-same-navamsa-two-mothers.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the child will have two mothers"
+            },
+            {
+              "step_id": "ch09-v33-mangal-shani-in-kendra-from-chandra-same-navamsa-two-mothers.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Yet it will be short-lived"
+            },
+            {
+              "step_id": "ch09-v33-mangal-shani-in-kendra-from-chandra-same-navamsa-two-mothers.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Mangal and Shani are together in a Kendra with reference to Chandra the child will have two mothers"
+            },
+            {
+              "step_id": "ch09-v33-mangal-shani-in-kendra-from-chandra-same-navamsa-two-mothers.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "and occupy one and the same Navāńś the child will have two mothers"
+            },
+            {
+              "step_id": "ch09-v33-mangal-shani-in-kendra-from-chandra-same-navamsa-two-mothers.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If mars and saturn are together in a Kendra with reference to moon"
+            },
+            {
+              "step_id": "ch09-v33-mangal-shani-in-kendra-from-chandra-same-navamsa-two-mothers.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If mars and saturn are together in a Kendra with reference to moon the child will have two mothers"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少火星、土星的落宫与同宫事实时停止。",
+          "缺少两者的九分盘（Navāńś D9）分段时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch09-v33-mangal-shani-in-kendra-from-chandra-same-navamsa-two-mothers.step-001",
+        "action": "核对火星与土星是否同处自月亮起算的角宫，并核对两者是否落在同一个九分盘分段。",
+        "applicability_scope": "仅限本命盘对母亲与寿命的判断；角宫以月亮为起算点。",
+        "minimum_supported_claim": "火星（Mangal）与土星（Shani）同处自月亮（Chandra）起算的角宫（Kendra）、又落在同一个九分盘（Navāńś D9）分段时，孩子会有两位母亲，且仍然短寿。",
+        "produced_fact_keys": [
+          "火土同角宫同九分盘的两位母亲与短寿判定"
+        ],
+        "required_fact_keys": [
+          "火星（Mangal）是否与土星（Shani）同宫",
+          "火星（Mangal）是否落自月亮（Chandra）起算的角宫（Kendra）",
+          "火星（Mangal）与土星（Shani）是否落在同一个九分盘（Navāńś D9）分段"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "火星（Mangal）是否与土星（Shani）同宫"
+            },
+            {
+              "fact_key": "火星（Mangal）是否落自月亮（Chandra）起算的角宫（Kendra）"
+            },
+            {
+              "fact_key": "火星（Mangal）与土星（Shani）是否落在同一个九分盘（Navāńś D9）分段"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Mangal and Shani are together in a Kendra with reference to Chandra",
+              "claim": "火星（Mangal）与土星（Shani）同处自月亮（Chandra）起算的角宫（Kendra）"
+            },
+            {
+              "quote": "and occupy one and the same Navāńś",
+              "claim": "又落在同一个九分盘（Navāńś D9）分段时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the child will have two mothers",
+              "claim": "孩子会有两位母亲"
+            },
+            {
+              "quote": "Yet it will be short-lived",
+              "claim": "且仍然短寿"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch09:v33",
+            "quote": "If Mangal and Shani are together in a Kendra with reference to Chandra and occupy one and the same Navāńś, the child will have two mothers. Yet it will be short-lived.",
+            "pdf_pages": [
+              24
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：火星（Mangal）是否与土星（Shani）同宫、火星（Mangal）是否落自月亮（Chandra）起算的角宫（Kendra）、火星（Mangal）与土星（Shani）是否落在同一个九分盘（Navāńś D9）分段。",
+        "stop_fact_keys": [
+          "火星（Mangal）是否与土星（Shani）同宫",
+          "火星（Mangal）是否落自月亮（Chandra）起算的角宫（Kendra）",
+          "火星（Mangal）与土星（Shani）是否落在同一个九分盘（Navāńś D9）分段"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把九分盘（Navāńś D9）换成三分盘或十分盘。",
+          "不得把角宫的起算点从月亮换成上升。",
+          "不得把『两位母亲』解释成原文没写的具体缘由。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "ef575bd334e542ddf5132cec7428cfbaf79dbed5e083d3faf95f16e27ab68a70"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch09-v34-shani-mangal-chandra-in-tanu-yuvati-ari-father-early-death.step-001",
+      "method": {
+        "method": "ch09-v34-shani-mangal-chandra-in-tanu-yuvati-ari-father-early-death",
+        "title": "土星、火星、月亮依次落一宫、七宫、六宫：父亲早去世",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "土星火星月亮分落一七六宫怎么断",
+          "父亲会不会早走"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "One’s father will incur early death, if Shani, Mangal and Chandra in their orders are in Tanu, Yuvati and Ari Bhava",
+            "土星一宫 火星七宫 月亮六宫 父亲早亡"
+          ],
+          "counter_queries": [
+            "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed, as Surya eliminates darkness.",
+            "a single, but strong Guru in Lagn will ward off all the evils",
+            "If malefics are surrounded by benefics, while angles, or trines are themselves beneficoccupied, evils disappear soon."
+          ],
+          "boundary_queries": [
+            "Evil to Father (up to Sloka 42)",
+            "Evils, causing premature end, exist up to the 24<sup>th</sup> year of one’s age. As such, no definite calculation of life span should be made till such year of age.",
+            "The stronger among Surya and Shukra indicates the father, while the stronger among Chandra and Mangal indicates the mother."
+          ],
+          "method_queries": [
+            "Evils at Birth",
+            "The 9<sup>th</sup> from Surya denotes father, the 4<sup>th</sup> from Chandra mother",
+            "Thanu, Dhan, Sahaj, Bandhu, Putr, Ari, Yuvati, Randhr, Dharm, Karma, Labh and Vyaya are in order the names of Bhavas",
+            "父亲用哪颗星看"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch09-v34-shani-mangal-chandra-in-tanu-yuvati-ari-father-early-death.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Shani, Mangal and Chandra in their orders are in Tanu, Yuvati and Ari Bhava"
+            },
+            {
+              "step_id": "ch09-v34-shani-mangal-chandra-in-tanu-yuvati-ari-father-early-death.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "One’s father will incur early death"
+            },
+            {
+              "step_id": "ch09-v34-shani-mangal-chandra-in-tanu-yuvati-ari-father-early-death.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Shani, Mangal and Chandra in their orders are in Tanu, Yuvati and Ari Bhava One’s father will incur early death"
+            },
+            {
+              "step_id": "ch09-v34-shani-mangal-chandra-in-tanu-yuvati-ari-father-early-death.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if saturn, mars and moon in their orders are in 1st house, 7th house and 6th house"
+            },
+            {
+              "step_id": "ch09-v34-shani-mangal-chandra-in-tanu-yuvati-ari-father-early-death.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if saturn, mars and moon in their orders are in 1st house, 7th house and 6th house One’s father will incur early death"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少三颗行星任一落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch09-v34-shani-mangal-chandra-in-tanu-yuvati-ari-father-early-death.step-001",
+        "action": "核对土星、火星、月亮是否依次落一宫、七宫与六宫。",
+        "applicability_scope": "仅限本命盘对父亲的凶象；原文写明 in their orders（依次对应）。",
+        "minimum_supported_claim": "土星（Shani）、火星（Mangal）与月亮（Chandra）依次落一宫（Tanu）、七宫（Yuvati）与六宫（Ari Bhava）时，命主的父亲会早去世。",
+        "produced_fact_keys": [
+          "土火月三落宫的父亲早亡判定"
+        ],
+        "required_fact_keys": [
+          "土星（Shani）是否落一宫（Tanu Bhava）",
+          "火星（Mangal）是否落七宫（Yuvati Bhava）",
+          "月亮（Chandra）是否落六宫（Ari Bhava）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "土星（Shani）是否落一宫（Tanu Bhava）"
+            },
+            {
+              "fact_key": "火星（Mangal）是否落七宫（Yuvati Bhava）"
+            },
+            {
+              "fact_key": "月亮（Chandra）是否落六宫（Ari Bhava）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if Shani, Mangal and Chandra in their orders are in Tanu, Yuvati and Ari Bhava",
+              "claim": "土星（Shani）、火星（Mangal）与月亮（Chandra）依次落一宫（Tanu）、七宫（Yuvati）与六宫（Ari Bhava）时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "One’s father will incur early death",
+              "claim": "命主的父亲会早去世"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch09:v34",
+            "quote": "One’s father will incur early death, if Shani, Mangal and Chandra in their orders are in Tanu, Yuvati and Ari Bhava.",
+            "pdf_pages": [
+              24
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：土星（Shani）是否落一宫（Tanu Bhava）、火星（Mangal）是否落七宫（Yuvati Bhava）、月亮（Chandra）是否落六宫（Ari Bhava）。",
+        "stop_fact_keys": [
+          "土星（Shani）是否落一宫（Tanu Bhava）",
+          "火星（Mangal）是否落七宫（Yuvati Bhava）",
+          "月亮（Chandra）是否落六宫（Ari Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得打乱三颗行星与三个宫的对应次序——原文写明 in their orders。",
+          "不得把『早去世』补成具体年岁。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "659c919aaf73c13a6655e0265606fe0217c3a0b0bc2dbc337e9a579c613ef5f4"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch09-v35-guru-in-tanu-four-grahas-in-dhan-father-lost-at-marriage.step-001",
+      "method": {
+        "method": "ch09-v35-guru-in-tanu-four-grahas-in-dhan-father-lost-at-marriage",
+        "title": "木星落一宫、土日火水聚二宫：命主结婚之时失去父亲",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "什么时候会失去父亲",
+          "木星落一宫四星聚二宫怎么断"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "The native will at the time of his marriage lose his father, if Guru is in Tanu Bhava, while Shani, Surya, Mangal and Budh are together in Dhan Bhava",
+            "木星一宫 四星聚二宫 结婚之时 失父"
+          ],
+          "counter_queries": [
+            "a single, but strong Guru in Lagn will ward off all the evils",
+            "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed, as Surya eliminates darkness.",
+            "If malefics are surrounded by benefics, while angles, or trines are themselves beneficoccupied, evils disappear soon."
+          ],
+          "boundary_queries": [
+            "Evil to Father (up to Sloka 42)",
+            "The stronger among Surya and Shukra indicates the father, while the stronger among Chandra and Mangal indicates the mother.",
+            "Thanu, Dhan, Sahaj, Bandhu, Putr, Ari, Yuvati, Randhr, Dharm, Karma, Labh and Vyaya are in order the names of Bhavas"
+          ],
+          "method_queries": [
+            "Evils at Birth",
+            "The 9<sup>th</sup> from Surya denotes father, the 4<sup>th</sup> from Chandra mother",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "父亲的凶象怎么看"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch09-v35-guru-in-tanu-four-grahas-in-dhan-father-lost-at-marriage.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Guru is in Tanu Bhava"
+            },
+            {
+              "step_id": "ch09-v35-guru-in-tanu-four-grahas-in-dhan-father-lost-at-marriage.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while Shani, Surya, Mangal and Budh are together in Dhan Bhava"
+            },
+            {
+              "step_id": "ch09-v35-guru-in-tanu-four-grahas-in-dhan-father-lost-at-marriage.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The native will at the time of his marriage lose his father"
+            },
+            {
+              "step_id": "ch09-v35-guru-in-tanu-four-grahas-in-dhan-father-lost-at-marriage.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Guru is in Tanu Bhava The native will at the time of his marriage lose his father"
+            },
+            {
+              "step_id": "ch09-v35-guru-in-tanu-four-grahas-in-dhan-father-lost-at-marriage.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while Shani, Surya, Mangal and Budh are together in Dhan Bhava The native will at the time of his marriage lose his father"
+            },
+            {
+              "step_id": "ch09-v35-guru-in-tanu-four-grahas-in-dhan-father-lost-at-marriage.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if jupiter is in 1st house"
+            },
+            {
+              "step_id": "ch09-v35-guru-in-tanu-four-grahas-in-dhan-father-lost-at-marriage.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "while saturn, sun, mars and mercury are together in 2nd house"
+            },
+            {
+              "step_id": "ch09-v35-guru-in-tanu-four-grahas-in-dhan-father-lost-at-marriage.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if jupiter is in 1st house The native will at the time of his marriage lose his father"
+            },
+            {
+              "step_id": "ch09-v35-guru-in-tanu-four-grahas-in-dhan-father-lost-at-marriage.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "while saturn, sun, mars and mercury are together in 2nd house The native will at the time of his marriage lose his father"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少木星落宫事实时停止。",
+          "缺少二宫占据者事实时停止。",
+          "原文以男命（his marriage）立说，女命命主要用时须另查原文，本方法停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch09-v35-guru-in-tanu-four-grahas-in-dhan-father-lost-at-marriage.step-001",
+        "action": "核对木星是否落一宫，并核对土星、太阳、火星、水星是否同聚二宫。",
+        "applicability_scope": "仅限本命盘对父亲的凶象；原文以男命立说（his marriage），并把时间点定在命主结婚之时。",
+        "minimum_supported_claim": "木星（Guru）落一宫（Tanu Bhava），同时土星（Shani）、太阳（Surya）、火星（Mangal）与水星（Budh）同聚二宫（Dhan Bhava）时，命主会在自己结婚之时失去父亲。",
+        "produced_fact_keys": [
+          "木星落一宫兼四星聚二宫的失父时点判定"
+        ],
+        "required_fact_keys": [
+          "木星（Guru）是否落一宫（Tanu Bhava）",
+          "二宫（Dhan Bhava）是否被土星（Shani）占据",
+          "二宫（Dhan Bhava）是否被太阳（Surya）占据",
+          "二宫（Dhan Bhava）是否被火星（Mangal）占据",
+          "二宫（Dhan Bhava）是否被水星（Budh）占据"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "木星（Guru）是否落一宫（Tanu Bhava）"
+            },
+            {
+              "fact_key": "二宫（Dhan Bhava）是否被土星（Shani）占据"
+            },
+            {
+              "fact_key": "二宫（Dhan Bhava）是否被太阳（Surya）占据"
+            },
+            {
+              "fact_key": "二宫（Dhan Bhava）是否被火星（Mangal）占据"
+            },
+            {
+              "fact_key": "二宫（Dhan Bhava）是否被水星（Budh）占据"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if Guru is in Tanu Bhava",
+              "claim": "木星（Guru）落一宫（Tanu Bhava）"
+            },
+            {
+              "quote": "while Shani, Surya, Mangal and Budh are together in Dhan Bhava",
+              "claim": "同时土星（Shani）、太阳（Surya）、火星（Mangal）与水星（Budh）同聚二宫（Dhan Bhava）时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "The native will at the time of his marriage lose his father",
+              "claim": "命主会在自己结婚之时失去父亲"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch09:v35",
+            "quote": "The native will at the time of his marriage lose his father, if Guru is in Tanu Bhava, while Shani, Surya, Mangal and Budh are together in Dhan Bhava.",
+            "pdf_pages": [
+              24
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：木星（Guru）是否落一宫（Tanu Bhava）、二宫（Dhan Bhava）是否被土星（Shani）占据、二宫（Dhan Bhava）是否被太阳（Surya）占据、二宫（Dhan Bhava）是否被火星（Mangal）占据、二宫（Dhan Bhava）是否被水星（Budh）占据。",
+        "stop_fact_keys": [
+          "木星（Guru）是否落一宫（Tanu Bhava）",
+          "二宫（Dhan Bhava）是否被土星（Shani）占据",
+          "二宫（Dhan Bhava）是否被太阳（Surya）占据",
+          "二宫（Dhan Bhava）是否被火星（Mangal）占据",
+          "二宫（Dhan Bhava）是否被水星（Budh）占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把四颗行星减为其中几颗。",
+          "不得把时间点从『结婚之时』改成具体年岁。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "命主结婚之时",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "672bb2d2c37111d02223013f7b850e19357ab8e7d010ebbe66064a5cd86a4d94"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch09-v36-surya-with-or-hemmed-by-malefics-and-malefic-in-seventh.step-001",
+      "method": {
+        "method": "ch09-v36-surya-with-or-hemmed-by-malefics-and-malefic-in-seventh",
+        "title": "太阳与凶星同宫或被凶星夹，且自太阳起第 7 位另有凶星：早年失父",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "太阳被凶星夹会怎样",
+          "早年失去父亲的组合"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Early loss of father will take place, if Surya is with a malefic, or is hemmed between malefics, as there is another malefic in the 7<sup>th</sup> from Surya",
+            "太阳 与凶星同宫 被夹 第七位凶星 失父"
+          ],
+          "counter_queries": [
+            "If malefics are surrounded by benefics, while angles, or trines are themselves beneficoccupied, evils disappear soon.",
+            "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed, as Surya eliminates darkness.",
+            "a single, but strong Guru in Lagn will ward off all the evils"
+          ],
+          "boundary_queries": [
+            "Evil to Father (up to Sloka 42)",
+            "The stronger among Surya and Shukra indicates the father, while the stronger among Chandra and Mangal indicates the mother.",
+            "Evils, causing premature end, exist up to the 24<sup>th</sup> year of one’s age. As such, no definite calculation of life span should be made till such year of age."
+          ],
+          "method_queries": [
+            "Evils at Birth",
+            "The 9<sup>th</sup> from Surya denotes father, the 4<sup>th</sup> from Chandra mother",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "父亲用哪颗星看"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch09-v36-surya-with-or-hemmed-by-malefics-and-malefic-in-seventh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Surya is with a malefic"
+            },
+            {
+              "step_id": "ch09-v36-surya-with-or-hemmed-by-malefics-and-malefic-in-seventh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or is hemmed between malefics"
+            },
+            {
+              "step_id": "ch09-v36-surya-with-or-hemmed-by-malefics-and-malefic-in-seventh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "as there is another malefic in the 7th from Surya"
+            },
+            {
+              "step_id": "ch09-v36-surya-with-or-hemmed-by-malefics-and-malefic-in-seventh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Early loss of father will take place"
+            },
+            {
+              "step_id": "ch09-v36-surya-with-or-hemmed-by-malefics-and-malefic-in-seventh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Surya is with a malefic Early loss of father will take place"
+            },
+            {
+              "step_id": "ch09-v36-surya-with-or-hemmed-by-malefics-and-malefic-in-seventh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or is hemmed between malefics Early loss of father will take place"
+            },
+            {
+              "step_id": "ch09-v36-surya-with-or-hemmed-by-malefics-and-malefic-in-seventh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "as there is another malefic in the 7th from Surya Early loss of father will take place"
+            },
+            {
+              "step_id": "ch09-v36-surya-with-or-hemmed-by-malefics-and-malefic-in-seventh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if sun is with a malefic"
+            },
+            {
+              "step_id": "ch09-v36-surya-with-or-hemmed-by-malefics-and-malefic-in-seventh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "as there is another malefic in the 7th from sun"
+            },
+            {
+              "step_id": "ch09-v36-surya-with-or-hemmed-by-malefics-and-malefic-in-seventh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if sun is with a malefic Early loss of father will take place"
+            },
+            {
+              "step_id": "ch09-v36-surya-with-or-hemmed-by-malefics-and-malefic-in-seventh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "as there is another malefic in the 7th from sun Early loss of father will take place"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少太阳同宫行星与被夹事实时停止。",
+          "缺少自太阳起算第 7 位的占据者事实时停止。",
+          "吉星与凶星的名册未定时停止（判准见第 3 章 Benefics and Malefics）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch09-v36-surya-with-or-hemmed-by-malefics-and-malefic-in-seventh.step-001",
+        "action": "核对太阳是否与凶星同宫或被凶星夹，并核对自太阳起算第 7 位有无另一颗凶星。",
+        "applicability_scope": "仅限本命盘对父亲的凶象；原文以太阳为父亲的指示星立说。",
+        "minimum_supported_claim": "太阳（Surya）与凶星同宫、或被凶星夹，同时自太阳起算的第 7 位另有一颗凶星时，会早年失去父亲。",
+        "produced_fact_keys": [
+          "太阳受克的早年失父判定"
+        ],
+        "required_fact_keys": [
+          "自太阳（Surya）起算的第 7 位是否有另一颗凶星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "自太阳（Surya）起算的第 7 位是否有另一颗凶星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "太阳（Surya）是否与凶星同宫"
+                },
+                {
+                  "fact_key": "太阳（Surya）是否被凶星夹（hemmed between malefics）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "自太阳（Surya）起算的第 7 位是否有另一颗凶星"
+            },
+            "required_fact_keys": [
+              "太阳（Surya）是否与凶星同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "太阳（Surya）是否与凶星同宫"
+            },
+            "selection_group": "ch09-v36-surya-with-or-hemmed-by-malefics-and-malefic-in-seventh.step-001:surya-affliction",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：太阳（Surya）是否与凶星同宫。"
+          },
+          {
+            "when": {
+              "fact_key": "自太阳（Surya）起算的第 7 位是否有另一颗凶星"
+            },
+            "required_fact_keys": [
+              "太阳（Surya）是否被凶星夹（hemmed between malefics）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "太阳（Surya）是否被凶星夹（hemmed between malefics）"
+            },
+            "selection_group": "ch09-v36-surya-with-or-hemmed-by-malefics-and-malefic-in-seventh.step-001:surya-affliction",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：太阳（Surya）是否被凶星夹（hemmed between malefics）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if Surya is with a malefic",
+              "claim": "太阳（Surya）与凶星同宫"
+            },
+            {
+              "quote": "or is hemmed between malefics",
+              "claim": "或被凶星夹"
+            },
+            {
+              "quote": "as there is another malefic in the 7<sup>th</sup> from Surya",
+              "claim": "同时自太阳起算的第 7 位另有一颗凶星时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Early loss of father will take place",
+              "claim": "会早年失去父亲"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch09:v36",
+            "quote": "Early loss of father will take place, if Surya is with a malefic, or is hemmed between malefics, as there is another malefic in the 7<sup>th</sup> from Surya.",
+            "pdf_pages": [
+              24
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：自太阳（Surya）起算的第 7 位是否有另一颗凶星。",
+        "stop_fact_keys": [
+          "自太阳（Surya）起算的第 7 位是否有另一颗凶星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把『早年失去父亲』补成具体年岁。",
+          "不得省略自太阳起算第 7 位另有凶星这一前提。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "000edb2db87f47877fc7aa21d7dbb8a088fbdf824490294a4389faf3628af039"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch09-v37-surya-yuvati-mangal-karm-rahu-vyaya-father-not-sustaining.step-001",
+      "method": {
+        "method": "ch09-v37-surya-yuvati-mangal-karm-rahu-vyaya-father-not-sustaining",
+        "title": "太阳落七宫、火星落十宫、罗睺落十二宫：父亲存续的可能极小",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "太阳七宫火星十宫罗睺十二宫怎么断",
+          "父亲能不能长久"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Remote will be the possibility of one’s father sustaining, if Surya is in Yuvati, while Mangal is in Karm and Rahu is in Vyaya Bhava",
+            "太阳七宫 火星十宫 罗睺十二宫 父亲"
+          ],
+          "counter_queries": [
+            "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed, as Surya eliminates darkness.",
+            "a single, but strong Guru in Lagn will ward off all the evils",
+            "If malefics are surrounded by benefics, while angles, or trines are themselves beneficoccupied, evils disappear soon."
+          ],
+          "boundary_queries": [
+            "Evil to Father (up to Sloka 42)",
+            "The stronger among Surya and Shukra indicates the father, while the stronger among Chandra and Mangal indicates the mother.",
+            "Evils, causing premature end, exist up to the 24<sup>th</sup> year of one’s age. As such, no definite calculation of life span should be made till such year of age."
+          ],
+          "method_queries": [
+            "Evils at Birth",
+            "The 9<sup>th</sup> from Surya denotes father, the 4<sup>th</sup> from Chandra mother",
+            "Thanu, Dhan, Sahaj, Bandhu, Putr, Ari, Yuvati, Randhr, Dharm, Karma, Labh and Vyaya are in order the names of Bhavas",
+            "父亲的凶象怎么看"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch09-v37-surya-yuvati-mangal-karm-rahu-vyaya-father-not-sustaining.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Surya is in Yuvati"
+            },
+            {
+              "step_id": "ch09-v37-surya-yuvati-mangal-karm-rahu-vyaya-father-not-sustaining.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while Mangal is in Karm"
+            },
+            {
+              "step_id": "ch09-v37-surya-yuvati-mangal-karm-rahu-vyaya-father-not-sustaining.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "and Rahu is in Vyaya Bhava"
+            },
+            {
+              "step_id": "ch09-v37-surya-yuvati-mangal-karm-rahu-vyaya-father-not-sustaining.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Remote will be the possibility of one’s father sustaining"
+            },
+            {
+              "step_id": "ch09-v37-surya-yuvati-mangal-karm-rahu-vyaya-father-not-sustaining.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Surya is in Yuvati Remote will be the possibility of one’s father sustaining"
+            },
+            {
+              "step_id": "ch09-v37-surya-yuvati-mangal-karm-rahu-vyaya-father-not-sustaining.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while Mangal is in Karm Remote will be the possibility of one’s father sustaining"
+            },
+            {
+              "step_id": "ch09-v37-surya-yuvati-mangal-karm-rahu-vyaya-father-not-sustaining.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "and Rahu is in Vyaya Bhava Remote will be the possibility of one’s father sustaining"
+            },
+            {
+              "step_id": "ch09-v37-surya-yuvati-mangal-karm-rahu-vyaya-father-not-sustaining.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if sun is in 7th house"
+            },
+            {
+              "step_id": "ch09-v37-surya-yuvati-mangal-karm-rahu-vyaya-father-not-sustaining.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "while mars is in 10th house"
+            },
+            {
+              "step_id": "ch09-v37-surya-yuvati-mangal-karm-rahu-vyaya-father-not-sustaining.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "and rahu is in 12th house"
+            },
+            {
+              "step_id": "ch09-v37-surya-yuvati-mangal-karm-rahu-vyaya-father-not-sustaining.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if sun is in 7th house Remote will be the possibility of one’s father sustaining"
+            },
+            {
+              "step_id": "ch09-v37-surya-yuvati-mangal-karm-rahu-vyaya-father-not-sustaining.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "while mars is in 10th house Remote will be the possibility of one’s father sustaining"
+            },
+            {
+              "step_id": "ch09-v37-surya-yuvati-mangal-karm-rahu-vyaya-father-not-sustaining.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "and rahu is in 12th house Remote will be the possibility of one’s father sustaining"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少三颗行星任一落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch09-v37-surya-yuvati-mangal-karm-rahu-vyaya-father-not-sustaining.step-001",
+        "action": "核对太阳、火星、罗睺是否分别落七宫、十宫与十二宫。",
+        "applicability_scope": "仅限本命盘对父亲的凶象；原文以『可能极小』的措辞给出结论强度。",
+        "minimum_supported_claim": "太阳（Surya）落七宫（Yuvati），火星（Mangal）落十宫（Karm），罗睺（Rahu）落十二宫（Vyaya Bhava）时，父亲得以存续的可能极小。",
+        "produced_fact_keys": [
+          "日火罗睺三落宫的父亲存续判定"
+        ],
+        "required_fact_keys": [
+          "太阳（Surya）是否落七宫（Yuvati Bhava）",
+          "火星（Mangal）是否落十宫（Karm Bhava）",
+          "罗睺（Rahu）是否落十二宫（Vyaya Bhava）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "太阳（Surya）是否落七宫（Yuvati Bhava）"
+            },
+            {
+              "fact_key": "火星（Mangal）是否落十宫（Karm Bhava）"
+            },
+            {
+              "fact_key": "罗睺（Rahu）是否落十二宫（Vyaya Bhava）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if Surya is in Yuvati",
+              "claim": "太阳（Surya）落七宫（Yuvati）"
+            },
+            {
+              "quote": "while Mangal is in Karm",
+              "claim": "火星（Mangal）落十宫（Karm）"
+            },
+            {
+              "quote": "and Rahu is in Vyaya Bhava",
+              "claim": "罗睺（Rahu）落十二宫（Vyaya Bhava）时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Remote will be the possibility of one’s father sustaining",
+              "claim": "父亲得以存续的可能极小"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch09:v37",
+            "quote": "Remote will be the possibility of one’s father sustaining, if Surya is in Yuvati, while Mangal is in Karm and Rahu is in Vyaya Bhava.",
+            "pdf_pages": [
+              24
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：太阳（Surya）是否落七宫（Yuvati Bhava）、火星（Mangal）是否落十宫（Karm Bhava）、罗睺（Rahu）是否落十二宫（Vyaya Bhava）。",
+        "stop_fact_keys": [
+          "太阳（Surya）是否落七宫（Yuvati Bhava）",
+          "火星（Mangal）是否落十宫（Karm Bhava）",
+          "罗睺（Rahu）是否落十二宫（Vyaya Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把『可能极小』改写成必然去世。",
+          "不得把三颗行星的落宫拆开单用。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "01a94f851cb0238add3f62cac3f58386f73c8367224f07a7ba6e1c1f9d80128a"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch09:v27": {
+      "evidence_atom_id": "bphs-97:santhanam:ch09:v27",
+      "chapter_number": 9,
+      "chapter_title": "Evils at Birth",
+      "verse_label": "27.",
+      "content_role": "verse",
+      "exact_text": "27. The child will not live on mother’s milk, but on that of she-goat, if Surya is exalted, or debilitated in Yuvati Bhava.",
+      "pdf_pages": [
+        23
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 9 · Sloka 27 · PDF page 23 · bphs-97:santhanam:ch09:v27",
+      "previous_atom_id": "bphs-97:santhanam:ch09:v26",
+      "next_atom_id": "bphs-97:santhanam:ch09:v28",
+      "context_before": " If Chandra is in the 7<sup>th</sup> , or the 8<sup>th</sup> from a malefic, be herself with a malefic and receives a Drishti from a strong malefic, predict mothers end to be early.\n\n",
+      "context_after": "28. Should a malefic be in the 4<sup>th</sup> , identical with an inimical Rāśi, counted from Chandra,\n\n<!-- SOURCE_PAGE 24 -->\n",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch09:v28": {
+      "evidence_atom_id": "bphs-97:santhanam:ch09:v28",
+      "chapter_number": 9,
+      "chapter_title": "Evils at Birth",
+      "verse_label": "28.",
+      "content_role": "verse",
+      "exact_text": "28. Should a malefic be in the 4<sup>th</sup> , identical with an inimical Rāśi, counted from Chandra, while there is no benefic in a Kendra, the child will lose its mother in a premature manner.",
+      "pdf_pages": [
+        23,
+        24
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 9 · Sloka 28 · PDF pages 23-24 · bphs-97:santhanam:ch09:v28",
+      "previous_atom_id": "bphs-97:santhanam:ch09:v27",
+      "next_atom_id": "bphs-97:santhanam:ch09:v29",
+      "context_before": ".\n\n27. The child will not live on mother’s milk, but on that of she-goat, if Surya is exalted, or debilitated in Yuvati Bhava.\n\n",
+      "context_after": "29. Malefics in Ari and Vyaya Bhava will bring evils to mother. The child’s father will receive similar effects, if Bandhu and K",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch09:v29": {
+      "evidence_atom_id": "bphs-97:santhanam:ch09:v29",
+      "chapter_number": 9,
+      "chapter_title": "Evils at Birth",
+      "verse_label": "29.",
+      "content_role": "verse",
+      "exact_text": "29. Malefics in Ari and Vyaya Bhava will bring evils to mother. The child’s father will receive similar effects, if Bandhu and Karm Bhava are captured by malefics.",
+      "pdf_pages": [
+        24
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 9 · Sloka 29 · PDF page 24 · bphs-97:santhanam:ch09:v29",
+      "previous_atom_id": "bphs-97:santhanam:ch09:v28",
+      "next_atom_id": "bphs-97:santhanam:ch09:v30",
+      "context_before": " Should a malefic be in the 4<sup>th</sup> , identical with an inimical Rāśi, counted from Chandra,\n\n<!-- SOURCE_PAGE 24 -->\n\nwhile there is no benefic in a Kendra, the child will lose its mother in a premature manner.\n\n",
+      "context_after": "30. Budh in Dhan Bhava, while malefics occupy Tanu and Vyaya Bhava: this Yoga will destroy the entire family.\n\n31. Guru, Shani a",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch09:v30": {
+      "evidence_atom_id": "bphs-97:santhanam:ch09:v30",
+      "chapter_number": 9,
+      "chapter_title": "Evils at Birth",
+      "verse_label": "30.",
+      "content_role": "verse",
+      "exact_text": "30. Budh in Dhan Bhava, while malefics occupy Tanu and Vyaya Bhava: this Yoga will destroy the entire family.",
+      "pdf_pages": [
+        24
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 9 · Sloka 30 · PDF page 24 · bphs-97:santhanam:ch09:v30",
+      "previous_atom_id": "bphs-97:santhanam:ch09:v29",
+      "next_atom_id": "bphs-97:santhanam:ch09:v31",
+      "context_before": "ill bring evils to mother. The child’s father will receive similar effects, if Bandhu and Karm Bhava are captured by malefics.\n\n",
+      "context_after": "31. Guru, Shani and Rahu, respectively, posited in Tanu, Dhan and Sahaj Bhava will cause mother’s death early.\n\n32. Doubtlessly ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch09:v31": {
+      "evidence_atom_id": "bphs-97:santhanam:ch09:v31",
+      "chapter_number": 9,
+      "chapter_title": "Evils at Birth",
+      "verse_label": "31.",
+      "content_role": "verse",
+      "exact_text": "31. Guru, Shani and Rahu, respectively, posited in Tanu, Dhan and Sahaj Bhava will cause mother’s death early.",
+      "pdf_pages": [
+        24
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 9 · Sloka 31 · PDF page 24 · bphs-97:santhanam:ch09:v31",
+      "previous_atom_id": "bphs-97:santhanam:ch09:v30",
+      "next_atom_id": "bphs-97:santhanam:ch09:v32",
+      "context_before": "ed by malefics.\n\n30. Budh in Dhan Bhava, while malefics occupy Tanu and Vyaya Bhava: this Yoga will destroy the entire family.\n\n",
+      "context_after": "32. Doubtlessly the mother will give up the child, if it has malefics in Konas, counted from the decreasing Chandra. No benefic ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch09:v32": {
+      "evidence_atom_id": "bphs-97:santhanam:ch09:v32",
+      "chapter_number": 9,
+      "chapter_title": "Evils at Birth",
+      "verse_label": "32.",
+      "content_role": "verse",
+      "exact_text": "32. Doubtlessly the mother will give up the child, if it has malefics in Konas, counted from the decreasing Chandra. No benefic shall be yuti with the said malefics.",
+      "pdf_pages": [
+        24
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 9 · Sloka 32 · PDF page 24 · bphs-97:santhanam:ch09:v32",
+      "previous_atom_id": "bphs-97:santhanam:ch09:v31",
+      "next_atom_id": "bphs-97:santhanam:ch09:v33",
+      "context_before": "entire family.\n\n31. Guru, Shani and Rahu, respectively, posited in Tanu, Dhan and Sahaj Bhava will cause mother’s death early.\n\n",
+      "context_after": "33. If Mangal and Shani are together in a Kendra with reference to Chandra and occupy one and the same Navāńś, the child will ha",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch09:v33": {
+      "evidence_atom_id": "bphs-97:santhanam:ch09:v33",
+      "chapter_number": 9,
+      "chapter_title": "Evils at Birth",
+      "verse_label": "33.",
+      "content_role": "verse",
+      "exact_text": "33. If Mangal and Shani are together in a Kendra with reference to Chandra and occupy one and the same Navāńś, the child will have two mothers. Yet it will be short-lived.",
+      "pdf_pages": [
+        24
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 9 · Sloka 33 · PDF page 24 · bphs-97:santhanam:ch09:v33",
+      "previous_atom_id": "bphs-97:santhanam:ch09:v32",
+      "next_atom_id": "bphs-97:santhanam:ch09:v34",
+      "context_before": " the child, if it has malefics in Konas, counted from the decreasing Chandra. No benefic shall be yuti with the said malefics.\n\n",
+      "context_after": "34. Evil to Father (up to Sloka 42). One’s father will incur early death, if Shani, Mangal and Chandra in their orders are in Ta",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch09:v34": {
+      "evidence_atom_id": "bphs-97:santhanam:ch09:v34",
+      "chapter_number": 9,
+      "chapter_title": "Evils at Birth",
+      "verse_label": "34.",
+      "content_role": "verse",
+      "exact_text": "34. Evil to Father (up to Sloka 42). One’s father will incur early death, if Shani, Mangal and Chandra in their orders are in Tanu, Yuvati and Ari Bhava.",
+      "pdf_pages": [
+        24
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 9 · Sloka 34 · PDF page 24 · bphs-97:santhanam:ch09:v34",
+      "previous_atom_id": "bphs-97:santhanam:ch09:v33",
+      "next_atom_id": "bphs-97:santhanam:ch09:v35",
+      "context_before": "dra with reference to Chandra and occupy one and the same Navāńś, the child will have two mothers. Yet it will be short-lived.\n\n",
+      "context_after": "35. The native will at the time of his marriage lose his father, if Guru is in Tanu Bhava, while Shani, Surya, Mangal and Budh a",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch09:v35": {
+      "evidence_atom_id": "bphs-97:santhanam:ch09:v35",
+      "chapter_number": 9,
+      "chapter_title": "Evils at Birth",
+      "verse_label": "35.",
+      "content_role": "verse",
+      "exact_text": "35. The native will at the time of his marriage lose his father, if Guru is in Tanu Bhava, while Shani, Surya, Mangal and Budh are together in Dhan Bhava.",
+      "pdf_pages": [
+        24
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 9 · Sloka 35 · PDF page 24 · bphs-97:santhanam:ch09:v35",
+      "previous_atom_id": "bphs-97:santhanam:ch09:v34",
+      "next_atom_id": "bphs-97:santhanam:ch09:v36",
+      "context_before": "loka 42). One’s father will incur early death, if Shani, Mangal and Chandra in their orders are in Tanu, Yuvati and Ari Bhava.\n\n",
+      "context_after": "36. Early loss of father will take place, if Surya is with a malefic, or is hemmed between malefics, as there is another malefic",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch09:v36": {
+      "evidence_atom_id": "bphs-97:santhanam:ch09:v36",
+      "chapter_number": 9,
+      "chapter_title": "Evils at Birth",
+      "verse_label": "36.",
+      "content_role": "verse",
+      "exact_text": "36. Early loss of father will take place, if Surya is with a malefic, or is hemmed between malefics, as there is another malefic in the 7<sup>th</sup> from Surya.",
+      "pdf_pages": [
+        24
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 9 · Sloka 36 · PDF page 24 · bphs-97:santhanam:ch09:v36",
+      "previous_atom_id": "bphs-97:santhanam:ch09:v35",
+      "next_atom_id": "bphs-97:santhanam:ch09:v37",
+      "context_before": " The native will at the time of his marriage lose his father, if Guru is in Tanu Bhava, while Shani, Surya, Mangal and Budh are together in Dhan Bhava.\n\n",
+      "context_after": "37. Remote will be the possibility of one’s father sustaining, if Surya is in Yuvati, while Mangal is in Karm and Rahu is in Vya",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch09:v37": {
+      "evidence_atom_id": "bphs-97:santhanam:ch09:v37",
+      "chapter_number": 9,
+      "chapter_title": "Evils at Birth",
+      "verse_label": "37.",
+      "content_role": "verse",
+      "exact_text": "37. Remote will be the possibility of one’s father sustaining, if Surya is in Yuvati, while Mangal is in Karm and Rahu is in Vyaya Bhava.",
+      "pdf_pages": [
+        24
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 9 · Sloka 37 · PDF page 24 · bphs-97:santhanam:ch09:v37",
+      "previous_atom_id": "bphs-97:santhanam:ch09:v36",
+      "next_atom_id": "bphs-97:santhanam:ch09:v38",
+      "context_before": " Early loss of father will take place, if Surya is with a malefic, or is hemmed between malefics, as there is another malefic in the 7<sup>th</sup> from Surya.\n\n",
+      "context_after": "38. Early and troubled will be one’s father’s death, if Mangal is in Karm Bhava identical with his enemy’s Rāśi.\n\n39. Chandra in",
+      "content_missing": false
+    }
+  }
+}

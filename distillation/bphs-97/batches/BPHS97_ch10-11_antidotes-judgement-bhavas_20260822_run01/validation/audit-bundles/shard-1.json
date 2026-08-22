@@ -1,0 +1,516 @@
+{
+  "shard": 1,
+  "step_count": 3,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch10-v2-benefic-in-angle-destroys-evils.step-001",
+      "method": {
+        "method": "ch10-v2-benefic-in-angle-destroys-evils",
+        "title": "消解凶恶：水星、木星、金星之一落自上升起算的角宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘里的凶象有没有被化解",
+          "吉星落角宫能不能消灾"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed",
+            "水星木星金星之一落角宫 一切凶恶被摧毁"
+          ],
+          "counter_queries": [
+            "Malefic in Vyaya and Ari Bhava, or in Randhr and Dhan Bhava, while Lagn is hemmed between other malefics, will bring early death",
+            "Should Shani, Surya and Mangal be in Vyaya, Dharm and Randhr Bhava without Drishti from a benefic, the child will face instant death"
+          ],
+          "boundary_queries": [
+            "O Brahmin, first of all estimate the evils and checking factors thereof through Lagn and then declare the effects of the 12 Bhavas",
+            "凶恶与消解因素要先从上升看起"
+          ],
+          "method_queries": [
+            "I now narrate the antidotes for such evils as well, which will be helpful to assess the extent of inauspiciousness",
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "怎样判断盘中的凶恶是否被消解"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch10-v2-benefic-in-angle-destroys-evils.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should one among Budh, Guru and Shukra be in an angle from Lagna"
+            },
+            {
+              "step_id": "ch10-v2-benefic-in-angle-destroys-evils.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "all evils are destroyed"
+            },
+            {
+              "step_id": "ch10-v2-benefic-in-angle-destroys-evils.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should one among Budh, Guru and Shukra be in an angle from Lagna all evils are destroyed"
+            },
+            {
+              "step_id": "ch10-v2-benefic-in-angle-destroys-evils.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Should one among mercury, jupiter and venus be in an angle from 1st house"
+            },
+            {
+              "step_id": "ch10-v2-benefic-in-angle-destroys-evils.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Should one among mercury, jupiter and venus be in an angle from 1st house all evils are destroyed"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘上升星座事实、无法定出角宫时停止。",
+          "三颗行星的落角宫事实全部取不到时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch10-v2-benefic-in-angle-destroys-evils.step-001",
+        "action": "核对水星（Budh）、木星（Guru）、金星（Shukra）中是否有一颗落在自上升（Lagna）起算的角宫。",
+        "applicability_scope": "仅限第 10 章消解凶恶（Antidotes for Evils）主题；原文只说三曜之一落角宫，未指定是哪一个角宫，也未给时间限定。",
+        "minimum_supported_claim": "水星（Budh）、木星（Guru）、金星（Shukra）三者之一落自上升（Lagna）起算的角宫时，一切凶恶被摧毁。",
+        "produced_fact_keys": [
+          "吉曜落角宫消解凶恶判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升（Lagn）落在哪个星座"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘上升（Lagn）落在哪个星座"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "水星（Budh）是否落角宫"
+                },
+                {
+                  "fact_key": "木星（Guru）是否落角宫"
+                },
+                {
+                  "fact_key": "金星（Shukra）是否落角宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘上升（Lagn）落在哪个星座"
+            },
+            "required_fact_keys": [
+              "水星（Budh）是否落角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "水星（Budh）是否落角宫"
+            },
+            "selection_group": "ch10-v2-benefic-in-angle-destroys-evils.step-001:benefic-in-angle",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：水星（Budh）是否落角宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升（Lagn）落在哪个星座"
+            },
+            "required_fact_keys": [
+              "木星（Guru）是否落角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "木星（Guru）是否落角宫"
+            },
+            "selection_group": "ch10-v2-benefic-in-angle-destroys-evils.step-001:benefic-in-angle",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：木星（Guru）是否落角宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升（Lagn）落在哪个星座"
+            },
+            "required_fact_keys": [
+              "金星（Shukra）是否落角宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "金星（Shukra）是否落角宫"
+            },
+            "selection_group": "ch10-v2-benefic-in-angle-destroys-evils.step-001:benefic-in-angle",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：金星（Shukra）是否落角宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should one among Budh, Guru and Shukra be in an angle from Lagna",
+              "claim": "水星（Budh）、木星（Guru）、金星（Shukra）三者之一落自上升（Lagna）起算的角宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "all evils are destroyed",
+              "claim": "一切凶恶被摧毁"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch10:v2",
+            "quote": "Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed",
+            "pdf_pages": [
+              25
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升（Lagn）落在哪个星座。",
+        "stop_fact_keys": [
+          "本盘上升（Lagn）落在哪个星座"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「一切凶恶被摧毁」缩小或扩大成某一类具体凶恶、某个具体宫位的吉凶。",
+          "不得把这三颗行星扩大成其他行星落角宫也同样消解凶恶。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "0d89f8d40ec01bc52e1d2c8e8937c1c7cb9a1a001f0b6c814203e2a6ad3b74b0"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch10-v3-strong-guru-in-lagna-wards-off-evils.step-001",
+      "method": {
+        "method": "ch10-v3-strong-guru-in-lagna-wards-off-evils",
+        "title": "消解凶恶：单独一颗有力的木星落上升",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "木星落上升能不能挡灾",
+          "我盘里的凶象有没有被化解"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "a single, but strong Guru in Lagn will ward off all the evils",
+            "有力的木星落上升 挡去一切凶恶"
+          ],
+          "counter_queries": [
+            "The native will at the time of his marriage lose his father, if Guru is in Tanu Bhava, while Shani, Surya, Mangal and Budh are together in Dhan Bhava",
+            "One will immediately go to the abode of Yama, if Shani is in Tanu Bhava, while Chandra and Guru are in their order in Randhr and Sahaj Bhava"
+          ],
+          "boundary_queries": [
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+            "「有力」的判准出自六力（Shad Bal）章"
+          ],
+          "method_queries": [
+            "O Brahmin, first of all estimate the evils and checking factors thereof through Lagn and then declare the effects of the 12 Bhavas",
+            "I now narrate the antidotes for such evils as well, which will be helpful to assess the extent of inauspiciousness",
+            "怎样判断木星是否有力"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch10-v3-strong-guru-in-lagna-wards-off-evils.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "a single, but strong Guru in Lagn"
+            },
+            {
+              "step_id": "ch10-v3-strong-guru-in-lagna-wards-off-evils.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will ward off all the evils"
+            },
+            {
+              "step_id": "ch10-v3-strong-guru-in-lagna-wards-off-evils.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "a single, but strong Guru in Lagn will ward off all the evils"
+            },
+            {
+              "step_id": "ch10-v3-strong-guru-in-lagna-wards-off-evils.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "a single, but strong jupiter in 1st house"
+            },
+            {
+              "step_id": "ch10-v3-strong-guru-in-lagna-wards-off-evils.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "a single, but strong jupiter in 1st house will ward off all the evils"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少木星落宫事实时停止。",
+          "缺少木星强弱事实时停止（「有力」的判准由排盘窗口定义）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch10-v3-strong-guru-in-lagna-wards-off-evils.step-001",
+        "action": "核对木星（Guru）是否落上升宫（Lagn）并且有力。",
+        "applicability_scope": "仅限第 10 章消解凶恶（Antidotes for Evils）主题；原文只说 strong，未给强弱判准；原文未给时间限定。",
+        "minimum_supported_claim": "单独一颗有力的木星（Guru）落上升（Lagn）时，即可挡去一切凶恶。",
+        "produced_fact_keys": [
+          "有力木星落上升消解凶恶判定"
+        ],
+        "required_fact_keys": [
+          "木星（Guru）是否落上升宫（Lagna）",
+          "木星（Guru）是否有力"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "木星（Guru）是否落上升宫（Lagna）"
+            },
+            {
+              "fact_key": "木星（Guru）是否有力"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "a single, but strong Guru in Lagn",
+              "claim": "单独一颗有力的木星（Guru）落上升（Lagn）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will ward off all the evils",
+              "claim": "即可挡去一切凶恶"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch10:v3",
+            "quote": "a single, but strong Guru in Lagn will ward off all the evils",
+            "pdf_pages": [
+              25
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：木星（Guru）是否落上升宫（Lagna）、木星（Guru）是否有力。",
+        "stop_fact_keys": [
+          "木星（Guru）是否落上升宫（Lagna）",
+          "木星（Guru）是否有力"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得自行发明「有力」的判准。",
+          "不得据此推断被挡去的是哪一类凶恶、何时挡去。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "cfcff60860978b1a5f9b620e35da200a2ce12c6542ef02067948d4fec02e5d8d"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch10-v4-strong-lagna-lord-in-angle.step-001",
+      "method": {
+        "method": "ch10-v4-strong-lagna-lord-in-angle",
+        "title": "消解凶恶：上升主有力地落在角宫",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "上升主落角宫有什么用",
+          "我盘里的凶象有没有被抵消"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Lagn Lord is singly capable of counteracting all evils, if he is strongly placed in an angle",
+            "上升主有力落角宫 抵消一切凶恶"
+          ],
+          "counter_queries": [
+            "If malefics are in Kendras, devoid of Yuti with, or a Drishti from benefics, while Lagn’s Lord is not strong, only short life will result",
+            "If Lagn’s Lord is in Ari, Randhr, or Vyaya Bhava, yuti with malefics and devoid of Yuti with and/or Drishti from a benefic, short life will come to pass"
+          ],
+          "boundary_queries": [
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+            "「有力」的判准出自六力（Shad Bal）章"
+          ],
+          "method_queries": [
+            "If the stronger among Lagn’s Lord and Randhr’s Lord is placed in a Kendr, long life is indicated",
+            "O Brahmin, first of all estimate the evils and checking factors thereof through Lagn and then declare the effects of the 12 Bhavas",
+            "怎样判断上升主是否有力、是否落角宫"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch10-v4-strong-lagna-lord-in-angle.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if he is strongly placed in an angle"
+            },
+            {
+              "step_id": "ch10-v4-strong-lagna-lord-in-angle.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Lagn Lord is singly capable of counteracting all evils"
+            },
+            {
+              "step_id": "ch10-v4-strong-lagna-lord-in-angle.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if he is strongly placed in an angle Lagn Lord is singly capable of counteracting all evils"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升主落角宫事实时停止。",
+          "缺少上升主强弱事实时停止（「有力」的判准由排盘窗口定义）。"
+        ]
+      },
+      "step": {
+        "step_id": "ch10-v4-strong-lagna-lord-in-angle.step-001",
+        "action": "核对上升主（Lagn Lord）是否有力地落在角宫。",
+        "applicability_scope": "仅限第 10 章消解凶恶（Antidotes for Evils）主题；原文只说 strongly placed，未给强弱判准；原文未指定是哪一个角宫，也未给时间限定。",
+        "minimum_supported_claim": "上升主（Lagn Lord）有力地落在角宫时，上升主（Lagn Lord）单独一颗即足以抵消一切凶恶。",
+        "produced_fact_keys": [
+          "有力上升主落角宫抵消凶恶判定"
+        ],
+        "required_fact_keys": [
+          "上升主（Lagn's Lord）是否落角宫",
+          "上升主（Lagn's Lord）是否有力"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "上升主（Lagn's Lord）是否落角宫"
+            },
+            {
+              "fact_key": "上升主（Lagn's Lord）是否有力"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if he is strongly placed in an angle",
+              "claim": "有力地落在角宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Lagn Lord is singly capable of counteracting all evils",
+              "claim": "上升主（Lagn Lord）单独一颗即足以抵消一切凶恶"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch10:v4",
+            "quote": "Lagn Lord is singly capable of counteracting all evils, if he is strongly placed in an angle",
+            "pdf_pages": [
+              25
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：上升主（Lagn's Lord）是否落角宫、上升主（Lagn's Lord）是否有力。",
+        "stop_fact_keys": [
+          "上升主（Lagn's Lord）是否落角宫",
+          "上升主（Lagn's Lord）是否有力"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得自行发明「有力」的判准。",
+          "不得据此推断被抵消的是哪一类凶恶、何时抵消。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "487fdf3ff4e438879972ed9c91a19e0259fa5683d699604f315d150cb7997e33"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch10:v2": {
+      "evidence_atom_id": "bphs-97:santhanam:ch10:v2",
+      "chapter_number": 10,
+      "chapter_title": "Antidotes for Evils",
+      "verse_label": "2.",
+      "content_role": "verse",
+      "exact_text": "2. Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed, as Surya eliminates darkness.",
+      "pdf_pages": [
+        25
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 10 · Sloka 2 · PDF page 25 · bphs-97:santhanam:ch10:v2",
+      "previous_atom_id": "bphs-97:santhanam:ch10:v1",
+      "next_atom_id": "bphs-97:santhanam:ch10:v3",
+      "context_before": "a native). I now narrate the antidotes for such evils as well, which will be helpful to assess the extent of inauspiciousness.\n\n",
+      "context_after": "3. Just as a single reverential obeisance before Lord Shiva, the Trident holder frees one from all sins, a single, but strong Gu",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch10:v3": {
+      "evidence_atom_id": "bphs-97:santhanam:ch10:v3",
+      "chapter_number": 10,
+      "chapter_title": "Antidotes for Evils",
+      "verse_label": "3.",
+      "content_role": "verse",
+      "exact_text": "3. Just as a single reverential obeisance before Lord Shiva, the Trident holder frees one from all sins, a single, but strong Guru in Lagn will ward off all the evils.",
+      "pdf_pages": [
+        25
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 10 · Sloka 3 · PDF page 25 · bphs-97:santhanam:ch10:v3",
+      "previous_atom_id": "bphs-97:santhanam:ch10:v2",
+      "next_atom_id": "bphs-97:santhanam:ch10:v4",
+      "context_before": ".\n\n2. Should one among Budh, Guru and Shukra be in an angle from Lagna, all evils are destroyed, as Surya eliminates darkness.\n\n",
+      "context_after": "4. Lagn Lord is singly capable of counteracting all evils, if he is strongly placed in an angle, just as Lord Shiva, the holder ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch10:v4": {
+      "evidence_atom_id": "bphs-97:santhanam:ch10:v4",
+      "chapter_number": 10,
+      "chapter_title": "Antidotes for Evils",
+      "verse_label": "4.",
+      "content_role": "verse",
+      "exact_text": "4. Lagn Lord is singly capable of counteracting all evils, if he is strongly placed in an angle, just as Lord Shiva, the holder of the Bow destroyed the three cities, built of gold, silver and iron for the demons by Maya.",
+      "pdf_pages": [
+        25
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 10 · Sloka 4 · PDF page 25 · bphs-97:santhanam:ch10:v4",
+      "previous_atom_id": "bphs-97:santhanam:ch10:v3",
+      "next_atom_id": "bphs-97:santhanam:ch10:v5",
+      "context_before": " Just as a single reverential obeisance before Lord Shiva, the Trident holder frees one from all sins, a single, but strong Guru in Lagn will ward off all the evils.\n\n",
+      "context_after": "5. All evils are destroyed, if a benefic drishties Lagn of one born during the night in the bright half. Similarly a malefic’s D",
+      "content_missing": false
+    }
+  }
+}
