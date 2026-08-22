@@ -1,0 +1,1810 @@
+{
+  "shard": 2,
+  "step_count": 11,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch24-v59-putr-lord-in-labh.step-001",
+      "method": {
+        "method": "ch24-v59-putr-lord-in-labh",
+        "title": "五宫主落十一宫：有学识、为人所喜、著书、技艺精熟、多子多财",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我在学问和技艺上能走多远",
+          "我子女和收入方面怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Putr’s Lord is in Labh Bhava, the native will be learned, dear to people, be an author of treatises",
+            "五宫主落十一宫 学识 著书 技艺 多子多财"
+          ],
+          "counter_queries": [
+            "If Putr’s Lord is in Ari, Randhr, or Vyaya Bhava, or be in an inimical Rāśi, or be in fall, or in Putr itself, the native will beget issues with difficulty",
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak, or receives a Drishti from such a Grah"
+          ],
+          "boundary_queries": [
+            "Indications of Putr Bhava. The learned should deduce from Putr Bhava amulets, sacred spells, learning, knowledge, sons, royalty (or authority), fall of position etc.",
+            "Indications of Labh Bhava. All articles, son’s wife, income, prosperity, quadrupeds etc. are to be understood from Labh Bhava"
+          ],
+          "method_queries": [
+            "Effects of Putr’s Lord in Various Bhavas",
+            "Effects of Labh’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v59-putr-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Putr’s Lord is in Labh Bhava"
+            },
+            {
+              "step_id": "ch24-v59-putr-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be learned, dear to people"
+            },
+            {
+              "step_id": "ch24-v59-putr-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be an author of treatises"
+            },
+            {
+              "step_id": "ch24-v59-putr-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be very skilful"
+            },
+            {
+              "step_id": "ch24-v59-putr-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be endowed with many sons and wealth"
+            },
+            {
+              "step_id": "ch24-v59-putr-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Putr’s Lord is in Labh Bhava the native will be learned, dear to people"
+            },
+            {
+              "step_id": "ch24-v59-putr-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "5th lord is in 11th house"
+            },
+            {
+              "step_id": "ch24-v59-putr-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "5th lord is in 11th house the native will be learned, dear to people"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫主是否落十一宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v59-putr-lord-in-labh.step-001",
+        "action": "核对五宫主（Putr's Lord）是否落十一宫（Labh Bhava），据此判断本人的学识、技艺与子女财富。",
+        "applicability_scope": "仅限本命盘五宫主（Putr's Lord）落十一宫（Labh Bhava）一条；原文未给子女人数、财富数额或时间限定。",
+        "minimum_supported_claim": "五宫主（Putr's Lord）落十一宫（Labh Bhava）时，本人有学识、为人所喜爱，著有论著，技艺极为精熟，多子多财。",
+        "produced_fact_keys": [
+          "五宫主落十一宫的学识技艺与子女财富判定"
+        ],
+        "required_fact_keys": [
+          "五宫主（Putr's Lord）是否落十一宫（Labh）"
+        ],
+        "condition_logic": {
+          "fact_key": "五宫主（Putr's Lord）是否落十一宫（Labh）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Putr’s Lord is in Labh Bhava",
+              "claim": "五宫主（Putr's Lord）落十一宫（Labh Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be learned, dear to people",
+              "claim": "本人有学识、为人所喜爱"
+            },
+            {
+              "quote": "be an author of treatises",
+              "claim": "著有论著"
+            },
+            {
+              "quote": "be very skilful",
+              "claim": "技艺极为精熟"
+            },
+            {
+              "quote": "be endowed with many sons and wealth",
+              "claim": "多子多财"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v59",
+            "quote": "If Putr’s Lord is in Labh Bhava, the native will be learned, dear to people, be an author of treatises, be very skilful and be endowed with many sons and wealth.",
+            "pdf_pages": [
+              44
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：五宫主（Putr's Lord）是否落十一宫（Labh）。",
+        "stop_fact_keys": [
+          "五宫主（Putr's Lord）是否落十一宫（Labh）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断子女人数、性别或得子年份。",
+          "不得把「多子多财」换算成具体财富数额或收入来源。",
+          "不得把本条套用到五宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "c4f4dd61e558e2adc86085d58f292ceff5c008fb0ef4ba38892520ad7228d2cc"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v60-putr-lord-in-vyaya.step-001",
+      "method": {
+        "method": "ch24-v60-putr-lord-in-vyaya",
+        "title": "五宫主落十二宫：自己儿子那边没有安乐、会有收养或买来的儿子",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和亲生子女之间会怎么样",
+          "我会不会靠收养得到孩子"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Putr’s Lord is in Vyaya Bhava, the native will be bereft of happiness from his own sons",
+            "五宫主落十二宫 亲子无乐 收养 买来的儿子"
+          ],
+          "counter_queries": [
+            "If Putr’s Lord is exalted, or be in Dhan, Putr, or Dharm Bhava, or be yuti with, or drishtied by Guru, obtainment of children will be there",
+            "Should Putr Bhava be owned by Shani, or Budh and be occupied, or drishtied by Shani and Mandi, one will have adopted issues",
+            "There will be many children, if Putr’s Lord is strong, while Putr is drishtied by strong Budh, Guru and Shukr"
+          ],
+          "boundary_queries": [
+            "Indications of Putr Bhava. The learned should deduce from Putr Bhava amulets, sacred spells, learning, knowledge, sons, royalty (or authority), fall of position etc.",
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc."
+          ],
+          "method_queries": [
+            "Effects of Putr’s Lord in Various Bhavas",
+            "Effects of Vyaya’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v60-putr-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Putr’s Lord is in Vyaya Bhava"
+            },
+            {
+              "step_id": "ch24-v60-putr-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be bereft of happiness from his own sons"
+            },
+            {
+              "step_id": "ch24-v60-putr-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will have an adopted, or purchased son"
+            },
+            {
+              "step_id": "ch24-v60-putr-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Putr’s Lord is in Vyaya Bhava the native will be bereft of happiness from his own sons"
+            },
+            {
+              "step_id": "ch24-v60-putr-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "5th lord is in 12th house"
+            },
+            {
+              "step_id": "ch24-v60-putr-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "5th lord is in 12th house the native will be bereft of happiness from his own sons"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫主是否落十二宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v60-putr-lord-in-vyaya.step-001",
+        "action": "核对五宫主（Putr's Lord）是否落十二宫（Vyaya Bhava），据此判断本人从亲生儿子处所得的安乐与承嗣方式。",
+        "applicability_scope": "仅限本命盘五宫主（Putr's Lord）落十二宫（Vyaya Bhava）一条；原文把收养与买来写成择一；原文未给时间限定。",
+        "minimum_supported_claim": "五宫主（Putr's Lord）落十二宫（Vyaya Bhava）时，本人从自己的儿子那里得不到安乐，会有收养或买来的儿子。",
+        "produced_fact_keys": [
+          "五宫主落十二宫的子女安乐与承嗣判定"
+        ],
+        "required_fact_keys": [
+          "五宫主（Putr's Lord）是否落十二宫（Vyaya）"
+        ],
+        "condition_logic": {
+          "fact_key": "五宫主（Putr's Lord）是否落十二宫（Vyaya）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Putr’s Lord is in Vyaya Bhava",
+              "claim": "五宫主（Putr's Lord）落十二宫（Vyaya Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be bereft of happiness from his own sons",
+              "claim": "本人从自己的儿子那里得不到安乐"
+            },
+            {
+              "quote": "will have an adopted, or purchased son",
+              "claim": "会有收养或买来的儿子"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v60",
+            "quote": "If Putr’s Lord is in Vyaya Bhava, the native will be bereft of happiness from his own sons, will have an adopted, or purchased son.",
+            "pdf_pages": [
+              44
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：五宫主（Putr's Lord）是否落十二宫（Vyaya）。",
+        "stop_fact_keys": [
+          "五宫主（Putr's Lord）是否落十二宫（Vyaya）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「得不到安乐」写成没有子女，也不得补上原文没有的年龄或死因。",
+          "不得把收养与买来两者同时坐实——原文写的是择一。",
+          "不得据此推断子女人数或收养时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "d34e6a46a560076b083f92a5b3bc8519425165b15aa29264e37600bccecd1bbd"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v61-ari-lord-in-tanu.step-001",
+      "method": {
+        "method": "ch24-v61-ari-lord-in-tanu",
+        "title": "六宫主落上升宫：多病、有名望、与自己人为敌、富有受尊敬、有胆识有德行",
+        "target_house": 6,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我为什么老是生病",
+          "我和自己人之间为什么老起冲突"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Ari’s Lord is in Tanu Bhava, the native will be sickly, famous, inimical to his own men",
+            "六宫主落上升宫 多病 与自己人为敌 富有"
+          ],
+          "counter_queries": [
+            "If Gulik is in Ari Bhava, the native will be devoid of enemies, be strong-bodied, splendourous, liked by his wife",
+            "If Dhum is in Ari Bhava, the native will be strong, will conquer his enemies, be very brilliant, famous and free from diseases"
+          ],
+          "boundary_queries": [
+            "Indications of Ari Bhava. Maternal uncle, doubts about death, enemies, ulcers, stepmother etc. are to be estimated from Ari Bhava",
+            "Indications of Tanu Bhava. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour, weakness, happiness, grief and innate nature"
+          ],
+          "method_queries": [
+            "Effects of Ari’s Lord in Various Bhavas",
+            "Effects of Ari Bhava"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v61-ari-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Ari’s Lord is in Tanu Bhava"
+            },
+            {
+              "step_id": "ch24-v61-ari-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be sickly, famous"
+            },
+            {
+              "step_id": "ch24-v61-ari-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "inimical to his own men"
+            },
+            {
+              "step_id": "ch24-v61-ari-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "rich, honourable, adventurous and virtuous"
+            },
+            {
+              "step_id": "ch24-v61-ari-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Ari’s Lord is in Tanu Bhava the native will be sickly, famous"
+            },
+            {
+              "step_id": "ch24-v61-ari-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "6th lord is in 1st house"
+            },
+            {
+              "step_id": "ch24-v61-ari-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "6th lord is in 1st house the native will be sickly, famous"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少六宫主是否落第一宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v61-ari-lord-in-tanu.step-001",
+        "action": "核对六宫主（Ari's Lord）是否落第一宫（Tanu Bhava），据此判断本人的健康、名望与和自己人之间的关系。",
+        "applicability_scope": "仅限本命盘六宫主（Ari's Lord）落第一宫一条；原文本句把第一宫写作 Tanu Bhava（本书 ch11:v2 即以 Tanu Bhava 为第一宫），事实名沿用已有的上升宫（Lagna）写法；本段原文在同偈句首自标「Effects of Ari’s Lord in Various Bhavas (up to Sloka 72)」；原文未给发病年龄或时间限定。",
+        "minimum_supported_claim": "六宫主（Ari's Lord）落上升宫（Tanu）时，本人多病、有名望，与自己人为敌，富有、受尊敬、有胆识、有德行。",
+        "produced_fact_keys": [
+          "六宫主落上升宫的健康与人际判定"
+        ],
+        "required_fact_keys": [
+          "六宫主（Ari's Lord）是否落上升宫（Lagna）"
+        ],
+        "condition_logic": {
+          "fact_key": "六宫主（Ari's Lord）是否落上升宫（Lagna）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Ari’s Lord is in Tanu Bhava",
+              "claim": "六宫主（Ari's Lord）落上升宫（Tanu）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be sickly, famous",
+              "claim": "本人多病、有名望"
+            },
+            {
+              "quote": "inimical to his own men",
+              "claim": "与自己人为敌"
+            },
+            {
+              "quote": "rich, honourable, adventurous and virtuous",
+              "claim": "富有、受尊敬、有胆识、有德行"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v61",
+            "quote": "If Ari’s Lord is in Tanu Bhava, the native will be sickly, famous, inimical to his own men, rich, honourable, adventurous and virtuous.",
+            "pdf_pages": [
+              44
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：六宫主（Ari's Lord）是否落上升宫（Lagna）。",
+        "stop_fact_keys": [
+          "六宫主（Ari's Lord）是否落上升宫（Lagna）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体病名、病程或发病年份。",
+          "不得把「与自己人为敌」坐实为某位亲属或某件冲突。",
+          "不得把本条套用到六宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "6c438c0991a99412ce4ac59d45b01e778753ca1bfc3d8a9ca4e2b8bb6fd6c60b"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v62-ari-lord-in-dhan.step-001",
+      "method": {
+        "method": "ch24-v62-ari-lord-in-dhan",
+        "title": "六宫主落二宫：有胆识、在本族中有名、居于异邦、快乐、善言辞、专注己业",
+        "target_house": 6,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我适不适合在外地或国外发展",
+          "我的口才和处事风格是什么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Ari’s Lord is in Dhan Bhava, the native will be adventurous, famous among his people, will live in alien countries",
+            "六宫主落二宫 异邦居住 善言辞 有胆识"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Indications of Ari Bhava. Maternal uncle, doubts about death, enemies, ulcers, stepmother etc. are to be estimated from Ari Bhava",
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava"
+          ],
+          "method_queries": [
+            "Effects of Ari’s Lord in Various Bhavas",
+            "Effects of Dhan’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v62-ari-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Ari’s Lord is in Dhan Bhava"
+            },
+            {
+              "step_id": "ch24-v62-ari-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be adventurous, famous among his people"
+            },
+            {
+              "step_id": "ch24-v62-ari-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will live in alien countries"
+            },
+            {
+              "step_id": "ch24-v62-ari-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be happy, be a skilful speaker"
+            },
+            {
+              "step_id": "ch24-v62-ari-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be always interested in his own work"
+            },
+            {
+              "step_id": "ch24-v62-ari-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Ari’s Lord is in Dhan Bhava the native will be adventurous, famous among his people"
+            },
+            {
+              "step_id": "ch24-v62-ari-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "6th lord is in 2nd house"
+            },
+            {
+              "step_id": "ch24-v62-ari-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "6th lord is in 2nd house the native will be adventurous, famous among his people"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少六宫主是否落二宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v62-ari-lord-in-dhan.step-001",
+        "action": "核对六宫主（Ari's Lord）是否落二宫（Dhan Bhava），据此判断本人的名声、异邦居住与言辞才能。",
+        "applicability_scope": "仅限本命盘六宫主（Ari's Lord）落二宫（Dhan Bhava）一条；本段原文在同偈句首自标「Effects of Ari’s Lord in Various Bhavas (up to Sloka 72)」；原文未给迁居时间、去向国别或时间限定。",
+        "minimum_supported_claim": "六宫主（Ari's Lord）落二宫（Dhan Bhava）时，本人有胆识、在本族人中有名，会居住在异邦，快乐、善于言辞，总是专注于自己的事务。",
+        "produced_fact_keys": [
+          "六宫主落二宫的异邦居住与言辞判定"
+        ],
+        "required_fact_keys": [
+          "六宫主（Ari's Lord）是否落二宫（Dhan）"
+        ],
+        "condition_logic": {
+          "fact_key": "六宫主（Ari's Lord）是否落二宫（Dhan）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Ari’s Lord is in Dhan Bhava",
+              "claim": "六宫主（Ari's Lord）落二宫（Dhan Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be adventurous, famous among his people",
+              "claim": "本人有胆识、在本族人中有名"
+            },
+            {
+              "quote": "will live in alien countries",
+              "claim": "会居住在异邦"
+            },
+            {
+              "quote": "be happy, be a skilful speaker",
+              "claim": "快乐、善于言辞"
+            },
+            {
+              "quote": "be always interested in his own work",
+              "claim": "总是专注于自己的事务"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v62",
+            "quote": "If Ari’s Lord is in Dhan Bhava, the native will be adventurous, famous among his people, will live in alien countries, be happy, be a skilful speaker and be always interested in his own work.",
+            "pdf_pages": [
+              45
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：六宫主（Ari's Lord）是否落二宫（Dhan）。",
+        "stop_fact_keys": [
+          "六宫主（Ari's Lord）是否落二宫（Dhan）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断迁居的国别、时间或往返次数。",
+          "不得把「善于言辞」扩大成具体职业。",
+          "不得把本条套用到六宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b45b5c2a634abed54b7ca2454c09e50a6fd6b036bbef45ea2c04b90fe56338a3"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v63-ari-lord-in-sahaj.step-001",
+      "method": {
+        "method": "ch24-v63-ari-lord-in-sahaj",
+        "title": "六宫主落三宫：易怒、没有勇气、与所有同胞为敌、仆从不听命",
+        "target_house": 6,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和兄弟姐妹为什么老是闹翻",
+          "我手下的人为什么不听话"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Ari’s Lord is in Sahaj Bhava, the native will be given to anger, be bereft of courage, inimical to all of his co-born",
+            "六宫主落三宫 易怒 无勇气 与同胞为敌 仆从不听命"
+          ],
+          "counter_queries": [
+            "If Dharm’s Lord is in Sahaj Bhava, the native will be endowed with fraternal bliss, be wealthy, virtuous and charming"
+          ],
+          "boundary_queries": [
+            "Indications of Ari Bhava. Maternal uncle, doubts about death, enemies, ulcers, stepmother etc. are to be estimated from Ari Bhava",
+            "Indications of Sahaj Bhava. From Sahaj Bhava know of the following: valour, servants (attending etc.), brothers, sisters etc., initiatory instructions (Upadesh), journey and parent’s death"
+          ],
+          "method_queries": [
+            "Effects of Ari’s Lord in Various Bhavas",
+            "Effects of Sahaj’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v63-ari-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Ari’s Lord is in Sahaj Bhava"
+            },
+            {
+              "step_id": "ch24-v63-ari-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be given to anger, be bereft of courage"
+            },
+            {
+              "step_id": "ch24-v63-ari-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "inimical to all of his co-born"
+            },
+            {
+              "step_id": "ch24-v63-ari-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will have disobedient servants"
+            },
+            {
+              "step_id": "ch24-v63-ari-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Ari’s Lord is in Sahaj Bhava the native will be given to anger, be bereft of courage"
+            },
+            {
+              "step_id": "ch24-v63-ari-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "6th lord is in 3rd house"
+            },
+            {
+              "step_id": "ch24-v63-ari-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "6th lord is in 3rd house the native will be given to anger, be bereft of courage"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少六宫主是否落三宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v63-ari-lord-in-sahaj.step-001",
+        "action": "核对六宫主（Ari's Lord）是否落三宫（Sahaj Bhava），据此判断本人的性情、与同胞的关系以及仆从状况。",
+        "applicability_scope": "仅限本命盘六宫主（Ari's Lord）落三宫（Sahaj Bhava）一条；本段原文在同偈句首自标「Effects of Ari’s Lord in Various Bhavas (up to Sloka 72)」；原文未给时间限定。",
+        "minimum_supported_claim": "六宫主（Ari's Lord）落三宫（Sahaj Bhava）时，本人易怒、没有勇气，与自己所有的同胞为敌，仆从不听命。",
+        "produced_fact_keys": [
+          "六宫主落三宫的同胞关系与仆从判定"
+        ],
+        "required_fact_keys": [
+          "六宫主（Ari's Lord）是否落三宫（Sahaj）"
+        ],
+        "condition_logic": {
+          "fact_key": "六宫主（Ari's Lord）是否落三宫（Sahaj）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Ari’s Lord is in Sahaj Bhava",
+              "claim": "六宫主（Ari's Lord）落三宫（Sahaj Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be given to anger, be bereft of courage",
+              "claim": "本人易怒、没有勇气"
+            },
+            {
+              "quote": "inimical to all of his co-born",
+              "claim": "与自己所有的同胞为敌"
+            },
+            {
+              "quote": "will have disobedient servants",
+              "claim": "仆从不听命"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v63",
+            "quote": "If Ari’s Lord is in Sahaj Bhava, the native will be given to anger, be bereft of courage, inimical to all of his co-born and will have disobedient servants.",
+            "pdf_pages": [
+              45
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：六宫主（Ari's Lord）是否落三宫（Sahaj）。",
+        "stop_fact_keys": [
+          "六宫主（Ari's Lord）是否落三宫（Sahaj）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断兄弟姐妹的人数、排行或存殁。",
+          "不得把「仆从不听命」扩大成具体的雇佣事件或时间。",
+          "不得把本条套用到六宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "271b9790883bce00bb5d0eee7ea96448012d767e13c4df8c00ef2019a702ebf0"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v64-ari-lord-in-bandhu.step-001",
+      "method": {
+        "method": "ch24-v64-ari-lord-in-bandhu",
+        "title": "六宫主落四宫：母亲那边没有安乐、聪明搬弄是非、善妒心恶、非常富有",
+        "target_house": 6,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和母亲的缘分怎么样",
+          "我的性格里有什么要留心的地方"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Ari’s Lord is in Bandhu Bhava, the native will be devoid maternal happiness, be intelligent, be a tale bearer",
+            "六宫主落四宫 母亲无乐 善妒 富有"
+          ],
+          "counter_queries": [
+            "If Bandhu’s Lord is in Tanu Bhava, the native will be endowed with learning, virtues, ornaments, lands, conveyances and maternal happiness",
+            "If Lagn’s Lord is in Bandhu Bhava, the native will be endowed with paternal and maternal happiness"
+          ],
+          "boundary_queries": [
+            "Indications of Ari Bhava. Maternal uncle, doubts about death, enemies, ulcers, stepmother etc. are to be estimated from Ari Bhava",
+            "Indications of Bandhu Bhava. Conveyances, relatives, mother, happiness, treasure, lands and buildings are to be consulted through Bandhu Bhava"
+          ],
+          "method_queries": [
+            "Effects of Ari’s Lord in Various Bhavas",
+            "Effects of Bandhu’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v64-ari-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Ari’s Lord is in Bandhu Bhava"
+            },
+            {
+              "step_id": "ch24-v64-ari-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be devoid maternal happiness"
+            },
+            {
+              "step_id": "ch24-v64-ari-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be intelligent, be a tale bearer"
+            },
+            {
+              "step_id": "ch24-v64-ari-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be jealous, evil-minded and very rich"
+            },
+            {
+              "step_id": "ch24-v64-ari-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Ari’s Lord is in Bandhu Bhava the native will be devoid maternal happiness"
+            },
+            {
+              "step_id": "ch24-v64-ari-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "6th lord is in 4th house"
+            },
+            {
+              "step_id": "ch24-v64-ari-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "6th lord is in 4th house the native will be devoid maternal happiness"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少六宫主是否落四宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v64-ari-lord-in-bandhu.step-001",
+        "action": "核对六宫主（Ari's Lord）是否落四宫（Bandhu Bhava），据此判断本人在母亲方面的安乐与性情。",
+        "applicability_scope": "仅限本命盘六宫主（Ari's Lord）落四宫（Bandhu Bhava）一条；本段原文在同偈句首自标「Effects of Ari’s Lord in Various Bhavas (up to Sloka 72)」；原文此句作 devoid maternal happiness（英译本原文如此）；原文未给时间限定。",
+        "minimum_supported_claim": "六宫主（Ari's Lord）落四宫（Bandhu Bhava）时，本人没有母亲方面的安乐，聪明而搬弄是非，善妒、心思不良、非常富有。",
+        "produced_fact_keys": [
+          "六宫主落四宫的母亲安乐与性情判定"
+        ],
+        "required_fact_keys": [
+          "六宫主（Ari's Lord）是否落四宫（Bandhu）"
+        ],
+        "condition_logic": {
+          "fact_key": "六宫主（Ari's Lord）是否落四宫（Bandhu）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Ari’s Lord is in Bandhu Bhava",
+              "claim": "六宫主（Ari's Lord）落四宫（Bandhu Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be devoid maternal happiness",
+              "claim": "本人没有母亲方面的安乐"
+            },
+            {
+              "quote": "be intelligent, be a tale bearer",
+              "claim": "聪明而搬弄是非"
+            },
+            {
+              "quote": "be jealous, evil-minded and very rich",
+              "claim": "善妒、心思不良、非常富有"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v64",
+            "quote": "If Ari’s Lord is in Bandhu Bhava, the native will be devoid maternal happiness, be intelligent, be a tale bearer, be jealous, evil-minded and very rich.",
+            "pdf_pages": [
+              45
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：六宫主（Ari's Lord）是否落四宫（Bandhu）。",
+        "stop_fact_keys": [
+          "六宫主（Ari's Lord）是否落四宫（Bandhu）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「没有母亲方面的安乐」写成母亲去世或母子分离等原文没有的情节。",
+          "不得据此推断财富数额或来源。",
+          "不得把本条套用到六宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "fce2f49f8a13d8b71355798c76059ff93776d4890a1195f364d51cd9b712207d"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v65-ari-lord-in-putr.step-001",
+      "method": {
+        "method": "ch24-v65-ari-lord-in-putr",
+        "title": "六宫主落五宫：财务起伏、与子友结怨、快乐自私而仁慈",
+        "target_house": 6,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的钱为什么总是忽多忽少",
+          "我和孩子、朋友之间会不会结怨"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Ari’s Lord is in Putr Bhava, the native will have fluctuating finances. He will incur enmity with his sons and friends",
+            "六宫主落五宫 财务起伏 与子女朋友结怨"
+          ],
+          "counter_queries": [
+            "One’s own sons will be his enemies, if Putr Lord is in Ari, while Ari Lord is with Guru",
+            "I now tell you of special combinations, giving wealth. One born to these Yogas will surely become wealthy"
+          ],
+          "boundary_queries": [
+            "Indications of Ari Bhava. Maternal uncle, doubts about death, enemies, ulcers, stepmother etc. are to be estimated from Ari Bhava",
+            "Indications of Putr Bhava. The learned should deduce from Putr Bhava amulets, sacred spells, learning, knowledge, sons, royalty (or authority), fall of position etc."
+          ],
+          "method_queries": [
+            "Effects of Ari’s Lord in Various Bhavas",
+            "Effects of Putr’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v65-ari-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Ari’s Lord is in Putr Bhava"
+            },
+            {
+              "step_id": "ch24-v65-ari-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will have fluctuating finances"
+            },
+            {
+              "step_id": "ch24-v65-ari-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "He will incur enmity with his sons and friends"
+            },
+            {
+              "step_id": "ch24-v65-ari-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "He will be happy, selfish and kind"
+            },
+            {
+              "step_id": "ch24-v65-ari-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Ari’s Lord is in Putr Bhava the native will have fluctuating finances"
+            },
+            {
+              "step_id": "ch24-v65-ari-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "6th lord is in 5th house"
+            },
+            {
+              "step_id": "ch24-v65-ari-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "6th lord is in 5th house the native will have fluctuating finances"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少六宫主是否落五宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v65-ari-lord-in-putr.step-001",
+        "action": "核对六宫主（Ari's Lord）是否落五宫（Putr Bhava），据此判断本人的财务起伏与同子女、朋友的关系。",
+        "applicability_scope": "仅限本命盘六宫主（Ari's Lord）落五宫（Putr Bhava）一条；本段原文在同偈句首自标「Effects of Ari’s Lord in Various Bhavas (up to Sloka 72)」；原文未给起伏的幅度、次数或时间限定。",
+        "minimum_supported_claim": "六宫主（Ari's Lord）落五宫（Putr Bhava）时，本人的财务起伏不定，会与自己的儿子和朋友结怨，本人快乐、自私而又仁慈。",
+        "produced_fact_keys": [
+          "六宫主落五宫的财务起伏与子友关系判定"
+        ],
+        "required_fact_keys": [
+          "六宫主（Ari's Lord）是否落五宫（Putr）"
+        ],
+        "condition_logic": {
+          "fact_key": "六宫主（Ari's Lord）是否落五宫（Putr）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Ari’s Lord is in Putr Bhava",
+              "claim": "六宫主（Ari's Lord）落五宫（Putr Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will have fluctuating finances",
+              "claim": "本人的财务起伏不定"
+            },
+            {
+              "quote": "He will incur enmity with his sons and friends",
+              "claim": "会与自己的儿子和朋友结怨"
+            },
+            {
+              "quote": "He will be happy, selfish and kind",
+              "claim": "本人快乐、自私而又仁慈"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v65",
+            "quote": "If Ari’s Lord is in Putr Bhava, the native will have fluctuating finances. He will incur enmity with his sons and friends. He will be happy, selfish and kind.",
+            "pdf_pages": [
+              45
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：六宫主（Ari's Lord）是否落五宫（Putr）。",
+        "stop_fact_keys": [
+          "六宫主（Ari's Lord）是否落五宫（Putr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「财务起伏」换算成具体金额、盈亏时点或投资建议。",
+          "不得把「与儿子和朋友结怨」坐实为断绝往来或具体事件。",
+          "不得把本条套用到六宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "84ab072f7233ad0cfba227b0e27b4ac092c1e05eb72a0610a7fcdf0aeeae12dc"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v66-ari-lord-in-ari.step-001",
+      "method": {
+        "method": "ch24-v66-ari-lord-in-ari",
+        "title": "六宫主落六宫：与族人结怨、对外人友善、财富等事上安乐中平",
+        "target_house": 6,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和亲族之间的关系怎么样",
+          "我这辈子的日子过得算好还是一般"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Ari’s Lord is in Ari Bhava, the native will have enmity with the group of his kinsmen, but be friendly to others",
+            "六宫主落六宫 与亲族结怨 对外人友善 安乐中平"
+          ],
+          "counter_queries": [
+            "If Gulik is in Ari Bhava, the native will be devoid of enemies, be strong-bodied, splendourous, liked by his wife"
+          ],
+          "boundary_queries": [
+            "Indications of Ari Bhava. Maternal uncle, doubts about death, enemies, ulcers, stepmother etc. are to be estimated from Ari Bhava"
+          ],
+          "method_queries": [
+            "Effects of Ari’s Lord in Various Bhavas",
+            "Effects of Ari Bhava"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v66-ari-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Ari’s Lord is in Ari Bhava"
+            },
+            {
+              "step_id": "ch24-v66-ari-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will have enmity with the group of his kinsmen"
+            },
+            {
+              "step_id": "ch24-v66-ari-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "but be friendly to others"
+            },
+            {
+              "step_id": "ch24-v66-ari-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will enjoy mediocre happiness in matters, like wealth"
+            },
+            {
+              "step_id": "ch24-v66-ari-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Ari’s Lord is in Ari Bhava the native will have enmity with the group of his kinsmen"
+            },
+            {
+              "step_id": "ch24-v66-ari-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "6th lord is in 6th house"
+            },
+            {
+              "step_id": "ch24-v66-ari-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "6th lord is in 6th house the native will have enmity with the group of his kinsmen"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少六宫主是否落六宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v66-ari-lord-in-ari.step-001",
+        "action": "核对六宫主（Ari's Lord）是否落六宫（Ari Bhava），据此判断本人与亲族、外人的关系以及安乐程度。",
+        "applicability_scope": "仅限本命盘六宫主（Ari's Lord）落六宫（Ari Bhava）一条；本段原文在同偈句首自标「Effects of Ari’s Lord in Various Bhavas (up to Sloka 72)」；原文用 in matters, like wealth 举例，未列全适用事项；原文未给时间限定。",
+        "minimum_supported_claim": "六宫主（Ari's Lord）落六宫（Ari Bhava）时，本人与自己一族的亲属结怨，但对外人友善，在财富一类事上享有中平的安乐。",
+        "produced_fact_keys": [
+          "六宫主落六宫的亲族关系与安乐程度判定"
+        ],
+        "required_fact_keys": [
+          "六宫主（Ari's Lord）是否落六宫（Ari）"
+        ],
+        "condition_logic": {
+          "fact_key": "六宫主（Ari's Lord）是否落六宫（Ari）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Ari’s Lord is in Ari Bhava",
+              "claim": "六宫主（Ari's Lord）落六宫（Ari Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will have enmity with the group of his kinsmen",
+              "claim": "本人与自己一族的亲属结怨"
+            },
+            {
+              "quote": "but be friendly to others",
+              "claim": "但对外人友善"
+            },
+            {
+              "quote": "will enjoy mediocre happiness in matters, like wealth",
+              "claim": "在财富一类事上享有中平的安乐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v66",
+            "quote": "If Ari’s Lord is in Ari Bhava, the native will have enmity with the group of his kinsmen, but be friendly to others and will enjoy mediocre happiness in matters, like wealth.",
+            "pdf_pages": [
+              45
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：六宫主（Ari's Lord）是否落六宫（Ari）。",
+        "stop_fact_keys": [
+          "六宫主（Ari's Lord）是否落六宫（Ari）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「中平的安乐」换算成具体财富数额或等级。",
+          "不得把原文举例的 wealth 扩大成全部生活领域。",
+          "不得把本条套用到六宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "56fdb4bb2982b22e702878ecdb5868f45fe832244776d61963f6597f0f92cea2"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v67-ari-lord-in-yuvati.step-001",
+      "method": {
+        "method": "ch24-v67-ari-lord-in-yuvati",
+        "title": "六宫主落七宫：婚姻上得不到安乐、有名望有德行受尊敬、有胆识而富有",
+        "target_house": 6,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的婚姻幸不幸福",
+          "我在事业名声上能有什么样的局面"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Ari’s Lord is in Yuvati Bhava, the native will be deprived of happiness through wedlock",
+            "六宫主落七宫 婚姻无乐 有名望 富有"
+          ],
+          "counter_queries": [
+            "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife",
+            "The native will beget a spouse endowed with (the seven principal) virtues, who will expand his dynasty by sons and grandsons"
+          ],
+          "boundary_queries": [
+            "Indications of Ari Bhava. Maternal uncle, doubts about death, enemies, ulcers, stepmother etc. are to be estimated from Ari Bhava",
+            "Indications of Yuvati Bhava. Wife, travel, trade, loss of sight, death etc. be known from Yuvati Bhava"
+          ],
+          "method_queries": [
+            "Effects of Ari’s Lord in Various Bhavas",
+            "Effects of Yuvati’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v67-ari-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Ari’s Lord is in Yuvati Bhava"
+            },
+            {
+              "step_id": "ch24-v67-ari-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be deprived of happiness through wedlock"
+            },
+            {
+              "step_id": "ch24-v67-ari-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "He will be famous, virtuous, honourable, adventurous and wealthy"
+            },
+            {
+              "step_id": "ch24-v67-ari-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Ari’s Lord is in Yuvati Bhava the native will be deprived of happiness through wedlock"
+            },
+            {
+              "step_id": "ch24-v67-ari-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "6th lord is in 7th house"
+            },
+            {
+              "step_id": "ch24-v67-ari-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "6th lord is in 7th house the native will be deprived of happiness through wedlock"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少六宫主是否落七宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v67-ari-lord-in-yuvati.step-001",
+        "action": "核对六宫主（Ari's Lord）是否落七宫（Yuvati Bhava），据此判断本人的婚姻安乐与名望财富。",
+        "applicability_scope": "仅限本命盘六宫主（Ari's Lord）落七宫（Yuvati Bhava）一条；本段原文在同偈句首自标「Effects of Ari’s Lord in Various Bhavas (up to Sloka 72)」；原文未给婚期、婚姻次数或时间限定。",
+        "minimum_supported_claim": "六宫主（Ari's Lord）落七宫（Yuvati Bhava）时，本人在婚姻上得不到安乐，本人有名望、有德行、受尊敬、有胆识而富有。",
+        "produced_fact_keys": [
+          "六宫主落七宫的婚姻安乐与名望判定"
+        ],
+        "required_fact_keys": [
+          "六宫主（Ari's Lord）是否落七宫（Yuvati）"
+        ],
+        "condition_logic": {
+          "fact_key": "六宫主（Ari's Lord）是否落七宫（Yuvati）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Ari’s Lord is in Yuvati Bhava",
+              "claim": "六宫主（Ari's Lord）落七宫（Yuvati Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be deprived of happiness through wedlock",
+              "claim": "本人在婚姻上得不到安乐"
+            },
+            {
+              "quote": "He will be famous, virtuous, honourable, adventurous and wealthy",
+              "claim": "本人有名望、有德行、受尊敬、有胆识而富有"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v67",
+            "quote": "If Ari’s Lord is in Yuvati Bhava, the native will be deprived of happiness through wedlock. He will be famous, virtuous, honourable, adventurous and wealthy.",
+            "pdf_pages": [
+              45
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：六宫主（Ari's Lord）是否落七宫（Yuvati）。",
+        "stop_fact_keys": [
+          "六宫主（Ari's Lord）是否落七宫（Yuvati）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「婚姻上得不到安乐」写成离异、丧偶或任何原文没有的结局。",
+          "不得据此推断结婚年龄或配偶身份。",
+          "不得把本条套用到六宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "777e1c73d66763c85b6a0f7f928e1d129cdc007afb9f01e3116757ebdd3dcd01"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v68-ari-lord-in-randhr.step-001",
+      "method": {
+        "method": "ch24-v68-ari-lord-in-randhr",
+        "title": "六宫主落八宫：多病与人为敌、贪他人之财、涉足他人之妻、不洁",
+        "target_house": 6,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我身体和人际上老出问题是怎么回事",
+          "我这个人的品行上有什么要注意的"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Ari’s Lord is in Randhr Bhava, the native will be sickly, inimical, will desire others’ wealth",
+            "六宫主落八宫 多病 与人为敌 不洁"
+          ],
+          "counter_queries": [
+            "If Dhum is in Ari Bhava, the native will be strong, will conquer his enemies, be very brilliant, famous and free from diseases"
+          ],
+          "boundary_queries": [
+            "Indications of Ari Bhava. Maternal uncle, doubts about death, enemies, ulcers, stepmother etc. are to be estimated from Ari Bhava",
+            "Indications of Randhr Bhava. Randhr Bhava indicates longevity, battle, enemies, forts, wealth of the dead and things, that have happened and are to happen",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "Effects of Ari’s Lord in Various Bhavas",
+            "Effects of Randhr’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v68-ari-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Ari’s Lord is in Randhr Bhava"
+            },
+            {
+              "step_id": "ch24-v68-ari-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be sickly, inimical"
+            },
+            {
+              "step_id": "ch24-v68-ari-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will desire others’ wealth"
+            },
+            {
+              "step_id": "ch24-v68-ari-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be interested in others’ wives and be impure"
+            },
+            {
+              "step_id": "ch24-v68-ari-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Ari’s Lord is in Randhr Bhava the native will be sickly, inimical"
+            },
+            {
+              "step_id": "ch24-v68-ari-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "6th lord is in 8th house"
+            },
+            {
+              "step_id": "ch24-v68-ari-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "6th lord is in 8th house the native will be sickly, inimical"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少六宫主是否落八宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v68-ari-lord-in-randhr.step-001",
+        "action": "核对六宫主（Ari's Lord）是否落八宫（Randhr Bhava），据此判断本人的健康、人际与品行倾向。",
+        "applicability_scope": "仅限本命盘六宫主（Ari's Lord）落八宫（Randhr Bhava）一条；原文以男命立说（others’ wives），女命命中时结论不能照搬；本段原文在同偈句首自标「Effects of Ari’s Lord in Various Bhavas (up to Sloka 72)」；原文未给发病年龄或时间限定。",
+        "minimum_supported_claim": "六宫主（Ari's Lord）落八宫（Randhr Bhava）时，本人多病、与人为敌，贪求他人的财物，对他人之妻有意且不洁。",
+        "produced_fact_keys": [
+          "六宫主落八宫的健康与品行判定"
+        ],
+        "required_fact_keys": [
+          "六宫主（Ari's Lord）是否落八宫（Randhr）"
+        ],
+        "condition_logic": {
+          "fact_key": "六宫主（Ari's Lord）是否落八宫（Randhr）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Ari’s Lord is in Randhr Bhava",
+              "claim": "六宫主（Ari's Lord）落八宫（Randhr Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be sickly, inimical",
+              "claim": "本人多病、与人为敌"
+            },
+            {
+              "quote": "will desire others’ wealth",
+              "claim": "贪求他人的财物"
+            },
+            {
+              "quote": "be interested in others’ wives and be impure",
+              "claim": "对他人之妻有意且不洁"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v68",
+            "quote": "If Ari’s Lord is in Randhr Bhava, the native will be sickly, inimical, will desire others’ wealth, be interested in others’ wives and be impure.",
+            "pdf_pages": [
+              45
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：六宫主（Ari's Lord）是否落八宫（Randhr）。",
+        "stop_fact_keys": [
+          "六宫主（Ari's Lord）是否落八宫（Randhr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体病名、病程或发病年份。",
+          "不得把品行倾向坐实为具体事件、对象或后果。",
+          "不得把本条套用到六宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "c13832ac98e9d4ba89d211f4888f3a41025bd55271b7aae0e1036342da429ee8"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v69-ari-lord-in-dharm.step-001",
+      "method": {
+        "method": "ch24-v69-ari-lord-in-dharm",
+        "title": "六宫主落九宫：经营木材与石料、行业运势起伏",
+        "target_house": 6,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我适合做什么样的行当",
+          "我事业上的起伏是怎么回事"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Ari’s Lord is in Dharm Bhava, the native will trade in wood and stones",
+            "六宫主落九宫 木材石料 行业起伏"
+          ],
+          "counter_queries": [
+            "One will be fortunate (or affluent), if Dharm’s Lord is in Dharm Bhava with strength"
+          ],
+          "boundary_queries": [
+            "Indications of Ari Bhava. Maternal uncle, doubts about death, enemies, ulcers, stepmother etc. are to be estimated from Ari Bhava",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava"
+          ],
+          "method_queries": [
+            "Effects of Ari’s Lord in Various Bhavas",
+            "Effects of Dharm’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v69-ari-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Ari’s Lord is in Dharm Bhava"
+            },
+            {
+              "step_id": "ch24-v69-ari-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will trade in wood and stones"
+            },
+            {
+              "step_id": "ch24-v69-ari-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will have fluctuating professional fortunes"
+            },
+            {
+              "step_id": "ch24-v69-ari-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Ari’s Lord is in Dharm Bhava the native will trade in wood and stones"
+            },
+            {
+              "step_id": "ch24-v69-ari-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "6th lord is in 9th house"
+            },
+            {
+              "step_id": "ch24-v69-ari-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "6th lord is in 9th house the native will trade in wood and stones"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少六宫主是否落九宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v69-ari-lord-in-dharm.step-001",
+        "action": "核对六宫主（Ari's Lord）是否落九宫（Dharm Bhava），据此判断本人的经营门类与行业起伏。",
+        "applicability_scope": "仅限本命盘六宫主（Ari's Lord）落九宫（Dharm Bhava）一条；原文在此附有译本注记「‘Pashan’ also means poison」，该注记不并入结论；本段原文在同偈句首自标「Effects of Ari’s Lord in Various Bhavas (up to Sloka 72)」；原文未给行业规模、盈亏或时间限定。",
+        "minimum_supported_claim": "六宫主（Ari's Lord）落九宫（Dharm Bhava）时，本人经营木材与石料，行业上的运势起伏不定。",
+        "produced_fact_keys": [
+          "六宫主落九宫的行业与运势起伏判定"
+        ],
+        "required_fact_keys": [
+          "六宫主（Ari's Lord）是否落九宫（Dharm）"
+        ],
+        "condition_logic": {
+          "fact_key": "六宫主（Ari's Lord）是否落九宫（Dharm）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Ari’s Lord is in Dharm Bhava",
+              "claim": "六宫主（Ari's Lord）落九宫（Dharm Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will trade in wood and stones",
+              "claim": "本人经营木材与石料"
+            },
+            {
+              "quote": "will have fluctuating professional fortunes",
+              "claim": "行业上的运势起伏不定"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v69",
+            "quote": "If Ari’s Lord is in Dharm Bhava, the native will trade in wood and stones (‘Pashan’ also means poison) and will have fluctuating professional fortunes.",
+            "pdf_pages": [
+              45
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：六宫主（Ari's Lord）是否落九宫（Dharm）。",
+        "stop_fact_keys": [
+          "六宫主（Ari's Lord）是否落九宫（Dharm）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据译本注记把结论扩大到毒物一类行当——那是注记，不是断语本身。",
+          "不得把「运势起伏」换算成具体盈亏金额或时点。",
+          "不得把本条套用到六宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "348cfb2725509ffb8d92bb2d566ce502ad46fae841a13796a17d8b21835ef10e"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch24:v59": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v59",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "59.",
+      "content_role": "verse",
+      "exact_text": "59. If Putr’s Lord is in Labh Bhava, the native will be learned, dear to people, be an author of treatises, be very skilful and be endowed with many sons and wealth.",
+      "pdf_pages": [
+        44
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 59 · PDF page 44 · bphs-97:santhanam:ch24:v59",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v58",
+      "next_atom_id": "bphs-97:santhanam:ch24:v60",
+      "context_before": "e in his race.\n\n58. If Putr’s Lord is in Karm Bhava, the native will enjoy a Raj Yog and various pleasures and be very famous.\n\n",
+      "context_after": "60. If Putr’s Lord is in Vyaya Bhava, the native will be bereft of happiness from his own sons, will have an adopted, or purchas",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v60": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v60",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "60.",
+      "content_role": "verse",
+      "exact_text": "60. If Putr’s Lord is in Vyaya Bhava, the native will be bereft of happiness from his own sons, will have an adopted, or purchased son.",
+      "pdf_pages": [
+        44
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 60 · PDF page 44 · bphs-97:santhanam:ch24:v60",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v59",
+      "next_atom_id": "bphs-97:santhanam:ch24:v61",
+      "context_before": " If Putr’s Lord is in Labh Bhava, the native will be learned, dear to people, be an author of treatises, be very skilful and be endowed with many sons and wealth.\n\n",
+      "context_after": "61. Effects of Ari’s Lord in Various Bhavas (up to Sloka 72). If Ari’s Lord is in Tanu Bhava, the native will be sickly, famous,",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v61": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v61",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "61.",
+      "content_role": "verse",
+      "exact_text": "61. Effects of Ari’s Lord in Various Bhavas (up to Sloka 72). If Ari’s Lord is in Tanu Bhava, the native will be sickly, famous, inimical to his own men, rich, honourable, adventurous and virtuous.",
+      "pdf_pages": [
+        44
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 61 · PDF page 44 · bphs-97:santhanam:ch24:v61",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v60",
+      "next_atom_id": "bphs-97:santhanam:ch24:v62",
+      "context_before": " If Putr’s Lord is in Vyaya Bhava, the native will be bereft of happiness from his own sons, will have an adopted, or purchased son.\n\n",
+      "context_after": "62. If Ari’s Lord is in Dhan Bhava, the native will be adventurous, famous among his people, will live in alien countries, be ha",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v62": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v62",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "62.",
+      "content_role": "verse",
+      "exact_text": "62. If Ari’s Lord is in Dhan Bhava, the native will be adventurous, famous among his people, will live in alien countries, be happy, be a skilful speaker and be always interested in his own work.",
+      "pdf_pages": [
+        45
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 62 · PDF page 45 · bphs-97:santhanam:ch24:v62",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v61",
+      "next_atom_id": "bphs-97:santhanam:ch24:v63",
+      "context_before": " If Ari’s Lord is in Tanu Bhava, the native will be sickly, famous, inimical to his own men, rich, honourable, adventurous and virtuous.\n\n<!-- SOURCE_PAGE 45 -->\n\n",
+      "context_after": "63. If Ari’s Lord is in Sahaj Bhava, the native will be given to anger, be bereft of courage, inimical to all of his co-born and",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v63": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v63",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "63.",
+      "content_role": "verse",
+      "exact_text": "63. If Ari’s Lord is in Sahaj Bhava, the native will be given to anger, be bereft of courage, inimical to all of his co-born and will have disobedient servants.",
+      "pdf_pages": [
+        45
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 63 · PDF page 45 · bphs-97:santhanam:ch24:v63",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v62",
+      "next_atom_id": "bphs-97:santhanam:ch24:v64",
+      "context_before": " If Ari’s Lord is in Dhan Bhava, the native will be adventurous, famous among his people, will live in alien countries, be happy, be a skilful speaker and be always interested in his own work.\n\n",
+      "context_after": "64. If Ari’s Lord is in Bandhu Bhava, the native will be devoid maternal happiness, be intelligent, be a tale bearer, be jealous",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v64": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v64",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "64.",
+      "content_role": "verse",
+      "exact_text": "64. If Ari’s Lord is in Bandhu Bhava, the native will be devoid maternal happiness, be intelligent, be a tale bearer, be jealous, evil-minded and very rich.",
+      "pdf_pages": [
+        45
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 64 · PDF page 45 · bphs-97:santhanam:ch24:v64",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v63",
+      "next_atom_id": "bphs-97:santhanam:ch24:v65",
+      "context_before": " If Ari’s Lord is in Sahaj Bhava, the native will be given to anger, be bereft of courage, inimical to all of his co-born and will have disobedient servants.\n\n",
+      "context_after": "65. If Ari’s Lord is in Putr Bhava, the native will have fluctuating finances. He will incur enmity with his sons and friends. H",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v65": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v65",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "65.",
+      "content_role": "verse",
+      "exact_text": "65. If Ari’s Lord is in Putr Bhava, the native will have fluctuating finances. He will incur enmity with his sons and friends. He will be happy, selfish and kind.",
+      "pdf_pages": [
+        45
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 65 · PDF page 45 · bphs-97:santhanam:ch24:v65",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v64",
+      "next_atom_id": "bphs-97:santhanam:ch24:v66",
+      "context_before": " If Ari’s Lord is in Bandhu Bhava, the native will be devoid maternal happiness, be intelligent, be a tale bearer, be jealous, evil-minded and very rich.\n\n",
+      "context_after": "66. If Ari’s Lord is in Ari Bhava, the native will have enmity with the group of his kinsmen, but be friendly to others and will",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v66": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v66",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "66.",
+      "content_role": "verse",
+      "exact_text": "66. If Ari’s Lord is in Ari Bhava, the native will have enmity with the group of his kinsmen, but be friendly to others and will enjoy mediocre happiness in matters, like wealth.",
+      "pdf_pages": [
+        45
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 66 · PDF page 45 · bphs-97:santhanam:ch24:v66",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v65",
+      "next_atom_id": "bphs-97:santhanam:ch24:v67",
+      "context_before": "the native will have fluctuating finances. He will incur enmity with his sons and friends. He will be happy, selfish and kind.\n\n",
+      "context_after": "67. If Ari’s Lord is in Yuvati Bhava, the native will be deprived of happiness through wedlock. He will be famous, virtuous, hon",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v67": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v67",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "67.",
+      "content_role": "verse",
+      "exact_text": "67. If Ari’s Lord is in Yuvati Bhava, the native will be deprived of happiness through wedlock. He will be famous, virtuous, honourable, adventurous and wealthy.",
+      "pdf_pages": [
+        45
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 67 · PDF page 45 · bphs-97:santhanam:ch24:v67",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v66",
+      "next_atom_id": "bphs-97:santhanam:ch24:v68",
+      "context_before": " If Ari’s Lord is in Ari Bhava, the native will have enmity with the group of his kinsmen, but be friendly to others and will enjoy mediocre happiness in matters, like wealth.\n\n",
+      "context_after": "68. If Ari’s Lord is in Randhr Bhava, the native will be sickly, inimical, will desire others’ wealth, be interested in others’ ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v68": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v68",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "68.",
+      "content_role": "verse",
+      "exact_text": "68. If Ari’s Lord is in Randhr Bhava, the native will be sickly, inimical, will desire others’ wealth, be interested in others’ wives and be impure.",
+      "pdf_pages": [
+        45
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 68 · PDF page 45 · bphs-97:santhanam:ch24:v68",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v67",
+      "next_atom_id": "bphs-97:santhanam:ch24:v69",
+      "context_before": "a, the native will be deprived of happiness through wedlock. He will be famous, virtuous, honourable, adventurous and wealthy.\n\n",
+      "context_after": "69. If Ari’s Lord is in Dharm Bhava, the native will trade in wood and stones (‘Pashan’ also means poison) and will have fluctua",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v69": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v69",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "69.",
+      "content_role": "verse",
+      "exact_text": "69. If Ari’s Lord is in Dharm Bhava, the native will trade in wood and stones (‘Pashan’ also means poison) and will have fluctuating professional fortunes.",
+      "pdf_pages": [
+        45
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 69 · PDF page 45 · bphs-97:santhanam:ch24:v69",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v68",
+      "next_atom_id": "bphs-97:santhanam:ch24:v70",
+      "context_before": " If Ari’s Lord is in Randhr Bhava, the native will be sickly, inimical, will desire others’ wealth, be interested in others’ wives and be impure.\n\n",
+      "context_after": "70. If Ari’s Lord is in Karm Bhava, the native will be well known among his men, will not be respectfully disposed to his father",
+      "content_missing": false
+    }
+  }
+}

@@ -1,0 +1,1784 @@
+{
+  "shard": 4,
+  "step_count": 11,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch24-v81-yuvati-lord-in-dharm.step-001",
+      "method": {
+        "method": "ch24-v81-yuvati-lord-in-dharm",
+        "title": "七宫主落九宫：与多名女性结合、对自己的妻子相待和睦、事务繁多",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我在感情上会不会牵扯很多人",
+          "我手上的事情为什么总是很多"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Yuvati’s Lord is in Dharm Bhava, the native will have union with many women, be well disposed to his own wife",
+            "七宫主落九宫 与多名女性结合 事务繁多"
+          ],
+          "counter_queries": [
+            "If Chandra is in Yuvati, as Yuvati Lord is in Vyaya and the Karaka (indicator Shukr) is bereft of strength, the native will not be endowed with marital happiness",
+            "If Yuvati Bhava, or its Lord is yuti with a malefic the native’s wife will incur evils"
+          ],
+          "boundary_queries": [
+            "Indications of Yuvati Bhava. Wife, travel, trade, loss of sight, death etc. be known from Yuvati Bhava",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "Effects of Yuvati’s Lord in Various Bhavas",
+            "Effects of Dharm’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v81-yuvati-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Yuvati’s Lord is in Dharm Bhava"
+            },
+            {
+              "step_id": "ch24-v81-yuvati-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will have union with many women"
+            },
+            {
+              "step_id": "ch24-v81-yuvati-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be well disposed to his own wife"
+            },
+            {
+              "step_id": "ch24-v81-yuvati-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will have many undertakings"
+            },
+            {
+              "step_id": "ch24-v81-yuvati-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Yuvati’s Lord is in Dharm Bhava the native will have union with many women"
+            },
+            {
+              "step_id": "ch24-v81-yuvati-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "7th lord is in 9th house"
+            },
+            {
+              "step_id": "ch24-v81-yuvati-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "7th lord is in 9th house the native will have union with many women"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少七宫主是否落九宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v81-yuvati-lord-in-dharm.step-001",
+        "action": "核对七宫主（Yuvati's Lord）是否落九宫（Dharm Bhava），据此判断本人的感情牵涉与所担事务。",
+        "applicability_scope": "仅限本命盘七宫主（Yuvati's Lord）落九宫（Dharm Bhava）一条；原文以男命立说（many women、his own wife），女命命中时结论不能照搬；本段原文自标「Effects of Yuvati’s Lord in Various Bhavas (up to Sloka 84)」；原文未给人数、时间或事务性质。",
+        "minimum_supported_claim": "七宫主（Yuvati's Lord）落九宫（Dharm Bhava）时，本人会与多名女性结合，对自己的妻子相待和睦，手上的事务繁多。",
+        "produced_fact_keys": [
+          "七宫主落九宫的感情牵涉与事务判定"
+        ],
+        "required_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落九宫（Dharm）"
+        ],
+        "condition_logic": {
+          "fact_key": "七宫主（Yuvati's Lord）是否落九宫（Dharm）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Yuvati’s Lord is in Dharm Bhava",
+              "claim": "七宫主（Yuvati's Lord）落九宫（Dharm Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will have union with many women",
+              "claim": "本人会与多名女性结合"
+            },
+            {
+              "quote": "be well disposed to his own wife",
+              "claim": "对自己的妻子相待和睦"
+            },
+            {
+              "quote": "will have many undertakings",
+              "claim": "手上的事务繁多"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v81",
+            "quote": "If Yuvati’s Lord is in Dharm Bhava, the native will have union with many women, be well disposed to his own wife and will have many undertakings.",
+            "pdf_pages": [
+              46
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：七宫主（Yuvati's Lord）是否落九宫（Dharm）。",
+        "stop_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落九宫（Dharm）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「与多名女性结合」写成确定的人数、身份或婚姻次数。",
+          "不得据此推断事务的行业、成败或时间。",
+          "不得把本条套用到七宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "03be12e19c9b47c8dbe4e17460e91b5ffba558cd565e8a5f2ffec6ea6cff2262"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v82-yuvati-lord-in-karm.step-001",
+      "method": {
+        "method": "ch24-v82-yuvati-lord-in-karm",
+        "title": "七宫主落十宫：得不听命的妻子、虔敬、具备财富与子嗣等",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和配偶谁更强势",
+          "我这辈子财富和子女方面怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Yuvati’s Lord is in Karm Bhava, the native will beget a disobedient wife, will be religious and endowed with wealth",
+            "七宫主落十宫 妻子不听命 虔敬 财富子嗣"
+          ],
+          "counter_queries": [
+            "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife",
+            "The native will beget a spouse endowed with (the seven principal) virtues, who will expand his dynasty by sons and grandsons"
+          ],
+          "boundary_queries": [
+            "Indications of Yuvati Bhava. Wife, travel, trade, loss of sight, death etc. be known from Yuvati Bhava",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "Effects of Yuvati’s Lord in Various Bhavas",
+            "Effects of Karm’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v82-yuvati-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Yuvati’s Lord is in Karm Bhava"
+            },
+            {
+              "step_id": "ch24-v82-yuvati-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will beget a disobedient wife"
+            },
+            {
+              "step_id": "ch24-v82-yuvati-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be religious and endowed with wealth, sons etc"
+            },
+            {
+              "step_id": "ch24-v82-yuvati-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Yuvati’s Lord is in Karm Bhava the native will beget a disobedient wife"
+            },
+            {
+              "step_id": "ch24-v82-yuvati-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "7th lord is in 10th house"
+            },
+            {
+              "step_id": "ch24-v82-yuvati-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "7th lord is in 10th house the native will beget a disobedient wife"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少七宫主是否落十宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v82-yuvati-lord-in-karm.step-001",
+        "action": "核对七宫主（Yuvati's Lord）是否落十宫（Karm Bhava），据此判断配偶的顺逆与本人的财富子嗣。",
+        "applicability_scope": "仅限本命盘七宫主（Yuvati's Lord）落十宫（Karm Bhava）一条；原文以男命立说（a disobedient wife），断语主语之一是妻子，女命命中时结论不能照搬；原文用 etc. 收尾，未列全项目；本段原文自标「Effects of Yuvati’s Lord in Various Bhavas (up to Sloka 84)」；原文未给时间限定。",
+        "minimum_supported_claim": "七宫主（Yuvati's Lord）落十宫（Karm Bhava）时，本人会娶到不听命的妻子，本人虔敬，并具备财富、子嗣等。",
+        "produced_fact_keys": [
+          "七宫主落十宫的配偶顺逆与财富子嗣判定"
+        ],
+        "required_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落十宫（Karm）"
+        ],
+        "condition_logic": {
+          "fact_key": "七宫主（Yuvati's Lord）是否落十宫（Karm）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Yuvati’s Lord is in Karm Bhava",
+              "claim": "七宫主（Yuvati's Lord）落十宫（Karm Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will beget a disobedient wife",
+              "claim": "本人会娶到不听命的妻子"
+            },
+            {
+              "quote": "will be religious and endowed with wealth, sons etc",
+              "claim": "本人虔敬，并具备财富、子嗣等"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v82",
+            "quote": "If Yuvati’s Lord is in Karm Bhava, the native will beget a disobedient wife, will be religious and endowed with wealth, sons etc.",
+            "pdf_pages": [
+              46
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：七宫主（Yuvati's Lord）是否落十宫（Karm）。",
+        "stop_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落十宫（Karm）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 etc. 自行补出原文没有列举的项目。",
+          "不得把「不听命」写成争执、分居或离异等原文没有的结局。",
+          "不得据此推断子女人数或财富数额。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "4b44b291a5d3035b587433d6fc31cf7c881ca586633f47c617b4f1e645236344"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v83-yuvati-lord-in-labh.step-001",
+      "method": {
+        "method": "ch24-v83-yuvati-lord-in-labh",
+        "title": "七宫主落十一宫：经由妻子得财、子嗣方面安乐较少、会有女儿",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的财会不会从配偶那边来",
+          "我会生儿子还是女儿"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Yuvati’s Lord is in Labh Bhava, the native will gain wealth through his wife, be endowed with less happiness from sons",
+            "七宫主落十一宫 经由妻子得财 女儿"
+          ],
+          "counter_queries": [
+            "If Putr’s Lord is exalted, or be in Dhan, Putr, or Dharm Bhava, or be yuti with, or drishtied by Guru, obtainment of children will be there",
+            "There will be many children, if Putr’s Lord is strong, while Putr is drishtied by strong Budh, Guru and Shukr"
+          ],
+          "boundary_queries": [
+            "Indications of Yuvati Bhava. Wife, travel, trade, loss of sight, death etc. be known from Yuvati Bhava",
+            "Indications of Labh Bhava. All articles, son’s wife, income, prosperity, quadrupeds etc. are to be understood from Labh Bhava",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "Effects of Yuvati’s Lord in Various Bhavas",
+            "Effects of Labh’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v83-yuvati-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Yuvati’s Lord is in Labh Bhava"
+            },
+            {
+              "step_id": "ch24-v83-yuvati-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will gain wealth through his wife"
+            },
+            {
+              "step_id": "ch24-v83-yuvati-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be endowed with less happiness from sons etc"
+            },
+            {
+              "step_id": "ch24-v83-yuvati-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will have daughters"
+            },
+            {
+              "step_id": "ch24-v83-yuvati-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Yuvati’s Lord is in Labh Bhava the native will gain wealth through his wife"
+            },
+            {
+              "step_id": "ch24-v83-yuvati-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "7th lord is in 11th house"
+            },
+            {
+              "step_id": "ch24-v83-yuvati-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "7th lord is in 11th house the native will gain wealth through his wife"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少七宫主是否落十一宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v83-yuvati-lord-in-labh.step-001",
+        "action": "核对七宫主（Yuvati's Lord）是否落十一宫（Labh Bhava），据此判断本人的进财来源与子女方面的处境。",
+        "applicability_scope": "仅限本命盘七宫主（Yuvati's Lord）落十一宫（Labh Bhava）一条；原文以男命立说（his wife），女命命中时结论不能照搬；原文用 etc. 收尾，未列全项目；本段原文自标「Effects of Yuvati’s Lord in Various Bhavas (up to Sloka 84)」；原文未给子女人数、财富数额或时间限定。",
+        "minimum_supported_claim": "七宫主（Yuvati's Lord）落十一宫（Labh Bhava）时，本人经由妻子得财，从儿子等处所得的安乐较少，会有女儿。",
+        "produced_fact_keys": [
+          "七宫主落十一宫的进财来源与子女判定"
+        ],
+        "required_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落十一宫（Labh）"
+        ],
+        "condition_logic": {
+          "fact_key": "七宫主（Yuvati's Lord）是否落十一宫（Labh）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Yuvati’s Lord is in Labh Bhava",
+              "claim": "七宫主（Yuvati's Lord）落十一宫（Labh Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will gain wealth through his wife",
+              "claim": "本人经由妻子得财"
+            },
+            {
+              "quote": "be endowed with less happiness from sons etc",
+              "claim": "从儿子等处所得的安乐较少"
+            },
+            {
+              "quote": "will have daughters",
+              "claim": "会有女儿"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v83",
+            "quote": "If Yuvati’s Lord is in Labh Bhava, the native will gain wealth through his wife, be endowed with less happiness from sons etc. and will have daughters.",
+            "pdf_pages": [
+              46
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：七宫主（Yuvati's Lord）是否落十一宫（Labh）。",
+        "stop_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落十一宫（Labh）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「安乐较少」升格成没有儿子或失去儿子。",
+          "不得据此推断女儿人数或生育年份。",
+          "不得把本条套用到七宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "1c1a9a4f5ae695a1e5b26da1ce952974950589edb508e48f820ae5d57f88c9d7"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v84-yuvati-lord-in-vyaya.step-001",
+      "method": {
+        "method": "ch24-v84-yuvati-lord-in-vyaya",
+        "title": "七宫主落十二宫：陷入贫困、吝啬、生计与衣物有关、妻子挥霍",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我为什么总是缺钱",
+          "我靠什么行当谋生"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Yuvati’s Lord is in Vyaya Bhava, the native will incur penury, be a miser and his livelihood will be related to clothes",
+            "七宫主落十二宫 贫困 吝啬 生计与衣物 妻子挥霍"
+          ],
+          "counter_queries": [
+            "I now tell you of special combinations, giving wealth. One born to these Yogas will surely become wealthy",
+            "There will be expenses on good accounts, if Vyaya’s Lord is with a benefic, or in his own Bhava, or exalted, or, if a benefic occupies Vyaya"
+          ],
+          "boundary_queries": [
+            "Indications of Yuvati Bhava. Wife, travel, trade, loss of sight, death etc. be known from Yuvati Bhava",
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "Effects of Yuvati’s Lord in Various Bhavas",
+            "Effects of Vyaya’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v84-yuvati-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Yuvati’s Lord is in Vyaya Bhava"
+            },
+            {
+              "step_id": "ch24-v84-yuvati-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will incur penury, be a miser"
+            },
+            {
+              "step_id": "ch24-v84-yuvati-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "his livelihood will be related to clothes"
+            },
+            {
+              "step_id": "ch24-v84-yuvati-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "His wife will be a spendthrift"
+            },
+            {
+              "step_id": "ch24-v84-yuvati-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Yuvati’s Lord is in Vyaya Bhava the native will incur penury, be a miser"
+            },
+            {
+              "step_id": "ch24-v84-yuvati-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "7th lord is in 12th house"
+            },
+            {
+              "step_id": "ch24-v84-yuvati-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "7th lord is in 12th house the native will incur penury, be a miser"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少七宫主是否落十二宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v84-yuvati-lord-in-vyaya.step-001",
+        "action": "核对七宫主（Yuvati's Lord）是否落十二宫（Vyaya Bhava），据此判断本人的贫困、生计门类与配偶的花费习惯。",
+        "applicability_scope": "仅限本命盘七宫主（Yuvati's Lord）落十二宫（Vyaya Bhava）一条；原文以男命立说（His wife），断语主语之一是妻子，女命命中时结论不能照搬；本段原文自标「Effects of Yuvati’s Lord in Various Bhavas (up to Sloka 84)」；原文未给贫困程度、行业细目或时间限定。",
+        "minimum_supported_claim": "七宫主（Yuvati's Lord）落十二宫（Vyaya Bhava）时，本人陷入贫困、为人吝啬，其生计与衣物有关，其妻子挥霍无度。",
+        "produced_fact_keys": [
+          "七宫主落十二宫的贫困生计与配偶花费判定"
+        ],
+        "required_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落十二宫（Vyaya）"
+        ],
+        "condition_logic": {
+          "fact_key": "七宫主（Yuvati's Lord）是否落十二宫（Vyaya）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Yuvati’s Lord is in Vyaya Bhava",
+              "claim": "七宫主（Yuvati's Lord）落十二宫（Vyaya Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will incur penury, be a miser",
+              "claim": "本人陷入贫困、为人吝啬"
+            },
+            {
+              "quote": "his livelihood will be related to clothes",
+              "claim": "其生计与衣物有关"
+            },
+            {
+              "quote": "His wife will be a spendthrift",
+              "claim": "其妻子挥霍无度"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v84",
+            "quote": "If Yuvati’s Lord is in Vyaya Bhava, the native will incur penury, be a miser and his livelihood will be related to clothes. His wife will be a spendthrift.",
+            "pdf_pages": [
+              46
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：七宫主（Yuvati's Lord）是否落十二宫（Vyaya）。",
+        "stop_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落十二宫（Vyaya）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「与衣物有关」坐实为某一具体职业或店铺。",
+          "不得据此推断贫困发生的年份或程度。",
+          "不得把本条套用到七宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "183c1dd19d3376f8ba23846fd04f334a76bd68658d612c523de1f6110d1e3427"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v85-randhr-lord-in-tanu.step-001",
+      "method": {
+        "method": "ch24-v85-randhr-lord-in-tanu",
+        "title": "八宫主落上升宫：身体上没有安适、受创伤之苦、敌视神明与婆罗门",
+        "target_house": 8,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我身体上为什么总不舒服",
+          "我容易受伤吗"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Randhr’s Lord is in Tanu Bhava, the native will be devoid of physical felicity and will suffer from wounds",
+            "八宫主落上升宫 身体不安适 受创伤"
+          ],
+          "counter_queries": [
+            "If Randhr’s Lord is in an angle, long life is indicated"
+          ],
+          "boundary_queries": [
+            "Indications of Randhr Bhava. Randhr Bhava indicates longevity, battle, enemies, forts, wealth of the dead and things, that have happened and are to happen",
+            "Indications of Tanu Bhava. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour, weakness, happiness, grief and innate nature"
+          ],
+          "method_queries": [
+            "Effects of Randhr’s Lord in Various Bhavas",
+            "Effects of Randhr Bhava"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v85-randhr-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Randhr’s Lord is in Tanu Bhava"
+            },
+            {
+              "step_id": "ch24-v85-randhr-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be devoid of physical felicity"
+            },
+            {
+              "step_id": "ch24-v85-randhr-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will suffer from wounds"
+            },
+            {
+              "step_id": "ch24-v85-randhr-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "He will be hostile to gods and Brahmins"
+            },
+            {
+              "step_id": "ch24-v85-randhr-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Randhr’s Lord is in Tanu Bhava the native will be devoid of physical felicity"
+            },
+            {
+              "step_id": "ch24-v85-randhr-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "8th lord is in 1st house"
+            },
+            {
+              "step_id": "ch24-v85-randhr-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "8th lord is in 1st house the native will be devoid of physical felicity"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少八宫主是否落第一宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v85-randhr-lord-in-tanu.step-001",
+        "action": "核对八宫主（Randhr's Lord）是否落第一宫（Tanu Bhava），据此判断本人的身体安适与受创倾向。",
+        "applicability_scope": "仅限本命盘八宫主（Randhr's Lord）落第一宫一条；原文本句把第一宫写作 Tanu Bhava（本书 ch11:v2 即以 Tanu Bhava 为第一宫），事实名沿用已有的上升宫（Lagna）写法；本段原文在同偈句首自标「Effects of Randhr’s Lord in Various Bhavas (up to Sloka 96)」；原文未给受伤部位、原因或时间限定。",
+        "minimum_supported_claim": "八宫主（Randhr's Lord）落上升宫（Tanu）时，本人身体上没有安适，会受创伤之苦，本人敌视神明与婆罗门。",
+        "produced_fact_keys": [
+          "八宫主落上升宫的身体安适与创伤判定"
+        ],
+        "required_fact_keys": [
+          "八宫主（Randhr's Lord）是否落上升宫（Lagna）"
+        ],
+        "condition_logic": {
+          "fact_key": "八宫主（Randhr's Lord）是否落上升宫（Lagna）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Randhr’s Lord is in Tanu Bhava",
+              "claim": "八宫主（Randhr's Lord）落上升宫（Tanu）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be devoid of physical felicity",
+              "claim": "本人身体上没有安适"
+            },
+            {
+              "quote": "will suffer from wounds",
+              "claim": "会受创伤之苦"
+            },
+            {
+              "quote": "He will be hostile to gods and Brahmins",
+              "claim": "本人敌视神明与婆罗门"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v85",
+            "quote": "If Randhr’s Lord is in Tanu Bhava, the native will be devoid of physical felicity and will suffer from wounds. He will be hostile to gods and Brahmins.",
+            "pdf_pages": [
+              46
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：八宫主（Randhr's Lord）是否落上升宫（Lagna）。",
+        "stop_fact_keys": [
+          "八宫主（Randhr's Lord）是否落上升宫（Lagna）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断受伤的部位、原因或年份。",
+          "不得把「没有安适」写成短寿或重病。",
+          "不得把本条套用到八宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "e166a5cd8c0ff4a8cde3b72c26ee942e0d97fa44c78127f452ece4acb8f0027d"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v86-randhr-lord-in-dhan.step-001",
+      "method": {
+        "method": "ch24-v86-randhr-lord-in-dhan",
+        "title": "八宫主落二宫：身体没有精力、财富有限、失去的财不会再得回",
+        "target_house": 8,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的财能不能守住",
+          "丢掉的钱还能不能回来"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Randhr’s Lord is in Dhan Bhava, the native will be devoid of bodily vigour, will enjoy a little wealth",
+            "八宫主落二宫 没有精力 财富有限 失财难回"
+          ],
+          "counter_queries": [
+            "I now tell you of special combinations, giving wealth. One born to these Yogas will surely become wealthy"
+          ],
+          "boundary_queries": [
+            "Indications of Randhr Bhava. Randhr Bhava indicates longevity, battle, enemies, forts, wealth of the dead and things, that have happened and are to happen",
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava"
+          ],
+          "method_queries": [
+            "Effects of Randhr’s Lord in Various Bhavas",
+            "Effects of Dhan’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v86-randhr-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Randhr’s Lord is in Dhan Bhava"
+            },
+            {
+              "step_id": "ch24-v86-randhr-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be devoid of bodily vigour"
+            },
+            {
+              "step_id": "ch24-v86-randhr-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will enjoy a little wealth"
+            },
+            {
+              "step_id": "ch24-v86-randhr-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will not regain lost wealth"
+            },
+            {
+              "step_id": "ch24-v86-randhr-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Randhr’s Lord is in Dhan Bhava the native will be devoid of bodily vigour"
+            },
+            {
+              "step_id": "ch24-v86-randhr-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "8th lord is in 2nd house"
+            },
+            {
+              "step_id": "ch24-v86-randhr-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "8th lord is in 2nd house the native will be devoid of bodily vigour"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少八宫主是否落二宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v86-randhr-lord-in-dhan.step-001",
+        "action": "核对八宫主（Randhr's Lord）是否落二宫（Dhan Bhava），据此判断本人的体力与财富守成。",
+        "applicability_scope": "仅限本命盘八宫主（Randhr's Lord）落二宫（Dhan Bhava）一条；本段原文在同偈句首自标「Effects of Randhr’s Lord in Various Bhavas (up to Sloka 96)」；原文未给财富数额、损失原因或时间限定。",
+        "minimum_supported_claim": "八宫主（Randhr's Lord）落二宫（Dhan Bhava）时，本人身体上没有精力，享有的财富有限，失去的财富不会再得回。",
+        "produced_fact_keys": [
+          "八宫主落二宫的体力与财富守成判定"
+        ],
+        "required_fact_keys": [
+          "八宫主（Randhr's Lord）是否落二宫（Dhan）"
+        ],
+        "condition_logic": {
+          "fact_key": "八宫主（Randhr's Lord）是否落二宫（Dhan）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Randhr’s Lord is in Dhan Bhava",
+              "claim": "八宫主（Randhr's Lord）落二宫（Dhan Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be devoid of bodily vigour",
+              "claim": "本人身体上没有精力"
+            },
+            {
+              "quote": "will enjoy a little wealth",
+              "claim": "享有的财富有限"
+            },
+            {
+              "quote": "will not regain lost wealth",
+              "claim": "失去的财富不会再得回"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v86",
+            "quote": "If Randhr’s Lord is in Dhan Bhava, the native will be devoid of bodily vigour, will enjoy a little wealth and will not regain lost wealth.",
+            "pdf_pages": [
+              46
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：八宫主（Randhr's Lord）是否落二宫（Dhan）。",
+        "stop_fact_keys": [
+          "八宫主（Randhr's Lord）是否落二宫（Dhan）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「财富有限」换算成具体数额或贫困程度。",
+          "不得据此推断破财的原因、对象或时间。",
+          "不得把本条套用到八宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "bb8e1b5efe1a478ae93a37416fe61539e963d1a8eb75ad12815a40e400d63e41"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v87-randhr-lord-in-sahaj.step-001",
+      "method": {
+        "method": "ch24-v87-randhr-lord-in-sahaj",
+        "title": "八宫主落三宫：兄弟方面没有安乐、懒惰、没有仆从与力量",
+        "target_house": 8,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和兄弟姐妹之间指望得上吗",
+          "我为什么使不上劲"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Randhr’s Lord is in Sahaj Bhava, the native will be devoid of fraternal happiness, be indolent",
+            "八宫主落三宫 兄弟无乐 懒惰 无仆从"
+          ],
+          "counter_queries": [
+            "If Dharm’s Lord is in Sahaj Bhava, the native will be endowed with fraternal bliss, be wealthy, virtuous and charming"
+          ],
+          "boundary_queries": [
+            "Indications of Randhr Bhava. Randhr Bhava indicates longevity, battle, enemies, forts, wealth of the dead and things, that have happened and are to happen",
+            "Indications of Sahaj Bhava. From Sahaj Bhava know of the following: valour, servants (attending etc.), brothers, sisters etc., initiatory instructions (Upadesh), journey and parent’s death"
+          ],
+          "method_queries": [
+            "Effects of Randhr’s Lord in Various Bhavas",
+            "Effects of Sahaj’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v87-randhr-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Randhr’s Lord is in Sahaj Bhava"
+            },
+            {
+              "step_id": "ch24-v87-randhr-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be devoid of fraternal happiness"
+            },
+            {
+              "step_id": "ch24-v87-randhr-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be indolent and devoid of servants and strength"
+            },
+            {
+              "step_id": "ch24-v87-randhr-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Randhr’s Lord is in Sahaj Bhava the native will be devoid of fraternal happiness"
+            },
+            {
+              "step_id": "ch24-v87-randhr-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "8th lord is in 3rd house"
+            },
+            {
+              "step_id": "ch24-v87-randhr-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "8th lord is in 3rd house the native will be devoid of fraternal happiness"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少八宫主是否落三宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v87-randhr-lord-in-sahaj.step-001",
+        "action": "核对八宫主（Randhr's Lord）是否落三宫（Sahaj Bhava），据此判断本人在兄弟、仆从与力量方面的处境。",
+        "applicability_scope": "仅限本命盘八宫主（Randhr's Lord）落三宫（Sahaj Bhava）一条；本段原文在同偈句首自标「Effects of Randhr’s Lord in Various Bhavas (up to Sloka 96)」；原文未给兄弟人数、存殁或时间限定。",
+        "minimum_supported_claim": "八宫主（Randhr's Lord）落三宫（Sahaj Bhava）时，本人没有兄弟方面的安乐，懒惰，没有仆从也没有力量。",
+        "produced_fact_keys": [
+          "八宫主落三宫的兄弟安乐与仆从力量判定"
+        ],
+        "required_fact_keys": [
+          "八宫主（Randhr's Lord）是否落三宫（Sahaj）"
+        ],
+        "condition_logic": {
+          "fact_key": "八宫主（Randhr's Lord）是否落三宫（Sahaj）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Randhr’s Lord is in Sahaj Bhava",
+              "claim": "八宫主（Randhr's Lord）落三宫（Sahaj Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be devoid of fraternal happiness",
+              "claim": "本人没有兄弟方面的安乐"
+            },
+            {
+              "quote": "be indolent and devoid of servants and strength",
+              "claim": "懒惰，没有仆从也没有力量"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v87",
+            "quote": "If Randhr’s Lord is in Sahaj Bhava, the native will be devoid of fraternal happiness, be indolent and devoid of servants and strength.",
+            "pdf_pages": [
+              46
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：八宫主（Randhr's Lord）是否落三宫（Sahaj）。",
+        "stop_fact_keys": [
+          "八宫主（Randhr's Lord）是否落三宫（Sahaj）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「没有兄弟方面的安乐」写成没有兄弟或兄弟去世。",
+          "不得把「没有力量」当成本书 Shad Bal 意义上的强弱判定。",
+          "不得把本条套用到八宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "f8e04a994ae6ede7c3e06036a743677fea2f38f0972693036ec6f65b0fbc23a9"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v88-randhr-lord-in-bandhu.step-001",
+      "method": {
+        "method": "ch24-v88-randhr-lord-in-bandhu",
+        "title": "八宫主落四宫：孩子失去母亲、没有房屋田地与安乐、必定背弃朋友",
+        "target_house": 8,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和母亲的缘分薄不薄",
+          "我为什么置不下房产"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Randhr’s Lord is in Bandhu Bhava, the child will be deprived of its mother",
+            "八宫主落四宫 孩子失去母亲 无房屋田地"
+          ],
+          "counter_queries": [
+            "One will have residential comforts in full degree, if Bandhu is occupied by its Lord, or by Lagn’s Lord and be drishtied by a benefic",
+            "If Bandhu’s Lord is in Tanu Bhava, the native will be endowed with learning, virtues, ornaments, lands, conveyances and maternal happiness"
+          ],
+          "boundary_queries": [
+            "Indications of Randhr Bhava. Randhr Bhava indicates longevity, battle, enemies, forts, wealth of the dead and things, that have happened and are to happen",
+            "Indications of Bandhu Bhava. Conveyances, relatives, mother, happiness, treasure, lands and buildings are to be consulted through Bandhu Bhava"
+          ],
+          "method_queries": [
+            "Effects of Randhr’s Lord in Various Bhavas",
+            "Effects of Bandhu’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v88-randhr-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Randhr’s Lord is in Bandhu Bhava"
+            },
+            {
+              "step_id": "ch24-v88-randhr-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the child will be deprived of its mother"
+            },
+            {
+              "step_id": "ch24-v88-randhr-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "He will be devoid of a house, lands and happiness"
+            },
+            {
+              "step_id": "ch24-v88-randhr-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will doubtlessly betray his friends"
+            },
+            {
+              "step_id": "ch24-v88-randhr-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Randhr’s Lord is in Bandhu Bhava the child will be deprived of its mother"
+            },
+            {
+              "step_id": "ch24-v88-randhr-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "8th lord is in 4th house"
+            },
+            {
+              "step_id": "ch24-v88-randhr-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "8th lord is in 4th house the child will be deprived of its mother"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少八宫主是否落四宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v88-randhr-lord-in-bandhu.step-001",
+        "action": "核对八宫主（Randhr's Lord）是否落四宫（Bandhu Bhava），据此判断母亲方面的缘分、房屋田地与朋友关系。",
+        "applicability_scope": "仅限本命盘八宫主（Randhr's Lord）落四宫（Bandhu Bhava）一条；原文首句主语写作 the child（不是 the native），本方法照原文保留；本段原文在同偈句首自标「Effects of Randhr’s Lord in Various Bhavas (up to Sloka 96)」；原文未给年龄、原因或时间限定。",
+        "minimum_supported_claim": "八宫主（Randhr's Lord）落四宫（Bandhu Bhava）时，所生的孩子会失去其母亲，本人没有房屋、田地与安乐，并且必定背弃自己的朋友。",
+        "produced_fact_keys": [
+          "八宫主落四宫的母亲缘分与房产判定"
+        ],
+        "required_fact_keys": [
+          "八宫主（Randhr's Lord）是否落四宫（Bandhu）"
+        ],
+        "condition_logic": {
+          "fact_key": "八宫主（Randhr's Lord）是否落四宫（Bandhu）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Randhr’s Lord is in Bandhu Bhava",
+              "claim": "八宫主（Randhr's Lord）落四宫（Bandhu Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the child will be deprived of its mother",
+              "claim": "所生的孩子会失去其母亲"
+            },
+            {
+              "quote": "He will be devoid of a house, lands and happiness",
+              "claim": "本人没有房屋、田地与安乐"
+            },
+            {
+              "quote": "will doubtlessly betray his friends",
+              "claim": "并且必定背弃自己的朋友"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v88",
+            "quote": "If Randhr’s Lord is in Bandhu Bhava, the child will be deprived of its mother. He will be devoid of a house, lands and happiness and will doubtlessly betray his friends.",
+            "pdf_pages": [
+              46
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：八宫主（Randhr's Lord）是否落四宫（Bandhu）。",
+        "stop_fact_keys": [
+          "八宫主（Randhr's Lord）是否落四宫（Bandhu）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「失去其母亲」补上年龄、死因或任何原文没有的情节。",
+          "不得把首句主语 the child 直接换成本人——原文写的是孩子。",
+          "不得据此推断房产数量、价值或购房时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "9e61000200f90fa9e4de08cf233f0702aab21e75e6d0a08a27fc402930b56453"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v89-randhr-lord-in-putr.step-001",
+      "method": {
+        "method": "ch24-v89-randhr-lord-in-putr",
+        "title": "八宫主落五宫：心思迟钝、子女数目有限、长寿而富有",
+        "target_house": 8,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我能活多久",
+          "我会有几个孩子"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Randhr’s Lord is in Putr Bhava, the native will be dull witted, will have limited number of children, be long-lived",
+            "八宫主落五宫 子女有限 长寿 富有"
+          ],
+          "counter_queries": [
+            "Should Randhr’s Lord join Lagn’s Lord, or a malefic and be in Randhr itself, the native will be short lived",
+            "There will be many children, if Putr’s Lord is strong, while Putr is drishtied by strong Budh, Guru and Shukr"
+          ],
+          "boundary_queries": [
+            "Indications of Randhr Bhava. Randhr Bhava indicates longevity, battle, enemies, forts, wealth of the dead and things, that have happened and are to happen",
+            "Indications of Putr Bhava. The learned should deduce from Putr Bhava amulets, sacred spells, learning, knowledge, sons, royalty (or authority), fall of position etc."
+          ],
+          "method_queries": [
+            "Effects of Randhr’s Lord in Various Bhavas",
+            "Effects of Randhr Bhava"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v89-randhr-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Randhr’s Lord is in Putr Bhava"
+            },
+            {
+              "step_id": "ch24-v89-randhr-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be dull witted"
+            },
+            {
+              "step_id": "ch24-v89-randhr-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will have limited number of children"
+            },
+            {
+              "step_id": "ch24-v89-randhr-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be long-lived and wealthy"
+            },
+            {
+              "step_id": "ch24-v89-randhr-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Randhr’s Lord is in Putr Bhava the native will be dull witted"
+            },
+            {
+              "step_id": "ch24-v89-randhr-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "8th lord is in 5th house"
+            },
+            {
+              "step_id": "ch24-v89-randhr-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "8th lord is in 5th house the native will be dull witted"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少八宫主是否落五宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v89-randhr-lord-in-putr.step-001",
+        "action": "核对八宫主（Randhr's Lord）是否落五宫（Putr Bhava），据此判断本人的子女数目与寿命长短。",
+        "applicability_scope": "仅限本命盘八宫主（Randhr's Lord）落五宫（Putr Bhava）一条；原文只说 limited number，未给具体人数；本段原文在同偈句首自标「Effects of Randhr’s Lord in Various Bhavas (up to Sloka 96)」；原文未给寿数年份或时间限定。",
+        "minimum_supported_claim": "八宫主（Randhr's Lord）落五宫（Putr Bhava）时，本人心思迟钝，子女数目有限，长寿而富有。",
+        "produced_fact_keys": [
+          "八宫主落五宫的子女数目与寿命判定"
+        ],
+        "required_fact_keys": [
+          "八宫主（Randhr's Lord）是否落五宫（Putr）"
+        ],
+        "condition_logic": {
+          "fact_key": "八宫主（Randhr's Lord）是否落五宫（Putr）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Randhr’s Lord is in Putr Bhava",
+              "claim": "八宫主（Randhr's Lord）落五宫（Putr Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be dull witted",
+              "claim": "本人心思迟钝"
+            },
+            {
+              "quote": "will have limited number of children",
+              "claim": "子女数目有限"
+            },
+            {
+              "quote": "be long-lived and wealthy",
+              "claim": "长寿而富有"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v89",
+            "quote": "If Randhr’s Lord is in Putr Bhava, the native will be dull witted, will have limited number of children, be long-lived and wealthy.",
+            "pdf_pages": [
+              46
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：八宫主（Randhr's Lord）是否落五宫（Putr）。",
+        "stop_fact_keys": [
+          "八宫主（Randhr's Lord）是否落五宫（Putr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「子女数目有限」写成确定的人数或没有子女。",
+          "不得把「长寿」换算成具体岁数或年份。",
+          "不得把本条套用到八宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "e50887299032b50edcb7402d6b6c923e6654770a7db577755f96a61e30da42f9"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v90-randhr-lord-in-ari.step-001",
+      "method": {
+        "method": "ch24-v90-randhr-lord-in-ari",
+        "title": "八宫主落六宫：胜过敌人、受疾病困扰、童年遭遇蛇与水的危险",
+        "target_house": 8,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和对手较量能不能占上风",
+          "我小时候为什么老出险情"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Randhr’s Lord is in Ari Bhava, the native will win over his enemies, be afflicted by diseases",
+            "八宫主落六宫 胜过敌人 疾病 童年 蛇与水"
+          ],
+          "counter_queries": [
+            "If Dhum is in Ari Bhava, the native will be strong, will conquer his enemies, be very brilliant, famous and free from diseases"
+          ],
+          "boundary_queries": [
+            "Indications of Randhr Bhava. Randhr Bhava indicates longevity, battle, enemies, forts, wealth of the dead and things, that have happened and are to happen",
+            "Indications of Ari Bhava. Maternal uncle, doubts about death, enemies, ulcers, stepmother etc. are to be estimated from Ari Bhava"
+          ],
+          "method_queries": [
+            "Effects of Randhr’s Lord in Various Bhavas",
+            "Effects of Ari Bhava"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v90-randhr-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Randhr’s Lord is in Ari Bhava"
+            },
+            {
+              "step_id": "ch24-v90-randhr-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will win over his enemies"
+            },
+            {
+              "step_id": "ch24-v90-randhr-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be afflicted by diseases"
+            },
+            {
+              "step_id": "ch24-v90-randhr-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "during childhood will incur danger through snakes and water"
+            },
+            {
+              "step_id": "ch24-v90-randhr-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Randhr’s Lord is in Ari Bhava the native will win over his enemies"
+            },
+            {
+              "step_id": "ch24-v90-randhr-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "8th lord is in 6th house"
+            },
+            {
+              "step_id": "ch24-v90-randhr-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "8th lord is in 6th house the native will win over his enemies"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少八宫主是否落六宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v90-randhr-lord-in-ari.step-001",
+        "action": "核对八宫主（Randhr's Lord）是否落六宫（Ari Bhava），据此判断本人与敌人的胜负、疾病困扰与童年的险情。",
+        "applicability_scope": "仅限本命盘八宫主（Randhr's Lord）落六宫（Ari Bhava）一条；原文只把蛇与水的危险限定在童年（during childhood），其余断语未给时间限定；本段原文自标「Effects of Randhr’s Lord in Various Bhavas (up to Sloka 96)」；原文未给病名与危险的具体年份。",
+        "minimum_supported_claim": "八宫主（Randhr's Lord）落六宫（Ari Bhava）时，本人胜过自己的敌人，受疾病困扰，并在童年遭遇来自蛇与水的危险。",
+        "produced_fact_keys": [
+          "八宫主落六宫的敌我胜负与童年险情判定"
+        ],
+        "required_fact_keys": [
+          "八宫主（Randhr's Lord）是否落六宫（Ari）"
+        ],
+        "condition_logic": {
+          "fact_key": "八宫主（Randhr's Lord）是否落六宫（Ari）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Randhr’s Lord is in Ari Bhava",
+              "claim": "八宫主（Randhr's Lord）落六宫（Ari Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will win over his enemies",
+              "claim": "本人胜过自己的敌人"
+            },
+            {
+              "quote": "be afflicted by diseases",
+              "claim": "受疾病困扰"
+            },
+            {
+              "quote": "during childhood will incur danger through snakes and water",
+              "claim": "并在童年遭遇来自蛇与水的危险"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v90",
+            "quote": "If Randhr’s Lord is in Ari Bhava, the native will win over his enemies, be afflicted by diseases and during childhood will incur danger through snakes and water.",
+            "pdf_pages": [
+              46
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：八宫主（Randhr's Lord）是否落六宫（Ari）。",
+        "stop_fact_keys": [
+          "八宫主（Randhr's Lord）是否落六宫（Ari）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把童年的蛇与水之险扩大到成年之后——原文限定在童年。",
+          "不得据此推断具体病名、病程或危险的年份。",
+          "不得把本条套用到八宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文把蛇与水的危险限定在童年（during childhood）",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "c39cf6814854eba26ad69224744f1f7e0616055d0d6785fef7dcfb206cf25adf"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v91-randhr-lord-in-yuvati-two-wives.step-001",
+      "method": {
+        "method": "ch24-v91-randhr-lord-in-yuvati-two-wives",
+        "title": "八宫主落七宫：会有两位妻子",
+        "target_house": 8,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子会有几位配偶",
+          "我的婚姻会不会不止一次"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Randhr’s Lord is in Yuvati Bhava, the native will have two wives",
+            "八宫主落七宫 两位妻子"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Indications of Randhr Bhava. Randhr Bhava indicates longevity, battle, enemies, forts, wealth of the dead and things, that have happened and are to happen",
+            "Indications of Yuvati Bhava. Wife, travel, trade, loss of sight, death etc. be known from Yuvati Bhava",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "Effects of Randhr’s Lord in Various Bhavas",
+            "Effects of Yuvati Bhava"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v91-randhr-lord-in-yuvati-two-wives.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Randhr’s Lord is in Yuvati Bhava"
+            },
+            {
+              "step_id": "ch24-v91-randhr-lord-in-yuvati-two-wives.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will have two wives"
+            },
+            {
+              "step_id": "ch24-v91-randhr-lord-in-yuvati-two-wives.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Randhr’s Lord is in Yuvati Bhava the native will have two wives"
+            },
+            {
+              "step_id": "ch24-v91-randhr-lord-in-yuvati-two-wives.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "8th lord is in 7th house"
+            },
+            {
+              "step_id": "ch24-v91-randhr-lord-in-yuvati-two-wives.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "8th lord is in 7th house the native will have two wives"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少八宫主是否落七宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v91-randhr-lord-in-yuvati-two-wives.step-001",
+        "action": "核对八宫主（Randhr's Lord）是否落七宫（Yuvati Bhava），据此判断本人的婚配数目。",
+        "applicability_scope": "仅限本命盘八宫主（Randhr's Lord）落七宫（Yuvati Bhava）一条；原文以男命立说（two wives），女命命中时结论不能照搬；同偈另有「与凶星同宫」一条，条件不同不得混用；本段原文自标「Effects of Randhr’s Lord in Various Bhavas (up to Sloka 96)」；原文未给婚期或先后。",
+        "minimum_supported_claim": "八宫主（Randhr's Lord）落七宫（Yuvati Bhava）时，本人会有两位妻子。",
+        "produced_fact_keys": [
+          "八宫主落七宫的婚配数目判定"
+        ],
+        "required_fact_keys": [
+          "八宫主（Randhr's Lord）是否落七宫（Yuvati）"
+        ],
+        "condition_logic": {
+          "fact_key": "八宫主（Randhr's Lord）是否落七宫（Yuvati）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Randhr’s Lord is in Yuvati Bhava",
+              "claim": "八宫主（Randhr's Lord）落七宫（Yuvati Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will have two wives",
+              "claim": "本人会有两位妻子"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v91",
+            "quote": "If Randhr’s Lord is in Yuvati Bhava, the native will have two wives.",
+            "pdf_pages": [
+              46
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：八宫主（Randhr's Lord）是否落七宫（Yuvati）。",
+        "stop_fact_keys": [
+          "八宫主（Randhr's Lord）是否落七宫（Yuvati）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「两位妻子」改写成多位或确定的其他人数。",
+          "不得据此推断结婚年龄、先后或配偶身份。",
+          "不得把同偈「与凶星同宫」一条的事业结论并入本条。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "1fde6488f6e0d0b415cfef850ad8c678b266d46699bdb1a515b5546fcf16a2c4"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch24:v81": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v81",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "81.",
+      "content_role": "verse",
+      "exact_text": "81. If Yuvati’s Lord is in Dharm Bhava, the native will have union with many women, be well disposed to his own wife and will have many undertakings.",
+      "pdf_pages": [
+        46
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 81 · PDF page 46 · bphs-97:santhanam:ch24:v81",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v80",
+      "next_atom_id": "bphs-97:santhanam:ch24:v82",
+      "context_before": "rived of marital happiness. His wife will be troubled by diseases, be devoid of good disposition and will not obey the native.\n\n",
+      "context_after": "82. If Yuvati’s Lord is in Karm Bhava, the native will beget a disobedient wife, will be religious and endowed with wealth, sons",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v82": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v82",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "82.",
+      "content_role": "verse",
+      "exact_text": "82. If Yuvati’s Lord is in Karm Bhava, the native will beget a disobedient wife, will be religious and endowed with wealth, sons etc.",
+      "pdf_pages": [
+        46
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 82 · PDF page 46 · bphs-97:santhanam:ch24:v82",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v81",
+      "next_atom_id": "bphs-97:santhanam:ch24:v83",
+      "context_before": " If Yuvati’s Lord is in Dharm Bhava, the native will have union with many women, be well disposed to his own wife and will have many undertakings.\n\n",
+      "context_after": "83. If Yuvati’s Lord is in Labh Bhava, the native will gain wealth through his wife, be endowed with less happiness from sons et",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v83": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v83",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "83.",
+      "content_role": "verse",
+      "exact_text": "83. If Yuvati’s Lord is in Labh Bhava, the native will gain wealth through his wife, be endowed with less happiness from sons etc. and will have daughters.",
+      "pdf_pages": [
+        46
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 83 · PDF page 46 · bphs-97:santhanam:ch24:v83",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v82",
+      "next_atom_id": "bphs-97:santhanam:ch24:v84",
+      "context_before": " If Yuvati’s Lord is in Karm Bhava, the native will beget a disobedient wife, will be religious and endowed with wealth, sons etc.\n\n",
+      "context_after": "84. If Yuvati’s Lord is in Vyaya Bhava, the native will incur penury, be a miser and his livelihood will be related to clothes. ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v84": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v84",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "84.",
+      "content_role": "verse",
+      "exact_text": "84. If Yuvati’s Lord is in Vyaya Bhava, the native will incur penury, be a miser and his livelihood will be related to clothes. His wife will be a spendthrift.",
+      "pdf_pages": [
+        46
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 84 · PDF page 46 · bphs-97:santhanam:ch24:v84",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v83",
+      "next_atom_id": "bphs-97:santhanam:ch24:v85",
+      "context_before": "bh Bhava, the native will gain wealth through his wife, be endowed with less happiness from sons etc. and will have daughters.\n\n",
+      "context_after": "85. Effects of Randhr’s Lord in Various Bhavas (up to Sloka 96). If Randhr’s Lord is in Tanu Bhava, the native will be devoid of",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v85": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v85",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "85.",
+      "content_role": "verse",
+      "exact_text": "85. Effects of Randhr’s Lord in Various Bhavas (up to Sloka 96). If Randhr’s Lord is in Tanu Bhava, the native will be devoid of physical felicity and will suffer from wounds. He will be hostile to gods and Brahmins.",
+      "pdf_pages": [
+        46
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 85 · PDF page 46 · bphs-97:santhanam:ch24:v85",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v84",
+      "next_atom_id": "bphs-97:santhanam:ch24:v86",
+      "context_before": "Bhava, the native will incur penury, be a miser and his livelihood will be related to clothes. His wife will be a spendthrift.\n\n",
+      "context_after": "86. If Randhr’s Lord is in Dhan Bhava, the native will be devoid of bodily vigour, will enjoy a little wealth and will not regai",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v86": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v86",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "86.",
+      "content_role": "verse",
+      "exact_text": "86. If Randhr’s Lord is in Dhan Bhava, the native will be devoid of bodily vigour, will enjoy a little wealth and will not regain lost wealth.",
+      "pdf_pages": [
+        46
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 86 · PDF page 46 · bphs-97:santhanam:ch24:v86",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v85",
+      "next_atom_id": "bphs-97:santhanam:ch24:v87",
+      "context_before": "nu Bhava, the native will be devoid of physical felicity and will suffer from wounds. He will be hostile to gods and Brahmins.\n\n",
+      "context_after": "87. If Randhr’s Lord is in Sahaj Bhava, the native will be devoid of fraternal happiness, be indolent and devoid of servants and",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v87": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v87",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "87.",
+      "content_role": "verse",
+      "exact_text": "87. If Randhr’s Lord is in Sahaj Bhava, the native will be devoid of fraternal happiness, be indolent and devoid of servants and strength.",
+      "pdf_pages": [
+        46
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 87 · PDF page 46 · bphs-97:santhanam:ch24:v87",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v86",
+      "next_atom_id": "bphs-97:santhanam:ch24:v88",
+      "context_before": " If Randhr’s Lord is in Dhan Bhava, the native will be devoid of bodily vigour, will enjoy a little wealth and will not regain lost wealth.\n\n",
+      "context_after": "88. If Randhr’s Lord is in Bandhu Bhava, the child will be deprived of its mother. He will be devoid of a house, lands and happi",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v88": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v88",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "88.",
+      "content_role": "verse",
+      "exact_text": "88. If Randhr’s Lord is in Bandhu Bhava, the child will be deprived of its mother. He will be devoid of a house, lands and happiness and will doubtlessly betray his friends.",
+      "pdf_pages": [
+        46
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 88 · PDF page 46 · bphs-97:santhanam:ch24:v88",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v87",
+      "next_atom_id": "bphs-97:santhanam:ch24:v89",
+      "context_before": " If Randhr’s Lord is in Sahaj Bhava, the native will be devoid of fraternal happiness, be indolent and devoid of servants and strength.\n\n",
+      "context_after": "89. If Randhr’s Lord is in Putr Bhava, the native will be dull witted, will have limited number of children, be long-lived and w",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v89": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v89",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "89.",
+      "content_role": "verse",
+      "exact_text": "89. If Randhr’s Lord is in Putr Bhava, the native will be dull witted, will have limited number of children, be long-lived and wealthy.",
+      "pdf_pages": [
+        46
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 89 · PDF page 46 · bphs-97:santhanam:ch24:v89",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v88",
+      "next_atom_id": "bphs-97:santhanam:ch24:v90",
+      "context_before": "ild will be deprived of its mother. He will be devoid of a house, lands and happiness and will doubtlessly betray his friends.\n\n",
+      "context_after": "90. If Randhr’s Lord is in Ari Bhava, the native will win over his enemies, be afflicted by diseases and during childhood will i",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v90": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v90",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "90.",
+      "content_role": "verse",
+      "exact_text": "90. If Randhr’s Lord is in Ari Bhava, the native will win over his enemies, be afflicted by diseases and during childhood will incur danger through snakes and water.",
+      "pdf_pages": [
+        46
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 90 · PDF page 46 · bphs-97:santhanam:ch24:v90",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v89",
+      "next_atom_id": "bphs-97:santhanam:ch24:v91",
+      "context_before": " If Randhr’s Lord is in Putr Bhava, the native will be dull witted, will have limited number of children, be long-lived and wealthy.\n\n",
+      "context_after": "91. If Randhr’s Lord is in Yuvati Bhava, the native will have two wives. If Randhr’s Lord is yuti with a malefic in Yuvati Bhava",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v91": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v91",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "91.",
+      "content_role": "verse",
+      "exact_text": "91. If Randhr’s Lord is in Yuvati Bhava, the native will have two wives. If Randhr’s Lord is yuti with a malefic in Yuvati Bhava, there will surely be downfall in his business.",
+      "pdf_pages": [
+        46
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 91 · PDF page 46 · bphs-97:santhanam:ch24:v91",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v90",
+      "next_atom_id": "bphs-97:santhanam:ch24:v92",
+      "context_before": " If Randhr’s Lord is in Ari Bhava, the native will win over his enemies, be afflicted by diseases and during childhood will incur danger through snakes and water.\n\n",
+      "context_after": "92. If Randhr’s Lord is in Randhr Bhava, the native will be long-lived. If the said Grah is weak, being in Randhr Bhava, the lon",
+      "content_missing": false
+    }
+  }
+}

@@ -1,0 +1,1820 @@
+{
+  "shard": 1,
+  "step_count": 11,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch24-v50-putr-lord-in-dhan.step-001",
+      "method": {
+        "method": "ch24-v50-putr-lord-in-dhan",
+        "title": "五宫主落二宫：多子多财、为一家之主、受尊敬、与配偶亲近、闻名于世",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子子女和财运怎么样",
+          "我在众人当中的名声如何"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Putr’s Lord is in Dhan Bhava, the native will have many sons and wealth, be a pater familias",
+            "五宫主落二宫 多子多财 一家之主 闻名于世"
+          ],
+          "counter_queries": [
+            "If Putr’s Lord is in Ari, Randhr, or Vyaya Bhava, or be in an inimical Rāśi, or be in fall, or in Putr itself, the native will beget issues with difficulty",
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak, or receives a Drishti from such a Grah"
+          ],
+          "boundary_queries": [
+            "Indications of Putr Bhava. The learned should deduce from Putr Bhava amulets, sacred spells, learning, knowledge, sons, royalty (or authority), fall of position etc.",
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava"
+          ],
+          "method_queries": [
+            "Effects of Putr’s Lord in Various Bhavas",
+            "Effects of Putr Bhava"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v50-putr-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Putr’s Lord is in Dhan Bhava"
+            },
+            {
+              "step_id": "ch24-v50-putr-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will have many sons and wealth"
+            },
+            {
+              "step_id": "ch24-v50-putr-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be a pater familias"
+            },
+            {
+              "step_id": "ch24-v50-putr-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be honourable"
+            },
+            {
+              "step_id": "ch24-v50-putr-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be attached to his spouse"
+            },
+            {
+              "step_id": "ch24-v50-putr-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be famous in the world"
+            },
+            {
+              "step_id": "ch24-v50-putr-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Putr’s Lord is in Dhan Bhava the native will have many sons and wealth"
+            },
+            {
+              "step_id": "ch24-v50-putr-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "5th lord is in 2nd house"
+            },
+            {
+              "step_id": "ch24-v50-putr-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "5th lord is in 2nd house the native will have many sons and wealth"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫主是否落二宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v50-putr-lord-in-dhan.step-001",
+        "action": "核对五宫主（Putr's Lord）是否落二宫（Dhan Bhava），据此判断本人的子女、财富、家中地位与名声。",
+        "applicability_scope": "仅限本命盘五宫主（Putr's Lord）落二宫（Dhan Bhava）一条；本段原文自标「Effects of Putr’s Lord in Various Bhavas」；原文未给子女人数、财富数额或时间限定。",
+        "minimum_supported_claim": "五宫主（Putr's Lord）落二宫（Dhan Bhava）时，本人多子多财，为一家之主，受人尊敬，与配偶亲近，闻名于世。",
+        "produced_fact_keys": [
+          "五宫主落二宫的子女财富与名声判定"
+        ],
+        "required_fact_keys": [
+          "五宫主（Putr's Lord）是否落二宫（Dhan）"
+        ],
+        "condition_logic": {
+          "fact_key": "五宫主（Putr's Lord）是否落二宫（Dhan）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Putr’s Lord is in Dhan Bhava",
+              "claim": "五宫主（Putr's Lord）落二宫（Dhan Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will have many sons and wealth",
+              "claim": "本人多子多财"
+            },
+            {
+              "quote": "be a pater familias",
+              "claim": "为一家之主"
+            },
+            {
+              "quote": "be honourable",
+              "claim": "受人尊敬"
+            },
+            {
+              "quote": "be attached to his spouse",
+              "claim": "与配偶亲近"
+            },
+            {
+              "quote": "be famous in the world",
+              "claim": "闻名于世"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v50",
+            "quote": "If Putr’s Lord is in Dhan Bhava, the native will have many sons and wealth, be a pater familias, be honourable, be attached to his spouse and be famous in the world.",
+            "pdf_pages": [
+              44
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：五宫主（Putr's Lord）是否落二宫（Dhan）。",
+        "stop_fact_keys": [
+          "五宫主（Putr's Lord）是否落二宫（Dhan）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断子女人数、性别或出生时间。",
+          "不得把「多子多财」换算成具体财富数额或财源。",
+          "不得把本条套用到五宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "64b28d0d1acf0bf62256a28e55613cbfea5c1f4118b99901fc530d07e45925fc"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v51-putr-lord-in-sahaj.step-001",
+      "method": {
+        "method": "ch24-v51-putr-lord-in-sahaj",
+        "title": "五宫主落三宫：与同胞亲近、搬弄是非且吝啬、专注自己的事务",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和兄弟姐妹处得怎么样",
+          "别人怎么看我的为人"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Putr’s Lord is in Sahaj, the native will be attached to his co-born, be a tale bearer and a miser",
+            "五宫主落三宫 与同胞亲近 吝啬"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Indications of Putr Bhava. The learned should deduce from Putr Bhava amulets, sacred spells, learning, knowledge, sons, royalty (or authority), fall of position etc.",
+            "Indications of Sahaj Bhava. From Sahaj Bhava know of the following: valour, servants (attending etc.), brothers, sisters etc., initiatory instructions (Upadesh), journey and parent’s death"
+          ],
+          "method_queries": [
+            "Effects of Putr’s Lord in Various Bhavas",
+            "Effects of Sahaj Bhava"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v51-putr-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Putr’s Lord is in Sahaj"
+            },
+            {
+              "step_id": "ch24-v51-putr-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be attached to his co-born"
+            },
+            {
+              "step_id": "ch24-v51-putr-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be a tale bearer and a miser"
+            },
+            {
+              "step_id": "ch24-v51-putr-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be always interested in his own work"
+            },
+            {
+              "step_id": "ch24-v51-putr-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Putr’s Lord is in Sahaj the native will be attached to his co-born"
+            },
+            {
+              "step_id": "ch24-v51-putr-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "5th lord is in 3rd house"
+            },
+            {
+              "step_id": "ch24-v51-putr-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "5th lord is in 3rd house the native will be attached to his co-born"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫主是否落三宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v51-putr-lord-in-sahaj.step-001",
+        "action": "核对五宫主（Putr's Lord）是否落三宫（Sahaj），据此判断本人与同胞的关系与性情。",
+        "applicability_scope": "仅限本命盘五宫主（Putr's Lord）落三宫（Sahaj）一条；原文本句只写 Sahaj、未加 Bhava 字样；原文未给时间限定。",
+        "minimum_supported_claim": "五宫主（Putr's Lord）落三宫（Sahaj）时，本人与同胞亲近，搬弄是非且吝啬，总是专注于自己的事务。",
+        "produced_fact_keys": [
+          "五宫主落三宫的同胞关系与性情判定"
+        ],
+        "required_fact_keys": [
+          "五宫主（Putr's Lord）是否落三宫（Sahaj）"
+        ],
+        "condition_logic": {
+          "fact_key": "五宫主（Putr's Lord）是否落三宫（Sahaj）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Putr’s Lord is in Sahaj",
+              "claim": "五宫主（Putr's Lord）落三宫（Sahaj）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be attached to his co-born",
+              "claim": "本人与同胞亲近"
+            },
+            {
+              "quote": "be a tale bearer and a miser",
+              "claim": "搬弄是非且吝啬"
+            },
+            {
+              "quote": "be always interested in his own work",
+              "claim": "总是专注于自己的事务"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v51",
+            "quote": "If Putr’s Lord is in Sahaj, the native will be attached to his co-born, be a tale bearer and a miser and be always interested in his own work.",
+            "pdf_pages": [
+              44
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：五宫主（Putr's Lord）是否落三宫（Sahaj）。",
+        "stop_fact_keys": [
+          "五宫主（Putr's Lord）是否落三宫（Sahaj）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断兄弟姐妹的人数、排行或存殁。",
+          "不得把「吝啬」扩大成贫穷或财运判断。",
+          "不得把本条套用到五宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "002e8e30aca14ae07834f6bba01f903f6997b4a5aead5e29bb43d57099a836c4"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v52-putr-lord-in-bandhu.step-001",
+      "method": {
+        "method": "ch24-v52-putr-lord-in-bandhu",
+        "title": "五宫主落四宫：快乐、得母亲安乐财富才智、并居王／臣／师之一",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和母亲的缘分与家里的安乐怎么样",
+          "我有没有出任要职的命"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Putr’s Lord is in Bandhu Bhava, the native will be happy, endowed with maternal happiness, wealth and intelligence",
+            "五宫主落四宫 母亲安乐 财富 才智 国王大臣导师"
+          ],
+          "counter_queries": [
+            "One will have residential comforts in full degree, if Bandhu is occupied by its Lord, or by Lagn’s Lord and be drishtied by a benefic"
+          ],
+          "boundary_queries": [
+            "Indications of Putr Bhava. The learned should deduce from Putr Bhava amulets, sacred spells, learning, knowledge, sons, royalty (or authority), fall of position etc.",
+            "Indications of Bandhu Bhava. Conveyances, relatives, mother, happiness, treasure, lands and buildings are to be consulted through Bandhu Bhava"
+          ],
+          "method_queries": [
+            "Effects of Putr’s Lord in Various Bhavas",
+            "Effects of Bandhu’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v52-putr-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Putr’s Lord is in Bandhu Bhava"
+            },
+            {
+              "step_id": "ch24-v52-putr-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be happy"
+            },
+            {
+              "step_id": "ch24-v52-putr-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "endowed with maternal happiness, wealth and intelligence"
+            },
+            {
+              "step_id": "ch24-v52-putr-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be a king, or a minister, or a preceptor"
+            },
+            {
+              "step_id": "ch24-v52-putr-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Putr’s Lord is in Bandhu Bhava the native will be happy"
+            },
+            {
+              "step_id": "ch24-v52-putr-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "5th lord is in 4th house"
+            },
+            {
+              "step_id": "ch24-v52-putr-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "5th lord is in 4th house the native will be happy"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫主是否落四宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v52-putr-lord-in-bandhu.step-001",
+        "action": "核对五宫主（Putr's Lord）是否落四宫（Bandhu Bhava），据此判断本人的安乐、母亲方面的福分与社会地位。",
+        "applicability_scope": "仅限本命盘五宫主（Putr's Lord）落四宫（Bandhu Bhava）一条；原文把国王、大臣、导师写成三者择一，结果本身即为择一；原文未给时间限定。",
+        "minimum_supported_claim": "五宫主（Putr's Lord）落四宫（Bandhu Bhava）时，本人快乐，具备母亲方面的安乐、财富与才智，并成为国王、大臣或导师之一。",
+        "produced_fact_keys": [
+          "五宫主落四宫的母亲安乐与地位判定"
+        ],
+        "required_fact_keys": [
+          "五宫主（Putr's Lord）是否落四宫（Bandhu）"
+        ],
+        "condition_logic": {
+          "fact_key": "五宫主（Putr's Lord）是否落四宫（Bandhu）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Putr’s Lord is in Bandhu Bhava",
+              "claim": "五宫主（Putr's Lord）落四宫（Bandhu Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be happy",
+              "claim": "本人快乐"
+            },
+            {
+              "quote": "endowed with maternal happiness, wealth and intelligence",
+              "claim": "具备母亲方面的安乐、财富与才智"
+            },
+            {
+              "quote": "be a king, or a minister, or a preceptor",
+              "claim": "并成为国王、大臣或导师之一"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v52",
+            "quote": "If Putr’s Lord is in Bandhu Bhava, the native will be happy, endowed with maternal happiness, wealth and intelligence and be a king, or a minister, or a preceptor.",
+            "pdf_pages": [
+              44
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：五宫主（Putr's Lord）是否落四宫（Bandhu）。",
+        "stop_fact_keys": [
+          "五宫主（Putr's Lord）是否落四宫（Bandhu）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把国王、大臣、导师三者同时坐实——原文写的是三者择一。",
+          "不得据此推断母亲的寿命、健康或具体际遇。",
+          "不得把本条套用到五宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "621995bbce4ec3e223970e11fb95660eac0afd0c80565f654aa5f1518ec5e698"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v53-putr-lord-in-putr-benefic-progeny.step-001",
+      "method": {
+        "method": "ch24-v53-putr-lord-in-putr-benefic-progeny",
+        "title": "五宫主落五宫且与吉星关联：会有子女",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子有没有子女",
+          "我求子这件事有没有指望"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Putr’s Lord is in Putr Bhava, the native will have progeny, if related to a benefic",
+            "五宫主落五宫 与吉星关联 会有子女"
+          ],
+          "counter_queries": [
+            "If Putr’s Lord is in Ari, Randhr, or Vyaya Bhava, or be in an inimical Rāśi, or be in fall, or in Putr itself, the native will beget issues with difficulty",
+            "One’s own sons will be his enemies, if Putr Lord is in Ari, while Ari Lord is with Guru"
+          ],
+          "boundary_queries": [
+            "Indications of Putr Bhava. The learned should deduce from Putr Bhava amulets, sacred spells, learning, knowledge, sons, royalty (or authority), fall of position etc.",
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics"
+          ],
+          "method_queries": [
+            "Effects of Putr’s Lord in Various Bhavas",
+            "Effects of Putr Bhava"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v53-putr-lord-in-putr-benefic-progeny.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Putr’s Lord is in Putr Bhava"
+            },
+            {
+              "step_id": "ch24-v53-putr-lord-in-putr-benefic-progeny.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if related to a benefic"
+            },
+            {
+              "step_id": "ch24-v53-putr-lord-in-putr-benefic-progeny.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will have progeny"
+            },
+            {
+              "step_id": "ch24-v53-putr-lord-in-putr-benefic-progeny.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Putr’s Lord is in Putr Bhava the native will have progeny"
+            },
+            {
+              "step_id": "ch24-v53-putr-lord-in-putr-benefic-progeny.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if related to a benefic the native will have progeny"
+            },
+            {
+              "step_id": "ch24-v53-putr-lord-in-putr-benefic-progeny.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "5th lord is in 5th house"
+            },
+            {
+              "step_id": "ch24-v53-putr-lord-in-putr-benefic-progeny.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "5th lord is in 5th house the native will have progeny"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫主是否落五宫的事实时停止。",
+          "原文未界定「与吉星发生关联」的形式，该事实未确定即停止。",
+          "吉星名册未确定时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v53-putr-lord-in-putr-benefic-progeny.step-001",
+        "action": "先确定本盘吉星名册，再核对五宫主（Putr's Lord）是否落五宫（Putr Bhava）、是否与吉星发生关联，据此判断有无子女。",
+        "applicability_scope": "仅限本命盘五宫主落五宫（Putr Bhava）且与吉星关联一条；原文只说 related to a benefic，未在本偈界定「关联」是同宫、相照还是别的形式，未确定即停判；原文未给时间限定。",
+        "minimum_supported_claim": "五宫主（Putr's Lord）落五宫（Putr Bhava）、并与吉星发生关联（related to a benefic）时，本人会有子女。",
+        "produced_fact_keys": [
+          "五宫主落五宫与吉星关联的子女判定"
+        ],
+        "required_fact_keys": [
+          "本盘中哪些行星被判为吉星",
+          "五宫主（Putr's Lord）是否落五宫（Putr）",
+          "五宫主（Putr's Lord）是否与吉星发生关联（related）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            {
+              "fact_key": "五宫主（Putr's Lord）是否落五宫（Putr）"
+            },
+            {
+              "fact_key": "五宫主（Putr's Lord）是否与吉星发生关联（related）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Putr’s Lord is in Putr Bhava",
+              "claim": "五宫主（Putr's Lord）落五宫（Putr Bhava）"
+            },
+            {
+              "quote": "if related to a benefic",
+              "claim": "并与吉星发生关联（related to a benefic）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will have progeny",
+              "claim": "本人会有子女"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v53",
+            "quote": "If Putr’s Lord is in Putr Bhava, the native will have progeny, if related to a benefic",
+            "pdf_pages": [
+              44
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中哪些行星被判为吉星、五宫主（Putr's Lord）是否落五宫（Putr）、五宫主（Putr's Lord）是否与吉星发生关联（related）。",
+        "stop_fact_keys": [
+          "本盘中哪些行星被判为吉星",
+          "五宫主（Putr's Lord）是否落五宫（Putr）",
+          "五宫主（Putr's Lord）是否与吉星发生关联（related）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「与吉星发生关联」自行坐实为同宫、相照或任何一种具体关系——原文未在本偈界定。",
+          "不得据此推断子女人数、性别或得子年份。",
+          "不得把本条与同偈凶星关联一条合并下断。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "4ea56188cd548b10340613f5658046742a1fc5b4d5b36266d5a7818d843c466d"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v53-putr-lord-in-putr-malefic-no-issue.step-001",
+      "method": {
+        "method": "ch24-v53-putr-lord-in-putr-malefic-no-issue",
+        "title": "五宫主落五宫且与凶星关联：没有子女",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子会不会没有子女",
+          "为什么我求子一直不顺"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "there will be no issues, if malefic is related to Putr’s Lord, placed in Putr Bhava",
+            "五宫主落五宫 与凶星关联 没有子女"
+          ],
+          "counter_queries": [
+            "If Putr’s Lord is exalted, or be in Dhan, Putr, or Dharm Bhava, or be yuti with, or drishtied by Guru, obtainment of children will be there",
+            "There will be many children, if Putr’s Lord is strong, while Putr is drishtied by strong Budh, Guru and Shukr",
+            "Should Putr Bhava be owned by Shani, or Budh and be occupied, or drishtied by Shani and Mandi, one will have adopted issues"
+          ],
+          "boundary_queries": [
+            "Indications of Putr Bhava. The learned should deduce from Putr Bhava amulets, sacred spells, learning, knowledge, sons, royalty (or authority), fall of position etc.",
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics"
+          ],
+          "method_queries": [
+            "Effects of Putr’s Lord in Various Bhavas",
+            "Effects of Putr Bhava"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v53-putr-lord-in-putr-malefic-no-issue.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if malefic is related to Putr’s Lord"
+            },
+            {
+              "step_id": "ch24-v53-putr-lord-in-putr-malefic-no-issue.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "placed in Putr Bhava"
+            },
+            {
+              "step_id": "ch24-v53-putr-lord-in-putr-malefic-no-issue.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "there will be no issues"
+            },
+            {
+              "step_id": "ch24-v53-putr-lord-in-putr-malefic-no-issue.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if malefic is related to Putr’s Lord there will be no issues"
+            },
+            {
+              "step_id": "ch24-v53-putr-lord-in-putr-malefic-no-issue.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "placed in Putr Bhava there will be no issues"
+            },
+            {
+              "step_id": "ch24-v53-putr-lord-in-putr-malefic-no-issue.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if malefic is related to 5th lord"
+            },
+            {
+              "step_id": "ch24-v53-putr-lord-in-putr-malefic-no-issue.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "placed in 5th house"
+            },
+            {
+              "step_id": "ch24-v53-putr-lord-in-putr-malefic-no-issue.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if malefic is related to 5th lord there will be no issues"
+            },
+            {
+              "step_id": "ch24-v53-putr-lord-in-putr-malefic-no-issue.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "placed in 5th house there will be no issues"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫主是否落五宫的事实时停止。",
+          "原文未界定「与凶星发生关联」的形式，该事实未确定即停止。",
+          "凶星名册未确定时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v53-putr-lord-in-putr-malefic-no-issue.step-001",
+        "action": "先确定本盘凶星名册，再核对五宫主（Putr's Lord）是否落五宫（Putr Bhava）、是否与凶星发生关联，据此判断有无子女。",
+        "applicability_scope": "仅限本命盘五宫主落五宫（Putr Bhava）且与凶星关联一条；原文只说 malefic is related，未在本偈界定「关联」是同宫、相照还是别的形式，未确定即停判；原文未给时间限定。",
+        "minimum_supported_claim": "五宫主（Putr's Lord）与凶星发生关联（malefic is related）、且落五宫（Putr Bhava）时，没有子女。",
+        "produced_fact_keys": [
+          "五宫主落五宫与凶星关联的子女判定"
+        ],
+        "required_fact_keys": [
+          "本盘中哪些行星被判为凶星",
+          "五宫主（Putr's Lord）是否落五宫（Putr）",
+          "五宫主（Putr's Lord）是否与凶星发生关联（related）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘中哪些行星被判为凶星"
+            },
+            {
+              "fact_key": "五宫主（Putr's Lord）是否落五宫（Putr）"
+            },
+            {
+              "fact_key": "五宫主（Putr's Lord）是否与凶星发生关联（related）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if malefic is related to Putr’s Lord",
+              "claim": "五宫主（Putr's Lord）与凶星发生关联（malefic is related）"
+            },
+            {
+              "quote": "placed in Putr Bhava",
+              "claim": "且落五宫（Putr Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "there will be no issues",
+              "claim": "没有子女"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v53",
+            "quote": "there will be no issues, if malefic is related to Putr’s Lord, placed in Putr Bhava",
+            "pdf_pages": [
+              44
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中哪些行星被判为凶星、五宫主（Putr's Lord）是否落五宫（Putr）、五宫主（Putr's Lord）是否与凶星发生关联（related）。",
+        "stop_fact_keys": [
+          "本盘中哪些行星被判为凶星",
+          "五宫主（Putr's Lord）是否落五宫（Putr）",
+          "五宫主（Putr's Lord）是否与凶星发生关联（related）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「与凶星发生关联」自行坐实为同宫、相照或任何一种具体关系——原文未在本偈界定。",
+          "不得给「没有子女」补上原文没有的年龄、死因或宗族含义。",
+          "不得把本条与同偈吉星关联一条合并下断。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "a30644e0b15f6689da2122a27003f90871e8b3e48f7a5fc4f18a1b5ad0ba9829"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v53-putr-lord-in-putr-virtuous.step-001",
+      "method": {
+        "method": "ch24-v53-putr-lord-in-putr-virtuous",
+        "title": "五宫主落五宫：有德行、为朋友所喜爱",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的人品在别人眼里怎么样",
+          "我和朋友之间的缘分如何"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Putr’s Lord in Putr Bhava will, however, make one virtuous and dear to friends",
+            "五宫主落五宫 有德行 为朋友所喜爱"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Indications of Putr Bhava. The learned should deduce from Putr Bhava amulets, sacred spells, learning, knowledge, sons, royalty (or authority), fall of position etc."
+          ],
+          "method_queries": [
+            "Effects of Putr’s Lord in Various Bhavas",
+            "Effects of Putr Bhava"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v53-putr-lord-in-putr-virtuous.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Putr’s Lord in Putr Bhava"
+            },
+            {
+              "step_id": "ch24-v53-putr-lord-in-putr-virtuous.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "make one virtuous and dear to friends"
+            },
+            {
+              "step_id": "ch24-v53-putr-lord-in-putr-virtuous.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Putr’s Lord in Putr Bhava make one virtuous and dear to friends"
+            },
+            {
+              "step_id": "ch24-v53-putr-lord-in-putr-virtuous.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "5th lord in 5th house"
+            },
+            {
+              "step_id": "ch24-v53-putr-lord-in-putr-virtuous.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "5th lord in 5th house make one virtuous and dear to friends"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫主是否落五宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v53-putr-lord-in-putr-virtuous.step-001",
+        "action": "核对五宫主（Putr's Lord）是否落五宫（Putr Bhava），据此判断本人的德行与朋友缘。",
+        "applicability_scope": "仅限本命盘五宫主落五宫（Putr Bhava）一条；原文用 however 把本句与同偈吉星／凶星两条并列，本句不附带吉凶关联条件；原文未给时间限定。",
+        "minimum_supported_claim": "五宫主（Putr's Lord）落五宫（Putr Bhava）时，使本人有德行、为朋友所喜爱。",
+        "produced_fact_keys": [
+          "五宫主落五宫的德行与朋友缘判定"
+        ],
+        "required_fact_keys": [
+          "五宫主（Putr's Lord）是否落五宫（Putr）"
+        ],
+        "condition_logic": {
+          "fact_key": "五宫主（Putr's Lord）是否落五宫（Putr）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Putr’s Lord in Putr Bhava",
+              "claim": "五宫主（Putr's Lord）落五宫（Putr Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "make one virtuous and dear to friends",
+              "claim": "使本人有德行、为朋友所喜爱"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v53",
+            "quote": "Putr’s Lord in Putr Bhava will, however, make one virtuous and dear to friends.",
+            "pdf_pages": [
+              44
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：五宫主（Putr's Lord）是否落五宫（Putr）。",
+        "stop_fact_keys": [
+          "五宫主（Putr's Lord）是否落五宫（Putr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把同偈吉星／凶星两条的子女结论并入本条。",
+          "不得据此推断朋友人数、身份或具体事件。",
+          "不得把本条套用到五宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "a2b174cab49dc6562eccc29b56b73867b000504a5eca7668fb5c09e0dffef627"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v54-putr-lord-in-ari.step-001",
+      "method": {
+        "method": "ch24-v54-putr-lord-in-ari",
+        "title": "五宫主落六宫：所得之子如敌、或失去他们、或得收养或买来的儿子",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和子女之间会不会有对立",
+          "我会不会靠收养得到孩子"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Putr’s Lord is in Ari Bhava, the native will obtain such sons, who will be equal to his enemies",
+            "五宫主落六宫 儿子如敌 收养 买来的儿子"
+          ],
+          "counter_queries": [
+            "If Putr’s Lord is exalted, or be in Dhan, Putr, or Dharm Bhava, or be yuti with, or drishtied by Guru, obtainment of children will be there",
+            "There will be many children, if Putr’s Lord is strong, while Putr is drishtied by strong Budh, Guru and Shukr"
+          ],
+          "boundary_queries": [
+            "Indications of Putr Bhava. The learned should deduce from Putr Bhava amulets, sacred spells, learning, knowledge, sons, royalty (or authority), fall of position etc.",
+            "Indications of Ari Bhava. Maternal uncle, doubts about death, enemies, ulcers, stepmother etc. are to be estimated from Ari Bhava"
+          ],
+          "method_queries": [
+            "Effects of Putr’s Lord in Various Bhavas",
+            "Effects of Ari’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v54-putr-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Putr’s Lord is in Ari Bhava"
+            },
+            {
+              "step_id": "ch24-v54-putr-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will obtain such sons, who will be equal to his enemies"
+            },
+            {
+              "step_id": "ch24-v54-putr-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "or will lose them"
+            },
+            {
+              "step_id": "ch24-v54-putr-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "or will acquire an adopted, or purchased son"
+            },
+            {
+              "step_id": "ch24-v54-putr-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Putr’s Lord is in Ari Bhava the native will obtain such sons, who will be equal to his enemies"
+            },
+            {
+              "step_id": "ch24-v54-putr-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "5th lord is in 6th house"
+            },
+            {
+              "step_id": "ch24-v54-putr-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "5th lord is in 6th house the native will obtain such sons, who will be equal to his enemies"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫主是否落六宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v54-putr-lord-in-ari.step-001",
+        "action": "核对五宫主（Putr's Lord）是否落六宫（Ari Bhava），据此判断本人与儿子之间的处境。",
+        "applicability_scope": "仅限本命盘五宫主（Putr's Lord）落六宫（Ari Bhava）一条；原文把三种结果写成择一，结果本身即为择一，不能同时坐实；原文未给时间限定。",
+        "minimum_supported_claim": "五宫主（Putr's Lord）落六宫（Ari Bhava）时，本人所得的儿子会与其敌人相等，或失去他们，或得到收养或买来的儿子。",
+        "produced_fact_keys": [
+          "五宫主落六宫的子女判定"
+        ],
+        "required_fact_keys": [
+          "五宫主（Putr's Lord）是否落六宫（Ari）"
+        ],
+        "condition_logic": {
+          "fact_key": "五宫主（Putr's Lord）是否落六宫（Ari）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Putr’s Lord is in Ari Bhava",
+              "claim": "五宫主（Putr's Lord）落六宫（Ari Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will obtain such sons, who will be equal to his enemies",
+              "claim": "本人所得的儿子会与其敌人相等"
+            },
+            {
+              "quote": "or will lose them",
+              "claim": "或失去他们"
+            },
+            {
+              "quote": "or will acquire an adopted, or purchased son",
+              "claim": "或得到收养或买来的儿子"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v54",
+            "quote": "If Putr’s Lord is in Ari Bhava, the native will obtain such sons, who will be equal to his enemies, or will lose them, or will acquire an adopted, or purchased son.",
+            "pdf_pages": [
+              44
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：五宫主（Putr's Lord）是否落六宫（Ari）。",
+        "stop_fact_keys": [
+          "五宫主（Putr's Lord）是否落六宫（Ari）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把三种结果同时坐实——原文写的是择一。",
+          "不得给「失去他们」补上原文没有的年龄、死因或宗族含义。",
+          "不得据此推断子女人数或收养时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "90e1abdfc97bc8f72438796e62fb98f97f1aa3eb38380996002215d7f8dfc8ed"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v55-putr-lord-in-yuvati.step-001",
+      "method": {
+        "method": "ch24-v55-putr-lord-in-yuvati",
+        "title": "五宫主落七宫：受尊敬、极虔敬、得子女之乐、乐于助人",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子子女方面顺不顺",
+          "别人眼里我是个什么样的人"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Putr’s Lord is in Yuvati Bhava, the native will be honourable, very religious, endowed with progenic happiness",
+            "五宫主落七宫 受尊敬 虔敬 子女安乐"
+          ],
+          "counter_queries": [
+            "If Putr’s Lord is in Ari, Randhr, or Vyaya Bhava, or be in an inimical Rāśi, or be in fall, or in Putr itself, the native will beget issues with difficulty"
+          ],
+          "boundary_queries": [
+            "Indications of Putr Bhava. The learned should deduce from Putr Bhava amulets, sacred spells, learning, knowledge, sons, royalty (or authority), fall of position etc.",
+            "Indications of Yuvati Bhava. Wife, travel, trade, loss of sight, death etc. be known from Yuvati Bhava"
+          ],
+          "method_queries": [
+            "Effects of Putr’s Lord in Various Bhavas",
+            "Effects of Yuvati’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v55-putr-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Putr’s Lord is in Yuvati Bhava"
+            },
+            {
+              "step_id": "ch24-v55-putr-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be honourable, very religious"
+            },
+            {
+              "step_id": "ch24-v55-putr-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "endowed with progenic happiness"
+            },
+            {
+              "step_id": "ch24-v55-putr-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be helpful to others"
+            },
+            {
+              "step_id": "ch24-v55-putr-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Putr’s Lord is in Yuvati Bhava the native will be honourable, very religious"
+            },
+            {
+              "step_id": "ch24-v55-putr-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "5th lord is in 7th house"
+            },
+            {
+              "step_id": "ch24-v55-putr-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "5th lord is in 7th house the native will be honourable, very religious"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫主是否落七宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v55-putr-lord-in-yuvati.step-001",
+        "action": "核对五宫主（Putr's Lord）是否落七宫（Yuvati Bhava），据此判断本人的子女安乐与品行。",
+        "applicability_scope": "仅限本命盘五宫主（Putr's Lord）落七宫（Yuvati Bhava）一条；原文未给时间限定，也未给子女人数。",
+        "minimum_supported_claim": "五宫主（Putr's Lord）落七宫（Yuvati Bhava）时，本人受人尊敬、极为虔敬，得子女方面的安乐，乐于助人。",
+        "produced_fact_keys": [
+          "五宫主落七宫的子女安乐与品行判定"
+        ],
+        "required_fact_keys": [
+          "五宫主（Putr's Lord）是否落七宫（Yuvati）"
+        ],
+        "condition_logic": {
+          "fact_key": "五宫主（Putr's Lord）是否落七宫（Yuvati）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Putr’s Lord is in Yuvati Bhava",
+              "claim": "五宫主（Putr's Lord）落七宫（Yuvati Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be honourable, very religious",
+              "claim": "本人受人尊敬、极为虔敬"
+            },
+            {
+              "quote": "endowed with progenic happiness",
+              "claim": "得子女方面的安乐"
+            },
+            {
+              "quote": "be helpful to others",
+              "claim": "乐于助人"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v55",
+            "quote": "If Putr’s Lord is in Yuvati Bhava, the native will be honourable, very religious, endowed with progenic happiness and be helpful to others.",
+            "pdf_pages": [
+              44
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：五宫主（Putr's Lord）是否落七宫（Yuvati）。",
+        "stop_fact_keys": [
+          "五宫主（Putr's Lord）是否落七宫（Yuvati）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断子女人数、性别或得子年份。",
+          "不得把本条扩大成婚姻或配偶方面的结论。",
+          "不得把本条套用到五宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "6c4c78ce2807818179596fd8ec3e982ea8a62b2a3eda795f223c7d3be3fa1abb"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v56-putr-lord-in-randhr.step-001",
+      "method": {
+        "method": "ch24-v56-putr-lord-in-randhr",
+        "title": "五宫主落八宫：子女之乐不多、受咳嗽与肺疾之苦、易怒无乐",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我子女方面为什么总不顺",
+          "我的呼吸道毛病和情绪问题和盘上有没有关系"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Putr’s Lord is in Randhr Bhava, the native will not have much progenic happiness, be troubled by cough and pulmonary disorders",
+            "五宫主落八宫 子女之乐不多 咳嗽 肺疾 易怒"
+          ],
+          "counter_queries": [
+            "If Putr’s Lord is exalted, or be in Dhan, Putr, or Dharm Bhava, or be yuti with, or drishtied by Guru, obtainment of children will be there",
+            "There will be many children, if Putr’s Lord is strong, while Putr is drishtied by strong Budh, Guru and Shukr"
+          ],
+          "boundary_queries": [
+            "Indications of Putr Bhava. The learned should deduce from Putr Bhava amulets, sacred spells, learning, knowledge, sons, royalty (or authority), fall of position etc.",
+            "Indications of Randhr Bhava. Randhr Bhava indicates longevity, battle, enemies, forts, wealth of the dead and things, that have happened and are to happen"
+          ],
+          "method_queries": [
+            "Effects of Putr’s Lord in Various Bhavas",
+            "Effects of Ari Bhava"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v56-putr-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Putr’s Lord is in Randhr Bhava"
+            },
+            {
+              "step_id": "ch24-v56-putr-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will not have much progenic happiness"
+            },
+            {
+              "step_id": "ch24-v56-putr-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be troubled by cough and pulmonary disorders"
+            },
+            {
+              "step_id": "ch24-v56-putr-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be given to anger and be devoid of happiness"
+            },
+            {
+              "step_id": "ch24-v56-putr-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Putr’s Lord is in Randhr Bhava the native will not have much progenic happiness"
+            },
+            {
+              "step_id": "ch24-v56-putr-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "5th lord is in 8th house"
+            },
+            {
+              "step_id": "ch24-v56-putr-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "5th lord is in 8th house the native will not have much progenic happiness"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫主是否落八宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v56-putr-lord-in-randhr.step-001",
+        "action": "核对五宫主（Putr's Lord）是否落八宫（Randhr Bhava），据此判断本人的子女安乐与咳嗽肺疾方面的困扰。",
+        "applicability_scope": "仅限本命盘五宫主（Putr's Lord）落八宫（Randhr Bhava）一条；原文未给发病年龄、病程或时间限定。",
+        "minimum_supported_claim": "五宫主（Putr's Lord）落八宫（Randhr Bhava）时，本人子女方面的安乐不多，受咳嗽与肺部疾患困扰，易怒且没有安乐。",
+        "produced_fact_keys": [
+          "五宫主落八宫的子女安乐与健康判定"
+        ],
+        "required_fact_keys": [
+          "五宫主（Putr's Lord）是否落八宫（Randhr）"
+        ],
+        "condition_logic": {
+          "fact_key": "五宫主（Putr's Lord）是否落八宫（Randhr）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Putr’s Lord is in Randhr Bhava",
+              "claim": "五宫主（Putr's Lord）落八宫（Randhr Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will not have much progenic happiness",
+              "claim": "本人子女方面的安乐不多"
+            },
+            {
+              "quote": "be troubled by cough and pulmonary disorders",
+              "claim": "受咳嗽与肺部疾患困扰"
+            },
+            {
+              "quote": "be given to anger and be devoid of happiness",
+              "claim": "易怒且没有安乐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v56",
+            "quote": "If Putr’s Lord is in Randhr Bhava, the native will not have much progenic happiness, be troubled by cough and pulmonary disorders, be given to anger and be devoid of happiness.",
+            "pdf_pages": [
+              44
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：五宫主（Putr's Lord）是否落八宫（Randhr）。",
+        "stop_fact_keys": [
+          "五宫主（Putr's Lord）是否落八宫（Randhr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「子女之乐不多」写成没有子女或子女去世。",
+          "不得据此推断具体病名、病程或就医时间。",
+          "不得把本条套用到五宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "86e8ad21463acf500153a8fd5ef220d3f69e58b5f906469153ab5b83dfda72a5"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v57-putr-lord-in-dharm.step-001",
+      "method": {
+        "method": "ch24-v57-putr-lord-in-dharm",
+        "title": "五宫主落九宫：贵为王子或与之相当、著述、有名望、族中显耀",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子能不能在学问著述上有成就",
+          "我的社会地位会到什么份上"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Putr’s Lord is in Dharm Bhava, the native will be a prince, or equal to him, will author treatises",
+            "五宫主落九宫 王子 著述 族中显耀"
+          ],
+          "counter_queries": [
+            "One will be fortunate (or affluent), if Dharm’s Lord is in Dharm Bhava with strength"
+          ],
+          "boundary_queries": [
+            "Indications of Putr Bhava. The learned should deduce from Putr Bhava amulets, sacred spells, learning, knowledge, sons, royalty (or authority), fall of position etc.",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava"
+          ],
+          "method_queries": [
+            "Effects of Putr’s Lord in Various Bhavas",
+            "Effects of Dharm’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v57-putr-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Putr’s Lord is in Dharm Bhava"
+            },
+            {
+              "step_id": "ch24-v57-putr-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be a prince, or equal to him"
+            },
+            {
+              "step_id": "ch24-v57-putr-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will author treatises"
+            },
+            {
+              "step_id": "ch24-v57-putr-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be famous"
+            },
+            {
+              "step_id": "ch24-v57-putr-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will shine in his race"
+            },
+            {
+              "step_id": "ch24-v57-putr-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Putr’s Lord is in Dharm Bhava the native will be a prince, or equal to him"
+            },
+            {
+              "step_id": "ch24-v57-putr-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "5th lord is in 9th house"
+            },
+            {
+              "step_id": "ch24-v57-putr-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "5th lord is in 9th house the native will be a prince, or equal to him"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫主是否落九宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v57-putr-lord-in-dharm.step-001",
+        "action": "核对五宫主（Putr's Lord）是否落九宫（Dharm Bhava），据此判断本人的地位、著述与族中声望。",
+        "applicability_scope": "仅限本命盘五宫主（Putr's Lord）落九宫（Dharm Bhava）一条；原文把「王子」与「与之相当」写成择一；原文未给时间限定。",
+        "minimum_supported_claim": "五宫主（Putr's Lord）落九宫（Dharm Bhava）时，本人会是王子或与之相当，著述论著，有名望，在其族中显耀。",
+        "produced_fact_keys": [
+          "五宫主落九宫的地位与著述判定"
+        ],
+        "required_fact_keys": [
+          "五宫主（Putr's Lord）是否落九宫（Dharm）"
+        ],
+        "condition_logic": {
+          "fact_key": "五宫主（Putr's Lord）是否落九宫（Dharm）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Putr’s Lord is in Dharm Bhava",
+              "claim": "五宫主（Putr's Lord）落九宫（Dharm Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be a prince, or equal to him",
+              "claim": "本人会是王子或与之相当"
+            },
+            {
+              "quote": "will author treatises",
+              "claim": "著述论著"
+            },
+            {
+              "quote": "be famous",
+              "claim": "有名望"
+            },
+            {
+              "quote": "will shine in his race",
+              "claim": "在其族中显耀"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v57",
+            "quote": "If Putr’s Lord is in Dharm Bhava, the native will be a prince, or equal to him, will author treatises, be famous and will shine in his race.",
+            "pdf_pages": [
+              44
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：五宫主（Putr's Lord）是否落九宫（Dharm）。",
+        "stop_fact_keys": [
+          "五宫主（Putr's Lord）是否落九宫（Dharm）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「王子」坐实为具体身份或世袭地位——原文同时给了「与之相当」这一择一。",
+          "不得据此推断著作数量、题材或成书时间。",
+          "不得把本条套用到五宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "06dd8f1ad7bb258970656d60456dc5379e8937f910492b0493f129bb5e62911e"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v58-putr-lord-in-karm.step-001",
+      "method": {
+        "method": "ch24-v58-putr-lord-in-karm",
+        "title": "五宫主落十宫：享王者瑜伽与种种享乐、极有名望",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我有没有掌权显达的命",
+          "我这辈子名气能有多大"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Putr’s Lord is in Karm Bhava, the native will enjoy a Raj Yog and various pleasures and be very famous",
+            "五宫主落十宫 王者瑜伽 享乐 名望"
+          ],
+          "counter_queries": [
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak, or receives a Drishti from such a Grah"
+          ],
+          "boundary_queries": [
+            "Indications of Putr Bhava. The learned should deduce from Putr Bhava amulets, sacred spells, learning, knowledge, sons, royalty (or authority), fall of position etc.",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava"
+          ],
+          "method_queries": [
+            "Effects of Putr’s Lord in Various Bhavas",
+            "Effects of Karm’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v58-putr-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Putr’s Lord is in Karm Bhava"
+            },
+            {
+              "step_id": "ch24-v58-putr-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will enjoy a Raj Yog and various pleasures"
+            },
+            {
+              "step_id": "ch24-v58-putr-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be very famous"
+            },
+            {
+              "step_id": "ch24-v58-putr-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Putr’s Lord is in Karm Bhava the native will enjoy a Raj Yog and various pleasures"
+            },
+            {
+              "step_id": "ch24-v58-putr-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "5th lord is in 10th house"
+            },
+            {
+              "step_id": "ch24-v58-putr-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "5th lord is in 10th house the native will enjoy a Raj Yog and various pleasures"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少五宫主是否落十宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v58-putr-lord-in-karm.step-001",
+        "action": "核对五宫主（Putr's Lord）是否落十宫（Karm Bhava），据此判断本人的显达与名望。",
+        "applicability_scope": "仅限本命盘五宫主（Putr's Lord）落十宫（Karm Bhava）一条；原文只说享有 Raj Yog，未在本偈给出该瑜伽的构成判准；原文未给时间限定。",
+        "minimum_supported_claim": "五宫主（Putr's Lord）落十宫（Karm Bhava）时，本人享有王者瑜伽（Raj Yog）与种种享乐，极有名望。",
+        "produced_fact_keys": [
+          "五宫主落十宫的显达与名望判定"
+        ],
+        "required_fact_keys": [
+          "五宫主（Putr's Lord）是否落十宫（Karm）"
+        ],
+        "condition_logic": {
+          "fact_key": "五宫主（Putr's Lord）是否落十宫（Karm）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Putr’s Lord is in Karm Bhava",
+              "claim": "五宫主（Putr's Lord）落十宫（Karm Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will enjoy a Raj Yog and various pleasures",
+              "claim": "本人享有王者瑜伽（Raj Yog）与种种享乐"
+            },
+            {
+              "quote": "be very famous",
+              "claim": "极有名望"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v58",
+            "quote": "If Putr’s Lord is in Karm Bhava, the native will enjoy a Raj Yog and various pleasures and be very famous.",
+            "pdf_pages": [
+              44
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：五宫主（Putr's Lord）是否落十宫（Karm）。",
+        "stop_fact_keys": [
+          "五宫主（Putr's Lord）是否落十宫（Karm）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此认定盘上另成某个具体的 Raj Yog 组合——原文未在本偈给判准。",
+          "不得据此推断官职、权位大小或发迹年份。",
+          "不得把本条套用到五宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "d5611018ab086a99a300baa016c0435a1a8771c6dd1d19a915e9446e4757d714"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch24:v50": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v50",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "50.",
+      "content_role": "verse",
+      "exact_text": "50. If Putr’s Lord is in Dhan Bhava, the native will have many sons and wealth, be a pater familias, be honourable, be attached to his spouse and be famous in the world.",
+      "pdf_pages": [
+        44
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 50 · PDF page 44 · bphs-97:santhanam:ch24:v50",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v49",
+      "next_atom_id": "bphs-97:santhanam:ch24:v51",
+      "context_before": " If Putr’s Lord is in Lagna, the native will be scholarly, be endowed with progenic happiness, be a miser, be crooked and will steal others’ wealth.\n\n",
+      "context_after": "51. If Putr’s Lord is in Sahaj, the native will be attached to his co-born, be a tale bearer and a miser and be always intereste",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v51": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v51",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "51.",
+      "content_role": "verse",
+      "exact_text": "51. If Putr’s Lord is in Sahaj, the native will be attached to his co-born, be a tale bearer and a miser and be always interested in his own work.",
+      "pdf_pages": [
+        44
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 51 · PDF page 44 · bphs-97:santhanam:ch24:v51",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v50",
+      "next_atom_id": "bphs-97:santhanam:ch24:v52",
+      "context_before": " If Putr’s Lord is in Dhan Bhava, the native will have many sons and wealth, be a pater familias, be honourable, be attached to his spouse and be famous in the world.\n\n",
+      "context_after": "52. If Putr’s Lord is in Bandhu Bhava, the native will be happy, endowed with maternal happiness, wealth and intelligence and be",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v52": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v52",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "52.",
+      "content_role": "verse",
+      "exact_text": "52. If Putr’s Lord is in Bandhu Bhava, the native will be happy, endowed with maternal happiness, wealth and intelligence and be a king, or a minister, or a preceptor.",
+      "pdf_pages": [
+        44
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 52 · PDF page 44 · bphs-97:santhanam:ch24:v52",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v51",
+      "next_atom_id": "bphs-97:santhanam:ch24:v53",
+      "context_before": " If Putr’s Lord is in Sahaj, the native will be attached to his co-born, be a tale bearer and a miser and be always interested in his own work.\n\n",
+      "context_after": "53. If Putr’s Lord is in Putr Bhava, the native will have progeny, if related to a benefic; there will be no issues, if malefic ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v53": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v53",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "53.",
+      "content_role": "verse",
+      "exact_text": "53. If Putr’s Lord is in Putr Bhava, the native will have progeny, if related to a benefic; there will be no issues, if malefic is related to Putr’s Lord, placed in Putr Bhava. Putr’s Lord in Putr Bhava will, however, make one virtuous and dear to friends.",
+      "pdf_pages": [
+        44
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 53 · PDF page 44 · bphs-97:santhanam:ch24:v53",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v52",
+      "next_atom_id": "bphs-97:santhanam:ch24:v54",
+      "context_before": " If Putr’s Lord is in Bandhu Bhava, the native will be happy, endowed with maternal happiness, wealth and intelligence and be a king, or a minister, or a preceptor.\n\n",
+      "context_after": "54. If Putr’s Lord is in Ari Bhava, the native will obtain such sons, who will be equal to his enemies, or will lose them, or wi",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v54": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v54",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "54.",
+      "content_role": "verse",
+      "exact_text": "54. If Putr’s Lord is in Ari Bhava, the native will obtain such sons, who will be equal to his enemies, or will lose them, or will acquire an adopted, or purchased son.",
+      "pdf_pages": [
+        44
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 54 · PDF page 44 · bphs-97:santhanam:ch24:v54",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v53",
+      "next_atom_id": "bphs-97:santhanam:ch24:v55",
+      "context_before": " related to Putr’s Lord, placed in Putr Bhava. Putr’s Lord in Putr Bhava will, however, make one virtuous and dear to friends.\n\n",
+      "context_after": "55. If Putr’s Lord is in Yuvati Bhava, the native will be honourable, very religious, endowed with progenic happiness and be hel",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v55": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v55",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "55.",
+      "content_role": "verse",
+      "exact_text": "55. If Putr’s Lord is in Yuvati Bhava, the native will be honourable, very religious, endowed with progenic happiness and be helpful to others.",
+      "pdf_pages": [
+        44
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 55 · PDF page 44 · bphs-97:santhanam:ch24:v55",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v54",
+      "next_atom_id": "bphs-97:santhanam:ch24:v56",
+      "context_before": " If Putr’s Lord is in Ari Bhava, the native will obtain such sons, who will be equal to his enemies, or will lose them, or will acquire an adopted, or purchased son.\n\n",
+      "context_after": "56. If Putr’s Lord is in Randhr Bhava, the native will not have much progenic happiness, be troubled by cough and pulmonary diso",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v56": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v56",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "56.",
+      "content_role": "verse",
+      "exact_text": "56. If Putr’s Lord is in Randhr Bhava, the native will not have much progenic happiness, be troubled by cough and pulmonary disorders, be given to anger and be devoid of happiness.",
+      "pdf_pages": [
+        44
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 56 · PDF page 44 · bphs-97:santhanam:ch24:v56",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v55",
+      "next_atom_id": "bphs-97:santhanam:ch24:v57",
+      "context_before": " If Putr’s Lord is in Yuvati Bhava, the native will be honourable, very religious, endowed with progenic happiness and be helpful to others.\n\n",
+      "context_after": "57. If Putr’s Lord is in Dharm Bhava, the native will be a prince, or equal to him, will author treatises, be famous and will sh",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v57": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v57",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "57.",
+      "content_role": "verse",
+      "exact_text": "57. If Putr’s Lord is in Dharm Bhava, the native will be a prince, or equal to him, will author treatises, be famous and will shine in his race.",
+      "pdf_pages": [
+        44
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 57 · PDF page 44 · bphs-97:santhanam:ch24:v57",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v56",
+      "next_atom_id": "bphs-97:santhanam:ch24:v58",
+      "context_before": " If Putr’s Lord is in Randhr Bhava, the native will not have much progenic happiness, be troubled by cough and pulmonary disorders, be given to anger and be devoid of happiness.\n\n",
+      "context_after": "58. If Putr’s Lord is in Karm Bhava, the native will enjoy a Raj Yog and various pleasures and be very famous.\n\n59. If Putr’s Lo",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v58": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v58",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "58.",
+      "content_role": "verse",
+      "exact_text": "58. If Putr’s Lord is in Karm Bhava, the native will enjoy a Raj Yog and various pleasures and be very famous.",
+      "pdf_pages": [
+        44
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 58 · PDF page 44 · bphs-97:santhanam:ch24:v58",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v57",
+      "next_atom_id": "bphs-97:santhanam:ch24:v59",
+      "context_before": " If Putr’s Lord is in Dharm Bhava, the native will be a prince, or equal to him, will author treatises, be famous and will shine in his race.\n\n",
+      "context_after": "59. If Putr’s Lord is in Labh Bhava, the native will be learned, dear to people, be an author of treatises, be very skilful and ",
+      "content_missing": false
+    }
+  }
+}

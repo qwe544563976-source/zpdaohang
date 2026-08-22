@@ -1,0 +1,1944 @@
+{
+  "shard": 3,
+  "step_count": 12,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch24-v19-malefic-related-wife-character.step-001",
+      "method": {
+        "method": "ch24-v19-malefic-related-wife-character",
+        "title": "妻子品行受质疑：二宫主落七宫（Yuvati）且凶星与该配置发生关系",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我妻子的名声会不会有问题",
+          "二宫主落七宫又被凶星影响会怎样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If a malefic is related to the said placement by yuti with Dhan’s Lord, or by Drishti, the native’s wife will be of questionable character",
+            "二宫主落七宫 凶星同宫 相照 妻子品行"
+          ],
+          "counter_queries": [
+            "If Dharm’s Lord is in Dhan Bhava, the native will be a scholar, be dear to all, wealthy, sensuous and endowed with happiness from wife, sons etc.",
+            "The native will beget a spouse endowed with (the seven principal) virtues"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Indications of Yuvati Bhava. Wife, travel, trade, loss of sight, death etc. be known from Yuvati Bhava",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "Effects of Dhan’s Lord in Various Bhavas (up to Sloka 24)",
+            "判断配偶品行要核对七宫与哪些凶星关系"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v19-malefic-related-wife-character.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dhan’s Lord is in Yuvati Bhava"
+            },
+            {
+              "step_id": "ch24-v19-malefic-related-wife-character.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "by yuti with Dhan’s Lord"
+            },
+            {
+              "step_id": "ch24-v19-malefic-related-wife-character.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or by Drishti"
+            },
+            {
+              "step_id": "ch24-v19-malefic-related-wife-character.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native’s wife will be of questionable character"
+            },
+            {
+              "step_id": "ch24-v19-malefic-related-wife-character.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dhan’s Lord is in Yuvati Bhava the native’s wife will be of questionable character"
+            },
+            {
+              "step_id": "ch24-v19-malefic-related-wife-character.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "by yuti with Dhan’s Lord the native’s wife will be of questionable character"
+            },
+            {
+              "step_id": "ch24-v19-malefic-related-wife-character.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or by Drishti the native’s wife will be of questionable character"
+            },
+            {
+              "step_id": "ch24-v19-malefic-related-wife-character.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "2nd lord is in 7th house"
+            },
+            {
+              "step_id": "ch24-v19-malefic-related-wife-character.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "by yuti with 2nd lord"
+            },
+            {
+              "step_id": "ch24-v19-malefic-related-wife-character.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "2nd lord is in 7th house the native’s wife will be of questionable character"
+            },
+            {
+              "step_id": "ch24-v19-malefic-related-wife-character.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "by yuti with 2nd lord the native’s wife will be of questionable character"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少二宫主是否落七宫（Yuvati）的事实时停止。",
+          "凶星名册未确定时，两个凶星关系分支停止。",
+          "二宫主与凶星同宫、被凶星相照两项事实全部缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v19-malefic-related-wife-character.step-001",
+        "action": "先核对二宫主（Dhan's Lord）是否落七宫（Yuvati），再核对是否有凶星以与二宫主同宫，或以相照的方式与该配置发生关系。",
+        "applicability_scope": "仅限本命盘二宫主（Dhan's Lord）落宫主题；the said placement 承同偈前句的「二宫主落七宫（Yuvati）」；原文把凶星与该配置的关系明写成两种（与二宫主同宫、相照），本步照此拆成两个并列分支；第二种原文只写 by Drishti，未写明相照的落点是二宫主本身还是它所落的七宫，本步按相照二宫主写入事实名；原文以 the native’s wife 立说，属男命框架；凶星名册以本书 ch03:v11 的界定为准；原文未给时间限定。",
+        "minimum_supported_claim": "承同偈「二宫主（Dhan's Lord）落七宫（Yuvati）」的配置，若有凶星与二宫主同宫，或以相照的方式与该配置发生关系，命主的妻子品行会受到质疑。",
+        "produced_fact_keys": [
+          "二宫主落七宫遇凶星的配偶品行判定"
+        ],
+        "required_fact_keys": [
+          "二宫主（Dhan's Lord）是否落七宫（Yuvati）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "二宫主（Dhan's Lord）是否落七宫（Yuvati）"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "二宫主（Dhan's Lord）是否与凶星同宫"
+                },
+                {
+                  "fact_key": "二宫主（Dhan's Lord）是否被凶星相照"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "二宫主（Dhan's Lord）是否落七宫（Yuvati）"
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）是否与凶星同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "二宫主（Dhan's Lord）是否与凶星同宫"
+            },
+            "selection_group": "ch24-v19-malefic-related-wife-character.step-001:malefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）是否与凶星同宫。"
+          },
+          {
+            "when": {
+              "fact_key": "二宫主（Dhan's Lord）是否落七宫（Yuvati）"
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）是否被凶星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "二宫主（Dhan's Lord）是否被凶星相照"
+            },
+            "selection_group": "ch24-v19-malefic-related-wife-character.step-001:malefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）是否被凶星相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dhan’s Lord is in Yuvati Bhava",
+              "claim": "二宫主（Dhan's Lord）落七宫（Yuvati）"
+            },
+            {
+              "quote": "by yuti with Dhan’s Lord",
+              "claim": "凶星与二宫主同宫"
+            },
+            {
+              "quote": "or by Drishti",
+              "claim": "或以相照的方式"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native’s wife will be of questionable character",
+              "claim": "命主的妻子品行会受到质疑"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v19",
+            "quote": "If Dhan’s Lord is in Yuvati Bhava, the native will be addicted to others’ wives and he will be a doctor. If a malefic is related to the said placement by yuti with Dhan’s Lord, or by Drishti, the native’s wife will be of questionable character.",
+            "pdf_pages": [
+              42
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：二宫主（Dhan's Lord）是否落七宫（Yuvati）。",
+        "stop_fact_keys": [
+          "二宫主（Dhan's Lord）是否落七宫（Yuvati）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「品行受到质疑」写成已经出轨的事实断语。",
+          "不得据此推断离婚、婚期或妻子人数。",
+          "不得在原文写明的同宫与相照两种关系之外，另加别的关系类型。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch24:v19"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "02bee89f58d4e67ff650c40c37612ce29e5424f4507fdce31d9e8f6a2b42b1a3"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v20-dhan-lord-in-randhr.step-001",
+      "method": {
+        "method": "ch24-v20-dhan-lord-in-randhr",
+        "title": "土地财富丰厚但婚姻之乐有限、得不到兄长之乐：二宫主落八宫（Randhr）",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会有田产",
+          "我和兄长的缘分怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dhan’s Lord is in Randhr Bhava, the native will be endowed with abundant land and wealth. But he will have limited marital felicity and be bereft of happiness from his elder brother.",
+            "二宫主落八宫 土地 财富 婚姻幸福有限 兄长"
+          ],
+          "counter_queries": [
+            "If Dharm’s Lord is in Dhan Bhava, the native will be a scholar, be dear to all, wealthy, sensuous and endowed with happiness from wife, sons etc.",
+            "If Dhan’s Lord is in Vyaya Bhava, the native will be adventurous, be devoid of wealth and be interested in other’s wealth"
+          ],
+          "boundary_queries": [
+            "Indications of Randhr Bhava. Randhr Bhava indicates longevity, battle, enemies, forts, wealth of the dead",
+            "If Dharm’s Lord is in Randhr Bhava, the native will not be prosperous and will not enjoy happiness from his elder brother",
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava"
+          ],
+          "method_queries": [
+            "Effects of Dhan’s Lord in Various Bhavas (up to Sloka 24)",
+            "判断田产与婚姻之乐要核对哪一个宫主"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v20-dhan-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dhan’s Lord is in Randhr Bhava"
+            },
+            {
+              "step_id": "ch24-v20-dhan-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be endowed with abundant land and wealth"
+            },
+            {
+              "step_id": "ch24-v20-dhan-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "he will have limited marital felicity and be bereft of happiness from his elder brother"
+            },
+            {
+              "step_id": "ch24-v20-dhan-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dhan’s Lord is in Randhr Bhava the native will be endowed with abundant land and wealth"
+            },
+            {
+              "step_id": "ch24-v20-dhan-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "2nd lord is in 8th house"
+            },
+            {
+              "step_id": "ch24-v20-dhan-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "2nd lord is in 8th house the native will be endowed with abundant land and wealth"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少二宫主是否落八宫（Randhr）的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v20-dhan-lord-in-randhr.step-001",
+        "action": "核对二宫主（Dhan's Lord）是否落八宫（Randhr）。",
+        "applicability_scope": "仅限本命盘二宫主（Dhan's Lord）落宫主题；原文以 marital felicity 与 his elder brother 立说，属男命框架；原文未给土地数量、财富数额或时间限定。",
+        "minimum_supported_claim": "二宫主（Dhan's Lord）落八宫（Randhr）时，命主会有丰厚的土地与财富，但婚姻上的幸福有限，并且得不到来自兄长的快乐。",
+        "produced_fact_keys": [
+          "二宫主落八宫的田产、婚姻与兄长判定"
+        ],
+        "required_fact_keys": [
+          "二宫主（Dhan's Lord）是否落八宫（Randhr）"
+        ],
+        "condition_logic": {
+          "fact_key": "二宫主（Dhan's Lord）是否落八宫（Randhr）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dhan’s Lord is in Randhr Bhava",
+              "claim": "二宫主（Dhan's Lord）落八宫（Randhr）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be endowed with abundant land and wealth",
+              "claim": "命主会有丰厚的土地与财富"
+            },
+            {
+              "quote": "he will have limited marital felicity and be bereft of happiness from his elder brother",
+              "claim": "婚姻上的幸福有限，并且得不到来自兄长的快乐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v20",
+            "quote": "If Dhan’s Lord is in Randhr Bhava, the native will be endowed with abundant land and wealth. But he will have limited marital felicity and be bereft of happiness from his elder brother.",
+            "pdf_pages": [
+              42
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：二宫主（Dhan's Lord）是否落八宫（Randhr）。",
+        "stop_fact_keys": [
+          "二宫主（Dhan's Lord）是否落八宫（Randhr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断土地面积、财富数额或取得时间。",
+          "不得把「婚姻上的幸福有限」扩大成离婚、丧偶或不婚。",
+          "不得把「得不到来自兄长的快乐」扩大成兄长存殁或人数。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "e877c037ff123025b6e45fcf91413d80e7f0c57dab7534566298dd6cdb9b0857"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v21-dhan-lord-in-dharm.step-001",
+      "method": {
+        "method": "ch24-v21-dhan-lord-in-dharm",
+        "title": "富有勤勉、童年患病之后快乐、造访圣地：二宫主落九宫（Dharm）",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的财运和信仰生活怎么样",
+          "二宫主落九宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dhan’s Lord is in Dharm Bhava, the native will be wealthy, diligent, skilful, sick during childhood and will later on be happy and will visit shrines, observing religious code etc.",
+            "二宫主落九宫 富有 童年患病 造访圣地"
+          ],
+          "counter_queries": [
+            "If Dhan’s Lord is in Vyaya Bhava, the native will be adventurous, be devoid of wealth and be interested in other’s wealth",
+            "Yogas for Poverty. One will be penniless, if the Lord of Dhan Bhava is in an evil Bhava, while the Lord of Labh Bhava is also so placed and Dhan Bhava is occupied by a malefic"
+          ],
+          "boundary_queries": [
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava",
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava"
+          ],
+          "method_queries": [
+            "Effects of Dhan’s Lord in Various Bhavas (up to Sloka 24)",
+            "判断二宫主的效果要先看它落在第几宫"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v21-dhan-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dhan’s Lord is in Dharm Bhava"
+            },
+            {
+              "step_id": "ch24-v21-dhan-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be wealthy, diligent, skilful, sick during childhood and will later on be happy and will visit shrines, observing religious code etc."
+            },
+            {
+              "step_id": "ch24-v21-dhan-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dhan’s Lord is in Dharm Bhava the native will be wealthy, diligent, skilful, sick during childhood and will later on be happy and will visit shrines, observing religious code etc."
+            },
+            {
+              "step_id": "ch24-v21-dhan-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "2nd lord is in 9th house"
+            },
+            {
+              "step_id": "ch24-v21-dhan-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "2nd lord is in 9th house the native will be wealthy, diligent, skilful, sick during childhood and will later on be happy and will visit shrines, observing religious code etc."
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少二宫主是否落九宫（Dharm）的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v21-dhan-lord-in-dharm.step-001",
+        "action": "核对二宫主（Dhan's Lord）是否落九宫（Dharm）。",
+        "applicability_scope": "仅限本命盘二宫主（Dhan's Lord）落宫主题；本段原文自标「Effects of Dhan’s Lord in Various Bhavas (up to Sloka 24)」（同章 v13）；原文只在结果里区分童年与之后，没有给出可用于触发的时间条件；原文未给财富数额、病名或造访次数。",
+        "minimum_supported_claim": "二宫主（Dhan's Lord）落九宫（Dharm）时，命主会富有、勤勉、有技艺，童年时患病，之后会快乐，并会造访圣地、遵守宗教规范等。",
+        "produced_fact_keys": [
+          "二宫主落九宫的财富与信仰判定"
+        ],
+        "required_fact_keys": [
+          "二宫主（Dhan's Lord）是否落九宫（Dharm）"
+        ],
+        "condition_logic": {
+          "fact_key": "二宫主（Dhan's Lord）是否落九宫（Dharm）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dhan’s Lord is in Dharm Bhava",
+              "claim": "二宫主（Dhan's Lord）落九宫（Dharm）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be wealthy, diligent, skilful, sick during childhood and will later on be happy and will visit shrines, observing religious code etc.",
+              "claim": "命主会富有、勤勉、有技艺，童年时患病，之后会快乐，并会造访圣地、遵守宗教规范等"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v21",
+            "quote": "If Dhan’s Lord is in Dharm Bhava, the native will be wealthy, diligent, skilful, sick during childhood and will later on be happy and will visit shrines, observing religious code etc.",
+            "pdf_pages": [
+              42
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：二宫主（Dhan's Lord）是否落九宫（Dharm）。",
+        "stop_fact_keys": [
+          "二宫主（Dhan's Lord）是否落九宫（Dharm）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断患病的年龄区间、病名或痊愈时间。",
+          "不得据此推断财富数额或来源。",
+          "不得把「造访圣地」扩大成具体的朝圣次数、地点或出家。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文只在结果里写了童年与之后，没有给出可用于触发的时间条件",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "04341c4900eeb1dae05ac61aa2f5d5275a500eba0b6349f7afb13bfd82f77ee8"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v22-dhan-lord-in-karm.step-001",
+      "method": {
+        "method": "ch24-v22-dhan-lord-in-karm",
+        "title": "好色受尊敬有学识、多妻多财但无子女之乐：二宫主落十宫（Karm）",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的财运和子女缘怎么样",
+          "二宫主落十宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dhan’s Lord is in Karm Bhava, the native will be libidinous, honourable and learned; he will have many wives and much wealth, but he will be bereft of filial happiness.",
+            "二宫主落十宫 多妻 多财 无子女之乐"
+          ],
+          "counter_queries": [
+            "If Putr’s Lord is in Dhan Bhava, the native will have many sons and wealth, be a pater familias, be honourable, be attached to his spouse and be famous in the world",
+            "If Dhan’s Lord is in Dhan Bhava, the native will be wealthy, proud, will have two, or more wives and be bereft of progeny"
+          ],
+          "boundary_queries": [
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava",
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava"
+          ],
+          "method_queries": [
+            "Effects of Dhan’s Lord in Various Bhavas (up to Sloka 24)",
+            "判断二宫主的效果要先看它落在第几宫"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v22-dhan-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dhan’s Lord is in Karm Bhava"
+            },
+            {
+              "step_id": "ch24-v22-dhan-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be libidinous, honourable and learned"
+            },
+            {
+              "step_id": "ch24-v22-dhan-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "he will have many wives and much wealth, but he will be bereft of filial happiness"
+            },
+            {
+              "step_id": "ch24-v22-dhan-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dhan’s Lord is in Karm Bhava the native will be libidinous, honourable and learned"
+            },
+            {
+              "step_id": "ch24-v22-dhan-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "2nd lord is in 10th house"
+            },
+            {
+              "step_id": "ch24-v22-dhan-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "2nd lord is in 10th house the native will be libidinous, honourable and learned"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少二宫主是否落十宫（Karm）的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v22-dhan-lord-in-karm.step-001",
+        "action": "核对二宫主（Dhan's Lord）是否落十宫（Karm）。",
+        "applicability_scope": "仅限本命盘二宫主（Dhan's Lord）落宫主题；本段原文自标「Effects of Dhan’s Lord in Various Bhavas (up to Sloka 24)」（同章 v13）；原文以 many wives 立说，属男命框架；原文未给妻子人数、财富数额或时间限定。",
+        "minimum_supported_claim": "二宫主（Dhan's Lord）落十宫（Karm）时，命主会好色、受尊敬、有学识，会有多位妻子和很多财富，但得不到子女之乐。",
+        "produced_fact_keys": [
+          "二宫主落十宫的财富与子女之乐判定"
+        ],
+        "required_fact_keys": [
+          "二宫主（Dhan's Lord）是否落十宫（Karm）"
+        ],
+        "condition_logic": {
+          "fact_key": "二宫主（Dhan's Lord）是否落十宫（Karm）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dhan’s Lord is in Karm Bhava",
+              "claim": "二宫主（Dhan's Lord）落十宫（Karm）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be libidinous, honourable and learned",
+              "claim": "命主会好色、受尊敬、有学识"
+            },
+            {
+              "quote": "he will have many wives and much wealth, but he will be bereft of filial happiness",
+              "claim": "会有多位妻子和很多财富，但得不到子女之乐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v22",
+            "quote": "If Dhan’s Lord is in Karm Bhava, the native will be libidinous, honourable and learned; he will have many wives and much wealth, but he will be bereft of filial happiness.",
+            "pdf_pages": [
+              42
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：二宫主（Dhan's Lord）是否落十宫（Karm）。",
+        "stop_fact_keys": [
+          "二宫主（Dhan's Lord）是否落十宫（Karm）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「得不到子女之乐」写成没有子女或子女早故。",
+          "不得据此推断妻子的具体人数或婚期。",
+          "不得据此推断财富数额、职业或获得时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "29031b3c10e3c116fb445b2ac84531ef559bc3dd2dbf6c0b28cf0778a74dc06f"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v23-dhan-lord-in-labh.step-001",
+      "method": {
+        "method": "ch24-v23-dhan-lord-in-labh",
+        "title": "各类财富、一直勤勉、受尊敬有名声：二宫主落十一宫（Labh）",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子的财运怎么样",
+          "二宫主落十一宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dhan’s Lord is in Labh Bhava, the native will have all kinds of wealth, be ever diligent, honourable and famous.",
+            "二宫主落十一宫 各类财富 勤勉 名声"
+          ],
+          "counter_queries": [
+            "If Dhan’s Lord is in Vyaya Bhava, the native will be adventurous, be devoid of wealth and be interested in other’s wealth",
+            "There will be no gains in spite of numerous efforts, if Labh’s Lord is in fall, in combustion, or be in Ari, Randhr, or Vyaya Bhava with a malefic",
+            "Yogas for Poverty. One will be penniless, if the Lord of Dhan Bhava is in an evil Bhava, while the Lord of Labh Bhava is also so placed and Dhan Bhava is occupied by a malefic"
+          ],
+          "boundary_queries": [
+            "Indications of Labh Bhava. All articles, son’s wife, income, prosperity, quadrupeds etc. are to be understood from Labh Bhava",
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava"
+          ],
+          "method_queries": [
+            "Effects of Dhan’s Lord in Various Bhavas (up to Sloka 24)",
+            "判断二宫主的效果要先看它落在第几宫"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v23-dhan-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dhan’s Lord is in Labh Bhava"
+            },
+            {
+              "step_id": "ch24-v23-dhan-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will have all kinds of wealth, be ever diligent, honourable and famous"
+            },
+            {
+              "step_id": "ch24-v23-dhan-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dhan’s Lord is in Labh Bhava the native will have all kinds of wealth, be ever diligent, honourable and famous"
+            },
+            {
+              "step_id": "ch24-v23-dhan-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "2nd lord is in 11th house"
+            },
+            {
+              "step_id": "ch24-v23-dhan-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "2nd lord is in 11th house the native will have all kinds of wealth, be ever diligent, honourable and famous"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少二宫主是否落十一宫（Labh）的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v23-dhan-lord-in-labh.step-001",
+        "action": "核对二宫主（Dhan's Lord）是否落十一宫（Labh）。",
+        "applicability_scope": "仅限本命盘二宫主（Dhan's Lord）落宫主题；本段原文自标「Effects of Dhan’s Lord in Various Bhavas (up to Sloka 24)」（同章 v13）；原文未给财富数额、名声范围或时间限定。",
+        "minimum_supported_claim": "二宫主（Dhan's Lord）落十一宫（Labh）时，命主会拥有各类财富，一直勤勉，受尊敬并有名声。",
+        "produced_fact_keys": [
+          "二宫主落十一宫的财富与名声判定"
+        ],
+        "required_fact_keys": [
+          "二宫主（Dhan's Lord）是否落十一宫（Labh）"
+        ],
+        "condition_logic": {
+          "fact_key": "二宫主（Dhan's Lord）是否落十一宫（Labh）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dhan’s Lord is in Labh Bhava",
+              "claim": "二宫主（Dhan's Lord）落十一宫（Labh）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will have all kinds of wealth, be ever diligent, honourable and famous",
+              "claim": "命主会拥有各类财富，一直勤勉，受尊敬并有名声"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v23",
+            "quote": "If Dhan’s Lord is in Labh Bhava, the native will have all kinds of wealth, be ever diligent, honourable and famous.",
+            "pdf_pages": [
+              42
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：二宫主（Dhan's Lord）是否落十一宫（Labh）。",
+        "stop_fact_keys": [
+          "二宫主（Dhan's Lord）是否落十一宫（Labh）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财富数额、来源或获得时间。",
+          "不得把「各类财富」写成具体的资产种类清单。",
+          "不得把这条二宫主的规则改挂到十一宫主（Labh's Lord）身上。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "0d0e9dc577a70c735f19cc32ded3816fdc9c3f0765e7df3eec077d8877b31102"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v24-dhan-lord-in-vyaya.step-001",
+      "method": {
+        "method": "ch24-v24-dhan-lord-in-vyaya",
+        "title": "好冒险、没有财富、觊觎他人之财、长子不令其快乐：二宫主落十二宫（Vyaya）",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我为什么攒不下钱",
+          "二宫主落十二宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dhan’s Lord is in Vyaya Bhava, the native will be adventurous, be devoid of wealth and be interested in other’s wealth, while his eldest child will not keep him happy.",
+            "二宫主落十二宫 没有财富 长子 不快乐"
+          ],
+          "counter_queries": [
+            "If Dhan’s Lord is in Labh Bhava, the native will have all kinds of wealth, be ever diligent, honourable and famous.",
+            "If the Lord of Dhan is in an angle, while Labh Lord is in a trine thereof, or is drishtied by, or yuti with Guru and Shukr, the subject will be wealthy"
+          ],
+          "boundary_queries": [
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava"
+          ],
+          "method_queries": [
+            "Effects of Dhan’s Lord in Various Bhavas (up to Sloka 24)",
+            "判断二宫主的效果要先看它落在第几宫"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v24-dhan-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dhan’s Lord is in Vyaya Bhava"
+            },
+            {
+              "step_id": "ch24-v24-dhan-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be adventurous, be devoid of wealth and be interested in other’s wealth, while his eldest child will not keep him happy"
+            },
+            {
+              "step_id": "ch24-v24-dhan-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dhan’s Lord is in Vyaya Bhava the native will be adventurous, be devoid of wealth and be interested in other’s wealth, while his eldest child will not keep him happy"
+            },
+            {
+              "step_id": "ch24-v24-dhan-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "2nd lord is in 12th house"
+            },
+            {
+              "step_id": "ch24-v24-dhan-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "2nd lord is in 12th house the native will be adventurous, be devoid of wealth and be interested in other’s wealth, while his eldest child will not keep him happy"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少二宫主是否落十二宫（Vyaya）的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v24-dhan-lord-in-vyaya.step-001",
+        "action": "核对二宫主（Dhan's Lord）是否落十二宫（Vyaya）。",
+        "applicability_scope": "仅限本命盘二宫主（Dhan's Lord）落宫主题；本段原文自标「Effects of Dhan’s Lord in Various Bhavas (up to Sloka 24)」（同章 v13）；原文以 his eldest child 立说，属男命框架；原文未给子女人数、贫富程度或时间限定。",
+        "minimum_supported_claim": "二宫主（Dhan's Lord）落十二宫（Vyaya）时，命主会好冒险、没有财富、对别人的财富感兴趣，而他最年长的孩子不会让他快乐。",
+        "produced_fact_keys": [
+          "二宫主落十二宫的财富与长子关系判定"
+        ],
+        "required_fact_keys": [
+          "二宫主（Dhan's Lord）是否落十二宫（Vyaya）"
+        ],
+        "condition_logic": {
+          "fact_key": "二宫主（Dhan's Lord）是否落十二宫（Vyaya）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dhan’s Lord is in Vyaya Bhava",
+              "claim": "二宫主（Dhan's Lord）落十二宫（Vyaya）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be adventurous, be devoid of wealth and be interested in other’s wealth, while his eldest child will not keep him happy",
+              "claim": "命主会好冒险、没有财富、对别人的财富感兴趣，而他最年长的孩子不会让他快乐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v24",
+            "quote": "If Dhan’s Lord is in Vyaya Bhava, the native will be adventurous, be devoid of wealth and be interested in other’s wealth, while his eldest child will not keep him happy.",
+            "pdf_pages": [
+              42
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：二宫主（Dhan's Lord）是否落十二宫（Vyaya）。",
+        "stop_fact_keys": [
+          "二宫主（Dhan's Lord）是否落十二宫（Vyaya）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「没有财富」写成破产、负债或行乞。",
+          "不得把「对别人的财富感兴趣」写成偷盗或犯罪。",
+          "不得据此推断子女人数、长子的性别或长子的生年。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "763f564b8dcae2d3e8b0ca263afde45ce7c00b817c001592f48322cc6d5bc10e"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v25-sahaj-lord-in-tanu.step-001",
+      "method": {
+        "method": "ch24-v25-sahaj-lord-in-tanu",
+        "title": "自挣财富、乐于礼拜、勇武聪慧但没有学识：三宫主落上升宫（Tanu）",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的钱是靠自己挣的吗",
+          "三宫主落上升宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Sahaj’s Lord is in Tanu Bhava, the native will have self-made wealth, be disposed to worship, be valorous and be intelligent, although devoid of learning.",
+            "三宫主落上升宫 自挣财富 勇武 没有学识"
+          ],
+          "counter_queries": [
+            "If Sahaj’s Lord is in Dhan Bhava, the native will be corpulent, devoid of valour, will not make much efforts, be not happy",
+            "Yogas for Poverty. One will be penniless, if the Lord of Dhan Bhava is in an evil Bhava, while the Lord of Labh Bhava is also so placed and Dhan Bhava is occupied by a malefic"
+          ],
+          "boundary_queries": [
+            "Indications of Sahaj Bhava. From Sahaj Bhava know of the following: valour, servants (attending etc.), brothers, sisters etc., initiatory instructions (Upadesh), journey and parent’s death",
+            "Indications of Tanu Bhava. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour, weakness, happiness, grief and innate nature are all to be guessed through the ascending Rāśi",
+            "Just as these effects are derived from Tanu Bhava in regard to the native, similar deductions be made about co-borns etc. from Sahaj and other Bhavas"
+          ],
+          "method_queries": [
+            "Effects of Sahaj’s Lord in Various Bhavas (up to Sloka 36)",
+            "判断三宫主的效果要先看它落在第几宫"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v25-sahaj-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Sahaj’s Lord is in Tanu Bhava"
+            },
+            {
+              "step_id": "ch24-v25-sahaj-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will have self-made wealth, be disposed to worship, be valorous and be intelligent, although devoid of learning"
+            },
+            {
+              "step_id": "ch24-v25-sahaj-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Sahaj’s Lord is in Tanu Bhava the native will have self-made wealth, be disposed to worship, be valorous and be intelligent, although devoid of learning"
+            },
+            {
+              "step_id": "ch24-v25-sahaj-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "3rd lord is in 1st house"
+            },
+            {
+              "step_id": "ch24-v25-sahaj-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "3rd lord is in 1st house the native will have self-made wealth, be disposed to worship, be valorous and be intelligent, although devoid of learning"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少三宫主是否落上升宫（Lagna）的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v25-sahaj-lord-in-tanu.step-001",
+        "action": "核对三宫主（Sahaj's Lord）是否落上升宫（Lagna）。",
+        "applicability_scope": "仅限本命盘三宫主（Sahaj's Lord）落宫主题；原文本句把第一宫写作 Tanu Bhava（本书 ch11:v2 即以 Tanu Bhava 为第一宫），事实名沿用本批已有的上升宫（Lagna）写法；本段原文在同偈句首自标「Effects of Sahaj’s Lord in Various Bhavas (up to Sloka 36)」；原文未给财富数额或时间限定。",
+        "minimum_supported_claim": "三宫主（Sahaj's Lord）落上升宫（Tanu）时，命主会有自挣的财富、乐于礼拜、勇武、聪慧，尽管没有学识。",
+        "produced_fact_keys": [
+          "三宫主落上升宫的财富与性情判定"
+        ],
+        "required_fact_keys": [
+          "三宫主（Sahaj's Lord）是否落上升宫（Lagna）"
+        ],
+        "condition_logic": {
+          "fact_key": "三宫主（Sahaj's Lord）是否落上升宫（Lagna）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Sahaj’s Lord is in Tanu Bhava",
+              "claim": "三宫主（Sahaj's Lord）落上升宫（Tanu）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will have self-made wealth, be disposed to worship, be valorous and be intelligent, although devoid of learning",
+              "claim": "命主会有自挣的财富、乐于礼拜、勇武、聪慧，尽管没有学识"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v25",
+            "quote": "If Sahaj’s Lord is in Tanu Bhava, the native will have self-made wealth, be disposed to worship, be valorous and be intelligent, although devoid of learning.",
+            "pdf_pages": [
+              42
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：三宫主（Sahaj's Lord）是否落上升宫（Lagna）。",
+        "stop_fact_keys": [
+          "三宫主（Sahaj's Lord）是否落上升宫（Lagna）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「没有学识」写成文盲或学历高低。",
+          "不得据此推断财富数额、行业或获得时间。",
+          "不得据此推断兄弟姐妹的数目或状况。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "ae61fb02f3076acea34b96dd17c6c696cdf0c3e042085a20ae1a854e23c760b8"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v26-sahaj-lord-in-dhan.step-001",
+      "method": {
+        "method": "ch24-v26-sahaj-lord-in-dhan",
+        "title": "肥胖、没有勇武、不肯用力、觊觎他人妻财：三宫主落二宫（Dhan）",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我为什么提不起劲",
+          "三宫主落二宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Sahaj’s Lord is in Dhan Bhava, the native will be corpulent, devoid of valour, will not make much efforts, be not happy and will have an eye on others’ wives and others’ wealth.",
+            "三宫主落二宫 没有勇武 不肯用力 觊觎他人妻财"
+          ],
+          "counter_queries": [
+            "If Sahaj’s Lord is in Tanu Bhava, the native will have self-made wealth, be disposed to worship, be valorous and be intelligent, although devoid of learning.",
+            "Should Sahaj Bhava be yuti with, or drishtied by a benefic, the native will be endowed with co-born and be courageous"
+          ],
+          "boundary_queries": [
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava",
+            "Indications of Sahaj Bhava. From Sahaj Bhava know of the following: valour, servants (attending etc.), brothers, sisters etc., initiatory instructions (Upadesh), journey and parent’s death",
+            "Just as these effects are derived from Tanu Bhava in regard to the native, similar deductions be made about co-borns etc. from Sahaj and other Bhavas"
+          ],
+          "method_queries": [
+            "Effects of Sahaj’s Lord in Various Bhavas (up to Sloka 36)",
+            "判断三宫主的效果要先看它落在第几宫"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v26-sahaj-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Sahaj’s Lord is in Dhan Bhava"
+            },
+            {
+              "step_id": "ch24-v26-sahaj-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be corpulent, devoid of valour, will not make much efforts, be not happy and will have an eye on others’ wives and others’ wealth"
+            },
+            {
+              "step_id": "ch24-v26-sahaj-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Sahaj’s Lord is in Dhan Bhava the native will be corpulent, devoid of valour, will not make much efforts, be not happy and will have an eye on others’ wives and others’ wealth"
+            },
+            {
+              "step_id": "ch24-v26-sahaj-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "3rd lord is in 2nd house"
+            },
+            {
+              "step_id": "ch24-v26-sahaj-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "3rd lord is in 2nd house the native will be corpulent, devoid of valour, will not make much efforts, be not happy and will have an eye on others’ wives and others’ wealth"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少三宫主是否落二宫（Dhan）的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v26-sahaj-lord-in-dhan.step-001",
+        "action": "核对三宫主（Sahaj's Lord）是否落二宫（Dhan）。",
+        "applicability_scope": "仅限本命盘三宫主（Sahaj's Lord）落宫主题；本段原文自标「Effects of Sahaj’s Lord in Various Bhavas (up to Sloka 36)」（同章 v25）；原文以 others’ wives 立说，属男命框架；原文未给体重、健康指标或时间限定。",
+        "minimum_supported_claim": "三宫主（Sahaj's Lord）落二宫（Dhan）时，命主会体态肥胖、没有勇武、不会花太多力气、不快乐，并会盯着别人的妻子和别人的财富。",
+        "produced_fact_keys": [
+          "三宫主落二宫的胆识与品性判定"
+        ],
+        "required_fact_keys": [
+          "三宫主（Sahaj's Lord）是否落二宫（Dhan）"
+        ],
+        "condition_logic": {
+          "fact_key": "三宫主（Sahaj's Lord）是否落二宫（Dhan）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Sahaj’s Lord is in Dhan Bhava",
+              "claim": "三宫主（Sahaj's Lord）落二宫（Dhan）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be corpulent, devoid of valour, will not make much efforts, be not happy and will have an eye on others’ wives and others’ wealth",
+              "claim": "命主会体态肥胖、没有勇武、不会花太多力气、不快乐，并会盯着别人的妻子和别人的财富"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v26",
+            "quote": "If Sahaj’s Lord is in Dhan Bhava, the native will be corpulent, devoid of valour, will not make much efforts, be not happy and will have an eye on others’ wives and others’ wealth.",
+            "pdf_pages": [
+              42
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：三宫主（Sahaj's Lord）是否落二宫（Dhan）。",
+        "stop_fact_keys": [
+          "三宫主（Sahaj's Lord）是否落二宫（Dhan）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「体态肥胖」写成具体体重、病名或健康诊断。",
+          "不得把「盯着别人的妻子和别人的财富」写成已经发生的出轨或偷盗。",
+          "不得据此推断兄弟姐妹的数目或存殁。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "0c0779ee6c99aaba7a3d1c8a7e29f879578d04abf2447434d74cb93061ad4c15"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v27-sahaj-lord-in-sahaj.step-001",
+      "method": {
+        "method": "ch24-v27-sahaj-lord-in-sahaj",
+        "title": "同胞之乐、财富与儿子、性情开朗极为快乐：三宫主落三宫（Sahaj）",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和兄弟姐妹的关系怎么样",
+          "三宫主落本宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Sahaj’s Lord is in Sahaj Bhava, the native will be endowed with happiness through co-born and will have wealth and sons, be cheerful and extremely happy.",
+            "三宫主落三宫 同胞之乐 财富 儿子 极为快乐"
+          ],
+          "counter_queries": [
+            "If Sahaj’s Lord is in Ari Bhava, the native will be inimical to his co-born",
+            "Destruction at once of co-born will come to pass, if the said 2 Grahas are together with a malefic, or in a Rāśi, owned by a malefic"
+          ],
+          "boundary_queries": [
+            "Indications of Sahaj Bhava. From Sahaj Bhava know of the following: valour, servants (attending etc.), brothers, sisters etc., initiatory instructions (Upadesh), journey and parent’s death",
+            "Just as these effects are derived from Tanu Bhava in regard to the native, similar deductions be made about co-borns etc. from Sahaj and other Bhavas"
+          ],
+          "method_queries": [
+            "Effects of Sahaj’s Lord in Various Bhavas (up to Sloka 36)",
+            "判断同胞之乐要核对三宫与三宫主"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v27-sahaj-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Sahaj’s Lord is in Sahaj Bhava"
+            },
+            {
+              "step_id": "ch24-v27-sahaj-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be endowed with happiness through co-born and will have wealth and sons, be cheerful and extremely happy"
+            },
+            {
+              "step_id": "ch24-v27-sahaj-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Sahaj’s Lord is in Sahaj Bhava the native will be endowed with happiness through co-born and will have wealth and sons, be cheerful and extremely happy"
+            },
+            {
+              "step_id": "ch24-v27-sahaj-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "3rd lord is in 3rd house"
+            },
+            {
+              "step_id": "ch24-v27-sahaj-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "3rd lord is in 3rd house the native will be endowed with happiness through co-born and will have wealth and sons, be cheerful and extremely happy"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少三宫主是否落三宫（Sahaj）的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v27-sahaj-lord-in-sahaj.step-001",
+        "action": "核对三宫主（Sahaj's Lord）是否落三宫（Sahaj）。",
+        "applicability_scope": "仅限本命盘三宫主（Sahaj's Lord）落宫主题；本段原文自标「Effects of Sahaj’s Lord in Various Bhavas (up to Sloka 36)」（同章 v25）；原文只写落在三宫（Sahaj）本身，没有另外提入旺、落本宫（庙）等尊贵状态；原文未给同胞人数、儿子人数或时间限定。",
+        "minimum_supported_claim": "三宫主（Sahaj's Lord）落三宫（Sahaj）时，命主会得到来自同胞的快乐，会有财富和儿子，性情开朗并极为快乐。",
+        "produced_fact_keys": [
+          "三宫主落三宫的同胞之乐判定"
+        ],
+        "required_fact_keys": [
+          "三宫主（Sahaj's Lord）是否落三宫（Sahaj）"
+        ],
+        "condition_logic": {
+          "fact_key": "三宫主（Sahaj's Lord）是否落三宫（Sahaj）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Sahaj’s Lord is in Sahaj Bhava",
+              "claim": "三宫主（Sahaj's Lord）落三宫（Sahaj）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be endowed with happiness through co-born and will have wealth and sons, be cheerful and extremely happy",
+              "claim": "命主会得到来自同胞的快乐，会有财富和儿子，性情开朗并极为快乐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v27",
+            "quote": "If Sahaj’s Lord is in Sahaj Bhava, the native will be endowed with happiness through co-born and will have wealth and sons, be cheerful and extremely happy.",
+            "pdf_pages": [
+              42
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：三宫主（Sahaj's Lord）是否落三宫（Sahaj）。",
+        "stop_fact_keys": [
+          "三宫主（Sahaj's Lord）是否落三宫（Sahaj）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断同胞人数、性别或长幼次序。",
+          "不得据此推断儿子人数或出生时间。",
+          "不得因为三宫主落在自己所主的宫，就自行按入旺、落本宫（庙）等尊贵状态给结果加码。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "5a9f425500c741ce0ebef2734bbb4a682bda5f5809ca9e7fb7ca89dbeb75f716"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v28-sahaj-lord-in-bandhu.step-001",
+      "method": {
+        "method": "ch24-v28-sahaj-lord-in-bandhu",
+        "title": "快乐富有聪慧但配偶品行恶劣：三宫主落四宫（Bandhu）",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的另一半会是什么样的人",
+          "三宫主落四宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Sahaj’s Lord is in Bandhu Bhava, the native will be happy, wealthy and intelligent, but will acquire a wicked spouse.",
+            "三宫主落四宫 快乐 富有 聪慧 配偶品行恶劣"
+          ],
+          "counter_queries": [
+            "WORTHY SPOUSE. The native will beget a spouse endowed with (the seven principal) virtues, who will expand his dynasty by sons and grandsons",
+            "If Karm’s Lord is in Yuvati Bhava, the native will be endowed with happiness through wife, be intelligent, virtuous, eloquent, truthful and religious"
+          ],
+          "boundary_queries": [
+            "Indications of Bandhu Bhava. Conveyances, relatives, mother, happiness, treasure, lands and buildings are to be consulted through Bandhu Bhava",
+            "Indications of Sahaj Bhava. From Sahaj Bhava know of the following: valour, servants (attending etc.), brothers, sisters etc., initiatory instructions (Upadesh), journey and parent’s death",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "Effects of Sahaj’s Lord in Various Bhavas (up to Sloka 36)",
+            "判断配偶品行要核对哪一宫与哪一宫主"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v28-sahaj-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Sahaj’s Lord is in Bandhu Bhava"
+            },
+            {
+              "step_id": "ch24-v28-sahaj-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be happy, wealthy and intelligent, but will acquire a wicked spouse"
+            },
+            {
+              "step_id": "ch24-v28-sahaj-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Sahaj’s Lord is in Bandhu Bhava the native will be happy, wealthy and intelligent, but will acquire a wicked spouse"
+            },
+            {
+              "step_id": "ch24-v28-sahaj-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "3rd lord is in 4th house"
+            },
+            {
+              "step_id": "ch24-v28-sahaj-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "3rd lord is in 4th house the native will be happy, wealthy and intelligent, but will acquire a wicked spouse"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少三宫主是否落四宫（Bandhu）的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v28-sahaj-lord-in-bandhu.step-001",
+        "action": "核对三宫主（Sahaj's Lord）是否落四宫（Bandhu）。",
+        "applicability_scope": "仅限本命盘三宫主（Sahaj's Lord）落宫主题；本段原文自标「Effects of Sahaj’s Lord in Various Bhavas (up to Sloka 36)」（同章 v25）；原文此句用的是 spouse（配偶）而非 wife，未标明命主性别；原文未给婚期、配偶人数或时间限定。",
+        "minimum_supported_claim": "三宫主（Sahaj's Lord）落四宫（Bandhu）时，命主会快乐、富有、聪慧，但会得到一位品行恶劣的配偶。",
+        "produced_fact_keys": [
+          "三宫主落四宫的配偶品行判定"
+        ],
+        "required_fact_keys": [
+          "三宫主（Sahaj's Lord）是否落四宫（Bandhu）"
+        ],
+        "condition_logic": {
+          "fact_key": "三宫主（Sahaj's Lord）是否落四宫（Bandhu）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Sahaj’s Lord is in Bandhu Bhava",
+              "claim": "三宫主（Sahaj's Lord）落四宫（Bandhu）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be happy, wealthy and intelligent, but will acquire a wicked spouse",
+              "claim": "命主会快乐、富有、聪慧，但会得到一位品行恶劣的配偶"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v28",
+            "quote": "If Sahaj’s Lord is in Bandhu Bhava, the native will be happy, wealthy and intelligent, but will acquire a wicked spouse.",
+            "pdf_pages": [
+              42
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：三宫主（Sahaj's Lord）是否落四宫（Bandhu）。",
+        "stop_fact_keys": [
+          "三宫主（Sahaj's Lord）是否落四宫（Bandhu）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「品行恶劣的配偶」写成离婚、家暴或配偶去世。",
+          "不得据此推断婚期、配偶人数或配偶的家世。",
+          "不得把原文的 spouse（配偶）替换成妻子来限定命主性别。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "fd02b38af8e1f5349ef8cedc1cc6794c0afd6c1c5ed3c08de13e1fb5f868d4ef"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v29-sahaj-lord-in-putr.step-001",
+      "method": {
+        "method": "ch24-v29-sahaj-lord-in-putr",
+        "title": "有儿子并且有德：三宫主落五宫（Putr）",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会有儿子",
+          "三宫主落五宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Sahaj’s Lord is in Putr Bhava, the native will have sons and be virtuous.",
+            "三宫主落五宫 有儿子 有德"
+          ],
+          "counter_queries": [
+            "If Vyaya’s Lord is in Putr Bhava, the native will be bereft of sons and learning. He will spend, as well as visit shrines in order to beget a son",
+            "If Putr’s Lord is in Ari, Randhr, or Vyaya Bhava, or be in an inimical Rāśi, or be in fall, or in Putr itself, the native will beget issues with difficulty"
+          ],
+          "boundary_queries": [
+            "Indications of Putr Bhava. The learned should deduce from Putr Bhava amulets, sacred spells, learning, knowledge, sons, royalty (or authority), fall of position etc.",
+            "Indications of Sahaj Bhava. From Sahaj Bhava know of the following: valour, servants (attending etc.), brothers, sisters etc., initiatory instructions (Upadesh), journey and parent’s death"
+          ],
+          "method_queries": [
+            "Effects of Sahaj’s Lord in Various Bhavas (up to Sloka 36)",
+            "判断子嗣要核对五宫与五宫主"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v29-sahaj-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Sahaj’s Lord is in Putr Bhava"
+            },
+            {
+              "step_id": "ch24-v29-sahaj-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will have sons and be virtuous"
+            },
+            {
+              "step_id": "ch24-v29-sahaj-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Sahaj’s Lord is in Putr Bhava the native will have sons and be virtuous"
+            },
+            {
+              "step_id": "ch24-v29-sahaj-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "3rd lord is in 5th house"
+            },
+            {
+              "step_id": "ch24-v29-sahaj-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "3rd lord is in 5th house the native will have sons and be virtuous"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少三宫主是否落五宫（Putr）的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v29-sahaj-lord-in-putr.step-001",
+        "action": "核对三宫主（Sahaj's Lord）是否落五宫（Putr）。",
+        "applicability_scope": "仅限本命盘三宫主（Sahaj's Lord）落宫主题；本段原文自标「Effects of Sahaj’s Lord in Various Bhavas (up to Sloka 36)」（同章 v25）；本步只取同偈前句的无条件断语，同偈后句另有凶星条件的妻子断语，另立方法；原文未给儿子人数或时间限定。",
+        "minimum_supported_claim": "三宫主（Sahaj's Lord）落五宫（Putr）时，命主会有儿子并且有德。",
+        "produced_fact_keys": [
+          "三宫主落五宫的子嗣与德行判定"
+        ],
+        "required_fact_keys": [
+          "三宫主（Sahaj's Lord）是否落五宫（Putr）"
+        ],
+        "condition_logic": {
+          "fact_key": "三宫主（Sahaj's Lord）是否落五宫（Putr）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Sahaj’s Lord is in Putr Bhava",
+              "claim": "三宫主（Sahaj's Lord）落五宫（Putr）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will have sons and be virtuous",
+              "claim": "命主会有儿子并且有德"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v29",
+            "quote": "If Sahaj’s Lord is in Putr Bhava, the native will have sons and be virtuous.",
+            "pdf_pages": [
+              42
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：三宫主（Sahaj's Lord）是否落五宫（Putr）。",
+        "stop_fact_keys": [
+          "三宫主（Sahaj's Lord）是否落五宫（Putr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断儿子人数、出生时间或女儿情况。",
+          "不得把同偈后句的凶星条件与妻子断语并进本条。",
+          "不得把「有德」写成具体的宗教身份或职业。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "9ad0e6313ccfff29d895b27011e006c180af584080bbad0e867a30bb69441b6d"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v29-sahaj-lord-putr-malefic-wife.step-001",
+      "method": {
+        "method": "ch24-v29-sahaj-lord-putr-malefic-wife",
+        "title": "妻子令人生畏：三宫主落五宫（Putr）且与凶星同宫或被凶星相照",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我妻子的性子会不会很厉害",
+          "三宫主落五宫又碰上凶星会怎样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If in the process Sahaj’s Lord be yuti with, or receives a Drishti from a malefic, the native will have a formidable wife",
+            "三宫主落五宫 与凶星同宫 被凶星相照 妻子令人生畏"
+          ],
+          "counter_queries": [
+            "WORTHY SPOUSE. The native will beget a spouse endowed with (the seven principal) virtues, who will expand his dynasty by sons and grandsons",
+            "If Karm’s Lord is in Yuvati Bhava, the native will be endowed with happiness through wife, be intelligent, virtuous, eloquent, truthful and religious"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Indications of Putr Bhava. The learned should deduce from Putr Bhava amulets, sacred spells, learning, knowledge, sons, royalty (or authority), fall of position etc.",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "Effects of Sahaj’s Lord in Various Bhavas (up to Sloka 36)",
+            "判断妻子性情要核对哪些凶星关系"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v29-sahaj-lord-putr-malefic-wife.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Sahaj’s Lord is in Putr Bhava"
+            },
+            {
+              "step_id": "ch24-v29-sahaj-lord-putr-malefic-wife.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Sahaj’s Lord be yuti with"
+            },
+            {
+              "step_id": "ch24-v29-sahaj-lord-putr-malefic-wife.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or receives a Drishti from a malefic"
+            },
+            {
+              "step_id": "ch24-v29-sahaj-lord-putr-malefic-wife.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will have a formidable wife"
+            },
+            {
+              "step_id": "ch24-v29-sahaj-lord-putr-malefic-wife.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Sahaj’s Lord is in Putr Bhava the native will have a formidable wife"
+            },
+            {
+              "step_id": "ch24-v29-sahaj-lord-putr-malefic-wife.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Sahaj’s Lord be yuti with the native will have a formidable wife"
+            },
+            {
+              "step_id": "ch24-v29-sahaj-lord-putr-malefic-wife.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or receives a Drishti from a malefic the native will have a formidable wife"
+            },
+            {
+              "step_id": "ch24-v29-sahaj-lord-putr-malefic-wife.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "3rd lord is in 5th house"
+            },
+            {
+              "step_id": "ch24-v29-sahaj-lord-putr-malefic-wife.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "3rd lord be yuti with"
+            },
+            {
+              "step_id": "ch24-v29-sahaj-lord-putr-malefic-wife.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "3rd lord is in 5th house the native will have a formidable wife"
+            },
+            {
+              "step_id": "ch24-v29-sahaj-lord-putr-malefic-wife.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "3rd lord be yuti with the native will have a formidable wife"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少三宫主是否落五宫（Putr）的事实时停止。",
+          "凶星名册未确定时，两个凶星关系分支停止。",
+          "三宫主与凶星同宫、被凶星相照两项事实全部缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v29-sahaj-lord-putr-malefic-wife.step-001",
+        "action": "先核对三宫主（Sahaj's Lord）是否落五宫（Putr），再核对三宫主是否与凶星同宫，或是否受到凶星的相照。",
+        "applicability_scope": "仅限本命盘三宫主（Sahaj's Lord）落宫主题；in the process 承同偈前句的「三宫主落五宫（Putr）」；原文把凶星与三宫主的关系明写成两种（与凶星同宫、受凶星相照），本步照此拆成两个并列分支，两种关系的另一端原文都写明是三宫主本身；本段原文自标「Effects of Sahaj’s Lord in Various Bhavas (up to Sloka 36)」（同章 v25）；原文以 wife 立说，属男命框架；凶星名册以本书 ch03:v11 的界定为准；原文未给婚期或时间限定。",
+        "minimum_supported_claim": "承同偈「三宫主（Sahaj's Lord）落五宫（Putr）」的配置，若三宫主与凶星同宫，或受到凶星的相照，命主会有一位令人生畏的妻子。",
+        "produced_fact_keys": [
+          "三宫主落五宫遇凶星的配偶性情判定"
+        ],
+        "required_fact_keys": [
+          "三宫主（Sahaj's Lord）是否落五宫（Putr）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "三宫主（Sahaj's Lord）是否落五宫（Putr）"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "三宫主（Sahaj's Lord）是否与凶星同宫"
+                },
+                {
+                  "fact_key": "三宫主（Sahaj's Lord）是否被凶星相照"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "三宫主（Sahaj's Lord）是否落五宫（Putr）"
+            },
+            "required_fact_keys": [
+              "三宫主（Sahaj's Lord）是否与凶星同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "三宫主（Sahaj's Lord）是否与凶星同宫"
+            },
+            "selection_group": "ch24-v29-sahaj-lord-putr-malefic-wife.step-001:malefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：三宫主（Sahaj's Lord）是否与凶星同宫。"
+          },
+          {
+            "when": {
+              "fact_key": "三宫主（Sahaj's Lord）是否落五宫（Putr）"
+            },
+            "required_fact_keys": [
+              "三宫主（Sahaj's Lord）是否被凶星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "三宫主（Sahaj's Lord）是否被凶星相照"
+            },
+            "selection_group": "ch24-v29-sahaj-lord-putr-malefic-wife.step-001:malefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：三宫主（Sahaj's Lord）是否被凶星相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Sahaj’s Lord is in Putr Bhava",
+              "claim": "三宫主（Sahaj's Lord）落五宫（Putr）"
+            },
+            {
+              "quote": "Sahaj’s Lord be yuti with",
+              "claim": "三宫主与凶星同宫"
+            },
+            {
+              "quote": "or receives a Drishti from a malefic",
+              "claim": "或受到凶星的相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will have a formidable wife",
+              "claim": "命主会有一位令人生畏的妻子"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v29",
+            "quote": "If Sahaj’s Lord is in Putr Bhava, the native will have sons and be virtuous. If in the process Sahaj’s Lord be yuti with, or receives a Drishti from a malefic, the native will have a formidable wife.",
+            "pdf_pages": [
+              42
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：三宫主（Sahaj's Lord）是否落五宫（Putr）。",
+        "stop_fact_keys": [
+          "三宫主（Sahaj's Lord）是否落五宫（Putr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「令人生畏」写成家暴、离婚、克夫或配偶去世。",
+          "不得在原文写明的同宫与被相照两种关系之外，另加别的关系类型。",
+          "不得把本条的凶星换成吉星来套用。",
+          "不得据此推断婚期或妻子人数。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch24:v29"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "701e1b1a4d41538e6bcf6874d68080c178f9ab0acdca4871f30a1d7cb4a00a64"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch24:v19": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v19",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "19.",
+      "content_role": "verse",
+      "exact_text": "19. If Dhan’s Lord is in Yuvati Bhava, the native will be addicted to others’ wives and he will be a doctor. If a malefic is related to the said placement by yuti with Dhan’s Lord, or by Drishti, the native’s wife will be of questionable character.",
+      "pdf_pages": [
+        42
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 19 · PDF page 42 · bphs-97:santhanam:ch24:v19",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v18",
+      "next_atom_id": "bphs-97:santhanam:ch24:v20",
+      "context_before": " If Dhan’s Lord is in Ari Bhava along with a benefic, the native will gain wealth through his enemies; if Dhan’s Lord is yuti with a malefic, there will be loss through enemies apart from mutilation of shanks.\n\n",
+      "context_after": "20. If Dhan’s Lord is in Randhr Bhava, the native will be endowed with abundant land and wealth. But he will have limited marita",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v20": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v20",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "20.",
+      "content_role": "verse",
+      "exact_text": "20. If Dhan’s Lord is in Randhr Bhava, the native will be endowed with abundant land and wealth. But he will have limited marital felicity and be bereft of happiness from his elder brother.",
+      "pdf_pages": [
+        42
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 20 · PDF page 42 · bphs-97:santhanam:ch24:v20",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v19",
+      "next_atom_id": "bphs-97:santhanam:ch24:v21",
+      "context_before": " If a malefic is related to the said placement by yuti with Dhan’s Lord, or by Drishti, the native’s wife will be of questionable character.\n\n",
+      "context_after": "21. If Dhan’s Lord is in Dharm Bhava, the native will be wealthy, diligent, skilful, sick during childhood and will later on be ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v21": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v21",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "21.",
+      "content_role": "verse",
+      "exact_text": "21. If Dhan’s Lord is in Dharm Bhava, the native will be wealthy, diligent, skilful, sick during childhood and will later on be happy and will visit shrines, observing religious code etc.",
+      "pdf_pages": [
+        42
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 21 · PDF page 42 · bphs-97:santhanam:ch24:v21",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v20",
+      "next_atom_id": "bphs-97:santhanam:ch24:v22",
+      "context_before": "ed with abundant land and wealth. But he will have limited marital felicity and be bereft of happiness from his elder brother.\n\n",
+      "context_after": "22. If Dhan’s Lord is in Karm Bhava, the native will be libidinous, honourable and learned; he will have many wives and much wea",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v22": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v22",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "22.",
+      "content_role": "verse",
+      "exact_text": "22. If Dhan’s Lord is in Karm Bhava, the native will be libidinous, honourable and learned; he will have many wives and much wealth, but he will be bereft of filial happiness.",
+      "pdf_pages": [
+        42
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 22 · PDF page 42 · bphs-97:santhanam:ch24:v22",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v21",
+      "next_atom_id": "bphs-97:santhanam:ch24:v23",
+      "context_before": " If Dhan’s Lord is in Dharm Bhava, the native will be wealthy, diligent, skilful, sick during childhood and will later on be happy and will visit shrines, observing religious code etc.\n\n",
+      "context_after": "23. If Dhan’s Lord is in Labh Bhava, the native will have all kinds of wealth, be ever diligent, honourable and famous.\n\n24. If ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v23": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v23",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "23.",
+      "content_role": "verse",
+      "exact_text": "23. If Dhan’s Lord is in Labh Bhava, the native will have all kinds of wealth, be ever diligent, honourable and famous.",
+      "pdf_pages": [
+        42
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 23 · PDF page 42 · bphs-97:santhanam:ch24:v23",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v22",
+      "next_atom_id": "bphs-97:santhanam:ch24:v24",
+      "context_before": " If Dhan’s Lord is in Karm Bhava, the native will be libidinous, honourable and learned; he will have many wives and much wealth, but he will be bereft of filial happiness.\n\n",
+      "context_after": "24. If Dhan’s Lord is in Vyaya Bhava, the native will be adventurous, be devoid of wealth and be interested in other’s wealth, w",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v24": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v24",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "24.",
+      "content_role": "verse",
+      "exact_text": "24. If Dhan’s Lord is in Vyaya Bhava, the native will be adventurous, be devoid of wealth and be interested in other’s wealth, while his eldest child will not keep him happy.",
+      "pdf_pages": [
+        42
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 24 · PDF page 42 · bphs-97:santhanam:ch24:v24",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v23",
+      "next_atom_id": "bphs-97:santhanam:ch24:v25",
+      "context_before": "ness.\n\n23. If Dhan’s Lord is in Labh Bhava, the native will have all kinds of wealth, be ever diligent, honourable and famous.\n\n",
+      "context_after": "25. Effects of Sahaj’s Lord in Various Bhavas (up to Sloka 36). If Sahaj’s Lord is in Tanu Bhava, the native will have self-made",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v25": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v25",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "25.",
+      "content_role": "verse",
+      "exact_text": "25. Effects of Sahaj’s Lord in Various Bhavas (up to Sloka 36). If Sahaj’s Lord is in Tanu Bhava, the native will have self-made wealth, be disposed to worship, be valorous and be intelligent, although devoid of learning.",
+      "pdf_pages": [
+        42
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 25 · PDF page 42 · bphs-97:santhanam:ch24:v25",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v24",
+      "next_atom_id": "bphs-97:santhanam:ch24:v26",
+      "context_before": " If Dhan’s Lord is in Vyaya Bhava, the native will be adventurous, be devoid of wealth and be interested in other’s wealth, while his eldest child will not keep him happy.\n\n",
+      "context_after": "26. If Sahaj’s Lord is in Dhan Bhava, the native will be corpulent, devoid of valour, will not make much efforts, be not happy a",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v26": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v26",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "26.",
+      "content_role": "verse",
+      "exact_text": "26. If Sahaj’s Lord is in Dhan Bhava, the native will be corpulent, devoid of valour, will not make much efforts, be not happy and will have an eye on others’ wives and others’ wealth.",
+      "pdf_pages": [
+        42
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 26 · PDF page 42 · bphs-97:santhanam:ch24:v26",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v25",
+      "next_atom_id": "bphs-97:santhanam:ch24:v27",
+      "context_before": " If Sahaj’s Lord is in Tanu Bhava, the native will have self-made wealth, be disposed to worship, be valorous and be intelligent, although devoid of learning.\n\n",
+      "context_after": "27. If Sahaj’s Lord is in Sahaj Bhava, the native will be endowed with happiness through co-born and will have wealth and sons, ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v27": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v27",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "27.",
+      "content_role": "verse",
+      "exact_text": "27. If Sahaj’s Lord is in Sahaj Bhava, the native will be endowed with happiness through co-born and will have wealth and sons, be cheerful and extremely happy.",
+      "pdf_pages": [
+        42
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 27 · PDF page 42 · bphs-97:santhanam:ch24:v27",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v26",
+      "next_atom_id": "bphs-97:santhanam:ch24:v28",
+      "context_before": " If Sahaj’s Lord is in Dhan Bhava, the native will be corpulent, devoid of valour, will not make much efforts, be not happy and will have an eye on others’ wives and others’ wealth.\n\n",
+      "context_after": "28. If Sahaj’s Lord is in Bandhu Bhava, the native will be happy, wealthy and intelligent, but will acquire a wicked spouse.\n\n29",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v28": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v28",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "28.",
+      "content_role": "verse",
+      "exact_text": "28. If Sahaj’s Lord is in Bandhu Bhava, the native will be happy, wealthy and intelligent, but will acquire a wicked spouse.",
+      "pdf_pages": [
+        42
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 28 · PDF page 42 · bphs-97:santhanam:ch24:v28",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v27",
+      "next_atom_id": "bphs-97:santhanam:ch24:v29",
+      "context_before": " If Sahaj’s Lord is in Sahaj Bhava, the native will be endowed with happiness through co-born and will have wealth and sons, be cheerful and extremely happy.\n\n",
+      "context_after": "29. If Sahaj’s Lord is in Putr Bhava, the native will have sons and be virtuous. If in the process Sahaj’s Lord be yuti with, or",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v29": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v29",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "29.",
+      "content_role": "verse",
+      "exact_text": "29. If Sahaj’s Lord is in Putr Bhava, the native will have sons and be virtuous. If in the process Sahaj’s Lord be yuti with, or receives a Drishti from a malefic, the native will have a formidable wife.",
+      "pdf_pages": [
+        42
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 29 · PDF page 42 · bphs-97:santhanam:ch24:v29",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v28",
+      "next_atom_id": "bphs-97:santhanam:ch24:v30",
+      "context_before": "\n\n28. If Sahaj’s Lord is in Bandhu Bhava, the native will be happy, wealthy and intelligent, but will acquire a wicked spouse.\n\n",
+      "context_after": "30. If Sahaj’s Lord is in Ari Bhava, the native will be inimical to his co-born, be affluent, will not be well disposed to his m",
+      "content_missing": false
+    }
+  }
+}

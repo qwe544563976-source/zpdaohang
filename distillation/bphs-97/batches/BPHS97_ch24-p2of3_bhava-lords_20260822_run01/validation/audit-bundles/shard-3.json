@@ -1,0 +1,1840 @@
+{
+  "shard": 3,
+  "step_count": 11,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch24-v70-ari-lord-in-karm.step-001",
+      "method": {
+        "method": "ch24-v70-ari-lord-in-karm",
+        "title": "六宫主落十宫：在自己人中知名、对父亲不敬、在外邦安乐、口才出众",
+        "target_house": 6,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和父亲的关系为什么这么僵",
+          "我在外地发展会不会更顺"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Ari’s Lord is in Karm Bhava, the native will be well known among his men, will not be respectfully disposed to his father",
+            "六宫主落十宫 对父不敬 外邦安乐 口才"
+          ],
+          "counter_queries": [
+            "If Karm’s Lord is strong and in exaltation, or in its own Rāśi/Navāńś, the native will derive extreme paternal happiness, will enjoy fame and will perform good deeds"
+          ],
+          "boundary_queries": [
+            "Indications of Ari Bhava. Maternal uncle, doubts about death, enemies, ulcers, stepmother etc. are to be estimated from Ari Bhava",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava"
+          ],
+          "method_queries": [
+            "Effects of Ari’s Lord in Various Bhavas",
+            "Effects of Karm’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v70-ari-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Ari’s Lord is in Karm Bhava"
+            },
+            {
+              "step_id": "ch24-v70-ari-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be well known among his men"
+            },
+            {
+              "step_id": "ch24-v70-ari-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will not be respectfully disposed to his father"
+            },
+            {
+              "step_id": "ch24-v70-ari-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be happy in foreign countries"
+            },
+            {
+              "step_id": "ch24-v70-ari-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "He will be a gifted speaker"
+            },
+            {
+              "step_id": "ch24-v70-ari-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Ari’s Lord is in Karm Bhava the native will be well known among his men"
+            },
+            {
+              "step_id": "ch24-v70-ari-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "6th lord is in 10th house"
+            },
+            {
+              "step_id": "ch24-v70-ari-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "6th lord is in 10th house the native will be well known among his men"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少六宫主是否落十宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v70-ari-lord-in-karm.step-001",
+        "action": "核对六宫主（Ari's Lord）是否落十宫（Karm Bhava），据此判断本人的名声、与父亲的关系以及在外邦的处境。",
+        "applicability_scope": "仅限本命盘六宫主（Ari's Lord）落十宫（Karm Bhava）一条；本段原文自标「Effects of Ari’s Lord in Various Bhavas (up to Sloka 72)」；原文未给出国时间、去向国别或时间限定。",
+        "minimum_supported_claim": "六宫主（Ari's Lord）落十宫（Karm Bhava）时，本人在自己人当中知名，对父亲不存敬意，在外邦安乐，本人口才出众。",
+        "produced_fact_keys": [
+          "六宫主落十宫的父子关系与外邦安乐判定"
+        ],
+        "required_fact_keys": [
+          "六宫主（Ari's Lord）是否落十宫（Karm）"
+        ],
+        "condition_logic": {
+          "fact_key": "六宫主（Ari's Lord）是否落十宫（Karm）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Ari’s Lord is in Karm Bhava",
+              "claim": "六宫主（Ari's Lord）落十宫（Karm Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be well known among his men",
+              "claim": "本人在自己人当中知名"
+            },
+            {
+              "quote": "will not be respectfully disposed to his father",
+              "claim": "对父亲不存敬意"
+            },
+            {
+              "quote": "will be happy in foreign countries",
+              "claim": "在外邦安乐"
+            },
+            {
+              "quote": "He will be a gifted speaker",
+              "claim": "本人口才出众"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v70",
+            "quote": "If Ari’s Lord is in Karm Bhava, the native will be well known among his men, will not be respectfully disposed to his father and will be happy in foreign countries. He will be a gifted speaker.",
+            "pdf_pages": [
+              45
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：六宫主（Ari's Lord）是否落十宫（Karm）。",
+        "stop_fact_keys": [
+          "六宫主（Ari's Lord）是否落十宫（Karm）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「对父亲不存敬意」写成断绝关系或父亲的存殁。",
+          "不得据此推断出国的时间、国别或次数。",
+          "不得把本条套用到六宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "33392f7cfe7e3c0559d1b581edd63cba00625922bbe6e60ab9a95d5aa25c4514"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v71-ari-lord-in-labh.step-001",
+      "method": {
+        "method": "ch24-v71-ari-lord-in-labh",
+        "title": "六宫主落十一宫：从敌人处得财、有德行有胆识、子女之乐略有欠缺",
+        "target_house": 6,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的财会从什么地方来",
+          "我子女方面会不会有些欠缺"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Ari’s Lord is in Labh Bhava, the native will gain wealth through his enemies, be virtuous, adventurous",
+            "六宫主落十一宫 从敌人得财 子女之乐欠缺"
+          ],
+          "counter_queries": [
+            "If Putr’s Lord is exalted, or be in Dhan, Putr, or Dharm Bhava, or be yuti with, or drishtied by Guru, obtainment of children will be there",
+            "There will be many children, if Putr’s Lord is strong, while Putr is drishtied by strong Budh, Guru and Shukr"
+          ],
+          "boundary_queries": [
+            "Indications of Ari Bhava. Maternal uncle, doubts about death, enemies, ulcers, stepmother etc. are to be estimated from Ari Bhava",
+            "Indications of Labh Bhava. All articles, son’s wife, income, prosperity, quadrupeds etc. are to be understood from Labh Bhava"
+          ],
+          "method_queries": [
+            "Effects of Ari’s Lord in Various Bhavas",
+            "Effects of Labh’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v71-ari-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Ari’s Lord is in Labh Bhava"
+            },
+            {
+              "step_id": "ch24-v71-ari-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will gain wealth through his enemies"
+            },
+            {
+              "step_id": "ch24-v71-ari-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be virtuous, adventurous"
+            },
+            {
+              "step_id": "ch24-v71-ari-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be somewhat bereft of progenic happiness"
+            },
+            {
+              "step_id": "ch24-v71-ari-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Ari’s Lord is in Labh Bhava the native will gain wealth through his enemies"
+            },
+            {
+              "step_id": "ch24-v71-ari-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "6th lord is in 11th house"
+            },
+            {
+              "step_id": "ch24-v71-ari-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "6th lord is in 11th house the native will gain wealth through his enemies"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少六宫主是否落十一宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v71-ari-lord-in-labh.step-001",
+        "action": "核对六宫主（Ari's Lord）是否落十一宫（Labh Bhava），据此判断本人的进财来源与子女方面的安乐。",
+        "applicability_scope": "仅限本命盘六宫主（Ari's Lord）落十一宫（Labh Bhava）一条；原文用 somewhat 限定欠缺的程度；本段原文自标「Effects of Ari’s Lord in Various Bhavas (up to Sloka 72)」；原文未给财富数额或时间限定。",
+        "minimum_supported_claim": "六宫主（Ari's Lord）落十一宫（Labh Bhava）时，本人经由自己的敌人得财，有德行、有胆识，子女方面的安乐略有欠缺。",
+        "produced_fact_keys": [
+          "六宫主落十一宫的进财来源与子女安乐判定"
+        ],
+        "required_fact_keys": [
+          "六宫主（Ari's Lord）是否落十一宫（Labh）"
+        ],
+        "condition_logic": {
+          "fact_key": "六宫主（Ari's Lord）是否落十一宫（Labh）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Ari’s Lord is in Labh Bhava",
+              "claim": "六宫主（Ari's Lord）落十一宫（Labh Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will gain wealth through his enemies",
+              "claim": "本人经由自己的敌人得财"
+            },
+            {
+              "quote": "be virtuous, adventurous",
+              "claim": "有德行、有胆识"
+            },
+            {
+              "quote": "will be somewhat bereft of progenic happiness",
+              "claim": "子女方面的安乐略有欠缺"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v71",
+            "quote": "If Ari’s Lord is in Labh Bhava, the native will gain wealth through his enemies, be virtuous, adventurous and will be somewhat bereft of progenic happiness.",
+            "pdf_pages": [
+              45
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：六宫主（Ari's Lord）是否落十一宫（Labh）。",
+        "stop_fact_keys": [
+          "六宫主（Ari's Lord）是否落十一宫（Labh）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「略有欠缺」升格成没有子女或失去子女。",
+          "不得把「经由敌人得财」坐实为具体人物、金额或时间。",
+          "不得把本条套用到六宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "fb99392eaf125f4b2b90b632b0df5c8f36826576760a84c78a45e1632097ebd5"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v72-ari-lord-in-vyaya.step-001",
+      "method": {
+        "method": "ch24-v72-ari-lord-in-vyaya",
+        "title": "六宫主落十二宫：钱总花在恶习上、敌视有学问的人、虐待生灵",
+        "target_house": 6,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的钱都花到哪里去了",
+          "我身上有哪些要克制的习气"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Ari’s Lord is in Vyaya Bhava, the native will always spend on vices, be hostile to learned people",
+            "六宫主落十二宫 花在恶习 敌视学者"
+          ],
+          "counter_queries": [
+            "There will be expenses on good accounts, if Vyaya’s Lord is with a benefic, or in his own Bhava, or exalted, or, if a benefic occupies Vyaya"
+          ],
+          "boundary_queries": [
+            "Indications of Ari Bhava. Maternal uncle, doubts about death, enemies, ulcers, stepmother etc. are to be estimated from Ari Bhava",
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc."
+          ],
+          "method_queries": [
+            "Effects of Ari’s Lord in Various Bhavas",
+            "Effects of Vyaya’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v72-ari-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Ari’s Lord is in Vyaya Bhava"
+            },
+            {
+              "step_id": "ch24-v72-ari-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will always spend on vices"
+            },
+            {
+              "step_id": "ch24-v72-ari-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be hostile to learned people"
+            },
+            {
+              "step_id": "ch24-v72-ari-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will torture living beings"
+            },
+            {
+              "step_id": "ch24-v72-ari-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Ari’s Lord is in Vyaya Bhava the native will always spend on vices"
+            },
+            {
+              "step_id": "ch24-v72-ari-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "6th lord is in 12th house"
+            },
+            {
+              "step_id": "ch24-v72-ari-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "6th lord is in 12th house the native will always spend on vices"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少六宫主是否落十二宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v72-ari-lord-in-vyaya.step-001",
+        "action": "核对六宫主（Ari's Lord）是否落十二宫（Vyaya Bhava），据此判断本人的花费去向与行事习气。",
+        "applicability_scope": "仅限本命盘六宫主（Ari's Lord）落十二宫（Vyaya Bhava）一条；本段原文自标「Effects of Ari’s Lord in Various Bhavas (up to Sloka 72)」；原文未给花费数额、对象或时间限定。",
+        "minimum_supported_claim": "六宫主（Ari's Lord）落十二宫（Vyaya Bhava）时，本人总把钱花在恶习上，敌视有学问的人，虐待生灵。",
+        "produced_fact_keys": [
+          "六宫主落十二宫的花费去向与习气判定"
+        ],
+        "required_fact_keys": [
+          "六宫主（Ari's Lord）是否落十二宫（Vyaya）"
+        ],
+        "condition_logic": {
+          "fact_key": "六宫主（Ari's Lord）是否落十二宫（Vyaya）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Ari’s Lord is in Vyaya Bhava",
+              "claim": "六宫主（Ari's Lord）落十二宫（Vyaya Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will always spend on vices",
+              "claim": "本人总把钱花在恶习上"
+            },
+            {
+              "quote": "be hostile to learned people",
+              "claim": "敌视有学问的人"
+            },
+            {
+              "quote": "will torture living beings",
+              "claim": "虐待生灵"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v72",
+            "quote": "If Ari’s Lord is in Vyaya Bhava, the native will always spend on vices, be hostile to learned people and will torture living beings.",
+            "pdf_pages": [
+              45
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：六宫主（Ari's Lord）是否落十二宫（Vyaya）。",
+        "stop_fact_keys": [
+          "六宫主（Ari's Lord）是否落十二宫（Vyaya）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「恶习」坐实为某一种具体嗜好或成瘾。",
+          "不得据此推断花费金额、时间或后果。",
+          "不得把本条套用到六宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b14667824e478baa5b0bee27dd7bb6221a3582140dd28860f40e0bb62ef71643"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v73-yuvati-lord-in-tanu.step-001",
+      "method": {
+        "method": "ch24-v73-yuvati-lord-in-tanu",
+        "title": "七宫主落上升宫：涉足他人之妻、行事乖张而机巧、无勇气、患风疾",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我在感情上会不会越界",
+          "我的身体上有什么老毛病"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Yuvati’s Lord is in Tanu Bhava, the native will go to others’ wives, be wicked, skilful, devoid of courage",
+            "七宫主落上升宫 他人之妻 无勇气 风疾"
+          ],
+          "counter_queries": [
+            "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife",
+            "The native will beget a spouse endowed with (the seven principal) virtues, who will expand his dynasty by sons and grandsons"
+          ],
+          "boundary_queries": [
+            "Indications of Yuvati Bhava. Wife, travel, trade, loss of sight, death etc. be known from Yuvati Bhava",
+            "Indications of Tanu Bhava. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour, weakness, happiness, grief and innate nature",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "Effects of Yuvati’s Lord in Various Bhavas",
+            "Effects of Yuvati Bhava"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v73-yuvati-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Yuvati’s Lord is in Tanu Bhava"
+            },
+            {
+              "step_id": "ch24-v73-yuvati-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will go to others’ wives"
+            },
+            {
+              "step_id": "ch24-v73-yuvati-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be wicked, skilful, devoid of courage"
+            },
+            {
+              "step_id": "ch24-v73-yuvati-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "afflicted by windy diseases"
+            },
+            {
+              "step_id": "ch24-v73-yuvati-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Yuvati’s Lord is in Tanu Bhava the native will go to others’ wives"
+            },
+            {
+              "step_id": "ch24-v73-yuvati-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "7th lord is in 1st house"
+            },
+            {
+              "step_id": "ch24-v73-yuvati-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "7th lord is in 1st house the native will go to others’ wives"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少七宫主是否落第一宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v73-yuvati-lord-in-tanu.step-001",
+        "action": "核对七宫主（Yuvati's Lord）是否落第一宫（Tanu Bhava），据此判断本人的感情品行与风性疾病倾向。",
+        "applicability_scope": "仅限本命盘七宫主（Yuvati's Lord）落第一宫一条；原文本句把第一宫写作 Tanu Bhava（本书 ch11:v2 即以 Tanu Bhava 为第一宫），事实名沿用已有的上升宫（Lagna）写法；原文以男命立说（others’ wives），女命命中时结论不能照搬；本段原文在同偈句首自标「Effects of Yuvati’s Lord in Various Bhavas (up to Sloka 84)」；原文未给时间限定。",
+        "minimum_supported_claim": "七宫主（Yuvati's Lord）落上升宫（Tanu）时，本人会去到他人之妻处，行事乖张、机巧、没有勇气，受风性疾病所苦。",
+        "produced_fact_keys": [
+          "七宫主落上升宫的品行与风疾判定"
+        ],
+        "required_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落上升宫（Lagna）"
+        ],
+        "condition_logic": {
+          "fact_key": "七宫主（Yuvati's Lord）是否落上升宫（Lagna）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Yuvati’s Lord is in Tanu Bhava",
+              "claim": "七宫主（Yuvati's Lord）落上升宫（Tanu）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will go to others’ wives",
+              "claim": "本人会去到他人之妻处"
+            },
+            {
+              "quote": "be wicked, skilful, devoid of courage",
+              "claim": "行事乖张、机巧、没有勇气"
+            },
+            {
+              "quote": "afflicted by windy diseases",
+              "claim": "受风性疾病所苦"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v73",
+            "quote": "If Yuvati’s Lord is in Tanu Bhava, the native will go to others’ wives, be wicked, skilful, devoid of courage and afflicted by windy diseases.",
+            "pdf_pages": [
+              45
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：七宫主（Yuvati's Lord）是否落上升宫（Lagna）。",
+        "stop_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落上升宫（Lagna）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把风性疾病坐实为某一具体病名或发病年份。",
+          "不得把感情倾向坐实为具体人物、次数或后果。",
+          "不得把本条套用到七宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "8a10cd167956f215ef5d5533a36f0cada81b72585a7e39feaaa474d10d4074eb"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v74-yuvati-lord-in-dhan.step-001",
+      "method": {
+        "method": "ch24-v74-yuvati-lord-in-dhan",
+        "title": "七宫主落二宫：妻子多位、经由妻子得财、性情拖延",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子会有几段婚姻",
+          "我的财会不会从配偶那边来"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Yuvati’s Lord is in Dhan Bhava, the native will have many wives, will gain wealth through his wife",
+            "七宫主落二宫 多位妻子 经由妻子得财"
+          ],
+          "counter_queries": [
+            "If Chandra is in Yuvati, as Yuvati Lord is in Vyaya and the Karaka (indicator Shukr) is bereft of strength, the native will not be endowed with marital happiness",
+            "If Yuvati Bhava, or its Lord is yuti with a malefic the native’s wife will incur evils"
+          ],
+          "boundary_queries": [
+            "Indications of Yuvati Bhava. Wife, travel, trade, loss of sight, death etc. be known from Yuvati Bhava",
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "Effects of Yuvati’s Lord in Various Bhavas",
+            "Effects of Dhan’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v74-yuvati-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Yuvati’s Lord is in Dhan Bhava"
+            },
+            {
+              "step_id": "ch24-v74-yuvati-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will have many wives"
+            },
+            {
+              "step_id": "ch24-v74-yuvati-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will gain wealth through his wife"
+            },
+            {
+              "step_id": "ch24-v74-yuvati-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be procrastinating in nature"
+            },
+            {
+              "step_id": "ch24-v74-yuvati-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Yuvati’s Lord is in Dhan Bhava the native will have many wives"
+            },
+            {
+              "step_id": "ch24-v74-yuvati-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "7th lord is in 2nd house"
+            },
+            {
+              "step_id": "ch24-v74-yuvati-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "7th lord is in 2nd house the native will have many wives"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少七宫主是否落二宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v74-yuvati-lord-in-dhan.step-001",
+        "action": "核对七宫主（Yuvati's Lord）是否落二宫（Dhan Bhava），据此判断本人的婚配数目与经由妻子的进财。",
+        "applicability_scope": "仅限本命盘七宫主（Yuvati's Lord）落二宫（Dhan Bhava）一条；原文以男命立说（many wives、his wife），女命命中时结论不能照搬；本段原文在同偈句首自标「Effects of Yuvati’s Lord in Various Bhavas (up to Sloka 84)」；原文未给妻子人数、婚期或财富数额。",
+        "minimum_supported_claim": "七宫主（Yuvati's Lord）落二宫（Dhan Bhava）时，本人会有多位妻子，经由妻子得财，性情拖延。",
+        "produced_fact_keys": [
+          "七宫主落二宫的婚配与经由妻子得财判定"
+        ],
+        "required_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落二宫（Dhan）"
+        ],
+        "condition_logic": {
+          "fact_key": "七宫主（Yuvati's Lord）是否落二宫（Dhan）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Yuvati’s Lord is in Dhan Bhava",
+              "claim": "七宫主（Yuvati's Lord）落二宫（Dhan Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will have many wives",
+              "claim": "本人会有多位妻子"
+            },
+            {
+              "quote": "will gain wealth through his wife",
+              "claim": "经由妻子得财"
+            },
+            {
+              "quote": "be procrastinating in nature",
+              "claim": "性情拖延"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v74",
+            "quote": "If Yuvati’s Lord is in Dhan Bhava, the native will have many wives, will gain wealth through his wife and be procrastinating in nature.",
+            "pdf_pages": [
+              45
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：七宫主（Yuvati's Lord）是否落二宫（Dhan）。",
+        "stop_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落二宫（Dhan）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「多位妻子」写成确定的人数。",
+          "不得据此推断结婚年龄、婚姻先后或财富数额。",
+          "不得把本条套用到七宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "70fe50027b631958f88595d90162faa44cb61b919e7185ef37542838de003759"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v75-yuvati-lord-in-sahaj.step-001",
+      "method": {
+        "method": "ch24-v75-yuvati-lord-in-sahaj",
+        "title": "七宫主落三宫：遭遇子女的失去、历经艰难才有活着的儿子、也可能生女儿",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我求子这条路会不会很难",
+          "我会不会生女儿"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Yuvati’s Lord is in Sahaj Bhava, the native will face loss of children and sometimes with great difficulty there will exist a living son",
+            "七宫主落三宫 子女失去 活着的儿子 生女儿"
+          ],
+          "counter_queries": [
+            "If Putr’s Lord is exalted, or be in Dhan, Putr, or Dharm Bhava, or be yuti with, or drishtied by Guru, obtainment of children will be there",
+            "There will be many children, if Putr’s Lord is strong, while Putr is drishtied by strong Budh, Guru and Shukr",
+            "Should Putr Bhava be owned by Shani, or Budh and be occupied, or drishtied by Shani and Mandi, one will have adopted issues"
+          ],
+          "boundary_queries": [
+            "Indications of Yuvati Bhava. Wife, travel, trade, loss of sight, death etc. be known from Yuvati Bhava",
+            "Indications of Sahaj Bhava. From Sahaj Bhava know of the following: valour, servants (attending etc.), brothers, sisters etc., initiatory instructions (Upadesh), journey and parent’s death"
+          ],
+          "method_queries": [
+            "Effects of Yuvati’s Lord in Various Bhavas",
+            "Effects of Putr Bhava"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v75-yuvati-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Yuvati’s Lord is in Sahaj Bhava"
+            },
+            {
+              "step_id": "ch24-v75-yuvati-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will face loss of children"
+            },
+            {
+              "step_id": "ch24-v75-yuvati-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "sometimes with great difficulty there will exist a living son"
+            },
+            {
+              "step_id": "ch24-v75-yuvati-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "There is also the possibility of birth of a daughter"
+            },
+            {
+              "step_id": "ch24-v75-yuvati-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Yuvati’s Lord is in Sahaj Bhava the native will face loss of children"
+            },
+            {
+              "step_id": "ch24-v75-yuvati-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "7th lord is in 3rd house"
+            },
+            {
+              "step_id": "ch24-v75-yuvati-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "7th lord is in 3rd house the native will face loss of children"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少七宫主是否落三宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v75-yuvati-lord-in-sahaj.step-001",
+        "action": "核对七宫主（Yuvati's Lord）是否落三宫（Sahaj Bhava），据此判断本人在子女存殁与生育上的处境。",
+        "applicability_scope": "仅限本命盘七宫主（Yuvati's Lord）落三宫（Sahaj Bhava）一条；原文用 sometimes、possibility 自行降低了结论强度，不能读成必然；本段原文在同偈句首自标「Effects of Yuvati’s Lord in Various Bhavas (up to Sloka 84)」；原文未给子女人数与年龄。",
+        "minimum_supported_claim": "七宫主（Yuvati's Lord）落三宫（Sahaj Bhava）时，本人会遭遇子女的失去，有时历经极大艰难才会有一个活着的儿子，也存在生下女儿的可能。",
+        "produced_fact_keys": [
+          "七宫主落三宫的子女存殁与生育判定"
+        ],
+        "required_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落三宫（Sahaj）"
+        ],
+        "condition_logic": {
+          "fact_key": "七宫主（Yuvati's Lord）是否落三宫（Sahaj）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Yuvati’s Lord is in Sahaj Bhava",
+              "claim": "七宫主（Yuvati's Lord）落三宫（Sahaj Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will face loss of children",
+              "claim": "本人会遭遇子女的失去"
+            },
+            {
+              "quote": "sometimes with great difficulty there will exist a living son",
+              "claim": "有时历经极大艰难才会有一个活着的儿子"
+            },
+            {
+              "quote": "There is also the possibility of birth of a daughter",
+              "claim": "也存在生下女儿的可能"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v75",
+            "quote": "If Yuvati’s Lord is in Sahaj Bhava, the native will face loss of children and sometimes with great difficulty there will exist a living son. There is also the possibility of birth of a daughter.",
+            "pdf_pages": [
+              45
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：七宫主（Yuvati's Lord）是否落三宫（Sahaj）。",
+        "stop_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落三宫（Sahaj）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得给「子女的失去」补上原文没有的年龄、死因或宗族含义。",
+          "不得把 sometimes、possibility 两处限定读成必然发生。",
+          "不得据此推断子女人数或生育年份。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "f64af80559245db8a57ca922e6edcb46cf4abe66a0ff68b5d5766f903d9d3363"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v76-yuvati-lord-in-bandhu.step-001",
+      "method": {
+        "method": "ch24-v76-yuvati-lord-in-bandhu",
+        "title": "七宫主落四宫：妻子不受其管束、崇实聪慧虔敬、患牙疾",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和配偶谁说了算",
+          "我牙口上的毛病和盘上有没有关系"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Yuvati’s Lord is in Bandhu Bhava, the wife of the native will not be under his control",
+            "七宫主落四宫 妻子不受管束 牙疾"
+          ],
+          "counter_queries": [
+            "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife",
+            "The native will beget a spouse endowed with (the seven principal) virtues, who will expand his dynasty by sons and grandsons"
+          ],
+          "boundary_queries": [
+            "Indications of Yuvati Bhava. Wife, travel, trade, loss of sight, death etc. be known from Yuvati Bhava",
+            "Indications of Bandhu Bhava. Conveyances, relatives, mother, happiness, treasure, lands and buildings are to be consulted through Bandhu Bhava",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "Effects of Yuvati’s Lord in Various Bhavas",
+            "Effects of Bandhu’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v76-yuvati-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Yuvati’s Lord is in Bandhu Bhava"
+            },
+            {
+              "step_id": "ch24-v76-yuvati-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the wife of the native will not be under his control"
+            },
+            {
+              "step_id": "ch24-v76-yuvati-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "He will be fond of truth, intelligent and religious"
+            },
+            {
+              "step_id": "ch24-v76-yuvati-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "He will suffer from dental diseases"
+            },
+            {
+              "step_id": "ch24-v76-yuvati-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Yuvati’s Lord is in Bandhu Bhava the wife of the native will not be under his control"
+            },
+            {
+              "step_id": "ch24-v76-yuvati-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "7th lord is in 4th house"
+            },
+            {
+              "step_id": "ch24-v76-yuvati-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "7th lord is in 4th house the wife of the native will not be under his control"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少七宫主是否落四宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v76-yuvati-lord-in-bandhu.step-001",
+        "action": "核对七宫主（Yuvati's Lord）是否落四宫（Bandhu Bhava），据此判断夫妻之间的主从关系与本人的牙齿疾患。",
+        "applicability_scope": "仅限本命盘七宫主（Yuvati's Lord）落四宫（Bandhu Bhava）一条；原文以男命立说（the wife of the native），断语主语之一是妻子，女命命中时结论不能照搬；本段原文在同偈句首自标「Effects of Yuvati’s Lord in Various Bhavas (up to Sloka 84)」；原文未给发病年龄或时间限定。",
+        "minimum_supported_claim": "七宫主（Yuvati's Lord）落四宫（Bandhu Bhava）时，本人的妻子不受其管束，本人崇尚真实、聪慧而虔敬，本人会受牙齿疾患之苦。",
+        "produced_fact_keys": [
+          "七宫主落四宫的夫妻主从与牙疾判定"
+        ],
+        "required_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落四宫（Bandhu）"
+        ],
+        "condition_logic": {
+          "fact_key": "七宫主（Yuvati's Lord）是否落四宫（Bandhu）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Yuvati’s Lord is in Bandhu Bhava",
+              "claim": "七宫主（Yuvati's Lord）落四宫（Bandhu Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the wife of the native will not be under his control",
+              "claim": "本人的妻子不受其管束"
+            },
+            {
+              "quote": "He will be fond of truth, intelligent and religious",
+              "claim": "本人崇尚真实、聪慧而虔敬"
+            },
+            {
+              "quote": "He will suffer from dental diseases",
+              "claim": "本人会受牙齿疾患之苦"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v76",
+            "quote": "If Yuvati’s Lord is in Bandhu Bhava, the wife of the native will not be under his control. He will be fond of truth, intelligent and religious. He will suffer from dental diseases.",
+            "pdf_pages": [
+              45
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：七宫主（Yuvati's Lord）是否落四宫（Bandhu）。",
+        "stop_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落四宫（Bandhu）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「不受管束」写成争执、分居或离异等原文没有的结局。",
+          "不得据此推断具体牙病病名或就医时间。",
+          "不得把本条套用到七宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "876659366c4d0156982cbc61e12f47322da1d2d64ee16ac390d52fd50afbaadb"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v77-yuvati-lord-in-putr.step-001",
+      "method": {
+        "method": "ch24-v77-yuvati-lord-in-putr",
+        "title": "七宫主落五宫：受尊敬、具备全部德行、常怀喜悦、财富种类齐全",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子的福气到什么程度",
+          "我的财路广不广"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Yuvati’s Lord is in Putr Bhava, the native will be honourable, endowed with all (i.e. seven principal) virtues",
+            "七宫主落五宫 受尊敬 全部德行 各类财富"
+          ],
+          "counter_queries": [
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak, or receives a Drishti from such a Grah"
+          ],
+          "boundary_queries": [
+            "Indications of Yuvati Bhava. Wife, travel, trade, loss of sight, death etc. be known from Yuvati Bhava",
+            "Indications of Putr Bhava. The learned should deduce from Putr Bhava amulets, sacred spells, learning, knowledge, sons, royalty (or authority), fall of position etc."
+          ],
+          "method_queries": [
+            "Effects of Yuvati’s Lord in Various Bhavas",
+            "Effects of Putr’s Lord in Various Bhavas"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v77-yuvati-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Yuvati’s Lord is in Putr Bhava"
+            },
+            {
+              "step_id": "ch24-v77-yuvati-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be honourable"
+            },
+            {
+              "step_id": "ch24-v77-yuvati-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "endowed with all (i.e. seven principal) virtues"
+            },
+            {
+              "step_id": "ch24-v77-yuvati-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "always delighted and endowed with all kinds of wealth"
+            },
+            {
+              "step_id": "ch24-v77-yuvati-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Yuvati’s Lord is in Putr Bhava the native will be honourable"
+            },
+            {
+              "step_id": "ch24-v77-yuvati-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "7th lord is in 5th house"
+            },
+            {
+              "step_id": "ch24-v77-yuvati-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "7th lord is in 5th house the native will be honourable"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少七宫主是否落五宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v77-yuvati-lord-in-putr.step-001",
+        "action": "核对七宫主（Yuvati's Lord）是否落五宫（Putr Bhava），据此判断本人的德行、心境与财富。",
+        "applicability_scope": "仅限本命盘七宫主（Yuvati's Lord）落五宫（Putr Bhava）一条；「(i.e. seven principal)」是译本括注，不是断语本身另加的条件；本段原文在同偈句首自标「Effects of Yuvati’s Lord in Various Bhavas (up to Sloka 84)」；原文未给财富数额或时间限定。",
+        "minimum_supported_claim": "七宫主（Yuvati's Lord）落五宫（Putr Bhava）时，本人受人尊敬，具备全部（即七种主要）德行，常怀喜悦、具备各类财富。",
+        "produced_fact_keys": [
+          "七宫主落五宫的德行与财富判定"
+        ],
+        "required_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落五宫（Putr）"
+        ],
+        "condition_logic": {
+          "fact_key": "七宫主（Yuvati's Lord）是否落五宫（Putr）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Yuvati’s Lord is in Putr Bhava",
+              "claim": "七宫主（Yuvati's Lord）落五宫（Putr Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be honourable",
+              "claim": "本人受人尊敬"
+            },
+            {
+              "quote": "endowed with all (i.e. seven principal) virtues",
+              "claim": "具备全部（即七种主要）德行"
+            },
+            {
+              "quote": "always delighted and endowed with all kinds of wealth",
+              "claim": "常怀喜悦、具备各类财富"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v77",
+            "quote": "If Yuvati’s Lord is in Putr Bhava, the native will be honourable, endowed with all (i.e. seven principal) virtues, always delighted and endowed with all kinds of wealth.",
+            "pdf_pages": [
+              46
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：七宫主（Yuvati's Lord）是否落五宫（Putr）。",
+        "stop_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落五宫（Putr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把译本括注的「七种主要德行」逐条坐实为原文列举的名目。",
+          "不得把「各类财富」换算成具体数额或来源。",
+          "不得把本条套用到七宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "c57d61c7b9cf262a3c04d293a438e8aea937b3ed9d123913e2c4f7c827395b5f"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v78-yuvati-lord-in-ari.step-001",
+      "method": {
+        "method": "ch24-v78-yuvati-lord-in-ari",
+        "title": "七宫主落六宫：得多病之妻并与她为敌、易怒而没有安乐",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我配偶的身体怎么样",
+          "我们两口子为什么老对着干"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Yuvati’s Lord is in Ari Bhava, the native will beget a sickly wife and he will be inimical to her",
+            "七宫主落六宫 妻子多病 夫妻为敌"
+          ],
+          "counter_queries": [
+            "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife",
+            "The native will beget a spouse endowed with (the seven principal) virtues, who will expand his dynasty by sons and grandsons"
+          ],
+          "boundary_queries": [
+            "Indications of Yuvati Bhava. Wife, travel, trade, loss of sight, death etc. be known from Yuvati Bhava",
+            "Indications of Ari Bhava. Maternal uncle, doubts about death, enemies, ulcers, stepmother etc. are to be estimated from Ari Bhava",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "Effects of Yuvati’s Lord in Various Bhavas",
+            "Effects of Yuvati Bhava"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v78-yuvati-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Yuvati’s Lord is in Ari Bhava"
+            },
+            {
+              "step_id": "ch24-v78-yuvati-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will beget a sickly wife"
+            },
+            {
+              "step_id": "ch24-v78-yuvati-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "he will be inimical to her"
+            },
+            {
+              "step_id": "ch24-v78-yuvati-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "He will be given to anger and will be devoid of happiness"
+            },
+            {
+              "step_id": "ch24-v78-yuvati-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Yuvati’s Lord is in Ari Bhava the native will beget a sickly wife"
+            },
+            {
+              "step_id": "ch24-v78-yuvati-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "7th lord is in 6th house"
+            },
+            {
+              "step_id": "ch24-v78-yuvati-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "7th lord is in 6th house the native will beget a sickly wife"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少七宫主是否落六宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v78-yuvati-lord-in-ari.step-001",
+        "action": "核对七宫主（Yuvati's Lord）是否落六宫（Ari Bhava），据此判断配偶的健康与夫妻之间的关系。",
+        "applicability_scope": "仅限本命盘七宫主（Yuvati's Lord）落六宫（Ari Bhava）一条；原文以男命立说（a sickly wife），断语主语之一是妻子，女命命中时结论不能照搬；本段原文在同偈句首自标「Effects of Yuvati’s Lord in Various Bhavas (up to Sloka 84)」；原文未给病名、婚期或时间限定。",
+        "minimum_supported_claim": "七宫主（Yuvati's Lord）落六宫（Ari Bhava）时，本人会娶到多病的妻子，并与她为敌，本人易怒且没有安乐。",
+        "produced_fact_keys": [
+          "七宫主落六宫的配偶健康与夫妻关系判定"
+        ],
+        "required_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落六宫（Ari）"
+        ],
+        "condition_logic": {
+          "fact_key": "七宫主（Yuvati's Lord）是否落六宫（Ari）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Yuvati’s Lord is in Ari Bhava",
+              "claim": "七宫主（Yuvati's Lord）落六宫（Ari Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will beget a sickly wife",
+              "claim": "本人会娶到多病的妻子"
+            },
+            {
+              "quote": "he will be inimical to her",
+              "claim": "并与她为敌"
+            },
+            {
+              "quote": "He will be given to anger and will be devoid of happiness",
+              "claim": "本人易怒且没有安乐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v78",
+            "quote": "If Yuvati’s Lord is in Ari Bhava, the native will beget a sickly wife and he will be inimical to her. He will be given to anger and will be devoid of happiness.",
+            "pdf_pages": [
+              46
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：七宫主（Yuvati's Lord）是否落六宫（Ari）。",
+        "stop_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落六宫（Ari）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「多病」写成短寿、去世或具体病名。",
+          "不得据此推断结婚年龄、离合或子女情况。",
+          "不得把本条套用到七宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "8f9ea5c01bece9d01ff84a669f4613557f26bc5e3f40de9e66cd28fa6bddac13"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v79-yuvati-lord-in-yuvati.step-001",
+      "method": {
+        "method": "ch24-v79-yuvati-lord-in-yuvati",
+        "title": "七宫主落七宫：由妻子得安乐、勇敢机巧聪慧、只是受风疾所苦",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的婚姻能不能给我带来安乐",
+          "我身上的老毛病是什么路数"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Yuvati’s Lord is in Yuvati Bhava, the native will be endowed with happiness through wife, be courageous, skilful and intelligent",
+            "七宫主落七宫 妻子带来安乐 风疾"
+          ],
+          "counter_queries": [
+            "Should Yuvati Lord be in Ari, 8th , or Vyaya, the wife will be sickly. This however does not apply to own Bhava, or exaltation placement, as above",
+            "If Chandra is in Yuvati, as Yuvati Lord is in Vyaya and the Karaka (indicator Shukr) is bereft of strength, the native will not be endowed with marital happiness",
+            "If Yuvati Bhava, or its Lord is yuti with a malefic the native’s wife will incur evils"
+          ],
+          "boundary_queries": [
+            "Indications of Yuvati Bhava. Wife, travel, trade, loss of sight, death etc. be known from Yuvati Bhava",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "Effects of Yuvati’s Lord in Various Bhavas",
+            "Effects of Yuvati Bhava"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v79-yuvati-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Yuvati’s Lord is in Yuvati Bhava"
+            },
+            {
+              "step_id": "ch24-v79-yuvati-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be endowed with happiness through wife"
+            },
+            {
+              "step_id": "ch24-v79-yuvati-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be courageous, skilful and intelligent"
+            },
+            {
+              "step_id": "ch24-v79-yuvati-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "but only afflicted by windy diseases"
+            },
+            {
+              "step_id": "ch24-v79-yuvati-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Yuvati’s Lord is in Yuvati Bhava the native will be endowed with happiness through wife"
+            },
+            {
+              "step_id": "ch24-v79-yuvati-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "7th lord is in 7th house"
+            },
+            {
+              "step_id": "ch24-v79-yuvati-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "7th lord is in 7th house the native will be endowed with happiness through wife"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少七宫主是否落七宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v79-yuvati-lord-in-yuvati.step-001",
+        "action": "核对七宫主（Yuvati's Lord）是否落七宫（Yuvati Bhava），据此判断本人经由妻子所得的安乐与风性疾病倾向。",
+        "applicability_scope": "仅限本命盘七宫主（Yuvati's Lord）落七宫（Yuvati Bhava）一条；原文以男命立说（through wife），女命命中时结论不能照搬；本段原文在同偈句首自标「Effects of Yuvati’s Lord in Various Bhavas (up to Sloka 84)」；原文未给病名、婚期或时间限定。",
+        "minimum_supported_claim": "七宫主（Yuvati's Lord）落七宫（Yuvati Bhava）时，本人经由妻子获得安乐，勇敢、机巧而聪慧，只是受风性疾病所苦。",
+        "produced_fact_keys": [
+          "七宫主落七宫的婚姻安乐与风疾判定"
+        ],
+        "required_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落七宫（Yuvati）"
+        ],
+        "condition_logic": {
+          "fact_key": "七宫主（Yuvati's Lord）是否落七宫（Yuvati）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Yuvati’s Lord is in Yuvati Bhava",
+              "claim": "七宫主（Yuvati's Lord）落七宫（Yuvati Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be endowed with happiness through wife",
+              "claim": "本人经由妻子获得安乐"
+            },
+            {
+              "quote": "be courageous, skilful and intelligent",
+              "claim": "勇敢、机巧而聪慧"
+            },
+            {
+              "quote": "but only afflicted by windy diseases",
+              "claim": "只是受风性疾病所苦"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v79",
+            "quote": "If Yuvati’s Lord is in Yuvati Bhava, the native will be endowed with happiness through wife, be courageous, skilful and intelligent, but only afflicted by windy diseases.",
+            "pdf_pages": [
+              46
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：七宫主（Yuvati's Lord）是否落七宫（Yuvati）。",
+        "stop_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落七宫（Yuvati）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把风性疾病坐实为某一具体病名或发病年份。",
+          "不得据此推断结婚年龄、配偶人数或子女情况。",
+          "不得把本条套用到七宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "4d0d46066dd7d5c3fbbf2af9157d056699fae144ee4701648e9cbbb4f57b6d9b"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v80-yuvati-lord-in-randhr.step-001",
+      "method": {
+        "method": "ch24-v80-yuvati-lord-in-randhr",
+        "title": "七宫主落八宫：婚姻中得不到安乐、妻子多病性情不佳且不听从",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的婚姻为什么这么不顺",
+          "我配偶的身体和脾气怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Yuvati’s Lord is in Randhr Bhava, the native will be deprived of marital happiness",
+            "七宫主落八宫 婚姻无乐 妻子多病 不听从"
+          ],
+          "counter_queries": [
+            "If Yuvati Lord is in his own Rāśi, or in exaltation, one will derive full happiness through his wife",
+            "The native will beget a spouse endowed with (the seven principal) virtues, who will expand his dynasty by sons and grandsons"
+          ],
+          "boundary_queries": [
+            "Indications of Yuvati Bhava. Wife, travel, trade, loss of sight, death etc. be known from Yuvati Bhava",
+            "Indications of Randhr Bhava. Randhr Bhava indicates longevity, battle, enemies, forts, wealth of the dead and things, that have happened and are to happen",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)"
+          ],
+          "method_queries": [
+            "Effects of Yuvati’s Lord in Various Bhavas",
+            "Effects of Yuvati Bhava"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v80-yuvati-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Yuvati’s Lord is in Randhr Bhava"
+            },
+            {
+              "step_id": "ch24-v80-yuvati-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be deprived of marital happiness"
+            },
+            {
+              "step_id": "ch24-v80-yuvati-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "His wife will be troubled by diseases"
+            },
+            {
+              "step_id": "ch24-v80-yuvati-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be devoid of good disposition and will not obey the native"
+            },
+            {
+              "step_id": "ch24-v80-yuvati-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Yuvati’s Lord is in Randhr Bhava the native will be deprived of marital happiness"
+            },
+            {
+              "step_id": "ch24-v80-yuvati-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "7th lord is in 8th house"
+            },
+            {
+              "step_id": "ch24-v80-yuvati-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "7th lord is in 8th house the native will be deprived of marital happiness"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少七宫主是否落八宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v80-yuvati-lord-in-randhr.step-001",
+        "action": "核对七宫主（Yuvati's Lord）是否落八宫（Randhr Bhava），据此判断本人的婚姻安乐与配偶的健康、性情。",
+        "applicability_scope": "仅限本命盘七宫主（Yuvati's Lord）落八宫（Randhr Bhava）一条；原文以男命立说（His wife），断语主语之一是妻子，女命命中时结论不能照搬；本段原文自标「Effects of Yuvati’s Lord in Various Bhavas (up to Sloka 84)」；原文未给病名、婚期或时间限定。",
+        "minimum_supported_claim": "七宫主（Yuvati's Lord）落八宫（Randhr Bhava）时，本人在婚姻中得不到安乐，其妻子会受疾病困扰，性情不佳且不听从本人。",
+        "produced_fact_keys": [
+          "七宫主落八宫的婚姻安乐与配偶状况判定"
+        ],
+        "required_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落八宫（Randhr）"
+        ],
+        "condition_logic": {
+          "fact_key": "七宫主（Yuvati's Lord）是否落八宫（Randhr）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Yuvati’s Lord is in Randhr Bhava",
+              "claim": "七宫主（Yuvati's Lord）落八宫（Randhr Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be deprived of marital happiness",
+              "claim": "本人在婚姻中得不到安乐"
+            },
+            {
+              "quote": "His wife will be troubled by diseases",
+              "claim": "其妻子会受疾病困扰"
+            },
+            {
+              "quote": "be devoid of good disposition and will not obey the native",
+              "claim": "性情不佳且不听从本人"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v80",
+            "quote": "If Yuvati’s Lord is in Randhr Bhava, the native will be deprived of marital happiness. His wife will be troubled by diseases, be devoid of good disposition and will not obey the native.",
+            "pdf_pages": [
+              46
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：七宫主（Yuvati's Lord）是否落八宫（Randhr）。",
+        "stop_fact_keys": [
+          "七宫主（Yuvati's Lord）是否落八宫（Randhr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「受疾病困扰」写成短寿、去世或具体病名。",
+          "不得把「得不到安乐」写成离异或分居等原文没有的结局。",
+          "不得把本条套用到七宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "98061126b84601cc223a40220fe4fa21db1a292a63a00784e9c9dc7ab6855aa1"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch24:v70": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v70",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "70.",
+      "content_role": "verse",
+      "exact_text": "70. If Ari’s Lord is in Karm Bhava, the native will be well known among his men, will not be respectfully disposed to his father and will be happy in foreign countries. He will be a gifted speaker.",
+      "pdf_pages": [
+        45
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 70 · PDF page 45 · bphs-97:santhanam:ch24:v70",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v69",
+      "next_atom_id": "bphs-97:santhanam:ch24:v71",
+      "context_before": " If Ari’s Lord is in Dharm Bhava, the native will trade in wood and stones (‘Pashan’ also means poison) and will have fluctuating professional fortunes.\n\n",
+      "context_after": "71. If Ari’s Lord is in Labh Bhava, the native will gain wealth through his enemies, be virtuous, adventurous and will be somewh",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v71": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v71",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "71.",
+      "content_role": "verse",
+      "exact_text": "71. If Ari’s Lord is in Labh Bhava, the native will gain wealth through his enemies, be virtuous, adventurous and will be somewhat bereft of progenic happiness.",
+      "pdf_pages": [
+        45
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 71 · PDF page 45 · bphs-97:santhanam:ch24:v71",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v70",
+      "next_atom_id": "bphs-97:santhanam:ch24:v72",
+      "context_before": " his men, will not be respectfully disposed to his father and will be happy in foreign countries. He will be a gifted speaker.\n\n",
+      "context_after": "72. If Ari’s Lord is in Vyaya Bhava, the native will always spend on vices, be hostile to learned people and will torture living",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v72": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v72",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "72.",
+      "content_role": "verse",
+      "exact_text": "72. If Ari’s Lord is in Vyaya Bhava, the native will always spend on vices, be hostile to learned people and will torture living beings.",
+      "pdf_pages": [
+        45
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 72 · PDF page 45 · bphs-97:santhanam:ch24:v72",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v71",
+      "next_atom_id": "bphs-97:santhanam:ch24:v73",
+      "context_before": " If Ari’s Lord is in Labh Bhava, the native will gain wealth through his enemies, be virtuous, adventurous and will be somewhat bereft of progenic happiness.\n\n",
+      "context_after": "73. Effects of Yuvati’s Lord in Various Bhavas (up to Sloka 84). If Yuvati’s Lord is in Tanu Bhava, the native will go to others",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v73": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v73",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "73.",
+      "content_role": "verse",
+      "exact_text": "73. Effects of Yuvati’s Lord in Various Bhavas (up to Sloka 84). If Yuvati’s Lord is in Tanu Bhava, the native will go to others’ wives, be wicked, skilful, devoid of courage and afflicted by windy diseases.",
+      "pdf_pages": [
+        45
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 73 · PDF page 45 · bphs-97:santhanam:ch24:v73",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v72",
+      "next_atom_id": "bphs-97:santhanam:ch24:v74",
+      "context_before": " If Ari’s Lord is in Vyaya Bhava, the native will always spend on vices, be hostile to learned people and will torture living beings.\n\n",
+      "context_after": "74. If Yuvati’s Lord is in Dhan Bhava, the native will have many wives, will gain wealth through his wife and be procrastinating",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v74": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v74",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "74.",
+      "content_role": "verse",
+      "exact_text": "74. If Yuvati’s Lord is in Dhan Bhava, the native will have many wives, will gain wealth through his wife and be procrastinating in nature.",
+      "pdf_pages": [
+        45
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 74 · PDF page 45 · bphs-97:santhanam:ch24:v74",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v73",
+      "next_atom_id": "bphs-97:santhanam:ch24:v75",
+      "context_before": " If Yuvati’s Lord is in Tanu Bhava, the native will go to others’ wives, be wicked, skilful, devoid of courage and afflicted by windy diseases.\n\n",
+      "context_after": "75. If Yuvati’s Lord is in Sahaj Bhava, the native will face loss of children and sometimes with great difficulty there will exi",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v75": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v75",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "75.",
+      "content_role": "verse",
+      "exact_text": "75. If Yuvati’s Lord is in Sahaj Bhava, the native will face loss of children and sometimes with great difficulty there will exist a living son. There is also the possibility of birth of a daughter.",
+      "pdf_pages": [
+        45
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 75 · PDF page 45 · bphs-97:santhanam:ch24:v75",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v74",
+      "next_atom_id": "bphs-97:santhanam:ch24:v76",
+      "context_before": " If Yuvati’s Lord is in Dhan Bhava, the native will have many wives, will gain wealth through his wife and be procrastinating in nature.\n\n",
+      "context_after": "76. If Yuvati’s Lord is in Bandhu Bhava, the wife of the native will not be under his control. He will be fond of truth, intelli",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v76": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v76",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "76.",
+      "content_role": "verse",
+      "exact_text": "76. If Yuvati’s Lord is in Bandhu Bhava, the wife of the native will not be under his control. He will be fond of truth, intelligent and religious. He will suffer from dental diseases.",
+      "pdf_pages": [
+        45
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 76 · PDF page 45 · bphs-97:santhanam:ch24:v76",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v75",
+      "next_atom_id": "bphs-97:santhanam:ch24:v77",
+      "context_before": "ldren and sometimes with great difficulty there will exist a living son. There is also the possibility of birth of a daughter.\n\n",
+      "context_after": "77. If Yuvati’s Lord is in Putr Bhava, the native will be honourable, endowed with all (i.e. seven principal) virtues, always de",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v77": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v77",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "77.",
+      "content_role": "verse",
+      "exact_text": "77. If Yuvati’s Lord is in Putr Bhava, the native will be honourable, endowed with all (i.e. seven principal) virtues, always delighted and endowed with all kinds of wealth.",
+      "pdf_pages": [
+        46
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 77 · PDF page 46 · bphs-97:santhanam:ch24:v77",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v76",
+      "next_atom_id": "bphs-97:santhanam:ch24:v78",
+      "context_before": "is control. He will be fond of truth, intelligent and religious. He will suffer from dental diseases.\n\n<!-- SOURCE_PAGE 46 -->\n\n",
+      "context_after": "78. If Yuvati’s Lord is in Ari Bhava, the native will beget a sickly wife and he will be inimical to her. He will be given to an",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v78": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v78",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "78.",
+      "content_role": "verse",
+      "exact_text": "78. If Yuvati’s Lord is in Ari Bhava, the native will beget a sickly wife and he will be inimical to her. He will be given to anger and will be devoid of happiness.",
+      "pdf_pages": [
+        46
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 78 · PDF page 46 · bphs-97:santhanam:ch24:v78",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v77",
+      "next_atom_id": "bphs-97:santhanam:ch24:v79",
+      "context_before": "ve will be honourable, endowed with all (i.e. seven principal) virtues, always delighted and endowed with all kinds of wealth.\n\n",
+      "context_after": "79. If Yuvati’s Lord is in Yuvati Bhava, the native will be endowed with happiness through wife, be courageous, skilful and inte",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v79": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v79",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "79.",
+      "content_role": "verse",
+      "exact_text": "79. If Yuvati’s Lord is in Yuvati Bhava, the native will be endowed with happiness through wife, be courageous, skilful and intelligent, but only afflicted by windy diseases.",
+      "pdf_pages": [
+        46
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 79 · PDF page 46 · bphs-97:santhanam:ch24:v79",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v78",
+      "next_atom_id": "bphs-97:santhanam:ch24:v80",
+      "context_before": "the native will beget a sickly wife and he will be inimical to her. He will be given to anger and will be devoid of happiness.\n\n",
+      "context_after": "80. If Yuvati’s Lord is in Randhr Bhava, the native will be deprived of marital happiness. His wife will be troubled by diseases",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v80": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v80",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "80.",
+      "content_role": "verse",
+      "exact_text": "80. If Yuvati’s Lord is in Randhr Bhava, the native will be deprived of marital happiness. His wife will be troubled by diseases, be devoid of good disposition and will not obey the native.",
+      "pdf_pages": [
+        46
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 80 · PDF page 46 · bphs-97:santhanam:ch24:v80",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v79",
+      "next_atom_id": "bphs-97:santhanam:ch24:v81",
+      "context_before": " If Yuvati’s Lord is in Yuvati Bhava, the native will be endowed with happiness through wife, be courageous, skilful and intelligent, but only afflicted by windy diseases.\n\n",
+      "context_after": "81. If Yuvati’s Lord is in Dharm Bhava, the native will have union with many women, be well disposed to his own wife and will ha",
+      "content_missing": false
+    }
+  }
+}
