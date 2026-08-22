@@ -1,0 +1,1787 @@
+{
+  "shard": 1,
+  "step_count": 11,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch24-v99-dharm-lord-in-sahaj.step-001",
+      "method": {
+        "method": "ch24-v99-dharm-lord-in-sahaj",
+        "title": "九宫主落三宫：兄弟之乐与财富德行",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和兄弟之间的缘分怎么样",
+          "我这辈子的财运和风评怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dharm’s Lord is in Sahaj Bhava, the native will be endowed with fraternal bliss, be wealthy, virtuous and charming.",
+            "九宫主落三宫 兄弟之乐与财富德行"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava.",
+            "Indications of Sahaj Bhava. From Sahaj Bhava know of the following: valour, servants (attending etc.), brothers, sisters etc., initiatory instructions (Upadesh), journey and parent’s death.",
+            "九宫主落三宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Dharm’s Lord in Various Bhavas",
+            "Effects of Sahaj’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v99-dharm-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dharm’s Lord is in Sahaj Bhava"
+            },
+            {
+              "step_id": "ch24-v99-dharm-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "endowed with fraternal bliss"
+            },
+            {
+              "step_id": "ch24-v99-dharm-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be wealthy, virtuous and charming"
+            },
+            {
+              "step_id": "ch24-v99-dharm-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dharm’s Lord is in Sahaj Bhava endowed with fraternal bliss"
+            },
+            {
+              "step_id": "ch24-v99-dharm-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "9th lord is in 3rd house"
+            },
+            {
+              "step_id": "ch24-v99-dharm-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "9th lord is in 3rd house endowed with fraternal bliss"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少九宫主是否落三宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v99-dharm-lord-in-sahaj.step-001",
+        "action": "核对九宫主（Dharm's Lord）是否落三宫（Sahaj Bhava），据此判断兄弟之乐与财富德行。",
+        "applicability_scope": "仅限本命盘九宫主（Dharm's Lord）落三宫（Sahaj Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "九宫主（Dharm's Lord）落三宫（Sahaj Bhava）时，享有兄弟之乐，富有、有德、有魅力。",
+        "produced_fact_keys": [
+          "九宫主落三宫的兄弟之乐与财富德行判定"
+        ],
+        "required_fact_keys": [
+          "九宫主（Dharm's Lord）是否落三宫（Sahaj）"
+        ],
+        "condition_logic": {
+          "fact_key": "九宫主（Dharm's Lord）是否落三宫（Sahaj）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dharm’s Lord is in Sahaj Bhava",
+              "claim": "九宫主（Dharm's Lord）落三宫（Sahaj Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "endowed with fraternal bliss",
+              "claim": "享有兄弟之乐"
+            },
+            {
+              "quote": "be wealthy, virtuous and charming",
+              "claim": "富有、有德、有魅力"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v99",
+            "quote": "If Dharm’s Lord is in Sahaj Bhava, the native will be endowed with fraternal bliss, be wealthy, virtuous and charming.",
+            "pdf_pages": [
+              47
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：九宫主（Dharm's Lord）是否落三宫（Sahaj）。",
+        "stop_fact_keys": [
+          "九宫主（Dharm's Lord）是否落三宫（Sahaj）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应九宫主落三宫，不得套用到九宫主落其他宫位。",
+          "不得把「兄弟之乐」扩大成兄弟人数、排行或姐妹。",
+          "不得据此推断财富数额或成名时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "f13e7995f46f0a5b31f371b538389cfe8961029a12109dd10df2642e400339bb"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v100-dharm-lord-in-bandhu.step-001",
+      "method": {
+        "method": "ch24-v100-dharm-lord-in-bandhu",
+        "title": "九宫主落四宫：房产车乘与母亲缘分",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子房子车子怎么样",
+          "我和母亲的关系怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dharm’s Lord is in Bandhu Bhava, the native will enjoy houses, conveyances and happiness, will have all kinds of wealth and be devoted to his mother.",
+            "九宫主落四宫 房产车乘与母亲缘分"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava.",
+            "Indications of Bandhu Bhava. Conveyances, relatives, mother, happiness, treasure, lands and buildings are to be consulted through Bandhu Bhava.",
+            "九宫主落四宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Dharm’s Lord in Various Bhavas",
+            "Effects of Bandhu’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v100-dharm-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dharm’s Lord is in Bandhu Bhava"
+            },
+            {
+              "step_id": "ch24-v100-dharm-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "enjoy houses, conveyances and happiness"
+            },
+            {
+              "step_id": "ch24-v100-dharm-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will have all kinds of wealth"
+            },
+            {
+              "step_id": "ch24-v100-dharm-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be devoted to his mother"
+            },
+            {
+              "step_id": "ch24-v100-dharm-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dharm’s Lord is in Bandhu Bhava enjoy houses, conveyances and happiness"
+            },
+            {
+              "step_id": "ch24-v100-dharm-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "9th lord is in 4th house"
+            },
+            {
+              "step_id": "ch24-v100-dharm-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "9th lord is in 4th house enjoy houses, conveyances and happiness"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少九宫主是否落四宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v100-dharm-lord-in-bandhu.step-001",
+        "action": "核对九宫主（Dharm's Lord）是否落四宫（Bandhu Bhava），据此判断房产车乘与母亲缘分。",
+        "applicability_scope": "仅限本命盘九宫主（Dharm's Lord）落四宫（Bandhu Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "九宫主（Dharm's Lord）落四宫（Bandhu Bhava）时，享有房屋、车乘与安乐，拥有各类财富，孝敬母亲。",
+        "produced_fact_keys": [
+          "九宫主落四宫的房产车乘与母亲缘分判定"
+        ],
+        "required_fact_keys": [
+          "九宫主（Dharm's Lord）是否落四宫（Bandhu）"
+        ],
+        "condition_logic": {
+          "fact_key": "九宫主（Dharm's Lord）是否落四宫（Bandhu）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dharm’s Lord is in Bandhu Bhava",
+              "claim": "九宫主（Dharm's Lord）落四宫（Bandhu Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "enjoy houses, conveyances and happiness",
+              "claim": "享有房屋、车乘与安乐"
+            },
+            {
+              "quote": "will have all kinds of wealth",
+              "claim": "拥有各类财富"
+            },
+            {
+              "quote": "be devoted to his mother",
+              "claim": "孝敬母亲"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v100",
+            "quote": "If Dharm’s Lord is in Bandhu Bhava, the native will enjoy houses, conveyances and happiness, will have all kinds of wealth and be devoted to his mother.",
+            "pdf_pages": [
+              47
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：九宫主（Dharm's Lord）是否落四宫（Bandhu）。",
+        "stop_fact_keys": [
+          "九宫主（Dharm's Lord）是否落四宫（Bandhu）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应九宫主落四宫，不得套用到九宫主落其他宫位。",
+          "不得把「各类财富」换算成具体数额或来源。",
+          "不得据此推断母亲的寿数或健康。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "7e6a549a1832516e9a13ad730e824a7e941b047f3a5d115e6512e65f42969e79"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v101-dharm-lord-in-putr.step-001",
+      "method": {
+        "method": "ch24-v101-dharm-lord-in-putr",
+        "title": "九宫主落五宫：子嗣兴旺与品行学问",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我子女缘怎么样",
+          "我的学问和为人会是什么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dharm’s Lord is in Putr Bhava, the native will be endowed with sons and prosperity, devoted to elders, bold, charitable and learned.",
+            "九宫主落五宫 子嗣兴旺与品行学问"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava.",
+            "Indications of Putr Bhava. The learned should deduce from Putr Bhava amulets, sacred spells, learning, knowledge, sons, royalty (or authority), fall of position etc.",
+            "九宫主落五宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Dharm’s Lord in Various Bhavas",
+            "Effects of Putr’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v101-dharm-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dharm’s Lord is in Putr Bhava"
+            },
+            {
+              "step_id": "ch24-v101-dharm-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "endowed with sons and prosperity"
+            },
+            {
+              "step_id": "ch24-v101-dharm-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "devoted to elders, bold, charitable and learned"
+            },
+            {
+              "step_id": "ch24-v101-dharm-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dharm’s Lord is in Putr Bhava endowed with sons and prosperity"
+            },
+            {
+              "step_id": "ch24-v101-dharm-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "9th lord is in 5th house"
+            },
+            {
+              "step_id": "ch24-v101-dharm-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "9th lord is in 5th house endowed with sons and prosperity"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少九宫主是否落五宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v101-dharm-lord-in-putr.step-001",
+        "action": "核对九宫主（Dharm's Lord）是否落五宫（Putr Bhava），据此判断子嗣兴旺与品行学问。",
+        "applicability_scope": "仅限本命盘九宫主（Dharm's Lord）落五宫（Putr Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "九宫主（Dharm's Lord）落五宫（Putr Bhava）时，有子并且兴旺，敬奉尊长、胆大、乐善好施、有学问。",
+        "produced_fact_keys": [
+          "九宫主落五宫的子嗣兴旺与品行学问判定"
+        ],
+        "required_fact_keys": [
+          "九宫主（Dharm's Lord）是否落五宫（Putr）"
+        ],
+        "condition_logic": {
+          "fact_key": "九宫主（Dharm's Lord）是否落五宫（Putr）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dharm’s Lord is in Putr Bhava",
+              "claim": "九宫主（Dharm's Lord）落五宫（Putr Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "endowed with sons and prosperity",
+              "claim": "有子并且兴旺"
+            },
+            {
+              "quote": "devoted to elders, bold, charitable and learned",
+              "claim": "敬奉尊长、胆大、乐善好施、有学问"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v101",
+            "quote": "If Dharm’s Lord is in Putr Bhava, the native will be endowed with sons and prosperity, devoted to elders, bold, charitable and learned.",
+            "pdf_pages": [
+              47
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：九宫主（Dharm's Lord）是否落五宫（Putr）。",
+        "stop_fact_keys": [
+          "九宫主（Dharm's Lord）是否落五宫（Putr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应九宫主落五宫，不得套用到九宫主落其他宫位。",
+          "不得把「有子」写成具体子女人数或性别比例。",
+          "不得据此推断求学阶段或功名时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "ed78fb46fcf015230a486b8035d7ee9a07c2c7a47a58841d98ad8dcc720edbfb"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v102-dharm-lord-in-ari.step-001",
+      "method": {
+        "method": "ch24-v102-dharm-lord-in-ari",
+        "title": "九宫主落六宫：兴旺有限与母族仇敌之困",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我为什么总是起不来",
+          "我和母亲那边亲戚的关系怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dharm’s Lord is in Ari Bhava, the native will enjoy meagre prosperity, be devoid of happiness from maternal relatives and be always troubled by enemies.",
+            "九宫主落六宫 兴旺有限与母族仇敌之困"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava.",
+            "Indications of Ari Bhava. Maternal uncle, doubts about death, enemies, ulcers, stepmother etc. are to be estimated from Ari Bhava.",
+            "九宫主落六宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Dharm’s Lord in Various Bhavas",
+            "Effects of Ari’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v102-dharm-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dharm’s Lord is in Ari Bhava"
+            },
+            {
+              "step_id": "ch24-v102-dharm-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "enjoy meagre prosperity"
+            },
+            {
+              "step_id": "ch24-v102-dharm-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be devoid of happiness from maternal relatives"
+            },
+            {
+              "step_id": "ch24-v102-dharm-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be always troubled by enemies"
+            },
+            {
+              "step_id": "ch24-v102-dharm-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dharm’s Lord is in Ari Bhava enjoy meagre prosperity"
+            },
+            {
+              "step_id": "ch24-v102-dharm-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "9th lord is in 6th house"
+            },
+            {
+              "step_id": "ch24-v102-dharm-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "9th lord is in 6th house enjoy meagre prosperity"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少九宫主是否落六宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v102-dharm-lord-in-ari.step-001",
+        "action": "核对九宫主（Dharm's Lord）是否落六宫（Ari Bhava），据此判断兴旺有限与母族仇敌之困。",
+        "applicability_scope": "仅限本命盘九宫主（Dharm's Lord）落六宫（Ari Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "九宫主（Dharm's Lord）落六宫（Ari Bhava）时，兴旺有限，从母族亲属处得不到安乐，常受仇敌困扰。",
+        "produced_fact_keys": [
+          "九宫主落六宫的兴旺有限与母族仇敌之困判定"
+        ],
+        "required_fact_keys": [
+          "九宫主（Dharm's Lord）是否落六宫（Ari）"
+        ],
+        "condition_logic": {
+          "fact_key": "九宫主（Dharm's Lord）是否落六宫（Ari）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dharm’s Lord is in Ari Bhava",
+              "claim": "九宫主（Dharm's Lord）落六宫（Ari Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "enjoy meagre prosperity",
+              "claim": "兴旺有限"
+            },
+            {
+              "quote": "be devoid of happiness from maternal relatives",
+              "claim": "从母族亲属处得不到安乐"
+            },
+            {
+              "quote": "be always troubled by enemies",
+              "claim": "常受仇敌困扰"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v102",
+            "quote": "If Dharm’s Lord is in Ari Bhava, the native will enjoy meagre prosperity, be devoid of happiness from maternal relatives and be always troubled by enemies.",
+            "pdf_pages": [
+              47
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：九宫主（Dharm's Lord）是否落六宫（Ari）。",
+        "stop_fact_keys": [
+          "九宫主（Dharm's Lord）是否落六宫（Ari）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应九宫主落六宫，不得套用到九宫主落其他宫位。",
+          "不得把「常受仇敌困扰」写成官司、伤害或具体事件。",
+          "不得把「从母族亲属处得不到安乐」写成断亲或亲属去世。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "1b9bf8efd44616f29e86a07ba4b7bbd18b76ef5f28ac2fbaf62ecea211a56424"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v103-dharm-lord-in-yuvati.step-001",
+      "method": {
+        "method": "ch24-v103-dharm-lord-in-yuvati",
+        "title": "九宫主落七宫：婚后安乐与德行名声",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "结婚以后我的日子会怎么样",
+          "我会不会有点名气"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dharm’s Lord is in Yuvati Bhava, the native beget happiness after marriage, be virtuous and famous.",
+            "九宫主落七宫 婚后安乐与德行名声"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava.",
+            "Indications of Yuvati Bhava. Wife, travel, trade, loss of sight, death etc. be known from Yuvati Bhava.",
+            "九宫主落七宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Dharm’s Lord in Various Bhavas",
+            "Effects of Yuvati’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v103-dharm-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dharm’s Lord is in Yuvati Bhava"
+            },
+            {
+              "step_id": "ch24-v103-dharm-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "beget happiness after marriage"
+            },
+            {
+              "step_id": "ch24-v103-dharm-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be virtuous and famous"
+            },
+            {
+              "step_id": "ch24-v103-dharm-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dharm’s Lord is in Yuvati Bhava beget happiness after marriage"
+            },
+            {
+              "step_id": "ch24-v103-dharm-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "9th lord is in 7th house"
+            },
+            {
+              "step_id": "ch24-v103-dharm-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "9th lord is in 7th house beget happiness after marriage"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少九宫主是否落七宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v103-dharm-lord-in-yuvati.step-001",
+        "action": "核对九宫主（Dharm's Lord）是否落七宫（Yuvati Bhava），据此判断婚后安乐与德行名声。",
+        "applicability_scope": "仅限本命盘九宫主（Dharm's Lord）落七宫（Yuvati Bhava）一条；原文未给时间限定。原文此偈以「O Brahmin」呼语起头，属对话称谓，不并入结论。",
+        "minimum_supported_claim": "九宫主（Dharm's Lord）落七宫（Yuvati Bhava）时，婚后得安乐，有德且有名声。",
+        "produced_fact_keys": [
+          "九宫主落七宫的婚后安乐与德行名声判定"
+        ],
+        "required_fact_keys": [
+          "九宫主（Dharm's Lord）是否落七宫（Yuvati）"
+        ],
+        "condition_logic": {
+          "fact_key": "九宫主（Dharm's Lord）是否落七宫（Yuvati）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dharm’s Lord is in Yuvati Bhava",
+              "claim": "九宫主（Dharm's Lord）落七宫（Yuvati Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "beget happiness after marriage",
+              "claim": "婚后得安乐"
+            },
+            {
+              "quote": "be virtuous and famous",
+              "claim": "有德且有名声"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v103",
+            "quote": "If Dharm’s Lord is in Yuvati Bhava, the native beget happiness after marriage, be virtuous and famous.",
+            "pdf_pages": [
+              47
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：九宫主（Dharm's Lord）是否落七宫（Yuvati）。",
+        "stop_fact_keys": [
+          "九宫主（Dharm's Lord）是否落七宫（Yuvati）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应九宫主落七宫，不得套用到九宫主落其他宫位。",
+          "不得据此推断婚期、配偶条件或婚姻次数。",
+          "不得把「有名声」写成具体行业或地位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "8c221d0f975f2e91fdd11e71904c083b5a0099d7be2f68575a077140da787594"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v104-dharm-lord-in-randhr.step-001",
+      "method": {
+        "method": "ch24-v104-dharm-lord-in-randhr",
+        "title": "九宫主落八宫：不兴旺与兄长缘薄",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的运势为什么总不见起色",
+          "我和哥哥之间会怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dharm’s Lord is in Randhr Bhava, the native will not be prosperous and will not enjoy happiness from his elder brother.",
+            "九宫主落八宫 不兴旺与兄长缘薄"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava.",
+            "Indications of Randhr Bhava. Randhr Bhava indicates longevity, battle, enemies, forts, wealth of the dead and things, that have happened and are to happen (in the past and future births).",
+            "九宫主落八宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Dharm’s Lord in Various Bhavas",
+            "Effects of Randhr’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v104-dharm-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dharm’s Lord is in Randhr Bhava"
+            },
+            {
+              "step_id": "ch24-v104-dharm-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will not be prosperous"
+            },
+            {
+              "step_id": "ch24-v104-dharm-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will not enjoy happiness from his elder brother"
+            },
+            {
+              "step_id": "ch24-v104-dharm-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dharm’s Lord is in Randhr Bhava will not be prosperous"
+            },
+            {
+              "step_id": "ch24-v104-dharm-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "9th lord is in 8th house"
+            },
+            {
+              "step_id": "ch24-v104-dharm-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "9th lord is in 8th house will not be prosperous"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少九宫主是否落八宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v104-dharm-lord-in-randhr.step-001",
+        "action": "核对九宫主（Dharm's Lord）是否落八宫（Randhr Bhava），据此判断不兴旺与兄长缘薄。",
+        "applicability_scope": "仅限本命盘九宫主（Dharm's Lord）落八宫（Randhr Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "九宫主（Dharm's Lord）落八宫（Randhr Bhava）时，不兴旺，从兄长处得不到安乐。",
+        "produced_fact_keys": [
+          "九宫主落八宫的不兴旺与兄长缘薄判定"
+        ],
+        "required_fact_keys": [
+          "九宫主（Dharm's Lord）是否落八宫（Randhr）"
+        ],
+        "condition_logic": {
+          "fact_key": "九宫主（Dharm's Lord）是否落八宫（Randhr）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dharm’s Lord is in Randhr Bhava",
+              "claim": "九宫主（Dharm's Lord）落八宫（Randhr Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will not be prosperous",
+              "claim": "不兴旺"
+            },
+            {
+              "quote": "will not enjoy happiness from his elder brother",
+              "claim": "从兄长处得不到安乐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v104",
+            "quote": "If Dharm’s Lord is in Randhr Bhava, the native will not be prosperous and will not enjoy happiness from his elder brother.",
+            "pdf_pages": [
+              47
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：九宫主（Dharm's Lord）是否落八宫（Randhr）。",
+        "stop_fact_keys": [
+          "九宫主（Dharm's Lord）是否落八宫（Randhr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应九宫主落八宫，不得套用到九宫主落其他宫位。",
+          "不得把「从兄长处得不到安乐」写成兄长去世或没有兄长。",
+          "不得据此推断贫困程度或时间段。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "dbcd59f2c3f5f3bbedad51591cf323ea546836be2406ff3156412b184b25d58d"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v105-dharm-lord-in-dharm.step-001",
+      "method": {
+        "method": "ch24-v105-dharm-lord-in-dharm",
+        "title": "九宫主落九宫：福分丰厚与同胞之乐",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子的福分怎么样",
+          "我和兄弟姐妹相处得好不好"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dharm’s Lord is in Dharm Bhava, the native will be endowed with abundant fortunes, virtues and beauty and will enjoy much happiness from co-born.",
+            "九宫主落九宫 福分丰厚与同胞之乐"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava.",
+            "九宫主落九宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Dharm’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v105-dharm-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dharm’s Lord is in Dharm Bhava"
+            },
+            {
+              "step_id": "ch24-v105-dharm-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "endowed with abundant fortunes, virtues and beauty"
+            },
+            {
+              "step_id": "ch24-v105-dharm-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will enjoy much happiness from co-born"
+            },
+            {
+              "step_id": "ch24-v105-dharm-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dharm’s Lord is in Dharm Bhava endowed with abundant fortunes, virtues and beauty"
+            },
+            {
+              "step_id": "ch24-v105-dharm-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "9th lord is in 9th house"
+            },
+            {
+              "step_id": "ch24-v105-dharm-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "9th lord is in 9th house endowed with abundant fortunes, virtues and beauty"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少九宫主是否落九宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v105-dharm-lord-in-dharm.step-001",
+        "action": "核对九宫主（Dharm's Lord）是否落九宫（Dharm Bhava），据此判断福分丰厚与同胞之乐。",
+        "applicability_scope": "仅限本命盘九宫主（Dharm's Lord）落九宫（Dharm Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "九宫主（Dharm's Lord）落九宫（Dharm Bhava）时，福分丰厚、有德、有容貌之美，从同胞处得到很多安乐。",
+        "produced_fact_keys": [
+          "九宫主落九宫的福分丰厚与同胞之乐判定"
+        ],
+        "required_fact_keys": [
+          "九宫主（Dharm's Lord）是否落九宫（Dharm）"
+        ],
+        "condition_logic": {
+          "fact_key": "九宫主（Dharm's Lord）是否落九宫（Dharm）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dharm’s Lord is in Dharm Bhava",
+              "claim": "九宫主（Dharm's Lord）落九宫（Dharm Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "endowed with abundant fortunes, virtues and beauty",
+              "claim": "福分丰厚、有德、有容貌之美"
+            },
+            {
+              "quote": "will enjoy much happiness from co-born",
+              "claim": "从同胞处得到很多安乐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v105",
+            "quote": "If Dharm’s Lord is in Dharm Bhava, the native will be endowed with abundant fortunes, virtues and beauty and will enjoy much happiness from co-born.",
+            "pdf_pages": [
+              47
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：九宫主（Dharm's Lord）是否落九宫（Dharm）。",
+        "stop_fact_keys": [
+          "九宫主（Dharm's Lord）是否落九宫（Dharm）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应九宫主落九宫，不得套用到九宫主落其他宫位。",
+          "不得把「福分丰厚」换算成财富数额或名位。",
+          "不得把「同胞」限定成兄或弟——原文只写 co-born。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "4851abbd36e6a2d8c5792422da90476bdc5afcf428266f0d78ce1b16ce292390"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v106-dharm-lord-in-karm.step-001",
+      "method": {
+        "method": "ch24-v106-dharm-lord-in-karm",
+        "title": "九宫主落十宫：权位身份与众人拥戴",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我在事业上能到什么位置",
+          "别人怎么看我这个人"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dharm’s Lord is in Karm Bhava, the native will be a king, or equal to him, or be a minister, or an Army chief, be virtuous and dear to all.",
+            "九宫主落十宫 权位身份与众人拥戴"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava.",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava.",
+            "九宫主落十宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Dharm’s Lord in Various Bhavas",
+            "Effects of Karm’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v106-dharm-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dharm’s Lord is in Karm Bhava"
+            },
+            {
+              "step_id": "ch24-v106-dharm-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be a king, or equal to him, or be a minister, or an Army chief"
+            },
+            {
+              "step_id": "ch24-v106-dharm-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be virtuous and dear to all"
+            },
+            {
+              "step_id": "ch24-v106-dharm-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dharm’s Lord is in Karm Bhava the native will be a king, or equal to him, or be a minister, or an Army chief"
+            },
+            {
+              "step_id": "ch24-v106-dharm-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "9th lord is in 10th house"
+            },
+            {
+              "step_id": "ch24-v106-dharm-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "9th lord is in 10th house the native will be a king, or equal to him, or be a minister, or an Army chief"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少九宫主是否落十宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v106-dharm-lord-in-karm.step-001",
+        "action": "核对九宫主（Dharm's Lord）是否落十宫（Karm Bhava），据此判断权位身份与众人拥戴。",
+        "applicability_scope": "仅限本命盘九宫主（Dharm's Lord）落十宫（Karm Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "九宫主（Dharm's Lord）落十宫（Karm Bhava）时，本人会是国王，或与国王相当，或是大臣，或是军队统帅，有德且为众人所喜爱。",
+        "produced_fact_keys": [
+          "九宫主落十宫的权位身份与众人拥戴判定"
+        ],
+        "required_fact_keys": [
+          "九宫主（Dharm's Lord）是否落十宫（Karm）"
+        ],
+        "condition_logic": {
+          "fact_key": "九宫主（Dharm's Lord）是否落十宫（Karm）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dharm’s Lord is in Karm Bhava",
+              "claim": "九宫主（Dharm's Lord）落十宫（Karm Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be a king, or equal to him, or be a minister, or an Army chief",
+              "claim": "本人会是国王，或与国王相当，或是大臣，或是军队统帅"
+            },
+            {
+              "quote": "be virtuous and dear to all",
+              "claim": "有德且为众人所喜爱"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v106",
+            "quote": "If Dharm’s Lord is in Karm Bhava, the native will be a king, or equal to him, or be a minister, or an Army chief, be virtuous and dear to all.",
+            "pdf_pages": [
+              47
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：九宫主（Dharm's Lord）是否落十宫（Karm）。",
+        "stop_fact_keys": [
+          "九宫主（Dharm's Lord）是否落十宫（Karm）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应九宫主落十宫，不得套用到九宫主落其他宫位。",
+          "原文四种身份是择一，不得把它们同时坐实。",
+          "不得把「国王／大臣／军队统帅」直接换算成今天的某个具体职务。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "e6c9a60a98c5655f924c0630ac149009be5bede755ac7b16cec0f3b83ccd00fd"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v107-dharm-lord-in-labh.step-001",
+      "method": {
+        "method": "ch24-v107-dharm-lord-in-labh",
+        "title": "九宫主落十一宫：财上进益与尊长德行",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的进项会不会越来越好",
+          "我做事的口碑怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dharm’s Lord is in Labh Bhava, the native will enjoy financial gains day by day, be devoted to elders, virtuous and meritorious in acts.",
+            "九宫主落十一宫 财上进益与尊长德行"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava.",
+            "Indications of Labh Bhava. All articles, son’s wife, income, prosperity, quadrupeds etc. are to be understood from Labh Bhava.",
+            "九宫主落十一宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Dharm’s Lord in Various Bhavas",
+            "Effects of Labh’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v107-dharm-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dharm’s Lord is in Labh Bhava"
+            },
+            {
+              "step_id": "ch24-v107-dharm-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "enjoy financial gains day by day"
+            },
+            {
+              "step_id": "ch24-v107-dharm-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be devoted to elders, virtuous and meritorious in acts"
+            },
+            {
+              "step_id": "ch24-v107-dharm-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dharm’s Lord is in Labh Bhava enjoy financial gains day by day"
+            },
+            {
+              "step_id": "ch24-v107-dharm-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "9th lord is in 11th house"
+            },
+            {
+              "step_id": "ch24-v107-dharm-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "9th lord is in 11th house enjoy financial gains day by day"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少九宫主是否落十一宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v107-dharm-lord-in-labh.step-001",
+        "action": "核对九宫主（Dharm's Lord）是否落十一宫（Labh Bhava），据此判断财上进益与尊长德行。",
+        "applicability_scope": "仅限本命盘九宫主（Dharm's Lord）落十一宫（Labh Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "九宫主（Dharm's Lord）落十一宫（Labh Bhava）时，财上的进益日日增长，敬奉尊长、有德、行事有功德。",
+        "produced_fact_keys": [
+          "九宫主落十一宫的财上进益与尊长德行判定"
+        ],
+        "required_fact_keys": [
+          "九宫主（Dharm's Lord）是否落十一宫（Labh）"
+        ],
+        "condition_logic": {
+          "fact_key": "九宫主（Dharm's Lord）是否落十一宫（Labh）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dharm’s Lord is in Labh Bhava",
+              "claim": "九宫主（Dharm's Lord）落十一宫（Labh Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "enjoy financial gains day by day",
+              "claim": "财上的进益日日增长"
+            },
+            {
+              "quote": "be devoted to elders, virtuous and meritorious in acts",
+              "claim": "敬奉尊长、有德、行事有功德"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v107",
+            "quote": "If Dharm’s Lord is in Labh Bhava, the native will enjoy financial gains day by day, be devoted to elders, virtuous and meritorious in acts.",
+            "pdf_pages": [
+              47
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：九宫主（Dharm's Lord）是否落十一宫（Labh）。",
+        "stop_fact_keys": [
+          "九宫主（Dharm's Lord）是否落十一宫（Labh）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应九宫主落十一宫，不得套用到九宫主落其他宫位。",
+          "不得把「日日增长」换算成具体收入曲线或年份。",
+          "不得据此推断行业或收入来源。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "7edc95e9ccb4626d77550f8b28cfaa066a0cc04e1b1ce4c46299ba595062fc50"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v108-dharm-lord-in-vyaya.step-001",
+      "method": {
+        "method": "ch24-v108-dharm-lord-in-vyaya",
+        "title": "九宫主落十二宫：福分受损与花费致贫",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的钱都花到哪里去了",
+          "我为什么攒不下钱"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dharm’s Lord is in Vyaya Bhava, the native will incur loss of fortunes, will always spend on auspicious acts and will become poor on account of entertaining guests.",
+            "九宫主落十二宫 福分受损与花费致贫"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava.",
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+            "九宫主落十二宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Dharm’s Lord in Various Bhavas",
+            "Effects of Vyaya’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v108-dharm-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dharm’s Lord is in Vyaya Bhava"
+            },
+            {
+              "step_id": "ch24-v108-dharm-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "incur loss of fortunes"
+            },
+            {
+              "step_id": "ch24-v108-dharm-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will always spend on auspicious acts"
+            },
+            {
+              "step_id": "ch24-v108-dharm-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will become poor on account of entertaining guests"
+            },
+            {
+              "step_id": "ch24-v108-dharm-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dharm’s Lord is in Vyaya Bhava incur loss of fortunes"
+            },
+            {
+              "step_id": "ch24-v108-dharm-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "9th lord is in 12th house"
+            },
+            {
+              "step_id": "ch24-v108-dharm-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "9th lord is in 12th house incur loss of fortunes"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少九宫主是否落十二宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v108-dharm-lord-in-vyaya.step-001",
+        "action": "核对九宫主（Dharm's Lord）是否落十二宫（Vyaya Bhava），据此判断福分受损与花费致贫。",
+        "applicability_scope": "仅限本命盘九宫主（Dharm's Lord）落十二宫（Vyaya Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "九宫主（Dharm's Lord）落十二宫（Vyaya Bhava）时，福分受损，常在吉事上花费，因款待宾客而变穷。",
+        "produced_fact_keys": [
+          "九宫主落十二宫的福分受损与花费致贫判定"
+        ],
+        "required_fact_keys": [
+          "九宫主（Dharm's Lord）是否落十二宫（Vyaya）"
+        ],
+        "condition_logic": {
+          "fact_key": "九宫主（Dharm's Lord）是否落十二宫（Vyaya）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dharm’s Lord is in Vyaya Bhava",
+              "claim": "九宫主（Dharm's Lord）落十二宫（Vyaya Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "incur loss of fortunes",
+              "claim": "福分受损"
+            },
+            {
+              "quote": "will always spend on auspicious acts",
+              "claim": "常在吉事上花费"
+            },
+            {
+              "quote": "will become poor on account of entertaining guests",
+              "claim": "因款待宾客而变穷"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v108",
+            "quote": "If Dharm’s Lord is in Vyaya Bhava, the native will incur loss of fortunes, will always spend on auspicious acts and will become poor on account of entertaining guests.",
+            "pdf_pages": [
+              47
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：九宫主（Dharm's Lord）是否落十二宫（Vyaya）。",
+        "stop_fact_keys": [
+          "九宫主（Dharm's Lord）是否落十二宫（Vyaya）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应九宫主落十二宫，不得套用到九宫主落其他宫位。",
+          "不得把「变穷」写成破产、负债或具体金额。",
+          "不得据此推断花费发生的年份或大运。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "d4562c258ab2268302b7f5dd4b90b3afb0a64a226c8b662f9f520ddcf7fb0d35"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v109-karm-lord-in-tanu.step-001",
+      "method": {
+        "method": "ch24-v109-karm-lord-in-tanu",
+        "title": "十宫主落一宫：学问名声与早年疾病后转安乐",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我小时候身体为什么不好",
+          "我的名声和财运会怎么走"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Karm’s Lord is in Tanu Bhava, the native will be scholarly, famous, be a poet, will incur diseases in boyhood and be happy later on. His wealth will increase day by day.",
+            "十宫主落一宫 学问名声与早年疾病后转安乐"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava.",
+            "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour, weakness, happiness, grief and innate nature are all to be guessed through the ascending Rāśi.",
+            "十宫主落一宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Karm’s Lord in Various Bhavas",
+            "Effects of Lagn’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v109-karm-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Karm’s Lord is in Tanu Bhava"
+            },
+            {
+              "step_id": "ch24-v109-karm-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be scholarly, famous, be a poet"
+            },
+            {
+              "step_id": "ch24-v109-karm-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will incur diseases in boyhood and be happy later on"
+            },
+            {
+              "step_id": "ch24-v109-karm-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "His wealth will increase day by day"
+            },
+            {
+              "step_id": "ch24-v109-karm-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Karm’s Lord is in Tanu Bhava the native will be scholarly, famous, be a poet"
+            },
+            {
+              "step_id": "ch24-v109-karm-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "10th lord is in 1st house"
+            },
+            {
+              "step_id": "ch24-v109-karm-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "10th lord is in 1st house the native will be scholarly, famous, be a poet"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主是否落一宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v109-karm-lord-in-tanu.step-001",
+        "action": "核对十宫主（Karm's Lord）是否落一宫（Tanu Bhava），据此判断学问名声与早年疾病后转安乐。",
+        "applicability_scope": "仅限本命盘十宫主（Karm's Lord）落一宫（Tanu Bhava）一条；原文未给时间限定。本段原文在同偈句首自标「Effects of Karm’s Lord in Various Bhavas (up to Sloka 120)」，该标题不并入结论；原文以「His」立说，属男命框架。",
+        "minimum_supported_claim": "十宫主（Karm's Lord）落一宫（Tanu Bhava）时，本人有学问、有名声、是诗人，少年时患病，后来才安乐，他的财富日日增长。",
+        "produced_fact_keys": [
+          "十宫主落一宫的学问名声与早年疾病后转安乐判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm's Lord）是否落一宫（Tanu）"
+        ],
+        "condition_logic": {
+          "fact_key": "十宫主（Karm's Lord）是否落一宫（Tanu）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Karm’s Lord is in Tanu Bhava",
+              "claim": "十宫主（Karm's Lord）落一宫（Tanu Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be scholarly, famous, be a poet",
+              "claim": "本人有学问、有名声、是诗人"
+            },
+            {
+              "quote": "will incur diseases in boyhood and be happy later on",
+              "claim": "少年时患病，后来才安乐"
+            },
+            {
+              "quote": "His wealth will increase day by day",
+              "claim": "他的财富日日增长"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v109",
+            "quote": "If Karm’s Lord is in Tanu Bhava, the native will be scholarly, famous, be a poet, will incur diseases in boyhood and be happy later on. His wealth will increase day by day.",
+            "pdf_pages": [
+              48
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm's Lord）是否落一宫（Tanu）。",
+        "stop_fact_keys": [
+          "十宫主（Karm's Lord）是否落一宫（Tanu）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十宫主落一宫，不得套用到十宫主落其他宫位。",
+          "不得把「少年时患病」写成具体病名、年龄或后果。",
+          "不得据「后来才安乐」推出确切的转折年份。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "1de07626195896b7ffbfed83b8d2b027487032cd5a71171437041d0b3dece16c"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch24:v99": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v99",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "99.",
+      "content_role": "verse",
+      "exact_text": "99. If Dharm’s Lord is in Sahaj Bhava, the native will be endowed with fraternal bliss, be wealthy, virtuous and charming.",
+      "pdf_pages": [
+        47
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 99 · PDF page 47 · bphs-97:santhanam:ch24:v99",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v98",
+      "next_atom_id": "bphs-97:santhanam:ch24:v100",
+      "context_before": " If Dharm’s Lord is in Dhan Bhava, the native will be a scholar, be dear to all, wealthy, sensuous and endowed with happiness from wife, sons etc.\n\n",
+      "context_after": "100. If Dharm’s Lord is in Bandhu Bhava, the native will enjoy houses, conveyances and happiness, will have all kinds of wealth ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v100": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v100",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "100.",
+      "content_role": "verse",
+      "exact_text": "100. If Dharm’s Lord is in Bandhu Bhava, the native will enjoy houses, conveyances and happiness, will have all kinds of wealth and be devoted to his mother.",
+      "pdf_pages": [
+        47
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 100 · PDF page 47 · bphs-97:santhanam:ch24:v100",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v99",
+      "next_atom_id": "bphs-97:santhanam:ch24:v101",
+      "context_before": "c.\n\n99. If Dharm’s Lord is in Sahaj Bhava, the native will be endowed with fraternal bliss, be wealthy, virtuous and charming.\n\n",
+      "context_after": "101. If Dharm’s Lord is in Putr Bhava, the native will be endowed with sons and prosperity, devoted to elders, bold, charitable ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v101": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v101",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "101.",
+      "content_role": "verse",
+      "exact_text": "101. If Dharm’s Lord is in Putr Bhava, the native will be endowed with sons and prosperity, devoted to elders, bold, charitable and learned.",
+      "pdf_pages": [
+        47
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 101 · PDF page 47 · bphs-97:santhanam:ch24:v101",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v100",
+      "next_atom_id": "bphs-97:santhanam:ch24:v102",
+      "context_before": " If Dharm’s Lord is in Bandhu Bhava, the native will enjoy houses, conveyances and happiness, will have all kinds of wealth and be devoted to his mother.\n\n",
+      "context_after": "102. If Dharm’s Lord is in Ari Bhava, the native will enjoy meagre prosperity, be devoid of happiness from maternal relatives an",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v102": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v102",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "102.",
+      "content_role": "verse",
+      "exact_text": "102. If Dharm’s Lord is in Ari Bhava, the native will enjoy meagre prosperity, be devoid of happiness from maternal relatives and be always troubled by enemies.",
+      "pdf_pages": [
+        47
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 102 · PDF page 47 · bphs-97:santhanam:ch24:v102",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v101",
+      "next_atom_id": "bphs-97:santhanam:ch24:v103",
+      "context_before": " If Dharm’s Lord is in Putr Bhava, the native will be endowed with sons and prosperity, devoted to elders, bold, charitable and learned.\n\n",
+      "context_after": "103. O Brahmin, If Dharm’s Lord is in Yuvati Bhava, the native beget happiness after marriage, be virtuous and famous.\n\n104. If ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v103": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v103",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "103.",
+      "content_role": "verse",
+      "exact_text": "103. O Brahmin, If Dharm’s Lord is in Yuvati Bhava, the native beget happiness after marriage, be virtuous and famous.",
+      "pdf_pages": [
+        47
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 103 · PDF page 47 · bphs-97:santhanam:ch24:v103",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v102",
+      "next_atom_id": "bphs-97:santhanam:ch24:v104",
+      "context_before": " If Dharm’s Lord is in Ari Bhava, the native will enjoy meagre prosperity, be devoid of happiness from maternal relatives and be always troubled by enemies.\n\n",
+      "context_after": "104. If Dharm’s Lord is in Randhr Bhava, the native will not be prosperous and will not enjoy happiness from his elder brother.\n",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v104": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v104",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "104.",
+      "content_role": "verse",
+      "exact_text": "104. If Dharm’s Lord is in Randhr Bhava, the native will not be prosperous and will not enjoy happiness from his elder brother.",
+      "pdf_pages": [
+        47
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 104 · PDF page 47 · bphs-97:santhanam:ch24:v104",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v103",
+      "next_atom_id": "bphs-97:santhanam:ch24:v105",
+      "context_before": "emies.\n\n103. O Brahmin, If Dharm’s Lord is in Yuvati Bhava, the native beget happiness after marriage, be virtuous and famous.\n\n",
+      "context_after": "105. If Dharm’s Lord is in Dharm Bhava, the native will be endowed with abundant fortunes, virtues and beauty and will enjoy muc",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v105": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v105",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "105.",
+      "content_role": "verse",
+      "exact_text": "105. If Dharm’s Lord is in Dharm Bhava, the native will be endowed with abundant fortunes, virtues and beauty and will enjoy much happiness from co-born.",
+      "pdf_pages": [
+        47
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 105 · PDF page 47 · bphs-97:santhanam:ch24:v105",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v104",
+      "next_atom_id": "bphs-97:santhanam:ch24:v106",
+      "context_before": "04. If Dharm’s Lord is in Randhr Bhava, the native will not be prosperous and will not enjoy happiness from his elder brother.\n\n",
+      "context_after": "106. If Dharm’s Lord is in Karm Bhava, the native will be a king, or equal to him, or be a minister, or an Army chief, be virtuo",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v106": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v106",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "106.",
+      "content_role": "verse",
+      "exact_text": "106. If Dharm’s Lord is in Karm Bhava, the native will be a king, or equal to him, or be a minister, or an Army chief, be virtuous and dear to all.",
+      "pdf_pages": [
+        47
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 106 · PDF page 47 · bphs-97:santhanam:ch24:v106",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v105",
+      "next_atom_id": "bphs-97:santhanam:ch24:v107",
+      "context_before": " If Dharm’s Lord is in Dharm Bhava, the native will be endowed with abundant fortunes, virtues and beauty and will enjoy much happiness from co-born.\n\n",
+      "context_after": "107. If Dharm’s Lord is in Labh Bhava, the native will enjoy financial gains day by day, be devoted to elders, virtuous and meri",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v107": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v107",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "107.",
+      "content_role": "verse",
+      "exact_text": "107. If Dharm’s Lord is in Labh Bhava, the native will enjoy financial gains day by day, be devoted to elders, virtuous and meritorious in acts.",
+      "pdf_pages": [
+        47
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 107 · PDF page 47 · bphs-97:santhanam:ch24:v107",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v106",
+      "next_atom_id": "bphs-97:santhanam:ch24:v108",
+      "context_before": " If Dharm’s Lord is in Karm Bhava, the native will be a king, or equal to him, or be a minister, or an Army chief, be virtuous and dear to all.\n\n",
+      "context_after": "108. If Dharm’s Lord is in Vyaya Bhava, the native will incur loss of fortunes, will always spend on auspicious acts and will be",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v108": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v108",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "108.",
+      "content_role": "verse",
+      "exact_text": "108. If Dharm’s Lord is in Vyaya Bhava, the native will incur loss of fortunes, will always spend on auspicious acts and will become poor on account of entertaining guests.",
+      "pdf_pages": [
+        47
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 108 · PDF page 47 · bphs-97:santhanam:ch24:v108",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v107",
+      "next_atom_id": "bphs-97:santhanam:ch24:v109",
+      "context_before": " If Dharm’s Lord is in Labh Bhava, the native will enjoy financial gains day by day, be devoted to elders, virtuous and meritorious in acts.\n\n",
+      "context_after": "109. Effects of Karm’s Lord in Various Bhavas (up to Sloka 120). If Karm’s Lord is in Tanu Bhava, the native will be scholarly, ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v109": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v109",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "109.",
+      "content_role": "verse",
+      "exact_text": "109. Effects of Karm’s Lord in Various Bhavas (up to Sloka 120). If Karm’s Lord is in Tanu Bhava, the native will be scholarly, famous, be a poet, will incur diseases in boyhood and be happy later on. His wealth will increase day by day.",
+      "pdf_pages": [
+        48
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 109 · PDF page 48 · bphs-97:santhanam:ch24:v109",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v108",
+      "next_atom_id": "bphs-97:santhanam:ch24:v110",
+      "context_before": " If Dharm’s Lord is in Vyaya Bhava, the native will incur loss of fortunes, will always spend on auspicious acts and will become poor on account of entertaining guests.\n\n<!-- SOURCE_PAGE 48 -->\n\n",
+      "context_after": "110 If Karm’s Lord is in Dhan Bhava, the native will be wealthy, virtuous, honoured by the king, charitable and will enjoy happiness from father and others.",
+      "content_missing": false
+    }
+  }
+}

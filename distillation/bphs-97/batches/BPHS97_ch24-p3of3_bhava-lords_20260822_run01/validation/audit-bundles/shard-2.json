@@ -1,0 +1,1788 @@
+{
+  "shard": 2,
+  "step_count": 11,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch24-v110-karm-lord-in-dhan.step-001",
+      "method": {
+        "method": "ch24-v110-karm-lord-in-dhan",
+        "title": "十宫主落二宫：财富尊崇与父亲之乐",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我能不能得到上面的人赏识",
+          "我和父亲的关系怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Karm’s Lord is in Dhan Bhava, the native will be wealthy, virtuous, honoured by the king, charitable and will enjoy happiness from father and others.",
+            "十宫主落二宫 财富尊崇与父亲之乐"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava.",
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava.",
+            "十宫主落二宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Karm’s Lord in Various Bhavas",
+            "Effects of Dhan’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v110-karm-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Karm’s Lord is in Dhan Bhava"
+            },
+            {
+              "step_id": "ch24-v110-karm-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be wealthy, virtuous, honoured by the king, charitable"
+            },
+            {
+              "step_id": "ch24-v110-karm-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will enjoy happiness from father and others"
+            },
+            {
+              "step_id": "ch24-v110-karm-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Karm’s Lord is in Dhan Bhava the native will be wealthy, virtuous, honoured by the king, charitable"
+            },
+            {
+              "step_id": "ch24-v110-karm-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "10th lord is in 2nd house"
+            },
+            {
+              "step_id": "ch24-v110-karm-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "10th lord is in 2nd house the native will be wealthy, virtuous, honoured by the king, charitable"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主是否落二宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v110-karm-lord-in-dhan.step-001",
+        "action": "核对十宫主（Karm's Lord）是否落二宫（Dhan Bhava），据此判断财富尊崇与父亲之乐。",
+        "applicability_scope": "仅限本命盘十宫主（Karm's Lord）落二宫（Dhan Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "十宫主（Karm's Lord）落二宫（Dhan Bhava）时，本人富有、有德、受国王尊崇、乐善好施，从父亲等人处得到安乐。",
+        "produced_fact_keys": [
+          "十宫主落二宫的财富尊崇与父亲之乐判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm's Lord）是否落二宫（Dhan）"
+        ],
+        "condition_logic": {
+          "fact_key": "十宫主（Karm's Lord）是否落二宫（Dhan）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Karm’s Lord is in Dhan Bhava",
+              "claim": "十宫主（Karm's Lord）落二宫（Dhan Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be wealthy, virtuous, honoured by the king, charitable",
+              "claim": "本人富有、有德、受国王尊崇、乐善好施"
+            },
+            {
+              "quote": "will enjoy happiness from father and others",
+              "claim": "从父亲等人处得到安乐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v110",
+            "quote": "If Karm’s Lord is in Dhan Bhava, the native will be wealthy, virtuous, honoured by the king, charitable and will enjoy happiness from father and others.",
+            "pdf_pages": [
+              48
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm's Lord）是否落二宫（Dhan）。",
+        "stop_fact_keys": [
+          "十宫主（Karm's Lord）是否落二宫（Dhan）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十宫主落二宫，不得套用到十宫主落其他宫位。",
+          "不得把「受国王尊崇」换算成今天的某个具体职衔或奖项。",
+          "不得据此推断父亲的寿数或健康。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "344bb8772009b639801ace4559a04b0b4f304bdc759df793b2da9d6e52dec039"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v111-karm-lord-in-sahaj.step-001",
+      "method": {
+        "method": "ch24-v111-karm-lord-in-sahaj",
+        "title": "十宫主落三宫：兄弟仆从之乐与勇武辞令",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和兄弟、下属之间处得怎么样",
+          "别人眼里我是个什么样的人"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Karm’s Lord is in Sahaj Bhava, the native will enjoy happiness from brothers and servants, be valorous, virtuous, eloquent and truthful.",
+            "十宫主落三宫 兄弟仆从之乐与勇武辞令"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava.",
+            "Indications of Sahaj Bhava. From Sahaj Bhava know of the following: valour, servants (attending etc.), brothers, sisters etc., initiatory instructions (Upadesh), journey and parent’s death.",
+            "十宫主落三宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Karm’s Lord in Various Bhavas",
+            "Effects of Sahaj’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v111-karm-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Karm’s Lord is in Sahaj Bhava"
+            },
+            {
+              "step_id": "ch24-v111-karm-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "enjoy happiness from brothers and servants"
+            },
+            {
+              "step_id": "ch24-v111-karm-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be valorous, virtuous, eloquent and truthful"
+            },
+            {
+              "step_id": "ch24-v111-karm-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Karm’s Lord is in Sahaj Bhava enjoy happiness from brothers and servants"
+            },
+            {
+              "step_id": "ch24-v111-karm-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "10th lord is in 3rd house"
+            },
+            {
+              "step_id": "ch24-v111-karm-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "10th lord is in 3rd house enjoy happiness from brothers and servants"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主是否落三宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v111-karm-lord-in-sahaj.step-001",
+        "action": "核对十宫主（Karm's Lord）是否落三宫（Sahaj Bhava），据此判断兄弟仆从之乐与勇武辞令。",
+        "applicability_scope": "仅限本命盘十宫主（Karm's Lord）落三宫（Sahaj Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "十宫主（Karm's Lord）落三宫（Sahaj Bhava）时，从兄弟与仆从处得到安乐，勇武、有德、善辞令、诚实。",
+        "produced_fact_keys": [
+          "十宫主落三宫的兄弟仆从之乐与勇武辞令判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm's Lord）是否落三宫（Sahaj）"
+        ],
+        "condition_logic": {
+          "fact_key": "十宫主（Karm's Lord）是否落三宫（Sahaj）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Karm’s Lord is in Sahaj Bhava",
+              "claim": "十宫主（Karm's Lord）落三宫（Sahaj Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "enjoy happiness from brothers and servants",
+              "claim": "从兄弟与仆从处得到安乐"
+            },
+            {
+              "quote": "be valorous, virtuous, eloquent and truthful",
+              "claim": "勇武、有德、善辞令、诚实"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v111",
+            "quote": "If Karm’s Lord is in Sahaj Bhava, the native will enjoy happiness from brothers and servants, be valorous, virtuous, eloquent and truthful.",
+            "pdf_pages": [
+              48
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm's Lord）是否落三宫（Sahaj）。",
+        "stop_fact_keys": [
+          "十宫主（Karm's Lord）是否落三宫（Sahaj）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十宫主落三宫，不得套用到十宫主落其他宫位。",
+          "不得把「仆从」直接等同于今天的雇员关系并据此断劳资纠纷。",
+          "不得把「兄弟之乐」扩大成兄弟人数或姐妹。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "8a53cfdd71907a3ceea4647a2550499b10e0c3b4ddcd1a72f59e0d112203880d"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v112-karm-lord-in-bandhu.step-001",
+      "method": {
+        "method": "ch24-v112-karm-lord-in-bandhu",
+        "title": "十宫主落四宫：母亲安康与车乘田宅",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和母亲之间会怎么样",
+          "我在房产田地上会怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Karm’s Lord is in Bandhu Bhava, the native will be happy, be always interested in his mother’s welfare, will Lord over conveyances, lands and houses, be virtuous and wealthy.",
+            "十宫主落四宫 母亲安康与车乘田宅"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava.",
+            "Indications of Bandhu Bhava. Conveyances, relatives, mother, happiness, treasure, lands and buildings are to be consulted through Bandhu Bhava.",
+            "十宫主落四宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Karm’s Lord in Various Bhavas",
+            "Effects of Bandhu’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v112-karm-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Karm’s Lord is in Bandhu Bhava"
+            },
+            {
+              "step_id": "ch24-v112-karm-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be happy"
+            },
+            {
+              "step_id": "ch24-v112-karm-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be always interested in his mother’s welfare"
+            },
+            {
+              "step_id": "ch24-v112-karm-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will Lord over conveyances, lands and houses"
+            },
+            {
+              "step_id": "ch24-v112-karm-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be virtuous and wealthy"
+            },
+            {
+              "step_id": "ch24-v112-karm-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Karm’s Lord is in Bandhu Bhava the native will be happy"
+            },
+            {
+              "step_id": "ch24-v112-karm-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "10th lord is in 4th house"
+            },
+            {
+              "step_id": "ch24-v112-karm-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "10th lord is in 4th house the native will be happy"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主是否落四宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v112-karm-lord-in-bandhu.step-001",
+        "action": "核对十宫主（Karm's Lord）是否落四宫（Bandhu Bhava），据此判断母亲安康与车乘田宅。",
+        "applicability_scope": "仅限本命盘十宫主（Karm's Lord）落四宫（Bandhu Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "十宫主（Karm's Lord）落四宫（Bandhu Bhava）时，本人安乐，常关心母亲的安康，主掌车乘、田地与房屋，有德且富有。",
+        "produced_fact_keys": [
+          "十宫主落四宫的母亲安康与车乘田宅判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm's Lord）是否落四宫（Bandhu）"
+        ],
+        "condition_logic": {
+          "fact_key": "十宫主（Karm's Lord）是否落四宫（Bandhu）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Karm’s Lord is in Bandhu Bhava",
+              "claim": "十宫主（Karm's Lord）落四宫（Bandhu Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be happy",
+              "claim": "本人安乐"
+            },
+            {
+              "quote": "be always interested in his mother’s welfare",
+              "claim": "常关心母亲的安康"
+            },
+            {
+              "quote": "will Lord over conveyances, lands and houses",
+              "claim": "主掌车乘、田地与房屋"
+            },
+            {
+              "quote": "be virtuous and wealthy",
+              "claim": "有德且富有"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v112",
+            "quote": "If Karm’s Lord is in Bandhu Bhava, the native will be happy, be always interested in his mother’s welfare, will Lord over conveyances, lands and houses, be virtuous and wealthy.",
+            "pdf_pages": [
+              48
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm's Lord）是否落四宫（Bandhu）。",
+        "stop_fact_keys": [
+          "十宫主（Karm's Lord）是否落四宫（Bandhu）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十宫主落四宫，不得套用到十宫主落其他宫位。",
+          "不得把「主掌车乘、田地与房屋」换算成具体产权数量或价值。",
+          "不得据此推断母亲的寿数或健康结局。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "d945e808bd33b1dd42cd64ce22b020541f57b26bc4f5d26946f34ef7a4949a5f"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v113-karm-lord-in-putr.step-001",
+      "method": {
+        "method": "ch24-v113-karm-lord-in-putr",
+        "title": "十宫主落五宫：各类学问与财富子嗣",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我在学业上能走多远",
+          "我子女缘和财运怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Karm’s Lord is in Putr Bhava, the native will be endowed with all kinds of learning, he will be always delighted and he will be wealthy and endowed with sons.",
+            "十宫主落五宫 各类学问与财富子嗣"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava.",
+            "Indications of Putr Bhava. The learned should deduce from Putr Bhava amulets, sacred spells, learning, knowledge, sons, royalty (or authority), fall of position etc.",
+            "十宫主落五宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Karm’s Lord in Various Bhavas",
+            "Effects of Putr’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v113-karm-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Karm’s Lord is in Putr Bhava"
+            },
+            {
+              "step_id": "ch24-v113-karm-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "endowed with all kinds of learning"
+            },
+            {
+              "step_id": "ch24-v113-karm-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "he will be always delighted"
+            },
+            {
+              "step_id": "ch24-v113-karm-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "he will be wealthy and endowed with sons"
+            },
+            {
+              "step_id": "ch24-v113-karm-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Karm’s Lord is in Putr Bhava endowed with all kinds of learning"
+            },
+            {
+              "step_id": "ch24-v113-karm-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "10th lord is in 5th house"
+            },
+            {
+              "step_id": "ch24-v113-karm-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "10th lord is in 5th house endowed with all kinds of learning"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主是否落五宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v113-karm-lord-in-putr.step-001",
+        "action": "核对十宫主（Karm's Lord）是否落五宫（Putr Bhava），据此判断各类学问与财富子嗣。",
+        "applicability_scope": "仅限本命盘十宫主（Karm's Lord）落五宫（Putr Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "十宫主（Karm's Lord）落五宫（Putr Bhava）时，具备各类学问，常常欢喜，富有并且有子。",
+        "produced_fact_keys": [
+          "十宫主落五宫的各类学问与财富子嗣判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm's Lord）是否落五宫（Putr）"
+        ],
+        "condition_logic": {
+          "fact_key": "十宫主（Karm's Lord）是否落五宫（Putr）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Karm’s Lord is in Putr Bhava",
+              "claim": "十宫主（Karm's Lord）落五宫（Putr Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "endowed with all kinds of learning",
+              "claim": "具备各类学问"
+            },
+            {
+              "quote": "he will be always delighted",
+              "claim": "常常欢喜"
+            },
+            {
+              "quote": "he will be wealthy and endowed with sons",
+              "claim": "富有并且有子"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v113",
+            "quote": "If Karm’s Lord is in Putr Bhava, the native will be endowed with all kinds of learning, he will be always delighted and he will be wealthy and endowed with sons.",
+            "pdf_pages": [
+              48
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm's Lord）是否落五宫（Putr）。",
+        "stop_fact_keys": [
+          "十宫主（Karm's Lord）是否落五宫（Putr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十宫主落五宫，不得套用到十宫主落其他宫位。",
+          "不得把「有子」写成具体子女人数或性别。",
+          "不得把「各类学问」写成某个专业或学历。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "086ac0f5ab03dfc96e0bb72c2d34f760b687949ce55044932168a1207419646d"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v114-karm-lord-in-ari.step-001",
+      "method": {
+        "method": "ch24-v114-karm-lord-in-ari",
+        "title": "十宫主落六宫：父缘薄与有本事却无财",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和父亲之间是不是有隔阂",
+          "我明明有能力为什么没攒下钱"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Karm’s Lord is in Ari Bhava, the native will be bereft of paternal bliss. Although he may be skilful, he will be bereft of wealth and be troubled by enemies.",
+            "十宫主落六宫 父缘薄与有本事却无财"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava.",
+            "Indications of Ari Bhava. Maternal uncle, doubts about death, enemies, ulcers, stepmother etc. are to be estimated from Ari Bhava.",
+            "十宫主落六宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Karm’s Lord in Various Bhavas",
+            "Effects of Ari’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v114-karm-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Karm’s Lord is in Ari Bhava"
+            },
+            {
+              "step_id": "ch24-v114-karm-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "bereft of paternal bliss"
+            },
+            {
+              "step_id": "ch24-v114-karm-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Although he may be skilful, he will be bereft of wealth"
+            },
+            {
+              "step_id": "ch24-v114-karm-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be troubled by enemies"
+            },
+            {
+              "step_id": "ch24-v114-karm-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Karm’s Lord is in Ari Bhava bereft of paternal bliss"
+            },
+            {
+              "step_id": "ch24-v114-karm-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "10th lord is in 6th house"
+            },
+            {
+              "step_id": "ch24-v114-karm-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "10th lord is in 6th house bereft of paternal bliss"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主是否落六宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v114-karm-lord-in-ari.step-001",
+        "action": "核对十宫主（Karm's Lord）是否落六宫（Ari Bhava），据此判断父缘薄与有本事却无财。",
+        "applicability_scope": "仅限本命盘十宫主（Karm's Lord）落六宫（Ari Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "十宫主（Karm's Lord）落六宫（Ari Bhava）时，失去父亲一方的安乐，虽然有本事，却没有财富，受仇敌困扰。",
+        "produced_fact_keys": [
+          "十宫主落六宫的父缘薄与有本事却无财判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm's Lord）是否落六宫（Ari）"
+        ],
+        "condition_logic": {
+          "fact_key": "十宫主（Karm's Lord）是否落六宫（Ari）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Karm’s Lord is in Ari Bhava",
+              "claim": "十宫主（Karm's Lord）落六宫（Ari Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "bereft of paternal bliss",
+              "claim": "失去父亲一方的安乐"
+            },
+            {
+              "quote": "Although he may be skilful, he will be bereft of wealth",
+              "claim": "虽然有本事，却没有财富"
+            },
+            {
+              "quote": "be troubled by enemies",
+              "claim": "受仇敌困扰"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v114",
+            "quote": "If Karm’s Lord is in Ari Bhava, the native will be bereft of paternal bliss. Although he may be skilful, he will be bereft of wealth and be troubled by enemies.",
+            "pdf_pages": [
+              48
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm's Lord）是否落六宫（Ari）。",
+        "stop_fact_keys": [
+          "十宫主（Karm's Lord）是否落六宫（Ari）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十宫主落六宫，不得套用到十宫主落其他宫位。",
+          "不得把「失去父亲一方的安乐」写成父亲去世或没有父亲。",
+          "不得把「有本事」当成一个可核对的星盘条件——原文是让步语，不是前提。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "79797053b12bee1fc9a91085decdc79dcfa6ec71ee22fd562f74c0ed9036bfba"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v115-karm-lord-in-yuvati.step-001",
+      "method": {
+        "method": "ch24-v115-karm-lord-in-yuvati",
+        "title": "十宫主落七宫：妻子之乐与聪慧德行",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的婚姻生活会怎么样",
+          "别人怎么评价我的为人"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Karm’s Lord is in Yuvati Bhava, the native will be endowed with happiness through wife, be intelligent, virtuous, eloquent, truthful and religious.",
+            "十宫主落七宫 妻子之乐与聪慧德行"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava.",
+            "Indications of Yuvati Bhava. Wife, travel, trade, loss of sight, death etc. be known from Yuvati Bhava.",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)",
+            "十宫主落七宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Karm’s Lord in Various Bhavas",
+            "Effects of Yuvati’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v115-karm-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Karm’s Lord is in Yuvati Bhava"
+            },
+            {
+              "step_id": "ch24-v115-karm-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "endowed with happiness through wife"
+            },
+            {
+              "step_id": "ch24-v115-karm-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be intelligent, virtuous, eloquent, truthful and religious"
+            },
+            {
+              "step_id": "ch24-v115-karm-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Karm’s Lord is in Yuvati Bhava endowed with happiness through wife"
+            },
+            {
+              "step_id": "ch24-v115-karm-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "10th lord is in 7th house"
+            },
+            {
+              "step_id": "ch24-v115-karm-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "10th lord is in 7th house endowed with happiness through wife"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主是否落七宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v115-karm-lord-in-yuvati.step-001",
+        "action": "核对十宫主（Karm's Lord）是否落七宫（Yuvati Bhava），据此判断妻子之乐与聪慧德行。",
+        "applicability_scope": "仅限本命盘十宫主（Karm's Lord）落七宫（Yuvati Bhava）一条；原文未给时间限定。原文以「wife」立说，属男命框架。",
+        "minimum_supported_claim": "十宫主（Karm's Lord）落七宫（Yuvati Bhava）时，从妻子处得到安乐，聪慧、有德、善辞令、诚实、虔信。",
+        "produced_fact_keys": [
+          "十宫主落七宫的妻子之乐与聪慧德行判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm's Lord）是否落七宫（Yuvati）"
+        ],
+        "condition_logic": {
+          "fact_key": "十宫主（Karm's Lord）是否落七宫（Yuvati）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Karm’s Lord is in Yuvati Bhava",
+              "claim": "十宫主（Karm's Lord）落七宫（Yuvati Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "endowed with happiness through wife",
+              "claim": "从妻子处得到安乐"
+            },
+            {
+              "quote": "be intelligent, virtuous, eloquent, truthful and religious",
+              "claim": "聪慧、有德、善辞令、诚实、虔信"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v115",
+            "quote": "If Karm’s Lord is in Yuvati Bhava, the native will be endowed with happiness through wife, be intelligent, virtuous, eloquent, truthful and religious.",
+            "pdf_pages": [
+              48
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm's Lord）是否落七宫（Yuvati）。",
+        "stop_fact_keys": [
+          "十宫主（Karm's Lord）是否落七宫（Yuvati）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十宫主落七宫，不得套用到十宫主落其他宫位。",
+          "不得据此推断婚期、配偶条件或婚姻次数。",
+          "不得把「从妻子处得到安乐」写成配偶的财富或家世。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "a4c6c1bbdf52d8131e468f131f610936d8992582143dab256557ca7ce2243ab3"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v116-karm-lord-in-randhr.step-001",
+      "method": {
+        "method": "ch24-v116-karm-lord-in-randhr",
+        "title": "十宫主落八宫：少有作为与长寿",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我为什么总是做不成事",
+          "我的寿数会怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Karm’s Lord is in Randhr Bhava, the native will be devoid of acts, long-lived and intent on blaming others.",
+            "十宫主落八宫 少有作为与长寿"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava.",
+            "Indications of Randhr Bhava. Randhr Bhava indicates longevity, battle, enemies, forts, wealth of the dead and things, that have happened and are to happen (in the past and future births).",
+            "十宫主落八宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Karm’s Lord in Various Bhavas",
+            "Effects of Randhr’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v116-karm-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Karm’s Lord is in Randhr Bhava"
+            },
+            {
+              "step_id": "ch24-v116-karm-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "devoid of acts"
+            },
+            {
+              "step_id": "ch24-v116-karm-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "long-lived"
+            },
+            {
+              "step_id": "ch24-v116-karm-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "intent on blaming others"
+            },
+            {
+              "step_id": "ch24-v116-karm-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Karm’s Lord is in Randhr Bhava devoid of acts"
+            },
+            {
+              "step_id": "ch24-v116-karm-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "10th lord is in 8th house"
+            },
+            {
+              "step_id": "ch24-v116-karm-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "10th lord is in 8th house devoid of acts"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主是否落八宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v116-karm-lord-in-randhr.step-001",
+        "action": "核对十宫主（Karm's Lord）是否落八宫（Randhr Bhava），据此判断少有作为与长寿。",
+        "applicability_scope": "仅限本命盘十宫主（Karm's Lord）落八宫（Randhr Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "十宫主（Karm's Lord）落八宫（Randhr Bhava）时，没有作为，长寿，一心指责他人。",
+        "produced_fact_keys": [
+          "十宫主落八宫的少有作为与长寿判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm's Lord）是否落八宫（Randhr）"
+        ],
+        "condition_logic": {
+          "fact_key": "十宫主（Karm's Lord）是否落八宫（Randhr）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Karm’s Lord is in Randhr Bhava",
+              "claim": "十宫主（Karm's Lord）落八宫（Randhr Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "devoid of acts",
+              "claim": "没有作为"
+            },
+            {
+              "quote": "long-lived",
+              "claim": "长寿"
+            },
+            {
+              "quote": "intent on blaming others",
+              "claim": "一心指责他人"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v116",
+            "quote": "If Karm’s Lord is in Randhr Bhava, the native will be devoid of acts, long-lived and intent on blaming others.",
+            "pdf_pages": [
+              48
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm's Lord）是否落八宫（Randhr）。",
+        "stop_fact_keys": [
+          "十宫主（Karm's Lord）是否落八宫（Randhr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十宫主落八宫，不得套用到十宫主落其他宫位。",
+          "不得把「长寿」换算成具体岁数或寿限区间。",
+          "不得把「没有作为」写成失业、破产或某个具体事件。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "dea31f1b905af3fb0661fe39b2899cc900864f3a976f9096ecbd05b324fe5c9e"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v117-karm-lord-in-dharm-royal-scion.step-001",
+      "method": {
+        "method": "ch24-v117-karm-lord-in-dharm-royal-scion",
+        "title": "十宫主落九宫且出身王族：成为国王",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我能不能坐上最高的位子",
+          "出身王族的人这个格局会怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Karm’s Lord is in Dharm Bhava, one born of royal scion will become a king, whereas an ordinary native will be equal to a king.",
+            "十宫主落九宫 出身王族 成为国王"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava.",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava.",
+            "出身王族与普通出身的分别在原文里怎么界定"
+          ],
+          "method_queries": [
+            "Effects of Karm’s Lord in Various Bhavas",
+            "Effects of Dharm’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v117-karm-lord-in-dharm-royal-scion.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Karm’s Lord is in Dharm Bhava"
+            },
+            {
+              "step_id": "ch24-v117-karm-lord-in-dharm-royal-scion.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "one born of royal scion"
+            },
+            {
+              "step_id": "ch24-v117-karm-lord-in-dharm-royal-scion.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will become a king"
+            },
+            {
+              "step_id": "ch24-v117-karm-lord-in-dharm-royal-scion.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Karm’s Lord is in Dharm Bhava will become a king"
+            },
+            {
+              "step_id": "ch24-v117-karm-lord-in-dharm-royal-scion.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "one born of royal scion will become a king"
+            },
+            {
+              "step_id": "ch24-v117-karm-lord-in-dharm-royal-scion.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "10th lord is in 9th house"
+            },
+            {
+              "step_id": "ch24-v117-karm-lord-in-dharm-royal-scion.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "10th lord is in 9th house will become a king"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主是否落九宫的事实时停止。",
+          "原文未界定「出身王族」，该项未确定即停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v117-karm-lord-in-dharm-royal-scion.step-001",
+        "action": "核对十宫主（Karm's Lord）是否落九宫（Dharm Bhava），并核对本人是否出身王族，据此判断能否成为国王。",
+        "applicability_scope": "仅限本命盘十宫主（Karm's Lord）落九宫（Dharm Bhava）、且本人出身王族这一半；同偈另一半（普通出身者与国王相当）另立方法 ch24-v117-karm-lord-in-dharm-ordinary；原文没有界定什么算「出身王族」，该判准未确定即停判；原文未给时间限定。",
+        "minimum_supported_claim": "十宫主（Karm's Lord）落九宫（Dharm Bhava）且本人出身王族时，会成为国王。",
+        "produced_fact_keys": [
+          "十宫主落九宫且出身王族的权位判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm's Lord）是否落九宫（Dharm）",
+          "本人是否出身王族（royal scion）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "十宫主（Karm's Lord）是否落九宫（Dharm）"
+            },
+            {
+              "fact_key": "本人是否出身王族（royal scion）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Karm’s Lord is in Dharm Bhava",
+              "claim": "十宫主（Karm's Lord）落九宫（Dharm Bhava）"
+            },
+            {
+              "quote": "one born of royal scion",
+              "claim": "本人出身王族"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will become a king",
+              "claim": "会成为国王"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v117",
+            "quote": "If Karm’s Lord is in Dharm Bhava, one born of royal scion will become a king, whereas an ordinary native will be equal to a king.",
+            "pdf_pages": [
+              48
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm's Lord）是否落九宫（Dharm）、本人是否出身王族（royal scion）。",
+        "stop_fact_keys": [
+          "十宫主（Karm's Lord）是否落九宫（Dharm）",
+          "本人是否出身王族（royal scion）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得替原文定义什么算「出身王族」；该项未确定即停判。",
+          "不得把这一半的结论套到普通出身的人身上——原文对那一半另有断语。",
+          "不得把「成为国王」直接换算成今天的某个具体职务。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "ced602a4a01a6defb16905e8955e4ae1d5bc7fee52dd951d9c56779402fb87b3"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v117-karm-lord-in-dharm-ordinary.step-001",
+      "method": {
+        "method": "ch24-v117-karm-lord-in-dharm-ordinary",
+        "title": "十宫主落九宫且普通出身：与国王相当",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这样普通出身的人能到什么位置",
+          "这个格局对普通人有多大用"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Karm’s Lord is in Dharm Bhava, one born of royal scion will become a king, whereas an ordinary native will be equal to a king.",
+            "十宫主落九宫 普通出身 与国王相当"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava.",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava.",
+            "出身王族与普通出身的分别在原文里怎么界定"
+          ],
+          "method_queries": [
+            "Effects of Karm’s Lord in Various Bhavas",
+            "Effects of Dharm’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v117-karm-lord-in-dharm-ordinary.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Karm’s Lord is in Dharm Bhava"
+            },
+            {
+              "step_id": "ch24-v117-karm-lord-in-dharm-ordinary.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "an ordinary native"
+            },
+            {
+              "step_id": "ch24-v117-karm-lord-in-dharm-ordinary.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be equal to a king"
+            },
+            {
+              "step_id": "ch24-v117-karm-lord-in-dharm-ordinary.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Karm’s Lord is in Dharm Bhava will be equal to a king"
+            },
+            {
+              "step_id": "ch24-v117-karm-lord-in-dharm-ordinary.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "an ordinary native will be equal to a king"
+            },
+            {
+              "step_id": "ch24-v117-karm-lord-in-dharm-ordinary.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "10th lord is in 9th house"
+            },
+            {
+              "step_id": "ch24-v117-karm-lord-in-dharm-ordinary.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "10th lord is in 9th house will be equal to a king"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主是否落九宫的事实时停止。",
+          "原文未界定「普通出身」，该项未确定即停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v117-karm-lord-in-dharm-ordinary.step-001",
+        "action": "核对十宫主（Karm's Lord）是否落九宫（Dharm Bhava），并核对本人是否属于普通出身，据此判断其地位高低。",
+        "applicability_scope": "仅限本命盘十宫主（Karm's Lord）落九宫（Dharm Bhava）、且本人属于普通出身这一半；同偈另一半（出身王族者成为国王）另立方法 ch24-v117-karm-lord-in-dharm-royal-scion；原文没有界定什么算「普通出身」，该判准未确定即停判；原文未给时间限定。",
+        "minimum_supported_claim": "十宫主（Karm's Lord）落九宫（Dharm Bhava）且本人属于普通出身时，其地位与国王相当。",
+        "produced_fact_keys": [
+          "十宫主落九宫且普通出身的地位判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm's Lord）是否落九宫（Dharm）",
+          "本人是否属于普通出身（ordinary native）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "十宫主（Karm's Lord）是否落九宫（Dharm）"
+            },
+            {
+              "fact_key": "本人是否属于普通出身（ordinary native）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Karm’s Lord is in Dharm Bhava",
+              "claim": "十宫主（Karm's Lord）落九宫（Dharm Bhava）"
+            },
+            {
+              "quote": "an ordinary native",
+              "claim": "本人属于普通出身"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be equal to a king",
+              "claim": "其地位与国王相当"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v117",
+            "quote": "If Karm’s Lord is in Dharm Bhava, one born of royal scion will become a king, whereas an ordinary native will be equal to a king.",
+            "pdf_pages": [
+              48
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm's Lord）是否落九宫（Dharm）、本人是否属于普通出身（ordinary native）。",
+        "stop_fact_keys": [
+          "十宫主（Karm's Lord）是否落九宫（Dharm）",
+          "本人是否属于普通出身（ordinary native）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得替原文定义什么算「普通出身」；该项未确定即停判。",
+          "不得把「与国王相当」升格成真的成为国王——原文把这两半分开写。",
+          "不得据此推断具体职位、任期或时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "5558cadd76efd214f24e79a486a9f526dec213ca7bbe3ed6c36296a404054951"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v117-karm-lord-in-dharm-wealth-progeny.step-001",
+      "method": {
+        "method": "ch24-v117-karm-lord-in-dharm-wealth-progeny",
+        "title": "十宫主落九宫：此落宫带来财富与子嗣之乐",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "这个格局对我的财运有什么影响",
+          "我子女缘怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "This placement will confer wealth and progenic happiness etc.",
+            "十宫主落九宫 财富 子嗣之乐"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava.",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava.",
+            "十宫主落九宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Karm’s Lord in Various Bhavas",
+            "Effects of Dharm’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v117-karm-lord-in-dharm-wealth-progeny.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Karm’s Lord is in Dharm Bhava"
+            },
+            {
+              "step_id": "ch24-v117-karm-lord-in-dharm-wealth-progeny.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "This placement will confer wealth and progenic happiness etc."
+            },
+            {
+              "step_id": "ch24-v117-karm-lord-in-dharm-wealth-progeny.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Karm’s Lord is in Dharm Bhava This placement will confer wealth and progenic happiness etc."
+            },
+            {
+              "step_id": "ch24-v117-karm-lord-in-dharm-wealth-progeny.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "10th lord is in 9th house"
+            },
+            {
+              "step_id": "ch24-v117-karm-lord-in-dharm-wealth-progeny.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "10th lord is in 9th house This placement will confer wealth and progenic happiness etc."
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主是否落九宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v117-karm-lord-in-dharm-wealth-progeny.step-001",
+        "action": "核对十宫主（Karm's Lord）是否落九宫（Dharm Bhava），据此判断此落宫带来的财富与子嗣之乐。",
+        "applicability_scope": "仅限本命盘十宫主（Karm's Lord）落九宫（Dharm Bhava）一条；此句不分出身，与同偈按出身分说的两半（另立方法）并列；原文以「etc.」收尾，未穷举所列项目；原文未给时间限定。",
+        "minimum_supported_claim": "十宫主（Karm's Lord）落九宫（Dharm Bhava）时，此落宫会带来财富与子嗣之乐等。",
+        "produced_fact_keys": [
+          "十宫主落九宫的财富与子嗣之乐判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm's Lord）是否落九宫（Dharm）"
+        ],
+        "condition_logic": {
+          "fact_key": "十宫主（Karm's Lord）是否落九宫（Dharm）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Karm’s Lord is in Dharm Bhava",
+              "claim": "十宫主（Karm's Lord）落九宫（Dharm Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "This placement will confer wealth and progenic happiness etc.",
+              "claim": "此落宫会带来财富与子嗣之乐等"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v117",
+            "quote": "If Karm’s Lord is in Dharm Bhava, one born of royal scion will become a king, whereas an ordinary native will be equal to a king. This placement will confer wealth and progenic happiness etc.",
+            "pdf_pages": [
+              48
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm's Lord）是否落九宫（Dharm）。",
+        "stop_fact_keys": [
+          "十宫主（Karm's Lord）是否落九宫（Dharm）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「etc.」补成原文没有列出的项目。",
+          "不得把子嗣之乐写成具体子女人数或性别。",
+          "本条只对应十宫主落九宫，不得套用到十宫主落其他宫位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "eef1ed07e42d17309b71ff65c880c94e69d721a3b1e1af18e8d9eaa9de76f5f0"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v118-karm-lord-in-karm.step-001",
+      "method": {
+        "method": "ch24-v118-karm-lord-in-karm",
+        "title": "十宫主落十宫：各样事务上的本事与品行",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我做事的能力怎么样",
+          "我在职场上会是什么风格"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Karm’s Lord is in Karm Bhava, the native will be skilful in all jobs, be valorous, truthful and devoted to elders.",
+            "十宫主落十宫 各样事务上的本事与品行"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava.",
+            "十宫主落十宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Karm’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v118-karm-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Karm’s Lord is in Karm Bhava"
+            },
+            {
+              "step_id": "ch24-v118-karm-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "skilful in all jobs"
+            },
+            {
+              "step_id": "ch24-v118-karm-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be valorous, truthful and devoted to elders"
+            },
+            {
+              "step_id": "ch24-v118-karm-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Karm’s Lord is in Karm Bhava skilful in all jobs"
+            },
+            {
+              "step_id": "ch24-v118-karm-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "10th lord is in 10th house"
+            },
+            {
+              "step_id": "ch24-v118-karm-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "10th lord is in 10th house skilful in all jobs"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主是否落十宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v118-karm-lord-in-karm.step-001",
+        "action": "核对十宫主（Karm's Lord）是否落十宫（Karm Bhava），据此判断各样事务上的本事与品行。",
+        "applicability_scope": "仅限本命盘十宫主（Karm's Lord）落十宫（Karm Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "十宫主（Karm's Lord）落十宫（Karm Bhava）时，于各样事务上都有本事，勇武、诚实、敬奉尊长。",
+        "produced_fact_keys": [
+          "十宫主落十宫的各样事务上的本事与品行判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm's Lord）是否落十宫（Karm）"
+        ],
+        "condition_logic": {
+          "fact_key": "十宫主（Karm's Lord）是否落十宫（Karm）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Karm’s Lord is in Karm Bhava",
+              "claim": "十宫主（Karm's Lord）落十宫（Karm Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "skilful in all jobs",
+              "claim": "于各样事务上都有本事"
+            },
+            {
+              "quote": "be valorous, truthful and devoted to elders",
+              "claim": "勇武、诚实、敬奉尊长"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v118",
+            "quote": "If Karm’s Lord is in Karm Bhava, the native will be skilful in all jobs, be valorous, truthful and devoted to elders.",
+            "pdf_pages": [
+              48
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm's Lord）是否落十宫（Karm）。",
+        "stop_fact_keys": [
+          "十宫主（Karm's Lord）是否落十宫（Karm）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十宫主落十宫，不得套用到十宫主落其他宫位。",
+          "不得把「各样事务上都有本事」写成某个具体职业或成就。",
+          "不得据此推断职位高低或收入。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "9e88b1d8db2d98ee75020cbd699f4159c04830f771e6cb502c0f465d897a1e93"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch24:v110": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v110",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "110",
+      "content_role": "verse",
+      "exact_text": "110 If Karm’s Lord is in Dhan Bhava, the native will be wealthy, virtuous, honoured by the king, charitable and will enjoy happiness from father and others.",
+      "pdf_pages": [
+        48
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 110 · PDF page 48 · bphs-97:santhanam:ch24:v110",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v109",
+      "next_atom_id": "bphs-97:santhanam:ch24:v111",
+      "context_before": "ll be scholarly, famous, be a poet, will incur diseases in boyhood and be happy later on. His wealth will increase day by day.\n\n",
+      "context_after": "111. If Karm’s Lord is in Sahaj Bhava, the native will enjoy happiness from brothers and servants, be valorous, virtuous, eloque",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v111": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v111",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "111.",
+      "content_role": "verse",
+      "exact_text": "111. If Karm’s Lord is in Sahaj Bhava, the native will enjoy happiness from brothers and servants, be valorous, virtuous, eloquent and truthful.",
+      "pdf_pages": [
+        48
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 111 · PDF page 48 · bphs-97:santhanam:ch24:v111",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v110",
+      "next_atom_id": "bphs-97:santhanam:ch24:v112",
+      "context_before": "110 If Karm’s Lord is in Dhan Bhava, the native will be wealthy, virtuous, honoured by the king, charitable and will enjoy happiness from father and others.\n\n",
+      "context_after": "112. If Karm’s Lord is in Bandhu Bhava, the native will be happy, be always interested in his mother’s welfare, will Lord over c",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v112": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v112",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "112.",
+      "content_role": "verse",
+      "exact_text": "112. If Karm’s Lord is in Bandhu Bhava, the native will be happy, be always interested in his mother’s welfare, will Lord over conveyances, lands and houses, be virtuous and wealthy.",
+      "pdf_pages": [
+        48
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 112 · PDF page 48 · bphs-97:santhanam:ch24:v112",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v111",
+      "next_atom_id": "bphs-97:santhanam:ch24:v113",
+      "context_before": " If Karm’s Lord is in Sahaj Bhava, the native will enjoy happiness from brothers and servants, be valorous, virtuous, eloquent and truthful.\n\n",
+      "context_after": "113. If Karm’s Lord is in Putr Bhava, the native will be endowed with all kinds of learning, he will be always delighted and he ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v113": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v113",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "113.",
+      "content_role": "verse",
+      "exact_text": "113. If Karm’s Lord is in Putr Bhava, the native will be endowed with all kinds of learning, he will be always delighted and he will be wealthy and endowed with sons.",
+      "pdf_pages": [
+        48
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 113 · PDF page 48 · bphs-97:santhanam:ch24:v113",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v112",
+      "next_atom_id": "bphs-97:santhanam:ch24:v114",
+      "context_before": " If Karm’s Lord is in Bandhu Bhava, the native will be happy, be always interested in his mother’s welfare, will Lord over conveyances, lands and houses, be virtuous and wealthy.\n\n",
+      "context_after": "114. If Karm’s Lord is in Ari Bhava, the native will be bereft of paternal bliss. Although he may be skilful, he will be bereft ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v114": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v114",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "114.",
+      "content_role": "verse",
+      "exact_text": "114. If Karm’s Lord is in Ari Bhava, the native will be bereft of paternal bliss. Although he may be skilful, he will be bereft of wealth and be troubled by enemies.",
+      "pdf_pages": [
+        48
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 114 · PDF page 48 · bphs-97:santhanam:ch24:v114",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v113",
+      "next_atom_id": "bphs-97:santhanam:ch24:v115",
+      "context_before": " If Karm’s Lord is in Putr Bhava, the native will be endowed with all kinds of learning, he will be always delighted and he will be wealthy and endowed with sons.\n\n",
+      "context_after": "115. If Karm’s Lord is in Yuvati Bhava, the native will be endowed with happiness through wife, be intelligent, virtuous, eloque",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v115": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v115",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "115.",
+      "content_role": "verse",
+      "exact_text": "115. If Karm’s Lord is in Yuvati Bhava, the native will be endowed with happiness through wife, be intelligent, virtuous, eloquent, truthful and religious.",
+      "pdf_pages": [
+        48
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 115 · PDF page 48 · bphs-97:santhanam:ch24:v115",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v114",
+      "next_atom_id": "bphs-97:santhanam:ch24:v116",
+      "context_before": "e native will be bereft of paternal bliss. Although he may be skilful, he will be bereft of wealth and be troubled by enemies.\n\n",
+      "context_after": "116. If Karm’s Lord is in Randhr Bhava, the native will be devoid of acts, long-lived and intent on blaming others.\n\n117. If Kar",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v116": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v116",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "116.",
+      "content_role": "verse",
+      "exact_text": "116. If Karm’s Lord is in Randhr Bhava, the native will be devoid of acts, long-lived and intent on blaming others.",
+      "pdf_pages": [
+        48
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 116 · PDF page 48 · bphs-97:santhanam:ch24:v116",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v115",
+      "next_atom_id": "bphs-97:santhanam:ch24:v117",
+      "context_before": " If Karm’s Lord is in Yuvati Bhava, the native will be endowed with happiness through wife, be intelligent, virtuous, eloquent, truthful and religious.\n\n",
+      "context_after": "117. If Karm’s Lord is in Dharm Bhava, one born of royal scion will become a king, whereas an ordinary native will be equal to a",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v117": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v117",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "117.",
+      "content_role": "verse",
+      "exact_text": "117. If Karm’s Lord is in Dharm Bhava, one born of royal scion will become a king, whereas an ordinary native will be equal to a king. This placement will confer wealth and progenic happiness etc.",
+      "pdf_pages": [
+        48
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 117 · PDF page 48 · bphs-97:santhanam:ch24:v117",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v116",
+      "next_atom_id": "bphs-97:santhanam:ch24:v118",
+      "context_before": "eligious.\n\n116. If Karm’s Lord is in Randhr Bhava, the native will be devoid of acts, long-lived and intent on blaming others.\n\n",
+      "context_after": "118. If Karm’s Lord is in Karm Bhava, the native will be skilful in all jobs, be valorous, truthful and devoted to elders.\n\n119.",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v118": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v118",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "118.",
+      "content_role": "verse",
+      "exact_text": "118. If Karm’s Lord is in Karm Bhava, the native will be skilful in all jobs, be valorous, truthful and devoted to elders.",
+      "pdf_pages": [
+        48
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 118 · PDF page 48 · bphs-97:santhanam:ch24:v118",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v117",
+      "next_atom_id": "bphs-97:santhanam:ch24:v119",
+      "context_before": "come a king, whereas an ordinary native will be equal to a king. This placement will confer wealth and progenic happiness etc.\n\n",
+      "context_after": "119. If Karm’s Lord is in Labh Bhava, the native will be endowed with wealth, happiness and sons. He will be virtuous, truthful ",
+      "content_missing": false
+    }
+  }
+}

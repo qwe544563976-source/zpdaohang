@@ -1,0 +1,1841 @@
+{
+  "shard": 3,
+  "step_count": 11,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch24-v119-karm-lord-in-labh.step-001",
+      "method": {
+        "method": "ch24-v119-karm-lord-in-labh",
+        "title": "十宫主落十一宫：财富安乐子嗣与常常欢喜",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子过得顺不顺",
+          "我财运和子女缘怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Karm’s Lord is in Labh Bhava, the native will be endowed with wealth, happiness and sons. He will be virtuous, truthful and always delighted.",
+            "十宫主落十一宫 财富安乐子嗣与常常欢喜"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava.",
+            "Indications of Labh Bhava. All articles, son’s wife, income, prosperity, quadrupeds etc. are to be understood from Labh Bhava.",
+            "十宫主落十一宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Karm’s Lord in Various Bhavas",
+            "Effects of Labh’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v119-karm-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Karm’s Lord is in Labh Bhava"
+            },
+            {
+              "step_id": "ch24-v119-karm-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "endowed with wealth, happiness and sons"
+            },
+            {
+              "step_id": "ch24-v119-karm-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "He will be virtuous, truthful and always delighted"
+            },
+            {
+              "step_id": "ch24-v119-karm-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Karm’s Lord is in Labh Bhava endowed with wealth, happiness and sons"
+            },
+            {
+              "step_id": "ch24-v119-karm-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "10th lord is in 11th house"
+            },
+            {
+              "step_id": "ch24-v119-karm-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "10th lord is in 11th house endowed with wealth, happiness and sons"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主是否落十一宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v119-karm-lord-in-labh.step-001",
+        "action": "核对十宫主（Karm's Lord）是否落十一宫（Labh Bhava），据此判断财富安乐子嗣与常常欢喜。",
+        "applicability_scope": "仅限本命盘十宫主（Karm's Lord）落十一宫（Labh Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "十宫主（Karm's Lord）落十一宫（Labh Bhava）时，有财富、安乐与子嗣，他有德、诚实、常常欢喜。",
+        "produced_fact_keys": [
+          "十宫主落十一宫的财富安乐子嗣与常常欢喜判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm's Lord）是否落十一宫（Labh）"
+        ],
+        "condition_logic": {
+          "fact_key": "十宫主（Karm's Lord）是否落十一宫（Labh）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Karm’s Lord is in Labh Bhava",
+              "claim": "十宫主（Karm's Lord）落十一宫（Labh Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "endowed with wealth, happiness and sons",
+              "claim": "有财富、安乐与子嗣"
+            },
+            {
+              "quote": "He will be virtuous, truthful and always delighted",
+              "claim": "他有德、诚实、常常欢喜"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v119",
+            "quote": "If Karm’s Lord is in Labh Bhava, the native will be endowed with wealth, happiness and sons. He will be virtuous, truthful and always delighted.",
+            "pdf_pages": [
+              48
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm's Lord）是否落十一宫（Labh）。",
+        "stop_fact_keys": [
+          "十宫主（Karm's Lord）是否落十一宫（Labh）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十宫主落十一宫，不得套用到十宫主落其他宫位。",
+          "不得把「有子嗣」写成具体子女人数。",
+          "不得把「有财富」换算成具体数额或来源。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "c31309adc0cf61611077a088a6bc5956742669b5103152b470ff0f3b37165fc4"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v120-karm-lord-in-vyaya.step-001",
+      "method": {
+        "method": "ch24-v120-karm-lord-in-vyaya",
+        "title": "十宫主落十二宫：王家场所破费与仇敌之惧",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的钱为什么老是往外流",
+          "我明明有能力为什么老是不安"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Karm’s Lord is in Vyaya Bhava, the native will spend through royal abodes, will have fear from enemies and will be worried in spite of being skilful.",
+            "十宫主落十二宫 王家场所破费与仇敌之惧"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava.",
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+            "十宫主落十二宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Karm’s Lord in Various Bhavas",
+            "Effects of Vyaya’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v120-karm-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Karm’s Lord is in Vyaya Bhava"
+            },
+            {
+              "step_id": "ch24-v120-karm-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "spend through royal abodes"
+            },
+            {
+              "step_id": "ch24-v120-karm-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will have fear from enemies"
+            },
+            {
+              "step_id": "ch24-v120-karm-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be worried in spite of being skilful"
+            },
+            {
+              "step_id": "ch24-v120-karm-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Karm’s Lord is in Vyaya Bhava spend through royal abodes"
+            },
+            {
+              "step_id": "ch24-v120-karm-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "10th lord is in 12th house"
+            },
+            {
+              "step_id": "ch24-v120-karm-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "10th lord is in 12th house spend through royal abodes"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十宫主是否落十二宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v120-karm-lord-in-vyaya.step-001",
+        "action": "核对十宫主（Karm's Lord）是否落十二宫（Vyaya Bhava），据此判断王家场所破费与仇敌之惧。",
+        "applicability_scope": "仅限本命盘十宫主（Karm's Lord）落十二宫（Vyaya Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "十宫主（Karm's Lord）落十二宫（Vyaya Bhava）时，因王家场所而破费，因仇敌而有恐惧，虽有本事仍会忧虑。",
+        "produced_fact_keys": [
+          "十宫主落十二宫的王家场所破费与仇敌之惧判定"
+        ],
+        "required_fact_keys": [
+          "十宫主（Karm's Lord）是否落十二宫（Vyaya）"
+        ],
+        "condition_logic": {
+          "fact_key": "十宫主（Karm's Lord）是否落十二宫（Vyaya）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Karm’s Lord is in Vyaya Bhava",
+              "claim": "十宫主（Karm's Lord）落十二宫（Vyaya Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "spend through royal abodes",
+              "claim": "因王家场所而破费"
+            },
+            {
+              "quote": "will have fear from enemies",
+              "claim": "因仇敌而有恐惧"
+            },
+            {
+              "quote": "will be worried in spite of being skilful",
+              "claim": "虽有本事仍会忧虑"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v120",
+            "quote": "If Karm’s Lord is in Vyaya Bhava, the native will spend through royal abodes, will have fear from enemies and will be worried in spite of being skilful.",
+            "pdf_pages": [
+              48
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十宫主（Karm's Lord）是否落十二宫（Vyaya）。",
+        "stop_fact_keys": [
+          "十宫主（Karm's Lord）是否落十二宫（Vyaya）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十宫主落十二宫，不得套用到十宫主落其他宫位。",
+          "不得把「王家场所」直接等同于今天的某个具体机构并据此断案。",
+          "不得把「有恐惧」写成实际的伤害、官司或损失。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "af62f3fea60a00c61bc2159f1081a86acc02ea2c4f4e03e7e424bbf52091bd7c"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v121-labh-lord-in-tanu.step-001",
+      "method": {
+        "method": "ch24-v121-labh-lord-in-tanu",
+        "title": "十一宫主落一宫：秉性纯正与常有进益",
+        "target_house": 11,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我是个什么样性子的人",
+          "我的进项稳不稳"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Labh’s Lord is in Tanu Bhava, the native will be genuine in disposition, be rich, happy, even-sighted, be a poet, be eloquent in speech and be always endowed with gains.",
+            "十一宫主落一宫 秉性纯正与常有进益"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Labh Bhava. All articles, son’s wife, income, prosperity, quadrupeds etc. are to be understood from Labh Bhava.",
+            "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour, weakness, happiness, grief and innate nature are all to be guessed through the ascending Rāśi.",
+            "十一宫主落一宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Labh’s Lord in Various Bhavas",
+            "Effects of Lagn’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v121-labh-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Labh’s Lord is in Tanu Bhava"
+            },
+            {
+              "step_id": "ch24-v121-labh-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "genuine in disposition"
+            },
+            {
+              "step_id": "ch24-v121-labh-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be rich, happy, even-sighted"
+            },
+            {
+              "step_id": "ch24-v121-labh-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be a poet, be eloquent in speech"
+            },
+            {
+              "step_id": "ch24-v121-labh-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be always endowed with gains"
+            },
+            {
+              "step_id": "ch24-v121-labh-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Labh’s Lord is in Tanu Bhava genuine in disposition"
+            },
+            {
+              "step_id": "ch24-v121-labh-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "11th lord is in 1st house"
+            },
+            {
+              "step_id": "ch24-v121-labh-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "11th lord is in 1st house genuine in disposition"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十一宫主是否落一宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v121-labh-lord-in-tanu.step-001",
+        "action": "核对十一宫主（Labh's Lord）是否落一宫（Tanu Bhava），据此判断秉性纯正与常有进益。",
+        "applicability_scope": "仅限本命盘十一宫主（Labh's Lord）落一宫（Tanu Bhava）一条；原文未给时间限定。本段原文在同偈句首自标「Effects of Labh’s Lord in Various Bhavas (up to Sloka 132)」，该标题不并入结论。",
+        "minimum_supported_claim": "十一宫主（Labh's Lord）落一宫（Tanu Bhava）时，秉性纯正，富裕、安乐、一视同仁，是诗人、言辞流利，常有进益。",
+        "produced_fact_keys": [
+          "十一宫主落一宫的秉性纯正与常有进益判定"
+        ],
+        "required_fact_keys": [
+          "十一宫主（Labh's Lord）是否落一宫（Tanu）"
+        ],
+        "condition_logic": {
+          "fact_key": "十一宫主（Labh's Lord）是否落一宫（Tanu）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Labh’s Lord is in Tanu Bhava",
+              "claim": "十一宫主（Labh's Lord）落一宫（Tanu Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "genuine in disposition",
+              "claim": "秉性纯正"
+            },
+            {
+              "quote": "be rich, happy, even-sighted",
+              "claim": "富裕、安乐、一视同仁"
+            },
+            {
+              "quote": "be a poet, be eloquent in speech",
+              "claim": "是诗人、言辞流利"
+            },
+            {
+              "quote": "be always endowed with gains",
+              "claim": "常有进益"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v121",
+            "quote": "If Labh’s Lord is in Tanu Bhava, the native will be genuine in disposition, be rich, happy, even-sighted, be a poet, be eloquent in speech and be always endowed with gains.",
+            "pdf_pages": [
+              48
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十一宫主（Labh's Lord）是否落一宫（Tanu）。",
+        "stop_fact_keys": [
+          "十一宫主（Labh's Lord）是否落一宫（Tanu）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十一宫主落一宫，不得套用到十一宫主落其他宫位。",
+          "不得把「常有进益」换算成具体收入或年份。",
+          "不得把「是诗人」限定成职业身份。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "ab7634b9fc3a75011ffe973dca7d61a2b1baca5e6224a704436474b228393522"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v122-labh-lord-in-dhan.step-001",
+      "method": {
+        "method": "ch24-v122-labh-lord-in-dhan",
+        "title": "十一宫主落二宫：各类财富成就与安乐",
+        "target_house": 11,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的财运怎么样",
+          "我这辈子过得称不称心"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Labh’s Lord is in Dhan Bhava, the native will be endowed with all kinds of wealth and all kinds of accomplishments, charitable, religious and always happy.",
+            "十一宫主落二宫 各类财富成就与安乐"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Labh Bhava. All articles, son’s wife, income, prosperity, quadrupeds etc. are to be understood from Labh Bhava.",
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava.",
+            "十一宫主落二宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Labh’s Lord in Various Bhavas",
+            "Effects of Dhan’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v122-labh-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Labh’s Lord is in Dhan Bhava"
+            },
+            {
+              "step_id": "ch24-v122-labh-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "endowed with all kinds of wealth and all kinds of accomplishments"
+            },
+            {
+              "step_id": "ch24-v122-labh-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "charitable, religious and always happy"
+            },
+            {
+              "step_id": "ch24-v122-labh-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Labh’s Lord is in Dhan Bhava endowed with all kinds of wealth and all kinds of accomplishments"
+            },
+            {
+              "step_id": "ch24-v122-labh-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "11th lord is in 2nd house"
+            },
+            {
+              "step_id": "ch24-v122-labh-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "11th lord is in 2nd house endowed with all kinds of wealth and all kinds of accomplishments"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十一宫主是否落二宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v122-labh-lord-in-dhan.step-001",
+        "action": "核对十一宫主（Labh's Lord）是否落二宫（Dhan Bhava），据此判断各类财富成就与安乐。",
+        "applicability_scope": "仅限本命盘十一宫主（Labh's Lord）落二宫（Dhan Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "十一宫主（Labh's Lord）落二宫（Dhan Bhava）时，具备各类财富与各样成就，乐善好施、虔信、常常安乐。",
+        "produced_fact_keys": [
+          "十一宫主落二宫的各类财富成就与安乐判定"
+        ],
+        "required_fact_keys": [
+          "十一宫主（Labh's Lord）是否落二宫（Dhan）"
+        ],
+        "condition_logic": {
+          "fact_key": "十一宫主（Labh's Lord）是否落二宫（Dhan）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Labh’s Lord is in Dhan Bhava",
+              "claim": "十一宫主（Labh's Lord）落二宫（Dhan Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "endowed with all kinds of wealth and all kinds of accomplishments",
+              "claim": "具备各类财富与各样成就"
+            },
+            {
+              "quote": "charitable, religious and always happy",
+              "claim": "乐善好施、虔信、常常安乐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v122",
+            "quote": "If Labh’s Lord is in Dhan Bhava, the native will be endowed with all kinds of wealth and all kinds of accomplishments, charitable, religious and always happy.",
+            "pdf_pages": [
+              48
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十一宫主（Labh's Lord）是否落二宫（Dhan）。",
+        "stop_fact_keys": [
+          "十一宫主（Labh's Lord）是否落二宫（Dhan）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十一宫主落二宫，不得套用到十一宫主落其他宫位。",
+          "不得把「各类财富」换算成具体数额或来源。",
+          "不得据此推断成就的领域或时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "c4cdc61d91597eb5fee8c5826129dac2253caf40659522aefc9782c8d9bd9256"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v123-labh-lord-in-sahaj.step-001",
+      "method": {
+        "method": "ch24-v123-labh-lord-in-sahaj",
+        "title": "十一宫主落三宫：本事财富兄弟之乐与痛风之患",
+        "target_house": 11,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和兄弟之间怎么样",
+          "我身体上要留意什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Labh’s Lord is in Sahaj Bhava, the native will be skilful in all jobs, wealthy, endowed with fraternal bliss and may sometimes incur gout pains.",
+            "十一宫主落三宫 本事财富兄弟之乐与痛风之患"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Labh Bhava. All articles, son’s wife, income, prosperity, quadrupeds etc. are to be understood from Labh Bhava.",
+            "Indications of Sahaj Bhava. From Sahaj Bhava know of the following: valour, servants (attending etc.), brothers, sisters etc., initiatory instructions (Upadesh), journey and parent’s death.",
+            "十一宫主落三宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Labh’s Lord in Various Bhavas",
+            "Effects of Sahaj’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v123-labh-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Labh’s Lord is in Sahaj Bhava"
+            },
+            {
+              "step_id": "ch24-v123-labh-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "skilful in all jobs"
+            },
+            {
+              "step_id": "ch24-v123-labh-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "wealthy, endowed with fraternal bliss"
+            },
+            {
+              "step_id": "ch24-v123-labh-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "may sometimes incur gout pains"
+            },
+            {
+              "step_id": "ch24-v123-labh-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Labh’s Lord is in Sahaj Bhava skilful in all jobs"
+            },
+            {
+              "step_id": "ch24-v123-labh-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "11th lord is in 3rd house"
+            },
+            {
+              "step_id": "ch24-v123-labh-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "11th lord is in 3rd house skilful in all jobs"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十一宫主是否落三宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v123-labh-lord-in-sahaj.step-001",
+        "action": "核对十一宫主（Labh's Lord）是否落三宫（Sahaj Bhava），据此判断本事财富兄弟之乐与痛风之患。",
+        "applicability_scope": "仅限本命盘十一宫主（Labh's Lord）落三宫（Sahaj Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "十一宫主（Labh's Lord）落三宫（Sahaj Bhava）时，于各样事务上都有本事，富有、享有兄弟之乐，有时会患痛风之痛。",
+        "produced_fact_keys": [
+          "十一宫主落三宫的本事财富兄弟之乐与痛风之患判定"
+        ],
+        "required_fact_keys": [
+          "十一宫主（Labh's Lord）是否落三宫（Sahaj）"
+        ],
+        "condition_logic": {
+          "fact_key": "十一宫主（Labh's Lord）是否落三宫（Sahaj）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Labh’s Lord is in Sahaj Bhava",
+              "claim": "十一宫主（Labh's Lord）落三宫（Sahaj Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "skilful in all jobs",
+              "claim": "于各样事务上都有本事"
+            },
+            {
+              "quote": "wealthy, endowed with fraternal bliss",
+              "claim": "富有、享有兄弟之乐"
+            },
+            {
+              "quote": "may sometimes incur gout pains",
+              "claim": "有时会患痛风之痛"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v123",
+            "quote": "If Labh’s Lord is in Sahaj Bhava, the native will be skilful in all jobs, wealthy, endowed with fraternal bliss and may sometimes incur gout pains.",
+            "pdf_pages": [
+              48
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十一宫主（Labh's Lord）是否落三宫（Sahaj）。",
+        "stop_fact_keys": [
+          "十一宫主（Labh's Lord）是否落三宫（Sahaj）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十一宫主落三宫，不得套用到十一宫主落其他宫位。",
+          "原文用「sometimes」写痛风，不得说成必然或长期发作。",
+          "不得把痛风扩大成其他病症或断出病程。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "527fb535893468b6a076d12b1689d60a3b08b71e90c31f8d314f964853f08c17"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v124-labh-lord-in-bandhu.step-001",
+      "method": {
+        "method": "ch24-v124-labh-lord-in-bandhu",
+        "title": "十一宫主落四宫：母族得利朝拜与房屋田地",
+        "target_house": 11,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我能不能从母亲那边的亲戚得到帮助",
+          "我房产田地上会怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Labh’s Lord is in Bandhu Bhava, the native will gain from maternal relatives, will undertake visits to shrines and will possess happiness of house and lands.",
+            "十一宫主落四宫 母族得利朝拜与房屋田地"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Labh Bhava. All articles, son’s wife, income, prosperity, quadrupeds etc. are to be understood from Labh Bhava.",
+            "Indications of Bandhu Bhava. Conveyances, relatives, mother, happiness, treasure, lands and buildings are to be consulted through Bandhu Bhava.",
+            "十一宫主落四宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Labh’s Lord in Various Bhavas",
+            "Effects of Bandhu’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v124-labh-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Labh’s Lord is in Bandhu Bhava"
+            },
+            {
+              "step_id": "ch24-v124-labh-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "gain from maternal relatives"
+            },
+            {
+              "step_id": "ch24-v124-labh-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will undertake visits to shrines"
+            },
+            {
+              "step_id": "ch24-v124-labh-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will possess happiness of house and lands"
+            },
+            {
+              "step_id": "ch24-v124-labh-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Labh’s Lord is in Bandhu Bhava gain from maternal relatives"
+            },
+            {
+              "step_id": "ch24-v124-labh-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "11th lord is in 4th house"
+            },
+            {
+              "step_id": "ch24-v124-labh-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "11th lord is in 4th house gain from maternal relatives"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十一宫主是否落四宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v124-labh-lord-in-bandhu.step-001",
+        "action": "核对十一宫主（Labh's Lord）是否落四宫（Bandhu Bhava），据此判断母族得利朝拜与房屋田地。",
+        "applicability_scope": "仅限本命盘十一宫主（Labh's Lord）落四宫（Bandhu Bhava）一条；原文未给时间限定。原文此偈的偈号印作「12.」，按定位属 Sloka 124，该印刷偏差不并入结论。",
+        "minimum_supported_claim": "十一宫主（Labh's Lord）落四宫（Bandhu Bhava）时，从母族亲属处得利，会去朝拜神庙，拥有房屋与田地之乐。",
+        "produced_fact_keys": [
+          "十一宫主落四宫的母族得利朝拜与房屋田地判定"
+        ],
+        "required_fact_keys": [
+          "十一宫主（Labh's Lord）是否落四宫（Bandhu）"
+        ],
+        "condition_logic": {
+          "fact_key": "十一宫主（Labh's Lord）是否落四宫（Bandhu）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Labh’s Lord is in Bandhu Bhava",
+              "claim": "十一宫主（Labh's Lord）落四宫（Bandhu Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "gain from maternal relatives",
+              "claim": "从母族亲属处得利"
+            },
+            {
+              "quote": "will undertake visits to shrines",
+              "claim": "会去朝拜神庙"
+            },
+            {
+              "quote": "will possess happiness of house and lands",
+              "claim": "拥有房屋与田地之乐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v124",
+            "quote": "If Labh’s Lord is in Bandhu Bhava, the native will gain from maternal relatives, will undertake visits to shrines and will possess happiness of house and lands.",
+            "pdf_pages": [
+              48
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十一宫主（Labh's Lord）是否落四宫（Bandhu）。",
+        "stop_fact_keys": [
+          "十一宫主（Labh's Lord）是否落四宫（Bandhu）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十一宫主落四宫，不得套用到十一宫主落其他宫位。",
+          "不得把「从母族亲属处得利」换算成具体金额或遗产。",
+          "不得据此推断朝拜的时间或地点。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "42a4de7293edc934800e87a153370571f61574b1456a474820c03aacc60e5b9b"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v125-labh-lord-in-putr.step-001",
+      "method": {
+        "method": "ch24-v125-labh-lord-in-putr",
+        "title": "十一宫主落五宫：安乐受教育与虔信",
+        "target_house": 11,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我读书这条路顺不顺",
+          "我这个人过得开不开心"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Labh’s Lord is in Putr Bhava, the native will be happy, educated and virtuous. He will be religious and happy.",
+            "十一宫主落五宫 安乐受教育与虔信"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Labh Bhava. All articles, son’s wife, income, prosperity, quadrupeds etc. are to be understood from Labh Bhava.",
+            "Indications of Putr Bhava. The learned should deduce from Putr Bhava amulets, sacred spells, learning, knowledge, sons, royalty (or authority), fall of position etc.",
+            "十一宫主落五宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Labh’s Lord in Various Bhavas",
+            "Effects of Putr’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v125-labh-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Labh’s Lord is in Putr Bhava"
+            },
+            {
+              "step_id": "ch24-v125-labh-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be happy, educated and virtuous"
+            },
+            {
+              "step_id": "ch24-v125-labh-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "He will be religious and happy"
+            },
+            {
+              "step_id": "ch24-v125-labh-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Labh’s Lord is in Putr Bhava the native will be happy, educated and virtuous"
+            },
+            {
+              "step_id": "ch24-v125-labh-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "11th lord is in 5th house"
+            },
+            {
+              "step_id": "ch24-v125-labh-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "11th lord is in 5th house the native will be happy, educated and virtuous"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十一宫主是否落五宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v125-labh-lord-in-putr.step-001",
+        "action": "核对十一宫主（Labh's Lord）是否落五宫（Putr Bhava），据此判断安乐受教育与虔信。",
+        "applicability_scope": "仅限本命盘十一宫主（Labh's Lord）落五宫（Putr Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "十一宫主（Labh's Lord）落五宫（Putr Bhava）时，本人安乐、受过教育、有德，他虔信且安乐。",
+        "produced_fact_keys": [
+          "十一宫主落五宫的安乐受教育与虔信判定"
+        ],
+        "required_fact_keys": [
+          "十一宫主（Labh's Lord）是否落五宫（Putr）"
+        ],
+        "condition_logic": {
+          "fact_key": "十一宫主（Labh's Lord）是否落五宫（Putr）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Labh’s Lord is in Putr Bhava",
+              "claim": "十一宫主（Labh's Lord）落五宫（Putr Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be happy, educated and virtuous",
+              "claim": "本人安乐、受过教育、有德"
+            },
+            {
+              "quote": "He will be religious and happy",
+              "claim": "他虔信且安乐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v125",
+            "quote": "If Labh’s Lord is in Putr Bhava, the native will be happy, educated and virtuous. He will be religious and happy.",
+            "pdf_pages": [
+              49
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十一宫主（Labh's Lord）是否落五宫（Putr）。",
+        "stop_fact_keys": [
+          "十一宫主（Labh's Lord）是否落五宫（Putr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十一宫主落五宫，不得套用到十一宫主落其他宫位。",
+          "不得把「受过教育」写成学历、专业或学校。",
+          "不得据此推断信仰的门派。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "cb50c341062e575040918eb944650830bc0595d99d446baaea4f6de77a97561d"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v126-labh-lord-in-ari.step-001",
+      "method": {
+        "method": "ch24-v126-labh-lord-in-ari",
+        "title": "十一宫主落六宫：疾病之苦与异乡仇敌",
+        "target_house": 11,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我身体上要注意什么",
+          "我会不会长期在外地生活"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Labh’s Lord is in Ari Bhava, the native will be afflicted by diseases, be cruel, living in foreign places and troubled by enemies.",
+            "十一宫主落六宫 疾病之苦与异乡仇敌"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Labh Bhava. All articles, son’s wife, income, prosperity, quadrupeds etc. are to be understood from Labh Bhava.",
+            "Indications of Ari Bhava. Maternal uncle, doubts about death, enemies, ulcers, stepmother etc. are to be estimated from Ari Bhava.",
+            "十一宫主落六宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Labh’s Lord in Various Bhavas",
+            "Effects of Ari’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v126-labh-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Labh’s Lord is in Ari Bhava"
+            },
+            {
+              "step_id": "ch24-v126-labh-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "afflicted by diseases"
+            },
+            {
+              "step_id": "ch24-v126-labh-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be cruel"
+            },
+            {
+              "step_id": "ch24-v126-labh-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "living in foreign places"
+            },
+            {
+              "step_id": "ch24-v126-labh-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "troubled by enemies"
+            },
+            {
+              "step_id": "ch24-v126-labh-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Labh’s Lord is in Ari Bhava afflicted by diseases"
+            },
+            {
+              "step_id": "ch24-v126-labh-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "11th lord is in 6th house"
+            },
+            {
+              "step_id": "ch24-v126-labh-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "11th lord is in 6th house afflicted by diseases"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十一宫主是否落六宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v126-labh-lord-in-ari.step-001",
+        "action": "核对十一宫主（Labh's Lord）是否落六宫（Ari Bhava），据此判断疾病之苦与异乡仇敌。",
+        "applicability_scope": "仅限本命盘十一宫主（Labh's Lord）落六宫（Ari Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "十一宫主（Labh's Lord）落六宫（Ari Bhava）时，为疾病所苦，性情残酷，住在异乡，受仇敌困扰。",
+        "produced_fact_keys": [
+          "十一宫主落六宫的疾病之苦与异乡仇敌判定"
+        ],
+        "required_fact_keys": [
+          "十一宫主（Labh's Lord）是否落六宫（Ari）"
+        ],
+        "condition_logic": {
+          "fact_key": "十一宫主（Labh's Lord）是否落六宫（Ari）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Labh’s Lord is in Ari Bhava",
+              "claim": "十一宫主（Labh's Lord）落六宫（Ari Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "afflicted by diseases",
+              "claim": "为疾病所苦"
+            },
+            {
+              "quote": "be cruel",
+              "claim": "性情残酷"
+            },
+            {
+              "quote": "living in foreign places",
+              "claim": "住在异乡"
+            },
+            {
+              "quote": "troubled by enemies",
+              "claim": "受仇敌困扰"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v126",
+            "quote": "If Labh’s Lord is in Ari Bhava, the native will be afflicted by diseases, be cruel, living in foreign places and troubled by enemies.",
+            "pdf_pages": [
+              49
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十一宫主（Labh's Lord）是否落六宫（Ari）。",
+        "stop_fact_keys": [
+          "十一宫主（Labh's Lord）是否落六宫（Ari）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十一宫主落六宫，不得套用到十一宫主落其他宫位。",
+          "不得把「为疾病所苦」写成具体病名、部位或后果。",
+          "不得据「住在异乡」推出移居国别或时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "ef00c0ead656eb6055e19ae3b90e3814d84735792855dfdfce3514038349fe7d"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v127-labh-lord-in-yuvati.step-001",
+      "method": {
+        "method": "ch24-v127-labh-lord-in-yuvati",
+        "title": "十一宫主落七宫：妻族得利与听从配偶",
+        "target_house": 11,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我能不能从配偶家里得到助力",
+          "我们俩谁说了算"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Labh’s Lord is in Yuvati Bhava, the native will always gain through his wife’s relatives, be liberal, virtuous, sensuous and will remain at the command of his spouse.",
+            "十一宫主落七宫 妻族得利与听从配偶"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Labh Bhava. All articles, son’s wife, income, prosperity, quadrupeds etc. are to be understood from Labh Bhava.",
+            "Indications of Yuvati Bhava. Wife, travel, trade, loss of sight, death etc. be known from Yuvati Bhava.",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)",
+            "十一宫主落七宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Labh’s Lord in Various Bhavas",
+            "Effects of Yuvati’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v127-labh-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Labh’s Lord is in Yuvati Bhava"
+            },
+            {
+              "step_id": "ch24-v127-labh-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "always gain through his wife’s relatives"
+            },
+            {
+              "step_id": "ch24-v127-labh-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be liberal, virtuous, sensuous"
+            },
+            {
+              "step_id": "ch24-v127-labh-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will remain at the command of his spouse"
+            },
+            {
+              "step_id": "ch24-v127-labh-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Labh’s Lord is in Yuvati Bhava always gain through his wife’s relatives"
+            },
+            {
+              "step_id": "ch24-v127-labh-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "11th lord is in 7th house"
+            },
+            {
+              "step_id": "ch24-v127-labh-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "11th lord is in 7th house always gain through his wife’s relatives"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十一宫主是否落七宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v127-labh-lord-in-yuvati.step-001",
+        "action": "核对十一宫主（Labh's Lord）是否落七宫（Yuvati Bhava），据此判断妻族得利与听从配偶。",
+        "applicability_scope": "仅限本命盘十一宫主（Labh's Lord）落七宫（Yuvati Bhava）一条；原文未给时间限定。原文以「his wife」「his spouse」立说，属男命框架。",
+        "minimum_supported_claim": "十一宫主（Labh's Lord）落七宫（Yuvati Bhava）时，常从妻子的亲属处得利，慷慨、有德、耽于情欲，听从配偶的吩咐。",
+        "produced_fact_keys": [
+          "十一宫主落七宫的妻族得利与听从配偶判定"
+        ],
+        "required_fact_keys": [
+          "十一宫主（Labh's Lord）是否落七宫（Yuvati）"
+        ],
+        "condition_logic": {
+          "fact_key": "十一宫主（Labh's Lord）是否落七宫（Yuvati）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Labh’s Lord is in Yuvati Bhava",
+              "claim": "十一宫主（Labh's Lord）落七宫（Yuvati Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "always gain through his wife’s relatives",
+              "claim": "常从妻子的亲属处得利"
+            },
+            {
+              "quote": "be liberal, virtuous, sensuous",
+              "claim": "慷慨、有德、耽于情欲"
+            },
+            {
+              "quote": "will remain at the command of his spouse",
+              "claim": "听从配偶的吩咐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v127",
+            "quote": "If Labh’s Lord is in Yuvati Bhava, the native will always gain through his wife’s relatives, be liberal, virtuous, sensuous and will remain at the command of his spouse.",
+            "pdf_pages": [
+              49
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十一宫主（Labh's Lord）是否落七宫（Yuvati）。",
+        "stop_fact_keys": [
+          "十一宫主（Labh's Lord）是否落七宫（Yuvati）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十一宫主落七宫，不得套用到十一宫主落其他宫位。",
+          "不得把「从妻子的亲属处得利」换算成具体金额或财产。",
+          "不得把「听从配偶的吩咐」写成受制、受害或婚姻破裂。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "c3aea5accdf8e0c453ae1f88efc5cee162f1dd8b179e1b3930fb17980da1c298"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v128-labh-lord-in-randhr.step-001",
+      "method": {
+        "method": "ch24-v128-labh-lord-in-randhr",
+        "title": "十一宫主落八宫：事业挫折长寿与妻子先亡",
+        "target_house": 11,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我做事为什么老是翻船",
+          "我和配偶谁先走"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Labh’s Lord is in Randhr Bhava, the native will incur reversals in his undertakings and will live long, while his wife will predecease him.",
+            "十一宫主落八宫 事业挫折长寿与妻子先亡"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Labh Bhava. All articles, son’s wife, income, prosperity, quadrupeds etc. are to be understood from Labh Bhava.",
+            "Indications of Randhr Bhava. Randhr Bhava indicates longevity, battle, enemies, forts, wealth of the dead and things, that have happened and are to happen (in the past and future births).",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)",
+            "十一宫主落八宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Labh’s Lord in Various Bhavas",
+            "Effects of Randhr’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v128-labh-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Labh’s Lord is in Randhr Bhava"
+            },
+            {
+              "step_id": "ch24-v128-labh-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "incur reversals in his undertakings"
+            },
+            {
+              "step_id": "ch24-v128-labh-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will live long"
+            },
+            {
+              "step_id": "ch24-v128-labh-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "his wife will predecease him"
+            },
+            {
+              "step_id": "ch24-v128-labh-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Labh’s Lord is in Randhr Bhava incur reversals in his undertakings"
+            },
+            {
+              "step_id": "ch24-v128-labh-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "11th lord is in 8th house"
+            },
+            {
+              "step_id": "ch24-v128-labh-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "11th lord is in 8th house incur reversals in his undertakings"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十一宫主是否落八宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v128-labh-lord-in-randhr.step-001",
+        "action": "核对十一宫主（Labh's Lord）是否落八宫（Randhr Bhava），据此判断事业挫折长寿与妻子先亡。",
+        "applicability_scope": "仅限本命盘十一宫主（Labh's Lord）落八宫（Randhr Bhava）一条；原文未给时间限定。原文以「his wife」立说，属男命框架；断语主语含妻子。",
+        "minimum_supported_claim": "十一宫主（Labh's Lord）落八宫（Randhr Bhava）时，所办之事遭遇挫折，长寿，他的妻子先于他去世。",
+        "produced_fact_keys": [
+          "十一宫主落八宫的事业挫折长寿与妻子先亡判定"
+        ],
+        "required_fact_keys": [
+          "十一宫主（Labh's Lord）是否落八宫（Randhr）"
+        ],
+        "condition_logic": {
+          "fact_key": "十一宫主（Labh's Lord）是否落八宫（Randhr）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Labh’s Lord is in Randhr Bhava",
+              "claim": "十一宫主（Labh's Lord）落八宫（Randhr Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "incur reversals in his undertakings",
+              "claim": "所办之事遭遇挫折"
+            },
+            {
+              "quote": "will live long",
+              "claim": "长寿"
+            },
+            {
+              "quote": "his wife will predecease him",
+              "claim": "他的妻子先于他去世"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v128",
+            "quote": "If Labh’s Lord is in Randhr Bhava, the native will incur reversals in his undertakings and will live long, while his wife will predecease him.",
+            "pdf_pages": [
+              49
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十一宫主（Labh's Lord）是否落八宫（Randhr）。",
+        "stop_fact_keys": [
+          "十一宫主（Labh's Lord）是否落八宫（Randhr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十一宫主落八宫，不得套用到十一宫主落其他宫位。",
+          "不得把「长寿」换算成具体岁数。",
+          "不得给妻子去世补上年龄、死因或时间——原文只写先于他去世。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "fd3811cece134861d67a5788f82f0912395a4c7b0a6c9f6f396c1eb57be3925c"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v129-labh-lord-in-dharm.step-001",
+      "method": {
+        "method": "ch24-v129-labh-lord-in-dharm",
+        "title": "十一宫主落九宫：福分本事与受尊崇富足",
+        "target_house": 11,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子的福分怎么样",
+          "我能不能得到上面的人赏识"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Labh’s Lord is in Dharm Bhava, the native will be fortunate, skilful, truthful, honoured by the king and be affluent.",
+            "十一宫主落九宫 福分本事与受尊崇富足"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Labh Bhava. All articles, son’s wife, income, prosperity, quadrupeds etc. are to be understood from Labh Bhava.",
+            "Indications of Dharm Bhava. Fortunes, wife’s brother, religion, brother’s wife, visits to shrines etc. be known from Dharm Bhava.",
+            "十一宫主落九宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Labh’s Lord in Various Bhavas",
+            "Effects of Dharm’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v129-labh-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Labh’s Lord is in Dharm Bhava"
+            },
+            {
+              "step_id": "ch24-v129-labh-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be fortunate, skilful, truthful"
+            },
+            {
+              "step_id": "ch24-v129-labh-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "honoured by the king and be affluent"
+            },
+            {
+              "step_id": "ch24-v129-labh-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Labh’s Lord is in Dharm Bhava be fortunate, skilful, truthful"
+            },
+            {
+              "step_id": "ch24-v129-labh-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "11th lord is in 9th house"
+            },
+            {
+              "step_id": "ch24-v129-labh-lord-in-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "11th lord is in 9th house be fortunate, skilful, truthful"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十一宫主是否落九宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v129-labh-lord-in-dharm.step-001",
+        "action": "核对十一宫主（Labh's Lord）是否落九宫（Dharm Bhava），据此判断福分本事与受尊崇富足。",
+        "applicability_scope": "仅限本命盘十一宫主（Labh's Lord）落九宫（Dharm Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "十一宫主（Labh's Lord）落九宫（Dharm Bhava）时，有福分、有本事、诚实，受国王尊崇、富足。",
+        "produced_fact_keys": [
+          "十一宫主落九宫的福分本事与受尊崇富足判定"
+        ],
+        "required_fact_keys": [
+          "十一宫主（Labh's Lord）是否落九宫（Dharm）"
+        ],
+        "condition_logic": {
+          "fact_key": "十一宫主（Labh's Lord）是否落九宫（Dharm）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Labh’s Lord is in Dharm Bhava",
+              "claim": "十一宫主（Labh's Lord）落九宫（Dharm Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "be fortunate, skilful, truthful",
+              "claim": "有福分、有本事、诚实"
+            },
+            {
+              "quote": "honoured by the king and be affluent",
+              "claim": "受国王尊崇、富足"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v129",
+            "quote": "If Labh’s Lord is in Dharm Bhava, the native will be fortunate, skilful, truthful, honoured by the king and be affluent.",
+            "pdf_pages": [
+              49
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十一宫主（Labh's Lord）是否落九宫（Dharm）。",
+        "stop_fact_keys": [
+          "十一宫主（Labh's Lord）是否落九宫（Dharm）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十一宫主落九宫，不得套用到十一宫主落其他宫位。",
+          "不得把「受国王尊崇」换算成今天的某个具体职衔或奖项。",
+          "不得据此推断富足的程度或时点。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "8e090a7c39e9957029dd8ca3090cf77b610f25776e0bfe2acb42a5e76eacddf5"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch24:v119": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v119",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "119.",
+      "content_role": "verse",
+      "exact_text": "119. If Karm’s Lord is in Labh Bhava, the native will be endowed with wealth, happiness and sons. He will be virtuous, truthful and always delighted.",
+      "pdf_pages": [
+        48
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 119 · PDF page 48 · bphs-97:santhanam:ch24:v119",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v118",
+      "next_atom_id": "bphs-97:santhanam:ch24:v120",
+      "context_before": "c.\n\n118. If Karm’s Lord is in Karm Bhava, the native will be skilful in all jobs, be valorous, truthful and devoted to elders.\n\n",
+      "context_after": "120. If Karm’s Lord is in Vyaya Bhava, the native will spend through royal abodes, will have fear from enemies and will be worri",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v120": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v120",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "120.",
+      "content_role": "verse",
+      "exact_text": "120. If Karm’s Lord is in Vyaya Bhava, the native will spend through royal abodes, will have fear from enemies and will be worried in spite of being skilful.",
+      "pdf_pages": [
+        48
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 120 · PDF page 48 · bphs-97:santhanam:ch24:v120",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v119",
+      "next_atom_id": "bphs-97:santhanam:ch24:v121",
+      "context_before": "in Labh Bhava, the native will be endowed with wealth, happiness and sons. He will be virtuous, truthful and always delighted.\n\n",
+      "context_after": "121. Effects of Labh’s Lord in Various Bhavas (up to Sloka 132). If Labh’s Lord is in Tanu Bhava, the native will be genuine in ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v121": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v121",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "121.",
+      "content_role": "verse",
+      "exact_text": "121. Effects of Labh’s Lord in Various Bhavas (up to Sloka 132). If Labh’s Lord is in Tanu Bhava, the native will be genuine in disposition, be rich, happy, even-sighted, be a poet, be eloquent in speech and be always endowed with gains.",
+      "pdf_pages": [
+        48
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 121 · PDF page 48 · bphs-97:santhanam:ch24:v121",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v120",
+      "next_atom_id": "bphs-97:santhanam:ch24:v122",
+      "context_before": " If Karm’s Lord is in Vyaya Bhava, the native will spend through royal abodes, will have fear from enemies and will be worried in spite of being skilful.\n\n",
+      "context_after": "122. If Labh’s Lord is in Dhan Bhava, the native will be endowed with all kinds of wealth and all kinds of accomplishments, char",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v122": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v122",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "122.",
+      "content_role": "verse",
+      "exact_text": "122. If Labh’s Lord is in Dhan Bhava, the native will be endowed with all kinds of wealth and all kinds of accomplishments, charitable, religious and always happy.",
+      "pdf_pages": [
+        48
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 122 · PDF page 48 · bphs-97:santhanam:ch24:v122",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v121",
+      "next_atom_id": "bphs-97:santhanam:ch24:v123",
+      "context_before": " If Labh’s Lord is in Tanu Bhava, the native will be genuine in disposition, be rich, happy, even-sighted, be a poet, be eloquent in speech and be always endowed with gains.\n\n",
+      "context_after": "123. If Labh’s Lord is in Sahaj Bhava, the native will be skilful in all jobs, wealthy, endowed with fraternal bliss and may som",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v123": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v123",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "123.",
+      "content_role": "verse",
+      "exact_text": "123. If Labh’s Lord is in Sahaj Bhava, the native will be skilful in all jobs, wealthy, endowed with fraternal bliss and may sometimes incur gout pains.",
+      "pdf_pages": [
+        48
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 123 · PDF page 48 · bphs-97:santhanam:ch24:v123",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v122",
+      "next_atom_id": "bphs-97:santhanam:ch24:v124",
+      "context_before": " If Labh’s Lord is in Dhan Bhava, the native will be endowed with all kinds of wealth and all kinds of accomplishments, charitable, religious and always happy.\n\n",
+      "context_after": "12. If Labh’s Lord is in Bandhu Bhava, the native will gain from maternal relatives, will undertake visits to shrines and will p",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v124": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v124",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "12.",
+      "content_role": "verse",
+      "exact_text": "12. If Labh’s Lord is in Bandhu Bhava, the native will gain from maternal relatives, will undertake visits to shrines and will possess happiness of house and lands.",
+      "pdf_pages": [
+        48
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 124 (source shows 12) · PDF page 48 · bphs-97:santhanam:ch24:v124",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v123",
+      "next_atom_id": "bphs-97:santhanam:ch24:v125",
+      "context_before": " If Labh’s Lord is in Sahaj Bhava, the native will be skilful in all jobs, wealthy, endowed with fraternal bliss and may sometimes incur gout pains.\n\n",
+      "context_after": "125. If Labh’s Lord is in Putr Bhava, the native will be happy, educated and virtuous. He will be religious and happy.\n\n126. If ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v125": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v125",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "125.",
+      "content_role": "verse",
+      "exact_text": "125. If Labh’s Lord is in Putr Bhava, the native will be happy, educated and virtuous. He will be religious and happy.",
+      "pdf_pages": [
+        49
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 125 · PDF page 49 · bphs-97:santhanam:ch24:v125",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v124",
+      "next_atom_id": "bphs-97:santhanam:ch24:v126",
+      "context_before": " If Labh’s Lord is in Bandhu Bhava, the native will gain from maternal relatives, will undertake visits to shrines and will possess happiness of house and lands.\n\n<!-- SOURCE_PAGE 49 -->\n\n",
+      "context_after": "126. If Labh’s Lord is in Ari Bhava, the native will be afflicted by diseases, be cruel, living in foreign places and troubled b",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v126": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v126",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "126.",
+      "content_role": "verse",
+      "exact_text": "126. If Labh’s Lord is in Ari Bhava, the native will be afflicted by diseases, be cruel, living in foreign places and troubled by enemies.",
+      "pdf_pages": [
+        49
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 126 · PDF page 49 · bphs-97:santhanam:ch24:v126",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v125",
+      "next_atom_id": "bphs-97:santhanam:ch24:v127",
+      "context_before": "49 -->\n\n125. If Labh’s Lord is in Putr Bhava, the native will be happy, educated and virtuous. He will be religious and happy.\n\n",
+      "context_after": "127. If Labh’s Lord is in Yuvati Bhava, the native will always gain through his wife’s relatives, be liberal, virtuous, sensuous",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v127": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v127",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "127.",
+      "content_role": "verse",
+      "exact_text": "127. If Labh’s Lord is in Yuvati Bhava, the native will always gain through his wife’s relatives, be liberal, virtuous, sensuous and will remain at the command of his spouse.",
+      "pdf_pages": [
+        49
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 127 · PDF page 49 · bphs-97:santhanam:ch24:v127",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v126",
+      "next_atom_id": "bphs-97:santhanam:ch24:v128",
+      "context_before": " If Labh’s Lord is in Ari Bhava, the native will be afflicted by diseases, be cruel, living in foreign places and troubled by enemies.\n\n",
+      "context_after": "128. If Labh’s Lord is in Randhr Bhava, the native will incur reversals in his undertakings and will live long, while his wife w",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v128": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v128",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "128.",
+      "content_role": "verse",
+      "exact_text": "128. If Labh’s Lord is in Randhr Bhava, the native will incur reversals in his undertakings and will live long, while his wife will predecease him.",
+      "pdf_pages": [
+        49
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 128 · PDF page 49 · bphs-97:santhanam:ch24:v128",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v127",
+      "next_atom_id": "bphs-97:santhanam:ch24:v129",
+      "context_before": " If Labh’s Lord is in Yuvati Bhava, the native will always gain through his wife’s relatives, be liberal, virtuous, sensuous and will remain at the command of his spouse.\n\n",
+      "context_after": "129. If Labh’s Lord is in Dharm Bhava, the native will be fortunate, skilful, truthful, honoured by the king and be affluent.\n\n1",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v129": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v129",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "129.",
+      "content_role": "verse",
+      "exact_text": "129. If Labh’s Lord is in Dharm Bhava, the native will be fortunate, skilful, truthful, honoured by the king and be affluent.",
+      "pdf_pages": [
+        49
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 129 · PDF page 49 · bphs-97:santhanam:ch24:v129",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v128",
+      "next_atom_id": "bphs-97:santhanam:ch24:v130",
+      "context_before": " If Labh’s Lord is in Randhr Bhava, the native will incur reversals in his undertakings and will live long, while his wife will predecease him.\n\n",
+      "context_after": "130. If Labh’s Lord is in Karm Bhava, the native will be honoured by the king, be virtuous, attached to his religion, intelligen",
+      "content_missing": false
+    }
+  }
+}

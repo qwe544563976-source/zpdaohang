@@ -1,0 +1,1849 @@
+{
+  "shard": 4,
+  "step_count": 11,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch24-v130-labh-lord-in-karm.step-001",
+      "method": {
+        "method": "ch24-v130-labh-lord-in-karm",
+        "title": "十一宫主落十宫：受尊崇笃信与自我约束",
+        "target_house": 11,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我在事业上能得到什么样的位置",
+          "我这个人自律吗"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Labh’s Lord is in Karm Bhava, the native will be honoured by the king, be virtuous, attached to his religion, intelligent, truthful and will subdue his senses.",
+            "十一宫主落十宫 受尊崇笃信与自我约束"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Labh Bhava. All articles, son’s wife, income, prosperity, quadrupeds etc. are to be understood from Labh Bhava.",
+            "Indications of Karm Bhava. Royalty (authority), place, profession (livelihood), honour, father, living in foreign lands and debts are to be understood from Karm Bhava.",
+            "十一宫主落十宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Labh’s Lord in Various Bhavas",
+            "Effects of Karm’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v130-labh-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Labh’s Lord is in Karm Bhava"
+            },
+            {
+              "step_id": "ch24-v130-labh-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "honoured by the king, be virtuous, attached to his religion"
+            },
+            {
+              "step_id": "ch24-v130-labh-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "intelligent, truthful and will subdue his senses"
+            },
+            {
+              "step_id": "ch24-v130-labh-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Labh’s Lord is in Karm Bhava honoured by the king, be virtuous, attached to his religion"
+            },
+            {
+              "step_id": "ch24-v130-labh-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "11th lord is in 10th house"
+            },
+            {
+              "step_id": "ch24-v130-labh-lord-in-karm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "11th lord is in 10th house honoured by the king, be virtuous, attached to his religion"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十一宫主是否落十宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v130-labh-lord-in-karm.step-001",
+        "action": "核对十一宫主（Labh's Lord）是否落十宫（Karm Bhava），据此判断受尊崇笃信与自我约束。",
+        "applicability_scope": "仅限本命盘十一宫主（Labh's Lord）落十宫（Karm Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "十一宫主（Labh's Lord）落十宫（Karm Bhava）时，受国王尊崇、有德、笃守自己的信仰，聪慧、诚实、能约束自己的感官。",
+        "produced_fact_keys": [
+          "十一宫主落十宫的受尊崇笃信与自我约束判定"
+        ],
+        "required_fact_keys": [
+          "十一宫主（Labh's Lord）是否落十宫（Karm）"
+        ],
+        "condition_logic": {
+          "fact_key": "十一宫主（Labh's Lord）是否落十宫（Karm）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Labh’s Lord is in Karm Bhava",
+              "claim": "十一宫主（Labh's Lord）落十宫（Karm Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "honoured by the king, be virtuous, attached to his religion",
+              "claim": "受国王尊崇、有德、笃守自己的信仰"
+            },
+            {
+              "quote": "intelligent, truthful and will subdue his senses",
+              "claim": "聪慧、诚实、能约束自己的感官"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v130",
+            "quote": "If Labh’s Lord is in Karm Bhava, the native will be honoured by the king, be virtuous, attached to his religion, intelligent, truthful and will subdue his senses.",
+            "pdf_pages": [
+              49
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十一宫主（Labh's Lord）是否落十宫（Karm）。",
+        "stop_fact_keys": [
+          "十一宫主（Labh's Lord）是否落十宫（Karm）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十一宫主落十宫，不得套用到十一宫主落其他宫位。",
+          "不得把「笃守自己的信仰」写成某个具体宗教或门派。",
+          "不得把「受国王尊崇」换算成今天的某个具体职衔。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b5e3091fade7e1fa2894d047e8b8dd8063729bd2451cdfc67eaff05ef2097b1b"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v131-labh-lord-in-labh.step-001",
+      "method": {
+        "method": "ch24-v131-labh-lord-in-labh",
+        "title": "十一宫主落十一宫：所办之事有进益与学识安乐日增",
+        "target_house": 11,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我做的事情能不能有收成",
+          "我的学识和心境会怎么走"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Labh’s Lord is in Labh Bhava, the native will gain in all his undertakings, while his learning and happiness will be on the increase day by day.",
+            "十一宫主落十一宫 所办之事有进益与学识安乐日增"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Labh Bhava. All articles, son’s wife, income, prosperity, quadrupeds etc. are to be understood from Labh Bhava.",
+            "十一宫主落十一宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Labh’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v131-labh-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Labh’s Lord is in Labh Bhava"
+            },
+            {
+              "step_id": "ch24-v131-labh-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "gain in all his undertakings"
+            },
+            {
+              "step_id": "ch24-v131-labh-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "his learning and happiness will be on the increase day by day"
+            },
+            {
+              "step_id": "ch24-v131-labh-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Labh’s Lord is in Labh Bhava gain in all his undertakings"
+            },
+            {
+              "step_id": "ch24-v131-labh-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "11th lord is in 11th house"
+            },
+            {
+              "step_id": "ch24-v131-labh-lord-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "11th lord is in 11th house gain in all his undertakings"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十一宫主是否落十一宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v131-labh-lord-in-labh.step-001",
+        "action": "核对十一宫主（Labh's Lord）是否落十一宫（Labh Bhava），据此判断所办之事有进益与学识安乐日增。",
+        "applicability_scope": "仅限本命盘十一宫主（Labh's Lord）落十一宫（Labh Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "十一宫主（Labh's Lord）落十一宫（Labh Bhava）时，所办的各样事都有进益，他的学识与安乐日日增长。",
+        "produced_fact_keys": [
+          "十一宫主落十一宫的所办之事有进益与学识安乐日增判定"
+        ],
+        "required_fact_keys": [
+          "十一宫主（Labh's Lord）是否落十一宫（Labh）"
+        ],
+        "condition_logic": {
+          "fact_key": "十一宫主（Labh's Lord）是否落十一宫（Labh）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Labh’s Lord is in Labh Bhava",
+              "claim": "十一宫主（Labh's Lord）落十一宫（Labh Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "gain in all his undertakings",
+              "claim": "所办的各样事都有进益"
+            },
+            {
+              "quote": "his learning and happiness will be on the increase day by day",
+              "claim": "他的学识与安乐日日增长"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v131",
+            "quote": "If Labh’s Lord is in Labh Bhava, the native will gain in all his undertakings, while his learning and happiness will be on the increase day by day.",
+            "pdf_pages": [
+              49
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十一宫主（Labh's Lord）是否落十一宫（Labh）。",
+        "stop_fact_keys": [
+          "十一宫主（Labh's Lord）是否落十一宫（Labh）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十一宫主落十一宫，不得套用到十一宫主落其他宫位。",
+          "不得把「日日增长」换算成具体年份或数额。",
+          "不得据此推断学业方向或行业。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "392ba8d0d3eb52ee7cb5b90b74aa41edaa61a663e6ca8077d64552cdb688fcc8"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v132-labh-lord-in-vyaya.step-001",
+      "method": {
+        "method": "ch24-v132-labh-lord-in-vyaya",
+        "title": "十一宫主落十二宫：依托善行与多妻交游",
+        "target_house": 11,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的感情会不会有好几段",
+          "我都跟什么样的人来往"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Labh’s Lord is in Vyaya Bhava, the native will always depend on good deeds, be sensuous, will have many wives and will befriend barbarians.",
+            "十一宫主落十二宫 依托善行与多妻交游"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Labh Bhava. All articles, son’s wife, income, prosperity, quadrupeds etc. are to be understood from Labh Bhava.",
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)",
+            "十一宫主落十二宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Labh’s Lord in Various Bhavas",
+            "Effects of Vyaya’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v132-labh-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Labh’s Lord is in Vyaya Bhava"
+            },
+            {
+              "step_id": "ch24-v132-labh-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "always depend on good deeds"
+            },
+            {
+              "step_id": "ch24-v132-labh-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be sensuous"
+            },
+            {
+              "step_id": "ch24-v132-labh-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will have many wives"
+            },
+            {
+              "step_id": "ch24-v132-labh-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will befriend barbarians"
+            },
+            {
+              "step_id": "ch24-v132-labh-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Labh’s Lord is in Vyaya Bhava always depend on good deeds"
+            },
+            {
+              "step_id": "ch24-v132-labh-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "11th lord is in 12th house"
+            },
+            {
+              "step_id": "ch24-v132-labh-lord-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "11th lord is in 12th house always depend on good deeds"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十一宫主是否落十二宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v132-labh-lord-in-vyaya.step-001",
+        "action": "核对十一宫主（Labh's Lord）是否落十二宫（Vyaya Bhava），据此判断依托善行与多妻交游。",
+        "applicability_scope": "仅限本命盘十一宫主（Labh's Lord）落十二宫（Vyaya Bhava）一条；原文未给时间限定。原文以「wives」立说，属男命框架。",
+        "minimum_supported_claim": "十一宫主（Labh's Lord）落十二宫（Vyaya Bhava）时，常依托善行，耽于情欲，会有多位妻子，与化外之人结交。",
+        "produced_fact_keys": [
+          "十一宫主落十二宫的依托善行与多妻交游判定"
+        ],
+        "required_fact_keys": [
+          "十一宫主（Labh's Lord）是否落十二宫（Vyaya）"
+        ],
+        "condition_logic": {
+          "fact_key": "十一宫主（Labh's Lord）是否落十二宫（Vyaya）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Labh’s Lord is in Vyaya Bhava",
+              "claim": "十一宫主（Labh's Lord）落十二宫（Vyaya Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "always depend on good deeds",
+              "claim": "常依托善行"
+            },
+            {
+              "quote": "be sensuous",
+              "claim": "耽于情欲"
+            },
+            {
+              "quote": "will have many wives",
+              "claim": "会有多位妻子"
+            },
+            {
+              "quote": "will befriend barbarians",
+              "claim": "与化外之人结交"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v132",
+            "quote": "If Labh’s Lord is in Vyaya Bhava, the native will always depend on good deeds, be sensuous, will have many wives and will befriend barbarians.",
+            "pdf_pages": [
+              49
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十一宫主（Labh's Lord）是否落十二宫（Vyaya）。",
+        "stop_fact_keys": [
+          "十一宫主（Labh's Lord）是否落十二宫（Vyaya）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十一宫主落十二宫，不得套用到十一宫主落其他宫位。",
+          "不得把「多位妻子」换算成具体人数或婚姻次数的时间点。",
+          "不得给「化外之人」补上族群、国别或褒贬。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "8437428a0ddc4803bce115f0bea559d28074fadded268ce78ed6eee7a7da8c79"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v133-vyaya-lord-in-tanu.step-001",
+      "method": {
+        "method": "ch24-v133-vyaya-lord-in-tanu",
+        "title": "十二宫主落一宫：挥霍体弱与痰疾无财",
+        "target_house": 12,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我为什么存不住钱",
+          "我身体底子怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Vyaya’s Lord is in Tanu Bhava, the native will be a spendthrift, be weak in constitution, will suffer from phlegmatic disorders and be devoid of wealth and learning.",
+            "十二宫主落一宫 挥霍体弱与痰疾无财"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+            "Indications of Tanu Bhava. Maharishi Parashar replies. Physique, appearance, intellect (or the organ of intelligence, i.e. brain), complexion of the body, vigour, weakness, happiness, grief and innate nature are all to be guessed through the ascending Rāśi.",
+            "十二宫主落一宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Vyaya’s Lord in Various Bhavas",
+            "Effects of Lagn’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v133-vyaya-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Vyaya’s Lord is in Tanu Bhava"
+            },
+            {
+              "step_id": "ch24-v133-vyaya-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be a spendthrift"
+            },
+            {
+              "step_id": "ch24-v133-vyaya-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be weak in constitution"
+            },
+            {
+              "step_id": "ch24-v133-vyaya-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will suffer from phlegmatic disorders"
+            },
+            {
+              "step_id": "ch24-v133-vyaya-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be devoid of wealth and learning"
+            },
+            {
+              "step_id": "ch24-v133-vyaya-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Vyaya’s Lord is in Tanu Bhava be a spendthrift"
+            },
+            {
+              "step_id": "ch24-v133-vyaya-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "12th lord is in 1st house"
+            },
+            {
+              "step_id": "ch24-v133-vyaya-lord-in-tanu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "12th lord is in 1st house be a spendthrift"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十二宫主是否落一宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v133-vyaya-lord-in-tanu.step-001",
+        "action": "核对十二宫主（Vyaya's Lord）是否落一宫（Tanu Bhava），据此判断挥霍体弱与痰疾无财。",
+        "applicability_scope": "仅限本命盘十二宫主（Vyaya's Lord）落一宫（Tanu Bhava）一条；原文未给时间限定。本段原文在同偈句首自标「Effects of Vyaya’s Lord in Various Bhavas (up to Sloka 144)」，该标题不并入结论。",
+        "minimum_supported_claim": "十二宫主（Vyaya's Lord）落一宫（Tanu Bhava）时，挥霍无度，体质虚弱，患痰性疾病，没有财富与学识。",
+        "produced_fact_keys": [
+          "十二宫主落一宫的挥霍体弱与痰疾无财判定"
+        ],
+        "required_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否落一宫（Tanu）"
+        ],
+        "condition_logic": {
+          "fact_key": "十二宫主（Vyaya's Lord）是否落一宫（Tanu）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Vyaya’s Lord is in Tanu Bhava",
+              "claim": "十二宫主（Vyaya's Lord）落一宫（Tanu Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "be a spendthrift",
+              "claim": "挥霍无度"
+            },
+            {
+              "quote": "be weak in constitution",
+              "claim": "体质虚弱"
+            },
+            {
+              "quote": "will suffer from phlegmatic disorders",
+              "claim": "患痰性疾病"
+            },
+            {
+              "quote": "be devoid of wealth and learning",
+              "claim": "没有财富与学识"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v133",
+            "quote": "If Vyaya’s Lord is in Tanu Bhava, the native will be a spendthrift, be weak in constitution, will suffer from phlegmatic disorders and be devoid of wealth and learning.",
+            "pdf_pages": [
+              49
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十二宫主（Vyaya's Lord）是否落一宫（Tanu）。",
+        "stop_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否落一宫（Tanu）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十二宫主落一宫，不得套用到十二宫主落其他宫位。",
+          "不得把「痰性疾病」换算成某个现代病名或器官。",
+          "不得把「没有财富与学识」写成贫困线或学历。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "5d2bd4732bba6b7784fa943454002af1cf05731177e21ce522ed7f05e5bb94e5"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v134-vyaya-lord-in-dhan.step-001",
+      "method": {
+        "method": "ch24-v134-vyaya-lord-in-dhan",
+        "title": "十二宫主落二宫：不吉花费与虔信和悦",
+        "target_house": 12,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的钱都花在什么上面",
+          "别人觉得我说话怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Vyaya’s Lord is in Dhan Bhava, the native will always spend on inauspicious deeds, be religious, will speak sweetly and will be endowed with virtues and happiness.",
+            "十二宫主落二宫 不吉花费与虔信和悦"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+            "Indications of Dhan Bhava. Wealth, grains (food etc.), family, death, enemies, metals, precious stones etc. are to be understood through Dhan Bhava.",
+            "十二宫主落二宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Vyaya’s Lord in Various Bhavas",
+            "Effects of Dhan’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v134-vyaya-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Vyaya’s Lord is in Dhan Bhava"
+            },
+            {
+              "step_id": "ch24-v134-vyaya-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "always spend on inauspicious deeds"
+            },
+            {
+              "step_id": "ch24-v134-vyaya-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be religious, will speak sweetly"
+            },
+            {
+              "step_id": "ch24-v134-vyaya-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be endowed with virtues and happiness"
+            },
+            {
+              "step_id": "ch24-v134-vyaya-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Vyaya’s Lord is in Dhan Bhava always spend on inauspicious deeds"
+            },
+            {
+              "step_id": "ch24-v134-vyaya-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "12th lord is in 2nd house"
+            },
+            {
+              "step_id": "ch24-v134-vyaya-lord-in-dhan.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "12th lord is in 2nd house always spend on inauspicious deeds"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十二宫主是否落二宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v134-vyaya-lord-in-dhan.step-001",
+        "action": "核对十二宫主（Vyaya's Lord）是否落二宫（Dhan Bhava），据此判断不吉花费与虔信和悦。",
+        "applicability_scope": "仅限本命盘十二宫主（Vyaya's Lord）落二宫（Dhan Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "十二宫主（Vyaya's Lord）落二宫（Dhan Bhava）时，常在不吉之事上花费，虔信、言语和悦，有德行与安乐。",
+        "produced_fact_keys": [
+          "十二宫主落二宫的不吉花费与虔信和悦判定"
+        ],
+        "required_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否落二宫（Dhan）"
+        ],
+        "condition_logic": {
+          "fact_key": "十二宫主（Vyaya's Lord）是否落二宫（Dhan）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Vyaya’s Lord is in Dhan Bhava",
+              "claim": "十二宫主（Vyaya's Lord）落二宫（Dhan Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "always spend on inauspicious deeds",
+              "claim": "常在不吉之事上花费"
+            },
+            {
+              "quote": "be religious, will speak sweetly",
+              "claim": "虔信、言语和悦"
+            },
+            {
+              "quote": "will be endowed with virtues and happiness",
+              "claim": "有德行与安乐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v134",
+            "quote": "If Vyaya’s Lord is in Dhan Bhava, the native will always spend on inauspicious deeds, be religious, will speak sweetly and will be endowed with virtues and happiness.",
+            "pdf_pages": [
+              49
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十二宫主（Vyaya's Lord）是否落二宫（Dhan）。",
+        "stop_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否落二宫（Dhan）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十二宫主落二宫，不得套用到十二宫主落其他宫位。",
+          "不得把「不吉之事」补成具体项目或恶行。",
+          "不得据此推断花费的金额或时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "13a7236975df0c1b2526b4d7f5c28fc472d101cd191fc6186e3d83af6fb367f0"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v135-vyaya-lord-in-sahaj.step-001",
+      "method": {
+        "method": "ch24-v135-vyaya-lord-in-sahaj",
+        "title": "十二宫主落三宫：兄弟缘薄与只顾自身",
+        "target_house": 12,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和兄弟之间为什么处不来",
+          "别人说我自私是怎么回事"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Vyaya’s Lord is in Sahaj Bhava, the native will be devoid of fraternal bliss, will hate others and will promote self-nourishment.",
+            "十二宫主落三宫 兄弟缘薄与只顾自身"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+            "Indications of Sahaj Bhava. From Sahaj Bhava know of the following: valour, servants (attending etc.), brothers, sisters etc., initiatory instructions (Upadesh), journey and parent’s death.",
+            "十二宫主落三宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Vyaya’s Lord in Various Bhavas",
+            "Effects of Sahaj’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v135-vyaya-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Vyaya’s Lord is in Sahaj Bhava"
+            },
+            {
+              "step_id": "ch24-v135-vyaya-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "devoid of fraternal bliss"
+            },
+            {
+              "step_id": "ch24-v135-vyaya-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will hate others"
+            },
+            {
+              "step_id": "ch24-v135-vyaya-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will promote self-nourishment"
+            },
+            {
+              "step_id": "ch24-v135-vyaya-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Vyaya’s Lord is in Sahaj Bhava devoid of fraternal bliss"
+            },
+            {
+              "step_id": "ch24-v135-vyaya-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "12th lord is in 3rd house"
+            },
+            {
+              "step_id": "ch24-v135-vyaya-lord-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "12th lord is in 3rd house devoid of fraternal bliss"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十二宫主是否落三宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v135-vyaya-lord-in-sahaj.step-001",
+        "action": "核对十二宫主（Vyaya's Lord）是否落三宫（Sahaj Bhava），据此判断兄弟缘薄与只顾自身。",
+        "applicability_scope": "仅限本命盘十二宫主（Vyaya's Lord）落三宫（Sahaj Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "十二宫主（Vyaya's Lord）落三宫（Sahaj Bhava）时，没有兄弟之乐，憎恨他人，只顾自己的养身。",
+        "produced_fact_keys": [
+          "十二宫主落三宫的兄弟缘薄与只顾自身判定"
+        ],
+        "required_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否落三宫（Sahaj）"
+        ],
+        "condition_logic": {
+          "fact_key": "十二宫主（Vyaya's Lord）是否落三宫（Sahaj）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Vyaya’s Lord is in Sahaj Bhava",
+              "claim": "十二宫主（Vyaya's Lord）落三宫（Sahaj Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "devoid of fraternal bliss",
+              "claim": "没有兄弟之乐"
+            },
+            {
+              "quote": "will hate others",
+              "claim": "憎恨他人"
+            },
+            {
+              "quote": "will promote self-nourishment",
+              "claim": "只顾自己的养身"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v135",
+            "quote": "If Vyaya’s Lord is in Sahaj Bhava, the native will be devoid of fraternal bliss, will hate others and will promote self-nourishment.",
+            "pdf_pages": [
+              49
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十二宫主（Vyaya's Lord）是否落三宫（Sahaj）。",
+        "stop_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否落三宫（Sahaj）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十二宫主落三宫，不得套用到十二宫主落其他宫位。",
+          "不得把「没有兄弟之乐」写成没有兄弟或兄弟去世。",
+          "不得把「憎恨他人」写成具体冲突或犯行。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "a790c3dcfcfe09c115bebba846d4617083ae9381cfec4b6d9b9b3a6e72f10d53"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v136-vyaya-lord-in-bandhu.step-001",
+      "method": {
+        "method": "ch24-v136-vyaya-lord-in-bandhu",
+        "title": "十二宫主落四宫：母缘薄与田宅车乘损失",
+        "target_house": 12,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我和母亲之间怎么样",
+          "我房产上会不会一直亏"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Vyaya’s Lord is in Bandhu Bhava, the native will be devoid of maternal happiness and will day by day accrue losses with respect to lands, conveyances and houses.",
+            "十二宫主落四宫 母缘薄与田宅车乘损失"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+            "Indications of Bandhu Bhava. Conveyances, relatives, mother, happiness, treasure, lands and buildings are to be consulted through Bandhu Bhava.",
+            "十二宫主落四宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Vyaya’s Lord in Various Bhavas",
+            "Effects of Bandhu’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v136-vyaya-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Vyaya’s Lord is in Bandhu Bhava"
+            },
+            {
+              "step_id": "ch24-v136-vyaya-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "devoid of maternal happiness"
+            },
+            {
+              "step_id": "ch24-v136-vyaya-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will day by day accrue losses with respect to lands, conveyances and houses"
+            },
+            {
+              "step_id": "ch24-v136-vyaya-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Vyaya’s Lord is in Bandhu Bhava devoid of maternal happiness"
+            },
+            {
+              "step_id": "ch24-v136-vyaya-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "12th lord is in 4th house"
+            },
+            {
+              "step_id": "ch24-v136-vyaya-lord-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "12th lord is in 4th house devoid of maternal happiness"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十二宫主是否落四宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v136-vyaya-lord-in-bandhu.step-001",
+        "action": "核对十二宫主（Vyaya's Lord）是否落四宫（Bandhu Bhava），据此判断母缘薄与田宅车乘损失。",
+        "applicability_scope": "仅限本命盘十二宫主（Vyaya's Lord）落四宫（Bandhu Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "十二宫主（Vyaya's Lord）落四宫（Bandhu Bhava）时，没有母亲一方的安乐，在田地、车乘与房屋上日日累积损失。",
+        "produced_fact_keys": [
+          "十二宫主落四宫的母缘薄与田宅车乘损失判定"
+        ],
+        "required_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否落四宫（Bandhu）"
+        ],
+        "condition_logic": {
+          "fact_key": "十二宫主（Vyaya's Lord）是否落四宫（Bandhu）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Vyaya’s Lord is in Bandhu Bhava",
+              "claim": "十二宫主（Vyaya's Lord）落四宫（Bandhu Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "devoid of maternal happiness",
+              "claim": "没有母亲一方的安乐"
+            },
+            {
+              "quote": "will day by day accrue losses with respect to lands, conveyances and houses",
+              "claim": "在田地、车乘与房屋上日日累积损失"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v136",
+            "quote": "If Vyaya’s Lord is in Bandhu Bhava, the native will be devoid of maternal happiness and will day by day accrue losses with respect to lands, conveyances and houses.",
+            "pdf_pages": [
+              49
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十二宫主（Vyaya's Lord）是否落四宫（Bandhu）。",
+        "stop_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否落四宫（Bandhu）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十二宫主落四宫，不得套用到十二宫主落其他宫位。",
+          "不得把「没有母亲一方的安乐」写成母亲去世。",
+          "不得把「日日累积损失」换算成具体金额或年份。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "70472c3bd0f3e5543bdd694236a2dee4d98690a6be2674564eb01170264a2e45"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v137-vyaya-lord-in-putr.step-001",
+      "method": {
+        "method": "ch24-v137-vyaya-lord-in-putr",
+        "title": "十二宫主落五宫：子嗣学识欠缺与求子花费",
+        "target_house": 12,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会为求子奔走",
+          "我子女缘和学业怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Vyaya’s Lord is in Putr Bhava, the native will be bereft of sons and learning. He will spend, as well as visit shrines in order to beget a son.",
+            "十二宫主落五宫 子嗣学识欠缺与求子花费"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+            "Indications of Putr Bhava. The learned should deduce from Putr Bhava amulets, sacred spells, learning, knowledge, sons, royalty (or authority), fall of position etc.",
+            "十二宫主落五宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Vyaya’s Lord in Various Bhavas",
+            "Effects of Putr’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v137-vyaya-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Vyaya’s Lord is in Putr Bhava"
+            },
+            {
+              "step_id": "ch24-v137-vyaya-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "bereft of sons and learning"
+            },
+            {
+              "step_id": "ch24-v137-vyaya-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "He will spend, as well as visit shrines in order to beget a son"
+            },
+            {
+              "step_id": "ch24-v137-vyaya-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Vyaya’s Lord is in Putr Bhava bereft of sons and learning"
+            },
+            {
+              "step_id": "ch24-v137-vyaya-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "12th lord is in 5th house"
+            },
+            {
+              "step_id": "ch24-v137-vyaya-lord-in-putr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "12th lord is in 5th house bereft of sons and learning"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十二宫主是否落五宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v137-vyaya-lord-in-putr.step-001",
+        "action": "核对十二宫主（Vyaya's Lord）是否落五宫（Putr Bhava），据此判断子嗣学识欠缺与求子花费。",
+        "applicability_scope": "仅限本命盘十二宫主（Vyaya's Lord）落五宫（Putr Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "十二宫主（Vyaya's Lord）落五宫（Putr Bhava）时，没有子嗣与学识，他会为求子而花费并去朝拜神庙。",
+        "produced_fact_keys": [
+          "十二宫主落五宫的子嗣学识欠缺与求子花费判定"
+        ],
+        "required_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否落五宫（Putr）"
+        ],
+        "condition_logic": {
+          "fact_key": "十二宫主（Vyaya's Lord）是否落五宫（Putr）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Vyaya’s Lord is in Putr Bhava",
+              "claim": "十二宫主（Vyaya's Lord）落五宫（Putr Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "bereft of sons and learning",
+              "claim": "没有子嗣与学识"
+            },
+            {
+              "quote": "He will spend, as well as visit shrines in order to beget a son",
+              "claim": "他会为求子而花费并去朝拜神庙"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v137",
+            "quote": "If Vyaya’s Lord is in Putr Bhava, the native will be bereft of sons and learning. He will spend, as well as visit shrines in order to beget a son.",
+            "pdf_pages": [
+              49
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十二宫主（Vyaya's Lord）是否落五宫（Putr）。",
+        "stop_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否落五宫（Putr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十二宫主落五宫，不得套用到十二宫主落其他宫位。",
+          "不得把「没有子嗣」写成子女去世或绝后。",
+          "不得据此推断求子的结果、方式或时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "4f88594ff956a5364d117ec146b009995daebfb1feeea36ad0bd558b1ab03f52"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v138-vyaya-lord-in-ari.step-001",
+      "method": {
+        "method": "ch24-v138-vyaya-lord-in-ari",
+        "title": "十二宫主落六宫：与自己人结怨与品行之失",
+        "target_house": 12,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我为什么老跟身边人闹翻",
+          "我脾气上要注意什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Vyaya’s Lord is in Ari Bhava, the native will incur enmity with his own men, be given to anger, be sinful, miserable and will go to others’ wives.",
+            "十二宫主落六宫 与自己人结怨与品行之失"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+            "Indications of Ari Bhava. Maternal uncle, doubts about death, enemies, ulcers, stepmother etc. are to be estimated from Ari Bhava.",
+            "十二宫主落六宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Vyaya’s Lord in Various Bhavas",
+            "Effects of Ari’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v138-vyaya-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Vyaya’s Lord is in Ari Bhava"
+            },
+            {
+              "step_id": "ch24-v138-vyaya-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "incur enmity with his own men"
+            },
+            {
+              "step_id": "ch24-v138-vyaya-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be given to anger, be sinful, miserable"
+            },
+            {
+              "step_id": "ch24-v138-vyaya-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will go to others’ wives"
+            },
+            {
+              "step_id": "ch24-v138-vyaya-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Vyaya’s Lord is in Ari Bhava incur enmity with his own men"
+            },
+            {
+              "step_id": "ch24-v138-vyaya-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "12th lord is in 6th house"
+            },
+            {
+              "step_id": "ch24-v138-vyaya-lord-in-ari.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "12th lord is in 6th house incur enmity with his own men"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十二宫主是否落六宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v138-vyaya-lord-in-ari.step-001",
+        "action": "核对十二宫主（Vyaya's Lord）是否落六宫（Ari Bhava），据此判断与自己人结怨与品行之失。",
+        "applicability_scope": "仅限本命盘十二宫主（Vyaya's Lord）落六宫（Ari Bhava）一条；原文未给时间限定。原文以「others’ wives」立说，属男命框架。",
+        "minimum_supported_claim": "十二宫主（Vyaya's Lord）落六宫（Ari Bhava）时，与自己人结怨，易怒、有罪业、困苦，会到他人的妻子那里去。",
+        "produced_fact_keys": [
+          "十二宫主落六宫的与自己人结怨与品行之失判定"
+        ],
+        "required_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否落六宫（Ari）"
+        ],
+        "condition_logic": {
+          "fact_key": "十二宫主（Vyaya's Lord）是否落六宫（Ari）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Vyaya’s Lord is in Ari Bhava",
+              "claim": "十二宫主（Vyaya's Lord）落六宫（Ari Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "incur enmity with his own men",
+              "claim": "与自己人结怨"
+            },
+            {
+              "quote": "be given to anger, be sinful, miserable",
+              "claim": "易怒、有罪业、困苦"
+            },
+            {
+              "quote": "will go to others’ wives",
+              "claim": "会到他人的妻子那里去"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v138",
+            "quote": "If Vyaya’s Lord is in Ari Bhava, the native will incur enmity with his own men, be given to anger, be sinful, miserable and will go to others’ wives.",
+            "pdf_pages": [
+              49
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十二宫主（Vyaya's Lord）是否落六宫（Ari）。",
+        "stop_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否落六宫（Ari）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十二宫主落六宫，不得套用到十二宫主落其他宫位。",
+          "不得把「与自己人结怨」指实为某位亲属或同事。",
+          "不得据此推断具体事件、时间或后果。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b9dffdb7b57d83523f9300afffb66bd79fd38554580a5396c0eb94cbd271fd9f"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v139-vyaya-lord-in-yuvati.step-001",
+      "method": {
+        "method": "ch24-v139-vyaya-lord-in-yuvati",
+        "title": "十二宫主落七宫：因妻破费与夫妻缘薄",
+        "target_house": 12,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我婚姻里为什么总在花钱",
+          "我们夫妻之间的感情怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Vyaya’s Lord is in Yuvati Bhava, the native will incur expenditure on account of his wife, will not enjoy conjugal bliss and will be bereft of learning and strength.",
+            "十二宫主落七宫 因妻破费与夫妻缘薄"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+            "Indications of Yuvati Bhava. Wife, travel, trade, loss of sight, death etc. be known from Yuvati Bhava.",
+            "Now be kind enough to throw light on Stri Jatak (female horoscopy)",
+            "十二宫主落七宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Vyaya’s Lord in Various Bhavas",
+            "Effects of Yuvati’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v139-vyaya-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Vyaya’s Lord is in Yuvati Bhava"
+            },
+            {
+              "step_id": "ch24-v139-vyaya-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "incur expenditure on account of his wife"
+            },
+            {
+              "step_id": "ch24-v139-vyaya-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will not enjoy conjugal bliss"
+            },
+            {
+              "step_id": "ch24-v139-vyaya-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be bereft of learning and strength"
+            },
+            {
+              "step_id": "ch24-v139-vyaya-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Vyaya’s Lord is in Yuvati Bhava incur expenditure on account of his wife"
+            },
+            {
+              "step_id": "ch24-v139-vyaya-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "12th lord is in 7th house"
+            },
+            {
+              "step_id": "ch24-v139-vyaya-lord-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "12th lord is in 7th house incur expenditure on account of his wife"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十二宫主是否落七宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v139-vyaya-lord-in-yuvati.step-001",
+        "action": "核对十二宫主（Vyaya's Lord）是否落七宫（Yuvati Bhava），据此判断因妻破费与夫妻缘薄。",
+        "applicability_scope": "仅限本命盘十二宫主（Vyaya's Lord）落七宫（Yuvati Bhava）一条；原文未给时间限定。原文此偈的偈号印作带括号的「(139)」；原文以「his wife」立说，属男命框架。",
+        "minimum_supported_claim": "十二宫主（Vyaya's Lord）落七宫（Yuvati Bhava）时，因妻子而破费，没有夫妻之乐，没有学识与力量。",
+        "produced_fact_keys": [
+          "十二宫主落七宫的因妻破费与夫妻缘薄判定"
+        ],
+        "required_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否落七宫（Yuvati）"
+        ],
+        "condition_logic": {
+          "fact_key": "十二宫主（Vyaya's Lord）是否落七宫（Yuvati）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Vyaya’s Lord is in Yuvati Bhava",
+              "claim": "十二宫主（Vyaya's Lord）落七宫（Yuvati Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "incur expenditure on account of his wife",
+              "claim": "因妻子而破费"
+            },
+            {
+              "quote": "will not enjoy conjugal bliss",
+              "claim": "没有夫妻之乐"
+            },
+            {
+              "quote": "will be bereft of learning and strength",
+              "claim": "没有学识与力量"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v139",
+            "quote": "If Vyaya’s Lord is in Yuvati Bhava, the native will incur expenditure on account of his wife, will not enjoy conjugal bliss and will be bereft of learning and strength.",
+            "pdf_pages": [
+              49
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十二宫主（Vyaya's Lord）是否落七宫（Yuvati）。",
+        "stop_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否落七宫（Yuvati）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十二宫主落七宫，不得套用到十二宫主落其他宫位。",
+          "不得把「没有夫妻之乐」写成离婚、分居或配偶去世。",
+          "不得据此推断破费的金额或年份。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "d1e92eb8a63e07cc1d81819fb3cdc9bbacaa66bc8c9b31ceff6c5388b9545386"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch24-v140-vyaya-lord-in-randhr.step-001",
+      "method": {
+        "method": "ch24-v140-vyaya-lord-in-randhr",
+        "title": "十二宫主落八宫：常有进益与中等寿命",
+        "target_house": 12,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的进项稳不稳",
+          "我的寿数大概是什么水平"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Vyaya’s Lord is in Randhr Bhava, the native will always gain, will speak affably, will enjoy a medium span of life and be endowed with all good qualities.",
+            "十二宫主落八宫 常有进益与中等寿命"
+          ],
+          "counter_queries": [
+            "In the case of a Grah, owning two Bhavas, the results are to be deducted based on its two lordships. If contrary results are thus indicated, the results will be nullified",
+            "宫主效果被抵消或按力量打折的原文"
+          ],
+          "boundary_queries": [
+            "The Grah will yield full, half, or a quarter of the effects according to its strength being full, medium and negligible, respectively",
+            "Indications of Vyaya Bhava. From Vyaya Bhava, one can know about expenses, history of enemies, one’s own death etc.",
+            "Indications of Randhr Bhava. Randhr Bhava indicates longevity, battle, enemies, forts, wealth of the dead and things, that have happened and are to happen (in the past and future births).",
+            "十二宫主落八宫这条断语的适用限制"
+          ],
+          "method_queries": [
+            "Effects of Vyaya’s Lord in Various Bhavas",
+            "Effects of Randhr’s Lord in Various Bhavas",
+            "判断宫主落宫效果应查本章哪一段"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch24-v140-vyaya-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Vyaya’s Lord is in Randhr Bhava"
+            },
+            {
+              "step_id": "ch24-v140-vyaya-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will always gain"
+            },
+            {
+              "step_id": "ch24-v140-vyaya-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will speak affably"
+            },
+            {
+              "step_id": "ch24-v140-vyaya-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will enjoy a medium span of life"
+            },
+            {
+              "step_id": "ch24-v140-vyaya-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be endowed with all good qualities"
+            },
+            {
+              "step_id": "ch24-v140-vyaya-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Vyaya’s Lord is in Randhr Bhava will always gain"
+            },
+            {
+              "step_id": "ch24-v140-vyaya-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "12th lord is in 8th house"
+            },
+            {
+              "step_id": "ch24-v140-vyaya-lord-in-randhr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "12th lord is in 8th house will always gain"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少十二宫主是否落八宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch24-v140-vyaya-lord-in-randhr.step-001",
+        "action": "核对十二宫主（Vyaya's Lord）是否落八宫（Randhr Bhava），据此判断常有进益与中等寿命。",
+        "applicability_scope": "仅限本命盘十二宫主（Vyaya's Lord）落八宫（Randhr Bhava）一条；原文未给时间限定。",
+        "minimum_supported_claim": "十二宫主（Vyaya's Lord）落八宫（Randhr Bhava）时，常有进益，言语亲和，寿命中等，具备各样好品质。",
+        "produced_fact_keys": [
+          "十二宫主落八宫的常有进益与中等寿命判定"
+        ],
+        "required_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否落八宫（Randhr）"
+        ],
+        "condition_logic": {
+          "fact_key": "十二宫主（Vyaya's Lord）是否落八宫（Randhr）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Vyaya’s Lord is in Randhr Bhava",
+              "claim": "十二宫主（Vyaya's Lord）落八宫（Randhr Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will always gain",
+              "claim": "常有进益"
+            },
+            {
+              "quote": "will speak affably",
+              "claim": "言语亲和"
+            },
+            {
+              "quote": "will enjoy a medium span of life",
+              "claim": "寿命中等"
+            },
+            {
+              "quote": "be endowed with all good qualities",
+              "claim": "具备各样好品质"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch24:v140",
+            "quote": "If Vyaya’s Lord is in Randhr Bhava, the native will always gain, will speak affably, will enjoy a medium span of life and be endowed with all good qualities.",
+            "pdf_pages": [
+              49
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：十二宫主（Vyaya's Lord）是否落八宫（Randhr）。",
+        "stop_fact_keys": [
+          "十二宫主（Vyaya's Lord）是否落八宫（Randhr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "本条只对应十二宫主落八宫，不得套用到十二宫主落其他宫位。",
+          "不得把「寿命中等」换算成具体岁数或寿限区间。",
+          "不得把「常有进益」写成具体收入或来源。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "69654365cc55712dd55bf259159112f6abc5e15bddd7fc146c5d9718930ae0eb"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch24:v130": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v130",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "130.",
+      "content_role": "verse",
+      "exact_text": "130. If Labh’s Lord is in Karm Bhava, the native will be honoured by the king, be virtuous, attached to his religion, intelligent, truthful and will subdue his senses.",
+      "pdf_pages": [
+        49
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 130 · PDF page 49 · bphs-97:santhanam:ch24:v130",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v129",
+      "next_atom_id": "bphs-97:santhanam:ch24:v131",
+      "context_before": "\n129. If Labh’s Lord is in Dharm Bhava, the native will be fortunate, skilful, truthful, honoured by the king and be affluent.\n\n",
+      "context_after": "131. If Labh’s Lord is in Labh Bhava, the native will gain in all his undertakings, while his learning and happiness will be on ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v131": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v131",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "131.",
+      "content_role": "verse",
+      "exact_text": "131. If Labh’s Lord is in Labh Bhava, the native will gain in all his undertakings, while his learning and happiness will be on the increase day by day.",
+      "pdf_pages": [
+        49
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 131 · PDF page 49 · bphs-97:santhanam:ch24:v131",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v130",
+      "next_atom_id": "bphs-97:santhanam:ch24:v132",
+      "context_before": " If Labh’s Lord is in Karm Bhava, the native will be honoured by the king, be virtuous, attached to his religion, intelligent, truthful and will subdue his senses.\n\n",
+      "context_after": "132. If Labh’s Lord is in Vyaya Bhava, the native will always depend on good deeds, be sensuous, will have many wives and will b",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v132": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v132",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "132.",
+      "content_role": "verse",
+      "exact_text": "132. If Labh’s Lord is in Vyaya Bhava, the native will always depend on good deeds, be sensuous, will have many wives and will befriend barbarians.",
+      "pdf_pages": [
+        49
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 132 · PDF page 49 · bphs-97:santhanam:ch24:v132",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v131",
+      "next_atom_id": "bphs-97:santhanam:ch24:v133",
+      "context_before": " If Labh’s Lord is in Labh Bhava, the native will gain in all his undertakings, while his learning and happiness will be on the increase day by day.\n\n",
+      "context_after": "133. Effects of Vyaya’s Lord in Various Bhavas (up to Sloka 144). If Vyaya’s Lord is in Tanu Bhava, the native will be a spendth",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v133": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v133",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "133.",
+      "content_role": "verse",
+      "exact_text": "133. Effects of Vyaya’s Lord in Various Bhavas (up to Sloka 144). If Vyaya’s Lord is in Tanu Bhava, the native will be a spendthrift, be weak in constitution, will suffer from phlegmatic disorders and be devoid of wealth and learning.",
+      "pdf_pages": [
+        49
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 133 · PDF page 49 · bphs-97:santhanam:ch24:v133",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v132",
+      "next_atom_id": "bphs-97:santhanam:ch24:v134",
+      "context_before": " If Labh’s Lord is in Vyaya Bhava, the native will always depend on good deeds, be sensuous, will have many wives and will befriend barbarians.\n\n",
+      "context_after": "134. If Vyaya’s Lord is in Dhan Bhava, the native will always spend on inauspicious deeds, be religious, will speak sweetly and ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v134": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v134",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "134.",
+      "content_role": "verse",
+      "exact_text": "134. If Vyaya’s Lord is in Dhan Bhava, the native will always spend on inauspicious deeds, be religious, will speak sweetly and will be endowed with virtues and happiness.",
+      "pdf_pages": [
+        49
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 134 · PDF page 49 · bphs-97:santhanam:ch24:v134",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v133",
+      "next_atom_id": "bphs-97:santhanam:ch24:v135",
+      "context_before": " If Vyaya’s Lord is in Tanu Bhava, the native will be a spendthrift, be weak in constitution, will suffer from phlegmatic disorders and be devoid of wealth and learning.\n\n",
+      "context_after": "135. If Vyaya’s Lord is in Sahaj Bhava, the native will be devoid of fraternal bliss, will hate others and will promote self-nou",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v135": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v135",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "135.",
+      "content_role": "verse",
+      "exact_text": "135. If Vyaya’s Lord is in Sahaj Bhava, the native will be devoid of fraternal bliss, will hate others and will promote self-nourishment.",
+      "pdf_pages": [
+        49
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 135 · PDF page 49 · bphs-97:santhanam:ch24:v135",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v134",
+      "next_atom_id": "bphs-97:santhanam:ch24:v136",
+      "context_before": " If Vyaya’s Lord is in Dhan Bhava, the native will always spend on inauspicious deeds, be religious, will speak sweetly and will be endowed with virtues and happiness.\n\n",
+      "context_after": "136. If Vyaya’s Lord is in Bandhu Bhava, the native will be devoid of maternal happiness and will day by day accrue losses with ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v136": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v136",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "136.",
+      "content_role": "verse",
+      "exact_text": "136. If Vyaya’s Lord is in Bandhu Bhava, the native will be devoid of maternal happiness and will day by day accrue losses with respect to lands, conveyances and houses.",
+      "pdf_pages": [
+        49
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 136 · PDF page 49 · bphs-97:santhanam:ch24:v136",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v135",
+      "next_atom_id": "bphs-97:santhanam:ch24:v137",
+      "context_before": " If Vyaya’s Lord is in Sahaj Bhava, the native will be devoid of fraternal bliss, will hate others and will promote self-nourishment.\n\n",
+      "context_after": "137. If Vyaya’s Lord is in Putr Bhava, the native will be bereft of sons and learning. He will spend, as well as visit shrines i",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v137": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v137",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "137.",
+      "content_role": "verse",
+      "exact_text": "137. If Vyaya’s Lord is in Putr Bhava, the native will be bereft of sons and learning. He will spend, as well as visit shrines in order to beget a son.",
+      "pdf_pages": [
+        49
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 137 · PDF page 49 · bphs-97:santhanam:ch24:v137",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v136",
+      "next_atom_id": "bphs-97:santhanam:ch24:v138",
+      "context_before": " If Vyaya’s Lord is in Bandhu Bhava, the native will be devoid of maternal happiness and will day by day accrue losses with respect to lands, conveyances and houses.\n\n",
+      "context_after": "138. If Vyaya’s Lord is in Ari Bhava, the native will incur enmity with his own men, be given to anger, be sinful, miserable and",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v138": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v138",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "138.",
+      "content_role": "verse",
+      "exact_text": "138. If Vyaya’s Lord is in Ari Bhava, the native will incur enmity with his own men, be given to anger, be sinful, miserable and will go to others’ wives.",
+      "pdf_pages": [
+        49
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 138 · PDF page 49 · bphs-97:santhanam:ch24:v138",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v137",
+      "next_atom_id": "bphs-97:santhanam:ch24:v139",
+      "context_before": "n Putr Bhava, the native will be bereft of sons and learning. He will spend, as well as visit shrines in order to beget a son.\n\n",
+      "context_after": "(139) If Vyaya’s Lord is in Yuvati Bhava, the native will incur expenditure on account of his wife, will not enjoy conjugal bliss and will be bereft of learning and strength.",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v139": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v139",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "(139)",
+      "content_role": "verse",
+      "exact_text": "(139) If Vyaya’s Lord is in Yuvati Bhava, the native will incur expenditure on account of his wife, will not enjoy conjugal bliss and will be bereft of learning and strength.",
+      "pdf_pages": [
+        49
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka (139) · PDF page 49 · bphs-97:santhanam:ch24:v139",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v138",
+      "next_atom_id": "bphs-97:santhanam:ch24:v140",
+      "context_before": " If Vyaya’s Lord is in Ari Bhava, the native will incur enmity with his own men, be given to anger, be sinful, miserable and will go to others’ wives.\n\n",
+      "context_after": "140. If Vyaya’s Lord is in Randhr Bhava, the native will always gain, will speak affably, will enjoy a medium span of life and b",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch24:v140": {
+      "evidence_atom_id": "bphs-97:santhanam:ch24:v140",
+      "chapter_number": 24,
+      "chapter_title": "Effects of the Bhava Lords",
+      "verse_label": "140.",
+      "content_role": "verse",
+      "exact_text": "140. If Vyaya’s Lord is in Randhr Bhava, the native will always gain, will speak affably, will enjoy a medium span of life and be endowed with all good qualities.",
+      "pdf_pages": [
+        49
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 24 · Sloka 140 · PDF page 49 · bphs-97:santhanam:ch24:v140",
+      "previous_atom_id": "bphs-97:santhanam:ch24:v139",
+      "next_atom_id": "bphs-97:santhanam:ch24:v141",
+      "context_before": "(139) If Vyaya’s Lord is in Yuvati Bhava, the native will incur expenditure on account of his wife, will not enjoy conjugal bliss and will be bereft of learning and strength.\n\n",
+      "context_after": "141. If Vyaya’s Lord is in Dharm Bhava, the native will dishonour his elders, be inimical even to his friends and be always inte",
+      "content_missing": false
+    }
+  }
+}
