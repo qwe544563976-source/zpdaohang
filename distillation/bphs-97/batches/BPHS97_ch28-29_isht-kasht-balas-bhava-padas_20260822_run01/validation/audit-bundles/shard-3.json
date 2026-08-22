@@ -1,0 +1,2133 @@
+{
+  "shard": 3,
+  "step_count": 10,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch29-v16-17-benefic-fair-means.step-001",
+      "method": {
+        "method": "ch29-v16-17-benefic-fair-means",
+        "title": "上升 Pad 起第 12 宫关联吉星：收支经由正当途径",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的钱进出正不正当",
+          "开销是走正路还是歪路"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "The benefic will cause through fair means",
+            "上升 Pad 起第 12 宫吉星 正当途径"
+          ],
+          "counter_queries": [
+            "malefic through unfair means",
+            "凶星关联时的不正当途径"
+          ],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "上升 Pad 取宫本身的例外"
+          ],
+          "method_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics.",
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "哪些行星算吉星"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v16-17-benefic-fair-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the 12th from Lagn Pad receives a Drishti from"
+            },
+            {
+              "step_id": "ch29-v16-17-benefic-fair-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "is yuti with"
+            },
+            {
+              "step_id": "ch29-v16-17-benefic-fair-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "The benefic"
+            },
+            {
+              "step_id": "ch29-v16-17-benefic-fair-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will cause through fair means"
+            },
+            {
+              "step_id": "ch29-v16-17-benefic-fair-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the 12th from Lagn Pad receives a Drishti from will cause through fair means"
+            },
+            {
+              "step_id": "ch29-v16-17-benefic-fair-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "is yuti with will cause through fair means"
+            },
+            {
+              "step_id": "ch29-v16-17-benefic-fair-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "The benefic will cause through fair means"
+            },
+            {
+              "step_id": "ch29-v16-17-benefic-fair-means.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "the 12th from 1st house Pad receives a Drishti from"
+            },
+            {
+              "step_id": "ch29-v16-17-benefic-fair-means.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "the 12th from 1st house Pad receives a Drishti from will cause through fair means"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升 Pad 起第 12 宫与吉星的相照或同宫事实时停止。",
+          "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v16-17-benefic-fair-means.step-001",
+        "action": "看与上升 Pad（Lagn Pad）起第 12 宫相照或同宫的是不是吉星，据此断收支途径。",
+        "applicability_scope": "原文的「will cause」承同偈前句的丰厚进项与大量开销；吉星判准见第 3 章第 11 偈。",
+        "minimum_supported_claim": "上升 Pad（Lagn Pad）起第 12 宫受相照、或与之同宫的是吉星时，前述进项与开销经由正当途径。",
+        "produced_fact_keys": [
+          "上升 Pad 起第 12 宫收支途径的吉星判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）起第 12 宫是否被吉星相照"
+                },
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）起第 12 宫是否与吉星同宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）起第 12 宫是否被吉星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）起第 12 宫是否被吉星相照"
+            },
+            "selection_group": "ch29-v16-17-benefic-fair-means.step-001:benefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）起第 12 宫是否被吉星相照。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）起第 12 宫是否与吉星同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）起第 12 宫是否与吉星同宫"
+            },
+            "selection_group": "ch29-v16-17-benefic-fair-means.step-001:benefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）起第 12 宫是否与吉星同宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "the 12<sup>th</sup> from Lagn Pad receives a Drishti from",
+              "claim": "上升 Pad（Lagn Pad）起第 12 宫受相照"
+            },
+            {
+              "quote": "is yuti with",
+              "claim": "或与之同宫"
+            },
+            {
+              "quote": "The benefic",
+              "claim": "的是吉星"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will cause through fair means",
+              "claim": "前述进项与开销经由正当途径"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v16-17",
+            "quote": "If the 12<sup>th</sup> from Lagn Pad receives a Drishti from, or is yuti with both benefics and malefics, there will be abundant earnings, but plenty of expenses.",
+            "pdf_pages": [
+              62
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v16-17",
+            "quote": "The benefic will cause through fair means, malefic through unfair means and mixed Grahas through both fair and unfair means.",
+            "pdf_pages": [
+              62
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升 Pad（Lagn Pad）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体开销项目或金额。",
+          "不得把正当途径读成收入必然增加。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "90b9d425759c8a65732817c0e9ffdb6fc8c54f6b2ed4f8095db03410a9ce55c8"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v16-17-malefic-unfair-means.step-001",
+      "method": {
+        "method": "ch29-v16-17-malefic-unfair-means",
+        "title": "上升 Pad 起第 12 宫关联凶星：收支经由不正当途径",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的开销会不会走歪路",
+          "凶星管我的收支吗"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "malefic through unfair means",
+            "上升 Pad 起第 12 宫凶星 不正当途径"
+          ],
+          "counter_queries": [
+            "The benefic will cause through fair means",
+            "吉星关联时的正当途径"
+          ],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "上升 Pad 取宫本身的例外"
+          ],
+          "method_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics.",
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "哪些行星算凶星"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v16-17-malefic-unfair-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the 12th from Lagn Pad receives a Drishti from"
+            },
+            {
+              "step_id": "ch29-v16-17-malefic-unfair-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "is yuti with"
+            },
+            {
+              "step_id": "ch29-v16-17-malefic-unfair-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "malefic through unfair means"
+            },
+            {
+              "step_id": "ch29-v16-17-malefic-unfair-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "through unfair means"
+            },
+            {
+              "step_id": "ch29-v16-17-malefic-unfair-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the 12th from Lagn Pad receives a Drishti from through unfair means"
+            },
+            {
+              "step_id": "ch29-v16-17-malefic-unfair-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "is yuti with through unfair means"
+            },
+            {
+              "step_id": "ch29-v16-17-malefic-unfair-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "malefic through unfair means through unfair means"
+            },
+            {
+              "step_id": "ch29-v16-17-malefic-unfair-means.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "the 12th from 1st house Pad receives a Drishti from"
+            },
+            {
+              "step_id": "ch29-v16-17-malefic-unfair-means.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "the 12th from 1st house Pad receives a Drishti from through unfair means"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升 Pad 起第 12 宫与凶星的相照或同宫事实时停止。",
+          "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v16-17-malefic-unfair-means.step-001",
+        "action": "看与上升 Pad（Lagn Pad）起第 12 宫相照或同宫的是不是凶星，据此断收支途径。",
+        "applicability_scope": "原文的「through unfair means」承同偈前句的丰厚进项与大量开销；凶星判准见第 3 章第 11 偈。",
+        "minimum_supported_claim": "上升 Pad（Lagn Pad）起第 12 宫受相照、或与之同宫的是凶星时，前述进项与开销经由不正当途径。",
+        "produced_fact_keys": [
+          "上升 Pad 起第 12 宫收支途径的凶星判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）起第 12 宫是否被凶星相照"
+                },
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）起第 12 宫是否与凶星同宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）起第 12 宫是否被凶星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）起第 12 宫是否被凶星相照"
+            },
+            "selection_group": "ch29-v16-17-malefic-unfair-means.step-001:malefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）起第 12 宫是否被凶星相照。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）起第 12 宫是否与凶星同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）起第 12 宫是否与凶星同宫"
+            },
+            "selection_group": "ch29-v16-17-malefic-unfair-means.step-001:malefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）起第 12 宫是否与凶星同宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "the 12<sup>th</sup> from Lagn Pad receives a Drishti from",
+              "claim": "上升 Pad（Lagn Pad）起第 12 宫受相照"
+            },
+            {
+              "quote": "is yuti with",
+              "claim": "或与之同宫"
+            },
+            {
+              "quote": "malefic through unfair means",
+              "claim": "的是凶星时，前述进项与开销经由不正当途径"
+            }
+          ],
+          "results": [
+            {
+              "quote": "through unfair means",
+              "claim": "经由不正当途径"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v16-17",
+            "quote": "If the 12<sup>th</sup> from Lagn Pad receives a Drishti from, or is yuti with both benefics and malefics, there will be abundant earnings, but plenty of expenses.",
+            "pdf_pages": [
+              62
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v16-17",
+            "quote": "The benefic will cause through fair means, malefic through unfair means and mixed Grahas through both fair and unfair means.",
+            "pdf_pages": [
+              62
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升 Pad（Lagn Pad）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断违法事实或案由。",
+          "不得据此推断开销金额。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "cb63f5af8d2e78745f8acf93cfba89dcbcc35a58516c056890cfc09f6e3238e9"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v16-17-mixed-both-means.step-001",
+      "method": {
+        "method": "ch29-v16-17-mixed-both-means",
+        "title": "上升 Pad 起第 12 宫吉凶混杂：收支兼走正当与不正当途径",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的钱进出是不是两条路都有",
+          "收支来路混杂怎么看"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "mixed Grahas through both fair and unfair means",
+            "上升 Pad 起第 12 宫吉凶混杂 两种途径"
+          ],
+          "counter_queries": [
+            "The benefic will cause through fair means",
+            "只有吉星关联时"
+          ],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "上升 Pad 取宫本身的例外"
+          ],
+          "method_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics.",
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "吉星凶星怎么分"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v16-17-mixed-both-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the 12th from Lagn Pad receives a Drishti from"
+            },
+            {
+              "step_id": "ch29-v16-17-mixed-both-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "is yuti with"
+            },
+            {
+              "step_id": "ch29-v16-17-mixed-both-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "mixed Grahas"
+            },
+            {
+              "step_id": "ch29-v16-17-mixed-both-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "through both fair and unfair means"
+            },
+            {
+              "step_id": "ch29-v16-17-mixed-both-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the 12th from Lagn Pad receives a Drishti from through both fair and unfair means"
+            },
+            {
+              "step_id": "ch29-v16-17-mixed-both-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "is yuti with through both fair and unfair means"
+            },
+            {
+              "step_id": "ch29-v16-17-mixed-both-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "mixed Grahas through both fair and unfair means"
+            },
+            {
+              "step_id": "ch29-v16-17-mixed-both-means.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "the 12th from 1st house Pad receives a Drishti from"
+            },
+            {
+              "step_id": "ch29-v16-17-mixed-both-means.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "the 12th from 1st house Pad receives a Drishti from through both fair and unfair means"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升 Pad 起第 12 宫与吉星、凶星的相照或同宫事实时停止。",
+          "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v16-17-mixed-both-means.step-001",
+        "action": "分别核对与上升 Pad（Lagn Pad）起第 12 宫相照或同宫的吉星与凶星，两类并存时按本条断。",
+        "applicability_scope": "原文的「mixed Grahas」指同偈所说吉星与凶星并存的情形；吉星凶星判准见第 3 章第 11 偈。",
+        "minimum_supported_claim": "上升 Pad（Lagn Pad）起第 12 宫受相照、或与之同宫的吉凶行星混杂时，前述进项与开销兼经由正当与不正当途径。",
+        "produced_fact_keys": [
+          "上升 Pad 起第 12 宫收支途径的吉凶混杂判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）起第 12 宫是否被吉星相照"
+                },
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）起第 12 宫是否与吉星同宫"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）起第 12 宫是否被凶星相照"
+                },
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）起第 12 宫是否与凶星同宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）起第 12 宫是否被吉星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）起第 12 宫是否被吉星相照"
+            },
+            "selection_group": "ch29-v16-17-mixed-both-means.step-001:benefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）起第 12 宫是否被吉星相照。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）起第 12 宫是否与吉星同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）起第 12 宫是否与吉星同宫"
+            },
+            "selection_group": "ch29-v16-17-mixed-both-means.step-001:benefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）起第 12 宫是否与吉星同宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）起第 12 宫是否被凶星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）起第 12 宫是否被凶星相照"
+            },
+            "selection_group": "ch29-v16-17-mixed-both-means.step-001:malefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）起第 12 宫是否被凶星相照。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）起第 12 宫是否与凶星同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）起第 12 宫是否与凶星同宫"
+            },
+            "selection_group": "ch29-v16-17-mixed-both-means.step-001:malefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）起第 12 宫是否与凶星同宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "the 12<sup>th</sup> from Lagn Pad receives a Drishti from",
+              "claim": "上升 Pad（Lagn Pad）起第 12 宫受相照"
+            },
+            {
+              "quote": "is yuti with",
+              "claim": "或与之同宫"
+            },
+            {
+              "quote": "mixed Grahas",
+              "claim": "的吉凶行星混杂时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "through both fair and unfair means",
+              "claim": "兼经由正当与不正当途径"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v16-17",
+            "quote": "If the 12<sup>th</sup> from Lagn Pad receives a Drishti from, or is yuti with both benefics and malefics, there will be abundant earnings, but plenty of expenses.",
+            "pdf_pages": [
+              62
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v16-17",
+            "quote": "The benefic will cause through fair means, malefic through unfair means and mixed Grahas through both fair and unfair means.",
+            "pdf_pages": [
+              62
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升 Pad（Lagn Pad）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断两种途径的比例或先后。",
+          "不得据此推断开销金额。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b88557fd07d28dc223c7df54e651f1a57a5ccb40e778ef68ae3710ebfbb7466b"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v18-surya-shukra-rahu-loss-through-king.step-001",
+      "method": {
+        "method": "ch29-v18-surya-shukra-rahu-loss-through-king",
+        "title": "太阳、金星、罗睺同处上升 Pad 起第 12 宫：因国王而失去财富",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会因为官方而破财",
+          "什么组合会让我损财"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If the 12<sup>th</sup> from Lagn Pad is conjunct Surya, Shukra and Rahu, there will be loss of wealth through the king.",
+            "太阳金星罗睺同处上升 Pad 起第 12 宫 因国王失财"
+          ],
+          "counter_queries": [
+            "O excellent of the Brahmins, if the 12<sup>th</sup> from Lagn Pad does not receive a Drishti, as the 11<sup>th</sup> from Lagn Pad receives a Drishti from a Grah, then the gains will be uninterrupted",
+            "第 12 宫不受照时得益不中断"
+          ],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "上升 Pad 取宫本身的例外"
+          ],
+          "method_queries": [
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "上升 Pad 怎么求"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v18-surya-shukra-rahu-loss-through-king.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the 12th from Lagn Pad is conjunct Surya, Shukra and Rahu"
+            },
+            {
+              "step_id": "ch29-v18-surya-shukra-rahu-loss-through-king.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "there will be loss of wealth through the king"
+            },
+            {
+              "step_id": "ch29-v18-surya-shukra-rahu-loss-through-king.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the 12th from Lagn Pad is conjunct Surya, Shukra and Rahu there will be loss of wealth through the king"
+            },
+            {
+              "step_id": "ch29-v18-surya-shukra-rahu-loss-through-king.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "the 12th from 1st house Pad is conjunct sun, venus and rahu"
+            },
+            {
+              "step_id": "ch29-v18-surya-shukra-rahu-loss-through-king.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "the 12th from 1st house Pad is conjunct sun, venus and rahu there will be loss of wealth through the king"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少太阳、金星、罗睺相对上升 Pad 起第 12 宫的落宫事实时停止。",
+          "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v18-surya-shukra-rahu-loss-through-king.step-001",
+        "action": "核对太阳（Surya）、金星（Shukra）、罗睺（Rahu）是否同处上升 Pad（Lagn Pad）起第 12 宫。",
+        "applicability_scope": "本条以上升 Pad（Lagn Pad）为起算点；原文以国王（the king）立说，没有给时间或适用人群限定。",
+        "minimum_supported_claim": "上升 Pad（Lagn Pad）起第 12 宫与太阳（Surya）、金星（Shukra）、罗睺（Rahu）同处时，因国王而失去财富。",
+        "produced_fact_keys": [
+          "上升 Pad 起第 12 宫三星同处的失财判定"
+        ],
+        "required_fact_keys": [
+          "太阳（Surya）是否落上升 Pad（Lagn Pad）起第 12 宫",
+          "金星（Shukra）是否落上升 Pad（Lagn Pad）起第 12 宫",
+          "罗睺（Rahu）是否落上升 Pad（Lagn Pad）起第 12 宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "太阳（Surya）是否落上升 Pad（Lagn Pad）起第 12 宫"
+            },
+            {
+              "fact_key": "金星（Shukra）是否落上升 Pad（Lagn Pad）起第 12 宫"
+            },
+            {
+              "fact_key": "罗睺（Rahu）是否落上升 Pad（Lagn Pad）起第 12 宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "the 12<sup>th</sup> from Lagn Pad is conjunct Surya, Shukra and Rahu",
+              "claim": "上升 Pad（Lagn Pad）起第 12 宫与太阳（Surya）、金星（Shukra）、罗睺（Rahu）同处"
+            }
+          ],
+          "results": [
+            {
+              "quote": "there will be loss of wealth through the king",
+              "claim": "因国王而失去财富"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v18",
+            "quote": "If the 12<sup>th</sup> from Lagn Pad is conjunct Surya, Shukra and Rahu, there will be loss of wealth through the king.",
+            "pdf_pages": [
+              62
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：太阳（Surya）是否落上升 Pad（Lagn Pad）起第 12 宫、金星（Shukra）是否落上升 Pad（Lagn Pad）起第 12 宫、罗睺（Rahu）是否落上升 Pad（Lagn Pad）起第 12 宫。",
+        "stop_fact_keys": [
+          "太阳（Surya）是否落上升 Pad（Lagn Pad）起第 12 宫",
+          "金星（Shukra）是否落上升 Pad（Lagn Pad）起第 12 宫",
+          "罗睺（Rahu）是否落上升 Pad（Lagn Pad）起第 12 宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断损失金额或年份。",
+          "原文要求三颗行星同处，不得只凭其中一颗成立本条。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "d1620cd9262a952147fc33a58277b8171fd9429f8a55607414075f5f8e9557e6"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v18-chandra-drishti-more-losses.step-001",
+      "method": {
+        "method": "ch29-v18-chandra-drishti-more-losses",
+        "title": "月亮相照该三星所在之宫：损失更多",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "月亮会不会加重我的破财",
+          "损失还会不会更大"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Chandra, giving a Drishti to (the said trio in the said Bhava), will specifically cause more such losses.",
+            "月亮相照上升 Pad 起第 12 宫三星 损失更多"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "上升 Pad 取宫本身的例外"
+          ],
+          "method_queries": [
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "上升 Pad 怎么求"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v18-chandra-drishti-more-losses.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the 12th from Lagn Pad is conjunct Surya, Shukra and Rahu"
+            },
+            {
+              "step_id": "ch29-v18-chandra-drishti-more-losses.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Chandra, giving a Drishti to (the said trio in the said Bhava)"
+            },
+            {
+              "step_id": "ch29-v18-chandra-drishti-more-losses.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will specifically cause more such losses"
+            },
+            {
+              "step_id": "ch29-v18-chandra-drishti-more-losses.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the 12th from Lagn Pad is conjunct Surya, Shukra and Rahu will specifically cause more such losses"
+            },
+            {
+              "step_id": "ch29-v18-chandra-drishti-more-losses.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Chandra, giving a Drishti to (the said trio in the said Bhava) will specifically cause more such losses"
+            },
+            {
+              "step_id": "ch29-v18-chandra-drishti-more-losses.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "the 12th from 1st house Pad is conjunct sun, venus and rahu"
+            },
+            {
+              "step_id": "ch29-v18-chandra-drishti-more-losses.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "moon, giving a Drishti to (the said trio in the said Bhava)"
+            },
+            {
+              "step_id": "ch29-v18-chandra-drishti-more-losses.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "the 12th from 1st house Pad is conjunct sun, venus and rahu will specifically cause more such losses"
+            },
+            {
+              "step_id": "ch29-v18-chandra-drishti-more-losses.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "moon, giving a Drishti to (the said trio in the said Bhava) will specifically cause more such losses"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少三星同处上升 Pad 起第 12 宫的事实时停止。",
+          "缺少月亮是否相照该宫的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v18-chandra-drishti-more-losses.step-001",
+        "action": "在三星同处上升 Pad（Lagn Pad）起第 12 宫成立之后，再看月亮（Chandra）是否相照该宫。",
+        "applicability_scope": "原文的「the said trio in the said Bhava」承同偈前句同处上升 Pad 起第 12 宫的太阳、金星、罗睺三星。",
+        "minimum_supported_claim": "上升 Pad（Lagn Pad）起第 12 宫与太阳（Surya）、金星（Shukra）、罗睺（Rahu）同处，而月亮（Chandra）相照该宫中的这三颗行星时，特别会造成更多这类损失。",
+        "produced_fact_keys": [
+          "月亮相照上升 Pad 起第 12 宫三星的加重判定"
+        ],
+        "required_fact_keys": [
+          "太阳（Surya）是否落上升 Pad（Lagn Pad）起第 12 宫",
+          "金星（Shukra）是否落上升 Pad（Lagn Pad）起第 12 宫",
+          "罗睺（Rahu）是否落上升 Pad（Lagn Pad）起第 12 宫",
+          "月亮（Chandra）是否相照上升 Pad（Lagn Pad）起第 12 宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "太阳（Surya）是否落上升 Pad（Lagn Pad）起第 12 宫"
+            },
+            {
+              "fact_key": "金星（Shukra）是否落上升 Pad（Lagn Pad）起第 12 宫"
+            },
+            {
+              "fact_key": "罗睺（Rahu）是否落上升 Pad（Lagn Pad）起第 12 宫"
+            },
+            {
+              "fact_key": "月亮（Chandra）是否相照上升 Pad（Lagn Pad）起第 12 宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "the 12<sup>th</sup> from Lagn Pad is conjunct Surya, Shukra and Rahu",
+              "claim": "上升 Pad（Lagn Pad）起第 12 宫与太阳（Surya）、金星（Shukra）、罗睺（Rahu）同处"
+            },
+            {
+              "quote": "Chandra, giving a Drishti to (the said trio in the said Bhava)",
+              "claim": "月亮（Chandra）相照该宫中的这三颗行星"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will specifically cause more such losses",
+              "claim": "特别会造成更多这类损失"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v18",
+            "quote": "If the 12<sup>th</sup> from Lagn Pad is conjunct Surya, Shukra and Rahu, there will be loss of wealth through the king.",
+            "pdf_pages": [
+              62
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v18",
+            "quote": "Chandra, giving a Drishti to (the said trio in the said Bhava), will specifically cause more such losses.",
+            "pdf_pages": [
+              62
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：太阳（Surya）是否落上升 Pad（Lagn Pad）起第 12 宫、金星（Shukra）是否落上升 Pad（Lagn Pad）起第 12 宫、罗睺（Rahu）是否落上升 Pad（Lagn Pad）起第 12 宫、月亮（Chandra）是否相照上升 Pad（Lagn Pad）起第 12 宫。",
+        "stop_fact_keys": [
+          "太阳（Surya）是否落上升 Pad（Lagn Pad）起第 12 宫",
+          "金星（Shukra）是否落上升 Pad（Lagn Pad）起第 12 宫",
+          "罗睺（Rahu）是否落上升 Pad（Lagn Pad）起第 12 宫",
+          "月亮（Chandra）是否相照上升 Pad（Lagn Pad）起第 12 宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断损失金额或年份。",
+          "月亮相照只在三星同处成立时加重，不得单独用月亮相照断失财。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "8f940bdf2a5563151d84d44fbfd7e6110adb6a6c2e216798aa8d57b8920a3d75"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v19-budh-benefic-expenses-paternal-relatives.step-001",
+      "method": {
+        "method": "ch29-v19-budh-benefic-expenses-paternal-relatives",
+        "title": "水星落上升 Pad 起第 12 宫且与吉星关联：开销经由父系亲属",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的钱会花在亲戚身上吗",
+          "开销的由头是什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Budh is in the 12<sup>th</sup> from Lagn Pad and is yuti with, or receives a Drishti from a benefic, similarly there will be expenses through paternal relatives.",
+            "水星落上升 Pad 起第 12 宫 开销经由父系亲属"
+          ],
+          "counter_queries": [
+            "A malefic so related to the said Budh will cause loss of wealth through disputes.",
+            "同一水星与凶星关联时的争讼失财"
+          ],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "上升 Pad 取宫本身的例外"
+          ],
+          "method_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics.",
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "哪些行星算吉星"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v19-budh-benefic-expenses-paternal-relatives.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Budh is in the 12th from Lagn Pad"
+            },
+            {
+              "step_id": "ch29-v19-budh-benefic-expenses-paternal-relatives.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "is yuti with"
+            },
+            {
+              "step_id": "ch29-v19-budh-benefic-expenses-paternal-relatives.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "receives a Drishti from a benefic"
+            },
+            {
+              "step_id": "ch29-v19-budh-benefic-expenses-paternal-relatives.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "there will be expenses through paternal relatives"
+            },
+            {
+              "step_id": "ch29-v19-budh-benefic-expenses-paternal-relatives.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Budh is in the 12th from Lagn Pad there will be expenses through paternal relatives"
+            },
+            {
+              "step_id": "ch29-v19-budh-benefic-expenses-paternal-relatives.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "is yuti with there will be expenses through paternal relatives"
+            },
+            {
+              "step_id": "ch29-v19-budh-benefic-expenses-paternal-relatives.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "receives a Drishti from a benefic there will be expenses through paternal relatives"
+            },
+            {
+              "step_id": "ch29-v19-budh-benefic-expenses-paternal-relatives.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If mercury is in the 12th from 1st house Pad"
+            },
+            {
+              "step_id": "ch29-v19-budh-benefic-expenses-paternal-relatives.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If mercury is in the 12th from 1st house Pad there will be expenses through paternal relatives"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少水星相对上升 Pad 起第 12 宫的落宫事实时停止。",
+          "缺少水星与吉星的同宫或相照事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v19-budh-benefic-expenses-paternal-relatives.step-001",
+        "action": "先看水星（Budh）是否落上升 Pad（Lagn Pad）起第 12 宫，再看它是否与吉星同宫或受吉星相照。",
+        "applicability_scope": "本条以上升 Pad（Lagn Pad）为起算点；吉星判准见第 3 章第 11 偈。",
+        "minimum_supported_claim": "水星（Budh）落上升 Pad（Lagn Pad）起第 12 宫，并与吉星同宫、或受吉星相照时，开销经由父系亲属而生。",
+        "produced_fact_keys": [
+          "水星在上升 Pad 起第 12 宫的开销来由判定"
+        ],
+        "required_fact_keys": [
+          "水星（Budh）是否落上升 Pad（Lagn Pad）起第 12 宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "水星（Budh）是否落上升 Pad（Lagn Pad）起第 12 宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "水星（Budh）是否与吉星同宫"
+                },
+                {
+                  "fact_key": "水星（Budh）是否被吉星相照"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "水星（Budh）是否落上升 Pad（Lagn Pad）起第 12 宫"
+            },
+            "required_fact_keys": [
+              "水星（Budh）是否与吉星同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "水星（Budh）是否与吉星同宫"
+            },
+            "selection_group": "ch29-v19-budh-benefic-expenses-paternal-relatives.step-001:benefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：水星（Budh）是否与吉星同宫。"
+          },
+          {
+            "when": {
+              "fact_key": "水星（Budh）是否落上升 Pad（Lagn Pad）起第 12 宫"
+            },
+            "required_fact_keys": [
+              "水星（Budh）是否被吉星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "水星（Budh）是否被吉星相照"
+            },
+            "selection_group": "ch29-v19-budh-benefic-expenses-paternal-relatives.step-001:benefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：水星（Budh）是否被吉星相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Budh is in the 12<sup>th</sup> from Lagn Pad",
+              "claim": "水星（Budh）落上升 Pad（Lagn Pad）起第 12 宫"
+            },
+            {
+              "quote": "is yuti with",
+              "claim": "并与吉星同宫"
+            },
+            {
+              "quote": "receives a Drishti from a benefic",
+              "claim": "或受吉星相照时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "there will be expenses through paternal relatives",
+              "claim": "开销经由父系亲属而生"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v19",
+            "quote": "If Budh is in the 12<sup>th</sup> from Lagn Pad and is yuti with, or receives a Drishti from a benefic, similarly there will be expenses through paternal relatives.",
+            "pdf_pages": [
+              62
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：水星（Budh）是否落上升 Pad（Lagn Pad）起第 12 宫。",
+        "stop_fact_keys": [
+          "水星（Budh）是否落上升 Pad（Lagn Pad）起第 12 宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断开销金额或具体亲属。",
+          "不得把父系亲属扩大成全部亲属。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "91c26446c290807a5f21496464fed8b0aa12183a27631287d4afb021da2db7e3"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v19-budh-malefic-loss-through-disputes.step-001",
+      "method": {
+        "method": "ch29-v19-budh-malefic-loss-through-disputes",
+        "title": "水星落上升 Pad 起第 12 宫且与凶星关联：因争讼而失去财富",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会因为打官司破财",
+          "争执会不会让我损财"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "A malefic so related to the said Budh will cause loss of wealth through disputes.",
+            "水星与凶星关联 因争讼失财"
+          ],
+          "counter_queries": [
+            "If Budh is in the 12<sup>th</sup> from Lagn Pad and is yuti with, or receives a Drishti from a benefic, similarly there will be expenses through paternal relatives.",
+            "同一水星与吉星关联时的开销来由"
+          ],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "上升 Pad 取宫本身的例外"
+          ],
+          "method_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics.",
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "哪些行星算凶星"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v19-budh-malefic-loss-through-disputes.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Budh is in the 12th from Lagn Pad"
+            },
+            {
+              "step_id": "ch29-v19-budh-malefic-loss-through-disputes.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "is yuti with, or receives a Drishti from"
+            },
+            {
+              "step_id": "ch29-v19-budh-malefic-loss-through-disputes.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "A malefic so related to the said Budh"
+            },
+            {
+              "step_id": "ch29-v19-budh-malefic-loss-through-disputes.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will cause loss of wealth through disputes"
+            },
+            {
+              "step_id": "ch29-v19-budh-malefic-loss-through-disputes.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Budh is in the 12th from Lagn Pad will cause loss of wealth through disputes"
+            },
+            {
+              "step_id": "ch29-v19-budh-malefic-loss-through-disputes.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "is yuti with, or receives a Drishti from will cause loss of wealth through disputes"
+            },
+            {
+              "step_id": "ch29-v19-budh-malefic-loss-through-disputes.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "A malefic so related to the said Budh will cause loss of wealth through disputes"
+            },
+            {
+              "step_id": "ch29-v19-budh-malefic-loss-through-disputes.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If mercury is in the 12th from 1st house Pad"
+            },
+            {
+              "step_id": "ch29-v19-budh-malefic-loss-through-disputes.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "A malefic so related to the said mercury"
+            },
+            {
+              "step_id": "ch29-v19-budh-malefic-loss-through-disputes.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If mercury is in the 12th from 1st house Pad will cause loss of wealth through disputes"
+            },
+            {
+              "step_id": "ch29-v19-budh-malefic-loss-through-disputes.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "A malefic so related to the said mercury will cause loss of wealth through disputes"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少水星相对上升 Pad 起第 12 宫的落宫事实时停止。",
+          "缺少水星与凶星的同宫或相照事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v19-budh-malefic-loss-through-disputes.step-001",
+        "action": "先看水星（Budh）是否落上升 Pad（Lagn Pad）起第 12 宫，再看与它同宫或相照它的是不是凶星。",
+        "applicability_scope": "原文的「so related」承同偈前句所说的同宫或相照两种关联方式；凶星判准见第 3 章第 11 偈。",
+        "minimum_supported_claim": "水星（Budh）落上升 Pad（Lagn Pad）起第 12 宫，而与之同宫或相照、与该水星如此关联的是凶星时，因争讼而失去财富。",
+        "produced_fact_keys": [
+          "水星在上升 Pad 起第 12 宫的争讼失财判定"
+        ],
+        "required_fact_keys": [
+          "水星（Budh）是否落上升 Pad（Lagn Pad）起第 12 宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "水星（Budh）是否落上升 Pad（Lagn Pad）起第 12 宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "水星（Budh）是否与凶星同宫"
+                },
+                {
+                  "fact_key": "水星（Budh）是否被凶星相照"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "水星（Budh）是否落上升 Pad（Lagn Pad）起第 12 宫"
+            },
+            "required_fact_keys": [
+              "水星（Budh）是否与凶星同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "水星（Budh）是否与凶星同宫"
+            },
+            "selection_group": "ch29-v19-budh-malefic-loss-through-disputes.step-001:malefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：水星（Budh）是否与凶星同宫。"
+          },
+          {
+            "when": {
+              "fact_key": "水星（Budh）是否落上升 Pad（Lagn Pad）起第 12 宫"
+            },
+            "required_fact_keys": [
+              "水星（Budh）是否被凶星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "水星（Budh）是否被凶星相照"
+            },
+            "selection_group": "ch29-v19-budh-malefic-loss-through-disputes.step-001:malefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：水星（Budh）是否被凶星相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Budh is in the 12<sup>th</sup> from Lagn Pad",
+              "claim": "水星（Budh）落上升 Pad（Lagn Pad）起第 12 宫"
+            },
+            {
+              "quote": "is yuti with, or receives a Drishti from",
+              "claim": "而与之同宫或相照"
+            },
+            {
+              "quote": "A malefic so related to the said Budh",
+              "claim": "与该水星如此关联的是凶星时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will cause loss of wealth through disputes",
+              "claim": "因争讼而失去财富"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v19",
+            "quote": "If Budh is in the 12<sup>th</sup> from Lagn Pad and is yuti with, or receives a Drishti from a benefic, similarly there will be expenses through paternal relatives.",
+            "pdf_pages": [
+              62
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v19",
+            "quote": "A malefic so related to the said Budh will cause loss of wealth through disputes.",
+            "pdf_pages": [
+              62
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：水星（Budh）是否落上升 Pad（Lagn Pad）起第 12 宫。",
+        "stop_fact_keys": [
+          "水星（Budh）是否落上升 Pad（Lagn Pad）起第 12 宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断诉讼种类、结果或时间。",
+          "不得据此推断损失金额。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "7034abec7406e84947ef8df693d2b42344a8972c900694cccb5ea13a67b960d9"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v20-guru-expenses-taxes-and-self.step-001",
+      "method": {
+        "method": "ch29-v20-guru-expenses-taxes-and-self",
+        "title": "木星落上升 Pad 起第 12 宫且受他星相照：开销用于赋税与本人",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的钱会花在税上吗",
+          "开销主要花在哪"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "O Brahmin, if Guru is in the 12<sup>th</sup> from Lagn Pad, receiving a Drishti from others, the expenses will be through taxes and on the person himself.",
+            "木星落上升 Pad 起第 12 宫 开销用于赋税"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "上升 Pad 取宫本身的例外"
+          ],
+          "method_queries": [
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "上升 Pad 怎么求"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v20-guru-expenses-taxes-and-self.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Guru is in the 12th from Lagn Pad"
+            },
+            {
+              "step_id": "ch29-v20-guru-expenses-taxes-and-self.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "receiving a Drishti from others"
+            },
+            {
+              "step_id": "ch29-v20-guru-expenses-taxes-and-self.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the expenses will be through taxes and on the person himself"
+            },
+            {
+              "step_id": "ch29-v20-guru-expenses-taxes-and-self.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Guru is in the 12th from Lagn Pad the expenses will be through taxes and on the person himself"
+            },
+            {
+              "step_id": "ch29-v20-guru-expenses-taxes-and-self.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "receiving a Drishti from others the expenses will be through taxes and on the person himself"
+            },
+            {
+              "step_id": "ch29-v20-guru-expenses-taxes-and-self.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if jupiter is in the 12th from 1st house Pad"
+            },
+            {
+              "step_id": "ch29-v20-guru-expenses-taxes-and-self.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if jupiter is in the 12th from 1st house Pad the expenses will be through taxes and on the person himself"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少木星相对上升 Pad 起第 12 宫的落宫事实时停止。",
+          "缺少木星是否受其他行星相照的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v20-guru-expenses-taxes-and-self.step-001",
+        "action": "核对木星（Guru）是否落上升 Pad（Lagn Pad）起第 12 宫，并是否受其他行星相照。",
+        "applicability_scope": "本条以上升 Pad（Lagn Pad）为起算点；原文只写 receiving a Drishti from others，没有指明相照者的吉凶身份。",
+        "minimum_supported_claim": "木星（Guru）落上升 Pad（Lagn Pad）起第 12 宫，并受其他行星相照时，开销用于赋税与本人自身。",
+        "produced_fact_keys": [
+          "木星在上升 Pad 起第 12 宫的开销来由判定"
+        ],
+        "required_fact_keys": [
+          "木星（Guru）是否落上升 Pad（Lagn Pad）起第 12 宫",
+          "木星（Guru）是否被其他行星（Grah）相照"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "木星（Guru）是否落上升 Pad（Lagn Pad）起第 12 宫"
+            },
+            {
+              "fact_key": "木星（Guru）是否被其他行星（Grah）相照"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if Guru is in the 12<sup>th</sup> from Lagn Pad",
+              "claim": "木星（Guru）落上升 Pad（Lagn Pad）起第 12 宫"
+            },
+            {
+              "quote": "receiving a Drishti from others",
+              "claim": "并受其他行星相照时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the expenses will be through taxes and on the person himself",
+              "claim": "开销用于赋税与本人自身"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v20",
+            "quote": "O Brahmin, if Guru is in the 12<sup>th</sup> from Lagn Pad, receiving a Drishti from others, the expenses will be through taxes and on the person himself.",
+            "pdf_pages": [
+              63
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：木星（Guru）是否落上升 Pad（Lagn Pad）起第 12 宫、木星（Guru）是否被其他行星（Grah）相照。",
+        "stop_fact_keys": [
+          "木星（Guru）是否落上升 Pad（Lagn Pad）起第 12 宫",
+          "木星（Guru）是否被其他行星（Grah）相照"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断税种、金额或年份。",
+          "原文未指明相照者的吉凶身份，不得只按吉星相照成立本条。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "fda88d7e60e5f7e4624fed5d04e1e10910bee39e1021131d3736b369ab5c565e"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v21-shani-mangal-expenses-through-co-born.step-001",
+      "method": {
+        "method": "ch29-v21-shani-mangal-expenses-through-co-born",
+        "title": "土星与火星同落上升 Pad 起第 12 宫：开销经由同胞",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的钱会不会花在兄弟姐妹身上",
+          "开销的由头是什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "if Shani is in the 12<sup>th</sup> from Lagn Pad along with Mangal and receives a Drishti from others, the expenses will be through one’s co-born.",
+            "土星火星同落上升 Pad 起第 12 宫 开销经由同胞"
+          ],
+          "counter_queries": [
+            "Whatever sources of expenses are indicated above with reference to the 12<sup>th</sup> from Lagn Pad, gains through similar sources will occur, if Labh Bhava so features with reference to Lagn Pad.",
+            "同一配置出现在第 11 宫时反成得益"
+          ],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "上升 Pad 取宫本身的例外"
+          ],
+          "method_queries": [
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "上升 Pad 怎么求"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v21-shani-mangal-expenses-through-co-born.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Shani is in the 12th from Lagn Pad along with Mangal"
+            },
+            {
+              "step_id": "ch29-v21-shani-mangal-expenses-through-co-born.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "receives a Drishti from others"
+            },
+            {
+              "step_id": "ch29-v21-shani-mangal-expenses-through-co-born.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the expenses will be through one’s co-born"
+            },
+            {
+              "step_id": "ch29-v21-shani-mangal-expenses-through-co-born.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Shani is in the 12th from Lagn Pad along with Mangal the expenses will be through one’s co-born"
+            },
+            {
+              "step_id": "ch29-v21-shani-mangal-expenses-through-co-born.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "receives a Drishti from others the expenses will be through one’s co-born"
+            },
+            {
+              "step_id": "ch29-v21-shani-mangal-expenses-through-co-born.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if saturn is in the 12th from 1st house Pad along with mars"
+            },
+            {
+              "step_id": "ch29-v21-shani-mangal-expenses-through-co-born.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if saturn is in the 12th from 1st house Pad along with mars the expenses will be through one’s co-born"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少土星、火星相对上升 Pad 起第 12 宫的落宫事实时停止。",
+          "缺少土星是否受其他行星相照的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v21-shani-mangal-expenses-through-co-born.step-001",
+        "action": "核对土星（Shani）与火星（Mangal）是否同落上升 Pad（Lagn Pad）起第 12 宫，并看土星是否受其他行星相照。",
+        "applicability_scope": "本条以上升 Pad（Lagn Pad）为起算点；原文只写 receives a Drishti from others，没有指明相照者的吉凶身份。",
+        "minimum_supported_claim": "土星（Shani）与火星（Mangal）同落上升 Pad（Lagn Pad）起第 12 宫，并受其他行星相照时，开销经由同胞而生。",
+        "produced_fact_keys": [
+          "土星火星在上升 Pad 起第 12 宫的开销来由判定"
+        ],
+        "required_fact_keys": [
+          "土星（Shani）是否落上升 Pad（Lagn Pad）起第 12 宫",
+          "火星（Mangal）是否落上升 Pad（Lagn Pad）起第 12 宫",
+          "土星（Shani）是否被其他行星（Grah）相照"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "土星（Shani）是否落上升 Pad（Lagn Pad）起第 12 宫"
+            },
+            {
+              "fact_key": "火星（Mangal）是否落上升 Pad（Lagn Pad）起第 12 宫"
+            },
+            {
+              "fact_key": "土星（Shani）是否被其他行星（Grah）相照"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if Shani is in the 12<sup>th</sup> from Lagn Pad along with Mangal",
+              "claim": "土星（Shani）与火星（Mangal）同落上升 Pad（Lagn Pad）起第 12 宫"
+            },
+            {
+              "quote": "receives a Drishti from others",
+              "claim": "并受其他行星相照时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the expenses will be through one’s co-born",
+              "claim": "开销经由同胞而生"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v21",
+            "quote": "if Shani is in the 12<sup>th</sup> from Lagn Pad along with Mangal and receives a Drishti from others, the expenses will be through one’s co-born.",
+            "pdf_pages": [
+              63
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：土星（Shani）是否落上升 Pad（Lagn Pad）起第 12 宫、火星（Mangal）是否落上升 Pad（Lagn Pad）起第 12 宫、土星（Shani）是否被其他行星（Grah）相照。",
+        "stop_fact_keys": [
+          "土星（Shani）是否落上升 Pad（Lagn Pad）起第 12 宫",
+          "火星（Mangal）是否落上升 Pad（Lagn Pad）起第 12 宫",
+          "土星（Shani）是否被其他行星（Grah）相照"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断同胞人数、性别或开销金额。",
+          "原文要求两颗行星同处，不得只凭其中一颗成立本条。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "65c6c73be42316151e427f1306585054ab5635aa7cbbe5c0704bbd734c5e16ab"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+      "method": {
+        "method": "ch29-v22-labh-bhava-gainful-sources",
+        "title": "上升 Pad 起第 11 宫呈现同一配置：得益来源与支出来源相同",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的钱从哪些来源来",
+          "同样的星象在得益位怎么解"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Whatever sources of expenses are indicated above with reference to the 12<sup>th</sup> from Lagn Pad, gains through similar sources will occur, if Labh Bhava so features with reference to Lagn Pad.",
+            "上升 Pad 起第 11 宫 得益来源与支出来源相同"
+          ],
+          "counter_queries": [
+            "The benefic will cause through fair means, malefic through unfair means and mixed Grahas through both fair and unfair means.",
+            "第 12 宫方向的支出来源诸条"
+          ],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "上升 Pad 取宫本身的例外"
+          ],
+          "method_queries": [
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "上升 Pad 怎么求"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Whatever sources of expenses are indicated above with reference to the 12th from Lagn Pad"
+            },
+            {
+              "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Labh Bhava so features with reference to Lagn Pad"
+            },
+            {
+              "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "The benefic will cause through fair means, malefic through unfair means"
+            },
+            {
+              "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the 12th from Lagn Pad is conjunct Surya, Shukra and Rahu"
+            },
+            {
+              "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Budh is in the 12th from Lagn Pad"
+            },
+            {
+              "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Guru is in the 12th from Lagn Pad"
+            },
+            {
+              "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "gains through similar sources will occur"
+            },
+            {
+              "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Whatever sources of expenses are indicated above with reference to the 12th from Lagn Pad gains through similar sources will occur"
+            },
+            {
+              "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Labh Bhava so features with reference to Lagn Pad gains through similar sources will occur"
+            },
+            {
+              "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "The benefic will cause through fair means, malefic through unfair means gains through similar sources will occur"
+            },
+            {
+              "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the 12th from Lagn Pad is conjunct Surya, Shukra and Rahu gains through similar sources will occur"
+            },
+            {
+              "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Budh is in the 12th from Lagn Pad gains through similar sources will occur"
+            },
+            {
+              "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Guru is in the 12th from Lagn Pad gains through similar sources will occur"
+            },
+            {
+              "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Whatever sources of expenses are indicated above with reference to the 12th from 1st house Pad"
+            },
+            {
+              "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if 11th house so features with reference to 1st house Pad"
+            },
+            {
+              "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "the 12th from 1st house Pad is conjunct sun, venus and rahu"
+            },
+            {
+              "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If mercury is in the 12th from 1st house Pad"
+            },
+            {
+              "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if jupiter is in the 12th from 1st house Pad"
+            },
+            {
+              "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Whatever sources of expenses are indicated above with reference to the 12th from 1st house Pad gains through similar sources will occur"
+            },
+            {
+              "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if 11th house so features with reference to 1st house Pad gains through similar sources will occur"
+            },
+            {
+              "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "the 12th from 1st house Pad is conjunct sun, venus and rahu gains through similar sources will occur"
+            },
+            {
+              "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If mercury is in the 12th from 1st house Pad gains through similar sources will occur"
+            },
+            {
+              "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if jupiter is in the 12th from 1st house Pad gains through similar sources will occur"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "原文未界定何种呈现才算与上文同一种配置，未确定即停判。",
+          "缺少上升 Pad 起第 11 宫内外行星配置事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v22-labh-bhava-gainful-sources.step-001",
+        "action": "把上文就上升 Pad（Lagn Pad）起第 12 宫所列的各种支出来源配置，改到其起第 11 宫（Labh Bhava）上核对。",
+        "applicability_scope": "原文以「so features」回指上文第 16-21 偈就上升 Pad 起第 12 宫所列的各条配置，本偈未逐条重列，也未界定何种呈现才算「so features」；未确定即停判。",
+        "minimum_supported_claim": "上升 Pad（Lagn Pad）起第 11 宫（Labh Bhava）呈现上文就上升 Pad 起第 12 宫所列的同一种行星配置——上文所列的是吉星与凶星分别对应正当与不正当来源，以及太阳（Surya）、金星（Shukra）、罗睺（Rahu）同处该宫、水星（Budh）落该宫、木星（Guru）落该宫等配置——时，得益经由与该配置所示支出来源相同的来源而生。",
+        "produced_fact_keys": [
+          "上升 Pad 起第 11 宫的得益来源判定"
+        ],
+        "required_fact_keys": [
+          "上升 Pad（Lagn Pad）起第 11 宫（Labh Bhava）是否呈现上文判断支出来源的同一种行星配置"
+        ],
+        "condition_logic": {
+          "fact_key": "上升 Pad（Lagn Pad）起第 11 宫（Labh Bhava）是否呈现上文判断支出来源的同一种行星配置"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Whatever sources of expenses are indicated above with reference to the 12<sup>th</sup> from Lagn Pad",
+              "claim": "上文就上升 Pad 起第 12 宫所列的同一种行星配置"
+            },
+            {
+              "quote": "if Labh Bhava so features with reference to Lagn Pad",
+              "claim": "上升 Pad（Lagn Pad）起第 11 宫（Labh Bhava）呈现"
+            },
+            {
+              "quote": "The benefic will cause through fair means, malefic through unfair means",
+              "claim": "上文所列的是吉星与凶星分别对应正当与不正当来源"
+            },
+            {
+              "quote": "the 12<sup>th</sup> from Lagn Pad is conjunct Surya, Shukra and Rahu",
+              "claim": "太阳（Surya）、金星（Shukra）、罗睺（Rahu）同处该宫"
+            },
+            {
+              "quote": "If Budh is in the 12<sup>th</sup> from Lagn Pad",
+              "claim": "水星（Budh）落该宫"
+            },
+            {
+              "quote": "if Guru is in the 12<sup>th</sup> from Lagn Pad",
+              "claim": "木星（Guru）落该宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "gains through similar sources will occur",
+              "claim": "得益经由与该配置所示支出来源相同的来源而生"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v22",
+            "quote": "Whatever sources of expenses are indicated above with reference to the 12<sup>th</sup> from Lagn Pad, gains through similar sources will occur, if Labh Bhava so features with reference to Lagn Pad.",
+            "pdf_pages": [
+              63
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v16-17",
+            "quote": "The benefic will cause through fair means, malefic through unfair means and mixed Grahas through both fair and unfair means.",
+            "pdf_pages": [
+              62
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v18",
+            "quote": "If the 12<sup>th</sup> from Lagn Pad is conjunct Surya, Shukra and Rahu, there will be loss of wealth through the king.",
+            "pdf_pages": [
+              62
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v19",
+            "quote": "If Budh is in the 12<sup>th</sup> from Lagn Pad and is yuti with, or receives a Drishti from a benefic, similarly there will be expenses through paternal relatives.",
+            "pdf_pages": [
+              62
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v20",
+            "quote": "O Brahmin, if Guru is in the 12<sup>th</sup> from Lagn Pad, receiving a Drishti from others, the expenses will be through taxes and on the person himself.",
+            "pdf_pages": [
+              63
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：上升 Pad（Lagn Pad）起第 11 宫（Labh Bhava）是否呈现上文判断支出来源的同一种行星配置。",
+        "stop_fact_keys": [
+          "上升 Pad（Lagn Pad）起第 11 宫（Labh Bhava）是否呈现上文判断支出来源的同一种行星配置"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得自行给「so features」补一套原文没有的成立标准。",
+          "不得据此推断得益金额或时间。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch29:v16-17",
+          "bphs-97:santhanam:ch29:v18",
+          "bphs-97:santhanam:ch29:v19",
+          "bphs-97:santhanam:ch29:v20",
+          "bphs-97:santhanam:ch29:v21"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "78c4d869eb6451a6057f9094fc037546786afeb8d03dd9f3dffd988c00304731"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch29:v16-17": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v16-17",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "16-17.",
+      "content_role": "verse",
+      "exact_text": "16-17. Pad and Financial Losses (up to Sloka 21). If the 12<sup>th</sup> from Lagn Pad receives a Drishti from, or is yuti with both benefics and malefics, there will be abundant earnings, but plenty of expenses. The benefic will cause through fair means, malefic through unfair means and mixed Grahas through both fair and unfair means.",
+      "pdf_pages": [
+        62
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 16-17 · PDF page 62 · bphs-97:santhanam:ch29:v16-17",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v13-15",
+      "next_atom_id": "bphs-97:santhanam:ch29:v18",
+      "context_before": "rom Arudh Lagn will be still beneficial. If the Drishti is from the 9<sup>th</sup> from Lagna, it will confer much more gains.\n\n",
+      "context_after": "18. If the 12<sup>th</sup> from Lagn Pad is conjunct Surya, Shukra and Rahu, there will be loss of wealth through the king. Chan",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch29:v18": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v18",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "18.",
+      "content_role": "verse",
+      "exact_text": "18. If the 12<sup>th</sup> from Lagn Pad is conjunct Surya, Shukra and Rahu, there will be loss of wealth through the king. Chandra, giving a Drishti to (the said trio in the said Bhava), will specifically cause more such losses.",
+      "pdf_pages": [
+        62
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 18 · PDF page 62 · bphs-97:santhanam:ch29:v18",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v16-17",
+      "next_atom_id": "bphs-97:santhanam:ch29:v19",
+      "context_before": ". The benefic will cause through fair means, malefic through unfair means and mixed Grahas through both fair and unfair means.\n\n",
+      "context_after": "19. If Budh is in the 12<sup>th</sup> from Lagn Pad and is yuti with, or receives a Drishti from a benefic, similarly there will",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch29:v19": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v19",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "19.",
+      "content_role": "verse",
+      "exact_text": "19. If Budh is in the 12<sup>th</sup> from Lagn Pad and is yuti with, or receives a Drishti from a benefic, similarly there will be expenses through paternal relatives. A malefic so related to the said Budh will cause loss of wealth through disputes.",
+      "pdf_pages": [
+        62
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 19 · PDF page 62 · bphs-97:santhanam:ch29:v19",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v18",
+      "next_atom_id": "bphs-97:santhanam:ch29:v20",
+      "context_before": "th through the king. Chandra, giving a Drishti to (the said trio in the said Bhava), will specifically cause more such losses.\n\n",
+      "context_after": "20. O Brahmin, if Guru is in the 12<sup>th</sup> from Lagn Pad, receiving a Drishti from others, the expenses will be through ta",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch29:v20": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v20",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "20.",
+      "content_role": "verse",
+      "exact_text": "20. O Brahmin, if Guru is in the 12<sup>th</sup> from Lagn Pad, receiving a Drishti from others, the expenses will be through taxes and on the person himself.",
+      "pdf_pages": [
+        63
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 20 · PDF page 63 · bphs-97:santhanam:ch29:v20",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v19",
+      "next_atom_id": "bphs-97:santhanam:ch29:v21",
+      "context_before": "paternal relatives. A malefic so related to the said Budh will cause loss of wealth through disputes.\n\n<!-- SOURCE_PAGE 63 -->\n\n",
+      "context_after": "21. O Brahmin, if Shani is in the 12<sup>th</sup> from Lagn Pad along with Mangal and receives a Drishti from others, the expens",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch29:v21": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v21",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "21.",
+      "content_role": "verse",
+      "exact_text": "21. O Brahmin, if Shani is in the 12<sup>th</sup> from Lagn Pad along with Mangal and receives a Drishti from others, the expenses will be through one’s co-born.",
+      "pdf_pages": [
+        63
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 21 · PDF page 63 · bphs-97:santhanam:ch29:v21",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v20",
+      "next_atom_id": "bphs-97:santhanam:ch29:v22",
+      "context_before": " O Brahmin, if Guru is in the 12<sup>th</sup> from Lagn Pad, receiving a Drishti from others, the expenses will be through taxes and on the person himself.\n\n",
+      "context_after": "22. Gainful Sources. Whatever sources of expenses are indicated above with reference to the 12<sup>th</sup> from Lagn Pad, gains",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch29:v22": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v22",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "22.",
+      "content_role": "verse",
+      "exact_text": "22. Gainful Sources. Whatever sources of expenses are indicated above with reference to the 12<sup>th</sup> from Lagn Pad, gains through similar sources will occur, if Labh Bhava so features with reference to Lagn Pad.",
+      "pdf_pages": [
+        63
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 22 · PDF page 63 · bphs-97:santhanam:ch29:v22",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v21",
+      "next_atom_id": "bphs-97:santhanam:ch29:v23",
+      "context_before": " O Brahmin, if Shani is in the 12<sup>th</sup> from Lagn Pad along with Mangal and receives a Drishti from others, the expenses will be through one’s co-born.\n\n",
+      "context_after": "23. The 7<sup>th</sup> Bhava from Pad (up to Sloka 27). If Rahu, or Ketu is placed in the 7<sup>th</sup> from Lagn Pad, the nati",
+      "content_missing": false
+    }
+  }
+}

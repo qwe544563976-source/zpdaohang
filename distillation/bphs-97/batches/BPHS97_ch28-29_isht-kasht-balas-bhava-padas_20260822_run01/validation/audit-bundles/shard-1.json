@@ -1,0 +1,1837 @@
+{
+  "shard": 1,
+  "step_count": 10,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch28-v10-graha-auspicious-first-five-places.step-001",
+      "method": {
+        "method": "ch28-v10-graha-auspicious-first-five-places",
+        "title": "尊贵位次定吉：行星落前五种位置为吉",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘里这颗行星算吉还是算凶",
+          "行星入旺或落友星座算不算好"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "A Grah is considered auspicious in the first five of the said places",
+            "due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi",
+            "行星尊贵位次 吉凶定性"
+          ],
+          "counter_queries": [
+            "And in the other three places it is inauspicious",
+            "In the sixth place it is neutral, i.e. neither good nor bad",
+            "行星落敌星座或落陷时的凶性定性"
+          ],
+          "boundary_queries": [
+            "O Brahmin, in other Vargas these are halved",
+            "Isht and Kasht Balas",
+            "尊贵位次吉凶判定在其他分盘下的取值差异"
+          ],
+          "method_queries": [
+            "If Subhanka is deducted from 60, Asubhanka (Asubh Pankthi, inauspicious points) will emerge",
+            "怎样算行星的 Subhanka 与 Asubhanka"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch28-v10-graha-auspicious-first-five-places.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi"
+            },
+            {
+              "step_id": "ch28-v10-graha-auspicious-first-five-places.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in the first five of the said places"
+            },
+            {
+              "step_id": "ch28-v10-graha-auspicious-first-five-places.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "A Grah is considered auspicious"
+            },
+            {
+              "step_id": "ch28-v10-graha-auspicious-first-five-places.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi A Grah is considered auspicious"
+            },
+            {
+              "step_id": "ch28-v10-graha-auspicious-first-five-places.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in the first five of the said places A Grah is considered auspicious"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "无法确定所考察行星落在哪一种尊贵位次时停止。",
+          "所考察对象不在原文所列九种位置之内时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch28-v10-graha-auspicious-first-five-places.step-001",
+        "action": "先定出所考察行星落在原文所列九种尊贵位次中的哪一种，再按本步断其吉凶。",
+        "applicability_scope": "仅限本章 Isht 与 Kasht 体系内行星尊贵位次的吉凶定性；原文未给时间、上升或事项限定。原文另说“in other Vargas these are halved”，本步不替它改定分盘下的取值。",
+        "minimum_supported_claim": "行星（Grah）依其落在入旺、Mooltrikon、本星座、大友星座、友星座、中性星座、敌星座、大敌星座、落陷星座（Rāśi）这九种位置定其吉凶；落在所述前五种位置时，该行星视为吉。",
+        "produced_fact_keys": [
+          "所考察行星的尊贵位次吉凶定性"
+        ],
+        "required_fact_keys": [
+          "所考察行星（Grah）所落星座（Rāśi）的尊贵位次是九种中的哪一种"
+        ],
+        "condition_logic": {
+          "fact_key": "所考察行星（Grah）所落星座（Rāśi）的尊贵位次是九种中的哪一种"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi",
+              "claim": "行星（Grah）依其落在入旺、Mooltrikon、本星座、大友星座、友星座、中性星座、敌星座、大敌星座、落陷星座（Rāśi）这九种位置"
+            },
+            {
+              "quote": "in the first five of the said places",
+              "claim": "落在所述前五种位置"
+            }
+          ],
+          "results": [
+            {
+              "quote": "A Grah is considered auspicious",
+              "claim": "该行星视为吉"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch28:v7-9",
+            "quote": "due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi",
+            "pdf_pages": [
+              61
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch28:v10",
+            "quote": "A Grah is considered auspicious in the first five of the said places.",
+            "pdf_pages": [
+              61
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：所考察行星（Grah）所落星座（Rāśi）的尊贵位次是九种中的哪一种。",
+        "stop_fact_keys": [
+          "所考察行星（Grah）所落星座（Rāśi）的尊贵位次是九种中的哪一种"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体应验事项、程度或时间。",
+          "原文只说前五种位置为吉，不得把它改读成行星本身的吉凶星身份。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch28:v7-9"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "4c6e4769b3ff452da593ad4a4aef3a06fee9363c5b4660c6aa0d0e95d627a7b9"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch28-v10-graha-neutral-sixth-place.step-001",
+      "method": {
+        "method": "ch28-v10-graha-neutral-sixth-place",
+        "title": "尊贵位次定中性：行星落第六种位置",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这颗行星是不是不好不坏",
+          "行星落中性星座怎么断"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "In the sixth place it is neutral, i.e. neither good nor bad",
+            "due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi",
+            "行星尊贵位次 吉凶定性"
+          ],
+          "counter_queries": [
+            "A Grah is considered auspicious in the first five of the said places",
+            "And in the other three places it is inauspicious",
+            "同一行星被定为吉或凶的位置"
+          ],
+          "boundary_queries": [
+            "O Brahmin, in other Vargas these are halved",
+            "Isht and Kasht Balas",
+            "尊贵位次吉凶判定在其他分盘下的取值差异"
+          ],
+          "method_queries": [
+            "If Subhanka is deducted from 60, Asubhanka (Asubh Pankthi, inauspicious points) will emerge",
+            "怎样算行星的 Subhanka 与 Asubhanka"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch28-v10-graha-neutral-sixth-place.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi"
+            },
+            {
+              "step_id": "ch28-v10-graha-neutral-sixth-place.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "In the sixth place"
+            },
+            {
+              "step_id": "ch28-v10-graha-neutral-sixth-place.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "it is neutral, i.e. neither good nor bad"
+            },
+            {
+              "step_id": "ch28-v10-graha-neutral-sixth-place.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi it is neutral, i.e. neither good nor bad"
+            },
+            {
+              "step_id": "ch28-v10-graha-neutral-sixth-place.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "In the sixth place it is neutral, i.e. neither good nor bad"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "无法确定所考察行星落在哪一种尊贵位次时停止。",
+          "所考察对象不在原文所列九种位置之内时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch28-v10-graha-neutral-sixth-place.step-001",
+        "action": "先定出所考察行星落在原文所列九种尊贵位次中的哪一种，再按本步断其吉凶。",
+        "applicability_scope": "仅限本章 Isht 与 Kasht 体系内行星尊贵位次的吉凶定性；原文未给时间、上升或事项限定。原文另说“in other Vargas these are halved”，本步不替它改定分盘下的取值。",
+        "minimum_supported_claim": "行星（Grah）依其落在入旺、Mooltrikon、本星座、大友星座、友星座、中性星座、敌星座、大敌星座、落陷星座（Rāśi）这九种位置定其吉凶；落在第六种位置时，该行星为中性，既不好也不坏。",
+        "produced_fact_keys": [
+          "所考察行星的尊贵位次中性定性"
+        ],
+        "required_fact_keys": [
+          "所考察行星（Grah）所落星座（Rāśi）的尊贵位次是九种中的哪一种"
+        ],
+        "condition_logic": {
+          "fact_key": "所考察行星（Grah）所落星座（Rāśi）的尊贵位次是九种中的哪一种"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi",
+              "claim": "行星（Grah）依其落在入旺、Mooltrikon、本星座、大友星座、友星座、中性星座、敌星座、大敌星座、落陷星座（Rāśi）这九种位置"
+            },
+            {
+              "quote": "In the sixth place",
+              "claim": "落在第六种位置"
+            }
+          ],
+          "results": [
+            {
+              "quote": "it is neutral, i.e. neither good nor bad",
+              "claim": "该行星为中性，既不好也不坏"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch28:v7-9",
+            "quote": "due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi",
+            "pdf_pages": [
+              61
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch28:v10",
+            "quote": "In the sixth place it is neutral, i.e. neither good nor bad.",
+            "pdf_pages": [
+              61
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：所考察行星（Grah）所落星座（Rāśi）的尊贵位次是九种中的哪一种。",
+        "stop_fact_keys": [
+          "所考察行星（Grah）所落星座（Rāśi）的尊贵位次是九种中的哪一种"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "中性不等于吉，也不等于凶，不得向任一边靠。",
+          "不得据此推断具体应验事项或时间。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch28:v7-9"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "f39a7311ccfd152a1ee025d471e63ad0f76fca132ed6cecbdde577ab9ee80077"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch28-v10-graha-inauspicious-other-three-places.step-001",
+      "method": {
+        "method": "ch28-v10-graha-inauspicious-other-three-places",
+        "title": "尊贵位次定凶：行星落其余三种位置",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘里哪颗行星被定为凶",
+          "行星落陷或落敌星座怎么断"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "And in the other three places it is inauspicious",
+            "due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi",
+            "行星尊贵位次 吉凶定性"
+          ],
+          "counter_queries": [
+            "A Grah is considered auspicious in the first five of the said places",
+            "In the sixth place it is neutral, i.e. neither good nor bad",
+            "行星入旺或落本星座时的吉性定性"
+          ],
+          "boundary_queries": [
+            "O Brahmin, in other Vargas these are halved",
+            "Isht and Kasht Balas",
+            "尊贵位次吉凶判定在其他分盘下的取值差异"
+          ],
+          "method_queries": [
+            "If Subhanka is deducted from 60, Asubhanka (Asubh Pankthi, inauspicious points) will emerge",
+            "怎样算行星的 Subhanka 与 Asubhanka"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch28-v10-graha-inauspicious-other-three-places.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi"
+            },
+            {
+              "step_id": "ch28-v10-graha-inauspicious-other-three-places.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in the other three places"
+            },
+            {
+              "step_id": "ch28-v10-graha-inauspicious-other-three-places.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "it is inauspicious"
+            },
+            {
+              "step_id": "ch28-v10-graha-inauspicious-other-three-places.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi it is inauspicious"
+            },
+            {
+              "step_id": "ch28-v10-graha-inauspicious-other-three-places.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in the other three places it is inauspicious"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "无法确定所考察行星落在哪一种尊贵位次时停止。",
+          "所考察对象不在原文所列九种位置之内时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch28-v10-graha-inauspicious-other-three-places.step-001",
+        "action": "先定出所考察行星落在原文所列九种尊贵位次中的哪一种，再按本步断其吉凶。",
+        "applicability_scope": "仅限本章 Isht 与 Kasht 体系内行星尊贵位次的吉凶定性；原文未给时间、上升或事项限定。原文另说“in other Vargas these are halved”，本步不替它改定分盘下的取值。",
+        "minimum_supported_claim": "行星（Grah）依其落在入旺、Mooltrikon、本星座、大友星座、友星座、中性星座、敌星座、大敌星座、落陷星座（Rāśi）这九种位置定其吉凶；落在其余三种位置时，该行星视为凶。",
+        "produced_fact_keys": [
+          "所考察行星的尊贵位次凶性定性"
+        ],
+        "required_fact_keys": [
+          "所考察行星（Grah）所落星座（Rāśi）的尊贵位次是九种中的哪一种"
+        ],
+        "condition_logic": {
+          "fact_key": "所考察行星（Grah）所落星座（Rāśi）的尊贵位次是九种中的哪一种"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi",
+              "claim": "行星（Grah）依其落在入旺、Mooltrikon、本星座、大友星座、友星座、中性星座、敌星座、大敌星座、落陷星座（Rāśi）这九种位置"
+            },
+            {
+              "quote": "in the other three places",
+              "claim": "落在其余三种位置"
+            }
+          ],
+          "results": [
+            {
+              "quote": "it is inauspicious",
+              "claim": "该行星视为凶"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch28:v7-9",
+            "quote": "due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi",
+            "pdf_pages": [
+              61
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch28:v10",
+            "quote": "And in the other three places it is inauspicious.",
+            "pdf_pages": [
+              61
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：所考察行星（Grah）所落星座（Rāśi）的尊贵位次是九种中的哪一种。",
+        "stop_fact_keys": [
+          "所考察行星（Grah）所落星座（Rāśi）的尊贵位次是九种中的哪一种"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体灾祸事项、程度或时间。",
+          "原文只说其余三种位置为凶，不得把它改读成行星本身的吉凶星身份。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch28:v7-9"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "a4f4849b0f1f9a9efc177a498789288e51d0fb7b08a1ad4915f704b715be4cf2"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch28-v11-12-auspiciousness-more-dasha-bhavas-auspicious.step-001",
+      "method": {
+        "method": "ch28-v11-12-auspiciousness-more-dasha-bhavas-auspicious",
+        "title": "吉性较多：该行星的大运与诸宫为吉",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "这颗行星的大运对我是好是坏",
+          "行星力量算出来之后怎么断吉凶"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If auspiciousness is more in the case of a Grah’s strength, the Dasha and Bhavas, related to that Grah will be auspicious",
+            "Whatever quantum of Dig Bal etc. are obtained by a Grah, will be the extent of auspicious effects",
+            "吉性大于凶性 大运与宫为吉"
+          ],
+          "counter_queries": [
+            "These are converse, if inauspiciousness is predominant",
+            "凶性占优时的相反结论"
+          ],
+          "boundary_queries": [
+            "The directional strength of a Grah is itself representative of the effects, due to the direction",
+            "本条只在 Dig Bal、Kaal Bal 等力量体系内成立"
+          ],
+          "method_queries": [
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+            "怎样计算行星的六力与方位力"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch28-v11-12-auspiciousness-more-dasha-bhavas-auspicious.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Whatever quantum of Dig Bal etc. are obtained by a Grah, will be the extent of auspicious effects"
+            },
+            {
+              "step_id": "ch28-v11-12-auspiciousness-more-dasha-bhavas-auspicious.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Deducting those figures from 60, the extent of inauspiciousness is known"
+            },
+            {
+              "step_id": "ch28-v11-12-auspiciousness-more-dasha-bhavas-auspicious.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If auspiciousness is more in the case of a Grah’s strength"
+            },
+            {
+              "step_id": "ch28-v11-12-auspiciousness-more-dasha-bhavas-auspicious.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the Dasha and Bhavas, related to that Grah will be auspicious"
+            },
+            {
+              "step_id": "ch28-v11-12-auspiciousness-more-dasha-bhavas-auspicious.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Whatever quantum of Dig Bal etc. are obtained by a Grah, will be the extent of auspicious effects the Dasha and Bhavas, related to that Grah will be auspicious"
+            },
+            {
+              "step_id": "ch28-v11-12-auspiciousness-more-dasha-bhavas-auspicious.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Deducting those figures from 60, the extent of inauspiciousness is known the Dasha and Bhavas, related to that Grah will be auspicious"
+            },
+            {
+              "step_id": "ch28-v11-12-auspiciousness-more-dasha-bhavas-auspicious.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If auspiciousness is more in the case of a Grah’s strength the Dasha and Bhavas, related to that Grah will be auspicious"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少所考察行星的吉性与凶性数值时停止。",
+          "无法判定两者孰多孰少时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch28-v11-12-auspiciousness-more-dasha-bhavas-auspicious.step-001",
+        "action": "把所考察行星所得的 Dig Bal 等力量数值与从 60 减得的凶性数值相比，吉性较多时断该行星相关的大运与诸宫为吉。",
+        "applicability_scope": "原文本句以 Dig Bal、Kaal Bal 等力量数值立说；原文没有指明吉果体现在哪一宫、哪一事项或哪一时段。",
+        "minimum_supported_claim": "行星（Grah）所得的 Dig Bal 等力量数值即其吉性程度，从 60 减去这些数值即得凶性程度；该行星力量所显吉性较多时，与该行星相关的大运（Dasha）与诸宫（Bhavas）为吉。",
+        "produced_fact_keys": [
+          "所考察行星相关大运与诸宫的吉凶定性"
+        ],
+        "required_fact_keys": [
+          "所考察行星（Grah）的吉性数值是否多于凶性数值"
+        ],
+        "condition_logic": {
+          "fact_key": "所考察行星（Grah）的吉性数值是否多于凶性数值"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Whatever quantum of Dig Bal etc. are obtained by a Grah, will be the extent of auspicious effects",
+              "claim": "行星（Grah）所得的 Dig Bal 等力量数值即其吉性程度"
+            },
+            {
+              "quote": "Deducting those figures from 60, the extent of inauspiciousness is known",
+              "claim": "从 60 减去这些数值即得凶性程度"
+            },
+            {
+              "quote": "If auspiciousness is more in the case of a Grah’s strength",
+              "claim": "该行星力量所显吉性较多时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the Dasha and Bhavas, related to that Grah will be auspicious",
+              "claim": "与该行星相关的大运（Dasha）与诸宫（Bhavas）为吉"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch28:v11-12",
+            "quote": "Whatever quantum of Dig Bal etc. are obtained by a Grah, will be the extent of auspicious effects, acquirable on account of that strength.",
+            "pdf_pages": [
+              61
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch28:v11-12",
+            "quote": "Deducting those figures from 60, the extent of inauspiciousness is known.",
+            "pdf_pages": [
+              61
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch28:v11-12",
+            "quote": "If auspiciousness is more in the case of a Grah’s strength, the Dasha and Bhavas, related to that Grah will be auspicious.",
+            "pdf_pages": [
+              61
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：所考察行星（Grah）的吉性数值是否多于凶性数值。",
+        "stop_fact_keys": [
+          "所考察行星（Grah）的吉性数值是否多于凶性数值"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推算大运的起止年份或具体应验事项。",
+          "原文只说相关的大运与诸宫为吉，不得改读成该行星本身变成吉星。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "2dfb49c01d56e0d529b91e29d1f5e8fff1937c75dea0645880cd036ce4d7aa9d"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch28-v11-12-inauspiciousness-predominant-converse.step-001",
+      "method": {
+        "method": "ch28-v11-12-inauspiciousness-predominant-converse",
+        "title": "凶性占优：前句判定相反",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "行星凶性大于吉性时怎么看",
+          "我这个大运是不是反过来断"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "These are converse, if inauspiciousness is predominant",
+            "凶性占优 结论相反"
+          ],
+          "counter_queries": [
+            "If auspiciousness is more in the case of a Grah’s strength, the Dasha and Bhavas, related to that Grah will be auspicious",
+            "吉性较多时的吉断"
+          ],
+          "boundary_queries": [
+            "and Kaal Bal itself is indicative of effects, due to the day",
+            "“相反”到底反到什么程度，原文未定"
+          ],
+          "method_queries": [
+            "Deducting those figures from 60, the extent of inauspiciousness is known",
+            "怎样算行星的凶性数值"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch28-v11-12-inauspiciousness-predominant-converse.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if inauspiciousness is predominant"
+            },
+            {
+              "step_id": "ch28-v11-12-inauspiciousness-predominant-converse.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "These are converse"
+            },
+            {
+              "step_id": "ch28-v11-12-inauspiciousness-predominant-converse.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if inauspiciousness is predominant These are converse"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少所考察行星的凶性与吉性数值时停止。",
+          "原文未写明“相反”的具体内容，需要具体应验事项时停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch28-v11-12-inauspiciousness-predominant-converse.step-001",
+        "action": "判定所考察行星的凶性是否占优，若占优则把前句的吉断反过来。",
+        "applicability_scope": "原文只写“These are converse”，没有把反过来的内容逐项写出；本步只保留“相反”这一层意思，不替原文列举具体应验。",
+        "minimum_supported_claim": "该行星（Grah）凶性占优时，前句关于大运（Dasha）与诸宫（Bhavas）为吉的判定相反。",
+        "produced_fact_keys": [
+          "所考察行星相关大运与诸宫的相反判定"
+        ],
+        "required_fact_keys": [
+          "所考察行星（Grah）的凶性数值是否占优（predominant）"
+        ],
+        "condition_logic": {
+          "fact_key": "所考察行星（Grah）的凶性数值是否占优（predominant）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if inauspiciousness is predominant",
+              "claim": "凶性占优时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "These are converse",
+              "claim": "前句关于大运（Dasha）与诸宫（Bhavas）为吉的判定相反"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch28:v11-12",
+            "quote": "These are converse, if inauspiciousness is predominant.",
+            "pdf_pages": [
+              61
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：所考察行星（Grah）的凶性数值是否占优（predominant）。",
+        "stop_fact_keys": [
+          "所考察行星（Grah）的凶性数值是否占优（predominant）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文只写“相反”，不得替它写出具体的凶事、程度或时间。",
+          "不得把“凶性占优”等同于行星本身是凶星。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch28:v11-12"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "7e9c4c3c6867ca354c31fb4e04cb2ce467e7efa82f2a51d355cffbaabb1f6807"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch28-v15-20-bhava-two-rashis-more-bindus.step-001",
+      "method": {
+        "method": "ch28-v15-20-bhava-two-rashis-more-bindus",
+        "title": "宫横跨两星座：Bindus 较多的那个星座结果较佳",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这一宫跨了两个星座该怎么断",
+          "两个宫主该听哪一个"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "In that case, whichever Rashihas more Bindus, that Rashiwill yield more favourable results, concerning that Bhava",
+            "If a Bhava extends to two Rāśis, the rectification will be done, as per both the Lords",
+            "宫跨两星座 Bindus 较多者结果较佳"
+          ],
+          "counter_queries": [
+            "If both the Rāśis have more auspicious Bindus, take the average",
+            "两个星座 Bindus 都多时取平均"
+          ],
+          "boundary_queries": [
+            "The strength of a Bhava and its Lord have already been explained",
+            "Isht and Kasht Balas",
+            "本条只在宫效应合成的校正环节内成立"
+          ],
+          "method_queries": [
+            "In Ashtak Varg add Bindus (auspicious points) and deduct Karanas (inauspicious points)",
+            "怎样数一个星座的 Bindus"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch28-v15-20-bhava-two-rashis-more-bindus.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If a Bhava extends to two Rāśis"
+            },
+            {
+              "step_id": "ch28-v15-20-bhava-two-rashis-more-bindus.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the rectification will be done, as per both the Lords"
+            },
+            {
+              "step_id": "ch28-v15-20-bhava-two-rashis-more-bindus.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "whichever Rashihas more Bindus"
+            },
+            {
+              "step_id": "ch28-v15-20-bhava-two-rashis-more-bindus.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "that Rashiwill yield more favourable results, concerning that Bhava"
+            },
+            {
+              "step_id": "ch28-v15-20-bhava-two-rashis-more-bindus.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If a Bhava extends to two Rāśis that Rashiwill yield more favourable results, concerning that Bhava"
+            },
+            {
+              "step_id": "ch28-v15-20-bhava-two-rashis-more-bindus.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the rectification will be done, as per both the Lords that Rashiwill yield more favourable results, concerning that Bhava"
+            },
+            {
+              "step_id": "ch28-v15-20-bhava-two-rashis-more-bindus.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "whichever Rashihas more Bindus that Rashiwill yield more favourable results, concerning that Bhava"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少所考察宫是否横跨两个星座的事实时停止。",
+          "缺少两个星座的 Bindus 数值时停止。",
+          "两个星座 Bindus 相等时，原文未给判法，停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch28-v15-20-bhava-two-rashis-more-bindus.step-001",
+        "action": "先看所考察宫是否横跨两个星座，再比较两个星座的 Bindus 多寡，取 Bindus 较多的那个星座作为该宫较有利的一边。",
+        "applicability_scope": "仅限本章宫效应合成的校正环节；原文另写“If both the Rāśis have more auspicious Bindus, take the average”，本步不把那一句当成本条的结论。",
+        "minimum_supported_claim": "某宫（Bhava）横跨两个星座（Rāśi）时，按两个宫主作校正；其中 Bindus 较多的那个星座，就该宫而言会给出较有利的结果。",
+        "produced_fact_keys": [
+          "所考察宫跨两星座时的较佳星座判定"
+        ],
+        "required_fact_keys": [
+          "本盘所考察宫（Bhava）是否横跨两个星座（Rāśi）",
+          "本盘所考察宫（Bhava）横跨的两个星座（Rāśi）中哪一个的 Bindus 较多"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘所考察宫（Bhava）是否横跨两个星座（Rāśi）"
+            },
+            {
+              "fact_key": "本盘所考察宫（Bhava）横跨的两个星座（Rāśi）中哪一个的 Bindus 较多"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If a Bhava extends to two Rāśis",
+              "claim": "某宫（Bhava）横跨两个星座（Rāśi）时"
+            },
+            {
+              "quote": "the rectification will be done, as per both the Lords",
+              "claim": "按两个宫主作校正"
+            },
+            {
+              "quote": "whichever Rashihas more Bindus",
+              "claim": "其中 Bindus 较多的那个星座"
+            }
+          ],
+          "results": [
+            {
+              "quote": "that Rashiwill yield more favourable results, concerning that Bhava",
+              "claim": "就该宫而言会给出较有利的结果"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch28:v15-20",
+            "quote": "If a Bhava extends to two Rāśis, the rectification will be done, as per both the Lords.",
+            "pdf_pages": [
+              61
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch28:v15-20",
+            "quote": "In that case, whichever Rashihas more Bindus, that Rashiwill yield more favourable results, concerning that Bhava.",
+            "pdf_pages": [
+              61
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘所考察宫（Bhava）是否横跨两个星座（Rāśi）、本盘所考察宫（Bhava）横跨的两个星座（Rāśi）中哪一个的 Bindus 较多。",
+        "stop_fact_keys": [
+          "本盘所考察宫（Bhava）是否横跨两个星座（Rāśi）",
+          "本盘所考察宫（Bhava）横跨的两个星座（Rāśi）中哪一个的 Bindus 较多"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文只说较有利，不得据此把另一个星座断成凶。",
+          "不得据此推断具体事项、程度或时间。",
+          "不得把本条推广到只占一个星座的宫。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "d3c61e47f40227f445b5f3d874593ce41c10bf13148a2f7da223cecb5a815d6b"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v8-11-eleventh-from-pad-happy-rich.step-001",
+      "method": {
+        "method": "ch29-v8-11-eleventh-from-pad-happy-rich",
+        "title": "上升 Pad 起第 11 宫被行星占据或相照：命主快乐而富有",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子财运怎么样",
+          "我会不会富有"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If the 11<sup>th</sup> from Lagn Pad is occupied, or receives a Drishti from a Grah the native will be happy and rich",
+            "上升 Pad 起第 11 宫被占据或相照 命主富有"
+          ],
+          "counter_queries": [
+            "If the 12<sup>th</sup> from Lagn Pad receives a Drishti from, or is yuti with both benefics and malefics, there will be abundant earnings, but plenty of expenses.",
+            "上升 Pad 起第 12 宫的破财条"
+          ],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "上升 Pad 取宫本身的例外"
+          ],
+          "method_queries": [
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "上升 Pad 怎么求"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v8-11-eleventh-from-pad-happy-rich.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If the 11th from Lagn Pad is occupied"
+            },
+            {
+              "step_id": "ch29-v8-11-eleventh-from-pad-happy-rich.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "receives a Drishti from a Grah"
+            },
+            {
+              "step_id": "ch29-v8-11-eleventh-from-pad-happy-rich.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be happy and rich"
+            },
+            {
+              "step_id": "ch29-v8-11-eleventh-from-pad-happy-rich.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If the 11th from Lagn Pad is occupied the native will be happy and rich"
+            },
+            {
+              "step_id": "ch29-v8-11-eleventh-from-pad-happy-rich.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "receives a Drishti from a Grah the native will be happy and rich"
+            },
+            {
+              "step_id": "ch29-v8-11-eleventh-from-pad-happy-rich.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If the 11th from 1st house Pad is occupied"
+            },
+            {
+              "step_id": "ch29-v8-11-eleventh-from-pad-happy-rich.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If the 11th from 1st house Pad is occupied the native will be happy and rich"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。",
+          "缺少上升 Pad 起第 11 宫的占据与相照事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v8-11-eleventh-from-pad-happy-rich.step-001",
+        "action": "先定出本盘上升 Pad（Lagn Pad）落在哪一宫，再看其起第 11 宫是否被行星占据或受行星相照。",
+        "applicability_scope": "本条以上升 Pad（Lagn Pad）为起算点，不是以本命上升起算；原文没有指明行星身份、时段或适用人群。",
+        "minimum_supported_claim": "上升 Pad（Lagn Pad）起第 11 宫被行星占据，或受行星相照时，命主快乐而富有。",
+        "produced_fact_keys": [
+          "上升 Pad 起第 11 宫的富裕判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）起第 11 宫是否被行星（Grah）占据"
+                },
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）起第 11 宫是否被行星（Grah）相照"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）起第 11 宫是否被行星（Grah）占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）起第 11 宫是否被行星（Grah）占据"
+            },
+            "selection_group": "ch29-v8-11-eleventh-from-pad-happy-rich.step-001:relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）起第 11 宫是否被行星（Grah）占据。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）起第 11 宫是否被行星（Grah）相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）起第 11 宫是否被行星（Grah）相照"
+            },
+            "selection_group": "ch29-v8-11-eleventh-from-pad-happy-rich.step-001:relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）起第 11 宫是否被行星（Grah）相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If the 11<sup>th</sup> from Lagn Pad is occupied",
+              "claim": "上升 Pad（Lagn Pad）起第 11 宫被行星占据"
+            },
+            {
+              "quote": "receives a Drishti from a Grah",
+              "claim": "受行星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be happy and rich",
+              "claim": "命主快乐而富有"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v8-11",
+            "quote": "If the 11<sup>th</sup> from Lagn Pad is occupied, or receives a Drishti from a Grah the native will be happy and rich",
+            "pdf_pages": [
+              62
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升 Pad（Lagn Pad）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财富数额、来源或得财时间。",
+          "不得把上升 Pad 起第 11 宫改读成本命第 11 宫。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "4a4e79bb50ce2b4d0d61c219c05f1f444c4cbad9eaeea2b58e663ca290a833ec"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v8-11-benefic-related-various-means.step-001",
+      "method": {
+        "method": "ch29-v8-11-benefic-related-various-means",
+        "title": "吉星与上升 Pad 起第 11 宫关联：财富经由各种途径而来",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的钱会从哪些路子来",
+          "我的财富来路正不正"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "wealth will come through various means, if a benefic is related, as above",
+            "吉星关联上升 Pad 起第 11 宫 财富各种途径"
+          ],
+          "counter_queries": [
+            "A malefic will confer wealth through questionable means.",
+            "凶星关联时的可疑途径"
+          ],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "上升 Pad 取宫本身的例外"
+          ],
+          "method_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics.",
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "哪些行星算吉星"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v8-11-benefic-related-various-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the 11th from Lagn Pad is occupied"
+            },
+            {
+              "step_id": "ch29-v8-11-benefic-related-various-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "receives a Drishti from a Grah"
+            },
+            {
+              "step_id": "ch29-v8-11-benefic-related-various-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if a benefic is related, as above"
+            },
+            {
+              "step_id": "ch29-v8-11-benefic-related-various-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "wealth will come through various means"
+            },
+            {
+              "step_id": "ch29-v8-11-benefic-related-various-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the 11th from Lagn Pad is occupied wealth will come through various means"
+            },
+            {
+              "step_id": "ch29-v8-11-benefic-related-various-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "receives a Drishti from a Grah wealth will come through various means"
+            },
+            {
+              "step_id": "ch29-v8-11-benefic-related-various-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if a benefic is related, as above wealth will come through various means"
+            },
+            {
+              "step_id": "ch29-v8-11-benefic-related-various-means.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "the 11th from 1st house Pad is occupied"
+            },
+            {
+              "step_id": "ch29-v8-11-benefic-related-various-means.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "the 11th from 1st house Pad is occupied wealth will come through various means"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。",
+          "缺少上升 Pad 起第 11 宫与吉星的占据或相照事实时停止。",
+          "无法判定该行星是吉星还是凶星时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v8-11-benefic-related-various-means.step-001",
+        "action": "看与上升 Pad（Lagn Pad）起第 11 宫发生关联（占据或相照）的是不是吉星，据此断财富来路。",
+        "applicability_scope": "原文的「as above」指同偈前句所说的占据或相照两种关联方式；吉星凶星的判准见第 3 章第 11 偈。",
+        "minimum_supported_claim": "上升 Pad（Lagn Pad）起第 11 宫被占据，或受相照，而如此关联的是吉星时，财富经由各种途径而来。",
+        "produced_fact_keys": [
+          "上升 Pad 起第 11 宫的吉星得财来路判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）起第 11 宫是否被吉星占据"
+                },
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）起第 11 宫是否被吉星相照"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）起第 11 宫是否被吉星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）起第 11 宫是否被吉星占据"
+            },
+            "selection_group": "ch29-v8-11-benefic-related-various-means.step-001:benefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）起第 11 宫是否被吉星占据。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）起第 11 宫是否被吉星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）起第 11 宫是否被吉星相照"
+            },
+            "selection_group": "ch29-v8-11-benefic-related-various-means.step-001:benefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）起第 11 宫是否被吉星相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "the 11<sup>th</sup> from Lagn Pad is occupied",
+              "claim": "上升 Pad（Lagn Pad）起第 11 宫被占据"
+            },
+            {
+              "quote": "receives a Drishti from a Grah",
+              "claim": "受相照"
+            },
+            {
+              "quote": "if a benefic is related, as above",
+              "claim": "而如此关联的是吉星时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "wealth will come through various means",
+              "claim": "财富经由各种途径而来"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v8-11",
+            "quote": "If the 11<sup>th</sup> from Lagn Pad is occupied, or receives a Drishti from a Grah the native will be happy and rich",
+            "pdf_pages": [
+              62
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v8-11",
+            "quote": "wealth will come through various means, if a benefic is related, as above",
+            "pdf_pages": [
+              62
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升 Pad（Lagn Pad）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体行业、金额或得财时间。",
+          "原文只说途径各种，不得改读成来路正当与否的价值判断。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "f9d52465f1e54c7aa5db5295d41b22f67368cbca063abe71102139e7e65d7e5a"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v8-11-malefic-related-questionable-means.step-001",
+      "method": {
+        "method": "ch29-v8-11-malefic-related-questionable-means",
+        "title": "凶星与上升 Pad 起第 11 宫关联：财富经由可疑途径而来",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的钱会不会来路不正",
+          "凶星管我的进项吗"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "A malefic will confer wealth through questionable means",
+            "凶星关联上升 Pad 起第 11 宫 可疑途径"
+          ],
+          "counter_queries": [
+            "wealth will come through various means, if a benefic is related, as above",
+            "吉星关联时的各种途径"
+          ],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "上升 Pad 取宫本身的例外"
+          ],
+          "method_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics.",
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "哪些行星算凶星"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v8-11-malefic-related-questionable-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the 11th from Lagn Pad is occupied"
+            },
+            {
+              "step_id": "ch29-v8-11-malefic-related-questionable-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "receives a Drishti from a Grah"
+            },
+            {
+              "step_id": "ch29-v8-11-malefic-related-questionable-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "A malefic"
+            },
+            {
+              "step_id": "ch29-v8-11-malefic-related-questionable-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will confer wealth through questionable means"
+            },
+            {
+              "step_id": "ch29-v8-11-malefic-related-questionable-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the 11th from Lagn Pad is occupied will confer wealth through questionable means"
+            },
+            {
+              "step_id": "ch29-v8-11-malefic-related-questionable-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "receives a Drishti from a Grah will confer wealth through questionable means"
+            },
+            {
+              "step_id": "ch29-v8-11-malefic-related-questionable-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "A malefic will confer wealth through questionable means"
+            },
+            {
+              "step_id": "ch29-v8-11-malefic-related-questionable-means.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "the 11th from 1st house Pad is occupied"
+            },
+            {
+              "step_id": "ch29-v8-11-malefic-related-questionable-means.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "the 11th from 1st house Pad is occupied will confer wealth through questionable means"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。",
+          "缺少上升 Pad 起第 11 宫与凶星的占据或相照事实时停止。",
+          "无法判定该行星是吉星还是凶星时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v8-11-malefic-related-questionable-means.step-001",
+        "action": "看与上升 Pad（Lagn Pad）起第 11 宫发生关联（占据或相照）的是不是凶星，据此断财富来路。",
+        "applicability_scope": "原文的「as above」指同偈前句所说的占据或相照两种关联方式；吉星凶星的判准见第 3 章第 11 偈。",
+        "minimum_supported_claim": "上升 Pad（Lagn Pad）起第 11 宫被占据，或受相照，而与之关联的是凶星时，财富经由可疑途径而来。",
+        "produced_fact_keys": [
+          "上升 Pad 起第 11 宫的凶星得财来路判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）起第 11 宫是否被凶星占据"
+                },
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）起第 11 宫是否被凶星相照"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）起第 11 宫是否被凶星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）起第 11 宫是否被凶星占据"
+            },
+            "selection_group": "ch29-v8-11-malefic-related-questionable-means.step-001:malefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）起第 11 宫是否被凶星占据。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）起第 11 宫是否被凶星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）起第 11 宫是否被凶星相照"
+            },
+            "selection_group": "ch29-v8-11-malefic-related-questionable-means.step-001:malefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）起第 11 宫是否被凶星相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "the 11<sup>th</sup> from Lagn Pad is occupied",
+              "claim": "上升 Pad（Lagn Pad）起第 11 宫被占据"
+            },
+            {
+              "quote": "receives a Drishti from a Grah",
+              "claim": "受相照"
+            },
+            {
+              "quote": "A malefic",
+              "claim": "与之关联的是凶星"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will confer wealth through questionable means",
+              "claim": "财富经由可疑途径而来"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v8-11",
+            "quote": "If the 11<sup>th</sup> from Lagn Pad is occupied, or receives a Drishti from a Grah the native will be happy and rich",
+            "pdf_pages": [
+              62
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v8-11",
+            "quote": "A malefic will confer wealth through questionable means.",
+            "pdf_pages": [
+              62
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升 Pad（Lagn Pad）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断违法事实、案由或时间。",
+          "原文只说途径可疑，不得加重成犯罪或牢狱。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "3e0e90b264c5e81ef5dfb42bb8850450fba397d7c0d69f67a45e7e500373ddda"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v8-11-both-benefic-malefic-both-means.step-001",
+      "method": {
+        "method": "ch29-v8-11-both-benefic-malefic-both-means",
+        "title": "吉凶两类同时关联上升 Pad 起第 11 宫：财富经由两种途径",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的进项是不是好坏来路都有",
+          "钱路混杂怎么看"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If there be both a benefic and a malefic, it will be through both means",
+            "吉凶同时关联上升 Pad 起第 11 宫"
+          ],
+          "counter_queries": [
+            "A malefic will confer wealth through questionable means",
+            "只有凶星关联时"
+          ],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "上升 Pad 取宫本身的例外"
+          ],
+          "method_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics.",
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "吉星凶星怎么分"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v8-11-both-benefic-malefic-both-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the 11th from Lagn Pad is occupied"
+            },
+            {
+              "step_id": "ch29-v8-11-both-benefic-malefic-both-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "receives a Drishti from a Grah"
+            },
+            {
+              "step_id": "ch29-v8-11-both-benefic-malefic-both-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If there be both a benefic and a malefic"
+            },
+            {
+              "step_id": "ch29-v8-11-both-benefic-malefic-both-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "it will be through both means"
+            },
+            {
+              "step_id": "ch29-v8-11-both-benefic-malefic-both-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the 11th from Lagn Pad is occupied it will be through both means"
+            },
+            {
+              "step_id": "ch29-v8-11-both-benefic-malefic-both-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "receives a Drishti from a Grah it will be through both means"
+            },
+            {
+              "step_id": "ch29-v8-11-both-benefic-malefic-both-means.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If there be both a benefic and a malefic it will be through both means"
+            },
+            {
+              "step_id": "ch29-v8-11-both-benefic-malefic-both-means.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "the 11th from 1st house Pad is occupied"
+            },
+            {
+              "step_id": "ch29-v8-11-both-benefic-malefic-both-means.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "the 11th from 1st house Pad is occupied it will be through both means"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。",
+          "缺少吉星或凶星与上升 Pad 起第 11 宫的关联事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v8-11-both-benefic-malefic-both-means.step-001",
+        "action": "分别核对与上升 Pad（Lagn Pad）起第 11 宫关联的吉星与凶星，两类同时存在时按本条断。",
+        "applicability_scope": "原文的「as above」指同偈前句所说的占据或相照两种关联方式；吉星凶星的判准见第 3 章第 11 偈。",
+        "minimum_supported_claim": "上升 Pad（Lagn Pad）起第 11 宫被占据，或受相照，而其中既有吉星又有凶星时，财富经由两种途径而来。",
+        "produced_fact_keys": [
+          "上升 Pad 起第 11 宫的吉凶混合得财来路判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）起第 11 宫是否被吉星占据"
+                },
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）起第 11 宫是否被吉星相照"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）起第 11 宫是否被凶星占据"
+                },
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）起第 11 宫是否被凶星相照"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）起第 11 宫是否被吉星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）起第 11 宫是否被吉星占据"
+            },
+            "selection_group": "ch29-v8-11-both-benefic-malefic-both-means.step-001:benefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）起第 11 宫是否被吉星占据。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）起第 11 宫是否被吉星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）起第 11 宫是否被吉星相照"
+            },
+            "selection_group": "ch29-v8-11-both-benefic-malefic-both-means.step-001:benefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）起第 11 宫是否被吉星相照。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）起第 11 宫是否被凶星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）起第 11 宫是否被凶星占据"
+            },
+            "selection_group": "ch29-v8-11-both-benefic-malefic-both-means.step-001:malefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）起第 11 宫是否被凶星占据。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）起第 11 宫是否被凶星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）起第 11 宫是否被凶星相照"
+            },
+            "selection_group": "ch29-v8-11-both-benefic-malefic-both-means.step-001:malefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）起第 11 宫是否被凶星相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "the 11<sup>th</sup> from Lagn Pad is occupied",
+              "claim": "上升 Pad（Lagn Pad）起第 11 宫被占据"
+            },
+            {
+              "quote": "receives a Drishti from a Grah",
+              "claim": "受相照"
+            },
+            {
+              "quote": "If there be both a benefic and a malefic",
+              "claim": "而其中既有吉星又有凶星"
+            }
+          ],
+          "results": [
+            {
+              "quote": "it will be through both means",
+              "claim": "财富经由两种途径而来"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v8-11",
+            "quote": "If the 11<sup>th</sup> from Lagn Pad is occupied, or receives a Drishti from a Grah the native will be happy and rich",
+            "pdf_pages": [
+              62
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v8-11",
+            "quote": "If there be both a benefic and a malefic, it will be through both means.",
+            "pdf_pages": [
+              62
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升 Pad（Lagn Pad）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断两种途径各占多少比例。",
+          "不得把两种途径改读成两个不同的时间段。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "62c332faeff035d03b9e3f1cc94c1a1e989aac44dfb9fb1cad5403f9ce71c1b0"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch28:v7-9": {
+      "evidence_atom_id": "bphs-97:santhanam:ch28:v7-9",
+      "chapter_number": 28,
+      "chapter_title": "Isht and Kasht Balas",
+      "verse_label": "7-9.",
+      "content_role": "verse",
+      "exact_text": "7-9. Isht and Kasht and Sapt Varg Phal. 60, 45, 30, 22, 15, 8, 4, 2 and 0 are the Subhankas (Subha Griha Pankthis, benefic points), due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi. If Subhanka is deducted from 60, Asubhanka (Asubh Pankthi, inauspicious points) will emerge. O Brahmin, in other Vargas these are halved.",
+      "pdf_pages": [
+        61
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 28 · Sloka 7-9 · PDF page 61 · bphs-97:santhanam:ch28:v7-9",
+      "previous_atom_id": "bphs-97:santhanam:ch28:v6",
+      "next_atom_id": "bphs-97:santhanam:ch28:v10",
+      "context_before": "cy) of the Grah. Reduce Isht Phala from 60 to obtain the Grah’s\n\n<!-- SOURCE_PAGE 61 -->\n\n#### Kasht Phala (malefic tendency).\n\n",
+      "context_after": "10. A Grah is considered auspicious in the first five of the said places. In the sixth place it is neutral, i.e. neither good no",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch28:v10": {
+      "evidence_atom_id": "bphs-97:santhanam:ch28:v10",
+      "chapter_number": 28,
+      "chapter_title": "Isht and Kasht Balas",
+      "verse_label": "10.",
+      "content_role": "verse",
+      "exact_text": "10. A Grah is considered auspicious in the first five of the said places. In the sixth place it is neutral, i.e. neither good nor bad. And in the other three places it is inauspicious.",
+      "pdf_pages": [
+        61
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 28 · Sloka 10 · PDF page 61 · bphs-97:santhanam:ch28:v10",
+      "previous_atom_id": "bphs-97:santhanam:ch28:v7-9",
+      "next_atom_id": "bphs-97:santhanam:ch28:v11-12",
+      "context_before": " is deducted from 60, Asubhanka (Asubh Pankthi, inauspicious points) will emerge. O Brahmin, in other Vargas these are halved.\n\n",
+      "context_after": "11-12. Nature of Effects, due to Dig Bal etc. The directional strength of a Grah is itself representative of the effects, due to",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch28:v11-12": {
+      "evidence_atom_id": "bphs-97:santhanam:ch28:v11-12",
+      "chapter_number": 28,
+      "chapter_title": "Isht and Kasht Balas",
+      "verse_label": "11-12.",
+      "content_role": "verse",
+      "exact_text": "11-12. Nature of Effects, due to Dig Bal etc. The directional strength of a Grah is itself representative of the effects, due to the direction; and Kaal Bal itself is indicative of effects, due to the day. Whatever quantum of Dig Bal etc. are obtained by a Grah, will be the extent of auspicious effects, acquirable on account of that strength. Deducting those figures from 60, the extent of inauspiciousness is known. If auspiciousness is more in the case of a Grah’s strength, the Dasha and Bhavas, related to that Grah will be auspicious. These are converse, if inauspiciousness is predominant.",
+      "pdf_pages": [
+        61
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 28 · Sloka 11-12 · PDF page 61 · bphs-97:santhanam:ch28:v11-12",
+      "previous_atom_id": "bphs-97:santhanam:ch28:v10",
+      "next_atom_id": "bphs-97:santhanam:ch28:v13-14",
+      "context_before": "he said places. In the sixth place it is neutral, i.e. neither good nor bad. And in the other three places it is inauspicious.\n\n",
+      "context_after": "13-14. Sapt Varg Phal and Isht and Kasht (Continued). The various strengths (i.e. the other 6 Vargas) be multiplied by the respe",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch28:v15-20": {
+      "evidence_atom_id": "bphs-97:santhanam:ch28:v15-20",
+      "chapter_number": 28,
+      "chapter_title": "Isht and Kasht Balas",
+      "verse_label": "15-20.",
+      "content_role": "verse",
+      "exact_text": "15-20. Effects of a Bhava. The strength of a Bhava and its Lord have already been explained. The actual effects will be a combination of Bhava strength and its Lord’s strength. If there is a benefic in the Bhava add the same to the auspicious effects and deduct from inauspicious effects, which will denote the inauspicious effects. If a malefic is in the Bhava, reverse the process, i.e. add inauspicious effects and deduct auspicious effects. Similarly Drishtis and Balas. If a Grah is exalted, or with such a dignity, add auspicious effects and reduce inauspicious effects. For debilitation etc. it is converse. In Ashtak Varg add Bindus (auspicious points) and deduct Karanas (inauspicious points). If a Bhava extends to two Rāśis, the rectification will be done, as per both the Lords. In that case, whichever Rashihas more Bindus, that Rashiwill yield more favourable results, concerning that Bhava. If both the Rāśis have more auspicious Bindus, take the average. Thus the auspicious and inauspicious effects of a Bhava be understood.",
+      "pdf_pages": [
+        61
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 28 · Sloka 15-20 · PDF page 61 · bphs-97:santhanam:ch28:v15-20",
+      "previous_atom_id": "bphs-97:santhanam:ch28:v13-14",
+      "next_atom_id": null,
+      "context_before": " Similarly auspicious, or inauspicious effects will be known by multiplying the auspicious, or inauspicious strength by the respective Pankthi.\n\n",
+      "context_after": "",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch29:v8-11": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v8-11",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "8-11.",
+      "content_role": "verse",
+      "exact_text": "8-11. Pad and Finance (up to Sloka 15). O Brahmin, I now tell you of some effects of Grahas, based on Pad. If the 11<sup>th</sup> from Lagn Pad is occupied, or receives a Drishti from a Grah the native will be happy and rich; wealth will come through various means, if a benefic is related, as above. A malefic will confer wealth through questionable means. If there be both a benefic and a malefic, it will be through both means. If the Grah in question be in exaltation, or in own Rashietc., there will be plenty of gains and plenty of happiness.",
+      "pdf_pages": [
+        62
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 8-11 · PDF page 62 · bphs-97:santhanam:ch29:v8-11",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v6-7",
+      "next_atom_id": "bphs-97:santhanam:ch29:v12",
+      "context_before": "e Grah. If a Grah owns two Rāśis, or, if a Rashiis owned by two Grahas; consider the stronger and declare effects accordingly.\n\n",
+      "context_after": "12. O excellent of the Brahmins, if the 12<sup>th</sup> from Lagn Pad does not receive a Drishti, as the 11<sup>th</sup> from La",
+      "content_missing": false
+    }
+  }
+}

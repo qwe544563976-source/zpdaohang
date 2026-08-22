@@ -1,0 +1,1402 @@
+{
+  "shard": 5,
+  "step_count": 7,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch29-v30-37-dar-pad-6-8-12-poor.step-001",
+      "method": {
+        "method": "ch29-v30-37-dar-pad-6-8-12-poor",
+        "title": "Dar Pad 落上升 Pad 起第 6、8、12 宫：命主贫穷",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会一直缺钱",
+          "夫妻位落在坏位置有什么影响"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If the Dar Pad falls in the 6<sup>th</sup> / 8<sup>th</sup> /12<sup>th</sup> from Lagn Pad, then the native will be poor.",
+            "Dar Pad 落上升 Pad 起第 6、8、12 宫 贫穷"
+          ],
+          "counter_queries": [
+            "If the Dar Pad falls in an angle, or in a trine, counted from Lagn Pad, or, if Lagn Pad and Dar Pad both have strong Grahas, the native will be rich and be famous in his country.",
+            "Dar Pad 落角宫三角宫时的富名条"
+          ],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "上升 Pad 取宫本身的例外"
+          ],
+          "method_queries": [
+            "Dar (Kalatr) of Yuvati",
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "Dar Pad 是哪一个 Pad"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v30-37-dar-pad-6-8-12-poor.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If the Dar Pad falls in the 6th / 8th /12th from Lagn Pad"
+            },
+            {
+              "step_id": "ch29-v30-37-dar-pad-6-8-12-poor.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "then the native will be poor"
+            },
+            {
+              "step_id": "ch29-v30-37-dar-pad-6-8-12-poor.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If the Dar Pad falls in the 6th / 8th /12th from Lagn Pad then the native will be poor"
+            },
+            {
+              "step_id": "ch29-v30-37-dar-pad-6-8-12-poor.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If the Dar Pad falls in the 6th / 8th /12th from 1st house Pad"
+            },
+            {
+              "step_id": "ch29-v30-37-dar-pad-6-8-12-poor.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If the Dar Pad falls in the 6th / 8th /12th from 1st house Pad then the native will be poor"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少 Dar Pad 相对上升 Pad 的位次事实时停止。",
+          "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v30-37-dar-pad-6-8-12-poor.step-001",
+        "action": "先定出 Dar Pad（Kalatr Pad）落在哪一宫，再看它从上升 Pad（Lagn Pad）起算是否落第 6、8 或 12 宫。",
+        "applicability_scope": "本条以上升 Pad（Lagn Pad）为起算点；原文没有给时间或程度限定。",
+        "minimum_supported_claim": "Dar Pad（Kalatr Pad）从上升 Pad（Lagn Pad）起算落在第 6 宫、第 8 宫、或第 12 宫时，命主贫穷。",
+        "produced_fact_keys": [
+          "上升 Pad 与 Dar Pad 相对位置的贫穷判定"
+        ],
+        "required_fact_keys": [
+          "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起第 6 宫"
+                },
+                {
+                  "fact_key": "Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起第 8 宫"
+                },
+                {
+                  "fact_key": "Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起第 12 宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起第 6 宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起第 6 宫"
+            },
+            "selection_group": "ch29-v30-37-dar-pad-6-8-12-poor.step-001:position",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起第 6 宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起第 8 宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起第 8 宫"
+            },
+            "selection_group": "ch29-v30-37-dar-pad-6-8-12-poor.step-001:position",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起第 8 宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起第 12 宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起第 12 宫"
+            },
+            "selection_group": "ch29-v30-37-dar-pad-6-8-12-poor.step-001:position",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起第 12 宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If the Dar Pad falls in the 6<sup>th</sup> / 8<sup>th</sup> /12<sup>th</sup> from Lagn Pad",
+              "claim": "Dar Pad（Kalatr Pad）从上升 Pad（Lagn Pad）起算落在第 6 宫、第 8 宫、或第 12 宫时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "then the native will be poor",
+              "claim": "命主贫穷"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v30-37",
+            "quote": "If the Dar Pad falls in the 6<sup>th</sup> / 8<sup>th</sup> /12<sup>th</sup> from Lagn Pad, then the native will be poor.",
+            "pdf_pages": [
+              63
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘 Dar Pad（Kalatr Pad）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断贫穷的时段或程度。",
+          "不得把 Dar Pad 与本命第 7 宫混为一处。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "934505da37cbb683b66352f71741fb6fe8eb40c7d7dee4dc8cacc6772e214ef9"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v30-37-strong-graha-occupation-marital-happiness.step-001",
+      "method": {
+        "method": "ch29-v30-37-strong-graha-occupation-marital-happiness",
+        "title": "有力行星占据上升 Pad 及其第 7、角、三角、Upachaya 宫：夫妻和乐",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的婚姻幸不幸福",
+          "夫妻关系怎么看"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Lagn Pad and the 7<sup>th</sup> therefrom, or an angle, a trine, an Upachaya therefrom is occupied by a strong Grah, there will be happiness between the husband and wife.",
+            "有力行星占据上升 Pad 一路 夫妻和乐"
+          ],
+          "counter_queries": [
+            "If these be in mutually 6<sup>th</sup> /8<sup>th</sup> /12<sup>th</sup> , doubtlessly mutual enmity will crop up.",
+            "两 Pad 互为 6、8、12 时的敌意条"
+          ],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "上升 Pad 取宫本身的例外"
+          ],
+          "method_queries": [
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "有力怎么判"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v30-37-strong-graha-occupation-marital-happiness.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Lagn Pad and the 7th therefrom"
+            },
+            {
+              "step_id": "ch29-v30-37-strong-graha-occupation-marital-happiness.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or an angle, a trine, an Upachaya therefrom is occupied by a strong Grah"
+            },
+            {
+              "step_id": "ch29-v30-37-strong-graha-occupation-marital-happiness.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "there will be happiness between the husband and wife"
+            },
+            {
+              "step_id": "ch29-v30-37-strong-graha-occupation-marital-happiness.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Lagn Pad and the 7th therefrom there will be happiness between the husband and wife"
+            },
+            {
+              "step_id": "ch29-v30-37-strong-graha-occupation-marital-happiness.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or an angle, a trine, an Upachaya therefrom is occupied by a strong Grah there will be happiness between the husband and wife"
+            },
+            {
+              "step_id": "ch29-v30-37-strong-graha-occupation-marital-happiness.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If 1st house Pad and the 7th therefrom"
+            },
+            {
+              "step_id": "ch29-v30-37-strong-graha-occupation-marital-happiness.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If 1st house Pad and the 7th therefrom there will be happiness between the husband and wife"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。",
+          "缺少各处是否被有力行星占据的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v30-37-strong-graha-occupation-marital-happiness.step-001",
+        "action": "先定出本盘上升 Pad（Lagn Pad）落在哪一宫，再看有力的行星占据的是上升 Pad 与其起第 7 宫，还是从其起算的角宫、三角宫或 Upachaya 宫。",
+        "applicability_scope": "力量判准原文未在本偈给出，见第 27 章六力（Shad Bal）诸目；原文断的是夫妻双方之间的和乐。",
+        "minimum_supported_claim": "上升 Pad（Lagn Pad）与其起第 7 宫，或从其起算的角宫、三角宫、Upachaya 宫被有力的行星占据时，夫妻之间和乐。",
+        "produced_fact_keys": [
+          "上升 Pad 一路被有力行星占据的夫妻和乐判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "上升 Pad（Lagn Pad）是否被有力的行星（strong Grah）占据"
+                    },
+                    {
+                      "fact_key": "上升 Pad（Lagn Pad）起第 7 宫是否被有力的行星（strong Grah）占据"
+                    }
+                  ]
+                },
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）起算的角宫（Kendra）是否被有力的行星（strong Grah）占据"
+                },
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）起算的三角宫（Kona）是否被有力的行星（strong Grah）占据"
+                },
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）起算的 Upachaya 宫是否被有力的行星（strong Grah）占据"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）是否被有力的行星（strong Grah）占据",
+              "上升 Pad（Lagn Pad）起第 7 宫是否被有力的行星（strong Grah）占据"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）是否被有力的行星（strong Grah）占据"
+                },
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）起第 7 宫是否被有力的行星（strong Grah）占据"
+                }
+              ]
+            },
+            "selection_group": "ch29-v30-37-strong-graha-occupation-marital-happiness.step-001:occupied-place",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）是否被有力的行星（strong Grah）占据、上升 Pad（Lagn Pad）起第 7 宫是否被有力的行星（strong Grah）占据。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）起算的角宫（Kendra）是否被有力的行星（strong Grah）占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）起算的角宫（Kendra）是否被有力的行星（strong Grah）占据"
+            },
+            "selection_group": "ch29-v30-37-strong-graha-occupation-marital-happiness.step-001:occupied-place",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）起算的角宫（Kendra）是否被有力的行星（strong Grah）占据。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）起算的三角宫（Kona）是否被有力的行星（strong Grah）占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）起算的三角宫（Kona）是否被有力的行星（strong Grah）占据"
+            },
+            "selection_group": "ch29-v30-37-strong-graha-occupation-marital-happiness.step-001:occupied-place",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）起算的三角宫（Kona）是否被有力的行星（strong Grah）占据。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）起算的 Upachaya 宫是否被有力的行星（strong Grah）占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）起算的 Upachaya 宫是否被有力的行星（strong Grah）占据"
+            },
+            "selection_group": "ch29-v30-37-strong-graha-occupation-marital-happiness.step-001:occupied-place",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）起算的 Upachaya 宫是否被有力的行星（strong Grah）占据。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Lagn Pad and the 7<sup>th</sup> therefrom",
+              "claim": "上升 Pad（Lagn Pad）与其起第 7 宫"
+            },
+            {
+              "quote": "or an angle, a trine, an Upachaya therefrom is occupied by a strong Grah",
+              "claim": "或从其起算的角宫、三角宫、Upachaya 宫被有力的行星占据时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "there will be happiness between the husband and wife",
+              "claim": "夫妻之间和乐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v30-37",
+            "quote": "If Lagn Pad and the 7<sup>th</sup> therefrom, or an angle, a trine, an Upachaya therefrom is occupied by a strong Grah, there will be happiness between the husband and wife.",
+            "pdf_pages": [
+              63
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升 Pad（Lagn Pad）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 trine（三角宫）读成三分盘（Drekkana D3）。",
+          "不得据此推断结婚时间或配偶特征。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "857d750fcfa0f567966aadb8c17e5fd813e598646fa834f9e42687fed8afc02a"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v30-37-pads-mutual-kendra-kona-amity.step-001",
+      "method": {
+        "method": "ch29-v30-37-pads-mutual-kendra-kona-amity",
+        "title": "上升 Pad 与 Dar Pad 互为角宫或三角宫：夫妻和睦",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我们两个合不合得来",
+          "夫妻能不能和睦"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Lagn Pad and Dar Pad are mutually in Kendras, or Konas, there will be amity between the couple.",
+            "上升 Pad 与 Dar Pad 互为角宫三角宫 夫妻和睦"
+          ],
+          "counter_queries": [
+            "If these be in mutually 6<sup>th</sup> /8<sup>th</sup> /12<sup>th</sup> , doubtlessly mutual enmity will crop up.",
+            "两 Pad 互为 6、8、12 时的敌意条"
+          ],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "上升 Pad 取宫本身的例外"
+          ],
+          "method_queries": [
+            "Dar (Kalatr) of Yuvati",
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "Dar Pad 是哪一个 Pad"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v30-37-pads-mutual-kendra-kona-amity.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Lagn Pad and Dar Pad are mutually in Kendras, or Konas"
+            },
+            {
+              "step_id": "ch29-v30-37-pads-mutual-kendra-kona-amity.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "there will be amity between the couple"
+            },
+            {
+              "step_id": "ch29-v30-37-pads-mutual-kendra-kona-amity.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Lagn Pad and Dar Pad are mutually in Kendras, or Konas there will be amity between the couple"
+            },
+            {
+              "step_id": "ch29-v30-37-pads-mutual-kendra-kona-amity.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If 1st house Pad and Dar Pad are mutually in Kendras, or Konas"
+            },
+            {
+              "step_id": "ch29-v30-37-pads-mutual-kendra-kona-amity.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If 1st house Pad and Dar Pad are mutually in Kendras, or Konas there will be amity between the couple"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升 Pad 或 Dar Pad 落宫事实时停止。",
+          "缺少两者相互位次的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v30-37-pads-mutual-kendra-kona-amity.step-001",
+        "action": "先定出上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）各落哪一宫，再看两者是否互为角宫或互为三角宫。",
+        "applicability_scope": "本条断的是夫妻双方之间的和睦；原文没有给时间限定。",
+        "minimum_supported_claim": "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）互为角宫、或互为三角宫时，夫妻之间和睦。",
+        "produced_fact_keys": [
+          "两 Pad 互为角宫三角宫的夫妻和睦判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫",
+          "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为角宫（Kendra）"
+                },
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为三角宫（Kona）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为角宫（Kendra）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为角宫（Kendra）"
+            },
+            "selection_group": "ch29-v30-37-pads-mutual-kendra-kona-amity.step-001:mutual-position",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为角宫（Kendra）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为三角宫（Kona）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为三角宫（Kona）"
+            },
+            "selection_group": "ch29-v30-37-pads-mutual-kendra-kona-amity.step-001:mutual-position",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为三角宫（Kona）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Lagn Pad and Dar Pad are mutually in Kendras, or Konas",
+              "claim": "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）互为角宫、或互为三角宫时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "there will be amity between the couple",
+              "claim": "夫妻之间和睦"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v30-37",
+            "quote": "If Lagn Pad and Dar Pad are mutually in Kendras, or Konas, there will be amity between the couple.",
+            "pdf_pages": [
+              63
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升 Pad（Lagn Pad）落在哪一宫、本盘 Dar Pad（Kalatr Pad）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫",
+          "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断婚姻次数或结婚时间。",
+          "不得把 Konas（三角宫）读成三分盘（Drekkana D3）。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "9043b61c109e51760db04311471fa82cc9d1da70e26c5fc235099e739a7a120c"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v30-37-pads-mutual-6-8-12-enmity.step-001",
+      "method": {
+        "method": "ch29-v30-37-pads-mutual-6-8-12-enmity",
+        "title": "上升 Pad 与 Dar Pad 互为第 6、8、12 宫：必生敌意",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我们会不会闹翻",
+          "夫妻会不会互相敌视"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If these be in mutually 6<sup>th</sup> /8<sup>th</sup> /12<sup>th</sup> , doubtlessly mutual enmity will crop up.",
+            "上升 Pad 与 Dar Pad 互为 6、8、12 宫 敌意"
+          ],
+          "counter_queries": [
+            "If Lagn Pad and Dar Pad are mutually in Kendras, or Konas, there will be amity between the couple.",
+            "两 Pad 互为角宫三角宫时的和睦条"
+          ],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "上升 Pad 取宫本身的例外"
+          ],
+          "method_queries": [
+            "Dar (Kalatr) of Yuvati",
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "Dar Pad 是哪一个 Pad"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v30-37-pads-mutual-6-8-12-enmity.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Lagn Pad and Dar Pad are mutually"
+            },
+            {
+              "step_id": "ch29-v30-37-pads-mutual-6-8-12-enmity.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If these be in mutually 6th /8th /12th"
+            },
+            {
+              "step_id": "ch29-v30-37-pads-mutual-6-8-12-enmity.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "doubtlessly mutual enmity will crop up"
+            },
+            {
+              "step_id": "ch29-v30-37-pads-mutual-6-8-12-enmity.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Lagn Pad and Dar Pad are mutually doubtlessly mutual enmity will crop up"
+            },
+            {
+              "step_id": "ch29-v30-37-pads-mutual-6-8-12-enmity.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If these be in mutually 6th /8th /12th doubtlessly mutual enmity will crop up"
+            },
+            {
+              "step_id": "ch29-v30-37-pads-mutual-6-8-12-enmity.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If 1st house Pad and Dar Pad are mutually"
+            },
+            {
+              "step_id": "ch29-v30-37-pads-mutual-6-8-12-enmity.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If 1st house Pad and Dar Pad are mutually doubtlessly mutual enmity will crop up"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升 Pad 或 Dar Pad 落宫事实时停止。",
+          "缺少两者相互位次的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v30-37-pads-mutual-6-8-12-enmity.step-001",
+        "action": "先定出上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）各落哪一宫，再看两者是否互为第 6、8 或 12 宫。",
+        "applicability_scope": "原文的「these」承同偈前句的上升 Pad 与 Dar Pad 两者；本条断的是两者之间的敌意。",
+        "minimum_supported_claim": "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）互为第 6 宫、第 8 宫、或第 12 宫时，两者之间必生敌意。",
+        "produced_fact_keys": [
+          "两 Pad 互为 6、8、12 宫的敌意判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫",
+          "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为第 6 宫"
+                },
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为第 8 宫"
+                },
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为第 12 宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为第 6 宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为第 6 宫"
+            },
+            "selection_group": "ch29-v30-37-pads-mutual-6-8-12-enmity.step-001:mutual-position",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为第 6 宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为第 8 宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为第 8 宫"
+            },
+            "selection_group": "ch29-v30-37-pads-mutual-6-8-12-enmity.step-001:mutual-position",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为第 8 宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为第 12 宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为第 12 宫"
+            },
+            "selection_group": "ch29-v30-37-pads-mutual-6-8-12-enmity.step-001:mutual-position",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为第 12 宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Lagn Pad and Dar Pad are mutually",
+              "claim": "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）"
+            },
+            {
+              "quote": "If these be in mutually 6<sup>th</sup> /8<sup>th</sup> /12<sup>th</sup>",
+              "claim": "互为第 6 宫、第 8 宫、或第 12 宫时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "doubtlessly mutual enmity will crop up",
+              "claim": "两者之间必生敌意"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v30-37",
+            "quote": "If Lagn Pad and Dar Pad are mutually in Kendras, or Konas, there will be amity between the couple.",
+            "pdf_pages": [
+              63
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v30-37",
+            "quote": "If these be in mutually 6<sup>th</sup> /8<sup>th</sup> /12<sup>th</sup> , doubtlessly mutual enmity will crop up.",
+            "pdf_pages": [
+              63
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升 Pad（Lagn Pad）落在哪一宫、本盘 Dar Pad（Kalatr Pad）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫",
+          "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断离异、诉讼或时间。",
+          "原文只说必生敌意，不得加重成关系破裂。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "49b7bdd39ff50459a7fbde465c2786c452be295d693f56eb3ae5a85937e1ed73"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v30-37-lagn-pad-and-relative-bhava-pad.step-001",
+      "method": {
+        "method": "ch29-v30-37-lagn-pad-and-relative-bhava-pad",
+        "title": "以上升 Pad 与相应 Bhava Pad 的相互位置类推子女等事",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "子女的关系和得失怎么看",
+          "别的 Pad 怎么用"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "O Brahmin, similarly mutual relationship, or gain, or loss through son etc. be known, based on Lagn Pad and the relative Bhava Pad.",
+            "上升 Pad 与相应 Bhava Pad 类推子女等事"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "上升 Pad 取宫本身的例外"
+          ],
+          "method_queries": [
+            "Similarly Padas for other Bhavas be known through their Lords.",
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "各 Bhava 的 Pad 怎么求"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v30-37-lagn-pad-and-relative-bhava-pad.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "based on Lagn Pad and the relative Bhava Pad"
+            },
+            {
+              "step_id": "ch29-v30-37-lagn-pad-and-relative-bhava-pad.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "similarly mutual relationship, or gain, or loss through son etc. be known"
+            },
+            {
+              "step_id": "ch29-v30-37-lagn-pad-and-relative-bhava-pad.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "based on Lagn Pad and the relative Bhava Pad similarly mutual relationship, or gain, or loss through son etc. be known"
+            },
+            {
+              "step_id": "ch29-v30-37-lagn-pad-and-relative-bhava-pad.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "based on 1st house Pad and the relative Bhava Pad"
+            },
+            {
+              "step_id": "ch29-v30-37-lagn-pad-and-relative-bhava-pad.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "based on 1st house Pad and the relative Bhava Pad similarly mutual relationship, or gain, or loss through son etc. be known"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少所论 Bhava 的 Pad 落宫事实时停止。",
+          "原文未列举 son etc. 之外的事项，超出所列时停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v30-37-lagn-pad-and-relative-bhava-pad.step-001",
+        "action": "把上升 Pad（Lagn Pad）与所论那件事对应的 Bhava Pad 的相互位置取出，按同样的方式判读。",
+        "applicability_scope": "原文以 son etc. 泛指其余事项而未列举；本偈只给类推指示，未逐条重列各 Bhava Pad 的具体判据。",
+        "minimum_supported_claim": "以上升 Pad（Lagn Pad）与相应的 Bhava Pad 的相互位置，同样可知与子女等的相互关系、得益或损失。",
+        "produced_fact_keys": [
+          "上升 Pad 与相应 Bhava Pad 的类推判定"
+        ],
+        "required_fact_keys": [
+          "上升 Pad（Lagn Pad）与所论 Bhava Pad 的相互位置是哪一种"
+        ],
+        "condition_logic": {
+          "fact_key": "上升 Pad（Lagn Pad）与所论 Bhava Pad 的相互位置是哪一种"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "based on Lagn Pad and the relative Bhava Pad",
+              "claim": "以上升 Pad（Lagn Pad）与相应的 Bhava Pad 的相互位置"
+            }
+          ],
+          "results": [
+            {
+              "quote": "similarly mutual relationship, or gain, or loss through son etc. be known",
+              "claim": "同样可知与子女等的相互关系、得益或损失"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v30-37",
+            "quote": "O Brahmin, similarly mutual relationship, or gain, or loss through son etc. be known, based on Lagn Pad and the relative Bhava Pad.",
+            "pdf_pages": [
+              63
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：上升 Pad（Lagn Pad）与所论 Bhava Pad 的相互位置是哪一种。",
+        "stop_fact_keys": [
+          "上升 Pad（Lagn Pad）与所论 Bhava Pad 的相互位置是哪一种"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文以 etc. 未列举的其余事项不得自行补入。",
+          "不得据此断定各 Bhava Pad 的具体位次吉凶，那要回查前面各条。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "d786a6742b1b456978cef5be1dec54c7641cf2f24c2e28622087532516feb2b6"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v30-37-pads-mutual-angular-3-11-kona-king.step-001",
+      "method": {
+        "method": "ch29-v30-37-pads-mutual-angular-3-11-kona-king",
+        "title": "上升 Pad 与 Dar Pad 互为角宫、3 与 11 宫或三角宫：统治大地的君王",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会掌大权",
+          "两个 Pad 的最好关系是什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Lagn Pad and Dar Pad are mutually angular, or 3<sup>rd</sup> and 11<sup>th</sup> , or in Konas, the native will be a king, ruling the earth.",
+            "上升 Pad 与 Dar Pad 互为角宫或 3 与 11 宫 君王"
+          ],
+          "counter_queries": [
+            "If the Dar Pad falls in the 6<sup>th</sup> / 8<sup>th</sup> /12<sup>th</sup> from Lagn Pad, then the native will be poor.",
+            "Dar Pad 落 6、8、12 宫时的贫穷条"
+          ],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "上升 Pad 取宫本身的例外"
+          ],
+          "method_queries": [
+            "Dar (Kalatr) of Yuvati",
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "Dar Pad 是哪一个 Pad"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v30-37-pads-mutual-angular-3-11-kona-king.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Lagn Pad and Dar Pad are mutually angular"
+            },
+            {
+              "step_id": "ch29-v30-37-pads-mutual-angular-3-11-kona-king.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or 3rd and 11th"
+            },
+            {
+              "step_id": "ch29-v30-37-pads-mutual-angular-3-11-kona-king.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or in Konas"
+            },
+            {
+              "step_id": "ch29-v30-37-pads-mutual-angular-3-11-kona-king.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be a king, ruling the earth"
+            },
+            {
+              "step_id": "ch29-v30-37-pads-mutual-angular-3-11-kona-king.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Lagn Pad and Dar Pad are mutually angular the native will be a king, ruling the earth"
+            },
+            {
+              "step_id": "ch29-v30-37-pads-mutual-angular-3-11-kona-king.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or 3rd and 11th the native will be a king, ruling the earth"
+            },
+            {
+              "step_id": "ch29-v30-37-pads-mutual-angular-3-11-kona-king.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or in Konas the native will be a king, ruling the earth"
+            },
+            {
+              "step_id": "ch29-v30-37-pads-mutual-angular-3-11-kona-king.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If 1st house Pad and Dar Pad are mutually angular"
+            },
+            {
+              "step_id": "ch29-v30-37-pads-mutual-angular-3-11-kona-king.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If 1st house Pad and Dar Pad are mutually angular the native will be a king, ruling the earth"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升 Pad 或 Dar Pad 落宫事实时停止。",
+          "缺少两者相互位次的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v30-37-pads-mutual-angular-3-11-kona-king.step-001",
+        "action": "先定出上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）各落哪一宫，再看两者互为角宫、互为第 3 宫与第 11 宫、还是互为三角宫。",
+        "applicability_scope": "本条以两个 Pad 的相互位次立说；原文没有给时间或适用人群限定。",
+        "minimum_supported_claim": "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）互为角宫、或互为第 3 宫与第 11 宫、或互为三角宫时，命主成为统治大地的君王。",
+        "produced_fact_keys": [
+          "两 Pad 相互位次的君王判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫",
+          "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为角宫（Kendra）"
+                },
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为第 3 宫与第 11 宫"
+                },
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为三角宫（Kona）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为角宫（Kendra）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为角宫（Kendra）"
+            },
+            "selection_group": "ch29-v30-37-pads-mutual-angular-3-11-kona-king.step-001:mutual-position",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为角宫（Kendra）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为第 3 宫与第 11 宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为第 3 宫与第 11 宫"
+            },
+            "selection_group": "ch29-v30-37-pads-mutual-angular-3-11-kona-king.step-001:mutual-position",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为第 3 宫与第 11 宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为三角宫（Kona）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为三角宫（Kona）"
+            },
+            "selection_group": "ch29-v30-37-pads-mutual-angular-3-11-kona-king.step-001:mutual-position",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为三角宫（Kona）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Lagn Pad and Dar Pad are mutually angular",
+              "claim": "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）互为角宫"
+            },
+            {
+              "quote": "or 3<sup>rd</sup> and 11<sup>th</sup>",
+              "claim": "或互为第 3 宫与第 11 宫"
+            },
+            {
+              "quote": "or in Konas",
+              "claim": "或互为三角宫时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be a king, ruling the earth",
+              "claim": "命主成为统治大地的君王"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v30-37",
+            "quote": "If Lagn Pad and Dar Pad are mutually angular, or 3<sup>rd</sup> and 11<sup>th</sup> , or in Konas, the native will be a king, ruling the earth.",
+            "pdf_pages": [
+              63
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升 Pad（Lagn Pad）落在哪一宫、本盘 Dar Pad（Kalatr Pad）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫",
+          "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体官职、疆域或年份。",
+          "不得把 Konas（三角宫）读成三分盘（Drekkana D3）。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "82327584b79999f5169d7c1361e5b670c28552fe4226853b18bc02170e850592"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v30-37-lagn-pad-and-dhan-pad.step-001",
+      "method": {
+        "method": "ch29-v30-37-lagn-pad-and-dhan-pad",
+        "title": "同样的推断依上升 Pad 与 Dhan Pad 的相互位置作出",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "财位的 Pad 怎么看",
+          "Dhan Pad 有什么用"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Similar deductions be made with reference to mutual positions of Lagn Pad and Dhan Pad.",
+            "上升 Pad 与 Dhan Pad 的相互位置类推"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "上升 Pad 取宫本身的例外"
+          ],
+          "method_queries": [
+            "Similarly Padas for other Bhavas be known through their Lords.",
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "各 Bhava 的 Pad 怎么求"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v30-37-lagn-pad-and-dhan-pad.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "with reference to mutual positions of Lagn Pad and Dhan Pad"
+            },
+            {
+              "step_id": "ch29-v30-37-lagn-pad-and-dhan-pad.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Similar deductions be made"
+            },
+            {
+              "step_id": "ch29-v30-37-lagn-pad-and-dhan-pad.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "with reference to mutual positions of Lagn Pad and Dhan Pad Similar deductions be made"
+            },
+            {
+              "step_id": "ch29-v30-37-lagn-pad-and-dhan-pad.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "with reference to mutual positions of 1st house Pad and 2nd house Pad"
+            },
+            {
+              "step_id": "ch29-v30-37-lagn-pad-and-dhan-pad.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "with reference to mutual positions of 1st house Pad and 2nd house Pad Similar deductions be made"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少 Dhan Pad 落宫事实时停止。",
+          "原文未在本偈重列具体判据，须回查上升 Pad 与 Dar Pad 各条才能落地。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v30-37-lagn-pad-and-dhan-pad.step-001",
+        "action": "把上升 Pad（Lagn Pad）与 Dhan Pad 的相互位置取出，按同样的方式判读。",
+        "applicability_scope": "原文的「Similar deductions」承同偈前面就上升 Pad 与 Dar Pad 所作的各条推断；本偈未重列具体判据。",
+        "minimum_supported_claim": "同样的推断也依上升 Pad（Lagn Pad）与 Dhan Pad 的相互位置作出。",
+        "produced_fact_keys": [
+          "上升 Pad 与 Dhan Pad 的类推判定"
+        ],
+        "required_fact_keys": [
+          "上升 Pad（Lagn Pad）与 Dhan Pad 的相互位置是哪一种"
+        ],
+        "condition_logic": {
+          "fact_key": "上升 Pad（Lagn Pad）与 Dhan Pad 的相互位置是哪一种"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "with reference to mutual positions of Lagn Pad and Dhan Pad",
+              "claim": "依上升 Pad（Lagn Pad）与 Dhan Pad 的相互位置"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Similar deductions be made",
+              "claim": "同样的推断也"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v30-37",
+            "quote": "Similar deductions be made with reference to mutual positions of Lagn Pad and Dhan Pad.",
+            "pdf_pages": [
+              63
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：上升 Pad（Lagn Pad）与 Dhan Pad 的相互位置是哪一种。",
+        "stop_fact_keys": [
+          "上升 Pad（Lagn Pad）与 Dhan Pad 的相互位置是哪一种"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此给出原文没有写的具体位次断语。",
+          "不得把 Dhan Pad 与 Dar Pad 混为一处。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "f042ea38aa6e119fc66ba794d9c88eae5ed9103a480e9cd1c36c22b3e066dfb2"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch29:v30-37": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v30-37",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "30-37.",
+      "content_role": "verse",
+      "exact_text": "30-37. General. If Budh is in the 2<sup>nd</sup> from Arudh Lagna, the native will Lord over the whole country. Shukra in the 2<sup>nd</sup> from Lagn Pad will make one a poet, or a speaker. If the Dar Pad falls in an angle, or in a trine, counted from Lagn Pad, or, if Lagn Pad and Dar Pad both have strong Grahas, the native will be rich and be famous in his country. If the Dar Pad falls in the 6<sup>th</sup> / 8<sup>th</sup> /12<sup>th</sup> from Lagn Pad, then the native will be poor. If Lagn Pad and the 7<sup>th</sup> therefrom, or an angle, a trine, an Upachaya therefrom is occupied by a strong Grah, there will be happiness between the husband and wife. If Lagn Pad and Dar Pad are mutually in Kendras, or Konas, there will be amity between the couple. If these be in mutually 6<sup>th</sup> /8<sup>th</sup> /12<sup>th</sup> , doubtlessly mutual enmity will crop up. O Brahmin, similarly mutual relationship, or gain, or loss through son etc. be known, based on Lagn Pad and the relative Bhava Pad. If Lagn Pad and Dar Pad are mutually angular, or 3<sup>rd</sup> and 11<sup>th</sup> , or in Konas, the native will be a king, ruling the earth. Similar deductions be made with reference to mutual positions of Lagn Pad and Dhan Pad.",
+      "pdf_pages": [
+        63
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 30-37 · PDF page 63 · bphs-97:santhanam:ch29:v30-37",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v29",
+      "next_atom_id": null,
+      "context_before": " the subject rich.\n\n29. The Yogas so far stated by me with reference to Lagn Pad be similarly evaluated from Karakāńś as well.\n\n",
+      "context_after": "",
+      "content_missing": false
+    }
+  }
+}

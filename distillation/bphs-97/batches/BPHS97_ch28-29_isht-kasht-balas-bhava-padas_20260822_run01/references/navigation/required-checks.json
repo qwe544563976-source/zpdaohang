@@ -1,0 +1,686 @@
+{
+  "pilot_only": false,
+  "publishable": false,
+  "topics": {
+    "ch28-v10-graha-auspicious-first-five-places": {
+      "question_type": "尊贵位次定吉：行星落前五种位置为吉",
+      "required_facts": [
+        "所考察行星（Grah）所落星座（Rāśi）的尊贵位次是九种中的哪一种"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "无法确定所考察行星落在哪一种尊贵位次时停止。",
+        "所考察对象不在原文所列九种位置之内时停止。"
+      ]
+    },
+    "ch28-v10-graha-neutral-sixth-place": {
+      "question_type": "尊贵位次定中性：行星落第六种位置",
+      "required_facts": [
+        "所考察行星（Grah）所落星座（Rāśi）的尊贵位次是九种中的哪一种"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "无法确定所考察行星落在哪一种尊贵位次时停止。",
+        "所考察对象不在原文所列九种位置之内时停止。"
+      ]
+    },
+    "ch28-v10-graha-inauspicious-other-three-places": {
+      "question_type": "尊贵位次定凶：行星落其余三种位置",
+      "required_facts": [
+        "所考察行星（Grah）所落星座（Rāśi）的尊贵位次是九种中的哪一种"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "无法确定所考察行星落在哪一种尊贵位次时停止。",
+        "所考察对象不在原文所列九种位置之内时停止。"
+      ]
+    },
+    "ch28-v11-12-auspiciousness-more-dasha-bhavas-auspicious": {
+      "question_type": "吉性较多：该行星的大运与诸宫为吉",
+      "required_facts": [
+        "所考察行星（Grah）的吉性数值是否多于凶性数值"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少所考察行星的吉性与凶性数值时停止。",
+        "无法判定两者孰多孰少时停止。"
+      ]
+    },
+    "ch28-v11-12-inauspiciousness-predominant-converse": {
+      "question_type": "凶性占优：前句判定相反",
+      "required_facts": [
+        "所考察行星（Grah）的凶性数值是否占优（predominant）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少所考察行星的凶性与吉性数值时停止。",
+        "原文未写明“相反”的具体内容，需要具体应验事项时停判。"
+      ]
+    },
+    "ch28-v15-20-bhava-two-rashis-more-bindus": {
+      "question_type": "宫横跨两星座：Bindus 较多的那个星座结果较佳",
+      "required_facts": [
+        "本盘所考察宫（Bhava）是否横跨两个星座（Rāśi）",
+        "本盘所考察宫（Bhava）横跨的两个星座（Rāśi）中哪一个的 Bindus 较多"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少所考察宫是否横跨两个星座的事实时停止。",
+        "缺少两个星座的 Bindus 数值时停止。",
+        "两个星座 Bindus 相等时，原文未给判法，停判。"
+      ]
+    },
+    "ch29-v8-11-eleventh-from-pad-happy-rich": {
+      "question_type": "上升 Pad 起第 11 宫被行星占据或相照：命主快乐而富有",
+      "required_facts": [
+        "本盘上升 Pad（Lagn Pad）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "上升 Pad（Lagn Pad）起第 11 宫是否被行星（Grah）占据",
+        "上升 Pad（Lagn Pad）起第 11 宫是否被行星（Grah）相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。",
+        "缺少上升 Pad 起第 11 宫的占据与相照事实时停止。"
+      ]
+    },
+    "ch29-v8-11-benefic-related-various-means": {
+      "question_type": "吉星与上升 Pad 起第 11 宫关联：财富经由各种途径而来",
+      "required_facts": [
+        "本盘上升 Pad（Lagn Pad）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "上升 Pad（Lagn Pad）起第 11 宫是否被吉星占据",
+        "上升 Pad（Lagn Pad）起第 11 宫是否被吉星相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。",
+        "缺少上升 Pad 起第 11 宫与吉星的占据或相照事实时停止。",
+        "无法判定该行星是吉星还是凶星时停止。"
+      ]
+    },
+    "ch29-v8-11-malefic-related-questionable-means": {
+      "question_type": "凶星与上升 Pad 起第 11 宫关联：财富经由可疑途径而来",
+      "required_facts": [
+        "本盘上升 Pad（Lagn Pad）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "上升 Pad（Lagn Pad）起第 11 宫是否被凶星占据",
+        "上升 Pad（Lagn Pad）起第 11 宫是否被凶星相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。",
+        "缺少上升 Pad 起第 11 宫与凶星的占据或相照事实时停止。",
+        "无法判定该行星是吉星还是凶星时停止。"
+      ]
+    },
+    "ch29-v8-11-both-benefic-malefic-both-means": {
+      "question_type": "吉凶两类同时关联上升 Pad 起第 11 宫：财富经由两种途径",
+      "required_facts": [
+        "本盘上升 Pad（Lagn Pad）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "上升 Pad（Lagn Pad）起第 11 宫是否被吉星占据",
+        "上升 Pad（Lagn Pad）起第 11 宫是否被吉星相照",
+        "上升 Pad（Lagn Pad）起第 11 宫是否被凶星占据",
+        "上升 Pad（Lagn Pad）起第 11 宫是否被凶星相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。",
+        "缺少吉星或凶星与上升 Pad 起第 11 宫的关联事实时停止。"
+      ]
+    },
+    "ch29-v8-11-related-graha-exalted-or-own-rasi": {
+      "question_type": "关联行星入旺或落本星座：得益丰厚、快乐丰厚",
+      "required_facts": [
+        "本盘上升 Pad（Lagn Pad）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "上升 Pad（Lagn Pad）起第 11 宫是否被行星（Grah）占据",
+        "上升 Pad（Lagn Pad）起第 11 宫是否被行星（Grah）相照",
+        "与上升 Pad（Lagn Pad）起第 11 宫发生关联的行星（Grah）是否入旺",
+        "与上升 Pad（Lagn Pad）起第 11 宫发生关联的行星（Grah）是否落本星座（own Rāśi）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。",
+        "无法确定与上升 Pad 起第 11 宫关联的是哪颗行星时停止。",
+        "原文以 etc. 泛指的其他尊贵位置未确定，落在这些位置时停判。"
+      ]
+    },
+    "ch29-v12-uninterrupted-gains": {
+      "question_type": "上升 Pad 起第 12 宫不受相照而第 11 宫受相照：得益不中断",
+      "required_facts": [
+        "上升 Pad（Lagn Pad）起第 12 宫是否被行星（Grah）相照",
+        "上升 Pad（Lagn Pad）起第 11 宫是否被行星（Grah）相照"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升 Pad 起第 11、12 宫的相照事实时停止。",
+        "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。"
+      ]
+    },
+    "ch29-v13-15-quantum-of-gains-by-count": {
+      "question_type": "得益多寡与上升 Pad 起第 11 宫的行星数目相应",
+      "required_facts": [
+        "上升 Pad（Lagn Pad）起第 12 宫是否与凶星发生关联"
+      ],
+      "conditional_facts": [
+        "上升 Pad（Lagn Pad）起第 11 宫内有几颗行星（Grah）",
+        "有几颗行星（Grah）相照上升 Pad（Lagn Pad）起第 11 宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升 Pad 起第 12 宫与凶星关联与否的事实时停止。",
+        "缺少上升 Pad 起第 11 宫内行星数目或相照行星数目时停止。"
+      ]
+    },
+    "ch29-v13-15-argala-more-gains": {
+      "question_type": "上升 Pad 起第 11 宫有 Argala：得益更多",
+      "required_facts": [
+        "上升 Pad（Lagn Pad）起第 12 宫是否与凶星发生关联",
+        "上升 Pad（Lagn Pad）起第 11 宫是否有 Argala"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升 Pad 起第 11 宫是否有 Argala 的事实时停止。",
+        "缺少上升 Pad 起第 12 宫与凶星关联与否的事实时停止。"
+      ]
+    },
+    "ch29-v13-15-benefic-argala-still-more-gains": {
+      "question_type": "上升 Pad 起第 11 宫的 Argala 由吉星造成：得益还要更多",
+      "required_facts": [
+        "上升 Pad（Lagn Pad）起第 12 宫是否与凶星发生关联",
+        "上升 Pad（Lagn Pad）起第 11 宫的 Argala 是否由吉星造成"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升 Pad 起第 11 宫 Argala 是否由吉星造成的事实时停止。",
+        "缺少上升 Pad 起第 12 宫与凶星关联与否的事实时停止。"
+      ]
+    },
+    "ch29-v13-15-benefic-argala-exalted-still-higher": {
+      "question_type": "造成 Argala 的吉星落入旺星座：得益还要更高",
+      "required_facts": [
+        "上升 Pad（Lagn Pad）起第 12 宫是否与凶星发生关联",
+        "造成上升 Pad（Lagn Pad）起第 11 宫 Argala 的吉星是否落入旺星座（exaltation Rāśi）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "无法确定造成 Argala 的是哪颗吉星时停止。",
+        "缺少该吉星是否落入旺星座的事实时停止。"
+      ]
+    },
+    "ch29-v13-15-benefic-drishti-ascending-gains": {
+      "question_type": "上升 Pad 起第 11 宫受来自上升等处的吉星相照：得益递增",
+      "required_facts": [
+        "上升 Pad（Lagn Pad）起第 12 宫是否与凶星发生关联"
+      ],
+      "conditional_facts": [
+        "上升 Pad（Lagn Pad）起第 11 宫是否被落在上升（Lagna）的吉星相照",
+        "上升 Pad（Lagn Pad）起第 11 宫是否被落在上升（Lagna）起第 9 宫的吉星相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升 Pad 起第 11 宫受吉星相照的起照位置事实时停止。",
+        "原文以 etc. 泛指的其余起照位置未确定，落在这些位置时停判。"
+      ]
+    },
+    "ch29-v13-15-benefic-in-lagna-drishti-eleventh": {
+      "question_type": "落在上升的吉星相照上升 Pad 起第 11 宫：更为有利",
+      "required_facts": [
+        "上升 Pad（Lagn Pad）起第 12 宫是否与凶星发生关联",
+        "上升 Pad（Lagn Pad）起第 11 宫是否被落在上升（Lagna）的吉星相照"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升（Lagna）内是否有吉星的事实时停止。",
+        "缺少该吉星是否相照上升 Pad 起第 11 宫的事实时停止。"
+      ]
+    },
+    "ch29-v13-15-drishti-from-ninth-much-more-gains": {
+      "question_type": "相照来自上升起第 9 宫：得益远为丰厚",
+      "required_facts": [
+        "上升 Pad（Lagn Pad）起第 12 宫是否与凶星发生关联",
+        "上升 Pad（Lagn Pad）起第 11 宫是否被落在上升（Lagna）起第 9 宫的吉星相照"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少相照来源宫位的事实时停止。",
+        "缺少上升 Pad 起第 12 宫与凶星关联与否的事实时停止。"
+      ]
+    },
+    "ch29-v16-17-twelfth-mixed-earnings-expenses": {
+      "question_type": "上升 Pad 起第 12 宫吉凶并临：进项丰厚但开销也多",
+      "required_facts": [
+        "本盘上升 Pad（Lagn Pad）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "上升 Pad（Lagn Pad）起第 12 宫是否被吉星相照",
+        "上升 Pad（Lagn Pad）起第 12 宫是否与吉星同宫",
+        "上升 Pad（Lagn Pad）起第 12 宫是否被凶星相照",
+        "上升 Pad（Lagn Pad）起第 12 宫是否与凶星同宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。",
+        "缺少上升 Pad 起第 12 宫与吉星、凶星的相照或同宫事实时停止。"
+      ]
+    },
+    "ch29-v16-17-benefic-fair-means": {
+      "question_type": "上升 Pad 起第 12 宫关联吉星：收支经由正当途径",
+      "required_facts": [
+        "本盘上升 Pad（Lagn Pad）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "上升 Pad（Lagn Pad）起第 12 宫是否被吉星相照",
+        "上升 Pad（Lagn Pad）起第 12 宫是否与吉星同宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升 Pad 起第 12 宫与吉星的相照或同宫事实时停止。",
+        "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。"
+      ]
+    },
+    "ch29-v16-17-malefic-unfair-means": {
+      "question_type": "上升 Pad 起第 12 宫关联凶星：收支经由不正当途径",
+      "required_facts": [
+        "本盘上升 Pad（Lagn Pad）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "上升 Pad（Lagn Pad）起第 12 宫是否被凶星相照",
+        "上升 Pad（Lagn Pad）起第 12 宫是否与凶星同宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升 Pad 起第 12 宫与凶星的相照或同宫事实时停止。",
+        "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。"
+      ]
+    },
+    "ch29-v16-17-mixed-both-means": {
+      "question_type": "上升 Pad 起第 12 宫吉凶混杂：收支兼走正当与不正当途径",
+      "required_facts": [
+        "本盘上升 Pad（Lagn Pad）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "上升 Pad（Lagn Pad）起第 12 宫是否被吉星相照",
+        "上升 Pad（Lagn Pad）起第 12 宫是否与吉星同宫",
+        "上升 Pad（Lagn Pad）起第 12 宫是否被凶星相照",
+        "上升 Pad（Lagn Pad）起第 12 宫是否与凶星同宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升 Pad 起第 12 宫与吉星、凶星的相照或同宫事实时停止。",
+        "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。"
+      ]
+    },
+    "ch29-v18-surya-shukra-rahu-loss-through-king": {
+      "question_type": "太阳、金星、罗睺同处上升 Pad 起第 12 宫：因国王而失去财富",
+      "required_facts": [
+        "太阳（Surya）是否落上升 Pad（Lagn Pad）起第 12 宫",
+        "金星（Shukra）是否落上升 Pad（Lagn Pad）起第 12 宫",
+        "罗睺（Rahu）是否落上升 Pad（Lagn Pad）起第 12 宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少太阳、金星、罗睺相对上升 Pad 起第 12 宫的落宫事实时停止。",
+        "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。"
+      ]
+    },
+    "ch29-v18-chandra-drishti-more-losses": {
+      "question_type": "月亮相照该三星所在之宫：损失更多",
+      "required_facts": [
+        "太阳（Surya）是否落上升 Pad（Lagn Pad）起第 12 宫",
+        "金星（Shukra）是否落上升 Pad（Lagn Pad）起第 12 宫",
+        "罗睺（Rahu）是否落上升 Pad（Lagn Pad）起第 12 宫",
+        "月亮（Chandra）是否相照上升 Pad（Lagn Pad）起第 12 宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少三星同处上升 Pad 起第 12 宫的事实时停止。",
+        "缺少月亮是否相照该宫的事实时停止。"
+      ]
+    },
+    "ch29-v19-budh-benefic-expenses-paternal-relatives": {
+      "question_type": "水星落上升 Pad 起第 12 宫且与吉星关联：开销经由父系亲属",
+      "required_facts": [
+        "水星（Budh）是否落上升 Pad（Lagn Pad）起第 12 宫"
+      ],
+      "conditional_facts": [
+        "水星（Budh）是否与吉星同宫",
+        "水星（Budh）是否被吉星相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少水星相对上升 Pad 起第 12 宫的落宫事实时停止。",
+        "缺少水星与吉星的同宫或相照事实时停止。"
+      ]
+    },
+    "ch29-v19-budh-malefic-loss-through-disputes": {
+      "question_type": "水星落上升 Pad 起第 12 宫且与凶星关联：因争讼而失去财富",
+      "required_facts": [
+        "水星（Budh）是否落上升 Pad（Lagn Pad）起第 12 宫"
+      ],
+      "conditional_facts": [
+        "水星（Budh）是否与凶星同宫",
+        "水星（Budh）是否被凶星相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少水星相对上升 Pad 起第 12 宫的落宫事实时停止。",
+        "缺少水星与凶星的同宫或相照事实时停止。"
+      ]
+    },
+    "ch29-v20-guru-expenses-taxes-and-self": {
+      "question_type": "木星落上升 Pad 起第 12 宫且受他星相照：开销用于赋税与本人",
+      "required_facts": [
+        "木星（Guru）是否落上升 Pad（Lagn Pad）起第 12 宫",
+        "木星（Guru）是否被其他行星（Grah）相照"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少木星相对上升 Pad 起第 12 宫的落宫事实时停止。",
+        "缺少木星是否受其他行星相照的事实时停止。"
+      ]
+    },
+    "ch29-v21-shani-mangal-expenses-through-co-born": {
+      "question_type": "土星与火星同落上升 Pad 起第 12 宫：开销经由同胞",
+      "required_facts": [
+        "土星（Shani）是否落上升 Pad（Lagn Pad）起第 12 宫",
+        "火星（Mangal）是否落上升 Pad（Lagn Pad）起第 12 宫",
+        "土星（Shani）是否被其他行星（Grah）相照"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少土星、火星相对上升 Pad 起第 12 宫的落宫事实时停止。",
+        "缺少土星是否受其他行星相照的事实时停止。"
+      ]
+    },
+    "ch29-v22-labh-bhava-gainful-sources": {
+      "question_type": "上升 Pad 起第 11 宫呈现同一配置：得益来源与支出来源相同",
+      "required_facts": [
+        "上升 Pad（Lagn Pad）起第 11 宫（Labh Bhava）是否呈现上文判断支出来源的同一种行星配置"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "原文未界定何种呈现才算与上文同一种配置，未确定即停判。",
+        "缺少上升 Pad 起第 11 宫内外行星配置事实时停止。"
+      ]
+    },
+    "ch29-v23-rahu-ketu-seventh-stomach-or-fire": {
+      "question_type": "罗睺或计都落上升 Pad 起第 7 宫：胃疾或火患困扰",
+      "required_facts": [
+        "本盘上升 Pad（Lagn Pad）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "罗睺（Rahu）是否落上升 Pad（Lagn Pad）起第 7 宫",
+        "计都（Ketu）是否落上升 Pad（Lagn Pad）起第 7 宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。",
+        "缺少罗睺、计都相对上升 Pad 起第 7 宫的落宫事实时停止。"
+      ]
+    },
+    "ch29-v24-ketu-with-malefic-seventh-traits": {
+      "question_type": "计都在上升 Pad 起第 7 宫且与凶星关联：冒险、白发、男根粗大",
+      "required_facts": [
+        "计都（Ketu）是否落上升 Pad（Lagn Pad）起第 7 宫"
+      ],
+      "conditional_facts": [
+        "计都（Ketu）是否被其他凶星相照",
+        "计都（Ketu）是否与其他凶星同宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少计都相对上升 Pad 起第 7 宫的落宫事实时停止。",
+        "缺少计都与其他凶星的相照或同宫事实时停止。"
+      ]
+    },
+    "ch29-v25-guru-shukra-chandra-seventh-very-wealthy": {
+      "question_type": "木星、金星、月亮居上升 Pad 起第 7 宫：极为富有",
+      "required_facts": [
+        "本盘上升 Pad（Lagn Pad）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "木星（Guru）是否落上升 Pad（Lagn Pad）起第 7 宫",
+        "金星（Shukra）是否落上升 Pad（Lagn Pad）起第 7 宫",
+        "月亮（Chandra）是否落上升 Pad（Lagn Pad）起第 7 宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。",
+        "缺少木星、金星、月亮相对上升 Pad 起第 7 宫的落宫事实时停止。"
+      ]
+    },
+    "ch29-v26-exalted-graha-seventh-affluent-famous": {
+      "question_type": "行星在上升 Pad 起第 7 宫入旺：富足且有名",
+      "required_facts": [
+        "上升 Pad（Lagn Pad）起第 7 宫内是否有行星（Grah）入旺"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升 Pad 起第 7 宫内行星是否入旺的事实时停止。",
+        "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。"
+      ]
+    },
+    "ch29-v27-same-yogas-from-second-of-pad": {
+      "question_type": "第 7 宫诸 Yoga 同样从上升 Pad 起第 2 宫考察",
+      "required_facts": [
+        "上升 Pad（Lagn Pad）起第 2 宫内有哪些行星（Grah）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "未回查第 23-26 偈各条的具体条件与结果时停判。",
+        "缺少上升 Pad 起第 2 宫内行星事实时停止。"
+      ]
+    },
+    "ch29-v28-exalted-strong-benefic-second-of-pad-rich": {
+      "question_type": "水星、木星或金星在上升 Pad 起第 2 宫入旺且有力：命主富有",
+      "required_facts": [
+        "本盘上升 Pad（Lagn Pad）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "水星（Budh）是否落上升 Pad（Lagn Pad）起第 2 宫",
+        "水星（Budh）是否入旺",
+        "水星（Budh）是否有力",
+        "木星（Guru）是否落上升 Pad（Lagn Pad）起第 2 宫",
+        "木星（Guru）是否入旺",
+        "木星（Guru）是否有力",
+        "金星（Shukra）是否落上升 Pad（Lagn Pad）起第 2 宫",
+        "金星（Shukra）是否入旺",
+        "金星（Shukra）是否有力"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少这三颗行星相对上升 Pad 起第 2 宫的落宫或入旺事实时停止。",
+        "缺少该行星是否有力的事实时停止。"
+      ]
+    },
+    "ch29-v29-same-yogas-from-karakamsa": {
+      "question_type": "以上升 Pad 立说的诸 Yoga 同样从 Karakāńś 考察",
+      "required_facts": [
+        "本盘 Karakāńś 落在哪一宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘 Karakāńś 落宫事实时停止。",
+        "未回查以上升 Pad 立说的各条具体条件与结果时停判。"
+      ]
+    },
+    "ch29-v30-37-budh-second-of-pad-lord-of-country": {
+      "question_type": "水星落上升 Pad 起第 2 宫：主宰整个国家",
+      "required_facts": [
+        "水星（Budh）是否落上升 Pad（Lagn Pad）起第 2 宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少水星相对上升 Pad 起第 2 宫的落宫事实时停止。",
+        "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。"
+      ]
+    },
+    "ch29-v30-37-shukra-second-of-pad-poet-or-speaker": {
+      "question_type": "金星落上升 Pad 起第 2 宫：诗人或演说者",
+      "required_facts": [
+        "金星（Shukra）是否落上升 Pad（Lagn Pad）起第 2 宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少金星相对上升 Pad 起第 2 宫的落宫事实时停止。",
+        "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。"
+      ]
+    },
+    "ch29-v30-37-dar-pad-angle-trine-rich-famous": {
+      "question_type": "Dar Pad 落上升 Pad 的角宫三角宫或两 Pad 都有有力行星：富有且在本国有名",
+      "required_facts": [
+        "本盘上升 Pad（Lagn Pad）落在哪一宫",
+        "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起算的角宫（Kendra）",
+        "Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起算的三角宫（Kona）",
+        "上升 Pad（Lagn Pad）是否被有力的行星（strong Grah）占据",
+        "Dar Pad（Kalatr Pad）是否被有力的行星（strong Grah）占据"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升 Pad 或 Dar Pad 落宫事实时停止。",
+        "缺少两个 Pad 内是否有有力行星的事实时停止。"
+      ]
+    },
+    "ch29-v30-37-dar-pad-6-8-12-poor": {
+      "question_type": "Dar Pad 落上升 Pad 起第 6、8、12 宫：命主贫穷",
+      "required_facts": [
+        "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起第 6 宫",
+        "Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起第 8 宫",
+        "Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起第 12 宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少 Dar Pad 相对上升 Pad 的位次事实时停止。",
+        "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。"
+      ]
+    },
+    "ch29-v30-37-strong-graha-occupation-marital-happiness": {
+      "question_type": "有力行星占据上升 Pad 及其第 7、角、三角、Upachaya 宫：夫妻和乐",
+      "required_facts": [
+        "本盘上升 Pad（Lagn Pad）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "上升 Pad（Lagn Pad）是否被有力的行星（strong Grah）占据",
+        "上升 Pad（Lagn Pad）起第 7 宫是否被有力的行星（strong Grah）占据",
+        "上升 Pad（Lagn Pad）起算的角宫（Kendra）是否被有力的行星（strong Grah）占据",
+        "上升 Pad（Lagn Pad）起算的三角宫（Kona）是否被有力的行星（strong Grah）占据",
+        "上升 Pad（Lagn Pad）起算的 Upachaya 宫是否被有力的行星（strong Grah）占据"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。",
+        "缺少各处是否被有力行星占据的事实时停止。"
+      ]
+    },
+    "ch29-v30-37-pads-mutual-kendra-kona-amity": {
+      "question_type": "上升 Pad 与 Dar Pad 互为角宫或三角宫：夫妻和睦",
+      "required_facts": [
+        "本盘上升 Pad（Lagn Pad）落在哪一宫",
+        "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为角宫（Kendra）",
+        "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为三角宫（Kona）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升 Pad 或 Dar Pad 落宫事实时停止。",
+        "缺少两者相互位次的事实时停止。"
+      ]
+    },
+    "ch29-v30-37-pads-mutual-6-8-12-enmity": {
+      "question_type": "上升 Pad 与 Dar Pad 互为第 6、8、12 宫：必生敌意",
+      "required_facts": [
+        "本盘上升 Pad（Lagn Pad）落在哪一宫",
+        "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为第 6 宫",
+        "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为第 8 宫",
+        "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为第 12 宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升 Pad 或 Dar Pad 落宫事实时停止。",
+        "缺少两者相互位次的事实时停止。"
+      ]
+    },
+    "ch29-v30-37-lagn-pad-and-relative-bhava-pad": {
+      "question_type": "以上升 Pad 与相应 Bhava Pad 的相互位置类推子女等事",
+      "required_facts": [
+        "上升 Pad（Lagn Pad）与所论 Bhava Pad 的相互位置是哪一种"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少所论 Bhava 的 Pad 落宫事实时停止。",
+        "原文未列举 son etc. 之外的事项，超出所列时停判。"
+      ]
+    },
+    "ch29-v30-37-pads-mutual-angular-3-11-kona-king": {
+      "question_type": "上升 Pad 与 Dar Pad 互为角宫、3 与 11 宫或三角宫：统治大地的君王",
+      "required_facts": [
+        "本盘上升 Pad（Lagn Pad）落在哪一宫",
+        "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+      ],
+      "conditional_facts": [
+        "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为角宫（Kendra）",
+        "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为第 3 宫与第 11 宫",
+        "上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）是否互为三角宫（Kona）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少上升 Pad 或 Dar Pad 落宫事实时停止。",
+        "缺少两者相互位次的事实时停止。"
+      ]
+    },
+    "ch29-v30-37-lagn-pad-and-dhan-pad": {
+      "question_type": "同样的推断依上升 Pad 与 Dhan Pad 的相互位置作出",
+      "required_facts": [
+        "上升 Pad（Lagn Pad）与 Dhan Pad 的相互位置是哪一种"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少 Dhan Pad 落宫事实时停止。",
+        "原文未在本偈重列具体判据，须回查上升 Pad 与 Dar Pad 各条才能落地。"
+      ]
+    }
+  }
+}

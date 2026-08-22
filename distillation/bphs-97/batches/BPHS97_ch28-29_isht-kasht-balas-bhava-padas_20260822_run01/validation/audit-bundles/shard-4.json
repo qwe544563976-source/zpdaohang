@@ -1,0 +1,2193 @@
+{
+  "shard": 4,
+  "step_count": 10,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch29-v23-rahu-ketu-seventh-stomach-or-fire.step-001",
+      "method": {
+        "method": "ch29-v23-rahu-ketu-seventh-stomach-or-fire",
+        "title": "罗睺或计都落上升 Pad 起第 7 宫：胃疾或火患困扰",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的肠胃老出问题是什么原因",
+          "我会不会有火灾之类的麻烦"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Rahu, or Ketu is placed in the 7<sup>th</sup> from Lagn Pad, the native will be troubled by disorders of the stomach, or by fire.",
+            "罗睺计都落上升 Pad 起第 7 宫 胃疾火患"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "O Brahmin, these Yogas, as narrated by me with reference to the 7<sup>th</sup> from Lagn Pad, should also be considered from the 2<sup>nd</sup> of Lagn Pad.",
+            "同一批断语也从上升 Pad 起第 2 宫考察"
+          ],
+          "method_queries": [
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "上升 Pad 怎么求"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v23-rahu-ketu-seventh-stomach-or-fire.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Rahu, or Ketu is placed in the 7th from Lagn Pad"
+            },
+            {
+              "step_id": "ch29-v23-rahu-ketu-seventh-stomach-or-fire.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be troubled by disorders of the stomach, or by fire"
+            },
+            {
+              "step_id": "ch29-v23-rahu-ketu-seventh-stomach-or-fire.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Rahu, or Ketu is placed in the 7th from Lagn Pad the native will be troubled by disorders of the stomach, or by fire"
+            },
+            {
+              "step_id": "ch29-v23-rahu-ketu-seventh-stomach-or-fire.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If rahu, or ketu is placed in the 7th from 1st house Pad"
+            },
+            {
+              "step_id": "ch29-v23-rahu-ketu-seventh-stomach-or-fire.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If rahu, or ketu is placed in the 7th from 1st house Pad the native will be troubled by disorders of the stomach, or by fire"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。",
+          "缺少罗睺、计都相对上升 Pad 起第 7 宫的落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v23-rahu-ketu-seventh-stomach-or-fire.step-001",
+        "action": "先定出本盘上升 Pad（Lagn Pad）落在哪一宫，再看罗睺（Rahu）或计都（Ketu）是否落其起第 7 宫。",
+        "applicability_scope": "本条以上升 Pad（Lagn Pad）为起算点；原文没有给发病时段或轻重程度。",
+        "minimum_supported_claim": "罗睺（Rahu）或计都（Ketu）落上升 Pad（Lagn Pad）起第 7 宫时，命主受胃部疾患、或受火患困扰。",
+        "produced_fact_keys": [
+          "上升 Pad 起第 7 宫的胃疾与火患判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "罗睺（Rahu）是否落上升 Pad（Lagn Pad）起第 7 宫"
+                },
+                {
+                  "fact_key": "计都（Ketu）是否落上升 Pad（Lagn Pad）起第 7 宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "罗睺（Rahu）是否落上升 Pad（Lagn Pad）起第 7 宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "罗睺（Rahu）是否落上升 Pad（Lagn Pad）起第 7 宫"
+            },
+            "selection_group": "ch29-v23-rahu-ketu-seventh-stomach-or-fire.step-001:node",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：罗睺（Rahu）是否落上升 Pad（Lagn Pad）起第 7 宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "计都（Ketu）是否落上升 Pad（Lagn Pad）起第 7 宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "计都（Ketu）是否落上升 Pad（Lagn Pad）起第 7 宫"
+            },
+            "selection_group": "ch29-v23-rahu-ketu-seventh-stomach-or-fire.step-001:node",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：计都（Ketu）是否落上升 Pad（Lagn Pad）起第 7 宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Rahu, or Ketu is placed in the 7<sup>th</sup> from Lagn Pad",
+              "claim": "罗睺（Rahu）或计都（Ketu）落上升 Pad（Lagn Pad）起第 7 宫时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be troubled by disorders of the stomach, or by fire",
+              "claim": "命主受胃部疾患、或受火患困扰"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v23",
+            "quote": "If Rahu, or Ketu is placed in the 7<sup>th</sup> from Lagn Pad, the native will be troubled by disorders of the stomach, or by fire.",
+            "pdf_pages": [
+              63
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升 Pad（Lagn Pad）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断病名、发病年龄或严重程度。",
+          "不得把上升 Pad 起第 7 宫改读成本命第 7 宫。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "46f128a33ee54fb71f96061808c093274ca2259e1cfe36ed62ba6e65e7f3f202"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v24-ketu-with-malefic-seventh-traits.step-001",
+      "method": {
+        "method": "ch29-v24-ketu-with-malefic-seventh-traits",
+        "title": "计都在上升 Pad 起第 7 宫且与凶星关联：冒险、白发、男根粗大",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这个人是不是爱冒险",
+          "我为什么这么早就白头"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should there be Ketu in the 7<sup>th</sup> from Lagn Pad, receiving a Drishti from, or being yuti with another malefic, the native will be adventurous, will have (prematurely) grey hair and a big male organ.",
+            "计都在上升 Pad 起第 7 宫与凶星关联 冒险白发"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "O Brahmin, these Yogas, as narrated by me with reference to the 7<sup>th</sup> from Lagn Pad, should also be considered from the 2<sup>nd</sup> of Lagn Pad.",
+            "同一批断语也从上升 Pad 起第 2 宫考察"
+          ],
+          "method_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics.",
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "哪些行星算凶星"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v24-ketu-with-malefic-seventh-traits.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should there be Ketu in the 7th from Lagn Pad"
+            },
+            {
+              "step_id": "ch29-v24-ketu-with-malefic-seventh-traits.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "receiving a Drishti from"
+            },
+            {
+              "step_id": "ch29-v24-ketu-with-malefic-seventh-traits.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "being yuti with another malefic"
+            },
+            {
+              "step_id": "ch29-v24-ketu-with-malefic-seventh-traits.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be adventurous, will have (prematurely) grey hair and a big male organ"
+            },
+            {
+              "step_id": "ch29-v24-ketu-with-malefic-seventh-traits.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should there be Ketu in the 7th from Lagn Pad the native will be adventurous, will have (prematurely) grey hair and a big male organ"
+            },
+            {
+              "step_id": "ch29-v24-ketu-with-malefic-seventh-traits.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "receiving a Drishti from the native will be adventurous, will have (prematurely) grey hair and a big male organ"
+            },
+            {
+              "step_id": "ch29-v24-ketu-with-malefic-seventh-traits.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "being yuti with another malefic the native will be adventurous, will have (prematurely) grey hair and a big male organ"
+            },
+            {
+              "step_id": "ch29-v24-ketu-with-malefic-seventh-traits.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Should there be ketu in the 7th from 1st house Pad"
+            },
+            {
+              "step_id": "ch29-v24-ketu-with-malefic-seventh-traits.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Should there be ketu in the 7th from 1st house Pad the native will be adventurous, will have (prematurely) grey hair and a big male organ"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少计都相对上升 Pad 起第 7 宫的落宫事实时停止。",
+          "缺少计都与其他凶星的相照或同宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v24-ketu-with-malefic-seventh-traits.step-001",
+        "action": "先看计都（Ketu）是否落上升 Pad（Lagn Pad）起第 7 宫，再看它是否受另一凶星相照或与之同宫。",
+        "applicability_scope": "原文以男性身体特征（a big male organ）立说，女命命中时须提示；本条以上升 Pad（Lagn Pad）为起算点。",
+        "minimum_supported_claim": "计都（Ketu）落上升 Pad（Lagn Pad）起第 7 宫，并受另一凶星相照、或与另一凶星同宫时，命主富于冒险，（过早）生白发，男根粗大。",
+        "produced_fact_keys": [
+          "计都在上升 Pad 起第 7 宫的体貌与性情判定"
+        ],
+        "required_fact_keys": [
+          "计都（Ketu）是否落上升 Pad（Lagn Pad）起第 7 宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "计都（Ketu）是否落上升 Pad（Lagn Pad）起第 7 宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "计都（Ketu）是否被其他凶星相照"
+                },
+                {
+                  "fact_key": "计都（Ketu）是否与其他凶星同宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "计都（Ketu）是否落上升 Pad（Lagn Pad）起第 7 宫"
+            },
+            "required_fact_keys": [
+              "计都（Ketu）是否被其他凶星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "计都（Ketu）是否被其他凶星相照"
+            },
+            "selection_group": "ch29-v24-ketu-with-malefic-seventh-traits.step-001:malefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：计都（Ketu）是否被其他凶星相照。"
+          },
+          {
+            "when": {
+              "fact_key": "计都（Ketu）是否落上升 Pad（Lagn Pad）起第 7 宫"
+            },
+            "required_fact_keys": [
+              "计都（Ketu）是否与其他凶星同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "计都（Ketu）是否与其他凶星同宫"
+            },
+            "selection_group": "ch29-v24-ketu-with-malefic-seventh-traits.step-001:malefic-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：计都（Ketu）是否与其他凶星同宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should there be Ketu in the 7<sup>th</sup> from Lagn Pad",
+              "claim": "计都（Ketu）落上升 Pad（Lagn Pad）起第 7 宫"
+            },
+            {
+              "quote": "receiving a Drishti from",
+              "claim": "并受另一凶星相照"
+            },
+            {
+              "quote": "being yuti with another malefic",
+              "claim": "或与另一凶星同宫时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be adventurous, will have (prematurely) grey hair and a big male organ",
+              "claim": "命主富于冒险，（过早）生白发，男根粗大"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v24",
+            "quote": "Should there be Ketu in the 7<sup>th</sup> from Lagn Pad, receiving a Drishti from, or being yuti with another malefic, the native will be adventurous, will have (prematurely) grey hair and a big male organ.",
+            "pdf_pages": [
+              63
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：计都（Ketu）是否落上升 Pad（Lagn Pad）起第 7 宫。",
+        "stop_fact_keys": [
+          "计都（Ketu）是否落上升 Pad（Lagn Pad）起第 7 宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断白发的具体年龄。",
+          "不得把身体特征断语套到女命而不加说明。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "c721d1346ec690473fb7c68101acd478d29d9e464e803a64301be84e4933abff"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v25-guru-shukra-chandra-seventh-very-wealthy.step-001",
+      "method": {
+        "method": "ch29-v25-guru-shukra-chandra-seventh-very-wealthy",
+        "title": "木星、金星、月亮居上升 Pad 起第 7 宫：极为富有",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会很有钱",
+          "哪些星在财位最旺"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should one, two, or all three of Guru, Shukra and Chandra be in the 7<sup>th</sup> from Lagn Pad, the native will be very wealthy.",
+            "木星金星月亮落上升 Pad 起第 7 宫 极为富有"
+          ],
+          "counter_queries": [
+            "If the Dar Pad falls in the 6<sup>th</sup> / 8<sup>th</sup> /12<sup>th</sup> from Lagn Pad, then the native will be poor.",
+            "Dar Pad 落 6、8、12 宫时的贫穷条"
+          ],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "O Brahmin, these Yogas, as narrated by me with reference to the 7<sup>th</sup> from Lagn Pad, should also be considered from the 2<sup>nd</sup> of Lagn Pad.",
+            "同一批断语也从上升 Pad 起第 2 宫考察"
+          ],
+          "method_queries": [
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "上升 Pad 怎么求"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v25-guru-shukra-chandra-seventh-very-wealthy.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should one, two, or all three of Guru, Shukra and Chandra be in the 7th from Lagn Pad"
+            },
+            {
+              "step_id": "ch29-v25-guru-shukra-chandra-seventh-very-wealthy.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be very wealthy"
+            },
+            {
+              "step_id": "ch29-v25-guru-shukra-chandra-seventh-very-wealthy.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should one, two, or all three of Guru, Shukra and Chandra be in the 7th from Lagn Pad the native will be very wealthy"
+            },
+            {
+              "step_id": "ch29-v25-guru-shukra-chandra-seventh-very-wealthy.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Should one, two, or all three of jupiter, venus and moon be in the 7th from 1st house Pad"
+            },
+            {
+              "step_id": "ch29-v25-guru-shukra-chandra-seventh-very-wealthy.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Should one, two, or all three of jupiter, venus and moon be in the 7th from 1st house Pad the native will be very wealthy"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。",
+          "缺少木星、金星、月亮相对上升 Pad 起第 7 宫的落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v25-guru-shukra-chandra-seventh-very-wealthy.step-001",
+        "action": "先定出本盘上升 Pad（Lagn Pad）落在哪一宫，再看木星（Guru）、金星（Shukra）、月亮（Chandra）之中有哪几颗落其起第 7 宫。",
+        "applicability_scope": "本条以上升 Pad（Lagn Pad）为起算点；原文说三者中有一颗、两颗或三颗都可，未给三者之间的轻重差别。",
+        "minimum_supported_claim": "木星（Guru）、金星（Shukra）、月亮（Chandra）三者之中有一颗、两颗、或三颗都落上升 Pad（Lagn Pad）起第 7 宫时，命主极为富有。",
+        "produced_fact_keys": [
+          "上升 Pad 起第 7 宫三吉星的富有判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "木星（Guru）是否落上升 Pad（Lagn Pad）起第 7 宫"
+                },
+                {
+                  "fact_key": "金星（Shukra）是否落上升 Pad（Lagn Pad）起第 7 宫"
+                },
+                {
+                  "fact_key": "月亮（Chandra）是否落上升 Pad（Lagn Pad）起第 7 宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "木星（Guru）是否落上升 Pad（Lagn Pad）起第 7 宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "木星（Guru）是否落上升 Pad（Lagn Pad）起第 7 宫"
+            },
+            "selection_group": "ch29-v25-guru-shukra-chandra-seventh-very-wealthy.step-001:occupant",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：木星（Guru）是否落上升 Pad（Lagn Pad）起第 7 宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "金星（Shukra）是否落上升 Pad（Lagn Pad）起第 7 宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "金星（Shukra）是否落上升 Pad（Lagn Pad）起第 7 宫"
+            },
+            "selection_group": "ch29-v25-guru-shukra-chandra-seventh-very-wealthy.step-001:occupant",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：金星（Shukra）是否落上升 Pad（Lagn Pad）起第 7 宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "月亮（Chandra）是否落上升 Pad（Lagn Pad）起第 7 宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "月亮（Chandra）是否落上升 Pad（Lagn Pad）起第 7 宫"
+            },
+            "selection_group": "ch29-v25-guru-shukra-chandra-seventh-very-wealthy.step-001:occupant",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：月亮（Chandra）是否落上升 Pad（Lagn Pad）起第 7 宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should one, two, or all three of Guru, Shukra and Chandra be in the 7<sup>th</sup> from Lagn Pad",
+              "claim": "木星（Guru）、金星（Shukra）、月亮（Chandra）三者之中有一颗、两颗、或三颗都落上升 Pad（Lagn Pad）起第 7 宫时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be very wealthy",
+              "claim": "命主极为富有"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v25",
+            "quote": "Should one, two, or all three of Guru, Shukra and Chandra be in the 7<sup>th</sup> from Lagn Pad, the native will be very wealthy.",
+            "pdf_pages": [
+              63
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升 Pad（Lagn Pad）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财富数额或来源。",
+          "原文未给三者的轻重差别，不得自行排出强弱次序。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "405d0f9539ec9ba7b0f0e17caa2615ee4af0ca80edd286b7efceec3a7737a249"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v26-exalted-graha-seventh-affluent-famous.step-001",
+      "method": {
+        "method": "ch29-v26-exalted-graha-seventh-affluent-famous",
+        "title": "行星在上升 Pad 起第 7 宫入旺：富足且有名",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会出名",
+          "入旺的星落在这里好不好"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Whether a benefic, or a malefic, if be exalted in the 7<sup>th</sup> from Lagn Pad, the native will be affluent and be famous.",
+            "上升 Pad 起第 7 宫入旺 富足有名"
+          ],
+          "counter_queries": [
+            "If the Dar Pad falls in the 6<sup>th</sup> / 8<sup>th</sup> /12<sup>th</sup> from Lagn Pad, then the native will be poor.",
+            "Dar Pad 落 6、8、12 宫时的贫穷条"
+          ],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "O Brahmin, these Yogas, as narrated by me with reference to the 7<sup>th</sup> from Lagn Pad, should also be considered from the 2<sup>nd</sup> of Lagn Pad.",
+            "同一批断语也从上升 Pad 起第 2 宫考察"
+          ],
+          "method_queries": [
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+            "入旺怎么判"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v26-exalted-graha-seventh-affluent-famous.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Whether a benefic, or a malefic, if be exalted in the 7th from Lagn Pad"
+            },
+            {
+              "step_id": "ch29-v26-exalted-graha-seventh-affluent-famous.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be affluent and be famous"
+            },
+            {
+              "step_id": "ch29-v26-exalted-graha-seventh-affluent-famous.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Whether a benefic, or a malefic, if be exalted in the 7th from Lagn Pad the native will be affluent and be famous"
+            },
+            {
+              "step_id": "ch29-v26-exalted-graha-seventh-affluent-famous.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Whether a benefic, or a malefic, if be exalted in the 7th from 1st house Pad"
+            },
+            {
+              "step_id": "ch29-v26-exalted-graha-seventh-affluent-famous.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Whether a benefic, or a malefic, if be exalted in the 7th from 1st house Pad the native will be affluent and be famous"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升 Pad 起第 7 宫内行星是否入旺的事实时停止。",
+          "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v26-exalted-graha-seventh-affluent-famous.step-001",
+        "action": "看上升 Pad（Lagn Pad）起第 7 宫内是否有行星入旺，不论该行星是吉星还是凶星。",
+        "applicability_scope": "原文明写吉星凶星同断（Whether a benefic, or a malefic），故本条不按吉凶分支；本条以上升 Pad（Lagn Pad）为起算点。",
+        "minimum_supported_claim": "无论是吉星还是凶星，只要在上升 Pad（Lagn Pad）起第 7 宫入旺，命主富足且有名。",
+        "produced_fact_keys": [
+          "上升 Pad 起第 7 宫入旺行星的富足与名声判定"
+        ],
+        "required_fact_keys": [
+          "上升 Pad（Lagn Pad）起第 7 宫内是否有行星（Grah）入旺"
+        ],
+        "condition_logic": {
+          "fact_key": "上升 Pad（Lagn Pad）起第 7 宫内是否有行星（Grah）入旺"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Whether a benefic, or a malefic, if be exalted in the 7<sup>th</sup> from Lagn Pad",
+              "claim": "无论是吉星还是凶星，只要在上升 Pad（Lagn Pad）起第 7 宫入旺"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be affluent and be famous",
+              "claim": "命主富足且有名"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v26",
+            "quote": "Whether a benefic, or a malefic, if be exalted in the 7<sup>th</sup> from Lagn Pad, the native will be affluent and be famous.",
+            "pdf_pages": [
+              63
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：上升 Pad（Lagn Pad）起第 7 宫内是否有行星（Grah）入旺。",
+        "stop_fact_keys": [
+          "上升 Pad（Lagn Pad）起第 7 宫内是否有行星（Grah）入旺"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把入旺（exaltation）改读成落本星座（own Rāśi）。",
+          "不得据此推断名声的领域或时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "58f598db3d4ce3bd9f0b4306a9ff3d5a0b25cca5602f4f16d09821762724a1aa"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v27-same-yogas-from-second-of-pad.step-001",
+      "method": {
+        "method": "ch29-v27-same-yogas-from-second-of-pad",
+        "title": "第 7 宫诸 Yoga 同样从上升 Pad 起第 2 宫考察",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "这些断语还能用在别的位置吗",
+          "上升 Pad 起第 2 宫该怎么看"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "O Brahmin, these Yogas, as narrated by me with reference to the 7<sup>th</sup> from Lagn Pad, should also be considered from the 2<sup>nd</sup> of Lagn Pad.",
+            "第 7 宫诸 Yoga 也从上升 Pad 起第 2 宫看"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "上升 Pad 取宫本身的例外"
+          ],
+          "method_queries": [
+            "Should one, two, or all three of Guru, Shukra and Chandra be in the 7<sup>th</sup> from Lagn Pad, the native will be very wealthy.",
+            "Whether a benefic, or a malefic, if be exalted in the 7<sup>th</sup> from Lagn Pad, the native will be affluent and be famous.",
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "第 7 宫那批 Yoga 具体是哪几条"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v27-same-yogas-from-second-of-pad.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "these Yogas, as narrated by me with reference to the 7th from Lagn Pad"
+            },
+            {
+              "step_id": "ch29-v27-same-yogas-from-second-of-pad.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "should also be considered from the 2nd of Lagn Pad"
+            },
+            {
+              "step_id": "ch29-v27-same-yogas-from-second-of-pad.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "these Yogas, as narrated by me with reference to the 7th from Lagn Pad should also be considered from the 2nd of Lagn Pad"
+            },
+            {
+              "step_id": "ch29-v27-same-yogas-from-second-of-pad.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "these Yogas, as narrated by me with reference to the 7th from 1st house Pad"
+            },
+            {
+              "step_id": "ch29-v27-same-yogas-from-second-of-pad.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "should also be considered from the 2nd of 1st house Pad"
+            },
+            {
+              "step_id": "ch29-v27-same-yogas-from-second-of-pad.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "these Yogas, as narrated by me with reference to the 7th from 1st house Pad should also be considered from the 2nd of 1st house Pad"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "未回查第 23-26 偈各条的具体条件与结果时停判。",
+          "缺少上升 Pad 起第 2 宫内行星事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v27-same-yogas-from-second-of-pad.step-001",
+        "action": "把原文就上升 Pad（Lagn Pad）起第 7 宫所说的诸 Yoga，改以其起第 2 宫为对象再考察一遍。",
+        "applicability_scope": "本偈只给适用范围的推广指示，未在本偈重列各 Yoga 的条件与结果，须回查第 23-26 偈才能落地。",
+        "minimum_supported_claim": "原文以上升 Pad（Lagn Pad）起第 7 宫立说的诸 Yoga，也应从上升 Pad（Lagn Pad）起第 2 宫考察。",
+        "produced_fact_keys": [
+          "上升 Pad 起第 2 宫的诸 Yoga 适用判定"
+        ],
+        "required_fact_keys": [
+          "上升 Pad（Lagn Pad）起第 2 宫内有哪些行星（Grah）"
+        ],
+        "condition_logic": {
+          "fact_key": "上升 Pad（Lagn Pad）起第 2 宫内有哪些行星（Grah）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "these Yogas, as narrated by me with reference to the 7<sup>th</sup> from Lagn Pad",
+              "claim": "原文以上升 Pad（Lagn Pad）起第 7 宫立说的诸 Yoga"
+            }
+          ],
+          "results": [
+            {
+              "quote": "should also be considered from the 2<sup>nd</sup> of Lagn Pad",
+              "claim": "也应从上升 Pad（Lagn Pad）起第 2 宫考察"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v27",
+            "quote": "O Brahmin, these Yogas, as narrated by me with reference to the 7<sup>th</sup> from Lagn Pad, should also be considered from the 2<sup>nd</sup> of Lagn Pad.",
+            "pdf_pages": [
+              63
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：上升 Pad（Lagn Pad）起第 2 宫内有哪些行星（Grah）。",
+        "stop_fact_keys": [
+          "上升 Pad（Lagn Pad）起第 2 宫内有哪些行星（Grah）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此改动第 23-26 偈各条本身的条件或结果。",
+          "原文只说同样考察，不得据此断定两处结果强弱不同。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch29:v23",
+          "bphs-97:santhanam:ch29:v24",
+          "bphs-97:santhanam:ch29:v25",
+          "bphs-97:santhanam:ch29:v26"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b164048df111cfffc1f00513554ca1fb3d5f0d5f664d4872ed0a7bab24922ddd"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v28-exalted-strong-benefic-second-of-pad-rich.step-001",
+      "method": {
+        "method": "ch29-v28-exalted-strong-benefic-second-of-pad-rich",
+        "title": "水星、木星或金星在上升 Pad 起第 2 宫入旺且有力：命主富有",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会有钱",
+          "第 2 宫的入旺星有什么用"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Anyone of Budh, Guru and Shukra being exalted in the 2<sup>nd</sup> from Lagn Pad and being with strength will make the subject rich.",
+            "水星木星金星在上升 Pad 起第 2 宫入旺有力 富有"
+          ],
+          "counter_queries": [
+            "If the Dar Pad falls in the 6<sup>th</sup> / 8<sup>th</sup> /12<sup>th</sup> from Lagn Pad, then the native will be poor.",
+            "Dar Pad 落 6、8、12 宫时的贫穷条"
+          ],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "O Brahmin, these Yogas, as narrated by me with reference to the 7<sup>th</sup> from Lagn Pad, should also be considered from the 2<sup>nd</sup> of Lagn Pad.",
+            "第 2 宫这一路断语的来历"
+          ],
+          "method_queries": [
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "有力怎么判"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v28-exalted-strong-benefic-second-of-pad-rich.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Anyone of Budh, Guru and Shukra being exalted in the 2nd from Lagn Pad"
+            },
+            {
+              "step_id": "ch29-v28-exalted-strong-benefic-second-of-pad-rich.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "being with strength"
+            },
+            {
+              "step_id": "ch29-v28-exalted-strong-benefic-second-of-pad-rich.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will make the subject rich"
+            },
+            {
+              "step_id": "ch29-v28-exalted-strong-benefic-second-of-pad-rich.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Anyone of Budh, Guru and Shukra being exalted in the 2nd from Lagn Pad will make the subject rich"
+            },
+            {
+              "step_id": "ch29-v28-exalted-strong-benefic-second-of-pad-rich.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "being with strength will make the subject rich"
+            },
+            {
+              "step_id": "ch29-v28-exalted-strong-benefic-second-of-pad-rich.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Anyone of mercury, jupiter and venus being exalted in the 2nd from 1st house Pad"
+            },
+            {
+              "step_id": "ch29-v28-exalted-strong-benefic-second-of-pad-rich.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Anyone of mercury, jupiter and venus being exalted in the 2nd from 1st house Pad will make the subject rich"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少这三颗行星相对上升 Pad 起第 2 宫的落宫或入旺事实时停止。",
+          "缺少该行星是否有力的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v28-exalted-strong-benefic-second-of-pad-rich.step-001",
+        "action": "逐颗核对水星（Budh）、木星（Guru）、金星（Shukra）是否在上升 Pad（Lagn Pad）起第 2 宫入旺，并同时有力。",
+        "applicability_scope": "原文要求同时入旺与有力两件事；力量判准原文未在本偈给出，见第 27 章六力（Shad Bal）诸目。",
+        "minimum_supported_claim": "水星（Budh）、木星（Guru）、金星（Shukra）之中任何一颗在上升 Pad（Lagn Pad）起第 2 宫入旺、并且有力时，命主富有。",
+        "produced_fact_keys": [
+          "上升 Pad 起第 2 宫入旺有力行星的富有判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "水星（Budh）是否落上升 Pad（Lagn Pad）起第 2 宫"
+                    },
+                    {
+                      "fact_key": "水星（Budh）是否入旺"
+                    },
+                    {
+                      "fact_key": "水星（Budh）是否有力"
+                    }
+                  ]
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "木星（Guru）是否落上升 Pad（Lagn Pad）起第 2 宫"
+                    },
+                    {
+                      "fact_key": "木星（Guru）是否入旺"
+                    },
+                    {
+                      "fact_key": "木星（Guru）是否有力"
+                    }
+                  ]
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "金星（Shukra）是否落上升 Pad（Lagn Pad）起第 2 宫"
+                    },
+                    {
+                      "fact_key": "金星（Shukra）是否入旺"
+                    },
+                    {
+                      "fact_key": "金星（Shukra）是否有力"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "水星（Budh）是否落上升 Pad（Lagn Pad）起第 2 宫",
+              "水星（Budh）是否入旺",
+              "水星（Budh）是否有力"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "水星（Budh）是否落上升 Pad（Lagn Pad）起第 2 宫"
+                },
+                {
+                  "fact_key": "水星（Budh）是否入旺"
+                },
+                {
+                  "fact_key": "水星（Budh）是否有力"
+                }
+              ]
+            },
+            "selection_group": "ch29-v28-exalted-strong-benefic-second-of-pad-rich.step-001:planet",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：水星（Budh）是否落上升 Pad（Lagn Pad）起第 2 宫、水星（Budh）是否入旺、水星（Budh）是否有力。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "木星（Guru）是否落上升 Pad（Lagn Pad）起第 2 宫",
+              "木星（Guru）是否入旺",
+              "木星（Guru）是否有力"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "木星（Guru）是否落上升 Pad（Lagn Pad）起第 2 宫"
+                },
+                {
+                  "fact_key": "木星（Guru）是否入旺"
+                },
+                {
+                  "fact_key": "木星（Guru）是否有力"
+                }
+              ]
+            },
+            "selection_group": "ch29-v28-exalted-strong-benefic-second-of-pad-rich.step-001:planet",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：木星（Guru）是否落上升 Pad（Lagn Pad）起第 2 宫、木星（Guru）是否入旺、木星（Guru）是否有力。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+            },
+            "required_fact_keys": [
+              "金星（Shukra）是否落上升 Pad（Lagn Pad）起第 2 宫",
+              "金星（Shukra）是否入旺",
+              "金星（Shukra）是否有力"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "金星（Shukra）是否落上升 Pad（Lagn Pad）起第 2 宫"
+                },
+                {
+                  "fact_key": "金星（Shukra）是否入旺"
+                },
+                {
+                  "fact_key": "金星（Shukra）是否有力"
+                }
+              ]
+            },
+            "selection_group": "ch29-v28-exalted-strong-benefic-second-of-pad-rich.step-001:planet",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：金星（Shukra）是否落上升 Pad（Lagn Pad）起第 2 宫、金星（Shukra）是否入旺、金星（Shukra）是否有力。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Anyone of Budh, Guru and Shukra being exalted in the 2<sup>nd</sup> from Lagn Pad",
+              "claim": "水星（Budh）、木星（Guru）、金星（Shukra）之中任何一颗在上升 Pad（Lagn Pad）起第 2 宫入旺"
+            },
+            {
+              "quote": "being with strength",
+              "claim": "并且有力时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will make the subject rich",
+              "claim": "命主富有"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v28",
+            "quote": "Anyone of Budh, Guru and Shukra being exalted in the 2<sup>nd</sup> from Lagn Pad and being with strength will make the subject rich.",
+            "pdf_pages": [
+              63
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升 Pad（Lagn Pad）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得只凭入旺而不核对有力就成立本条。",
+          "不得据此推断财富数额或来源。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "3c424c237018b8551016244665fa451d22230d90b51b888b0d6d274d76205d30"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v29-same-yogas-from-karakamsa.step-001",
+      "method": {
+        "method": "ch29-v29-same-yogas-from-karakamsa",
+        "title": "以上升 Pad 立说的诸 Yoga 同样从 Karakāńś 考察",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "这些断语还能从哪里起算",
+          "Karakāńś 怎么用"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "The Yogas so far stated by me with reference to Lagn Pad be similarly evaluated from Karakāńś as well.",
+            "以上升 Pad 立说的诸 Yoga 也从 Karakāńś 看"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "上升 Pad 取宫本身的例外"
+          ],
+          "method_queries": [
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "上升 Pad 与各 Bhava Pad 怎么求"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v29-same-yogas-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "The Yogas so far stated by me with reference to Lagn Pad"
+            },
+            {
+              "step_id": "ch29-v29-same-yogas-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If the 11th from Lagn Pad is occupied"
+            },
+            {
+              "step_id": "ch29-v29-same-yogas-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "receives a Drishti from a Grah"
+            },
+            {
+              "step_id": "ch29-v29-same-yogas-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the 12th from Lagn Pad does not receive a Drishti"
+            },
+            {
+              "step_id": "ch29-v29-same-yogas-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the quantum of gains will correspond to"
+            },
+            {
+              "step_id": "ch29-v29-same-yogas-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be similarly evaluated from Karakāńś as well"
+            },
+            {
+              "step_id": "ch29-v29-same-yogas-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "The Yogas so far stated by me with reference to Lagn Pad be similarly evaluated from Karakāńś as well"
+            },
+            {
+              "step_id": "ch29-v29-same-yogas-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If the 11th from Lagn Pad is occupied be similarly evaluated from Karakāńś as well"
+            },
+            {
+              "step_id": "ch29-v29-same-yogas-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "receives a Drishti from a Grah be similarly evaluated from Karakāńś as well"
+            },
+            {
+              "step_id": "ch29-v29-same-yogas-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the 12th from Lagn Pad does not receive a Drishti be similarly evaluated from Karakāńś as well"
+            },
+            {
+              "step_id": "ch29-v29-same-yogas-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the quantum of gains will correspond to be similarly evaluated from Karakāńś as well"
+            },
+            {
+              "step_id": "ch29-v29-same-yogas-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "The Yogas so far stated by me with reference to 1st house Pad"
+            },
+            {
+              "step_id": "ch29-v29-same-yogas-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If the 11th from 1st house Pad is occupied"
+            },
+            {
+              "step_id": "ch29-v29-same-yogas-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "the 12th from 1st house Pad does not receive a Drishti"
+            },
+            {
+              "step_id": "ch29-v29-same-yogas-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "The Yogas so far stated by me with reference to 1st house Pad be similarly evaluated from Karakāńś as well"
+            },
+            {
+              "step_id": "ch29-v29-same-yogas-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If the 11th from 1st house Pad is occupied be similarly evaluated from Karakāńś as well"
+            },
+            {
+              "step_id": "ch29-v29-same-yogas-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "the 12th from 1st house Pad does not receive a Drishti be similarly evaluated from Karakāńś as well"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘 Karakāńś 落宫事实时停止。",
+          "未回查以上升 Pad 立说的各条具体条件与结果时停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v29-same-yogas-from-karakamsa.step-001",
+        "action": "把原文迄此以上升 Pad（Lagn Pad）立说的诸 Yoga，改以 Karakāńś 为起算点再考察一遍。",
+        "applicability_scope": "本偈只给起算点的推广指示，既未重列各 Yoga，也未在本偈给 Karakāńś 的求法；「so far stated」回指第 8 偈以下以上升 Pad 立说的各条。",
+        "minimum_supported_claim": "原文迄此以上升 Pad（Lagn Pad）立说的诸 Yoga，包括上升 Pad 起第 11 宫被占据、受相照的诸条，上升 Pad 起第 12 宫不受相照的一条，以及得益多寡与行星数目相应的一条在内，同样也要从 Karakāńś 起算考察。",
+        "produced_fact_keys": [
+          "Karakāńś 起算的诸 Yoga 适用判定"
+        ],
+        "required_fact_keys": [
+          "本盘 Karakāńś 落在哪一宫"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘 Karakāńś 落在哪一宫"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "The Yogas so far stated by me with reference to Lagn Pad",
+              "claim": "原文迄此以上升 Pad（Lagn Pad）立说的诸 Yoga"
+            },
+            {
+              "quote": "If the 11<sup>th</sup> from Lagn Pad is occupied",
+              "claim": "上升 Pad 起第 11 宫被占据"
+            },
+            {
+              "quote": "receives a Drishti from a Grah",
+              "claim": "受相照的诸条"
+            },
+            {
+              "quote": "the 12<sup>th</sup> from Lagn Pad does not receive a Drishti",
+              "claim": "上升 Pad 起第 12 宫不受相照的一条"
+            },
+            {
+              "quote": "the quantum of gains will correspond to",
+              "claim": "得益多寡与行星数目相应的一条"
+            }
+          ],
+          "results": [
+            {
+              "quote": "be similarly evaluated from Karakāńś as well",
+              "claim": "同样也要从 Karakāńś 起算考察"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v29",
+            "quote": "The Yogas so far stated by me with reference to Lagn Pad be similarly evaluated from Karakāńś as well.",
+            "pdf_pages": [
+              63
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v8-11",
+            "quote": "If the 11<sup>th</sup> from Lagn Pad is occupied, or receives a Drishti from a Grah the native will be happy and rich",
+            "pdf_pages": [
+              62
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v12",
+            "quote": "O excellent of the Brahmins, if the 12<sup>th</sup> from Lagn Pad does not receive a Drishti, as the 11<sup>th</sup> from Lagn Pad receives a Drishti from a Grah, then the gains will be uninterrupted.",
+            "pdf_pages": [
+              62
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v13-15",
+            "quote": "O Brahmin, the quantum of gains will correspond to the number of Grahas in, or giving a Drishti to the 11<sup>th</sup> from Lagn Pad.",
+            "pdf_pages": [
+              62
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘 Karakāńś 落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘 Karakāńś 落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此改动以上升 Pad 立说的各条本身的条件或结果。",
+          "本偈未给 Karakāńś 的求法，不得自行代入某一种算法。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch29:v8-11",
+          "bphs-97:santhanam:ch29:v12",
+          "bphs-97:santhanam:ch29:v13-15",
+          "bphs-97:santhanam:ch29:v16-17",
+          "bphs-97:santhanam:ch29:v18",
+          "bphs-97:santhanam:ch29:v19",
+          "bphs-97:santhanam:ch29:v20",
+          "bphs-97:santhanam:ch29:v21",
+          "bphs-97:santhanam:ch29:v22",
+          "bphs-97:santhanam:ch29:v23",
+          "bphs-97:santhanam:ch29:v24",
+          "bphs-97:santhanam:ch29:v25",
+          "bphs-97:santhanam:ch29:v26",
+          "bphs-97:santhanam:ch29:v27",
+          "bphs-97:santhanam:ch29:v28"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "8547848656a7ae77d1335ca6993d27a2d1d9817a44ffa6fcf5b4c71722e43f8e"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v30-37-budh-second-of-pad-lord-of-country.step-001",
+      "method": {
+        "method": "ch29-v30-37-budh-second-of-pad-lord-of-country",
+        "title": "水星落上升 Pad 起第 2 宫：主宰整个国家",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我能不能做到很高的位置",
+          "水星在这个位置有多好"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Budh is in the 2<sup>nd</sup> from Arudh Lagna, the native will Lord over the whole country.",
+            "水星落上升 Pad 起第 2 宫 主宰国家"
+          ],
+          "counter_queries": [
+            "If the Dar Pad falls in the 6<sup>th</sup> / 8<sup>th</sup> /12<sup>th</sup> from Lagn Pad, then the native will be poor.",
+            "Dar Pad 落 6、8、12 宫时的贫穷条"
+          ],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "O Brahmin, these Yogas, as narrated by me with reference to the 7<sup>th</sup> from Lagn Pad, should also be considered from the 2<sup>nd</sup> of Lagn Pad.",
+            "第 2 宫这一路断语的来历"
+          ],
+          "method_queries": [
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "上升 Pad 怎么求"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v30-37-budh-second-of-pad-lord-of-country.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Budh is in the 2nd from Arudh Lagna"
+            },
+            {
+              "step_id": "ch29-v30-37-budh-second-of-pad-lord-of-country.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will Lord over the whole country"
+            },
+            {
+              "step_id": "ch29-v30-37-budh-second-of-pad-lord-of-country.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Budh is in the 2nd from Arudh Lagna the native will Lord over the whole country"
+            },
+            {
+              "step_id": "ch29-v30-37-budh-second-of-pad-lord-of-country.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If mercury is in the 2nd from Arudh 1st house"
+            },
+            {
+              "step_id": "ch29-v30-37-budh-second-of-pad-lord-of-country.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If mercury is in the 2nd from Arudh 1st house the native will Lord over the whole country"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少水星相对上升 Pad 起第 2 宫的落宫事实时停止。",
+          "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v30-37-budh-second-of-pad-lord-of-country.step-001",
+        "action": "核对水星（Budh）是否落上升 Pad 起第 2 宫。",
+        "applicability_scope": "原文此句把上升 Pad 写作 Arudh Lagna，同章第 13-15 偈中 Arudh Lagn 与 Lagn Pad 交替指同一处；原文没有给时间或适用人群限定。",
+        "minimum_supported_claim": "水星（Budh）落上升 Pad（Arudh Lagna）起第 2 宫时，命主主宰整个国家。",
+        "produced_fact_keys": [
+          "水星在上升 Pad 起第 2 宫的权位判定"
+        ],
+        "required_fact_keys": [
+          "水星（Budh）是否落上升 Pad（Lagn Pad）起第 2 宫"
+        ],
+        "condition_logic": {
+          "fact_key": "水星（Budh）是否落上升 Pad（Lagn Pad）起第 2 宫"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Budh is in the 2<sup>nd</sup> from Arudh Lagna",
+              "claim": "水星（Budh）落上升 Pad（Arudh Lagna）起第 2 宫时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will Lord over the whole country",
+              "claim": "命主主宰整个国家"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v30-37",
+            "quote": "If Budh is in the 2<sup>nd</sup> from Arudh Lagna, the native will Lord over the whole country.",
+            "pdf_pages": [
+              63
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：水星（Budh）是否落上升 Pad（Lagn Pad）起第 2 宫。",
+        "stop_fact_keys": [
+          "水星（Budh）是否落上升 Pad（Lagn Pad）起第 2 宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体官职、任期或年份。",
+          "不得把 Arudh Lagna 改读成本命上升（Lagna）。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "01752b6aaf4b695b8681d51c9b263c23f32d6cbfbbec88236e94abfe0411aeef"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v30-37-shukra-second-of-pad-poet-or-speaker.step-001",
+      "method": {
+        "method": "ch29-v30-37-shukra-second-of-pad-poet-or-speaker",
+        "title": "金星落上升 Pad 起第 2 宫：诗人或演说者",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我适合靠嘴和笔吃饭吗",
+          "我有没有文才"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Shukra in the 2<sup>nd</sup> from Lagn Pad will make one a poet, or a speaker.",
+            "金星落上升 Pad 起第 2 宫 诗人演说者"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "O Brahmin, these Yogas, as narrated by me with reference to the 7<sup>th</sup> from Lagn Pad, should also be considered from the 2<sup>nd</sup> of Lagn Pad.",
+            "第 2 宫这一路断语的来历"
+          ],
+          "method_queries": [
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "上升 Pad 怎么求"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v30-37-shukra-second-of-pad-poet-or-speaker.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Shukra in the 2nd from Lagn Pad"
+            },
+            {
+              "step_id": "ch29-v30-37-shukra-second-of-pad-poet-or-speaker.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will make one a poet, or a speaker"
+            },
+            {
+              "step_id": "ch29-v30-37-shukra-second-of-pad-poet-or-speaker.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Shukra in the 2nd from Lagn Pad will make one a poet, or a speaker"
+            },
+            {
+              "step_id": "ch29-v30-37-shukra-second-of-pad-poet-or-speaker.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "venus in the 2nd from 1st house Pad"
+            },
+            {
+              "step_id": "ch29-v30-37-shukra-second-of-pad-poet-or-speaker.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "venus in the 2nd from 1st house Pad will make one a poet, or a speaker"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少金星相对上升 Pad 起第 2 宫的落宫事实时停止。",
+          "缺少本盘上升 Pad（Lagn Pad）落宫事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v30-37-shukra-second-of-pad-poet-or-speaker.step-001",
+        "action": "核对金星（Shukra）是否落上升 Pad（Lagn Pad）起第 2 宫。",
+        "applicability_scope": "本条以上升 Pad（Lagn Pad）为起算点；原文在诗人与演说者之间没有作区分。",
+        "minimum_supported_claim": "金星（Shukra）落上升 Pad（Lagn Pad）起第 2 宫时，命主成为诗人、或演说者。",
+        "produced_fact_keys": [
+          "金星在上升 Pad 起第 2 宫的才艺判定"
+        ],
+        "required_fact_keys": [
+          "金星（Shukra）是否落上升 Pad（Lagn Pad）起第 2 宫"
+        ],
+        "condition_logic": {
+          "fact_key": "金星（Shukra）是否落上升 Pad（Lagn Pad）起第 2 宫"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Shukra in the 2<sup>nd</sup> from Lagn Pad",
+              "claim": "金星（Shukra）落上升 Pad（Lagn Pad）起第 2 宫时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will make one a poet, or a speaker",
+              "claim": "命主成为诗人、或演说者"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v30-37",
+            "quote": "Shukra in the 2<sup>nd</sup> from Lagn Pad will make one a poet, or a speaker.",
+            "pdf_pages": [
+              63
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：金星（Shukra）是否落上升 Pad（Lagn Pad）起第 2 宫。",
+        "stop_fact_keys": [
+          "金星（Shukra）是否落上升 Pad（Lagn Pad）起第 2 宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断成名程度或收入。",
+          "原文没有在诗人与演说者之间取舍，不得只留其一。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "d66c3e465971429793b6a7ff1b0d959387a12f7ee5ebdfc593083e4398025a4b"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch29-v30-37-dar-pad-angle-trine-rich-famous.step-001",
+      "method": {
+        "method": "ch29-v30-37-dar-pad-angle-trine-rich-famous",
+        "title": "Dar Pad 落上升 Pad 的角宫三角宫或两 Pad 都有有力行星：富有且在本国有名",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会又有钱又有名",
+          "夫妻位和命位的关系怎么看"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If the Dar Pad falls in an angle, or in a trine, counted from Lagn Pad, or, if Lagn Pad and Dar Pad both have strong Grahas, the native will be rich and be famous in his country.",
+            "Dar Pad 落上升 Pad 的角宫三角宫 富有有名"
+          ],
+          "counter_queries": [
+            "If the Dar Pad falls in the 6<sup>th</sup> / 8<sup>th</sup> /12<sup>th</sup> from Lagn Pad, then the native will be poor.",
+            "Dar Pad 落 6、8、12 宫时的贫穷条"
+          ],
+          "boundary_queries": [
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad.",
+            "上升 Pad 取宫本身的例外"
+          ],
+          "method_queries": [
+            "Dar (Kalatr) of Yuvati",
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "Dar Pad 是哪一个 Pad"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch29-v30-37-dar-pad-angle-trine-rich-famous.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If the Dar Pad falls in an angle"
+            },
+            {
+              "step_id": "ch29-v30-37-dar-pad-angle-trine-rich-famous.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or in a trine, counted from Lagn Pad"
+            },
+            {
+              "step_id": "ch29-v30-37-dar-pad-angle-trine-rich-famous.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Lagn Pad and Dar Pad both have strong Grahas"
+            },
+            {
+              "step_id": "ch29-v30-37-dar-pad-angle-trine-rich-famous.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be rich and be famous in his country"
+            },
+            {
+              "step_id": "ch29-v30-37-dar-pad-angle-trine-rich-famous.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If the Dar Pad falls in an angle the native will be rich and be famous in his country"
+            },
+            {
+              "step_id": "ch29-v30-37-dar-pad-angle-trine-rich-famous.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or in a trine, counted from Lagn Pad the native will be rich and be famous in his country"
+            },
+            {
+              "step_id": "ch29-v30-37-dar-pad-angle-trine-rich-famous.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Lagn Pad and Dar Pad both have strong Grahas the native will be rich and be famous in his country"
+            },
+            {
+              "step_id": "ch29-v30-37-dar-pad-angle-trine-rich-famous.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "or in a trine, counted from 1st house Pad"
+            },
+            {
+              "step_id": "ch29-v30-37-dar-pad-angle-trine-rich-famous.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if 1st house Pad and Dar Pad both have strong Grahas"
+            },
+            {
+              "step_id": "ch29-v30-37-dar-pad-angle-trine-rich-famous.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "or in a trine, counted from 1st house Pad the native will be rich and be famous in his country"
+            },
+            {
+              "step_id": "ch29-v30-37-dar-pad-angle-trine-rich-famous.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if 1st house Pad and Dar Pad both have strong Grahas the native will be rich and be famous in his country"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升 Pad 或 Dar Pad 落宫事实时停止。",
+          "缺少两个 Pad 内是否有有力行星的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch29-v30-37-dar-pad-angle-trine-rich-famous.step-001",
+        "action": "先定出上升 Pad（Lagn Pad）与 Dar Pad（Kalatr Pad）各落哪一宫，再看 Dar Pad 是否落在从上升 Pad 起算的角宫或三角宫，或两个 Pad 内是否都有有力的行星。",
+        "applicability_scope": "力量判准原文未在本偈给出，见第 27 章六力（Shad Bal）诸目；原文以 in his country 的口吻立说。",
+        "minimum_supported_claim": "Dar Pad（Kalatr Pad）从上升 Pad（Lagn Pad）起算落在角宫、或落在三角宫，或上升 Pad 与 Dar Pad 内都有有力的行星时，命主富有并在本国有名。",
+        "produced_fact_keys": [
+          "上升 Pad 与 Dar Pad 相对位置的富名判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫",
+          "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起算的角宫（Kendra）"
+                },
+                {
+                  "fact_key": "Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起算的三角宫（Kona）"
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "上升 Pad（Lagn Pad）是否被有力的行星（strong Grah）占据"
+                    },
+                    {
+                      "fact_key": "Dar Pad（Kalatr Pad）是否被有力的行星（strong Grah）占据"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起算的角宫（Kendra）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起算的角宫（Kendra）"
+            },
+            "selection_group": "ch29-v30-37-dar-pad-angle-trine-rich-famous.step-001:configuration",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起算的角宫（Kendra）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起算的三角宫（Kona）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起算的三角宫（Kona）"
+            },
+            "selection_group": "ch29-v30-37-dar-pad-angle-trine-rich-famous.step-001:configuration",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Dar Pad（Kalatr Pad）是否落上升 Pad（Lagn Pad）起算的三角宫（Kona）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升 Pad（Lagn Pad）落在哪一宫"
+                },
+                {
+                  "fact_key": "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "上升 Pad（Lagn Pad）是否被有力的行星（strong Grah）占据",
+              "Dar Pad（Kalatr Pad）是否被有力的行星（strong Grah）占据"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "上升 Pad（Lagn Pad）是否被有力的行星（strong Grah）占据"
+                },
+                {
+                  "fact_key": "Dar Pad（Kalatr Pad）是否被有力的行星（strong Grah）占据"
+                }
+              ]
+            },
+            "selection_group": "ch29-v30-37-dar-pad-angle-trine-rich-famous.step-001:configuration",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升 Pad（Lagn Pad）是否被有力的行星（strong Grah）占据、Dar Pad（Kalatr Pad）是否被有力的行星（strong Grah）占据。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If the Dar Pad falls in an angle",
+              "claim": "Dar Pad（Kalatr Pad）从上升 Pad（Lagn Pad）起算落在角宫"
+            },
+            {
+              "quote": "or in a trine, counted from Lagn Pad",
+              "claim": "或落在三角宫"
+            },
+            {
+              "quote": "if Lagn Pad and Dar Pad both have strong Grahas",
+              "claim": "或上升 Pad 与 Dar Pad 内都有有力的行星时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be rich and be famous in his country",
+              "claim": "命主富有并在本国有名"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch29:v30-37",
+            "quote": "If the Dar Pad falls in an angle, or in a trine, counted from Lagn Pad, or, if Lagn Pad and Dar Pad both have strong Grahas, the native will be rich and be famous in his country.",
+            "pdf_pages": [
+              63
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升 Pad（Lagn Pad）落在哪一宫、本盘 Dar Pad（Kalatr Pad）落在哪一宫。",
+        "stop_fact_keys": [
+          "本盘上升 Pad（Lagn Pad）落在哪一宫",
+          "本盘 Dar Pad（Kalatr Pad）落在哪一宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 trine（三角宫）读成三分盘（Drekkana D3）。",
+          "不得据此推断名声的领域或财富数额。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "55417cf681fa3e31fa06ced42a8f7c84d4b2e4206ca0453c01925ed3860fdce9"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch29:v8-11": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v8-11",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "8-11.",
+      "content_role": "verse",
+      "exact_text": "8-11. Pad and Finance (up to Sloka 15). O Brahmin, I now tell you of some effects of Grahas, based on Pad. If the 11<sup>th</sup> from Lagn Pad is occupied, or receives a Drishti from a Grah the native will be happy and rich; wealth will come through various means, if a benefic is related, as above. A malefic will confer wealth through questionable means. If there be both a benefic and a malefic, it will be through both means. If the Grah in question be in exaltation, or in own Rashietc., there will be plenty of gains and plenty of happiness.",
+      "pdf_pages": [
+        62
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 8-11 · PDF page 62 · bphs-97:santhanam:ch29:v8-11",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v6-7",
+      "next_atom_id": "bphs-97:santhanam:ch29:v12",
+      "context_before": "e Grah. If a Grah owns two Rāśis, or, if a Rashiis owned by two Grahas; consider the stronger and declare effects accordingly.\n\n",
+      "context_after": "12. O excellent of the Brahmins, if the 12<sup>th</sup> from Lagn Pad does not receive a Drishti, as the 11<sup>th</sup> from La",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch29:v12": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v12",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "12.",
+      "content_role": "verse",
+      "exact_text": "12. O excellent of the Brahmins, if the 12<sup>th</sup> from Lagn Pad does not receive a Drishti, as the 11<sup>th</sup> from Lagn Pad receives a Drishti from a Grah, then the gains will be uninterrupted.",
+      "pdf_pages": [
+        62
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 12 · PDF page 62 · bphs-97:santhanam:ch29:v12",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v8-11",
+      "next_atom_id": "bphs-97:santhanam:ch29:v13-15",
+      "context_before": "h means. If the Grah in question be in exaltation, or in own Rashietc., there will be plenty of gains and plenty of happiness.\n\n",
+      "context_after": "13-15. O Brahmin, the quantum of gains will correspond to the number of Grahas in, or giving a Drishti to the 11<sup>th</sup> fr",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch29:v13-15": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v13-15",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "13-15.",
+      "content_role": "verse",
+      "exact_text": "13-15. O Brahmin, the quantum of gains will correspond to the number of Grahas in, or giving a Drishti to the 11<sup>th</sup> from Lagn Pad. If there is Argala for the said 11<sup>th</sup> , there will be more gains, while a benefic Argala will bring still more gains. If the said benefic, causing Argala is in his exaltation Rāśi, the gains will be still higher. If the said 11<sup>th</sup> receives a Drishti from a benefic from Lagna, the 9<sup>th</sup> etc., gains will increase in the ascending order. In all these cases, the 12<sup>th</sup> from Pad should simultaneously be free from malefic association. A benefic, placed in Lagna, giving a Drishti to the 11<sup>th</sup> from Arudh Lagn will be still beneficial. If the Drishti is from the 9<sup>th</sup> from Lagna, it will confer much more gains.",
+      "pdf_pages": [
+        62
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 13-15 · PDF page 62 · bphs-97:santhanam:ch29:v13-15",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v12",
+      "next_atom_id": "bphs-97:santhanam:ch29:v16-17",
+      "context_before": " O excellent of the Brahmins, if the 12<sup>th</sup> from Lagn Pad does not receive a Drishti, as the 11<sup>th</sup> from Lagn Pad receives a Drishti from a Grah, then the gains will be uninterrupted.\n\n",
+      "context_after": "16-17. Pad and Financial Losses (up to Sloka 21). If the 12<sup>th</sup> from Lagn Pad receives a Drishti from, or is yuti with ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch29:v16-17": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v16-17",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "16-17.",
+      "content_role": "verse",
+      "exact_text": "16-17. Pad and Financial Losses (up to Sloka 21). If the 12<sup>th</sup> from Lagn Pad receives a Drishti from, or is yuti with both benefics and malefics, there will be abundant earnings, but plenty of expenses. The benefic will cause through fair means, malefic through unfair means and mixed Grahas through both fair and unfair means.",
+      "pdf_pages": [
+        62
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 16-17 · PDF page 62 · bphs-97:santhanam:ch29:v16-17",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v13-15",
+      "next_atom_id": "bphs-97:santhanam:ch29:v18",
+      "context_before": "rom Arudh Lagn will be still beneficial. If the Drishti is from the 9<sup>th</sup> from Lagna, it will confer much more gains.\n\n",
+      "context_after": "18. If the 12<sup>th</sup> from Lagn Pad is conjunct Surya, Shukra and Rahu, there will be loss of wealth through the king. Chan",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch29:v18": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v18",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "18.",
+      "content_role": "verse",
+      "exact_text": "18. If the 12<sup>th</sup> from Lagn Pad is conjunct Surya, Shukra and Rahu, there will be loss of wealth through the king. Chandra, giving a Drishti to (the said trio in the said Bhava), will specifically cause more such losses.",
+      "pdf_pages": [
+        62
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 18 · PDF page 62 · bphs-97:santhanam:ch29:v18",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v16-17",
+      "next_atom_id": "bphs-97:santhanam:ch29:v19",
+      "context_before": ". The benefic will cause through fair means, malefic through unfair means and mixed Grahas through both fair and unfair means.\n\n",
+      "context_after": "19. If Budh is in the 12<sup>th</sup> from Lagn Pad and is yuti with, or receives a Drishti from a benefic, similarly there will",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch29:v19": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v19",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "19.",
+      "content_role": "verse",
+      "exact_text": "19. If Budh is in the 12<sup>th</sup> from Lagn Pad and is yuti with, or receives a Drishti from a benefic, similarly there will be expenses through paternal relatives. A malefic so related to the said Budh will cause loss of wealth through disputes.",
+      "pdf_pages": [
+        62
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 19 · PDF page 62 · bphs-97:santhanam:ch29:v19",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v18",
+      "next_atom_id": "bphs-97:santhanam:ch29:v20",
+      "context_before": "th through the king. Chandra, giving a Drishti to (the said trio in the said Bhava), will specifically cause more such losses.\n\n",
+      "context_after": "20. O Brahmin, if Guru is in the 12<sup>th</sup> from Lagn Pad, receiving a Drishti from others, the expenses will be through ta",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch29:v20": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v20",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "20.",
+      "content_role": "verse",
+      "exact_text": "20. O Brahmin, if Guru is in the 12<sup>th</sup> from Lagn Pad, receiving a Drishti from others, the expenses will be through taxes and on the person himself.",
+      "pdf_pages": [
+        63
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 20 · PDF page 63 · bphs-97:santhanam:ch29:v20",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v19",
+      "next_atom_id": "bphs-97:santhanam:ch29:v21",
+      "context_before": "paternal relatives. A malefic so related to the said Budh will cause loss of wealth through disputes.\n\n<!-- SOURCE_PAGE 63 -->\n\n",
+      "context_after": "21. O Brahmin, if Shani is in the 12<sup>th</sup> from Lagn Pad along with Mangal and receives a Drishti from others, the expens",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch29:v21": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v21",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "21.",
+      "content_role": "verse",
+      "exact_text": "21. O Brahmin, if Shani is in the 12<sup>th</sup> from Lagn Pad along with Mangal and receives a Drishti from others, the expenses will be through one’s co-born.",
+      "pdf_pages": [
+        63
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 21 · PDF page 63 · bphs-97:santhanam:ch29:v21",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v20",
+      "next_atom_id": "bphs-97:santhanam:ch29:v22",
+      "context_before": " O Brahmin, if Guru is in the 12<sup>th</sup> from Lagn Pad, receiving a Drishti from others, the expenses will be through taxes and on the person himself.\n\n",
+      "context_after": "22. Gainful Sources. Whatever sources of expenses are indicated above with reference to the 12<sup>th</sup> from Lagn Pad, gains",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch29:v22": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v22",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "22.",
+      "content_role": "verse",
+      "exact_text": "22. Gainful Sources. Whatever sources of expenses are indicated above with reference to the 12<sup>th</sup> from Lagn Pad, gains through similar sources will occur, if Labh Bhava so features with reference to Lagn Pad.",
+      "pdf_pages": [
+        63
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 22 · PDF page 63 · bphs-97:santhanam:ch29:v22",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v21",
+      "next_atom_id": "bphs-97:santhanam:ch29:v23",
+      "context_before": " O Brahmin, if Shani is in the 12<sup>th</sup> from Lagn Pad along with Mangal and receives a Drishti from others, the expenses will be through one’s co-born.\n\n",
+      "context_after": "23. The 7<sup>th</sup> Bhava from Pad (up to Sloka 27). If Rahu, or Ketu is placed in the 7<sup>th</sup> from Lagn Pad, the nati",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch29:v23": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v23",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "23.",
+      "content_role": "verse",
+      "exact_text": "23. The 7<sup>th</sup> Bhava from Pad (up to Sloka 27). If Rahu, or Ketu is placed in the 7<sup>th</sup> from Lagn Pad, the native will be troubled by disorders of the stomach, or by fire.",
+      "pdf_pages": [
+        63
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 23 · PDF page 63 · bphs-97:santhanam:ch29:v23",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v22",
+      "next_atom_id": "bphs-97:santhanam:ch29:v24",
+      "context_before": " Whatever sources of expenses are indicated above with reference to the 12<sup>th</sup> from Lagn Pad, gains through similar sources will occur, if Labh Bhava so features with reference to Lagn Pad.\n\n",
+      "context_after": "24. Should there be Ketu in the 7<sup>th</sup> from Lagn Pad, receiving a Drishti from, or being yuti with another malefic, the ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch29:v24": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v24",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "24.",
+      "content_role": "verse",
+      "exact_text": "24. Should there be Ketu in the 7<sup>th</sup> from Lagn Pad, receiving a Drishti from, or being yuti with another malefic, the native will be adventurous, will have (prematurely) grey hair and a big male organ.",
+      "pdf_pages": [
+        63
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 24 · PDF page 63 · bphs-97:santhanam:ch29:v24",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v23",
+      "next_atom_id": "bphs-97:santhanam:ch29:v25",
+      "context_before": " If Rahu, or Ketu is placed in the 7<sup>th</sup> from Lagn Pad, the native will be troubled by disorders of the stomach, or by fire.\n\n",
+      "context_after": "25. Should one, two, or all three of Guru, Shukra and Chandra be in the 7<sup>th</sup> from Lagn Pad, the native will be very we",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch29:v25": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v25",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "25.",
+      "content_role": "verse",
+      "exact_text": "25. Should one, two, or all three of Guru, Shukra and Chandra be in the 7<sup>th</sup> from Lagn Pad, the native will be very wealthy.",
+      "pdf_pages": [
+        63
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 25 · PDF page 63 · bphs-97:santhanam:ch29:v25",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v24",
+      "next_atom_id": "bphs-97:santhanam:ch29:v26",
+      "context_before": " Should there be Ketu in the 7<sup>th</sup> from Lagn Pad, receiving a Drishti from, or being yuti with another malefic, the native will be adventurous, will have (prematurely) grey hair and a big male organ.\n\n",
+      "context_after": "26. Whether a benefic, or a malefic, if be exalted in the 7<sup>th</sup> from Lagn Pad, the native will be affluent and be famou",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch29:v26": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v26",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "26.",
+      "content_role": "verse",
+      "exact_text": "26. Whether a benefic, or a malefic, if be exalted in the 7<sup>th</sup> from Lagn Pad, the native will be affluent and be famous.",
+      "pdf_pages": [
+        63
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 26 · PDF page 63 · bphs-97:santhanam:ch29:v26",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v25",
+      "next_atom_id": "bphs-97:santhanam:ch29:v27",
+      "context_before": " Should one, two, or all three of Guru, Shukra and Chandra be in the 7<sup>th</sup> from Lagn Pad, the native will be very wealthy.\n\n",
+      "context_after": "27. O Brahmin, these Yogas, as narrated by me with reference to the 7<sup>th</sup> from Lagn Pad, should also be considered from",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch29:v27": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v27",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "27.",
+      "content_role": "verse",
+      "exact_text": "27. O Brahmin, these Yogas, as narrated by me with reference to the 7<sup>th</sup> from Lagn Pad, should also be considered from the 2<sup>nd</sup> of Lagn Pad.",
+      "pdf_pages": [
+        63
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 27 · PDF page 63 · bphs-97:santhanam:ch29:v27",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v26",
+      "next_atom_id": "bphs-97:santhanam:ch29:v28",
+      "context_before": " Whether a benefic, or a malefic, if be exalted in the 7<sup>th</sup> from Lagn Pad, the native will be affluent and be famous.\n\n",
+      "context_after": "28. Anyone of Budh, Guru and Shukra being exalted in the 2<sup>nd</sup> from Lagn Pad and being with strength will make the subj",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch29:v28": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v28",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "28.",
+      "content_role": "verse",
+      "exact_text": "28. Anyone of Budh, Guru and Shukra being exalted in the 2<sup>nd</sup> from Lagn Pad and being with strength will make the subject rich.",
+      "pdf_pages": [
+        63
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 28 · PDF page 63 · bphs-97:santhanam:ch29:v28",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v27",
+      "next_atom_id": "bphs-97:santhanam:ch29:v29",
+      "context_before": " O Brahmin, these Yogas, as narrated by me with reference to the 7<sup>th</sup> from Lagn Pad, should also be considered from the 2<sup>nd</sup> of Lagn Pad.\n\n",
+      "context_after": "29. The Yogas so far stated by me with reference to Lagn Pad be similarly evaluated from Karakāńś as well.\n\n30-37. General. If B",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch29:v29": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v29",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "29.",
+      "content_role": "verse",
+      "exact_text": "29. The Yogas so far stated by me with reference to Lagn Pad be similarly evaluated from Karakāńś as well.",
+      "pdf_pages": [
+        63
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 29 · PDF page 63 · bphs-97:santhanam:ch29:v29",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v28",
+      "next_atom_id": "bphs-97:santhanam:ch29:v30-37",
+      "context_before": " Anyone of Budh, Guru and Shukra being exalted in the 2<sup>nd</sup> from Lagn Pad and being with strength will make the subject rich.\n\n",
+      "context_after": "30-37. General. If Budh is in the 2<sup>nd</sup> from Arudh Lagna, the native will Lord over the whole country. Shukra in the 2<",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch29:v30-37": {
+      "evidence_atom_id": "bphs-97:santhanam:ch29:v30-37",
+      "chapter_number": 29,
+      "chapter_title": "Bhava Padas",
+      "verse_label": "30-37.",
+      "content_role": "verse",
+      "exact_text": "30-37. General. If Budh is in the 2<sup>nd</sup> from Arudh Lagna, the native will Lord over the whole country. Shukra in the 2<sup>nd</sup> from Lagn Pad will make one a poet, or a speaker. If the Dar Pad falls in an angle, or in a trine, counted from Lagn Pad, or, if Lagn Pad and Dar Pad both have strong Grahas, the native will be rich and be famous in his country. If the Dar Pad falls in the 6<sup>th</sup> / 8<sup>th</sup> /12<sup>th</sup> from Lagn Pad, then the native will be poor. If Lagn Pad and the 7<sup>th</sup> therefrom, or an angle, a trine, an Upachaya therefrom is occupied by a strong Grah, there will be happiness between the husband and wife. If Lagn Pad and Dar Pad are mutually in Kendras, or Konas, there will be amity between the couple. If these be in mutually 6<sup>th</sup> /8<sup>th</sup> /12<sup>th</sup> , doubtlessly mutual enmity will crop up. O Brahmin, similarly mutual relationship, or gain, or loss through son etc. be known, based on Lagn Pad and the relative Bhava Pad. If Lagn Pad and Dar Pad are mutually angular, or 3<sup>rd</sup> and 11<sup>th</sup> , or in Konas, the native will be a king, ruling the earth. Similar deductions be made with reference to mutual positions of Lagn Pad and Dhan Pad.",
+      "pdf_pages": [
+        63
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 29 · Sloka 30-37 · PDF page 63 · bphs-97:santhanam:ch29:v30-37",
+      "previous_atom_id": "bphs-97:santhanam:ch29:v29",
+      "next_atom_id": null,
+      "context_before": " the subject rich.\n\n29. The Yogas so far stated by me with reference to Lagn Pad be similarly evaluated from Karakāńś as well.\n\n",
+      "context_after": "",
+      "content_missing": false
+    }
+  }
+}
