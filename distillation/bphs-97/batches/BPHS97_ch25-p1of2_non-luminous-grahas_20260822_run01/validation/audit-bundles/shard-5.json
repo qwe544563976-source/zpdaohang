@@ -1,0 +1,1059 @@
+{
+  "shard": 5,
+  "step_count": 6,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch25-v38-chap-in-tanu.step-001",
+      "method": {
+        "method": "ch25-v38-chap-in-tanu",
+        "title": "Chap 落一宫（Tanu Bhava）：有财富谷物黄金、知恩和顺而无所作为",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的家底和为人怎么样",
+          "我为什么做事提不起劲"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Chap is in Tanu Bhava, the native will be endowed with wealth, grains and gold, be grateful, agreeable and devoid of all actions.",
+            "Chap 落一宫（Tanu Bhava） 逐宫效应"
+          ],
+          "counter_queries": [
+            "These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction",
+            "非发光副曜本性为凶、会带来损害"
+          ],
+          "boundary_queries": [
+            "Deduct Parivesh from 12 Rāśis to arrive at the position of Chap (Indra Dhanus), who is also inauspicious",
+            "非发光副曜 Chap 的定位算法与适用前提"
+          ],
+          "method_queries": [
+            "Effects of Chap (Indr Dhanus, or Kodanda, up to Sloka 49)",
+            "Effects of Non-Luminous Grahas",
+            "逐宫看 Chap 该查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch25-v38-chap-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Chap is in Tanu Bhava"
+            },
+            {
+              "step_id": "ch25-v38-chap-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be endowed with wealth, grains and gold"
+            },
+            {
+              "step_id": "ch25-v38-chap-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be grateful, agreeable"
+            },
+            {
+              "step_id": "ch25-v38-chap-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "devoid of all actions"
+            },
+            {
+              "step_id": "ch25-v38-chap-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Chap is in Tanu Bhava the native will be endowed with wealth, grains and gold"
+            },
+            {
+              "step_id": "ch25-v38-chap-in-tanu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If Chap is in 1st house"
+            },
+            {
+              "step_id": "ch25-v38-chap-in-tanu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If Chap is in 1st house the native will be endowed with wealth, grains and gold"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少「非发光副曜 Chap 是否落一宫（Tanu Bhava）」这件事实时停止。",
+          "Chap 的位置未按第 3 章非发光副曜算法定出时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch25-v38-chap-in-tanu.step-001",
+        "action": "核对非发光副曜 Chap 是否落一宫（Tanu Bhava），据此断本人是否有财富谷物黄金、知恩和顺而无所作为。",
+        "applicability_scope": "仅限本命盘非发光副曜 Chap 落一宫（Tanu Bhava）一条；Chap 是第 3 章所列非发光副曜（UpaGrahas）之一，须先按该章算法定出其位置；原文未给时间限定。原文在本条同一颂内标明 Chap 又称 Indr Dhanus、Kodanda。",
+        "minimum_supported_claim": "Chap 落一宫（Tanu Bhava）时，本人有财富、谷物与黄金、知恩、和顺、没有任何作为。",
+        "produced_fact_keys": [
+          "Chap 落一宫（Tanu Bhava）的落宫效应判定"
+        ],
+        "required_fact_keys": [
+          "非发光副曜 Chap 是否落一宫（Tanu Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "非发光副曜 Chap 是否落一宫（Tanu Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Chap is in Tanu Bhava",
+              "claim": "Chap 落一宫（Tanu Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be endowed with wealth, grains and gold",
+              "claim": "有财富、谷物与黄金"
+            },
+            {
+              "quote": "be grateful, agreeable",
+              "claim": "知恩、和顺"
+            },
+            {
+              "quote": "devoid of all actions",
+              "claim": "没有任何作为"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch25:v38",
+            "quote": "If Chap is in Tanu Bhava, the native will be endowed with wealth, grains and gold, be grateful, agreeable and devoid of all actions.",
+            "pdf_pages": [
+              52
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：非发光副曜 Chap 是否落一宫（Tanu Bhava）。",
+        "stop_fact_keys": [
+          "非发光副曜 Chap 是否落一宫（Tanu Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体年龄、时间、寿数或事件先后——原文只给一宫落宫的断语。",
+          "不得把本条套用到 Chap 落其他宫位，也不得套用到别的非发光副曜。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "23e2c4b9728bbe24052c33c92434bd9e794e825e0bb88950317e330555829dbc"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch25-v39-chap-in-dhan.step-001",
+      "method": {
+        "method": "ch25-v39-chap-in-dhan",
+        "title": "Chap 落二宫（Dhan Bhava）：言语和悦、极为富有、有学问虔敬",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的财富状况怎么样",
+          "我说话待人是什么风格"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Chap is in Dhan Bhava, the native will speak affably, be very rich, modest, learned, charming and religious.",
+            "Chap 落二宫（Dhan Bhava） 逐宫效应"
+          ],
+          "counter_queries": [
+            "These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction",
+            "非发光副曜本性为凶、会带来损害"
+          ],
+          "boundary_queries": [
+            "Deduct Parivesh from 12 Rāśis to arrive at the position of Chap (Indra Dhanus), who is also inauspicious",
+            "非发光副曜 Chap 的定位算法与适用前提"
+          ],
+          "method_queries": [
+            "Effects of Chap (Indr Dhanus, or Kodanda, up to Sloka 49)",
+            "Effects of Non-Luminous Grahas",
+            "逐宫看 Chap 该查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch25-v39-chap-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Chap is in Dhan Bhava"
+            },
+            {
+              "step_id": "ch25-v39-chap-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will speak affably"
+            },
+            {
+              "step_id": "ch25-v39-chap-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be very rich, modest"
+            },
+            {
+              "step_id": "ch25-v39-chap-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "learned, charming and religious"
+            },
+            {
+              "step_id": "ch25-v39-chap-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Chap is in Dhan Bhava the native will speak affably"
+            },
+            {
+              "step_id": "ch25-v39-chap-in-dhan.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If Chap is in 2nd house"
+            },
+            {
+              "step_id": "ch25-v39-chap-in-dhan.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If Chap is in 2nd house the native will speak affably"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少「非发光副曜 Chap 是否落二宫（Dhan Bhava）」这件事实时停止。",
+          "Chap 的位置未按第 3 章非发光副曜算法定出时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch25-v39-chap-in-dhan.step-001",
+        "action": "核对非发光副曜 Chap 是否落二宫（Dhan Bhava），据此断本人是否言语和悦、极为富有、有学问虔敬。",
+        "applicability_scope": "仅限本命盘非发光副曜 Chap 落二宫（Dhan Bhava）一条；Chap 是第 3 章所列非发光副曜（UpaGrahas）之一，须先按该章算法定出其位置；原文未给时间限定。",
+        "minimum_supported_claim": "Chap 落二宫（Dhan Bhava）时，本人言语和悦、极为富有、谦逊、有学问、迷人、虔敬。",
+        "produced_fact_keys": [
+          "Chap 落二宫（Dhan Bhava）的落宫效应判定"
+        ],
+        "required_fact_keys": [
+          "非发光副曜 Chap 是否落二宫（Dhan Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "非发光副曜 Chap 是否落二宫（Dhan Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Chap is in Dhan Bhava",
+              "claim": "Chap 落二宫（Dhan Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will speak affably",
+              "claim": "言语和悦"
+            },
+            {
+              "quote": "be very rich, modest",
+              "claim": "极为富有、谦逊"
+            },
+            {
+              "quote": "learned, charming and religious",
+              "claim": "有学问、迷人、虔敬"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch25:v39",
+            "quote": "If Chap is in Dhan Bhava, the native will speak affably, be very rich, modest, learned, charming and religious.",
+            "pdf_pages": [
+              52
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：非发光副曜 Chap 是否落二宫（Dhan Bhava）。",
+        "stop_fact_keys": [
+          "非发光副曜 Chap 是否落二宫（Dhan Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体年龄、时间、寿数或事件先后——原文只给二宫落宫的断语。",
+          "不得把本条套用到 Chap 落其他宫位，也不得套用到别的非发光副曜。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "4df36d34be54abe0b052b73a49b812a46b5285dd12029d1745d758007febee8b"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch25-v40-chap-in-sahaj.step-001",
+      "method": {
+        "method": "ch25-v40-chap-in-sahaj",
+        "title": "Chap 落三宫（Sahaj Bhava）：吝啬、精通多技艺、沉溺偷窃",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的行为上有什么风险",
+          "我在技艺上有没有本事"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Chap is in Sahaj Bhava, the native will be a miser, be versed in many arts, will indulge in thieving, be devoid of some limb and be unfriendly.",
+            "Chap 落三宫（Sahaj Bhava） 逐宫效应"
+          ],
+          "counter_queries": [
+            "These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction",
+            "非发光副曜本性为凶、会带来损害"
+          ],
+          "boundary_queries": [
+            "Deduct Parivesh from 12 Rāśis to arrive at the position of Chap (Indra Dhanus), who is also inauspicious",
+            "非发光副曜 Chap 的定位算法与适用前提"
+          ],
+          "method_queries": [
+            "Effects of Chap (Indr Dhanus, or Kodanda, up to Sloka 49)",
+            "Effects of Non-Luminous Grahas",
+            "逐宫看 Chap 该查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch25-v40-chap-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Chap is in Sahaj Bhava"
+            },
+            {
+              "step_id": "ch25-v40-chap-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be a miser"
+            },
+            {
+              "step_id": "ch25-v40-chap-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be versed in many arts"
+            },
+            {
+              "step_id": "ch25-v40-chap-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will indulge in thieving"
+            },
+            {
+              "step_id": "ch25-v40-chap-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be devoid of some limb"
+            },
+            {
+              "step_id": "ch25-v40-chap-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be unfriendly"
+            },
+            {
+              "step_id": "ch25-v40-chap-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Chap is in Sahaj Bhava the native will be a miser"
+            },
+            {
+              "step_id": "ch25-v40-chap-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If Chap is in 3rd house"
+            },
+            {
+              "step_id": "ch25-v40-chap-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If Chap is in 3rd house the native will be a miser"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少「非发光副曜 Chap 是否落三宫（Sahaj Bhava）」这件事实时停止。",
+          "Chap 的位置未按第 3 章非发光副曜算法定出时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch25-v40-chap-in-sahaj.step-001",
+        "action": "核对非发光副曜 Chap 是否落三宫（Sahaj Bhava），据此断本人是否吝啬、精通多技艺、沉溺偷窃。",
+        "applicability_scope": "仅限本命盘非发光副曜 Chap 落三宫（Sahaj Bhava）一条；Chap 是第 3 章所列非发光副曜（UpaGrahas）之一，须先按该章算法定出其位置；原文未给时间限定。",
+        "minimum_supported_claim": "Chap 落三宫（Sahaj Bhava）时，本人吝啬、精通多种技艺、沉溺于偷窃、某处肢体有缺、不友善。",
+        "produced_fact_keys": [
+          "Chap 落三宫（Sahaj Bhava）的落宫效应判定"
+        ],
+        "required_fact_keys": [
+          "非发光副曜 Chap 是否落三宫（Sahaj Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "非发光副曜 Chap 是否落三宫（Sahaj Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Chap is in Sahaj Bhava",
+              "claim": "Chap 落三宫（Sahaj Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be a miser",
+              "claim": "吝啬"
+            },
+            {
+              "quote": "be versed in many arts",
+              "claim": "精通多种技艺"
+            },
+            {
+              "quote": "will indulge in thieving",
+              "claim": "沉溺于偷窃"
+            },
+            {
+              "quote": "be devoid of some limb",
+              "claim": "某处肢体有缺"
+            },
+            {
+              "quote": "be unfriendly",
+              "claim": "不友善"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch25:v40",
+            "quote": "If Chap is in Sahaj Bhava, the native will be a miser, be versed in many arts, will indulge in thieving, be devoid of some limb and be unfriendly.",
+            "pdf_pages": [
+              52
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：非发光副曜 Chap 是否落三宫（Sahaj Bhava）。",
+        "stop_fact_keys": [
+          "非发光副曜 Chap 是否落三宫（Sahaj Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体年龄、时间、寿数或事件先后——原文只给三宫落宫的断语。",
+          "不得把本条套用到 Chap 落其他宫位，也不得套用到别的非发光副曜。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "c2b887cc5a3d12b886c2f9d75060dc5f8527c1cc5b1751b460f97b4631229144"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch25-v41-chap-in-bandhu.step-001",
+      "method": {
+        "method": "ch25-v41-chap-in-bandhu",
+        "title": "Chap 落四宫（Bandhu Bhava）：快乐、有牲畜财富、受国王尊崇、无疾病",
+        "target_house": 4,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的家宅和产业怎么样",
+          "我的身体健康怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Chap is in Bandhu Bhava, the native will be happy, endowed with quadrupeds, wealth, grains etc., be honoured by the king and be devoid of sickness.",
+            "Chap 落四宫（Bandhu Bhava） 逐宫效应"
+          ],
+          "counter_queries": [
+            "These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction",
+            "非发光副曜本性为凶、会带来损害"
+          ],
+          "boundary_queries": [
+            "Deduct Parivesh from 12 Rāśis to arrive at the position of Chap (Indra Dhanus), who is also inauspicious",
+            "非发光副曜 Chap 的定位算法与适用前提"
+          ],
+          "method_queries": [
+            "Effects of Chap (Indr Dhanus, or Kodanda, up to Sloka 49)",
+            "Effects of Non-Luminous Grahas",
+            "逐宫看 Chap 该查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch25-v41-chap-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Chap is in Bandhu Bhava"
+            },
+            {
+              "step_id": "ch25-v41-chap-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be happy"
+            },
+            {
+              "step_id": "ch25-v41-chap-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "endowed with quadrupeds, wealth, grains etc."
+            },
+            {
+              "step_id": "ch25-v41-chap-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be honoured by the king"
+            },
+            {
+              "step_id": "ch25-v41-chap-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be devoid of sickness"
+            },
+            {
+              "step_id": "ch25-v41-chap-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Chap is in Bandhu Bhava the native will be happy"
+            },
+            {
+              "step_id": "ch25-v41-chap-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If Chap is in 4th house"
+            },
+            {
+              "step_id": "ch25-v41-chap-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If Chap is in 4th house the native will be happy"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少「非发光副曜 Chap 是否落四宫（Bandhu Bhava）」这件事实时停止。",
+          "Chap 的位置未按第 3 章非发光副曜算法定出时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch25-v41-chap-in-bandhu.step-001",
+        "action": "核对非发光副曜 Chap 是否落四宫（Bandhu Bhava），据此断本人是否快乐、有牲畜财富、受国王尊崇、无疾病。",
+        "applicability_scope": "仅限本命盘非发光副曜 Chap 落四宫（Bandhu Bhava）一条；Chap 是第 3 章所列非发光副曜（UpaGrahas）之一，须先按该章算法定出其位置；原文未给时间限定。",
+        "minimum_supported_claim": "Chap 落四宫（Bandhu Bhava）时，本人快乐、有四足牲畜、财富、谷物等、受国王尊崇、没有疾病。",
+        "produced_fact_keys": [
+          "Chap 落四宫（Bandhu Bhava）的落宫效应判定"
+        ],
+        "required_fact_keys": [
+          "非发光副曜 Chap 是否落四宫（Bandhu Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "非发光副曜 Chap 是否落四宫（Bandhu Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Chap is in Bandhu Bhava",
+              "claim": "Chap 落四宫（Bandhu Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be happy",
+              "claim": "快乐"
+            },
+            {
+              "quote": "endowed with quadrupeds, wealth, grains etc.",
+              "claim": "有四足牲畜、财富、谷物等"
+            },
+            {
+              "quote": "be honoured by the king",
+              "claim": "受国王尊崇"
+            },
+            {
+              "quote": "be devoid of sickness",
+              "claim": "没有疾病"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch25:v41",
+            "quote": "If Chap is in Bandhu Bhava, the native will be happy, endowed with quadrupeds, wealth, grains etc., be honoured by the king and be devoid of sickness.",
+            "pdf_pages": [
+              52
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：非发光副曜 Chap 是否落四宫（Bandhu Bhava）。",
+        "stop_fact_keys": [
+          "非发光副曜 Chap 是否落四宫（Bandhu Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体年龄、时间、寿数或事件先后——原文只给四宫落宫的断语。",
+          "不得把本条套用到 Chap 落其他宫位，也不得套用到别的非发光副曜。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "56d6b2ca450cd653338e89aa0aad044ea9a59cba5263364aaa6b3b09d2bbaf30"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch25-v42-chap-in-putr.step-001",
+      "method": {
+        "method": "ch25-v42-chap-in-putr",
+        "title": "Chap 落五宫（Putr Bhava）：光彩照人有远见、诸事兴旺",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我做事顺不顺",
+          "我的眼光和格局怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Chap is in Putr Bhava, the native will be splendourous, far-sighted, pious, affable and will acquire prosperity in all his undertakings.",
+            "Chap 落五宫（Putr Bhava） 逐宫效应"
+          ],
+          "counter_queries": [
+            "These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction",
+            "非发光副曜本性为凶、会带来损害"
+          ],
+          "boundary_queries": [
+            "Deduct Parivesh from 12 Rāśis to arrive at the position of Chap (Indra Dhanus), who is also inauspicious",
+            "非发光副曜 Chap 的定位算法与适用前提"
+          ],
+          "method_queries": [
+            "Effects of Chap (Indr Dhanus, or Kodanda, up to Sloka 49)",
+            "Effects of Non-Luminous Grahas",
+            "逐宫看 Chap 该查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch25-v42-chap-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Chap is in Putr Bhava"
+            },
+            {
+              "step_id": "ch25-v42-chap-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be splendourous"
+            },
+            {
+              "step_id": "ch25-v42-chap-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "far-sighted, pious"
+            },
+            {
+              "step_id": "ch25-v42-chap-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "affable"
+            },
+            {
+              "step_id": "ch25-v42-chap-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will acquire prosperity in all his undertakings"
+            },
+            {
+              "step_id": "ch25-v42-chap-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Chap is in Putr Bhava the native will be splendourous"
+            },
+            {
+              "step_id": "ch25-v42-chap-in-putr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If Chap is in 5th house"
+            },
+            {
+              "step_id": "ch25-v42-chap-in-putr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If Chap is in 5th house the native will be splendourous"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少「非发光副曜 Chap 是否落五宫（Putr Bhava）」这件事实时停止。",
+          "Chap 的位置未按第 3 章非发光副曜算法定出时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch25-v42-chap-in-putr.step-001",
+        "action": "核对非发光副曜 Chap 是否落五宫（Putr Bhava），据此断本人是否光彩照人有远见、诸事兴旺。",
+        "applicability_scope": "仅限本命盘非发光副曜 Chap 落五宫（Putr Bhava）一条；Chap 是第 3 章所列非发光副曜（UpaGrahas）之一，须先按该章算法定出其位置；原文未给时间限定。",
+        "minimum_supported_claim": "Chap 落五宫（Putr Bhava）时，本人光彩照人、有远见、虔诚、和悦、在其一切事业中获得兴旺。",
+        "produced_fact_keys": [
+          "Chap 落五宫（Putr Bhava）的落宫效应判定"
+        ],
+        "required_fact_keys": [
+          "非发光副曜 Chap 是否落五宫（Putr Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "非发光副曜 Chap 是否落五宫（Putr Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Chap is in Putr Bhava",
+              "claim": "Chap 落五宫（Putr Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be splendourous",
+              "claim": "光彩照人"
+            },
+            {
+              "quote": "far-sighted, pious",
+              "claim": "有远见、虔诚"
+            },
+            {
+              "quote": "affable",
+              "claim": "和悦"
+            },
+            {
+              "quote": "will acquire prosperity in all his undertakings",
+              "claim": "在其一切事业中获得兴旺"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch25:v42",
+            "quote": "If Chap is in Putr Bhava, the native will be splendourous, far-sighted, pious, affable and will acquire prosperity in all his undertakings.",
+            "pdf_pages": [
+              52
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：非发光副曜 Chap 是否落五宫（Putr Bhava）。",
+        "stop_fact_keys": [
+          "非发光副曜 Chap 是否落五宫（Putr Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体年龄、时间、寿数或事件先后——原文只给五宫落宫的断语。",
+          "不得把本条套用到 Chap 落其他宫位，也不得套用到别的非发光副曜。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "73e41442ae91b6b3e10197e107ad81a25d110b74080c28a35a72809bc4e9de66"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch25-v43-chap-in-ari.step-001",
+      "method": {
+        "method": "ch25-v43-chap-in-ari",
+        "title": "Chap 落六宫（Ari Bhava）：胜敌、快乐有情、诸事丰盛",
+        "target_house": 6,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我跟对手较量的结果如何",
+          "我做事能不能有丰盛的结果"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Chap is in Ari Bhava, the native will destroy his enemies, be happy, affectionate, pure and will achieve plentifulness in all his undertakings.",
+            "Chap 落六宫（Ari Bhava） 逐宫效应"
+          ],
+          "counter_queries": [
+            "These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction",
+            "非发光副曜本性为凶、会带来损害"
+          ],
+          "boundary_queries": [
+            "Deduct Parivesh from 12 Rāśis to arrive at the position of Chap (Indra Dhanus), who is also inauspicious",
+            "非发光副曜 Chap 的定位算法与适用前提"
+          ],
+          "method_queries": [
+            "Effects of Chap (Indr Dhanus, or Kodanda, up to Sloka 49)",
+            "Effects of Non-Luminous Grahas",
+            "逐宫看 Chap 该查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch25-v43-chap-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Chap is in Ari Bhava"
+            },
+            {
+              "step_id": "ch25-v43-chap-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will destroy his enemies"
+            },
+            {
+              "step_id": "ch25-v43-chap-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be happy, affectionate"
+            },
+            {
+              "step_id": "ch25-v43-chap-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "pure"
+            },
+            {
+              "step_id": "ch25-v43-chap-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will achieve plentifulness in all his undertakings"
+            },
+            {
+              "step_id": "ch25-v43-chap-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Chap is in Ari Bhava the native will destroy his enemies"
+            },
+            {
+              "step_id": "ch25-v43-chap-in-ari.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If Chap is in 6th house"
+            },
+            {
+              "step_id": "ch25-v43-chap-in-ari.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If Chap is in 6th house the native will destroy his enemies"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少「非发光副曜 Chap 是否落六宫（Ari Bhava）」这件事实时停止。",
+          "Chap 的位置未按第 3 章非发光副曜算法定出时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch25-v43-chap-in-ari.step-001",
+        "action": "核对非发光副曜 Chap 是否落六宫（Ari Bhava），据此断本人是否胜敌、快乐有情、诸事丰盛。",
+        "applicability_scope": "仅限本命盘非发光副曜 Chap 落六宫（Ari Bhava）一条；Chap 是第 3 章所列非发光副曜（UpaGrahas）之一，须先按该章算法定出其位置；原文未给时间限定。",
+        "minimum_supported_claim": "Chap 落六宫（Ari Bhava）时，本人摧毁其敌人、快乐、有情、纯净、在其一切事业中达致丰盛。",
+        "produced_fact_keys": [
+          "Chap 落六宫（Ari Bhava）的落宫效应判定"
+        ],
+        "required_fact_keys": [
+          "非发光副曜 Chap 是否落六宫（Ari Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "非发光副曜 Chap 是否落六宫（Ari Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Chap is in Ari Bhava",
+              "claim": "Chap 落六宫（Ari Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will destroy his enemies",
+              "claim": "摧毁其敌人"
+            },
+            {
+              "quote": "be happy, affectionate",
+              "claim": "快乐、有情"
+            },
+            {
+              "quote": "pure",
+              "claim": "纯净"
+            },
+            {
+              "quote": "will achieve plentifulness in all his undertakings",
+              "claim": "在其一切事业中达致丰盛"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch25:v43",
+            "quote": "If Chap is in Ari Bhava, the native will destroy his enemies, be happy, affectionate, pure and will achieve plentifulness in all his undertakings.",
+            "pdf_pages": [
+              52,
+              53
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：非发光副曜 Chap 是否落六宫（Ari Bhava）。",
+        "stop_fact_keys": [
+          "非发光副曜 Chap 是否落六宫（Ari Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体年龄、时间、寿数或事件先后——原文只给六宫落宫的断语。",
+          "不得把本条套用到 Chap 落其他宫位，也不得套用到别的非发光副曜。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "734e64d8403b46faeaee2a82739e18149d3e8cc3a81f26823a5ee4cd527a6af5"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch25:v38": {
+      "evidence_atom_id": "bphs-97:santhanam:ch25:v38",
+      "chapter_number": 25,
+      "chapter_title": "Effects of Non-Luminous Grahas",
+      "verse_label": "38.",
+      "content_role": "verse",
+      "exact_text": "38. Effects of Chap (Indr Dhanus, or Kodanda, up to Sloka 49). If Chap is in Tanu Bhava, the native will be endowed with wealth, grains and gold, be grateful, agreeable and devoid of all actions.",
+      "pdf_pages": [
+        52
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 25 · Sloka 38 · PDF page 52 · bphs-97:santhanam:ch25:v38",
+      "previous_atom_id": "bphs-97:santhanam:ch25:v37",
+      "next_atom_id": "bphs-97:santhanam:ch25:v39",
+      "context_before": "ire.\n\n37. If Paridhi is in Vyaya Bhava, the native will always be a spendthrift, be miserable, firm and will dishonour elders.\n\n",
+      "context_after": "39. If Chap is in Dhan Bhava, the native will speak affably, be very rich, modest, learned, charming and religious.\n\n40. If Chap",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch25:v39": {
+      "evidence_atom_id": "bphs-97:santhanam:ch25:v39",
+      "chapter_number": 25,
+      "chapter_title": "Effects of Non-Luminous Grahas",
+      "verse_label": "39.",
+      "content_role": "verse",
+      "exact_text": "39. If Chap is in Dhan Bhava, the native will speak affably, be very rich, modest, learned, charming and religious.",
+      "pdf_pages": [
+        52
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 25 · Sloka 39 · PDF page 52 · bphs-97:santhanam:ch25:v39",
+      "previous_atom_id": "bphs-97:santhanam:ch25:v38",
+      "next_atom_id": "bphs-97:santhanam:ch25:v40",
+      "context_before": " If Chap is in Tanu Bhava, the native will be endowed with wealth, grains and gold, be grateful, agreeable and devoid of all actions.\n\n",
+      "context_after": "40. If Chap is in Sahaj Bhava, the native will be a miser, be versed in many arts, will indulge in thieving, be devoid of some l",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch25:v40": {
+      "evidence_atom_id": "bphs-97:santhanam:ch25:v40",
+      "chapter_number": 25,
+      "chapter_title": "Effects of Non-Luminous Grahas",
+      "verse_label": "40.",
+      "content_role": "verse",
+      "exact_text": "40. If Chap is in Sahaj Bhava, the native will be a miser, be versed in many arts, will indulge in thieving, be devoid of some limb and be unfriendly.",
+      "pdf_pages": [
+        52
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 25 · Sloka 40 · PDF page 52 · bphs-97:santhanam:ch25:v40",
+      "previous_atom_id": "bphs-97:santhanam:ch25:v39",
+      "next_atom_id": "bphs-97:santhanam:ch25:v41",
+      "context_before": " actions.\n\n39. If Chap is in Dhan Bhava, the native will speak affably, be very rich, modest, learned, charming and religious.\n\n",
+      "context_after": "41. If Chap is in Bandhu Bhava, the native will be happy, endowed with quadrupeds, wealth, grains etc., be honoured by the king ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch25:v41": {
+      "evidence_atom_id": "bphs-97:santhanam:ch25:v41",
+      "chapter_number": 25,
+      "chapter_title": "Effects of Non-Luminous Grahas",
+      "verse_label": "41.",
+      "content_role": "verse",
+      "exact_text": "41. If Chap is in Bandhu Bhava, the native will be happy, endowed with quadrupeds, wealth, grains etc., be honoured by the king and be devoid of sickness.",
+      "pdf_pages": [
+        52
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 25 · Sloka 41 · PDF page 52 · bphs-97:santhanam:ch25:v41",
+      "previous_atom_id": "bphs-97:santhanam:ch25:v40",
+      "next_atom_id": "bphs-97:santhanam:ch25:v42",
+      "context_before": " If Chap is in Sahaj Bhava, the native will be a miser, be versed in many arts, will indulge in thieving, be devoid of some limb and be unfriendly.\n\n",
+      "context_after": "42. If Chap is in Putr Bhava, the native will be splendourous, far-sighted, pious, affable and will acquire prosperity in all hi",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch25:v42": {
+      "evidence_atom_id": "bphs-97:santhanam:ch25:v42",
+      "chapter_number": 25,
+      "chapter_title": "Effects of Non-Luminous Grahas",
+      "verse_label": "42.",
+      "content_role": "verse",
+      "exact_text": "42. If Chap is in Putr Bhava, the native will be splendourous, far-sighted, pious, affable and will acquire prosperity in all his undertakings.",
+      "pdf_pages": [
+        52
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 25 · Sloka 42 · PDF page 52 · bphs-97:santhanam:ch25:v42",
+      "previous_atom_id": "bphs-97:santhanam:ch25:v41",
+      "next_atom_id": "bphs-97:santhanam:ch25:v43",
+      "context_before": " If Chap is in Bandhu Bhava, the native will be happy, endowed with quadrupeds, wealth, grains etc., be honoured by the king and be devoid of sickness.\n\n",
+      "context_after": "43. If Chap is in Ari Bhava, the native will destroy his enemies, be happy, affectionate,\n\n<!-- SOURCE_PAGE 53 -->\n\npure and wil",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch25:v43": {
+      "evidence_atom_id": "bphs-97:santhanam:ch25:v43",
+      "chapter_number": 25,
+      "chapter_title": "Effects of Non-Luminous Grahas",
+      "verse_label": "43.",
+      "content_role": "verse",
+      "exact_text": "43. If Chap is in Ari Bhava, the native will destroy his enemies, be happy, affectionate, pure and will achieve plentifulness in all his undertakings.",
+      "pdf_pages": [
+        52,
+        53
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 25 · Sloka 43 · PDF pages 52-53 · bphs-97:santhanam:ch25:v43",
+      "previous_atom_id": "bphs-97:santhanam:ch25:v42",
+      "next_atom_id": "bphs-97:santhanam:ch25:v44",
+      "context_before": " If Chap is in Putr Bhava, the native will be splendourous, far-sighted, pious, affable and will acquire prosperity in all his undertakings.\n\n",
+      "context_after": "44. If Chap is in Yuvati Bhava, the native will be wealthy, endowed with all virtues, learned in Shastras, religious and agreeab",
+      "content_missing": false
+    }
+  }
+}

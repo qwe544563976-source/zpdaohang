@@ -1,0 +1,194 @@
+{
+  "shard": 3,
+  "step_count": 1,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch27-v32-33-shadbal-favourable.step-003",
+      "method": {
+        "method": "ch27-v32-33-shadbal-favourable",
+        "title": "六力达标：行星有力则对命主显吉",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘里这颗行星够不够有力",
+          "行星有力对我是好事吗"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If a Grah has the required Shad Bal, it will prove favourable to the native by virtue of its strength",
+            "390, 360, 300, 420, 390, 330 and 300 Virupas are the Shad Bal Pindas",
+            "六力达标 行星对命主显吉"
+          ],
+          "counter_queries": [
+            "However, Shani’s extreme strength will give long life as well as miseries",
+            "力量强反而带来苦难的说法"
+          ],
+          "boundary_queries": [
+            "Evaluation Of Strengths",
+            "六力判强的适用范围：只算 Surya 到 Shani 七曜"
+          ],
+          "method_queries": [
+            "thus the various sources of strengths be gathered together and effects declared",
+            "怎样把各类力量汇总起来算六力"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch27-v32-33-shadbal-favourable.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "390, 360, 300, 420, 390, 330 and 300 Virupas are the Shad Bal Pindas"
+            },
+            {
+              "step_id": "ch27-v32-33-shadbal-favourable.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "needed for Surya etc. to be considered strong"
+            },
+            {
+              "step_id": "ch27-v32-33-shadbal-favourable.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "390, 360, 300, 420, 390, 330 and 300 Virupas are the Shad Bal Pindas needed for Surya etc. to be considered strong"
+            },
+            {
+              "step_id": "ch27-v32-33-shadbal-favourable.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "needed for sun etc. to be considered strong"
+            },
+            {
+              "step_id": "ch27-v32-33-shadbal-favourable.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "390, 360, 300, 420, 390, 330 and 300 Virupas are the Shad Bal Pindas needed for sun etc. to be considered strong"
+            },
+            {
+              "step_id": "ch27-v32-33-shadbal-favourable.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If the strength exceeds the above-mentioned values"
+            },
+            {
+              "step_id": "ch27-v32-33-shadbal-favourable.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the Grah is deemed to be very strong"
+            },
+            {
+              "step_id": "ch27-v32-33-shadbal-favourable.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If the strength exceeds the above-mentioned values the Grah is deemed to be very strong"
+            },
+            {
+              "step_id": "ch27-v32-33-shadbal-favourable.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If a Grah has the required Shad Bal"
+            },
+            {
+              "step_id": "ch27-v32-33-shadbal-favourable.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "it will prove favourable to the native by virtue of its strength"
+            },
+            {
+              "step_id": "ch27-v32-33-shadbal-favourable.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If a Grah has the required Shad Bal it will prove favourable to the native by virtue of its strength"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少所考察行星（Grah）的六力（Shad Bal）总值时停止。",
+          "无法确定所考察行星对应原文所列哪一个所需 Shad Bal Pinda 数值时停止。",
+          "所考察对象不是原文所说的 Surya 至 Shani 七曜时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch27-v32-33-shadbal-favourable.step-003",
+        "action": "在该行星已判定达到所需六力（Shad Bal）时，按原文断它凭力量对命主显出有利。",
+        "applicability_scope": "原文只说凭其力量对命主显出有利，没有指明显在哪一宫、哪一时段或哪一件事上。",
+        "minimum_supported_claim": "行星（Grah）具备所需的六力（Shad Bal）时，会凭其力量对命主（native）显出有利。",
+        "produced_fact_keys": [
+          "所考察行星（Grah）对命主显吉判定"
+        ],
+        "required_fact_keys": [
+          "所考察行星（Grah）的六力（Shad Bal）达标判定"
+        ],
+        "condition_logic": {
+          "fact_key": "所考察行星（Grah）的六力（Shad Bal）达标判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If a Grah has the required Shad Bal",
+              "claim": "行星（Grah）具备所需的六力（Shad Bal）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "it will prove favourable to the native by virtue of its strength",
+              "claim": "凭其力量对命主（native）显出有利"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch27:v32-33",
+            "quote": "If a Grah has the required Shad Bal, it will prove favourable to the native by virtue of its strength.",
+            "pdf_pages": [
+              60
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：所考察行星（Grah）的六力（Shad Bal）达标判定。",
+        "stop_fact_keys": [
+          "所考察行星（Grah）的六力（Shad Bal）达标判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体的应验事项、时间或程度。",
+          "不得把这一条反推成六力不足即对命主不利。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "4c2a6cc8c1199945ad5e7bd6d400761b743a284c5f911e7912399ac4296bccd9"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch27:v32-33": {
+      "evidence_atom_id": "bphs-97:santhanam:ch27:v32-33",
+      "chapter_number": 27,
+      "chapter_title": "Evaluation Of Strengths",
+      "verse_label": "32-33.",
+      "content_role": "verse",
+      "exact_text": "32-33. Shad Bal Requirements. 390, 360, 300, 420, 390, 330 and 300 Virupas are the Shad Bal Pindas, needed for Surya etc. to be considered strong. If the strength exceeds the above-mentioned values, the Grah is deemed to be very strong. If a Grah has the required Shad Bal, it will prove favourable to the native by virtue of its strength. However, Shani’s extreme strength will give long life as well as miseries.",
+      "pdf_pages": [
+        60
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 27 · Sloka 32-33 · PDF page 60 · bphs-97:santhanam:ch27:v32-33",
+      "previous_atom_id": "bphs-97:santhanam:ch27:v30-31",
+      "next_atom_id": "bphs-97:santhanam:ch27:v34-36",
+      "context_before": " 15 Virupas will have to be added to the Bhavas, falling in Seershodaya Rāśis, if birth happens to be in day time, to the Bhavas, falling in Dual Rāśis, if birth\n\n<!-- SOURCE_PAGE 60 -->\n\nhappens to be in twilight and to the Bhavas, falling in Prishtodaya Rāśis, if birth be in night time.\n\n",
+      "context_after": "34-36. Guru, Budh and Surya are strong, if each of their Sthan Bal, Dig Bal, Kaal Bal, Chesht Bal and Ayan Bal are, respectively",
+      "content_missing": false
+    }
+  }
+}

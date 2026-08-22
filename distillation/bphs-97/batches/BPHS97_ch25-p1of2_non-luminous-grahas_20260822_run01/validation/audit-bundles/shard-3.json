@@ -1,0 +1,1608 @@
+{
+  "shard": 3,
+  "step_count": 9,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch25-v20-vyatipat-in-yuvati.step-001",
+      "method": {
+        "method": "ch25-v20-vyatipat-in-yuvati",
+        "title": "Vyatipat 落七宫（Yuvati Bhava）：没有财富妻子子嗣、顺服于女子",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的婚姻会不会不顺",
+          "我的钱财和子女怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Vyatipat is in Yuvati Bhava, the native will be bereft of wealth, wife and sons, will subdue to females, be miserable, sensuous, shameless and friendly to others.",
+            "Vyatipat 落七宫（Yuvati Bhava） 逐宫效应"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Reduce Dhoom from 12 Rāśis to arrive at Vyatipat. Vyatipat is also inauspicious",
+            "非发光副曜 Vyatipat 的定位算法与适用前提"
+          ],
+          "method_queries": [
+            "Effects of Vyatipat in Various Bhavas (up to Sloka 25)",
+            "Effects of Non-Luminous Grahas",
+            "逐宫看 Vyatipat 该查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch25-v20-vyatipat-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Vyatipat is in Yuvati Bhava"
+            },
+            {
+              "step_id": "ch25-v20-vyatipat-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be bereft of wealth, wife and sons"
+            },
+            {
+              "step_id": "ch25-v20-vyatipat-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will subdue to females"
+            },
+            {
+              "step_id": "ch25-v20-vyatipat-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be miserable, sensuous"
+            },
+            {
+              "step_id": "ch25-v20-vyatipat-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "shameless and friendly to others"
+            },
+            {
+              "step_id": "ch25-v20-vyatipat-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Vyatipat is in Yuvati Bhava the native will be bereft of wealth, wife and sons"
+            },
+            {
+              "step_id": "ch25-v20-vyatipat-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If Vyatipat is in 7th house"
+            },
+            {
+              "step_id": "ch25-v20-vyatipat-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If Vyatipat is in 7th house the native will be bereft of wealth, wife and sons"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少「非发光副曜 Vyatipat 是否落七宫（Yuvati Bhava）」这件事实时停止。",
+          "Vyatipat 的位置未按第 3 章非发光副曜算法定出时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch25-v20-vyatipat-in-yuvati.step-001",
+        "action": "核对非发光副曜 Vyatipat 是否落七宫（Yuvati Bhava），据此断本人是否没有财富妻子子嗣、顺服于女子。",
+        "applicability_scope": "仅限本命盘非发光副曜 Vyatipat 落七宫（Yuvati Bhava）一条；Vyatipat 是第 3 章所列非发光副曜（UpaGrahas）之一，须先按该章算法定出其位置；原文未给时间限定。原文以男命立说（his female／his wife／wife），女命命中时结论不能照搬。",
+        "minimum_supported_claim": "Vyatipat 落七宫（Yuvati Bhava）时，本人没有财富、妻子与子嗣、顺服于女子、困苦、耽于情欲、无耻、待他人友善。",
+        "produced_fact_keys": [
+          "Vyatipat 落七宫（Yuvati Bhava）的落宫效应判定"
+        ],
+        "required_fact_keys": [
+          "非发光副曜 Vyatipat 是否落七宫（Yuvati Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "非发光副曜 Vyatipat 是否落七宫（Yuvati Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Vyatipat is in Yuvati Bhava",
+              "claim": "Vyatipat 落七宫（Yuvati Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be bereft of wealth, wife and sons",
+              "claim": "没有财富、妻子与子嗣"
+            },
+            {
+              "quote": "will subdue to females",
+              "claim": "顺服于女子"
+            },
+            {
+              "quote": "be miserable, sensuous",
+              "claim": "困苦、耽于情欲"
+            },
+            {
+              "quote": "shameless and friendly to others",
+              "claim": "无耻、待他人友善"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch25:v20",
+            "quote": "If Vyatipat is in Yuvati Bhava, the native will be bereft of wealth, wife and sons, will subdue to females, be miserable, sensuous, shameless and friendly to others.",
+            "pdf_pages": [
+              51
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：非发光副曜 Vyatipat 是否落七宫（Yuvati Bhava）。",
+        "stop_fact_keys": [
+          "非发光副曜 Vyatipat 是否落七宫（Yuvati Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体年龄、时间、寿数或事件先后——原文只给七宫落宫的断语。",
+          "不得把本条套用到 Vyatipat 落其他宫位，也不得套用到别的非发光副曜。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "8b2567bbec1e6b881e7e7f9119691022f7cd5f646eb488d79b8bde42a9ff5825"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch25-v21-vyatipat-in-randhr.step-001",
+      "method": {
+        "method": "ch25-v21-vyatipat-in-randhr",
+        "title": "Vyatipat 落八宫（Randhr Bhava）：眼目畸变、受血液疾患困扰",
+        "target_house": 8,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的眼睛和血液方面有没有隐患",
+          "我为什么老觉得不走运"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Vyatipat is in Randhr Bhava, the native will have deformity of eyes, be ugly, unfortunate, spiteful to Brahmins and be troubled by disorders of blood.",
+            "Vyatipat 落八宫（Randhr Bhava） 逐宫效应"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Reduce Dhoom from 12 Rāśis to arrive at Vyatipat. Vyatipat is also inauspicious",
+            "非发光副曜 Vyatipat 的定位算法与适用前提"
+          ],
+          "method_queries": [
+            "Effects of Vyatipat in Various Bhavas (up to Sloka 25)",
+            "Effects of Non-Luminous Grahas",
+            "逐宫看 Vyatipat 该查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch25-v21-vyatipat-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Vyatipat is in Randhr Bhava"
+            },
+            {
+              "step_id": "ch25-v21-vyatipat-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will have deformity of eyes"
+            },
+            {
+              "step_id": "ch25-v21-vyatipat-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be ugly, unfortunate"
+            },
+            {
+              "step_id": "ch25-v21-vyatipat-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "spiteful to Brahmins"
+            },
+            {
+              "step_id": "ch25-v21-vyatipat-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be troubled by disorders of blood"
+            },
+            {
+              "step_id": "ch25-v21-vyatipat-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Vyatipat is in Randhr Bhava the native will have deformity of eyes"
+            },
+            {
+              "step_id": "ch25-v21-vyatipat-in-randhr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If Vyatipat is in 8th house"
+            },
+            {
+              "step_id": "ch25-v21-vyatipat-in-randhr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If Vyatipat is in 8th house the native will have deformity of eyes"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少「非发光副曜 Vyatipat 是否落八宫（Randhr Bhava）」这件事实时停止。",
+          "Vyatipat 的位置未按第 3 章非发光副曜算法定出时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch25-v21-vyatipat-in-randhr.step-001",
+        "action": "核对非发光副曜 Vyatipat 是否落八宫（Randhr Bhava），据此断本人是否眼目畸变、受血液疾患困扰。",
+        "applicability_scope": "仅限本命盘非发光副曜 Vyatipat 落八宫（Randhr Bhava）一条；Vyatipat 是第 3 章所列非发光副曜（UpaGrahas）之一，须先按该章算法定出其位置；原文未给时间限定。",
+        "minimum_supported_claim": "Vyatipat 落八宫（Randhr Bhava）时，本人眼目有畸变、丑陋、不走运、对婆罗门怀恶意、受血液疾患困扰。",
+        "produced_fact_keys": [
+          "Vyatipat 落八宫（Randhr Bhava）的落宫效应判定"
+        ],
+        "required_fact_keys": [
+          "非发光副曜 Vyatipat 是否落八宫（Randhr Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "非发光副曜 Vyatipat 是否落八宫（Randhr Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Vyatipat is in Randhr Bhava",
+              "claim": "Vyatipat 落八宫（Randhr Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will have deformity of eyes",
+              "claim": "眼目有畸变"
+            },
+            {
+              "quote": "be ugly, unfortunate",
+              "claim": "丑陋、不走运"
+            },
+            {
+              "quote": "spiteful to Brahmins",
+              "claim": "对婆罗门怀恶意"
+            },
+            {
+              "quote": "be troubled by disorders of blood",
+              "claim": "受血液疾患困扰"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch25:v21",
+            "quote": "If Vyatipat is in Randhr Bhava, the native will have deformity of eyes, be ugly, unfortunate, spiteful to Brahmins and be troubled by disorders of blood.",
+            "pdf_pages": [
+              51
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：非发光副曜 Vyatipat 是否落八宫（Randhr Bhava）。",
+        "stop_fact_keys": [
+          "非发光副曜 Vyatipat 是否落八宫（Randhr Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体年龄、时间、寿数或事件先后——原文只给八宫落宫的断语。",
+          "不得把本条套用到 Vyatipat 落其他宫位，也不得套用到别的非发光副曜。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "d29f729770623f2dcbe5580058bee41aa11ea74555d05a85afdf20b3d55772e5"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch25-v22-vyatipat-in-dharm.step-001",
+      "method": {
+        "method": "ch25-v22-vyatipat-in-dharm",
+        "title": "Vyatipat 落九宫（Dharm Bhava）：多行业多朋友、极有学问、与妻和睦",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会同时做好几摊事",
+          "我跟配偶合不合得来"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Vyatipat is in Dharm Bhava, the native will have many kinds of business and many friends; he will be very learned, well disposed to his wife and he will be eloquent.",
+            "Vyatipat 落九宫（Dharm Bhava） 逐宫效应"
+          ],
+          "counter_queries": [
+            "These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction",
+            "非发光副曜本性为凶、会带来损害"
+          ],
+          "boundary_queries": [
+            "Reduce Dhoom from 12 Rāśis to arrive at Vyatipat. Vyatipat is also inauspicious",
+            "非发光副曜 Vyatipat 的定位算法与适用前提"
+          ],
+          "method_queries": [
+            "Effects of Vyatipat in Various Bhavas (up to Sloka 25)",
+            "Effects of Non-Luminous Grahas",
+            "逐宫看 Vyatipat 该查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch25-v22-vyatipat-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Vyatipat is in Dharm Bhava"
+            },
+            {
+              "step_id": "ch25-v22-vyatipat-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will have many kinds of business and many friends"
+            },
+            {
+              "step_id": "ch25-v22-vyatipat-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "he will be very learned"
+            },
+            {
+              "step_id": "ch25-v22-vyatipat-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "well disposed to his wife"
+            },
+            {
+              "step_id": "ch25-v22-vyatipat-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "he will be eloquent"
+            },
+            {
+              "step_id": "ch25-v22-vyatipat-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Vyatipat is in Dharm Bhava the native will have many kinds of business and many friends"
+            },
+            {
+              "step_id": "ch25-v22-vyatipat-in-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If Vyatipat is in 9th house"
+            },
+            {
+              "step_id": "ch25-v22-vyatipat-in-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If Vyatipat is in 9th house the native will have many kinds of business and many friends"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少「非发光副曜 Vyatipat 是否落九宫（Dharm Bhava）」这件事实时停止。",
+          "Vyatipat 的位置未按第 3 章非发光副曜算法定出时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch25-v22-vyatipat-in-dharm.step-001",
+        "action": "核对非发光副曜 Vyatipat 是否落九宫（Dharm Bhava），据此断本人是否多行业多朋友、极有学问、与妻和睦。",
+        "applicability_scope": "仅限本命盘非发光副曜 Vyatipat 落九宫（Dharm Bhava）一条；Vyatipat 是第 3 章所列非发光副曜（UpaGrahas）之一，须先按该章算法定出其位置；原文未给时间限定。原文以男命立说（his female／his wife／wife），女命命中时结论不能照搬。",
+        "minimum_supported_claim": "Vyatipat 落九宫（Dharm Bhava）时，本人有多种行业与许多朋友、极有学问、与其妻子相处融洽、能言善辩。",
+        "produced_fact_keys": [
+          "Vyatipat 落九宫（Dharm Bhava）的落宫效应判定"
+        ],
+        "required_fact_keys": [
+          "非发光副曜 Vyatipat 是否落九宫（Dharm Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "非发光副曜 Vyatipat 是否落九宫（Dharm Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Vyatipat is in Dharm Bhava",
+              "claim": "Vyatipat 落九宫（Dharm Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will have many kinds of business and many friends",
+              "claim": "有多种行业与许多朋友"
+            },
+            {
+              "quote": "he will be very learned",
+              "claim": "极有学问"
+            },
+            {
+              "quote": "well disposed to his wife",
+              "claim": "与其妻子相处融洽"
+            },
+            {
+              "quote": "he will be eloquent",
+              "claim": "能言善辩"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch25:v22",
+            "quote": "If Vyatipat is in Dharm Bhava, the native will have many kinds of business and many friends; he will be very learned, well disposed to his wife and he will be eloquent.",
+            "pdf_pages": [
+              51
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：非发光副曜 Vyatipat 是否落九宫（Dharm Bhava）。",
+        "stop_fact_keys": [
+          "非发光副曜 Vyatipat 是否落九宫（Dharm Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体年龄、时间、寿数或事件先后——原文只给九宫落宫的断语。",
+          "不得把本条套用到 Vyatipat 落其他宫位，也不得套用到别的非发光副曜。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "60d9a5b55469a86f8e9aec16f432286c6f5dd1cf0942b88f6b5db5432030d281"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch25-v23-vyatipat-in-karm.step-001",
+      "method": {
+        "method": "ch25-v23-vyatipat-in-karm",
+        "title": "Vyatipat 落十宫（Karm Bhava）：虔敬平和、善宗教行事、有远见",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我适不适合做宗教或学问方面的事",
+          "我看事情有没有远见"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Vyatipat is in Karm Bhava, the native will be religious, peaceful, skilful in religious acts, very learned and far-sighted.",
+            "Vyatipat 落十宫（Karm Bhava） 逐宫效应"
+          ],
+          "counter_queries": [
+            "These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction",
+            "非发光副曜本性为凶、会带来损害"
+          ],
+          "boundary_queries": [
+            "Reduce Dhoom from 12 Rāśis to arrive at Vyatipat. Vyatipat is also inauspicious",
+            "非发光副曜 Vyatipat 的定位算法与适用前提"
+          ],
+          "method_queries": [
+            "Effects of Vyatipat in Various Bhavas (up to Sloka 25)",
+            "Effects of Non-Luminous Grahas",
+            "逐宫看 Vyatipat 该查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch25-v23-vyatipat-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Vyatipat is in Karm Bhava"
+            },
+            {
+              "step_id": "ch25-v23-vyatipat-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be religious, peaceful"
+            },
+            {
+              "step_id": "ch25-v23-vyatipat-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "skilful in religious acts"
+            },
+            {
+              "step_id": "ch25-v23-vyatipat-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "very learned and far-sighted"
+            },
+            {
+              "step_id": "ch25-v23-vyatipat-in-karm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Vyatipat is in Karm Bhava the native will be religious, peaceful"
+            },
+            {
+              "step_id": "ch25-v23-vyatipat-in-karm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If Vyatipat is in 10th house"
+            },
+            {
+              "step_id": "ch25-v23-vyatipat-in-karm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If Vyatipat is in 10th house the native will be religious, peaceful"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少「非发光副曜 Vyatipat 是否落十宫（Karm Bhava）」这件事实时停止。",
+          "Vyatipat 的位置未按第 3 章非发光副曜算法定出时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch25-v23-vyatipat-in-karm.step-001",
+        "action": "核对非发光副曜 Vyatipat 是否落十宫（Karm Bhava），据此断本人是否虔敬平和、善宗教行事、有远见。",
+        "applicability_scope": "仅限本命盘非发光副曜 Vyatipat 落十宫（Karm Bhava）一条；Vyatipat 是第 3 章所列非发光副曜（UpaGrahas）之一，须先按该章算法定出其位置；原文未给时间限定。",
+        "minimum_supported_claim": "Vyatipat 落十宫（Karm Bhava）时，本人虔敬、平和、善于宗教行事、极有学问、有远见。",
+        "produced_fact_keys": [
+          "Vyatipat 落十宫（Karm Bhava）的落宫效应判定"
+        ],
+        "required_fact_keys": [
+          "非发光副曜 Vyatipat 是否落十宫（Karm Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "非发光副曜 Vyatipat 是否落十宫（Karm Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Vyatipat is in Karm Bhava",
+              "claim": "Vyatipat 落十宫（Karm Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be religious, peaceful",
+              "claim": "虔敬、平和"
+            },
+            {
+              "quote": "skilful in religious acts",
+              "claim": "善于宗教行事"
+            },
+            {
+              "quote": "very learned and far-sighted",
+              "claim": "极有学问、有远见"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch25:v23",
+            "quote": "If Vyatipat is in Karm Bhava, the native will be religious, peaceful, skilful in religious acts, very learned and far-sighted.",
+            "pdf_pages": [
+              51
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：非发光副曜 Vyatipat 是否落十宫（Karm Bhava）。",
+        "stop_fact_keys": [
+          "非发光副曜 Vyatipat 是否落十宫（Karm Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体年龄、时间、寿数或事件先后——原文只给十宫落宫的断语。",
+          "不得把本条套用到 Vyatipat 落其他宫位，也不得套用到别的非发光副曜。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "bc08a28726af3b5fbea552d15d4baa132aae92ea6dd1d9b15ad89760ce28cb11"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch25-v24-vyatipat-in-labh.step-001",
+      "method": {
+        "method": "ch25-v24-vyatipat-in-labh",
+        "title": "Vyatipat 落十一宫（Labh Bhava）：极为富足、受敬诚实、拥有许多马匹",
+        "target_house": 11,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的收益和家资怎么样",
+          "我在声誉上怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Vyatipat is in Labh Bhava, the native will be extremely opulent, be honourable, truthful, firm in policy, endowed with many horses and be interested in singing.",
+            "Vyatipat 落十一宫（Labh Bhava） 逐宫效应"
+          ],
+          "counter_queries": [
+            "These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction",
+            "非发光副曜本性为凶、会带来损害"
+          ],
+          "boundary_queries": [
+            "Reduce Dhoom from 12 Rāśis to arrive at Vyatipat. Vyatipat is also inauspicious",
+            "非发光副曜 Vyatipat 的定位算法与适用前提"
+          ],
+          "method_queries": [
+            "Effects of Vyatipat in Various Bhavas (up to Sloka 25)",
+            "Effects of Non-Luminous Grahas",
+            "逐宫看 Vyatipat 该查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch25-v24-vyatipat-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Vyatipat is in Labh Bhava"
+            },
+            {
+              "step_id": "ch25-v24-vyatipat-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be extremely opulent"
+            },
+            {
+              "step_id": "ch25-v24-vyatipat-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be honourable, truthful"
+            },
+            {
+              "step_id": "ch25-v24-vyatipat-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "firm in policy"
+            },
+            {
+              "step_id": "ch25-v24-vyatipat-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "endowed with many horses"
+            },
+            {
+              "step_id": "ch25-v24-vyatipat-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be interested in singing"
+            },
+            {
+              "step_id": "ch25-v24-vyatipat-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Vyatipat is in Labh Bhava the native will be extremely opulent"
+            },
+            {
+              "step_id": "ch25-v24-vyatipat-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If Vyatipat is in 11th house"
+            },
+            {
+              "step_id": "ch25-v24-vyatipat-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If Vyatipat is in 11th house the native will be extremely opulent"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少「非发光副曜 Vyatipat 是否落十一宫（Labh Bhava）」这件事实时停止。",
+          "Vyatipat 的位置未按第 3 章非发光副曜算法定出时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch25-v24-vyatipat-in-labh.step-001",
+        "action": "核对非发光副曜 Vyatipat 是否落十一宫（Labh Bhava），据此断本人是否极为富足、受敬诚实、拥有许多马匹。",
+        "applicability_scope": "仅限本命盘非发光副曜 Vyatipat 落十一宫（Labh Bhava）一条；Vyatipat 是第 3 章所列非发光副曜（UpaGrahas）之一，须先按该章算法定出其位置；原文未给时间限定。",
+        "minimum_supported_claim": "Vyatipat 落十一宫（Labh Bhava）时，本人极为富足、受人尊敬、诚实、行事方针坚定、拥有许多马匹、喜好歌唱。",
+        "produced_fact_keys": [
+          "Vyatipat 落十一宫（Labh Bhava）的落宫效应判定"
+        ],
+        "required_fact_keys": [
+          "非发光副曜 Vyatipat 是否落十一宫（Labh Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "非发光副曜 Vyatipat 是否落十一宫（Labh Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Vyatipat is in Labh Bhava",
+              "claim": "Vyatipat 落十一宫（Labh Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be extremely opulent",
+              "claim": "极为富足"
+            },
+            {
+              "quote": "be honourable, truthful",
+              "claim": "受人尊敬、诚实"
+            },
+            {
+              "quote": "firm in policy",
+              "claim": "行事方针坚定"
+            },
+            {
+              "quote": "endowed with many horses",
+              "claim": "拥有许多马匹"
+            },
+            {
+              "quote": "be interested in singing",
+              "claim": "喜好歌唱"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch25:v24",
+            "quote": "If Vyatipat is in Labh Bhava, the native will be extremely opulent, be honourable, truthful, firm in policy, endowed with many horses and be interested in singing.",
+            "pdf_pages": [
+              51
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：非发光副曜 Vyatipat 是否落十一宫（Labh Bhava）。",
+        "stop_fact_keys": [
+          "非发光副曜 Vyatipat 是否落十一宫（Labh Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体年龄、时间、寿数或事件先后——原文只给十一宫落宫的断语。",
+          "不得把本条套用到 Vyatipat 落其他宫位，也不得套用到别的非发光副曜。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "857f7037e31a2c56cadbbef8932035382dfc4d229fd201d00e9c7801d5b601fc"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch25-v25-vyatipat-in-vyaya.step-001",
+      "method": {
+        "method": "ch25-v25-vyatipat-in-vyaya",
+        "title": "Vyatipat 落十二宫（Vyaya Bhava）：易怒、身有残障、憎恨亲属",
+        "target_house": 12,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我跟家里人为什么处不好",
+          "我的脾气和身体有什么隐患"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Vyatipat is in Vyaya Bhava, the native will be given to anger, associated with many activities, disabled, irreligious and hate his own relatives.",
+            "Vyatipat 落十二宫（Vyaya Bhava） 逐宫效应"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Reduce Dhoom from 12 Rāśis to arrive at Vyatipat. Vyatipat is also inauspicious",
+            "非发光副曜 Vyatipat 的定位算法与适用前提"
+          ],
+          "method_queries": [
+            "Effects of Vyatipat in Various Bhavas (up to Sloka 25)",
+            "Effects of Non-Luminous Grahas",
+            "逐宫看 Vyatipat 该查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch25-v25-vyatipat-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Vyatipat is in Vyaya Bhava"
+            },
+            {
+              "step_id": "ch25-v25-vyatipat-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be given to anger"
+            },
+            {
+              "step_id": "ch25-v25-vyatipat-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "associated with many activities"
+            },
+            {
+              "step_id": "ch25-v25-vyatipat-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "disabled"
+            },
+            {
+              "step_id": "ch25-v25-vyatipat-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "irreligious and hate his own relatives"
+            },
+            {
+              "step_id": "ch25-v25-vyatipat-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Vyatipat is in Vyaya Bhava the native will be given to anger"
+            },
+            {
+              "step_id": "ch25-v25-vyatipat-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If Vyatipat is in 12th house"
+            },
+            {
+              "step_id": "ch25-v25-vyatipat-in-vyaya.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If Vyatipat is in 12th house the native will be given to anger"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少「非发光副曜 Vyatipat 是否落十二宫（Vyaya Bhava）」这件事实时停止。",
+          "Vyatipat 的位置未按第 3 章非发光副曜算法定出时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch25-v25-vyatipat-in-vyaya.step-001",
+        "action": "核对非发光副曜 Vyatipat 是否落十二宫（Vyaya Bhava），据此断本人是否易怒、身有残障、憎恨亲属。",
+        "applicability_scope": "仅限本命盘非发光副曜 Vyatipat 落十二宫（Vyaya Bhava）一条；Vyatipat 是第 3 章所列非发光副曜（UpaGrahas）之一，须先按该章算法定出其位置；原文未给时间限定。",
+        "minimum_supported_claim": "Vyatipat 落十二宫（Vyaya Bhava）时，本人易怒、牵涉许多活动、身有残障、不虔敬、憎恨自己的亲属。",
+        "produced_fact_keys": [
+          "Vyatipat 落十二宫（Vyaya Bhava）的落宫效应判定"
+        ],
+        "required_fact_keys": [
+          "非发光副曜 Vyatipat 是否落十二宫（Vyaya Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "非发光副曜 Vyatipat 是否落十二宫（Vyaya Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Vyatipat is in Vyaya Bhava",
+              "claim": "Vyatipat 落十二宫（Vyaya Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be given to anger",
+              "claim": "易怒"
+            },
+            {
+              "quote": "associated with many activities",
+              "claim": "牵涉许多活动"
+            },
+            {
+              "quote": "disabled",
+              "claim": "身有残障"
+            },
+            {
+              "quote": "irreligious and hate his own relatives",
+              "claim": "不虔敬、憎恨自己的亲属"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch25:v25",
+            "quote": "If Vyatipat is in Vyaya Bhava, the native will be given to anger, associated with many activities, disabled, irreligious and hate his own relatives.",
+            "pdf_pages": [
+              51
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：非发光副曜 Vyatipat 是否落十二宫（Vyaya Bhava）。",
+        "stop_fact_keys": [
+          "非发光副曜 Vyatipat 是否落十二宫（Vyaya Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体年龄、时间、寿数或事件先后——原文只给十二宫落宫的断语。",
+          "不得把本条套用到 Vyatipat 落其他宫位，也不得套用到别的非发光副曜。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "45d6c9fa5a3e61ec33f5118712a4a3cc50ea4bd61aaa883fa515a1c1b79a6449"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch25-v26-paridhi-in-tanu.step-001",
+      "method": {
+        "method": "ch25-v26-paridhi-in-tanu",
+        "title": "Paridhi 落一宫（Tanu Bhava）：有学问诚实、富裕有子嗣、为长者所喜",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这个人的底色是什么样的",
+          "我在长辈那里得不得人缘"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Paridhi is in Tanu Bhava, the native will be learned, truthful, peaceful, rich, endowed with sons, pure, charitable and dear to elders.",
+            "Paridhi 落一宫（Tanu Bhava） 逐宫效应"
+          ],
+          "counter_queries": [
+            "These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction",
+            "非发光副曜本性为凶、会带来损害"
+          ],
+          "boundary_queries": [
+            "Add six Rāśis to Vyatipat to know the position of Parivesh. He is extremely inauspicious",
+            "非发光副曜 Paridhi（Parivesh）的定位算法与适用前提"
+          ],
+          "method_queries": [
+            "Effects of Paridhi (or Parivesh) in Various Bhavas (up to Sloka 37)",
+            "Effects of Non-Luminous Grahas",
+            "逐宫看 Paridhi 该查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch25-v26-paridhi-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Paridhi is in Tanu Bhava"
+            },
+            {
+              "step_id": "ch25-v26-paridhi-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be learned, truthful"
+            },
+            {
+              "step_id": "ch25-v26-paridhi-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "peaceful, rich"
+            },
+            {
+              "step_id": "ch25-v26-paridhi-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "endowed with sons"
+            },
+            {
+              "step_id": "ch25-v26-paridhi-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "pure, charitable"
+            },
+            {
+              "step_id": "ch25-v26-paridhi-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "dear to elders"
+            },
+            {
+              "step_id": "ch25-v26-paridhi-in-tanu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Paridhi is in Tanu Bhava the native will be learned, truthful"
+            },
+            {
+              "step_id": "ch25-v26-paridhi-in-tanu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If Paridhi is in 1st house"
+            },
+            {
+              "step_id": "ch25-v26-paridhi-in-tanu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If Paridhi is in 1st house the native will be learned, truthful"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少「非发光副曜 Paridhi 是否落一宫（Tanu Bhava）」这件事实时停止。",
+          "Paridhi 的位置未按第 3 章非发光副曜算法定出时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch25-v26-paridhi-in-tanu.step-001",
+        "action": "核对非发光副曜 Paridhi 是否落一宫（Tanu Bhava），据此断本人是否有学问诚实、富裕有子嗣、为长者所喜。",
+        "applicability_scope": "仅限本命盘非发光副曜 Paridhi 落一宫（Tanu Bhava）一条；Paridhi 是第 3 章所列非发光副曜（UpaGrahas）之一，须先按该章算法定出其位置；原文未给时间限定。原文在本条同一颂内标明 Paridhi 又称 Parivesh。",
+        "minimum_supported_claim": "Paridhi 落一宫（Tanu Bhava）时，本人有学问、诚实、平和、富裕、有子嗣、纯净、乐善好施、为长者所喜。",
+        "produced_fact_keys": [
+          "Paridhi 落一宫（Tanu Bhava）的落宫效应判定"
+        ],
+        "required_fact_keys": [
+          "非发光副曜 Paridhi 是否落一宫（Tanu Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "非发光副曜 Paridhi 是否落一宫（Tanu Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Paridhi is in Tanu Bhava",
+              "claim": "Paridhi 落一宫（Tanu Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be learned, truthful",
+              "claim": "有学问、诚实"
+            },
+            {
+              "quote": "peaceful, rich",
+              "claim": "平和、富裕"
+            },
+            {
+              "quote": "endowed with sons",
+              "claim": "有子嗣"
+            },
+            {
+              "quote": "pure, charitable",
+              "claim": "纯净、乐善好施"
+            },
+            {
+              "quote": "dear to elders",
+              "claim": "为长者所喜"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch25:v26",
+            "quote": "If Paridhi is in Tanu Bhava, the native will be learned, truthful, peaceful, rich, endowed with sons, pure, charitable and dear to elders.",
+            "pdf_pages": [
+              51
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：非发光副曜 Paridhi 是否落一宫（Tanu Bhava）。",
+        "stop_fact_keys": [
+          "非发光副曜 Paridhi 是否落一宫（Tanu Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体年龄、时间、寿数或事件先后——原文只给一宫落宫的断语。",
+          "不得把本条套用到 Paridhi 落其他宫位，也不得套用到别的非发光副曜。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "48b4332b619930cace8ae9a023b3613945cc9fb5d6c259ab444b27cc78f53f12"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch25-v27-paridhi-in-dhan.step-001",
+      "method": {
+        "method": "ch25-v27-paridhi-in-dhan",
+        "title": "Paridhi 落二宫（Dhan Bhava）：富有迷人、享受欢乐、成为主上",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的财富状况怎么样",
+          "我有没有当家做主的位置"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Paridhi is in Dhan Bhava, the native will be wealthy, charming, will enjoy pleasures, be happy, very religious and be a Lord.",
+            "Paridhi 落二宫（Dhan Bhava） 逐宫效应"
+          ],
+          "counter_queries": [
+            "These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction",
+            "非发光副曜本性为凶、会带来损害"
+          ],
+          "boundary_queries": [
+            "Add six Rāśis to Vyatipat to know the position of Parivesh. He is extremely inauspicious",
+            "非发光副曜 Paridhi（Parivesh）的定位算法与适用前提"
+          ],
+          "method_queries": [
+            "Effects of Paridhi (or Parivesh) in Various Bhavas (up to Sloka 37)",
+            "Effects of Non-Luminous Grahas",
+            "逐宫看 Paridhi 该查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch25-v27-paridhi-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Paridhi is in Dhan Bhava"
+            },
+            {
+              "step_id": "ch25-v27-paridhi-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be wealthy, charming"
+            },
+            {
+              "step_id": "ch25-v27-paridhi-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will enjoy pleasures"
+            },
+            {
+              "step_id": "ch25-v27-paridhi-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be happy, very religious"
+            },
+            {
+              "step_id": "ch25-v27-paridhi-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be a Lord"
+            },
+            {
+              "step_id": "ch25-v27-paridhi-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Paridhi is in Dhan Bhava the native will be wealthy, charming"
+            },
+            {
+              "step_id": "ch25-v27-paridhi-in-dhan.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If Paridhi is in 2nd house"
+            },
+            {
+              "step_id": "ch25-v27-paridhi-in-dhan.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If Paridhi is in 2nd house the native will be wealthy, charming"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少「非发光副曜 Paridhi 是否落二宫（Dhan Bhava）」这件事实时停止。",
+          "Paridhi 的位置未按第 3 章非发光副曜算法定出时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch25-v27-paridhi-in-dhan.step-001",
+        "action": "核对非发光副曜 Paridhi 是否落二宫（Dhan Bhava），据此断本人是否富有迷人、享受欢乐、成为主上。",
+        "applicability_scope": "仅限本命盘非发光副曜 Paridhi 落二宫（Dhan Bhava）一条；Paridhi 是第 3 章所列非发光副曜（UpaGrahas）之一，须先按该章算法定出其位置；原文未给时间限定。",
+        "minimum_supported_claim": "Paridhi 落二宫（Dhan Bhava）时，本人富有、迷人、享受欢乐、快乐、极为虔敬、成为主上（Lord）。",
+        "produced_fact_keys": [
+          "Paridhi 落二宫（Dhan Bhava）的落宫效应判定"
+        ],
+        "required_fact_keys": [
+          "非发光副曜 Paridhi 是否落二宫（Dhan Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "非发光副曜 Paridhi 是否落二宫（Dhan Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Paridhi is in Dhan Bhava",
+              "claim": "Paridhi 落二宫（Dhan Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be wealthy, charming",
+              "claim": "富有、迷人"
+            },
+            {
+              "quote": "will enjoy pleasures",
+              "claim": "享受欢乐"
+            },
+            {
+              "quote": "be happy, very religious",
+              "claim": "快乐、极为虔敬"
+            },
+            {
+              "quote": "be a Lord",
+              "claim": "成为主上（Lord）"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch25:v27",
+            "quote": "If Paridhi is in Dhan Bhava, the native will be wealthy, charming, will enjoy pleasures, be happy, very religious and be a Lord.",
+            "pdf_pages": [
+              51,
+              52
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：非发光副曜 Paridhi 是否落二宫（Dhan Bhava）。",
+        "stop_fact_keys": [
+          "非发光副曜 Paridhi 是否落二宫（Dhan Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体年龄、时间、寿数或事件先后——原文只给二宫落宫的断语。",
+          "不得把本条套用到 Paridhi 落其他宫位，也不得套用到别的非发光副曜。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "fb5a3b50d68a15b5a7a02b00d9955d9e8b4852436e7791dd9f6f1fbb597429e8"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch25-v28-paridhi-in-sahaj.step-001",
+      "method": {
+        "method": "ch25-v28-paridhi-in-sahaj",
+        "title": "Paridhi 落三宫（Sahaj Bhava）：喜爱妻子、与手下融洽、为仆役",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我跟配偶的感情怎么样",
+          "我会走哪一类的职位"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Paridhi is in Sahaj Bhava, the native will be fond of his wife, be very charming, pious, well disposed to his men, be a servant and be respectful of his elders.",
+            "Paridhi 落三宫（Sahaj Bhava） 逐宫效应"
+          ],
+          "counter_queries": [
+            "These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction",
+            "非发光副曜本性为凶、会带来损害"
+          ],
+          "boundary_queries": [
+            "Add six Rāśis to Vyatipat to know the position of Parivesh. He is extremely inauspicious",
+            "非发光副曜 Paridhi（Parivesh）的定位算法与适用前提"
+          ],
+          "method_queries": [
+            "Effects of Paridhi (or Parivesh) in Various Bhavas (up to Sloka 37)",
+            "Effects of Non-Luminous Grahas",
+            "逐宫看 Paridhi 该查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch25-v28-paridhi-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Paridhi is in Sahaj Bhava"
+            },
+            {
+              "step_id": "ch25-v28-paridhi-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be fond of his wife"
+            },
+            {
+              "step_id": "ch25-v28-paridhi-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be very charming, pious"
+            },
+            {
+              "step_id": "ch25-v28-paridhi-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "well disposed to his men"
+            },
+            {
+              "step_id": "ch25-v28-paridhi-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be a servant"
+            },
+            {
+              "step_id": "ch25-v28-paridhi-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be respectful of his elders"
+            },
+            {
+              "step_id": "ch25-v28-paridhi-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Paridhi is in Sahaj Bhava the native will be fond of his wife"
+            },
+            {
+              "step_id": "ch25-v28-paridhi-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If Paridhi is in 3rd house"
+            },
+            {
+              "step_id": "ch25-v28-paridhi-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If Paridhi is in 3rd house the native will be fond of his wife"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少「非发光副曜 Paridhi 是否落三宫（Sahaj Bhava）」这件事实时停止。",
+          "Paridhi 的位置未按第 3 章非发光副曜算法定出时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch25-v28-paridhi-in-sahaj.step-001",
+        "action": "核对非发光副曜 Paridhi 是否落三宫（Sahaj Bhava），据此断本人是否喜爱妻子、与手下融洽、为仆役。",
+        "applicability_scope": "仅限本命盘非发光副曜 Paridhi 落三宫（Sahaj Bhava）一条；Paridhi 是第 3 章所列非发光副曜（UpaGrahas）之一，须先按该章算法定出其位置；原文未给时间限定。原文以男命立说（his female／his wife／wife），女命命中时结论不能照搬。",
+        "minimum_supported_claim": "Paridhi 落三宫（Sahaj Bhava）时，本人喜爱其妻子、极为迷人、虔诚、与其手下相处融洽、为仆役、敬重其长辈。",
+        "produced_fact_keys": [
+          "Paridhi 落三宫（Sahaj Bhava）的落宫效应判定"
+        ],
+        "required_fact_keys": [
+          "非发光副曜 Paridhi 是否落三宫（Sahaj Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "非发光副曜 Paridhi 是否落三宫（Sahaj Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Paridhi is in Sahaj Bhava",
+              "claim": "Paridhi 落三宫（Sahaj Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be fond of his wife",
+              "claim": "喜爱其妻子"
+            },
+            {
+              "quote": "be very charming, pious",
+              "claim": "极为迷人、虔诚"
+            },
+            {
+              "quote": "well disposed to his men",
+              "claim": "与其手下相处融洽"
+            },
+            {
+              "quote": "be a servant",
+              "claim": "为仆役"
+            },
+            {
+              "quote": "be respectful of his elders",
+              "claim": "敬重其长辈"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch25:v28",
+            "quote": "If Paridhi is in Sahaj Bhava, the native will be fond of his wife, be very charming, pious, well disposed to his men, be a servant and be respectful of his elders.",
+            "pdf_pages": [
+              52
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：非发光副曜 Paridhi 是否落三宫（Sahaj Bhava）。",
+        "stop_fact_keys": [
+          "非发光副曜 Paridhi 是否落三宫（Sahaj Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体年龄、时间、寿数或事件先后——原文只给三宫落宫的断语。",
+          "不得把本条套用到 Paridhi 落其他宫位，也不得套用到别的非发光副曜。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "c9bfc21c10652d1734bc6433e514cafa6e4e359fc5f1df4027716b5d8c239490"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch25:v20": {
+      "evidence_atom_id": "bphs-97:santhanam:ch25:v20",
+      "chapter_number": 25,
+      "chapter_title": "Effects of Non-Luminous Grahas",
+      "verse_label": "20.",
+      "content_role": "verse",
+      "exact_text": "20. If Vyatipat is in Yuvati Bhava, the native will be bereft of wealth, wife and sons, will subdue to females, be miserable, sensuous, shameless and friendly to others.",
+      "pdf_pages": [
+        51
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 25 · Sloka 20 · PDF page 51 · bphs-97:santhanam:ch25:v20",
+      "previous_atom_id": "bphs-97:santhanam:ch25:v19",
+      "next_atom_id": "bphs-97:santhanam:ch25:v21",
+      "context_before": " If Vyatipat is in Ari Bhava, the native will destroy his enemies, be physically mighty, skilful in use of all kinds of weapons and in arts and be peaceful in disposition.\n\n",
+      "context_after": "21. If Vyatipat is in Randhr Bhava, the native will have deformity of eyes, be ugly, unfortunate, spiteful to Brahmins and be tr",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch25:v21": {
+      "evidence_atom_id": "bphs-97:santhanam:ch25:v21",
+      "chapter_number": 25,
+      "chapter_title": "Effects of Non-Luminous Grahas",
+      "verse_label": "21.",
+      "content_role": "verse",
+      "exact_text": "21. If Vyatipat is in Randhr Bhava, the native will have deformity of eyes, be ugly, unfortunate, spiteful to Brahmins and be troubled by disorders of blood.",
+      "pdf_pages": [
+        51
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 25 · Sloka 21 · PDF page 51 · bphs-97:santhanam:ch25:v21",
+      "previous_atom_id": "bphs-97:santhanam:ch25:v20",
+      "next_atom_id": "bphs-97:santhanam:ch25:v22",
+      "context_before": " If Vyatipat is in Yuvati Bhava, the native will be bereft of wealth, wife and sons, will subdue to females, be miserable, sensuous, shameless and friendly to others.\n\n",
+      "context_after": "22. If Vyatipat is in Dharm Bhava, the native will have many kinds of business and many friends; he will be very learned, well d",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch25:v22": {
+      "evidence_atom_id": "bphs-97:santhanam:ch25:v22",
+      "chapter_number": 25,
+      "chapter_title": "Effects of Non-Luminous Grahas",
+      "verse_label": "22.",
+      "content_role": "verse",
+      "exact_text": "22. If Vyatipat is in Dharm Bhava, the native will have many kinds of business and many friends; he will be very learned, well disposed to his wife and he will be eloquent.",
+      "pdf_pages": [
+        51
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 25 · Sloka 22 · PDF page 51 · bphs-97:santhanam:ch25:v22",
+      "previous_atom_id": "bphs-97:santhanam:ch25:v21",
+      "next_atom_id": "bphs-97:santhanam:ch25:v23",
+      "context_before": " If Vyatipat is in Randhr Bhava, the native will have deformity of eyes, be ugly, unfortunate, spiteful to Brahmins and be troubled by disorders of blood.\n\n",
+      "context_after": "23. If Vyatipat is in Karm Bhava, the native will be religious, peaceful, skilful in religious acts, very learned and far-sighte",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch25:v23": {
+      "evidence_atom_id": "bphs-97:santhanam:ch25:v23",
+      "chapter_number": 25,
+      "chapter_title": "Effects of Non-Luminous Grahas",
+      "verse_label": "23.",
+      "content_role": "verse",
+      "exact_text": "23. If Vyatipat is in Karm Bhava, the native will be religious, peaceful, skilful in religious acts, very learned and far-sighted.",
+      "pdf_pages": [
+        51
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 25 · Sloka 23 · PDF page 51 · bphs-97:santhanam:ch25:v23",
+      "previous_atom_id": "bphs-97:santhanam:ch25:v22",
+      "next_atom_id": "bphs-97:santhanam:ch25:v24",
+      "context_before": " If Vyatipat is in Dharm Bhava, the native will have many kinds of business and many friends; he will be very learned, well disposed to his wife and he will be eloquent.\n\n",
+      "context_after": "24. If Vyatipat is in Labh Bhava, the native will be extremely opulent, be honourable, truthful, firm in policy, endowed with ma",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch25:v24": {
+      "evidence_atom_id": "bphs-97:santhanam:ch25:v24",
+      "chapter_number": 25,
+      "chapter_title": "Effects of Non-Luminous Grahas",
+      "verse_label": "24.",
+      "content_role": "verse",
+      "exact_text": "24. If Vyatipat is in Labh Bhava, the native will be extremely opulent, be honourable, truthful, firm in policy, endowed with many horses and be interested in singing.",
+      "pdf_pages": [
+        51
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 25 · Sloka 24 · PDF page 51 · bphs-97:santhanam:ch25:v24",
+      "previous_atom_id": "bphs-97:santhanam:ch25:v23",
+      "next_atom_id": "bphs-97:santhanam:ch25:v25",
+      "context_before": " If Vyatipat is in Karm Bhava, the native will be religious, peaceful, skilful in religious acts, very learned and far-sighted.\n\n",
+      "context_after": "25. If Vyatipat is in Vyaya Bhava, the native will be given to anger, associated with many activities, disabled, irreligious and",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch25:v25": {
+      "evidence_atom_id": "bphs-97:santhanam:ch25:v25",
+      "chapter_number": 25,
+      "chapter_title": "Effects of Non-Luminous Grahas",
+      "verse_label": "25.",
+      "content_role": "verse",
+      "exact_text": "25. If Vyatipat is in Vyaya Bhava, the native will be given to anger, associated with many activities, disabled, irreligious and hate his own relatives.",
+      "pdf_pages": [
+        51
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 25 · Sloka 25 · PDF page 51 · bphs-97:santhanam:ch25:v25",
+      "previous_atom_id": "bphs-97:santhanam:ch25:v24",
+      "next_atom_id": "bphs-97:santhanam:ch25:v26",
+      "context_before": " If Vyatipat is in Labh Bhava, the native will be extremely opulent, be honourable, truthful, firm in policy, endowed with many horses and be interested in singing.\n\n",
+      "context_after": "26. Effects of Paridhi (or Parivesh) in Various Bhavas (up to Sloka 37). If Paridhi is in Tanu Bhava, the native will be learned",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch25:v26": {
+      "evidence_atom_id": "bphs-97:santhanam:ch25:v26",
+      "chapter_number": 25,
+      "chapter_title": "Effects of Non-Luminous Grahas",
+      "verse_label": "26.",
+      "content_role": "verse",
+      "exact_text": "26. Effects of Paridhi (or Parivesh) in Various Bhavas (up to Sloka 37). If Paridhi is in Tanu Bhava, the native will be learned, truthful, peaceful, rich, endowed with sons, pure, charitable and dear to elders.",
+      "pdf_pages": [
+        51
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 25 · Sloka 26 · PDF page 51 · bphs-97:santhanam:ch25:v26",
+      "previous_atom_id": "bphs-97:santhanam:ch25:v25",
+      "next_atom_id": "bphs-97:santhanam:ch25:v27",
+      "context_before": " If Vyatipat is in Vyaya Bhava, the native will be given to anger, associated with many activities, disabled, irreligious and hate his own relatives.\n\n",
+      "context_after": "27. If Paridhi is in Dhan Bhava, the native will be wealthy, charming, will enjoy\n\n<!-- SOURCE_PAGE 52 -->\n\npleasures, be happy,",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch25:v27": {
+      "evidence_atom_id": "bphs-97:santhanam:ch25:v27",
+      "chapter_number": 25,
+      "chapter_title": "Effects of Non-Luminous Grahas",
+      "verse_label": "27.",
+      "content_role": "verse",
+      "exact_text": "27. If Paridhi is in Dhan Bhava, the native will be wealthy, charming, will enjoy pleasures, be happy, very religious and be a Lord.",
+      "pdf_pages": [
+        51,
+        52
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 25 · Sloka 27 · PDF pages 51-52 · bphs-97:santhanam:ch25:v27",
+      "previous_atom_id": "bphs-97:santhanam:ch25:v26",
+      "next_atom_id": "bphs-97:santhanam:ch25:v28",
+      "context_before": " If Paridhi is in Tanu Bhava, the native will be learned, truthful, peaceful, rich, endowed with sons, pure, charitable and dear to elders.\n\n",
+      "context_after": "28. If Paridhi is in Sahaj Bhava, the native will be fond of his wife, be very charming, pious, well disposed to his men, be a s",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch25:v28": {
+      "evidence_atom_id": "bphs-97:santhanam:ch25:v28",
+      "chapter_number": 25,
+      "chapter_title": "Effects of Non-Luminous Grahas",
+      "verse_label": "28.",
+      "content_role": "verse",
+      "exact_text": "28. If Paridhi is in Sahaj Bhava, the native will be fond of his wife, be very charming, pious, well disposed to his men, be a servant and be respectful of his elders.",
+      "pdf_pages": [
+        52
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 25 · Sloka 28 · PDF page 52 · bphs-97:santhanam:ch25:v28",
+      "previous_atom_id": "bphs-97:santhanam:ch25:v27",
+      "next_atom_id": "bphs-97:santhanam:ch25:v29",
+      "context_before": " If Paridhi is in Dhan Bhava, the native will be wealthy, charming, will enjoy\n\n<!-- SOURCE_PAGE 52 -->\n\npleasures, be happy, very religious and be a Lord.\n\n",
+      "context_after": "29. If Paridhi is in Bandhu Bhava, the native will be wonder-struck, helpful to enemies as well, kind, endowed with everything a",
+      "content_missing": false
+    }
+  }
+}

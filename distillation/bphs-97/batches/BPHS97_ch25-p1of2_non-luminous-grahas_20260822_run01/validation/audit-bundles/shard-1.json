@@ -1,0 +1,1583 @@
+{
+  "shard": 1,
+  "step_count": 9,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch25-v2-dhum-in-lagna.step-001",
+      "method": {
+        "method": "ch25-v2-dhum-in-lagna",
+        "title": "Dhum 落一宫（Lagna）：勇武、眼目美好而性情昏懵易怒",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的性格脾气是什么样的",
+          "我的相貌和眼睛怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dhum is in Lagna, the native will be valiant, endowed with beautiful eyes, stupefied in disposition, unkind, wicked and highly short-tempered.",
+            "Dhum 落一宫（Lagna） 逐宫效应"
+          ],
+          "counter_queries": [
+            "These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction",
+            "非发光副曜本性为凶、会带来损害"
+          ],
+          "boundary_queries": [
+            "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment to get the exact position of the all inauspicious Dhoom",
+            "非发光副曜 Dhum 的定位算法与适用前提"
+          ],
+          "method_queries": [
+            "Effects of Dhum in Various Bhavas (up to Sloka 13)",
+            "Effects of Non-Luminous Grahas",
+            "逐宫看 Dhum 该查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch25-v2-dhum-in-lagna.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Dhum is in Lagna"
+            },
+            {
+              "step_id": "ch25-v2-dhum-in-lagna.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be valiant"
+            },
+            {
+              "step_id": "ch25-v2-dhum-in-lagna.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "endowed with beautiful eyes"
+            },
+            {
+              "step_id": "ch25-v2-dhum-in-lagna.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "stupefied in disposition"
+            },
+            {
+              "step_id": "ch25-v2-dhum-in-lagna.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "unkind, wicked and highly short-tempered"
+            },
+            {
+              "step_id": "ch25-v2-dhum-in-lagna.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Dhum is in Lagna the native will be valiant"
+            },
+            {
+              "step_id": "ch25-v2-dhum-in-lagna.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If Dhum is in 1st house"
+            },
+            {
+              "step_id": "ch25-v2-dhum-in-lagna.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If Dhum is in 1st house the native will be valiant"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少「非发光副曜 Dhum 是否落一宫（Lagna）」这件事实时停止。",
+          "Dhum 的位置未按第 3 章非发光副曜算法定出时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch25-v2-dhum-in-lagna.step-001",
+        "action": "核对非发光副曜 Dhum 是否落一宫（Lagna），据此断本人是否勇武、眼目美好而性情昏懵易怒。",
+        "applicability_scope": "仅限本命盘非发光副曜 Dhum 落一宫（Lagna）一条；Dhum 是第 3 章所列非发光副曜（UpaGrahas）之一，须先按该章算法定出其位置；原文未给时间限定。",
+        "minimum_supported_claim": "Dhum 落一宫（Lagna）时，本人勇武、眼目美好、性情昏懵、不仁、邪恶、极易发怒。",
+        "produced_fact_keys": [
+          "Dhum 落一宫（Lagna）的落宫效应判定"
+        ],
+        "required_fact_keys": [
+          "非发光副曜 Dhum 是否落一宫（Lagna）"
+        ],
+        "condition_logic": {
+          "fact_key": "非发光副曜 Dhum 是否落一宫（Lagna）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Dhum is in Lagna",
+              "claim": "Dhum 落一宫（Lagna）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be valiant",
+              "claim": "勇武"
+            },
+            {
+              "quote": "endowed with beautiful eyes",
+              "claim": "眼目美好"
+            },
+            {
+              "quote": "stupefied in disposition",
+              "claim": "性情昏懵"
+            },
+            {
+              "quote": "unkind, wicked and highly short-tempered",
+              "claim": "不仁、邪恶、极易发怒"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch25:v2",
+            "quote": "If Dhum is in Lagna, the native will be valiant, endowed with beautiful eyes, stupefied in disposition, unkind, wicked and highly short-tempered.",
+            "pdf_pages": [
+              50
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：非发光副曜 Dhum 是否落一宫（Lagna）。",
+        "stop_fact_keys": [
+          "非发光副曜 Dhum 是否落一宫（Lagna）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体年龄、时间、寿数或事件先后——原文只给一宫落宫的断语。",
+          "不得把本条套用到 Dhum 落其他宫位，也不得套用到别的非发光副曜。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "a9cdd620358d72b1c9121c8cb8cff279eaf0b25926952f606ea43d65c47c8539"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch25-v3-dhum-in-dhan.step-001",
+      "method": {
+        "method": "ch25-v3-dhum-in-dhan",
+        "title": "Dhum 落二宫（Dhan Bhava）：多病而富有、肢体有缺、王家受辱",
+        "target_house": 2,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的钱财和身体状况怎么样",
+          "我会不会在上位者那里丢脸"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dhum is in Dhan Bhava, the native will be sickly, wealthy, devoid of a limb, will incur humiliation at royal level, be dull witted and be a eunuch.",
+            "Dhum 落二宫（Dhan Bhava） 逐宫效应"
+          ],
+          "counter_queries": [
+            "These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction",
+            "非发光副曜本性为凶、会带来损害"
+          ],
+          "boundary_queries": [
+            "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment to get the exact position of the all inauspicious Dhoom",
+            "非发光副曜 Dhum 的定位算法与适用前提"
+          ],
+          "method_queries": [
+            "Effects of Dhum in Various Bhavas (up to Sloka 13)",
+            "Effects of Non-Luminous Grahas",
+            "逐宫看 Dhum 该查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch25-v3-dhum-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Dhum is in Dhan Bhava"
+            },
+            {
+              "step_id": "ch25-v3-dhum-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be sickly, wealthy"
+            },
+            {
+              "step_id": "ch25-v3-dhum-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "devoid of a limb"
+            },
+            {
+              "step_id": "ch25-v3-dhum-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will incur humiliation at royal level"
+            },
+            {
+              "step_id": "ch25-v3-dhum-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be dull witted"
+            },
+            {
+              "step_id": "ch25-v3-dhum-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be a eunuch"
+            },
+            {
+              "step_id": "ch25-v3-dhum-in-dhan.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Dhum is in Dhan Bhava the native will be sickly, wealthy"
+            },
+            {
+              "step_id": "ch25-v3-dhum-in-dhan.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If Dhum is in 2nd house"
+            },
+            {
+              "step_id": "ch25-v3-dhum-in-dhan.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If Dhum is in 2nd house the native will be sickly, wealthy"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少「非发光副曜 Dhum 是否落二宫（Dhan Bhava）」这件事实时停止。",
+          "Dhum 的位置未按第 3 章非发光副曜算法定出时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch25-v3-dhum-in-dhan.step-001",
+        "action": "核对非发光副曜 Dhum 是否落二宫（Dhan Bhava），据此断本人是否多病而富有、肢体有缺、王家受辱。",
+        "applicability_scope": "仅限本命盘非发光副曜 Dhum 落二宫（Dhan Bhava）一条；Dhum 是第 3 章所列非发光副曜（UpaGrahas）之一，须先按该章算法定出其位置；原文未给时间限定。",
+        "minimum_supported_claim": "Dhum 落二宫（Dhan Bhava）时，本人多病、富有、肢体有缺、在王家层面受辱、心思迟钝、为阉人（eunuch）。",
+        "produced_fact_keys": [
+          "Dhum 落二宫（Dhan Bhava）的落宫效应判定"
+        ],
+        "required_fact_keys": [
+          "非发光副曜 Dhum 是否落二宫（Dhan Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "非发光副曜 Dhum 是否落二宫（Dhan Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Dhum is in Dhan Bhava",
+              "claim": "Dhum 落二宫（Dhan Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be sickly, wealthy",
+              "claim": "多病、富有"
+            },
+            {
+              "quote": "devoid of a limb",
+              "claim": "肢体有缺"
+            },
+            {
+              "quote": "will incur humiliation at royal level",
+              "claim": "在王家层面受辱"
+            },
+            {
+              "quote": "be dull witted",
+              "claim": "心思迟钝"
+            },
+            {
+              "quote": "be a eunuch",
+              "claim": "为阉人（eunuch）"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch25:v3",
+            "quote": "If Dhum is in Dhan Bhava, the native will be sickly, wealthy, devoid of a limb, will incur humiliation at royal level, be dull witted and be a eunuch.",
+            "pdf_pages": [
+              50
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：非发光副曜 Dhum 是否落二宫（Dhan Bhava）。",
+        "stop_fact_keys": [
+          "非发光副曜 Dhum 是否落二宫（Dhan Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体年龄、时间、寿数或事件先后——原文只给二宫落宫的断语。",
+          "不得把本条套用到 Dhum 落其他宫位，也不得套用到别的非发光副曜。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "35f30f06fe3de49374bd12f95a89637041bb7a19a3baef2ffb86d645e3a242c1"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch25-v4-dhum-in-sahaj.step-001",
+      "method": {
+        "method": "ch25-v4-dhum-in-sahaj",
+        "title": "Dhum 落三宫（Sahaj Bhava）：聪慧大胆、能言善辩、有人手与财富",
+        "target_house": 3,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的胆识和口才怎么样",
+          "我手下会不会有人可用"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Dhum is in Sahaj Bhava, the native will be intelligent, very bold, delighted, eloquent and be endowed with men and wealth.",
+            "Dhum 落三宫（Sahaj Bhava） 逐宫效应"
+          ],
+          "counter_queries": [
+            "These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction",
+            "非发光副曜本性为凶、会带来损害"
+          ],
+          "boundary_queries": [
+            "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment to get the exact position of the all inauspicious Dhoom",
+            "非发光副曜 Dhum 的定位算法与适用前提"
+          ],
+          "method_queries": [
+            "Effects of Dhum in Various Bhavas (up to Sloka 13)",
+            "Effects of Non-Luminous Grahas",
+            "逐宫看 Dhum 该查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch25-v4-dhum-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dhum is in Sahaj Bhava"
+            },
+            {
+              "step_id": "ch25-v4-dhum-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be intelligent, very bold"
+            },
+            {
+              "step_id": "ch25-v4-dhum-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "delighted, eloquent"
+            },
+            {
+              "step_id": "ch25-v4-dhum-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be endowed with men and wealth"
+            },
+            {
+              "step_id": "ch25-v4-dhum-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dhum is in Sahaj Bhava the native will be intelligent, very bold"
+            },
+            {
+              "step_id": "ch25-v4-dhum-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Dhum is in 3rd house"
+            },
+            {
+              "step_id": "ch25-v4-dhum-in-sahaj.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Dhum is in 3rd house the native will be intelligent, very bold"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少「非发光副曜 Dhum 是否落三宫（Sahaj Bhava）」这件事实时停止。",
+          "Dhum 的位置未按第 3 章非发光副曜算法定出时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch25-v4-dhum-in-sahaj.step-001",
+        "action": "核对非发光副曜 Dhum 是否落三宫（Sahaj Bhava），据此断本人是否聪慧大胆、能言善辩、有人手与财富。",
+        "applicability_scope": "仅限本命盘非发光副曜 Dhum 落三宫（Sahaj Bhava）一条；Dhum 是第 3 章所列非发光副曜（UpaGrahas）之一，须先按该章算法定出其位置；原文未给时间限定。",
+        "minimum_supported_claim": "Dhum 落三宫（Sahaj Bhava）时，本人聪慧、极为大胆、欢喜、能言善辩、有人手与财富。",
+        "produced_fact_keys": [
+          "Dhum 落三宫（Sahaj Bhava）的落宫效应判定"
+        ],
+        "required_fact_keys": [
+          "非发光副曜 Dhum 是否落三宫（Sahaj Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "非发光副曜 Dhum 是否落三宫（Sahaj Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dhum is in Sahaj Bhava",
+              "claim": "Dhum 落三宫（Sahaj Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be intelligent, very bold",
+              "claim": "聪慧、极为大胆"
+            },
+            {
+              "quote": "delighted, eloquent",
+              "claim": "欢喜、能言善辩"
+            },
+            {
+              "quote": "be endowed with men and wealth",
+              "claim": "有人手与财富"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch25:v4",
+            "quote": "Dhum is in Sahaj Bhava, the native will be intelligent, very bold, delighted, eloquent and be endowed with men and wealth.",
+            "pdf_pages": [
+              50
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：非发光副曜 Dhum 是否落三宫（Sahaj Bhava）。",
+        "stop_fact_keys": [
+          "非发光副曜 Dhum 是否落三宫（Sahaj Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体年龄、时间、寿数或事件先后——原文只给三宫落宫的断语。",
+          "不得把本条套用到 Dhum 落其他宫位，也不得套用到别的非发光副曜。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "d17ede840e8ffcc9bc143322afed963d67256a730c50968c83450c25ff60a8e7"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch25-v5-dhum-in-bandhu.step-001",
+      "method": {
+        "method": "ch25-v5-dhum-in-bandhu",
+        "title": "Dhum 落四宫（Bandhu Bhava）：因女子离弃而忧伤、通晓一切经论",
+        "target_house": 4,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的感情会不会有离散之苦",
+          "我在学问上怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dhum is in Bandhu Bhava, the native will be grieved on account of being given up by his female, but will be learned in all Shastras.",
+            "Dhum 落四宫（Bandhu Bhava） 逐宫效应"
+          ],
+          "counter_queries": [
+            "These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction",
+            "非发光副曜本性为凶、会带来损害"
+          ],
+          "boundary_queries": [
+            "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment to get the exact position of the all inauspicious Dhoom",
+            "非发光副曜 Dhum 的定位算法与适用前提"
+          ],
+          "method_queries": [
+            "Effects of Dhum in Various Bhavas (up to Sloka 13)",
+            "Effects of Non-Luminous Grahas",
+            "逐宫看 Dhum 该查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch25-v5-dhum-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Dhum is in Bandhu Bhava"
+            },
+            {
+              "step_id": "ch25-v5-dhum-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be grieved on account of being given up by his female"
+            },
+            {
+              "step_id": "ch25-v5-dhum-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be learned in all Shastras"
+            },
+            {
+              "step_id": "ch25-v5-dhum-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Dhum is in Bandhu Bhava the native will be grieved on account of being given up by his female"
+            },
+            {
+              "step_id": "ch25-v5-dhum-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If Dhum is in 4th house"
+            },
+            {
+              "step_id": "ch25-v5-dhum-in-bandhu.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If Dhum is in 4th house the native will be grieved on account of being given up by his female"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少「非发光副曜 Dhum 是否落四宫（Bandhu Bhava）」这件事实时停止。",
+          "Dhum 的位置未按第 3 章非发光副曜算法定出时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch25-v5-dhum-in-bandhu.step-001",
+        "action": "核对非发光副曜 Dhum 是否落四宫（Bandhu Bhava），据此断本人是否因女子离弃而忧伤、通晓一切经论。",
+        "applicability_scope": "仅限本命盘非发光副曜 Dhum 落四宫（Bandhu Bhava）一条；Dhum 是第 3 章所列非发光副曜（UpaGrahas）之一，须先按该章算法定出其位置；原文未给时间限定。原文以男命立说（his female／his wife／wife），女命命中时结论不能照搬。",
+        "minimum_supported_claim": "Dhum 落四宫（Bandhu Bhava）时，本人因被其女子舍弃而忧伤，但通晓一切经论（Shastras）。",
+        "produced_fact_keys": [
+          "Dhum 落四宫（Bandhu Bhava）的落宫效应判定"
+        ],
+        "required_fact_keys": [
+          "非发光副曜 Dhum 是否落四宫（Bandhu Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "非发光副曜 Dhum 是否落四宫（Bandhu Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Dhum is in Bandhu Bhava",
+              "claim": "Dhum 落四宫（Bandhu Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be grieved on account of being given up by his female",
+              "claim": "因被其女子舍弃而忧伤"
+            },
+            {
+              "quote": "will be learned in all Shastras",
+              "claim": "通晓一切经论（Shastras）"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch25:v5",
+            "quote": "If Dhum is in Bandhu Bhava, the native will be grieved on account of being given up by his female, but will be learned in all Shastras.",
+            "pdf_pages": [
+              50
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：非发光副曜 Dhum 是否落四宫（Bandhu Bhava）。",
+        "stop_fact_keys": [
+          "非发光副曜 Dhum 是否落四宫（Bandhu Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体年龄、时间、寿数或事件先后——原文只给四宫落宫的断语。",
+          "不得把本条套用到 Dhum 落其他宫位，也不得套用到别的非发光副曜。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "1a4731815b551f5c1ac7f5cbf86b64dca95ecd2ac2823a748ce1e0f970664fb0"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch25-v6-dhum-in-putr.step-001",
+      "method": {
+        "method": "ch25-v6-dhum-in-putr",
+        "title": "Dhum 落五宫（Putr Bhava）：子嗣有限、没有财富、缺少朋友与咒语",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的子女缘怎么样",
+          "我朋友运和钱财怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dhum is in Putr Bhava, the native will have limited progeny, be devoid of wealth, be great, will eat anything and be bereft of friends and Mantras.",
+            "Dhum 落五宫（Putr Bhava） 逐宫效应"
+          ],
+          "counter_queries": [
+            "These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction",
+            "非发光副曜本性为凶、会带来损害"
+          ],
+          "boundary_queries": [
+            "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment to get the exact position of the all inauspicious Dhoom",
+            "非发光副曜 Dhum 的定位算法与适用前提"
+          ],
+          "method_queries": [
+            "Effects of Dhum in Various Bhavas (up to Sloka 13)",
+            "Effects of Non-Luminous Grahas",
+            "逐宫看 Dhum 该查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch25-v6-dhum-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Dhum is in Putr Bhava"
+            },
+            {
+              "step_id": "ch25-v6-dhum-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will have limited progeny"
+            },
+            {
+              "step_id": "ch25-v6-dhum-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be devoid of wealth"
+            },
+            {
+              "step_id": "ch25-v6-dhum-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be great"
+            },
+            {
+              "step_id": "ch25-v6-dhum-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will eat anything"
+            },
+            {
+              "step_id": "ch25-v6-dhum-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be bereft of friends and Mantras"
+            },
+            {
+              "step_id": "ch25-v6-dhum-in-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Dhum is in Putr Bhava the native will have limited progeny"
+            },
+            {
+              "step_id": "ch25-v6-dhum-in-putr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If Dhum is in 5th house"
+            },
+            {
+              "step_id": "ch25-v6-dhum-in-putr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If Dhum is in 5th house the native will have limited progeny"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少「非发光副曜 Dhum 是否落五宫（Putr Bhava）」这件事实时停止。",
+          "Dhum 的位置未按第 3 章非发光副曜算法定出时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch25-v6-dhum-in-putr.step-001",
+        "action": "核对非发光副曜 Dhum 是否落五宫（Putr Bhava），据此断本人是否子嗣有限、没有财富、缺少朋友与咒语。",
+        "applicability_scope": "仅限本命盘非发光副曜 Dhum 落五宫（Putr Bhava）一条；Dhum 是第 3 章所列非发光副曜（UpaGrahas）之一，须先按该章算法定出其位置；原文未给时间限定。",
+        "minimum_supported_claim": "Dhum 落五宫（Putr Bhava）时，本人子嗣有限、没有财富、为大人物、什么都吃、缺少朋友与咒语（Mantras）。",
+        "produced_fact_keys": [
+          "Dhum 落五宫（Putr Bhava）的落宫效应判定"
+        ],
+        "required_fact_keys": [
+          "非发光副曜 Dhum 是否落五宫（Putr Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "非发光副曜 Dhum 是否落五宫（Putr Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Dhum is in Putr Bhava",
+              "claim": "Dhum 落五宫（Putr Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will have limited progeny",
+              "claim": "子嗣有限"
+            },
+            {
+              "quote": "be devoid of wealth",
+              "claim": "没有财富"
+            },
+            {
+              "quote": "be great",
+              "claim": "为大人物"
+            },
+            {
+              "quote": "will eat anything",
+              "claim": "什么都吃"
+            },
+            {
+              "quote": "be bereft of friends and Mantras",
+              "claim": "缺少朋友与咒语（Mantras）"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch25:v6",
+            "quote": "If Dhum is in Putr Bhava, the native will have limited progeny, be devoid of wealth, be great, will eat anything and be bereft of friends and Mantras.",
+            "pdf_pages": [
+              50
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：非发光副曜 Dhum 是否落五宫（Putr Bhava）。",
+        "stop_fact_keys": [
+          "非发光副曜 Dhum 是否落五宫（Putr Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体年龄、时间、寿数或事件先后——原文只给五宫落宫的断语。",
+          "不得把本条套用到 Dhum 落其他宫位，也不得套用到别的非发光副曜。",
+          "不得把「子嗣有限」写成没有子女或具体子女数目——原文只说 limited progeny。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "2f06144144e5c86468b9bb2a44a97d00a9a4545a039c2d0c56fbfb051d522fba"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch25-v7-dhum-in-ari.step-001",
+      "method": {
+        "method": "ch25-v7-dhum-in-ari",
+        "title": "Dhum 落六宫（Ari Bhava）：强壮胜敌、有名望而无疾病",
+        "target_house": 6,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我跟对手竞争能不能赢",
+          "我的健康怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dhum is in Ari Bhava, the native will be strong, will conquer his enemies, be very brilliant, famous and free from diseases.",
+            "Dhum 落六宫（Ari Bhava） 逐宫效应"
+          ],
+          "counter_queries": [
+            "These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction",
+            "非发光副曜本性为凶、会带来损害"
+          ],
+          "boundary_queries": [
+            "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment to get the exact position of the all inauspicious Dhoom",
+            "非发光副曜 Dhum 的定位算法与适用前提"
+          ],
+          "method_queries": [
+            "Effects of Dhum in Various Bhavas (up to Sloka 13)",
+            "Effects of Non-Luminous Grahas",
+            "逐宫看 Dhum 该查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch25-v7-dhum-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Dhum is in Ari Bhava"
+            },
+            {
+              "step_id": "ch25-v7-dhum-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be strong"
+            },
+            {
+              "step_id": "ch25-v7-dhum-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will conquer his enemies"
+            },
+            {
+              "step_id": "ch25-v7-dhum-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be very brilliant"
+            },
+            {
+              "step_id": "ch25-v7-dhum-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "famous and free from diseases"
+            },
+            {
+              "step_id": "ch25-v7-dhum-in-ari.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Dhum is in Ari Bhava the native will be strong"
+            },
+            {
+              "step_id": "ch25-v7-dhum-in-ari.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If Dhum is in 6th house"
+            },
+            {
+              "step_id": "ch25-v7-dhum-in-ari.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If Dhum is in 6th house the native will be strong"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少「非发光副曜 Dhum 是否落六宫（Ari Bhava）」这件事实时停止。",
+          "Dhum 的位置未按第 3 章非发光副曜算法定出时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch25-v7-dhum-in-ari.step-001",
+        "action": "核对非发光副曜 Dhum 是否落六宫（Ari Bhava），据此断本人是否强壮胜敌、有名望而无疾病。",
+        "applicability_scope": "仅限本命盘非发光副曜 Dhum 落六宫（Ari Bhava）一条；Dhum 是第 3 章所列非发光副曜（UpaGrahas）之一，须先按该章算法定出其位置；原文未给时间限定。",
+        "minimum_supported_claim": "Dhum 落六宫（Ari Bhava）时，本人强壮、战胜其敌人、极有光彩、有名望、无疾病。",
+        "produced_fact_keys": [
+          "Dhum 落六宫（Ari Bhava）的落宫效应判定"
+        ],
+        "required_fact_keys": [
+          "非发光副曜 Dhum 是否落六宫（Ari Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "非发光副曜 Dhum 是否落六宫（Ari Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Dhum is in Ari Bhava",
+              "claim": "Dhum 落六宫（Ari Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be strong",
+              "claim": "强壮"
+            },
+            {
+              "quote": "will conquer his enemies",
+              "claim": "战胜其敌人"
+            },
+            {
+              "quote": "be very brilliant",
+              "claim": "极有光彩"
+            },
+            {
+              "quote": "famous and free from diseases",
+              "claim": "有名望、无疾病"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch25:v7",
+            "quote": "If Dhum is in Ari Bhava, the native will be strong, will conquer his enemies, be very brilliant, famous and free from diseases.",
+            "pdf_pages": [
+              50
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：非发光副曜 Dhum 是否落六宫（Ari Bhava）。",
+        "stop_fact_keys": [
+          "非发光副曜 Dhum 是否落六宫（Ari Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体年龄、时间、寿数或事件先后——原文只给六宫落宫的断语。",
+          "不得把本条套用到 Dhum 落其他宫位，也不得套用到别的非发光副曜。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "f4e818b5835bcadfa7dd3d39598f455b91287f84b04e1c3ba31274f026248aa1"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch25-v8-dhum-in-yuvati.step-001",
+      "method": {
+        "method": "ch25-v8-dhum-in-yuvati",
+        "title": "Dhum 落七宫（Yuvati Bhava）：身无分文、耽于情欲、没有光彩",
+        "target_house": 7,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的两性关系会出什么问题",
+          "我的钱财状况怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dhum is in Yuvati Bhava, the native will be penniless, be ever sensuous, skilful in going to others’ females and be always devoid of brilliance.",
+            "Dhum 落七宫（Yuvati Bhava） 逐宫效应"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment to get the exact position of the all inauspicious Dhoom",
+            "非发光副曜 Dhum 的定位算法与适用前提"
+          ],
+          "method_queries": [
+            "Effects of Dhum in Various Bhavas (up to Sloka 13)",
+            "Effects of Non-Luminous Grahas",
+            "逐宫看 Dhum 该查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch25-v8-dhum-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Dhum is in Yuvati Bhava"
+            },
+            {
+              "step_id": "ch25-v8-dhum-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be penniless"
+            },
+            {
+              "step_id": "ch25-v8-dhum-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be ever sensuous"
+            },
+            {
+              "step_id": "ch25-v8-dhum-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "skilful in going to others’ females"
+            },
+            {
+              "step_id": "ch25-v8-dhum-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be always devoid of brilliance"
+            },
+            {
+              "step_id": "ch25-v8-dhum-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Dhum is in Yuvati Bhava the native will be penniless"
+            },
+            {
+              "step_id": "ch25-v8-dhum-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If Dhum is in 7th house"
+            },
+            {
+              "step_id": "ch25-v8-dhum-in-yuvati.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If Dhum is in 7th house the native will be penniless"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少「非发光副曜 Dhum 是否落七宫（Yuvati Bhava）」这件事实时停止。",
+          "Dhum 的位置未按第 3 章非发光副曜算法定出时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch25-v8-dhum-in-yuvati.step-001",
+        "action": "核对非发光副曜 Dhum 是否落七宫（Yuvati Bhava），据此断本人是否身无分文、耽于情欲、没有光彩。",
+        "applicability_scope": "仅限本命盘非发光副曜 Dhum 落七宫（Yuvati Bhava）一条；Dhum 是第 3 章所列非发光副曜（UpaGrahas）之一，须先按该章算法定出其位置；原文未给时间限定。原文以男命立说（his female／his wife／wife），女命命中时结论不能照搬。",
+        "minimum_supported_claim": "Dhum 落七宫（Yuvati Bhava）时，本人身无分文、一向耽于情欲、善于亲近他人的女子、始终没有光彩。",
+        "produced_fact_keys": [
+          "Dhum 落七宫（Yuvati Bhava）的落宫效应判定"
+        ],
+        "required_fact_keys": [
+          "非发光副曜 Dhum 是否落七宫（Yuvati Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "非发光副曜 Dhum 是否落七宫（Yuvati Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Dhum is in Yuvati Bhava",
+              "claim": "Dhum 落七宫（Yuvati Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be penniless",
+              "claim": "身无分文"
+            },
+            {
+              "quote": "be ever sensuous",
+              "claim": "一向耽于情欲"
+            },
+            {
+              "quote": "skilful in going to others’ females",
+              "claim": "善于亲近他人的女子"
+            },
+            {
+              "quote": "be always devoid of brilliance",
+              "claim": "始终没有光彩"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch25:v8",
+            "quote": "If Dhum is in Yuvati Bhava, the native will be penniless, be ever sensuous, skilful in going to others’ females and be always devoid of brilliance.",
+            "pdf_pages": [
+              50
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：非发光副曜 Dhum 是否落七宫（Yuvati Bhava）。",
+        "stop_fact_keys": [
+          "非发光副曜 Dhum 是否落七宫（Yuvati Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体年龄、时间、寿数或事件先后——原文只给七宫落宫的断语。",
+          "不得把本条套用到 Dhum 落其他宫位，也不得套用到别的非发光副曜。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "95f50c999e79fa826a7a4d880d2e279fb3742e34e43d21c8586ba6f2359d4d60"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch25-v9-dhum-in-randhr.step-001",
+      "method": {
+        "method": "ch25-v9-dhum-in-randhr",
+        "title": "Dhum 落八宫（Randhr Bhava）：缺少勇气、热切诚实而心硬自私",
+        "target_house": 8,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我遇事有没有胆量",
+          "别人怎么看我的为人"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dhum is in Randhr Bhava, the native will be bereft of courage, but be enthusiastic, be truthful, disagreeable, hardhearted and selfish.",
+            "Dhum 落八宫（Randhr Bhava） 逐宫效应"
+          ],
+          "counter_queries": [
+            "These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction",
+            "非发光副曜本性为凶、会带来损害"
+          ],
+          "boundary_queries": [
+            "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment to get the exact position of the all inauspicious Dhoom",
+            "非发光副曜 Dhum 的定位算法与适用前提"
+          ],
+          "method_queries": [
+            "Effects of Dhum in Various Bhavas (up to Sloka 13)",
+            "Effects of Non-Luminous Grahas",
+            "逐宫看 Dhum 该查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch25-v9-dhum-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Dhum is in Randhr Bhava"
+            },
+            {
+              "step_id": "ch25-v9-dhum-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be bereft of courage"
+            },
+            {
+              "step_id": "ch25-v9-dhum-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "but be enthusiastic"
+            },
+            {
+              "step_id": "ch25-v9-dhum-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be truthful, disagreeable"
+            },
+            {
+              "step_id": "ch25-v9-dhum-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "hardhearted and selfish"
+            },
+            {
+              "step_id": "ch25-v9-dhum-in-randhr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Dhum is in Randhr Bhava the native will be bereft of courage"
+            },
+            {
+              "step_id": "ch25-v9-dhum-in-randhr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If Dhum is in 8th house"
+            },
+            {
+              "step_id": "ch25-v9-dhum-in-randhr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If Dhum is in 8th house the native will be bereft of courage"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少「非发光副曜 Dhum 是否落八宫（Randhr Bhava）」这件事实时停止。",
+          "Dhum 的位置未按第 3 章非发光副曜算法定出时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch25-v9-dhum-in-randhr.step-001",
+        "action": "核对非发光副曜 Dhum 是否落八宫（Randhr Bhava），据此断本人是否缺少勇气、热切诚实而心硬自私。",
+        "applicability_scope": "仅限本命盘非发光副曜 Dhum 落八宫（Randhr Bhava）一条；Dhum 是第 3 章所列非发光副曜（UpaGrahas）之一，须先按该章算法定出其位置；原文未给时间限定。",
+        "minimum_supported_claim": "Dhum 落八宫（Randhr Bhava）时，本人缺少勇气，但热切、诚实、不讨喜、心硬、自私。",
+        "produced_fact_keys": [
+          "Dhum 落八宫（Randhr Bhava）的落宫效应判定"
+        ],
+        "required_fact_keys": [
+          "非发光副曜 Dhum 是否落八宫（Randhr Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "非发光副曜 Dhum 是否落八宫（Randhr Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Dhum is in Randhr Bhava",
+              "claim": "Dhum 落八宫（Randhr Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be bereft of courage",
+              "claim": "缺少勇气"
+            },
+            {
+              "quote": "but be enthusiastic",
+              "claim": "但热切"
+            },
+            {
+              "quote": "be truthful, disagreeable",
+              "claim": "诚实、不讨喜"
+            },
+            {
+              "quote": "hardhearted and selfish",
+              "claim": "心硬、自私"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch25:v9",
+            "quote": "If Dhum is in Randhr Bhava, the native will be bereft of courage, but be enthusiastic, be truthful, disagreeable, hardhearted and selfish.",
+            "pdf_pages": [
+              50
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：非发光副曜 Dhum 是否落八宫（Randhr Bhava）。",
+        "stop_fact_keys": [
+          "非发光副曜 Dhum 是否落八宫（Randhr Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体年龄、时间、寿数或事件先后——原文只给八宫落宫的断语。",
+          "不得把本条套用到 Dhum 落其他宫位，也不得套用到别的非发光副曜。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "daa48941063da574707468d1fdc3e77db71dad083fc74ecc61bc12d951e14c54"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch25-v10-dhum-in-dharm.step-001",
+      "method": {
+        "method": "ch25-v10-dhum-in-dharm",
+        "title": "Dhum 落九宫（Dharm Bhava）：有子嗣与福运、富裕受敬、与亲属相处融洽",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子的福运怎么样",
+          "我跟亲戚的关系怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Dhum is in Dharm Bhava, the native will be endowed sons and fortunes, be rich, honourable, kind, religious and well disposed to his relatives.",
+            "Dhum 落九宫（Dharm Bhava） 逐宫效应"
+          ],
+          "counter_queries": [
+            "These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction",
+            "非发光副曜本性为凶、会带来损害"
+          ],
+          "boundary_queries": [
+            "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment to get the exact position of the all inauspicious Dhoom",
+            "非发光副曜 Dhum 的定位算法与适用前提"
+          ],
+          "method_queries": [
+            "Effects of Dhum in Various Bhavas (up to Sloka 13)",
+            "Effects of Non-Luminous Grahas",
+            "逐宫看 Dhum 该查什么"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch25-v10-dhum-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Dhum is in Dharm Bhava"
+            },
+            {
+              "step_id": "ch25-v10-dhum-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be endowed sons and fortunes"
+            },
+            {
+              "step_id": "ch25-v10-dhum-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be rich, honourable"
+            },
+            {
+              "step_id": "ch25-v10-dhum-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "kind, religious"
+            },
+            {
+              "step_id": "ch25-v10-dhum-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "well disposed to his relatives"
+            },
+            {
+              "step_id": "ch25-v10-dhum-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Dhum is in Dharm Bhava the native will be endowed sons and fortunes"
+            },
+            {
+              "step_id": "ch25-v10-dhum-in-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If Dhum is in 9th house"
+            },
+            {
+              "step_id": "ch25-v10-dhum-in-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If Dhum is in 9th house the native will be endowed sons and fortunes"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少「非发光副曜 Dhum 是否落九宫（Dharm Bhava）」这件事实时停止。",
+          "Dhum 的位置未按第 3 章非发光副曜算法定出时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch25-v10-dhum-in-dharm.step-001",
+        "action": "核对非发光副曜 Dhum 是否落九宫（Dharm Bhava），据此断本人是否有子嗣与福运、富裕受敬、与亲属相处融洽。",
+        "applicability_scope": "仅限本命盘非发光副曜 Dhum 落九宫（Dharm Bhava）一条；Dhum 是第 3 章所列非发光副曜（UpaGrahas）之一，须先按该章算法定出其位置；原文未给时间限定。",
+        "minimum_supported_claim": "Dhum 落九宫（Dharm Bhava）时，本人有子嗣与福运、富裕、受人尊敬、仁慈、虔敬、与亲属相处融洽。",
+        "produced_fact_keys": [
+          "Dhum 落九宫（Dharm Bhava）的落宫效应判定"
+        ],
+        "required_fact_keys": [
+          "非发光副曜 Dhum 是否落九宫（Dharm Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "非发光副曜 Dhum 是否落九宫（Dharm Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Dhum is in Dharm Bhava",
+              "claim": "Dhum 落九宫（Dharm Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be endowed sons and fortunes",
+              "claim": "有子嗣与福运"
+            },
+            {
+              "quote": "be rich, honourable",
+              "claim": "富裕、受人尊敬"
+            },
+            {
+              "quote": "kind, religious",
+              "claim": "仁慈、虔敬"
+            },
+            {
+              "quote": "well disposed to his relatives",
+              "claim": "与亲属相处融洽"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch25:v10",
+            "quote": "If Dhum is in Dharm Bhava, the native will be endowed sons and fortunes, be rich, honourable, kind, religious and well disposed to his relatives.",
+            "pdf_pages": [
+              50
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：非发光副曜 Dhum 是否落九宫（Dharm Bhava）。",
+        "stop_fact_keys": [
+          "非发光副曜 Dhum 是否落九宫（Dharm Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体年龄、时间、寿数或事件先后——原文只给九宫落宫的断语。",
+          "不得把本条套用到 Dhum 落其他宫位，也不得套用到别的非发光副曜。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "2ee31076d9bf0d31a5a4a17980e0574bda3aa85b8f9d5ff9aa3a09f2bcb37f35"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch25:v2": {
+      "evidence_atom_id": "bphs-97:santhanam:ch25:v2",
+      "chapter_number": 25,
+      "chapter_title": "Effects of Non-Luminous Grahas",
+      "verse_label": "2.",
+      "content_role": "verse",
+      "exact_text": "2. Effects of Dhum in Various Bhavas (up to Sloka 13). If Dhum is in Lagna, the native will be valiant, endowed with beautiful eyes, stupefied in disposition, unkind, wicked and highly short-tempered.",
+      "pdf_pages": [
+        50
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 25 · Sloka 2 · PDF page 50 · bphs-97:santhanam:ch25:v2",
+      "previous_atom_id": "bphs-97:santhanam:ch25:v1",
+      "next_atom_id": "bphs-97:santhanam:ch25:v3",
+      "context_before": " viz. Surya, Chandra, Mangal, Budh, Guru, Shukr, Shani, Rahu and Ketu. Now I tell you about the effects of nonluminous Grahas.\n\n",
+      "context_after": "3. If Dhum is in Dhan Bhava, the native will be sickly, wealthy, devoid of a limb, will incur humiliation at royal level, be dul",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch25:v3": {
+      "evidence_atom_id": "bphs-97:santhanam:ch25:v3",
+      "chapter_number": 25,
+      "chapter_title": "Effects of Non-Luminous Grahas",
+      "verse_label": "3.",
+      "content_role": "verse",
+      "exact_text": "3. If Dhum is in Dhan Bhava, the native will be sickly, wealthy, devoid of a limb, will incur humiliation at royal level, be dull witted and be a eunuch.",
+      "pdf_pages": [
+        50
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 25 · Sloka 3 · PDF page 50 · bphs-97:santhanam:ch25:v3",
+      "previous_atom_id": "bphs-97:santhanam:ch25:v2",
+      "next_atom_id": "bphs-97:santhanam:ch25:v4",
+      "context_before": " If Dhum is in Lagna, the native will be valiant, endowed with beautiful eyes, stupefied in disposition, unkind, wicked and highly short-tempered.\n\n",
+      "context_after": "4. Dhum is in Sahaj Bhava, the native will be intelligent, very bold, delighted, eloquent and be endowed with men and wealth.\n\n5",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch25:v4": {
+      "evidence_atom_id": "bphs-97:santhanam:ch25:v4",
+      "chapter_number": 25,
+      "chapter_title": "Effects of Non-Luminous Grahas",
+      "verse_label": "4.",
+      "content_role": "verse",
+      "exact_text": "4. Dhum is in Sahaj Bhava, the native will be intelligent, very bold, delighted, eloquent and be endowed with men and wealth.",
+      "pdf_pages": [
+        50
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 25 · Sloka 4 · PDF page 50 · bphs-97:santhanam:ch25:v4",
+      "previous_atom_id": "bphs-97:santhanam:ch25:v3",
+      "next_atom_id": "bphs-97:santhanam:ch25:v5",
+      "context_before": " If Dhum is in Dhan Bhava, the native will be sickly, wealthy, devoid of a limb, will incur humiliation at royal level, be dull witted and be a eunuch.\n\n",
+      "context_after": "5. If Dhum is in Bandhu Bhava, the native will be grieved on account of being given up by his female, but will be learned in all",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch25:v5": {
+      "evidence_atom_id": "bphs-97:santhanam:ch25:v5",
+      "chapter_number": 25,
+      "chapter_title": "Effects of Non-Luminous Grahas",
+      "verse_label": "5.",
+      "content_role": "verse",
+      "exact_text": "5. If Dhum is in Bandhu Bhava, the native will be grieved on account of being given up by his female, but will be learned in all Shastras.",
+      "pdf_pages": [
+        50
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 25 · Sloka 5 · PDF page 50 · bphs-97:santhanam:ch25:v5",
+      "previous_atom_id": "bphs-97:santhanam:ch25:v4",
+      "next_atom_id": "bphs-97:santhanam:ch25:v6",
+      "context_before": "\n4. Dhum is in Sahaj Bhava, the native will be intelligent, very bold, delighted, eloquent and be endowed with men and wealth.\n\n",
+      "context_after": "6. If Dhum is in Putr Bhava, the native will have limited progeny, be devoid of wealth, be great, will eat anything and be beref",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch25:v6": {
+      "evidence_atom_id": "bphs-97:santhanam:ch25:v6",
+      "chapter_number": 25,
+      "chapter_title": "Effects of Non-Luminous Grahas",
+      "verse_label": "6.",
+      "content_role": "verse",
+      "exact_text": "6. If Dhum is in Putr Bhava, the native will have limited progeny, be devoid of wealth, be great, will eat anything and be bereft of friends and Mantras.",
+      "pdf_pages": [
+        50
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 25 · Sloka 6 · PDF page 50 · bphs-97:santhanam:ch25:v6",
+      "previous_atom_id": "bphs-97:santhanam:ch25:v5",
+      "next_atom_id": "bphs-97:santhanam:ch25:v7",
+      "context_before": " If Dhum is in Bandhu Bhava, the native will be grieved on account of being given up by his female, but will be learned in all Shastras.\n\n",
+      "context_after": "7. If Dhum is in Ari Bhava, the native will be strong, will conquer his enemies, be very brilliant, famous and free from disease",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch25:v7": {
+      "evidence_atom_id": "bphs-97:santhanam:ch25:v7",
+      "chapter_number": 25,
+      "chapter_title": "Effects of Non-Luminous Grahas",
+      "verse_label": "7.",
+      "content_role": "verse",
+      "exact_text": "7. If Dhum is in Ari Bhava, the native will be strong, will conquer his enemies, be very brilliant, famous and free from diseases.",
+      "pdf_pages": [
+        50
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 25 · Sloka 7 · PDF page 50 · bphs-97:santhanam:ch25:v7",
+      "previous_atom_id": "bphs-97:santhanam:ch25:v6",
+      "next_atom_id": "bphs-97:santhanam:ch25:v8",
+      "context_before": " If Dhum is in Putr Bhava, the native will have limited progeny, be devoid of wealth, be great, will eat anything and be bereft of friends and Mantras.\n\n",
+      "context_after": "8. If Dhum is in Yuvati Bhava, the native will be penniless, be ever sensuous, skilful in going to others’ females and be always",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch25:v8": {
+      "evidence_atom_id": "bphs-97:santhanam:ch25:v8",
+      "chapter_number": 25,
+      "chapter_title": "Effects of Non-Luminous Grahas",
+      "verse_label": "8.",
+      "content_role": "verse",
+      "exact_text": "8. If Dhum is in Yuvati Bhava, the native will be penniless, be ever sensuous, skilful in going to others’ females and be always devoid of brilliance.",
+      "pdf_pages": [
+        50
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 25 · Sloka 8 · PDF page 50 · bphs-97:santhanam:ch25:v8",
+      "previous_atom_id": "bphs-97:santhanam:ch25:v7",
+      "next_atom_id": "bphs-97:santhanam:ch25:v9",
+      "context_before": " If Dhum is in Ari Bhava, the native will be strong, will conquer his enemies, be very brilliant, famous and free from diseases.\n\n",
+      "context_after": "9. If Dhum is in Randhr Bhava, the native will be bereft of courage, but be enthusiastic, be truthful, disagreeable, hardhearted",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch25:v9": {
+      "evidence_atom_id": "bphs-97:santhanam:ch25:v9",
+      "chapter_number": 25,
+      "chapter_title": "Effects of Non-Luminous Grahas",
+      "verse_label": "9.",
+      "content_role": "verse",
+      "exact_text": "9. If Dhum is in Randhr Bhava, the native will be bereft of courage, but be enthusiastic, be truthful, disagreeable, hardhearted and selfish.",
+      "pdf_pages": [
+        50
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 25 · Sloka 9 · PDF page 50 · bphs-97:santhanam:ch25:v9",
+      "previous_atom_id": "bphs-97:santhanam:ch25:v8",
+      "next_atom_id": "bphs-97:santhanam:ch25:v10",
+      "context_before": " If Dhum is in Yuvati Bhava, the native will be penniless, be ever sensuous, skilful in going to others’ females and be always devoid of brilliance.\n\n",
+      "context_after": "10. If Dhum is in Dharm Bhava, the native will be endowed sons and fortunes, be rich, honourable, kind, religious and well dispo",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch25:v10": {
+      "evidence_atom_id": "bphs-97:santhanam:ch25:v10",
+      "chapter_number": 25,
+      "chapter_title": "Effects of Non-Luminous Grahas",
+      "verse_label": "10.",
+      "content_role": "verse",
+      "exact_text": "10. If Dhum is in Dharm Bhava, the native will be endowed sons and fortunes, be rich, honourable, kind, religious and well disposed to his relatives.",
+      "pdf_pages": [
+        50
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 25 · Sloka 10 · PDF page 50 · bphs-97:santhanam:ch25:v10",
+      "previous_atom_id": "bphs-97:santhanam:ch25:v9",
+      "next_atom_id": "bphs-97:santhanam:ch25:v11",
+      "context_before": " If Dhum is in Randhr Bhava, the native will be bereft of courage, but be enthusiastic, be truthful, disagreeable, hardhearted and selfish.\n\n",
+      "context_after": "11. If Dhum is in Karm Bhava, the native will be endowed with sons and fortunes, be delighted, intelligent, happy and truthful.\n",
+      "content_missing": false
+    }
+  }
+}

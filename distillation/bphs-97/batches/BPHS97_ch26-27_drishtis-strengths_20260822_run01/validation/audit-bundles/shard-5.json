@@ -1,0 +1,158 @@
+{
+  "shard": 5,
+  "step_count": 1,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch27-v37-38-effects-through-strongest-graha.step-001",
+      "method": {
+        "method": "ch27-v37-38-effects-through-strongest-graha",
+        "title": "宫的瑜伽与效应经最强行星应验",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "某一宫的效应会通过哪颗行星显现",
+          "我盘里哪颗行星说了算"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Whatever Yogas, or effects have been stated with respect to a Bhava, will come to pass through the strongest Grah",
+            "宫的瑜伽与效应 经最强行星应验"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "However, Shani’s extreme strength will give long life as well as miseries",
+            "最强的行星是否一定带来吉果"
+          ],
+          "method_queries": [
+            "thus the various sources of strengths be gathered together and effects declared",
+            "怎样判定本盘哪颗行星最强"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch27-v37-38-effects-through-strongest-graha.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the various sources of strengths be gathered together and effects declared"
+            },
+            {
+              "step_id": "ch27-v37-38-effects-through-strongest-graha.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Whatever Yogas, or effects have been stated with respect to a Bhava"
+            },
+            {
+              "step_id": "ch27-v37-38-effects-through-strongest-graha.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will come to pass through the strongest Grah"
+            },
+            {
+              "step_id": "ch27-v37-38-effects-through-strongest-graha.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the various sources of strengths be gathered together and effects declared will come to pass through the strongest Grah"
+            },
+            {
+              "step_id": "ch27-v37-38-effects-through-strongest-graha.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Whatever Yogas, or effects have been stated with respect to a Bhava will come to pass through the strongest Grah"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "无法确定本盘中哪颗行星最强时停止。",
+          "该宫的瑜伽或效应在原文中找不到出处时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch27-v37-38-effects-through-strongest-graha.step-001",
+        "action": "把各类力量汇总后找出本盘最强的行星，作为该宫已述瑜伽与效应的应验途径。",
+        "applicability_scope": "原文所指「已就某一宫说过的瑜伽或效应」来自书中各宫断语，本步不替它指定具体条目；原文只说把各类力量汇总后再断，没有给出「最强」的排序算法。",
+        "minimum_supported_claim": "把各类力量汇总后再断效应；凡就某一宫（Bhava）说过的瑜伽（Yogas）或效应，都会通过最强的行星（Grah）应验。",
+        "produced_fact_keys": [
+          "该宫效应的应验行星判定"
+        ],
+        "required_fact_keys": [
+          "本盘中哪颗行星（Grah）最强"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘中哪颗行星（Grah）最强"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "the various sources of strengths be gathered together and effects declared",
+              "claim": "把各类力量汇总后再断效应"
+            },
+            {
+              "quote": "Whatever Yogas, or effects have been stated with respect to a Bhava",
+              "claim": "凡就某一宫（Bhava）说过的瑜伽（Yogas）或效应"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will come to pass through the strongest Grah",
+              "claim": "都会通过最强的行星（Grah）应验"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch27:v37-38",
+            "quote": "O Brahmin, thus the various sources of strengths be gathered together and effects declared. Whatever Yogas, or effects have been stated with respect to a Bhava, will come to pass through the strongest Grah.",
+            "pdf_pages": [
+              60
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中哪颗行星（Grah）最强。",
+        "stop_fact_keys": [
+          "本盘中哪颗行星（Grah）最强"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此改动原文对该宫已给出的效应内容。",
+          "不得据此推断应验的时间。",
+          "原文只说效应经最强行星应验，不得反推最强行星必定带来吉果。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "1a1d967d7d5e00dad0cd41e51a3f5f822efbf283c78cbbd0ea1b9877a7be226a"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch27:v37-38": {
+      "evidence_atom_id": "bphs-97:santhanam:ch27:v37-38",
+      "chapter_number": 27,
+      "chapter_title": "Evaluation Of Strengths",
+      "verse_label": "37-38.",
+      "content_role": "verse",
+      "exact_text": "37-38. Bhava Effects. O Brahmin, thus the various sources of strengths be gathered together and effects declared. Whatever Yogas, or effects have been stated with respect to a Bhava, will come to pass through the strongest Grah.",
+      "pdf_pages": [
+        60
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 27 · Sloka 37-38 · PDF page 60 · bphs-97:santhanam:ch27:v37-38",
+      "previous_atom_id": "bphs-97:santhanam:ch27:v34-36",
+      "next_atom_id": "bphs-97:santhanam:ch27:v39-40",
+      "context_before": "s. The same required for Chandra and Shukra are 133, 50, 30, 100 and 40. For Mangal and Shani these are 96, 30, 40, 67 and 20.\n\n",
+      "context_after": "39-40. Eligibility of Issue Fruitful Predictions. O Maitreya, the words of one, who has achieved skill in mathematics, one, who ",
+      "content_missing": false
+    }
+  }
+}

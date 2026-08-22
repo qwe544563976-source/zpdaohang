@@ -1,0 +1,651 @@
+{
+  "schema_version": "judgment-method-recipes/v2",
+  "pilot_only": false,
+  "publishable": false,
+  "generation": {
+    "generator": "book-to-judgment-navigation/scripts/build_methods.py",
+    "generator_version": "2",
+    "extraction_schema": "judgment-method-extraction/v2",
+    "batch_id": "BPHS97_ch26-27_drishtis-strengths_20260822_run01",
+    "chapter_features": [
+      "simple_house_placement"
+    ],
+    "book_strategy": "rule_book",
+    "review_mode": "full",
+    "review_reason": "工作单要求逐步全审",
+    "source_scope_count": 30,
+    "audit_step_ids": [
+      "ch27-v32-33-shadbal-favourable.step-001",
+      "ch27-v32-33-shadbal-favourable.step-002",
+      "ch27-v32-33-shadbal-favourable.step-003",
+      "ch27-v32-33-shani-extreme-strength.step-001",
+      "ch27-v37-38-effects-through-strongest-graha.step-001"
+    ],
+    "high_risk_terms": {
+      "ch27-v32-33-shadbal-favourable.step-001": [
+        {
+          "term": "390",
+          "term_class": "number",
+          "mapped_quote": "390, 360, 300, 420, 390, 330 and 300 Virupas are the Shad Bal Pindas",
+          "mapped_claim": "六力（Shad Bal）Pinda 达到 390、360、300、420、390、330、300 Virupas"
+        },
+        {
+          "term": "360",
+          "term_class": "number",
+          "mapped_quote": "390, 360, 300, 420, 390, 330 and 300 Virupas are the Shad Bal Pindas",
+          "mapped_claim": "六力（Shad Bal）Pinda 达到 390、360、300、420、390、330、300 Virupas"
+        },
+        {
+          "term": "300",
+          "term_class": "number",
+          "mapped_quote": "390, 360, 300, 420, 390, 330 and 300 Virupas are the Shad Bal Pindas",
+          "mapped_claim": "六力（Shad Bal）Pinda 达到 390、360、300、420、390、330、300 Virupas"
+        },
+        {
+          "term": "420",
+          "term_class": "number",
+          "mapped_quote": "390, 360, 300, 420, 390, 330 and 300 Virupas are the Shad Bal Pindas",
+          "mapped_claim": "六力（Shad Bal）Pinda 达到 390、360、300、420、390、330、300 Virupas"
+        },
+        {
+          "term": "330",
+          "term_class": "number",
+          "mapped_quote": "390, 360, 300, 420, 390, 330 and 300 Virupas are the Shad Bal Pindas",
+          "mapped_claim": "六力（Shad Bal）Pinda 达到 390、360、300、420、390、330、300 Virupas"
+        },
+        {
+          "term": "surya",
+          "term_class": "proper_noun",
+          "mapped_quote": "needed for Surya etc. to be considered strong",
+          "mapped_claim": "Surya 等行星才视为有力"
+        }
+      ],
+      "ch27-v32-33-shani-extreme-strength.step-001": [
+        {
+          "term": "shani",
+          "term_class": "proper_noun",
+          "mapped_quote": "Shani’s extreme strength",
+          "mapped_claim": "土星（Shani）极强"
+        }
+      ]
+    }
+  },
+  "methods": [
+    {
+      "method": "ch27-v32-33-shadbal-favourable",
+      "title": "六力达标：行星有力则对命主显吉",
+      "generalization_scope": "general_rule",
+      "pilot_only": false,
+      "publishable": false,
+      "workflow_status": "pilot_candidate",
+      "workflow_history": [
+        "pilot_candidate"
+      ],
+      "source_status": "single_explicit_source",
+      "fact_binding_status": "unmapped",
+      "upstream_issue_ids": [],
+      "user_intents": [
+        "我盘里这颗行星够不够有力",
+        "行星有力对我是好事吗"
+      ],
+      "required_facts": [
+        "所考察行星（Grah）的六力（Shad Bal）总值是多少 Virupas"
+      ],
+      "conditional_facts": [],
+      "dependencies": [],
+      "steps": [
+        {
+          "step_id": "ch27-v32-33-shadbal-favourable.step-001",
+          "action": "取所考察行星的六力（Shad Bal）总值，与原文列出的所需 Shad Bal Pinda 比较，判定它是否达到有力的门槛。",
+          "applicability_scope": "仅限本章 Shad Bal 体系内的强弱判定；原文只写「Surya etc.」，没有把七个数值逐颗对应到行星，本步不替它指定对应次序。",
+          "minimum_supported_claim": "六力（Shad Bal）Pinda 达到 390、360、300、420、390、330、300 Virupas 时，Surya 等行星才视为有力。",
+          "produced_fact_keys": [
+            "所考察行星（Grah）的六力（Shad Bal）达标判定"
+          ],
+          "required_fact_keys": [
+            "所考察行星（Grah）的六力（Shad Bal）总值是多少 Virupas"
+          ],
+          "condition_logic": {
+            "fact_key": "所考察行星（Grah）的六力（Shad Bal）总值是多少 Virupas"
+          },
+          "conditional_fact_requirements": [],
+          "source_status": "single_explicit_source",
+          "claim_terms": {
+            "conditions": [
+              {
+                "quote": "390, 360, 300, 420, 390, 330 and 300 Virupas are the Shad Bal Pindas",
+                "claim": "六力（Shad Bal）Pinda 达到 390、360、300、420、390、330、300 Virupas"
+              }
+            ],
+            "results": [
+              {
+                "quote": "needed for Surya etc. to be considered strong",
+                "claim": "Surya 等行星才视为有力"
+              }
+            ]
+          },
+          "evidence_refs": [
+            {
+              "evidence_atom_id": "bphs-97:santhanam:ch27:v32-33",
+              "quote": "390, 360, 300, 420, 390, 330 and 300 Virupas are the Shad Bal Pindas, needed for Surya etc. to be considered strong.",
+              "pdf_pages": [
+                60
+              ]
+            }
+          ],
+          "stop_condition": "缺少以下固定事实即停止：所考察行星（Grah）的六力（Shad Bal）总值是多少 Virupas。",
+          "stop_fact_keys": [
+            "所考察行星（Grah）的六力（Shad Bal）总值是多少 Virupas"
+          ],
+          "exception_relations": [],
+          "forbidden_extensions": [
+            "本步只判定有力与否，不得据此直接给出任何吉凶事项。",
+            "原文只写 Surya etc.，不得自行指定七个所需数值与各行星的逐一对应次序。"
+          ],
+          "context_reference": false,
+          "context_bindings": [],
+          "time_scope": {
+            "kind": "none",
+            "label": "原文没有时间限定",
+            "fact_keys": []
+          },
+          "concession_conditions": [],
+          "step_hash": "89c6df9b6f8ed91526ab5850a99151beb44a917a57d1da677f2ee04636ac8cb8"
+        },
+        {
+          "step_id": "ch27-v32-33-shadbal-favourable.step-002",
+          "action": "把所考察行星的六力（Shad Bal）总值与同偈前句给出的所需数值比较，判定是否属于极有力。",
+          "applicability_scope": "「上述数值」承接同偈前句给出的所需 Shad Bal Pinda；原文没有说明超出多少才算超出，也没有说明本句的 very strong 与同偈末句 Shani 的 extreme strength 是否同一状态。",
+          "minimum_supported_claim": "六力（Shad Bal）超过上述所需数值时，该行星（Grah）视为极有力。",
+          "produced_fact_keys": [
+            "所考察行星（Grah）的六力（Shad Bal）极有力判定"
+          ],
+          "required_fact_keys": [
+            "所考察行星（Grah）的六力（Shad Bal）总值是多少 Virupas"
+          ],
+          "condition_logic": {
+            "fact_key": "所考察行星（Grah）的六力（Shad Bal）总值是多少 Virupas"
+          },
+          "conditional_fact_requirements": [],
+          "source_status": "single_explicit_source",
+          "claim_terms": {
+            "conditions": [
+              {
+                "quote": "If the strength exceeds the above-mentioned values",
+                "claim": "六力（Shad Bal）超过上述所需数值"
+              }
+            ],
+            "results": [
+              {
+                "quote": "the Grah is deemed to be very strong",
+                "claim": "该行星（Grah）视为极有力"
+              }
+            ]
+          },
+          "evidence_refs": [
+            {
+              "evidence_atom_id": "bphs-97:santhanam:ch27:v32-33",
+              "quote": "If the strength exceeds the above-mentioned values, the Grah is deemed to be very strong.",
+              "pdf_pages": [
+                60
+              ]
+            }
+          ],
+          "stop_condition": "缺少以下固定事实即停止：所考察行星（Grah）的六力（Shad Bal）总值是多少 Virupas。",
+          "stop_fact_keys": [
+            "所考察行星（Grah）的六力（Shad Bal）总值是多少 Virupas"
+          ],
+          "exception_relations": [],
+          "forbidden_extensions": [
+            "原文未说明「very strong」与同偈末句 Shani 的「extreme strength」是否同一状态，两者不得互相代入。",
+            "本步只做强度分级，不得据此给出任何吉凶事项。"
+          ],
+          "context_reference": true,
+          "context_bindings": [
+            "bphs-97:santhanam:ch27:v32-33"
+          ],
+          "time_scope": {
+            "kind": "none",
+            "label": "原文没有时间限定",
+            "fact_keys": []
+          },
+          "concession_conditions": [],
+          "step_hash": "ad1eb6e0de6b50a15aed356590b504425263913ee924117744e4ea1f4609249b"
+        },
+        {
+          "step_id": "ch27-v32-33-shadbal-favourable.step-003",
+          "action": "在该行星已判定达到所需六力（Shad Bal）时，按原文断它凭力量对命主显出有利。",
+          "applicability_scope": "原文只说凭其力量对命主显出有利，没有指明显在哪一宫、哪一时段或哪一件事上。",
+          "minimum_supported_claim": "行星（Grah）具备所需的六力（Shad Bal）时，会凭其力量对命主（native）显出有利。",
+          "produced_fact_keys": [
+            "所考察行星（Grah）对命主显吉判定"
+          ],
+          "required_fact_keys": [
+            "所考察行星（Grah）的六力（Shad Bal）达标判定"
+          ],
+          "condition_logic": {
+            "fact_key": "所考察行星（Grah）的六力（Shad Bal）达标判定"
+          },
+          "conditional_fact_requirements": [],
+          "source_status": "single_explicit_source",
+          "claim_terms": {
+            "conditions": [
+              {
+                "quote": "If a Grah has the required Shad Bal",
+                "claim": "行星（Grah）具备所需的六力（Shad Bal）"
+              }
+            ],
+            "results": [
+              {
+                "quote": "it will prove favourable to the native by virtue of its strength",
+                "claim": "凭其力量对命主（native）显出有利"
+              }
+            ]
+          },
+          "evidence_refs": [
+            {
+              "evidence_atom_id": "bphs-97:santhanam:ch27:v32-33",
+              "quote": "If a Grah has the required Shad Bal, it will prove favourable to the native by virtue of its strength.",
+              "pdf_pages": [
+                60
+              ]
+            }
+          ],
+          "stop_condition": "缺少以下固定事实即停止：所考察行星（Grah）的六力（Shad Bal）达标判定。",
+          "stop_fact_keys": [
+            "所考察行星（Grah）的六力（Shad Bal）达标判定"
+          ],
+          "exception_relations": [],
+          "forbidden_extensions": [
+            "不得据此推断具体的应验事项、时间或程度。",
+            "不得把这一条反推成六力不足即对命主不利。"
+          ],
+          "context_reference": false,
+          "context_bindings": [],
+          "time_scope": {
+            "kind": "none",
+            "label": "原文没有时间限定",
+            "fact_keys": []
+          },
+          "concession_conditions": [],
+          "step_hash": "4c2a6cc8c1199945ad5e7bd6d400761b743a284c5f911e7912399ac4296bccd9"
+        }
+      ],
+      "retrieval_plan": {
+        "support_queries": [
+          "If a Grah has the required Shad Bal, it will prove favourable to the native by virtue of its strength",
+          "390, 360, 300, 420, 390, 330 and 300 Virupas are the Shad Bal Pindas",
+          "六力达标 行星对命主显吉"
+        ],
+        "counter_queries": [
+          "However, Shani’s extreme strength will give long life as well as miseries",
+          "力量强反而带来苦难的说法"
+        ],
+        "boundary_queries": [
+          "Evaluation Of Strengths",
+          "六力判强的适用范围：只算 Surya 到 Shani 七曜"
+        ],
+        "method_queries": [
+          "thus the various sources of strengths be gathered together and effects declared",
+          "怎样把各类力量汇总起来算六力"
+        ],
+        "derived_step_queries": [
+          {
+            "step_id": "ch27-v32-33-shadbal-favourable.step-001",
+            "lane": "support",
+            "origin": "verbatim_condition",
+            "query": "390, 360, 300, 420, 390, 330 and 300 Virupas are the Shad Bal Pindas"
+          },
+          {
+            "step_id": "ch27-v32-33-shadbal-favourable.step-001",
+            "lane": "support",
+            "origin": "verbatim_result",
+            "query": "needed for Surya etc. to be considered strong"
+          },
+          {
+            "step_id": "ch27-v32-33-shadbal-favourable.step-001",
+            "lane": "support",
+            "origin": "verbatim_condition_plus_result",
+            "query": "390, 360, 300, 420, 390, 330 and 300 Virupas are the Shad Bal Pindas needed for Surya etc. to be considered strong"
+          },
+          {
+            "step_id": "ch27-v32-33-shadbal-favourable.step-001",
+            "lane": "support",
+            "origin": "bilingual_verbatim_result",
+            "query": "needed for sun etc. to be considered strong"
+          },
+          {
+            "step_id": "ch27-v32-33-shadbal-favourable.step-001",
+            "lane": "support",
+            "origin": "bilingual_verbatim_condition_plus_result",
+            "query": "390, 360, 300, 420, 390, 330 and 300 Virupas are the Shad Bal Pindas needed for sun etc. to be considered strong"
+          },
+          {
+            "step_id": "ch27-v32-33-shadbal-favourable.step-002",
+            "lane": "support",
+            "origin": "verbatim_condition",
+            "query": "If the strength exceeds the above-mentioned values"
+          },
+          {
+            "step_id": "ch27-v32-33-shadbal-favourable.step-002",
+            "lane": "support",
+            "origin": "verbatim_result",
+            "query": "the Grah is deemed to be very strong"
+          },
+          {
+            "step_id": "ch27-v32-33-shadbal-favourable.step-002",
+            "lane": "support",
+            "origin": "verbatim_condition_plus_result",
+            "query": "If the strength exceeds the above-mentioned values the Grah is deemed to be very strong"
+          },
+          {
+            "step_id": "ch27-v32-33-shadbal-favourable.step-003",
+            "lane": "support",
+            "origin": "verbatim_condition",
+            "query": "If a Grah has the required Shad Bal"
+          },
+          {
+            "step_id": "ch27-v32-33-shadbal-favourable.step-003",
+            "lane": "support",
+            "origin": "verbatim_result",
+            "query": "it will prove favourable to the native by virtue of its strength"
+          },
+          {
+            "step_id": "ch27-v32-33-shadbal-favourable.step-003",
+            "lane": "support",
+            "origin": "verbatim_condition_plus_result",
+            "query": "If a Grah has the required Shad Bal it will prove favourable to the native by virtue of its strength"
+          }
+        ]
+      },
+      "stop_conditions": [
+        "缺少所考察行星（Grah）的六力（Shad Bal）总值时停止。",
+        "无法确定所考察行星对应原文所列哪一个所需 Shad Bal Pinda 数值时停止。",
+        "所考察对象不是原文所说的 Surya 至 Shani 七曜时停止。"
+      ],
+      "executable_in_pilot": false,
+      "spine_slot_hint": null
+    },
+    {
+      "method": "ch27-v32-33-shani-extreme-strength",
+      "title": "土星极强：长寿同时带来苦难",
+      "generalization_scope": "general_rule",
+      "pilot_only": false,
+      "publishable": false,
+      "workflow_status": "pilot_candidate",
+      "workflow_history": [
+        "pilot_candidate"
+      ],
+      "source_status": "single_explicit_source",
+      "fact_binding_status": "unmapped",
+      "upstream_issue_ids": [],
+      "user_intents": [
+        "我的寿命长不长",
+        "土星很强对我到底是好是坏"
+      ],
+      "required_facts": [
+        "土星（Shani）的六力（Shad Bal）是否达到极强（extreme strength）"
+      ],
+      "conditional_facts": [],
+      "dependencies": [],
+      "steps": [
+        {
+          "step_id": "ch27-v32-33-shani-extreme-strength.step-001",
+          "action": "核对土星（Shani）是否处于原文所说的极强（extreme strength）状态，据以断长寿与苦难。",
+          "applicability_scope": "原文没有界定「extreme strength」的门槛，也没有说明它与同偈「very strong」是否同一状态；该状态未确定即停判。",
+          "minimum_supported_claim": "土星（Shani）极强时，会带来长寿以及苦难。",
+          "produced_fact_keys": [
+            "土星（Shani）极强的长寿与苦难判定"
+          ],
+          "required_fact_keys": [
+            "土星（Shani）的六力（Shad Bal）是否达到极强（extreme strength）"
+          ],
+          "condition_logic": {
+            "fact_key": "土星（Shani）的六力（Shad Bal）是否达到极强（extreme strength）"
+          },
+          "conditional_fact_requirements": [],
+          "source_status": "single_explicit_source",
+          "claim_terms": {
+            "conditions": [
+              {
+                "quote": "Shani’s extreme strength",
+                "claim": "土星（Shani）极强"
+              }
+            ],
+            "results": [
+              {
+                "quote": "will give long life as well as miseries",
+                "claim": "带来长寿以及苦难"
+              }
+            ]
+          },
+          "evidence_refs": [
+            {
+              "evidence_atom_id": "bphs-97:santhanam:ch27:v32-33",
+              "quote": "However, Shani’s extreme strength will give long life as well as miseries.",
+              "pdf_pages": [
+                60
+              ]
+            }
+          ],
+          "stop_condition": "缺少以下固定事实即停止：土星（Shani）的六力（Shad Bal）是否达到极强（extreme strength）。",
+          "stop_fact_keys": [
+            "土星（Shani）的六力（Shad Bal）是否达到极强（extreme strength）"
+          ],
+          "exception_relations": [],
+          "forbidden_extensions": [
+            "原文未界定「extreme strength」的门槛，不得用同偈的 very strong 或别处的强度判准替它定死。",
+            "不得据此推算具体寿数年份，也不得指定苦难的具体事项。",
+            "不得把这一条推广到土星以外的行星。"
+          ],
+          "context_reference": false,
+          "context_bindings": [],
+          "time_scope": {
+            "kind": "none",
+            "label": "原文没有时间限定",
+            "fact_keys": []
+          },
+          "concession_conditions": [],
+          "step_hash": "8e8601928bf35fd63637014deff44933b93700098f965f689e19eac3f99d5b31"
+        }
+      ],
+      "retrieval_plan": {
+        "support_queries": [
+          "However, Shani’s extreme strength will give long life as well as miseries",
+          "土星极强 长寿 苦难"
+        ],
+        "counter_queries": [
+          "If a Grah has the required Shad Bal, it will prove favourable to the native by virtue of its strength",
+          "行星有力则对命主有利"
+        ],
+        "boundary_queries": [
+          "If the strength exceeds the above-mentioned values, the Grah is deemed to be very strong",
+          "原文对「极强」门槛的界定在哪里"
+        ],
+        "method_queries": [
+          "390, 360, 300, 420, 390, 330 and 300 Virupas are the Shad Bal Pindas",
+          "怎样计算土星的六力"
+        ],
+        "derived_step_queries": [
+          {
+            "step_id": "ch27-v32-33-shani-extreme-strength.step-001",
+            "lane": "support",
+            "origin": "verbatim_condition",
+            "query": "Shani’s extreme strength"
+          },
+          {
+            "step_id": "ch27-v32-33-shani-extreme-strength.step-001",
+            "lane": "support",
+            "origin": "verbatim_result",
+            "query": "will give long life as well as miseries"
+          },
+          {
+            "step_id": "ch27-v32-33-shani-extreme-strength.step-001",
+            "lane": "support",
+            "origin": "verbatim_condition_plus_result",
+            "query": "Shani’s extreme strength will give long life as well as miseries"
+          },
+          {
+            "step_id": "ch27-v32-33-shani-extreme-strength.step-001",
+            "lane": "support",
+            "origin": "bilingual_verbatim_condition",
+            "query": "saturn’s extreme strength"
+          },
+          {
+            "step_id": "ch27-v32-33-shani-extreme-strength.step-001",
+            "lane": "support",
+            "origin": "bilingual_verbatim_condition_plus_result",
+            "query": "saturn’s extreme strength will give long life as well as miseries"
+          }
+        ]
+      },
+      "stop_conditions": [
+        "原文未界定「极强（extreme strength）」的门槛，该状态未确定即停判。",
+        "缺少土星（Shani）的六力（Shad Bal）事实时停止。"
+      ],
+      "executable_in_pilot": false,
+      "spine_slot_hint": null
+    },
+    {
+      "method": "ch27-v37-38-effects-through-strongest-graha",
+      "title": "宫的瑜伽与效应经最强行星应验",
+      "generalization_scope": "general_rule",
+      "pilot_only": false,
+      "publishable": false,
+      "workflow_status": "pilot_candidate",
+      "workflow_history": [
+        "pilot_candidate"
+      ],
+      "source_status": "single_explicit_source",
+      "fact_binding_status": "unmapped",
+      "upstream_issue_ids": [],
+      "user_intents": [
+        "某一宫的效应会通过哪颗行星显现",
+        "我盘里哪颗行星说了算"
+      ],
+      "required_facts": [
+        "本盘中哪颗行星（Grah）最强"
+      ],
+      "conditional_facts": [],
+      "dependencies": [],
+      "steps": [
+        {
+          "step_id": "ch27-v37-38-effects-through-strongest-graha.step-001",
+          "action": "把各类力量汇总后找出本盘最强的行星，作为该宫已述瑜伽与效应的应验途径。",
+          "applicability_scope": "原文所指「已就某一宫说过的瑜伽或效应」来自书中各宫断语，本步不替它指定具体条目；原文只说把各类力量汇总后再断，没有给出「最强」的排序算法。",
+          "minimum_supported_claim": "把各类力量汇总后再断效应；凡就某一宫（Bhava）说过的瑜伽（Yogas）或效应，都会通过最强的行星（Grah）应验。",
+          "produced_fact_keys": [
+            "该宫效应的应验行星判定"
+          ],
+          "required_fact_keys": [
+            "本盘中哪颗行星（Grah）最强"
+          ],
+          "condition_logic": {
+            "fact_key": "本盘中哪颗行星（Grah）最强"
+          },
+          "conditional_fact_requirements": [],
+          "source_status": "single_explicit_source",
+          "claim_terms": {
+            "conditions": [
+              {
+                "quote": "the various sources of strengths be gathered together and effects declared",
+                "claim": "把各类力量汇总后再断效应"
+              },
+              {
+                "quote": "Whatever Yogas, or effects have been stated with respect to a Bhava",
+                "claim": "凡就某一宫（Bhava）说过的瑜伽（Yogas）或效应"
+              }
+            ],
+            "results": [
+              {
+                "quote": "will come to pass through the strongest Grah",
+                "claim": "都会通过最强的行星（Grah）应验"
+              }
+            ]
+          },
+          "evidence_refs": [
+            {
+              "evidence_atom_id": "bphs-97:santhanam:ch27:v37-38",
+              "quote": "O Brahmin, thus the various sources of strengths be gathered together and effects declared. Whatever Yogas, or effects have been stated with respect to a Bhava, will come to pass through the strongest Grah.",
+              "pdf_pages": [
+                60
+              ]
+            }
+          ],
+          "stop_condition": "缺少以下固定事实即停止：本盘中哪颗行星（Grah）最强。",
+          "stop_fact_keys": [
+            "本盘中哪颗行星（Grah）最强"
+          ],
+          "exception_relations": [],
+          "forbidden_extensions": [
+            "不得据此改动原文对该宫已给出的效应内容。",
+            "不得据此推断应验的时间。",
+            "原文只说效应经最强行星应验，不得反推最强行星必定带来吉果。"
+          ],
+          "context_reference": false,
+          "context_bindings": [],
+          "time_scope": {
+            "kind": "none",
+            "label": "原文没有时间限定",
+            "fact_keys": []
+          },
+          "concession_conditions": [],
+          "step_hash": "1a1d967d7d5e00dad0cd41e51a3f5f822efbf283c78cbbd0ea1b9877a7be226a"
+        }
+      ],
+      "retrieval_plan": {
+        "support_queries": [
+          "Whatever Yogas, or effects have been stated with respect to a Bhava, will come to pass through the strongest Grah",
+          "宫的瑜伽与效应 经最强行星应验"
+        ],
+        "counter_queries": [],
+        "boundary_queries": [
+          "However, Shani’s extreme strength will give long life as well as miseries",
+          "最强的行星是否一定带来吉果"
+        ],
+        "method_queries": [
+          "thus the various sources of strengths be gathered together and effects declared",
+          "怎样判定本盘哪颗行星最强"
+        ],
+        "derived_step_queries": [
+          {
+            "step_id": "ch27-v37-38-effects-through-strongest-graha.step-001",
+            "lane": "support",
+            "origin": "verbatim_condition",
+            "query": "the various sources of strengths be gathered together and effects declared"
+          },
+          {
+            "step_id": "ch27-v37-38-effects-through-strongest-graha.step-001",
+            "lane": "support",
+            "origin": "verbatim_condition",
+            "query": "Whatever Yogas, or effects have been stated with respect to a Bhava"
+          },
+          {
+            "step_id": "ch27-v37-38-effects-through-strongest-graha.step-001",
+            "lane": "support",
+            "origin": "verbatim_result",
+            "query": "will come to pass through the strongest Grah"
+          },
+          {
+            "step_id": "ch27-v37-38-effects-through-strongest-graha.step-001",
+            "lane": "support",
+            "origin": "verbatim_condition_plus_result",
+            "query": "the various sources of strengths be gathered together and effects declared will come to pass through the strongest Grah"
+          },
+          {
+            "step_id": "ch27-v37-38-effects-through-strongest-graha.step-001",
+            "lane": "support",
+            "origin": "verbatim_condition_plus_result",
+            "query": "Whatever Yogas, or effects have been stated with respect to a Bhava will come to pass through the strongest Grah"
+          }
+        ]
+      },
+      "stop_conditions": [
+        "无法确定本盘中哪颗行星最强时停止。",
+        "该宫的瑜伽或效应在原文中找不到出处时停止。"
+      ],
+      "executable_in_pilot": false,
+      "spine_slot_hint": null
+    }
+  ]
+}
