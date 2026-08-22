@@ -1,0 +1,3275 @@
+{
+  "shard": 4,
+  "step_count": 15,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch03-v57-58-compound-relationship.step-002",
+      "method": {
+        "method": "ch03-v57-58-compound-relationship",
+        "title": "合成关系：自然关系与临时关系合成极友、友、均等、敌、极敌",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "两颗行星最终算友还是敌",
+          "自然关系和临时关系冲突时怎么办"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should two Grahas be naturally and temporarily friendly, they become extremely friendly",
+            "Enmity on one count combined with affinity on the other turns into equality",
+            "合成关系 极友 均等 极敌"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "(This applies to a given Janm Kundali)",
+            "合成关系里的临时一侧只对出生盘成立"
+          ],
+          "method_queries": [
+            "60, 45, 30, 22, 15, 8, 4, 2 and 0 are the Subhankas (Subha Griha Pankthis, benefic points), due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi",
+            "极友 极敌 怎么折成分值"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should two Grahas be naturally and temporarily friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "they become extremely friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should two Grahas be naturally and temporarily friendly they become extremely friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Friendship on one count and neutrality on another count"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "make them friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Friendship on one count and neutrality on another count make them friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Enmity on one count combined with affinity on the other"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "turns into equality"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Enmity on one count combined with affinity on the other turns into equality"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Enmity and neutralship"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "cause only enmity"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Enmity and neutralship cause only enmity"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should there be enmity in both manners"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "extreme enmity is obtained"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The Jyotishi should consider these and declare horoscopic effects accordingly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should there be enmity in both manners extreme enmity is obtained"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少该两行星的自然关系时停止。",
+          "缺少该两行星的临时关系时停止。",
+          "原文没有指明「一方面」对应自然还是临时，遇到需要区分的情形即停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v57-58-compound-relationship.step-002",
+        "action": "一方面为友、另一方面为中立时，判为友。",
+        "applicability_scope": "第3章合成关系条；原文没有指明「一方面」指自然还是临时，不得替它指定。",
+        "minimum_supported_claim": "一方面为友、另一方面为中立，两者为友。",
+        "produced_fact_keys": [
+          "两行星合成为友判定"
+        ],
+        "required_fact_keys": [
+          "本盘该两行星的自然关系（natural relationship）是友、敌还是中立",
+          "本盘该两行星的临时关系（temporary relationship）是友还是敌"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘该两行星的自然关系（natural relationship）是友、敌还是中立"
+            },
+            {
+              "fact_key": "本盘该两行星的临时关系（temporary relationship）是友还是敌"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Friendship on one count and neutrality on another count",
+              "claim": "一方面为友、另一方面为中立"
+            }
+          ],
+          "results": [
+            {
+              "quote": "make them friendly",
+              "claim": "两者为友"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v57-58",
+            "quote": "Friendship on one count and neutrality on another count make them friendly.",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘该两行星的自然关系（natural relationship）是友、敌还是中立、本盘该两行星的临时关系（temporary relationship）是友还是敌。",
+        "stop_fact_keys": [
+          "本盘该两行星的自然关系（natural relationship）是友、敌还是中立",
+          "本盘该两行星的临时关系（temporary relationship）是友还是敌"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得替原文指定「一方面」是自然关系还是临时关系。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "195115e27a2006cc2ea22bcb341c8df5c76554c615a2c0105dd20a13cfa348b6"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v57-58-compound-relationship.step-003",
+      "method": {
+        "method": "ch03-v57-58-compound-relationship",
+        "title": "合成关系：自然关系与临时关系合成极友、友、均等、敌、极敌",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "两颗行星最终算友还是敌",
+          "自然关系和临时关系冲突时怎么办"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should two Grahas be naturally and temporarily friendly, they become extremely friendly",
+            "Enmity on one count combined with affinity on the other turns into equality",
+            "合成关系 极友 均等 极敌"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "(This applies to a given Janm Kundali)",
+            "合成关系里的临时一侧只对出生盘成立"
+          ],
+          "method_queries": [
+            "60, 45, 30, 22, 15, 8, 4, 2 and 0 are the Subhankas (Subha Griha Pankthis, benefic points), due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi",
+            "极友 极敌 怎么折成分值"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should two Grahas be naturally and temporarily friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "they become extremely friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should two Grahas be naturally and temporarily friendly they become extremely friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Friendship on one count and neutrality on another count"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "make them friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Friendship on one count and neutrality on another count make them friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Enmity on one count combined with affinity on the other"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "turns into equality"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Enmity on one count combined with affinity on the other turns into equality"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Enmity and neutralship"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "cause only enmity"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Enmity and neutralship cause only enmity"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should there be enmity in both manners"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "extreme enmity is obtained"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The Jyotishi should consider these and declare horoscopic effects accordingly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should there be enmity in both manners extreme enmity is obtained"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少该两行星的自然关系时停止。",
+          "缺少该两行星的临时关系时停止。",
+          "原文没有指明「一方面」对应自然还是临时，遇到需要区分的情形即停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v57-58-compound-relationship.step-003",
+        "action": "一方面为敌、另一方面为亲合时，判为均等。",
+        "applicability_scope": "第3章合成关系条；原文没有指明「一方面」指自然还是临时，不得替它指定。",
+        "minimum_supported_claim": "一方面为敌、另一方面为亲合，转为均等（equality）。",
+        "produced_fact_keys": [
+          "两行星合成为均等判定"
+        ],
+        "required_fact_keys": [
+          "本盘该两行星的自然关系（natural relationship）是友、敌还是中立",
+          "本盘该两行星的临时关系（temporary relationship）是友还是敌"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘该两行星的自然关系（natural relationship）是友、敌还是中立"
+            },
+            {
+              "fact_key": "本盘该两行星的临时关系（temporary relationship）是友还是敌"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Enmity on one count combined with affinity on the other",
+              "claim": "一方面为敌、另一方面为亲合"
+            }
+          ],
+          "results": [
+            {
+              "quote": "turns into equality",
+              "claim": "转为均等（equality）"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v57-58",
+            "quote": "Enmity on one count combined with affinity on the other turns into equality.",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘该两行星的自然关系（natural relationship）是友、敌还是中立、本盘该两行星的临时关系（temporary relationship）是友还是敌。",
+        "stop_fact_keys": [
+          "本盘该两行星的自然关系（natural relationship）是友、敌还是中立",
+          "本盘该两行星的临时关系（temporary relationship）是友还是敌"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得替原文指定「一方面」是自然关系还是临时关系。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "17a2a0eb9f50b80a6082a603b98cc9d25608387dc2668925956de67d6583b148"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v57-58-compound-relationship.step-004",
+      "method": {
+        "method": "ch03-v57-58-compound-relationship",
+        "title": "合成关系：自然关系与临时关系合成极友、友、均等、敌、极敌",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "两颗行星最终算友还是敌",
+          "自然关系和临时关系冲突时怎么办"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should two Grahas be naturally and temporarily friendly, they become extremely friendly",
+            "Enmity on one count combined with affinity on the other turns into equality",
+            "合成关系 极友 均等 极敌"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "(This applies to a given Janm Kundali)",
+            "合成关系里的临时一侧只对出生盘成立"
+          ],
+          "method_queries": [
+            "60, 45, 30, 22, 15, 8, 4, 2 and 0 are the Subhankas (Subha Griha Pankthis, benefic points), due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi",
+            "极友 极敌 怎么折成分值"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should two Grahas be naturally and temporarily friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "they become extremely friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should two Grahas be naturally and temporarily friendly they become extremely friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Friendship on one count and neutrality on another count"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "make them friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Friendship on one count and neutrality on another count make them friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Enmity on one count combined with affinity on the other"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "turns into equality"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Enmity on one count combined with affinity on the other turns into equality"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Enmity and neutralship"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "cause only enmity"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Enmity and neutralship cause only enmity"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should there be enmity in both manners"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "extreme enmity is obtained"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The Jyotishi should consider these and declare horoscopic effects accordingly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should there be enmity in both manners extreme enmity is obtained"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少该两行星的自然关系时停止。",
+          "缺少该两行星的临时关系时停止。",
+          "原文没有指明「一方面」对应自然还是临时，遇到需要区分的情形即停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v57-58-compound-relationship.step-004",
+        "action": "敌与中立相合时，判为敌。",
+        "applicability_scope": "第3章合成关系条；原文没有指明哪一方面为敌、哪一方面为中立，不得替它指定。",
+        "minimum_supported_claim": "敌与中立相合，只成为敌。",
+        "produced_fact_keys": [
+          "两行星合成为敌判定"
+        ],
+        "required_fact_keys": [
+          "本盘该两行星的自然关系（natural relationship）是友、敌还是中立",
+          "本盘该两行星的临时关系（temporary relationship）是友还是敌"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘该两行星的自然关系（natural relationship）是友、敌还是中立"
+            },
+            {
+              "fact_key": "本盘该两行星的临时关系（temporary relationship）是友还是敌"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Enmity and neutralship",
+              "claim": "敌与中立相合"
+            }
+          ],
+          "results": [
+            {
+              "quote": "cause only enmity",
+              "claim": "只成为敌"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v57-58",
+            "quote": "Enmity and neutralship cause only enmity.",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘该两行星的自然关系（natural relationship）是友、敌还是中立、本盘该两行星的临时关系（temporary relationship）是友还是敌。",
+        "stop_fact_keys": [
+          "本盘该两行星的自然关系（natural relationship）是友、敌还是中立",
+          "本盘该两行星的临时关系（temporary relationship）是友还是敌"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得替原文指定哪一方面为敌、哪一方面为中立。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "d8751afad1844eae897b677dd0dc090f7dca180f6e16dbee9ec9af48a42751e8"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v57-58-compound-relationship.step-005",
+      "method": {
+        "method": "ch03-v57-58-compound-relationship",
+        "title": "合成关系：自然关系与临时关系合成极友、友、均等、敌、极敌",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "两颗行星最终算友还是敌",
+          "自然关系和临时关系冲突时怎么办"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should two Grahas be naturally and temporarily friendly, they become extremely friendly",
+            "Enmity on one count combined with affinity on the other turns into equality",
+            "合成关系 极友 均等 极敌"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "(This applies to a given Janm Kundali)",
+            "合成关系里的临时一侧只对出生盘成立"
+          ],
+          "method_queries": [
+            "60, 45, 30, 22, 15, 8, 4, 2 and 0 are the Subhankas (Subha Griha Pankthis, benefic points), due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi",
+            "极友 极敌 怎么折成分值"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should two Grahas be naturally and temporarily friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "they become extremely friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should two Grahas be naturally and temporarily friendly they become extremely friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Friendship on one count and neutrality on another count"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "make them friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Friendship on one count and neutrality on another count make them friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Enmity on one count combined with affinity on the other"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "turns into equality"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Enmity on one count combined with affinity on the other turns into equality"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Enmity and neutralship"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "cause only enmity"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Enmity and neutralship cause only enmity"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should there be enmity in both manners"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "extreme enmity is obtained"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The Jyotishi should consider these and declare horoscopic effects accordingly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should there be enmity in both manners extreme enmity is obtained"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少该两行星的自然关系时停止。",
+          "缺少该两行星的临时关系时停止。",
+          "原文没有指明「一方面」对应自然还是临时，遇到需要区分的情形即停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v57-58-compound-relationship.step-005",
+        "action": "两方面都为敌时判为极敌，并据这些合成关系去断盘。",
+        "applicability_scope": "第3章合成关系条；末句是作者对占星者的操作交代，不是另一条盘上条件。",
+        "minimum_supported_claim": "若两方面都为敌，得极敌（extreme enmity）；占星者应据这些合成关系来断盘。",
+        "produced_fact_keys": [
+          "两行星极敌判定"
+        ],
+        "required_fact_keys": [
+          "本盘该两行星的自然关系（natural relationship）是友、敌还是中立",
+          "本盘该两行星的临时关系（temporary relationship）是友还是敌"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘该两行星的自然关系（natural relationship）是友、敌还是中立"
+            },
+            {
+              "fact_key": "本盘该两行星的临时关系（temporary relationship）是友还是敌"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should there be enmity in both manners",
+              "claim": "若两方面都为敌"
+            }
+          ],
+          "results": [
+            {
+              "quote": "extreme enmity is obtained",
+              "claim": "得极敌（extreme enmity）"
+            },
+            {
+              "quote": "The Jyotishi should consider these and declare horoscopic effects accordingly",
+              "claim": "占星者应据这些合成关系来断盘"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v57-58",
+            "quote": "Should there be enmity in both manners, extreme enmity is obtained. The Jyotishi should consider these and declare horoscopic effects accordingly.",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘该两行星的自然关系（natural relationship）是友、敌还是中立、本盘该两行星的临时关系（temporary relationship）是友还是敌。",
+        "stop_fact_keys": [
+          "本盘该两行星的自然关系（natural relationship）是友、敌还是中立",
+          "本盘该两行星的临时关系（temporary relationship）是友还是敌"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据本条推出极敌带来什么凶果——本条只合成关系。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "270ec13ce699281696d35cbb7b97ec62b14c01209023b877e0afd82e1f426565"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v59-60-auspicious-effect-ratio.step-001",
+      "method": {
+        "method": "ch03-v59-60-auspicious-effect-ratio",
+        "title": "吉效比例：入旺、Mooltrikon、own Bhava、友座、均等者座、落陷或敌座各给多少吉效",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "这颗行星能给出多少吉效",
+          "入旺和落本座给的吉效差多少"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "Its beneficence is one fourth in a friendly Rāśi. In an equal’s Rashione eighth of auspicious disposition is useful",
+            "吉效比例 入旺 Mooltrikon 友座 落陷"
+          ],
+          "counter_queries": [
+            "Inauspicious effects are quite reverse with reference to what is stated",
+            "同一偈末句给的凶效方向相反"
+          ],
+          "boundary_queries": [
+            "60, 45, 30, 22, 15, 8, 4, 2 and 0 are the Subhankas (Subha Griha Pankthis, benefic points), due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi",
+            "另一处把尊贵分成九档并给分值"
+          ],
+          "method_queries": [
+            "In this case Surya, being exalted, or in a friendly Rāśi, is not a malefic. He is a malefic, if in debilitation, or in an enemy’s Rāśi",
+            "The Grahas ruling such Rāśis are its friends, apart from the Lord of its exaltation Rāśi",
+            "尊贵状态怎么落到具体断语上 友星与均等者怎么定"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "A Grah in exaltation"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "gives fully good effects"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "A Grah in exaltation gives fully good effects"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while in Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "it is bereft of its auspicious effects by one fourth"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while in Mooltrikon it is bereft of its auspicious effects by one fourth"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in its own Bhava"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "It is half beneficial"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in its own Bhava It is half beneficial"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in a friendly Rāśi"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Its beneficence is one fourth"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in a friendly Rāśi Its beneficence is one fourth"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "In an equal’s Rashi"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "one eighth of auspicious disposition is useful"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "In an equal’s Rashi one eighth of auspicious disposition is useful"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in debilitation"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or enemy’s camp"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The good effects are nil"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in debilitation The good effects are nil"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or enemy’s camp The good effects are nil"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少该行星尊贵状态的事实时，对应那一步停止。",
+          "原文没有界定 own Bhava 与星座、宫的对应，需要把它映射成排盘取值时停判。",
+          "本条只给吉效比例，没有给具体分值，要量化必须另查原文。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v59-60-auspicious-effect-ratio.step-001",
+        "action": "查该行星是否入旺，据以定其吉效比例。",
+        "applicability_scope": "第3章吉效比例条；本条只折算吉效，凶效另由本偈末句处理。",
+        "minimum_supported_claim": "行星（Grah）入旺时，给出完全的吉效。",
+        "produced_fact_keys": [
+          "入旺吉效比例判定"
+        ],
+        "required_fact_keys": [
+          "该行星（Grah）是否入旺"
+        ],
+        "condition_logic": {
+          "fact_key": "该行星（Grah）是否入旺"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "A Grah in exaltation",
+              "claim": "行星（Grah）入旺时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "gives fully good effects",
+              "claim": "给出完全的吉效"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v59-60",
+            "quote": "A Grah in exaltation gives fully good effects",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：该行星（Grah）是否入旺。",
+        "stop_fact_keys": [
+          "该行星（Grah）是否入旺"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「完全的吉效」读成具体分值——本偈只给比例关系。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "123989f9dbcf679afc294901aecb2353e115e3794cd1fe09126728e0a2855218"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v59-60-auspicious-effect-ratio.step-002",
+      "method": {
+        "method": "ch03-v59-60-auspicious-effect-ratio",
+        "title": "吉效比例：入旺、Mooltrikon、own Bhava、友座、均等者座、落陷或敌座各给多少吉效",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "这颗行星能给出多少吉效",
+          "入旺和落本座给的吉效差多少"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "Its beneficence is one fourth in a friendly Rāśi. In an equal’s Rashione eighth of auspicious disposition is useful",
+            "吉效比例 入旺 Mooltrikon 友座 落陷"
+          ],
+          "counter_queries": [
+            "Inauspicious effects are quite reverse with reference to what is stated",
+            "同一偈末句给的凶效方向相反"
+          ],
+          "boundary_queries": [
+            "60, 45, 30, 22, 15, 8, 4, 2 and 0 are the Subhankas (Subha Griha Pankthis, benefic points), due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi",
+            "另一处把尊贵分成九档并给分值"
+          ],
+          "method_queries": [
+            "In this case Surya, being exalted, or in a friendly Rāśi, is not a malefic. He is a malefic, if in debilitation, or in an enemy’s Rāśi",
+            "The Grahas ruling such Rāśis are its friends, apart from the Lord of its exaltation Rāśi",
+            "尊贵状态怎么落到具体断语上 友星与均等者怎么定"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "A Grah in exaltation"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "gives fully good effects"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "A Grah in exaltation gives fully good effects"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while in Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "it is bereft of its auspicious effects by one fourth"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while in Mooltrikon it is bereft of its auspicious effects by one fourth"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in its own Bhava"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "It is half beneficial"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in its own Bhava It is half beneficial"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in a friendly Rāśi"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Its beneficence is one fourth"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in a friendly Rāśi Its beneficence is one fourth"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "In an equal’s Rashi"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "one eighth of auspicious disposition is useful"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "In an equal’s Rashi one eighth of auspicious disposition is useful"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in debilitation"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or enemy’s camp"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The good effects are nil"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in debilitation The good effects are nil"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or enemy’s camp The good effects are nil"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少该行星尊贵状态的事实时，对应那一步停止。",
+          "原文没有界定 own Bhava 与星座、宫的对应，需要把它映射成排盘取值时停判。",
+          "本条只给吉效比例，没有给具体分值，要量化必须另查原文。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v59-60-auspicious-effect-ratio.step-002",
+        "action": "查该行星是否落其 Mooltrikon，据以定其吉效比例。",
+        "applicability_scope": "第3章吉效比例条；本条只折算吉效，凶效另由本偈末句处理。",
+        "minimum_supported_claim": "落其 Mooltrikon 时，吉效减去四分之一（one fourth）。",
+        "produced_fact_keys": [
+          "Mooltrikon 吉效比例判定"
+        ],
+        "required_fact_keys": [
+          "该行星（Grah）是否落其 Mooltrikon"
+        ],
+        "condition_logic": {
+          "fact_key": "该行星（Grah）是否落其 Mooltrikon"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "while in Mooltrikon",
+              "claim": "落其 Mooltrikon 时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "it is bereft of its auspicious effects by one fourth",
+              "claim": "吉效减去四分之一（one fourth）"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v59-60",
+            "quote": "while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：该行星（Grah）是否落其 Mooltrikon。",
+        "stop_fact_keys": [
+          "该行星（Grah）是否落其 Mooltrikon"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「减去四分之一」换算成本偈没有给的分值。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "ef0353a3dee1224bac89a561e16003868a8a97ac66e648c298f7f93e9fb47d0d"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v59-60-auspicious-effect-ratio.step-003",
+      "method": {
+        "method": "ch03-v59-60-auspicious-effect-ratio",
+        "title": "吉效比例：入旺、Mooltrikon、own Bhava、友座、均等者座、落陷或敌座各给多少吉效",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "这颗行星能给出多少吉效",
+          "入旺和落本座给的吉效差多少"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "Its beneficence is one fourth in a friendly Rāśi. In an equal’s Rashione eighth of auspicious disposition is useful",
+            "吉效比例 入旺 Mooltrikon 友座 落陷"
+          ],
+          "counter_queries": [
+            "Inauspicious effects are quite reverse with reference to what is stated",
+            "同一偈末句给的凶效方向相反"
+          ],
+          "boundary_queries": [
+            "60, 45, 30, 22, 15, 8, 4, 2 and 0 are the Subhankas (Subha Griha Pankthis, benefic points), due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi",
+            "另一处把尊贵分成九档并给分值"
+          ],
+          "method_queries": [
+            "In this case Surya, being exalted, or in a friendly Rāśi, is not a malefic. He is a malefic, if in debilitation, or in an enemy’s Rāśi",
+            "The Grahas ruling such Rāśis are its friends, apart from the Lord of its exaltation Rāśi",
+            "尊贵状态怎么落到具体断语上 友星与均等者怎么定"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "A Grah in exaltation"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "gives fully good effects"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "A Grah in exaltation gives fully good effects"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while in Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "it is bereft of its auspicious effects by one fourth"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while in Mooltrikon it is bereft of its auspicious effects by one fourth"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in its own Bhava"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "It is half beneficial"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in its own Bhava It is half beneficial"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in a friendly Rāśi"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Its beneficence is one fourth"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in a friendly Rāśi Its beneficence is one fourth"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "In an equal’s Rashi"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "one eighth of auspicious disposition is useful"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "In an equal’s Rashi one eighth of auspicious disposition is useful"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in debilitation"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or enemy’s camp"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The good effects are nil"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in debilitation The good effects are nil"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or enemy’s camp The good effects are nil"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少该行星尊贵状态的事实时，对应那一步停止。",
+          "原文没有界定 own Bhava 与星座、宫的对应，需要把它映射成排盘取值时停判。",
+          "本条只给吉效比例，没有给具体分值，要量化必须另查原文。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v59-60-auspicious-effect-ratio.step-003",
+        "action": "查该行星是否落原文所称的 own Bhava，据以定其吉效比例。",
+        "applicability_scope": "第3章吉效比例条；原文此处用语为 own Bhava，本偈没有界定它与星座（Rāśi）、宫（Bhava）的对应，故照原文保留。",
+        "minimum_supported_claim": "落其 own Bhava 时，吉效减半。",
+        "produced_fact_keys": [
+          "own Bhava 吉效比例判定"
+        ],
+        "required_fact_keys": [
+          "该行星（Grah）是否落原文所称的 own Bhava"
+        ],
+        "condition_logic": {
+          "fact_key": "该行星（Grah）是否落原文所称的 own Bhava"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "in its own Bhava",
+              "claim": "落其 own Bhava 时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "It is half beneficial",
+              "claim": "吉效减半"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v59-60",
+            "quote": "It is half beneficial in its own Bhava.",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：该行星（Grah）是否落原文所称的 own Bhava。",
+        "stop_fact_keys": [
+          "该行星（Grah）是否落原文所称的 own Bhava"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 own Bhava 读成宫位落点——原文在这一列里与入旺、Mooltrikon、友座并列。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b21eb28d309b23ae66e26c1c62fc1f6c301e392b4e1522f819201ee254932e5f"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v59-60-auspicious-effect-ratio.step-004",
+      "method": {
+        "method": "ch03-v59-60-auspicious-effect-ratio",
+        "title": "吉效比例：入旺、Mooltrikon、own Bhava、友座、均等者座、落陷或敌座各给多少吉效",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "这颗行星能给出多少吉效",
+          "入旺和落本座给的吉效差多少"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "Its beneficence is one fourth in a friendly Rāśi. In an equal’s Rashione eighth of auspicious disposition is useful",
+            "吉效比例 入旺 Mooltrikon 友座 落陷"
+          ],
+          "counter_queries": [
+            "Inauspicious effects are quite reverse with reference to what is stated",
+            "同一偈末句给的凶效方向相反"
+          ],
+          "boundary_queries": [
+            "60, 45, 30, 22, 15, 8, 4, 2 and 0 are the Subhankas (Subha Griha Pankthis, benefic points), due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi",
+            "另一处把尊贵分成九档并给分值"
+          ],
+          "method_queries": [
+            "In this case Surya, being exalted, or in a friendly Rāśi, is not a malefic. He is a malefic, if in debilitation, or in an enemy’s Rāśi",
+            "The Grahas ruling such Rāśis are its friends, apart from the Lord of its exaltation Rāśi",
+            "尊贵状态怎么落到具体断语上 友星与均等者怎么定"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "A Grah in exaltation"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "gives fully good effects"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "A Grah in exaltation gives fully good effects"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while in Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "it is bereft of its auspicious effects by one fourth"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while in Mooltrikon it is bereft of its auspicious effects by one fourth"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in its own Bhava"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "It is half beneficial"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in its own Bhava It is half beneficial"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in a friendly Rāśi"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Its beneficence is one fourth"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in a friendly Rāśi Its beneficence is one fourth"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "In an equal’s Rashi"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "one eighth of auspicious disposition is useful"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "In an equal’s Rashi one eighth of auspicious disposition is useful"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in debilitation"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or enemy’s camp"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The good effects are nil"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in debilitation The good effects are nil"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or enemy’s camp The good effects are nil"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少该行星尊贵状态的事实时，对应那一步停止。",
+          "原文没有界定 own Bhava 与星座、宫的对应，需要把它映射成排盘取值时停判。",
+          "本条只给吉效比例，没有给具体分值，要量化必须另查原文。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v59-60-auspicious-effect-ratio.step-004",
+        "action": "查该行星是否落友星的星座，据以定其吉效比例。",
+        "applicability_scope": "第3章吉效比例条；友星由本书自然关系与合成关系条另行界定。",
+        "minimum_supported_claim": "落友星的星座（friendly Rāśi）时，吉效为四分之一（one fourth）。",
+        "produced_fact_keys": [
+          "友座吉效比例判定"
+        ],
+        "required_fact_keys": [
+          "该行星（Grah）是否落友星的星座（friendly Rāśi）"
+        ],
+        "condition_logic": {
+          "fact_key": "该行星（Grah）是否落友星的星座（friendly Rāśi）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "in a friendly Rāśi",
+              "claim": "落友星的星座（friendly Rāśi）时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Its beneficence is one fourth",
+              "claim": "吉效为四分之一（one fourth）"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v59-60",
+            "quote": "Its beneficence is one fourth in a friendly Rāśi.",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：该行星（Grah）是否落友星的星座（friendly Rāśi）。",
+        "stop_fact_keys": [
+          "该行星（Grah）是否落友星的星座（friendly Rāśi）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据本条自行判定谁是友星——友星另由自然关系与合成关系条界定。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "aaa95a3e0d9ae1fb1701742367b03001d45f1f9384d135f0c73588e450dcf075"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v59-60-auspicious-effect-ratio.step-005",
+      "method": {
+        "method": "ch03-v59-60-auspicious-effect-ratio",
+        "title": "吉效比例：入旺、Mooltrikon、own Bhava、友座、均等者座、落陷或敌座各给多少吉效",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "这颗行星能给出多少吉效",
+          "入旺和落本座给的吉效差多少"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "Its beneficence is one fourth in a friendly Rāśi. In an equal’s Rashione eighth of auspicious disposition is useful",
+            "吉效比例 入旺 Mooltrikon 友座 落陷"
+          ],
+          "counter_queries": [
+            "Inauspicious effects are quite reverse with reference to what is stated",
+            "同一偈末句给的凶效方向相反"
+          ],
+          "boundary_queries": [
+            "60, 45, 30, 22, 15, 8, 4, 2 and 0 are the Subhankas (Subha Griha Pankthis, benefic points), due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi",
+            "另一处把尊贵分成九档并给分值"
+          ],
+          "method_queries": [
+            "In this case Surya, being exalted, or in a friendly Rāśi, is not a malefic. He is a malefic, if in debilitation, or in an enemy’s Rāśi",
+            "The Grahas ruling such Rāśis are its friends, apart from the Lord of its exaltation Rāśi",
+            "尊贵状态怎么落到具体断语上 友星与均等者怎么定"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "A Grah in exaltation"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "gives fully good effects"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "A Grah in exaltation gives fully good effects"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while in Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "it is bereft of its auspicious effects by one fourth"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while in Mooltrikon it is bereft of its auspicious effects by one fourth"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in its own Bhava"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "It is half beneficial"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in its own Bhava It is half beneficial"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in a friendly Rāśi"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Its beneficence is one fourth"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in a friendly Rāśi Its beneficence is one fourth"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "In an equal’s Rashi"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "one eighth of auspicious disposition is useful"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "In an equal’s Rashi one eighth of auspicious disposition is useful"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in debilitation"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or enemy’s camp"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The good effects are nil"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in debilitation The good effects are nil"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or enemy’s camp The good effects are nil"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少该行星尊贵状态的事实时，对应那一步停止。",
+          "原文没有界定 own Bhava 与星座、宫的对应，需要把它映射成排盘取值时停判。",
+          "本条只给吉效比例，没有给具体分值，要量化必须另查原文。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v59-60-auspicious-effect-ratio.step-005",
+        "action": "查该行星是否落均等者的星座，据以定其吉效比例。",
+        "applicability_scope": "第3章吉效比例条；均等者由本书自然关系与合成关系条另行界定。",
+        "minimum_supported_claim": "落均等者的星座（equal’s Rāśi）时，只有八分之一（one eighth）的吉性可用。",
+        "produced_fact_keys": [
+          "均等者座吉效比例判定"
+        ],
+        "required_fact_keys": [
+          "该行星（Grah）是否落均等者的星座（equal’s Rāśi）"
+        ],
+        "condition_logic": {
+          "fact_key": "该行星（Grah）是否落均等者的星座（equal’s Rāśi）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "In an equal’s Rashi",
+              "claim": "落均等者的星座（equal’s Rāśi）时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "one eighth of auspicious disposition is useful",
+              "claim": "只有八分之一（one eighth）的吉性可用"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v59-60",
+            "quote": "In an equal’s Rashione eighth of auspicious disposition is useful.",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：该行星（Grah）是否落均等者的星座（equal’s Rāśi）。",
+        "stop_fact_keys": [
+          "该行星（Grah）是否落均等者的星座（equal’s Rāśi）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据本条自行判定谁是均等者——它另由自然关系与合成关系条界定。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "a4de78437073a012d57e3fe6a0ed232905a02c9bde3e5cf8bb9e3bc105edd490"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+      "method": {
+        "method": "ch03-v59-60-auspicious-effect-ratio",
+        "title": "吉效比例：入旺、Mooltrikon、own Bhava、友座、均等者座、落陷或敌座各给多少吉效",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "这颗行星能给出多少吉效",
+          "入旺和落本座给的吉效差多少"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "Its beneficence is one fourth in a friendly Rāśi. In an equal’s Rashione eighth of auspicious disposition is useful",
+            "吉效比例 入旺 Mooltrikon 友座 落陷"
+          ],
+          "counter_queries": [
+            "Inauspicious effects are quite reverse with reference to what is stated",
+            "同一偈末句给的凶效方向相反"
+          ],
+          "boundary_queries": [
+            "60, 45, 30, 22, 15, 8, 4, 2 and 0 are the Subhankas (Subha Griha Pankthis, benefic points), due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi",
+            "另一处把尊贵分成九档并给分值"
+          ],
+          "method_queries": [
+            "In this case Surya, being exalted, or in a friendly Rāśi, is not a malefic. He is a malefic, if in debilitation, or in an enemy’s Rāśi",
+            "The Grahas ruling such Rāśis are its friends, apart from the Lord of its exaltation Rāśi",
+            "尊贵状态怎么落到具体断语上 友星与均等者怎么定"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "A Grah in exaltation"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "gives fully good effects"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "A Grah in exaltation gives fully good effects"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while in Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "it is bereft of its auspicious effects by one fourth"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while in Mooltrikon it is bereft of its auspicious effects by one fourth"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in its own Bhava"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "It is half beneficial"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in its own Bhava It is half beneficial"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in a friendly Rāśi"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Its beneficence is one fourth"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in a friendly Rāśi Its beneficence is one fourth"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "In an equal’s Rashi"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "one eighth of auspicious disposition is useful"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "In an equal’s Rashi one eighth of auspicious disposition is useful"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in debilitation"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or enemy’s camp"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The good effects are nil"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in debilitation The good effects are nil"
+            },
+            {
+              "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or enemy’s camp The good effects are nil"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少该行星尊贵状态的事实时，对应那一步停止。",
+          "原文没有界定 own Bhava 与星座、宫的对应，需要把它映射成排盘取值时停判。",
+          "本条只给吉效比例，没有给具体分值，要量化必须另查原文。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v59-60-auspicious-effect-ratio.step-006",
+        "action": "查该行星是落陷还是落敌星的营地，据以判定吉效为零。",
+        "applicability_scope": "第3章吉效比例条；本条只折算吉效，凶效另由本偈末句处理。",
+        "minimum_supported_claim": "落陷，或落敌星的营地（enemy’s camp），吉效为零。",
+        "produced_fact_keys": [
+          "落陷与敌座吉效为零判定"
+        ],
+        "required_fact_keys": [
+          "本盘该行星（Grah）落在哪个星座"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘该行星（Grah）落在哪个星座"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "该行星（Grah）是否落陷"
+                },
+                {
+                  "fact_key": "该行星（Grah）是否落敌星的营地（enemy’s camp）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘该行星（Grah）落在哪个星座"
+            },
+            "required_fact_keys": [
+              "该行星（Grah）是否落陷"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "该行星（Grah）是否落陷"
+            },
+            "selection_group": "ch03-v59-60-auspicious-effect-ratio.step-006:nil-good-effect-source",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：该行星（Grah）是否落陷。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘该行星（Grah）落在哪个星座"
+            },
+            "required_fact_keys": [
+              "该行星（Grah）是否落敌星的营地（enemy’s camp）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "该行星（Grah）是否落敌星的营地（enemy’s camp）"
+            },
+            "selection_group": "ch03-v59-60-auspicious-effect-ratio.step-006:nil-good-effect-source",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：该行星（Grah）是否落敌星的营地（enemy’s camp）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "in debilitation",
+              "claim": "落陷"
+            },
+            {
+              "quote": "or enemy’s camp",
+              "claim": "或落敌星的营地（enemy’s camp）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "The good effects are nil",
+              "claim": "吉效为零"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v59-60",
+            "quote": "The good effects are nil in debilitation, or enemy’s camp.",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘该行星（Grah）落在哪个星座。",
+        "stop_fact_keys": [
+          "本盘该行星（Grah）落在哪个星座"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「吉效为零」读成一定出凶果——本句只说吉效。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "bdf4d1e92900f6a034a2c610a4d774eda4aca5e23f8fa1c18d864d725c2da37d"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v59-60-inauspicious-effect-reverse.step-001",
+      "method": {
+        "method": "ch03-v59-60-inauspicious-effect-reverse",
+        "title": "凶效方向：凶效与上述吉效比例恰好相反",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "落陷的行星凶效是不是更强",
+          "凶效怎么按尊贵状态折算"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Inauspicious effects are quite reverse with reference to what is stated",
+            "凶效与吉效比例相反"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "If Subhanka is deducted from 60, Asubhanka (Asubh Pankthi, inauspicious points) will emerge",
+            "另一处用 60 减吉分得凶分"
+          ],
+          "method_queries": [
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "要先拿到吉效各档才能反过来看凶效"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v59-60-inauspicious-effect-reverse.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "with reference to what is stated"
+            },
+            {
+              "step_id": "ch03-v59-60-inauspicious-effect-reverse.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Inauspicious effects are quite reverse"
+            },
+            {
+              "step_id": "ch03-v59-60-inauspicious-effect-reverse.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "with reference to what is stated Inauspicious effects are quite reverse"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "原文没有界定「相反」如何逐档折算，需要具体凶效比例时停判。",
+          "缺少该行星所落星座与尊贵状态时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v59-60-inauspicious-effect-reverse.step-001",
+        "action": "把上述吉效比例的方向反过来看凶效，不再另立比例。",
+        "applicability_scope": "第3章吉效比例条末句；原文只说与上述所陈相反，没有逐档给出凶效的比例。",
+        "minimum_supported_claim": "就上述所陈而言，凶效恰好相反。",
+        "produced_fact_keys": [
+          "凶效方向相反判定"
+        ],
+        "required_fact_keys": [
+          "本盘该行星（Grah）落在哪个星座"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘该行星（Grah）落在哪个星座"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "with reference to what is stated",
+              "claim": "就上述所陈而言"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Inauspicious effects are quite reverse",
+              "claim": "凶效恰好相反"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v59-60",
+            "quote": "Inauspicious effects are quite reverse with reference to what is stated.",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘该行星（Grah）落在哪个星座。",
+        "stop_fact_keys": [
+          "本盘该行星（Grah）落在哪个星座"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得替原文定义「相反」的逐档折算——原文只说与上述所陈相反，没有给凶效的比例数字。",
+          "不得据本条推出凶效在哪一档最大或最小。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b48516c5a4bbce1deafbb4bbbe9d63b462823a360200b82ed621e9ecdbde5761"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v61-64-upagraha-positions.step-001",
+      "method": {
+        "method": "ch03-v61-64-upagraha-positions",
+        "title": "非发光副曜（UpaGrahas）的位置推算：Dhoom、Vyatipat、Parivesh、Chap 与 UpaKetu",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Dhoom Vyatipat Parivesh 怎么算",
+          "我盘里的影曜落在哪里"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment to get the exact position of the all inauspicious Dhoom",
+            "Reduce Dhoom from 12 Rāśis to arrive at Vyatipat. Vyatipat is also inauspicious",
+            "非发光副曜 Dhoom Vyatipat Parivesh Chap UpaKetu 推算"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "From Surya to Shani no one is exalted in the above-mentioned exaltation Rāśis, nor debilitated in the above-mentioned debilitation Rāśis",
+            "影曜的尊贵表出自转述，且不适用于七曜"
+          ],
+          "method_queries": [
+            "If one of these afflicts Surya, the native’s dynasty will decline",
+            "Effects of Vyatipat in Various Bhavas (up to Sloka 25)",
+            "算出影曜位置之后怎么断"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to get the exact position of the all inauspicious Dhoom"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment to get the exact position of the all inauspicious Dhoom"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Add 4 Rāśis 13 degrees and 20 minutes of arc to sun’s longitude at a given moment"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Add 4 Rāśis 13 degrees and 20 minutes of arc to sun’s longitude at a given moment to get the exact position of the all inauspicious Dhoom"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Reduce Dhoom from 12 Rāśis"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to arrive at Vyatipat. Vyatipat is also inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Reduce Dhoom from 12 Rāśis to arrive at Vyatipat. Vyatipat is also inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Add six Rāśis to Vyatipat"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to know the position of Parivesh. He is extremely inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Add six Rāśis to Vyatipat to know the position of Parivesh. He is extremely inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Deduct Parivesh from 12 Rāśis"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to arrive at the position of Chap (Indra Dhanus), who is also inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Deduct Parivesh from 12 Rāśis to arrive at the position of Chap (Indra Dhanus), who is also inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Add 16 degrees 40 minutes to Chap"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "which will give Ketu (UpaKetu), who is a malefic"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "By adding a Rashito UpaKetu, you get the original longitude of Surya"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Add 16 degrees 40 minutes to Chap which will give Ketu (UpaKetu), who is a malefic"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "By adding a Rashito UpaKetu, you get the original longitude of sun"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "These are the Grahas, devoid of splendour"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-006",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "which are malefics by nature and cause affliction"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "These are the Grahas, devoid of splendour which are malefics by nature and cause affliction"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘太阳黄经时停止。",
+          "上一环位置没算出来时，后续各环停止。",
+          "本条只给位置与凶性，不给逐宫断语，要断落宫效应必须另找原文。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v61-64-upagraha-positions.step-001",
+        "action": "在给定时刻给太阳黄经加上 4 个星座 13 度 20 分，得 Dhoom 的位置。",
+        "applicability_scope": "第3章非发光副曜条；这些是推算法，本步不给盘上吉凶断语。",
+        "minimum_supported_claim": "在给定时刻把 4 个星座 13 度（degrees）20 分加到太阳（Surya）的黄经上，得到全然不吉的 Dhoom 的准确位置。",
+        "produced_fact_keys": [
+          "Dhoom 位置判定"
+        ],
+        "required_fact_keys": [
+          "本盘太阳（Surya）的黄经是多少"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘太阳（Surya）的黄经是多少"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment",
+              "claim": "在给定时刻把 4 个星座 13 度（degrees）20 分加到太阳（Surya）的黄经上"
+            }
+          ],
+          "results": [
+            {
+              "quote": "to get the exact position of the all inauspicious Dhoom",
+              "claim": "得到全然不吉的 Dhoom 的准确位置"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v61-64",
+            "quote": "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment to get the exact position of the all inauspicious Dhoom.",
+            "pdf_pages": [
+              12,
+              13
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘太阳（Surya）的黄经是多少。",
+        "stop_fact_keys": [
+          "本盘太阳（Surya）的黄经是多少"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据本条推出 Dhoom 落某宫的具体断语——本步只给位置。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "9e09a4fc12a98975a8a140ca1111336556f9ab5fcddc1c0a782b14fc6e9775e4"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v61-64-upagraha-positions.step-002",
+      "method": {
+        "method": "ch03-v61-64-upagraha-positions",
+        "title": "非发光副曜（UpaGrahas）的位置推算：Dhoom、Vyatipat、Parivesh、Chap 与 UpaKetu",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Dhoom Vyatipat Parivesh 怎么算",
+          "我盘里的影曜落在哪里"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment to get the exact position of the all inauspicious Dhoom",
+            "Reduce Dhoom from 12 Rāśis to arrive at Vyatipat. Vyatipat is also inauspicious",
+            "非发光副曜 Dhoom Vyatipat Parivesh Chap UpaKetu 推算"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "From Surya to Shani no one is exalted in the above-mentioned exaltation Rāśis, nor debilitated in the above-mentioned debilitation Rāśis",
+            "影曜的尊贵表出自转述，且不适用于七曜"
+          ],
+          "method_queries": [
+            "If one of these afflicts Surya, the native’s dynasty will decline",
+            "Effects of Vyatipat in Various Bhavas (up to Sloka 25)",
+            "算出影曜位置之后怎么断"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to get the exact position of the all inauspicious Dhoom"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment to get the exact position of the all inauspicious Dhoom"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Add 4 Rāśis 13 degrees and 20 minutes of arc to sun’s longitude at a given moment"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Add 4 Rāśis 13 degrees and 20 minutes of arc to sun’s longitude at a given moment to get the exact position of the all inauspicious Dhoom"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Reduce Dhoom from 12 Rāśis"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to arrive at Vyatipat. Vyatipat is also inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Reduce Dhoom from 12 Rāśis to arrive at Vyatipat. Vyatipat is also inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Add six Rāśis to Vyatipat"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to know the position of Parivesh. He is extremely inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Add six Rāśis to Vyatipat to know the position of Parivesh. He is extremely inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Deduct Parivesh from 12 Rāśis"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to arrive at the position of Chap (Indra Dhanus), who is also inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Deduct Parivesh from 12 Rāśis to arrive at the position of Chap (Indra Dhanus), who is also inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Add 16 degrees 40 minutes to Chap"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "which will give Ketu (UpaKetu), who is a malefic"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "By adding a Rashito UpaKetu, you get the original longitude of Surya"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Add 16 degrees 40 minutes to Chap which will give Ketu (UpaKetu), who is a malefic"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "By adding a Rashito UpaKetu, you get the original longitude of sun"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "These are the Grahas, devoid of splendour"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-006",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "which are malefics by nature and cause affliction"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "These are the Grahas, devoid of splendour which are malefics by nature and cause affliction"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘太阳黄经时停止。",
+          "上一环位置没算出来时，后续各环停止。",
+          "本条只给位置与凶性，不给逐宫断语，要断落宫效应必须另找原文。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v61-64-upagraha-positions.step-002",
+        "action": "用 12 个星座减去 Dhoom，得 Vyatipat 的位置。",
+        "applicability_scope": "第3章非发光副曜条；这些是推算法，本步不给盘上吉凶断语。",
+        "minimum_supported_claim": "用 12 个星座减去 Dhoom，得到 Vyatipat，Vyatipat 同样不吉。",
+        "produced_fact_keys": [
+          "Vyatipat 位置判定"
+        ],
+        "required_fact_keys": [
+          "Dhoom 位置判定"
+        ],
+        "condition_logic": {
+          "fact_key": "Dhoom 位置判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Reduce Dhoom from 12 Rāśis",
+              "claim": "用 12 个星座减去 Dhoom"
+            }
+          ],
+          "results": [
+            {
+              "quote": "to arrive at Vyatipat. Vyatipat is also inauspicious",
+              "claim": "得到 Vyatipat，Vyatipat 同样不吉"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v61-64",
+            "quote": "Reduce Dhoom from 12 Rāśis to arrive at Vyatipat. Vyatipat is also inauspicious.",
+            "pdf_pages": [
+              12,
+              13
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Dhoom 位置判定。",
+        "stop_fact_keys": [
+          "Dhoom 位置判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据本条推出 Vyatipat 落某宫的具体断语——本步只给位置。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "9dd39d83b93b660afdd52c364ff1627bd0d1d53c9c2eb80664038f7c0d89b027"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v61-64-upagraha-positions.step-003",
+      "method": {
+        "method": "ch03-v61-64-upagraha-positions",
+        "title": "非发光副曜（UpaGrahas）的位置推算：Dhoom、Vyatipat、Parivesh、Chap 与 UpaKetu",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Dhoom Vyatipat Parivesh 怎么算",
+          "我盘里的影曜落在哪里"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment to get the exact position of the all inauspicious Dhoom",
+            "Reduce Dhoom from 12 Rāśis to arrive at Vyatipat. Vyatipat is also inauspicious",
+            "非发光副曜 Dhoom Vyatipat Parivesh Chap UpaKetu 推算"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "From Surya to Shani no one is exalted in the above-mentioned exaltation Rāśis, nor debilitated in the above-mentioned debilitation Rāśis",
+            "影曜的尊贵表出自转述，且不适用于七曜"
+          ],
+          "method_queries": [
+            "If one of these afflicts Surya, the native’s dynasty will decline",
+            "Effects of Vyatipat in Various Bhavas (up to Sloka 25)",
+            "算出影曜位置之后怎么断"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to get the exact position of the all inauspicious Dhoom"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment to get the exact position of the all inauspicious Dhoom"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Add 4 Rāśis 13 degrees and 20 minutes of arc to sun’s longitude at a given moment"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Add 4 Rāśis 13 degrees and 20 minutes of arc to sun’s longitude at a given moment to get the exact position of the all inauspicious Dhoom"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Reduce Dhoom from 12 Rāśis"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to arrive at Vyatipat. Vyatipat is also inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Reduce Dhoom from 12 Rāśis to arrive at Vyatipat. Vyatipat is also inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Add six Rāśis to Vyatipat"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to know the position of Parivesh. He is extremely inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Add six Rāśis to Vyatipat to know the position of Parivesh. He is extremely inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Deduct Parivesh from 12 Rāśis"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to arrive at the position of Chap (Indra Dhanus), who is also inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Deduct Parivesh from 12 Rāśis to arrive at the position of Chap (Indra Dhanus), who is also inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Add 16 degrees 40 minutes to Chap"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "which will give Ketu (UpaKetu), who is a malefic"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "By adding a Rashito UpaKetu, you get the original longitude of Surya"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Add 16 degrees 40 minutes to Chap which will give Ketu (UpaKetu), who is a malefic"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "By adding a Rashito UpaKetu, you get the original longitude of sun"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "These are the Grahas, devoid of splendour"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-006",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "which are malefics by nature and cause affliction"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "These are the Grahas, devoid of splendour which are malefics by nature and cause affliction"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘太阳黄经时停止。",
+          "上一环位置没算出来时，后续各环停止。",
+          "本条只给位置与凶性，不给逐宫断语，要断落宫效应必须另找原文。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v61-64-upagraha-positions.step-003",
+        "action": "给 Vyatipat 加六个星座，得 Parivesh 的位置。",
+        "applicability_scope": "第3章非发光副曜条；这些是推算法，本步不给盘上吉凶断语。",
+        "minimum_supported_claim": "把六（six）个星座加到 Vyatipat 上，得知 Parivesh 的位置，他极为不吉。",
+        "produced_fact_keys": [
+          "Parivesh 位置判定"
+        ],
+        "required_fact_keys": [
+          "Vyatipat 位置判定"
+        ],
+        "condition_logic": {
+          "fact_key": "Vyatipat 位置判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Add six Rāśis to Vyatipat",
+              "claim": "把六（six）个星座加到 Vyatipat 上"
+            }
+          ],
+          "results": [
+            {
+              "quote": "to know the position of Parivesh. He is extremely inauspicious",
+              "claim": "得知 Parivesh 的位置，他极为不吉"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v61-64",
+            "quote": "Add six Rāśis to Vyatipat to know the position of Parivesh. He is extremely inauspicious.",
+            "pdf_pages": [
+              12,
+              13
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Vyatipat 位置判定。",
+        "stop_fact_keys": [
+          "Vyatipat 位置判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据本条推出 Parivesh 落某宫的具体断语——本步只给位置。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "dc3ba6a586ab0fb55073f98e4708e8b4e94940f085817f5bcc327fb45ca06c50"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v61-64-upagraha-positions.step-004",
+      "method": {
+        "method": "ch03-v61-64-upagraha-positions",
+        "title": "非发光副曜（UpaGrahas）的位置推算：Dhoom、Vyatipat、Parivesh、Chap 与 UpaKetu",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Dhoom Vyatipat Parivesh 怎么算",
+          "我盘里的影曜落在哪里"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment to get the exact position of the all inauspicious Dhoom",
+            "Reduce Dhoom from 12 Rāśis to arrive at Vyatipat. Vyatipat is also inauspicious",
+            "非发光副曜 Dhoom Vyatipat Parivesh Chap UpaKetu 推算"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "From Surya to Shani no one is exalted in the above-mentioned exaltation Rāśis, nor debilitated in the above-mentioned debilitation Rāśis",
+            "影曜的尊贵表出自转述，且不适用于七曜"
+          ],
+          "method_queries": [
+            "If one of these afflicts Surya, the native’s dynasty will decline",
+            "Effects of Vyatipat in Various Bhavas (up to Sloka 25)",
+            "算出影曜位置之后怎么断"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to get the exact position of the all inauspicious Dhoom"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment to get the exact position of the all inauspicious Dhoom"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Add 4 Rāśis 13 degrees and 20 minutes of arc to sun’s longitude at a given moment"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Add 4 Rāśis 13 degrees and 20 minutes of arc to sun’s longitude at a given moment to get the exact position of the all inauspicious Dhoom"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Reduce Dhoom from 12 Rāśis"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to arrive at Vyatipat. Vyatipat is also inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Reduce Dhoom from 12 Rāśis to arrive at Vyatipat. Vyatipat is also inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Add six Rāśis to Vyatipat"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to know the position of Parivesh. He is extremely inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Add six Rāśis to Vyatipat to know the position of Parivesh. He is extremely inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Deduct Parivesh from 12 Rāśis"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to arrive at the position of Chap (Indra Dhanus), who is also inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Deduct Parivesh from 12 Rāśis to arrive at the position of Chap (Indra Dhanus), who is also inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Add 16 degrees 40 minutes to Chap"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "which will give Ketu (UpaKetu), who is a malefic"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "By adding a Rashito UpaKetu, you get the original longitude of Surya"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Add 16 degrees 40 minutes to Chap which will give Ketu (UpaKetu), who is a malefic"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "By adding a Rashito UpaKetu, you get the original longitude of sun"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "These are the Grahas, devoid of splendour"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-006",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "which are malefics by nature and cause affliction"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "These are the Grahas, devoid of splendour which are malefics by nature and cause affliction"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘太阳黄经时停止。",
+          "上一环位置没算出来时，后续各环停止。",
+          "本条只给位置与凶性，不给逐宫断语，要断落宫效应必须另找原文。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v61-64-upagraha-positions.step-004",
+        "action": "用 12 个星座减去 Parivesh，得 Chap 的位置。",
+        "applicability_scope": "第3章非发光副曜条；这些是推算法，本步不给盘上吉凶断语。",
+        "minimum_supported_claim": "用 12 个星座减去 Parivesh，得到 Chap（Indra Dhanus）的位置，他同样不吉。",
+        "produced_fact_keys": [
+          "Chap 位置判定"
+        ],
+        "required_fact_keys": [
+          "Parivesh 位置判定"
+        ],
+        "condition_logic": {
+          "fact_key": "Parivesh 位置判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Deduct Parivesh from 12 Rāśis",
+              "claim": "用 12 个星座减去 Parivesh"
+            }
+          ],
+          "results": [
+            {
+              "quote": "to arrive at the position of Chap (Indra Dhanus), who is also inauspicious",
+              "claim": "得到 Chap（Indra Dhanus）的位置，他同样不吉"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v61-64",
+            "quote": "Deduct Parivesh from 12 Rāśis to arrive at the position of Chap (Indra Dhanus), who is also inauspicious.",
+            "pdf_pages": [
+              12,
+              13
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Parivesh 位置判定。",
+        "stop_fact_keys": [
+          "Parivesh 位置判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据本条推出 Chap 落某宫的具体断语——本步只给位置。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "1d76ae388374488f4d636801b4d22c4513b8580d8a413a509beff4484dd43e1f"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch03:v57-58": {
+      "evidence_atom_id": "bphs-97:santhanam:ch03:v57-58",
+      "chapter_number": 3,
+      "chapter_title": "Grah Characters and Description",
+      "verse_label": "57-58.",
+      "content_role": "verse",
+      "exact_text": "57-58. Compound Relationship. Should two Grahas be naturally and temporarily friendly, they become extremely friendly. Friendship on one count and neutrality on another count make them friendly. Enmity on one count combined with affinity on the other turns into equality. Enmity and neutralship cause only enmity. Should there be enmity in both manners, extreme enmity is obtained. The Jyotishi should consider these and declare horoscopic effects accordingly.",
+      "pdf_pages": [
+        12
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 3 · Sloka 57-58 · PDF page 12 · bphs-97:santhanam:ch03:v57-58",
+      "previous_atom_id": "bphs-97:santhanam:ch03:v56",
+      "next_atom_id": "bphs-97:santhanam:ch03:v59-60",
+      "context_before": "r the 12<sup>th</sup> from another, becomes a mutual friend. There is enmity otherwise. (This applies to a given Janm Kundali)\n\n",
+      "context_after": "59-60. Ratio of Effects. A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effec",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch03:v59-60": {
+      "evidence_atom_id": "bphs-97:santhanam:ch03:v59-60",
+      "chapter_number": 3,
+      "chapter_title": "Grah Characters and Description",
+      "verse_label": "59-60.",
+      "content_role": "verse",
+      "exact_text": "59-60. Ratio of Effects. A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth. It is half beneficial in its own Bhava. Its beneficence is one fourth in a friendly Rāśi. In an equal’s Rashione eighth of auspicious disposition is useful. The good effects are nil in debilitation, or enemy’s camp. Inauspicious effects are quite reverse with reference to what is stated.",
+      "pdf_pages": [
+        12
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 3 · Sloka 59-60 · PDF page 12 · bphs-97:santhanam:ch03:v59-60",
+      "previous_atom_id": "bphs-97:santhanam:ch03:v57-58",
+      "next_atom_id": "bphs-97:santhanam:ch03:v61-64",
+      "context_before": "ty in both manners, extreme enmity is obtained. The Jyotishi should consider these and declare horoscopic effects accordingly.\n\n",
+      "context_after": "61-64. Non-luminous UpaGrahas (Sub-Grahas). Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch03:v61-64": {
+      "evidence_atom_id": "bphs-97:santhanam:ch03:v61-64",
+      "chapter_number": 3,
+      "chapter_title": "Grah Characters and Description",
+      "verse_label": "61-64.",
+      "content_role": "verse",
+      "exact_text": "61-64. Non-luminous UpaGrahas (Sub-Grahas). Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment to get the exact position of the all inauspicious Dhoom. Reduce Dhoom from 12 Rāśis to arrive at Vyatipat. Vyatipat is also inauspicious. Add six Rāśis to Vyatipat to know the position of Parivesh. He is extremely inauspicious. Deduct Parivesh from 12 Rāśis to arrive at the position of Chap (Indra Dhanus), who is also inauspicious. Add 16 degrees 40 minutes to Chap, which will give Ketu (UpaKetu), who is a malefic. By adding a Rashito UpaKetu, you get the original longitude of Surya. These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction.",
+      "pdf_pages": [
+        12,
+        13
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 3 · Sloka 61-64 · PDF pages 12-13 · bphs-97:santhanam:ch03:v61-64",
+      "previous_atom_id": "bphs-97:santhanam:ch03:v59-60",
+      "next_atom_id": "bphs-97:santhanam:ch03:v65",
+      "context_before": "ood effects are nil in debilitation, or enemy’s camp. Inauspicious effects are quite reverse with reference to what is stated.\n\n",
+      "context_after": "65. Effects of Sub-Grahas. If one of these afflicts Surya, the native’s dynasty will decline, while Chandra and Lagna, respectiv",
+      "content_missing": false
+    }
+  }
+}

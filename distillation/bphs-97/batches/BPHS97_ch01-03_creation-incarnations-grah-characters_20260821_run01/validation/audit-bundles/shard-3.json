@@ -1,0 +1,3868 @@
+{
+  "shard": 3,
+  "step_count": 15,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch03-v49-50-debilitation-rasis.step-001",
+      "method": {
+        "method": "ch03-v49-50-debilitation-rasis",
+        "title": "落陷：入旺星座起第七个星座与深度落陷度数",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘里哪颗行星落陷",
+          "落陷星座怎么定 深度落陷是几度"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "And in the seventh Rashifrom the said exaltation Rashieach Grah has its own debilitation. The same degrees of deep exaltation apply to deep fall",
+            "落陷星座 入旺起第七个星座 深度落陷"
+          ],
+          "counter_queries": [
+            "In this case Surya, being exalted, or in a friendly Rāśi, is not a malefic. He is a malefic, if in debilitation, or in an enemy’s Rāśi",
+            "落陷与入旺在断吉凶时的相反用法"
+          ],
+          "boundary_queries": [
+            "From Surya to Shani no one is exalted in the above-mentioned exaltation Rāśis, nor debilitated in the above-mentioned debilitation Rāśis",
+            "影曜的落陷表不适用于七曜"
+          ],
+          "method_queries": [
+            "The good effects are nil in debilitation, or enemy’s camp",
+            "落陷之后吉效怎么折算"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v49-50-debilitation-rasis.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in the seventh Rashifrom the said exaltation Rashi"
+            },
+            {
+              "step_id": "ch03-v49-50-debilitation-rasis.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "each Grah has its own debilitation"
+            },
+            {
+              "step_id": "ch03-v49-50-debilitation-rasis.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in the seventh Rashifrom the said exaltation Rashi each Grah has its own debilitation"
+            },
+            {
+              "step_id": "ch03-v49-50-debilitation-rasis.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "The same degrees of deep exaltation"
+            },
+            {
+              "step_id": "ch03-v49-50-debilitation-rasis.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "apply to deep fall"
+            },
+            {
+              "step_id": "ch03-v49-50-debilitation-rasis.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "The same degrees of deep exaltation apply to deep fall"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少待判定行星的入旺星座时停止。",
+          "缺少行星在星座内的度数时，深度落陷一步停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v49-50-debilitation-rasis.step-001",
+        "action": "自待判定行星的入旺星座起数到第七个星座，判断它是否落陷。",
+        "applicability_scope": "第3章入旺与落陷条；落陷星座由入旺星座推出，本偈只给这一种推法。",
+        "minimum_supported_claim": "从其入旺星座起的第七个（seventh）星座，每颗行星在该处落陷。",
+        "produced_fact_keys": [
+          "行星落陷星座判定"
+        ],
+        "required_fact_keys": [
+          "本盘中待判定尊贵的行星落在哪个星座（Rāśi）",
+          "本盘中待判定尊贵的行星的入旺星座是哪个星座"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘中待判定尊贵的行星落在哪个星座（Rāśi）"
+            },
+            {
+              "fact_key": "本盘中待判定尊贵的行星的入旺星座是哪个星座"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "in the seventh Rashifrom the said exaltation Rashi",
+              "claim": "从其入旺星座起的第七个（seventh）星座"
+            }
+          ],
+          "results": [
+            {
+              "quote": "each Grah has its own debilitation",
+              "claim": "每颗行星在该处落陷"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v49-50",
+            "quote": "And in the seventh Rashifrom the said exaltation Rashieach Grah has its own debilitation.",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中待判定尊贵的行星落在哪个星座（Rāśi）、本盘中待判定尊贵的行星的入旺星座是哪个星座。",
+        "stop_fact_keys": [
+          "本盘中待判定尊贵的行星落在哪个星座（Rāśi）",
+          "本盘中待判定尊贵的行星的入旺星座是哪个星座"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据本条推出落陷可被什么化解——本偈没有给任何取消条款。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "efc8425c29f3c8ef0e96912e493d124580f69033a1b98a120fa4288b58469d3d"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v49-50-debilitation-rasis.step-002",
+      "method": {
+        "method": "ch03-v49-50-debilitation-rasis",
+        "title": "落陷：入旺星座起第七个星座与深度落陷度数",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘里哪颗行星落陷",
+          "落陷星座怎么定 深度落陷是几度"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "And in the seventh Rashifrom the said exaltation Rashieach Grah has its own debilitation. The same degrees of deep exaltation apply to deep fall",
+            "落陷星座 入旺起第七个星座 深度落陷"
+          ],
+          "counter_queries": [
+            "In this case Surya, being exalted, or in a friendly Rāśi, is not a malefic. He is a malefic, if in debilitation, or in an enemy’s Rāśi",
+            "落陷与入旺在断吉凶时的相反用法"
+          ],
+          "boundary_queries": [
+            "From Surya to Shani no one is exalted in the above-mentioned exaltation Rāśis, nor debilitated in the above-mentioned debilitation Rāśis",
+            "影曜的落陷表不适用于七曜"
+          ],
+          "method_queries": [
+            "The good effects are nil in debilitation, or enemy’s camp",
+            "落陷之后吉效怎么折算"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v49-50-debilitation-rasis.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in the seventh Rashifrom the said exaltation Rashi"
+            },
+            {
+              "step_id": "ch03-v49-50-debilitation-rasis.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "each Grah has its own debilitation"
+            },
+            {
+              "step_id": "ch03-v49-50-debilitation-rasis.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in the seventh Rashifrom the said exaltation Rashi each Grah has its own debilitation"
+            },
+            {
+              "step_id": "ch03-v49-50-debilitation-rasis.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "The same degrees of deep exaltation"
+            },
+            {
+              "step_id": "ch03-v49-50-debilitation-rasis.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "apply to deep fall"
+            },
+            {
+              "step_id": "ch03-v49-50-debilitation-rasis.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "The same degrees of deep exaltation apply to deep fall"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少待判定行星的入旺星座时停止。",
+          "缺少行星在星座内的度数时，深度落陷一步停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v49-50-debilitation-rasis.step-002",
+        "action": "取待判定行星在该星座内的度数，按深度入旺的同一组度数判断它是否处于深度落陷。",
+        "applicability_scope": "第3章入旺与落陷条；度数表承本偈前句的深度入旺度数。",
+        "minimum_supported_claim": "深度入旺的同一组度数（degrees）同样适用于深度落陷。",
+        "produced_fact_keys": [
+          "行星深度落陷度数判定"
+        ],
+        "required_fact_keys": [
+          "本盘中待判定尊贵的行星在该星座内的度数是多少",
+          "行星落陷星座判定"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘中待判定尊贵的行星在该星座内的度数是多少"
+            },
+            {
+              "fact_key": "行星落陷星座判定"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "The same degrees of deep exaltation",
+              "claim": "深度入旺的同一组度数（degrees）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "apply to deep fall",
+              "claim": "同样适用于深度落陷"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v49-50",
+            "quote": "The same degrees of deep exaltation apply to deep fall.",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中待判定尊贵的行星在该星座内的度数是多少、行星落陷星座判定。",
+        "stop_fact_keys": [
+          "本盘中待判定尊贵的行星在该星座内的度数是多少",
+          "行星落陷星座判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据本条推出偏离深度落陷度数后凶效如何递减——本偈只给度数本身。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "6abb4a838ab6e3f9e621a47bdaba120b4623b9050a6d5c1efc36e16efd7a0fbd"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+      "method": {
+        "method": "ch03-v51-54-mooltrikon-and-own-portions",
+        "title": "附加尊贵：七曜各自的 Mooltrikon 段与 own Bhava 段",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘里这颗行星落在 Mooltrikon 还是别的段",
+          "各行星的 Mooltrikon 是哪几度"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "In Simh the first 20 degrees are Surya’s Mooltrikon, while the rest is his own Bhava",
+            "For Budh, in Kanya the first 15 degrees are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava",
+            "Shukra divides Tula into two halves keeping the first, as Mooltrikon and the second, as own Bhava",
+            "各曜的 Mooltrikon 度数段"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Note the Rāśis, which are the 2<sup>nd</sup> , 4<sup>th</sup> , 5<sup>th</sup> , 8<sup>th</sup> , 9<sup>th</sup> and 12<sup>th</sup> from the Mooltrikon of a Grah",
+            "Mooltrikon 还被用来定自然友敌"
+          ],
+          "method_queries": [
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "落在 Mooltrikon 段之后吉效怎么折算"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "In Simh the first 20 degrees"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "are Surya’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "In Simh the first 20 degrees are Surya’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "are sun’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "In Simh the first 20 degrees are sun’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "After the first 3 degrees of exaltation portion in Vrishabh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "for Chandra, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "After the first 3 degrees of exaltation portion in Vrishabh for Chandra, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "for moon, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "After the first 3 degrees of exaltation portion in Vrishabh for moon, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Mangal has the first 12 degrees in Mesh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "as Mooltrikon with the rest therein becoming simply his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Mangal has the first 12 degrees in Mesh as Mooltrikon with the rest therein becoming simply his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "mars has the first 12 degrees in Mesh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "mars has the first 12 degrees in Mesh as Mooltrikon with the rest therein becoming simply his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "For Budh, in Kanya the first 15 degrees"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "For Budh, in Kanya the first 15 degrees are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "For mercury, in Kanya the first 15 degrees"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "For mercury, in Kanya the first 15 degrees are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "The first one third of Dhanu"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "is the Mooltrikon of Guru, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "The first one third of Dhanu is the Mooltrikon of Guru, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "is the Mooltrikon of jupiter, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "The first one third of Dhanu is the Mooltrikon of jupiter, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Shukra divides Tula into two halves"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "keeping the first, as Mooltrikon and the second, as own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Shukra divides Tula into two halves keeping the first, as Mooltrikon and the second, as own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "venus divides Tula into two halves"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "venus divides Tula into two halves keeping the first, as Mooltrikon and the second, as own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Shani’s arrangements are same in Kumbh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "as Surya has in Simh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Shani’s arrangements are same in Kumbh as Surya has in Simh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "saturn’s arrangements are same in Kumbh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "as sun has in Simh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "saturn’s arrangements are same in Kumbh as sun has in Simh"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少该行星在对应星座内度数的事实时，该步停止。",
+          "原文没有界定 own Bhava 与星座、宫的对应，需要把它映射成排盘取值时停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+        "action": "取太阳在狮子座内的度数，判断它落在 Mooltrikon 段还是 own Bhava 段。",
+        "applicability_scope": "第3章附加尊贵条；原文此处用语为 own Bhava，本偈没有界定它与星座（Rāśi）、宫（Bhava）的对应，故照原文保留。",
+        "minimum_supported_claim": "狮子座（Simh）的前（first）20 度（degrees）是太阳（Surya）的 Mooltrikon，其余部分是他的 own Bhava。",
+        "produced_fact_keys": [
+          "太阳在狮子座的分段尊贵判定"
+        ],
+        "required_fact_keys": [
+          "太阳（Surya）落在狮子座（Simh）内的第几度"
+        ],
+        "condition_logic": {
+          "fact_key": "太阳（Surya）落在狮子座（Simh）内的第几度"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "In Simh the first 20 degrees",
+              "claim": "狮子座（Simh）的前（first）20 度（degrees）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "are Surya’s Mooltrikon, while the rest is his own Bhava",
+              "claim": "是太阳（Surya）的 Mooltrikon，其余部分是他的 own Bhava"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v51-54",
+            "quote": "In Simh the first 20 degrees are Surya’s Mooltrikon, while the rest is his own Bhava.",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：太阳（Surya）落在狮子座（Simh）内的第几度。",
+        "stop_fact_keys": [
+          "太阳（Surya）落在狮子座（Simh）内的第几度"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 own Bhava 读成宫位落点——本偈只在星座度数范围内说话。",
+          "不得据本条推出落在各段时吉效如何折算。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "832b15881fa8bb99fb218bcff18434553b03c8bf038bbf0830bfd87feb1a01cc"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+      "method": {
+        "method": "ch03-v51-54-mooltrikon-and-own-portions",
+        "title": "附加尊贵：七曜各自的 Mooltrikon 段与 own Bhava 段",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘里这颗行星落在 Mooltrikon 还是别的段",
+          "各行星的 Mooltrikon 是哪几度"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "In Simh the first 20 degrees are Surya’s Mooltrikon, while the rest is his own Bhava",
+            "For Budh, in Kanya the first 15 degrees are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava",
+            "Shukra divides Tula into two halves keeping the first, as Mooltrikon and the second, as own Bhava",
+            "各曜的 Mooltrikon 度数段"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Note the Rāśis, which are the 2<sup>nd</sup> , 4<sup>th</sup> , 5<sup>th</sup> , 8<sup>th</sup> , 9<sup>th</sup> and 12<sup>th</sup> from the Mooltrikon of a Grah",
+            "Mooltrikon 还被用来定自然友敌"
+          ],
+          "method_queries": [
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "落在 Mooltrikon 段之后吉效怎么折算"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "In Simh the first 20 degrees"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "are Surya’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "In Simh the first 20 degrees are Surya’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "are sun’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "In Simh the first 20 degrees are sun’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "After the first 3 degrees of exaltation portion in Vrishabh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "for Chandra, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "After the first 3 degrees of exaltation portion in Vrishabh for Chandra, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "for moon, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "After the first 3 degrees of exaltation portion in Vrishabh for moon, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Mangal has the first 12 degrees in Mesh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "as Mooltrikon with the rest therein becoming simply his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Mangal has the first 12 degrees in Mesh as Mooltrikon with the rest therein becoming simply his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "mars has the first 12 degrees in Mesh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "mars has the first 12 degrees in Mesh as Mooltrikon with the rest therein becoming simply his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "For Budh, in Kanya the first 15 degrees"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "For Budh, in Kanya the first 15 degrees are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "For mercury, in Kanya the first 15 degrees"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "For mercury, in Kanya the first 15 degrees are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "The first one third of Dhanu"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "is the Mooltrikon of Guru, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "The first one third of Dhanu is the Mooltrikon of Guru, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "is the Mooltrikon of jupiter, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "The first one third of Dhanu is the Mooltrikon of jupiter, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Shukra divides Tula into two halves"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "keeping the first, as Mooltrikon and the second, as own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Shukra divides Tula into two halves keeping the first, as Mooltrikon and the second, as own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "venus divides Tula into two halves"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "venus divides Tula into two halves keeping the first, as Mooltrikon and the second, as own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Shani’s arrangements are same in Kumbh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "as Surya has in Simh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Shani’s arrangements are same in Kumbh as Surya has in Simh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "saturn’s arrangements are same in Kumbh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "as sun has in Simh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "saturn’s arrangements are same in Kumbh as sun has in Simh"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少该行星在对应星座内度数的事实时，该步停止。",
+          "原文没有界定 own Bhava 与星座、宫的对应，需要把它映射成排盘取值时停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+        "action": "取月亮在金牛座内的度数，判断它落在入旺段之后的 Mooltrikon 段。",
+        "applicability_scope": "第3章附加尊贵条；本句只说入旺段之后的部分，未说金牛座内还有别的分段。",
+        "minimum_supported_claim": "金牛座（Vrishabh）中入旺段的前（first）3 度（degrees）之后，对月亮（Chandra）而言其余部分是她的 Mooltrikon。",
+        "produced_fact_keys": [
+          "月亮在金牛座的分段尊贵判定"
+        ],
+        "required_fact_keys": [
+          "月亮（Chandra）落在金牛座（Vrishabh）内的第几度"
+        ],
+        "condition_logic": {
+          "fact_key": "月亮（Chandra）落在金牛座（Vrishabh）内的第几度"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "After the first 3 degrees of exaltation portion in Vrishabh",
+              "claim": "金牛座（Vrishabh）中入旺段的前（first）3 度（degrees）之后"
+            }
+          ],
+          "results": [
+            {
+              "quote": "for Chandra, the rest is her Mooltrikon",
+              "claim": "对月亮（Chandra）而言其余部分是她的 Mooltrikon"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v51-54",
+            "quote": "After the first 3 degrees of exaltation portion in Vrishabh, for Chandra, the rest is her Mooltrikon.",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：月亮（Chandra）落在金牛座（Vrishabh）内的第几度。",
+        "stop_fact_keys": [
+          "月亮（Chandra）落在金牛座（Vrishabh）内的第几度"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据本条推出月亮在金牛座另有 own Bhava 段——本句没有说。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "e9397d8c740ffc9e66f0e2efb64d4049b60727a1528c875fde74e91668684b93"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+      "method": {
+        "method": "ch03-v51-54-mooltrikon-and-own-portions",
+        "title": "附加尊贵：七曜各自的 Mooltrikon 段与 own Bhava 段",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘里这颗行星落在 Mooltrikon 还是别的段",
+          "各行星的 Mooltrikon 是哪几度"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "In Simh the first 20 degrees are Surya’s Mooltrikon, while the rest is his own Bhava",
+            "For Budh, in Kanya the first 15 degrees are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava",
+            "Shukra divides Tula into two halves keeping the first, as Mooltrikon and the second, as own Bhava",
+            "各曜的 Mooltrikon 度数段"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Note the Rāśis, which are the 2<sup>nd</sup> , 4<sup>th</sup> , 5<sup>th</sup> , 8<sup>th</sup> , 9<sup>th</sup> and 12<sup>th</sup> from the Mooltrikon of a Grah",
+            "Mooltrikon 还被用来定自然友敌"
+          ],
+          "method_queries": [
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "落在 Mooltrikon 段之后吉效怎么折算"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "In Simh the first 20 degrees"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "are Surya’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "In Simh the first 20 degrees are Surya’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "are sun’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "In Simh the first 20 degrees are sun’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "After the first 3 degrees of exaltation portion in Vrishabh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "for Chandra, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "After the first 3 degrees of exaltation portion in Vrishabh for Chandra, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "for moon, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "After the first 3 degrees of exaltation portion in Vrishabh for moon, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Mangal has the first 12 degrees in Mesh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "as Mooltrikon with the rest therein becoming simply his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Mangal has the first 12 degrees in Mesh as Mooltrikon with the rest therein becoming simply his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "mars has the first 12 degrees in Mesh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "mars has the first 12 degrees in Mesh as Mooltrikon with the rest therein becoming simply his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "For Budh, in Kanya the first 15 degrees"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "For Budh, in Kanya the first 15 degrees are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "For mercury, in Kanya the first 15 degrees"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "For mercury, in Kanya the first 15 degrees are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "The first one third of Dhanu"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "is the Mooltrikon of Guru, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "The first one third of Dhanu is the Mooltrikon of Guru, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "is the Mooltrikon of jupiter, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "The first one third of Dhanu is the Mooltrikon of jupiter, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Shukra divides Tula into two halves"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "keeping the first, as Mooltrikon and the second, as own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Shukra divides Tula into two halves keeping the first, as Mooltrikon and the second, as own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "venus divides Tula into two halves"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "venus divides Tula into two halves keeping the first, as Mooltrikon and the second, as own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Shani’s arrangements are same in Kumbh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "as Surya has in Simh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Shani’s arrangements are same in Kumbh as Surya has in Simh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "saturn’s arrangements are same in Kumbh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "as sun has in Simh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "saturn’s arrangements are same in Kumbh as sun has in Simh"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少该行星在对应星座内度数的事实时，该步停止。",
+          "原文没有界定 own Bhava 与星座、宫的对应，需要把它映射成排盘取值时停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+        "action": "取火星在白羊座内的度数，判断它落在 Mooltrikon 段还是 own Bhava 段。",
+        "applicability_scope": "第3章附加尊贵条；原文此处用语为 own Bhava，本偈没有界定它与星座（Rāśi）、宫（Bhava）的对应，故照原文保留。",
+        "minimum_supported_claim": "火星（Mangal）在白羊座（Mesh）的前（first）12 度（degrees）为 Mooltrikon，其余部分只是他的 own Bhava。",
+        "produced_fact_keys": [
+          "火星在白羊座的分段尊贵判定"
+        ],
+        "required_fact_keys": [
+          "火星（Mangal）落在白羊座（Mesh）内的第几度"
+        ],
+        "condition_logic": {
+          "fact_key": "火星（Mangal）落在白羊座（Mesh）内的第几度"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Mangal has the first 12 degrees in Mesh",
+              "claim": "火星（Mangal）在白羊座（Mesh）的前（first）12 度（degrees）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "as Mooltrikon with the rest therein becoming simply his own Bhava",
+              "claim": "为 Mooltrikon，其余部分只是他的 own Bhava"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v51-54",
+            "quote": "Mangal has the first 12 degrees in Mesh, as Mooltrikon with the rest therein becoming simply his own Bhava.",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：火星（Mangal）落在白羊座（Mesh）内的第几度。",
+        "stop_fact_keys": [
+          "火星（Mangal）落在白羊座（Mesh）内的第几度"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 own Bhava 读成宫位落点——本偈只在星座度数范围内说话。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "cc3c1bc8920ffe279b96c076f2a5ea6bfe81a9b099af72f4e085726698157991"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+      "method": {
+        "method": "ch03-v51-54-mooltrikon-and-own-portions",
+        "title": "附加尊贵：七曜各自的 Mooltrikon 段与 own Bhava 段",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘里这颗行星落在 Mooltrikon 还是别的段",
+          "各行星的 Mooltrikon 是哪几度"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "In Simh the first 20 degrees are Surya’s Mooltrikon, while the rest is his own Bhava",
+            "For Budh, in Kanya the first 15 degrees are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava",
+            "Shukra divides Tula into two halves keeping the first, as Mooltrikon and the second, as own Bhava",
+            "各曜的 Mooltrikon 度数段"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Note the Rāśis, which are the 2<sup>nd</sup> , 4<sup>th</sup> , 5<sup>th</sup> , 8<sup>th</sup> , 9<sup>th</sup> and 12<sup>th</sup> from the Mooltrikon of a Grah",
+            "Mooltrikon 还被用来定自然友敌"
+          ],
+          "method_queries": [
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "落在 Mooltrikon 段之后吉效怎么折算"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "In Simh the first 20 degrees"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "are Surya’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "In Simh the first 20 degrees are Surya’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "are sun’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "In Simh the first 20 degrees are sun’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "After the first 3 degrees of exaltation portion in Vrishabh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "for Chandra, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "After the first 3 degrees of exaltation portion in Vrishabh for Chandra, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "for moon, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "After the first 3 degrees of exaltation portion in Vrishabh for moon, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Mangal has the first 12 degrees in Mesh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "as Mooltrikon with the rest therein becoming simply his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Mangal has the first 12 degrees in Mesh as Mooltrikon with the rest therein becoming simply his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "mars has the first 12 degrees in Mesh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "mars has the first 12 degrees in Mesh as Mooltrikon with the rest therein becoming simply his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "For Budh, in Kanya the first 15 degrees"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "For Budh, in Kanya the first 15 degrees are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "For mercury, in Kanya the first 15 degrees"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "For mercury, in Kanya the first 15 degrees are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "The first one third of Dhanu"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "is the Mooltrikon of Guru, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "The first one third of Dhanu is the Mooltrikon of Guru, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "is the Mooltrikon of jupiter, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "The first one third of Dhanu is the Mooltrikon of jupiter, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Shukra divides Tula into two halves"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "keeping the first, as Mooltrikon and the second, as own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Shukra divides Tula into two halves keeping the first, as Mooltrikon and the second, as own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "venus divides Tula into two halves"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "venus divides Tula into two halves keeping the first, as Mooltrikon and the second, as own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Shani’s arrangements are same in Kumbh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "as Surya has in Simh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Shani’s arrangements are same in Kumbh as Surya has in Simh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "saturn’s arrangements are same in Kumbh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "as sun has in Simh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "saturn’s arrangements are same in Kumbh as sun has in Simh"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少该行星在对应星座内度数的事实时，该步停止。",
+          "原文没有界定 own Bhava 与星座、宫的对应，需要把它映射成排盘取值时停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+        "action": "取水星在处女座内的度数，判断它落在入旺区、Mooltrikon 段还是 own Bhava 段。",
+        "applicability_scope": "第3章附加尊贵条；原文此处用语为 own Bhava，本偈没有界定它与星座（Rāśi）、宫（Bhava）的对应，故照原文保留。",
+        "minimum_supported_claim": "对水星（Budh）而言，处女座（Kanya）的前（first）15 度（degrees）为入旺区，接下来的 5 度为 Mooltrikon，最后 10 度为 own Bhava。",
+        "produced_fact_keys": [
+          "水星在处女座的分段尊贵判定"
+        ],
+        "required_fact_keys": [
+          "水星（Budh）落在处女座（Kanya）内的第几度"
+        ],
+        "condition_logic": {
+          "fact_key": "水星（Budh）落在处女座（Kanya）内的第几度"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "For Budh, in Kanya the first 15 degrees",
+              "claim": "对水星（Budh）而言，处女座（Kanya）的前（first）15 度（degrees）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava",
+              "claim": "为入旺区，接下来的 5 度为 Mooltrikon，最后 10 度为 own Bhava"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v51-54",
+            "quote": "For Budh, in Kanya the first 15 degrees are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava.",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：水星（Budh）落在处女座（Kanya）内的第几度。",
+        "stop_fact_keys": [
+          "水星（Budh）落在处女座（Kanya）内的第几度"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 own Bhava 读成宫位落点——本偈只在星座度数范围内说话。",
+          "不得据本条推出水星深度入旺的度数——那由另一偈给出。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "39ecb42b8e7d4da551699607c3b03badd5908be172598fe7614b257b11050f1e"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+      "method": {
+        "method": "ch03-v51-54-mooltrikon-and-own-portions",
+        "title": "附加尊贵：七曜各自的 Mooltrikon 段与 own Bhava 段",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘里这颗行星落在 Mooltrikon 还是别的段",
+          "各行星的 Mooltrikon 是哪几度"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "In Simh the first 20 degrees are Surya’s Mooltrikon, while the rest is his own Bhava",
+            "For Budh, in Kanya the first 15 degrees are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava",
+            "Shukra divides Tula into two halves keeping the first, as Mooltrikon and the second, as own Bhava",
+            "各曜的 Mooltrikon 度数段"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Note the Rāśis, which are the 2<sup>nd</sup> , 4<sup>th</sup> , 5<sup>th</sup> , 8<sup>th</sup> , 9<sup>th</sup> and 12<sup>th</sup> from the Mooltrikon of a Grah",
+            "Mooltrikon 还被用来定自然友敌"
+          ],
+          "method_queries": [
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "落在 Mooltrikon 段之后吉效怎么折算"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "In Simh the first 20 degrees"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "are Surya’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "In Simh the first 20 degrees are Surya’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "are sun’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "In Simh the first 20 degrees are sun’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "After the first 3 degrees of exaltation portion in Vrishabh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "for Chandra, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "After the first 3 degrees of exaltation portion in Vrishabh for Chandra, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "for moon, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "After the first 3 degrees of exaltation portion in Vrishabh for moon, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Mangal has the first 12 degrees in Mesh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "as Mooltrikon with the rest therein becoming simply his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Mangal has the first 12 degrees in Mesh as Mooltrikon with the rest therein becoming simply his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "mars has the first 12 degrees in Mesh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "mars has the first 12 degrees in Mesh as Mooltrikon with the rest therein becoming simply his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "For Budh, in Kanya the first 15 degrees"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "For Budh, in Kanya the first 15 degrees are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "For mercury, in Kanya the first 15 degrees"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "For mercury, in Kanya the first 15 degrees are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "The first one third of Dhanu"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "is the Mooltrikon of Guru, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "The first one third of Dhanu is the Mooltrikon of Guru, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "is the Mooltrikon of jupiter, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "The first one third of Dhanu is the Mooltrikon of jupiter, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Shukra divides Tula into two halves"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "keeping the first, as Mooltrikon and the second, as own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Shukra divides Tula into two halves keeping the first, as Mooltrikon and the second, as own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "venus divides Tula into two halves"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "venus divides Tula into two halves keeping the first, as Mooltrikon and the second, as own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Shani’s arrangements are same in Kumbh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "as Surya has in Simh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Shani’s arrangements are same in Kumbh as Surya has in Simh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "saturn’s arrangements are same in Kumbh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "as sun has in Simh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "saturn’s arrangements are same in Kumbh as sun has in Simh"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少该行星在对应星座内度数的事实时，该步停止。",
+          "原文没有界定 own Bhava 与星座、宫的对应，需要把它映射成排盘取值时停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+        "action": "取木星在射手座内的度数，判断它落在 Mooltrikon 段还是 own Bhava 段。",
+        "applicability_scope": "第3章附加尊贵条；原文此处用语为 own Bhava，本偈没有界定它与星座（Rāśi）、宫（Bhava）的对应，故照原文保留。",
+        "minimum_supported_claim": "射手座（Dhanu）的前（first）三分之一（one third）是木星（Guru）的 Mooltrikon，其余部分是他的 own Bhava。",
+        "produced_fact_keys": [
+          "木星在射手座的分段尊贵判定"
+        ],
+        "required_fact_keys": [
+          "木星（Guru）落在射手座（Dhanu）内的第几度"
+        ],
+        "condition_logic": {
+          "fact_key": "木星（Guru）落在射手座（Dhanu）内的第几度"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "The first one third of Dhanu",
+              "claim": "射手座（Dhanu）的前（first）三分之一（one third）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "is the Mooltrikon of Guru, while the remaining part thereof is his own Bhava",
+              "claim": "是木星（Guru）的 Mooltrikon，其余部分是他的 own Bhava"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v51-54",
+            "quote": "The first one third of Dhanu is the Mooltrikon of Guru, while the remaining part thereof is his own Bhava.",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：木星（Guru）落在射手座（Dhanu）内的第几度。",
+        "stop_fact_keys": [
+          "木星（Guru）落在射手座（Dhanu）内的第几度"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 own Bhava 读成宫位落点——本偈只在星座度数范围内说话。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "6679b047da16bf647de695037e5b0de0511396270911359dfaf9e9def3b2fef8"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+      "method": {
+        "method": "ch03-v51-54-mooltrikon-and-own-portions",
+        "title": "附加尊贵：七曜各自的 Mooltrikon 段与 own Bhava 段",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘里这颗行星落在 Mooltrikon 还是别的段",
+          "各行星的 Mooltrikon 是哪几度"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "In Simh the first 20 degrees are Surya’s Mooltrikon, while the rest is his own Bhava",
+            "For Budh, in Kanya the first 15 degrees are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava",
+            "Shukra divides Tula into two halves keeping the first, as Mooltrikon and the second, as own Bhava",
+            "各曜的 Mooltrikon 度数段"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Note the Rāśis, which are the 2<sup>nd</sup> , 4<sup>th</sup> , 5<sup>th</sup> , 8<sup>th</sup> , 9<sup>th</sup> and 12<sup>th</sup> from the Mooltrikon of a Grah",
+            "Mooltrikon 还被用来定自然友敌"
+          ],
+          "method_queries": [
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "落在 Mooltrikon 段之后吉效怎么折算"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "In Simh the first 20 degrees"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "are Surya’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "In Simh the first 20 degrees are Surya’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "are sun’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "In Simh the first 20 degrees are sun’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "After the first 3 degrees of exaltation portion in Vrishabh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "for Chandra, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "After the first 3 degrees of exaltation portion in Vrishabh for Chandra, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "for moon, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "After the first 3 degrees of exaltation portion in Vrishabh for moon, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Mangal has the first 12 degrees in Mesh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "as Mooltrikon with the rest therein becoming simply his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Mangal has the first 12 degrees in Mesh as Mooltrikon with the rest therein becoming simply his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "mars has the first 12 degrees in Mesh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "mars has the first 12 degrees in Mesh as Mooltrikon with the rest therein becoming simply his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "For Budh, in Kanya the first 15 degrees"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "For Budh, in Kanya the first 15 degrees are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "For mercury, in Kanya the first 15 degrees"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "For mercury, in Kanya the first 15 degrees are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "The first one third of Dhanu"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "is the Mooltrikon of Guru, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "The first one third of Dhanu is the Mooltrikon of Guru, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "is the Mooltrikon of jupiter, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "The first one third of Dhanu is the Mooltrikon of jupiter, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Shukra divides Tula into two halves"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "keeping the first, as Mooltrikon and the second, as own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Shukra divides Tula into two halves keeping the first, as Mooltrikon and the second, as own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "venus divides Tula into two halves"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "venus divides Tula into two halves keeping the first, as Mooltrikon and the second, as own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Shani’s arrangements are same in Kumbh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "as Surya has in Simh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Shani’s arrangements are same in Kumbh as Surya has in Simh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "saturn’s arrangements are same in Kumbh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "as sun has in Simh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "saturn’s arrangements are same in Kumbh as sun has in Simh"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少该行星在对应星座内度数的事实时，该步停止。",
+          "原文没有界定 own Bhava 与星座、宫的对应，需要把它映射成排盘取值时停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+        "action": "取金星在天秤座内的度数，判断它落在前半的 Mooltrikon 还是后半的 own Bhava。",
+        "applicability_scope": "第3章附加尊贵条；原文此处用语为 own Bhava，本偈没有界定它与星座（Rāśi）、宫（Bhava）的对应，故照原文保留。",
+        "minimum_supported_claim": "金星（Shukra）把天秤座（Tula）分成两半（two halves），前一半（first）为 Mooltrikon，后一半（second）为 own Bhava。",
+        "produced_fact_keys": [
+          "金星在天秤座的分段尊贵判定"
+        ],
+        "required_fact_keys": [
+          "金星（Shukra）落在天秤座（Tula）内的第几度"
+        ],
+        "condition_logic": {
+          "fact_key": "金星（Shukra）落在天秤座（Tula）内的第几度"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Shukra divides Tula into two halves",
+              "claim": "金星（Shukra）把天秤座（Tula）分成两半（two halves）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "keeping the first, as Mooltrikon and the second, as own Bhava",
+              "claim": "前一半（first）为 Mooltrikon，后一半（second）为 own Bhava"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v51-54",
+            "quote": "Shukra divides Tula into two halves keeping the first, as Mooltrikon and the second, as own Bhava.",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：金星（Shukra）落在天秤座（Tula）内的第几度。",
+        "stop_fact_keys": [
+          "金星（Shukra）落在天秤座（Tula）内的第几度"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 own Bhava 读成宫位落点——本偈只在星座度数范围内说话。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "edd0cb93328960ea56c8f7f9c07854018b9718e250e4b6f7e7cb78501949339b"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+      "method": {
+        "method": "ch03-v51-54-mooltrikon-and-own-portions",
+        "title": "附加尊贵：七曜各自的 Mooltrikon 段与 own Bhava 段",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘里这颗行星落在 Mooltrikon 还是别的段",
+          "各行星的 Mooltrikon 是哪几度"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "In Simh the first 20 degrees are Surya’s Mooltrikon, while the rest is his own Bhava",
+            "For Budh, in Kanya the first 15 degrees are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava",
+            "Shukra divides Tula into two halves keeping the first, as Mooltrikon and the second, as own Bhava",
+            "各曜的 Mooltrikon 度数段"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Note the Rāśis, which are the 2<sup>nd</sup> , 4<sup>th</sup> , 5<sup>th</sup> , 8<sup>th</sup> , 9<sup>th</sup> and 12<sup>th</sup> from the Mooltrikon of a Grah",
+            "Mooltrikon 还被用来定自然友敌"
+          ],
+          "method_queries": [
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "落在 Mooltrikon 段之后吉效怎么折算"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "In Simh the first 20 degrees"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "are Surya’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "In Simh the first 20 degrees are Surya’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "are sun’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "In Simh the first 20 degrees are sun’s Mooltrikon, while the rest is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "After the first 3 degrees of exaltation portion in Vrishabh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "for Chandra, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "After the first 3 degrees of exaltation portion in Vrishabh for Chandra, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "for moon, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "After the first 3 degrees of exaltation portion in Vrishabh for moon, the rest is her Mooltrikon"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Mangal has the first 12 degrees in Mesh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "as Mooltrikon with the rest therein becoming simply his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Mangal has the first 12 degrees in Mesh as Mooltrikon with the rest therein becoming simply his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "mars has the first 12 degrees in Mesh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "mars has the first 12 degrees in Mesh as Mooltrikon with the rest therein becoming simply his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "For Budh, in Kanya the first 15 degrees"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "For Budh, in Kanya the first 15 degrees are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "For mercury, in Kanya the first 15 degrees"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "For mercury, in Kanya the first 15 degrees are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "The first one third of Dhanu"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "is the Mooltrikon of Guru, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "The first one third of Dhanu is the Mooltrikon of Guru, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "is the Mooltrikon of jupiter, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-005",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "The first one third of Dhanu is the Mooltrikon of jupiter, while the remaining part thereof is his own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Shukra divides Tula into two halves"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "keeping the first, as Mooltrikon and the second, as own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Shukra divides Tula into two halves keeping the first, as Mooltrikon and the second, as own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "venus divides Tula into two halves"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-006",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "venus divides Tula into two halves keeping the first, as Mooltrikon and the second, as own Bhava"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Shani’s arrangements are same in Kumbh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "as Surya has in Simh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Shani’s arrangements are same in Kumbh as Surya has in Simh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "saturn’s arrangements are same in Kumbh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "as sun has in Simh"
+            },
+            {
+              "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "saturn’s arrangements are same in Kumbh as sun has in Simh"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少该行星在对应星座内度数的事实时，该步停止。",
+          "原文没有界定 own Bhava 与星座、宫的对应，需要把它映射成排盘取值时停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v51-54-mooltrikon-and-own-portions.step-007",
+        "action": "取土星在水瓶座内的度数，按太阳在狮子座的同一分法判断它的分段尊贵。",
+        "applicability_scope": "第3章附加尊贵条；本句以太阳在狮子座的分法为准，分段界线承本方法第一步。",
+        "minimum_supported_claim": "土星（Shani）在水瓶座（Kumbh）的分段安排相同，与太阳（Surya）在狮子座（Simh）的安排一样。",
+        "produced_fact_keys": [
+          "土星在水瓶座的分段尊贵判定"
+        ],
+        "required_fact_keys": [
+          "土星（Shani）落在水瓶座（Kumbh）内的第几度",
+          "太阳在狮子座的分段尊贵判定"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "土星（Shani）落在水瓶座（Kumbh）内的第几度"
+            },
+            {
+              "fact_key": "太阳在狮子座的分段尊贵判定"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Shani’s arrangements are same in Kumbh",
+              "claim": "土星（Shani）在水瓶座（Kumbh）的分段安排相同"
+            }
+          ],
+          "results": [
+            {
+              "quote": "as Surya has in Simh",
+              "claim": "与太阳（Surya）在狮子座（Simh）的安排一样"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v51-54",
+            "quote": "Shani’s arrangements are same in Kumbh, as Surya has in Simh.",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：土星（Shani）落在水瓶座（Kumbh）内的第几度、太阳在狮子座的分段尊贵判定。",
+        "stop_fact_keys": [
+          "土星（Shani）落在水瓶座（Kumbh）内的第几度",
+          "太阳在狮子座的分段尊贵判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把这条同分法推广到土星主管的另一个星座——本句只说水瓶座（Kumbh）。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "0f53fb60dd606692d2800388dae07f19a874a9929f13e2345fe7e750b18a3372"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v55-natural-relationship.step-001",
+      "method": {
+        "method": "ch03-v55-natural-relationship",
+        "title": "自然关系：由 Mooltrikon 与入旺星座定友、敌、中立",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "两颗行星天然是友是敌",
+          "自然friendship怎么算"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Note the Rāśis, which are the 2<sup>nd</sup> , 4<sup>th</sup> , 5<sup>th</sup> , 8<sup>th</sup> , 9<sup>th</sup> and 12<sup>th</sup> from the Mooltrikon of a Grah",
+            "The Grahas ruling such Rāśis are its friends, apart from the Lord of its exaltation Rāśi",
+            "自然友星 敌星 中立 怎么定"
+          ],
+          "counter_queries": [
+            "The Grah, posited in the 2<sup>nd</sup> , 3<sup>rd</sup> , 4<sup>th</sup> , 10<sup>th</sup> , 11<sup>th</sup> , or the 12<sup>th</sup> from another, becomes a mutual friend. There is enmity otherwise",
+            "临时关系可能与自然关系相反"
+          ],
+          "boundary_queries": [
+            "(This applies to a given Janm Kundali)",
+            "自然关系与限于出生盘的临时关系之别"
+          ],
+          "method_queries": [
+            "Should two Grahas be naturally and temporarily friendly, they become extremely friendly",
+            "Its beneficence is one fourth in a friendly Rāśi",
+            "定完友敌之后怎么用"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v55-natural-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the 2nd , 4th , 5th , 8th , 9th and 12th from the Mooltrikon of a Grah"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "apart from the Lord of its exaltation Rāśi"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The Grahas ruling such Rāśis are its friends"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the 2nd , 4th , 5th , 8th , 9th and 12th from the Mooltrikon of a Grah The Grahas ruling such Rāśis are its friends"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "apart from the Lord of its exaltation Rāśi The Grahas ruling such Rāśis are its friends"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Lords other than these"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "are its enemies"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Lords other than these are its enemies"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If a Grah becomes its friend as well, as its enemy (on account of the said two computations)"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "then it is neutral, or equal"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If a Grah becomes its friend as well, as its enemy (on account of the said two computations) then it is neutral, or equal"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少待判行星 Mooltrikon 所在星座时停止。",
+          "缺少另一行星所主星座与 Mooltrikon 的相对位次时停止。",
+          "本条只定友敌中立，没有给吉凶结果，要下断语必须另找原文。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v55-natural-relationship.step-001",
+        "action": "从待判行星的 Mooltrikon 数出第 2、4、5、8、9、12 个星座，看另一行星是否主管其中某一个，或是否主管其入旺星座，据以判定自然友星。",
+        "applicability_scope": "第3章自然关系条；本条只给友、敌、中立的判法，未给这三种关系各自的吉凶结果。",
+        "minimum_supported_claim": "从该行星（Grah）的 Mooltrikon 起第 2、4、5、8、9、12 个星座，主管这些星座的行星是它的友星，以及其入旺星座（exaltation Rāśi）之主也是友星。",
+        "produced_fact_keys": [
+          "两行星自然友星判定"
+        ],
+        "required_fact_keys": [
+          "本盘待判行星（Grah）的 Mooltrikon 落在哪个星座",
+          "另一行星（Grah）主管的星座是从待判行星 Mooltrikon 起的第几个星座"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘待判行星（Grah）的 Mooltrikon 落在哪个星座"
+                },
+                {
+                  "fact_key": "另一行星（Grah）主管的星座是从待判行星 Mooltrikon 起的第几个星座"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "另一行星（Grah）是否主管从待判行星 Mooltrikon 起第2个星座"
+                },
+                {
+                  "fact_key": "另一行星（Grah）是否主管从待判行星 Mooltrikon 起第4个星座"
+                },
+                {
+                  "fact_key": "另一行星（Grah）是否主管从待判行星 Mooltrikon 起第5个星座"
+                },
+                {
+                  "fact_key": "另一行星（Grah）是否主管从待判行星 Mooltrikon 起第8个星座"
+                },
+                {
+                  "fact_key": "另一行星（Grah）是否主管从待判行星 Mooltrikon 起第9个星座"
+                },
+                {
+                  "fact_key": "另一行星（Grah）是否主管从待判行星 Mooltrikon 起第12个星座"
+                },
+                {
+                  "fact_key": "另一行星（Grah）是否主管待判行星的入旺星座（exaltation Rāśi）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘待判行星（Grah）的 Mooltrikon 落在哪个星座"
+                },
+                {
+                  "fact_key": "另一行星（Grah）主管的星座是从待判行星 Mooltrikon 起的第几个星座"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "另一行星（Grah）是否主管从待判行星 Mooltrikon 起第2个星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "另一行星（Grah）是否主管从待判行星 Mooltrikon 起第2个星座"
+            },
+            "selection_group": "ch03-v55-natural-relationship.step-001:friend-source",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：另一行星（Grah）是否主管从待判行星 Mooltrikon 起第2个星座。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘待判行星（Grah）的 Mooltrikon 落在哪个星座"
+                },
+                {
+                  "fact_key": "另一行星（Grah）主管的星座是从待判行星 Mooltrikon 起的第几个星座"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "另一行星（Grah）是否主管从待判行星 Mooltrikon 起第4个星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "另一行星（Grah）是否主管从待判行星 Mooltrikon 起第4个星座"
+            },
+            "selection_group": "ch03-v55-natural-relationship.step-001:friend-source",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：另一行星（Grah）是否主管从待判行星 Mooltrikon 起第4个星座。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘待判行星（Grah）的 Mooltrikon 落在哪个星座"
+                },
+                {
+                  "fact_key": "另一行星（Grah）主管的星座是从待判行星 Mooltrikon 起的第几个星座"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "另一行星（Grah）是否主管从待判行星 Mooltrikon 起第5个星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "另一行星（Grah）是否主管从待判行星 Mooltrikon 起第5个星座"
+            },
+            "selection_group": "ch03-v55-natural-relationship.step-001:friend-source",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：另一行星（Grah）是否主管从待判行星 Mooltrikon 起第5个星座。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘待判行星（Grah）的 Mooltrikon 落在哪个星座"
+                },
+                {
+                  "fact_key": "另一行星（Grah）主管的星座是从待判行星 Mooltrikon 起的第几个星座"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "另一行星（Grah）是否主管从待判行星 Mooltrikon 起第8个星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "另一行星（Grah）是否主管从待判行星 Mooltrikon 起第8个星座"
+            },
+            "selection_group": "ch03-v55-natural-relationship.step-001:friend-source",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：另一行星（Grah）是否主管从待判行星 Mooltrikon 起第8个星座。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘待判行星（Grah）的 Mooltrikon 落在哪个星座"
+                },
+                {
+                  "fact_key": "另一行星（Grah）主管的星座是从待判行星 Mooltrikon 起的第几个星座"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "另一行星（Grah）是否主管从待判行星 Mooltrikon 起第9个星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "另一行星（Grah）是否主管从待判行星 Mooltrikon 起第9个星座"
+            },
+            "selection_group": "ch03-v55-natural-relationship.step-001:friend-source",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：另一行星（Grah）是否主管从待判行星 Mooltrikon 起第9个星座。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘待判行星（Grah）的 Mooltrikon 落在哪个星座"
+                },
+                {
+                  "fact_key": "另一行星（Grah）主管的星座是从待判行星 Mooltrikon 起的第几个星座"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "另一行星（Grah）是否主管从待判行星 Mooltrikon 起第12个星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "另一行星（Grah）是否主管从待判行星 Mooltrikon 起第12个星座"
+            },
+            "selection_group": "ch03-v55-natural-relationship.step-001:friend-source",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：另一行星（Grah）是否主管从待判行星 Mooltrikon 起第12个星座。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘待判行星（Grah）的 Mooltrikon 落在哪个星座"
+                },
+                {
+                  "fact_key": "另一行星（Grah）主管的星座是从待判行星 Mooltrikon 起的第几个星座"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "另一行星（Grah）是否主管待判行星的入旺星座（exaltation Rāśi）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "另一行星（Grah）是否主管待判行星的入旺星座（exaltation Rāśi）"
+            },
+            "selection_group": "ch03-v55-natural-relationship.step-001:friend-source",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：另一行星（Grah）是否主管待判行星的入旺星座（exaltation Rāśi）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "the 2<sup>nd</sup> , 4<sup>th</sup> , 5<sup>th</sup> , 8<sup>th</sup> , 9<sup>th</sup> and 12<sup>th</sup> from the Mooltrikon of a Grah",
+              "claim": "从该行星（Grah）的 Mooltrikon 起第 2、4、5、8、9、12 个星座"
+            },
+            {
+              "quote": "apart from the Lord of its exaltation Rāśi",
+              "claim": "以及其入旺星座（exaltation Rāśi）之主"
+            }
+          ],
+          "results": [
+            {
+              "quote": "The Grahas ruling such Rāśis are its friends",
+              "claim": "主管这些星座的行星是它的友星"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v55",
+            "quote": "Note the Rāśis, which are the 2<sup>nd</sup> , 4<sup>th</sup> , 5<sup>th</sup> , 8<sup>th</sup> , 9<sup>th</sup> and 12<sup>th</sup> from the Mooltrikon of a Grah. The Grahas ruling such Rāśis are its friends, apart from the Lord of its exaltation Rāśi.",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘待判行星（Grah）的 Mooltrikon 落在哪个星座、另一行星（Grah）主管的星座是从待判行星 Mooltrikon 起的第几个星座。",
+        "stop_fact_keys": [
+          "本盘待判行星（Grah）的 Mooltrikon 落在哪个星座",
+          "另一行星（Grah）主管的星座是从待判行星 Mooltrikon 起的第几个星座"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把这里的星座计数改成宫位计数——原文数的是 Rāśis。",
+          "不得据本条推出友星带来什么吉果——本条只定关系。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "266d2389f070828270d79827fb059c8136842368d67ab1d8d0e5c311b3b961ae"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v55-natural-relationship.step-002",
+      "method": {
+        "method": "ch03-v55-natural-relationship",
+        "title": "自然关系：由 Mooltrikon 与入旺星座定友、敌、中立",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "两颗行星天然是友是敌",
+          "自然friendship怎么算"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Note the Rāśis, which are the 2<sup>nd</sup> , 4<sup>th</sup> , 5<sup>th</sup> , 8<sup>th</sup> , 9<sup>th</sup> and 12<sup>th</sup> from the Mooltrikon of a Grah",
+            "The Grahas ruling such Rāśis are its friends, apart from the Lord of its exaltation Rāśi",
+            "自然友星 敌星 中立 怎么定"
+          ],
+          "counter_queries": [
+            "The Grah, posited in the 2<sup>nd</sup> , 3<sup>rd</sup> , 4<sup>th</sup> , 10<sup>th</sup> , 11<sup>th</sup> , or the 12<sup>th</sup> from another, becomes a mutual friend. There is enmity otherwise",
+            "临时关系可能与自然关系相反"
+          ],
+          "boundary_queries": [
+            "(This applies to a given Janm Kundali)",
+            "自然关系与限于出生盘的临时关系之别"
+          ],
+          "method_queries": [
+            "Should two Grahas be naturally and temporarily friendly, they become extremely friendly",
+            "Its beneficence is one fourth in a friendly Rāśi",
+            "定完友敌之后怎么用"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v55-natural-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the 2nd , 4th , 5th , 8th , 9th and 12th from the Mooltrikon of a Grah"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "apart from the Lord of its exaltation Rāśi"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The Grahas ruling such Rāśis are its friends"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the 2nd , 4th , 5th , 8th , 9th and 12th from the Mooltrikon of a Grah The Grahas ruling such Rāśis are its friends"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "apart from the Lord of its exaltation Rāśi The Grahas ruling such Rāśis are its friends"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Lords other than these"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "are its enemies"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Lords other than these are its enemies"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If a Grah becomes its friend as well, as its enemy (on account of the said two computations)"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "then it is neutral, or equal"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If a Grah becomes its friend as well, as its enemy (on account of the said two computations) then it is neutral, or equal"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少待判行星 Mooltrikon 所在星座时停止。",
+          "缺少另一行星所主星座与 Mooltrikon 的相对位次时停止。",
+          "本条只定友敌中立，没有给吉凶结果，要下断语必须另找原文。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v55-natural-relationship.step-002",
+        "action": "把不在上述友星之列的星座之主判为敌星。",
+        "applicability_scope": "第3章自然关系条；「上述之外」承本方法第一步给出的友星名单。",
+        "minimum_supported_claim": "上述之外的星座之主是它的敌星。",
+        "produced_fact_keys": [
+          "两行星自然敌星判定"
+        ],
+        "required_fact_keys": [
+          "两行星自然友星判定"
+        ],
+        "condition_logic": {
+          "operator": "NOT",
+          "operands": [
+            {
+              "fact_key": "两行星自然友星判定"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Lords other than these",
+              "claim": "上述之外的星座之主"
+            }
+          ],
+          "results": [
+            {
+              "quote": "are its enemies",
+              "claim": "是它的敌星"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v55",
+            "quote": "Lords other than these are its enemies.",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：两行星自然友星判定。",
+        "stop_fact_keys": [
+          "两行星自然友星判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据本条推出敌星带来什么凶果——本条只定关系。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "09a1bf878b2b23283c63519dda82988658f638885887728d6713277d1dab0cd4"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v55-natural-relationship.step-003",
+      "method": {
+        "method": "ch03-v55-natural-relationship",
+        "title": "自然关系：由 Mooltrikon 与入旺星座定友、敌、中立",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "两颗行星天然是友是敌",
+          "自然friendship怎么算"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Note the Rāśis, which are the 2<sup>nd</sup> , 4<sup>th</sup> , 5<sup>th</sup> , 8<sup>th</sup> , 9<sup>th</sup> and 12<sup>th</sup> from the Mooltrikon of a Grah",
+            "The Grahas ruling such Rāśis are its friends, apart from the Lord of its exaltation Rāśi",
+            "自然友星 敌星 中立 怎么定"
+          ],
+          "counter_queries": [
+            "The Grah, posited in the 2<sup>nd</sup> , 3<sup>rd</sup> , 4<sup>th</sup> , 10<sup>th</sup> , 11<sup>th</sup> , or the 12<sup>th</sup> from another, becomes a mutual friend. There is enmity otherwise",
+            "临时关系可能与自然关系相反"
+          ],
+          "boundary_queries": [
+            "(This applies to a given Janm Kundali)",
+            "自然关系与限于出生盘的临时关系之别"
+          ],
+          "method_queries": [
+            "Should two Grahas be naturally and temporarily friendly, they become extremely friendly",
+            "Its beneficence is one fourth in a friendly Rāśi",
+            "定完友敌之后怎么用"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v55-natural-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the 2nd , 4th , 5th , 8th , 9th and 12th from the Mooltrikon of a Grah"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "apart from the Lord of its exaltation Rāśi"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The Grahas ruling such Rāśis are its friends"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the 2nd , 4th , 5th , 8th , 9th and 12th from the Mooltrikon of a Grah The Grahas ruling such Rāśis are its friends"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "apart from the Lord of its exaltation Rāśi The Grahas ruling such Rāśis are its friends"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Lords other than these"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "are its enemies"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Lords other than these are its enemies"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If a Grah becomes its friend as well, as its enemy (on account of the said two computations)"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "then it is neutral, or equal"
+            },
+            {
+              "step_id": "ch03-v55-natural-relationship.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If a Grah becomes its friend as well, as its enemy (on account of the said two computations) then it is neutral, or equal"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少待判行星 Mooltrikon 所在星座时停止。",
+          "缺少另一行星所主星座与 Mooltrikon 的相对位次时停止。",
+          "本条只定友敌中立，没有给吉凶结果，要下断语必须另找原文。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v55-natural-relationship.step-003",
+        "action": "若同一颗行星按上述两种算法既算友星又算敌星，判为中立。",
+        "applicability_scope": "第3章自然关系条；「两种算法」承本偈前两句的友星算法与敌星算法。",
+        "minimum_supported_claim": "若一颗行星（Grah）依上述两种算法（two computations）既成其友星又成其敌星，则它是中立（neutral, or equal）。",
+        "produced_fact_keys": [
+          "两行星自然中立判定"
+        ],
+        "required_fact_keys": [
+          "两行星自然友星判定",
+          "两行星自然敌星判定"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "两行星自然友星判定"
+            },
+            {
+              "fact_key": "两行星自然敌星判定"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If a Grah becomes its friend as well, as its enemy (on account of the said two computations)",
+              "claim": "若一颗行星（Grah）依上述两种算法（two computations）既成其友星又成其敌星"
+            }
+          ],
+          "results": [
+            {
+              "quote": "then it is neutral, or equal",
+              "claim": "则它是中立（neutral, or equal）"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v55",
+            "quote": "If a Grah becomes its friend as well, as its enemy (on account of the said two computations), then it is neutral, or equal.",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：两行星自然友星判定、两行星自然敌星判定。",
+        "stop_fact_keys": [
+          "两行星自然友星判定",
+          "两行星自然敌星判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据本条推出中立关系带来什么结果——本条只定关系。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "ad6f59ed650d25a09d68408c55f06ede2493d1377cb92a24f4c9b54c04303123"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v56-temporary-relationship.step-001",
+      "method": {
+        "method": "ch03-v56-temporary-relationship",
+        "title": "临时关系：出生盘中互距 2、3、4、10、11、12 位为友，否则为敌",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘里这两颗行星临时是友是敌",
+          "临时friendship怎么算"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "The Grah, posited in the 2<sup>nd</sup> , 3<sup>rd</sup> , 4<sup>th</sup> , 10<sup>th</sup> , 11<sup>th</sup> , or the 12<sup>th</sup> from another, becomes a mutual friend. There is enmity otherwise",
+            "临时关系 互为友星 互为敌星"
+          ],
+          "counter_queries": [
+            "The Grahas ruling such Rāśis are its friends, apart from the Lord of its exaltation Rāśi. Lords other than these are its enemies",
+            "自然关系可能与临时关系相反"
+          ],
+          "boundary_queries": [
+            "Temporary Relationships",
+            "(This applies to a given Janm Kundali)",
+            "临时关系只对给定出生盘成立"
+          ],
+          "method_queries": [
+            "Should two Grahas be naturally and temporarily friendly, they become extremely friendly",
+            "临时关系与自然关系怎么合成"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v56-temporary-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "posited in the 2nd , 3rd , 4th , 10th , 11th , or the 12th from another"
+            },
+            {
+              "step_id": "ch03-v56-temporary-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "becomes a mutual friend"
+            },
+            {
+              "step_id": "ch03-v56-temporary-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "posited in the 2nd , 3rd , 4th , 10th , 11th , or the 12th from another becomes a mutual friend"
+            },
+            {
+              "step_id": "ch03-v56-temporary-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "otherwise"
+            },
+            {
+              "step_id": "ch03-v56-temporary-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "There is enmity"
+            },
+            {
+              "step_id": "ch03-v56-temporary-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "otherwise There is enmity"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少两行星相对位次的事实时停止。",
+          "原文没有说明位次按星座计还是按宫计，计数口径未定即停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v56-temporary-relationship.step-001",
+        "action": "数出另一行星自待判行星起的位次，落在第 2、3、4、10、11、12 位时判为互为友星。",
+        "applicability_scope": "本条限于给定的出生盘（This applies to a given Janm Kundali）；原文没有说明「自另一行星起数」按星座计还是按宫计。",
+        "minimum_supported_claim": "一颗行星（Grah）落在从另一行星起第 2、3、4、10、11、12 个位置时，两者互为友星。",
+        "produced_fact_keys": [
+          "两行星临时友星判定"
+        ],
+        "required_fact_keys": [
+          "另一行星（Grah）自待判行星起数落在第几个位置"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "另一行星（Grah）自待判行星起数落在第几个位置"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "另一行星（Grah）自待判行星起数是否落在第2个位置"
+                },
+                {
+                  "fact_key": "另一行星（Grah）自待判行星起数是否落在第3个位置"
+                },
+                {
+                  "fact_key": "另一行星（Grah）自待判行星起数是否落在第4个位置"
+                },
+                {
+                  "fact_key": "另一行星（Grah）自待判行星起数是否落在第10个位置"
+                },
+                {
+                  "fact_key": "另一行星（Grah）自待判行星起数是否落在第11个位置"
+                },
+                {
+                  "fact_key": "另一行星（Grah）自待判行星起数是否落在第12个位置"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "另一行星（Grah）自待判行星起数落在第几个位置"
+            },
+            "required_fact_keys": [
+              "另一行星（Grah）自待判行星起数是否落在第2个位置"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "另一行星（Grah）自待判行星起数是否落在第2个位置"
+            },
+            "selection_group": "ch03-v56-temporary-relationship.step-001:temporary-friend-position",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：另一行星（Grah）自待判行星起数是否落在第2个位置。"
+          },
+          {
+            "when": {
+              "fact_key": "另一行星（Grah）自待判行星起数落在第几个位置"
+            },
+            "required_fact_keys": [
+              "另一行星（Grah）自待判行星起数是否落在第3个位置"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "另一行星（Grah）自待判行星起数是否落在第3个位置"
+            },
+            "selection_group": "ch03-v56-temporary-relationship.step-001:temporary-friend-position",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：另一行星（Grah）自待判行星起数是否落在第3个位置。"
+          },
+          {
+            "when": {
+              "fact_key": "另一行星（Grah）自待判行星起数落在第几个位置"
+            },
+            "required_fact_keys": [
+              "另一行星（Grah）自待判行星起数是否落在第4个位置"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "另一行星（Grah）自待判行星起数是否落在第4个位置"
+            },
+            "selection_group": "ch03-v56-temporary-relationship.step-001:temporary-friend-position",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：另一行星（Grah）自待判行星起数是否落在第4个位置。"
+          },
+          {
+            "when": {
+              "fact_key": "另一行星（Grah）自待判行星起数落在第几个位置"
+            },
+            "required_fact_keys": [
+              "另一行星（Grah）自待判行星起数是否落在第10个位置"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "另一行星（Grah）自待判行星起数是否落在第10个位置"
+            },
+            "selection_group": "ch03-v56-temporary-relationship.step-001:temporary-friend-position",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：另一行星（Grah）自待判行星起数是否落在第10个位置。"
+          },
+          {
+            "when": {
+              "fact_key": "另一行星（Grah）自待判行星起数落在第几个位置"
+            },
+            "required_fact_keys": [
+              "另一行星（Grah）自待判行星起数是否落在第11个位置"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "另一行星（Grah）自待判行星起数是否落在第11个位置"
+            },
+            "selection_group": "ch03-v56-temporary-relationship.step-001:temporary-friend-position",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：另一行星（Grah）自待判行星起数是否落在第11个位置。"
+          },
+          {
+            "when": {
+              "fact_key": "另一行星（Grah）自待判行星起数落在第几个位置"
+            },
+            "required_fact_keys": [
+              "另一行星（Grah）自待判行星起数是否落在第12个位置"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "另一行星（Grah）自待判行星起数是否落在第12个位置"
+            },
+            "selection_group": "ch03-v56-temporary-relationship.step-001:temporary-friend-position",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：另一行星（Grah）自待判行星起数是否落在第12个位置。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "posited in the 2<sup>nd</sup> , 3<sup>rd</sup> , 4<sup>th</sup> , 10<sup>th</sup> , 11<sup>th</sup> , or the 12<sup>th</sup> from another",
+              "claim": "落在从另一行星起第 2、3、4、10、11、12 个位置时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "becomes a mutual friend",
+              "claim": "两者互为友星"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v56",
+            "quote": "The Grah, posited in the 2<sup>nd</sup> , 3<sup>rd</sup> , 4<sup>th</sup> , 10<sup>th</sup> , 11<sup>th</sup> , or the 12<sup>th</sup> from another, becomes a mutual friend.",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：另一行星（Grah）自待判行星起数落在第几个位置。",
+        "stop_fact_keys": [
+          "另一行星（Grah）自待判行星起数落在第几个位置"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据本条推出临时友星带来什么吉果——本条只定关系。",
+          "不得把本条的位次自行认定为星座计数或宫位计数——原文没有说。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "bcbf1a957eda2a8d5a1e7fb7ac4ed5b0e7113d20295a0fac39a196b113686d8e"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v56-temporary-relationship.step-002",
+      "method": {
+        "method": "ch03-v56-temporary-relationship",
+        "title": "临时关系：出生盘中互距 2、3、4、10、11、12 位为友，否则为敌",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘里这两颗行星临时是友是敌",
+          "临时friendship怎么算"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "The Grah, posited in the 2<sup>nd</sup> , 3<sup>rd</sup> , 4<sup>th</sup> , 10<sup>th</sup> , 11<sup>th</sup> , or the 12<sup>th</sup> from another, becomes a mutual friend. There is enmity otherwise",
+            "临时关系 互为友星 互为敌星"
+          ],
+          "counter_queries": [
+            "The Grahas ruling such Rāśis are its friends, apart from the Lord of its exaltation Rāśi. Lords other than these are its enemies",
+            "自然关系可能与临时关系相反"
+          ],
+          "boundary_queries": [
+            "Temporary Relationships",
+            "(This applies to a given Janm Kundali)",
+            "临时关系只对给定出生盘成立"
+          ],
+          "method_queries": [
+            "Should two Grahas be naturally and temporarily friendly, they become extremely friendly",
+            "临时关系与自然关系怎么合成"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v56-temporary-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "posited in the 2nd , 3rd , 4th , 10th , 11th , or the 12th from another"
+            },
+            {
+              "step_id": "ch03-v56-temporary-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "becomes a mutual friend"
+            },
+            {
+              "step_id": "ch03-v56-temporary-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "posited in the 2nd , 3rd , 4th , 10th , 11th , or the 12th from another becomes a mutual friend"
+            },
+            {
+              "step_id": "ch03-v56-temporary-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "otherwise"
+            },
+            {
+              "step_id": "ch03-v56-temporary-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "There is enmity"
+            },
+            {
+              "step_id": "ch03-v56-temporary-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "otherwise There is enmity"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少两行星相对位次的事实时停止。",
+          "原文没有说明位次按星座计还是按宫计，计数口径未定即停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v56-temporary-relationship.step-002",
+        "action": "不落在上述位次时，判为互为敌星。",
+        "applicability_scope": "本条限于给定的出生盘（This applies to a given Janm Kundali）；「otherwise」承本方法第一步列出的六个位次。",
+        "minimum_supported_claim": "不属上述位次的情形，两者互为敌星。",
+        "produced_fact_keys": [
+          "两行星临时敌星判定"
+        ],
+        "required_fact_keys": [
+          "两行星临时友星判定"
+        ],
+        "condition_logic": {
+          "operator": "NOT",
+          "operands": [
+            {
+              "fact_key": "两行星临时友星判定"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "otherwise",
+              "claim": "不属上述位次的情形"
+            }
+          ],
+          "results": [
+            {
+              "quote": "There is enmity",
+              "claim": "两者互为敌星"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v56",
+            "quote": "There is enmity otherwise.",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：两行星临时友星判定。",
+        "stop_fact_keys": [
+          "两行星临时友星判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得在临时关系里补出中立一档——本条只给友与敌两种。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "6e1ff3dc1a350ef756fcb735bddfe675e6b28a1d521d9a65d5974e58ef8659ed"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v57-58-compound-relationship.step-001",
+      "method": {
+        "method": "ch03-v57-58-compound-relationship",
+        "title": "合成关系：自然关系与临时关系合成极友、友、均等、敌、极敌",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "两颗行星最终算友还是敌",
+          "自然关系和临时关系冲突时怎么办"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should two Grahas be naturally and temporarily friendly, they become extremely friendly",
+            "Enmity on one count combined with affinity on the other turns into equality",
+            "合成关系 极友 均等 极敌"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "(This applies to a given Janm Kundali)",
+            "合成关系里的临时一侧只对出生盘成立"
+          ],
+          "method_queries": [
+            "60, 45, 30, 22, 15, 8, 4, 2 and 0 are the Subhankas (Subha Griha Pankthis, benefic points), due to a Grah’s placement, respectively, in exaltation, Mooltrikon, own, great friend’s, friend’s, neutral, enemy’s, great enemy’s and debilitation Rāśi",
+            "极友 极敌 怎么折成分值"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should two Grahas be naturally and temporarily friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "they become extremely friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should two Grahas be naturally and temporarily friendly they become extremely friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Friendship on one count and neutrality on another count"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "make them friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Friendship on one count and neutrality on another count make them friendly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Enmity on one count combined with affinity on the other"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "turns into equality"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Enmity on one count combined with affinity on the other turns into equality"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Enmity and neutralship"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "cause only enmity"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Enmity and neutralship cause only enmity"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should there be enmity in both manners"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "extreme enmity is obtained"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The Jyotishi should consider these and declare horoscopic effects accordingly"
+            },
+            {
+              "step_id": "ch03-v57-58-compound-relationship.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should there be enmity in both manners extreme enmity is obtained"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少该两行星的自然关系时停止。",
+          "缺少该两行星的临时关系时停止。",
+          "原文没有指明「一方面」对应自然还是临时，遇到需要区分的情形即停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v57-58-compound-relationship.step-001",
+        "action": "两方面都为友时，判为极友。",
+        "applicability_scope": "第3章合成关系条；本条只合成关系，未给各档关系的吉凶结果。",
+        "minimum_supported_claim": "若两颗行星（two Grahas）在自然与临时两方面都为友，它们成为极友（extremely friendly）。",
+        "produced_fact_keys": [
+          "两行星极友判定"
+        ],
+        "required_fact_keys": [
+          "本盘该两行星的自然关系（natural relationship）是友、敌还是中立",
+          "本盘该两行星的临时关系（temporary relationship）是友还是敌"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘该两行星的自然关系（natural relationship）是友、敌还是中立"
+            },
+            {
+              "fact_key": "本盘该两行星的临时关系（temporary relationship）是友还是敌"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should two Grahas be naturally and temporarily friendly",
+              "claim": "若两颗行星（two Grahas）在自然与临时两方面都为友"
+            }
+          ],
+          "results": [
+            {
+              "quote": "they become extremely friendly",
+              "claim": "它们成为极友（extremely friendly）"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v57-58",
+            "quote": "Should two Grahas be naturally and temporarily friendly, they become extremely friendly.",
+            "pdf_pages": [
+              12
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘该两行星的自然关系（natural relationship）是友、敌还是中立、本盘该两行星的临时关系（temporary relationship）是友还是敌。",
+        "stop_fact_keys": [
+          "本盘该两行星的自然关系（natural relationship）是友、敌还是中立",
+          "本盘该两行星的临时关系（temporary relationship）是友还是敌"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据本条推出极友带来什么吉果——本条只合成关系。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b6ca14820940c69abbdb97fe48edac327d8103dbf195f2ad727d573ac4cc81da"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch03:v49-50": {
+      "evidence_atom_id": "bphs-97:santhanam:ch03:v49-50",
+      "chapter_number": 3,
+      "chapter_title": "Grah Characters and Description",
+      "verse_label": "49-50.",
+      "content_role": "verse",
+      "exact_text": "49-50. Exaltation and Debilitation. For the seven Grahas, from Surya on, the exaltation Rāśis are, respectively, Mesh, Vrishabh, Makar, Kanya, Kark, Meen and Tula. The deepest exaltation degrees are, respectively, 10, 3, 28, 15, 5, 27 and 20 in those Rāśis. And in the seventh Rashifrom the said exaltation Rashieach Grah has its own debilitation. The same degrees of deep exaltation apply to deep fall.",
+      "pdf_pages": [
+        12
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 3 · Sloka 49-50 · PDF page 12 · bphs-97:santhanam:ch03:v49-50",
+      "previous_atom_id": "bphs-97:santhanam:ch03:v48",
+      "next_atom_id": "bphs-97:santhanam:ch03:v51-54",
+      "context_before": "d Ketu rule Jivas.\n\n48. Age. Out of all the Grahas Shani is the eldest. He bestows maximum number of years in Naisargik Dasha.\n\n",
+      "context_after": "51-54. Additional Dignities. In Simh the first 20 degrees are Surya’s Mooltrikon, while the rest is his own Bhava. After the fir",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch03:v51-54": {
+      "evidence_atom_id": "bphs-97:santhanam:ch03:v51-54",
+      "chapter_number": 3,
+      "chapter_title": "Grah Characters and Description",
+      "verse_label": "51-54.",
+      "content_role": "verse",
+      "exact_text": "51-54. Additional Dignities. In Simh the first 20 degrees are Surya’s Mooltrikon, while the rest is his own Bhava. After the first 3 degrees of exaltation portion in Vrishabh, for Chandra, the rest is her Mooltrikon. Mangal has the first 12 degrees in Mesh, as Mooltrikon with the rest therein becoming simply his own Bhava. For Budh, in Kanya the first 15 degrees are exaltation zone, the next 5 degrees Mooltrikon and the last 10 degrees are own Bhava. The first one third of Dhanu is the Mooltrikon of Guru, while the remaining part thereof is his own Bhava. Shukra divides Tula into two halves keeping the first, as Mooltrikon and the second, as own Bhava. Shani’s arrangements are same in Kumbh, as Surya has in Simh.",
+      "pdf_pages": [
+        12
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 3 · Sloka 51-54 · PDF page 12 · bphs-97:santhanam:ch03:v51-54",
+      "previous_atom_id": "bphs-97:santhanam:ch03:v49-50",
+      "next_atom_id": "bphs-97:santhanam:ch03:v55",
+      "context_before": "Rashifrom the said exaltation Rashieach Grah has its own debilitation. The same degrees of deep exaltation apply to deep fall.\n\n",
+      "context_after": "55. Natural Relationships. Note the Rāśis, which are the 2<sup>nd</sup> , 4<sup>th</sup> , 5<sup>th</sup> , 8<sup>th</sup> , 9<s",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch03:v55": {
+      "evidence_atom_id": "bphs-97:santhanam:ch03:v55",
+      "chapter_number": 3,
+      "chapter_title": "Grah Characters and Description",
+      "verse_label": "55.",
+      "content_role": "verse",
+      "exact_text": "55. Natural Relationships. Note the Rāśis, which are the 2<sup>nd</sup> , 4<sup>th</sup> , 5<sup>th</sup> , 8<sup>th</sup> , 9<sup>th</sup> and 12<sup>th</sup> from the Mooltrikon of a Grah. The Grahas ruling such Rāśis are its friends, apart from the Lord of its exaltation Rāśi. Lords other than these are its enemies. If a Grah becomes its friend as well, as its enemy (on account of the said two computations), then it is neutral, or equal.",
+      "pdf_pages": [
+        12
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 3 · Sloka 55 · PDF page 12 · bphs-97:santhanam:ch03:v55",
+      "previous_atom_id": "bphs-97:santhanam:ch03:v51-54",
+      "next_atom_id": "bphs-97:santhanam:ch03:v56",
+      "context_before": "s keeping the first, as Mooltrikon and the second, as own Bhava. Shani’s arrangements are same in Kumbh, as Surya has in Simh.\n\n",
+      "context_after": "56. Temporary Relationships. The Grah, posited in the 2<sup>nd</sup> , 3<sup>rd</sup> , 4<sup>th</sup> , 10<sup>th</sup> , 11<su",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch03:v56": {
+      "evidence_atom_id": "bphs-97:santhanam:ch03:v56",
+      "chapter_number": 3,
+      "chapter_title": "Grah Characters and Description",
+      "verse_label": "56.",
+      "content_role": "verse",
+      "exact_text": "56. Temporary Relationships. The Grah, posited in the 2<sup>nd</sup> , 3<sup>rd</sup> , 4<sup>th</sup> , 10<sup>th</sup> , 11<sup>th</sup> , or the 12<sup>th</sup> from another, becomes a mutual friend. There is enmity otherwise. (This applies to a given Janm Kundali)",
+      "pdf_pages": [
+        12
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 3 · Sloka 56 · PDF page 12 · bphs-97:santhanam:ch03:v56",
+      "previous_atom_id": "bphs-97:santhanam:ch03:v55",
+      "next_atom_id": "bphs-97:santhanam:ch03:v57-58",
+      "context_before": "s. If a Grah becomes its friend as well, as its enemy (on account of the said two computations), then it is neutral, or equal.\n\n",
+      "context_after": "57-58. Compound Relationship. Should two Grahas be naturally and temporarily friendly, they become extremely friendly. Friendshi",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch03:v57-58": {
+      "evidence_atom_id": "bphs-97:santhanam:ch03:v57-58",
+      "chapter_number": 3,
+      "chapter_title": "Grah Characters and Description",
+      "verse_label": "57-58.",
+      "content_role": "verse",
+      "exact_text": "57-58. Compound Relationship. Should two Grahas be naturally and temporarily friendly, they become extremely friendly. Friendship on one count and neutrality on another count make them friendly. Enmity on one count combined with affinity on the other turns into equality. Enmity and neutralship cause only enmity. Should there be enmity in both manners, extreme enmity is obtained. The Jyotishi should consider these and declare horoscopic effects accordingly.",
+      "pdf_pages": [
+        12
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 3 · Sloka 57-58 · PDF page 12 · bphs-97:santhanam:ch03:v57-58",
+      "previous_atom_id": "bphs-97:santhanam:ch03:v56",
+      "next_atom_id": "bphs-97:santhanam:ch03:v59-60",
+      "context_before": "r the 12<sup>th</sup> from another, becomes a mutual friend. There is enmity otherwise. (This applies to a given Janm Kundali)\n\n",
+      "context_after": "59-60. Ratio of Effects. A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effec",
+      "content_missing": false
+    }
+  }
+}

@@ -1,0 +1,441 @@
+{
+  "pilot_only": false,
+  "publishable": false,
+  "topics": {
+    "ch01-v5-8-teaching-fit-student": {
+      "question_type": "可传授的对象：心性平和、敬重师长、只说真话、敬畏神明的学生，教之只有好事",
+      "required_facts": [
+        "受教者是否心性平和（peacefully disposed）",
+        "受教者是否敬重师长（honour the preceptors）",
+        "受教者是否只说真话（speak only truth）",
+        "受教者是否敬畏神明（godfearing）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "四项品性中有任一项无法确认时停止。",
+        "原文没有给这四项品性的任何考察方法或判准，无法认定时停止。",
+        "原文没有指明『只有好事』落在传授者还是受教者身上，未确定即停判。"
+      ]
+    },
+    "ch01-v5-8-teaching-unfit-student": {
+      "question_type": "不可传授的对象：不情愿的学生、异端者、狡诈之人，教之必永远招祸",
+      "required_facts": [
+        "本次受教者是谁"
+      ],
+      "conditional_facts": [
+        "受教者是否不情愿学（an unwilling student）",
+        "受教者是否是异端者（a heterodox）",
+        "受教者是否是狡诈之人（a crafty person）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少「本次受教者是谁」时停止。",
+        "三类不适格身份都无法确认时停止。",
+        "原文没有指明祸患落在传授者还是受教者身上，未确定即停判。"
+      ]
+    },
+    "ch03-v10-names-of-the-nine-grahas": {
+      "question_type": "九曜名单（Names of Grahas）",
+      "required_facts": [
+        "本盘中的九曜（Grahas）分别是哪些行星"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘九曜（Grahas）名单时停止。",
+        "本条只给名称与次序，没有任何吉凶结果；要下断语必须另找原文。"
+      ]
+    },
+    "ch03-v4-6-lagn-graha-judgment-basis": {
+      "question_type": "吉凶推断的依据：上升（Lagn）与诸行星（Grahas）彼此的聚合与分离",
+      "required_facts": [
+        "本盘上升（Lagn）落在哪个星座",
+        "本盘中每颗行星（Graha）分别落在哪一宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘上升（Lagn）所在星座时停止。",
+        "缺少本盘各行星（Graha）落宫时停止。",
+        "『joining and departing from each other』（彼此聚合与分离）原文未界定为何种关系，未确定即停判，不得自行选定算法；取各行星落宫只是取得诸曜位置，不表示原文指的就是同宫关系。"
+      ]
+    },
+    "ch03-v8-9-drikganit-positions-and-birth-lagn": {
+      "question_type": "起盘取用：行星位置依 Drikganit，出生上升（Lagn）依各地星座升起时长",
+      "required_facts": [
+        "本盘行星位置是否依 Drikganit 取得",
+        "本盘出生地适用的星座升起时长（Rashi durations）是多少"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少「本盘行星位置是否依 Drikganit 取得」时停止。",
+        "缺少出生地适用的星座升起时长（Rashi durations）时停止。",
+        "原文未给具体的升起时长表与星历表，取值来源不确定即停判，不得自行选定。"
+      ]
+    },
+    "ch03-v11-benefics-and-malefics": {
+      "question_type": "自然吉凶星名册：六凶（含减光月）与其余为吉",
+      "required_facts": [
+        "本盘中的九曜（Grahas）分别是哪些行星",
+        "月亮（Chandra）是否为减光月（decreasing Chandra）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少「月亮（Chandra）是否为减光月（decreasing Chandra）」时，吉星名册停判。",
+        "『decreasing』（减光）本条未给界定门槛，取值不确定即停判，不得自行选定盈亏算法。",
+        "本条只给自然吉凶，未按上升给功能吉凶；要按上升定吉凶须另找原文。"
+      ]
+    },
+    "ch03-v11-budh-joins-a-malefic": {
+      "question_type": "水星（Budh）与凶星同宫时转为凶星",
+      "required_facts": [
+        "水星（Budh）是否与凶星同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少「水星（Budh）是否与凶星同宫」时停止。",
+        "凶星名册未定时停止：凶星由 ch03:v11 的自然吉凶星名册方法给出。",
+        "原文只说『joins』（会合同宫），若排盘对会合的取值范围不确定则停判。"
+      ]
+    },
+    "ch03-v12-13-grah-governances": {
+      "question_type": "诸曜所主人事（Grah governances）：灵魂、心意、力量、言语、知识、精、悲伤",
+      "required_facts": [
+        "本盘中的九曜（Grahas）分别是哪些行星"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘九曜（Grahas）名单时停止。",
+        "本条只给行星所主人事，没有给任何吉凶结果；要下吉凶断语必须另找原文。"
+      ]
+    },
+    "ch03-v35-38-directional-strength": {
+      "question_type": "方位强弱：东、南、西、北各有得力之曜",
+      "required_facts": [
+        "本盘中哪些行星处于东方（East）",
+        "本盘中哪些行星处于南方（South）",
+        "本盘中哪些行星处于西方（West）",
+        "本盘中哪些行星处于北方（North）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘各方位所处行星的事实时停止。",
+        "原文没有给方位的判定法，方位无法确定即停判。",
+        "本条只说哪几颗曜在该方位有力，没有给强弱数值，要量化必须另查 Shad Bal 原文。"
+      ]
+    },
+    "ch03-v35-38-day-night-strength": {
+      "question_type": "昼夜强弱：夜间有力之曜、昼夜皆有力之曜与只在白昼有力之曜",
+      "required_facts": [
+        "本盘出生时段是白天（day）还是夜间（night）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘出生昼夜时段的事实时停止。",
+        "本条只分昼夜列出有力之曜，没有给强弱数值，要量化必须另查 Kaal Bal 原文。"
+      ]
+    },
+    "ch03-v35-38-lunar-half-strength": {
+      "question_type": "明暗半月强弱：暗半月凶星有力、明半月吉星得力",
+      "required_facts": [
+        "本盘出生时的月相属暗半月（dark half）还是明半月（bright half）",
+        "本盘中哪些行星被判为凶星",
+        "本盘中哪些行星被判为吉星"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘出生月相（明半月还是暗半月）的事实时停止。",
+        "缺少本盘吉星或凶星名册时停止。",
+        "本条只说强弱，没有给吉凶结果，要下断语必须另找原文。"
+      ]
+    },
+    "ch03-v35-38-ayana-strength": {
+      "question_type": "南行北行强弱：凶星强于南行、吉星强于北行",
+      "required_facts": [
+        "本盘出生时太阳（Surya）行于南行（Dakshinayan）还是北行（Uttarayan）",
+        "本盘中哪些行星被判为凶星",
+        "本盘中哪些行星被判为吉星"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘出生时太阳南行北行的事实时停止。",
+        "缺少本盘吉星或凶星名册时停止。"
+      ]
+    },
+    "ch03-v35-38-time-lord-strength": {
+      "question_type": "年主、月主、日主、时主的强弱升序",
+      "required_facts": [
+        "本盘的年主（year Lord）是哪颗行星",
+        "本盘的月主（month Lord）是哪颗行星",
+        "本盘的日主（day Lord）是哪颗行星",
+        "本盘的时主（Hora Lord）是哪颗行星"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘年主、月主、日主或时主中任何一个的事实时停止。",
+        "原文没有说这四主如何确定，四主无法确定即停判。"
+      ]
+    },
+    "ch03-v35-38-natural-strength-order": {
+      "question_type": "七曜的自然强弱升序：土星最弱、太阳最强",
+      "required_facts": [
+        "本盘中待比较自然强弱的两颗行星分别是哪两颗"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少待比较的两颗行星时停止。",
+        "本条只给自然强弱的相对次序，没有分值，要量化必须另查 Naisargika Bal 原文。"
+      ]
+    },
+    "ch03-v49-50-exaltation-rasis": {
+      "question_type": "入旺：七曜各自的入旺星座与深度入旺度数",
+      "required_facts": [
+        "本盘中待判定尊贵的行星落在哪个星座（Rāśi）",
+        "本盘中待判定尊贵的行星在该星座内的度数是多少"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少待判定行星所落星座时停止。",
+        "缺少行星在星座内的度数时，深度入旺一步停止。",
+        "本条只给入旺状态，没有给吉凶结果，要下断语必须另找原文。"
+      ]
+    },
+    "ch03-v49-50-debilitation-rasis": {
+      "question_type": "落陷：入旺星座起第七个星座与深度落陷度数",
+      "required_facts": [
+        "本盘中待判定尊贵的行星落在哪个星座（Rāśi）",
+        "本盘中待判定尊贵的行星的入旺星座是哪个星座",
+        "本盘中待判定尊贵的行星在该星座内的度数是多少"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少待判定行星的入旺星座时停止。",
+        "缺少行星在星座内的度数时，深度落陷一步停止。"
+      ]
+    },
+    "ch03-v51-54-mooltrikon-and-own-portions": {
+      "question_type": "附加尊贵：七曜各自的 Mooltrikon 段与 own Bhava 段",
+      "required_facts": [
+        "太阳（Surya）落在狮子座（Simh）内的第几度",
+        "月亮（Chandra）落在金牛座（Vrishabh）内的第几度",
+        "火星（Mangal）落在白羊座（Mesh）内的第几度",
+        "水星（Budh）落在处女座（Kanya）内的第几度",
+        "木星（Guru）落在射手座（Dhanu）内的第几度",
+        "金星（Shukra）落在天秤座（Tula）内的第几度",
+        "土星（Shani）落在水瓶座（Kumbh）内的第几度"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少该行星在对应星座内度数的事实时，该步停止。",
+        "原文没有界定 own Bhava 与星座、宫的对应，需要把它映射成排盘取值时停判。"
+      ]
+    },
+    "ch03-v55-natural-relationship": {
+      "question_type": "自然关系：由 Mooltrikon 与入旺星座定友、敌、中立",
+      "required_facts": [
+        "本盘待判行星（Grah）的 Mooltrikon 落在哪个星座",
+        "另一行星（Grah）主管的星座是从待判行星 Mooltrikon 起的第几个星座"
+      ],
+      "conditional_facts": [
+        "另一行星（Grah）是否主管从待判行星 Mooltrikon 起第2个星座",
+        "另一行星（Grah）是否主管从待判行星 Mooltrikon 起第4个星座",
+        "另一行星（Grah）是否主管从待判行星 Mooltrikon 起第5个星座",
+        "另一行星（Grah）是否主管从待判行星 Mooltrikon 起第8个星座",
+        "另一行星（Grah）是否主管从待判行星 Mooltrikon 起第9个星座",
+        "另一行星（Grah）是否主管从待判行星 Mooltrikon 起第12个星座",
+        "另一行星（Grah）是否主管待判行星的入旺星座（exaltation Rāśi）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少待判行星 Mooltrikon 所在星座时停止。",
+        "缺少另一行星所主星座与 Mooltrikon 的相对位次时停止。",
+        "本条只定友敌中立，没有给吉凶结果，要下断语必须另找原文。"
+      ]
+    },
+    "ch03-v56-temporary-relationship": {
+      "question_type": "临时关系：出生盘中互距 2、3、4、10、11、12 位为友，否则为敌",
+      "required_facts": [
+        "另一行星（Grah）自待判行星起数落在第几个位置"
+      ],
+      "conditional_facts": [
+        "另一行星（Grah）自待判行星起数是否落在第2个位置",
+        "另一行星（Grah）自待判行星起数是否落在第3个位置",
+        "另一行星（Grah）自待判行星起数是否落在第4个位置",
+        "另一行星（Grah）自待判行星起数是否落在第10个位置",
+        "另一行星（Grah）自待判行星起数是否落在第11个位置",
+        "另一行星（Grah）自待判行星起数是否落在第12个位置"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少两行星相对位次的事实时停止。",
+        "原文没有说明位次按星座计还是按宫计，计数口径未定即停判。"
+      ]
+    },
+    "ch03-v57-58-compound-relationship": {
+      "question_type": "合成关系：自然关系与临时关系合成极友、友、均等、敌、极敌",
+      "required_facts": [
+        "本盘该两行星的自然关系（natural relationship）是友、敌还是中立",
+        "本盘该两行星的临时关系（temporary relationship）是友还是敌"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少该两行星的自然关系时停止。",
+        "缺少该两行星的临时关系时停止。",
+        "原文没有指明「一方面」对应自然还是临时，遇到需要区分的情形即停判。"
+      ]
+    },
+    "ch03-v59-60-auspicious-effect-ratio": {
+      "question_type": "吉效比例：入旺、Mooltrikon、own Bhava、友座、均等者座、落陷或敌座各给多少吉效",
+      "required_facts": [
+        "该行星（Grah）是否入旺",
+        "该行星（Grah）是否落其 Mooltrikon",
+        "该行星（Grah）是否落原文所称的 own Bhava",
+        "该行星（Grah）是否落友星的星座（friendly Rāśi）",
+        "该行星（Grah）是否落均等者的星座（equal’s Rāśi）",
+        "本盘该行星（Grah）落在哪个星座"
+      ],
+      "conditional_facts": [
+        "该行星（Grah）是否落陷",
+        "该行星（Grah）是否落敌星的营地（enemy’s camp）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少该行星尊贵状态的事实时，对应那一步停止。",
+        "原文没有界定 own Bhava 与星座、宫的对应，需要把它映射成排盘取值时停判。",
+        "本条只给吉效比例，没有给具体分值，要量化必须另查原文。"
+      ]
+    },
+    "ch03-v59-60-inauspicious-effect-reverse": {
+      "question_type": "凶效方向：凶效与上述吉效比例恰好相反",
+      "required_facts": [
+        "本盘该行星（Grah）落在哪个星座"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "原文没有界定「相反」如何逐档折算，需要具体凶效比例时停判。",
+        "缺少该行星所落星座与尊贵状态时停止。"
+      ]
+    },
+    "ch03-v61-64-upagraha-positions": {
+      "question_type": "非发光副曜（UpaGrahas）的位置推算：Dhoom、Vyatipat、Parivesh、Chap 与 UpaKetu",
+      "required_facts": [
+        "本盘太阳（Surya）的黄经是多少"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少本盘太阳黄经时停止。",
+        "上一环位置没算出来时，后续各环停止。",
+        "本条只给位置与凶性，不给逐宫断语，要断落宫效应必须另找原文。"
+      ]
+    },
+    "ch03-v65-upagraha-afflicts-surya": {
+      "question_type": "副曜冲犯太阳：命主家族衰落",
+      "required_facts": [
+        "太阳（Surya）是否被非发光副曜（UpaGrahas）冲犯"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少太阳是否被非发光副曜冲犯的事实时停止。",
+        "原文没有界定「冲犯」的判准，判准未定即停判。"
+      ]
+    },
+    "ch03-v65-upagraha-with-chandra-and-lagna": {
+      "question_type": "副曜与月亮或上升相合：分别毁其寿元与智慧",
+      "required_facts": [
+        "本盘中哪些点与非发光副曜（UpaGrahas）相合"
+      ],
+      "conditional_facts": [
+        "月亮（Chandra）是否与非发光副曜相合",
+        "上升（Lagna）是否与非发光副曜相合"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少月亮或上升是否与非发光副曜相合的事实时，对应分支停止。",
+        "原文没有界定「相合」的判准，判准未定即停判。"
+      ]
+    },
+    "ch03-v66-69-gulik-and-kaal-vela-portions": {
+      "question_type": "Gulik 等五 Kaal Vela 的时段推算：昼夜各八等分",
+      "required_facts": [
+        "本盘出生当日的白昼时长是多少",
+        "本盘出生当夜的夜间时长是多少",
+        "本盘出生当日的星期主（week day Lord）是哪颗行星",
+        "本盘中各八等分时段分别由哪颗行星所辖",
+        "本盘出生地点在哪里"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少白昼或夜间时长时，对应那一步停止。",
+        "缺少出生当日星期主时停止。",
+        "本条只给时段划分，不给吉凶断语，要断效应必须另找原文。"
+      ]
+    },
+    "ch03-v70-gulik-longitude": {
+      "question_type": "Gulik 的黄经：取其时段起始时刻的上升度数",
+      "required_facts": [
+        "本盘出生地 Gulik 之分起始时刻上升的度数是多少"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少 Gulik 之分起始时刻上升度数时停止。",
+        "上一偈的 Gulik 时段没算出来时停止。"
+      ]
+    },
+    "ch03-v71-74-pranapad-calculation": {
+      "question_type": "Pranapad 的推算：由 Vighatis 除 15 再按太阳所落星座类别加度",
+      "required_facts": [
+        "本盘出生时刻换算成 Vighatis 是多少",
+        "本盘太阳（Surya）所落星座属于动、固定、双体中的哪一类"
+      ],
+      "conditional_facts": [
+        "太阳（Surya）所落星座是否为动星座（Movable Rāśi）",
+        "太阳（Surya）所落星座是否为固定星座（Fixed Rāśi）",
+        "太阳（Surya）所落星座是否为双体星座（Dual Rāśi）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少出生时刻的 Vighatis 换算时停止。",
+        "缺少太阳所落星座类别时停止。"
+      ]
+    },
+    "ch03-v71-74-pranapad-birth-quality": {
+      "question_type": "出生吉凶：Pranapad 自上升起落第 2、5、9、4、10、11 宫为吉，余宫为凶",
+      "required_facts": [
+        "本盘 Pranapad 落在从上升（Lagn）起的第几宫"
+      ],
+      "conditional_facts": [
+        "本盘 Pranapad 是否落在从上升（Lagn）起第2宫",
+        "本盘 Pranapad 是否落在从上升（Lagn）起第5宫",
+        "本盘 Pranapad 是否落在从上升（Lagn）起第9宫",
+        "本盘 Pranapad 是否落在从上升（Lagn）起第4宫",
+        "本盘 Pranapad 是否落在从上升（Lagn）起第10宫",
+        "本盘 Pranapad 是否落在从上升（Lagn）起第11宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "缺少 Pranapad 自上升起的落宫时停止。",
+        "Pranapad 没有算出来时停止。"
+      ]
+    }
+  }
+}

@@ -1,0 +1,3258 @@
+{
+  "shard": 5,
+  "step_count": 15,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch03-v61-64-upagraha-positions.step-005",
+      "method": {
+        "method": "ch03-v61-64-upagraha-positions",
+        "title": "非发光副曜（UpaGrahas）的位置推算：Dhoom、Vyatipat、Parivesh、Chap 与 UpaKetu",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Dhoom Vyatipat Parivesh 怎么算",
+          "我盘里的影曜落在哪里"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment to get the exact position of the all inauspicious Dhoom",
+            "Reduce Dhoom from 12 Rāśis to arrive at Vyatipat. Vyatipat is also inauspicious",
+            "非发光副曜 Dhoom Vyatipat Parivesh Chap UpaKetu 推算"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "From Surya to Shani no one is exalted in the above-mentioned exaltation Rāśis, nor debilitated in the above-mentioned debilitation Rāśis",
+            "影曜的尊贵表出自转述，且不适用于七曜"
+          ],
+          "method_queries": [
+            "If one of these afflicts Surya, the native’s dynasty will decline",
+            "Effects of Vyatipat in Various Bhavas (up to Sloka 25)",
+            "算出影曜位置之后怎么断"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to get the exact position of the all inauspicious Dhoom"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment to get the exact position of the all inauspicious Dhoom"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Add 4 Rāśis 13 degrees and 20 minutes of arc to sun’s longitude at a given moment"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Add 4 Rāśis 13 degrees and 20 minutes of arc to sun’s longitude at a given moment to get the exact position of the all inauspicious Dhoom"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Reduce Dhoom from 12 Rāśis"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to arrive at Vyatipat. Vyatipat is also inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Reduce Dhoom from 12 Rāśis to arrive at Vyatipat. Vyatipat is also inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Add six Rāśis to Vyatipat"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to know the position of Parivesh. He is extremely inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Add six Rāśis to Vyatipat to know the position of Parivesh. He is extremely inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Deduct Parivesh from 12 Rāśis"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to arrive at the position of Chap (Indra Dhanus), who is also inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Deduct Parivesh from 12 Rāśis to arrive at the position of Chap (Indra Dhanus), who is also inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Add 16 degrees 40 minutes to Chap"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "which will give Ketu (UpaKetu), who is a malefic"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "By adding a Rashito UpaKetu, you get the original longitude of Surya"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Add 16 degrees 40 minutes to Chap which will give Ketu (UpaKetu), who is a malefic"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "By adding a Rashito UpaKetu, you get the original longitude of sun"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "These are the Grahas, devoid of splendour"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-006",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "which are malefics by nature and cause affliction"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "These are the Grahas, devoid of splendour which are malefics by nature and cause affliction"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘太阳黄经时停止。",
+          "上一环位置没算出来时，后续各环停止。",
+          "本条只给位置与凶性，不给逐宫断语，要断落宫效应必须另找原文。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v61-64-upagraha-positions.step-005",
+        "action": "给 Chap 加 16 度 40 分得 UpaKetu，再加一个星座回到太阳黄经以自校。",
+        "applicability_scope": "第3章非发光副曜条；这些是推算法，本步不给盘上吉凶断语。",
+        "minimum_supported_claim": "把 16 度（degrees）40 分加到 Chap 上，得到 Ketu（UpaKetu），他是凶曜；再给 UpaKetu 加一个星座，就回到太阳（Surya）本来的黄经。",
+        "produced_fact_keys": [
+          "UpaKetu 位置判定"
+        ],
+        "required_fact_keys": [
+          "Chap 位置判定"
+        ],
+        "condition_logic": {
+          "fact_key": "Chap 位置判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Add 16 degrees 40 minutes to Chap",
+              "claim": "把 16 度（degrees）40 分加到 Chap 上"
+            }
+          ],
+          "results": [
+            {
+              "quote": "which will give Ketu (UpaKetu), who is a malefic",
+              "claim": "得到 Ketu（UpaKetu），他是凶曜"
+            },
+            {
+              "quote": "By adding a Rashito UpaKetu, you get the original longitude of Surya",
+              "claim": "再给 UpaKetu 加一个星座，就回到太阳（Surya）本来的黄经"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v61-64",
+            "quote": "Add 16 degrees 40 minutes to Chap, which will give Ketu (UpaKetu), who is a malefic. By adding a Rashito UpaKetu, you get the original longitude of Surya.",
+            "pdf_pages": [
+              12,
+              13
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Chap 位置判定。",
+        "stop_fact_keys": [
+          "Chap 位置判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把这里的 Ketu（UpaKetu）与九曜中的 Ketu 混为一谈——原文在此专称 UpaKetu。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "30ab88be31fc2b71b5b4317139815d8041b595caa4d3a4235dc2321909f23a50"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v61-64-upagraha-positions.step-006",
+      "method": {
+        "method": "ch03-v61-64-upagraha-positions",
+        "title": "非发光副曜（UpaGrahas）的位置推算：Dhoom、Vyatipat、Parivesh、Chap 与 UpaKetu",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Dhoom Vyatipat Parivesh 怎么算",
+          "我盘里的影曜落在哪里"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment to get the exact position of the all inauspicious Dhoom",
+            "Reduce Dhoom from 12 Rāśis to arrive at Vyatipat. Vyatipat is also inauspicious",
+            "非发光副曜 Dhoom Vyatipat Parivesh Chap UpaKetu 推算"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "From Surya to Shani no one is exalted in the above-mentioned exaltation Rāśis, nor debilitated in the above-mentioned debilitation Rāśis",
+            "影曜的尊贵表出自转述，且不适用于七曜"
+          ],
+          "method_queries": [
+            "If one of these afflicts Surya, the native’s dynasty will decline",
+            "Effects of Vyatipat in Various Bhavas (up to Sloka 25)",
+            "算出影曜位置之后怎么断"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to get the exact position of the all inauspicious Dhoom"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment to get the exact position of the all inauspicious Dhoom"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Add 4 Rāśis 13 degrees and 20 minutes of arc to sun’s longitude at a given moment"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Add 4 Rāśis 13 degrees and 20 minutes of arc to sun’s longitude at a given moment to get the exact position of the all inauspicious Dhoom"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Reduce Dhoom from 12 Rāśis"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to arrive at Vyatipat. Vyatipat is also inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Reduce Dhoom from 12 Rāśis to arrive at Vyatipat. Vyatipat is also inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Add six Rāśis to Vyatipat"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to know the position of Parivesh. He is extremely inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Add six Rāśis to Vyatipat to know the position of Parivesh. He is extremely inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Deduct Parivesh from 12 Rāśis"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to arrive at the position of Chap (Indra Dhanus), who is also inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Deduct Parivesh from 12 Rāśis to arrive at the position of Chap (Indra Dhanus), who is also inauspicious"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Add 16 degrees 40 minutes to Chap"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "which will give Ketu (UpaKetu), who is a malefic"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "By adding a Rashito UpaKetu, you get the original longitude of Surya"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Add 16 degrees 40 minutes to Chap which will give Ketu (UpaKetu), who is a malefic"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-005",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "By adding a Rashito UpaKetu, you get the original longitude of sun"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "These are the Grahas, devoid of splendour"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-006",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "which are malefics by nature and cause affliction"
+            },
+            {
+              "step_id": "ch03-v61-64-upagraha-positions.step-006",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "These are the Grahas, devoid of splendour which are malefics by nature and cause affliction"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘太阳黄经时停止。",
+          "上一环位置没算出来时，后续各环停止。",
+          "本条只给位置与凶性，不给逐宫断语，要断落宫效应必须另找原文。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v61-64-upagraha-positions.step-006",
+        "action": "把这五个推算出来的天体一并判为无光的凶曜。",
+        "applicability_scope": "第3章非发光副曜条；本句是对上述五者的总述。",
+        "minimum_supported_claim": "这些是无光的曜，本性为凶，能致损害。",
+        "produced_fact_keys": [
+          "非发光副曜凶性判定"
+        ],
+        "required_fact_keys": [
+          "Dhoom 位置判定",
+          "Vyatipat 位置判定",
+          "Parivesh 位置判定",
+          "Chap 位置判定",
+          "UpaKetu 位置判定"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "Dhoom 位置判定"
+            },
+            {
+              "fact_key": "Vyatipat 位置判定"
+            },
+            {
+              "fact_key": "Parivesh 位置判定"
+            },
+            {
+              "fact_key": "Chap 位置判定"
+            },
+            {
+              "fact_key": "UpaKetu 位置判定"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "These are the Grahas, devoid of splendour",
+              "claim": "这些是无光的曜"
+            }
+          ],
+          "results": [
+            {
+              "quote": "which are malefics by nature and cause affliction",
+              "claim": "本性为凶，能致损害"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v61-64",
+            "quote": "These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction.",
+            "pdf_pages": [
+              12,
+              13
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Dhoom 位置判定、Vyatipat 位置判定、Parivesh 位置判定、Chap 位置判定、UpaKetu 位置判定。",
+        "stop_fact_keys": [
+          "Dhoom 位置判定",
+          "Vyatipat 位置判定",
+          "Parivesh 位置判定",
+          "Chap 位置判定",
+          "UpaKetu 位置判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把这五者并入九曜名单——原文另称它们为 UpaGrahas。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "18667e611f10fda3ec9aeb610c35a8c19a6a1c20806d40d23f1a16ca1289acf1"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v65-upagraha-afflicts-surya.step-001",
+      "method": {
+        "method": "ch03-v65-upagraha-afflicts-surya",
+        "title": "副曜冲犯太阳：命主家族衰落",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "影曜冲犯太阳会怎么样",
+          "我家族的兴衰跟盘里什么有关"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If one of these afflicts Surya, the native’s dynasty will decline",
+            "副曜冲犯太阳 家族衰落"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "So declared Lord Brahma, the Lotus-Born",
+            "本条是转述立说"
+          ],
+          "method_queries": [
+            "These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction",
+            "先算出非发光副曜的位置才能看是否冲犯"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v65-upagraha-afflicts-surya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If one of these afflicts Surya"
+            },
+            {
+              "step_id": "ch03-v65-upagraha-afflicts-surya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native’s dynasty will decline"
+            },
+            {
+              "step_id": "ch03-v65-upagraha-afflicts-surya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If one of these afflicts Surya the native’s dynasty will decline"
+            },
+            {
+              "step_id": "ch03-v65-upagraha-afflicts-surya.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If one of these afflicts sun"
+            },
+            {
+              "step_id": "ch03-v65-upagraha-afflicts-surya.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If one of these afflicts sun the native’s dynasty will decline"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少太阳是否被非发光副曜冲犯的事实时停止。",
+          "原文没有界定「冲犯」的判准，判准未定即停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v65-upagraha-afflicts-surya.step-001",
+        "action": "核对太阳是否被上一偈推算出的非发光副曜冲犯，据以判断家族兴衰。",
+        "applicability_scope": "第3章副曜效应条；「这些」承上一偈的非发光副曜名单。本条以 So declared Lord Brahma, the Lotus-Born 转述立说；原文没有给「冲犯」（afflicts）的判准。",
+        "minimum_supported_claim": "若这些副曜之一冲犯太阳（Surya），命主的家族将衰落。",
+        "produced_fact_keys": [
+          "副曜冲犯太阳的家族判定"
+        ],
+        "required_fact_keys": [
+          "太阳（Surya）是否被非发光副曜（UpaGrahas）冲犯"
+        ],
+        "condition_logic": {
+          "fact_key": "太阳（Surya）是否被非发光副曜（UpaGrahas）冲犯"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If one of these afflicts Surya",
+              "claim": "若这些副曜之一冲犯太阳（Surya）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native’s dynasty will decline",
+              "claim": "命主的家族将衰落"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v65",
+            "quote": "If one of these afflicts Surya, the native’s dynasty will decline",
+            "pdf_pages": [
+              13
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：太阳（Surya）是否被非发光副曜（UpaGrahas）冲犯。",
+        "stop_fact_keys": [
+          "太阳（Surya）是否被非发光副曜（UpaGrahas）冲犯"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据本条推出家族衰落的时间、程度或原因。",
+          "不得自行给「冲犯」补上同宫、相照等判准——原文没有给。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch03:v61-64"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "c04c60233634f7f8d4fa1f3aeadc1d0490b497afc790c93f20cfe2aa6d306c93"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v65-upagraha-with-chandra-and-lagna.step-001",
+      "method": {
+        "method": "ch03-v65-upagraha-with-chandra-and-lagna",
+        "title": "副曜与月亮或上升相合：分别毁其寿元与智慧",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "影曜跟月亮同度会怎么样",
+          "影曜落在上升上会怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "while Chandra and Lagna, respectively, associated with one of these, will destroy the longevity and wisdom",
+            "副曜与月亮相合 寿元 副曜与上升相合 智慧"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "So declared Lord Brahma, the Lotus-Born",
+            "本条是转述立说"
+          ],
+          "method_queries": [
+            "These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction",
+            "先算出非发光副曜的位置才能看是否相合"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v65-upagraha-with-chandra-and-lagna.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while Chandra and Lagna, respectively, associated with one of these"
+            },
+            {
+              "step_id": "ch03-v65-upagraha-with-chandra-and-lagna.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will destroy the longevity and wisdom"
+            },
+            {
+              "step_id": "ch03-v65-upagraha-with-chandra-and-lagna.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while Chandra and Lagna, respectively, associated with one of these will destroy the longevity and wisdom"
+            },
+            {
+              "step_id": "ch03-v65-upagraha-with-chandra-and-lagna.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "while moon and 1st house, respectively, associated with one of these"
+            },
+            {
+              "step_id": "ch03-v65-upagraha-with-chandra-and-lagna.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "while moon and 1st house, respectively, associated with one of these will destroy the longevity and wisdom"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少月亮或上升是否与非发光副曜相合的事实时，对应分支停止。",
+          "原文没有界定「相合」的判准，判准未定即停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v65-upagraha-with-chandra-and-lagna.step-001",
+        "action": "核对月亮与上升是否与上一偈的非发光副曜相合，按原文的对应次序取其结果。",
+        "applicability_scope": "第3章副曜效应条；「这些」承上一偈的非发光副曜名单。本条以 So declared Lord Brahma, the Lotus-Born 转述立说；原文没有给「相合」的判准。",
+        "minimum_supported_claim": "月亮（Chandra）与上升（Lagna）依原文次序与这些副曜之一相合时，将分别毁其寿元与智慧。",
+        "produced_fact_keys": [
+          "副曜与月亮或上升相合的损害判定"
+        ],
+        "required_fact_keys": [
+          "本盘中哪些点与非发光副曜（UpaGrahas）相合"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘中哪些点与非发光副曜（UpaGrahas）相合"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "月亮（Chandra）是否与非发光副曜相合"
+                },
+                {
+                  "fact_key": "上升（Lagna）是否与非发光副曜相合"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘中哪些点与非发光副曜（UpaGrahas）相合"
+            },
+            "required_fact_keys": [
+              "月亮（Chandra）是否与非发光副曜相合"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "月亮（Chandra）是否与非发光副曜相合"
+            },
+            "selection_group": "ch03-v65-upagraha-with-chandra-and-lagna.step-001:afflicted-point",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：月亮（Chandra）是否与非发光副曜相合。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘中哪些点与非发光副曜（UpaGrahas）相合"
+            },
+            "required_fact_keys": [
+              "上升（Lagna）是否与非发光副曜相合"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升（Lagna）是否与非发光副曜相合"
+            },
+            "selection_group": "ch03-v65-upagraha-with-chandra-and-lagna.step-001:afflicted-point",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升（Lagna）是否与非发光副曜相合。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "while Chandra and Lagna, respectively, associated with one of these",
+              "claim": "月亮（Chandra）与上升（Lagna）依原文次序与这些副曜之一相合时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will destroy the longevity and wisdom",
+              "claim": "将分别毁其寿元与智慧"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v65",
+            "quote": "while Chandra and Lagna, respectively, associated with one of these, will destroy the longevity and wisdom.",
+            "pdf_pages": [
+              13
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中哪些点与非发光副曜（UpaGrahas）相合。",
+        "stop_fact_keys": [
+          "本盘中哪些点与非发光副曜（UpaGrahas）相合"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据本条推出寿元或智慧受损的时间、程度。",
+          "不得自行给「相合」补上同宫、相照等判准——原文没有给。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch03:v61-64"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "00678cd6c3e13dc179b7389478270244d2f6237a8a865d201257c4b719e893a2"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-001",
+      "method": {
+        "method": "ch03-v66-69-gulik-and-kaal-vela-portions",
+        "title": "Gulik 等五 Kaal Vela 的时段推算：昼夜各八等分",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Gulik 的时段怎么算",
+          "Kaal Mrityu Yamaghantak Ardhaprahar 分别是谁的时段"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Divide the day duration (of any week day) into eight equal parts. The eighth portion is Lord-less",
+            "Whichever portion is ruled by Shani, will be the portion of Gulik",
+            "Surya’s portion is Kaal, Mangal’s portion is Mrityu, Guru’s portion is Yamaghantak and Budh’s portion is Ardhaprahar",
+            "Gulik 时段 八等分 五 Kaal Vela"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "These durations differently apply to different places (commensurate with variable day and night durations)",
+            "Ardhaprahar, Yamaghantak, Mrityu, Kaal and Gulik are the 5 Kaal Velas, suggested by Maharishi Parashar",
+            "时段算法随地点变化 译注另有交代"
+          ],
+          "method_queries": [
+            "The degree, ascending at the time of start of Gulik’s portion (as above), will be the longitude of Gulik at a given place",
+            "Effects of Gulik in Various Bhavas (up to Sloka 73)",
+            "算出 Gulik 时段之后怎么取黄经与断效应"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Divide the day duration (of any week day) into eight equal parts"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The eighth portion is Lord-less"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The seven portions are distributed to the seven Grahas commencing from the Lord of the week day"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Divide the day duration (of any week day) into eight equal parts The eighth portion is Lord-less"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Whichever portion is ruled by Shani"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be the portion of Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Whichever portion is ruled by Shani will be the portion of Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Whichever portion is ruled by saturn"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Whichever portion is ruled by saturn will be the portion of Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Similarly make the night duration into eight equal parts and distribute these, commencing from the Lord of the 5th (by) week"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Here again, the eighth portion is Lord-less, while Shani’s portion is Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Similarly make the night duration into eight equal parts and distribute these, commencing from the Lord of the 5th (by) week Here again, the eighth portion is Lord-less, while Shani’s portion is Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "Here again, the eighth portion is Lord-less, while saturn’s portion is Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Similarly make the night duration into eight equal parts and distribute these, commencing from the Lord of the 5th (by) week Here again, the eighth portion is Lord-less, while saturn’s portion is Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Surya’s portion"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "is Kaal, Mangal’s portion is Mrityu, Guru’s portion is Yamaghantak and Budh’s portion is Ardhaprahar"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Surya’s portion is Kaal, Mangal’s portion is Mrityu, Guru’s portion is Yamaghantak and Budh’s portion is Ardhaprahar"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "sun’s portion"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "is Kaal, mars’s portion is Mrityu, jupiter’s portion is Yamaghantak and mercury’s portion is Ardhaprahar"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "sun’s portion is Kaal, mars’s portion is Mrityu, jupiter’s portion is Yamaghantak and mercury’s portion is Ardhaprahar"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "These durations differently apply to different places"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "(commensurate with variable day and night durations)"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "These durations differently apply to different places (commensurate with variable day and night durations)"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少白昼或夜间时长时，对应那一步停止。",
+          "缺少出生当日星期主时停止。",
+          "本条只给时段划分，不给吉凶断语，要断效应必须另找原文。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-001",
+        "action": "把白昼时长八等分，第八分留作无主，其余七分自星期主起依次分配给七曜。",
+        "applicability_scope": "第3章 Gulik 等推算条；本步只分配时段，不给盘上吉凶断语。",
+        "minimum_supported_claim": "把白昼（day）时长分成八（eight）等分，第八分（eighth）无主，其余七（seven）分自星期主起依次分配给七曜。",
+        "produced_fact_keys": [
+          "白昼八等分的曜主分配判定"
+        ],
+        "required_fact_keys": [
+          "本盘出生当日的白昼时长是多少",
+          "本盘出生当日的星期主（week day Lord）是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘出生当日的白昼时长是多少"
+            },
+            {
+              "fact_key": "本盘出生当日的星期主（week day Lord）是哪颗行星"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Divide the day duration (of any week day) into eight equal parts",
+              "claim": "把白昼（day）时长分成八（eight）等分"
+            }
+          ],
+          "results": [
+            {
+              "quote": "The eighth portion is Lord-less",
+              "claim": "第八分（eighth）无主"
+            },
+            {
+              "quote": "The seven portions are distributed to the seven Grahas commencing from the Lord of the week day",
+              "claim": "其余七（seven）分自星期主起依次分配给七曜"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v66-69",
+            "quote": "Divide the day duration (of any week day) into eight equal parts. The eighth portion is Lord-less. The seven portions are distributed to the seven Grahas commencing from the Lord of the week day.",
+            "pdf_pages": [
+              13
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘出生当日的白昼时长是多少、本盘出生当日的星期主（week day Lord）是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘出生当日的白昼时长是多少",
+          "本盘出生当日的星期主（week day Lord）是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据本步推出各分时段的吉凶——本步只做分配。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "95f76f6302e954b8b548ecc1247777c658ce878596b6973a5e14036d923d96fb"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+      "method": {
+        "method": "ch03-v66-69-gulik-and-kaal-vela-portions",
+        "title": "Gulik 等五 Kaal Vela 的时段推算：昼夜各八等分",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Gulik 的时段怎么算",
+          "Kaal Mrityu Yamaghantak Ardhaprahar 分别是谁的时段"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Divide the day duration (of any week day) into eight equal parts. The eighth portion is Lord-less",
+            "Whichever portion is ruled by Shani, will be the portion of Gulik",
+            "Surya’s portion is Kaal, Mangal’s portion is Mrityu, Guru’s portion is Yamaghantak and Budh’s portion is Ardhaprahar",
+            "Gulik 时段 八等分 五 Kaal Vela"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "These durations differently apply to different places (commensurate with variable day and night durations)",
+            "Ardhaprahar, Yamaghantak, Mrityu, Kaal and Gulik are the 5 Kaal Velas, suggested by Maharishi Parashar",
+            "时段算法随地点变化 译注另有交代"
+          ],
+          "method_queries": [
+            "The degree, ascending at the time of start of Gulik’s portion (as above), will be the longitude of Gulik at a given place",
+            "Effects of Gulik in Various Bhavas (up to Sloka 73)",
+            "算出 Gulik 时段之后怎么取黄经与断效应"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Divide the day duration (of any week day) into eight equal parts"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The eighth portion is Lord-less"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The seven portions are distributed to the seven Grahas commencing from the Lord of the week day"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Divide the day duration (of any week day) into eight equal parts The eighth portion is Lord-less"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Whichever portion is ruled by Shani"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be the portion of Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Whichever portion is ruled by Shani will be the portion of Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Whichever portion is ruled by saturn"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Whichever portion is ruled by saturn will be the portion of Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Similarly make the night duration into eight equal parts and distribute these, commencing from the Lord of the 5th (by) week"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Here again, the eighth portion is Lord-less, while Shani’s portion is Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Similarly make the night duration into eight equal parts and distribute these, commencing from the Lord of the 5th (by) week Here again, the eighth portion is Lord-less, while Shani’s portion is Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "Here again, the eighth portion is Lord-less, while saturn’s portion is Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Similarly make the night duration into eight equal parts and distribute these, commencing from the Lord of the 5th (by) week Here again, the eighth portion is Lord-less, while saturn’s portion is Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Surya’s portion"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "is Kaal, Mangal’s portion is Mrityu, Guru’s portion is Yamaghantak and Budh’s portion is Ardhaprahar"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Surya’s portion is Kaal, Mangal’s portion is Mrityu, Guru’s portion is Yamaghantak and Budh’s portion is Ardhaprahar"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "sun’s portion"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "is Kaal, mars’s portion is Mrityu, jupiter’s portion is Yamaghantak and mercury’s portion is Ardhaprahar"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "sun’s portion is Kaal, mars’s portion is Mrityu, jupiter’s portion is Yamaghantak and mercury’s portion is Ardhaprahar"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "These durations differently apply to different places"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "(commensurate with variable day and night durations)"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "These durations differently apply to different places (commensurate with variable day and night durations)"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少白昼或夜间时长时，对应那一步停止。",
+          "缺少出生当日星期主时停止。",
+          "本条只给时段划分，不给吉凶断语，要断效应必须另找原文。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+        "action": "在白昼的八等分中取土星所辖的那一分，判为 Gulik 之分。",
+        "applicability_scope": "第3章 Gulik 等推算条；本步承前一步的白昼分配结果。",
+        "minimum_supported_claim": "由土星（Shani）所辖的那一分，即是 Gulik 之分。",
+        "produced_fact_keys": [
+          "白昼 Gulik 之分判定"
+        ],
+        "required_fact_keys": [
+          "白昼八等分的曜主分配判定"
+        ],
+        "condition_logic": {
+          "fact_key": "白昼八等分的曜主分配判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Whichever portion is ruled by Shani",
+              "claim": "由土星（Shani）所辖的那一分"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be the portion of Gulik",
+              "claim": "即是 Gulik 之分"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v66-69",
+            "quote": "Whichever portion is ruled by Shani, will be the portion of Gulik.",
+            "pdf_pages": [
+              13
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：白昼八等分的曜主分配判定。",
+        "stop_fact_keys": [
+          "白昼八等分的曜主分配判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据本步推出 Gulik 的黄经——那由下一偈给出。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "3fa3e50efe2c06c49b0c760e82a914444e7990872786b0969ae7233ae25467ab"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+      "method": {
+        "method": "ch03-v66-69-gulik-and-kaal-vela-portions",
+        "title": "Gulik 等五 Kaal Vela 的时段推算：昼夜各八等分",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Gulik 的时段怎么算",
+          "Kaal Mrityu Yamaghantak Ardhaprahar 分别是谁的时段"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Divide the day duration (of any week day) into eight equal parts. The eighth portion is Lord-less",
+            "Whichever portion is ruled by Shani, will be the portion of Gulik",
+            "Surya’s portion is Kaal, Mangal’s portion is Mrityu, Guru’s portion is Yamaghantak and Budh’s portion is Ardhaprahar",
+            "Gulik 时段 八等分 五 Kaal Vela"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "These durations differently apply to different places (commensurate with variable day and night durations)",
+            "Ardhaprahar, Yamaghantak, Mrityu, Kaal and Gulik are the 5 Kaal Velas, suggested by Maharishi Parashar",
+            "时段算法随地点变化 译注另有交代"
+          ],
+          "method_queries": [
+            "The degree, ascending at the time of start of Gulik’s portion (as above), will be the longitude of Gulik at a given place",
+            "Effects of Gulik in Various Bhavas (up to Sloka 73)",
+            "算出 Gulik 时段之后怎么取黄经与断效应"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Divide the day duration (of any week day) into eight equal parts"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The eighth portion is Lord-less"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The seven portions are distributed to the seven Grahas commencing from the Lord of the week day"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Divide the day duration (of any week day) into eight equal parts The eighth portion is Lord-less"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Whichever portion is ruled by Shani"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be the portion of Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Whichever portion is ruled by Shani will be the portion of Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Whichever portion is ruled by saturn"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Whichever portion is ruled by saturn will be the portion of Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Similarly make the night duration into eight equal parts and distribute these, commencing from the Lord of the 5th (by) week"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Here again, the eighth portion is Lord-less, while Shani’s portion is Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Similarly make the night duration into eight equal parts and distribute these, commencing from the Lord of the 5th (by) week Here again, the eighth portion is Lord-less, while Shani’s portion is Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "Here again, the eighth portion is Lord-less, while saturn’s portion is Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Similarly make the night duration into eight equal parts and distribute these, commencing from the Lord of the 5th (by) week Here again, the eighth portion is Lord-less, while saturn’s portion is Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Surya’s portion"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "is Kaal, Mangal’s portion is Mrityu, Guru’s portion is Yamaghantak and Budh’s portion is Ardhaprahar"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Surya’s portion is Kaal, Mangal’s portion is Mrityu, Guru’s portion is Yamaghantak and Budh’s portion is Ardhaprahar"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "sun’s portion"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "is Kaal, mars’s portion is Mrityu, jupiter’s portion is Yamaghantak and mercury’s portion is Ardhaprahar"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "sun’s portion is Kaal, mars’s portion is Mrityu, jupiter’s portion is Yamaghantak and mercury’s portion is Ardhaprahar"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "These durations differently apply to different places"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "(commensurate with variable day and night durations)"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "These durations differently apply to different places (commensurate with variable day and night durations)"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少白昼或夜间时长时，对应那一步停止。",
+          "缺少出生当日星期主时停止。",
+          "本条只给时段划分，不给吉凶断语，要断效应必须另找原文。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+        "action": "把夜间时长八等分，自第 5 个星期主起依次分配，第八分无主，土星之分即 Gulik。",
+        "applicability_scope": "第3章 Gulik 等推算条；本步只分配时段，不给盘上吉凶断语。",
+        "minimum_supported_claim": "同样把夜间时长分成八（eight）等分，自第 5 个星期主起依次分配；第八分（eighth）同样无主，土星（Shani）之分即 Gulik。",
+        "produced_fact_keys": [
+          "夜间八等分的曜主分配与 Gulik 判定"
+        ],
+        "required_fact_keys": [
+          "本盘出生当夜的夜间时长是多少",
+          "本盘出生当日的星期主（week day Lord）是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘出生当夜的夜间时长是多少"
+            },
+            {
+              "fact_key": "本盘出生当日的星期主（week day Lord）是哪颗行星"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Similarly make the night duration into eight equal parts and distribute these, commencing from the Lord of the 5<sup>th</sup> (by) week",
+              "claim": "同样把夜间时长分成八（eight）等分，自第 5 个星期主起依次分配"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Here again, the eighth portion is Lord-less, while Shani’s portion is Gulik",
+              "claim": "第八分（eighth）同样无主，土星（Shani）之分即 Gulik"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v66-69",
+            "quote": "Similarly make the night duration into eight equal parts and distribute these, commencing from the Lord of the 5<sup>th</sup> (by) week. Here again, the eighth portion is Lord-less, while Shani’s portion is Gulik.",
+            "pdf_pages": [
+              13
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘出生当夜的夜间时长是多少、本盘出生当日的星期主（week day Lord）是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘出生当夜的夜间时长是多少",
+          "本盘出生当日的星期主（week day Lord）是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「第 5 个星期主」改成别的起点——原文只给这一个起算法。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "a64c36ed52ce83c36544d5f6e89df82a1c0dd27d7f73b008e5363e58212f5e71"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+      "method": {
+        "method": "ch03-v66-69-gulik-and-kaal-vela-portions",
+        "title": "Gulik 等五 Kaal Vela 的时段推算：昼夜各八等分",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Gulik 的时段怎么算",
+          "Kaal Mrityu Yamaghantak Ardhaprahar 分别是谁的时段"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Divide the day duration (of any week day) into eight equal parts. The eighth portion is Lord-less",
+            "Whichever portion is ruled by Shani, will be the portion of Gulik",
+            "Surya’s portion is Kaal, Mangal’s portion is Mrityu, Guru’s portion is Yamaghantak and Budh’s portion is Ardhaprahar",
+            "Gulik 时段 八等分 五 Kaal Vela"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "These durations differently apply to different places (commensurate with variable day and night durations)",
+            "Ardhaprahar, Yamaghantak, Mrityu, Kaal and Gulik are the 5 Kaal Velas, suggested by Maharishi Parashar",
+            "时段算法随地点变化 译注另有交代"
+          ],
+          "method_queries": [
+            "The degree, ascending at the time of start of Gulik’s portion (as above), will be the longitude of Gulik at a given place",
+            "Effects of Gulik in Various Bhavas (up to Sloka 73)",
+            "算出 Gulik 时段之后怎么取黄经与断效应"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Divide the day duration (of any week day) into eight equal parts"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The eighth portion is Lord-less"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The seven portions are distributed to the seven Grahas commencing from the Lord of the week day"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Divide the day duration (of any week day) into eight equal parts The eighth portion is Lord-less"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Whichever portion is ruled by Shani"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be the portion of Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Whichever portion is ruled by Shani will be the portion of Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Whichever portion is ruled by saturn"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Whichever portion is ruled by saturn will be the portion of Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Similarly make the night duration into eight equal parts and distribute these, commencing from the Lord of the 5th (by) week"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Here again, the eighth portion is Lord-less, while Shani’s portion is Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Similarly make the night duration into eight equal parts and distribute these, commencing from the Lord of the 5th (by) week Here again, the eighth portion is Lord-less, while Shani’s portion is Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "Here again, the eighth portion is Lord-less, while saturn’s portion is Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Similarly make the night duration into eight equal parts and distribute these, commencing from the Lord of the 5th (by) week Here again, the eighth portion is Lord-less, while saturn’s portion is Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Surya’s portion"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "is Kaal, Mangal’s portion is Mrityu, Guru’s portion is Yamaghantak and Budh’s portion is Ardhaprahar"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Surya’s portion is Kaal, Mangal’s portion is Mrityu, Guru’s portion is Yamaghantak and Budh’s portion is Ardhaprahar"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "sun’s portion"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "is Kaal, mars’s portion is Mrityu, jupiter’s portion is Yamaghantak and mercury’s portion is Ardhaprahar"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "sun’s portion is Kaal, mars’s portion is Mrityu, jupiter’s portion is Yamaghantak and mercury’s portion is Ardhaprahar"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "These durations differently apply to different places"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "(commensurate with variable day and night durations)"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "These durations differently apply to different places (commensurate with variable day and night durations)"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少白昼或夜间时长时，对应那一步停止。",
+          "缺少出生当日星期主时停止。",
+          "本条只给时段划分，不给吉凶断语，要断效应必须另找原文。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+        "action": "按各分时段的所辖行星，取出其余四个 Kaal Vela 的名目。",
+        "applicability_scope": "第3章 Gulik 等推算条；本句紧接昼夜两段分配之后，未分别声明只适用于其中一段。",
+        "minimum_supported_claim": "太阳（Surya）之分为 Kaal，火星（Mangal）之分为 Mrityu，木星（Guru）之分为 Yamaghantak，水星（Budh）之分为 Ardhaprahar。",
+        "produced_fact_keys": [
+          "四个 Kaal Vela 名目的曜主对应判定"
+        ],
+        "required_fact_keys": [
+          "本盘中各八等分时段分别由哪颗行星所辖"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘中各八等分时段分别由哪颗行星所辖"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Surya’s portion",
+              "claim": "太阳（Surya）之分"
+            }
+          ],
+          "results": [
+            {
+              "quote": "is Kaal, Mangal’s portion is Mrityu, Guru’s portion is Yamaghantak and Budh’s portion is Ardhaprahar",
+              "claim": "为 Kaal，火星（Mangal）之分为 Mrityu，木星（Guru）之分为 Yamaghantak，水星（Budh）之分为 Ardhaprahar"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v66-69",
+            "quote": "Surya’s portion is Kaal, Mangal’s portion is Mrityu, Guru’s portion is Yamaghantak and Budh’s portion is Ardhaprahar.",
+            "pdf_pages": [
+              13
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中各八等分时段分别由哪颗行星所辖。",
+        "stop_fact_keys": [
+          "本盘中各八等分时段分别由哪颗行星所辖"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得给月亮（Chandra）与金星（Shukr）之分补上名目——本句没有给。",
+          "不得据本句推出这些时段的吉凶断语。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "d576510e7442b289526889739e5c7915d26de1ac2640908c9b700cdd6466c565"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-005",
+      "method": {
+        "method": "ch03-v66-69-gulik-and-kaal-vela-portions",
+        "title": "Gulik 等五 Kaal Vela 的时段推算：昼夜各八等分",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Gulik 的时段怎么算",
+          "Kaal Mrityu Yamaghantak Ardhaprahar 分别是谁的时段"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Divide the day duration (of any week day) into eight equal parts. The eighth portion is Lord-less",
+            "Whichever portion is ruled by Shani, will be the portion of Gulik",
+            "Surya’s portion is Kaal, Mangal’s portion is Mrityu, Guru’s portion is Yamaghantak and Budh’s portion is Ardhaprahar",
+            "Gulik 时段 八等分 五 Kaal Vela"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "These durations differently apply to different places (commensurate with variable day and night durations)",
+            "Ardhaprahar, Yamaghantak, Mrityu, Kaal and Gulik are the 5 Kaal Velas, suggested by Maharishi Parashar",
+            "时段算法随地点变化 译注另有交代"
+          ],
+          "method_queries": [
+            "The degree, ascending at the time of start of Gulik’s portion (as above), will be the longitude of Gulik at a given place",
+            "Effects of Gulik in Various Bhavas (up to Sloka 73)",
+            "算出 Gulik 时段之后怎么取黄经与断效应"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Divide the day duration (of any week day) into eight equal parts"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The eighth portion is Lord-less"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The seven portions are distributed to the seven Grahas commencing from the Lord of the week day"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Divide the day duration (of any week day) into eight equal parts The eighth portion is Lord-less"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Whichever portion is ruled by Shani"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be the portion of Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Whichever portion is ruled by Shani will be the portion of Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Whichever portion is ruled by saturn"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Whichever portion is ruled by saturn will be the portion of Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Similarly make the night duration into eight equal parts and distribute these, commencing from the Lord of the 5th (by) week"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Here again, the eighth portion is Lord-less, while Shani’s portion is Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Similarly make the night duration into eight equal parts and distribute these, commencing from the Lord of the 5th (by) week Here again, the eighth portion is Lord-less, while Shani’s portion is Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "Here again, the eighth portion is Lord-less, while saturn’s portion is Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-003",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Similarly make the night duration into eight equal parts and distribute these, commencing from the Lord of the 5th (by) week Here again, the eighth portion is Lord-less, while saturn’s portion is Gulik"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Surya’s portion"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "is Kaal, Mangal’s portion is Mrityu, Guru’s portion is Yamaghantak and Budh’s portion is Ardhaprahar"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Surya’s portion is Kaal, Mangal’s portion is Mrityu, Guru’s portion is Yamaghantak and Budh’s portion is Ardhaprahar"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "sun’s portion"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_result",
+              "query": "is Kaal, mars’s portion is Mrityu, jupiter’s portion is Yamaghantak and mercury’s portion is Ardhaprahar"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-004",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "sun’s portion is Kaal, mars’s portion is Mrityu, jupiter’s portion is Yamaghantak and mercury’s portion is Ardhaprahar"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "These durations differently apply to different places"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "(commensurate with variable day and night durations)"
+            },
+            {
+              "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-005",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "These durations differently apply to different places (commensurate with variable day and night durations)"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少白昼或夜间时长时，对应那一步停止。",
+          "缺少出生当日星期主时停止。",
+          "本条只给时段划分，不给吉凶断语，要断效应必须另找原文。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v66-69-gulik-and-kaal-vela-portions.step-005",
+        "action": "按出生地点核对这些时段的实际长度，不套用固定值。",
+        "applicability_scope": "第3章 Gulik 等推算条；本句是对上述时段算法的适用限制。",
+        "minimum_supported_claim": "这些时段随地点不同而不同，因昼夜（day and night）时长各地有别。",
+        "produced_fact_keys": [
+          "时段随地点变化判定"
+        ],
+        "required_fact_keys": [
+          "本盘出生地点在哪里"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘出生地点在哪里"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "These durations differently apply to different places",
+              "claim": "这些时段随地点不同而不同"
+            }
+          ],
+          "results": [
+            {
+              "quote": "(commensurate with variable day and night durations)",
+              "claim": "因昼夜（day and night）时长各地有别"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v66-69",
+            "quote": "These durations differently apply to different places (commensurate with variable day and night durations).",
+            "pdf_pages": [
+              13
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘出生地点在哪里。",
+        "stop_fact_keys": [
+          "本盘出生地点在哪里"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得用一地的时段长度套到另一地——原文明说各地不同。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "77a69b7ed0c406e7b940927b0facb5d4405f42a25f138b900f60123b602eb1a3"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v70-gulik-longitude.step-001",
+      "method": {
+        "method": "ch03-v70-gulik-longitude",
+        "title": "Gulik 的黄经：取其时段起始时刻的上升度数",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Gulik 的度数怎么定",
+          "断 Gulik 效应该用哪个位置"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "The degree, ascending at the time of start of Gulik’s portion (as above), will be the longitude of Gulik at a given place. Based on this longitude only, Gulik’s effects for a particular nativity be estimated",
+            "Gulik 黄经 起始时刻 上升度数"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Note the angular distance between Shani and Mandi (Gulik)",
+            "别处用 Gulik 的另一种用法"
+          ],
+          "method_queries": [
+            "Effects of Gulik in Various Bhavas (up to Sloka 73). If Gulik is in Tanu Bhava, the native will be afflicted by diseases",
+            "拿到 Gulik 黄经之后怎么断落宫效应"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v70-gulik-longitude.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "The degree, ascending at the time of start of Gulik’s portion (as above)"
+            },
+            {
+              "step_id": "ch03-v70-gulik-longitude.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be the longitude of Gulik at a given place"
+            },
+            {
+              "step_id": "ch03-v70-gulik-longitude.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "The degree, ascending at the time of start of Gulik’s portion (as above) will be the longitude of Gulik at a given place"
+            },
+            {
+              "step_id": "ch03-v70-gulik-longitude.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Based on this longitude only"
+            },
+            {
+              "step_id": "ch03-v70-gulik-longitude.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Gulik’s effects for a particular nativity be estimated"
+            },
+            {
+              "step_id": "ch03-v70-gulik-longitude.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Based on this longitude only Gulik’s effects for a particular nativity be estimated"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少 Gulik 之分起始时刻上升度数时停止。",
+          "上一偈的 Gulik 时段没算出来时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v70-gulik-longitude.step-001",
+        "action": "取上一偈算出的 Gulik 之分起始时刻，记下当时正在上升的度数，作为该地 Gulik 的黄经。",
+        "applicability_scope": "第3章 Gulik 位置条；「如上」承上一偈的 Gulik 时段算法，且黄经因地而异。",
+        "minimum_supported_claim": "Gulik 之分起始时刻正在上升的那个度数（degree），就是该地 Gulik 的黄经。",
+        "produced_fact_keys": [
+          "Gulik 黄经判定"
+        ],
+        "required_fact_keys": [
+          "本盘出生地 Gulik 之分起始时刻上升的度数是多少"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘出生地 Gulik 之分起始时刻上升的度数是多少"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "The degree, ascending at the time of start of Gulik’s portion (as above)",
+              "claim": "Gulik 之分起始时刻正在上升的那个度数（degree）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be the longitude of Gulik at a given place",
+              "claim": "就是该地 Gulik 的黄经"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v70",
+            "quote": "The degree, ascending at the time of start of Gulik’s portion (as above), will be the longitude of Gulik at a given place.",
+            "pdf_pages": [
+              13
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘出生地 Gulik 之分起始时刻上升的度数是多少。",
+        "stop_fact_keys": [
+          "本盘出生地 Gulik 之分起始时刻上升的度数是多少"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得改用 Gulik 时段的中点或终点——原文取的是起始时刻。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch03:v66-69"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "24874f8671927c6b253e76a16bf42fad5588e80127314f777c2d1fab418e6461"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v70-gulik-longitude.step-002",
+      "method": {
+        "method": "ch03-v70-gulik-longitude",
+        "title": "Gulik 的黄经：取其时段起始时刻的上升度数",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Gulik 的度数怎么定",
+          "断 Gulik 效应该用哪个位置"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "The degree, ascending at the time of start of Gulik’s portion (as above), will be the longitude of Gulik at a given place. Based on this longitude only, Gulik’s effects for a particular nativity be estimated",
+            "Gulik 黄经 起始时刻 上升度数"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Note the angular distance between Shani and Mandi (Gulik)",
+            "别处用 Gulik 的另一种用法"
+          ],
+          "method_queries": [
+            "Effects of Gulik in Various Bhavas (up to Sloka 73). If Gulik is in Tanu Bhava, the native will be afflicted by diseases",
+            "拿到 Gulik 黄经之后怎么断落宫效应"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v70-gulik-longitude.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "The degree, ascending at the time of start of Gulik’s portion (as above)"
+            },
+            {
+              "step_id": "ch03-v70-gulik-longitude.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be the longitude of Gulik at a given place"
+            },
+            {
+              "step_id": "ch03-v70-gulik-longitude.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "The degree, ascending at the time of start of Gulik’s portion (as above) will be the longitude of Gulik at a given place"
+            },
+            {
+              "step_id": "ch03-v70-gulik-longitude.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Based on this longitude only"
+            },
+            {
+              "step_id": "ch03-v70-gulik-longitude.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Gulik’s effects for a particular nativity be estimated"
+            },
+            {
+              "step_id": "ch03-v70-gulik-longitude.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Based on this longitude only Gulik’s effects for a particular nativity be estimated"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少 Gulik 之分起始时刻上升度数时停止。",
+          "上一偈的 Gulik 时段没算出来时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v70-gulik-longitude.step-002",
+        "action": "断某一命盘的 Gulik 效应时，只依这个黄经。",
+        "applicability_scope": "第3章 Gulik 位置条；本句限定了断 Gulik 效应的取位依据。",
+        "minimum_supported_claim": "只依这个黄经，来估断某一命盘中 Gulik 的效应。",
+        "produced_fact_keys": [
+          "Gulik 效应取位依据判定"
+        ],
+        "required_fact_keys": [
+          "Gulik 黄经判定"
+        ],
+        "condition_logic": {
+          "fact_key": "Gulik 黄经判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Based on this longitude only",
+              "claim": "只依这个黄经"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Gulik’s effects for a particular nativity be estimated",
+              "claim": "来估断某一命盘中 Gulik 的效应"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v70",
+            "quote": "Based on this longitude only, Gulik’s effects for a particular nativity be estimated.",
+            "pdf_pages": [
+              13
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Gulik 黄经判定。",
+        "stop_fact_keys": [
+          "Gulik 黄经判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得改用别的取法来断 Gulik 的效应——原文明说只依这个黄经。",
+          "不得据本条推出 Gulik 落各宫的具体断语。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "e2d0857dfa0497189ed5dbdb9b0f9c7a568c85b1dcbc4dfe0ac7a0d0a6f10d1c"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v71-74-pranapad-calculation.step-001",
+      "method": {
+        "method": "ch03-v71-74-pranapad-calculation",
+        "title": "Pranapad 的推算：由 Vighatis 除 15 再按太阳所落星座类别加度",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Pranapad 怎么算",
+          "我盘里的 Pranapad 落在哪里"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Convert the given time into Vighatis and divide the same by 15",
+            "The resultant Rāśi, degrees etc. be added to Surya, if he is in a Movable Rāśi, which will yield Pranapad",
+            "Pranapad 推算 Vighatis 除以 15"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Starting from Mesh for a Movable Rāśi, from Simh for a Fixed Rashiand from Dhanu for a Dual Rāśi",
+            "动 固定 双体三类星座在别处的用法"
+          ],
+          "method_queries": [
+            "The birth will be auspicious, if Pranapad falls in the 2<sup>nd</sup> , 5<sup>th</sup> , 9<sup>th</sup> , 4<sup>th</sup> , 10<sup>th</sup> , or 11<sup>th</sup> from the natal Lagn",
+            "Effects of Pranapad’s Position with reference to Lagn and in Various Bhavas (up to Sloka 85)",
+            "算出 Pranapad 之后怎么断"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Convert the given time into Vighatis"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "divide the same by 15"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Convert the given time into Vighatis divide the same by 15"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "The resultant Rāśi, degrees etc."
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "be added to Surya, if he is in a Movable Rāśi"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Surya is in a Fixed Rāśi, add 240 degrees additionally"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if in a Dual Rāśi, add 120 degrees in furtherance"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to get Pranapad"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "The resultant Rāśi, degrees etc. to get Pranapad"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "be added to Surya, if he is in a Movable Rāśi to get Pranapad"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Surya is in a Fixed Rāśi, add 240 degrees additionally to get Pranapad"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if in a Dual Rāśi, add 120 degrees in furtherance to get Pranapad"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "be added to sun, if he is in a Movable Rāśi"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If sun is in a Fixed Rāśi, add 240 degrees additionally"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "be added to sun, if he is in a Movable Rāśi to get Pranapad"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If sun is in a Fixed Rāśi, add 240 degrees additionally to get Pranapad"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少出生时刻的 Vighatis 换算时停止。",
+          "缺少太阳所落星座类别时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v71-74-pranapad-calculation.step-001",
+        "action": "把出生时刻化为 Vighatis 后除以 15，得到用于推算的星座与度数。",
+        "applicability_scope": "第3章 Pranapad 推算条；本原子后附 Santhanam 译注，本方法只据偈文正文。",
+        "minimum_supported_claim": "把给定时刻化为 Vighatis，再除以 15。",
+        "produced_fact_keys": [
+          "Pranapad 推算的基础商数判定"
+        ],
+        "required_fact_keys": [
+          "本盘出生时刻换算成 Vighatis 是多少"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘出生时刻换算成 Vighatis 是多少"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Convert the given time into Vighatis",
+              "claim": "把给定时刻化为 Vighatis"
+            }
+          ],
+          "results": [
+            {
+              "quote": "divide the same by 15",
+              "claim": "再除以 15"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v71-74",
+            "quote": "Convert the given time into Vighatis and divide the same by 15.",
+            "pdf_pages": [
+              13,
+              14
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘出生时刻换算成 Vighatis 是多少。",
+        "stop_fact_keys": [
+          "本盘出生时刻换算成 Vighatis 是多少"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据本步直接得出 Pranapad——还要按太阳所落星座类别加度。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "7891356d590ff51fdfc36e44d6a9a2e166890b54723b9013c7d3f252b37e1fa5"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+      "method": {
+        "method": "ch03-v71-74-pranapad-calculation",
+        "title": "Pranapad 的推算：由 Vighatis 除 15 再按太阳所落星座类别加度",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Pranapad 怎么算",
+          "我盘里的 Pranapad 落在哪里"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Convert the given time into Vighatis and divide the same by 15",
+            "The resultant Rāśi, degrees etc. be added to Surya, if he is in a Movable Rāśi, which will yield Pranapad",
+            "Pranapad 推算 Vighatis 除以 15"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Starting from Mesh for a Movable Rāśi, from Simh for a Fixed Rashiand from Dhanu for a Dual Rāśi",
+            "动 固定 双体三类星座在别处的用法"
+          ],
+          "method_queries": [
+            "The birth will be auspicious, if Pranapad falls in the 2<sup>nd</sup> , 5<sup>th</sup> , 9<sup>th</sup> , 4<sup>th</sup> , 10<sup>th</sup> , or 11<sup>th</sup> from the natal Lagn",
+            "Effects of Pranapad’s Position with reference to Lagn and in Various Bhavas (up to Sloka 85)",
+            "算出 Pranapad 之后怎么断"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Convert the given time into Vighatis"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "divide the same by 15"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Convert the given time into Vighatis divide the same by 15"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "The resultant Rāśi, degrees etc."
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "be added to Surya, if he is in a Movable Rāśi"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Surya is in a Fixed Rāśi, add 240 degrees additionally"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if in a Dual Rāśi, add 120 degrees in furtherance"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "to get Pranapad"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "The resultant Rāśi, degrees etc. to get Pranapad"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "be added to Surya, if he is in a Movable Rāśi to get Pranapad"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Surya is in a Fixed Rāśi, add 240 degrees additionally to get Pranapad"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if in a Dual Rāśi, add 120 degrees in furtherance to get Pranapad"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "be added to sun, if he is in a Movable Rāśi"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If sun is in a Fixed Rāśi, add 240 degrees additionally"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "be added to sun, if he is in a Movable Rāśi to get Pranapad"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If sun is in a Fixed Rāśi, add 240 degrees additionally to get Pranapad"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少出生时刻的 Vighatis 换算时停止。",
+          "缺少太阳所落星座类别时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v71-74-pranapad-calculation.step-002",
+        "action": "按太阳所落星座属动、固定还是双体，把所得加到太阳上并另加相应度数，得 Pranapad。",
+        "applicability_scope": "第3章 Pranapad 推算条；本原子后附 Santhanam 译注，本方法只据偈文正文。",
+        "minimum_supported_claim": "所得的星座与度数（degrees）：若太阳（Surya）落在动星座（Movable Rāśi）就加到太阳上；若太阳落在固定星座（Fixed Rāśi），另加 240 度；若落在双体星座（Dual Rāśi），再加 120 度，得到 Pranapad。",
+        "produced_fact_keys": [
+          "Pranapad 位置判定"
+        ],
+        "required_fact_keys": [
+          "本盘太阳（Surya）所落星座属于动、固定、双体中的哪一类",
+          "Pranapad 推算的基础商数判定"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘太阳（Surya）所落星座属于动、固定、双体中的哪一类"
+                },
+                {
+                  "fact_key": "Pranapad 推算的基础商数判定"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "太阳（Surya）所落星座是否为动星座（Movable Rāśi）"
+                },
+                {
+                  "fact_key": "太阳（Surya）所落星座是否为固定星座（Fixed Rāśi）"
+                },
+                {
+                  "fact_key": "太阳（Surya）所落星座是否为双体星座（Dual Rāśi）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘太阳（Surya）所落星座属于动、固定、双体中的哪一类"
+                },
+                {
+                  "fact_key": "Pranapad 推算的基础商数判定"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "太阳（Surya）所落星座是否为动星座（Movable Rāśi）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "太阳（Surya）所落星座是否为动星座（Movable Rāśi）"
+            },
+            "selection_group": "ch03-v71-74-pranapad-calculation.step-002:surya-rasi-type",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：太阳（Surya）所落星座是否为动星座（Movable Rāśi）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘太阳（Surya）所落星座属于动、固定、双体中的哪一类"
+                },
+                {
+                  "fact_key": "Pranapad 推算的基础商数判定"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "太阳（Surya）所落星座是否为固定星座（Fixed Rāśi）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "太阳（Surya）所落星座是否为固定星座（Fixed Rāśi）"
+            },
+            "selection_group": "ch03-v71-74-pranapad-calculation.step-002:surya-rasi-type",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：太阳（Surya）所落星座是否为固定星座（Fixed Rāśi）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘太阳（Surya）所落星座属于动、固定、双体中的哪一类"
+                },
+                {
+                  "fact_key": "Pranapad 推算的基础商数判定"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "太阳（Surya）所落星座是否为双体星座（Dual Rāśi）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "太阳（Surya）所落星座是否为双体星座（Dual Rāśi）"
+            },
+            "selection_group": "ch03-v71-74-pranapad-calculation.step-002:surya-rasi-type",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：太阳（Surya）所落星座是否为双体星座（Dual Rāśi）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "The resultant Rāśi, degrees etc.",
+              "claim": "所得的星座与度数（degrees）"
+            },
+            {
+              "quote": "be added to Surya, if he is in a Movable Rāśi",
+              "claim": "若太阳（Surya）落在动星座（Movable Rāśi）就加到太阳上"
+            },
+            {
+              "quote": "If Surya is in a Fixed Rāśi, add 240 degrees additionally",
+              "claim": "若太阳落在固定星座（Fixed Rāśi），另加 240 度"
+            },
+            {
+              "quote": "if in a Dual Rāśi, add 120 degrees in furtherance",
+              "claim": "若落在双体星座（Dual Rāśi），再加 120 度"
+            }
+          ],
+          "results": [
+            {
+              "quote": "to get Pranapad",
+              "claim": "得到 Pranapad"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v71-74",
+            "quote": "The resultant Rāśi, degrees etc. be added to Surya, if he is in a Movable Rāśi, which will yield Pranapad. If Surya is in a Fixed Rāśi, add 240 degrees additionally and, if in a Dual Rāśi, add 120 degrees in furtherance to get Pranapad.",
+            "pdf_pages": [
+              13,
+              14
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘太阳（Surya）所落星座属于动、固定、双体中的哪一类、Pranapad 推算的基础商数判定。",
+        "stop_fact_keys": [
+          "本盘太阳（Surya）所落星座属于动、固定、双体中的哪一类",
+          "Pranapad 推算的基础商数判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 240 度与 120 度对调——原文分别系于固定星座与双体星座。",
+          "不得据本步推出 Pranapad 的吉凶——那由下一句另断。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "e7040e96a0c3aa579e10c5fa5b06c4f7f41d9075e933058d16bf4bb5c084a551"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v71-74-pranapad-birth-quality.step-001",
+      "method": {
+        "method": "ch03-v71-74-pranapad-birth-quality",
+        "title": "出生吉凶：Pranapad 自上升起落第 2、5、9、4、10、11 宫为吉，余宫为凶",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这个出生本身吉不吉",
+          "Pranapad 落哪几宫算吉"
+        ],
+        "facts": null,
+        "dependencies": [
+          "ch03-v71-74-pranapad-calculation"
+        ],
+        "retrieval_plan": {
+          "support_queries": [
+            "The birth will be auspicious, if Pranapad falls in the 2<sup>nd</sup> , 5<sup>th</sup> , 9<sup>th</sup> , 4<sup>th</sup> , 10<sup>th</sup> , or 11<sup>th</sup> from the natal Lagn. In other Bhavas Pranapad indicates an inauspicious birth",
+            "Pranapad 落宫 出生吉凶"
+          ],
+          "counter_queries": [
+            "If Pranapad is in Dhan Bhava, the native will be endowed with abundant grains, abundant wealth, abundant attendants, abundant children and be fortunate",
+            "别处按逐宫给 Pranapad 的具体效应"
+          ],
+          "boundary_queries": [
+            "Effects of Pranapad’s Position with reference to Lagn and in Various Bhavas (up to Sloka 85)",
+            "Pranapad 逐宫效应另有专章"
+          ],
+          "method_queries": [
+            "Convert the given time into Vighatis and divide the same by 15",
+            "先算出 Pranapad 才能定落宫"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v71-74-pranapad-birth-quality.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Pranapad falls in the 2nd , 5th , 9th , 4th , 10th , or 11th from the natal Lagn"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-birth-quality.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The birth will be auspicious"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-birth-quality.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Pranapad falls in the 2nd , 5th , 9th , 4th , 10th , or 11th from the natal Lagn The birth will be auspicious"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-birth-quality.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if Pranapad falls in the 2nd , 5th , 9th , 4th , 10th , or 11th from the natal 1st house"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-birth-quality.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if Pranapad falls in the 2nd , 5th , 9th , 4th , 10th , or 11th from the natal 1st house The birth will be auspicious"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-birth-quality.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "In other Bhavas"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-birth-quality.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Pranapad indicates an inauspicious birth"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-birth-quality.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "In other Bhavas Pranapad indicates an inauspicious birth"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少 Pranapad 自上升起的落宫时停止。",
+          "Pranapad 没有算出来时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v71-74-pranapad-birth-quality.step-001",
+        "action": "数出 Pranapad 自本命上升起落在第几宫，落在第 2、5、9、4、10、11 宫时判为吉。",
+        "applicability_scope": "第3章 Pranapad 推算条；本原子后附 Santhanam 译注，本方法只据偈文正文。",
+        "minimum_supported_claim": "若 Pranapad 落在从本命上升（Lagn）起的第 2、5、9、4、10、11 宫，出生为吉。",
+        "produced_fact_keys": [
+          "Pranapad 主出生为吉判定"
+        ],
+        "required_fact_keys": [
+          "本盘 Pranapad 落在从上升（Lagn）起的第几宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘 Pranapad 落在从上升（Lagn）起的第几宫"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "本盘 Pranapad 是否落在从上升（Lagn）起第2宫"
+                },
+                {
+                  "fact_key": "本盘 Pranapad 是否落在从上升（Lagn）起第5宫"
+                },
+                {
+                  "fact_key": "本盘 Pranapad 是否落在从上升（Lagn）起第9宫"
+                },
+                {
+                  "fact_key": "本盘 Pranapad 是否落在从上升（Lagn）起第4宫"
+                },
+                {
+                  "fact_key": "本盘 Pranapad 是否落在从上升（Lagn）起第10宫"
+                },
+                {
+                  "fact_key": "本盘 Pranapad 是否落在从上升（Lagn）起第11宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘 Pranapad 落在从上升（Lagn）起的第几宫"
+            },
+            "required_fact_keys": [
+              "本盘 Pranapad 是否落在从上升（Lagn）起第2宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "本盘 Pranapad 是否落在从上升（Lagn）起第2宫"
+            },
+            "selection_group": "ch03-v71-74-pranapad-birth-quality.step-001:auspicious-bhava",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：本盘 Pranapad 是否落在从上升（Lagn）起第2宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘 Pranapad 落在从上升（Lagn）起的第几宫"
+            },
+            "required_fact_keys": [
+              "本盘 Pranapad 是否落在从上升（Lagn）起第5宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "本盘 Pranapad 是否落在从上升（Lagn）起第5宫"
+            },
+            "selection_group": "ch03-v71-74-pranapad-birth-quality.step-001:auspicious-bhava",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：本盘 Pranapad 是否落在从上升（Lagn）起第5宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘 Pranapad 落在从上升（Lagn）起的第几宫"
+            },
+            "required_fact_keys": [
+              "本盘 Pranapad 是否落在从上升（Lagn）起第9宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "本盘 Pranapad 是否落在从上升（Lagn）起第9宫"
+            },
+            "selection_group": "ch03-v71-74-pranapad-birth-quality.step-001:auspicious-bhava",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：本盘 Pranapad 是否落在从上升（Lagn）起第9宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘 Pranapad 落在从上升（Lagn）起的第几宫"
+            },
+            "required_fact_keys": [
+              "本盘 Pranapad 是否落在从上升（Lagn）起第4宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "本盘 Pranapad 是否落在从上升（Lagn）起第4宫"
+            },
+            "selection_group": "ch03-v71-74-pranapad-birth-quality.step-001:auspicious-bhava",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：本盘 Pranapad 是否落在从上升（Lagn）起第4宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘 Pranapad 落在从上升（Lagn）起的第几宫"
+            },
+            "required_fact_keys": [
+              "本盘 Pranapad 是否落在从上升（Lagn）起第10宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "本盘 Pranapad 是否落在从上升（Lagn）起第10宫"
+            },
+            "selection_group": "ch03-v71-74-pranapad-birth-quality.step-001:auspicious-bhava",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：本盘 Pranapad 是否落在从上升（Lagn）起第10宫。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘 Pranapad 落在从上升（Lagn）起的第几宫"
+            },
+            "required_fact_keys": [
+              "本盘 Pranapad 是否落在从上升（Lagn）起第11宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "本盘 Pranapad 是否落在从上升（Lagn）起第11宫"
+            },
+            "selection_group": "ch03-v71-74-pranapad-birth-quality.step-001:auspicious-bhava",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：本盘 Pranapad 是否落在从上升（Lagn）起第11宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if Pranapad falls in the 2<sup>nd</sup> , 5<sup>th</sup> , 9<sup>th</sup> , 4<sup>th</sup> , 10<sup>th</sup> , or 11<sup>th</sup> from the natal Lagn",
+              "claim": "若 Pranapad 落在从本命上升（Lagn）起的第 2、5、9、4、10、11 宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "The birth will be auspicious",
+              "claim": "出生为吉"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v71-74",
+            "quote": "The birth will be auspicious, if Pranapad falls in the 2<sup>nd</sup> , 5<sup>th</sup> , 9<sup>th</sup> , 4<sup>th</sup> , 10<sup>th</sup> , or 11<sup>th</sup> from the natal Lagn.",
+            "pdf_pages": [
+              13,
+              14
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘 Pranapad 落在从上升（Lagn）起的第几宫。",
+        "stop_fact_keys": [
+          "本盘 Pranapad 落在从上升（Lagn）起的第几宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「出生为吉」扩成具体的富贵、寿命或事业断语。",
+          "不得给这六宫之外的宫补上吉断——原文另有交代。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "4ca3a541f9b07aea764eb0a5c2199e56b2e6e898e882138d1c7dbe2d044fb4f0"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch03-v71-74-pranapad-birth-quality.step-002",
+      "method": {
+        "method": "ch03-v71-74-pranapad-birth-quality",
+        "title": "出生吉凶：Pranapad 自上升起落第 2、5、9、4、10、11 宫为吉，余宫为凶",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这个出生本身吉不吉",
+          "Pranapad 落哪几宫算吉"
+        ],
+        "facts": null,
+        "dependencies": [
+          "ch03-v71-74-pranapad-calculation"
+        ],
+        "retrieval_plan": {
+          "support_queries": [
+            "The birth will be auspicious, if Pranapad falls in the 2<sup>nd</sup> , 5<sup>th</sup> , 9<sup>th</sup> , 4<sup>th</sup> , 10<sup>th</sup> , or 11<sup>th</sup> from the natal Lagn. In other Bhavas Pranapad indicates an inauspicious birth",
+            "Pranapad 落宫 出生吉凶"
+          ],
+          "counter_queries": [
+            "If Pranapad is in Dhan Bhava, the native will be endowed with abundant grains, abundant wealth, abundant attendants, abundant children and be fortunate",
+            "别处按逐宫给 Pranapad 的具体效应"
+          ],
+          "boundary_queries": [
+            "Effects of Pranapad’s Position with reference to Lagn and in Various Bhavas (up to Sloka 85)",
+            "Pranapad 逐宫效应另有专章"
+          ],
+          "method_queries": [
+            "Convert the given time into Vighatis and divide the same by 15",
+            "先算出 Pranapad 才能定落宫"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch03-v71-74-pranapad-birth-quality.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Pranapad falls in the 2nd , 5th , 9th , 4th , 10th , or 11th from the natal Lagn"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-birth-quality.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The birth will be auspicious"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-birth-quality.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Pranapad falls in the 2nd , 5th , 9th , 4th , 10th , or 11th from the natal Lagn The birth will be auspicious"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-birth-quality.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if Pranapad falls in the 2nd , 5th , 9th , 4th , 10th , or 11th from the natal 1st house"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-birth-quality.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if Pranapad falls in the 2nd , 5th , 9th , 4th , 10th , or 11th from the natal 1st house The birth will be auspicious"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-birth-quality.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "In other Bhavas"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-birth-quality.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Pranapad indicates an inauspicious birth"
+            },
+            {
+              "step_id": "ch03-v71-74-pranapad-birth-quality.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "In other Bhavas Pranapad indicates an inauspicious birth"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少 Pranapad 自上升起的落宫时停止。",
+          "Pranapad 没有算出来时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch03-v71-74-pranapad-birth-quality.step-002",
+        "action": "Pranapad 落在上述六宫之外的宫时，判为出生不吉。",
+        "applicability_scope": "第3章 Pranapad 推算条；「其余各宫」承本方法第一步列出的六宫。",
+        "minimum_supported_claim": "落在其余各宫（other Bhavas）时，Pranapad 主出生不吉。",
+        "produced_fact_keys": [
+          "Pranapad 主出生不吉判定"
+        ],
+        "required_fact_keys": [
+          "Pranapad 主出生为吉判定"
+        ],
+        "condition_logic": {
+          "operator": "NOT",
+          "operands": [
+            {
+              "fact_key": "Pranapad 主出生为吉判定"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "In other Bhavas",
+              "claim": "落在其余各宫（other Bhavas）时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Pranapad indicates an inauspicious birth",
+              "claim": "Pranapad 主出生不吉"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch03:v71-74",
+            "quote": "In other Bhavas Pranapad indicates an inauspicious birth.",
+            "pdf_pages": [
+              13,
+              14
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Pranapad 主出生为吉判定。",
+        "stop_fact_keys": [
+          "Pranapad 主出生为吉判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「出生不吉」扩成夭寿、贫病等具体断语——原文只说不吉。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "52583fa2a3b031a6eca6f77be1ecda8dfa342cedde5847e8ec8d85ead3575e33"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch03:v61-64": {
+      "evidence_atom_id": "bphs-97:santhanam:ch03:v61-64",
+      "chapter_number": 3,
+      "chapter_title": "Grah Characters and Description",
+      "verse_label": "61-64.",
+      "content_role": "verse",
+      "exact_text": "61-64. Non-luminous UpaGrahas (Sub-Grahas). Add 4 Rāśis 13 degrees and 20 minutes of arc to Surya’s longitude at a given moment to get the exact position of the all inauspicious Dhoom. Reduce Dhoom from 12 Rāśis to arrive at Vyatipat. Vyatipat is also inauspicious. Add six Rāśis to Vyatipat to know the position of Parivesh. He is extremely inauspicious. Deduct Parivesh from 12 Rāśis to arrive at the position of Chap (Indra Dhanus), who is also inauspicious. Add 16 degrees 40 minutes to Chap, which will give Ketu (UpaKetu), who is a malefic. By adding a Rashito UpaKetu, you get the original longitude of Surya. These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction.",
+      "pdf_pages": [
+        12,
+        13
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 3 · Sloka 61-64 · PDF pages 12-13 · bphs-97:santhanam:ch03:v61-64",
+      "previous_atom_id": "bphs-97:santhanam:ch03:v59-60",
+      "next_atom_id": "bphs-97:santhanam:ch03:v65",
+      "context_before": "ood effects are nil in debilitation, or enemy’s camp. Inauspicious effects are quite reverse with reference to what is stated.\n\n",
+      "context_after": "65. Effects of Sub-Grahas. If one of these afflicts Surya, the native’s dynasty will decline, while Chandra and Lagna, respectiv",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch03:v65": {
+      "evidence_atom_id": "bphs-97:santhanam:ch03:v65",
+      "chapter_number": 3,
+      "chapter_title": "Grah Characters and Description",
+      "verse_label": "65.",
+      "content_role": "verse",
+      "exact_text": "65. Effects of Sub-Grahas. If one of these afflicts Surya, the native’s dynasty will decline, while Chandra and Lagna, respectively, associated with one of these, will destroy the longevity and wisdom. So declared Lord Brahma, the Lotus-Born.",
+      "pdf_pages": [
+        13
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 3 · Sloka 65 · PDF page 13 · bphs-97:santhanam:ch03:v65",
+      "previous_atom_id": "bphs-97:santhanam:ch03:v61-64",
+      "next_atom_id": "bphs-97:santhanam:ch03:v66-69",
+      "context_before": "the original longitude of Surya. These are the Grahas, devoid of splendour, which are malefics by nature and cause affliction.\n\n",
+      "context_after": "66-69. Calculations of Gulik etc. The portions of Surya etc. up to Shani denote the periods of Gulik and others. Divide the day ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch03:v66-69": {
+      "evidence_atom_id": "bphs-97:santhanam:ch03:v66-69",
+      "chapter_number": 3,
+      "chapter_title": "Grah Characters and Description",
+      "verse_label": "66-69.",
+      "content_role": "verse",
+      "exact_text": "66-69. Calculations of Gulik etc. The portions of Surya etc. up to Shani denote the periods of Gulik and others. Divide the day duration (of any week day) into eight equal parts. The eighth portion is Lord-less. The seven portions are distributed to the seven Grahas commencing from the Lord of the week day. Whichever portion is ruled by Shani, will be the portion of Gulik. Similarly make the night duration into eight equal parts and distribute these, commencing from the Lord of the 5<sup>th</sup> (by) week. Here again, the eighth portion is Lord-less, while Shani’s portion is Gulik. Surya’s portion is Kaal, Mangal’s portion is Mrityu, Guru’s portion is Yamaghantak and Budh’s portion is Ardhaprahar. These durations differently apply to different places (commensurate with variable day and night durations).",
+      "pdf_pages": [
+        13
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 3 · Sloka 66-69 · PDF page 13 · bphs-97:santhanam:ch03:v66-69",
+      "previous_atom_id": "bphs-97:santhanam:ch03:v65",
+      "next_atom_id": "bphs-97:santhanam:ch03:v70",
+      "context_before": "a, respectively, associated with one of these, will destroy the longevity and wisdom. So declared Lord Brahma, the Lotus-Born.\n\n",
+      "context_after": "70. Gulik’s Position. The degree, ascending at the time of start of Gulik’s portion (as above), will be the longitude of Gulik a",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch03:v70": {
+      "evidence_atom_id": "bphs-97:santhanam:ch03:v70",
+      "chapter_number": 3,
+      "chapter_title": "Grah Characters and Description",
+      "verse_label": "70.",
+      "content_role": "verse",
+      "exact_text": "70. Gulik’s Position. The degree, ascending at the time of start of Gulik’s portion (as above), will be the longitude of Gulik at a given place. Based on this longitude only, Gulik’s effects for a particular nativity be estimated.",
+      "pdf_pages": [
+        13
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 3 · Sloka 70 · PDF page 13 · bphs-97:santhanam:ch03:v70",
+      "previous_atom_id": "bphs-97:santhanam:ch03:v66-69",
+      "next_atom_id": "bphs-97:santhanam:ch03:v71-74",
+      "context_before": "on is Ardhaprahar. These durations differently apply to different places (commensurate with variable day and night durations).\n\n",
+      "context_after": "71-74. Calculation of Pranapad. Convert the given time into Vighatis and divide the same by 15. The resultant Rāśi, degrees etc.",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch03:v71-74": {
+      "evidence_atom_id": "bphs-97:santhanam:ch03:v71-74",
+      "chapter_number": 3,
+      "chapter_title": "Grah Characters and Description",
+      "verse_label": "71-74.",
+      "content_role": "verse",
+      "exact_text": "71-74. Calculation of Pranapad. Convert the given time into Vighatis and divide the same by 15. The resultant Rāśi, degrees etc. be added to Surya, if he is in a Movable Rāśi, which will yield Pranapad. If Surya is in a Fixed Rāśi, add 240 degrees additionally and, if in a Dual Rāśi, add 120 degrees in furtherance to get Pranapad. The birth will be auspicious, if Pranapad falls in the 2<sup>nd</sup> , 5<sup>th</sup> , 9<sup>th</sup> , 4<sup>th</sup> , 10<sup>th</sup> , or 11<sup>th</sup> from the natal Lagn. In other Bhavas Pranapad indicates an inauspicious birth.\n\nNotes. Ardhaprahar, Yamaghantak, Mrityu, Kaal and Gulik are the 5 Kaal Velas, suggested by Maharishi Parashar. The day duration, according to altitude, is divided into eight equal parts. The eighth portion is unlorded. The first portion is allotted to the weekday Lord. Other portions follow in the order of weekday Lords. We consider 5 portions of Grahas, ignoring that of Chandra and Shukr. The portions of Surya, Mangal, Budh, Guru and Shani are, respectively, called Kaal, Mrityu, Ardhaprahar, Yamaghantak and Gulik.\n\nIn the case of night the durations, or 1/8<sup>th</sup> parts are allotted in a different order. The first portion goes to the Grah, ruling the 5<sup>th</sup> weekday Lord, counted from the day in question. The others follow in the usual order. Here again, the 8<sup>th</sup> part is Lord-less. The portions of Grahas from Kaal to Gulik are the same in nomenclature in the night also.\n\nKeeranuru NataRaja of Jatakalankaram (Tamil version) gives Rāśis of dignities for these UpaGrahas and Gulik etc. (UpaGrah & Gulik etc.: Exaltation, Debilitation, Swakshetra (own Rāśi)) Dhoom: Simh, Kumbh, Makar; Vyatipat: Vrischik, Vrishabh, Mithun; Parivesh: Mithun, Dhanu, Dhanu; Indrachap: Dhanu, Mithun, Kark; UpaKetu: Kumbh, Simh, Kark; Gulik: -, -, Kumbh; Yamaghantak: -, -, Dhanu; Ardhaprahar: -, -, Mithun; Kaal: -, -, Makar; Mrityu: -, -, Vrischik.\n\nFrom Surya to Shani no one is exalted in the above-mentioned exaltation Rāśis, nor debilitated in the above-mentioned debilitation Rāśis.\n\nOut of the 5 Kaal Velas, viz. Gulik etc., four except Kaal (related to Surya) have their own Rashisystem in the respective Rāśis, ruled by their fathers. Gulik, son of Shani, has Kumbh, as his own Bhava. Guru’s son, Yamaghantak, has it in Dhanu. Ardhaprahar, Budh’s son, is in own Rāśi, if in Mithun. Mrityu, son of Mangal, has Vrischik, as own Bhava. It is not known, why Kaal, a son of Surya shifted to Makar, a Rashiof his brother (Shani), leaving his father’s Simh. Obviously, Shani has given his Mooltrikon to his son Gulik, while he gave Makar (a secondary Rāśi) to his ‘brother’ Kaal.",
+      "pdf_pages": [
+        13,
+        14
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 3 · Sloka 71-74 · PDF pages 13-14 · bphs-97:santhanam:ch03:v71-74",
+      "previous_atom_id": "bphs-97:santhanam:ch03:v70",
+      "next_atom_id": null,
+      "context_before": "the longitude of Gulik at a given place. Based on this longitude only, Gulik’s effects for a particular nativity be estimated.\n\n",
+      "context_after": "",
+      "content_missing": false
+    }
+  }
+}
