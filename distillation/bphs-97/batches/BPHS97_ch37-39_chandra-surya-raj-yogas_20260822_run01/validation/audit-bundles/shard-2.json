@@ -1,0 +1,3448 @@
+{
+  "shard": 2,
+  "step_count": 15,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch37-v7-10-duradhar-yog.step-001",
+      "method": {
+        "method": "ch37-v7-10-duradhar-yog",
+        "title": "Duradhar Yog：太阳以外的行星同时落月亮起算第2宫与第12宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我能不能过得享受又有排场",
+          "月亮两侧都有行星说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "if in the 2<sup>nd</sup> and 12<sup>th</sup> from Chandra, Duradhar Yog is caused",
+            "月亮起算第2宫第12宫都有行星 Duradhar Yog"
+          ],
+          "counter_queries": [
+            "One born in Kema Drum Yog will be very much reproached, will be bereft of intelligence, learning, reduced to penury and perils",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "Should Guru be in a Kendr from Lagna, or from Chandra and be yuti with, or receiving a Drishti from benefic, avoiding at the same time debilitation, combustion and inimical Rāśi, Gaj Kesari Yog is caused"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch37-v7-10-duradhar-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If there is a Grah other than Surya"
+            },
+            {
+              "step_id": "ch37-v7-10-duradhar-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if in the 2nd and 12th from Chandra"
+            },
+            {
+              "step_id": "ch37-v7-10-duradhar-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Duradhar Yog is caused"
+            },
+            {
+              "step_id": "ch37-v7-10-duradhar-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If there is a Grah other than Surya Duradhar Yog is caused"
+            },
+            {
+              "step_id": "ch37-v7-10-duradhar-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if in the 2nd and 12th from Chandra Duradhar Yog is caused"
+            },
+            {
+              "step_id": "ch37-v7-10-duradhar-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If there is a Grah other than sun"
+            },
+            {
+              "step_id": "ch37-v7-10-duradhar-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if in the 2nd and 12th from moon"
+            },
+            {
+              "step_id": "ch37-v7-10-duradhar-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If there is a Grah other than sun Duradhar Yog is caused"
+            },
+            {
+              "step_id": "ch37-v7-10-duradhar-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if in the 2nd and 12th from moon Duradhar Yog is caused"
+            },
+            {
+              "step_id": "ch37-v7-10-duradhar-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Duradhar Yog"
+            },
+            {
+              "step_id": "ch37-v7-10-duradhar-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will enjoy pleasures, will be charitable and endowed with wealth, conveyances and excellent serving force"
+            },
+            {
+              "step_id": "ch37-v7-10-duradhar-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Duradhar Yog will enjoy pleasures, will be charitable and endowed with wealth, conveyances and excellent serving force"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少月亮起算第2宫或第12宫的占据事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch37-v7-10-duradhar-yog.step-001",
+        "action": "核对除太阳（Surya）以外是否有行星同时落在从月亮（Chandra）起算的第2宫与第12宫，判定 Duradhar Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Duradhar Yog 的成立判定；原文此分句承同偈前句的 a Grah other than Surya；原文没有时间限定。",
+        "minimum_supported_claim": "除太阳（Surya）外有行星落在从月亮（Chandra）起算的第2宫与第12宫时，Duradhar Yog 成立。",
+        "produced_fact_keys": [
+          "Duradhar Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "除太阳（Surya）外是否有行星落在从月亮（Chandra）起算的第2宫",
+          "除太阳（Surya）外是否有行星落在从月亮（Chandra）起算的第12宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "除太阳（Surya）外是否有行星落在从月亮（Chandra）起算的第2宫"
+            },
+            {
+              "fact_key": "除太阳（Surya）外是否有行星落在从月亮（Chandra）起算的第12宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If there is a Grah other than Surya",
+              "claim": "除太阳（Surya）外有行星"
+            },
+            {
+              "quote": "if in the 2<sup>nd</sup> and 12<sup>th</sup> from Chandra",
+              "claim": "落在从月亮（Chandra）起算的第2宫与第12宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Duradhar Yog is caused",
+              "claim": "Duradhar Yog 成立"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v7-10",
+            "quote": "If there is a Grah other than Surya",
+            "pdf_pages": [
+              81
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v7-10",
+            "quote": "if in the 2<sup>nd</sup> and 12<sup>th</sup> from Chandra, Duradhar Yog is caused.",
+            "pdf_pages": [
+              81
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：除太阳（Surya）外是否有行星落在从月亮（Chandra）起算的第2宫、除太阳（Surya）外是否有行星落在从月亮（Chandra）起算的第12宫。",
+        "stop_fact_keys": [
+          "除太阳（Surya）外是否有行星落在从月亮（Chandra）起算的第2宫",
+          "除太阳（Surya）外是否有行星落在从月亮（Chandra）起算的第12宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文只排除太阳，不得再排除别的行星，也不得要求该行星必须是吉星。",
+          "不得把起算点从月亮换成上升。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "fba8469c123c28c203a368f2a18fb28284c43209c05ae059b34a085c8066c201"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch37-v7-10-duradhar-yog.step-002",
+      "method": {
+        "method": "ch37-v7-10-duradhar-yog",
+        "title": "Duradhar Yog：太阳以外的行星同时落月亮起算第2宫与第12宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我能不能过得享受又有排场",
+          "月亮两侧都有行星说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "if in the 2<sup>nd</sup> and 12<sup>th</sup> from Chandra, Duradhar Yog is caused",
+            "月亮起算第2宫第12宫都有行星 Duradhar Yog"
+          ],
+          "counter_queries": [
+            "One born in Kema Drum Yog will be very much reproached, will be bereft of intelligence, learning, reduced to penury and perils",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "Should Guru be in a Kendr from Lagna, or from Chandra and be yuti with, or receiving a Drishti from benefic, avoiding at the same time debilitation, combustion and inimical Rāśi, Gaj Kesari Yog is caused"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch37-v7-10-duradhar-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If there is a Grah other than Surya"
+            },
+            {
+              "step_id": "ch37-v7-10-duradhar-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if in the 2nd and 12th from Chandra"
+            },
+            {
+              "step_id": "ch37-v7-10-duradhar-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Duradhar Yog is caused"
+            },
+            {
+              "step_id": "ch37-v7-10-duradhar-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If there is a Grah other than Surya Duradhar Yog is caused"
+            },
+            {
+              "step_id": "ch37-v7-10-duradhar-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if in the 2nd and 12th from Chandra Duradhar Yog is caused"
+            },
+            {
+              "step_id": "ch37-v7-10-duradhar-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If there is a Grah other than sun"
+            },
+            {
+              "step_id": "ch37-v7-10-duradhar-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if in the 2nd and 12th from moon"
+            },
+            {
+              "step_id": "ch37-v7-10-duradhar-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If there is a Grah other than sun Duradhar Yog is caused"
+            },
+            {
+              "step_id": "ch37-v7-10-duradhar-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if in the 2nd and 12th from moon Duradhar Yog is caused"
+            },
+            {
+              "step_id": "ch37-v7-10-duradhar-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Duradhar Yog"
+            },
+            {
+              "step_id": "ch37-v7-10-duradhar-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will enjoy pleasures, will be charitable and endowed with wealth, conveyances and excellent serving force"
+            },
+            {
+              "step_id": "ch37-v7-10-duradhar-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Duradhar Yog will enjoy pleasures, will be charitable and endowed with wealth, conveyances and excellent serving force"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少月亮起算第2宫或第12宫的占据事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch37-v7-10-duradhar-yog.step-002",
+        "action": "在 Duradhar Yog 成立时读取享受、施舍与仆从断语。",
+        "applicability_scope": "仅限已判定 Duradhar Yog 成立的本命盘；原文未给时间限定。",
+        "minimum_supported_claim": "生于 Duradhar Yog 者会享有欢乐、乐善好施，并有财富、车乘与出色的仆从。",
+        "produced_fact_keys": [
+          "Duradhar Yog 效果断语"
+        ],
+        "required_fact_keys": [
+          "Duradhar Yog 成立判定"
+        ],
+        "condition_logic": {
+          "fact_key": "Duradhar Yog 成立判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "One born in Duradhar Yog",
+              "claim": "生于 Duradhar Yog 者"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will enjoy pleasures, will be charitable and endowed with wealth, conveyances and excellent serving force",
+              "claim": "会享有欢乐、乐善好施，并有财富、车乘与出色的仆从"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v7-10",
+            "quote": "One born in Duradhar Yog will enjoy pleasures, will be charitable and endowed with wealth, conveyances and excellent serving force.",
+            "pdf_pages": [
+              81
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Duradhar Yog 成立判定。",
+        "stop_fact_keys": [
+          "Duradhar Yog 成立判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财富数额、车辆数量或仆从人数。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "594da3ef1d1cd32733b41603eb8ac1cefb46de1b0a75ff3c0cb12fda2d0ab5eb"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+      "method": {
+        "method": "ch37-v11-13-kema-drum-yog",
+        "title": "Kema Drum Yog：月亮四处皆空（同宫、第2宫、第12宫、上升角宫都无行星）",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我为什么老是被人指责又一无所有",
+          "我盘里月亮孤零零的说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Excluding Surya, should there be no Grah with Chandra",
+            "One born in Kema Drum Yog will be very much reproached, will be bereft of intelligence, learning, reduced to penury and perils",
+            "月亮四处无行星 Kema Drum Yog 贫困"
+          ],
+          "counter_queries": [
+            "If there is a Grah other than Surya, in the 2<sup>nd</sup> from Chandra, Sunaph Yog is formed",
+            "If benefics occupy the 8<sup>th</sup> , 6<sup>th</sup> and 7<sup>th</sup> , counted from Chandra, Adhi Yog obtains"
+          ],
+          "boundary_queries": [
+            "If malefics be in Karakāńś, Arudh Lagn and the 2<sup>nd</sup> and 8<sup>th</sup> from these places, there will be Kemadrum Yog",
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "Should Guru be in a Kendr from Lagna, or from Chandra and be yuti with, or receiving a Drishti from benefic, avoiding at the same time debilitation, combustion and inimical Rāśi, Gaj Kesari Yog is caused"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Excluding Surya, should there be no Grah with Chandra"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in the 2nd"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "12th from Chandra"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in a Kendr from Lagna"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Kema Drum Yog is formed"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Excluding Surya, should there be no Grah with Chandra Kema Drum Yog is formed"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in the 2nd Kema Drum Yog is formed"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "12th from Chandra Kema Drum Yog is formed"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in a Kendr from Lagna Kema Drum Yog is formed"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Excluding sun, should there be no Grah with moon"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "12th from moon"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "in a Kendr from 1st house"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Excluding sun, should there be no Grah with moon Kema Drum Yog is formed"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "12th from moon Kema Drum Yog is formed"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "in a Kendr from 1st house Kema Drum Yog is formed"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Kema Drum Yog"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be very much reproached, will be bereft of intelligence, learning, reduced to penury and perils"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Kema Drum Yog will be very much reproached, will be bereft of intelligence, learning, reduced to penury and perils"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "月亮同宫、第2宫、第12宫、上升角宫四项占据事实缺任一项时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+        "action": "除太阳（Surya）外，逐一核对月亮（Chandra）同宫、从月亮起算的第2宫与第12宫、以及从上升（Lagna）起算的角宫内是否都没有行星，判定 Kema Drum Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Kema Drum Yog 的成立判定；原文没有时间限定。",
+        "minimum_supported_claim": "除太阳（Surya）外没有行星与月亮（Chandra）同宫，从月亮（Chandra）起算的第2宫内没有行星，从月亮（Chandra）起算的第12宫内没有行星，从上升（Lagna）起算的角宫（Kendr）内也没有行星时，Kema Drum Yog 成立。",
+        "produced_fact_keys": [
+          "Kema Drum Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "除太阳（Surya）外是否有行星与月亮（Chandra）同宫",
+          "除太阳（Surya）外是否有行星落在从月亮（Chandra）起算的第2宫",
+          "除太阳（Surya）外是否有行星落在从月亮（Chandra）起算的第12宫",
+          "除太阳（Surya）外是否有行星落在从上升（Lagna）起算的角宫（Kendr）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "除太阳（Surya）外是否有行星与月亮（Chandra）同宫"
+                }
+              ]
+            },
+            {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "除太阳（Surya）外是否有行星落在从月亮（Chandra）起算的第2宫"
+                }
+              ]
+            },
+            {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "除太阳（Surya）外是否有行星落在从月亮（Chandra）起算的第12宫"
+                }
+              ]
+            },
+            {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "除太阳（Surya）外是否有行星落在从上升（Lagna）起算的角宫（Kendr）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Excluding Surya, should there be no Grah with Chandra",
+              "claim": "除太阳（Surya）外没有行星与月亮（Chandra）同宫"
+            },
+            {
+              "quote": "in the 2<sup>nd</sup>",
+              "claim": "第2宫"
+            },
+            {
+              "quote": "12<sup>th</sup> from Chandra",
+              "claim": "从月亮（Chandra）起算的第12宫"
+            },
+            {
+              "quote": "in a Kendr from Lagna",
+              "claim": "从上升（Lagna）起算的角宫（Kendr）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Kema Drum Yog is formed",
+              "claim": "Kema Drum Yog 成立"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v11-13",
+            "quote": "Excluding Surya, should there be no Grah with Chandra",
+            "pdf_pages": [
+              81,
+              82
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v11-13",
+            "quote": "in the 2<sup>nd</sup>",
+            "pdf_pages": [
+              81,
+              82
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v11-13",
+            "quote": "12<sup>th</sup> from Chandra",
+            "pdf_pages": [
+              81,
+              82
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v11-13",
+            "quote": "in a Kendr from Lagna, Kema Drum Yog is formed",
+            "pdf_pages": [
+              81,
+              82
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：除太阳（Surya）外是否有行星与月亮（Chandra）同宫、除太阳（Surya）外是否有行星落在从月亮（Chandra）起算的第2宫、除太阳（Surya）外是否有行星落在从月亮（Chandra）起算的第12宫、除太阳（Surya）外是否有行星落在从上升（Lagna）起算的角宫（Kendr）。",
+        "stop_fact_keys": [
+          "除太阳（Surya）外是否有行星与月亮（Chandra）同宫",
+          "除太阳（Surya）外是否有行星落在从月亮（Chandra）起算的第2宫",
+          "除太阳（Surya）外是否有行星落在从月亮（Chandra）起算的第12宫",
+          "除太阳（Surya）外是否有行星落在从上升（Lagna）起算的角宫（Kendr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文的四处空位是并列要求，不得只满足其中一处就判定成立。",
+          "原文只排除太阳，不得再排除别的行星。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "47486572bb31a17ae3eb7701ff86c1af1ee1e488bd15ca11edb9e3dd3a926493"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch37-v11-13-kema-drum-yog.step-002",
+      "method": {
+        "method": "ch37-v11-13-kema-drum-yog",
+        "title": "Kema Drum Yog：月亮四处皆空（同宫、第2宫、第12宫、上升角宫都无行星）",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我为什么老是被人指责又一无所有",
+          "我盘里月亮孤零零的说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Excluding Surya, should there be no Grah with Chandra",
+            "One born in Kema Drum Yog will be very much reproached, will be bereft of intelligence, learning, reduced to penury and perils",
+            "月亮四处无行星 Kema Drum Yog 贫困"
+          ],
+          "counter_queries": [
+            "If there is a Grah other than Surya, in the 2<sup>nd</sup> from Chandra, Sunaph Yog is formed",
+            "If benefics occupy the 8<sup>th</sup> , 6<sup>th</sup> and 7<sup>th</sup> , counted from Chandra, Adhi Yog obtains"
+          ],
+          "boundary_queries": [
+            "If malefics be in Karakāńś, Arudh Lagn and the 2<sup>nd</sup> and 8<sup>th</sup> from these places, there will be Kemadrum Yog",
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "Should Guru be in a Kendr from Lagna, or from Chandra and be yuti with, or receiving a Drishti from benefic, avoiding at the same time debilitation, combustion and inimical Rāśi, Gaj Kesari Yog is caused"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Excluding Surya, should there be no Grah with Chandra"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in the 2nd"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "12th from Chandra"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in a Kendr from Lagna"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Kema Drum Yog is formed"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Excluding Surya, should there be no Grah with Chandra Kema Drum Yog is formed"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in the 2nd Kema Drum Yog is formed"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "12th from Chandra Kema Drum Yog is formed"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in a Kendr from Lagna Kema Drum Yog is formed"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Excluding sun, should there be no Grah with moon"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "12th from moon"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "in a Kendr from 1st house"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Excluding sun, should there be no Grah with moon Kema Drum Yog is formed"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "12th from moon Kema Drum Yog is formed"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "in a Kendr from 1st house Kema Drum Yog is formed"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Kema Drum Yog"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be very much reproached, will be bereft of intelligence, learning, reduced to penury and perils"
+            },
+            {
+              "step_id": "ch37-v11-13-kema-drum-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Kema Drum Yog will be very much reproached, will be bereft of intelligence, learning, reduced to penury and perils"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "月亮同宫、第2宫、第12宫、上升角宫四项占据事实缺任一项时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch37-v11-13-kema-drum-yog.step-002",
+        "action": "在 Kema Drum Yog 成立时读取名声、才学与处境断语。",
+        "applicability_scope": "仅限已判定 Kema Drum Yog 成立的本命盘；原文未给时间限定。",
+        "minimum_supported_claim": "生于 Kema Drum Yog 者会大受指责，没有智慧与学识，陷入贫困与危难。",
+        "produced_fact_keys": [
+          "Kema Drum Yog 效果断语"
+        ],
+        "required_fact_keys": [
+          "Kema Drum Yog 成立判定"
+        ],
+        "condition_logic": {
+          "fact_key": "Kema Drum Yog 成立判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "One born in Kema Drum Yog",
+              "claim": "生于 Kema Drum Yog 者"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be very much reproached, will be bereft of intelligence, learning, reduced to penury and perils",
+              "claim": "会大受指责，没有智慧与学识，陷入贫困与危难"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v11-13",
+            "quote": "One born in Kema Drum Yog will be very much reproached, will be bereft of intelligence, learning, reduced to penury and perils.",
+            "pdf_pages": [
+              81,
+              82
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Kema Drum Yog 成立判定。",
+        "stop_fact_keys": [
+          "Kema Drum Yog 成立判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「陷入贫困与危难」加重成寿命或死因断语。",
+          "不得据此推断贫困发生的时间或程度数值。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "27a8d8d06fd5481c2e3c01019faf0f1df7eafbf4f56cffee338ad35bfeb14059"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch38-v1-vesi-yog.step-001",
+      "method": {
+        "method": "ch38-v1-vesi-yog",
+        "title": "Vesi Yog：月亮以外的行星落太阳起算第2宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这个人给别人什么印象",
+          "太阳前一宫有行星说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Barring Chandra, if a Grah among Mangal etc. be in the 2<sup>nd</sup> from Surya, Vesi Yog is formed",
+            "One born in Vesi Yog will be even sighted, truthful, long-bodied, indolent, happy and endowed with negligible wealth",
+            "太阳起算第2宫有行星 Vesi Yog"
+          ],
+          "counter_queries": [
+            "Benefics, causing Vesi, Vosi, or Ubhayachari Yogas, will give the above-mentioned effects, while malefics will produce contrary effects",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Budh, however, is a malefic, if he joins a malefic",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "If the Lord of a Kendr establishes a relationship with the Lord of a Kon, a Raj Yog is obtained"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch38-v1-vesi-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Barring Chandra, if a Grah among Mangal etc. be in the 2nd from Surya"
+            },
+            {
+              "step_id": "ch38-v1-vesi-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Vesi Yog is formed"
+            },
+            {
+              "step_id": "ch38-v1-vesi-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Barring Chandra, if a Grah among Mangal etc. be in the 2nd from Surya Vesi Yog is formed"
+            },
+            {
+              "step_id": "ch38-v1-vesi-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Barring moon, if a Grah among mars etc. be in the 2nd from sun"
+            },
+            {
+              "step_id": "ch38-v1-vesi-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Barring moon, if a Grah among mars etc. be in the 2nd from sun Vesi Yog is formed"
+            },
+            {
+              "step_id": "ch38-v1-vesi-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Vesi Yog"
+            },
+            {
+              "step_id": "ch38-v1-vesi-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be even sighted, truthful, long-bodied, indolent, happy and endowed with negligible wealth"
+            },
+            {
+              "step_id": "ch38-v1-vesi-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Vesi Yog will be even sighted, truthful, long-bodied, indolent, happy and endowed with negligible wealth"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少太阳起算第2宫的占据事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch38-v1-vesi-yog.step-001",
+        "action": "核对除月亮（Chandra）以外是否有 Mangal 等行星落在从太阳（Surya）起算的第2宫，判定 Vesi Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Vesi Yog 的成立判定；原文没有时间限定。",
+        "minimum_supported_claim": "除月亮（Chandra）外，若有 Mangal 等行星落在从太阳（Surya）起算的第2宫，Vesi Yog 成立。",
+        "produced_fact_keys": [
+          "Vesi Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "除月亮（Chandra）外是否有行星落在从太阳（Surya）起算的第2宫"
+        ],
+        "condition_logic": {
+          "fact_key": "除月亮（Chandra）外是否有行星落在从太阳（Surya）起算的第2宫"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Barring Chandra, if a Grah among Mangal etc. be in the 2<sup>nd</sup> from Surya",
+              "claim": "除月亮（Chandra）外，若有 Mangal 等行星落在从太阳（Surya）起算的第2宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Vesi Yog is formed",
+              "claim": "Vesi Yog 成立"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch38:v1",
+            "quote": "Barring Chandra, if a Grah among Mangal etc. be in the 2<sup>nd</sup> from Surya, Vesi Yog is formed",
+            "pdf_pages": [
+              82
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：除月亮（Chandra）外是否有行星落在从太阳（Surya）起算的第2宫。",
+        "stop_fact_keys": [
+          "除月亮（Chandra）外是否有行星落在从太阳（Surya）起算的第2宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文只排除月亮，不得再排除别的行星。",
+          "不得把起算点从太阳换成上升或月亮。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "f4de863f43c2716750acb86507304ab7c9f3582c36fd257702255bea0354ea10"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch38-v1-vesi-yog.step-002",
+      "method": {
+        "method": "ch38-v1-vesi-yog",
+        "title": "Vesi Yog：月亮以外的行星落太阳起算第2宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这个人给别人什么印象",
+          "太阳前一宫有行星说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Barring Chandra, if a Grah among Mangal etc. be in the 2<sup>nd</sup> from Surya, Vesi Yog is formed",
+            "One born in Vesi Yog will be even sighted, truthful, long-bodied, indolent, happy and endowed with negligible wealth",
+            "太阳起算第2宫有行星 Vesi Yog"
+          ],
+          "counter_queries": [
+            "Benefics, causing Vesi, Vosi, or Ubhayachari Yogas, will give the above-mentioned effects, while malefics will produce contrary effects",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Budh, however, is a malefic, if he joins a malefic",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "If the Lord of a Kendr establishes a relationship with the Lord of a Kon, a Raj Yog is obtained"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch38-v1-vesi-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Barring Chandra, if a Grah among Mangal etc. be in the 2nd from Surya"
+            },
+            {
+              "step_id": "ch38-v1-vesi-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Vesi Yog is formed"
+            },
+            {
+              "step_id": "ch38-v1-vesi-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Barring Chandra, if a Grah among Mangal etc. be in the 2nd from Surya Vesi Yog is formed"
+            },
+            {
+              "step_id": "ch38-v1-vesi-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Barring moon, if a Grah among mars etc. be in the 2nd from sun"
+            },
+            {
+              "step_id": "ch38-v1-vesi-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Barring moon, if a Grah among mars etc. be in the 2nd from sun Vesi Yog is formed"
+            },
+            {
+              "step_id": "ch38-v1-vesi-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Vesi Yog"
+            },
+            {
+              "step_id": "ch38-v1-vesi-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be even sighted, truthful, long-bodied, indolent, happy and endowed with negligible wealth"
+            },
+            {
+              "step_id": "ch38-v1-vesi-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Vesi Yog will be even sighted, truthful, long-bodied, indolent, happy and endowed with negligible wealth"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少太阳起算第2宫的占据事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch38-v1-vesi-yog.step-002",
+        "action": "在 Vesi Yog 成立时读取体貌、品性与财富断语。",
+        "applicability_scope": "仅限已判定 Vesi Yog 成立的本命盘；原文未给时间限定。",
+        "minimum_supported_claim": "生于 Vesi Yog 者双眼端正、说话诚实、身形修长、懒散、快乐，财富微薄。",
+        "produced_fact_keys": [
+          "Vesi Yog 效果断语"
+        ],
+        "required_fact_keys": [
+          "Vesi Yog 成立判定"
+        ],
+        "condition_logic": {
+          "fact_key": "Vesi Yog 成立判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "One born in Vesi Yog",
+              "claim": "生于 Vesi Yog 者"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be even sighted, truthful, long-bodied, indolent, happy and endowed with negligible wealth",
+              "claim": "双眼端正、说话诚实、身形修长、懒散、快乐，财富微薄"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch38:v2-3",
+            "quote": "One born in Vesi Yog will be even sighted, truthful, long-bodied, indolent, happy and endowed with negligible wealth.",
+            "pdf_pages": [
+              82
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Vesi Yog 成立判定。",
+        "stop_fact_keys": [
+          "Vesi Yog 成立判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「财富微薄」加重成贫穷或负债。",
+          "不得据此推断身高数值、疾病或事件时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "307077d6c1a1019aafc38d544e48aff7c13f9bc6d0166b9b1eb05db849d4d4af"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch38-v1-vosi-yog.step-001",
+      "method": {
+        "method": "ch38-v1-vosi-yog",
+        "title": "Vosi Yog：月亮以外的行星落太阳起算第12宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我有没有靠本事和学问出头的组合",
+          "太阳后一宫有行星说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "if in the 12<sup>th</sup> from Surya, Vosi Yog is formed",
+            "One born with Vosi Yog will be skilful, charitable and endowed with fame, learning and strength",
+            "太阳起算第12宫有行星 Vosi Yog"
+          ],
+          "counter_queries": [
+            "Benefics, causing Vesi, Vosi, or Ubhayachari Yogas, will give the above-mentioned effects, while malefics will produce contrary effects",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Budh, however, is a malefic, if he joins a malefic",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "If the Lord of a Kendr establishes a relationship with the Lord of a Kon, a Raj Yog is obtained"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch38-v1-vosi-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Barring Chandra, if a Grah among Mangal etc."
+            },
+            {
+              "step_id": "ch38-v1-vosi-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if in the 12th from Surya"
+            },
+            {
+              "step_id": "ch38-v1-vosi-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Vosi Yog is formed"
+            },
+            {
+              "step_id": "ch38-v1-vosi-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Barring Chandra, if a Grah among Mangal etc. Vosi Yog is formed"
+            },
+            {
+              "step_id": "ch38-v1-vosi-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if in the 12th from Surya Vosi Yog is formed"
+            },
+            {
+              "step_id": "ch38-v1-vosi-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Barring moon, if a Grah among mars etc."
+            },
+            {
+              "step_id": "ch38-v1-vosi-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if in the 12th from sun"
+            },
+            {
+              "step_id": "ch38-v1-vosi-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Barring moon, if a Grah among mars etc. Vosi Yog is formed"
+            },
+            {
+              "step_id": "ch38-v1-vosi-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if in the 12th from sun Vosi Yog is formed"
+            },
+            {
+              "step_id": "ch38-v1-vosi-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born with Vosi Yog"
+            },
+            {
+              "step_id": "ch38-v1-vosi-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be skilful, charitable and endowed with fame, learning and strength"
+            },
+            {
+              "step_id": "ch38-v1-vosi-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born with Vosi Yog will be skilful, charitable and endowed with fame, learning and strength"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少太阳起算第12宫的占据事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch38-v1-vosi-yog.step-001",
+        "action": "核对除月亮（Chandra）以外是否有 Mangal 等行星落在从太阳（Surya）起算的第12宫，判定 Vosi Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Vosi Yog 的成立判定；原文此分句承同偈前句的 a Grah among Mangal etc.；原文没有时间限定。",
+        "minimum_supported_claim": "除月亮（Chandra）外的 Mangal 等行星落在从太阳（Surya）起算的第12宫时，Vosi Yog 成立。",
+        "produced_fact_keys": [
+          "Vosi Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "除月亮（Chandra）外是否有行星落在从太阳（Surya）起算的第12宫"
+        ],
+        "condition_logic": {
+          "fact_key": "除月亮（Chandra）外是否有行星落在从太阳（Surya）起算的第12宫"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Barring Chandra, if a Grah among Mangal etc.",
+              "claim": "除月亮（Chandra）外的 Mangal 等行星"
+            },
+            {
+              "quote": "if in the 12<sup>th</sup> from Surya",
+              "claim": "落在从太阳（Surya）起算的第12宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Vosi Yog is formed",
+              "claim": "Vosi Yog 成立"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch38:v1",
+            "quote": "Barring Chandra, if a Grah among Mangal etc.",
+            "pdf_pages": [
+              82
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch38:v1",
+            "quote": "if in the 12<sup>th</sup> from Surya, Vosi Yog is formed",
+            "pdf_pages": [
+              82
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：除月亮（Chandra）外是否有行星落在从太阳（Surya）起算的第12宫。",
+        "stop_fact_keys": [
+          "除月亮（Chandra）外是否有行星落在从太阳（Surya）起算的第12宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文只排除月亮，不得再排除别的行星。",
+          "不得把起算点从太阳换成上升或月亮。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "58cf80907e1364a07049f2451eda00c3461da8078d696c0562fbddf1dfeac544"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch38-v1-vosi-yog.step-002",
+      "method": {
+        "method": "ch38-v1-vosi-yog",
+        "title": "Vosi Yog：月亮以外的行星落太阳起算第12宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我有没有靠本事和学问出头的组合",
+          "太阳后一宫有行星说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "if in the 12<sup>th</sup> from Surya, Vosi Yog is formed",
+            "One born with Vosi Yog will be skilful, charitable and endowed with fame, learning and strength",
+            "太阳起算第12宫有行星 Vosi Yog"
+          ],
+          "counter_queries": [
+            "Benefics, causing Vesi, Vosi, or Ubhayachari Yogas, will give the above-mentioned effects, while malefics will produce contrary effects",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Budh, however, is a malefic, if he joins a malefic",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "If the Lord of a Kendr establishes a relationship with the Lord of a Kon, a Raj Yog is obtained"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch38-v1-vosi-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Barring Chandra, if a Grah among Mangal etc."
+            },
+            {
+              "step_id": "ch38-v1-vosi-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if in the 12th from Surya"
+            },
+            {
+              "step_id": "ch38-v1-vosi-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Vosi Yog is formed"
+            },
+            {
+              "step_id": "ch38-v1-vosi-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Barring Chandra, if a Grah among Mangal etc. Vosi Yog is formed"
+            },
+            {
+              "step_id": "ch38-v1-vosi-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if in the 12th from Surya Vosi Yog is formed"
+            },
+            {
+              "step_id": "ch38-v1-vosi-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Barring moon, if a Grah among mars etc."
+            },
+            {
+              "step_id": "ch38-v1-vosi-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if in the 12th from sun"
+            },
+            {
+              "step_id": "ch38-v1-vosi-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Barring moon, if a Grah among mars etc. Vosi Yog is formed"
+            },
+            {
+              "step_id": "ch38-v1-vosi-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if in the 12th from sun Vosi Yog is formed"
+            },
+            {
+              "step_id": "ch38-v1-vosi-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born with Vosi Yog"
+            },
+            {
+              "step_id": "ch38-v1-vosi-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be skilful, charitable and endowed with fame, learning and strength"
+            },
+            {
+              "step_id": "ch38-v1-vosi-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born with Vosi Yog will be skilful, charitable and endowed with fame, learning and strength"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少太阳起算第12宫的占据事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch38-v1-vosi-yog.step-002",
+        "action": "在 Vosi Yog 成立时读取才能、名声与学识断语。",
+        "applicability_scope": "仅限已判定 Vosi Yog 成立的本命盘；原文未给时间限定。",
+        "minimum_supported_claim": "生于 Vosi Yog 者心灵手巧、乐善好施，并有名声、学识与力量。",
+        "produced_fact_keys": [
+          "Vosi Yog 效果断语"
+        ],
+        "required_fact_keys": [
+          "Vosi Yog 成立判定"
+        ],
+        "condition_logic": {
+          "fact_key": "Vosi Yog 成立判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "One born with Vosi Yog",
+              "claim": "生于 Vosi Yog 者"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be skilful, charitable and endowed with fame, learning and strength",
+              "claim": "心灵手巧、乐善好施，并有名声、学识与力量"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch38:v2-3",
+            "quote": "One born with Vosi Yog will be skilful, charitable and endowed with fame, learning and strength.",
+            "pdf_pages": [
+              82
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Vosi Yog 成立判定。",
+        "stop_fact_keys": [
+          "Vosi Yog 成立判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断学历、职业或成名时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "f35fb11fda591ac0fe6a48c3c8bf873abb9a5211266815adc799c5e9b0dc53e4"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch38-v1-ubhayachari-yog.step-001",
+      "method": {
+        "method": "ch38-v1-ubhayachari-yog",
+        "title": "Ubhayachari Yog：月亮以外的行星同时落太阳起算第2宫与第12宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我有没有贵格",
+          "太阳两侧都有行星说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "if in both the 2<sup>nd</sup> and the 12<sup>th</sup> from Surya, Ubhayachari Yog is caused",
+            "The Ubhayachari native will be a king, or equal to a king and be happy",
+            "太阳两侧都有行星 Ubhayachari Yog 国王"
+          ],
+          "counter_queries": [
+            "Benefics, causing Vesi, Vosi, or Ubhayachari Yogas, will give the above-mentioned effects, while malefics will produce contrary effects",
+            "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless"
+          ],
+          "boundary_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Budh, however, is a malefic, if he joins a malefic",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "If the Lord of a Kendr establishes a relationship with the Lord of a Kon, a Raj Yog is obtained"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch38-v1-ubhayachari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Barring Chandra, if a Grah among Mangal etc."
+            },
+            {
+              "step_id": "ch38-v1-ubhayachari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if in both the 2nd and the 12th from Surya"
+            },
+            {
+              "step_id": "ch38-v1-ubhayachari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Ubhayachari Yog is caused"
+            },
+            {
+              "step_id": "ch38-v1-ubhayachari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Barring Chandra, if a Grah among Mangal etc. Ubhayachari Yog is caused"
+            },
+            {
+              "step_id": "ch38-v1-ubhayachari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if in both the 2nd and the 12th from Surya Ubhayachari Yog is caused"
+            },
+            {
+              "step_id": "ch38-v1-ubhayachari-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Barring moon, if a Grah among mars etc."
+            },
+            {
+              "step_id": "ch38-v1-ubhayachari-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if in both the 2nd and the 12th from sun"
+            },
+            {
+              "step_id": "ch38-v1-ubhayachari-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Barring moon, if a Grah among mars etc. Ubhayachari Yog is caused"
+            },
+            {
+              "step_id": "ch38-v1-ubhayachari-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if in both the 2nd and the 12th from sun Ubhayachari Yog is caused"
+            },
+            {
+              "step_id": "ch38-v1-ubhayachari-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "The Ubhayachari native"
+            },
+            {
+              "step_id": "ch38-v1-ubhayachari-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be a king, or equal to a king and be happy"
+            },
+            {
+              "step_id": "ch38-v1-ubhayachari-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "The Ubhayachari native will be a king, or equal to a king and be happy"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少太阳起算第2宫或第12宫的占据事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch38-v1-ubhayachari-yog.step-001",
+        "action": "核对除月亮（Chandra）以外是否有 Mangal 等行星同时落在从太阳（Surya）起算的第2宫与第12宫，判定 Ubhayachari Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Ubhayachari Yog 的成立判定；原文此分句承同偈前句的 a Grah among Mangal etc.；原文没有时间限定。",
+        "minimum_supported_claim": "除月亮（Chandra）外的 Mangal 等行星落在从太阳（Surya）起算的第2宫与第12宫时，Ubhayachari Yog 成立。",
+        "produced_fact_keys": [
+          "Ubhayachari Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "除月亮（Chandra）外是否有行星落在从太阳（Surya）起算的第2宫",
+          "除月亮（Chandra）外是否有行星落在从太阳（Surya）起算的第12宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "除月亮（Chandra）外是否有行星落在从太阳（Surya）起算的第2宫"
+            },
+            {
+              "fact_key": "除月亮（Chandra）外是否有行星落在从太阳（Surya）起算的第12宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Barring Chandra, if a Grah among Mangal etc.",
+              "claim": "除月亮（Chandra）外的 Mangal 等行星"
+            },
+            {
+              "quote": "if in both the 2<sup>nd</sup> and the 12<sup>th</sup> from Surya",
+              "claim": "落在从太阳（Surya）起算的第2宫与第12宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Ubhayachari Yog is caused",
+              "claim": "Ubhayachari Yog 成立"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch38:v1",
+            "quote": "Barring Chandra, if a Grah among Mangal etc.",
+            "pdf_pages": [
+              82
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch38:v1",
+            "quote": "if in both the 2<sup>nd</sup> and the 12<sup>th</sup> from Surya, Ubhayachari Yog is caused.",
+            "pdf_pages": [
+              82
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：除月亮（Chandra）外是否有行星落在从太阳（Surya）起算的第2宫、除月亮（Chandra）外是否有行星落在从太阳（Surya）起算的第12宫。",
+        "stop_fact_keys": [
+          "除月亮（Chandra）外是否有行星落在从太阳（Surya）起算的第2宫",
+          "除月亮（Chandra）外是否有行星落在从太阳（Surya）起算的第12宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文只排除月亮，不得再排除别的行星。",
+          "不得把起算点从太阳换成上升或月亮。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "1acfbb0fae8eebdce617c00983dbdac9deda2f2e6d6374332edbf8f3dfdd0629"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch38-v1-ubhayachari-yog.step-002",
+      "method": {
+        "method": "ch38-v1-ubhayachari-yog",
+        "title": "Ubhayachari Yog：月亮以外的行星同时落太阳起算第2宫与第12宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我有没有贵格",
+          "太阳两侧都有行星说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "if in both the 2<sup>nd</sup> and the 12<sup>th</sup> from Surya, Ubhayachari Yog is caused",
+            "The Ubhayachari native will be a king, or equal to a king and be happy",
+            "太阳两侧都有行星 Ubhayachari Yog 国王"
+          ],
+          "counter_queries": [
+            "Benefics, causing Vesi, Vosi, or Ubhayachari Yogas, will give the above-mentioned effects, while malefics will produce contrary effects",
+            "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless"
+          ],
+          "boundary_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Budh, however, is a malefic, if he joins a malefic",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "If the Lord of a Kendr establishes a relationship with the Lord of a Kon, a Raj Yog is obtained"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch38-v1-ubhayachari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Barring Chandra, if a Grah among Mangal etc."
+            },
+            {
+              "step_id": "ch38-v1-ubhayachari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if in both the 2nd and the 12th from Surya"
+            },
+            {
+              "step_id": "ch38-v1-ubhayachari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Ubhayachari Yog is caused"
+            },
+            {
+              "step_id": "ch38-v1-ubhayachari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Barring Chandra, if a Grah among Mangal etc. Ubhayachari Yog is caused"
+            },
+            {
+              "step_id": "ch38-v1-ubhayachari-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if in both the 2nd and the 12th from Surya Ubhayachari Yog is caused"
+            },
+            {
+              "step_id": "ch38-v1-ubhayachari-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Barring moon, if a Grah among mars etc."
+            },
+            {
+              "step_id": "ch38-v1-ubhayachari-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if in both the 2nd and the 12th from sun"
+            },
+            {
+              "step_id": "ch38-v1-ubhayachari-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Barring moon, if a Grah among mars etc. Ubhayachari Yog is caused"
+            },
+            {
+              "step_id": "ch38-v1-ubhayachari-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if in both the 2nd and the 12th from sun Ubhayachari Yog is caused"
+            },
+            {
+              "step_id": "ch38-v1-ubhayachari-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "The Ubhayachari native"
+            },
+            {
+              "step_id": "ch38-v1-ubhayachari-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be a king, or equal to a king and be happy"
+            },
+            {
+              "step_id": "ch38-v1-ubhayachari-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "The Ubhayachari native will be a king, or equal to a king and be happy"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少太阳起算第2宫或第12宫的占据事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch38-v1-ubhayachari-yog.step-002",
+        "action": "在 Ubhayachari Yog 成立时读取身份与快乐断语。",
+        "applicability_scope": "仅限已判定 Ubhayachari Yog 成立的本命盘；原文未给时间限定。",
+        "minimum_supported_claim": "有 Ubhayachari Yog 的命主会成为国王，或与国王相当，并且快乐。",
+        "produced_fact_keys": [
+          "Ubhayachari Yog 效果断语"
+        ],
+        "required_fact_keys": [
+          "Ubhayachari Yog 成立判定"
+        ],
+        "condition_logic": {
+          "fact_key": "Ubhayachari Yog 成立判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "The Ubhayachari native",
+              "claim": "有 Ubhayachari Yog 的命主"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be a king, or equal to a king and be happy",
+              "claim": "会成为国王，或与国王相当，并且快乐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch38:v2-3",
+            "quote": "The Ubhayachari native will be a king, or equal to a king and be happy.",
+            "pdf_pages": [
+              82
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Ubhayachari Yog 成立判定。",
+        "stop_fact_keys": [
+          "Ubhayachari Yog 成立判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把国王换算成现代具体职务，也不得据此推断登位时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "6230f822031cd61fb3d74e989fc15061936ee0f911b2942e026076d2ba9bf73e"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch38-v4-benefic-caused-solar-yogas.step-001",
+      "method": {
+        "method": "ch38-v4-benefic-caused-solar-yogas",
+        "title": "造成 Vesi、Vosi、Ubhayachari 的是吉星：给出上文所说的效果",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这三种太阳组合到底是好是坏",
+          "造成瑜伽的那颗星是吉是凶要紧吗"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Benefics, causing Vesi, Vosi, or Ubhayachari Yogas, will give the above-mentioned effects",
+            "吉星造成 Vesi Vosi Ubhayachari 给出上述效果"
+          ],
+          "counter_queries": [
+            "while malefics will produce contrary effects",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Budh, however, is a malefic, if he joins a malefic"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch38-v4-benefic-caused-solar-yogas.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Benefics, causing Vesi, Vosi, or Ubhayachari Yogas"
+            },
+            {
+              "step_id": "ch38-v4-benefic-caused-solar-yogas.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will give the above-mentioned effects"
+            },
+            {
+              "step_id": "ch38-v4-benefic-caused-solar-yogas.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Benefics, causing Vesi, Vosi, or Ubhayachari Yogas will give the above-mentioned effects"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘吉星名册事实时停止。",
+          "无法确认造成该瑜伽的是哪颗行星时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch38-v4-benefic-caused-solar-yogas.step-001",
+        "action": "先取本盘吉星名册，再核对造成 Vesi、Vosi 或 Ubhayachari 瑜伽的那颗行星是否为吉星，据此决定是否给出上文所说的效果。",
+        "applicability_scope": "原文的 the above-mentioned effects 指同章前两偈：ch38:v1 的三种瑜伽定义与 ch38:v2-3 各自的效果；原文本句未给出吉星的判准，也没有时间限定。",
+        "minimum_supported_claim": "由吉星造成的 Vesi、Vosi 或 Ubhayachari 瑜伽，会给出上文所说的那些效果。",
+        "produced_fact_keys": [
+          "三种太阳瑜伽的吉星致格判定"
+        ],
+        "required_fact_keys": [
+          "本盘中哪些行星被判为吉星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "造成 Vesi Yog 的行星是否为吉星"
+                },
+                {
+                  "fact_key": "造成 Vosi Yog 的行星是否为吉星"
+                },
+                {
+                  "fact_key": "造成 Ubhayachari Yog 的行星是否为吉星"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            "required_fact_keys": [
+              "造成 Vesi Yog 的行星是否为吉星"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "造成 Vesi Yog 的行星是否为吉星"
+            },
+            "selection_group": "ch38-v4-benefic-caused-solar-yogas.step-001:which-yoga",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：造成 Vesi Yog 的行星是否为吉星。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            "required_fact_keys": [
+              "造成 Vosi Yog 的行星是否为吉星"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "造成 Vosi Yog 的行星是否为吉星"
+            },
+            "selection_group": "ch38-v4-benefic-caused-solar-yogas.step-001:which-yoga",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：造成 Vosi Yog 的行星是否为吉星。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            "required_fact_keys": [
+              "造成 Ubhayachari Yog 的行星是否为吉星"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "造成 Ubhayachari Yog 的行星是否为吉星"
+            },
+            "selection_group": "ch38-v4-benefic-caused-solar-yogas.step-001:which-yoga",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：造成 Ubhayachari Yog 的行星是否为吉星。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Benefics, causing Vesi, Vosi, or Ubhayachari Yogas",
+              "claim": "由吉星造成的 Vesi、Vosi 或 Ubhayachari 瑜伽"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will give the above-mentioned effects",
+              "claim": "会给出上文所说的那些效果"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch38:v4",
+            "quote": "Benefics, causing Vesi, Vosi, or Ubhayachari Yogas, will give the above-mentioned effects",
+            "pdf_pages": [
+              82
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中哪些行星被判为吉星。",
+        "stop_fact_keys": [
+          "本盘中哪些行星被判为吉星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 the above-mentioned effects 扩大到 ch38 前两偈以外的内容。",
+          "不得据此为三种瑜伽增补原文没有的效果条目。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch38:v1",
+          "bphs-97:santhanam:ch38:v2-3"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "86444f907aa5b89ef2f4bbb5371a12becd1c2057dc6adb8d4685e75afd516f08"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch38-v4-malefic-caused-solar-yogas.step-001",
+      "method": {
+        "method": "ch38-v4-malefic-caused-solar-yogas",
+        "title": "造成 Vesi、Vosi、Ubhayachari 的是凶星：产生相反的效果",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "凶星造成的瑜伽还算好格局吗",
+          "我这组太阳瑜伽为什么不灵"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "while malefics will produce contrary effects",
+            "凶星造成 Vesi Vosi Ubhayachari 相反效果"
+          ],
+          "counter_queries": [
+            "Benefics, causing Vesi, Vosi, or Ubhayachari Yogas, will give the above-mentioned effects"
+          ],
+          "boundary_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Budh, however, is a malefic, if he joins a malefic",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch38-v4-malefic-caused-solar-yogas.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Vesi, Vosi, or Ubhayachari Yogas"
+            },
+            {
+              "step_id": "ch38-v4-malefic-caused-solar-yogas.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while malefics"
+            },
+            {
+              "step_id": "ch38-v4-malefic-caused-solar-yogas.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will produce contrary effects"
+            },
+            {
+              "step_id": "ch38-v4-malefic-caused-solar-yogas.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Vesi, Vosi, or Ubhayachari Yogas will produce contrary effects"
+            },
+            {
+              "step_id": "ch38-v4-malefic-caused-solar-yogas.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while malefics will produce contrary effects"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘凶星名册事实时停止。",
+          "无法确认造成该瑜伽的是哪颗行星时停止。",
+          "原文未列出 contrary effects 的具体内容，需要展开为逐项断语时停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch38-v4-malefic-caused-solar-yogas.step-001",
+        "action": "先取本盘凶星名册，再核对造成 Vesi、Vosi 或 Ubhayachari 瑜伽的那颗行星是否为凶星，据此判定会产生相反的效果。",
+        "applicability_scope": "原文只说 contrary effects（相反的效果），并未逐项列出相反效果的内容；相反效果的具体内容未确定即停判。本句的对照对象是同章 ch38:v1 与 ch38:v2-3。",
+        "minimum_supported_claim": "由凶星造成的 Vesi、Vosi 或 Ubhayachari 瑜伽，会产生相反的效果。",
+        "produced_fact_keys": [
+          "三种太阳瑜伽的凶星致格判定"
+        ],
+        "required_fact_keys": [
+          "本盘中哪些行星被判为凶星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘中哪些行星被判为凶星"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "造成 Vesi Yog 的行星是否为凶星"
+                },
+                {
+                  "fact_key": "造成 Vosi Yog 的行星是否为凶星"
+                },
+                {
+                  "fact_key": "造成 Ubhayachari Yog 的行星是否为凶星"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘中哪些行星被判为凶星"
+            },
+            "required_fact_keys": [
+              "造成 Vesi Yog 的行星是否为凶星"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "造成 Vesi Yog 的行星是否为凶星"
+            },
+            "selection_group": "ch38-v4-malefic-caused-solar-yogas.step-001:which-yoga",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：造成 Vesi Yog 的行星是否为凶星。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘中哪些行星被判为凶星"
+            },
+            "required_fact_keys": [
+              "造成 Vosi Yog 的行星是否为凶星"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "造成 Vosi Yog 的行星是否为凶星"
+            },
+            "selection_group": "ch38-v4-malefic-caused-solar-yogas.step-001:which-yoga",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：造成 Vosi Yog 的行星是否为凶星。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘中哪些行星被判为凶星"
+            },
+            "required_fact_keys": [
+              "造成 Ubhayachari Yog 的行星是否为凶星"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "造成 Ubhayachari Yog 的行星是否为凶星"
+            },
+            "selection_group": "ch38-v4-malefic-caused-solar-yogas.step-001:which-yoga",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：造成 Ubhayachari Yog 的行星是否为凶星。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Vesi, Vosi, or Ubhayachari Yogas",
+              "claim": "Vesi、Vosi 或 Ubhayachari 瑜伽"
+            },
+            {
+              "quote": "while malefics",
+              "claim": "由凶星造成"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will produce contrary effects",
+              "claim": "会产生相反的效果"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch38:v4",
+            "quote": "Benefics, causing Vesi, Vosi, or Ubhayachari Yogas, will give the above-mentioned effects, while malefics will produce contrary effects.",
+            "pdf_pages": [
+              82
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中哪些行星被判为凶星。",
+        "stop_fact_keys": [
+          "本盘中哪些行星被判为凶星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得替原文把 contrary effects 展开成 ch38:v2-3 各项效果的逐条否定。",
+          "不得据此推断贫穷、疾病或寿命等原文没写的内容。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch38:v1",
+          "bphs-97:santhanam:ch38:v2-3"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "539d853293ebaaaae21bbbe3969f58528f8ccc6414a1cd97a5b2cf41909171ba"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v3-5-raj-yog-frame.step-001",
+      "method": {
+        "method": "ch39-v3-5-raj-yog-frame",
+        "title": "Raj Yog 总纲：两组要素与效果的全、半、四分之一分档",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "看贵格该从哪几个点入手",
+          "为什么同样的贵格有人应验有人不应"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn",
+            "The effects, due to such association, will be full, or a half, or a quarter, according to their strengths",
+            "贵格总纲 Karakāńś 与本命上升 两组要素"
+          ],
+          "counter_queries": [
+            "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+            "Karakāńś is the Navāńś, occupied by the Atma Karak Grah",
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth"
+          ],
+          "method_queries": [
+            "If the Lord of a Kendr establishes a relationship with the Lord of a Kon, a Raj Yog is obtained",
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v3-5-raj-yog-frame.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn"
+            },
+            {
+              "step_id": "ch39-v3-5-raj-yog-frame.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the pair of Atma Karak and Putr Karak should be considered"
+            },
+            {
+              "step_id": "ch39-v3-5-raj-yog-frame.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the natal Lagn’s Lord and Putr’s Lord should be taken into consideration"
+            },
+            {
+              "step_id": "ch39-v3-5-raj-yog-frame.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The effects, due to such association, will be full, or a half, or a quarter, according to their strengths"
+            },
+            {
+              "step_id": "ch39-v3-5-raj-yog-frame.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn The effects, due to such association, will be full, or a half, or a quarter, according to their strengths"
+            },
+            {
+              "step_id": "ch39-v3-5-raj-yog-frame.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the pair of Atma Karak and Putr Karak should be considered The effects, due to such association, will be full, or a half, or a quarter, according to their strengths"
+            },
+            {
+              "step_id": "ch39-v3-5-raj-yog-frame.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the natal Lagn’s Lord and Putr’s Lord should be taken into consideration The effects, due to such association, will be full, or a half, or a quarter, according to their strengths"
+            },
+            {
+              "step_id": "ch39-v3-5-raj-yog-frame.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Raj Yogas are to be known from the Karakāńś 1st house and the natal 1st house"
+            },
+            {
+              "step_id": "ch39-v3-5-raj-yog-frame.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "the pair of Atma Karak and 5th house Karak should be considered"
+            },
+            {
+              "step_id": "ch39-v3-5-raj-yog-frame.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "the natal 1st lord and 5th lord should be taken into consideration"
+            },
+            {
+              "step_id": "ch39-v3-5-raj-yog-frame.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Raj Yogas are to be known from the Karakāńś 1st house and the natal 1st house The effects, due to such association, will be full, or a half, or a quarter, according to their strengths"
+            },
+            {
+              "step_id": "ch39-v3-5-raj-yog-frame.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "the pair of Atma Karak and 5th house Karak should be considered The effects, due to such association, will be full, or a half, or a quarter, according to their strengths"
+            },
+            {
+              "step_id": "ch39-v3-5-raj-yog-frame.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "the natal 1st lord and 5th lord should be taken into consideration The effects, due to such association, will be full, or a half, or a quarter, according to their strengths"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "四个要素（Atma Karak、Putr Karak、上升主、五宫主）缺任一项时停止。",
+          "原文未给出关联（association）的成立条件与力量判准，未确定即停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v3-5-raj-yog-frame.step-001",
+        "action": "按原文总纲取齐四个要素：Atma Karak、Putr Karak、本命上升主与五宫主，并按其力量确定效果的分档。",
+        "applicability_scope": "本偈是 Raj Yog 章的总纲：只指明要从 Karakāńś Lagn 与本命上升考察的两组要素，以及效果按力量分为全、一半、四分之一，未给出关联成立的具体条件，也未给出力量的判准。",
+        "minimum_supported_claim": "Raj Yog 要从 Karakāńś Lagn 与本命上升（natal Lagn）来判断：一方面考察 Atma Karak 与 Putr Karak 这一对，另一方面考察本命上升主（natal Lagn's Lord）与五宫主（Putr's Lord）；由这种关联而来的效果，按其力量为全、一半或四分之一。",
+        "produced_fact_keys": [
+          "Raj Yog 考察要素与效果分档"
+        ],
+        "required_fact_keys": [
+          "本盘的 Atma Karak 是哪颗行星",
+          "本盘的 Putr Karak 是哪颗行星",
+          "本盘上升主（Lagn's Lord）是哪颗行星",
+          "本盘五宫主（Putr's Lord）是哪颗行星",
+          "参与 Raj Yog 关联的行星力量如何"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘的 Atma Karak 是哪颗行星"
+            },
+            {
+              "fact_key": "本盘的 Putr Karak 是哪颗行星"
+            },
+            {
+              "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+            },
+            {
+              "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+            },
+            {
+              "fact_key": "参与 Raj Yog 关联的行星力量如何"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn",
+              "claim": "Raj Yog 要从 Karakāńś Lagn 与本命上升（natal Lagn）来判断"
+            },
+            {
+              "quote": "the pair of Atma Karak and Putr Karak should be considered",
+              "claim": "一方面考察 Atma Karak 与 Putr Karak 这一对"
+            },
+            {
+              "quote": "the natal Lagn’s Lord and Putr’s Lord should be taken into consideration",
+              "claim": "另一方面考察本命上升主（natal Lagn's Lord）与五宫主（Putr's Lord）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "The effects, due to such association, will be full, or a half, or a quarter, according to their strengths",
+              "claim": "由这种关联而来的效果，按其力量为全、一半或四分之一"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v3-5",
+            "quote": "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn. On the one hand the pair of Atma Karak and Putr Karak should be considered and on the other hand the natal Lagn’s Lord and Putr’s Lord should be taken into consideration. The effects, due to such association, will be full, or a half, or a quarter, according to their strengths.",
+            "pdf_pages": [
+              82
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘的 Atma Karak 是哪颗行星、本盘的 Putr Karak 是哪颗行星、本盘上升主（Lagn's Lord）是哪颗行星、本盘五宫主（Putr's Lord）是哪颗行星、参与 Raj Yog 关联的行星力量如何。",
+        "stop_fact_keys": [
+          "本盘的 Atma Karak 是哪颗行星",
+          "本盘的 Putr Karak 是哪颗行星",
+          "本盘上升主（Lagn's Lord）是哪颗行星",
+          "本盘五宫主（Putr's Lord）是哪颗行星",
+          "参与 Raj Yog 关联的行星力量如何"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得替原文规定 association（关联）如何才算成立。",
+          "不得替原文规定多大力量对应全、一半或四分之一。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "07cb536c8dd4382aa74f261f8208a779e3614e8b7adcf7b5581f2f2b6e7cd53a"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+      "method": {
+        "method": "ch39-v6-7-maha-raj-yog",
+        "title": "Maha Raj Yog：上升主与五宫主互换星座，或 Atma Karak 与 Putr Karak 居五处之一并受吉照",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我有没有大贵格",
+          "我会不会出名又过得快乐"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Lagn’s Lord and Putr’s Lord exchange their Rāśis, or, if Atma Karak and Putr Karak (Char) are in Lagna, or in Putr Bhava, or in the exaltation Rāśi, or in own Rāśi, or in own Navāńś, receiving a Drishti from a benefic, Maha Raj Yog is produced",
+            "上升主五宫主互换星座 Maha Raj Yog 有名声快乐"
+          ],
+          "counter_queries": [
+            "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "Karakāńś is the Navāńś, occupied by the Atma Karak Grah",
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth"
+          ],
+          "method_queries": [
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn",
+            "If the Lord of a Kendr establishes a relationship with the Lord of a Kon, a Raj Yog is obtained"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should Lagn’s Lord and Putr’s Lord exchange their Rāśis"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Atma Karak and Putr Karak (Char) are in Lagna"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or in Putr Bhava"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or in the exaltation Rāśi"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or in own Rāśi"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or in own Navāńś"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "receiving a Drishti from a benefic"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Maha Raj Yog is produced"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should Lagn’s Lord and Putr’s Lord exchange their Rāśis Maha Raj Yog is produced"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Atma Karak and Putr Karak (Char) are in Lagna Maha Raj Yog is produced"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or in Putr Bhava Maha Raj Yog is produced"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or in the exaltation Rāśi Maha Raj Yog is produced"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or in own Rāśi Maha Raj Yog is produced"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or in own Navāńś Maha Raj Yog is produced"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "receiving a Drishti from a benefic Maha Raj Yog is produced"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Should 1st lord and 5th lord exchange their Rāśis"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if Atma Karak and 5th house Karak (Char) are in 1st house"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "or in 5th house"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Should 1st lord and 5th lord exchange their Rāśis Maha Raj Yog is produced"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if Atma Karak and 5th house Karak (Char) are in 1st house Maha Raj Yog is produced"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "or in 5th house Maha Raj Yog is produced"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "The native so born"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be famous and happy"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "The native so born will be famous and happy"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "上升主、五宫主、Atma Karak、Putr Karak 四项身份事实缺任一项时停止。",
+          "两路成立条件的分支事实全部缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+        "action": "先认出上升主、五宫主、Atma Karak 与 Putr Karak 四颗行星，再核对是否有宫主互换星座，或 Atma Karak 与 Putr Karak 同落原文所列五处之一并受吉星相照，判定 Maha Raj Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Maha Raj Yog 的成立判定；原文把 receiving a Drishti from a benefic 写在 Atma Karak 与 Putr Karak 那一串位置之后，未言明这项吉照是否同样适用于宫主互换一路，本方法照原文位置只挂在 Atma Karak 与 Putr Karak 一路；原文没有时间限定。",
+        "minimum_supported_claim": "上升主（Lagn's Lord）与五宫主（Putr's Lord）互换星座（Rāśis）；或 Atma Karak 与 Putr Karak 同落上升宫（Lagna）、落五宫（Putr Bhava）、落入旺星座（exaltation Rāśi）、落自己主管的星座（own Rāśi）或落自己主管的九分盘（own Navāńś）星座，并受吉星相照——两路之一成立时，Maha Raj Yog 成立。",
+        "produced_fact_keys": [
+          "Maha Raj Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升主（Lagn's Lord）是哪颗行星",
+          "本盘五宫主（Putr's Lord）是哪颗行星",
+          "本盘的 Atma Karak 是哪颗行星",
+          "本盘的 Putr Karak 是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘的 Atma Karak 是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘的 Putr Karak 是哪颗行星"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "上升主（Lagn's Lord）与五宫主（Putr's Lord）是否互换星座（Rāśi）"
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "Atma Karak 是否落上升宫（Lagna）"
+                    },
+                    {
+                      "fact_key": "Putr Karak 是否落上升宫（Lagna）"
+                    },
+                    {
+                      "fact_key": "Atma Karak 是否被吉星相照"
+                    },
+                    {
+                      "fact_key": "Putr Karak 是否被吉星相照"
+                    }
+                  ]
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "Atma Karak 是否落五宫（Putr Bhava）"
+                    },
+                    {
+                      "fact_key": "Putr Karak 是否落五宫（Putr Bhava）"
+                    },
+                    {
+                      "fact_key": "Atma Karak 是否被吉星相照"
+                    },
+                    {
+                      "fact_key": "Putr Karak 是否被吉星相照"
+                    }
+                  ]
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "Atma Karak 是否入旺"
+                    },
+                    {
+                      "fact_key": "Putr Karak 是否入旺"
+                    },
+                    {
+                      "fact_key": "Atma Karak 是否被吉星相照"
+                    },
+                    {
+                      "fact_key": "Putr Karak 是否被吉星相照"
+                    }
+                  ]
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "Atma Karak 是否落自己主管的星座（own Rāśi）"
+                    },
+                    {
+                      "fact_key": "Putr Karak 是否落自己主管的星座（own Rāśi）"
+                    },
+                    {
+                      "fact_key": "Atma Karak 是否被吉星相照"
+                    },
+                    {
+                      "fact_key": "Putr Karak 是否被吉星相照"
+                    }
+                  ]
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "Atma Karak 在九分盘（Navāńś D9）中是否落自己主管的星座"
+                    },
+                    {
+                      "fact_key": "Putr Karak 在九分盘（Navāńś D9）中是否落自己主管的星座"
+                    },
+                    {
+                      "fact_key": "Atma Karak 是否被吉星相照"
+                    },
+                    {
+                      "fact_key": "Putr Karak 是否被吉星相照"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘的 Atma Karak 是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘的 Putr Karak 是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "上升主（Lagn's Lord）与五宫主（Putr's Lord）是否互换星座（Rāśi）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "上升主（Lagn's Lord）与五宫主（Putr's Lord）是否互换星座（Rāśi）"
+            },
+            "selection_group": "ch39-v6-7-maha-raj-yog.step-001:maha-raj-formation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升主（Lagn's Lord）与五宫主（Putr's Lord）是否互换星座（Rāśi）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘的 Atma Karak 是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘的 Putr Karak 是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "Atma Karak 是否落上升宫（Lagna）",
+              "Putr Karak 是否落上升宫（Lagna）",
+              "Atma Karak 是否被吉星相照",
+              "Putr Karak 是否被吉星相照"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "Atma Karak 是否落上升宫（Lagna）"
+                },
+                {
+                  "fact_key": "Putr Karak 是否落上升宫（Lagna）"
+                },
+                {
+                  "fact_key": "Atma Karak 是否被吉星相照"
+                },
+                {
+                  "fact_key": "Putr Karak 是否被吉星相照"
+                }
+              ]
+            },
+            "selection_group": "ch39-v6-7-maha-raj-yog.step-001:maha-raj-formation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Atma Karak 是否落上升宫（Lagna）、Putr Karak 是否落上升宫（Lagna）、Atma Karak 是否被吉星相照、Putr Karak 是否被吉星相照。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘的 Atma Karak 是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘的 Putr Karak 是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "Atma Karak 是否落五宫（Putr Bhava）",
+              "Putr Karak 是否落五宫（Putr Bhava）",
+              "Atma Karak 是否被吉星相照",
+              "Putr Karak 是否被吉星相照"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "Atma Karak 是否落五宫（Putr Bhava）"
+                },
+                {
+                  "fact_key": "Putr Karak 是否落五宫（Putr Bhava）"
+                },
+                {
+                  "fact_key": "Atma Karak 是否被吉星相照"
+                },
+                {
+                  "fact_key": "Putr Karak 是否被吉星相照"
+                }
+              ]
+            },
+            "selection_group": "ch39-v6-7-maha-raj-yog.step-001:maha-raj-formation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Atma Karak 是否落五宫（Putr Bhava）、Putr Karak 是否落五宫（Putr Bhava）、Atma Karak 是否被吉星相照、Putr Karak 是否被吉星相照。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘的 Atma Karak 是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘的 Putr Karak 是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "Atma Karak 是否入旺",
+              "Putr Karak 是否入旺",
+              "Atma Karak 是否被吉星相照",
+              "Putr Karak 是否被吉星相照"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "Atma Karak 是否入旺"
+                },
+                {
+                  "fact_key": "Putr Karak 是否入旺"
+                },
+                {
+                  "fact_key": "Atma Karak 是否被吉星相照"
+                },
+                {
+                  "fact_key": "Putr Karak 是否被吉星相照"
+                }
+              ]
+            },
+            "selection_group": "ch39-v6-7-maha-raj-yog.step-001:maha-raj-formation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Atma Karak 是否入旺、Putr Karak 是否入旺、Atma Karak 是否被吉星相照、Putr Karak 是否被吉星相照。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘的 Atma Karak 是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘的 Putr Karak 是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "Atma Karak 是否落自己主管的星座（own Rāśi）",
+              "Putr Karak 是否落自己主管的星座（own Rāśi）",
+              "Atma Karak 是否被吉星相照",
+              "Putr Karak 是否被吉星相照"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "Atma Karak 是否落自己主管的星座（own Rāśi）"
+                },
+                {
+                  "fact_key": "Putr Karak 是否落自己主管的星座（own Rāśi）"
+                },
+                {
+                  "fact_key": "Atma Karak 是否被吉星相照"
+                },
+                {
+                  "fact_key": "Putr Karak 是否被吉星相照"
+                }
+              ]
+            },
+            "selection_group": "ch39-v6-7-maha-raj-yog.step-001:maha-raj-formation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Atma Karak 是否落自己主管的星座（own Rāśi）、Putr Karak 是否落自己主管的星座（own Rāśi）、Atma Karak 是否被吉星相照、Putr Karak 是否被吉星相照。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘的 Atma Karak 是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘的 Putr Karak 是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "Atma Karak 在九分盘（Navāńś D9）中是否落自己主管的星座",
+              "Putr Karak 在九分盘（Navāńś D9）中是否落自己主管的星座",
+              "Atma Karak 是否被吉星相照",
+              "Putr Karak 是否被吉星相照"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "Atma Karak 在九分盘（Navāńś D9）中是否落自己主管的星座"
+                },
+                {
+                  "fact_key": "Putr Karak 在九分盘（Navāńś D9）中是否落自己主管的星座"
+                },
+                {
+                  "fact_key": "Atma Karak 是否被吉星相照"
+                },
+                {
+                  "fact_key": "Putr Karak 是否被吉星相照"
+                }
+              ]
+            },
+            "selection_group": "ch39-v6-7-maha-raj-yog.step-001:maha-raj-formation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Atma Karak 在九分盘（Navāńś D9）中是否落自己主管的星座、Putr Karak 在九分盘（Navāńś D9）中是否落自己主管的星座、Atma Karak 是否被吉星相照、Putr Karak 是否被吉星相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Lagn’s Lord and Putr’s Lord exchange their Rāśis",
+              "claim": "上升主（Lagn's Lord）与五宫主（Putr's Lord）互换星座（Rāśis）"
+            },
+            {
+              "quote": "if Atma Karak and Putr Karak (Char) are in Lagna",
+              "claim": "Atma Karak 与 Putr Karak 同落上升宫（Lagna）"
+            },
+            {
+              "quote": "or in Putr Bhava",
+              "claim": "落五宫（Putr Bhava）"
+            },
+            {
+              "quote": "or in the exaltation Rāśi",
+              "claim": "落入旺星座（exaltation Rāśi）"
+            },
+            {
+              "quote": "or in own Rāśi",
+              "claim": "落自己主管的星座（own Rāśi）"
+            },
+            {
+              "quote": "or in own Navāńś",
+              "claim": "落自己主管的九分盘（own Navāńś）星座"
+            },
+            {
+              "quote": "receiving a Drishti from a benefic",
+              "claim": "并受吉星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Maha Raj Yog is produced",
+              "claim": "Maha Raj Yog 成立"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v6-7",
+            "quote": "Should Lagn’s Lord and Putr’s Lord exchange their Rāśis, or, if Atma Karak and Putr Karak (Char) are in Lagna, or in Putr Bhava, or in the exaltation Rāśi, or in own Rāśi, or in own Navāńś, receiving a Drishti from a benefic, Maha Raj Yog is produced.",
+            "pdf_pages": [
+              82
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升主（Lagn's Lord）是哪颗行星、本盘五宫主（Putr's Lord）是哪颗行星、本盘的 Atma Karak 是哪颗行星、本盘的 Putr Karak 是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘上升主（Lagn's Lord）是哪颗行星",
+          "本盘五宫主（Putr's Lord）是哪颗行星",
+          "本盘的 Atma Karak 是哪颗行星",
+          "本盘的 Putr Karak 是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "own Rāśi 是行星自己主管的星座，不得读成落本宫。",
+          "不得把吉照要求扩大到宫主互换一路，也不得把它从 Atma Karak 与 Putr Karak 一路删去。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "cc7bf74846ab23de9d14b8c2387e92b3fef976afa8cca8537e125f55b51285bf"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v6-7-maha-raj-yog.step-002",
+      "method": {
+        "method": "ch39-v6-7-maha-raj-yog",
+        "title": "Maha Raj Yog：上升主与五宫主互换星座，或 Atma Karak 与 Putr Karak 居五处之一并受吉照",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我有没有大贵格",
+          "我会不会出名又过得快乐"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Lagn’s Lord and Putr’s Lord exchange their Rāśis, or, if Atma Karak and Putr Karak (Char) are in Lagna, or in Putr Bhava, or in the exaltation Rāśi, or in own Rāśi, or in own Navāńś, receiving a Drishti from a benefic, Maha Raj Yog is produced",
+            "上升主五宫主互换星座 Maha Raj Yog 有名声快乐"
+          ],
+          "counter_queries": [
+            "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "Karakāńś is the Navāńś, occupied by the Atma Karak Grah",
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth"
+          ],
+          "method_queries": [
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn",
+            "If the Lord of a Kendr establishes a relationship with the Lord of a Kon, a Raj Yog is obtained"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should Lagn’s Lord and Putr’s Lord exchange their Rāśis"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Atma Karak and Putr Karak (Char) are in Lagna"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or in Putr Bhava"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or in the exaltation Rāśi"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or in own Rāśi"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or in own Navāńś"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "receiving a Drishti from a benefic"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Maha Raj Yog is produced"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should Lagn’s Lord and Putr’s Lord exchange their Rāśis Maha Raj Yog is produced"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Atma Karak and Putr Karak (Char) are in Lagna Maha Raj Yog is produced"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or in Putr Bhava Maha Raj Yog is produced"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or in the exaltation Rāśi Maha Raj Yog is produced"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or in own Rāśi Maha Raj Yog is produced"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or in own Navāńś Maha Raj Yog is produced"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "receiving a Drishti from a benefic Maha Raj Yog is produced"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Should 1st lord and 5th lord exchange their Rāśis"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if Atma Karak and 5th house Karak (Char) are in 1st house"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "or in 5th house"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Should 1st lord and 5th lord exchange their Rāśis Maha Raj Yog is produced"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if Atma Karak and 5th house Karak (Char) are in 1st house Maha Raj Yog is produced"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "or in 5th house Maha Raj Yog is produced"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "The native so born"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be famous and happy"
+            },
+            {
+              "step_id": "ch39-v6-7-maha-raj-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "The native so born will be famous and happy"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "上升主、五宫主、Atma Karak、Putr Karak 四项身份事实缺任一项时停止。",
+          "两路成立条件的分支事实全部缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v6-7-maha-raj-yog.step-002",
+        "action": "在 Maha Raj Yog 成立时读取名声与快乐断语。",
+        "applicability_scope": "仅限已判定 Maha Raj Yog 成立的本命盘；原文未给时间限定。",
+        "minimum_supported_claim": "这样出生的命主（Maha Raj Yog 成立者）会有名声且快乐。",
+        "produced_fact_keys": [
+          "Maha Raj Yog 效果断语"
+        ],
+        "required_fact_keys": [
+          "Maha Raj Yog 成立判定"
+        ],
+        "condition_logic": {
+          "fact_key": "Maha Raj Yog 成立判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "The native so born",
+              "claim": "这样出生的命主"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be famous and happy",
+              "claim": "会有名声且快乐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v6-7",
+            "quote": "The native so born will be famous and happy.",
+            "pdf_pages": [
+              82
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Maha Raj Yog 成立判定。",
+        "stop_fact_keys": [
+          "Maha Raj Yog 成立判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断王位、官职或成名时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "a36ac2fd05c8219c907db88123e071946ddcb2c3eb27fde2c6bc75ca975fb245"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch37:v7-10": {
+      "evidence_atom_id": "bphs-97:santhanam:ch37:v7-10",
+      "chapter_number": 37,
+      "chapter_title": "Chandra’s Yogas",
+      "verse_label": "7-10.",
+      "content_role": "verse",
+      "exact_text": "7-10. Sunaph, Anaph and Duradhar. If there is a Grah other than Surya, in the 2<sup>nd</sup> from Chandra, Sunaph Yog is formed, if in the 12<sup>th</sup> from Chandra, Anaph Yog is formed and, if in the 2<sup>nd</sup> and 12<sup>th</sup> from Chandra, Duradhar Yog is caused. One with Sunaph Yog will be a king, or equal to a king, endowed with intelligence, wealth, fame and self-earned wealth. One born in Anaph Yog will be a king, be free from diseases, virtuous, famous, charming and happy. One born in Duradhar Yog will enjoy pleasures, will be charitable and endowed with wealth, conveyances and excellent serving force.",
+      "pdf_pages": [
+        81
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 37 · Sloka 7-10 · PDF page 81 · bphs-97:santhanam:ch37:v7-10",
+      "previous_atom_id": "bphs-97:santhanam:ch37:v6",
+      "next_atom_id": "bphs-97:santhanam:ch37:v11-13",
+      "context_before": "<sup>th</sup> , one will have medium effects in regard to wealth. If a single benefic is there, the wealth will be negligible.\n\n",
+      "context_after": "11-13. Kema Drum Yog. Excluding Surya, should there be no Grah with Chandra, or in the 2<sup>nd</sup> and/or 12<sup>th</sup> fro",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch37:v11-13": {
+      "evidence_atom_id": "bphs-97:santhanam:ch37:v11-13",
+      "chapter_number": 37,
+      "chapter_title": "Chandra’s Yogas",
+      "verse_label": "11-13.",
+      "content_role": "verse",
+      "exact_text": "11-13. Kema Drum Yog. Excluding Surya, should there be no Grah with Chandra, or in the 2<sup>nd</sup> and/or 12<sup>th</sup> from Chandra, or in a Kendr from Lagna, Kema Drum Yog is formed. One born in Kema Drum Yog will be very much reproached, will be bereft of intelligence, learning, reduced to penury and perils.",
+      "pdf_pages": [
+        81,
+        82
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 37 · Sloka 11-13 · PDF pages 81-82 · bphs-97:santhanam:ch37:v11-13",
+      "previous_atom_id": "bphs-97:santhanam:ch37:v7-10",
+      "next_atom_id": null,
+      "context_before": " One born in Duradhar Yog will enjoy pleasures, will be charitable and endowed with wealth, conveyances and excellent serving force.\n\n",
+      "context_after": "",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch38:v1": {
+      "evidence_atom_id": "bphs-97:santhanam:ch38:v1",
+      "chapter_number": 38,
+      "chapter_title": "Surya’s Yogas",
+      "verse_label": "1.",
+      "content_role": "verse",
+      "exact_text": "1. Vesi, Vosi and Abhayachari Yogas. Barring Chandra, if a Grah among Mangal etc. be in the 2<sup>nd</sup> from Surya, Vesi Yog is formed, if in the 12<sup>th</sup> from Surya, Vosi Yog is formed and if in both the 2<sup>nd</sup> and the 12<sup>th</sup> from Surya, Ubhayachari Yog is caused.",
+      "pdf_pages": [
+        82
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 38 · Sloka 1 · PDF page 82 · bphs-97:santhanam:ch38:v1",
+      "previous_atom_id": null,
+      "next_atom_id": "bphs-97:santhanam:ch38:v2-3",
+      "context_before": "",
+      "context_after": "2-3. Effects of Vesi, Vosi and Ubhayachari Yogas. One born in Vesi Yog will be even sighted, truthful, long-bodied, indolent, ha",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch38:v2-3": {
+      "evidence_atom_id": "bphs-97:santhanam:ch38:v2-3",
+      "chapter_number": 38,
+      "chapter_title": "Surya’s Yogas",
+      "verse_label": "2-3.",
+      "content_role": "verse",
+      "exact_text": "2-3. Effects of Vesi, Vosi and Ubhayachari Yogas. One born in Vesi Yog will be even sighted, truthful, long-bodied, indolent, happy and endowed with negligible wealth. One born with Vosi Yog will be skilful, charitable and endowed with fame, learning and strength. The Ubhayachari native will be a king, or equal to a king and be happy.",
+      "pdf_pages": [
+        82
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 38 · Sloka 2-3 · PDF page 82 · bphs-97:santhanam:ch38:v2-3",
+      "previous_atom_id": "bphs-97:santhanam:ch38:v1",
+      "next_atom_id": "bphs-97:santhanam:ch38:v4",
+      "context_before": " be in the 2<sup>nd</sup> from Surya, Vesi Yog is formed, if in the 12<sup>th</sup> from Surya, Vosi Yog is formed and if in both the 2<sup>nd</sup> and the 12<sup>th</sup> from Surya, Ubhayachari Yog is caused.\n\n",
+      "context_after": "4. Benefics, causing Vesi, Vosi, or Ubhayachari Yogas, will give the above-mentioned effects, while malefics will produce contra",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch38:v4": {
+      "evidence_atom_id": "bphs-97:santhanam:ch38:v4",
+      "chapter_number": 38,
+      "chapter_title": "Surya’s Yogas",
+      "verse_label": "4.",
+      "content_role": "verse",
+      "exact_text": "4. Benefics, causing Vesi, Vosi, or Ubhayachari Yogas, will give the above-mentioned effects, while malefics will produce contrary effects.",
+      "pdf_pages": [
+        82
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 38 · Sloka 4 · PDF page 82 · bphs-97:santhanam:ch38:v4",
+      "previous_atom_id": "bphs-97:santhanam:ch38:v2-3",
+      "next_atom_id": null,
+      "context_before": "aritable and endowed with fame, learning and strength. The Ubhayachari native will be a king, or equal to a king and be happy.\n\n",
+      "context_after": "",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch39:v3-5": {
+      "evidence_atom_id": "bphs-97:santhanam:ch39:v3-5",
+      "chapter_number": 39,
+      "chapter_title": "Raj Yog",
+      "verse_label": "3-5.",
+      "content_role": "verse",
+      "exact_text": "3-5. Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn. On the one hand the pair of Atma Karak and Putr Karak should be considered and on the other hand the natal Lagn’s Lord and Putr’s Lord should be taken into consideration. The effects, due to such association, will be full, or a half, or a quarter, according to their strengths.",
+      "pdf_pages": [
+        82
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 39 · Sloka 3-5 · PDF page 82 · bphs-97:santhanam:ch39:v3-5",
+      "previous_atom_id": "bphs-97:santhanam:ch39:v1-2",
+      "next_atom_id": "bphs-97:santhanam:ch39:v6-7",
+      "context_before": "ing one entitled to royal honour. These were told to Parvati by Lord Shiva once upon a time, the gist of which is, as follows.\n\n",
+      "context_after": "6-7. Maha Raj Yog. Should Lagn’s Lord and Putr’s Lord exchange their Rāśis, or, if Atma Karak and Putr Karak (Char) are in Lagna",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch39:v6-7": {
+      "evidence_atom_id": "bphs-97:santhanam:ch39:v6-7",
+      "chapter_number": 39,
+      "chapter_title": "Raj Yog",
+      "verse_label": "6-7.",
+      "content_role": "verse",
+      "exact_text": "6-7. Maha Raj Yog. Should Lagn’s Lord and Putr’s Lord exchange their Rāśis, or, if Atma Karak and Putr Karak (Char) are in Lagna, or in Putr Bhava, or in the exaltation Rāśi, or in own Rāśi, or in own Navāńś, receiving a Drishti from a benefic, Maha Raj Yog is produced. The native so born will be famous and happy.",
+      "pdf_pages": [
+        82
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 39 · Sloka 6-7 · PDF page 82 · bphs-97:santhanam:ch39:v6-7",
+      "previous_atom_id": "bphs-97:santhanam:ch39:v3-5",
+      "next_atom_id": "bphs-97:santhanam:ch39:v8",
+      "context_before": "into consideration. The effects, due to such association, will be full, or a half, or a quarter, according to their strengths.\n\n",
+      "context_after": "8. If Lagn’s Lord and Atma Karak are in Tanu, Putr, or Yuvati Bhava, yuti with, or receiving a Drishti from a benefic, a Raj Yog",
+      "content_missing": false
+    }
+  }
+}

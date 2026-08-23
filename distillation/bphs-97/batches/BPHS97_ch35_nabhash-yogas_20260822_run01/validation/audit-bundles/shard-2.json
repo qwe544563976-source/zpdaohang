@@ -1,0 +1,2088 @@
+{
+  "shard": 2,
+  "step_count": 13,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch35-v12-vapi-yog.step-001",
+      "method": {
+        "method": "ch35-v12-vapi-yog",
+        "title": "Vapi Yog：所有行星都落在果宫，或都落在续宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘上行星是不是都在果宫或续宫",
+          "我命里有没有 Vapi Yog"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If all of them happen to be in all the Apoklimas, or in all the Panapharas, Vapi Yog occurs.",
+            "Vapi Yog 的成立条件"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v12-vapi-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If all of them happen to be in all the Apoklimas"
+            },
+            {
+              "step_id": "ch35-v12-vapi-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or in all the Panapharas"
+            },
+            {
+              "step_id": "ch35-v12-vapi-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Vapi Yog occurs"
+            },
+            {
+              "step_id": "ch35-v12-vapi-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If all of them happen to be in all the Apoklimas Vapi Yog occurs"
+            },
+            {
+              "step_id": "ch35-v12-vapi-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or in all the Panapharas Vapi Yog occurs"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Vapi Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Vapi Yog 成立。",
+          "果宫与续宫两种占据事实都缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v12-vapi-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Vapi Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Vapi Yog 的成立判定；原文只给盘面分布条件，没有时间、上升或男女限定。",
+        "minimum_supported_claim": "本盘所有行星（Grahas）都落在果宫（Apoklima）内，或都落在续宫（Panaphara）内时，构成 Vapi Yog。",
+        "produced_fact_keys": [
+          "Vapi Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘所有行星（Grahas）分别落在哪一宫（Bhava）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘所有行星（Grahas）分别落在哪一宫（Bhava）"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "本盘所有行星（Grahas）是否都落在果宫（Apoklima）内"
+                },
+                {
+                  "fact_key": "本盘所有行星（Grahas）是否都落在续宫（Panaphara）内"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘所有行星（Grahas）分别落在哪一宫（Bhava）"
+            },
+            "required_fact_keys": [
+              "本盘所有行星（Grahas）是否都落在果宫（Apoklima）内"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "本盘所有行星（Grahas）是否都落在果宫（Apoklima）内"
+            },
+            "selection_group": "ch35-v12-vapi-yog.step-001:vapi-house-classes",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：本盘所有行星（Grahas）是否都落在果宫（Apoklima）内。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘所有行星（Grahas）分别落在哪一宫（Bhava）"
+            },
+            "required_fact_keys": [
+              "本盘所有行星（Grahas）是否都落在续宫（Panaphara）内"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "本盘所有行星（Grahas）是否都落在续宫（Panaphara）内"
+            },
+            "selection_group": "ch35-v12-vapi-yog.step-001:vapi-house-classes",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：本盘所有行星（Grahas）是否都落在续宫（Panaphara）内。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If all of them happen to be in all the Apoklimas",
+              "claim": "本盘所有行星（Grahas）都落在果宫（Apoklima）内"
+            },
+            {
+              "quote": "or in all the Panapharas",
+              "claim": "都落在续宫（Panaphara）内"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Vapi Yog occurs",
+              "claim": "构成 Vapi Yog"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v12",
+            "quote": "If all of them happen to be in all the Apoklimas, or in all the Panapharas, Vapi Yog occurs.",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘所有行星（Grahas）分别落在哪一宫（Bhava）。",
+        "stop_fact_keys": [
+          "本盘所有行星（Grahas）分别落在哪一宫（Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "果宫（Apoklima）与续宫（Panaphara）是原文并列的两种成立方式，不得要求两者同时满足。",
+          "原文的 all of them 承接同偈前句的 all the Grahas，不得读成别的行星子集。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "f2878a4fa0aecb1bcc97dd18e610d89e1eac37bfa76b1e5ed7033c0808397f94"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v13-yup-yog.step-001",
+      "method": {
+        "method": "ch35-v13-yup-yog",
+        "title": "Yup Yog：7 颗行星都落在从上升宫（Lagna）起算的 4 个宫内",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我命里有没有 Yup Yog",
+          "我盘上 7 颗行星是不是都挤在从上升宫（Lagna）起的 4 个宫里"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If all the 7 Grahas are in the 4 Bhavas, commencing from Lagna, they cause Yup Yog",
+            "Yup Yog 的成立条件"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "If all the 7 Grahas are in the 4 Bhavas, commencing from Lagna, they cause Yup Yog, if from Bandhu, Shar Yog occurs, if from Yuvati, Shakti Yog occurs and, if from Karm, Danda Yog is formed.",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v13-yup-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If all the 7 Grahas are in the 4 Bhavas, commencing from Lagna"
+            },
+            {
+              "step_id": "ch35-v13-yup-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "they cause Yup Yog"
+            },
+            {
+              "step_id": "ch35-v13-yup-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If all the 7 Grahas are in the 4 Bhavas, commencing from Lagna they cause Yup Yog"
+            },
+            {
+              "step_id": "ch35-v13-yup-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If all the 7 Grahas are in the 4 Bhavas, commencing from 1st house"
+            },
+            {
+              "step_id": "ch35-v13-yup-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If all the 7 Grahas are in the 4 Bhavas, commencing from 1st house they cause Yup Yog"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Yup Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Yup Yog 成立。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v13-yup-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Yup Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Yup Yog 的成立判定；原文只给盘面分布条件，没有时间、上升或男女限定。",
+        "minimum_supported_claim": "本盘7颗行星（Grahas）都落在从上升宫（Lagna）起算的4个宫（Bhava）内时，构成 Yup Yog。",
+        "produced_fact_keys": [
+          "Yup Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘7颗行星（Grahas）是否都落在从上升宫（Lagna）起算的4个宫（Bhava）内"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘7颗行星（Grahas）是否都落在从上升宫（Lagna）起算的4个宫（Bhava）内"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If all the 7 Grahas are in the 4 Bhavas, commencing from Lagna",
+              "claim": "本盘7颗行星（Grahas）都落在从上升宫（Lagna）起算的4个宫（Bhava）内"
+            }
+          ],
+          "results": [
+            {
+              "quote": "they cause Yup Yog",
+              "claim": "构成 Yup Yog"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v13",
+            "quote": "If all the 7 Grahas are in the 4 Bhavas, commencing from Lagna, they cause Yup Yog",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘7颗行星（Grahas）是否都落在从上升宫（Lagna）起算的4个宫（Bhava）内。",
+        "stop_fact_keys": [
+          "本盘7颗行星（Grahas）是否都落在从上升宫（Lagna）起算的4个宫（Bhava）内"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把起算宫从上升宫（Lagna）换成别的宫——原文逐个点名了起算宫。",
+          "不得把 4 个宫放宽成任意 4 个宫——原文要求从起算宫连排。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "35939f437a226ad9fed49399ff614c12194ea0b085d4a4680d8bce7bf46a776c"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v13-shar-yog.step-001",
+      "method": {
+        "method": "ch35-v13-shar-yog",
+        "title": "Shar Yog：7 颗行星都落在从四宫（Bandhu）起算的 4 个宫内",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我命里有没有 Shar Yog",
+          "我盘上 7 颗行星是不是都挤在从四宫（Bandhu）起的 4 个宫里"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If all the 7 Grahas are in the 4 Bhavas",
+            "if from Bandhu, Shar Yog occurs",
+            "Shar Yog 的成立条件"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "If all the 7 Grahas are in the 4 Bhavas, commencing from Lagna, they cause Yup Yog, if from Bandhu, Shar Yog occurs, if from Yuvati, Shakti Yog occurs and, if from Karm, Danda Yog is formed.",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v13-shar-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If all the 7 Grahas are in the 4 Bhavas"
+            },
+            {
+              "step_id": "ch35-v13-shar-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if from Bandhu"
+            },
+            {
+              "step_id": "ch35-v13-shar-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Shar Yog occurs"
+            },
+            {
+              "step_id": "ch35-v13-shar-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If all the 7 Grahas are in the 4 Bhavas Shar Yog occurs"
+            },
+            {
+              "step_id": "ch35-v13-shar-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if from Bandhu Shar Yog occurs"
+            },
+            {
+              "step_id": "ch35-v13-shar-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if from 4th house"
+            },
+            {
+              "step_id": "ch35-v13-shar-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if from 4th house Shar Yog occurs"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Shar Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Shar Yog 成立。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v13-shar-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Shar Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Shar Yog 的成立判定；原文只给盘面分布条件，没有时间、上升或男女限定。",
+        "minimum_supported_claim": "本盘7颗行星（Grahas）都落在4个宫（Bhava）内、从四宫（Bandhu）起算时，构成 Shar Yog。",
+        "produced_fact_keys": [
+          "Shar Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘7颗行星（Grahas）是否都落在从四宫（Bandhu）起算的4个宫（Bhava）内"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘7颗行星（Grahas）是否都落在从四宫（Bandhu）起算的4个宫（Bhava）内"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If all the 7 Grahas are in the 4 Bhavas",
+              "claim": "本盘7颗行星（Grahas）都落在4个宫（Bhava）内"
+            },
+            {
+              "quote": "if from Bandhu",
+              "claim": "从四宫（Bandhu）起算"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Shar Yog occurs",
+              "claim": "构成 Shar Yog"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v13",
+            "quote": "If all the 7 Grahas are in the 4 Bhavas",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v13",
+            "quote": "if from Bandhu, Shar Yog occurs",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘7颗行星（Grahas）是否都落在从四宫（Bandhu）起算的4个宫（Bhava）内。",
+        "stop_fact_keys": [
+          "本盘7颗行星（Grahas）是否都落在从四宫（Bandhu）起算的4个宫（Bhava）内"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把起算宫从四宫（Bandhu）换成别的宫——原文逐个点名了起算宫。",
+          "不得把 4 个宫放宽成任意 4 个宫——原文要求从起算宫连排。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "24cb9c7fa56150e1a095b09b9e6a8155b872506870a9e87b3d73f66ced533d75"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v13-shakti-yog.step-001",
+      "method": {
+        "method": "ch35-v13-shakti-yog",
+        "title": "Shakti Yog：7 颗行星都落在从七宫（Yuvati）起算的 4 个宫内",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我命里有没有 Shakti Yog",
+          "我盘上 7 颗行星是不是都挤在从七宫（Yuvati）起的 4 个宫里"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If all the 7 Grahas are in the 4 Bhavas",
+            "if from Yuvati, Shakti Yog occurs",
+            "Shakti Yog 的成立条件"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "If all the 7 Grahas are in the 4 Bhavas, commencing from Lagna, they cause Yup Yog, if from Bandhu, Shar Yog occurs, if from Yuvati, Shakti Yog occurs and, if from Karm, Danda Yog is formed.",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v13-shakti-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If all the 7 Grahas are in the 4 Bhavas"
+            },
+            {
+              "step_id": "ch35-v13-shakti-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if from Yuvati"
+            },
+            {
+              "step_id": "ch35-v13-shakti-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Shakti Yog occurs"
+            },
+            {
+              "step_id": "ch35-v13-shakti-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If all the 7 Grahas are in the 4 Bhavas Shakti Yog occurs"
+            },
+            {
+              "step_id": "ch35-v13-shakti-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if from Yuvati Shakti Yog occurs"
+            },
+            {
+              "step_id": "ch35-v13-shakti-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if from 7th house"
+            },
+            {
+              "step_id": "ch35-v13-shakti-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if from 7th house Shakti Yog occurs"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Shakti Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Shakti Yog 成立。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v13-shakti-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Shakti Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Shakti Yog 的成立判定；原文只给盘面分布条件，没有时间、上升或男女限定。",
+        "minimum_supported_claim": "本盘7颗行星（Grahas）都落在4个宫（Bhava）内、从七宫（Yuvati）起算时，构成 Shakti Yog。",
+        "produced_fact_keys": [
+          "Shakti Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘7颗行星（Grahas）是否都落在从七宫（Yuvati）起算的4个宫（Bhava）内"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘7颗行星（Grahas）是否都落在从七宫（Yuvati）起算的4个宫（Bhava）内"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If all the 7 Grahas are in the 4 Bhavas",
+              "claim": "本盘7颗行星（Grahas）都落在4个宫（Bhava）内"
+            },
+            {
+              "quote": "if from Yuvati",
+              "claim": "从七宫（Yuvati）起算"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Shakti Yog occurs",
+              "claim": "构成 Shakti Yog"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v13",
+            "quote": "If all the 7 Grahas are in the 4 Bhavas",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v13",
+            "quote": "if from Yuvati, Shakti Yog occurs",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘7颗行星（Grahas）是否都落在从七宫（Yuvati）起算的4个宫（Bhava）内。",
+        "stop_fact_keys": [
+          "本盘7颗行星（Grahas）是否都落在从七宫（Yuvati）起算的4个宫（Bhava）内"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把起算宫从七宫（Yuvati）换成别的宫——原文逐个点名了起算宫。",
+          "不得把 4 个宫放宽成任意 4 个宫——原文要求从起算宫连排。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b5314f8cc38cd933ade55e9811ee51df280da4860e1d660a4823ef3452011509"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v13-danda-yog.step-001",
+      "method": {
+        "method": "ch35-v13-danda-yog",
+        "title": "Danda Yog：7 颗行星都落在从十宫（Karm）起算的 4 个宫内",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我命里有没有 Danda Yog",
+          "我盘上 7 颗行星是不是都挤在从十宫（Karm）起的 4 个宫里"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If all the 7 Grahas are in the 4 Bhavas",
+            "if from Karm, Danda Yog is formed",
+            "Danda Yog 的成立条件"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "If all the 7 Grahas are in the 4 Bhavas, commencing from Lagna, they cause Yup Yog, if from Bandhu, Shar Yog occurs, if from Yuvati, Shakti Yog occurs and, if from Karm, Danda Yog is formed.",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v13-danda-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If all the 7 Grahas are in the 4 Bhavas"
+            },
+            {
+              "step_id": "ch35-v13-danda-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if from Karm"
+            },
+            {
+              "step_id": "ch35-v13-danda-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Danda Yog is formed"
+            },
+            {
+              "step_id": "ch35-v13-danda-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If all the 7 Grahas are in the 4 Bhavas Danda Yog is formed"
+            },
+            {
+              "step_id": "ch35-v13-danda-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if from Karm Danda Yog is formed"
+            },
+            {
+              "step_id": "ch35-v13-danda-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if from 10th house"
+            },
+            {
+              "step_id": "ch35-v13-danda-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if from 10th house Danda Yog is formed"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Danda Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Danda Yog 成立。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v13-danda-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Danda Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Danda Yog 的成立判定；原文只给盘面分布条件，没有时间、上升或男女限定。",
+        "minimum_supported_claim": "本盘7颗行星（Grahas）都落在4个宫（Bhava）内、从十宫（Karm）起算时，构成 Danda Yog。",
+        "produced_fact_keys": [
+          "Danda Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘7颗行星（Grahas）是否都落在从十宫（Karm）起算的4个宫（Bhava）内"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘7颗行星（Grahas）是否都落在从十宫（Karm）起算的4个宫（Bhava）内"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If all the 7 Grahas are in the 4 Bhavas",
+              "claim": "本盘7颗行星（Grahas）都落在4个宫（Bhava）内"
+            },
+            {
+              "quote": "if from Karm",
+              "claim": "从十宫（Karm）起算"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Danda Yog is formed",
+              "claim": "构成 Danda Yog"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v13",
+            "quote": "If all the 7 Grahas are in the 4 Bhavas",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v13",
+            "quote": "if from Karm, Danda Yog is formed",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘7颗行星（Grahas）是否都落在从十宫（Karm）起算的4个宫（Bhava）内。",
+        "stop_fact_keys": [
+          "本盘7颗行星（Grahas）是否都落在从十宫（Karm）起算的4个宫（Bhava）内"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把起算宫从十宫（Karm）换成别的宫——原文逐个点名了起算宫。",
+          "不得把 4 个宫放宽成任意 4 个宫——原文要求从起算宫连排。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "34bb91df597b1e0cdb2a1f4278b7d54925957125453c9d2388bdf140af257247"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v14-nauka-yog.step-001",
+      "method": {
+        "method": "ch35-v14-nauka-yog",
+        "title": "Nauka Yog：所有行星都落在从上升宫（Lagna）起算的连续七个宫内",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我命里有没有 Nauka Yog",
+          "我盘上行星是不是从上升宫（Lagna）起连排七个宫"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If all the Grahas occupy the seven Bhavas from Lagna, Nauka Yog occurs",
+            "Here again the Grahas should occupy seven continuous Bhavas.",
+            "Nauka Yog 的成立条件"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Here again the Grahas should occupy seven continuous Bhavas.",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v14-nauka-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If all the Grahas occupy the seven Bhavas from Lagna"
+            },
+            {
+              "step_id": "ch35-v14-nauka-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Here again the Grahas should occupy seven continuous Bhavas"
+            },
+            {
+              "step_id": "ch35-v14-nauka-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Nauka Yog occurs"
+            },
+            {
+              "step_id": "ch35-v14-nauka-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If all the Grahas occupy the seven Bhavas from Lagna Nauka Yog occurs"
+            },
+            {
+              "step_id": "ch35-v14-nauka-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Here again the Grahas should occupy seven continuous Bhavas Nauka Yog occurs"
+            },
+            {
+              "step_id": "ch35-v14-nauka-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If all the Grahas occupy the seven Bhavas from 1st house"
+            },
+            {
+              "step_id": "ch35-v14-nauka-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If all the Grahas occupy the seven Bhavas from 1st house Nauka Yog occurs"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Nauka Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Nauka Yog 成立。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v14-nauka-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Nauka Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Nauka Yog 的成立判定；原文只给盘面分布条件，没有时间、上升或男女限定。",
+        "minimum_supported_claim": "本盘所有行星（Grahas）都落在从上升宫（Lagna）起算的七个宫（Bhava）内、且这七个宫（Bhava）必须连续时，构成 Nauka Yog。",
+        "produced_fact_keys": [
+          "Nauka Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在从上升宫（Lagna）起算的连续七个宫（Bhava）内"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘所有行星（Grahas）是否都落在从上升宫（Lagna）起算的连续七个宫（Bhava）内"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If all the Grahas occupy the seven Bhavas from Lagna",
+              "claim": "本盘所有行星（Grahas）都落在从上升宫（Lagna）起算的七个宫（Bhava）内"
+            },
+            {
+              "quote": "Here again the Grahas should occupy seven continuous Bhavas",
+              "claim": "这七个宫（Bhava）必须连续"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Nauka Yog occurs",
+              "claim": "构成 Nauka Yog"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v14",
+            "quote": "If all the Grahas occupy the seven Bhavas from Lagna, Nauka Yog occurs",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v14",
+            "quote": "Here again the Grahas should occupy seven continuous Bhavas.",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘所有行星（Grahas）是否都落在从上升宫（Lagna）起算的连续七个宫（Bhava）内。",
+        "stop_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在从上升宫（Lagna）起算的连续七个宫（Bhava）内"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把起算宫从上升宫（Lagna）换成别的宫——原文逐个点名了起算宫。",
+          "不得丢掉 continuous 这个限定——原文要求七个宫连续。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "ff931fff5a6c312e1fbaabb8cdb3f8e6d2abcfdc2a9dc2eb4e19e69d6710e584"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v14-koot-yog.step-001",
+      "method": {
+        "method": "ch35-v14-koot-yog",
+        "title": "Koot Yog：所有行星都落在从四宫（Bandhu）起算的连续七个宫内",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我命里有没有 Koot Yog",
+          "我盘上行星是不是从四宫（Bandhu）起连排七个宫"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If all the Grahas occupy the seven Bhavas",
+            "if from Bandhu, Koot Yog is formed",
+            "Here again the Grahas should occupy seven continuous Bhavas.",
+            "Koot Yog 的成立条件"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Here again the Grahas should occupy seven continuous Bhavas.",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v14-koot-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If all the Grahas occupy the seven Bhavas"
+            },
+            {
+              "step_id": "ch35-v14-koot-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if from Bandhu"
+            },
+            {
+              "step_id": "ch35-v14-koot-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Here again the Grahas should occupy seven continuous Bhavas"
+            },
+            {
+              "step_id": "ch35-v14-koot-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Koot Yog is formed"
+            },
+            {
+              "step_id": "ch35-v14-koot-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If all the Grahas occupy the seven Bhavas Koot Yog is formed"
+            },
+            {
+              "step_id": "ch35-v14-koot-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if from Bandhu Koot Yog is formed"
+            },
+            {
+              "step_id": "ch35-v14-koot-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Here again the Grahas should occupy seven continuous Bhavas Koot Yog is formed"
+            },
+            {
+              "step_id": "ch35-v14-koot-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if from 4th house"
+            },
+            {
+              "step_id": "ch35-v14-koot-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if from 4th house Koot Yog is formed"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Koot Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Koot Yog 成立。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v14-koot-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Koot Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Koot Yog 的成立判定；原文只给盘面分布条件，没有时间、上升或男女限定。",
+        "minimum_supported_claim": "本盘所有行星（Grahas）都落在七个宫（Bhava）内、从四宫（Bandhu）起算、且这七个宫（Bhava）必须连续时，构成 Koot Yog。",
+        "produced_fact_keys": [
+          "Koot Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在从四宫（Bandhu）起算的连续七个宫（Bhava）内"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘所有行星（Grahas）是否都落在从四宫（Bandhu）起算的连续七个宫（Bhava）内"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If all the Grahas occupy the seven Bhavas",
+              "claim": "本盘所有行星（Grahas）都落在七个宫（Bhava）内"
+            },
+            {
+              "quote": "if from Bandhu",
+              "claim": "从四宫（Bandhu）起算"
+            },
+            {
+              "quote": "Here again the Grahas should occupy seven continuous Bhavas",
+              "claim": "这七个宫（Bhava）必须连续"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Koot Yog is formed",
+              "claim": "构成 Koot Yog"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v14",
+            "quote": "If all the Grahas occupy the seven Bhavas",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v14",
+            "quote": "if from Bandhu, Koot Yog is formed",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v14",
+            "quote": "Here again the Grahas should occupy seven continuous Bhavas.",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘所有行星（Grahas）是否都落在从四宫（Bandhu）起算的连续七个宫（Bhava）内。",
+        "stop_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在从四宫（Bandhu）起算的连续七个宫（Bhava）内"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把起算宫从四宫（Bandhu）换成别的宫——原文逐个点名了起算宫。",
+          "不得丢掉 continuous 这个限定——原文要求七个宫连续。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b519a2e57b3625cc7783a5e01e499604482295bc5a587c67b74c1d500369384c"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v14-chatr-yog.step-001",
+      "method": {
+        "method": "ch35-v14-chatr-yog",
+        "title": "Chatr Yog：所有行星都落在从七宫（Yuvati）起算的连续七个宫内",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我命里有没有 Chatr Yog",
+          "我盘上行星是不是从七宫（Yuvati）起连排七个宫"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If all the Grahas occupy the seven Bhavas",
+            "if from Yuvati, Chatr Yog occurs",
+            "Here again the Grahas should occupy seven continuous Bhavas.",
+            "Chatr Yog 的成立条件"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Here again the Grahas should occupy seven continuous Bhavas.",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v14-chatr-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If all the Grahas occupy the seven Bhavas"
+            },
+            {
+              "step_id": "ch35-v14-chatr-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if from Yuvati"
+            },
+            {
+              "step_id": "ch35-v14-chatr-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Here again the Grahas should occupy seven continuous Bhavas"
+            },
+            {
+              "step_id": "ch35-v14-chatr-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Chatr Yog occurs"
+            },
+            {
+              "step_id": "ch35-v14-chatr-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If all the Grahas occupy the seven Bhavas Chatr Yog occurs"
+            },
+            {
+              "step_id": "ch35-v14-chatr-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if from Yuvati Chatr Yog occurs"
+            },
+            {
+              "step_id": "ch35-v14-chatr-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Here again the Grahas should occupy seven continuous Bhavas Chatr Yog occurs"
+            },
+            {
+              "step_id": "ch35-v14-chatr-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if from 7th house"
+            },
+            {
+              "step_id": "ch35-v14-chatr-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if from 7th house Chatr Yog occurs"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Chatr Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Chatr Yog 成立。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v14-chatr-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Chatr Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Chatr Yog 的成立判定；原文只给盘面分布条件，没有时间、上升或男女限定。",
+        "minimum_supported_claim": "本盘所有行星（Grahas）都落在七个宫（Bhava）内、从七宫（Yuvati）起算、且这七个宫（Bhava）必须连续时，构成 Chatr Yog。",
+        "produced_fact_keys": [
+          "Chatr Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在从七宫（Yuvati）起算的连续七个宫（Bhava）内"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘所有行星（Grahas）是否都落在从七宫（Yuvati）起算的连续七个宫（Bhava）内"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If all the Grahas occupy the seven Bhavas",
+              "claim": "本盘所有行星（Grahas）都落在七个宫（Bhava）内"
+            },
+            {
+              "quote": "if from Yuvati",
+              "claim": "从七宫（Yuvati）起算"
+            },
+            {
+              "quote": "Here again the Grahas should occupy seven continuous Bhavas",
+              "claim": "这七个宫（Bhava）必须连续"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Chatr Yog occurs",
+              "claim": "构成 Chatr Yog"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v14",
+            "quote": "If all the Grahas occupy the seven Bhavas",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v14",
+            "quote": "if from Yuvati, Chatr Yog occurs",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v14",
+            "quote": "Here again the Grahas should occupy seven continuous Bhavas.",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘所有行星（Grahas）是否都落在从七宫（Yuvati）起算的连续七个宫（Bhava）内。",
+        "stop_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在从七宫（Yuvati）起算的连续七个宫（Bhava）内"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把起算宫从七宫（Yuvati）换成别的宫——原文逐个点名了起算宫。",
+          "不得丢掉 continuous 这个限定——原文要求七个宫连续。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "8fdcd1e245b24e1407c831221f7da629dc81c283a78caacfd0df00a0180ce656"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v14-chap-yog.step-001",
+      "method": {
+        "method": "ch35-v14-chap-yog",
+        "title": "Chap Yog：所有行星都落在从十宫（Karm）起算的连续七个宫内",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我命里有没有 Chap Yog",
+          "我盘上行星是不是从十宫（Karm）起连排七个宫"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If all the Grahas occupy the seven Bhavas",
+            "if from Karm, Chap Yog occurs",
+            "Here again the Grahas should occupy seven continuous Bhavas.",
+            "Chap Yog 的成立条件"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Here again the Grahas should occupy seven continuous Bhavas.",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v14-chap-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If all the Grahas occupy the seven Bhavas"
+            },
+            {
+              "step_id": "ch35-v14-chap-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if from Karm"
+            },
+            {
+              "step_id": "ch35-v14-chap-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Here again the Grahas should occupy seven continuous Bhavas"
+            },
+            {
+              "step_id": "ch35-v14-chap-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Chap Yog occurs"
+            },
+            {
+              "step_id": "ch35-v14-chap-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If all the Grahas occupy the seven Bhavas Chap Yog occurs"
+            },
+            {
+              "step_id": "ch35-v14-chap-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if from Karm Chap Yog occurs"
+            },
+            {
+              "step_id": "ch35-v14-chap-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Here again the Grahas should occupy seven continuous Bhavas Chap Yog occurs"
+            },
+            {
+              "step_id": "ch35-v14-chap-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if from 10th house"
+            },
+            {
+              "step_id": "ch35-v14-chap-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if from 10th house Chap Yog occurs"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Chap Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Chap Yog 成立。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v14-chap-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Chap Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Chap Yog 的成立判定；原文只给盘面分布条件，没有时间、上升或男女限定。",
+        "minimum_supported_claim": "本盘所有行星（Grahas）都落在七个宫（Bhava）内、从十宫（Karm）起算、且这七个宫（Bhava）必须连续时，构成 Chap Yog。",
+        "produced_fact_keys": [
+          "Chap Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在从十宫（Karm）起算的连续七个宫（Bhava）内"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘所有行星（Grahas）是否都落在从十宫（Karm）起算的连续七个宫（Bhava）内"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If all the Grahas occupy the seven Bhavas",
+              "claim": "本盘所有行星（Grahas）都落在七个宫（Bhava）内"
+            },
+            {
+              "quote": "if from Karm",
+              "claim": "从十宫（Karm）起算"
+            },
+            {
+              "quote": "Here again the Grahas should occupy seven continuous Bhavas",
+              "claim": "这七个宫（Bhava）必须连续"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Chap Yog occurs",
+              "claim": "构成 Chap Yog"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v14",
+            "quote": "If all the Grahas occupy the seven Bhavas",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v14",
+            "quote": "if from Karm, Chap Yog occurs",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v14",
+            "quote": "Here again the Grahas should occupy seven continuous Bhavas.",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘所有行星（Grahas）是否都落在从十宫（Karm）起算的连续七个宫（Bhava）内。",
+        "stop_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在从十宫（Karm）起算的连续七个宫（Bhava）内"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把起算宫从十宫（Karm）换成别的宫——原文逐个点名了起算宫。",
+          "不得丢掉 continuous 这个限定——原文要求七个宫连续。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "697bf92ea7f32fafab837545653646f2c094da037aa911f0b0c721378b859a1f"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v14-ardh-chandraa-yog.step-001",
+      "method": {
+        "method": "ch35-v14-ardh-chandraa-yog",
+        "title": "Ardh Chandraa Yoga：7 颗行星从一个非角宫起连续占据七宫（引自 Saravali）",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我命里有没有 Ardh Chandra Yog",
+          "我盘上行星从非角宫起连排七个宫算什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If the seven Grahas occupy continuously seven Bhavas, commencing from a Bhava, which is not angular to the Lagna, the Yoga produced is known, as Ardh Chandraa Yoga.",
+            "Ardh Chandraa Yoga 的成立条件"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Quoted from Saravali. If the seven Grahas occupy continuously seven Bhavas, commencing from a Bhava, which is not angular to the Lagna, the Yoga produced is known, as Ardh Chandraa Yoga.",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v14-ardh-chandraa-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If the seven Grahas occupy continuously seven Bhavas, commencing from a Bhava, which is not angular to the Lagna"
+            },
+            {
+              "step_id": "ch35-v14-ardh-chandraa-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the Yoga produced is known, as Ardh Chandraa Yoga"
+            },
+            {
+              "step_id": "ch35-v14-ardh-chandraa-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If the seven Grahas occupy continuously seven Bhavas, commencing from a Bhava, which is not angular to the Lagna the Yoga produced is known, as Ardh Chandraa Yoga"
+            },
+            {
+              "step_id": "ch35-v14-ardh-chandraa-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If the seven Grahas occupy continuously seven Bhavas, commencing from a Bhava, which is not angular to the 1st house"
+            },
+            {
+              "step_id": "ch35-v14-ardh-chandraa-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If the seven Grahas occupy continuously seven Bhavas, commencing from a Bhava, which is not angular to the 1st house the Yoga produced is known, as Ardh Chandraa Yoga"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Ardh Chandraa Yoga 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Ardh Chandraa Yoga 成立。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v14-ardh-chandraa-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Ardh Chandraa Yoga 是否成立。",
+        "applicability_scope": "仅限本命盘 Ardh Chandraa Yoga 的成立判定；原文这一段标明 Quoted from Saravali，是转引他书，结论强度不等同本书自断；原文没有时间限定。",
+        "minimum_supported_claim": "本盘7颗行星（Grahas）从对上升宫（Lagna）而言非角宫的某一宫（Bhava）起连续占据七个宫（Bhava）时，构成 Ardh Chandraa Yoga。",
+        "produced_fact_keys": [
+          "Ardh Chandraa Yoga 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘7颗行星（Grahas）是否从对上升宫（Lagna）而言非角宫的某一宫（Bhava）起连续占据七个宫（Bhava）"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘7颗行星（Grahas）是否从对上升宫（Lagna）而言非角宫的某一宫（Bhava）起连续占据七个宫（Bhava）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If the seven Grahas occupy continuously seven Bhavas, commencing from a Bhava, which is not angular to the Lagna",
+              "claim": "本盘7颗行星（Grahas）从对上升宫（Lagna）而言非角宫的某一宫（Bhava）起连续占据七个宫（Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the Yoga produced is known, as Ardh Chandraa Yoga",
+              "claim": "构成 Ardh Chandraa Yoga"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v14",
+            "quote": "If the seven Grahas occupy continuously seven Bhavas, commencing from a Bhava, which is not angular to the Lagna, the Yoga produced is known, as Ardh Chandraa Yoga.",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘7颗行星（Grahas）是否从对上升宫（Lagna）而言非角宫的某一宫（Bhava）起连续占据七个宫（Bhava）。",
+        "stop_fact_keys": [
+          "本盘7颗行星（Grahas）是否从对上升宫（Lagna）而言非角宫的某一宫（Bhava）起连续占据七个宫（Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得丢掉 not angular to the Lagna 这个限定——起算宫必须不是上升宫（Lagna）的角宫。",
+          "不得把这条按 Parashar 自断使用——原文标明 Quoted from Saravali。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b9513f908d6c36b65346b5086fe3f34c70b53e15aeb32a5e868eeaaeac4199a1"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v15-chakr-yog.step-001",
+      "method": {
+        "method": "ch35-v15-chakr-yog",
+        "title": "Chakr Yog：所有行星都落在从上升起算的六个相间星座",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我命里有没有 Chakr Yog",
+          "我盘上行星是不是隔一个星座排一颗"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If all the Grahas occupy six alternative Rāśis, commencing from Lagna, Chakr Yog is formed.",
+            "Chakr Yog 的成立条件"
+          ],
+          "counter_queries": [
+            "Samudr Yog is produced, if all Grahas occupy six alternative Rāśis, commencing from Dhan Bhava."
+          ],
+          "boundary_queries": [
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v15-chakr-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If all the Grahas occupy six alternative Rāśis, commencing from Lagna"
+            },
+            {
+              "step_id": "ch35-v15-chakr-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Chakr Yog is formed"
+            },
+            {
+              "step_id": "ch35-v15-chakr-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If all the Grahas occupy six alternative Rāśis, commencing from Lagna Chakr Yog is formed"
+            },
+            {
+              "step_id": "ch35-v15-chakr-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If all the Grahas occupy six alternative Rāśis, commencing from 1st house"
+            },
+            {
+              "step_id": "ch35-v15-chakr-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If all the Grahas occupy six alternative Rāśis, commencing from 1st house Chakr Yog is formed"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Chakr Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Chakr Yog 成立。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v15-chakr-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Chakr Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Chakr Yog 的成立判定；原文只给盘面分布条件，没有时间、上升或男女限定。",
+        "minimum_supported_claim": "本盘所有行星（Grahas）都落在从上升宫（Lagna）起算的六个相间星座（Rāśi）内时，构成 Chakr Yog。",
+        "produced_fact_keys": [
+          "Chakr Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在从上升宫（Lagna）起算的六个相间星座（Rāśi）内"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘所有行星（Grahas）是否都落在从上升宫（Lagna）起算的六个相间星座（Rāśi）内"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If all the Grahas occupy six alternative Rāśis, commencing from Lagna",
+              "claim": "本盘所有行星（Grahas）都落在从上升宫（Lagna）起算的六个相间星座（Rāśi）内"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Chakr Yog is formed",
+              "claim": "构成 Chakr Yog"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v15",
+            "quote": "If all the Grahas occupy six alternative Rāśis, commencing from Lagna, Chakr Yog is formed.",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘所有行星（Grahas）是否都落在从上升宫（Lagna）起算的六个相间星座（Rāśi）内。",
+        "stop_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在从上升宫（Lagna）起算的六个相间星座（Rāśi）内"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把星座（Rāśi）换成宫（Bhava）——原文这一句说的是星座。",
+          "不得把起算点从上升宫（Lagna）换成二宫（Dhan Bhava）——那是 Samudr Yog。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "30b46d479c1b19e5790e9c8b23dcdd2b1146a223b46547e8b86b4d48234b0503"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v15-samudr-yog.step-001",
+      "method": {
+        "method": "ch35-v15-samudr-yog",
+        "title": "Samudr Yog：所有行星都落在从二宫起算的六个相间星座",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我命里有没有 Samudr Yog",
+          "我盘上行星是不是从二宫起隔星座排列"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Samudr Yog is produced, if all Grahas occupy six alternative Rāśis, commencing from Dhan Bhava.",
+            "Samudr Yog 的成立条件"
+          ],
+          "counter_queries": [
+            "If all the Grahas occupy six alternative Rāśis, commencing from Lagna, Chakr Yog is formed."
+          ],
+          "boundary_queries": [
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v15-samudr-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if all Grahas occupy six alternative Rāśis, commencing from Dhan Bhava"
+            },
+            {
+              "step_id": "ch35-v15-samudr-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Samudr Yog is produced"
+            },
+            {
+              "step_id": "ch35-v15-samudr-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if all Grahas occupy six alternative Rāśis, commencing from Dhan Bhava Samudr Yog is produced"
+            },
+            {
+              "step_id": "ch35-v15-samudr-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if all Grahas occupy six alternative Rāśis, commencing from 2nd house"
+            },
+            {
+              "step_id": "ch35-v15-samudr-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if all Grahas occupy six alternative Rāśis, commencing from 2nd house Samudr Yog is produced"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Samudr Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Samudr Yog 成立。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v15-samudr-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Samudr Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Samudr Yog 的成立判定；原文只给盘面分布条件，没有时间、上升或男女限定。",
+        "minimum_supported_claim": "本盘所有行星（Grahas）都落在从二宫（Dhan Bhava）起算的六个相间星座（Rāśi）内时，构成 Samudr Yog。",
+        "produced_fact_keys": [
+          "Samudr Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在从二宫（Dhan Bhava）起算的六个相间星座（Rāśi）内"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘所有行星（Grahas）是否都落在从二宫（Dhan Bhava）起算的六个相间星座（Rāśi）内"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if all Grahas occupy six alternative Rāśis, commencing from Dhan Bhava",
+              "claim": "本盘所有行星（Grahas）都落在从二宫（Dhan Bhava）起算的六个相间星座（Rāśi）内"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Samudr Yog is produced",
+              "claim": "构成 Samudr Yog"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v15",
+            "quote": "Samudr Yog is produced, if all Grahas occupy six alternative Rāśis, commencing from Dhan Bhava.",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘所有行星（Grahas）是否都落在从二宫（Dhan Bhava）起算的六个相间星座（Rāśi）内。",
+        "stop_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在从二宫（Dhan Bhava）起算的六个相间星座（Rāśi）内"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把星座（Rāśi）换成宫（Bhava）——原文这一句说的是星座。",
+          "不得把起算点从二宫（Dhan Bhava）换成上升宫（Lagna）——那是 Chakr Yog。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "568b9f92c918d26d05f5b2dcf4055f69950e9f9a3533a53770d4fc6d04f51c28"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v16-17-gola-yog.step-001",
+      "method": {
+        "method": "ch35-v16-17-gola-yog",
+        "title": "Gola Yog：所有行星共占据 1 个星座，且本盘没有别的 Nabhash 瑜伽",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我命里有没有 Gola Yog",
+          "我盘上行星一共挤在几个星座里"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If all Grahas are in one Rāśi, Gola Yog is formed",
+            "None of these seven Yogas will be operable, if another Nabhash Yog is derivable.",
+            "Gola Yog 的成立条件"
+          ],
+          "counter_queries": [
+            "None of these seven Yogas will be operable, if another Nabhash Yog is derivable."
+          ],
+          "boundary_queries": [
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v16-17-gola-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If all Grahas are in one Rāśi"
+            },
+            {
+              "step_id": "ch35-v16-17-gola-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable"
+            },
+            {
+              "step_id": "ch35-v16-17-gola-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Gola Yog is formed"
+            },
+            {
+              "step_id": "ch35-v16-17-gola-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If all Grahas are in one Rāśi Gola Yog is formed"
+            },
+            {
+              "step_id": "ch35-v16-17-gola-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable Gola Yog is formed"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Gola Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Gola Yog 成立。",
+          "无法确定本盘是否另有别的 Nabhash 瑜伽可成立时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v16-17-gola-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Gola Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Gola Yog（Sankhya Yogas 之一）的成立判定；原文同偈写明这七个瑜伽在另有别的 Nabhash 瑜伽可成立时不起作用；原文没有时间限定。",
+        "minimum_supported_claim": "本盘没有别的 Nabhash Yog 可成立、且本盘所有行星（Grahas）都落在1个星座（Rāśi）内时，构成 Gola Yog。",
+        "produced_fact_keys": [
+          "Gola Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘所有行星（Grahas）共占据几个星座（Rāśi）",
+          "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘所有行星（Grahas）共占据几个星座（Rāśi）"
+            },
+            {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If all Grahas are in one Rāśi",
+              "claim": "本盘所有行星（Grahas）都落在1个星座（Rāśi）内"
+            },
+            {
+              "quote": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable",
+              "claim": "本盘没有别的 Nabhash Yog 可成立"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Gola Yog is formed",
+              "claim": "构成 Gola Yog"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v16-17",
+            "quote": "If all Grahas are in one Rāśi, Gola Yog is formed",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v16-17",
+            "quote": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable.",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘所有行星（Grahas）共占据几个星座（Rāśi）、本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立。",
+        "stop_fact_keys": [
+          "本盘所有行星（Grahas）共占据几个星座（Rāśi）",
+          "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+        ],
+        "exception_relations": [
+          {
+            "type": "limitation",
+            "evidence_atom_ids": [
+              "bphs-97:santhanam:ch35:v16-17"
+            ],
+            "condition_logic": {
+              "fact_key": "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+            }
+          }
+        ],
+        "forbidden_extensions": [
+          "不得把「共占据1个星座」换算成宫（Bhava）的个数——原文这一句说的是星座。",
+          "不得丢掉 None of these seven Yogas will be operable 这条限制——另有别的 Nabhash 瑜伽可成立时本瑜伽不起作用。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "9f47af971ba4262db4e5f4e59ca9e25133e4c45c483d37bee892138a43ed9a85"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch35:v12": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v12",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "12.",
+      "content_role": "verse",
+      "exact_text": "12. Kamal and Vapi Yogas. If all the Grahas are in the 4 Kendras, Kamal Yog is produced. If all of them happen to be in all the Apoklimas, or in all the Panapharas, Vapi Yog occurs.",
+      "pdf_pages": [
+        76
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 12 · PDF page 76 · bphs-97:santhanam:ch35:v12",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v9-11",
+      "next_atom_id": "bphs-97:santhanam:ch35:v13",
+      "context_before": "ontrary situation, i.e. all benefics in Bandhu and Karm Bhava, or all malefics in Lagn and Yuvati Bhava, Yav Yog is generated.\n\n",
+      "context_after": "13. Yup, Shar, Shakti and Danda Yogas. If all the 7 Grahas are in the 4 Bhavas, commencing from Lagna, they cause Yup Yog, if fr",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch35:v13": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v13",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "13.",
+      "content_role": "verse",
+      "exact_text": "13. Yup, Shar, Shakti and Danda Yogas. If all the 7 Grahas are in the 4 Bhavas, commencing from Lagna, they cause Yup Yog, if from Bandhu, Shar Yog occurs, if from Yuvati, Shakti Yog occurs and, if from Karm, Danda Yog is formed.",
+      "pdf_pages": [
+        76
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 13 · PDF page 76 · bphs-97:santhanam:ch35:v13",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v12",
+      "next_atom_id": "bphs-97:santhanam:ch35:v14",
+      "context_before": "4 Kendras, Kamal Yog is produced. If all of them happen to be in all the Apoklimas, or in all the Panapharas, Vapi Yog occurs.\n\n",
+      "context_after": "14. Nauka, Koot, Chatr and Chap Yogas. If all the Grahas occupy the seven Bhavas from Lagna, Nauka Yog occurs, if from Bandhu, K",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch35:v14": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v14",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "14.",
+      "content_role": "verse",
+      "exact_text": "14. Nauka, Koot, Chatr and Chap Yogas. If all the Grahas occupy the seven Bhavas from Lagna, Nauka Yog occurs, if from Bandhu, Koot Yog is formed, if from Yuvati, Chatr Yog occurs and, if from Karm, Chap Yog occurs. Here again the Grahas should occupy seven continuous Bhavas.\n\nQuoted from Saravali. If the seven Grahas occupy continuously seven Bhavas, commencing from a Bhava, which is not angular to the Lagna, the Yoga produced is known, as Ardh Chandraa Yoga.",
+      "pdf_pages": [
+        76
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 14 · PDF page 76 · bphs-97:santhanam:ch35:v14",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v13",
+      "next_atom_id": "bphs-97:santhanam:ch35:v15",
+      "context_before": " If all the 7 Grahas are in the 4 Bhavas, commencing from Lagna, they cause Yup Yog, if from Bandhu, Shar Yog occurs, if from Yuvati, Shakti Yog occurs and, if from Karm, Danda Yog is formed.\n\n",
+      "context_after": "15. Chakr and Samudr Yogas. If all the Grahas occupy six alternative Rāśis, commencing from Lagna, Chakr Yog is formed. Samudr Y",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch35:v15": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v15",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "15.",
+      "content_role": "verse",
+      "exact_text": "15. Chakr and Samudr Yogas. If all the Grahas occupy six alternative Rāśis, commencing from Lagna, Chakr Yog is formed. Samudr Yog is produced, if all Grahas occupy six alternative Rāśis, commencing from Dhan Bhava.",
+      "pdf_pages": [
+        76
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 15 · PDF page 76 · bphs-97:santhanam:ch35:v15",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v14",
+      "next_atom_id": "bphs-97:santhanam:ch35:v16-17",
+      "context_before": " If the seven Grahas occupy continuously seven Bhavas, commencing from a Bhava, which is not angular to the Lagna, the Yoga produced is known, as Ardh Chandraa Yoga.\n\n",
+      "context_after": "16-17. Sankhya Yogas. If all Grahas are in one Rāśi, Gola Yog is formed, if in 2, Yuga Yog is formed, if in 3, Sool Yog occurs, ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch35:v16-17": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v16-17",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "16-17.",
+      "content_role": "verse",
+      "exact_text": "16-17. Sankhya Yogas. If all Grahas are in one Rāśi, Gola Yog is formed, if in 2, Yuga Yog is formed, if in 3, Sool Yog occurs, if in 4, Kedara Yog occurs, if in 5, Paash Yog is formed, if in 6, Daam Yog occurs and, if in 7, Veena Yog is produced. None of these seven Yogas will be operable, if another Nabhash Yog is derivable.",
+      "pdf_pages": [
+        76
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 16-17 · PDF page 76 · bphs-97:santhanam:ch35:v16-17",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v15",
+      "next_atom_id": "bphs-97:santhanam:ch35:v18",
+      "context_before": "om Lagna, Chakr Yog is formed. Samudr Yog is produced, if all Grahas occupy six alternative Rāśis, commencing from Dhan Bhava.\n\n",
+      "context_after": "18. Effects of Nabhash Yogas (up to Sloka 50). Rajju Yog. One born in Rajju Yog will be fond of wandering, be charming, will ear",
+      "content_missing": false
+    }
+  }
+}

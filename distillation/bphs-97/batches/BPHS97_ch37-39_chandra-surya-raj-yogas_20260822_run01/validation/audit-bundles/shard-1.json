@@ -1,0 +1,2709 @@
+{
+  "shard": 1,
+  "step_count": 15,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch37-v1-kendr-from-surya.step-001",
+      "method": {
+        "method": "ch37-v1-kendr-from-surya",
+        "title": "月亮相对太阳落角宫：财富、智力与技能都少",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我为什么总觉得自己财力和本事都不够",
+          "我这辈子的财富和才智怎么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Chandra with reference to Surya is in a Kendr, one’s wealth, intelligence and skill will be little",
+            "月亮距太阳落角宫 财富智力技能都少"
+          ],
+          "counter_queries": [
+            "if in a Apoklima, will be excellent",
+            "同一偈的果宫一档 结果相反"
+          ],
+          "boundary_queries": [
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "A Grah in a Kon gets full strength, while one in Panaphara Bhava gets half and the one in Apoklima Bhava gets a quarter, as Kendradi Bal",
+            "角宫续宫果宫在本书里的定义"
+          ],
+          "method_queries": [
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn",
+            "从月亮与太阳起算的宫位该怎么读"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch37-v1-kendr-from-surya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Chandra with reference to Surya is in a Kendr"
+            },
+            {
+              "step_id": "ch37-v1-kendr-from-surya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "one’s wealth, intelligence and skill will be little"
+            },
+            {
+              "step_id": "ch37-v1-kendr-from-surya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Chandra with reference to Surya is in a Kendr one’s wealth, intelligence and skill will be little"
+            },
+            {
+              "step_id": "ch37-v1-kendr-from-surya.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If moon with reference to sun is in a Kendr"
+            },
+            {
+              "step_id": "ch37-v1-kendr-from-surya.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If moon with reference to sun is in a Kendr one’s wealth, intelligence and skill will be little"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少月亮以太阳为参照的落宫事实时停止。",
+          "无法判定该位置是否属于角宫（Kendr）时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch37-v1-kendr-from-surya.step-001",
+        "action": "以太阳（Surya）为起点数月亮（Chandra）的位置，核对它是否落角宫（Kendr），据此读取财富、智力与技能的断语。",
+        "applicability_scope": "仅限本命盘中以太阳为参照的月亮位置；原文没有时间限定，也没有上升限定。",
+        "minimum_supported_claim": "月亮（Chandra）以太阳（Surya）为参照落在角宫（Kendr）时，命主的财富、智力与技能都少。",
+        "produced_fact_keys": [
+          "月亮相对太阳落角宫的财智技能断语"
+        ],
+        "required_fact_keys": [
+          "本盘月亮（Chandra）以太阳（Surya）为参照落在哪一宫",
+          "月亮（Chandra）以太阳（Surya）为参照是否落角宫（Kendr）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘月亮（Chandra）以太阳（Surya）为参照落在哪一宫"
+            },
+            {
+              "fact_key": "月亮（Chandra）以太阳（Surya）为参照是否落角宫（Kendr）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Chandra with reference to Surya is in a Kendr",
+              "claim": "月亮（Chandra）以太阳（Surya）为参照落在角宫（Kendr）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "one’s wealth, intelligence and skill will be little",
+              "claim": "命主的财富、智力与技能都少"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v1",
+            "quote": "If Chandra with reference to Surya is in a Kendr, one’s wealth, intelligence and skill will be little",
+            "pdf_pages": [
+              81
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘月亮（Chandra）以太阳（Surya）为参照落在哪一宫、月亮（Chandra）以太阳（Surya）为参照是否落角宫（Kendr）。",
+        "stop_fact_keys": [
+          "本盘月亮（Chandra）以太阳（Surya）为参照落在哪一宫",
+          "月亮（Chandra）以太阳（Surya）为参照是否落角宫（Kendr）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体财富数额、职业或事件时间。",
+          "原文本句只写角宫（Kendr）一档，不得把这条断语套到续宫（Panaphara）或果宫（Apoklima）。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "5d277d64e8f98f807e5196a2a015c8a71c5ca721974cf8d623af256423d13e1a"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch37-v1-panaphara-from-surya.step-001",
+      "method": {
+        "method": "ch37-v1-panaphara-from-surya",
+        "title": "月亮相对太阳落续宫：原文写作 meddling",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的财力和本事到底算什么水平",
+          "月亮和太阳的相对位置说明我什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "if in a Panaphara, will be meddling",
+            "月亮距太阳落续宫 原文用词 meddling"
+          ],
+          "counter_queries": [
+            "If Chandra with reference to Surya is in a Kendr, one’s wealth, intelligence and skill will be little"
+          ],
+          "boundary_queries": [
+            "Dhan, Putr, Randhr and Labh Bhava are Panapharas (succedents), while Sahaj, Ari, Dharm and Vyaya Bhava are called Apoklimas (cadents)",
+            "A Grah in a Kon gets full strength, while one in Panaphara Bhava gets half and the one in Apoklima Bhava gets a quarter, as Kendradi Bal",
+            "续宫（Panaphara）在本书里的定义"
+          ],
+          "method_queries": [
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn",
+            "从月亮与太阳起算的宫位该怎么读"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch37-v1-panaphara-from-surya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Chandra with reference to Surya"
+            },
+            {
+              "step_id": "ch37-v1-panaphara-from-surya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if in a Panaphara"
+            },
+            {
+              "step_id": "ch37-v1-panaphara-from-surya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be meddling"
+            },
+            {
+              "step_id": "ch37-v1-panaphara-from-surya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Chandra with reference to Surya will be meddling"
+            },
+            {
+              "step_id": "ch37-v1-panaphara-from-surya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if in a Panaphara will be meddling"
+            },
+            {
+              "step_id": "ch37-v1-panaphara-from-surya.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "moon with reference to sun"
+            },
+            {
+              "step_id": "ch37-v1-panaphara-from-surya.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "moon with reference to sun will be meddling"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少月亮以太阳为参照的落宫事实时停止。",
+          "原文未解释 meddling 的含义，需要展开为具体吉凶时停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch37-v1-panaphara-from-surya.step-001",
+        "action": "以太阳（Surya）为起点数月亮（Chandra）的位置，核对它是否落续宫（Panaphara），据此读取原文这一档的断语。",
+        "applicability_scope": "仅限本命盘中以太阳为参照的月亮位置；原文此分句承前省略主语，主语是前半句的 one’s wealth, intelligence and skill；meddling 一词原文未作解释，本方法照录不译。",
+        "minimum_supported_claim": "月亮（Chandra）以太阳（Surya）为参照落在续宫（Panaphara）时，其财富、智力与技能会 meddling（原文用词，未加解释）。",
+        "produced_fact_keys": [
+          "月亮相对太阳落续宫的断语"
+        ],
+        "required_fact_keys": [
+          "本盘月亮（Chandra）以太阳（Surya）为参照落在哪一宫",
+          "月亮（Chandra）以太阳（Surya）为参照是否落续宫（Panaphara）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘月亮（Chandra）以太阳（Surya）为参照落在哪一宫"
+            },
+            {
+              "fact_key": "月亮（Chandra）以太阳（Surya）为参照是否落续宫（Panaphara）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Chandra with reference to Surya",
+              "claim": "月亮（Chandra）以太阳（Surya）为参照"
+            },
+            {
+              "quote": "if in a Panaphara",
+              "claim": "落在续宫（Panaphara）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be meddling",
+              "claim": "会 meddling"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v1",
+            "quote": "If Chandra with reference to Surya is in a Kendr, one’s wealth, intelligence and skill will be little, if in a Panaphara, will be meddling",
+            "pdf_pages": [
+              81
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘月亮（Chandra）以太阳（Surya）为参照落在哪一宫、月亮（Chandra）以太阳（Surya）为参照是否落续宫（Panaphara）。",
+        "stop_fact_keys": [
+          "本盘月亮（Chandra）以太阳（Surya）为参照落在哪一宫",
+          "月亮（Chandra）以太阳（Surya）为参照是否落续宫（Panaphara）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得替原文解释 meddling 的含义，也不得把它读成好或坏的程度词。",
+          "原文本句只写续宫（Panaphara）一档，不得把这条断语套到角宫（Kendr）或果宫（Apoklima）。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "a076eef06734db725c12592e1788843ff84fe98540403e45e2b2c025ee0702d8"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch37-v1-apoklima-from-surya.step-001",
+      "method": {
+        "method": "ch37-v1-apoklima-from-surya",
+        "title": "月亮相对太阳落果宫：结果优异",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的财力和才智会不会很好",
+          "月亮离太阳的位置对我有利吗"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "if in a Apoklima, will be excellent",
+            "月亮距太阳落果宫 财富智力技能优异"
+          ],
+          "counter_queries": [
+            "If Chandra with reference to Surya is in a Kendr, one’s wealth, intelligence and skill will be little",
+            "The life span of the child will be either 2 months, or 6 months only, if all Grahas devoid of strength are relegated to Apoklima Bhavas"
+          ],
+          "boundary_queries": [
+            "Dhan, Putr, Randhr and Labh Bhava are Panapharas (succedents), while Sahaj, Ari, Dharm and Vyaya Bhava are called Apoklimas (cadents)",
+            "A Grah in a Kon gets full strength, while one in Panaphara Bhava gets half and the one in Apoklima Bhava gets a quarter, as Kendradi Bal",
+            "果宫（Apoklima）在本书里的定义"
+          ],
+          "method_queries": [
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn",
+            "从月亮与太阳起算的宫位该怎么读"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch37-v1-apoklima-from-surya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Chandra with reference to Surya"
+            },
+            {
+              "step_id": "ch37-v1-apoklima-from-surya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if in a Apoklima"
+            },
+            {
+              "step_id": "ch37-v1-apoklima-from-surya.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be excellent"
+            },
+            {
+              "step_id": "ch37-v1-apoklima-from-surya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Chandra with reference to Surya will be excellent"
+            },
+            {
+              "step_id": "ch37-v1-apoklima-from-surya.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if in a Apoklima will be excellent"
+            },
+            {
+              "step_id": "ch37-v1-apoklima-from-surya.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "moon with reference to sun"
+            },
+            {
+              "step_id": "ch37-v1-apoklima-from-surya.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "moon with reference to sun will be excellent"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少月亮以太阳为参照的落宫事实时停止。",
+          "无法判定该位置是否属于果宫（Apoklima）时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch37-v1-apoklima-from-surya.step-001",
+        "action": "以太阳（Surya）为起点数月亮（Chandra）的位置，核对它是否落果宫（Apoklima），据此读取原文这一档的断语。",
+        "applicability_scope": "仅限本命盘中以太阳为参照的月亮位置；原文此分句承前省略主语，主语是前半句的 one’s wealth, intelligence and skill。",
+        "minimum_supported_claim": "月亮（Chandra）以太阳（Surya）为参照落在果宫（Apoklima）时，其财富、智力与技能会很优异。",
+        "produced_fact_keys": [
+          "月亮相对太阳落果宫的断语"
+        ],
+        "required_fact_keys": [
+          "本盘月亮（Chandra）以太阳（Surya）为参照落在哪一宫",
+          "月亮（Chandra）以太阳（Surya）为参照是否落果宫（Apoklima）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘月亮（Chandra）以太阳（Surya）为参照落在哪一宫"
+            },
+            {
+              "fact_key": "月亮（Chandra）以太阳（Surya）为参照是否落果宫（Apoklima）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Chandra with reference to Surya",
+              "claim": "月亮（Chandra）以太阳（Surya）为参照"
+            },
+            {
+              "quote": "if in a Apoklima",
+              "claim": "落在果宫（Apoklima）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be excellent",
+              "claim": "会很优异"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v1",
+            "quote": "If Chandra with reference to Surya is in a Kendr, one’s wealth, intelligence and skill will be little, if in a Panaphara, will be meddling, if in a Apoklima, will be excellent.",
+            "pdf_pages": [
+              81
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘月亮（Chandra）以太阳（Surya）为参照落在哪一宫、月亮（Chandra）以太阳（Surya）为参照是否落果宫（Apoklima）。",
+        "stop_fact_keys": [
+          "本盘月亮（Chandra）以太阳（Surya）为参照落在哪一宫",
+          "月亮（Chandra）以太阳（Surya）为参照是否落果宫（Apoklima）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断具体财富数额、名位或事件时间。",
+          "原文本句只写果宫（Apoklima）一档，不得把这条断语套到角宫（Kendr）或续宫（Panaphara）。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "c95976cd760c33e0ec97b5a62deba05f04599f0f48556263e3516db791ed0792"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch37-v2-4-day-birth-chandra-navamsa.step-001",
+      "method": {
+        "method": "ch37-v2-4-day-birth-chandra-navamsa",
+        "title": "白天生：月亮居本九分盘或友星九分盘并受木星相照，得财富与快乐",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我白天出生 命里财运和心情怎么样",
+          "月亮的九分盘位置对我的财富有什么影响"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "In the case of a day birth, if Chandra, placed in its own Navāńś, or in a friendly Navāńś, receives a Drishti from Guru, one will be endowed with wealth and happiness",
+            "白天出生 月亮本九分盘 木星相照 财富快乐"
+          ],
+          "counter_queries": [
+            "In a contrary situation, the Drishti from Guru, or from Shukra on Chandra will make one go with little wealth, or even without that",
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak"
+          ],
+          "boundary_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "This happens, when Lagn in the RashiKundali and the Navāńś Lagn are in the same Rāśi",
+            "九分盘（Navāńś D9）的主管与友星判定"
+          ],
+          "method_queries": [
+            "Should Guru be in a Kendr from Lagna, or from Chandra and be yuti with, or receiving a Drishti from benefic, avoiding at the same time debilitation, combustion and inimical Rāśi, Gaj Kesari Yog is caused",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch37-v2-4-day-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "In the case of a day birth"
+            },
+            {
+              "step_id": "ch37-v2-4-day-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Chandra, placed in its own Navāńś"
+            },
+            {
+              "step_id": "ch37-v2-4-day-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in a friendly Navāńś"
+            },
+            {
+              "step_id": "ch37-v2-4-day-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "receives a Drishti from Guru"
+            },
+            {
+              "step_id": "ch37-v2-4-day-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "one will be endowed with wealth and happiness"
+            },
+            {
+              "step_id": "ch37-v2-4-day-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "In the case of a day birth one will be endowed with wealth and happiness"
+            },
+            {
+              "step_id": "ch37-v2-4-day-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Chandra, placed in its own Navāńś one will be endowed with wealth and happiness"
+            },
+            {
+              "step_id": "ch37-v2-4-day-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in a friendly Navāńś one will be endowed with wealth and happiness"
+            },
+            {
+              "step_id": "ch37-v2-4-day-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "receives a Drishti from Guru one will be endowed with wealth and happiness"
+            },
+            {
+              "step_id": "ch37-v2-4-day-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "moon, placed in its own Navāńś"
+            },
+            {
+              "step_id": "ch37-v2-4-day-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "receives a Drishti from jupiter"
+            },
+            {
+              "step_id": "ch37-v2-4-day-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "moon, placed in its own Navāńś one will be endowed with wealth and happiness"
+            },
+            {
+              "step_id": "ch37-v2-4-day-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "receives a Drishti from jupiter one will be endowed with wealth and happiness"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少昼夜出生事实时停止。",
+          "缺少月亮受木星相照的事实时停止。",
+          "月亮的九分盘星座归属两项事实全缺时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch37-v2-4-day-birth-chandra-navamsa.step-001",
+        "action": "先确认是否白天出生，再核对月亮（Chandra）的九分盘星座归属与木星（Guru）的相照，判定财富与快乐的断语。",
+        "applicability_scope": "仅限白天出生的本命盘；原文没有时间限定。",
+        "minimum_supported_claim": "白天出生者，若月亮（Chandra）落在自己主管的九分盘（Navāńś）星座，或落在友星的九分盘（Navāńś）星座，并受木星（Guru）相照，则会有财富与快乐。",
+        "produced_fact_keys": [
+          "白天生的月亮九分盘财富快乐判定"
+        ],
+        "required_fact_keys": [
+          "本盘是否为白天出生",
+          "月亮（Chandra）是否被木星（Guru）相照"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘是否为白天出生"
+                },
+                {
+                  "fact_key": "月亮（Chandra）是否被木星（Guru）相照"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "月亮（Chandra）在九分盘（Navāńś D9）中是否落自己主管的星座"
+                },
+                {
+                  "fact_key": "月亮（Chandra）在九分盘（Navāńś D9）中是否落友星主管的星座"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘是否为白天出生"
+                },
+                {
+                  "fact_key": "月亮（Chandra）是否被木星（Guru）相照"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "月亮（Chandra）在九分盘（Navāńś D9）中是否落自己主管的星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "月亮（Chandra）在九分盘（Navāńś D9）中是否落自己主管的星座"
+            },
+            "selection_group": "ch37-v2-4-day-birth-chandra-navamsa.step-001:chandra-navamsa",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：月亮（Chandra）在九分盘（Navāńś D9）中是否落自己主管的星座。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘是否为白天出生"
+                },
+                {
+                  "fact_key": "月亮（Chandra）是否被木星（Guru）相照"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "月亮（Chandra）在九分盘（Navāńś D9）中是否落友星主管的星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "月亮（Chandra）在九分盘（Navāńś D9）中是否落友星主管的星座"
+            },
+            "selection_group": "ch37-v2-4-day-birth-chandra-navamsa.step-001:chandra-navamsa",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：月亮（Chandra）在九分盘（Navāńś D9）中是否落友星主管的星座。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "In the case of a day birth",
+              "claim": "白天出生"
+            },
+            {
+              "quote": "Chandra, placed in its own Navāńś",
+              "claim": "月亮（Chandra）落在自己主管的九分盘（Navāńś）星座"
+            },
+            {
+              "quote": "in a friendly Navāńś",
+              "claim": "友星的九分盘（Navāńś）星座"
+            },
+            {
+              "quote": "receives a Drishti from Guru",
+              "claim": "受木星（Guru）相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "one will be endowed with wealth and happiness",
+              "claim": "会有财富与快乐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v2-4",
+            "quote": "In the case of a day birth, if Chandra, placed in its own Navāńś, or in a friendly Navāńś, receives a Drishti from Guru, one will be endowed with wealth and happiness.",
+            "pdf_pages": [
+              81
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘是否为白天出生、月亮（Chandra）是否被木星（Guru）相照。",
+        "stop_fact_keys": [
+          "本盘是否为白天出生",
+          "月亮（Chandra）是否被木星（Guru）相照"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财富数额、来源或得财时间。",
+          "原文本句只对白天出生立说，不得把它直接用于夜间出生。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "74aac72b28fc3327b7aae31b1c25cd6827e96716a3fca0baba2b40acee8e1f10"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch37-v2-4-night-birth-chandra-navamsa.step-001",
+      "method": {
+        "method": "ch37-v2-4-night-birth-chandra-navamsa",
+        "title": "夜间生：月亮居本九分盘或友星九分盘并受金星相照，同样得财富与快乐",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我晚上出生 命里财运和心情怎么样",
+          "夜生人看月亮该配哪颗行星"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "One born at night time will enjoy similar effects, if Chandra is in its own Navāńś, or in a friendly Navāńś, receiving a Drishti from Shukr",
+            "夜间出生 月亮本九分盘 金星相照 财富快乐"
+          ],
+          "counter_queries": [
+            "In a contrary situation, the Drishti from Guru, or from Shukra on Chandra will make one go with little wealth, or even without that",
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak"
+          ],
+          "boundary_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "This happens, when Lagn in the RashiKundali and the Navāńś Lagn are in the same Rāśi",
+            "九分盘（Navāńś D9）的主管与友星判定"
+          ],
+          "method_queries": [
+            "Should Guru be in a Kendr from Lagna, or from Chandra and be yuti with, or receiving a Drishti from benefic, avoiding at the same time debilitation, combustion and inimical Rāśi, Gaj Kesari Yog is caused",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch37-v2-4-night-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born at night time"
+            },
+            {
+              "step_id": "ch37-v2-4-night-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Chandra is in its own Navāńś"
+            },
+            {
+              "step_id": "ch37-v2-4-night-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "in a friendly Navāńś"
+            },
+            {
+              "step_id": "ch37-v2-4-night-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "receiving a Drishti from Shukr"
+            },
+            {
+              "step_id": "ch37-v2-4-night-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will enjoy similar effects"
+            },
+            {
+              "step_id": "ch37-v2-4-night-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "one will be endowed with wealth and happiness"
+            },
+            {
+              "step_id": "ch37-v2-4-night-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born at night time will enjoy similar effects"
+            },
+            {
+              "step_id": "ch37-v2-4-night-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Chandra is in its own Navāńś will enjoy similar effects"
+            },
+            {
+              "step_id": "ch37-v2-4-night-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "in a friendly Navāńś will enjoy similar effects"
+            },
+            {
+              "step_id": "ch37-v2-4-night-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "receiving a Drishti from Shukr will enjoy similar effects"
+            },
+            {
+              "step_id": "ch37-v2-4-night-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "moon is in its own Navāńś"
+            },
+            {
+              "step_id": "ch37-v2-4-night-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "receiving a Drishti from venus"
+            },
+            {
+              "step_id": "ch37-v2-4-night-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "moon is in its own Navāńś will enjoy similar effects"
+            },
+            {
+              "step_id": "ch37-v2-4-night-birth-chandra-navamsa.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "receiving a Drishti from venus will enjoy similar effects"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少昼夜出生事实时停止。",
+          "缺少月亮受金星相照的事实时停止。",
+          "月亮的九分盘星座归属两项事实全缺时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch37-v2-4-night-birth-chandra-navamsa.step-001",
+        "action": "先确认是否夜间出生，再核对月亮（Chandra）的九分盘星座归属与金星（Shukr）的相照，判定是否得到与白天条同样的效果。",
+        "applicability_scope": "仅限夜间出生的本命盘；原文的 similar effects 指同偈白天条的效果，本步以同偈原文的 wealth and happiness 一句为准；原文没有时间限定。",
+        "minimum_supported_claim": "夜间出生者，若月亮（Chandra）落在自己主管的九分盘（Navāńś）星座，或落在友星的九分盘（Navāńś）星座，并受金星（Shukr）相照，会享有同样的效果，即有财富与快乐。",
+        "produced_fact_keys": [
+          "夜间生的月亮九分盘财富快乐判定"
+        ],
+        "required_fact_keys": [
+          "本盘是否为夜间出生",
+          "月亮（Chandra）是否被金星（Shukra）相照"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘是否为夜间出生"
+                },
+                {
+                  "fact_key": "月亮（Chandra）是否被金星（Shukra）相照"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "月亮（Chandra）在九分盘（Navāńś D9）中是否落自己主管的星座"
+                },
+                {
+                  "fact_key": "月亮（Chandra）在九分盘（Navāńś D9）中是否落友星主管的星座"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘是否为夜间出生"
+                },
+                {
+                  "fact_key": "月亮（Chandra）是否被金星（Shukra）相照"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "月亮（Chandra）在九分盘（Navāńś D9）中是否落自己主管的星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "月亮（Chandra）在九分盘（Navāńś D9）中是否落自己主管的星座"
+            },
+            "selection_group": "ch37-v2-4-night-birth-chandra-navamsa.step-001:chandra-navamsa",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：月亮（Chandra）在九分盘（Navāńś D9）中是否落自己主管的星座。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘是否为夜间出生"
+                },
+                {
+                  "fact_key": "月亮（Chandra）是否被金星（Shukra）相照"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "月亮（Chandra）在九分盘（Navāńś D9）中是否落友星主管的星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "月亮（Chandra）在九分盘（Navāńś D9）中是否落友星主管的星座"
+            },
+            "selection_group": "ch37-v2-4-night-birth-chandra-navamsa.step-001:chandra-navamsa",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：月亮（Chandra）在九分盘（Navāńś D9）中是否落友星主管的星座。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "One born at night time",
+              "claim": "夜间出生者"
+            },
+            {
+              "quote": "Chandra is in its own Navāńś",
+              "claim": "月亮（Chandra）落在自己主管的九分盘（Navāńś）星座"
+            },
+            {
+              "quote": "in a friendly Navāńś",
+              "claim": "友星的九分盘（Navāńś）星座"
+            },
+            {
+              "quote": "receiving a Drishti from Shukr",
+              "claim": "受金星（Shukr）相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will enjoy similar effects",
+              "claim": "会享有同样的效果"
+            },
+            {
+              "quote": "one will be endowed with wealth and happiness",
+              "claim": "即有财富与快乐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v2-4",
+            "quote": "One born at night time will enjoy similar effects, if Chandra is in its own Navāńś, or in a friendly Navāńś, receiving a Drishti from Shukr.",
+            "pdf_pages": [
+              81
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v2-4",
+            "quote": "one will be endowed with wealth and happiness",
+            "pdf_pages": [
+              81
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘是否为夜间出生、月亮（Chandra）是否被金星（Shukra）相照。",
+        "stop_fact_keys": [
+          "本盘是否为夜间出生",
+          "月亮（Chandra）是否被金星（Shukra）相照"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财富数额、来源或得财时间。",
+          "原文本句只对夜间出生立说，不得把它直接用于白天出生。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "8aeebbc58080a1bc20ae6b16c3fa6b5985df7336c18b3922dd754f825c7963d4"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch37-v2-4-contrary-situation.step-001",
+      "method": {
+        "method": "ch37-v2-4-contrary-situation",
+        "title": "相反情形下木星或金星相照月亮：财富很少甚至没有",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "木星或金星照月亮就一定好吗",
+          "为什么我盘里有吉星照月亮却没钱"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "In a contrary situation, the Drishti from Guru, or from Shukra on Chandra will make one go with little wealth, or even without that",
+            "相反情形 木星金星照月亮 财富很少"
+          ],
+          "counter_queries": [
+            "In the case of a day birth, if Chandra, placed in its own Navāńś, or in a friendly Navāńś, receives a Drishti from Guru, one will be endowed with wealth and happiness",
+            "One born at night time will enjoy similar effects, if Chandra is in its own Navāńś, or in a friendly Navāńś, receiving a Drishti from Shukr"
+          ],
+          "boundary_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas",
+            "原文未界定相反情形 停判"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch37-v2-4-contrary-situation.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "In a contrary situation"
+            },
+            {
+              "step_id": "ch37-v2-4-contrary-situation.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the Drishti from Guru"
+            },
+            {
+              "step_id": "ch37-v2-4-contrary-situation.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "from Shukra on Chandra"
+            },
+            {
+              "step_id": "ch37-v2-4-contrary-situation.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will make one go with little wealth, or even without that"
+            },
+            {
+              "step_id": "ch37-v2-4-contrary-situation.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "In a contrary situation will make one go with little wealth, or even without that"
+            },
+            {
+              "step_id": "ch37-v2-4-contrary-situation.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the Drishti from Guru will make one go with little wealth, or even without that"
+            },
+            {
+              "step_id": "ch37-v2-4-contrary-situation.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "from Shukra on Chandra will make one go with little wealth, or even without that"
+            },
+            {
+              "step_id": "ch37-v2-4-contrary-situation.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "the Drishti from jupiter"
+            },
+            {
+              "step_id": "ch37-v2-4-contrary-situation.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "from venus on moon"
+            },
+            {
+              "step_id": "ch37-v2-4-contrary-situation.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "the Drishti from jupiter will make one go with little wealth, or even without that"
+            },
+            {
+              "step_id": "ch37-v2-4-contrary-situation.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "from venus on moon will make one go with little wealth, or even without that"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "原文未界定 In a contrary situation 的所指，该情形未确定即停判。",
+          "缺少月亮受木星或金星相照的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch37-v2-4-contrary-situation.step-001",
+        "action": "先确认本盘是否属于原文所说的相反情形（In a contrary situation），再核对木星（Guru）或金星（Shukra）对月亮（Chandra）的相照，读取财富断语。",
+        "applicability_scope": "原文只写 In a contrary situation，全句未界定什么算相反情形；该情形未确定即停判。",
+        "minimum_supported_claim": "在原文所说的相反情形（In a contrary situation）下，木星（Guru）或金星（Shukra）相照月亮（Chandra），会使人只有很少财富，甚至没有财富。",
+        "produced_fact_keys": [
+          "相反情形下的月亮受照财富断语"
+        ],
+        "required_fact_keys": [
+          "本盘是否属于原文所说的 In a contrary situation（原文未界定该情形）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘是否属于原文所说的 In a contrary situation（原文未界定该情形）"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "月亮（Chandra）是否被木星（Guru）相照"
+                },
+                {
+                  "fact_key": "月亮（Chandra）是否被金星（Shukra）相照"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘是否属于原文所说的 In a contrary situation（原文未界定该情形）"
+            },
+            "required_fact_keys": [
+              "月亮（Chandra）是否被木星（Guru）相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "月亮（Chandra）是否被木星（Guru）相照"
+            },
+            "selection_group": "ch37-v2-4-contrary-situation.step-001:drishti-source",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：月亮（Chandra）是否被木星（Guru）相照。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘是否属于原文所说的 In a contrary situation（原文未界定该情形）"
+            },
+            "required_fact_keys": [
+              "月亮（Chandra）是否被金星（Shukra）相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "月亮（Chandra）是否被金星（Shukra）相照"
+            },
+            "selection_group": "ch37-v2-4-contrary-situation.step-001:drishti-source",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：月亮（Chandra）是否被金星（Shukra）相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "In a contrary situation",
+              "claim": "原文所说的相反情形（In a contrary situation）"
+            },
+            {
+              "quote": "the Drishti from Guru",
+              "claim": "木星（Guru）"
+            },
+            {
+              "quote": "from Shukra on Chandra",
+              "claim": "金星（Shukra）相照月亮（Chandra）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will make one go with little wealth, or even without that",
+              "claim": "会使人只有很少财富，甚至没有财富"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v2-4",
+            "quote": "In a contrary situation, the Drishti from Guru, or from Shukra on Chandra will make one go with little wealth, or even without that.",
+            "pdf_pages": [
+              81
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘是否属于原文所说的 In a contrary situation（原文未界定该情形）。",
+        "stop_fact_keys": [
+          "本盘是否属于原文所说的 In a contrary situation（原文未界定该情形）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得替原文界定 In a contrary situation 的所指，尤其不得把它接成前两句条件的逻辑否定。",
+          "不得据此推断具体财富数额或贫富发生的时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "4f63bf8adcfc2228bd802d112ae39aea6b8d4b0328c820251d4198ec8898d455"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch37-v5-adhi-yog-from-chandra.step-001",
+      "method": {
+        "method": "ch37-v5-adhi-yog-from-chandra",
+        "title": "月亮起算的 Adhi Yog：8、6、7 宫皆吉星，按力量得王、大臣或军队统帅",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我有没有当官掌权的组合",
+          "我命里的贵格是什么水平"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If benefics occupy the 8<sup>th</sup> , 6<sup>th</sup> and 7<sup>th</sup> , counted from Chandra, Adhi Yog obtains",
+            "月亮起算 8 6 7 宫吉星 Adhi Yog 国王大臣军队统帅"
+          ],
+          "counter_queries": [
+            "One born in Kema Drum Yog will be very much reproached, will be bereft of intelligence, learning, reduced to penury and perils",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+            "Budh, however, is a malefic, if he joins a malefic"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch37-v5-adhi-yog-from-chandra.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "benefics occupy the 8th , 6th and 7th , counted from Chandra"
+            },
+            {
+              "step_id": "ch37-v5-adhi-yog-from-chandra.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Adhi Yog obtains"
+            },
+            {
+              "step_id": "ch37-v5-adhi-yog-from-chandra.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "benefics occupy the 8th , 6th and 7th , counted from Chandra Adhi Yog obtains"
+            },
+            {
+              "step_id": "ch37-v5-adhi-yog-from-chandra.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "benefics occupy the 8th , 6th and 7th , counted from moon"
+            },
+            {
+              "step_id": "ch37-v5-adhi-yog-from-chandra.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "benefics occupy the 8th , 6th and 7th , counted from moon Adhi Yog obtains"
+            },
+            {
+              "step_id": "ch37-v5-adhi-yog-from-chandra.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "According to the strength of the participating Grahas"
+            },
+            {
+              "step_id": "ch37-v5-adhi-yog-from-chandra.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native concerned will be either a king, or a minister, or an Army chief"
+            },
+            {
+              "step_id": "ch37-v5-adhi-yog-from-chandra.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "According to the strength of the participating Grahas the native concerned will be either a king, or a minister, or an Army chief"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘吉星名册事实时停止。",
+          "从月亮起算的第8、6、7 宫占据事实缺任一项时停止。",
+          "原文未给出参与行星力量的判准与身份对应关系，力量未确定即停判于身份档次。"
+        ]
+      },
+      "step": {
+        "step_id": "ch37-v5-adhi-yog-from-chandra.step-001",
+        "action": "先取本盘吉星名册，再核对从月亮（Chandra）起算的第8、第6、第7宫是否都被吉星占据，判定 Adhi Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Adhi Yog 的成立判定；原文本句未给出吉星的判准，也没有时间限定。",
+        "minimum_supported_claim": "吉星占据从月亮（Chandra）起算的第8、第6与第7宫时，Adhi Yog 成立。",
+        "produced_fact_keys": [
+          "Adhi Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘中哪些行星被判为吉星",
+          "从月亮（Chandra）起算的第8宫是否被吉星占据",
+          "从月亮（Chandra）起算的第6宫是否被吉星占据",
+          "从月亮（Chandra）起算的第7宫是否被吉星占据"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            {
+              "fact_key": "从月亮（Chandra）起算的第8宫是否被吉星占据"
+            },
+            {
+              "fact_key": "从月亮（Chandra）起算的第6宫是否被吉星占据"
+            },
+            {
+              "fact_key": "从月亮（Chandra）起算的第7宫是否被吉星占据"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "benefics occupy the 8<sup>th</sup> , 6<sup>th</sup> and 7<sup>th</sup> , counted from Chandra",
+              "claim": "吉星占据从月亮（Chandra）起算的第8、第6与第7宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Adhi Yog obtains",
+              "claim": "Adhi Yog 成立"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v5",
+            "quote": "If benefics occupy the 8<sup>th</sup> , 6<sup>th</sup> and 7<sup>th</sup> , counted from Chandra, Adhi Yog obtains.",
+            "pdf_pages": [
+              81
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中哪些行星被判为吉星、从月亮（Chandra）起算的第8宫是否被吉星占据、从月亮（Chandra）起算的第6宫是否被吉星占据、从月亮（Chandra）起算的第7宫是否被吉星占据。",
+        "stop_fact_keys": [
+          "本盘中哪些行星被判为吉星",
+          "从月亮（Chandra）起算的第8宫是否被吉星占据",
+          "从月亮（Chandra）起算的第6宫是否被吉星占据",
+          "从月亮（Chandra）起算的第7宫是否被吉星占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文本句只写从月亮起算的第8、6、7 宫，不得改成从上升起算，也不得增减宫位。",
+          "不得据此推断官职级别、任职时间或收入。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "c0592f9af1889892d8fef23070c532a050b4f086de5ab262395781267c6f49fc"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch37-v5-adhi-yog-from-chandra.step-002",
+      "method": {
+        "method": "ch37-v5-adhi-yog-from-chandra",
+        "title": "月亮起算的 Adhi Yog：8、6、7 宫皆吉星，按力量得王、大臣或军队统帅",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我有没有当官掌权的组合",
+          "我命里的贵格是什么水平"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If benefics occupy the 8<sup>th</sup> , 6<sup>th</sup> and 7<sup>th</sup> , counted from Chandra, Adhi Yog obtains",
+            "月亮起算 8 6 7 宫吉星 Adhi Yog 国王大臣军队统帅"
+          ],
+          "counter_queries": [
+            "One born in Kema Drum Yog will be very much reproached, will be bereft of intelligence, learning, reduced to penury and perils",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+            "Budh, however, is a malefic, if he joins a malefic"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch37-v5-adhi-yog-from-chandra.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "benefics occupy the 8th , 6th and 7th , counted from Chandra"
+            },
+            {
+              "step_id": "ch37-v5-adhi-yog-from-chandra.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Adhi Yog obtains"
+            },
+            {
+              "step_id": "ch37-v5-adhi-yog-from-chandra.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "benefics occupy the 8th , 6th and 7th , counted from Chandra Adhi Yog obtains"
+            },
+            {
+              "step_id": "ch37-v5-adhi-yog-from-chandra.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "benefics occupy the 8th , 6th and 7th , counted from moon"
+            },
+            {
+              "step_id": "ch37-v5-adhi-yog-from-chandra.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "benefics occupy the 8th , 6th and 7th , counted from moon Adhi Yog obtains"
+            },
+            {
+              "step_id": "ch37-v5-adhi-yog-from-chandra.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "According to the strength of the participating Grahas"
+            },
+            {
+              "step_id": "ch37-v5-adhi-yog-from-chandra.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native concerned will be either a king, or a minister, or an Army chief"
+            },
+            {
+              "step_id": "ch37-v5-adhi-yog-from-chandra.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "According to the strength of the participating Grahas the native concerned will be either a king, or a minister, or an Army chief"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘吉星名册事实时停止。",
+          "从月亮起算的第8、6、7 宫占据事实缺任一项时停止。",
+          "原文未给出参与行星力量的判准与身份对应关系，力量未确定即停判于身份档次。"
+        ]
+      },
+      "step": {
+        "step_id": "ch37-v5-adhi-yog-from-chandra.step-002",
+        "action": "在 Adhi Yog 成立时，按参与行星的力量读取身份断语。",
+        "applicability_scope": "仅限已判定 Adhi Yog 成立的本命盘；原文只说按参与行星的力量分为三种身份，既未给出力量的判准，也未说明哪一档力量对应哪一种身份。",
+        "minimum_supported_claim": "Adhi Yog 成立时，按参与行星的力量，命主会成为国王、大臣或军队统帅之一。",
+        "produced_fact_keys": [
+          "Adhi Yog 身份档次断语"
+        ],
+        "required_fact_keys": [
+          "Adhi Yog 成立判定",
+          "参与 Adhi Yog 的行星力量如何"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "Adhi Yog 成立判定"
+            },
+            {
+              "fact_key": "参与 Adhi Yog 的行星力量如何"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "According to the strength of the participating Grahas",
+              "claim": "按参与行星的力量"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native concerned will be either a king, or a minister, or an Army chief",
+              "claim": "命主会成为国王、大臣或军队统帅之一"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v5",
+            "quote": "According to the strength of the participating Grahas, the native concerned will be either a king, or a minister, or an Army chief.",
+            "pdf_pages": [
+              81
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Adhi Yog 成立判定、参与 Adhi Yog 的行星力量如何。",
+        "stop_fact_keys": [
+          "Adhi Yog 成立判定",
+          "参与 Adhi Yog 的行星力量如何"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文未给出力量与三种身份的对应关系，不得自行指定哪一档力量对应哪一种身份。",
+          "不得把国王、大臣、军队统帅换算成现代具体职务。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "1828fa14ab493ba5b929094d0b0adff0e9203fd6452a52f4e83581f28c3e7a2e"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch37-v6-dhan-yog-three-benefics.step-001",
+      "method": {
+        "method": "ch37-v6-dhan-yog-three-benefics",
+        "title": "Dhan Yog：三颗吉星全在月亮起算的增长宫，非常富有",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子会不会很有钱",
+          "我盘里有没有发财的组合"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should all the (three) benefics be Upachaya, counted from Chandra, one will be very affluent",
+            "三吉星在月亮起算的增长宫 非常富有"
+          ],
+          "counter_queries": [
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak",
+            "One born in Kema Drum Yog will be very much reproached, will be bereft of intelligence, learning, reduced to penury and perils"
+          ],
+          "boundary_queries": [
+            "Sahaj, Ari, Karm and Labh Bhava are Upachaya Bhavas",
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Budh, however, is a malefic, if he joins a malefic"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch37-v6-dhan-yog-three-benefics.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "all the (three) benefics be Upachaya, counted from Chandra"
+            },
+            {
+              "step_id": "ch37-v6-dhan-yog-three-benefics.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "one will be very affluent"
+            },
+            {
+              "step_id": "ch37-v6-dhan-yog-three-benefics.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "all the (three) benefics be Upachaya, counted from Chandra one will be very affluent"
+            },
+            {
+              "step_id": "ch37-v6-dhan-yog-three-benefics.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "all the (three) benefics be Upachaya, counted from moon"
+            },
+            {
+              "step_id": "ch37-v6-dhan-yog-three-benefics.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "all the (three) benefics be Upachaya, counted from moon one will be very affluent"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘吉星名册事实时停止。",
+          "缺少增长宫内吉星颗数事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch37-v6-dhan-yog-three-benefics.step-001",
+        "action": "取本盘吉星名册，数从月亮（Chandra）起算的增长宫（Upachaya）内的吉星颗数，核对是否三颗全在其中。",
+        "applicability_scope": "仅限本命盘财富主题；原文本句未给出吉星的判准，也没有时间限定。",
+        "minimum_supported_claim": "全部三颗吉星都落在从月亮（Chandra）起算的增长宫（Upachaya）时，命主非常富有。",
+        "produced_fact_keys": [
+          "三吉星在增长宫的富有判定"
+        ],
+        "required_fact_keys": [
+          "从月亮（Chandra）起算的增长宫（Upachaya）内有几颗吉星",
+          "本盘中哪些行星被判为吉星",
+          "从月亮（Chandra）起算的增长宫（Upachaya）内是否有全部三颗吉星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "从月亮（Chandra）起算的增长宫（Upachaya）内有几颗吉星"
+            },
+            {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            {
+              "fact_key": "从月亮（Chandra）起算的增长宫（Upachaya）内是否有全部三颗吉星"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "all the (three) benefics be Upachaya, counted from Chandra",
+              "claim": "全部三颗吉星都落在从月亮（Chandra）起算的增长宫（Upachaya）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "one will be very affluent",
+              "claim": "命主非常富有"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v6",
+            "quote": "Should all the (three) benefics be Upachaya, counted from Chandra, one will be very affluent.",
+            "pdf_pages": [
+              81
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：从月亮（Chandra）起算的增长宫（Upachaya）内有几颗吉星、本盘中哪些行星被判为吉星、从月亮（Chandra）起算的增长宫（Upachaya）内是否有全部三颗吉星。",
+        "stop_fact_keys": [
+          "从月亮（Chandra）起算的增长宫（Upachaya）内有几颗吉星",
+          "本盘中哪些行星被判为吉星",
+          "从月亮（Chandra）起算的增长宫（Upachaya）内是否有全部三颗吉星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财富数额、来源或发财时间。",
+          "原文本句只写三颗吉星全在的情形，不得把它与两颗、一颗两档混用。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b3ccdf93630ab3c5aaa6e92f58eea0dd3d8e456329e45dd302ac374710bb7daa"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch37-v6-dhan-yog-two-benefics.step-001",
+      "method": {
+        "method": "ch37-v6-dhan-yog-two-benefics",
+        "title": "Dhan Yog：两颗吉星在月亮起算的 3、6、10、11 宫，财富中等",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的财富算中等吗",
+          "两颗吉星落增长宫是什么水平"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "With two benefics, placed in the 3<sup>rd</sup> , the 6<sup>th</sup> , the 10<sup>th</sup> and the 11<sup>th</sup> , one will have medium effects in regard to wealth",
+            "两颗吉星在 3 6 10 11 宫 财富中等"
+          ],
+          "counter_queries": [
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak",
+            "One born in Kema Drum Yog will be very much reproached, will be bereft of intelligence, learning, reduced to penury and perils"
+          ],
+          "boundary_queries": [
+            "Sahaj, Ari, Karm and Labh Bhava are Upachaya Bhavas",
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Budh, however, is a malefic, if he joins a malefic"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch37-v6-dhan-yog-two-benefics.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "all the (three) benefics be Upachaya, counted from Chandra"
+            },
+            {
+              "step_id": "ch37-v6-dhan-yog-two-benefics.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "two benefics, placed in the 3rd , the 6th , the 10th and the 11th"
+            },
+            {
+              "step_id": "ch37-v6-dhan-yog-two-benefics.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "one will have medium effects in regard to wealth"
+            },
+            {
+              "step_id": "ch37-v6-dhan-yog-two-benefics.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "all the (three) benefics be Upachaya, counted from Chandra one will have medium effects in regard to wealth"
+            },
+            {
+              "step_id": "ch37-v6-dhan-yog-two-benefics.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "two benefics, placed in the 3rd , the 6th , the 10th and the 11th one will have medium effects in regard to wealth"
+            },
+            {
+              "step_id": "ch37-v6-dhan-yog-two-benefics.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "all the (three) benefics be Upachaya, counted from moon"
+            },
+            {
+              "step_id": "ch37-v6-dhan-yog-two-benefics.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "all the (three) benefics be Upachaya, counted from moon one will have medium effects in regard to wealth"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘吉星名册事实时停止。",
+          "缺少增长宫内吉星颗数事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch37-v6-dhan-yog-two-benefics.step-001",
+        "action": "取本盘吉星名册，数从月亮（Chandra）起算的第3、6、10、11 宫内的吉星颗数，核对是否为两颗。",
+        "applicability_scope": "仅限本命盘财富主题；原文本句未重复起算点，其宫位承同偈前句的 counted from Chandra；原文没有时间限定。",
+        "minimum_supported_claim": "承同偈前句「全部三颗吉星落在从月亮（Chandra）起算的增长宫（Upachaya）」的起算点，若其中的第3、第6、第10与第11宫内有两颗吉星，则命主在财富上得中等效果。",
+        "produced_fact_keys": [
+          "两吉星在增长宫的中等财富判定"
+        ],
+        "required_fact_keys": [
+          "从月亮（Chandra）起算的增长宫（Upachaya）内有几颗吉星",
+          "本盘中哪些行星被判为吉星",
+          "从月亮（Chandra）起算的第3、6、10、11宫内是否有两颗吉星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "从月亮（Chandra）起算的增长宫（Upachaya）内有几颗吉星"
+            },
+            {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            {
+              "fact_key": "从月亮（Chandra）起算的第3、6、10、11宫内是否有两颗吉星"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "all the (three) benefics be Upachaya, counted from Chandra",
+              "claim": "全部三颗吉星落在从月亮（Chandra）起算的增长宫（Upachaya）"
+            },
+            {
+              "quote": "two benefics, placed in the 3<sup>rd</sup> , the 6<sup>th</sup> , the 10<sup>th</sup> and the 11<sup>th</sup>",
+              "claim": "第3、第6、第10与第11宫内有两颗吉星"
+            }
+          ],
+          "results": [
+            {
+              "quote": "one will have medium effects in regard to wealth",
+              "claim": "命主在财富上得中等效果"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v6",
+            "quote": "Should all the (three) benefics be Upachaya, counted from Chandra, one will be very affluent. With two benefics, placed in the 3<sup>rd</sup> , the 6<sup>th</sup> , the 10<sup>th</sup> and the 11<sup>th</sup> , one will have medium effects in regard to wealth.",
+            "pdf_pages": [
+              81
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：从月亮（Chandra）起算的增长宫（Upachaya）内有几颗吉星、本盘中哪些行星被判为吉星、从月亮（Chandra）起算的第3、6、10、11宫内是否有两颗吉星。",
+        "stop_fact_keys": [
+          "从月亮（Chandra）起算的增长宫（Upachaya）内有几颗吉星",
+          "本盘中哪些行星被判为吉星",
+          "从月亮（Chandra）起算的第3、6、10、11宫内是否有两颗吉星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财富数额或发财时间。",
+          "原文本句只写两颗吉星一档，不得把它与三颗、一颗两档混用。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "8ec1480d241a23e379a8997db752cb83f021485946e62950ed7185ace75f8b74"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch37-v6-dhan-yog-single-benefic.step-001",
+      "method": {
+        "method": "ch37-v6-dhan-yog-single-benefic",
+        "title": "Dhan Yog：只有一颗吉星在月亮起算的 3、6、10、11 宫，财富微不足道",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我为什么攒不下钱",
+          "只有一颗吉星落增长宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If a single benefic is there, the wealth will be negligible",
+            "只有一颗吉星在增长宫 财富微不足道"
+          ],
+          "counter_queries": [
+            "Should all the (three) benefics be Upachaya, counted from Chandra, one will be very affluent"
+          ],
+          "boundary_queries": [
+            "Sahaj, Ari, Karm and Labh Bhava are Upachaya Bhavas",
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Budh, however, is a malefic, if he joins a malefic"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch37-v6-dhan-yog-single-benefic.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "two benefics, placed in the 3rd , the 6th , the 10th and the 11th"
+            },
+            {
+              "step_id": "ch37-v6-dhan-yog-single-benefic.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If a single benefic is there"
+            },
+            {
+              "step_id": "ch37-v6-dhan-yog-single-benefic.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the wealth will be negligible"
+            },
+            {
+              "step_id": "ch37-v6-dhan-yog-single-benefic.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "two benefics, placed in the 3rd , the 6th , the 10th and the 11th the wealth will be negligible"
+            },
+            {
+              "step_id": "ch37-v6-dhan-yog-single-benefic.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If a single benefic is there the wealth will be negligible"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘吉星名册事实时停止。",
+          "缺少增长宫内吉星颗数事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch37-v6-dhan-yog-single-benefic.step-001",
+        "action": "取本盘吉星名册，数从月亮（Chandra）起算的第3、6、10、11 宫内的吉星颗数，核对是否只有一颗。",
+        "applicability_scope": "仅限本命盘财富主题；原文本句的 there 承同偈前句所列宫位；原文没有时间限定。",
+        "minimum_supported_claim": "在同偈所说的第3、第6、第10与第11宫内只有一颗吉星时，财富微不足道。",
+        "produced_fact_keys": [
+          "一颗吉星在增长宫的微薄财富判定"
+        ],
+        "required_fact_keys": [
+          "从月亮（Chandra）起算的增长宫（Upachaya）内有几颗吉星",
+          "本盘中哪些行星被判为吉星",
+          "从月亮（Chandra）起算的第3、6、10、11宫内是否只有一颗吉星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "从月亮（Chandra）起算的增长宫（Upachaya）内有几颗吉星"
+            },
+            {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            {
+              "fact_key": "从月亮（Chandra）起算的第3、6、10、11宫内是否只有一颗吉星"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "two benefics, placed in the 3<sup>rd</sup> , the 6<sup>th</sup> , the 10<sup>th</sup> and the 11<sup>th</sup>",
+              "claim": "第3、第6、第10与第11宫"
+            },
+            {
+              "quote": "If a single benefic is there",
+              "claim": "只有一颗吉星"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the wealth will be negligible",
+              "claim": "财富微不足道"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v6",
+            "quote": "With two benefics, placed in the 3<sup>rd</sup> , the 6<sup>th</sup> , the 10<sup>th</sup> and the 11<sup>th</sup> , one will have medium effects in regard to wealth. If a single benefic is there, the wealth will be negligible.",
+            "pdf_pages": [
+              81
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：从月亮（Chandra）起算的增长宫（Upachaya）内有几颗吉星、本盘中哪些行星被判为吉星、从月亮（Chandra）起算的第3、6、10、11宫内是否只有一颗吉星。",
+        "stop_fact_keys": [
+          "从月亮（Chandra）起算的增长宫（Upachaya）内有几颗吉星",
+          "本盘中哪些行星被判为吉星",
+          "从月亮（Chandra）起算的第3、6、10、11宫内是否只有一颗吉星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「财富微不足道」加重成贫穷、破产或负债。",
+          "原文本句只写一颗吉星一档，不得把它与三颗、两颗两档混用。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "964c6d5fca4fa81b8fe7d66e470afadd23f888dc64fc96927904c01e25b10216"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch37-v7-10-sunaph-yog.step-001",
+      "method": {
+        "method": "ch37-v7-10-sunaph-yog",
+        "title": "Sunaph Yog：太阳以外的行星落月亮起算第2宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我有没有靠自己挣出名堂的组合",
+          "月亮前一宫有行星说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If there is a Grah other than Surya, in the 2<sup>nd</sup> from Chandra, Sunaph Yog is formed",
+            "月亮起算第2宫有行星 Sunaph Yog 自赚财富"
+          ],
+          "counter_queries": [
+            "One born in Kema Drum Yog will be very much reproached, will be bereft of intelligence, learning, reduced to penury and perils",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "Should Guru be in a Kendr from Lagna, or from Chandra and be yuti with, or receiving a Drishti from benefic, avoiding at the same time debilitation, combustion and inimical Rāśi, Gaj Kesari Yog is caused"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch37-v7-10-sunaph-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If there is a Grah other than Surya, in the 2nd from Chandra"
+            },
+            {
+              "step_id": "ch37-v7-10-sunaph-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Sunaph Yog is formed"
+            },
+            {
+              "step_id": "ch37-v7-10-sunaph-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If there is a Grah other than Surya, in the 2nd from Chandra Sunaph Yog is formed"
+            },
+            {
+              "step_id": "ch37-v7-10-sunaph-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If there is a Grah other than sun, in the 2nd from moon"
+            },
+            {
+              "step_id": "ch37-v7-10-sunaph-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If there is a Grah other than sun, in the 2nd from moon Sunaph Yog is formed"
+            },
+            {
+              "step_id": "ch37-v7-10-sunaph-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One with Sunaph Yog"
+            },
+            {
+              "step_id": "ch37-v7-10-sunaph-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be a king, or equal to a king, endowed with intelligence, wealth, fame and self-earned wealth"
+            },
+            {
+              "step_id": "ch37-v7-10-sunaph-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One with Sunaph Yog will be a king, or equal to a king, endowed with intelligence, wealth, fame and self-earned wealth"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少月亮起算第2宫占据事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch37-v7-10-sunaph-yog.step-001",
+        "action": "核对除太阳（Surya）以外是否有行星落在从月亮（Chandra）起算的第2宫，判定 Sunaph Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Sunaph Yog 的成立判定；原文没有时间限定。",
+        "minimum_supported_claim": "除太阳（Surya）外有行星落在从月亮（Chandra）起算的第2宫时，Sunaph Yog 成立。",
+        "produced_fact_keys": [
+          "Sunaph Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "除太阳（Surya）外是否有行星落在从月亮（Chandra）起算的第2宫"
+        ],
+        "condition_logic": {
+          "fact_key": "除太阳（Surya）外是否有行星落在从月亮（Chandra）起算的第2宫"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If there is a Grah other than Surya, in the 2<sup>nd</sup> from Chandra",
+              "claim": "除太阳（Surya）外有行星落在从月亮（Chandra）起算的第2宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Sunaph Yog is formed",
+              "claim": "Sunaph Yog 成立"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v7-10",
+            "quote": "If there is a Grah other than Surya, in the 2<sup>nd</sup> from Chandra, Sunaph Yog is formed",
+            "pdf_pages": [
+              81
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：除太阳（Surya）外是否有行星落在从月亮（Chandra）起算的第2宫。",
+        "stop_fact_keys": [
+          "除太阳（Surya）外是否有行星落在从月亮（Chandra）起算的第2宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文只排除太阳，不得再排除别的行星，也不得要求该行星必须是吉星。",
+          "不得把起算点从月亮换成上升。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "2ae32b2a16297340ca6e56907cfa932bab7bec650f99239447baf2d552d59378"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch37-v7-10-sunaph-yog.step-002",
+      "method": {
+        "method": "ch37-v7-10-sunaph-yog",
+        "title": "Sunaph Yog：太阳以外的行星落月亮起算第2宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我有没有靠自己挣出名堂的组合",
+          "月亮前一宫有行星说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If there is a Grah other than Surya, in the 2<sup>nd</sup> from Chandra, Sunaph Yog is formed",
+            "月亮起算第2宫有行星 Sunaph Yog 自赚财富"
+          ],
+          "counter_queries": [
+            "One born in Kema Drum Yog will be very much reproached, will be bereft of intelligence, learning, reduced to penury and perils",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "Should Guru be in a Kendr from Lagna, or from Chandra and be yuti with, or receiving a Drishti from benefic, avoiding at the same time debilitation, combustion and inimical Rāśi, Gaj Kesari Yog is caused"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch37-v7-10-sunaph-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If there is a Grah other than Surya, in the 2nd from Chandra"
+            },
+            {
+              "step_id": "ch37-v7-10-sunaph-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Sunaph Yog is formed"
+            },
+            {
+              "step_id": "ch37-v7-10-sunaph-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If there is a Grah other than Surya, in the 2nd from Chandra Sunaph Yog is formed"
+            },
+            {
+              "step_id": "ch37-v7-10-sunaph-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If there is a Grah other than sun, in the 2nd from moon"
+            },
+            {
+              "step_id": "ch37-v7-10-sunaph-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If there is a Grah other than sun, in the 2nd from moon Sunaph Yog is formed"
+            },
+            {
+              "step_id": "ch37-v7-10-sunaph-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One with Sunaph Yog"
+            },
+            {
+              "step_id": "ch37-v7-10-sunaph-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be a king, or equal to a king, endowed with intelligence, wealth, fame and self-earned wealth"
+            },
+            {
+              "step_id": "ch37-v7-10-sunaph-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One with Sunaph Yog will be a king, or equal to a king, endowed with intelligence, wealth, fame and self-earned wealth"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少月亮起算第2宫占据事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch37-v7-10-sunaph-yog.step-002",
+        "action": "在 Sunaph Yog 成立时读取身份与财富断语。",
+        "applicability_scope": "仅限已判定 Sunaph Yog 成立的本命盘；原文未给时间限定。",
+        "minimum_supported_claim": "有 Sunaph Yog 者会成为国王，或与国王相当，并有智慧、财富、名声与自己挣来的财富。",
+        "produced_fact_keys": [
+          "Sunaph Yog 效果断语"
+        ],
+        "required_fact_keys": [
+          "Sunaph Yog 成立判定"
+        ],
+        "condition_logic": {
+          "fact_key": "Sunaph Yog 成立判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "One with Sunaph Yog",
+              "claim": "有 Sunaph Yog 者"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be a king, or equal to a king, endowed with intelligence, wealth, fame and self-earned wealth",
+              "claim": "会成为国王，或与国王相当，并有智慧、财富、名声与自己挣来的财富"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v7-10",
+            "quote": "One with Sunaph Yog will be a king, or equal to a king, endowed with intelligence, wealth, fame and self-earned wealth.",
+            "pdf_pages": [
+              81
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Sunaph Yog 成立判定。",
+        "stop_fact_keys": [
+          "Sunaph Yog 成立判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把国王换算成现代具体职务，也不得据此推断财富数额与发生时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "0eea4cba8d13d49d9b73b569af24a7589881153a4ba294eff0993f6245486b09"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch37-v7-10-anaph-yog.step-001",
+      "method": {
+        "method": "ch37-v7-10-anaph-yog",
+        "title": "Anaph Yog：太阳以外的行星落月亮起算第12宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我身体和名声会怎么样",
+          "月亮后一宫有行星说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "if in the 12<sup>th</sup> from Chandra, Anaph Yog is formed",
+            "月亮起算第12宫有行星 Anaph Yog 无疾病"
+          ],
+          "counter_queries": [
+            "One born in Kema Drum Yog will be very much reproached, will be bereft of intelligence, learning, reduced to penury and perils",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "Should Guru be in a Kendr from Lagna, or from Chandra and be yuti with, or receiving a Drishti from benefic, avoiding at the same time debilitation, combustion and inimical Rāśi, Gaj Kesari Yog is caused"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch37-v7-10-anaph-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If there is a Grah other than Surya"
+            },
+            {
+              "step_id": "ch37-v7-10-anaph-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if in the 12th from Chandra"
+            },
+            {
+              "step_id": "ch37-v7-10-anaph-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Anaph Yog is formed"
+            },
+            {
+              "step_id": "ch37-v7-10-anaph-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If there is a Grah other than Surya Anaph Yog is formed"
+            },
+            {
+              "step_id": "ch37-v7-10-anaph-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if in the 12th from Chandra Anaph Yog is formed"
+            },
+            {
+              "step_id": "ch37-v7-10-anaph-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If there is a Grah other than sun"
+            },
+            {
+              "step_id": "ch37-v7-10-anaph-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if in the 12th from moon"
+            },
+            {
+              "step_id": "ch37-v7-10-anaph-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If there is a Grah other than sun Anaph Yog is formed"
+            },
+            {
+              "step_id": "ch37-v7-10-anaph-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if in the 12th from moon Anaph Yog is formed"
+            },
+            {
+              "step_id": "ch37-v7-10-anaph-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Anaph Yog"
+            },
+            {
+              "step_id": "ch37-v7-10-anaph-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be a king, be free from diseases, virtuous, famous, charming and happy"
+            },
+            {
+              "step_id": "ch37-v7-10-anaph-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Anaph Yog will be a king, be free from diseases, virtuous, famous, charming and happy"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少月亮起算第12宫占据事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch37-v7-10-anaph-yog.step-001",
+        "action": "核对除太阳（Surya）以外是否有行星落在从月亮（Chandra）起算的第12宫，判定 Anaph Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Anaph Yog 的成立判定；原文此分句承同偈前句的 a Grah other than Surya；原文没有时间限定。",
+        "minimum_supported_claim": "除太阳（Surya）外有行星落在从月亮（Chandra）起算的第12宫时，Anaph Yog 成立。",
+        "produced_fact_keys": [
+          "Anaph Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "除太阳（Surya）外是否有行星落在从月亮（Chandra）起算的第12宫"
+        ],
+        "condition_logic": {
+          "fact_key": "除太阳（Surya）外是否有行星落在从月亮（Chandra）起算的第12宫"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If there is a Grah other than Surya",
+              "claim": "除太阳（Surya）外有行星"
+            },
+            {
+              "quote": "if in the 12<sup>th</sup> from Chandra",
+              "claim": "落在从月亮（Chandra）起算的第12宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Anaph Yog is formed",
+              "claim": "Anaph Yog 成立"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v7-10",
+            "quote": "If there is a Grah other than Surya",
+            "pdf_pages": [
+              81
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v7-10",
+            "quote": "if in the 12<sup>th</sup> from Chandra, Anaph Yog is formed",
+            "pdf_pages": [
+              81
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：除太阳（Surya）外是否有行星落在从月亮（Chandra）起算的第12宫。",
+        "stop_fact_keys": [
+          "除太阳（Surya）外是否有行星落在从月亮（Chandra）起算的第12宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文只排除太阳，不得再排除别的行星，也不得要求该行星必须是吉星。",
+          "不得把起算点从月亮换成上升。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b4365bd998c93fe118dc9967af2ee96c887d9caf76d863f2f71bc5f149316289"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch37-v7-10-anaph-yog.step-002",
+      "method": {
+        "method": "ch37-v7-10-anaph-yog",
+        "title": "Anaph Yog：太阳以外的行星落月亮起算第12宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我身体和名声会怎么样",
+          "月亮后一宫有行星说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "if in the 12<sup>th</sup> from Chandra, Anaph Yog is formed",
+            "月亮起算第12宫有行星 Anaph Yog 无疾病"
+          ],
+          "counter_queries": [
+            "One born in Kema Drum Yog will be very much reproached, will be bereft of intelligence, learning, reduced to penury and perils",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "Should Guru be in a Kendr from Lagna, or from Chandra and be yuti with, or receiving a Drishti from benefic, avoiding at the same time debilitation, combustion and inimical Rāśi, Gaj Kesari Yog is caused"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch37-v7-10-anaph-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If there is a Grah other than Surya"
+            },
+            {
+              "step_id": "ch37-v7-10-anaph-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if in the 12th from Chandra"
+            },
+            {
+              "step_id": "ch37-v7-10-anaph-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Anaph Yog is formed"
+            },
+            {
+              "step_id": "ch37-v7-10-anaph-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If there is a Grah other than Surya Anaph Yog is formed"
+            },
+            {
+              "step_id": "ch37-v7-10-anaph-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if in the 12th from Chandra Anaph Yog is formed"
+            },
+            {
+              "step_id": "ch37-v7-10-anaph-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If there is a Grah other than sun"
+            },
+            {
+              "step_id": "ch37-v7-10-anaph-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if in the 12th from moon"
+            },
+            {
+              "step_id": "ch37-v7-10-anaph-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If there is a Grah other than sun Anaph Yog is formed"
+            },
+            {
+              "step_id": "ch37-v7-10-anaph-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if in the 12th from moon Anaph Yog is formed"
+            },
+            {
+              "step_id": "ch37-v7-10-anaph-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Anaph Yog"
+            },
+            {
+              "step_id": "ch37-v7-10-anaph-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be a king, be free from diseases, virtuous, famous, charming and happy"
+            },
+            {
+              "step_id": "ch37-v7-10-anaph-yog.step-002",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Anaph Yog will be a king, be free from diseases, virtuous, famous, charming and happy"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少月亮起算第12宫占据事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch37-v7-10-anaph-yog.step-002",
+        "action": "在 Anaph Yog 成立时读取身份、健康与品性断语。",
+        "applicability_scope": "仅限已判定 Anaph Yog 成立的本命盘；原文未给时间限定。",
+        "minimum_supported_claim": "生于 Anaph Yog 者会成为国王、没有疾病、有德行、有名声、有魅力且快乐。",
+        "produced_fact_keys": [
+          "Anaph Yog 效果断语"
+        ],
+        "required_fact_keys": [
+          "Anaph Yog 成立判定"
+        ],
+        "condition_logic": {
+          "fact_key": "Anaph Yog 成立判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "One born in Anaph Yog",
+              "claim": "生于 Anaph Yog 者"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be a king, be free from diseases, virtuous, famous, charming and happy",
+              "claim": "会成为国王、没有疾病、有德行、有名声、有魅力且快乐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch37:v7-10",
+            "quote": "One born in Anaph Yog will be a king, be free from diseases, virtuous, famous, charming and happy.",
+            "pdf_pages": [
+              81
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Anaph Yog 成立判定。",
+        "stop_fact_keys": [
+          "Anaph Yog 成立判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「没有疾病」读成寿命断语，也不得据此推断具体病症或发病时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "faac8c08ddf69ae5ac0d64d3e2d0900c1e2f841c46a8c7f6c4ce6fef813e6d39"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch37:v1": {
+      "evidence_atom_id": "bphs-97:santhanam:ch37:v1",
+      "chapter_number": 37,
+      "chapter_title": "Chandra’s Yogas",
+      "verse_label": "1.",
+      "content_role": "verse",
+      "exact_text": "1. If Chandra with reference to Surya is in a Kendr, one’s wealth, intelligence and skill will be little, if in a Panaphara, will be meddling, if in a Apoklima, will be excellent.",
+      "pdf_pages": [
+        81
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 37 · Sloka 1 · PDF page 81 · bphs-97:santhanam:ch37:v1",
+      "previous_atom_id": null,
+      "next_atom_id": "bphs-97:santhanam:ch37:v2-4",
+      "context_before": "",
+      "context_after": "2-4. In the case of a day birth, if Chandra, placed in its own Navāńś, or in a friendly Navāńś, receives a Drishti from Guru, on",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch37:v2-4": {
+      "evidence_atom_id": "bphs-97:santhanam:ch37:v2-4",
+      "chapter_number": 37,
+      "chapter_title": "Chandra’s Yogas",
+      "verse_label": "2-4.",
+      "content_role": "verse",
+      "exact_text": "2-4. In the case of a day birth, if Chandra, placed in its own Navāńś, or in a friendly Navāńś, receives a Drishti from Guru, one will be endowed with wealth and happiness. One born at night time will enjoy similar effects, if Chandra is in its own Navāńś, or in a friendly Navāńś, receiving a Drishti from Shukr. In a contrary situation, the Drishti from Guru, or from Shukra on Chandra will make one go with little wealth, or even without that.",
+      "pdf_pages": [
+        81
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 37 · Sloka 2-4 · PDF page 81 · bphs-97:santhanam:ch37:v2-4",
+      "previous_atom_id": "bphs-97:santhanam:ch37:v1",
+      "next_atom_id": "bphs-97:santhanam:ch37:v5",
+      "context_before": " If Chandra with reference to Surya is in a Kendr, one’s wealth, intelligence and skill will be little, if in a Panaphara, will be meddling, if in a Apoklima, will be excellent.\n\n",
+      "context_after": "5. Adhi Yog from Chandra. If benefics occupy the 8<sup>th</sup> , 6<sup>th</sup> and 7<sup>th</sup> , counted from Chandra, Adhi",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch37:v5": {
+      "evidence_atom_id": "bphs-97:santhanam:ch37:v5",
+      "chapter_number": 37,
+      "chapter_title": "Chandra’s Yogas",
+      "verse_label": "5.",
+      "content_role": "verse",
+      "exact_text": "5. Adhi Yog from Chandra. If benefics occupy the 8<sup>th</sup> , 6<sup>th</sup> and 7<sup>th</sup> , counted from Chandra, Adhi Yog obtains. According to the strength of the participating Grahas, the native concerned will be either a king, or a minister, or an Army chief.",
+      "pdf_pages": [
+        81
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 37 · Sloka 5 · PDF page 81 · bphs-97:santhanam:ch37:v5",
+      "previous_atom_id": "bphs-97:santhanam:ch37:v2-4",
+      "next_atom_id": "bphs-97:santhanam:ch37:v6",
+      "context_before": " In a contrary situation, the Drishti from Guru, or from Shukra on Chandra will make one go with little wealth, or even without that.\n\n",
+      "context_after": "6. Dhan Yog. Should all the (three) benefics be Upachaya, counted from Chandra, one will be very affluent. With two benefics, pl",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch37:v6": {
+      "evidence_atom_id": "bphs-97:santhanam:ch37:v6",
+      "chapter_number": 37,
+      "chapter_title": "Chandra’s Yogas",
+      "verse_label": "6.",
+      "content_role": "verse",
+      "exact_text": "6. Dhan Yog. Should all the (three) benefics be Upachaya, counted from Chandra, one will be very affluent. With two benefics, placed in the 3<sup>rd</sup> , the 6<sup>th</sup> , the 10<sup>th</sup> and the 11<sup>th</sup> , one will have medium effects in regard to wealth. If a single benefic is there, the wealth will be negligible.",
+      "pdf_pages": [
+        81
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 37 · Sloka 6 · PDF page 81 · bphs-97:santhanam:ch37:v6",
+      "previous_atom_id": "bphs-97:santhanam:ch37:v5",
+      "next_atom_id": "bphs-97:santhanam:ch37:v7-10",
+      "context_before": " According to the strength of the participating Grahas, the native concerned will be either a king, or a minister, or an Army chief.\n\n",
+      "context_after": "7-10. Sunaph, Anaph and Duradhar. If there is a Grah other than Surya, in the 2<sup>nd</sup> from Chandra, Sunaph Yog is formed,",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch37:v7-10": {
+      "evidence_atom_id": "bphs-97:santhanam:ch37:v7-10",
+      "chapter_number": 37,
+      "chapter_title": "Chandra’s Yogas",
+      "verse_label": "7-10.",
+      "content_role": "verse",
+      "exact_text": "7-10. Sunaph, Anaph and Duradhar. If there is a Grah other than Surya, in the 2<sup>nd</sup> from Chandra, Sunaph Yog is formed, if in the 12<sup>th</sup> from Chandra, Anaph Yog is formed and, if in the 2<sup>nd</sup> and 12<sup>th</sup> from Chandra, Duradhar Yog is caused. One with Sunaph Yog will be a king, or equal to a king, endowed with intelligence, wealth, fame and self-earned wealth. One born in Anaph Yog will be a king, be free from diseases, virtuous, famous, charming and happy. One born in Duradhar Yog will enjoy pleasures, will be charitable and endowed with wealth, conveyances and excellent serving force.",
+      "pdf_pages": [
+        81
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 37 · Sloka 7-10 · PDF page 81 · bphs-97:santhanam:ch37:v7-10",
+      "previous_atom_id": "bphs-97:santhanam:ch37:v6",
+      "next_atom_id": "bphs-97:santhanam:ch37:v11-13",
+      "context_before": "<sup>th</sup> , one will have medium effects in regard to wealth. If a single benefic is there, the wealth will be negligible.\n\n",
+      "context_after": "11-13. Kema Drum Yog. Excluding Surya, should there be no Grah with Chandra, or in the 2<sup>nd</sup> and/or 12<sup>th</sup> fro",
+      "content_missing": false
+    }
+  }
+}

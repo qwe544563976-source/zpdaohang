@@ -1,0 +1,2795 @@
+{
+  "shard": 5,
+  "step_count": 13,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch35-v38-chatr-yog-effects.step-001",
+      "method": {
+        "method": "ch35-v38-chatr-yog-effects",
+        "title": "Chatr Yog 的效果",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Chatr Yog 的人一生是什么样",
+          "我盘里的 Chatr Yog 会带来什么"
+        ],
+        "facts": null,
+        "dependencies": [
+          "ch35-v14-chatr-yog"
+        ],
+        "retrieval_plan": {
+          "support_queries": [
+            "One born in Chatr Yog",
+            "will help his own men, be kind, dear to many kings, very intelligent, happy at the beginning and end of his life and be long-lived",
+            "Chatr Yog 的效果断语"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Ancestors say, that the results, due to said (Nabhash) Yogas, will be felt throughout in all the Dasha periods.",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "Nabhash 瑜伽效果的时间范围与全章边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v38-chatr-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if from Yuvati, Chatr Yog occurs"
+            },
+            {
+              "step_id": "ch35-v38-chatr-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Chatr Yog"
+            },
+            {
+              "step_id": "ch35-v38-chatr-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will help his own men, be kind, dear to many kings, very intelligent, happy at the beginning and end of his life and be long-lived"
+            },
+            {
+              "step_id": "ch35-v38-chatr-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if from Yuvati, Chatr Yog occurs will help his own men, be kind, dear to many kings, very intelligent, happy at the beginning and end of his life and be long-lived"
+            },
+            {
+              "step_id": "ch35-v38-chatr-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Chatr Yog will help his own men, be kind, dear to many kings, very intelligent, happy at the beginning and end of his life and be long-lived"
+            },
+            {
+              "step_id": "ch35-v38-chatr-yog-effects.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if from 7th house, Chatr Yog occurs"
+            },
+            {
+              "step_id": "ch35-v38-chatr-yog-effects.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if from 7th house, Chatr Yog occurs will help his own men, be kind, dear to many kings, very intelligent, happy at the beginning and end of his life and be long-lived"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "Chatr Yog 是否成立尚未判定时停止：成立条件由方法 ch35-v14-chatr-yog 给出。",
+          "不得在 Chatr Yog 未成立时套用本条断语。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v38-chatr-yog-effects.step-001",
+        "action": "在 Chatr Yog 已判定成立时，读取本偈给出的效果断语。",
+        "applicability_scope": "仅限已判定 Chatr Yog 成立的本命盘；成立条件来自本章前面的定义偈，本偈只给效果，原文没有时间限定。",
+        "minimum_supported_claim": "从七宫（Yuvati）起算而构成 Chatr Yog 时，生于 Chatr Yog 者帮助自己的人，仁慈，受众多国王喜爱，很聪明，在人生的开头与结尾快乐，并且长寿。",
+        "produced_fact_keys": [
+          "Chatr Yog 效果断语"
+        ],
+        "required_fact_keys": [
+          "Chatr Yog 成立判定"
+        ],
+        "condition_logic": {
+          "fact_key": "Chatr Yog 成立判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if from Yuvati, Chatr Yog occurs",
+              "claim": "从七宫（Yuvati）起算而构成 Chatr Yog"
+            },
+            {
+              "quote": "One born in Chatr Yog",
+              "claim": "生于 Chatr Yog 者"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will help his own men, be kind, dear to many kings, very intelligent, happy at the beginning and end of his life and be long-lived",
+              "claim": "帮助自己的人，仁慈，受众多国王喜爱，很聪明，在人生的开头与结尾快乐，并且长寿"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v14",
+            "quote": "if from Yuvati, Chatr Yog occurs",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v38",
+            "quote": "One born in Chatr Yog",
+            "pdf_pages": [
+              78
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v38",
+            "quote": "will help his own men, be kind, dear to many kings, very intelligent, happy at the beginning and end of his life and be long-lived",
+            "pdf_pages": [
+              78
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Chatr Yog 成立判定。",
+        "stop_fact_keys": [
+          "Chatr Yog 成立判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 beginning and end of his life 换算成具体年岁或某段大运。",
+          "不得把 long-lived 换算成具体寿数。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch35:v14"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b5d5099d20f6452b63b073a61822e455f05a244ff3a975b3c7fed8240c57a781"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v39-chap-yog-effects.step-001",
+      "method": {
+        "method": "ch35-v39-chap-yog-effects",
+        "title": "Chap Yog 的效果",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Chap Yog 的人一生是什么样",
+          "我盘里的 Chap Yog 会带来什么"
+        ],
+        "facts": null,
+        "dependencies": [
+          "ch35-v14-chap-yog"
+        ],
+        "retrieval_plan": {
+          "support_queries": [
+            "One born in Chap Yog",
+            "will be liar, will protect secrets, be a thief, be fond of wandering, forests, be devoid of luck and be happy in the middle of the life",
+            "Chap Yog 的效果断语"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Ancestors say, that the results, due to said (Nabhash) Yogas, will be felt throughout in all the Dasha periods.",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "Nabhash 瑜伽效果的时间范围与全章边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v39-chap-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if from Karm, Chap Yog occurs"
+            },
+            {
+              "step_id": "ch35-v39-chap-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Chap Yog"
+            },
+            {
+              "step_id": "ch35-v39-chap-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be liar, will protect secrets, be a thief, be fond of wandering, forests, be devoid of luck and be happy in the middle of the life"
+            },
+            {
+              "step_id": "ch35-v39-chap-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if from Karm, Chap Yog occurs will be liar, will protect secrets, be a thief, be fond of wandering, forests, be devoid of luck and be happy in the middle of the life"
+            },
+            {
+              "step_id": "ch35-v39-chap-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Chap Yog will be liar, will protect secrets, be a thief, be fond of wandering, forests, be devoid of luck and be happy in the middle of the life"
+            },
+            {
+              "step_id": "ch35-v39-chap-yog-effects.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if from 10th house, Chap Yog occurs"
+            },
+            {
+              "step_id": "ch35-v39-chap-yog-effects.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if from 10th house, Chap Yog occurs will be liar, will protect secrets, be a thief, be fond of wandering, forests, be devoid of luck and be happy in the middle of the life"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "Chap Yog 是否成立尚未判定时停止：成立条件由方法 ch35-v14-chap-yog 给出。",
+          "不得在 Chap Yog 未成立时套用本条断语。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v39-chap-yog-effects.step-001",
+        "action": "在 Chap Yog 已判定成立时，读取本偈给出的效果断语。",
+        "applicability_scope": "仅限已判定 Chap Yog 成立的本命盘；成立条件来自本章前面的定义偈，本偈只给效果，原文没有时间限定。",
+        "minimum_supported_claim": "从十宫（Karm）起算而构成 Chap Yog 时，生于 Chap Yog 者说谎，守得住秘密，做贼，喜好游荡与森林，没有运气，在人生中段快乐。",
+        "produced_fact_keys": [
+          "Chap Yog 效果断语"
+        ],
+        "required_fact_keys": [
+          "Chap Yog 成立判定"
+        ],
+        "condition_logic": {
+          "fact_key": "Chap Yog 成立判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if from Karm, Chap Yog occurs",
+              "claim": "从十宫（Karm）起算而构成 Chap Yog"
+            },
+            {
+              "quote": "One born in Chap Yog",
+              "claim": "生于 Chap Yog 者"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be liar, will protect secrets, be a thief, be fond of wandering, forests, be devoid of luck and be happy in the middle of the life",
+              "claim": "说谎，守得住秘密，做贼，喜好游荡与森林，没有运气，在人生中段快乐"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v14",
+            "quote": "if from Karm, Chap Yog occurs",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v39",
+            "quote": "One born in Chap Yog",
+            "pdf_pages": [
+              78
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v39",
+            "quote": "will be liar, will protect secrets, be a thief, be fond of wandering, forests, be devoid of luck and be happy in the middle of the life",
+            "pdf_pages": [
+              78
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Chap Yog 成立判定。",
+        "stop_fact_keys": [
+          "Chap Yog 成立判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 the middle of the life 换算成具体年岁或某段大运。",
+          "不得据此推断寿命或刑狱的具体时间。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch35:v14"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "8a35e9a61390d859f01550056a1ec45f013175a3fc53746c1dfb384674394db4"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v40-ardh-chandra-yog-effects.step-001",
+      "method": {
+        "method": "ch35-v40-ardh-chandra-yog-effects",
+        "title": "Ardh Chandraa Yoga 的效果",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Ardh Chandra Yog 的人一生是什么样",
+          "我盘里的 Ardh Chandra Yog 会带来什么"
+        ],
+        "facts": null,
+        "dependencies": [
+          "ch35-v14-ardh-chandraa-yog"
+        ],
+        "retrieval_plan": {
+          "support_queries": [
+            "One born in Ardh Chandra Yog",
+            "will lead an Army, will possess a splendourous body, be dear to king, be strong and endowed with gems, gold and ornaments",
+            "Ardh Chandraa Yoga 的效果断语"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Quoted from Saravali. If the seven Grahas occupy continuously seven Bhavas, commencing from a Bhava, which is not angular to the Lagna, the Yoga produced is known, as Ardh Chandraa Yoga.",
+            "Ancestors say, that the results, due to said (Nabhash) Yogas, will be felt throughout in all the Dasha periods.",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "Nabhash 瑜伽效果的时间范围与全章边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v40-ardh-chandra-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the Yoga produced is known, as Ardh Chandraa Yoga"
+            },
+            {
+              "step_id": "ch35-v40-ardh-chandra-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Ardh Chandra Yog"
+            },
+            {
+              "step_id": "ch35-v40-ardh-chandra-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will lead an Army, will possess a splendourous body, be dear to king, be strong and endowed with gems, gold and ornaments"
+            },
+            {
+              "step_id": "ch35-v40-ardh-chandra-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the Yoga produced is known, as Ardh Chandraa Yoga will lead an Army, will possess a splendourous body, be dear to king, be strong and endowed with gems, gold and ornaments"
+            },
+            {
+              "step_id": "ch35-v40-ardh-chandra-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Ardh Chandra Yog will lead an Army, will possess a splendourous body, be dear to king, be strong and endowed with gems, gold and ornaments"
+            },
+            {
+              "step_id": "ch35-v40-ardh-chandra-yog-effects.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "One born in Ardh moon Yog"
+            },
+            {
+              "step_id": "ch35-v40-ardh-chandra-yog-effects.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "One born in Ardh moon Yog will lead an Army, will possess a splendourous body, be dear to king, be strong and endowed with gems, gold and ornaments"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "Ardh Chandraa Yoga 是否成立尚未判定时停止：成立条件由方法 ch35-v14-ardh-chandraa-yog 给出。",
+          "不得在 Ardh Chandraa Yoga 未成立时套用本条断语。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v40-ardh-chandra-yog-effects.step-001",
+        "action": "在 Ardh Chandraa Yoga 已判定成立时，读取本偈给出的效果断语。",
+        "applicability_scope": "仅限已判定 Ardh Chandraa Yoga 成立的本命盘；成立条件来自本章前面的定义偈，本偈只给效果，原文没有时间限定。这个瑜伽的成立条件出自本章第 14 偈中标明 Quoted from Saravali 的转引段，结论强度不等同本书自断。",
+        "minimum_supported_claim": "构成 Ardh Chandraa Yoga 时，生于 Ardh Chandraa Yoga 者会统领军队，身体光彩照人，受国王喜爱，强壮，拥有宝石、黄金与饰品。",
+        "produced_fact_keys": [
+          "Ardh Chandraa Yoga 效果断语"
+        ],
+        "required_fact_keys": [
+          "Ardh Chandraa Yoga 成立判定"
+        ],
+        "condition_logic": {
+          "fact_key": "Ardh Chandraa Yoga 成立判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "the Yoga produced is known, as Ardh Chandraa Yoga",
+              "claim": "构成 Ardh Chandraa Yoga"
+            },
+            {
+              "quote": "One born in Ardh Chandra Yog",
+              "claim": "生于 Ardh Chandraa Yoga 者"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will lead an Army, will possess a splendourous body, be dear to king, be strong and endowed with gems, gold and ornaments",
+              "claim": "会统领军队，身体光彩照人，受国王喜爱，强壮，拥有宝石、黄金与饰品"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v14",
+            "quote": "the Yoga produced is known, as Ardh Chandraa Yoga",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v40",
+            "quote": "One born in Ardh Chandra Yog",
+            "pdf_pages": [
+              78
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v40",
+            "quote": "will lead an Army, will possess a splendourous body, be dear to king, be strong and endowed with gems, gold and ornaments",
+            "pdf_pages": [
+              78
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Ardh Chandraa Yoga 成立判定。",
+        "stop_fact_keys": [
+          "Ardh Chandraa Yoga 成立判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 lead an Army 换成具体军衔或现代职务并当成原文结论。",
+          "不得据此推断寿命或婚姻。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch35:v14"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "1763a147b9dc6a4f51d2f9412f54cb54ecc0d291cca2574ea81ab8c93bd1f2d2"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v41-chakr-yog-effects.step-001",
+      "method": {
+        "method": "ch35-v41-chakr-yog-effects",
+        "title": "Chakr Yog 的效果",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Chakr Yog 的人一生是什么样",
+          "我盘里的 Chakr Yog 会带来什么"
+        ],
+        "facts": null,
+        "dependencies": [
+          "ch35-v15-chakr-yog"
+        ],
+        "retrieval_plan": {
+          "support_queries": [
+            "One born in Chakr Yog",
+            "will be an emperor, at whose feet will be the prostrating kings, heads, adoring gem studded diadems",
+            "Chakr Yog 的效果断语"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Ancestors say, that the results, due to said (Nabhash) Yogas, will be felt throughout in all the Dasha periods.",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "Nabhash 瑜伽效果的时间范围与全章边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v41-chakr-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If all the Grahas occupy six alternative Rāśis, commencing from Lagna, Chakr Yog is formed"
+            },
+            {
+              "step_id": "ch35-v41-chakr-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Chakr Yog"
+            },
+            {
+              "step_id": "ch35-v41-chakr-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be an emperor, at whose feet will be the prostrating kings, heads, adoring gem studded diadems"
+            },
+            {
+              "step_id": "ch35-v41-chakr-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If all the Grahas occupy six alternative Rāśis, commencing from Lagna, Chakr Yog is formed will be an emperor, at whose feet will be the prostrating kings, heads, adoring gem studded diadems"
+            },
+            {
+              "step_id": "ch35-v41-chakr-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Chakr Yog will be an emperor, at whose feet will be the prostrating kings, heads, adoring gem studded diadems"
+            },
+            {
+              "step_id": "ch35-v41-chakr-yog-effects.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If all the Grahas occupy six alternative Rāśis, commencing from 1st house, Chakr Yog is formed"
+            },
+            {
+              "step_id": "ch35-v41-chakr-yog-effects.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If all the Grahas occupy six alternative Rāśis, commencing from 1st house, Chakr Yog is formed will be an emperor, at whose feet will be the prostrating kings, heads, adoring gem studded diadems"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "Chakr Yog 是否成立尚未判定时停止：成立条件由方法 ch35-v15-chakr-yog 给出。",
+          "不得在 Chakr Yog 未成立时套用本条断语。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v41-chakr-yog-effects.step-001",
+        "action": "在 Chakr Yog 已判定成立时，读取本偈给出的效果断语。",
+        "applicability_scope": "仅限已判定 Chakr Yog 成立的本命盘；成立条件来自本章前面的定义偈，本偈只给效果，原文没有时间限定。",
+        "minimum_supported_claim": "本盘所有行星（Grahas）落在从上升宫（Lagna）起算的六个相间星座（Rāśi）内而构成 Chakr Yog 时，生于 Chakr Yog 者会成为皇帝，众王俯伏在其足下，头上戴着镶宝石的冠冕。",
+        "produced_fact_keys": [
+          "Chakr Yog 效果断语"
+        ],
+        "required_fact_keys": [
+          "Chakr Yog 成立判定"
+        ],
+        "condition_logic": {
+          "fact_key": "Chakr Yog 成立判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If all the Grahas occupy six alternative Rāśis, commencing from Lagna, Chakr Yog is formed",
+              "claim": "本盘所有行星（Grahas）落在从上升宫（Lagna）起算的六个相间星座（Rāśi）内而构成 Chakr Yog"
+            },
+            {
+              "quote": "One born in Chakr Yog",
+              "claim": "生于 Chakr Yog 者"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be an emperor, at whose feet will be the prostrating kings, heads, adoring gem studded diadems",
+              "claim": "会成为皇帝，众王俯伏在其足下，头上戴着镶宝石的冠冕"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v15",
+            "quote": "If all the Grahas occupy six alternative Rāśis, commencing from Lagna, Chakr Yog is formed",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v41",
+            "quote": "One born in Chakr Yog",
+            "pdf_pages": [
+              78
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v41",
+            "quote": "will be an emperor, at whose feet will be the prostrating kings, heads, adoring gem studded diadems",
+            "pdf_pages": [
+              78
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Chakr Yog 成立判定。",
+        "stop_fact_keys": [
+          "Chakr Yog 成立判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 emperor 换算成现代的具体官职级别或财富数额。",
+          "不得据此推断在位时间或寿命。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch35:v15"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "d277a9bcc3e9c854d35cff015533604edfa653751baccd7de85168afb6ff7ba5"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v42-samudr-yog-effects.step-001",
+      "method": {
+        "method": "ch35-v42-samudr-yog-effects",
+        "title": "Samudr Yog 的效果",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Samudr Yog 的人一生是什么样",
+          "我盘里的 Samudr Yog 会带来什么"
+        ],
+        "facts": null,
+        "dependencies": [
+          "ch35-v15-samudr-yog"
+        ],
+        "retrieval_plan": {
+          "support_queries": [
+            "One born in Samudr Yog",
+            "will have many precious stones and abundant wealth, be endowed with pleasures, dear to people, will have firm wealth and be well disposed",
+            "Samudr Yog 的效果断语"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "Ancestors say, that the results, due to said (Nabhash) Yogas, will be felt throughout in all the Dasha periods.",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "Nabhash 瑜伽效果的时间范围与全章边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v42-samudr-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Samudr Yog is produced"
+            },
+            {
+              "step_id": "ch35-v42-samudr-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Samudr Yog"
+            },
+            {
+              "step_id": "ch35-v42-samudr-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will have many precious stones and abundant wealth, be endowed with pleasures, dear to people, will have firm wealth and be well disposed"
+            },
+            {
+              "step_id": "ch35-v42-samudr-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Samudr Yog is produced will have many precious stones and abundant wealth, be endowed with pleasures, dear to people, will have firm wealth and be well disposed"
+            },
+            {
+              "step_id": "ch35-v42-samudr-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Samudr Yog will have many precious stones and abundant wealth, be endowed with pleasures, dear to people, will have firm wealth and be well disposed"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "Samudr Yog 是否成立尚未判定时停止：成立条件由方法 ch35-v15-samudr-yog 给出。",
+          "不得在 Samudr Yog 未成立时套用本条断语。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v42-samudr-yog-effects.step-001",
+        "action": "在 Samudr Yog 已判定成立时，读取本偈给出的效果断语。",
+        "applicability_scope": "仅限已判定 Samudr Yog 成立的本命盘；成立条件来自本章前面的定义偈，本偈只给效果，原文没有时间限定。",
+        "minimum_supported_claim": "构成 Samudr Yog 时，生于 Samudr Yog 者拥有许多宝石与丰盛的财富，享有享乐，受众人喜爱，财富稳固，性情良善。",
+        "produced_fact_keys": [
+          "Samudr Yog 效果断语"
+        ],
+        "required_fact_keys": [
+          "Samudr Yog 成立判定"
+        ],
+        "condition_logic": {
+          "fact_key": "Samudr Yog 成立判定"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Samudr Yog is produced",
+              "claim": "构成 Samudr Yog"
+            },
+            {
+              "quote": "One born in Samudr Yog",
+              "claim": "生于 Samudr Yog 者"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will have many precious stones and abundant wealth, be endowed with pleasures, dear to people, will have firm wealth and be well disposed",
+              "claim": "拥有许多宝石与丰盛的财富，享有享乐，受众人喜爱，财富稳固，性情良善"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v15",
+            "quote": "Samudr Yog is produced",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v42",
+            "quote": "One born in Samudr Yog",
+            "pdf_pages": [
+              78
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v42",
+            "quote": "will have many precious stones and abundant wealth, be endowed with pleasures, dear to people, will have firm wealth and be well disposed",
+            "pdf_pages": [
+              78
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Samudr Yog 成立判定。",
+        "stop_fact_keys": [
+          "Samudr Yog 成立判定"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 abundant wealth 换算成具体财富数额。",
+          "不得据此推断职业或寿命。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch35:v15"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "771ae42c70920349c97f320ad756f1212f8fb8ae72dd69e457d2f7a222c53f61"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v43-veena-yog-effects.step-001",
+      "method": {
+        "method": "ch35-v43-veena-yog-effects",
+        "title": "Veena Yog 的效果",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Veena Yog 的人一生是什么样",
+          "我盘里的 Veena Yog 会带来什么"
+        ],
+        "facts": null,
+        "dependencies": [
+          "ch35-v16-17-veena-yog"
+        ],
+        "retrieval_plan": {
+          "support_queries": [
+            "One born in Veena Yog",
+            "will be fond of songs, dance and musical instruments, be skilful, happy, wealthy and be a leader of men",
+            "Veena Yog 的效果断语"
+          ],
+          "counter_queries": [
+            "None of these seven Yogas will be operable, if another Nabhash Yog is derivable."
+          ],
+          "boundary_queries": [
+            "Ancestors say, that the results, due to said (Nabhash) Yogas, will be felt throughout in all the Dasha periods.",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "Nabhash 瑜伽效果的时间范围与全章边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v43-veena-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If all Grahas are in one Rāśi"
+            },
+            {
+              "step_id": "ch35-v43-veena-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if in 7, Veena Yog is produced"
+            },
+            {
+              "step_id": "ch35-v43-veena-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Veena Yog"
+            },
+            {
+              "step_id": "ch35-v43-veena-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable"
+            },
+            {
+              "step_id": "ch35-v43-veena-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be fond of songs, dance and musical instruments, be skilful, happy, wealthy and be a leader of men"
+            },
+            {
+              "step_id": "ch35-v43-veena-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If all Grahas are in one Rāśi will be fond of songs, dance and musical instruments, be skilful, happy, wealthy and be a leader of men"
+            },
+            {
+              "step_id": "ch35-v43-veena-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if in 7, Veena Yog is produced will be fond of songs, dance and musical instruments, be skilful, happy, wealthy and be a leader of men"
+            },
+            {
+              "step_id": "ch35-v43-veena-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Veena Yog will be fond of songs, dance and musical instruments, be skilful, happy, wealthy and be a leader of men"
+            },
+            {
+              "step_id": "ch35-v43-veena-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable will be fond of songs, dance and musical instruments, be skilful, happy, wealthy and be a leader of men"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "Veena Yog 是否成立尚未判定时停止：成立条件由方法 ch35-v16-17-veena-yog 给出。",
+          "不得在 Veena Yog 未成立时套用本条断语。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v43-veena-yog-effects.step-001",
+        "action": "在 Veena Yog 已判定成立时，读取本偈给出的效果断语。",
+        "applicability_scope": "仅限已判定 Veena Yog 成立的本命盘；成立条件来自本章前面的定义偈，本偈只给效果，原文没有时间限定。",
+        "minimum_supported_claim": "本盘没有别的 Nabhash Yog 可成立、本盘所有行星（Grahas）都落在星座（Rāśi）内、所占星座数为7而构成 Veena Yog 时，生于 Veena Yog 者喜好歌唱、舞蹈与乐器，有技巧，快乐，富有，并且是众人的领袖。",
+        "produced_fact_keys": [
+          "Veena Yog 效果断语"
+        ],
+        "required_fact_keys": [
+          "Veena Yog 成立判定",
+          "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "Veena Yog 成立判定"
+            },
+            {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If all Grahas are in one Rāśi",
+              "claim": "本盘所有行星（Grahas）都落在星座（Rāśi）内"
+            },
+            {
+              "quote": "if in 7, Veena Yog is produced",
+              "claim": "所占星座数为7而构成 Veena Yog"
+            },
+            {
+              "quote": "One born in Veena Yog",
+              "claim": "生于 Veena Yog 者"
+            },
+            {
+              "quote": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable",
+              "claim": "本盘没有别的 Nabhash Yog 可成立"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be fond of songs, dance and musical instruments, be skilful, happy, wealthy and be a leader of men",
+              "claim": "喜好歌唱、舞蹈与乐器，有技巧，快乐，富有，并且是众人的领袖"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v16-17",
+            "quote": "If all Grahas are in one Rāśi",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v16-17",
+            "quote": "if in 7, Veena Yog is produced",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v43",
+            "quote": "One born in Veena Yog",
+            "pdf_pages": [
+              78
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v43",
+            "quote": "will be fond of songs, dance and musical instruments, be skilful, happy, wealthy and be a leader of men",
+            "pdf_pages": [
+              78
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v16-17",
+            "quote": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable.",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Veena Yog 成立判定、本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立。",
+        "stop_fact_keys": [
+          "Veena Yog 成立判定",
+          "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+        ],
+        "exception_relations": [
+          {
+            "type": "limitation",
+            "evidence_atom_ids": [
+              "bphs-97:santhanam:ch35:v16-17"
+            ],
+            "condition_logic": {
+              "fact_key": "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+            }
+          }
+        ],
+        "forbidden_extensions": [
+          "不得把 a leader of men 换成具体职衔并当成原文结论。",
+          "不得丢掉「另有别的 Nabhash 瑜伽可成立时本瑜伽不起作用」这条限制。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch35:v16-17"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "eb6eceb9eb0a1cd304ee5e0b3e5d2f5e5f7b0b40e0bc7a982431c1f15c3cfa46"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v44-daamini-yog-effects.step-001",
+      "method": {
+        "method": "ch35-v44-daamini-yog-effects",
+        "title": "Daam Yog 的效果",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Daam Yog 的人一生是什么样",
+          "我盘里的 Daamini Yog 会带来什么"
+        ],
+        "facts": null,
+        "dependencies": [
+          "ch35-v16-17-daam-yog"
+        ],
+        "retrieval_plan": {
+          "support_queries": [
+            "One born in Daamini Yog",
+            "will be helpful to others, will have righteously earned wealth, be very affluent, famous, will have many sons and gems",
+            "be courageous and red-lettered",
+            "Daam Yog 的效果断语"
+          ],
+          "counter_queries": [
+            "None of these seven Yogas will be operable, if another Nabhash Yog is derivable."
+          ],
+          "boundary_queries": [
+            "Ancestors say, that the results, due to said (Nabhash) Yogas, will be felt throughout in all the Dasha periods.",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "Nabhash 瑜伽效果的时间范围与全章边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v44-daamini-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If all Grahas are in one Rāśi"
+            },
+            {
+              "step_id": "ch35-v44-daamini-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if in 6, Daam Yog occurs"
+            },
+            {
+              "step_id": "ch35-v44-daamini-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Daamini Yog"
+            },
+            {
+              "step_id": "ch35-v44-daamini-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable"
+            },
+            {
+              "step_id": "ch35-v44-daamini-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be helpful to others, will have righteously earned wealth, be very affluent, famous, will have many sons and gems"
+            },
+            {
+              "step_id": "ch35-v44-daamini-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "be courageous and red-lettered"
+            },
+            {
+              "step_id": "ch35-v44-daamini-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If all Grahas are in one Rāśi will be helpful to others, will have righteously earned wealth, be very affluent, famous, will have many sons and gems"
+            },
+            {
+              "step_id": "ch35-v44-daamini-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if in 6, Daam Yog occurs will be helpful to others, will have righteously earned wealth, be very affluent, famous, will have many sons and gems"
+            },
+            {
+              "step_id": "ch35-v44-daamini-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Daamini Yog will be helpful to others, will have righteously earned wealth, be very affluent, famous, will have many sons and gems"
+            },
+            {
+              "step_id": "ch35-v44-daamini-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable will be helpful to others, will have righteously earned wealth, be very affluent, famous, will have many sons and gems"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "Daam Yog 是否成立尚未判定时停止：成立条件由方法 ch35-v16-17-daam-yog 给出。",
+          "不得在 Daam Yog 未成立时套用本条断语。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v44-daamini-yog-effects.step-001",
+        "action": "在 Daam Yog 已判定成立时，读取本偈给出的效果断语。",
+        "applicability_scope": "仅限已判定 Daam Yog 成立的本命盘；成立条件来自本章前面的定义偈，本偈只给效果，原文没有时间限定。本偈效果段的瑜伽名写作 Daamini Yog，成立条件所在的第 16-17 偈写作 Daam Yog，两处名称的差异照原文保留。",
+        "minimum_supported_claim": "本盘没有别的 Nabhash Yog 可成立、本盘所有行星（Grahas）都落在星座（Rāśi）内、所占星座数为6而构成 Daam Yog 时，生于 Daam Yog 者对他人有帮助，财富取之有道，非常富裕，有名望，子女与宝石众多，勇敢，并且是原文所说的 red-lettered。",
+        "produced_fact_keys": [
+          "Daam Yog 效果断语"
+        ],
+        "required_fact_keys": [
+          "Daam Yog 成立判定",
+          "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "Daam Yog 成立判定"
+            },
+            {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If all Grahas are in one Rāśi",
+              "claim": "本盘所有行星（Grahas）都落在星座（Rāśi）内"
+            },
+            {
+              "quote": "if in 6, Daam Yog occurs",
+              "claim": "所占星座数为6而构成 Daam Yog"
+            },
+            {
+              "quote": "One born in Daamini Yog",
+              "claim": "生于 Daam Yog 者"
+            },
+            {
+              "quote": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable",
+              "claim": "本盘没有别的 Nabhash Yog 可成立"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be helpful to others, will have righteously earned wealth, be very affluent, famous, will have many sons and gems",
+              "claim": "对他人有帮助，财富取之有道，非常富裕，有名望，子女与宝石众多"
+            },
+            {
+              "quote": "be courageous and red-lettered",
+              "claim": "勇敢，并且是原文所说的 red-lettered"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v16-17",
+            "quote": "If all Grahas are in one Rāśi",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v16-17",
+            "quote": "if in 6, Daam Yog occurs",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v44",
+            "quote": "One born in Daamini Yog",
+            "pdf_pages": [
+              78
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v44",
+            "quote": "will be helpful to others, will have righteously earned wealth, be very affluent, famous, will have many sons and gems",
+            "pdf_pages": [
+              78
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v44",
+            "quote": "be courageous and red-lettered",
+            "pdf_pages": [
+              78
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v16-17",
+            "quote": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable.",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Daam Yog 成立判定、本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立。",
+        "stop_fact_keys": [
+          "Daam Yog 成立判定",
+          "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+        ],
+        "exception_relations": [
+          {
+            "type": "limitation",
+            "evidence_atom_ids": [
+              "bphs-97:santhanam:ch35:v16-17"
+            ],
+            "condition_logic": {
+              "fact_key": "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+            }
+          }
+        ],
+        "forbidden_extensions": [
+          "不得给 red-lettered 补上原文没有解释的具体含义。",
+          "不得把 many sons 换算成具体子女数目。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch35:v16-17"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "5cb717c8e5ad660c89cd01e3807cfd59dc0d8e843538ccd3e28368e41bf1ce20"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v45-paash-yog-effects.step-001",
+      "method": {
+        "method": "ch35-v45-paash-yog-effects",
+        "title": "Paash Yog 的效果",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Paash Yog 的人一生是什么样",
+          "我盘里的 Paash Yog 会带来什么"
+        ],
+        "facts": null,
+        "dependencies": [
+          "ch35-v16-17-paash-yog"
+        ],
+        "retrieval_plan": {
+          "support_queries": [
+            "One born in Paash Yog",
+            "will be liable to be imprisoned, be skilful in work, be deceiving in disposition, will talk much, be bereft of good qualities and will have many servants",
+            "Paash Yog 的效果断语"
+          ],
+          "counter_queries": [
+            "None of these seven Yogas will be operable, if another Nabhash Yog is derivable."
+          ],
+          "boundary_queries": [
+            "Ancestors say, that the results, due to said (Nabhash) Yogas, will be felt throughout in all the Dasha periods.",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "Nabhash 瑜伽效果的时间范围与全章边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v45-paash-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If all Grahas are in one Rāśi"
+            },
+            {
+              "step_id": "ch35-v45-paash-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if in 5, Paash Yog is formed"
+            },
+            {
+              "step_id": "ch35-v45-paash-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Paash Yog"
+            },
+            {
+              "step_id": "ch35-v45-paash-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable"
+            },
+            {
+              "step_id": "ch35-v45-paash-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be liable to be imprisoned, be skilful in work, be deceiving in disposition, will talk much, be bereft of good qualities and will have many servants"
+            },
+            {
+              "step_id": "ch35-v45-paash-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If all Grahas are in one Rāśi will be liable to be imprisoned, be skilful in work, be deceiving in disposition, will talk much, be bereft of good qualities and will have many servants"
+            },
+            {
+              "step_id": "ch35-v45-paash-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if in 5, Paash Yog is formed will be liable to be imprisoned, be skilful in work, be deceiving in disposition, will talk much, be bereft of good qualities and will have many servants"
+            },
+            {
+              "step_id": "ch35-v45-paash-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Paash Yog will be liable to be imprisoned, be skilful in work, be deceiving in disposition, will talk much, be bereft of good qualities and will have many servants"
+            },
+            {
+              "step_id": "ch35-v45-paash-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable will be liable to be imprisoned, be skilful in work, be deceiving in disposition, will talk much, be bereft of good qualities and will have many servants"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "Paash Yog 是否成立尚未判定时停止：成立条件由方法 ch35-v16-17-paash-yog 给出。",
+          "不得在 Paash Yog 未成立时套用本条断语。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v45-paash-yog-effects.step-001",
+        "action": "在 Paash Yog 已判定成立时，读取本偈给出的效果断语。",
+        "applicability_scope": "仅限已判定 Paash Yog 成立的本命盘；成立条件来自本章前面的定义偈，本偈只给效果，原文没有时间限定。",
+        "minimum_supported_claim": "本盘没有别的 Nabhash Yog 可成立、本盘所有行星（Grahas）都落在星座（Rāśi）内、所占星座数为5而构成 Paash Yog 时，生于 Paash Yog 者容易被囚禁，做事有技巧，性情善欺瞒，话多，缺少好品质，仆从众多。",
+        "produced_fact_keys": [
+          "Paash Yog 效果断语"
+        ],
+        "required_fact_keys": [
+          "Paash Yog 成立判定",
+          "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "Paash Yog 成立判定"
+            },
+            {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If all Grahas are in one Rāśi",
+              "claim": "本盘所有行星（Grahas）都落在星座（Rāśi）内"
+            },
+            {
+              "quote": "if in 5, Paash Yog is formed",
+              "claim": "所占星座数为5而构成 Paash Yog"
+            },
+            {
+              "quote": "One born in Paash Yog",
+              "claim": "生于 Paash Yog 者"
+            },
+            {
+              "quote": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable",
+              "claim": "本盘没有别的 Nabhash Yog 可成立"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be liable to be imprisoned, be skilful in work, be deceiving in disposition, will talk much, be bereft of good qualities and will have many servants",
+              "claim": "容易被囚禁，做事有技巧，性情善欺瞒，话多，缺少好品质，仆从众多"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v16-17",
+            "quote": "If all Grahas are in one Rāśi",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v16-17",
+            "quote": "if in 5, Paash Yog is formed",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v45",
+            "quote": "One born in Paash Yog",
+            "pdf_pages": [
+              78
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v45",
+            "quote": "will be liable to be imprisoned, be skilful in work, be deceiving in disposition, will talk much, be bereft of good qualities and will have many servants",
+            "pdf_pages": [
+              78
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v16-17",
+            "quote": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable.",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Paash Yog 成立判定、本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立。",
+        "stop_fact_keys": [
+          "Paash Yog 成立判定",
+          "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+        ],
+        "exception_relations": [
+          {
+            "type": "limitation",
+            "evidence_atom_ids": [
+              "bphs-97:santhanam:ch35:v16-17"
+            ],
+            "condition_logic": {
+              "fact_key": "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+            }
+          }
+        ],
+        "forbidden_extensions": [
+          "原文只说 liable to be imprisoned（容易被囚禁），不得读成一定入狱或给出时间。",
+          "不得丢掉「另有别的 Nabhash 瑜伽可成立时本瑜伽不起作用」这条限制。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch35:v16-17"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "463e766a8a24cf0dfabde76c36e43ee0656dd58f1e7c55981e10cb0bd0ac7faf"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v46-kedara-yog-effects.step-001",
+      "method": {
+        "method": "ch35-v46-kedara-yog-effects",
+        "title": "Kedara Yog 的效果",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Kedara Yog 的人一生是什么样",
+          "我盘里的 Kedara Yog 会带来什么"
+        ],
+        "facts": null,
+        "dependencies": [
+          "ch35-v16-17-kedara-yog"
+        ],
+        "retrieval_plan": {
+          "support_queries": [
+            "One born in Kedara Yog",
+            "will be useful to many, be an agriculturist, be truthful, happy, fickle-minded and wealthy",
+            "Kedara Yog 的效果断语"
+          ],
+          "counter_queries": [
+            "None of these seven Yogas will be operable, if another Nabhash Yog is derivable."
+          ],
+          "boundary_queries": [
+            "Ancestors say, that the results, due to said (Nabhash) Yogas, will be felt throughout in all the Dasha periods.",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "Nabhash 瑜伽效果的时间范围与全章边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v46-kedara-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If all Grahas are in one Rāśi"
+            },
+            {
+              "step_id": "ch35-v46-kedara-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if in 4, Kedara Yog occurs"
+            },
+            {
+              "step_id": "ch35-v46-kedara-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Kedara Yog"
+            },
+            {
+              "step_id": "ch35-v46-kedara-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable"
+            },
+            {
+              "step_id": "ch35-v46-kedara-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be useful to many, be an agriculturist, be truthful, happy, fickle-minded and wealthy"
+            },
+            {
+              "step_id": "ch35-v46-kedara-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If all Grahas are in one Rāśi will be useful to many, be an agriculturist, be truthful, happy, fickle-minded and wealthy"
+            },
+            {
+              "step_id": "ch35-v46-kedara-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if in 4, Kedara Yog occurs will be useful to many, be an agriculturist, be truthful, happy, fickle-minded and wealthy"
+            },
+            {
+              "step_id": "ch35-v46-kedara-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Kedara Yog will be useful to many, be an agriculturist, be truthful, happy, fickle-minded and wealthy"
+            },
+            {
+              "step_id": "ch35-v46-kedara-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable will be useful to many, be an agriculturist, be truthful, happy, fickle-minded and wealthy"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "Kedara Yog 是否成立尚未判定时停止：成立条件由方法 ch35-v16-17-kedara-yog 给出。",
+          "不得在 Kedara Yog 未成立时套用本条断语。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v46-kedara-yog-effects.step-001",
+        "action": "在 Kedara Yog 已判定成立时，读取本偈给出的效果断语。",
+        "applicability_scope": "仅限已判定 Kedara Yog 成立的本命盘；成立条件来自本章前面的定义偈，本偈只给效果，原文没有时间限定。",
+        "minimum_supported_claim": "本盘没有别的 Nabhash Yog 可成立、本盘所有行星（Grahas）都落在星座（Rāśi）内、所占星座数为4而构成 Kedara Yog 时，生于 Kedara Yog 者对许多人有用，务农，诚实，快乐，心思易变，富有。",
+        "produced_fact_keys": [
+          "Kedara Yog 效果断语"
+        ],
+        "required_fact_keys": [
+          "Kedara Yog 成立判定",
+          "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "Kedara Yog 成立判定"
+            },
+            {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If all Grahas are in one Rāśi",
+              "claim": "本盘所有行星（Grahas）都落在星座（Rāśi）内"
+            },
+            {
+              "quote": "if in 4, Kedara Yog occurs",
+              "claim": "所占星座数为4而构成 Kedara Yog"
+            },
+            {
+              "quote": "One born in Kedara Yog",
+              "claim": "生于 Kedara Yog 者"
+            },
+            {
+              "quote": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable",
+              "claim": "本盘没有别的 Nabhash Yog 可成立"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be useful to many, be an agriculturist, be truthful, happy, fickle-minded and wealthy",
+              "claim": "对许多人有用，务农，诚实，快乐，心思易变，富有"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v16-17",
+            "quote": "If all Grahas are in one Rāśi",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v16-17",
+            "quote": "if in 4, Kedara Yog occurs",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v46",
+            "quote": "One born in Kedara Yog",
+            "pdf_pages": [
+              78
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v46",
+            "quote": "will be useful to many, be an agriculturist, be truthful, happy, fickle-minded and wealthy",
+            "pdf_pages": [
+              78
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v16-17",
+            "quote": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable.",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Kedara Yog 成立判定、本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立。",
+        "stop_fact_keys": [
+          "Kedara Yog 成立判定",
+          "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+        ],
+        "exception_relations": [
+          {
+            "type": "limitation",
+            "evidence_atom_ids": [
+              "bphs-97:santhanam:ch35:v16-17"
+            ],
+            "condition_logic": {
+              "fact_key": "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+            }
+          }
+        ],
+        "forbidden_extensions": [
+          "不得把 an agriculturist 换成现代的具体行业并当成原文结论。",
+          "不得把 wealthy 换算成具体财富数额。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch35:v16-17"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "5e927979e77894dad7583ad1bad20bf4c480f7ab055fa43e37b3afeba39d4a29"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v47-sool-yog-effects.step-001",
+      "method": {
+        "method": "ch35-v47-sool-yog-effects",
+        "title": "Sool Yog 的效果",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Sool Yog 的人一生是什么样",
+          "我盘里的 Sool Yog 会带来什么"
+        ],
+        "facts": null,
+        "dependencies": [
+          "ch35-v16-17-sool-yog"
+        ],
+        "retrieval_plan": {
+          "support_queries": [
+            "One born in Sool Yog",
+            "will be sharp, indolent, bereft of wealth, be tortuous, prohibited, valiant and famous through war",
+            "Sool Yog 的效果断语"
+          ],
+          "counter_queries": [
+            "None of these seven Yogas will be operable, if another Nabhash Yog is derivable."
+          ],
+          "boundary_queries": [
+            "Ancestors say, that the results, due to said (Nabhash) Yogas, will be felt throughout in all the Dasha periods.",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "Nabhash 瑜伽效果的时间范围与全章边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v47-sool-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If all Grahas are in one Rāśi"
+            },
+            {
+              "step_id": "ch35-v47-sool-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if in 3, Sool Yog occurs"
+            },
+            {
+              "step_id": "ch35-v47-sool-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Sool Yog"
+            },
+            {
+              "step_id": "ch35-v47-sool-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable"
+            },
+            {
+              "step_id": "ch35-v47-sool-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be sharp, indolent, bereft of wealth, be tortuous, prohibited, valiant and famous through war"
+            },
+            {
+              "step_id": "ch35-v47-sool-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If all Grahas are in one Rāśi will be sharp, indolent, bereft of wealth, be tortuous, prohibited, valiant and famous through war"
+            },
+            {
+              "step_id": "ch35-v47-sool-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if in 3, Sool Yog occurs will be sharp, indolent, bereft of wealth, be tortuous, prohibited, valiant and famous through war"
+            },
+            {
+              "step_id": "ch35-v47-sool-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Sool Yog will be sharp, indolent, bereft of wealth, be tortuous, prohibited, valiant and famous through war"
+            },
+            {
+              "step_id": "ch35-v47-sool-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable will be sharp, indolent, bereft of wealth, be tortuous, prohibited, valiant and famous through war"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "Sool Yog 是否成立尚未判定时停止：成立条件由方法 ch35-v16-17-sool-yog 给出。",
+          "不得在 Sool Yog 未成立时套用本条断语。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v47-sool-yog-effects.step-001",
+        "action": "在 Sool Yog 已判定成立时，读取本偈给出的效果断语。",
+        "applicability_scope": "仅限已判定 Sool Yog 成立的本命盘；成立条件来自本章前面的定义偈，本偈只给效果，原文没有时间限定。",
+        "minimum_supported_claim": "本盘没有别的 Nabhash Yog 可成立、本盘所有行星（Grahas）都落在星座（Rāśi）内、所占星座数为3而构成 Sool Yog 时，生于 Sool Yog 者敏锐，懒散，没有财富，行事曲折，被禁止，英勇，并因战争而有名。",
+        "produced_fact_keys": [
+          "Sool Yog 效果断语"
+        ],
+        "required_fact_keys": [
+          "Sool Yog 成立判定",
+          "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "Sool Yog 成立判定"
+            },
+            {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If all Grahas are in one Rāśi",
+              "claim": "本盘所有行星（Grahas）都落在星座（Rāśi）内"
+            },
+            {
+              "quote": "if in 3, Sool Yog occurs",
+              "claim": "所占星座数为3而构成 Sool Yog"
+            },
+            {
+              "quote": "One born in Sool Yog",
+              "claim": "生于 Sool Yog 者"
+            },
+            {
+              "quote": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable",
+              "claim": "本盘没有别的 Nabhash Yog 可成立"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be sharp, indolent, bereft of wealth, be tortuous, prohibited, valiant and famous through war",
+              "claim": "敏锐，懒散，没有财富，行事曲折，被禁止，英勇，并因战争而有名"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v16-17",
+            "quote": "If all Grahas are in one Rāśi",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v16-17",
+            "quote": "if in 3, Sool Yog occurs",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v47",
+            "quote": "One born in Sool Yog",
+            "pdf_pages": [
+              78
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v47",
+            "quote": "will be sharp, indolent, bereft of wealth, be tortuous, prohibited, valiant and famous through war",
+            "pdf_pages": [
+              78
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v16-17",
+            "quote": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable.",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Sool Yog 成立判定、本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立。",
+        "stop_fact_keys": [
+          "Sool Yog 成立判定",
+          "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+        ],
+        "exception_relations": [
+          {
+            "type": "limitation",
+            "evidence_atom_ids": [
+              "bphs-97:santhanam:ch35:v16-17"
+            ],
+            "condition_logic": {
+              "fact_key": "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+            }
+          }
+        ],
+        "forbidden_extensions": [
+          "不得给 prohibited 补上原文没有解释的具体含义。",
+          "不得把 famous through war 换成具体战功或年代。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch35:v16-17"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "04e39cae15201d759b9e7278cbd509be9b09d95ab48d2ab7ea7c990c7d820796"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v48-yuga-yog-effects.step-001",
+      "method": {
+        "method": "ch35-v48-yuga-yog-effects",
+        "title": "Yuga Yog 的效果",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Yuga Yog 的人一生是什么样",
+          "我盘里的 Yuga Yog 会带来什么"
+        ],
+        "facts": null,
+        "dependencies": [
+          "ch35-v16-17-yuga-yog"
+        ],
+        "retrieval_plan": {
+          "support_queries": [
+            "One born in Yuga Yog",
+            "will be heretic, be devoid of wealth, be discarded by others and be devoid of sons, mother and virtues",
+            "Yuga Yog 的效果断语"
+          ],
+          "counter_queries": [
+            "None of these seven Yogas will be operable, if another Nabhash Yog is derivable."
+          ],
+          "boundary_queries": [
+            "Ancestors say, that the results, due to said (Nabhash) Yogas, will be felt throughout in all the Dasha periods.",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "Nabhash 瑜伽效果的时间范围与全章边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v48-yuga-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If all Grahas are in one Rāśi"
+            },
+            {
+              "step_id": "ch35-v48-yuga-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if in 2, Yuga Yog is formed"
+            },
+            {
+              "step_id": "ch35-v48-yuga-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Yuga Yog"
+            },
+            {
+              "step_id": "ch35-v48-yuga-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable"
+            },
+            {
+              "step_id": "ch35-v48-yuga-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be heretic, be devoid of wealth, be discarded by others and be devoid of sons, mother and virtues"
+            },
+            {
+              "step_id": "ch35-v48-yuga-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If all Grahas are in one Rāśi will be heretic, be devoid of wealth, be discarded by others and be devoid of sons, mother and virtues"
+            },
+            {
+              "step_id": "ch35-v48-yuga-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if in 2, Yuga Yog is formed will be heretic, be devoid of wealth, be discarded by others and be devoid of sons, mother and virtues"
+            },
+            {
+              "step_id": "ch35-v48-yuga-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Yuga Yog will be heretic, be devoid of wealth, be discarded by others and be devoid of sons, mother and virtues"
+            },
+            {
+              "step_id": "ch35-v48-yuga-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable will be heretic, be devoid of wealth, be discarded by others and be devoid of sons, mother and virtues"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "Yuga Yog 是否成立尚未判定时停止：成立条件由方法 ch35-v16-17-yuga-yog 给出。",
+          "不得在 Yuga Yog 未成立时套用本条断语。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v48-yuga-yog-effects.step-001",
+        "action": "在 Yuga Yog 已判定成立时，读取本偈给出的效果断语。",
+        "applicability_scope": "仅限已判定 Yuga Yog 成立的本命盘；成立条件来自本章前面的定义偈，本偈只给效果，原文没有时间限定。",
+        "minimum_supported_claim": "本盘没有别的 Nabhash Yog 可成立、本盘所有行星（Grahas）都落在星座（Rāśi）内、所占星座数为2而构成 Yuga Yog 时，生于 Yuga Yog 者是异端，没有财富，被他人抛弃，没有子女、母亲与德行。",
+        "produced_fact_keys": [
+          "Yuga Yog 效果断语"
+        ],
+        "required_fact_keys": [
+          "Yuga Yog 成立判定",
+          "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "Yuga Yog 成立判定"
+            },
+            {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If all Grahas are in one Rāśi",
+              "claim": "本盘所有行星（Grahas）都落在星座（Rāśi）内"
+            },
+            {
+              "quote": "if in 2, Yuga Yog is formed",
+              "claim": "所占星座数为2而构成 Yuga Yog"
+            },
+            {
+              "quote": "One born in Yuga Yog",
+              "claim": "生于 Yuga Yog 者"
+            },
+            {
+              "quote": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable",
+              "claim": "本盘没有别的 Nabhash Yog 可成立"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be heretic, be devoid of wealth, be discarded by others and be devoid of sons, mother and virtues",
+              "claim": "是异端，没有财富，被他人抛弃，没有子女、母亲与德行"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v16-17",
+            "quote": "If all Grahas are in one Rāśi",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v16-17",
+            "quote": "if in 2, Yuga Yog is formed",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v48",
+            "quote": "One born in Yuga Yog",
+            "pdf_pages": [
+              78
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v48",
+            "quote": "will be heretic, be devoid of wealth, be discarded by others and be devoid of sons, mother and virtues",
+            "pdf_pages": [
+              78
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v16-17",
+            "quote": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable.",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Yuga Yog 成立判定、本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立。",
+        "stop_fact_keys": [
+          "Yuga Yog 成立判定",
+          "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+        ],
+        "exception_relations": [
+          {
+            "type": "limitation",
+            "evidence_atom_ids": [
+              "bphs-97:santhanam:ch35:v16-17"
+            ],
+            "condition_logic": {
+              "fact_key": "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+            }
+          }
+        ],
+        "forbidden_extensions": [
+          "原文只说 devoid of sons（没有子女），不得写成绝嗣，也不得补上年龄或死因。",
+          "原文只说 devoid of mother，不得补上母亲去世的时间或原因。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch35:v16-17"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "58d90cadd688dd14a4f18e2af7da43e0cd940e872046f10502c815e7008515ae"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v49-gola-yog-effects.step-001",
+      "method": {
+        "method": "ch35-v49-gola-yog-effects",
+        "title": "Gola Yog 的效果",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Gola Yog 的人一生是什么样",
+          "我盘里的 Gola Yog 会带来什么"
+        ],
+        "facts": null,
+        "dependencies": [
+          "ch35-v16-17-gola-yog"
+        ],
+        "retrieval_plan": {
+          "support_queries": [
+            "One born in Gola Yog",
+            "will be strong, be devoid of wealth, learning and intelligence, be dirty, sorrowful and miserable",
+            "Gola Yog 的效果断语"
+          ],
+          "counter_queries": [
+            "None of these seven Yogas will be operable, if another Nabhash Yog is derivable."
+          ],
+          "boundary_queries": [
+            "Ancestors say, that the results, due to said (Nabhash) Yogas, will be felt throughout in all the Dasha periods.",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "Nabhash 瑜伽效果的时间范围与全章边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v49-gola-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If all Grahas are in one Rāśi, Gola Yog is formed"
+            },
+            {
+              "step_id": "ch35-v49-gola-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "One born in Gola Yog"
+            },
+            {
+              "step_id": "ch35-v49-gola-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable"
+            },
+            {
+              "step_id": "ch35-v49-gola-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be strong, be devoid of wealth, learning and intelligence, be dirty, sorrowful and miserable"
+            },
+            {
+              "step_id": "ch35-v49-gola-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If all Grahas are in one Rāśi, Gola Yog is formed will be strong, be devoid of wealth, learning and intelligence, be dirty, sorrowful and miserable"
+            },
+            {
+              "step_id": "ch35-v49-gola-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "One born in Gola Yog will be strong, be devoid of wealth, learning and intelligence, be dirty, sorrowful and miserable"
+            },
+            {
+              "step_id": "ch35-v49-gola-yog-effects.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable will be strong, be devoid of wealth, learning and intelligence, be dirty, sorrowful and miserable"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "Gola Yog 是否成立尚未判定时停止：成立条件由方法 ch35-v16-17-gola-yog 给出。",
+          "不得在 Gola Yog 未成立时套用本条断语。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v49-gola-yog-effects.step-001",
+        "action": "在 Gola Yog 已判定成立时，读取本偈给出的效果断语。",
+        "applicability_scope": "仅限已判定 Gola Yog 成立的本命盘；成立条件来自本章前面的定义偈，本偈只给效果，原文没有时间限定。",
+        "minimum_supported_claim": "本盘没有别的 Nabhash Yog 可成立、本盘所有行星（Grahas）都落在1个星座（Rāśi）内而构成 Gola Yog 时，生于 Gola Yog 者强壮，没有财富、学识与智力，肮脏，忧伤而悲惨。",
+        "produced_fact_keys": [
+          "Gola Yog 效果断语"
+        ],
+        "required_fact_keys": [
+          "Gola Yog 成立判定",
+          "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "Gola Yog 成立判定"
+            },
+            {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If all Grahas are in one Rāśi, Gola Yog is formed",
+              "claim": "本盘所有行星（Grahas）都落在1个星座（Rāśi）内而构成 Gola Yog"
+            },
+            {
+              "quote": "One born in Gola Yog",
+              "claim": "生于 Gola Yog 者"
+            },
+            {
+              "quote": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable",
+              "claim": "本盘没有别的 Nabhash Yog 可成立"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be strong, be devoid of wealth, learning and intelligence, be dirty, sorrowful and miserable",
+              "claim": "强壮，没有财富、学识与智力，肮脏，忧伤而悲惨"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v16-17",
+            "quote": "If all Grahas are in one Rāśi, Gola Yog is formed",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v49",
+            "quote": "One born in Gola Yog",
+            "pdf_pages": [
+              78
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v49",
+            "quote": "will be strong, be devoid of wealth, learning and intelligence, be dirty, sorrowful and miserable",
+            "pdf_pages": [
+              78
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v16-17",
+            "quote": "None of these seven Yogas will be operable, if another Nabhash Yog is derivable.",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Gola Yog 成立判定、本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立。",
+        "stop_fact_keys": [
+          "Gola Yog 成立判定",
+          "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+        ],
+        "exception_relations": [
+          {
+            "type": "limitation",
+            "evidence_atom_ids": [
+              "bphs-97:santhanam:ch35:v16-17"
+            ],
+            "condition_logic": {
+              "fact_key": "本盘是否另有别的 Nabhash 瑜伽（Nabhash Yog）可成立"
+            }
+          }
+        ],
+        "forbidden_extensions": [
+          "不得把 devoid of learning 读成不识字或没有学历——原文没有这层意思。",
+          "不得丢掉「另有别的 Nabhash 瑜伽可成立时本瑜伽不起作用」这条限制。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch35:v16-17"
+        ],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "2644d0e6e0eb034f449f4d42d82212c2f6c4b96152e26a2c8aaeee5df7c09e90"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v50-nabhash-results-in-all-dashas.step-001",
+      "method": {
+        "method": "ch35-v50-nabhash-results-in-all-dashas",
+        "title": "Nabhash 瑜伽的结果在所有大运期间都会显现",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Nabhash 瑜伽的效果什么时候会显现",
+          "我盘上的 Nabhash 瑜伽要等到哪一步大运才应验"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Ancestors say, that the results, due to said (Nabhash) Yogas, will be felt throughout in all the Dasha periods.",
+            "Nabhash 瑜伽的结果在所有大运期间显现"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "Nabhash 瑜伽结果显现时间的边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v50-nabhash-results-in-all-dashas.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "the results, due to said (Nabhash) Yogas"
+            },
+            {
+              "step_id": "ch35-v50-nabhash-results-in-all-dashas.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Effects of Nabhash Yogas"
+            },
+            {
+              "step_id": "ch35-v50-nabhash-results-in-all-dashas.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will be felt throughout in all the Dasha periods"
+            },
+            {
+              "step_id": "ch35-v50-nabhash-results-in-all-dashas.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "the results, due to said (Nabhash) Yogas will be felt throughout in all the Dasha periods"
+            },
+            {
+              "step_id": "ch35-v50-nabhash-results-in-all-dashas.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Effects of Nabhash Yogas will be felt throughout in all the Dasha periods"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "本盘是否有 Nabhash 瑜伽成立尚未判定时停止。",
+          "原文以 Ancestors say 转述，若需要作者自断级别的依据则停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v50-nabhash-results-in-all-dashas.step-001",
+        "action": "确认本盘有 Nabhash 瑜伽成立后，按本偈读取这些瑜伽结果的显现时间范围。",
+        "applicability_scope": "仅限本章所讲的 Nabhash 瑜伽；原文以 Ancestors say（先辈们说）转述，结论强度不等同本书作者自断；原文没有点名具体大运或年数。",
+        "minimum_supported_claim": "先辈们说，上述 Nabhash 瑜伽所生的结果，在所有大运（Dasha）期间都会显现。",
+        "produced_fact_keys": [
+          "Nabhash 瑜伽结果的显现时间范围判定"
+        ],
+        "required_fact_keys": [
+          "本盘是否有 Nabhash 瑜伽（Nabhash Yog）成立"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘是否有 Nabhash 瑜伽（Nabhash Yog）成立"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "the results, due to said (Nabhash) Yogas",
+              "claim": "上述 Nabhash 瑜伽所生的结果"
+            },
+            {
+              "quote": "Effects of Nabhash Yogas",
+              "claim": "上述 Nabhash 瑜伽"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will be felt throughout in all the Dasha periods",
+              "claim": "在所有大运（Dasha）期间都会显现"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v18",
+            "quote": "Effects of Nabhash Yogas",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v50",
+            "quote": "Ancestors say, that the results, due to said (Nabhash) Yogas, will be felt throughout in all the Dasha periods.",
+            "pdf_pages": [
+              78
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘是否有 Nabhash 瑜伽（Nabhash Yog）成立。",
+        "stop_fact_keys": [
+          "本盘是否有 Nabhash 瑜伽（Nabhash Yog）成立"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此指定某一步大运（Dasha）或某个年份为应期——原文说的是所有大运期间。",
+          "不得把这条推广到本章以外的其他瑜伽。"
+        ],
+        "context_reference": true,
+        "context_bindings": [
+          "bphs-97:santhanam:ch35:v18"
+        ],
+        "time_scope": {
+          "kind": "period",
+          "label": "原文说结果在所有大运（Dasha）期间都会显现，未给具体大运或年数",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "a1f2de7dac865272f0d290633314567d44989b53a60ebcfce5b9d338769db394"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch35:v14": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v14",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "14.",
+      "content_role": "verse",
+      "exact_text": "14. Nauka, Koot, Chatr and Chap Yogas. If all the Grahas occupy the seven Bhavas from Lagna, Nauka Yog occurs, if from Bandhu, Koot Yog is formed, if from Yuvati, Chatr Yog occurs and, if from Karm, Chap Yog occurs. Here again the Grahas should occupy seven continuous Bhavas.\n\nQuoted from Saravali. If the seven Grahas occupy continuously seven Bhavas, commencing from a Bhava, which is not angular to the Lagna, the Yoga produced is known, as Ardh Chandraa Yoga.",
+      "pdf_pages": [
+        76
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 14 · PDF page 76 · bphs-97:santhanam:ch35:v14",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v13",
+      "next_atom_id": "bphs-97:santhanam:ch35:v15",
+      "context_before": " If all the 7 Grahas are in the 4 Bhavas, commencing from Lagna, they cause Yup Yog, if from Bandhu, Shar Yog occurs, if from Yuvati, Shakti Yog occurs and, if from Karm, Danda Yog is formed.\n\n",
+      "context_after": "15. Chakr and Samudr Yogas. If all the Grahas occupy six alternative Rāśis, commencing from Lagna, Chakr Yog is formed. Samudr Y",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch35:v15": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v15",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "15.",
+      "content_role": "verse",
+      "exact_text": "15. Chakr and Samudr Yogas. If all the Grahas occupy six alternative Rāśis, commencing from Lagna, Chakr Yog is formed. Samudr Yog is produced, if all Grahas occupy six alternative Rāśis, commencing from Dhan Bhava.",
+      "pdf_pages": [
+        76
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 15 · PDF page 76 · bphs-97:santhanam:ch35:v15",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v14",
+      "next_atom_id": "bphs-97:santhanam:ch35:v16-17",
+      "context_before": " If the seven Grahas occupy continuously seven Bhavas, commencing from a Bhava, which is not angular to the Lagna, the Yoga produced is known, as Ardh Chandraa Yoga.\n\n",
+      "context_after": "16-17. Sankhya Yogas. If all Grahas are in one Rāśi, Gola Yog is formed, if in 2, Yuga Yog is formed, if in 3, Sool Yog occurs, ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch35:v16-17": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v16-17",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "16-17.",
+      "content_role": "verse",
+      "exact_text": "16-17. Sankhya Yogas. If all Grahas are in one Rāśi, Gola Yog is formed, if in 2, Yuga Yog is formed, if in 3, Sool Yog occurs, if in 4, Kedara Yog occurs, if in 5, Paash Yog is formed, if in 6, Daam Yog occurs and, if in 7, Veena Yog is produced. None of these seven Yogas will be operable, if another Nabhash Yog is derivable.",
+      "pdf_pages": [
+        76
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 16-17 · PDF page 76 · bphs-97:santhanam:ch35:v16-17",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v15",
+      "next_atom_id": "bphs-97:santhanam:ch35:v18",
+      "context_before": "om Lagna, Chakr Yog is formed. Samudr Yog is produced, if all Grahas occupy six alternative Rāśis, commencing from Dhan Bhava.\n\n",
+      "context_after": "18. Effects of Nabhash Yogas (up to Sloka 50). Rajju Yog. One born in Rajju Yog will be fond of wandering, be charming, will ear",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch35:v18": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v18",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "18.",
+      "content_role": "verse",
+      "exact_text": "18. Effects of Nabhash Yogas (up to Sloka 50). Rajju Yog. One born in Rajju Yog will be fond of wandering, be charming, will earn in foreign countries. He will be cruel and mischievous.",
+      "pdf_pages": [
+        76
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 18 · PDF page 76 · bphs-97:santhanam:ch35:v18",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v16-17",
+      "next_atom_id": "bphs-97:santhanam:ch35:v19",
+      "context_before": "g occurs and, if in 7, Veena Yog is produced. None of these seven Yogas will be operable, if another Nabhash Yog is derivable.\n\n",
+      "context_after": "19. Musala Yog. One born in Musala Yog will be endowed with honour, wisdom, wealth etc., be dear to king, famous, will have many",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch35:v38": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v38",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "38.",
+      "content_role": "verse",
+      "exact_text": "38. Chatr Yog. One born in Chatr Yog will help his own men, be kind, dear to many kings, very intelligent, happy at the beginning and end of his life and be long-lived.",
+      "pdf_pages": [
+        78
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 38 · PDF page 78 · bphs-97:santhanam:ch35:v38",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v37",
+      "next_atom_id": "bphs-97:santhanam:ch35:v39",
+      "context_before": "Koot Yog. One born in Koot Yog will be a liar, will head a jail, be poor, crafty, cruel and will live in hills and fortresses.\n\n",
+      "context_after": "39. Chap Yog. One born in Chap Yog will be liar, will protect secrets, be a thief, be fond of wandering, forests, be devoid of l",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch35:v39": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v39",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "39.",
+      "content_role": "verse",
+      "exact_text": "39. Chap Yog. One born in Chap Yog will be liar, will protect secrets, be a thief, be fond of wandering, forests, be devoid of luck and be happy in the middle of the life.",
+      "pdf_pages": [
+        78
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 39 · PDF page 78 · bphs-97:santhanam:ch35:v39",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v38",
+      "next_atom_id": "bphs-97:santhanam:ch35:v40",
+      "context_before": " One born in Chatr Yog will help his own men, be kind, dear to many kings, very intelligent, happy at the beginning and end of his life and be long-lived.\n\n",
+      "context_after": "40. Ardh Chandra Yog. One born in Ardh Chandra Yog will lead an Army, will possess a splendourous body, be dear to king, be stro",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch35:v40": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v40",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "40.",
+      "content_role": "verse",
+      "exact_text": "40. Ardh Chandra Yog. One born in Ardh Chandra Yog will lead an Army, will possess a splendourous body, be dear to king, be strong and endowed with gems, gold and ornaments.",
+      "pdf_pages": [
+        78
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 40 · PDF page 78 · bphs-97:santhanam:ch35:v40",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v39",
+      "next_atom_id": "bphs-97:santhanam:ch35:v41",
+      "context_before": " One born in Chap Yog will be liar, will protect secrets, be a thief, be fond of wandering, forests, be devoid of luck and be happy in the middle of the life.\n\n",
+      "context_after": "41. Chakr Yog. One born in Chakr Yog will be an emperor, at whose feet will be the prostrating kings, heads, adoring gem studded",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch35:v41": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v41",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "41.",
+      "content_role": "verse",
+      "exact_text": "41. Chakr Yog. One born in Chakr Yog will be an emperor, at whose feet will be the prostrating kings, heads, adoring gem studded diadems.",
+      "pdf_pages": [
+        78
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 41 · PDF page 78 · bphs-97:santhanam:ch35:v41",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v40",
+      "next_atom_id": "bphs-97:santhanam:ch35:v42",
+      "context_before": " One born in Ardh Chandra Yog will lead an Army, will possess a splendourous body, be dear to king, be strong and endowed with gems, gold and ornaments.\n\n",
+      "context_after": "42. Samudr Yog. One born in Samudr Yog will have many precious stones and abundant wealth, be endowed with pleasures, dear to pe",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch35:v42": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v42",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "42.",
+      "content_role": "verse",
+      "exact_text": "42. Samudr Yog. One born in Samudr Yog will have many precious stones and abundant wealth, be endowed with pleasures, dear to people, will have firm wealth and be well disposed.",
+      "pdf_pages": [
+        78
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 42 · PDF page 78 · bphs-97:santhanam:ch35:v42",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v41",
+      "next_atom_id": "bphs-97:santhanam:ch35:v43",
+      "context_before": "og. One born in Chakr Yog will be an emperor, at whose feet will be the prostrating kings, heads, adoring gem studded diadems.\n\n",
+      "context_after": "43. Veena Yog. One born in Veena Yog will be fond of songs, dance and musical instruments, be skilful, happy, wealthy and be a l",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch35:v43": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v43",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "43.",
+      "content_role": "verse",
+      "exact_text": "43. Veena Yog. One born in Veena Yog will be fond of songs, dance and musical instruments, be skilful, happy, wealthy and be a leader of men.",
+      "pdf_pages": [
+        78
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 43 · PDF page 78 · bphs-97:santhanam:ch35:v43",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v42",
+      "next_atom_id": "bphs-97:santhanam:ch35:v44",
+      "context_before": " One born in Samudr Yog will have many precious stones and abundant wealth, be endowed with pleasures, dear to people, will have firm wealth and be well disposed.\n\n",
+      "context_after": "44. Daamini Yog. One born in Daamini Yog will be helpful to others, will have righteously earned wealth, be very affluent, famou",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch35:v44": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v44",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "44.",
+      "content_role": "verse",
+      "exact_text": "44. Daamini Yog. One born in Daamini Yog will be helpful to others, will have righteously earned wealth, be very affluent, famous, will have many sons and gems, be courageous and red-lettered.",
+      "pdf_pages": [
+        78
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 44 · PDF page 78 · bphs-97:santhanam:ch35:v44",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v43",
+      "next_atom_id": "bphs-97:santhanam:ch35:v45",
+      "context_before": " One born in Veena Yog will be fond of songs, dance and musical instruments, be skilful, happy, wealthy and be a leader of men.\n\n",
+      "context_after": "45. Paash Yog. One born in Paash Yog will be liable to be imprisoned, be skilful in work, be deceiving in disposition, will talk",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch35:v45": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v45",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "45.",
+      "content_role": "verse",
+      "exact_text": "45. Paash Yog. One born in Paash Yog will be liable to be imprisoned, be skilful in work, be deceiving in disposition, will talk much, be bereft of good qualities and will have many servants.",
+      "pdf_pages": [
+        78
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 45 · PDF page 78 · bphs-97:santhanam:ch35:v45",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v44",
+      "next_atom_id": "bphs-97:santhanam:ch35:v46",
+      "context_before": " One born in Daamini Yog will be helpful to others, will have righteously earned wealth, be very affluent, famous, will have many sons and gems, be courageous and red-lettered.\n\n",
+      "context_after": "46. Kedara Yog. One born in Kedara Yog will be useful to many, be an agriculturist, be truthful, happy, fickle-minded and wealth",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch35:v46": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v46",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "46.",
+      "content_role": "verse",
+      "exact_text": "46. Kedara Yog. One born in Kedara Yog will be useful to many, be an agriculturist, be truthful, happy, fickle-minded and wealthy.",
+      "pdf_pages": [
+        78
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 46 · PDF page 78 · bphs-97:santhanam:ch35:v46",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v45",
+      "next_atom_id": "bphs-97:santhanam:ch35:v47",
+      "context_before": " One born in Paash Yog will be liable to be imprisoned, be skilful in work, be deceiving in disposition, will talk much, be bereft of good qualities and will have many servants.\n\n",
+      "context_after": "47. Sool Yog. One born in Sool Yog will be sharp, indolent, bereft of wealth, be tortuous, prohibited, valiant and famous throug",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch35:v47": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v47",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "47.",
+      "content_role": "verse",
+      "exact_text": "47. Sool Yog. One born in Sool Yog will be sharp, indolent, bereft of wealth, be tortuous, prohibited, valiant and famous through war.",
+      "pdf_pages": [
+        78
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 47 · PDF page 78 · bphs-97:santhanam:ch35:v47",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v46",
+      "next_atom_id": "bphs-97:santhanam:ch35:v48",
+      "context_before": "Kedara Yog. One born in Kedara Yog will be useful to many, be an agriculturist, be truthful, happy, fickle-minded and wealthy.\n\n",
+      "context_after": "48. Yuga Yog. One born in Yuga Yog will be heretic, be devoid of wealth, be discarded by others and be devoid of sons, mother an",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch35:v48": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v48",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "48.",
+      "content_role": "verse",
+      "exact_text": "48. Yuga Yog. One born in Yuga Yog will be heretic, be devoid of wealth, be discarded by others and be devoid of sons, mother and virtues.",
+      "pdf_pages": [
+        78
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 48 · PDF page 78 · bphs-97:santhanam:ch35:v48",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v47",
+      "next_atom_id": "bphs-97:santhanam:ch35:v49",
+      "context_before": " Yog. One born in Sool Yog will be sharp, indolent, bereft of wealth, be tortuous, prohibited, valiant and famous through war.\n\n",
+      "context_after": "49. Gola Yog. One born in Gola Yog will be strong, be devoid of wealth, learning and intelligence, be dirty, sorrowful and miser",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch35:v49": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v49",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "49.",
+      "content_role": "verse",
+      "exact_text": "49. Gola Yog. One born in Gola Yog will be strong, be devoid of wealth, learning and intelligence, be dirty, sorrowful and miserable.",
+      "pdf_pages": [
+        78
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 49 · PDF page 78 · bphs-97:santhanam:ch35:v49",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v48",
+      "next_atom_id": "bphs-97:santhanam:ch35:v50",
+      "context_before": ". One born in Yuga Yog will be heretic, be devoid of wealth, be discarded by others and be devoid of sons, mother and virtues.\n\n",
+      "context_after": "50. Ancestors say, that the results, due to said (Nabhash) Yogas, will be felt throughout in all the Dasha periods.\n\n## **Ch. 36",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch35:v50": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v50",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "50.",
+      "content_role": "verse",
+      "exact_text": "50. Ancestors say, that the results, due to said (Nabhash) Yogas, will be felt throughout in all the Dasha periods.",
+      "pdf_pages": [
+        78
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 50 · PDF page 78 · bphs-97:santhanam:ch35:v50",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v49",
+      "next_atom_id": null,
+      "context_before": "a Yog. One born in Gola Yog will be strong, be devoid of wealth, learning and intelligence, be dirty, sorrowful and miserable.\n\n",
+      "context_after": "",
+      "content_missing": false
+    }
+  }
+}

@@ -1,0 +1,3882 @@
+{
+  "shard": 4,
+  "step_count": 15,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch39-v22-atma-karak-in-benefic-rasi.step-001",
+      "method": {
+        "method": "ch39-v22-atma-karak-in-benefic-rasi",
+        "title": "Atma Karak 落吉星主管的星座或九分盘：富有",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的财运怎么样",
+          "Atma Karak 落在哪里算好"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If the Atma Karak Grah is in a benefic’s Rāśi/Navāńś, the native will be wealthy",
+            "Atma Karak 落吉星星座 九分盘 富有"
+          ],
+          "counter_queries": [
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak",
+            "The Lord of the Navāńś, occupied by Chandra, joining a Marak Grah, or occupying a Marak Bhava, will make one penniless"
+          ],
+          "boundary_queries": [
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Budh, however, is a malefic, if he joins a malefic",
+            "Karakāńś is the Navāńś, occupied by the Atma Karak Grah"
+          ],
+          "method_queries": [
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn",
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v22-atma-karak-in-benefic-rasi.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If the Atma Karak Grah is in a benefic’s Rāśi/Navāńś"
+            },
+            {
+              "step_id": "ch39-v22-atma-karak-in-benefic-rasi.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be wealthy"
+            },
+            {
+              "step_id": "ch39-v22-atma-karak-in-benefic-rasi.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If the Atma Karak Grah is in a benefic’s Rāśi/Navāńś the native will be wealthy"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少 Atma Karak 身份事实时停止。",
+          "缺少本盘吉星名册事实时停止。",
+          "星座与九分盘两项归属事实全部缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v22-atma-karak-in-benefic-rasi.step-001",
+        "action": "先认出 Atma Karak 并取吉星名册，再核对它所落的星座或九分盘星座是否由吉星主管。",
+        "applicability_scope": "仅限本命盘财富主题；原文本句未给出吉星的判准，也没有时间限定。",
+        "minimum_supported_claim": "Atma Karak 落在吉星主管的星座（Rāśi）或吉星主管的九分盘（Navāńś）星座时，命主会富有。",
+        "produced_fact_keys": [
+          "Atma Karak 居吉星星座的富有判定"
+        ],
+        "required_fact_keys": [
+          "本盘的 Atma Karak 是哪颗行星",
+          "本盘中哪些行星被判为吉星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘的 Atma Karak 是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘中哪些行星被判为吉星"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "Atma Karak 是否落吉星主管的星座（Rāśi）"
+                },
+                {
+                  "fact_key": "Atma Karak 在九分盘（Navāńś D9）中是否落吉星主管的星座"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘的 Atma Karak 是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘中哪些行星被判为吉星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "Atma Karak 是否落吉星主管的星座（Rāśi）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "Atma Karak 是否落吉星主管的星座（Rāśi）"
+            },
+            "selection_group": "ch39-v22-atma-karak-in-benefic-rasi.step-001:rasi-or-navamsa",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Atma Karak 是否落吉星主管的星座（Rāśi）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘的 Atma Karak 是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘中哪些行星被判为吉星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "Atma Karak 在九分盘（Navāńś D9）中是否落吉星主管的星座"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "Atma Karak 在九分盘（Navāńś D9）中是否落吉星主管的星座"
+            },
+            "selection_group": "ch39-v22-atma-karak-in-benefic-rasi.step-001:rasi-or-navamsa",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Atma Karak 在九分盘（Navāńś D9）中是否落吉星主管的星座。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If the Atma Karak Grah is in a benefic’s Rāśi/Navāńś",
+              "claim": "Atma Karak 落在吉星主管的星座（Rāśi）或吉星主管的九分盘（Navāńś）星座"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be wealthy",
+              "claim": "命主会富有"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v22",
+            "quote": "If the Atma Karak Grah is in a benefic’s Rāśi/Navāńś, the native will be wealthy.",
+            "pdf_pages": [
+              83
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘的 Atma Karak 是哪颗行星、本盘中哪些行星被判为吉星。",
+        "stop_fact_keys": [
+          "本盘的 Atma Karak 是哪颗行星",
+          "本盘中哪些行星被判为吉星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得据此推断财富数额、来源或发财时间。",
+          "Navāńś 是九分盘（D9），不得换成别的分盘。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "66a32ff202056ff5ffbc56749d01c279578fe745492243b51908a6790baae3c8"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v22-benefics-in-kendras-from-karakamsa.step-001",
+      "method": {
+        "method": "ch39-v22-benefics-in-kendras-from-karakamsa",
+        "title": "Karakāńś Lagna 起算的角宫内有吉星：成为国王",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Karakāńś 该怎么用",
+          "我有没有登顶的组合"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If there are benefics in Kendras from Karakāńś Lagna, he will become a king",
+            "Karakāńś 起算角宫吉星 成为国王"
+          ],
+          "counter_queries": [
+            "If malefics be in Karakāńś, Arudh Lagn and the 2<sup>nd</sup> and 8<sup>th</sup> from these places, there will be Kemadrum Yog",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "Karakāńś is the Navāńś, occupied by the Atma Karak Grah",
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics"
+          ],
+          "method_queries": [
+            "Should the Kendras/Konas from the Karakāńś be occupied by benefics, devoid",
+            "The Yogas so far stated by me with reference to Lagn Pad be similarly evaluated from Karakāńś as well"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v22-benefics-in-kendras-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If there are benefics in Kendras from Karakāńś Lagna"
+            },
+            {
+              "step_id": "ch39-v22-benefics-in-kendras-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "he will become a king"
+            },
+            {
+              "step_id": "ch39-v22-benefics-in-kendras-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If there are benefics in Kendras from Karakāńś Lagna he will become a king"
+            },
+            {
+              "step_id": "ch39-v22-benefics-in-kendras-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If there are benefics in Kendras from Karakāńś 1st house"
+            },
+            {
+              "step_id": "ch39-v22-benefics-in-kendras-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If there are benefics in Kendras from Karakāńś 1st house he will become a king"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少 Karakāńś 定位事实时停止。",
+          "缺少本盘吉星名册事实时停止。",
+          "缺少角宫吉星占据事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v22-benefics-in-kendras-from-karakamsa.step-001",
+        "action": "先取本盘 Karakāńś Lagna 与吉星名册，再核对从 Karakāńś Lagna 起算的角宫内是否有吉星。",
+        "applicability_scope": "仅限本命盘；原文本句未给出吉星的判准，也没有时间限定。",
+        "minimum_supported_claim": "从 Karakāńś Lagna 起算的角宫（Kendras）内有吉星时，命主会成为国王。",
+        "produced_fact_keys": [
+          "Karakāńś 角宫吉星的贵格判定"
+        ],
+        "required_fact_keys": [
+          "本盘的 Karakāńś 是哪个星座",
+          "本盘中哪些行星被判为吉星",
+          "从 Karakāńś Lagna 起算的角宫（Kendras）内是否有吉星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘的 Karakāńś 是哪个星座"
+            },
+            {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            {
+              "fact_key": "从 Karakāńś Lagna 起算的角宫（Kendras）内是否有吉星"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If there are benefics in Kendras from Karakāńś Lagna",
+              "claim": "从 Karakāńś Lagna 起算的角宫（Kendras）内有吉星"
+            }
+          ],
+          "results": [
+            {
+              "quote": "he will become a king",
+              "claim": "命主会成为国王"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v22",
+            "quote": "If there are benefics in Kendras from Karakāńś Lagna, he will become a king.",
+            "pdf_pages": [
+              83
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘的 Karakāńś 是哪个星座、本盘中哪些行星被判为吉星、从 Karakāńś Lagna 起算的角宫（Kendras）内是否有吉星。",
+        "stop_fact_keys": [
+          "本盘的 Karakāńś 是哪个星座",
+          "本盘中哪些行星被判为吉星",
+          "从 Karakāńś Lagna 起算的角宫（Kendras）内是否有吉星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文只写角宫，不得把三角宫等别的宫位也算进来。",
+          "不得据此推断登位时间或具体权位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "be47583c024b8e14c24ddbcde88262f74f0a48c7ec4ff8d7065fbe1184b4aeb8"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v23-arudh-lagn-dar-pad.step-001",
+      "method": {
+        "method": "ch39-v23-arudh-lagn-dar-pad",
+        "title": "Arudh Lagn 与 Dar Pad 互成角宫、三宫十一宫或三角宫：无疑成为国王",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Arudh Lagna 和配偶宫的 Pad 有什么关系",
+          "我有没有一定应验的贵格"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If the Arudh Lagn and Dar Pad are in mutual Kendras, or in mutual Sahaj/Labh Bhavas, or in mutual Konas, the native will doubtlessly become a king",
+            "Arudh Lagn 与 Dar Pad 互成角宫 三角宫 国王"
+          ],
+          "counter_queries": [
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak",
+            "If malefics be in Karakāńś, Arudh Lagn and the 2<sup>nd</sup> and 8<sup>th</sup> from these places, there will be Kemadrum Yog"
+          ],
+          "boundary_queries": [
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "The same Bhava, or the 7<sup>th</sup> from it does not become its Pad"
+          ],
+          "method_queries": [
+            "Names of the 12 Arudhas are Lagn Pad - Arudh of Tanu Bhava, Dhan of Dhan, Vikram (Bhratru) of Sahaj",
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v23-arudh-lagn-dar-pad.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If the Arudh Lagn and Dar Pad are in mutual Kendras"
+            },
+            {
+              "step_id": "ch39-v23-arudh-lagn-dar-pad.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or in mutual Sahaj/Labh Bhavas"
+            },
+            {
+              "step_id": "ch39-v23-arudh-lagn-dar-pad.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or in mutual Konas"
+            },
+            {
+              "step_id": "ch39-v23-arudh-lagn-dar-pad.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will doubtlessly become a king"
+            },
+            {
+              "step_id": "ch39-v23-arudh-lagn-dar-pad.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If the Arudh Lagn and Dar Pad are in mutual Kendras the native will doubtlessly become a king"
+            },
+            {
+              "step_id": "ch39-v23-arudh-lagn-dar-pad.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or in mutual Sahaj/Labh Bhavas the native will doubtlessly become a king"
+            },
+            {
+              "step_id": "ch39-v23-arudh-lagn-dar-pad.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or in mutual Konas the native will doubtlessly become a king"
+            },
+            {
+              "step_id": "ch39-v23-arudh-lagn-dar-pad.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If the Arudh 1st house and Dar Pad are in mutual Kendras"
+            },
+            {
+              "step_id": "ch39-v23-arudh-lagn-dar-pad.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "or in mutual 3rd house/Labh Bhavas"
+            },
+            {
+              "step_id": "ch39-v23-arudh-lagn-dar-pad.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If the Arudh 1st house and Dar Pad are in mutual Kendras the native will doubtlessly become a king"
+            },
+            {
+              "step_id": "ch39-v23-arudh-lagn-dar-pad.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "or in mutual 3rd house/Labh Bhavas the native will doubtlessly become a king"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少 Arudh Lagn 或 Dar Pad 的定位事实时停止。",
+          "三种相互关系事实全部缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v23-arudh-lagn-dar-pad.step-001",
+        "action": "先定出 Arudh Lagn 与 Dar Pad 两个 Pad 的位置，再核对两者之间是哪一种相互关系。",
+        "applicability_scope": "仅限本命盘；原文没有时间限定。",
+        "minimum_supported_claim": "Arudh Lagn 与 Dar Pad 互成角宫（Kendras），或互成三宫与十一宫的关系（Sahaj/Labh Bhavas），或互成三角宫（Konas）时，命主无疑会成为国王。",
+        "produced_fact_keys": [
+          "Arudh Lagn 与 Dar Pad 互位的贵格判定"
+        ],
+        "required_fact_keys": [
+          "本盘的 Arudh Lagna 落在哪个星座",
+          "本盘的 Dar Pad 落在哪个星座"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘的 Arudh Lagna 落在哪个星座"
+                },
+                {
+                  "fact_key": "本盘的 Dar Pad 落在哪个星座"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "Arudh Lagn 与 Dar Pad 是否互成角宫（Kendras）"
+                },
+                {
+                  "fact_key": "Arudh Lagn 与 Dar Pad 是否互成三宫十一宫关系（Sahaj/Labh）"
+                },
+                {
+                  "fact_key": "Arudh Lagn 与 Dar Pad 是否互成三角宫（Konas）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘的 Arudh Lagna 落在哪个星座"
+                },
+                {
+                  "fact_key": "本盘的 Dar Pad 落在哪个星座"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "Arudh Lagn 与 Dar Pad 是否互成角宫（Kendras）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "Arudh Lagn 与 Dar Pad 是否互成角宫（Kendras）"
+            },
+            "selection_group": "ch39-v23-arudh-lagn-dar-pad.step-001:mutual-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Arudh Lagn 与 Dar Pad 是否互成角宫（Kendras）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘的 Arudh Lagna 落在哪个星座"
+                },
+                {
+                  "fact_key": "本盘的 Dar Pad 落在哪个星座"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "Arudh Lagn 与 Dar Pad 是否互成三宫十一宫关系（Sahaj/Labh）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "Arudh Lagn 与 Dar Pad 是否互成三宫十一宫关系（Sahaj/Labh）"
+            },
+            "selection_group": "ch39-v23-arudh-lagn-dar-pad.step-001:mutual-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Arudh Lagn 与 Dar Pad 是否互成三宫十一宫关系（Sahaj/Labh）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘的 Arudh Lagna 落在哪个星座"
+                },
+                {
+                  "fact_key": "本盘的 Dar Pad 落在哪个星座"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "Arudh Lagn 与 Dar Pad 是否互成三角宫（Konas）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "Arudh Lagn 与 Dar Pad 是否互成三角宫（Konas）"
+            },
+            "selection_group": "ch39-v23-arudh-lagn-dar-pad.step-001:mutual-relation",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Arudh Lagn 与 Dar Pad 是否互成三角宫（Konas）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If the Arudh Lagn and Dar Pad are in mutual Kendras",
+              "claim": "Arudh Lagn 与 Dar Pad 互成角宫（Kendras）"
+            },
+            {
+              "quote": "or in mutual Sahaj/Labh Bhavas",
+              "claim": "互成三宫与十一宫的关系（Sahaj/Labh Bhavas）"
+            },
+            {
+              "quote": "or in mutual Konas",
+              "claim": "互成三角宫（Konas）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will doubtlessly become a king",
+              "claim": "命主无疑会成为国王"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v23",
+            "quote": "If the Arudh Lagn and Dar Pad are in mutual Kendras, or in mutual Sahaj/Labh Bhavas, or in mutual Konas, the native will doubtlessly become a king.",
+            "pdf_pages": [
+              83
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘的 Arudh Lagna 落在哪个星座、本盘的 Dar Pad 落在哪个星座。",
+        "stop_fact_keys": [
+          "本盘的 Arudh Lagna 落在哪个星座",
+          "本盘的 Dar Pad 落在哪个星座"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文只写这三种相互关系，不得把别的宫位关系也算进来。",
+          "不得据此推断配偶、婚姻或应期。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "fdc8a034ab425a05ea7e9f40d4d7cd64aed9746baeffd23aa9c5cfc2a137f913"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v24-two-or-all-lagnas-exalted-drishti.step-001",
+      "method": {
+        "method": "ch39-v24-two-or-all-lagnas-exalted-drishti",
+        "title": "三个上升位中有两个或三个被入旺行星相照：贵格成立",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "入旺的行星照上升位有多大用",
+          "三个上升位要照到几个才算数"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If two, or all of Bhava, Hora, Ghatik Lagnas are receiving a Drishti from exalted Grahas, a Raj Yog is formed",
+            "两个或三个上升位受入旺行星相照 贵格"
+          ],
+          "counter_queries": [
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas",
+            "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless"
+          ],
+          "boundary_queries": [
+            "I explain below again some special Lagnas, viz. Bhava Lagna, Hora Lagn and Ghati Lagn",
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "From sunrise to the time of birth every 5 Ghatis (or 120 minutes) constitute one Bhava Lagn"
+          ],
+          "method_queries": [
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn",
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v24-two-or-all-lagnas-exalted-drishti.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If two, or all of Bhava, Hora, Ghatik Lagnas are receiving a Drishti from exalted Grahas"
+            },
+            {
+              "step_id": "ch39-v24-two-or-all-lagnas-exalted-drishti.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "a Raj Yog is formed"
+            },
+            {
+              "step_id": "ch39-v24-two-or-all-lagnas-exalted-drishti.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If two, or all of Bhava, Hora, Ghatik Lagnas are receiving a Drishti from exalted Grahas a Raj Yog is formed"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少三个上升位的定位事实时停止。",
+          "缺少受入旺行星相照的计数事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v24-two-or-all-lagnas-exalted-drishti.step-001",
+        "action": "数一数 Bhava Lagn、Hora Lagn、Ghatik Lagn 三者中被入旺行星相照的有几个，再核对是两个还是三个全中。",
+        "applicability_scope": "仅限本命盘 Raj Yog 的成立判定；原文没有时间限定。",
+        "minimum_supported_claim": "Bhava Lagn、Hora Lagn 与 Ghatik Lagn 之中有两个，或三个全部被入旺的行星相照时，Raj Yog 成立。",
+        "produced_fact_keys": [
+          "三上升位受入旺行星相照的贵格判定"
+        ],
+        "required_fact_keys": [
+          "Bhava Lagna、Hora Lagna、Ghatik Lagna 三者中有几个被入旺的行星相照"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "Bhava Lagna、Hora Lagna、Ghatik Lagna 三者中有几个被入旺的行星相照"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "Bhava Lagna、Hora Lagna、Ghatik Lagna 三者中是否恰有两个被入旺的行星相照"
+                },
+                {
+                  "fact_key": "Bhava Lagna、Hora Lagna、Ghatik Lagna 三者是否都被入旺的行星相照"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "Bhava Lagna、Hora Lagna、Ghatik Lagna 三者中有几个被入旺的行星相照"
+            },
+            "required_fact_keys": [
+              "Bhava Lagna、Hora Lagna、Ghatik Lagna 三者中是否恰有两个被入旺的行星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "Bhava Lagna、Hora Lagna、Ghatik Lagna 三者中是否恰有两个被入旺的行星相照"
+            },
+            "selection_group": "ch39-v24-two-or-all-lagnas-exalted-drishti.step-001:how-many-lagnas",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Bhava Lagna、Hora Lagna、Ghatik Lagna 三者中是否恰有两个被入旺的行星相照。"
+          },
+          {
+            "when": {
+              "fact_key": "Bhava Lagna、Hora Lagna、Ghatik Lagna 三者中有几个被入旺的行星相照"
+            },
+            "required_fact_keys": [
+              "Bhava Lagna、Hora Lagna、Ghatik Lagna 三者是否都被入旺的行星相照"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "Bhava Lagna、Hora Lagna、Ghatik Lagna 三者是否都被入旺的行星相照"
+            },
+            "selection_group": "ch39-v24-two-or-all-lagnas-exalted-drishti.step-001:how-many-lagnas",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Bhava Lagna、Hora Lagna、Ghatik Lagna 三者是否都被入旺的行星相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If two, or all of Bhava, Hora, Ghatik Lagnas are receiving a Drishti from exalted Grahas",
+              "claim": "Bhava Lagn、Hora Lagn 与 Ghatik Lagn 之中有两个，或三个全部被入旺的行星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "a Raj Yog is formed",
+              "claim": "Raj Yog 成立"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v24",
+            "quote": "If two, or all of Bhava, Hora, Ghatik Lagnas are receiving a Drishti from exalted Grahas, a Raj Yog is formed.",
+            "pdf_pages": [
+              83
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：Bhava Lagna、Hora Lagna、Ghatik Lagna 三者中有几个被入旺的行星相照。",
+        "stop_fact_keys": [
+          "Bhava Lagna、Hora Lagna、Ghatik Lagna 三者中有几个被入旺的行星相照"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文要求相照者是入旺的行星，不得放宽成任意行星。",
+          "只有一个上升位被照时不得据此下断语。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "dc74efae8cbb7a9ecb07d219f5d0a2b32d0764146062a016483b9db4bff61f88"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v25-three-lagnas-with-vargas-drishti.step-001",
+      "method": {
+        "method": "ch39-v25-three-lagnas-with-vargas-drishti",
+        "title": "三个上升位连同其三分盘、九分盘位置受行星相照：贵格成立",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "分盘上的上升位也要看相照吗",
+          "我有没有靠分盘成立的贵格"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Bhava, Hora and Ghatik Lagnas, their Dreshkanas and Navāńśas, or the said Lagnas and their Navāńśas, or the said Lagnas and their Dreshkanas receive a Drishti from a Grah, a Raj Yog is formed",
+            "三个上升位及其三分盘九分盘受相照 贵格"
+          ],
+          "counter_queries": [
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas",
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak"
+          ],
+          "boundary_queries": [
+            "I explain below again some special Lagnas, viz. Bhava Lagna, Hora Lagn and Ghati Lagn",
+            "This happens, when Lagn in the RashiKundali and the Navāńś Lagn are in the same Rāśi",
+            "In the Dasha Varg scheme the designations commence from Parijata etc., such as 2 good Vargas - Parijatha, 3 Uttama, 4 Gopur, 5 Simhasan"
+          ],
+          "method_queries": [
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn",
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v25-three-lagnas-with-vargas-drishti.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Bhava, Hora and Ghatik Lagnas, their Dreshkanas and Navāńśas"
+            },
+            {
+              "step_id": "ch39-v25-three-lagnas-with-vargas-drishti.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or the said Lagnas and their Navāńśas"
+            },
+            {
+              "step_id": "ch39-v25-three-lagnas-with-vargas-drishti.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or the said Lagnas and their Dreshkanas"
+            },
+            {
+              "step_id": "ch39-v25-three-lagnas-with-vargas-drishti.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "receive a Drishti from a Grah"
+            },
+            {
+              "step_id": "ch39-v25-three-lagnas-with-vargas-drishti.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "a Raj Yog is formed"
+            },
+            {
+              "step_id": "ch39-v25-three-lagnas-with-vargas-drishti.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Bhava, Hora and Ghatik Lagnas, their Dreshkanas and Navāńśas a Raj Yog is formed"
+            },
+            {
+              "step_id": "ch39-v25-three-lagnas-with-vargas-drishti.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or the said Lagnas and their Navāńśas a Raj Yog is formed"
+            },
+            {
+              "step_id": "ch39-v25-three-lagnas-with-vargas-drishti.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or the said Lagnas and their Dreshkanas a Raj Yog is formed"
+            },
+            {
+              "step_id": "ch39-v25-three-lagnas-with-vargas-drishti.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "receive a Drishti from a Grah a Raj Yog is formed"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少三个上升位的定位事实时停止。",
+          "三种组合的受照事实全部缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v25-three-lagnas-with-vargas-drishti.step-001",
+        "action": "先定出三个上升位及其三分盘与九分盘位置，再核对原文所列三种组合中是否有一组全部受行星相照。",
+        "applicability_scope": "仅限本命盘 Raj Yog 的成立判定；原文的 the said Lagnas 指同句前面的 Bhava、Hora、Ghatik 三个上升位；原文没有时间限定。",
+        "minimum_supported_claim": "Bhava Lagna、Hora Lagna 与 Ghatik Lagn 连同它们的三分盘（Dreshkanas D3）与九分盘（Navāńśas D9）位置，或这三个上升位连同它们的九分盘位置，或这三个上升位连同它们的三分盘位置，都受一颗行星相照时，Raj Yog 成立。",
+        "produced_fact_keys": [
+          "三上升位连同分盘受照的贵格判定"
+        ],
+        "required_fact_keys": [
+          "本盘的 Bhava Lagna 落在哪个星座",
+          "本盘的 Hora Lagna 落在哪个星座",
+          "本盘的 Ghatik Lagna 落在哪个星座"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘的 Bhava Lagna 落在哪个星座"
+                },
+                {
+                  "fact_key": "本盘的 Hora Lagna 落在哪个星座"
+                },
+                {
+                  "fact_key": "本盘的 Ghatik Lagna 落在哪个星座"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "Bhava Lagna 是否被行星相照"
+                    },
+                    {
+                      "fact_key": "Hora Lagna 是否被行星相照"
+                    },
+                    {
+                      "fact_key": "Ghatik Lagna 是否被行星相照"
+                    },
+                    {
+                      "fact_key": "Bhava Lagna 的三分盘（Dreshkana D3）位置是否被行星相照"
+                    },
+                    {
+                      "fact_key": "Hora Lagna 的三分盘（Dreshkana D3）位置是否被行星相照"
+                    },
+                    {
+                      "fact_key": "Ghatik Lagna 的三分盘（Dreshkana D3）位置是否被行星相照"
+                    },
+                    {
+                      "fact_key": "Bhava Lagna 的九分盘（Navāńś D9）位置是否被行星相照"
+                    },
+                    {
+                      "fact_key": "Hora Lagna 的九分盘（Navāńś D9）位置是否被行星相照"
+                    },
+                    {
+                      "fact_key": "Ghatik Lagna 的九分盘（Navāńś D9）位置是否被行星相照"
+                    }
+                  ]
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "Bhava Lagna 是否被行星相照"
+                    },
+                    {
+                      "fact_key": "Hora Lagna 是否被行星相照"
+                    },
+                    {
+                      "fact_key": "Ghatik Lagna 是否被行星相照"
+                    },
+                    {
+                      "fact_key": "Bhava Lagna 的九分盘（Navāńś D9）位置是否被行星相照"
+                    },
+                    {
+                      "fact_key": "Hora Lagna 的九分盘（Navāńś D9）位置是否被行星相照"
+                    },
+                    {
+                      "fact_key": "Ghatik Lagna 的九分盘（Navāńś D9）位置是否被行星相照"
+                    }
+                  ]
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "Bhava Lagna 是否被行星相照"
+                    },
+                    {
+                      "fact_key": "Hora Lagna 是否被行星相照"
+                    },
+                    {
+                      "fact_key": "Ghatik Lagna 是否被行星相照"
+                    },
+                    {
+                      "fact_key": "Bhava Lagna 的三分盘（Dreshkana D3）位置是否被行星相照"
+                    },
+                    {
+                      "fact_key": "Hora Lagna 的三分盘（Dreshkana D3）位置是否被行星相照"
+                    },
+                    {
+                      "fact_key": "Ghatik Lagna 的三分盘（Dreshkana D3）位置是否被行星相照"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘的 Bhava Lagna 落在哪个星座"
+                },
+                {
+                  "fact_key": "本盘的 Hora Lagna 落在哪个星座"
+                },
+                {
+                  "fact_key": "本盘的 Ghatik Lagna 落在哪个星座"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "Bhava Lagna 是否被行星相照",
+              "Hora Lagna 是否被行星相照",
+              "Ghatik Lagna 是否被行星相照",
+              "Bhava Lagna 的三分盘（Dreshkana D3）位置是否被行星相照",
+              "Hora Lagna 的三分盘（Dreshkana D3）位置是否被行星相照",
+              "Ghatik Lagna 的三分盘（Dreshkana D3）位置是否被行星相照",
+              "Bhava Lagna 的九分盘（Navāńś D9）位置是否被行星相照",
+              "Hora Lagna 的九分盘（Navāńś D9）位置是否被行星相照",
+              "Ghatik Lagna 的九分盘（Navāńś D9）位置是否被行星相照"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "Bhava Lagna 是否被行星相照"
+                },
+                {
+                  "fact_key": "Hora Lagna 是否被行星相照"
+                },
+                {
+                  "fact_key": "Ghatik Lagna 是否被行星相照"
+                },
+                {
+                  "fact_key": "Bhava Lagna 的三分盘（Dreshkana D3）位置是否被行星相照"
+                },
+                {
+                  "fact_key": "Hora Lagna 的三分盘（Dreshkana D3）位置是否被行星相照"
+                },
+                {
+                  "fact_key": "Ghatik Lagna 的三分盘（Dreshkana D3）位置是否被行星相照"
+                },
+                {
+                  "fact_key": "Bhava Lagna 的九分盘（Navāńś D9）位置是否被行星相照"
+                },
+                {
+                  "fact_key": "Hora Lagna 的九分盘（Navāńś D9）位置是否被行星相照"
+                },
+                {
+                  "fact_key": "Ghatik Lagna 的九分盘（Navāńś D9）位置是否被行星相照"
+                }
+              ]
+            },
+            "selection_group": "ch39-v25-three-lagnas-with-vargas-drishti.step-001:which-combination",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Bhava Lagna 是否被行星相照、Hora Lagna 是否被行星相照、Ghatik Lagna 是否被行星相照、Bhava Lagna 的三分盘（Dreshkana D3）位置是否被行星相照、Hora Lagna 的三分盘（Dreshkana D3）位置是否被行星相照、Ghatik Lagna 的三分盘（Dreshkana D3）位置是否被行星相照、Bhava Lagna 的九分盘（Navāńś D9）位置是否被行星相照、Hora Lagna 的九分盘（Navāńś D9）位置是否被行星相照、Ghatik Lagna 的九分盘（Navāńś D9）位置是否被行星相照。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘的 Bhava Lagna 落在哪个星座"
+                },
+                {
+                  "fact_key": "本盘的 Hora Lagna 落在哪个星座"
+                },
+                {
+                  "fact_key": "本盘的 Ghatik Lagna 落在哪个星座"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "Bhava Lagna 是否被行星相照",
+              "Hora Lagna 是否被行星相照",
+              "Ghatik Lagna 是否被行星相照",
+              "Bhava Lagna 的九分盘（Navāńś D9）位置是否被行星相照",
+              "Hora Lagna 的九分盘（Navāńś D9）位置是否被行星相照",
+              "Ghatik Lagna 的九分盘（Navāńś D9）位置是否被行星相照"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "Bhava Lagna 是否被行星相照"
+                },
+                {
+                  "fact_key": "Hora Lagna 是否被行星相照"
+                },
+                {
+                  "fact_key": "Ghatik Lagna 是否被行星相照"
+                },
+                {
+                  "fact_key": "Bhava Lagna 的九分盘（Navāńś D9）位置是否被行星相照"
+                },
+                {
+                  "fact_key": "Hora Lagna 的九分盘（Navāńś D9）位置是否被行星相照"
+                },
+                {
+                  "fact_key": "Ghatik Lagna 的九分盘（Navāńś D9）位置是否被行星相照"
+                }
+              ]
+            },
+            "selection_group": "ch39-v25-three-lagnas-with-vargas-drishti.step-001:which-combination",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Bhava Lagna 是否被行星相照、Hora Lagna 是否被行星相照、Ghatik Lagna 是否被行星相照、Bhava Lagna 的九分盘（Navāńś D9）位置是否被行星相照、Hora Lagna 的九分盘（Navāńś D9）位置是否被行星相照、Ghatik Lagna 的九分盘（Navāńś D9）位置是否被行星相照。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘的 Bhava Lagna 落在哪个星座"
+                },
+                {
+                  "fact_key": "本盘的 Hora Lagna 落在哪个星座"
+                },
+                {
+                  "fact_key": "本盘的 Ghatik Lagna 落在哪个星座"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "Bhava Lagna 是否被行星相照",
+              "Hora Lagna 是否被行星相照",
+              "Ghatik Lagna 是否被行星相照",
+              "Bhava Lagna 的三分盘（Dreshkana D3）位置是否被行星相照",
+              "Hora Lagna 的三分盘（Dreshkana D3）位置是否被行星相照",
+              "Ghatik Lagna 的三分盘（Dreshkana D3）位置是否被行星相照"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "Bhava Lagna 是否被行星相照"
+                },
+                {
+                  "fact_key": "Hora Lagna 是否被行星相照"
+                },
+                {
+                  "fact_key": "Ghatik Lagna 是否被行星相照"
+                },
+                {
+                  "fact_key": "Bhava Lagna 的三分盘（Dreshkana D3）位置是否被行星相照"
+                },
+                {
+                  "fact_key": "Hora Lagna 的三分盘（Dreshkana D3）位置是否被行星相照"
+                },
+                {
+                  "fact_key": "Ghatik Lagna 的三分盘（Dreshkana D3）位置是否被行星相照"
+                }
+              ]
+            },
+            "selection_group": "ch39-v25-three-lagnas-with-vargas-drishti.step-001:which-combination",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Bhava Lagna 是否被行星相照、Hora Lagna 是否被行星相照、Ghatik Lagna 是否被行星相照、Bhava Lagna 的三分盘（Dreshkana D3）位置是否被行星相照、Hora Lagna 的三分盘（Dreshkana D3）位置是否被行星相照、Ghatik Lagna 的三分盘（Dreshkana D3）位置是否被行星相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Bhava, Hora and Ghatik Lagnas, their Dreshkanas and Navāńśas",
+              "claim": "Bhava Lagna、Hora Lagna 与 Ghatik Lagn 连同它们的三分盘（Dreshkanas D3）与九分盘（Navāńśas D9）位置"
+            },
+            {
+              "quote": "or the said Lagnas and their Navāńśas",
+              "claim": "这三个上升位连同它们的九分盘位置"
+            },
+            {
+              "quote": "or the said Lagnas and their Dreshkanas",
+              "claim": "这三个上升位连同它们的三分盘位置"
+            },
+            {
+              "quote": "receive a Drishti from a Grah",
+              "claim": "都受一颗行星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "a Raj Yog is formed",
+              "claim": "Raj Yog 成立"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v25",
+            "quote": "If Bhava, Hora and Ghatik Lagnas, their Dreshkanas and Navāńśas, or the said Lagnas and their Navāńśas, or the said Lagnas and their Dreshkanas receive a Drishti from a Grah, a Raj Yog is formed.",
+            "pdf_pages": [
+              83
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘的 Bhava Lagna 落在哪个星座、本盘的 Hora Lagna 落在哪个星座、本盘的 Ghatik Lagna 落在哪个星座。",
+        "stop_fact_keys": [
+          "本盘的 Bhava Lagna 落在哪个星座",
+          "本盘的 Hora Lagna 落在哪个星座",
+          "本盘的 Ghatik Lagna 落在哪个星座"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "Dreshkana 是三分盘（D3）、Navāńś 是九分盘（D9），不得换成别的分盘。",
+          "原文没有限定相照的行星是吉是凶，不得自行加上吉星限定。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "cddbe9dcf120a1e2bcd5d2bc6f0ec8854e54e152724fbc13f439e92a9a6ce9bc"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v26-27-arudh-pad-exalted-graha.step-001",
+      "method": {
+        "method": "ch39-v26-27-arudh-pad-exalted-graha",
+        "title": "Arudh Pad 有入旺行星（尤其入旺月亮）或木星金星，且无凶星 Argala：成为国王",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Arudh Pad 上有什么星才算好",
+          "我有没有靠声望上位的组合"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Arudh Pad is occupied by an exalted Grah, particularly Chandra in exaltation, or by Guru and/or Shukra (with, or without exaltation), while there is no Argala by a malefic, the native will become a king",
+            "Arudh Pad 入旺行星 木星金星 无凶星 Argala 国王"
+          ],
+          "counter_queries": [
+            "If malefics be in Karakāńś, Arudh Lagn and the 2<sup>nd</sup> and 8<sup>th</sup> from these places, there will be Kemadrum Yog",
+            "If there is Argala for the said 11<sup>th</sup> , there will be more gains"
+          ],
+          "boundary_queries": [
+            "Grahas in the 4<sup>th</sup> , 2<sup>nd</sup> and the 11<sup>th</sup> cause Argalas, while obstructors of the Argala will be those in the 10<sup>th</sup> , 12<sup>th</sup> and 3<sup>rd</sup> from a Bhava, or a Grah",
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics"
+          ],
+          "method_queries": [
+            "Should there be Argala for the Arudh Pad, for the natal Lagn and for the 7<sup>th</sup> from both, the native will be famous and fortunate",
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v26-27-arudh-pad-exalted-graha.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Arudh Pad is occupied by an exalted Grah"
+            },
+            {
+              "step_id": "ch39-v26-27-arudh-pad-exalted-graha.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "particularly Chandra in exaltation"
+            },
+            {
+              "step_id": "ch39-v26-27-arudh-pad-exalted-graha.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or by Guru and/or Shukra (with, or without exaltation)"
+            },
+            {
+              "step_id": "ch39-v26-27-arudh-pad-exalted-graha.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while there is no Argala by a malefic"
+            },
+            {
+              "step_id": "ch39-v26-27-arudh-pad-exalted-graha.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will become a king"
+            },
+            {
+              "step_id": "ch39-v26-27-arudh-pad-exalted-graha.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Arudh Pad is occupied by an exalted Grah the native will become a king"
+            },
+            {
+              "step_id": "ch39-v26-27-arudh-pad-exalted-graha.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "particularly Chandra in exaltation the native will become a king"
+            },
+            {
+              "step_id": "ch39-v26-27-arudh-pad-exalted-graha.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or by Guru and/or Shukra (with, or without exaltation) the native will become a king"
+            },
+            {
+              "step_id": "ch39-v26-27-arudh-pad-exalted-graha.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while there is no Argala by a malefic the native will become a king"
+            },
+            {
+              "step_id": "ch39-v26-27-arudh-pad-exalted-graha.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "particularly moon in exaltation"
+            },
+            {
+              "step_id": "ch39-v26-27-arudh-pad-exalted-graha.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "or by jupiter and/or venus (with, or without exaltation)"
+            },
+            {
+              "step_id": "ch39-v26-27-arudh-pad-exalted-graha.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "particularly moon in exaltation the native will become a king"
+            },
+            {
+              "step_id": "ch39-v26-27-arudh-pad-exalted-graha.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "or by jupiter and/or venus (with, or without exaltation) the native will become a king"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少 Arudh Pad 定位事实时停止。",
+          "缺少凶星 Argala 的事实时停止。",
+          "三种占据情形的事实全部缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v26-27-arudh-pad-exalted-graha.step-001",
+        "action": "先定出 Arudh Pad，核对它是被入旺的行星占据，还是被木星（Guru）或金星（Shukra）占据，再核对是否没有凶星对它形成 Argala。",
+        "applicability_scope": "仅限本命盘；原文对木星与金星特别注明不论是否入旺；原文没有时间限定。",
+        "minimum_supported_claim": "Arudh Pad 被入旺的行星占据（尤其是入旺的月亮 Chandra），或被木星（Guru）和／或金星（Shukra）占据（不论是否入旺），同时没有凶星对它形成 Argala 时，命主会成为国王。",
+        "produced_fact_keys": [
+          "Arudh Pad 得地无凶 Argala 的贵格判定"
+        ],
+        "required_fact_keys": [
+          "本盘的 Arudh Pad 落在哪个星座",
+          "Arudh Pad 是否受到凶星的 Argala"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘的 Arudh Pad 落在哪个星座"
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "Arudh Pad 是否受到凶星的 Argala"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "Arudh Pad 是否被入旺的行星占据"
+                },
+                {
+                  "fact_key": "Arudh Pad 是否被木星（Guru）占据"
+                },
+                {
+                  "fact_key": "Arudh Pad 是否被金星（Shukra）占据"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘的 Arudh Pad 落在哪个星座"
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "Arudh Pad 是否受到凶星的 Argala"
+                    }
+                  ]
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "Arudh Pad 是否被入旺的行星占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "Arudh Pad 是否被入旺的行星占据"
+            },
+            "selection_group": "ch39-v26-27-arudh-pad-exalted-graha.step-001:arudh-pad-occupant",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Arudh Pad 是否被入旺的行星占据。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘的 Arudh Pad 落在哪个星座"
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "Arudh Pad 是否受到凶星的 Argala"
+                    }
+                  ]
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "Arudh Pad 是否被木星（Guru）占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "Arudh Pad 是否被木星（Guru）占据"
+            },
+            "selection_group": "ch39-v26-27-arudh-pad-exalted-graha.step-001:arudh-pad-occupant",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Arudh Pad 是否被木星（Guru）占据。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘的 Arudh Pad 落在哪个星座"
+                },
+                {
+                  "operator": "NOT",
+                  "operands": [
+                    {
+                      "fact_key": "Arudh Pad 是否受到凶星的 Argala"
+                    }
+                  ]
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "Arudh Pad 是否被金星（Shukra）占据"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "Arudh Pad 是否被金星（Shukra）占据"
+            },
+            "selection_group": "ch39-v26-27-arudh-pad-exalted-graha.step-001:arudh-pad-occupant",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Arudh Pad 是否被金星（Shukra）占据。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Arudh Pad is occupied by an exalted Grah",
+              "claim": "Arudh Pad 被入旺的行星占据"
+            },
+            {
+              "quote": "particularly Chandra in exaltation",
+              "claim": "尤其是入旺的月亮 Chandra"
+            },
+            {
+              "quote": "or by Guru and/or Shukra (with, or without exaltation)",
+              "claim": "被木星（Guru）和／或金星（Shukra）占据（不论是否入旺）"
+            },
+            {
+              "quote": "while there is no Argala by a malefic",
+              "claim": "没有凶星对它形成 Argala"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will become a king",
+              "claim": "命主会成为国王"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v26-27",
+            "quote": "If Arudh Pad is occupied by an exalted Grah, particularly Chandra in exaltation, or by Guru and/or Shukra (with, or without exaltation), while there is no Argala by a malefic, the native will become a king.",
+            "pdf_pages": [
+              83
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘的 Arudh Pad 落在哪个星座、Arudh Pad 是否受到凶星的 Argala。",
+        "stop_fact_keys": [
+          "本盘的 Arudh Pad 落在哪个星座",
+          "Arudh Pad 是否受到凶星的 Argala"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文的 particularly Chandra in exaltation 是对入旺行星一路的强调，不得把它读成必须是月亮。",
+          "不得据此推断登位时间或具体权位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "1d4f06ee4210eab720d8ba750b7f3dbbb12625b81b37e675337c3dde4f44d55f"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v26-27-arudh-pad-benefic-rasi-chandra.step-001",
+      "method": {
+        "method": "ch39-v26-27-arudh-pad-benefic-rasi-chandra",
+        "title": "Arudh Pad 为吉星星座并含月亮、木星居二宫：同样成为国王",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "Arudh Pad 落在吉星星座说明什么",
+          "木星在二宫配合 Arudh Pad 有什么用"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If the Arudh Pad is a benefic Rāśi, containing Chandra, while Guru is in Dhan Bhava, the same effect will prevail",
+            "Arudh Pad 吉星星座 含月亮 木星在二宫 国王"
+          ],
+          "counter_queries": [
+            "If malefics be in Karakāńś, Arudh Lagn and the 2<sup>nd</sup> and 8<sup>th</sup> from these places, there will be Kemadrum Yog",
+            "Should Mangal and Shani be together in Dhan Bhava, the native’s wealth will be destroyed"
+          ],
+          "boundary_queries": [
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Grahas in the 4<sup>th</sup> , 2<sup>nd</sup> and the 11<sup>th</sup> cause Argalas, while obstructors of the Argala will be those in the 10<sup>th</sup> , 12<sup>th</sup> and 3<sup>rd</sup> from a Bhava, or a Grah"
+          ],
+          "method_queries": [
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn",
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v26-27-arudh-pad-benefic-rasi-chandra.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If the Arudh Pad is a benefic Rāśi, containing Chandra"
+            },
+            {
+              "step_id": "ch39-v26-27-arudh-pad-benefic-rasi-chandra.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while Guru is in Dhan Bhava"
+            },
+            {
+              "step_id": "ch39-v26-27-arudh-pad-benefic-rasi-chandra.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the same effect will prevail"
+            },
+            {
+              "step_id": "ch39-v26-27-arudh-pad-benefic-rasi-chandra.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will become a king"
+            },
+            {
+              "step_id": "ch39-v26-27-arudh-pad-benefic-rasi-chandra.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If the Arudh Pad is a benefic Rāśi, containing Chandra the same effect will prevail"
+            },
+            {
+              "step_id": "ch39-v26-27-arudh-pad-benefic-rasi-chandra.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while Guru is in Dhan Bhava the same effect will prevail"
+            },
+            {
+              "step_id": "ch39-v26-27-arudh-pad-benefic-rasi-chandra.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If the Arudh Pad is a benefic Rāśi, containing moon"
+            },
+            {
+              "step_id": "ch39-v26-27-arudh-pad-benefic-rasi-chandra.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "while jupiter is in 2nd house"
+            },
+            {
+              "step_id": "ch39-v26-27-arudh-pad-benefic-rasi-chandra.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If the Arudh Pad is a benefic Rāśi, containing moon the same effect will prevail"
+            },
+            {
+              "step_id": "ch39-v26-27-arudh-pad-benefic-rasi-chandra.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "while jupiter is in 2nd house the same effect will prevail"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少 Arudh Pad 定位事实时停止。",
+          "三项条件事实缺任一项时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v26-27-arudh-pad-benefic-rasi-chandra.step-001",
+        "action": "核对 Arudh Pad 所在星座是否由吉星主管并含月亮（Chandra），同时木星（Guru）是否落二宫（Dhan Bhava）。",
+        "applicability_scope": "仅限本命盘；原文的 the same effect 承同偈前句的国王断语；原文本句未给出吉星的判准，也没有时间限定。",
+        "minimum_supported_claim": "Arudh Pad 落在吉星主管的星座（Rāśi）并含月亮（Chandra），同时木星（Guru）落二宫（Dhan Bhava）时，同样的效果成立，即命主会成为国王。",
+        "produced_fact_keys": [
+          "Arudh Pad 吉星星座含月亮的贵格判定"
+        ],
+        "required_fact_keys": [
+          "本盘的 Arudh Pad 落在哪个星座",
+          "本盘中哪些行星被判为吉星",
+          "Arudh Pad 所在星座是否为吉星主管的星座",
+          "月亮（Chandra）是否落 Arudh Pad",
+          "木星（Guru）是否落二宫（Dhan）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘的 Arudh Pad 落在哪个星座"
+            },
+            {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            {
+              "fact_key": "Arudh Pad 所在星座是否为吉星主管的星座"
+            },
+            {
+              "fact_key": "月亮（Chandra）是否落 Arudh Pad"
+            },
+            {
+              "fact_key": "木星（Guru）是否落二宫（Dhan）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If the Arudh Pad is a benefic Rāśi, containing Chandra",
+              "claim": "Arudh Pad 落在吉星主管的星座（Rāśi）并含月亮（Chandra）"
+            },
+            {
+              "quote": "while Guru is in Dhan Bhava",
+              "claim": "木星（Guru）落二宫（Dhan Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the same effect will prevail",
+              "claim": "同样的效果成立"
+            },
+            {
+              "quote": "the native will become a king",
+              "claim": "命主会成为国王"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v26-27",
+            "quote": "If the Arudh Pad is a benefic Rāśi, containing Chandra, while Guru is in Dhan Bhava, the same effect will prevail.",
+            "pdf_pages": [
+              83
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v26-27",
+            "quote": "the native will become a king",
+            "pdf_pages": [
+              83
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘的 Arudh Pad 落在哪个星座、本盘中哪些行星被判为吉星、Arudh Pad 所在星座是否为吉星主管的星座、月亮（Chandra）是否落 Arudh Pad、木星（Guru）是否落二宫（Dhan）。",
+        "stop_fact_keys": [
+          "本盘的 Arudh Pad 落在哪个星座",
+          "本盘中哪些行星被判为吉星",
+          "Arudh Pad 所在星座是否为吉星主管的星座",
+          "月亮（Chandra）是否落 Arudh Pad",
+          "木星（Guru）是否落二宫（Dhan）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文本句没有写 Argala 条件，不得把前句的无凶星 Argala 要求搬到这里。",
+          "不得据此推断登位时间或具体权位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "601ddb79c8b1cf7385ca14edb2d78eecd62d6015421526e1d7691403ce202a86"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v28-debilitated-dusthana-lord-drishti-lagna.step-001",
+      "method": {
+        "method": "ch39-v28-debilitated-dusthana-lord-drishti-lagna",
+        "title": "六、八、十二宫主之一落陷并相照上升宫：贵格成立",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "坏宫主落陷照上升算好事吗",
+          "我盘里落陷的宫主有没有用"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Even, if one among Ari’s, Randhr’s and Vyaya’s Lords, being in debilitation, gives a Drishti to Lagna, there will be a Raj Yog",
+            "六八十二宫主落陷相照上升 贵格"
+          ],
+          "counter_queries": [
+            "A Grah, associated with one of the Lords of Ari, Randhr and Vyaya Bhava, being bereft of a Drishti from the Lord of a Kon, will in its Dasha periods cause harm to the native’s financial aspects",
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak"
+          ],
+          "boundary_queries": [
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "Evil Bhavas, or Dusthan Bhavas are Ari, Randhr and Vyaya Bhava"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "If the Lord of a Kendr establishes a relationship with the Lord of a Kon, a Raj Yog is obtained"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v28-debilitated-dusthana-lord-drishti-lagna.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Even, if one among Ari’s, Randhr’s and Vyaya’s Lords, being in debilitation, gives a Drishti to Lagna"
+            },
+            {
+              "step_id": "ch39-v28-debilitated-dusthana-lord-drishti-lagna.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "there will be a Raj Yog"
+            },
+            {
+              "step_id": "ch39-v28-debilitated-dusthana-lord-drishti-lagna.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Even, if one among Ari’s, Randhr’s and Vyaya’s Lords, being in debilitation, gives a Drishti to Lagna there will be a Raj Yog"
+            },
+            {
+              "step_id": "ch39-v28-debilitated-dusthana-lord-drishti-lagna.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Even, if one among 6th house’s, 8th house’s and 12th lords, being in debilitation, gives a Drishti to 1st house"
+            },
+            {
+              "step_id": "ch39-v28-debilitated-dusthana-lord-drishti-lagna.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Even, if one among 6th house’s, 8th house’s and 12th lords, being in debilitation, gives a Drishti to 1st house there will be a Raj Yog"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "三个宫主的身份事实缺任一项时停止。",
+          "三条分支的落陷与相照事实全部缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v28-debilitated-dusthana-lord-drishti-lagna.step-001",
+        "action": "先认出六宫主、八宫主与十二宫主，再核对其中是否有一个落陷并相照上升宫。",
+        "applicability_scope": "仅限本命盘 Raj Yog 的成立判定；原文没有时间限定。",
+        "minimum_supported_claim": "六宫主（Ari's Lord）、八宫主（Randhr's Lord）与十二宫主（Vyaya's Lord）之中，有一个落陷并相照上升宫（Lagna）时，Raj Yog 成立。",
+        "produced_fact_keys": [
+          "落陷凶宫主相照上升的贵格判定"
+        ],
+        "required_fact_keys": [
+          "本盘六宫主（Ari's Lord）是哪颗行星",
+          "本盘八宫主（Randhr's Lord）是哪颗行星",
+          "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘六宫主（Ari's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "六宫主（Ari's Lord）是否落陷"
+                    },
+                    {
+                      "fact_key": "六宫主（Ari's Lord）是否相照上升宫（Lagna）"
+                    }
+                  ]
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "八宫主（Randhr's Lord）是否落陷"
+                    },
+                    {
+                      "fact_key": "八宫主（Randhr's Lord）是否相照上升宫（Lagna）"
+                    }
+                  ]
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "十二宫主（Vyaya's Lord）是否落陷"
+                    },
+                    {
+                      "fact_key": "十二宫主（Vyaya's Lord）是否相照上升宫（Lagna）"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘六宫主（Ari's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "六宫主（Ari's Lord）是否落陷",
+              "六宫主（Ari's Lord）是否相照上升宫（Lagna）"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "六宫主（Ari's Lord）是否落陷"
+                },
+                {
+                  "fact_key": "六宫主（Ari's Lord）是否相照上升宫（Lagna）"
+                }
+              ]
+            },
+            "selection_group": "ch39-v28-debilitated-dusthana-lord-drishti-lagna.step-001:which-lord",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：六宫主（Ari's Lord）是否落陷、六宫主（Ari's Lord）是否相照上升宫（Lagna）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘六宫主（Ari's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "八宫主（Randhr's Lord）是否落陷",
+              "八宫主（Randhr's Lord）是否相照上升宫（Lagna）"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否落陷"
+                },
+                {
+                  "fact_key": "八宫主（Randhr's Lord）是否相照上升宫（Lagna）"
+                }
+              ]
+            },
+            "selection_group": "ch39-v28-debilitated-dusthana-lord-drishti-lagna.step-001:which-lord",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：八宫主（Randhr's Lord）是否落陷、八宫主（Randhr's Lord）是否相照上升宫（Lagna）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘六宫主（Ari's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘八宫主（Randhr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "十二宫主（Vyaya's Lord）是否落陷",
+              "十二宫主（Vyaya's Lord）是否相照上升宫（Lagna）"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否落陷"
+                },
+                {
+                  "fact_key": "十二宫主（Vyaya's Lord）是否相照上升宫（Lagna）"
+                }
+              ]
+            },
+            "selection_group": "ch39-v28-debilitated-dusthana-lord-drishti-lagna.step-001:which-lord",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十二宫主（Vyaya's Lord）是否落陷、十二宫主（Vyaya's Lord）是否相照上升宫（Lagna）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Even, if one among Ari’s, Randhr’s and Vyaya’s Lords, being in debilitation, gives a Drishti to Lagna",
+              "claim": "六宫主（Ari's Lord）、八宫主（Randhr's Lord）与十二宫主（Vyaya's Lord）之中，有一个落陷并相照上升宫（Lagna）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "there will be a Raj Yog",
+              "claim": "Raj Yog 成立"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v28",
+            "quote": "Even, if one among Ari’s, Randhr’s and Vyaya’s Lords, being in debilitation, gives a Drishti to Lagna, there will be a Raj Yog.",
+            "pdf_pages": [
+              83
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘六宫主（Ari's Lord）是哪颗行星、本盘八宫主（Randhr's Lord）是哪颗行星、本盘十二宫主（Vyaya's Lord）是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘六宫主（Ari's Lord）是哪颗行星",
+          "本盘八宫主（Randhr's Lord）是哪颗行星",
+          "本盘十二宫主（Vyaya's Lord）是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文只写六宫、八宫、十二宫三个宫主，不得把别的宫主也算进来。",
+          "不得据此推断疾病、损失或应期。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "209f540e1ed1fa91f4af3e7db02fef4f4e0442929f8a539fa68d72577ce510a4"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v29-31-kendra-labh-lord-drishti-with-shukra.step-001",
+      "method": {
+        "method": "ch39-v29-31-kendra-labh-lord-drishti-with-shukra",
+        "title": "四宫、十宫、二宫或十一宫主相照上升，金星照 Arudh Lagna 第11宫且 Arudh Lagn 有吉星",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我有没有靠贵人和名望上位的组合",
+          "金星照 Arudh Lagna 的十一宫有什么用"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "The native will become a king, if a Grah, ruling Bandhu, Karm, Dhan, or Labh, gives a Drishti to Lagna, while Shukra gives a Drishti to the 11<sup>th</sup> from Arudh Lagna, as Arudh Lagn is occupied by a benefic",
+            "宫主相照上升 金星照 Arudh 十一宫 国王"
+          ],
+          "counter_queries": [
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak",
+            "If malefics be in Karakāńś, Arudh Lagn and the 2<sup>nd</sup> and 8<sup>th</sup> from these places, there will be Kemadrum Yog"
+          ],
+          "boundary_queries": [
+            "The Pad of Lagn will correspond to the Rāśi, arrived at by counting so many Rāśis from Lagn’s Lord, as he is away from Tanu Bhava",
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics",
+            "Grahas in the 4<sup>th</sup> , 2<sup>nd</sup> and the 11<sup>th</sup> cause Argalas, while obstructors of the Argala will be those in the 10<sup>th</sup> , 12<sup>th</sup> and 3<sup>rd</sup> from a Bhava, or a Grah"
+          ],
+          "method_queries": [
+            "O Brahmin, the quantum of gains will correspond to the number of Grahas in, or giving a Drishti to the 11<sup>th</sup> from Lagn Pad",
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v29-31-kendra-labh-lord-drishti-with-shukra.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if a Grah, ruling Bandhu, Karm, Dhan, or Labh, gives a Drishti to Lagna"
+            },
+            {
+              "step_id": "ch39-v29-31-kendra-labh-lord-drishti-with-shukra.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while Shukra gives a Drishti to the 11th from Arudh Lagna"
+            },
+            {
+              "step_id": "ch39-v29-31-kendra-labh-lord-drishti-with-shukra.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "as Arudh Lagn is occupied by a benefic"
+            },
+            {
+              "step_id": "ch39-v29-31-kendra-labh-lord-drishti-with-shukra.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The native will become a king"
+            },
+            {
+              "step_id": "ch39-v29-31-kendra-labh-lord-drishti-with-shukra.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if a Grah, ruling Bandhu, Karm, Dhan, or Labh, gives a Drishti to Lagna The native will become a king"
+            },
+            {
+              "step_id": "ch39-v29-31-kendra-labh-lord-drishti-with-shukra.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while Shukra gives a Drishti to the 11th from Arudh Lagna The native will become a king"
+            },
+            {
+              "step_id": "ch39-v29-31-kendra-labh-lord-drishti-with-shukra.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "as Arudh Lagn is occupied by a benefic The native will become a king"
+            },
+            {
+              "step_id": "ch39-v29-31-kendra-labh-lord-drishti-with-shukra.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if a Grah, ruling 4th house, 10th house, 2nd house, or 11th house, gives a Drishti to 1st house"
+            },
+            {
+              "step_id": "ch39-v29-31-kendra-labh-lord-drishti-with-shukra.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "while venus gives a Drishti to the 11th from Arudh 1st house"
+            },
+            {
+              "step_id": "ch39-v29-31-kendra-labh-lord-drishti-with-shukra.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "as Arudh 1st house is occupied by a benefic"
+            },
+            {
+              "step_id": "ch39-v29-31-kendra-labh-lord-drishti-with-shukra.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if a Grah, ruling 4th house, 10th house, 2nd house, or 11th house, gives a Drishti to 1st house The native will become a king"
+            },
+            {
+              "step_id": "ch39-v29-31-kendra-labh-lord-drishti-with-shukra.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "while venus gives a Drishti to the 11th from Arudh 1st house The native will become a king"
+            },
+            {
+              "step_id": "ch39-v29-31-kendra-labh-lord-drishti-with-shukra.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "as Arudh 1st house is occupied by a benefic The native will become a king"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "四个宫主的身份事实缺任一项时停止。",
+          "四条相照分支的事实全部缺失时停止。",
+          "缺少金星相照 Arudh Lagna 第11宫或 Arudh Lagn 吉星占据的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v29-31-kendra-labh-lord-drishti-with-shukra.step-001",
+        "action": "先认出四宫、十宫、二宫、十一宫的宫主，核对其中哪一个相照上升宫，再核对金星对 Arudh Lagna 起算第11宫的相照与 Arudh Lagn 内的吉星占据。",
+        "applicability_scope": "仅限本命盘；原文本句未给出吉星的判准，也没有时间限定。",
+        "minimum_supported_claim": "四宫（Bandhu）、十宫（Karm）、二宫（Dhan）或十一宫（Labh）的宫主相照上升宫（Lagna），同时金星（Shukra）相照 Arudh Lagna 起算的第11宫，且 Arudh Lagn 内有吉星时，命主会成为国王。",
+        "produced_fact_keys": [
+          "宫主相照上升配金星照 Arudh 十一宫的贵格判定"
+        ],
+        "required_fact_keys": [
+          "本盘四宫主（Bandhu's Lord）是哪颗行星",
+          "本盘十宫主（Karm's Lord）是哪颗行星",
+          "本盘二宫主（Dhan's Lord）是哪颗行星",
+          "本盘十一宫主（Labh's Lord）是哪颗行星",
+          "本盘中哪些行星被判为吉星",
+          "金星（Shukra）是否相照 Arudh Lagna 起算的第11宫",
+          "Arudh Lagna 是否被吉星占据"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘四宫主（Bandhu's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十宫主（Karm's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘二宫主（Dhan's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十一宫主（Labh's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘中哪些行星被判为吉星"
+                },
+                {
+                  "fact_key": "金星（Shukra）是否相照 Arudh Lagna 起算的第11宫"
+                },
+                {
+                  "fact_key": "Arudh Lagna 是否被吉星占据"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "四宫主（Bandhu's Lord）是否相照上升宫（Lagna）"
+                },
+                {
+                  "fact_key": "十宫主（Karm's Lord）是否相照上升宫（Lagna）"
+                },
+                {
+                  "fact_key": "二宫主（Dhan's Lord）是否相照上升宫（Lagna）"
+                },
+                {
+                  "fact_key": "十一宫主（Labh's Lord）是否相照上升宫（Lagna）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘四宫主（Bandhu's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十宫主（Karm's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘二宫主（Dhan's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十一宫主（Labh's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘中哪些行星被判为吉星"
+                },
+                {
+                  "fact_key": "金星（Shukra）是否相照 Arudh Lagna 起算的第11宫"
+                },
+                {
+                  "fact_key": "Arudh Lagna 是否被吉星占据"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "四宫主（Bandhu's Lord）是否相照上升宫（Lagna）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "四宫主（Bandhu's Lord）是否相照上升宫（Lagna）"
+            },
+            "selection_group": "ch39-v29-31-kendra-labh-lord-drishti-with-shukra.step-001:which-lord-drishti",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：四宫主（Bandhu's Lord）是否相照上升宫（Lagna）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘四宫主（Bandhu's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十宫主（Karm's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘二宫主（Dhan's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十一宫主（Labh's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘中哪些行星被判为吉星"
+                },
+                {
+                  "fact_key": "金星（Shukra）是否相照 Arudh Lagna 起算的第11宫"
+                },
+                {
+                  "fact_key": "Arudh Lagna 是否被吉星占据"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "十宫主（Karm's Lord）是否相照上升宫（Lagna）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十宫主（Karm's Lord）是否相照上升宫（Lagna）"
+            },
+            "selection_group": "ch39-v29-31-kendra-labh-lord-drishti-with-shukra.step-001:which-lord-drishti",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十宫主（Karm's Lord）是否相照上升宫（Lagna）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘四宫主（Bandhu's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十宫主（Karm's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘二宫主（Dhan's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十一宫主（Labh's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘中哪些行星被判为吉星"
+                },
+                {
+                  "fact_key": "金星（Shukra）是否相照 Arudh Lagna 起算的第11宫"
+                },
+                {
+                  "fact_key": "Arudh Lagna 是否被吉星占据"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "二宫主（Dhan's Lord）是否相照上升宫（Lagna）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "二宫主（Dhan's Lord）是否相照上升宫（Lagna）"
+            },
+            "selection_group": "ch39-v29-31-kendra-labh-lord-drishti-with-shukra.step-001:which-lord-drishti",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：二宫主（Dhan's Lord）是否相照上升宫（Lagna）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘四宫主（Bandhu's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十宫主（Karm's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘二宫主（Dhan's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十一宫主（Labh's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘中哪些行星被判为吉星"
+                },
+                {
+                  "fact_key": "金星（Shukra）是否相照 Arudh Lagna 起算的第11宫"
+                },
+                {
+                  "fact_key": "Arudh Lagna 是否被吉星占据"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "十一宫主（Labh's Lord）是否相照上升宫（Lagna）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十一宫主（Labh's Lord）是否相照上升宫（Lagna）"
+            },
+            "selection_group": "ch39-v29-31-kendra-labh-lord-drishti-with-shukra.step-001:which-lord-drishti",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十一宫主（Labh's Lord）是否相照上升宫（Lagna）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if a Grah, ruling Bandhu, Karm, Dhan, or Labh, gives a Drishti to Lagna",
+              "claim": "四宫（Bandhu）、十宫（Karm）、二宫（Dhan）或十一宫（Labh）的宫主相照上升宫（Lagna）"
+            },
+            {
+              "quote": "while Shukra gives a Drishti to the 11<sup>th</sup> from Arudh Lagna",
+              "claim": "金星（Shukra）相照 Arudh Lagna 起算的第11宫"
+            },
+            {
+              "quote": "as Arudh Lagn is occupied by a benefic",
+              "claim": "Arudh Lagn 内有吉星"
+            }
+          ],
+          "results": [
+            {
+              "quote": "The native will become a king",
+              "claim": "命主会成为国王"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v29-31",
+            "quote": "The native will become a king, if a Grah, ruling Bandhu, Karm, Dhan, or Labh, gives a Drishti to Lagna, while Shukra gives a Drishti to the 11<sup>th</sup> from Arudh Lagna, as Arudh Lagn is occupied by a benefic.",
+            "pdf_pages": [
+              83
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘四宫主（Bandhu's Lord）是哪颗行星、本盘十宫主（Karm's Lord）是哪颗行星、本盘二宫主（Dhan's Lord）是哪颗行星、本盘十一宫主（Labh's Lord）是哪颗行星、本盘中哪些行星被判为吉星、金星（Shukra）是否相照 Arudh Lagna 起算的第11宫、Arudh Lagna 是否被吉星占据。",
+        "stop_fact_keys": [
+          "本盘四宫主（Bandhu's Lord）是哪颗行星",
+          "本盘十宫主（Karm's Lord）是哪颗行星",
+          "本盘二宫主（Dhan's Lord）是哪颗行星",
+          "本盘十一宫主（Labh's Lord）是哪颗行星",
+          "本盘中哪些行星被判为吉星",
+          "金星（Shukra）是否相照 Arudh Lagna 起算的第11宫",
+          "Arudh Lagna 是否被吉星占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文只列四宫、十宫、二宫、十一宫四个宫主，不得把别的宫主也算进来。",
+          "三项条件并列，不得只满足其中一项就下断语。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "920394eb113490bbe22cab33335724971cbeef5f9ac26e09a355a88b8eb74ec8"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v29-31-debilitated-in-ari-randhr-drishti-lagn.step-001",
+      "method": {
+        "method": "ch39-v29-31-debilitated-in-ari-randhr-drishti-lagn",
+        "title": "落陷行星居六宫或八宫并相照上升：同样成为国王",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "落陷的行星在坏宫里反而好吗",
+          "六宫八宫的落陷行星有什么用"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "The same effect will be obtained, if a debilitated Grah gives a Drishti to Lagn and is placed in Ari, or Randhr Bhava",
+            "落陷行星在六宫八宫相照上升 国王"
+          ],
+          "counter_queries": [
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak",
+            "The native will be penniless, if Lagn’s Lord is in Ari Bhava, while Ari’s Lord is in Lagna, yuti with, or receiving a Drishti from a Marak Lord"
+          ],
+          "boundary_queries": [
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "Evil Bhavas, or Dusthan Bhavas are Ari, Randhr and Vyaya Bhava"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v29-31-debilitated-in-ari-randhr-drishti-lagn.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if a debilitated Grah gives a Drishti to Lagn and is placed in Ari"
+            },
+            {
+              "step_id": "ch39-v29-31-debilitated-in-ari-randhr-drishti-lagn.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or Randhr Bhava"
+            },
+            {
+              "step_id": "ch39-v29-31-debilitated-in-ari-randhr-drishti-lagn.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The same effect will be obtained"
+            },
+            {
+              "step_id": "ch39-v29-31-debilitated-in-ari-randhr-drishti-lagn.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The native will become a king"
+            },
+            {
+              "step_id": "ch39-v29-31-debilitated-in-ari-randhr-drishti-lagn.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if a debilitated Grah gives a Drishti to Lagn and is placed in Ari The same effect will be obtained"
+            },
+            {
+              "step_id": "ch39-v29-31-debilitated-in-ari-randhr-drishti-lagn.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or Randhr Bhava The same effect will be obtained"
+            },
+            {
+              "step_id": "ch39-v29-31-debilitated-in-ari-randhr-drishti-lagn.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if a debilitated Grah gives a Drishti to 1st house and is placed in 6th house"
+            },
+            {
+              "step_id": "ch39-v29-31-debilitated-in-ari-randhr-drishti-lagn.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "or 8th house"
+            },
+            {
+              "step_id": "ch39-v29-31-debilitated-in-ari-randhr-drishti-lagn.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if a debilitated Grah gives a Drishti to 1st house and is placed in 6th house The same effect will be obtained"
+            },
+            {
+              "step_id": "ch39-v29-31-debilitated-in-ari-randhr-drishti-lagn.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "or 8th house The same effect will be obtained"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少六宫或八宫的占据事实时停止。",
+          "两条分支的落陷行星相照事实全部缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v29-31-debilitated-in-ari-randhr-drishti-lagn.step-001",
+        "action": "看六宫与八宫内有哪些行星，核对其中是否有落陷的行星相照上升宫。",
+        "applicability_scope": "仅限本命盘；原文的 The same effect 承同偈前句的国王断语；原文没有时间限定。",
+        "minimum_supported_claim": "有落陷的行星相照上升（Lagn）并落在六宫（Ari），或落在八宫（Randhr）时，同样会成为国王。",
+        "produced_fact_keys": [
+          "六宫八宫落陷行星相照上升的贵格判定"
+        ],
+        "required_fact_keys": [
+          "本盘六宫（Ari）内有哪些行星",
+          "本盘八宫（Randhr）内有哪些行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘六宫（Ari）内有哪些行星"
+                },
+                {
+                  "fact_key": "本盘八宫（Randhr）内有哪些行星"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "落六宫（Ari）的落陷行星是否相照上升宫（Lagna）"
+                },
+                {
+                  "fact_key": "落八宫（Randhr）的落陷行星是否相照上升宫（Lagna）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘六宫（Ari）内有哪些行星"
+                },
+                {
+                  "fact_key": "本盘八宫（Randhr）内有哪些行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "落六宫（Ari）的落陷行星是否相照上升宫（Lagna）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "落六宫（Ari）的落陷行星是否相照上升宫（Lagna）"
+            },
+            "selection_group": "ch39-v29-31-debilitated-in-ari-randhr-drishti-lagn.step-001:which-bhava",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：落六宫（Ari）的落陷行星是否相照上升宫（Lagna）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘六宫（Ari）内有哪些行星"
+                },
+                {
+                  "fact_key": "本盘八宫（Randhr）内有哪些行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "落八宫（Randhr）的落陷行星是否相照上升宫（Lagna）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "落八宫（Randhr）的落陷行星是否相照上升宫（Lagna）"
+            },
+            "selection_group": "ch39-v29-31-debilitated-in-ari-randhr-drishti-lagn.step-001:which-bhava",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：落八宫（Randhr）的落陷行星是否相照上升宫（Lagna）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if a debilitated Grah gives a Drishti to Lagn and is placed in Ari",
+              "claim": "有落陷的行星相照上升（Lagn）并落在六宫（Ari）"
+            },
+            {
+              "quote": "or Randhr Bhava",
+              "claim": "落在八宫（Randhr）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "The same effect will be obtained",
+              "claim": "同样"
+            },
+            {
+              "quote": "The native will become a king",
+              "claim": "会成为国王"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v29-31",
+            "quote": "The same effect will be obtained, if a debilitated Grah gives a Drishti to Lagn and is placed in Ari, or Randhr Bhava.",
+            "pdf_pages": [
+              83
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v29-31",
+            "quote": "The native will become a king",
+            "pdf_pages": [
+              83
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘六宫（Ari）内有哪些行星、本盘八宫（Randhr）内有哪些行星。",
+        "stop_fact_keys": [
+          "本盘六宫（Ari）内有哪些行星",
+          "本盘八宫（Randhr）内有哪些行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文只写六宫与八宫两处，不得把十二宫或别的宫位也算进来。",
+          "不得据此推断疾病、损失或应期。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "d4fc361e5c74e6f359237b7cfcf7e97159d53f1b3a3e2e59052809f9cdb02fb7"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v29-31-debilitated-in-sahaj-labh-drishti-lagn.step-001",
+      "method": {
+        "method": "ch39-v29-31-debilitated-in-sahaj-labh-drishti-lagn",
+        "title": "落陷行星居三宫或十一宫并相照上升：同样成为国王",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "三宫十一宫的落陷行星说明什么",
+          "落陷行星还能成贵格吗"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Again similar result will prevail, if a debilitated Grah, placed in Sahaj, or Labh Bhava, gives a Drishti to Lagn",
+            "落陷行星在三宫十一宫相照上升 国王"
+          ],
+          "counter_queries": [
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "Sahaj, Ari, Karm and Labh Bhava are Upachaya Bhavas"
+          ],
+          "method_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness",
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v29-31-debilitated-in-sahaj-labh-drishti-lagn.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if a debilitated Grah, placed in Sahaj"
+            },
+            {
+              "step_id": "ch39-v29-31-debilitated-in-sahaj-labh-drishti-lagn.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or Labh Bhava, gives a Drishti to Lagn"
+            },
+            {
+              "step_id": "ch39-v29-31-debilitated-in-sahaj-labh-drishti-lagn.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Again similar result will prevail"
+            },
+            {
+              "step_id": "ch39-v29-31-debilitated-in-sahaj-labh-drishti-lagn.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The native will become a king"
+            },
+            {
+              "step_id": "ch39-v29-31-debilitated-in-sahaj-labh-drishti-lagn.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if a debilitated Grah, placed in Sahaj Again similar result will prevail"
+            },
+            {
+              "step_id": "ch39-v29-31-debilitated-in-sahaj-labh-drishti-lagn.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or Labh Bhava, gives a Drishti to Lagn Again similar result will prevail"
+            },
+            {
+              "step_id": "ch39-v29-31-debilitated-in-sahaj-labh-drishti-lagn.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if a debilitated Grah, placed in 3rd house"
+            },
+            {
+              "step_id": "ch39-v29-31-debilitated-in-sahaj-labh-drishti-lagn.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "or 11th house, gives a Drishti to 1st house"
+            },
+            {
+              "step_id": "ch39-v29-31-debilitated-in-sahaj-labh-drishti-lagn.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if a debilitated Grah, placed in 3rd house Again similar result will prevail"
+            },
+            {
+              "step_id": "ch39-v29-31-debilitated-in-sahaj-labh-drishti-lagn.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "or 11th house, gives a Drishti to 1st house Again similar result will prevail"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少三宫或十一宫的占据事实时停止。",
+          "两条分支的落陷行星相照事实全部缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v29-31-debilitated-in-sahaj-labh-drishti-lagn.step-001",
+        "action": "看三宫与十一宫内有哪些行星，核对其中是否有落陷的行星相照上升宫。",
+        "applicability_scope": "仅限本命盘；原文的 Again similar result 承同偈前面的国王断语；原文没有时间限定。",
+        "minimum_supported_claim": "落陷的行星落三宫（Sahaj）或十一宫（Labh）并相照上升（Lagn）时，同样的结果成立，即会成为国王。",
+        "produced_fact_keys": [
+          "三宫十一宫落陷行星相照上升的贵格判定"
+        ],
+        "required_fact_keys": [
+          "本盘三宫（Sahaj）内有哪些行星",
+          "本盘十一宫（Labh）内有哪些行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘三宫（Sahaj）内有哪些行星"
+                },
+                {
+                  "fact_key": "本盘十一宫（Labh）内有哪些行星"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "落三宫（Sahaj）的落陷行星是否相照上升宫（Lagna）"
+                },
+                {
+                  "fact_key": "落十一宫（Labh）的落陷行星是否相照上升宫（Lagna）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘三宫（Sahaj）内有哪些行星"
+                },
+                {
+                  "fact_key": "本盘十一宫（Labh）内有哪些行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "落三宫（Sahaj）的落陷行星是否相照上升宫（Lagna）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "落三宫（Sahaj）的落陷行星是否相照上升宫（Lagna）"
+            },
+            "selection_group": "ch39-v29-31-debilitated-in-sahaj-labh-drishti-lagn.step-001:which-bhava",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：落三宫（Sahaj）的落陷行星是否相照上升宫（Lagna）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘三宫（Sahaj）内有哪些行星"
+                },
+                {
+                  "fact_key": "本盘十一宫（Labh）内有哪些行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "落十一宫（Labh）的落陷行星是否相照上升宫（Lagna）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "落十一宫（Labh）的落陷行星是否相照上升宫（Lagna）"
+            },
+            "selection_group": "ch39-v29-31-debilitated-in-sahaj-labh-drishti-lagn.step-001:which-bhava",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：落十一宫（Labh）的落陷行星是否相照上升宫（Lagna）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if a debilitated Grah, placed in Sahaj",
+              "claim": "落陷的行星落三宫（Sahaj）"
+            },
+            {
+              "quote": "or Labh Bhava, gives a Drishti to Lagn",
+              "claim": "十一宫（Labh）并相照上升（Lagn）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Again similar result will prevail",
+              "claim": "同样的结果成立"
+            },
+            {
+              "quote": "The native will become a king",
+              "claim": "会成为国王"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v29-31",
+            "quote": "Again similar result will prevail, if a debilitated Grah, placed in Sahaj, or Labh Bhava, gives a Drishti to Lagn.",
+            "pdf_pages": [
+              83
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v29-31",
+            "quote": "The native will become a king",
+            "pdf_pages": [
+              83
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘三宫（Sahaj）内有哪些行星、本盘十一宫（Labh）内有哪些行星。",
+        "stop_fact_keys": [
+          "本盘三宫（Sahaj）内有哪些行星",
+          "本盘十一宫（Labh）内有哪些行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文只写三宫与十一宫两处，不得把六宫、八宫等别的宫位也算进来。",
+          "不得据此推断收益数额或应期。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b1d2f5b50b59f1ac2e7fbc1f2cdf694da96139d27063046f1e703616cd01cc39"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v33-34-dharm-putr-lords-mutual-drishti.step-001",
+      "method": {
+        "method": "ch39-v33-34-dharm-putr-lords-mutual-drishti",
+        "title": "九宫主与五宫主互相相照：获得王国",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "九宫主和五宫主的关系有多重要",
+          "我有没有得大位的组合"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Dharm’s Lord is akin to a minister and more especially Putr’s Lord. If these two Grahas mutually give a Drishti, the native will obtain a kingdom",
+            "九宫主五宫主互相相照 获得王国"
+          ],
+          "counter_queries": [
+            "Should Putr’s and Dharm’s Lords be, respectively, found in Ari and Vyaya Bhava and receive a Drishti from Marak Grahas, the native will be penniless",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "If the Lord of a Kendr establishes a relationship with the Lord of a Kon, a Raj Yog is obtained",
+            "Putr and Dharm Bhava are known by the name Kon (or trine)"
+          ],
+          "method_queries": [
+            "Dharm’s Lord and Putr’s Lord are capable of bestowing wealth",
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v33-34-dharm-putr-lords-mutual-drishti.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dharm’s Lord"
+            },
+            {
+              "step_id": "ch39-v33-34-dharm-putr-lords-mutual-drishti.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Putr’s Lord"
+            },
+            {
+              "step_id": "ch39-v33-34-dharm-putr-lords-mutual-drishti.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If these two Grahas mutually give a Drishti"
+            },
+            {
+              "step_id": "ch39-v33-34-dharm-putr-lords-mutual-drishti.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will obtain a kingdom"
+            },
+            {
+              "step_id": "ch39-v33-34-dharm-putr-lords-mutual-drishti.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dharm’s Lord the native will obtain a kingdom"
+            },
+            {
+              "step_id": "ch39-v33-34-dharm-putr-lords-mutual-drishti.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Putr’s Lord the native will obtain a kingdom"
+            },
+            {
+              "step_id": "ch39-v33-34-dharm-putr-lords-mutual-drishti.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If these two Grahas mutually give a Drishti the native will obtain a kingdom"
+            },
+            {
+              "step_id": "ch39-v33-34-dharm-putr-lords-mutual-drishti.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "9th lord"
+            },
+            {
+              "step_id": "ch39-v33-34-dharm-putr-lords-mutual-drishti.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "5th lord"
+            },
+            {
+              "step_id": "ch39-v33-34-dharm-putr-lords-mutual-drishti.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "9th lord the native will obtain a kingdom"
+            },
+            {
+              "step_id": "ch39-v33-34-dharm-putr-lords-mutual-drishti.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "5th lord the native will obtain a kingdom"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "九宫主或五宫主的身份事实缺失时停止。",
+          "缺少两者互照的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v33-34-dharm-putr-lords-mutual-drishti.step-001",
+        "action": "先认出九宫主与五宫主，再核对两者是否互相相照。",
+        "applicability_scope": "仅限本命盘；原文先说九宫主如大臣、五宫主尤甚，本步只取其互照一条；原文没有时间限定。",
+        "minimum_supported_claim": "九宫主（Dharm's Lord）与五宫主（Putr's Lord）互相相照时，命主会获得王国。",
+        "produced_fact_keys": [
+          "九五宫主互照的得国判定"
+        ],
+        "required_fact_keys": [
+          "本盘九宫主（Dharm's Lord）是哪颗行星",
+          "本盘五宫主（Putr's Lord）是哪颗行星",
+          "九宫主（Dharm's Lord）与五宫主（Putr's Lord）是否互相相照"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘九宫主（Dharm's Lord）是哪颗行星"
+            },
+            {
+              "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+            },
+            {
+              "fact_key": "九宫主（Dharm's Lord）与五宫主（Putr's Lord）是否互相相照"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dharm’s Lord",
+              "claim": "九宫主（Dharm's Lord）"
+            },
+            {
+              "quote": "Putr’s Lord",
+              "claim": "五宫主（Putr's Lord）"
+            },
+            {
+              "quote": "If these two Grahas mutually give a Drishti",
+              "claim": "互相相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will obtain a kingdom",
+              "claim": "命主会获得王国"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v33-34",
+            "quote": "Dharm’s Lord is akin to a minister and more especially Putr’s Lord. If these two Grahas mutually give a Drishti, the native will obtain a kingdom.",
+            "pdf_pages": [
+              84
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘九宫主（Dharm's Lord）是哪颗行星、本盘五宫主（Putr's Lord）是哪颗行星、九宫主（Dharm's Lord）与五宫主（Putr's Lord）是否互相相照。",
+        "stop_fact_keys": [
+          "本盘九宫主（Dharm's Lord）是哪颗行星",
+          "本盘五宫主（Putr's Lord）是哪颗行星",
+          "九宫主（Dharm's Lord）与五宫主（Putr's Lord）是否互相相照"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文此句没有出身限定，不得把下一句的 royal scion 限定搬到这里。",
+          "不得据此推断得位时间或权位大小。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "6f8efe5ff8dd037524c410db7117979a05628d08b6827eba97ecf652c0659bdc"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v33-34-dharm-putr-lords-yuti-or-seventh.step-001",
+      "method": {
+        "method": "ch39-v33-34-dharm-putr-lords-yuti-or-seventh",
+        "title": "九宫主与五宫主同宫或互处第7宫：王族出身者成为国王",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我出身普通 这个组合还算吗",
+          "九宫主五宫主同宫说明什么"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Even, if these two are yuti in any Bhava, or, if they happen to be placed in mutually 7<sup>th</sup> places, one born of royal scion will become a king",
+            "九宫主五宫主同宫 互处第七宫 王族出身"
+          ],
+          "counter_queries": [
+            "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless",
+            "Should Putr’s and Dharm’s Lords be, respectively, found in Ari and Vyaya Bhava and receive a Drishti from Marak Grahas, the native will be penniless"
+          ],
+          "boundary_queries": [
+            "If the Lord of a Kendr establishes a relationship with the Lord of a Kon, a Raj Yog is obtained",
+            "Putr and Dharm Bhava are known by the name Kon (or trine)"
+          ],
+          "method_queries": [
+            "Dharm’s Lord and Putr’s Lord are capable of bestowing wealth",
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v33-34-dharm-putr-lords-yuti-or-seventh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Dharm’s Lord"
+            },
+            {
+              "step_id": "ch39-v33-34-dharm-putr-lords-yuti-or-seventh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Putr’s Lord"
+            },
+            {
+              "step_id": "ch39-v33-34-dharm-putr-lords-yuti-or-seventh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if these two are yuti in any Bhava"
+            },
+            {
+              "step_id": "ch39-v33-34-dharm-putr-lords-yuti-or-seventh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if they happen to be placed in mutually 7th places"
+            },
+            {
+              "step_id": "ch39-v33-34-dharm-putr-lords-yuti-or-seventh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "one born of royal scion will become a king"
+            },
+            {
+              "step_id": "ch39-v33-34-dharm-putr-lords-yuti-or-seventh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Dharm’s Lord one born of royal scion will become a king"
+            },
+            {
+              "step_id": "ch39-v33-34-dharm-putr-lords-yuti-or-seventh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Putr’s Lord one born of royal scion will become a king"
+            },
+            {
+              "step_id": "ch39-v33-34-dharm-putr-lords-yuti-or-seventh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if these two are yuti in any Bhava one born of royal scion will become a king"
+            },
+            {
+              "step_id": "ch39-v33-34-dharm-putr-lords-yuti-or-seventh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if they happen to be placed in mutually 7th places one born of royal scion will become a king"
+            },
+            {
+              "step_id": "ch39-v33-34-dharm-putr-lords-yuti-or-seventh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "9th lord"
+            },
+            {
+              "step_id": "ch39-v33-34-dharm-putr-lords-yuti-or-seventh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "5th lord"
+            },
+            {
+              "step_id": "ch39-v33-34-dharm-putr-lords-yuti-or-seventh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "9th lord one born of royal scion will become a king"
+            },
+            {
+              "step_id": "ch39-v33-34-dharm-putr-lords-yuti-or-seventh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "5th lord one born of royal scion will become a king"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "九宫主或五宫主的身份事实缺失时停止。",
+          "同宫与互处第7宫两项事实全部缺失时停止。",
+          "命主是否为王族出身未确定时，本条断语停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v33-34-dharm-putr-lords-yuti-or-seventh.step-001",
+        "action": "先认出九宫主与五宫主，再核对两者是同宫，还是彼此互处第7宫。",
+        "applicability_scope": "仅限本命盘；原文这一句的断语主语限定为 one born of royal scion（王族出身者），不适用于一般出身；原文没有时间限定。",
+        "minimum_supported_claim": "九宫主（Dharm's Lord）与五宫主（Putr's Lord）在任一宫同宫，或彼此互处第7宫时，王族出身者会成为国王。",
+        "produced_fact_keys": [
+          "九五宫主同宫或对冲的成王判定"
+        ],
+        "required_fact_keys": [
+          "本盘九宫主（Dharm's Lord）是哪颗行星",
+          "本盘五宫主（Putr's Lord）是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘九宫主（Dharm's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "九宫主（Dharm's Lord）与五宫主（Putr's Lord）是否同宫"
+                },
+                {
+                  "fact_key": "九宫主（Dharm's Lord）与五宫主（Putr's Lord）是否互处第7宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘九宫主（Dharm's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "九宫主（Dharm's Lord）与五宫主（Putr's Lord）是否同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "九宫主（Dharm's Lord）与五宫主（Putr's Lord）是否同宫"
+            },
+            "selection_group": "ch39-v33-34-dharm-putr-lords-yuti-or-seventh.step-001:yuti-or-seventh",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：九宫主（Dharm's Lord）与五宫主（Putr's Lord）是否同宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘九宫主（Dharm's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "九宫主（Dharm's Lord）与五宫主（Putr's Lord）是否互处第7宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "九宫主（Dharm's Lord）与五宫主（Putr's Lord）是否互处第7宫"
+            },
+            "selection_group": "ch39-v33-34-dharm-putr-lords-yuti-or-seventh.step-001:yuti-or-seventh",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：九宫主（Dharm's Lord）与五宫主（Putr's Lord）是否互处第7宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Dharm’s Lord",
+              "claim": "九宫主（Dharm's Lord）"
+            },
+            {
+              "quote": "Putr’s Lord",
+              "claim": "五宫主（Putr's Lord）"
+            },
+            {
+              "quote": "if these two are yuti in any Bhava",
+              "claim": "在任一宫同宫"
+            },
+            {
+              "quote": "if they happen to be placed in mutually 7<sup>th</sup> places",
+              "claim": "彼此互处第7宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "one born of royal scion will become a king",
+              "claim": "王族出身者会成为国王"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v33-34",
+            "quote": "Dharm’s Lord is akin to a minister and more especially Putr’s Lord.",
+            "pdf_pages": [
+              84
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v33-34",
+            "quote": "Even, if these two are yuti in any Bhava, or, if they happen to be placed in mutually 7<sup>th</sup> places, one born of royal scion will become a king.",
+            "pdf_pages": [
+              84
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘九宫主（Dharm's Lord）是哪颗行星、本盘五宫主（Putr's Lord）是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘九宫主（Dharm's Lord）是哪颗行星",
+          "本盘五宫主（Putr's Lord）是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得去掉 one born of royal scion 这一出身限定。",
+          "不得据此推断登位时间或权位大小。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "fe73ae1c09f63dd71b2bf4fad94bc20824e3836cfb5fd877700c86423a8627df"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v35-bandhu-karm-exchange-drishti-putr-dharm.step-001",
+      "method": {
+        "method": "ch39-v35-bandhu-karm-exchange-drishti-putr-dharm",
+        "title": "四宫主与十宫主互换宫位并相照五宫主与九宫主：得到王国",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "宫主互换有多大力量",
+          "我有没有得大位的组合"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "The native will attain a kingdom, if Bandhu’s Lord is in Karm Bhava and Karm’s Lord is in Bandhu Bhava and, if these Grahas give a Drishti to Putr’s and Dharm’s Lords",
+            "四宫主十宫主互换 相照五宫主九宫主 得国"
+          ],
+          "counter_queries": [
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak",
+            "Should Putr’s and Dharm’s Lords be, respectively, found in Ari and Vyaya Bhava and receive a Drishti from Marak Grahas, the native will be penniless"
+          ],
+          "boundary_queries": [
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "If the Lord of a Kendr establishes a relationship with the Lord of a Kon, a Raj Yog is obtained"
+          ],
+          "method_queries": [
+            "An exchange of Rāśis between Karm’s Lord and Lagn’s Lord will make the native associated with the king in a great manner",
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v35-bandhu-karm-exchange-drishti-putr-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Bandhu’s Lord is in Karm Bhava"
+            },
+            {
+              "step_id": "ch39-v35-bandhu-karm-exchange-drishti-putr-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Karm’s Lord is in Bandhu Bhava"
+            },
+            {
+              "step_id": "ch39-v35-bandhu-karm-exchange-drishti-putr-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if these Grahas give a Drishti to Putr’s and Dharm’s Lords"
+            },
+            {
+              "step_id": "ch39-v35-bandhu-karm-exchange-drishti-putr-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "The native will attain a kingdom"
+            },
+            {
+              "step_id": "ch39-v35-bandhu-karm-exchange-drishti-putr-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Bandhu’s Lord is in Karm Bhava The native will attain a kingdom"
+            },
+            {
+              "step_id": "ch39-v35-bandhu-karm-exchange-drishti-putr-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Karm’s Lord is in Bandhu Bhava The native will attain a kingdom"
+            },
+            {
+              "step_id": "ch39-v35-bandhu-karm-exchange-drishti-putr-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if these Grahas give a Drishti to Putr’s and Dharm’s Lords The native will attain a kingdom"
+            },
+            {
+              "step_id": "ch39-v35-bandhu-karm-exchange-drishti-putr-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if 4th lord is in 10th house"
+            },
+            {
+              "step_id": "ch39-v35-bandhu-karm-exchange-drishti-putr-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "10th lord is in 4th house"
+            },
+            {
+              "step_id": "ch39-v35-bandhu-karm-exchange-drishti-putr-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if these Grahas give a Drishti to 5th house’s and 9th lords"
+            },
+            {
+              "step_id": "ch39-v35-bandhu-karm-exchange-drishti-putr-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if 4th lord is in 10th house The native will attain a kingdom"
+            },
+            {
+              "step_id": "ch39-v35-bandhu-karm-exchange-drishti-putr-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "10th lord is in 4th house The native will attain a kingdom"
+            },
+            {
+              "step_id": "ch39-v35-bandhu-karm-exchange-drishti-putr-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if these Grahas give a Drishti to 5th house’s and 9th lords The native will attain a kingdom"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "四个宫主的身份事实缺任一项时停止。",
+          "两项落宫与四项相照事实缺任一项时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v35-bandhu-karm-exchange-drishti-putr-dharm.step-001",
+        "action": "核对四宫主是否落十宫、十宫主是否落四宫，再核对这两颗行星是否都相照五宫主与九宫主。",
+        "applicability_scope": "仅限本命盘；原文没有时间限定。",
+        "minimum_supported_claim": "四宫主（Bandhu's Lord）落十宫（Karm Bhava）、十宫主（Karm's Lord）落四宫（Bandhu Bhava），并且这两颗行星都相照五宫主（Putr's Lord）与九宫主（Dharm's Lord）时，命主会得到王国。",
+        "produced_fact_keys": [
+          "四十宫主互换并照五九宫主的得国判定"
+        ],
+        "required_fact_keys": [
+          "本盘四宫主（Bandhu's Lord）是哪颗行星",
+          "本盘十宫主（Karm's Lord）是哪颗行星",
+          "本盘五宫主（Putr's Lord）是哪颗行星",
+          "本盘九宫主（Dharm's Lord）是哪颗行星",
+          "四宫主（Bandhu's Lord）是否落十宫（Karm）",
+          "十宫主（Karm's Lord）是否落四宫（Bandhu）",
+          "四宫主（Bandhu's Lord）是否相照五宫主（Putr's Lord）",
+          "四宫主（Bandhu's Lord）是否相照九宫主（Dharm's Lord）",
+          "十宫主（Karm's Lord）是否相照五宫主（Putr's Lord）",
+          "十宫主（Karm's Lord）是否相照九宫主（Dharm's Lord）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘四宫主（Bandhu's Lord）是哪颗行星"
+            },
+            {
+              "fact_key": "本盘十宫主（Karm's Lord）是哪颗行星"
+            },
+            {
+              "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+            },
+            {
+              "fact_key": "本盘九宫主（Dharm's Lord）是哪颗行星"
+            },
+            {
+              "fact_key": "四宫主（Bandhu's Lord）是否落十宫（Karm）"
+            },
+            {
+              "fact_key": "十宫主（Karm's Lord）是否落四宫（Bandhu）"
+            },
+            {
+              "fact_key": "四宫主（Bandhu's Lord）是否相照五宫主（Putr's Lord）"
+            },
+            {
+              "fact_key": "四宫主（Bandhu's Lord）是否相照九宫主（Dharm's Lord）"
+            },
+            {
+              "fact_key": "十宫主（Karm's Lord）是否相照五宫主（Putr's Lord）"
+            },
+            {
+              "fact_key": "十宫主（Karm's Lord）是否相照九宫主（Dharm's Lord）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if Bandhu’s Lord is in Karm Bhava",
+              "claim": "四宫主（Bandhu's Lord）落十宫（Karm Bhava）"
+            },
+            {
+              "quote": "Karm’s Lord is in Bandhu Bhava",
+              "claim": "十宫主（Karm's Lord）落四宫（Bandhu Bhava）"
+            },
+            {
+              "quote": "if these Grahas give a Drishti to Putr’s and Dharm’s Lords",
+              "claim": "这两颗行星都相照五宫主（Putr's Lord）与九宫主（Dharm's Lord）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "The native will attain a kingdom",
+              "claim": "命主会得到王国"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v35",
+            "quote": "The native will attain a kingdom, if Bandhu’s Lord is in Karm Bhava and Karm’s Lord is in Bandhu Bhava and, if these Grahas give a Drishti to Putr’s and Dharm’s Lords.",
+            "pdf_pages": [
+              84
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘四宫主（Bandhu's Lord）是哪颗行星、本盘十宫主（Karm's Lord）是哪颗行星、本盘五宫主（Putr's Lord）是哪颗行星、本盘九宫主（Dharm's Lord）是哪颗行星、四宫主（Bandhu's Lord）是否落十宫（Karm）、十宫主（Karm's Lord）是否落四宫（Bandhu）、四宫主（Bandhu's Lord）是否相照五宫主（Putr's Lord）、四宫主（Bandhu's Lord）是否相照九宫主（Dharm's Lord）、十宫主（Karm's Lord）是否相照五宫主（Putr's Lord）、十宫主（Karm's Lord）是否相照九宫主（Dharm's Lord）。",
+        "stop_fact_keys": [
+          "本盘四宫主（Bandhu's Lord）是哪颗行星",
+          "本盘十宫主（Karm's Lord）是哪颗行星",
+          "本盘五宫主（Putr's Lord）是哪颗行星",
+          "本盘九宫主（Dharm's Lord）是哪颗行星",
+          "四宫主（Bandhu's Lord）是否落十宫（Karm）",
+          "十宫主（Karm's Lord）是否落四宫（Bandhu）",
+          "四宫主（Bandhu's Lord）是否相照五宫主（Putr's Lord）",
+          "四宫主（Bandhu's Lord）是否相照九宫主（Dharm's Lord）",
+          "十宫主（Karm's Lord）是否相照五宫主（Putr's Lord）",
+          "十宫主（Karm's Lord）是否相照九宫主（Dharm's Lord）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文要求两颗行星都相照五宫主与九宫主，不得只满足其中一半。",
+          "不得据此推断得位时间或权位大小。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "25b0961f24a1172a8b3780d482c268cb551b119cd88649be5b62b9091c50e261"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v36-four-lords-yuti-in-dharm.step-001",
+      "method": {
+        "method": "ch39-v36-four-lords-yuti-in-dharm",
+        "title": "五宫、十宫、四宫与上升主同聚九宫：名声遍及四方的统治者",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "四个宫主聚在一宫说明什么",
+          "我会不会名声很大"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If the Lords of Putr, Karm, Bandhu and Lagn are yuti in Dharm Bhava, one will become a ruler with fame, spreading over the four directions",
+            "五宫十宫四宫上升主同聚九宫 名声四方"
+          ],
+          "counter_queries": [
+            "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "Putr and Dharm Bhava are known by the name Kon (or trine)"
+          ],
+          "method_queries": [
+            "If the Lord of a Kendr establishes a relationship with the Lord of a Kon, a Raj Yog is obtained",
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v36-four-lords-yuti-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If the Lords of Putr, Karm, Bandhu and Lagn are yuti in Dharm Bhava"
+            },
+            {
+              "step_id": "ch39-v36-four-lords-yuti-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "one will become a ruler with fame, spreading over the four directions"
+            },
+            {
+              "step_id": "ch39-v36-four-lords-yuti-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If the Lords of Putr, Karm, Bandhu and Lagn are yuti in Dharm Bhava one will become a ruler with fame, spreading over the four directions"
+            },
+            {
+              "step_id": "ch39-v36-four-lords-yuti-in-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If the Lords of 5th house, 10th house, 4th house and 1st house are yuti in 9th house"
+            },
+            {
+              "step_id": "ch39-v36-four-lords-yuti-in-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If the Lords of 5th house, 10th house, 4th house and 1st house are yuti in 9th house one will become a ruler with fame, spreading over the four directions"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "四个宫主的身份事实缺任一项时停止。",
+          "四项落宫事实缺任一项时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v36-four-lords-yuti-in-dharm.step-001",
+        "action": "先认出五宫主、十宫主、四宫主与上升主，再核对四者是否都落九宫（Dharm Bhava）同宫。",
+        "applicability_scope": "仅限本命盘；原文没有时间限定。",
+        "minimum_supported_claim": "五宫（Putr）、十宫（Karm）、四宫（Bandhu）与上升（Lagn）的宫主都同宫于九宫（Dharm Bhava）时，命主会成为名声遍及四方的统治者。",
+        "produced_fact_keys": [
+          "四宫主聚九宫的统治者判定"
+        ],
+        "required_fact_keys": [
+          "本盘五宫主（Putr's Lord）是哪颗行星",
+          "本盘十宫主（Karm's Lord）是哪颗行星",
+          "本盘四宫主（Bandhu's Lord）是哪颗行星",
+          "本盘上升主（Lagn's Lord）是哪颗行星",
+          "五宫主（Putr's Lord）是否落九宫（Dharm）",
+          "十宫主（Karm's Lord）是否落九宫（Dharm）",
+          "四宫主（Bandhu's Lord）是否落九宫（Dharm）",
+          "上升主（Lagn's Lord）是否落九宫（Dharm）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+            },
+            {
+              "fact_key": "本盘十宫主（Karm's Lord）是哪颗行星"
+            },
+            {
+              "fact_key": "本盘四宫主（Bandhu's Lord）是哪颗行星"
+            },
+            {
+              "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+            },
+            {
+              "fact_key": "五宫主（Putr's Lord）是否落九宫（Dharm）"
+            },
+            {
+              "fact_key": "十宫主（Karm's Lord）是否落九宫（Dharm）"
+            },
+            {
+              "fact_key": "四宫主（Bandhu's Lord）是否落九宫（Dharm）"
+            },
+            {
+              "fact_key": "上升主（Lagn's Lord）是否落九宫（Dharm）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If the Lords of Putr, Karm, Bandhu and Lagn are yuti in Dharm Bhava",
+              "claim": "五宫（Putr）、十宫（Karm）、四宫（Bandhu）与上升（Lagn）的宫主都同宫于九宫（Dharm Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "one will become a ruler with fame, spreading over the four directions",
+              "claim": "命主会成为名声遍及四方的统治者"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v36",
+            "quote": "If the Lords of Putr, Karm, Bandhu and Lagn are yuti in Dharm Bhava, one will become a ruler with fame, spreading over the four directions.",
+            "pdf_pages": [
+              84
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘五宫主（Putr's Lord）是哪颗行星、本盘十宫主（Karm's Lord）是哪颗行星、本盘四宫主（Bandhu's Lord）是哪颗行星、本盘上升主（Lagn's Lord）是哪颗行星、五宫主（Putr's Lord）是否落九宫（Dharm）、十宫主（Karm's Lord）是否落九宫（Dharm）、四宫主（Bandhu's Lord）是否落九宫（Dharm）、上升主（Lagn's Lord）是否落九宫（Dharm）。",
+        "stop_fact_keys": [
+          "本盘五宫主（Putr's Lord）是哪颗行星",
+          "本盘十宫主（Karm's Lord）是哪颗行星",
+          "本盘四宫主（Bandhu's Lord）是哪颗行星",
+          "本盘上升主（Lagn's Lord）是哪颗行星",
+          "五宫主（Putr's Lord）是否落九宫（Dharm）",
+          "十宫主（Karm's Lord）是否落九宫（Dharm）",
+          "四宫主（Bandhu's Lord）是否落九宫（Dharm）",
+          "上升主（Lagn's Lord）是否落九宫（Dharm）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文要求四个宫主同宫于九宫，不得只满足其中几个。",
+          "不得据此推断统治范围、职务或应期。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "4a142ea0dc76baa1c547bdcc45b349b862abb62f5c7b173d1d14c55badeee76f"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch39:v22": {
+      "evidence_atom_id": "bphs-97:santhanam:ch39:v22",
+      "chapter_number": 39,
+      "chapter_title": "Raj Yog",
+      "verse_label": "22.",
+      "content_role": "verse",
+      "exact_text": "22. If the Atma Karak Grah is in a benefic’s Rāśi/Navāńś, the native will be wealthy. If there are benefics in Kendras from Karakāńś Lagna, he will become a king.",
+      "pdf_pages": [
+        83
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 39 · Sloka 22 · PDF page 83 · bphs-97:santhanam:ch39:v22",
+      "previous_atom_id": "bphs-97:santhanam:ch39:v21",
+      "next_atom_id": "bphs-97:santhanam:ch39:v23",
+      "context_before": "va, or in its exaltation Rāśi, gives a Drishti to Lagna, a Raj Yog is formed. Similar is the case, if benefics are in Kendras.\n\n",
+      "context_after": "23. If the Arudh Lagn and Dar Pad are in mutual Kendras, or in mutual Sahaj/Labh Bhavas, or in mutual Konas, the native will dou",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch39:v23": {
+      "evidence_atom_id": "bphs-97:santhanam:ch39:v23",
+      "chapter_number": 39,
+      "chapter_title": "Raj Yog",
+      "verse_label": "23.",
+      "content_role": "verse",
+      "exact_text": "23. If the Arudh Lagn and Dar Pad are in mutual Kendras, or in mutual Sahaj/Labh Bhavas, or in mutual Konas, the native will doubtlessly become a king.",
+      "pdf_pages": [
+        83
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 39 · Sloka 23 · PDF page 83 · bphs-97:santhanam:ch39:v23",
+      "previous_atom_id": "bphs-97:santhanam:ch39:v22",
+      "next_atom_id": "bphs-97:santhanam:ch39:v24",
+      "context_before": "enefic’s Rāśi/Navāńś, the native will be wealthy. If there are benefics in Kendras from Karakāńś Lagna, he will become a king.\n\n",
+      "context_after": "24. If two, or all of Bhava, Hora, Ghatik Lagnas are receiving a Drishti from exalted Grahas, a Raj Yog is formed.\n\n25. If Bhava",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch39:v24": {
+      "evidence_atom_id": "bphs-97:santhanam:ch39:v24",
+      "chapter_number": 39,
+      "chapter_title": "Raj Yog",
+      "verse_label": "24.",
+      "content_role": "verse",
+      "exact_text": "24. If two, or all of Bhava, Hora, Ghatik Lagnas are receiving a Drishti from exalted Grahas, a Raj Yog is formed.",
+      "pdf_pages": [
+        83
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 39 · Sloka 24 · PDF page 83 · bphs-97:santhanam:ch39:v24",
+      "previous_atom_id": "bphs-97:santhanam:ch39:v23",
+      "next_atom_id": "bphs-97:santhanam:ch39:v25",
+      "context_before": " If the Arudh Lagn and Dar Pad are in mutual Kendras, or in mutual Sahaj/Labh Bhavas, or in mutual Konas, the native will doubtlessly become a king.\n\n",
+      "context_after": "25. If Bhava, Hora and Ghatik Lagnas, their Dreshkanas and Navāńśas, or the said Lagnas and their Navāńśas, or the said Lagnas a",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch39:v25": {
+      "evidence_atom_id": "bphs-97:santhanam:ch39:v25",
+      "chapter_number": 39,
+      "chapter_title": "Raj Yog",
+      "verse_label": "25.",
+      "content_role": "verse",
+      "exact_text": "25. If Bhava, Hora and Ghatik Lagnas, their Dreshkanas and Navāńśas, or the said Lagnas and their Navāńśas, or the said Lagnas and their Dreshkanas receive a Drishti from a Grah, a Raj Yog is formed.",
+      "pdf_pages": [
+        83
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 39 · Sloka 25 · PDF page 83 · bphs-97:santhanam:ch39:v25",
+      "previous_atom_id": "bphs-97:santhanam:ch39:v24",
+      "next_atom_id": "bphs-97:santhanam:ch39:v26-27",
+      "context_before": "me a king.\n\n24. If two, or all of Bhava, Hora, Ghatik Lagnas are receiving a Drishti from exalted Grahas, a Raj Yog is formed.\n\n",
+      "context_after": "26-27. If Arudh Pad is occupied by an exalted Grah, particularly Chandra in exaltation, or by Guru and/or Shukra (with, or witho",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch39:v26-27": {
+      "evidence_atom_id": "bphs-97:santhanam:ch39:v26-27",
+      "chapter_number": 39,
+      "chapter_title": "Raj Yog",
+      "verse_label": "26-27.",
+      "content_role": "verse",
+      "exact_text": "26-27. If Arudh Pad is occupied by an exalted Grah, particularly Chandra in exaltation, or by Guru and/or Shukra (with, or without exaltation), while there is no Argala by a malefic, the native will become a king. If the Arudh Pad is a benefic Rāśi, containing Chandra, while Guru is in Dhan Bhava, the same effect will prevail.",
+      "pdf_pages": [
+        83
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 39 · Sloka 26-27 · PDF page 83 · bphs-97:santhanam:ch39:v26-27",
+      "previous_atom_id": "bphs-97:santhanam:ch39:v25",
+      "next_atom_id": "bphs-97:santhanam:ch39:v28",
+      "context_before": " If Bhava, Hora and Ghatik Lagnas, their Dreshkanas and Navāńśas, or the said Lagnas and their Navāńśas, or the said Lagnas and their Dreshkanas receive a Drishti from a Grah, a Raj Yog is formed.\n\n",
+      "context_after": "28. Even, if one among Ari’s, Randhr’s and Vyaya’s Lords, being in debilitation, gives a Drishti to Lagna, there will be a Raj Y",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch39:v28": {
+      "evidence_atom_id": "bphs-97:santhanam:ch39:v28",
+      "chapter_number": 39,
+      "chapter_title": "Raj Yog",
+      "verse_label": "28.",
+      "content_role": "verse",
+      "exact_text": "28. Even, if one among Ari’s, Randhr’s and Vyaya’s Lords, being in debilitation, gives a Drishti to Lagna, there will be a Raj Yog.",
+      "pdf_pages": [
+        83
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 39 · Sloka 28 · PDF page 83 · bphs-97:santhanam:ch39:v28",
+      "previous_atom_id": "bphs-97:santhanam:ch39:v26-27",
+      "next_atom_id": "bphs-97:santhanam:ch39:v29-31",
+      "context_before": "ome a king. If the Arudh Pad is a benefic Rāśi, containing Chandra, while Guru is in Dhan Bhava, the same effect will prevail.\n\n",
+      "context_after": "29-31. The native will become a king, if a Grah, ruling Bandhu, Karm, Dhan, or Labh, gives a Drishti to Lagna, while Shukra give",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch39:v29-31": {
+      "evidence_atom_id": "bphs-97:santhanam:ch39:v29-31",
+      "chapter_number": 39,
+      "chapter_title": "Raj Yog",
+      "verse_label": "29-31.",
+      "content_role": "verse",
+      "exact_text": "29-31. The native will become a king, if a Grah, ruling Bandhu, Karm, Dhan, or Labh, gives a Drishti to Lagna, while Shukra gives a Drishti to the 11<sup>th</sup> from Arudh Lagna, as Arudh Lagn is occupied by a benefic. The same effect will be obtained, if a debilitated Grah gives a Drishti to Lagn and is placed in Ari, or Randhr Bhava. Again similar result will prevail, if a debilitated Grah, placed in Sahaj, or Labh Bhava, gives a Drishti to Lagn.",
+      "pdf_pages": [
+        83
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 39 · Sloka 29-31 · PDF page 83 · bphs-97:santhanam:ch39:v29-31",
+      "previous_atom_id": "bphs-97:santhanam:ch39:v28",
+      "next_atom_id": "bphs-97:santhanam:ch39:v32",
+      "context_before": " Even, if one among Ari’s, Randhr’s and Vyaya’s Lords, being in debilitation, gives a Drishti to Lagna, there will be a Raj Yog.\n\n",
+      "context_after": "32. I now tell you of the Raj Yogas, based on the Grahas with different dignities and on the Drishtis and Yutis of the Grahas.\n\n",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch39:v33-34": {
+      "evidence_atom_id": "bphs-97:santhanam:ch39:v33-34",
+      "chapter_number": 39,
+      "chapter_title": "Raj Yog",
+      "verse_label": "33-34.",
+      "content_role": "verse",
+      "exact_text": "33-34. Dharm’s Lord is akin to a minister and more especially Putr’s Lord. If these two Grahas mutually give a Drishti, the native will obtain a kingdom. Even, if these two are yuti in any Bhava, or, if they happen to be placed in mutually 7<sup>th</sup> places, one born of royal scion will become a king.",
+      "pdf_pages": [
+        84
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 39 · Sloka 33-34 · PDF page 84 · bphs-97:santhanam:ch39:v33-34",
+      "previous_atom_id": "bphs-97:santhanam:ch39:v32",
+      "next_atom_id": "bphs-97:santhanam:ch39:v35",
+      "context_before": "32. I now tell you of the Raj Yogas, based on the Grahas with different dignities and on the Drishtis and Yutis of the Grahas.\n\n",
+      "context_after": "35. The native will attain a kingdom, if Bandhu’s Lord is in Karm Bhava and Karm’s Lord is in Bandhu Bhava and, if these Grahas ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch39:v35": {
+      "evidence_atom_id": "bphs-97:santhanam:ch39:v35",
+      "chapter_number": 39,
+      "chapter_title": "Raj Yog",
+      "verse_label": "35.",
+      "content_role": "verse",
+      "exact_text": "35. The native will attain a kingdom, if Bandhu’s Lord is in Karm Bhava and Karm’s Lord is in Bandhu Bhava and, if these Grahas give a Drishti to Putr’s and Dharm’s Lords.",
+      "pdf_pages": [
+        84
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 39 · Sloka 35 · PDF page 84 · bphs-97:santhanam:ch39:v35",
+      "previous_atom_id": "bphs-97:santhanam:ch39:v33-34",
+      "next_atom_id": "bphs-97:santhanam:ch39:v36",
+      "context_before": " Even, if these two are yuti in any Bhava, or, if they happen to be placed in mutually 7<sup>th</sup> places, one born of royal scion will become a king.\n\n",
+      "context_after": "36. If the Lords of Putr, Karm, Bandhu and Lagn are yuti in Dharm Bhava, one will become a ruler with fame, spreading over the f",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch39:v36": {
+      "evidence_atom_id": "bphs-97:santhanam:ch39:v36",
+      "chapter_number": 39,
+      "chapter_title": "Raj Yog",
+      "verse_label": "36.",
+      "content_role": "verse",
+      "exact_text": "36. If the Lords of Putr, Karm, Bandhu and Lagn are yuti in Dharm Bhava, one will become a ruler with fame, spreading over the four directions.",
+      "pdf_pages": [
+        84
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 39 · Sloka 36 · PDF page 84 · bphs-97:santhanam:ch39:v36",
+      "previous_atom_id": "bphs-97:santhanam:ch39:v35",
+      "next_atom_id": "bphs-97:santhanam:ch39:v37",
+      "context_before": " The native will attain a kingdom, if Bandhu’s Lord is in Karm Bhava and Karm’s Lord is in Bandhu Bhava and, if these Grahas give a Drishti to Putr’s and Dharm’s Lords.\n\n",
+      "context_after": "37. Should the Lord of Bandhu, or of Karm Bhava join either the Putr’s Lord, or Dharm’s Lord, the native will obtain a kingdom.\n",
+      "content_missing": false
+    }
+  }
+}

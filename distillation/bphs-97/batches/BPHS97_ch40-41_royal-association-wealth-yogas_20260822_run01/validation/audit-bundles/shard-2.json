@@ -1,0 +1,2696 @@
+{
+  "shard": 2,
+  "step_count": 12,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch40-v13-karm-lagn-lords-exchange-royal-association.step-001",
+      "method": {
+        "method": "ch40-v13-karm-lagn-lords-exchange-royal-association",
+        "title": "与王有大关联：十宫主与上升主互换星座",
+        "target_house": 10,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的事业跟当权者会不会绑在一起",
+          "我这辈子能攀到多高的关系"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "An exchange of Rāśis between Karm’s Lord and Lagn’s Lord will make the native associated with the king in a great manner",
+            "十宫主与上升主互换星座 与王有大关联"
+          ],
+          "counter_queries": [
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava"
+          ],
+          "boundary_queries": [
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "Other related effects be guessed by you based on the relationship of the Lords of Lagn and of Karm Bhava"
+          ],
+          "method_queries": [
+            "Yogas For Royal Association",
+            "If the Lord of a Kendr establishes a relationship with the Lord of a Kon, a Raj Yog is obtained"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch40-v13-karm-lagn-lords-exchange-royal-association.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "An exchange of Rāśis between Karm’s Lord and Lagn’s Lord"
+            },
+            {
+              "step_id": "ch40-v13-karm-lagn-lords-exchange-royal-association.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will make the native associated with the king in a great manner"
+            },
+            {
+              "step_id": "ch40-v13-karm-lagn-lords-exchange-royal-association.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "An exchange of Rāśis between Karm’s Lord and Lagn’s Lord will make the native associated with the king in a great manner"
+            },
+            {
+              "step_id": "ch40-v13-karm-lagn-lords-exchange-royal-association.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "An exchange of Rāśis between 10th lord and 1st lord"
+            },
+            {
+              "step_id": "ch40-v13-karm-lagn-lords-exchange-royal-association.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "An exchange of Rāśis between 10th lord and 1st lord will make the native associated with the king in a great manner"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "上升主或十宫主的身份事实缺失时停止。",
+          "两主是否互换星座的事实缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch40-v13-karm-lagn-lords-exchange-royal-association.step-001",
+        "action": "先认出上升主与十宫主，再核对两者是否互换所落星座。",
+        "applicability_scope": "仅限本命盘上升主与十宫主的星座互换一项；原文未给时间限定，也未给上升限定。",
+        "minimum_supported_claim": "十宫主（Karm's Lord）与上升主（Lagn's Lord）互换星座时，命主将与王有大关联。",
+        "produced_fact_keys": [
+          "上升主与十宫主互换星座的王家关联判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升主（Lagn's Lord）是哪颗行星",
+          "本盘十宫主（Karm's Lord）是哪颗行星",
+          "上升主（Lagn's Lord）与十宫主（Karm's Lord）是否互换星座（Rāśi）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+            },
+            {
+              "fact_key": "本盘十宫主（Karm's Lord）是哪颗行星"
+            },
+            {
+              "fact_key": "上升主（Lagn's Lord）与十宫主（Karm's Lord）是否互换星座（Rāśi）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "An exchange of Rāśis between Karm’s Lord and Lagn’s Lord",
+              "claim": "十宫主（Karm's Lord）与上升主（Lagn's Lord）互换星座"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will make the native associated with the king in a great manner",
+              "claim": "命主将与王有大关联"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch40:v13",
+            "quote": "An exchange of Rāśis between Karm’s Lord and Lagn’s Lord will make the native associated with the king in a great manner.",
+            "pdf_pages": [
+              85
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升主（Lagn's Lord）是哪颗行星、本盘十宫主（Karm's Lord）是哪颗行星、上升主（Lagn's Lord）与十宫主（Karm's Lord）是否互换星座（Rāśi）。",
+        "stop_fact_keys": [
+          "本盘上升主（Lagn's Lord）是哪颗行星",
+          "本盘十宫主（Karm's Lord）是哪颗行星",
+          "上升主（Lagn's Lord）与十宫主（Karm's Lord）是否互换星座（Rāśi）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文写的是两主互换星座，不得把单向落入对方星座当成互换。",
+          "不得据此推断关联的形式、职位或应期。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "edf13a8fbeb364fad691b1f1c258ce1946e7172d710b6b3d56f7cc79a60c0a71"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch40-v14-shukra-chandra-fourth-from-karakamsa.step-001",
+      "method": {
+        "method": "ch40-v14-shukra-chandra-fourth-from-karakamsa",
+        "title": "得王家徽记：金星与月亮同落 Karakāńś 起第 4 位",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我会不会有那种体面的名分",
+          "我身上会不会带官家的标记"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Shukra and Chandra are in the 4<sup>th</sup> from Karakāńś Lagna, the native will be endowed with royal insignia",
+            "金星月亮落 Karakāńś 第四位 王家徽记"
+          ],
+          "counter_queries": [
+            "If the Atma Karak is adverse, other Karakas cannot give their benefic effects"
+          ],
+          "boundary_queries": [
+            "Karakāńś is the Navāńś, occupied by the Atma Karak Grah"
+          ],
+          "method_queries": [
+            "Yogas For Royal Association",
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch40-v14-shukra-chandra-fourth-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Shukra and Chandra are in the 4th from Karakāńś Lagna"
+            },
+            {
+              "step_id": "ch40-v14-shukra-chandra-fourth-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be endowed with royal insignia"
+            },
+            {
+              "step_id": "ch40-v14-shukra-chandra-fourth-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Shukra and Chandra are in the 4th from Karakāńś Lagna the native will be endowed with royal insignia"
+            },
+            {
+              "step_id": "ch40-v14-shukra-chandra-fourth-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If venus and moon are in the 4th from Karakāńś 1st house"
+            },
+            {
+              "step_id": "ch40-v14-shukra-chandra-fourth-from-karakamsa.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If venus and moon are in the 4th from Karakāńś 1st house the native will be endowed with royal insignia"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "Karakāńś 未按本书第 33 章的界定取到时停止。",
+          "金星或月亮的落位事实缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch40-v14-shukra-chandra-fourth-from-karakamsa.step-001",
+        "action": "先取 Karakāńś，再核对金星（Shukra）与月亮（Chandra）是否都落在 Karakāńś 起第 4 位。",
+        "applicability_scope": "仅限本命盘以 Karakāńś Lagna 起算的第 4 位；Karakāńś 的取法本偈未给，须另按本书第 33 章「Karakāńś 是 Atma Karak 所落的九分盘（Navāńś）」取得；原文未给时间限定。",
+        "minimum_supported_claim": "金星（Shukra）与月亮（Chandra）同落 Karakāńś Lagna 起第 4 位时，命主将得王家徽记。",
+        "produced_fact_keys": [
+          "金星月亮同居 Karakāńś 第四位的王家徽记判定"
+        ],
+        "required_fact_keys": [
+          "本盘的 Karakāńś 落在哪个星座",
+          "金星（Shukra）是否落 Karakāńś 起第 4 宫",
+          "月亮（Chandra）是否落 Karakāńś 起第 4 宫"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘的 Karakāńś 落在哪个星座"
+            },
+            {
+              "fact_key": "金星（Shukra）是否落 Karakāńś 起第 4 宫"
+            },
+            {
+              "fact_key": "月亮（Chandra）是否落 Karakāńś 起第 4 宫"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Shukra and Chandra are in the 4<sup>th</sup> from Karakāńś Lagna",
+              "claim": "金星（Shukra）与月亮（Chandra）同落 Karakāńś Lagna 起第 4 位"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be endowed with royal insignia",
+              "claim": "命主将得王家徽记"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch40:v14",
+            "quote": "If Shukra and Chandra are in the 4<sup>th</sup> from Karakāńś Lagna, the native will be endowed with royal insignia.",
+            "pdf_pages": [
+              85
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘的 Karakāńś 落在哪个星座、金星（Shukra）是否落 Karakāńś 起第 4 宫、月亮（Chandra）是否落 Karakāńś 起第 4 宫。",
+        "stop_fact_keys": [
+          "本盘的 Karakāńś 落在哪个星座",
+          "金星（Shukra）是否落 Karakāńś 起第 4 宫",
+          "月亮（Chandra）是否落 Karakāńś 起第 4 宫"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文要求两颗行星同落第 4 位，不得只有其中一颗就下断。",
+          "不得据此推断徽记的形式、授予者或时间。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "3b8d48d0db2f17602aee94c6f9c164128c4083fbef1ae53517742918fb31ea47"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch40-v15-lagn-lord-or-atma-karak-with-putr-lord.step-001",
+      "method": {
+        "method": "ch40-v15-lagn-lord-or-atma-karak-with-putr-lord",
+        "title": "成为王或大臣：上升主或 Atma Karak 与五宫主同宫并落角宫、三角宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我能走到多高的位置",
+          "我有没有掌权的命"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Lagn’s Lord, or the Atma Karak be yuti with Putr’s Lord and be in a Kendr, or in a Kon, the native will be a king, or minister",
+            "上升主或 Atma Karak 与五宫主同宫 落角宫三角宫 王或大臣"
+          ],
+          "counter_queries": [
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava",
+            "If the Atma Karak is adverse, other Karakas cannot give their benefic effects"
+          ],
+          "boundary_queries": [
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "The Grah next to Atma Karak in terms of longitude is called Amatya Karak"
+          ],
+          "method_queries": [
+            "Yogas For Royal Association",
+            "If the Lord of a Kendr establishes a relationship with the Lord of a Kon, a Raj Yog is obtained"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch40-v15-lagn-lord-or-atma-karak-with-putr-lord.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should Lagn’s Lord, or the Atma Karak be yuti with Putr’s Lord and be in a Kendr, or in a Kon"
+            },
+            {
+              "step_id": "ch40-v15-lagn-lord-or-atma-karak-with-putr-lord.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be a king, or minister"
+            },
+            {
+              "step_id": "ch40-v15-lagn-lord-or-atma-karak-with-putr-lord.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should Lagn’s Lord, or the Atma Karak be yuti with Putr’s Lord and be in a Kendr, or in a Kon the native will be a king, or minister"
+            },
+            {
+              "step_id": "ch40-v15-lagn-lord-or-atma-karak-with-putr-lord.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Should 1st lord, or the Atma Karak be yuti with 5th lord and be in a Kendr, or in a Kon"
+            },
+            {
+              "step_id": "ch40-v15-lagn-lord-or-atma-karak-with-putr-lord.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Should 1st lord, or the Atma Karak be yuti with 5th lord and be in a Kendr, or in a Kon the native will be a king, or minister"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "上升主、Atma Karak 或五宫主的身份事实缺失时停止。",
+          "同宫与落宫两类事实全部缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch40-v15-lagn-lord-or-atma-karak-with-putr-lord.step-001",
+        "action": "先认出上升主、Atma Karak 与五宫主，再核对上升主或 Atma Karak 是否与五宫主同宫、并且落在角宫（Kendr）或三角宫（Kon）。",
+        "applicability_scope": "仅限本命盘上升主或 Atma Karak 与五宫主的同宫关系；原文的同宫与落宫两项加在同一颗行星身上，故每条分支内两项事实必须指向同一颗行星；角宫与三角宫的名目须另按本书第 7 章取得；原文未给时间限定。",
+        "minimum_supported_claim": "上升主（Lagn's Lord）与五宫主（Putr's Lord）同宫并落角宫（Kendr）或三角宫（Kon），或 Atma Karak 与五宫主同宫并落角宫（Kendr）或三角宫（Kon）时，命主将成为王，或成为大臣。",
+        "produced_fact_keys": [
+          "上升主或 Atma Karak 与五宫主同宫的王与大臣判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升主（Lagn's Lord）是哪颗行星",
+          "本盘的 Atma Karak 是哪颗行星",
+          "本盘五宫主（Putr's Lord）是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘的 Atma Karak 是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "上升主（Lagn's Lord）是否与五宫主（Putr's Lord）同宫"
+                    },
+                    {
+                      "fact_key": "上升主（Lagn's Lord）是否落角宫（Kendr）"
+                    }
+                  ]
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "上升主（Lagn's Lord）是否与五宫主（Putr's Lord）同宫"
+                    },
+                    {
+                      "fact_key": "上升主（Lagn's Lord）是否落三角宫（Kon）"
+                    }
+                  ]
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "Atma Karak 是否与五宫主（Putr's Lord）同宫"
+                    },
+                    {
+                      "fact_key": "Atma Karak 是否落角宫（Kendr）"
+                    }
+                  ]
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "Atma Karak 是否与五宫主（Putr's Lord）同宫"
+                    },
+                    {
+                      "fact_key": "Atma Karak 是否落三角宫（Kon）"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘的 Atma Karak 是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "上升主（Lagn's Lord）是否与五宫主（Putr's Lord）同宫",
+              "上升主（Lagn's Lord）是否落角宫（Kendr）"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "上升主（Lagn's Lord）是否与五宫主（Putr's Lord）同宫"
+                },
+                {
+                  "fact_key": "上升主（Lagn's Lord）是否落角宫（Kendr）"
+                }
+              ]
+            },
+            "selection_group": "ch40-v15-lagn-lord-or-atma-karak-with-putr-lord.step-001:subject-and-place",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升主（Lagn's Lord）是否与五宫主（Putr's Lord）同宫、上升主（Lagn's Lord）是否落角宫（Kendr）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘的 Atma Karak 是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "上升主（Lagn's Lord）是否与五宫主（Putr's Lord）同宫",
+              "上升主（Lagn's Lord）是否落三角宫（Kon）"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "上升主（Lagn's Lord）是否与五宫主（Putr's Lord）同宫"
+                },
+                {
+                  "fact_key": "上升主（Lagn's Lord）是否落三角宫（Kon）"
+                }
+              ]
+            },
+            "selection_group": "ch40-v15-lagn-lord-or-atma-karak-with-putr-lord.step-001:subject-and-place",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：上升主（Lagn's Lord）是否与五宫主（Putr's Lord）同宫、上升主（Lagn's Lord）是否落三角宫（Kon）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘的 Atma Karak 是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "Atma Karak 是否与五宫主（Putr's Lord）同宫",
+              "Atma Karak 是否落角宫（Kendr）"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "Atma Karak 是否与五宫主（Putr's Lord）同宫"
+                },
+                {
+                  "fact_key": "Atma Karak 是否落角宫（Kendr）"
+                }
+              ]
+            },
+            "selection_group": "ch40-v15-lagn-lord-or-atma-karak-with-putr-lord.step-001:subject-and-place",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Atma Karak 是否与五宫主（Putr's Lord）同宫、Atma Karak 是否落角宫（Kendr）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘的 Atma Karak 是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "Atma Karak 是否与五宫主（Putr's Lord）同宫",
+              "Atma Karak 是否落三角宫（Kon）"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "Atma Karak 是否与五宫主（Putr's Lord）同宫"
+                },
+                {
+                  "fact_key": "Atma Karak 是否落三角宫（Kon）"
+                }
+              ]
+            },
+            "selection_group": "ch40-v15-lagn-lord-or-atma-karak-with-putr-lord.step-001:subject-and-place",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：Atma Karak 是否与五宫主（Putr's Lord）同宫、Atma Karak 是否落三角宫（Kon）。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Lagn’s Lord, or the Atma Karak be yuti with Putr’s Lord and be in a Kendr, or in a Kon",
+              "claim": "上升主（Lagn's Lord）与五宫主（Putr's Lord）同宫并落角宫（Kendr）或三角宫（Kon）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be a king, or minister",
+              "claim": "命主将成为王，或成为大臣"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch40:v15",
+            "quote": "Should Lagn’s Lord, or the Atma Karak be yuti with Putr’s Lord and be in a Kendr, or in a Kon, the native will be a king, or minister.",
+            "pdf_pages": [
+              85,
+              86
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升主（Lagn's Lord）是哪颗行星、本盘的 Atma Karak 是哪颗行星、本盘五宫主（Putr's Lord）是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘上升主（Lagn's Lord）是哪颗行星",
+          "本盘的 Atma Karak 是哪颗行星",
+          "本盘五宫主（Putr's Lord）是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把同宫的一方与落角宫、三角宫的另一方拆成两颗不同的行星来凑条件。",
+          "不得据此推断是王还是大臣、也不得推断应期。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "0817ffa1f6062651019597217488554a7068c6ca1d637b34c3bfb2fc1e8e92ca"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch41-v2-shukra-rashi-as-putr-with-mangal-in-labh.step-001",
+      "method": {
+        "method": "ch41-v2-shukra-rashi-as-putr-with-mangal-in-labh",
+        "title": "大富：五宫为金星星座并被金星占据，火星落十一宫",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子能不能大富",
+          "我的财力能到什么级别"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should a Rashiof Shukra be Putr Bhava and be occupied by Shukra himself, while Mangal is in Labh Bhava",
+            "五宫为金星星座并被金星占据 火星十一宫 大富"
+          ],
+          "counter_queries": [
+            "One will be penniless, if the Lord of Dhan Bhava is in an evil Bhava",
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava"
+          ],
+          "boundary_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness"
+          ],
+          "method_queries": [
+            "Combinations for Wealth",
+            "Should a Rashiof Budh be Putr Bhava and be occupied by Budh himself, as Labh Bhava is occupied by Chandra, Mangal and Guru"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch41-v2-shukra-rashi-as-putr-with-mangal-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should a Rashiof Shukra be Putr Bhava"
+            },
+            {
+              "step_id": "ch41-v2-shukra-rashi-as-putr-with-mangal-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "be occupied by Shukra himself"
+            },
+            {
+              "step_id": "ch41-v2-shukra-rashi-as-putr-with-mangal-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while Mangal is in Labh Bhava"
+            },
+            {
+              "step_id": "ch41-v2-shukra-rashi-as-putr-with-mangal-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will obtain great riches"
+            },
+            {
+              "step_id": "ch41-v2-shukra-rashi-as-putr-with-mangal-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should a Rashiof Shukra be Putr Bhava the native will obtain great riches"
+            },
+            {
+              "step_id": "ch41-v2-shukra-rashi-as-putr-with-mangal-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "be occupied by Shukra himself the native will obtain great riches"
+            },
+            {
+              "step_id": "ch41-v2-shukra-rashi-as-putr-with-mangal-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while Mangal is in Labh Bhava the native will obtain great riches"
+            },
+            {
+              "step_id": "ch41-v2-shukra-rashi-as-putr-with-mangal-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Should a Rashiof venus be 5th house"
+            },
+            {
+              "step_id": "ch41-v2-shukra-rashi-as-putr-with-mangal-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "be occupied by venus himself"
+            },
+            {
+              "step_id": "ch41-v2-shukra-rashi-as-putr-with-mangal-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "while mars is in 11th house"
+            },
+            {
+              "step_id": "ch41-v2-shukra-rashi-as-putr-with-mangal-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Should a Rashiof venus be 5th house the native will obtain great riches"
+            },
+            {
+              "step_id": "ch41-v2-shukra-rashi-as-putr-with-mangal-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "be occupied by venus himself the native will obtain great riches"
+            },
+            {
+              "step_id": "ch41-v2-shukra-rashi-as-putr-with-mangal-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "while mars is in 11th house the native will obtain great riches"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "五宫所落星座未取到时停止。",
+          "五宫是否被金星占据、火星是否落十一宫的事实缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch41-v2-shukra-rashi-as-putr-with-mangal-in-labh.step-001",
+        "action": "先取五宫所落星座，核对它是否为金星（Shukra）主管、是否被金星本人占据，再看火星（Mangal）是否落十一宫（Labh Bhava）。",
+        "applicability_scope": "仅限本命盘五宫与十一宫的这一组配置；原文本偈自带小标题「Yogas for Great Affluence (up to Sloka 8)」，说明本条属该组大富格之一；原文未给时间限定，也未给上升限定。",
+        "minimum_supported_claim": "五宫（Putr Bhava）所在星座由金星（Shukra）主管、并被金星本人占据，同时火星（Mangal）落十一宫（Labh Bhava）时，命主将获大富。",
+        "produced_fact_keys": [
+          "金星五宫火星十一宫的大富判定"
+        ],
+        "required_fact_keys": [
+          "本盘五宫（Putr Bhava）落在哪个星座",
+          "五宫（Putr Bhava）是否为金星（Shukra）主管的星座（Rāśi）",
+          "五宫（Putr Bhava）是否被金星（Shukra）占据",
+          "火星（Mangal）是否落十一宫（Labh）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘五宫（Putr Bhava）落在哪个星座"
+            },
+            {
+              "fact_key": "五宫（Putr Bhava）是否为金星（Shukra）主管的星座（Rāśi）"
+            },
+            {
+              "fact_key": "五宫（Putr Bhava）是否被金星（Shukra）占据"
+            },
+            {
+              "fact_key": "火星（Mangal）是否落十一宫（Labh）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should a Rashiof Shukra be Putr Bhava",
+              "claim": "五宫（Putr Bhava）所在星座由金星（Shukra）主管"
+            },
+            {
+              "quote": "be occupied by Shukra himself",
+              "claim": "并被金星本人占据"
+            },
+            {
+              "quote": "while Mangal is in Labh Bhava",
+              "claim": "同时火星（Mangal）落十一宫（Labh Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will obtain great riches",
+              "claim": "命主将获大富"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch41:v2",
+            "quote": "Should a Rashiof Shukra be Putr Bhava and be occupied by Shukra himself, while Mangal is in Labh Bhava, the native will obtain great riches.",
+            "pdf_pages": [
+              86
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘五宫（Putr Bhava）落在哪个星座、五宫（Putr Bhava）是否为金星（Shukra）主管的星座（Rāśi）、五宫（Putr Bhava）是否被金星（Shukra）占据、火星（Mangal）是否落十一宫（Labh）。",
+        "stop_fact_keys": [
+          "本盘五宫（Putr Bhava）落在哪个星座",
+          "五宫（Putr Bhava）是否为金星（Shukra）主管的星座（Rāśi）",
+          "五宫（Putr Bhava）是否被金星（Shukra）占据",
+          "火星（Mangal）是否落十一宫（Labh）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文要求五宫既是金星的星座又被金星本人占据，不得只满足其中一项。",
+          "不得据此推断财富数额、来源或应期。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "3aef226435ee48d900d0ce18df5b09c5aeac09f765d8e1443729167c8b73b6f4"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch41-v3-budh-rashi-as-putr-with-three-in-labh.step-001",
+      "method": {
+        "method": "ch41-v3-budh-rashi-as-putr-with-three-in-labh",
+        "title": "极富：五宫为水星星座并被水星占据，月火木三星落十一宫",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我能不能挣到很大的家业",
+          "我的财运有多强"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should a Rashiof Budh be Putr Bhava and be occupied by Budh himself, as Labh Bhava is occupied by Chandra, Mangal and Guru",
+            "五宫为水星星座并被水星占据 月火木在十一宫 极富"
+          ],
+          "counter_queries": [
+            "One will be penniless, if the Lord of Dhan Bhava is in an evil Bhava"
+          ],
+          "boundary_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness"
+          ],
+          "method_queries": [
+            "Combinations for Wealth",
+            "Should Simh be Putr Bhava and be occupied by Surya himself, as Shani, Chandra and Guru are in Labh Bhava"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch41-v3-budh-rashi-as-putr-with-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should a Rashiof Budh be Putr Bhava"
+            },
+            {
+              "step_id": "ch41-v3-budh-rashi-as-putr-with-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "be occupied by Budh himself"
+            },
+            {
+              "step_id": "ch41-v3-budh-rashi-as-putr-with-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "as Labh Bhava is occupied by Chandra, Mangal and Guru"
+            },
+            {
+              "step_id": "ch41-v3-budh-rashi-as-putr-with-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be very affluent"
+            },
+            {
+              "step_id": "ch41-v3-budh-rashi-as-putr-with-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should a Rashiof Budh be Putr Bhava the native will be very affluent"
+            },
+            {
+              "step_id": "ch41-v3-budh-rashi-as-putr-with-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "be occupied by Budh himself the native will be very affluent"
+            },
+            {
+              "step_id": "ch41-v3-budh-rashi-as-putr-with-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "as Labh Bhava is occupied by Chandra, Mangal and Guru the native will be very affluent"
+            },
+            {
+              "step_id": "ch41-v3-budh-rashi-as-putr-with-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Should a Rashiof mercury be 5th house"
+            },
+            {
+              "step_id": "ch41-v3-budh-rashi-as-putr-with-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "be occupied by mercury himself"
+            },
+            {
+              "step_id": "ch41-v3-budh-rashi-as-putr-with-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "as 11th house is occupied by moon, mars and jupiter"
+            },
+            {
+              "step_id": "ch41-v3-budh-rashi-as-putr-with-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Should a Rashiof mercury be 5th house the native will be very affluent"
+            },
+            {
+              "step_id": "ch41-v3-budh-rashi-as-putr-with-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "be occupied by mercury himself the native will be very affluent"
+            },
+            {
+              "step_id": "ch41-v3-budh-rashi-as-putr-with-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "as 11th house is occupied by moon, mars and jupiter the native will be very affluent"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "五宫所落星座未取到时停止。",
+          "十一宫三颗行星的落宫事实缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch41-v3-budh-rashi-as-putr-with-three-in-labh.step-001",
+        "action": "先取五宫所落星座，核对它是否为水星（Budh）主管、是否被水星本人占据，再看十一宫（Labh Bhava）是否同时被月亮、火星与木星占据。",
+        "applicability_scope": "仅限本命盘五宫与十一宫的这一组配置；本条属本章「Yogas for Great Affluence (up to Sloka 8)」一组；原文未给时间限定，也未给上升限定。",
+        "minimum_supported_claim": "五宫（Putr Bhava）所在星座由水星（Budh）主管、并被水星本人占据，同时十一宫（Labh Bhava）被月亮（Chandra）、火星（Mangal）与木星（Guru）占据时，命主将极为富足。",
+        "produced_fact_keys": [
+          "水星五宫三星十一宫的极富判定"
+        ],
+        "required_fact_keys": [
+          "本盘五宫（Putr Bhava）落在哪个星座",
+          "五宫（Putr Bhava）是否为水星（Budh）主管的星座（Rāśi）",
+          "五宫（Putr Bhava）是否被水星（Budh）占据",
+          "月亮（Chandra）是否落十一宫（Labh）",
+          "火星（Mangal）是否落十一宫（Labh）",
+          "木星（Guru）是否落十一宫（Labh）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘五宫（Putr Bhava）落在哪个星座"
+            },
+            {
+              "fact_key": "五宫（Putr Bhava）是否为水星（Budh）主管的星座（Rāśi）"
+            },
+            {
+              "fact_key": "五宫（Putr Bhava）是否被水星（Budh）占据"
+            },
+            {
+              "fact_key": "月亮（Chandra）是否落十一宫（Labh）"
+            },
+            {
+              "fact_key": "火星（Mangal）是否落十一宫（Labh）"
+            },
+            {
+              "fact_key": "木星（Guru）是否落十一宫（Labh）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should a Rashiof Budh be Putr Bhava",
+              "claim": "五宫（Putr Bhava）所在星座由水星（Budh）主管"
+            },
+            {
+              "quote": "be occupied by Budh himself",
+              "claim": "并被水星本人占据"
+            },
+            {
+              "quote": "as Labh Bhava is occupied by Chandra, Mangal and Guru",
+              "claim": "同时十一宫（Labh Bhava）被月亮（Chandra）、火星（Mangal）与木星（Guru）占据"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be very affluent",
+              "claim": "命主将极为富足"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch41:v3",
+            "quote": "Should a Rashiof Budh be Putr Bhava and be occupied by Budh himself, as Labh Bhava is occupied by Chandra, Mangal and Guru, the native will be very affluent.",
+            "pdf_pages": [
+              86
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘五宫（Putr Bhava）落在哪个星座、五宫（Putr Bhava）是否为水星（Budh）主管的星座（Rāśi）、五宫（Putr Bhava）是否被水星（Budh）占据、月亮（Chandra）是否落十一宫（Labh）、火星（Mangal）是否落十一宫（Labh）、木星（Guru）是否落十一宫（Labh）。",
+        "stop_fact_keys": [
+          "本盘五宫（Putr Bhava）落在哪个星座",
+          "五宫（Putr Bhava）是否为水星（Budh）主管的星座（Rāśi）",
+          "五宫（Putr Bhava）是否被水星（Budh）占据",
+          "月亮（Chandra）是否落十一宫（Labh）",
+          "火星（Mangal）是否落十一宫（Labh）",
+          "木星（Guru）是否落十一宫（Labh）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文要求十一宫同时有月亮、火星与木星三颗，不得少一颗就下断。",
+          "不得据此推断财富数额、来源或应期。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b348d7e50d017c4cc39df98cd6cd967ca19eeb2f8d920262cbae4ab1dd9d4f65"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch41-v4-simh-as-putr-with-surya-and-three-in-labh.step-001",
+      "method": {
+        "method": "ch41-v4-simh-as-putr-with-surya-and-three-in-labh",
+        "title": "极富：五宫为狮子座并被太阳占据，土月木三星落十一宫",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子财上到什么份儿",
+          "我能不能挣下大家业"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Simh be Putr Bhava and be occupied by Surya himself, as Shani, Chandra and Guru are in Labh Bhava",
+            "五宫狮子座被太阳占据 土月木在十一宫 极富"
+          ],
+          "counter_queries": [
+            "One will be penniless, if the Lord of Dhan Bhava is in an evil Bhava"
+          ],
+          "boundary_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness"
+          ],
+          "method_queries": [
+            "Combinations for Wealth",
+            "Should Surya and Chandra be in Labh Bhava, as Shani is in Putr Bhava identical with his own Bhava"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch41-v4-simh-as-putr-with-surya-and-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should Simh be Putr Bhava"
+            },
+            {
+              "step_id": "ch41-v4-simh-as-putr-with-surya-and-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "be occupied by Surya himself"
+            },
+            {
+              "step_id": "ch41-v4-simh-as-putr-with-surya-and-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "as Shani, Chandra and Guru are in Labh Bhava"
+            },
+            {
+              "step_id": "ch41-v4-simh-as-putr-with-surya-and-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be very affluent"
+            },
+            {
+              "step_id": "ch41-v4-simh-as-putr-with-surya-and-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should Simh be Putr Bhava the native will be very affluent"
+            },
+            {
+              "step_id": "ch41-v4-simh-as-putr-with-surya-and-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "be occupied by Surya himself the native will be very affluent"
+            },
+            {
+              "step_id": "ch41-v4-simh-as-putr-with-surya-and-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "as Shani, Chandra and Guru are in Labh Bhava the native will be very affluent"
+            },
+            {
+              "step_id": "ch41-v4-simh-as-putr-with-surya-and-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Should Simh be 5th house"
+            },
+            {
+              "step_id": "ch41-v4-simh-as-putr-with-surya-and-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "be occupied by sun himself"
+            },
+            {
+              "step_id": "ch41-v4-simh-as-putr-with-surya-and-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "as saturn, moon and jupiter are in 11th house"
+            },
+            {
+              "step_id": "ch41-v4-simh-as-putr-with-surya-and-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Should Simh be 5th house the native will be very affluent"
+            },
+            {
+              "step_id": "ch41-v4-simh-as-putr-with-surya-and-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "be occupied by sun himself the native will be very affluent"
+            },
+            {
+              "step_id": "ch41-v4-simh-as-putr-with-surya-and-three-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "as saturn, moon and jupiter are in 11th house the native will be very affluent"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "五宫所落星座未取到时停止。",
+          "十一宫三颗行星的落宫事实缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch41-v4-simh-as-putr-with-surya-and-three-in-labh.step-001",
+        "action": "先取五宫所落星座，核对它是否为狮子座（Simh）、是否被太阳（Surya）本人占据，再看十一宫（Labh Bhava）是否同时有土星、月亮与木星。",
+        "applicability_scope": "仅限本命盘五宫与十一宫的这一组配置；本条属本章「Yogas for Great Affluence (up to Sloka 8)」一组；原文未给时间限定，也未给上升限定。",
+        "minimum_supported_claim": "五宫（Putr Bhava）即狮子座（Simh）并被太阳（Surya）本人占据，同时土星（Shani）、月亮（Chandra）与木星（Guru）落十一宫（Labh Bhava）时，命主将极为富足。",
+        "produced_fact_keys": [
+          "狮子座五宫太阳与三星十一宫的极富判定"
+        ],
+        "required_fact_keys": [
+          "本盘五宫（Putr Bhava）落在哪个星座",
+          "五宫（Putr Bhava）是否落在狮子座（Simh）",
+          "五宫（Putr Bhava）是否被太阳（Surya）占据",
+          "土星（Shani）是否落十一宫（Labh）",
+          "月亮（Chandra）是否落十一宫（Labh）",
+          "木星（Guru）是否落十一宫（Labh）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘五宫（Putr Bhava）落在哪个星座"
+            },
+            {
+              "fact_key": "五宫（Putr Bhava）是否落在狮子座（Simh）"
+            },
+            {
+              "fact_key": "五宫（Putr Bhava）是否被太阳（Surya）占据"
+            },
+            {
+              "fact_key": "土星（Shani）是否落十一宫（Labh）"
+            },
+            {
+              "fact_key": "月亮（Chandra）是否落十一宫（Labh）"
+            },
+            {
+              "fact_key": "木星（Guru）是否落十一宫（Labh）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Simh be Putr Bhava",
+              "claim": "五宫（Putr Bhava）即狮子座（Simh）"
+            },
+            {
+              "quote": "be occupied by Surya himself",
+              "claim": "并被太阳（Surya）本人占据"
+            },
+            {
+              "quote": "as Shani, Chandra and Guru are in Labh Bhava",
+              "claim": "同时土星（Shani）、月亮（Chandra）与木星（Guru）落十一宫（Labh Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be very affluent",
+              "claim": "命主将极为富足"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch41:v4",
+            "quote": "Should Simh be Putr Bhava and be occupied by Surya himself, as Shani, Chandra and Guru are in Labh Bhava, the native will be very affluent.",
+            "pdf_pages": [
+              86
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘五宫（Putr Bhava）落在哪个星座、五宫（Putr Bhava）是否落在狮子座（Simh）、五宫（Putr Bhava）是否被太阳（Surya）占据、土星（Shani）是否落十一宫（Labh）、月亮（Chandra）是否落十一宫（Labh）、木星（Guru）是否落十一宫（Labh）。",
+        "stop_fact_keys": [
+          "本盘五宫（Putr Bhava）落在哪个星座",
+          "五宫（Putr Bhava）是否落在狮子座（Simh）",
+          "五宫（Putr Bhava）是否被太阳（Surya）占据",
+          "土星（Shani）是否落十一宫（Labh）",
+          "月亮（Chandra）是否落十一宫（Labh）",
+          "木星（Guru）是否落十一宫（Labh）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文点名狮子座（Simh），不得换成太阳主管的别的位置。",
+          "不得据此推断财富数额、来源或应期。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "edfecdd8af9f5c608edc7265258da788bb1ce20e2a9832325f7de052eb4ae87f"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch41-v5-surya-chandra-in-labh-shani-in-own-putr.step-001",
+      "method": {
+        "method": "ch41-v5-surya-chandra-in-labh-shani-in-own-putr",
+        "title": "极富：日月落十一宫，土星落自己主管的五宫",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的钱景怎么样",
+          "我能不能积起大财"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Surya and Chandra be in Labh Bhava, as Shani is in Putr Bhava identical with his own Bhava",
+            "日月十一宫 土星落自己主管的五宫 极富"
+          ],
+          "counter_queries": [
+            "One will be penniless, if the Lord of Dhan Bhava is in an evil Bhava"
+          ],
+          "boundary_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness"
+          ],
+          "method_queries": [
+            "Combinations for Wealth",
+            "Should Guru be in Putr Bhava identical with his own Rāśi, as Budh is in Labh Bhava"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch41-v5-surya-chandra-in-labh-shani-in-own-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should Surya and Chandra be in Labh Bhava"
+            },
+            {
+              "step_id": "ch41-v5-surya-chandra-in-labh-shani-in-own-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "as Shani is in Putr Bhava identical with his own Bhava"
+            },
+            {
+              "step_id": "ch41-v5-surya-chandra-in-labh-shani-in-own-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be very affluent"
+            },
+            {
+              "step_id": "ch41-v5-surya-chandra-in-labh-shani-in-own-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should Surya and Chandra be in Labh Bhava the native will be very affluent"
+            },
+            {
+              "step_id": "ch41-v5-surya-chandra-in-labh-shani-in-own-putr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "as Shani is in Putr Bhava identical with his own Bhava the native will be very affluent"
+            },
+            {
+              "step_id": "ch41-v5-surya-chandra-in-labh-shani-in-own-putr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Should sun and moon be in 11th house"
+            },
+            {
+              "step_id": "ch41-v5-surya-chandra-in-labh-shani-in-own-putr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "as saturn is in 5th house identical with his own Bhava"
+            },
+            {
+              "step_id": "ch41-v5-surya-chandra-in-labh-shani-in-own-putr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Should sun and moon be in 11th house the native will be very affluent"
+            },
+            {
+              "step_id": "ch41-v5-surya-chandra-in-labh-shani-in-own-putr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "as saturn is in 5th house identical with his own Bhava the native will be very affluent"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "五宫所落星座未取到时停止。",
+          "日月是否落十一宫、土星是否落五宫的事实缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch41-v5-surya-chandra-in-labh-shani-in-own-putr.step-001",
+        "action": "核对太阳（Surya）与月亮（Chandra）是否都落十一宫（Labh Bhava），再看土星（Shani）是否落在五宫，而该五宫正是土星自己主管的宫。",
+        "applicability_scope": "仅限本命盘五宫与十一宫的这一组配置；原文此处写的是 his own Bhava（自己主管的宫），本方法照原文用词，不改成别的口径；本条属本章「Yogas for Great Affluence (up to Sloka 8)」一组；原文未给时间限定。",
+        "minimum_supported_claim": "太阳（Surya）与月亮（Chandra）落十一宫（Labh Bhava），同时土星（Shani）落五宫（Putr Bhava），而该宫即是土星自己主管的宫（own Bhava）时，命主将极为富足。",
+        "produced_fact_keys": [
+          "日月十一宫土星本宫五宫的极富判定"
+        ],
+        "required_fact_keys": [
+          "本盘五宫（Putr Bhava）落在哪个星座",
+          "太阳（Surya）是否落十一宫（Labh）",
+          "月亮（Chandra）是否落十一宫（Labh）",
+          "五宫（Putr Bhava）是否被土星（Shani）占据",
+          "五宫（Putr Bhava）是否同时是土星（Shani）自己主管的宫（own Bhava）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘五宫（Putr Bhava）落在哪个星座"
+            },
+            {
+              "fact_key": "太阳（Surya）是否落十一宫（Labh）"
+            },
+            {
+              "fact_key": "月亮（Chandra）是否落十一宫（Labh）"
+            },
+            {
+              "fact_key": "五宫（Putr Bhava）是否被土星（Shani）占据"
+            },
+            {
+              "fact_key": "五宫（Putr Bhava）是否同时是土星（Shani）自己主管的宫（own Bhava）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Surya and Chandra be in Labh Bhava",
+              "claim": "太阳（Surya）与月亮（Chandra）落十一宫（Labh Bhava）"
+            },
+            {
+              "quote": "as Shani is in Putr Bhava identical with his own Bhava",
+              "claim": "同时土星（Shani）落五宫（Putr Bhava），而该宫即是土星自己主管的宫（own Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be very affluent",
+              "claim": "命主将极为富足"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch41:v5",
+            "quote": "Should Surya and Chandra be in Labh Bhava, as Shani is in Putr Bhava identical with his own Bhava, the native will be very affluent.",
+            "pdf_pages": [
+              86
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘五宫（Putr Bhava）落在哪个星座、太阳（Surya）是否落十一宫（Labh）、月亮（Chandra）是否落十一宫（Labh）、五宫（Putr Bhava）是否被土星（Shani）占据、五宫（Putr Bhava）是否同时是土星（Shani）自己主管的宫（own Bhava）。",
+        "stop_fact_keys": [
+          "本盘五宫（Putr Bhava）落在哪个星座",
+          "太阳（Surya）是否落十一宫（Labh）",
+          "月亮（Chandra）是否落十一宫（Labh）",
+          "五宫（Putr Bhava）是否被土星（Shani）占据",
+          "五宫（Putr Bhava）是否同时是土星（Shani）自己主管的宫（own Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文要求土星所落的五宫同时是它自己主管的宫，不得只凭土星落五宫就下断。",
+          "不得据此推断财富数额、来源或应期。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "3e4c979aa1d64fe9ae57a1aa924f074f7167233785da5ea711780ef1263a48a2"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch41-v6-guru-in-own-putr-with-budh-in-labh.step-001",
+      "method": {
+        "method": "ch41-v6-guru-in-own-putr-with-budh-in-labh",
+        "title": "极富：木星落自己主管的五宫，水星落十一宫",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的家业能做多大",
+          "我这辈子财上顺不顺"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Guru be in Putr Bhava identical with his own Rāśi, as Budh is in Labh Bhava",
+            "木星落自己星座的五宫 水星十一宫 极富"
+          ],
+          "counter_queries": [
+            "One will be penniless, if the Lord of Dhan Bhava is in an evil Bhava"
+          ],
+          "boundary_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness"
+          ],
+          "method_queries": [
+            "Combinations for Wealth",
+            "If a Rashiof Mangal happens to be Putr Bhava with Mangal therein, while Shukra is in Labh Bhava"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch41-v6-guru-in-own-putr-with-budh-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should Guru be in Putr Bhava identical with his own Rāśi"
+            },
+            {
+              "step_id": "ch41-v6-guru-in-own-putr-with-budh-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "as Budh is in Labh Bhava"
+            },
+            {
+              "step_id": "ch41-v6-guru-in-own-putr-with-budh-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will be very affluent"
+            },
+            {
+              "step_id": "ch41-v6-guru-in-own-putr-with-budh-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should Guru be in Putr Bhava identical with his own Rāśi the native will be very affluent"
+            },
+            {
+              "step_id": "ch41-v6-guru-in-own-putr-with-budh-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "as Budh is in Labh Bhava the native will be very affluent"
+            },
+            {
+              "step_id": "ch41-v6-guru-in-own-putr-with-budh-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Should jupiter be in 5th house identical with his own Rāśi"
+            },
+            {
+              "step_id": "ch41-v6-guru-in-own-putr-with-budh-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "as mercury is in 11th house"
+            },
+            {
+              "step_id": "ch41-v6-guru-in-own-putr-with-budh-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Should jupiter be in 5th house identical with his own Rāśi the native will be very affluent"
+            },
+            {
+              "step_id": "ch41-v6-guru-in-own-putr-with-budh-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "as mercury is in 11th house the native will be very affluent"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "五宫所落星座未取到时停止。",
+          "木星是否落五宫、水星是否落十一宫的事实缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch41-v6-guru-in-own-putr-with-budh-in-labh.step-001",
+        "action": "核对木星（Guru）是否落五宫，而该五宫所在星座正是木星自己主管的星座，再看水星（Budh）是否落十一宫（Labh Bhava）。",
+        "applicability_scope": "仅限本命盘五宫与十一宫的这一组配置；原文此处写的是 his own Rāśi（自己主管的星座），不是本宫；本条属本章「Yogas for Great Affluence (up to Sloka 8)」一组；原文未给时间限定。",
+        "minimum_supported_claim": "木星（Guru）落五宫（Putr Bhava），而该宫所在星座即是木星自己主管的星座（own Rāśi），同时水星（Budh）落十一宫（Labh Bhava）时，命主将极为富足。",
+        "produced_fact_keys": [
+          "木星本星座五宫水星十一宫的极富判定"
+        ],
+        "required_fact_keys": [
+          "本盘五宫（Putr Bhava）落在哪个星座",
+          "五宫（Putr Bhava）是否为木星（Guru）主管的星座（Rāśi）",
+          "五宫（Putr Bhava）是否被木星（Guru）占据",
+          "水星（Budh）是否落十一宫（Labh）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘五宫（Putr Bhava）落在哪个星座"
+            },
+            {
+              "fact_key": "五宫（Putr Bhava）是否为木星（Guru）主管的星座（Rāśi）"
+            },
+            {
+              "fact_key": "五宫（Putr Bhava）是否被木星（Guru）占据"
+            },
+            {
+              "fact_key": "水星（Budh）是否落十一宫（Labh）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Guru be in Putr Bhava identical with his own Rāśi",
+              "claim": "木星（Guru）落五宫（Putr Bhava），而该宫所在星座即是木星自己主管的星座（own Rāśi）"
+            },
+            {
+              "quote": "as Budh is in Labh Bhava",
+              "claim": "同时水星（Budh）落十一宫（Labh Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will be very affluent",
+              "claim": "命主将极为富足"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch41:v6",
+            "quote": "Should Guru be in Putr Bhava identical with his own Rāśi, as Budh is in Labh Bhava, the native will be very affluent.",
+            "pdf_pages": [
+              86
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘五宫（Putr Bhava）落在哪个星座、五宫（Putr Bhava）是否为木星（Guru）主管的星座（Rāśi）、五宫（Putr Bhava）是否被木星（Guru）占据、水星（Budh）是否落十一宫（Labh）。",
+        "stop_fact_keys": [
+          "本盘五宫（Putr Bhava）落在哪个星座",
+          "五宫（Putr Bhava）是否为木星（Guru）主管的星座（Rāśi）",
+          "五宫（Putr Bhava）是否被木星（Guru）占据",
+          "水星（Budh）是否落十一宫（Labh）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文说的是木星自己主管的星座（own Rāśi），不得换成入旺或别的尊贵状态。",
+          "不得据此推断财富数额、来源或应期。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "a0e9f73ca93baa7dc31da0a5f21cafdab9e5d03c217d5afa32c11bd18097e0d2"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch41-v7-mangal-rashi-as-putr-with-shukra-in-labh.step-001",
+      "method": {
+        "method": "ch41-v7-mangal-rashi-as-putr-with-shukra-in-labh",
+        "title": "极富：五宫为火星星座并有火星在内，金星落十一宫",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的进项会不会很旺",
+          "我能不能富起来"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If a Rashiof Mangal happens to be Putr Bhava with Mangal therein, while Shukra is in Labh Bhava",
+            "五宫为火星星座有火星 金星十一宫 极富"
+          ],
+          "counter_queries": [
+            "One will be penniless, if the Lord of Dhan Bhava is in an evil Bhava"
+          ],
+          "boundary_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness"
+          ],
+          "method_queries": [
+            "Combinations for Wealth",
+            "If Kark happens to be Putr Bhava, containing Chandra therein, while Shani is in Labh Bhava"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch41-v7-mangal-rashi-as-putr-with-shukra-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If a Rashiof Mangal happens to be Putr Bhava with Mangal therein"
+            },
+            {
+              "step_id": "ch41-v7-mangal-rashi-as-putr-with-shukra-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while Shukra is in Labh Bhava"
+            },
+            {
+              "step_id": "ch41-v7-mangal-rashi-as-putr-with-shukra-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will become very affluent"
+            },
+            {
+              "step_id": "ch41-v7-mangal-rashi-as-putr-with-shukra-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If a Rashiof Mangal happens to be Putr Bhava with Mangal therein the native will become very affluent"
+            },
+            {
+              "step_id": "ch41-v7-mangal-rashi-as-putr-with-shukra-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while Shukra is in Labh Bhava the native will become very affluent"
+            },
+            {
+              "step_id": "ch41-v7-mangal-rashi-as-putr-with-shukra-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If a Rashiof mars happens to be 5th house with mars therein"
+            },
+            {
+              "step_id": "ch41-v7-mangal-rashi-as-putr-with-shukra-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "while venus is in 11th house"
+            },
+            {
+              "step_id": "ch41-v7-mangal-rashi-as-putr-with-shukra-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If a Rashiof mars happens to be 5th house with mars therein the native will become very affluent"
+            },
+            {
+              "step_id": "ch41-v7-mangal-rashi-as-putr-with-shukra-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "while venus is in 11th house the native will become very affluent"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "五宫所落星座未取到时停止。",
+          "五宫是否有火星、金星是否落十一宫的事实缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch41-v7-mangal-rashi-as-putr-with-shukra-in-labh.step-001",
+        "action": "先取五宫所落星座，核对它是否为火星（Mangal）主管、其中是否有火星，再看金星（Shukra）是否落十一宫（Labh Bhava）。",
+        "applicability_scope": "仅限本命盘五宫与十一宫的这一组配置；本条属本章「Yogas for Great Affluence (up to Sloka 8)」一组；原文未给时间限定，也未给上升限定。",
+        "minimum_supported_claim": "五宫（Putr Bhava）所在星座由火星（Mangal）主管、并有火星在其中，同时金星（Shukra）落十一宫（Labh Bhava）时，命主将变得极为富足。",
+        "produced_fact_keys": [
+          "火星五宫金星十一宫的极富判定"
+        ],
+        "required_fact_keys": [
+          "本盘五宫（Putr Bhava）落在哪个星座",
+          "五宫（Putr Bhava）是否为火星（Mangal）主管的星座（Rāśi）",
+          "五宫（Putr Bhava）是否被火星（Mangal）占据",
+          "金星（Shukra）是否落十一宫（Labh）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘五宫（Putr Bhava）落在哪个星座"
+            },
+            {
+              "fact_key": "五宫（Putr Bhava）是否为火星（Mangal）主管的星座（Rāśi）"
+            },
+            {
+              "fact_key": "五宫（Putr Bhava）是否被火星（Mangal）占据"
+            },
+            {
+              "fact_key": "金星（Shukra）是否落十一宫（Labh）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If a Rashiof Mangal happens to be Putr Bhava with Mangal therein",
+              "claim": "五宫（Putr Bhava）所在星座由火星（Mangal）主管、并有火星在其中"
+            },
+            {
+              "quote": "while Shukra is in Labh Bhava",
+              "claim": "同时金星（Shukra）落十一宫（Labh Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will become very affluent",
+              "claim": "命主将变得极为富足"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch41:v7",
+            "quote": "If a Rashiof Mangal happens to be Putr Bhava with Mangal therein, while Shukra is in Labh Bhava, the native will become very affluent.",
+            "pdf_pages": [
+              86
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘五宫（Putr Bhava）落在哪个星座、五宫（Putr Bhava）是否为火星（Mangal）主管的星座（Rāśi）、五宫（Putr Bhava）是否被火星（Mangal）占据、金星（Shukra）是否落十一宫（Labh）。",
+        "stop_fact_keys": [
+          "本盘五宫（Putr Bhava）落在哪个星座",
+          "五宫（Putr Bhava）是否为火星（Mangal）主管的星座（Rāśi）",
+          "五宫（Putr Bhava）是否被火星（Mangal）占据",
+          "金星（Shukra）是否落十一宫（Labh）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文要求五宫既是火星的星座又有火星在内，不得只满足其中一项。",
+          "不得据此推断财富数额、来源或应期。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "55a89d672a1491ca3abbbbe088f6d9c204da196acafc28d3e7fea1c0398dfd94"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch41-v8-kark-as-putr-with-chandra-and-shani-in-labh.step-001",
+      "method": {
+        "method": "ch41-v8-kark-as-putr-with-chandra-and-shani-in-labh",
+        "title": "极富：五宫为巨蟹座并有月亮在内，土星落十一宫",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的财路顺不顺",
+          "我能不能积下大财"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Kark happens to be Putr Bhava, containing Chandra therein, while Shani is in Labh Bhava",
+            "五宫巨蟹座有月亮 土星十一宫 极富"
+          ],
+          "counter_queries": [
+            "One will be penniless, if the Lord of Dhan Bhava is in an evil Bhava"
+          ],
+          "boundary_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness"
+          ],
+          "method_queries": [
+            "Combinations for Wealth",
+            "Should Surya be in Simh identical with Lagn and be yuti with, or receiving a Drishti from Mangal and Guru"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch41-v8-kark-as-putr-with-chandra-and-shani-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Kark happens to be Putr Bhava, containing Chandra therein"
+            },
+            {
+              "step_id": "ch41-v8-kark-as-putr-with-chandra-and-shani-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while Shani is in Labh Bhava"
+            },
+            {
+              "step_id": "ch41-v8-kark-as-putr-with-chandra-and-shani-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will become very affluent"
+            },
+            {
+              "step_id": "ch41-v8-kark-as-putr-with-chandra-and-shani-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Kark happens to be Putr Bhava, containing Chandra therein the native will become very affluent"
+            },
+            {
+              "step_id": "ch41-v8-kark-as-putr-with-chandra-and-shani-in-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while Shani is in Labh Bhava the native will become very affluent"
+            },
+            {
+              "step_id": "ch41-v8-kark-as-putr-with-chandra-and-shani-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If Kark happens to be 5th house, containing moon therein"
+            },
+            {
+              "step_id": "ch41-v8-kark-as-putr-with-chandra-and-shani-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "while saturn is in 11th house"
+            },
+            {
+              "step_id": "ch41-v8-kark-as-putr-with-chandra-and-shani-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If Kark happens to be 5th house, containing moon therein the native will become very affluent"
+            },
+            {
+              "step_id": "ch41-v8-kark-as-putr-with-chandra-and-shani-in-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "while saturn is in 11th house the native will become very affluent"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "五宫所落星座未取到时停止。",
+          "五宫是否有月亮、土星是否落十一宫的事实缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch41-v8-kark-as-putr-with-chandra-and-shani-in-labh.step-001",
+        "action": "先取五宫所落星座，核对它是否为巨蟹座（Kark）、其中是否有月亮（Chandra），再看土星（Shani）是否落十一宫（Labh Bhava）。",
+        "applicability_scope": "仅限本命盘五宫与十一宫的这一组配置；本条属本章「Yogas for Great Affluence (up to Sloka 8)」一组；原文未给时间限定，也未给上升限定。",
+        "minimum_supported_claim": "五宫（Putr Bhava）即巨蟹座（Kark）并有月亮（Chandra）在其中，同时土星（Shani）落十一宫（Labh Bhava）时，命主将变得极为富足。",
+        "produced_fact_keys": [
+          "巨蟹座五宫月亮土星十一宫的极富判定"
+        ],
+        "required_fact_keys": [
+          "本盘五宫（Putr Bhava）落在哪个星座",
+          "五宫（Putr Bhava）是否落在巨蟹座（Kark）",
+          "五宫（Putr Bhava）是否被月亮（Chandra）占据",
+          "土星（Shani）是否落十一宫（Labh）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘五宫（Putr Bhava）落在哪个星座"
+            },
+            {
+              "fact_key": "五宫（Putr Bhava）是否落在巨蟹座（Kark）"
+            },
+            {
+              "fact_key": "五宫（Putr Bhava）是否被月亮（Chandra）占据"
+            },
+            {
+              "fact_key": "土星（Shani）是否落十一宫（Labh）"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Kark happens to be Putr Bhava, containing Chandra therein",
+              "claim": "五宫（Putr Bhava）即巨蟹座（Kark）并有月亮（Chandra）在其中"
+            },
+            {
+              "quote": "while Shani is in Labh Bhava",
+              "claim": "同时土星（Shani）落十一宫（Labh Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will become very affluent",
+              "claim": "命主将变得极为富足"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch41:v8",
+            "quote": "If Kark happens to be Putr Bhava, containing Chandra therein, while Shani is in Labh Bhava, the native will become very affluent.",
+            "pdf_pages": [
+              86
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘五宫（Putr Bhava）落在哪个星座、五宫（Putr Bhava）是否落在巨蟹座（Kark）、五宫（Putr Bhava）是否被月亮（Chandra）占据、土星（Shani）是否落十一宫（Labh）。",
+        "stop_fact_keys": [
+          "本盘五宫（Putr Bhava）落在哪个星座",
+          "五宫（Putr Bhava）是否落在巨蟹座（Kark）",
+          "五宫（Putr Bhava）是否被月亮（Chandra）占据",
+          "土星（Shani）是否落十一宫（Labh）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文点名巨蟹座（Kark），不得换成月亮主管的别的位置。",
+          "不得据此推断财富数额、来源或应期。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "bfeec0db59bc9b699fb726d1c89206a65a58bde6f60c3d7c84b6612fb8bbfd95"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch41-v9-surya-in-simh-lagn-with-mangal-guru.step-001",
+      "method": {
+        "method": "ch41-v9-surya-in-simh-lagn-with-mangal-guru",
+        "title": "富有：上升为狮子座并有太阳，太阳与火星木星同宫或受其相照",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我这辈子会不会有钱",
+          "我的财力靠什么起来"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Surya be in Simh identical with Lagn and be yuti with, or receiving a Drishti from Mangal and Guru, one will be wealthy",
+            "上升狮子座有太阳 火星木星同宫或相照 富有"
+          ],
+          "counter_queries": [
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava"
+          ],
+          "boundary_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness"
+          ],
+          "method_queries": [
+            "Combinations for Wealth",
+            "Should Chandra be in Kark identical with Lagn and be yuti with, or receiving a Drishti from Budh and Guru"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch41-v9-surya-in-simh-lagn-with-mangal-guru.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should Surya be in Simh identical with Lagn"
+            },
+            {
+              "step_id": "ch41-v9-surya-in-simh-lagn-with-mangal-guru.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "be yuti with, or receiving a Drishti from Mangal and Guru"
+            },
+            {
+              "step_id": "ch41-v9-surya-in-simh-lagn-with-mangal-guru.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "one will be wealthy"
+            },
+            {
+              "step_id": "ch41-v9-surya-in-simh-lagn-with-mangal-guru.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should Surya be in Simh identical with Lagn one will be wealthy"
+            },
+            {
+              "step_id": "ch41-v9-surya-in-simh-lagn-with-mangal-guru.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "be yuti with, or receiving a Drishti from Mangal and Guru one will be wealthy"
+            },
+            {
+              "step_id": "ch41-v9-surya-in-simh-lagn-with-mangal-guru.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Should sun be in Simh identical with 1st house"
+            },
+            {
+              "step_id": "ch41-v9-surya-in-simh-lagn-with-mangal-guru.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "be yuti with, or receiving a Drishti from mars and jupiter"
+            },
+            {
+              "step_id": "ch41-v9-surya-in-simh-lagn-with-mangal-guru.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Should sun be in Simh identical with 1st house one will be wealthy"
+            },
+            {
+              "step_id": "ch41-v9-surya-in-simh-lagn-with-mangal-guru.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "be yuti with, or receiving a Drishti from mars and jupiter one will be wealthy"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "上升所落星座未取到时停止。",
+          "太阳是否落上升宫的事实缺失时停止。",
+          "同宫与相照两类关系事实全部缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch41-v9-surya-in-simh-lagn-with-mangal-guru.step-001",
+        "action": "先取上升所落星座并核对太阳（Surya）的落宫，再看它与原文点名的诸行星是同宫还是受其相照。",
+        "applicability_scope": "仅限本命盘上升为狮子座且太阳在上升宫的配置；原文本组自带小标题「Yogas for Wealth (up to Sloka 15)」；原文的「yuti with, or receiving a Drishti from Mangal and Guru」一句同时管两颗行星，本方法按同宫与相照两条分支处理，两颗行星在同一分支内同时成立；原文未给时间限定。",
+        "minimum_supported_claim": "上升（Lagn）即狮子座（Simh）并有太阳（Surya）在其中，且太阳与火星（Mangal）和木星（Guru）同宫或受二者相照时，命主将富有。",
+        "produced_fact_keys": [
+          "太阳（Surya）落上升宫的富有判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升（Lagn）落在哪个星座",
+          "上升（Lagn）是否落在狮子座（Simh）",
+          "太阳（Surya）是否落上升宫（Lagna）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升（Lagn）落在哪个星座"
+                },
+                {
+                  "fact_key": "上升（Lagn）是否落在狮子座（Simh）"
+                },
+                {
+                  "fact_key": "太阳（Surya）是否落上升宫（Lagna）"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "太阳（Surya）是否与火星（Mangal）同宫"
+                    },
+                    {
+                      "fact_key": "太阳（Surya）是否与木星（Guru）同宫"
+                    }
+                  ]
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "太阳（Surya）是否被火星（Mangal）相照"
+                    },
+                    {
+                      "fact_key": "太阳（Surya）是否被木星（Guru）相照"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升（Lagn）落在哪个星座"
+                },
+                {
+                  "fact_key": "上升（Lagn）是否落在狮子座（Simh）"
+                },
+                {
+                  "fact_key": "太阳（Surya）是否落上升宫（Lagna）"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "太阳（Surya）是否与火星（Mangal）同宫",
+              "太阳（Surya）是否与木星（Guru）同宫"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "太阳（Surya）是否与火星（Mangal）同宫"
+                },
+                {
+                  "fact_key": "太阳（Surya）是否与木星（Guru）同宫"
+                }
+              ]
+            },
+            "selection_group": "ch41-v9-surya-in-simh-lagn-with-mangal-guru.step-001:relation-kind",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：太阳（Surya）是否与火星（Mangal）同宫、太阳（Surya）是否与木星（Guru）同宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升（Lagn）落在哪个星座"
+                },
+                {
+                  "fact_key": "上升（Lagn）是否落在狮子座（Simh）"
+                },
+                {
+                  "fact_key": "太阳（Surya）是否落上升宫（Lagna）"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "太阳（Surya）是否被火星（Mangal）相照",
+              "太阳（Surya）是否被木星（Guru）相照"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "太阳（Surya）是否被火星（Mangal）相照"
+                },
+                {
+                  "fact_key": "太阳（Surya）是否被木星（Guru）相照"
+                }
+              ]
+            },
+            "selection_group": "ch41-v9-surya-in-simh-lagn-with-mangal-guru.step-001:relation-kind",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：太阳（Surya）是否被火星（Mangal）相照、太阳（Surya）是否被木星（Guru）相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Surya be in Simh identical with Lagn",
+              "claim": "上升（Lagn）即狮子座（Simh）并有太阳（Surya）在其中"
+            },
+            {
+              "quote": "be yuti with, or receiving a Drishti from Mangal and Guru",
+              "claim": "太阳与火星（Mangal）和木星（Guru）同宫或受二者相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "one will be wealthy",
+              "claim": "命主将富有"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch41:v9",
+            "quote": "Should Surya be in Simh identical with Lagn and be yuti with, or receiving a Drishti from Mangal and Guru, one will be wealthy.",
+            "pdf_pages": [
+              86
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升（Lagn）落在哪个星座、上升（Lagn）是否落在狮子座（Simh）、太阳（Surya）是否落上升宫（Lagna）。",
+        "stop_fact_keys": [
+          "本盘上升（Lagn）落在哪个星座",
+          "上升（Lagn）是否落在狮子座（Simh）",
+          "太阳（Surya）是否落上升宫（Lagna）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文点名火星与木星两颗，不得只有其中一颗就下断。",
+          "不得据此推断财富数额、来源或应期。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "57179d0a30755e8a33ec6f861f852f34fbbe3e46a87cb455d929f3c9cb5365f3"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch41-v10-chandra-in-kark-lagn-with-budh-guru.step-001",
+      "method": {
+        "method": "ch41-v10-chandra-in-kark-lagn-with-budh-guru",
+        "title": "富有：上升为巨蟹座并有月亮，月亮与水星木星同宫或受其相照",
+        "target_house": 1,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我的财运怎么样",
+          "我能不能过上宽裕日子"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Chandra be in Kark identical with Lagn and be yuti with, or receiving a Drishti from Budh and Guru, one will be wealthy",
+            "上升巨蟹座有月亮 水星木星同宫或相照 富有"
+          ],
+          "counter_queries": [
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava"
+          ],
+          "boundary_queries": [
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness"
+          ],
+          "method_queries": [
+            "Combinations for Wealth",
+            "Should Mangal be in Lagn identical with his own Rashiand be yuti with, or receiving a Drishti from Budh, Shukra and Shani"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch41-v10-chandra-in-kark-lagn-with-budh-guru.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should Chandra be in Kark identical with Lagn"
+            },
+            {
+              "step_id": "ch41-v10-chandra-in-kark-lagn-with-budh-guru.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "be yuti with, or receiving a Drishti from Budh and Guru"
+            },
+            {
+              "step_id": "ch41-v10-chandra-in-kark-lagn-with-budh-guru.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "one will be wealthy"
+            },
+            {
+              "step_id": "ch41-v10-chandra-in-kark-lagn-with-budh-guru.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should Chandra be in Kark identical with Lagn one will be wealthy"
+            },
+            {
+              "step_id": "ch41-v10-chandra-in-kark-lagn-with-budh-guru.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "be yuti with, or receiving a Drishti from Budh and Guru one will be wealthy"
+            },
+            {
+              "step_id": "ch41-v10-chandra-in-kark-lagn-with-budh-guru.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Should moon be in Kark identical with 1st house"
+            },
+            {
+              "step_id": "ch41-v10-chandra-in-kark-lagn-with-budh-guru.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "be yuti with, or receiving a Drishti from mercury and jupiter"
+            },
+            {
+              "step_id": "ch41-v10-chandra-in-kark-lagn-with-budh-guru.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Should moon be in Kark identical with 1st house one will be wealthy"
+            },
+            {
+              "step_id": "ch41-v10-chandra-in-kark-lagn-with-budh-guru.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "be yuti with, or receiving a Drishti from mercury and jupiter one will be wealthy"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "上升所落星座未取到时停止。",
+          "月亮是否落上升宫的事实缺失时停止。",
+          "同宫与相照两类关系事实全部缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch41-v10-chandra-in-kark-lagn-with-budh-guru.step-001",
+        "action": "先取上升所落星座并核对月亮（Chandra）的落宫，再看它与原文点名的诸行星是同宫还是受其相照。",
+        "applicability_scope": "仅限本命盘上升为巨蟹座且月亮在上升宫的配置；本条属本章「Yogas for Wealth (up to Sloka 15)」一组；原文的「yuti with, or receiving a Drishti from Budh and Guru」一句同时管两颗行星，本方法按同宫与相照两条分支处理，两颗行星在同一分支内同时成立；原文未给时间限定。",
+        "minimum_supported_claim": "上升（Lagn）即巨蟹座（Kark）并有月亮（Chandra）在其中，且月亮与水星（Budh）和木星（Guru）同宫或受二者相照时，命主将富有。",
+        "produced_fact_keys": [
+          "月亮（Chandra）落上升宫的富有判定"
+        ],
+        "required_fact_keys": [
+          "本盘上升（Lagn）落在哪个星座",
+          "上升（Lagn）是否落在巨蟹座（Kark）",
+          "月亮（Chandra）是否落上升宫（Lagna）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升（Lagn）落在哪个星座"
+                },
+                {
+                  "fact_key": "上升（Lagn）是否落在巨蟹座（Kark）"
+                },
+                {
+                  "fact_key": "月亮（Chandra）是否落上升宫（Lagna）"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "月亮（Chandra）是否与水星（Budh）同宫"
+                    },
+                    {
+                      "fact_key": "月亮（Chandra）是否与木星（Guru）同宫"
+                    }
+                  ]
+                },
+                {
+                  "operator": "AND",
+                  "operands": [
+                    {
+                      "fact_key": "月亮（Chandra）是否被水星（Budh）相照"
+                    },
+                    {
+                      "fact_key": "月亮（Chandra）是否被木星（Guru）相照"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升（Lagn）落在哪个星座"
+                },
+                {
+                  "fact_key": "上升（Lagn）是否落在巨蟹座（Kark）"
+                },
+                {
+                  "fact_key": "月亮（Chandra）是否落上升宫（Lagna）"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "月亮（Chandra）是否与水星（Budh）同宫",
+              "月亮（Chandra）是否与木星（Guru）同宫"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "月亮（Chandra）是否与水星（Budh）同宫"
+                },
+                {
+                  "fact_key": "月亮（Chandra）是否与木星（Guru）同宫"
+                }
+              ]
+            },
+            "selection_group": "ch41-v10-chandra-in-kark-lagn-with-budh-guru.step-001:relation-kind",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：月亮（Chandra）是否与水星（Budh）同宫、月亮（Chandra）是否与木星（Guru）同宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘上升（Lagn）落在哪个星座"
+                },
+                {
+                  "fact_key": "上升（Lagn）是否落在巨蟹座（Kark）"
+                },
+                {
+                  "fact_key": "月亮（Chandra）是否落上升宫（Lagna）"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "月亮（Chandra）是否被水星（Budh）相照",
+              "月亮（Chandra）是否被木星（Guru）相照"
+            ],
+            "branch_condition_logic": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "月亮（Chandra）是否被水星（Budh）相照"
+                },
+                {
+                  "fact_key": "月亮（Chandra）是否被木星（Guru）相照"
+                }
+              ]
+            },
+            "selection_group": "ch41-v10-chandra-in-kark-lagn-with-budh-guru.step-001:relation-kind",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：月亮（Chandra）是否被水星（Budh）相照、月亮（Chandra）是否被木星（Guru）相照。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Chandra be in Kark identical with Lagn",
+              "claim": "上升（Lagn）即巨蟹座（Kark）并有月亮（Chandra）在其中"
+            },
+            {
+              "quote": "be yuti with, or receiving a Drishti from Budh and Guru",
+              "claim": "月亮与水星（Budh）和木星（Guru）同宫或受二者相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "one will be wealthy",
+              "claim": "命主将富有"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch41:v10",
+            "quote": "Should Chandra be in Kark identical with Lagn and be yuti with, or receiving a Drishti from Budh and Guru, one will be wealthy.",
+            "pdf_pages": [
+              86
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘上升（Lagn）落在哪个星座、上升（Lagn）是否落在巨蟹座（Kark）、月亮（Chandra）是否落上升宫（Lagna）。",
+        "stop_fact_keys": [
+          "本盘上升（Lagn）落在哪个星座",
+          "上升（Lagn）是否落在巨蟹座（Kark）",
+          "月亮（Chandra）是否落上升宫（Lagna）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文点名水星与木星两颗，不得只有其中一颗就下断。",
+          "不得据此推断财富数额、来源或应期。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "99593e5a32246f1dc63ff8c2e479e02d2018f3d61ef8dc01e7f4fa44cdde63ce"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch40:v13": {
+      "evidence_atom_id": "bphs-97:santhanam:ch40:v13",
+      "chapter_number": 40,
+      "chapter_title": "Yogas For Royal Association",
+      "verse_label": "13.",
+      "content_role": "verse",
+      "exact_text": "13. An exchange of Rāśis between Karm’s Lord and Lagn’s Lord will make the native associated with the king in a great manner.",
+      "pdf_pages": [
+        85
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 40 · Sloka 13 · PDF page 85 · bphs-97:santhanam:ch40:v13",
+      "previous_atom_id": "bphs-97:santhanam:ch40:v12",
+      "next_atom_id": "bphs-97:santhanam:ch40:v14",
+      "context_before": "pied by its own Lord and is devoid of a Drishti from a malefic. The Atma Karak should at the same time be yuti with a benefic.\n\n",
+      "context_after": "14. If Shukra and Chandra are in the 4<sup>th</sup> from Karakāńś Lagna, the native will be endowed with royal insignia.\n\n15. Sh",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch40:v14": {
+      "evidence_atom_id": "bphs-97:santhanam:ch40:v14",
+      "chapter_number": 40,
+      "chapter_title": "Yogas For Royal Association",
+      "verse_label": "14.",
+      "content_role": "verse",
+      "exact_text": "14. If Shukra and Chandra are in the 4<sup>th</sup> from Karakāńś Lagna, the native will be endowed with royal insignia.",
+      "pdf_pages": [
+        85
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 40 · Sloka 14 · PDF page 85 · bphs-97:santhanam:ch40:v14",
+      "previous_atom_id": "bphs-97:santhanam:ch40:v13",
+      "next_atom_id": "bphs-97:santhanam:ch40:v15",
+      "context_before": "\n13. An exchange of Rāśis between Karm’s Lord and Lagn’s Lord will make the native associated with the king in a great manner.\n\n",
+      "context_after": "15. Should Lagn’s Lord, or the Atma Karak be yuti with Putr’s Lord and be in a Kendr,\n\n<!-- SOURCE_PAGE 86 -->\n\nor in a Kon, the",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch40:v15": {
+      "evidence_atom_id": "bphs-97:santhanam:ch40:v15",
+      "chapter_number": 40,
+      "chapter_title": "Yogas For Royal Association",
+      "verse_label": "15.",
+      "content_role": "verse",
+      "exact_text": "15. Should Lagn’s Lord, or the Atma Karak be yuti with Putr’s Lord and be in a Kendr, or in a Kon, the native will be a king, or minister.",
+      "pdf_pages": [
+        85,
+        86
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 40 · Sloka 15 · PDF pages 85-86 · bphs-97:santhanam:ch40:v15",
+      "previous_atom_id": "bphs-97:santhanam:ch40:v14",
+      "next_atom_id": null,
+      "context_before": "ner.\n\n14. If Shukra and Chandra are in the 4<sup>th</sup> from Karakāńś Lagna, the native will be endowed with royal insignia.\n\n",
+      "context_after": "",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch41:v2": {
+      "evidence_atom_id": "bphs-97:santhanam:ch41:v2",
+      "chapter_number": 41,
+      "chapter_title": "Combinations for Wealth",
+      "verse_label": "2.",
+      "content_role": "verse",
+      "exact_text": "2. Yogas for Great Affluence (up to Sloka 8). Should a Rashiof Shukra be Putr Bhava and be occupied by Shukra himself, while Mangal is in Labh Bhava, the native will obtain great riches.",
+      "pdf_pages": [
+        86
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 41 · Sloka 2 · PDF page 86 · bphs-97:santhanam:ch41:v2",
+      "previous_atom_id": "bphs-97:santhanam:ch41:v1",
+      "next_atom_id": "bphs-97:santhanam:ch41:v3",
+      "context_before": "ns for Wealth**\n\n1. I now tell you of special combinations, giving wealth. One born to these Yogas will surely become wealthy.\n\n",
+      "context_after": "3. Should a Rashiof Budh be Putr Bhava and be occupied by Budh himself, as Labh Bhava is occupied by Chandra, Mangal and Guru, t",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch41:v3": {
+      "evidence_atom_id": "bphs-97:santhanam:ch41:v3",
+      "chapter_number": 41,
+      "chapter_title": "Combinations for Wealth",
+      "verse_label": "3.",
+      "content_role": "verse",
+      "exact_text": "3. Should a Rashiof Budh be Putr Bhava and be occupied by Budh himself, as Labh Bhava is occupied by Chandra, Mangal and Guru, the native will be very affluent.",
+      "pdf_pages": [
+        86
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 41 · Sloka 3 · PDF page 86 · bphs-97:santhanam:ch41:v3",
+      "previous_atom_id": "bphs-97:santhanam:ch41:v2",
+      "next_atom_id": "bphs-97:santhanam:ch41:v4",
+      "context_before": " Should a Rashiof Shukra be Putr Bhava and be occupied by Shukra himself, while Mangal is in Labh Bhava, the native will obtain great riches.\n\n",
+      "context_after": "4. Should Simh be Putr Bhava and be occupied by Surya himself, as Shani, Chandra and Guru are in Labh Bhava, the native will be ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch41:v4": {
+      "evidence_atom_id": "bphs-97:santhanam:ch41:v4",
+      "chapter_number": 41,
+      "chapter_title": "Combinations for Wealth",
+      "verse_label": "4.",
+      "content_role": "verse",
+      "exact_text": "4. Should Simh be Putr Bhava and be occupied by Surya himself, as Shani, Chandra and Guru are in Labh Bhava, the native will be very affluent.",
+      "pdf_pages": [
+        86
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 41 · Sloka 4 · PDF page 86 · bphs-97:santhanam:ch41:v4",
+      "previous_atom_id": "bphs-97:santhanam:ch41:v3",
+      "next_atom_id": "bphs-97:santhanam:ch41:v5",
+      "context_before": " Should a Rashiof Budh be Putr Bhava and be occupied by Budh himself, as Labh Bhava is occupied by Chandra, Mangal and Guru, the native will be very affluent.\n\n",
+      "context_after": "5. Should Surya and Chandra be in Labh Bhava, as Shani is in Putr Bhava identical with his own Bhava, the native will be very af",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch41:v5": {
+      "evidence_atom_id": "bphs-97:santhanam:ch41:v5",
+      "chapter_number": 41,
+      "chapter_title": "Combinations for Wealth",
+      "verse_label": "5.",
+      "content_role": "verse",
+      "exact_text": "5. Should Surya and Chandra be in Labh Bhava, as Shani is in Putr Bhava identical with his own Bhava, the native will be very affluent.",
+      "pdf_pages": [
+        86
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 41 · Sloka 5 · PDF page 86 · bphs-97:santhanam:ch41:v5",
+      "previous_atom_id": "bphs-97:santhanam:ch41:v4",
+      "next_atom_id": "bphs-97:santhanam:ch41:v6",
+      "context_before": " Should Simh be Putr Bhava and be occupied by Surya himself, as Shani, Chandra and Guru are in Labh Bhava, the native will be very affluent.\n\n",
+      "context_after": "6. Should Guru be in Putr Bhava identical with his own Rāśi, as Budh is in Labh Bhava, the native will be very affluent.\n\n7. If ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch41:v6": {
+      "evidence_atom_id": "bphs-97:santhanam:ch41:v6",
+      "chapter_number": 41,
+      "chapter_title": "Combinations for Wealth",
+      "verse_label": "6.",
+      "content_role": "verse",
+      "exact_text": "6. Should Guru be in Putr Bhava identical with his own Rāśi, as Budh is in Labh Bhava, the native will be very affluent.",
+      "pdf_pages": [
+        86
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 41 · Sloka 6 · PDF page 86 · bphs-97:santhanam:ch41:v6",
+      "previous_atom_id": "bphs-97:santhanam:ch41:v5",
+      "next_atom_id": "bphs-97:santhanam:ch41:v7",
+      "context_before": " Should Surya and Chandra be in Labh Bhava, as Shani is in Putr Bhava identical with his own Bhava, the native will be very affluent.\n\n",
+      "context_after": "7. If a Rashiof Mangal happens to be Putr Bhava with Mangal therein, while Shukra is in Labh Bhava, the native will become very ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch41:v7": {
+      "evidence_atom_id": "bphs-97:santhanam:ch41:v7",
+      "chapter_number": 41,
+      "chapter_title": "Combinations for Wealth",
+      "verse_label": "7.",
+      "content_role": "verse",
+      "exact_text": "7. If a Rashiof Mangal happens to be Putr Bhava with Mangal therein, while Shukra is in Labh Bhava, the native will become very affluent.",
+      "pdf_pages": [
+        86
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 41 · Sloka 7 · PDF page 86 · bphs-97:santhanam:ch41:v7",
+      "previous_atom_id": "bphs-97:santhanam:ch41:v6",
+      "next_atom_id": "bphs-97:santhanam:ch41:v8",
+      "context_before": "ent.\n\n6. Should Guru be in Putr Bhava identical with his own Rāśi, as Budh is in Labh Bhava, the native will be very affluent.\n\n",
+      "context_after": "8. If Kark happens to be Putr Bhava, containing Chandra therein, while Shani is in Labh Bhava, the native will become very afflu",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch41:v8": {
+      "evidence_atom_id": "bphs-97:santhanam:ch41:v8",
+      "chapter_number": 41,
+      "chapter_title": "Combinations for Wealth",
+      "verse_label": "8.",
+      "content_role": "verse",
+      "exact_text": "8. If Kark happens to be Putr Bhava, containing Chandra therein, while Shani is in Labh Bhava, the native will become very affluent.",
+      "pdf_pages": [
+        86
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 41 · Sloka 8 · PDF page 86 · bphs-97:santhanam:ch41:v8",
+      "previous_atom_id": "bphs-97:santhanam:ch41:v7",
+      "next_atom_id": "bphs-97:santhanam:ch41:v9",
+      "context_before": " If a Rashiof Mangal happens to be Putr Bhava with Mangal therein, while Shukra is in Labh Bhava, the native will become very affluent.\n\n",
+      "context_after": "9. Yogas for Wealth (up to Sloka 15). Should Surya be in Simh identical with Lagn and be yuti with, or receiving a Drishti from ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch41:v9": {
+      "evidence_atom_id": "bphs-97:santhanam:ch41:v9",
+      "chapter_number": 41,
+      "chapter_title": "Combinations for Wealth",
+      "verse_label": "9.",
+      "content_role": "verse",
+      "exact_text": "9. Yogas for Wealth (up to Sloka 15). Should Surya be in Simh identical with Lagn and be yuti with, or receiving a Drishti from Mangal and Guru, one will be wealthy.",
+      "pdf_pages": [
+        86
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 41 · Sloka 9 · PDF page 86 · bphs-97:santhanam:ch41:v9",
+      "previous_atom_id": "bphs-97:santhanam:ch41:v8",
+      "next_atom_id": "bphs-97:santhanam:ch41:v10",
+      "context_before": " If Kark happens to be Putr Bhava, containing Chandra therein, while Shani is in Labh Bhava, the native will become very affluent.\n\n",
+      "context_after": "10. Should Chandra be in Kark identical with Lagn and be yuti with, or receiving a Drishti from Budh and Guru, one will be wealt",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch41:v10": {
+      "evidence_atom_id": "bphs-97:santhanam:ch41:v10",
+      "chapter_number": 41,
+      "chapter_title": "Combinations for Wealth",
+      "verse_label": "10.",
+      "content_role": "verse",
+      "exact_text": "10. Should Chandra be in Kark identical with Lagn and be yuti with, or receiving a Drishti from Budh and Guru, one will be wealthy.",
+      "pdf_pages": [
+        86
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 41 · Sloka 10 · PDF page 86 · bphs-97:santhanam:ch41:v10",
+      "previous_atom_id": "bphs-97:santhanam:ch41:v9",
+      "next_atom_id": "bphs-97:santhanam:ch41:v11",
+      "context_before": " Should Surya be in Simh identical with Lagn and be yuti with, or receiving a Drishti from Mangal and Guru, one will be wealthy.\n\n",
+      "context_after": "11. Should Mangal be in Lagn identical with his own Rashiand be yuti with, or receiving a Drishti from Budh, Shukra and Shani, t",
+      "content_missing": false
+    }
+  }
+}

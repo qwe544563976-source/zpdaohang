@@ -1,0 +1,2695 @@
+{
+  "shard": 5,
+  "step_count": 12,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch39-v37-bandhu-or-karm-lord-joins-putr-or-dharm-lord.step-001",
+      "method": {
+        "method": "ch39-v37-bandhu-or-karm-lord-joins-putr-or-dharm-lord",
+        "title": "四宫主或十宫主与五宫主或九宫主同宫：得到王国",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "角宫主和三角宫主碰头说明什么",
+          "我有没有得大位的组合"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should the Lord of Bandhu, or of Karm Bhava join either the Putr’s Lord, or Dharm’s Lord, the native will obtain a kingdom",
+            "四宫主十宫主与五宫主九宫主同宫 得国"
+          ],
+          "counter_queries": [
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak",
+            "Should Putr’s and Dharm’s Lords be, respectively, found in Ari and Vyaya Bhava and receive a Drishti from Marak Grahas, the native will be penniless"
+          ],
+          "boundary_queries": [
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "Putr and Dharm Bhava are known by the name Kon (or trine)"
+          ],
+          "method_queries": [
+            "If the Lord of a Kendr establishes a relationship with the Lord of a Kon, a Raj Yog is obtained",
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v37-bandhu-or-karm-lord-joins-putr-or-dharm-lord.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should the Lord of Bandhu, or of Karm Bhava join either the Putr’s Lord, or Dharm’s Lord"
+            },
+            {
+              "step_id": "ch39-v37-bandhu-or-karm-lord-joins-putr-or-dharm-lord.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will obtain a kingdom"
+            },
+            {
+              "step_id": "ch39-v37-bandhu-or-karm-lord-joins-putr-or-dharm-lord.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should the Lord of Bandhu, or of Karm Bhava join either the Putr’s Lord, or Dharm’s Lord the native will obtain a kingdom"
+            },
+            {
+              "step_id": "ch39-v37-bandhu-or-karm-lord-joins-putr-or-dharm-lord.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Should the 4th lord, or of 10th house join either the 5th lord, or 9th lord"
+            },
+            {
+              "step_id": "ch39-v37-bandhu-or-karm-lord-joins-putr-or-dharm-lord.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Should the 4th lord, or of 10th house join either the 5th lord, or 9th lord the native will obtain a kingdom"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "四个宫主的身份事实缺任一项时停止。",
+          "四种同宫组合的事实全部缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v37-bandhu-or-karm-lord-joins-putr-or-dharm-lord.step-001",
+        "action": "先认出四宫主、十宫主、五宫主与九宫主，再核对四种同宫组合中是否有一种成立。",
+        "applicability_scope": "仅限本命盘；原文没有时间限定。",
+        "minimum_supported_claim": "四宫主（Bandhu's Lord）或十宫主（Karm's Lord）与五宫主（Putr's Lord）或九宫主（Dharm's Lord）同宫时，命主会得到王国。",
+        "produced_fact_keys": [
+          "四十宫主与五九宫主同宫的得国判定"
+        ],
+        "required_fact_keys": [
+          "本盘四宫主（Bandhu's Lord）是哪颗行星",
+          "本盘十宫主（Karm's Lord）是哪颗行星",
+          "本盘五宫主（Putr's Lord）是哪颗行星",
+          "本盘九宫主（Dharm's Lord）是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘四宫主（Bandhu's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十宫主（Karm's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘九宫主（Dharm's Lord）是哪颗行星"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "四宫主（Bandhu's Lord）是否与五宫主（Putr's Lord）同宫"
+                },
+                {
+                  "fact_key": "四宫主（Bandhu's Lord）是否与九宫主（Dharm's Lord）同宫"
+                },
+                {
+                  "fact_key": "十宫主（Karm's Lord）是否与五宫主（Putr's Lord）同宫"
+                },
+                {
+                  "fact_key": "十宫主（Karm's Lord）是否与九宫主（Dharm's Lord）同宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘四宫主（Bandhu's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十宫主（Karm's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘九宫主（Dharm's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "四宫主（Bandhu's Lord）是否与五宫主（Putr's Lord）同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "四宫主（Bandhu's Lord）是否与五宫主（Putr's Lord）同宫"
+            },
+            "selection_group": "ch39-v37-bandhu-or-karm-lord-joins-putr-or-dharm-lord.step-001:which-pair",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：四宫主（Bandhu's Lord）是否与五宫主（Putr's Lord）同宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘四宫主（Bandhu's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十宫主（Karm's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘九宫主（Dharm's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "四宫主（Bandhu's Lord）是否与九宫主（Dharm's Lord）同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "四宫主（Bandhu's Lord）是否与九宫主（Dharm's Lord）同宫"
+            },
+            "selection_group": "ch39-v37-bandhu-or-karm-lord-joins-putr-or-dharm-lord.step-001:which-pair",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：四宫主（Bandhu's Lord）是否与九宫主（Dharm's Lord）同宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘四宫主（Bandhu's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十宫主（Karm's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘九宫主（Dharm's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "十宫主（Karm's Lord）是否与五宫主（Putr's Lord）同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十宫主（Karm's Lord）是否与五宫主（Putr's Lord）同宫"
+            },
+            "selection_group": "ch39-v37-bandhu-or-karm-lord-joins-putr-or-dharm-lord.step-001:which-pair",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十宫主（Karm's Lord）是否与五宫主（Putr's Lord）同宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘四宫主（Bandhu's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘十宫主（Karm's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘九宫主（Dharm's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "十宫主（Karm's Lord）是否与九宫主（Dharm's Lord）同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "十宫主（Karm's Lord）是否与九宫主（Dharm's Lord）同宫"
+            },
+            "selection_group": "ch39-v37-bandhu-or-karm-lord-joins-putr-or-dharm-lord.step-001:which-pair",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：十宫主（Karm's Lord）是否与九宫主（Dharm's Lord）同宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should the Lord of Bandhu, or of Karm Bhava join either the Putr’s Lord, or Dharm’s Lord",
+              "claim": "四宫主（Bandhu's Lord）或十宫主（Karm's Lord）与五宫主（Putr's Lord）或九宫主（Dharm's Lord）同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will obtain a kingdom",
+              "claim": "命主会得到王国"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v37",
+            "quote": "Should the Lord of Bandhu, or of Karm Bhava join either the Putr’s Lord, or Dharm’s Lord, the native will obtain a kingdom.",
+            "pdf_pages": [
+              84
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘四宫主（Bandhu's Lord）是哪颗行星、本盘十宫主（Karm's Lord）是哪颗行星、本盘五宫主（Putr's Lord）是哪颗行星、本盘九宫主（Dharm's Lord）是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘四宫主（Bandhu's Lord）是哪颗行星",
+          "本盘十宫主（Karm's Lord）是哪颗行星",
+          "本盘五宫主（Putr's Lord）是哪颗行星",
+          "本盘九宫主（Dharm's Lord）是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文只写同宫（join），不得把相照也算作成立条件。",
+          "不得据此推断得位时间或权位大小。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "8c331a11a1fc67319cf38544ed7783de79fe10868039435b7c14742241d361c7"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v38-putr-lord-placement-and-yuti.step-001",
+      "method": {
+        "method": "ch39-v38-putr-lord-placement-and-yuti",
+        "title": "五宫主居上升、四宫或十宫并与九宫主或上升主同宫：成为国王",
+        "target_house": 5,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "五宫主落哪里最有力",
+          "我有没有当上位者的组合"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If Putr’s Lord is in Lagna, Bandhu, or Karm Bhava, yuti with Dharm’s Lord, or Lagn Lord, the native will become a king",
+            "五宫主落上升四宫十宫 与九宫主同宫 国王"
+          ],
+          "counter_queries": [
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak",
+            "Should Putr’s and Dharm’s Lords be, respectively, found in Ari and Vyaya Bhava and receive a Drishti from Marak Grahas, the native will be penniless"
+          ],
+          "boundary_queries": [
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "Putr and Dharm Bhava are known by the name Kon (or trine)"
+          ],
+          "method_queries": [
+            "If the Lord of a Kendr establishes a relationship with the Lord of a Kon, a Raj Yog is obtained",
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v38-putr-lord-placement-and-yuti.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If Putr’s Lord is in Lagna, Bandhu, or Karm Bhava"
+            },
+            {
+              "step_id": "ch39-v38-putr-lord-placement-and-yuti.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "yuti with Dharm’s Lord, or Lagn Lord"
+            },
+            {
+              "step_id": "ch39-v38-putr-lord-placement-and-yuti.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will become a king"
+            },
+            {
+              "step_id": "ch39-v38-putr-lord-placement-and-yuti.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If Putr’s Lord is in Lagna, Bandhu, or Karm Bhava the native will become a king"
+            },
+            {
+              "step_id": "ch39-v38-putr-lord-placement-and-yuti.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "yuti with Dharm’s Lord, or Lagn Lord the native will become a king"
+            },
+            {
+              "step_id": "ch39-v38-putr-lord-placement-and-yuti.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If 5th lord is in 1st house, 4th house, or 10th house"
+            },
+            {
+              "step_id": "ch39-v38-putr-lord-placement-and-yuti.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "yuti with 9th lord, or Lagn Lord"
+            },
+            {
+              "step_id": "ch39-v38-putr-lord-placement-and-yuti.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If 5th lord is in 1st house, 4th house, or 10th house the native will become a king"
+            },
+            {
+              "step_id": "ch39-v38-putr-lord-placement-and-yuti.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "yuti with 9th lord, or Lagn Lord the native will become a king"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "五宫主、九宫主或上升主的身份事实缺失时停止。",
+          "三处落宫事实全部缺失时停止。",
+          "两种同宫关系事实全部缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v38-putr-lord-placement-and-yuti.step-001",
+        "action": "先认出五宫主、九宫主与上升主，再核对五宫主落在哪一宫，以及它与九宫主或上升主是否同宫。",
+        "applicability_scope": "仅限本命盘；原文没有时间限定。",
+        "minimum_supported_claim": "五宫主（Putr's Lord）落上升宫（Lagna）、四宫（Bandhu）或十宫（Karm Bhava），并与九宫主（Dharm's Lord）或上升主（Lagn Lord）同宫时，命主会成为国王。",
+        "produced_fact_keys": [
+          "五宫主落宫并与九宫主上升主同宫的贵格判定"
+        ],
+        "required_fact_keys": [
+          "本盘五宫主（Putr's Lord）是哪颗行星",
+          "本盘九宫主（Dharm's Lord）是哪颗行星",
+          "本盘上升主（Lagn's Lord）是哪颗行星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘九宫主（Dharm's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "五宫主（Putr's Lord）是否落上升宫（Lagna）"
+                },
+                {
+                  "fact_key": "五宫主（Putr's Lord）是否落四宫（Bandhu）"
+                },
+                {
+                  "fact_key": "五宫主（Putr's Lord）是否落十宫（Karm）"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "五宫主（Putr's Lord）是否与九宫主（Dharm's Lord）同宫"
+                },
+                {
+                  "fact_key": "五宫主（Putr's Lord）是否与上升主（Lagn's Lord）同宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘九宫主（Dharm's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "五宫主（Putr's Lord）是否落上升宫（Lagna）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫主（Putr's Lord）是否落上升宫（Lagna）"
+            },
+            "selection_group": "ch39-v38-putr-lord-placement-and-yuti.step-001:putr-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫主（Putr's Lord）是否落上升宫（Lagna）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘九宫主（Dharm's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "五宫主（Putr's Lord）是否落四宫（Bandhu）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫主（Putr's Lord）是否落四宫（Bandhu）"
+            },
+            "selection_group": "ch39-v38-putr-lord-placement-and-yuti.step-001:putr-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫主（Putr's Lord）是否落四宫（Bandhu）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘九宫主（Dharm's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "五宫主（Putr's Lord）是否落十宫（Karm）"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫主（Putr's Lord）是否落十宫（Karm）"
+            },
+            "selection_group": "ch39-v38-putr-lord-placement-and-yuti.step-001:putr-lord-placement",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫主（Putr's Lord）是否落十宫（Karm）。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘九宫主（Dharm's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "五宫主（Putr's Lord）是否与九宫主（Dharm's Lord）同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫主（Putr's Lord）是否与九宫主（Dharm's Lord）同宫"
+            },
+            "selection_group": "ch39-v38-putr-lord-placement-and-yuti.step-001:yuti-with",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫主（Putr's Lord）是否与九宫主（Dharm's Lord）同宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘九宫主（Dharm's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "本盘上升主（Lagn's Lord）是哪颗行星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "五宫主（Putr's Lord）是否与上升主（Lagn's Lord）同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "五宫主（Putr's Lord）是否与上升主（Lagn's Lord）同宫"
+            },
+            "selection_group": "ch39-v38-putr-lord-placement-and-yuti.step-001:yuti-with",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：五宫主（Putr's Lord）是否与上升主（Lagn's Lord）同宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If Putr’s Lord is in Lagna, Bandhu, or Karm Bhava",
+              "claim": "五宫主（Putr's Lord）落上升宫（Lagna）、四宫（Bandhu）或十宫（Karm Bhava）"
+            },
+            {
+              "quote": "yuti with Dharm’s Lord, or Lagn Lord",
+              "claim": "并与九宫主（Dharm's Lord）或上升主（Lagn Lord）同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will become a king",
+              "claim": "命主会成为国王"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v38",
+            "quote": "If Putr’s Lord is in Lagna, Bandhu, or Karm Bhava, yuti with Dharm’s Lord, or Lagn Lord, the native will become a king.",
+            "pdf_pages": [
+              84
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘五宫主（Putr's Lord）是哪颗行星、本盘九宫主（Dharm's Lord）是哪颗行星、本盘上升主（Lagn's Lord）是哪颗行星。",
+        "stop_fact_keys": [
+          "本盘五宫主（Putr's Lord）是哪颗行星",
+          "本盘九宫主（Dharm's Lord）是哪颗行星",
+          "本盘上升主（Lagn's Lord）是哪颗行星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文只写上升宫、四宫、十宫三处，不得把别的宫位也算进来。",
+          "原文写的是同宫（yuti），不得把相照也算作成立条件。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "3770ecff9723119d87c15011c30b0d0deb00faad54485278a7a6f9864165e611"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v39-guru-own-rasi-in-dharm.step-001",
+      "method": {
+        "method": "ch39-v39-guru-own-rasi-in-dharm",
+        "title": "木星居与九宫重合的本星座并与金星或五宫主同宫：获得王者地位",
+        "target_house": 9,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "木星在九宫有多好",
+          "我有没有靠福德得位的组合"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Guru be in his own Rashiidentical with Dharm Bhava and yuti with either Shukr, or Putr’s Lord, the native will obtain royal status",
+            "木星在九宫本星座 与金星同宫 王者地位"
+          ],
+          "counter_queries": [
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas",
+            "Should Putr’s and Dharm’s Lords be, respectively, found in Ari and Vyaya Bhava and receive a Drishti from Marak Grahas, the native will be penniless"
+          ],
+          "boundary_queries": [
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "Putr and Dharm Bhava are known by the name Kon (or trine)"
+          ],
+          "method_queries": [
+            "Should Guru be in Putr Bhava identical with his own Rāśi, as Budh is in Labh Bhava, the native will be very affluent",
+            "If the Lord of a Kendr establishes a relationship with the Lord of a Kon, a Raj Yog is obtained"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v39-guru-own-rasi-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should Guru be in his own Rashiidentical with Dharm Bhava"
+            },
+            {
+              "step_id": "ch39-v39-guru-own-rasi-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "yuti with either Shukr, or Putr’s Lord"
+            },
+            {
+              "step_id": "ch39-v39-guru-own-rasi-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will obtain royal status"
+            },
+            {
+              "step_id": "ch39-v39-guru-own-rasi-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should Guru be in his own Rashiidentical with Dharm Bhava the native will obtain royal status"
+            },
+            {
+              "step_id": "ch39-v39-guru-own-rasi-in-dharm.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "yuti with either Shukr, or Putr’s Lord the native will obtain royal status"
+            },
+            {
+              "step_id": "ch39-v39-guru-own-rasi-in-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Should jupiter be in his own Rashiidentical with 9th house"
+            },
+            {
+              "step_id": "ch39-v39-guru-own-rasi-in-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "yuti with either venus, or 5th lord"
+            },
+            {
+              "step_id": "ch39-v39-guru-own-rasi-in-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Should jupiter be in his own Rashiidentical with 9th house the native will obtain royal status"
+            },
+            {
+              "step_id": "ch39-v39-guru-own-rasi-in-dharm.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "yuti with either venus, or 5th lord the native will obtain royal status"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少木星落九宫或落本星座的事实时停止。",
+          "与金星、与五宫主两项同宫事实全部缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v39-guru-own-rasi-in-dharm.step-001",
+        "action": "核对木星（Guru）是否落在与九宫重合的、自己主管的星座里，再核对它是否与金星或五宫主同宫。",
+        "applicability_scope": "仅限本命盘；原文没有时间限定。",
+        "minimum_supported_claim": "木星（Guru）落在与九宫（Dharm Bhava）重合的自己主管的星座（own Rashi），并与金星（Shukr）或五宫主（Putr's Lord）同宫时，命主会获得王者地位。",
+        "produced_fact_keys": [
+          "木星居九宫本星座的王者地位判定"
+        ],
+        "required_fact_keys": [
+          "本盘五宫主（Putr's Lord）是哪颗行星",
+          "木星（Guru）是否落九宫（Dharm）",
+          "木星（Guru）是否落自己主管的星座（own Rāśi）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "木星（Guru）是否落九宫（Dharm）"
+                },
+                {
+                  "fact_key": "木星（Guru）是否落自己主管的星座（own Rāśi）"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "木星（Guru）是否与金星（Shukra）同宫"
+                },
+                {
+                  "fact_key": "木星（Guru）是否与五宫主（Putr's Lord）同宫"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "木星（Guru）是否落九宫（Dharm）"
+                },
+                {
+                  "fact_key": "木星（Guru）是否落自己主管的星座（own Rāśi）"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "木星（Guru）是否与金星（Shukra）同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "木星（Guru）是否与金星（Shukra）同宫"
+            },
+            "selection_group": "ch39-v39-guru-own-rasi-in-dharm.step-001:yuti-with",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：木星（Guru）是否与金星（Shukra）同宫。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘五宫主（Putr's Lord）是哪颗行星"
+                },
+                {
+                  "fact_key": "木星（Guru）是否落九宫（Dharm）"
+                },
+                {
+                  "fact_key": "木星（Guru）是否落自己主管的星座（own Rāśi）"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "木星（Guru）是否与五宫主（Putr's Lord）同宫"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "木星（Guru）是否与五宫主（Putr's Lord）同宫"
+            },
+            "selection_group": "ch39-v39-guru-own-rasi-in-dharm.step-001:yuti-with",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：木星（Guru）是否与五宫主（Putr's Lord）同宫。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Guru be in his own Rashiidentical with Dharm Bhava",
+              "claim": "木星（Guru）落在与九宫（Dharm Bhava）重合的自己主管的星座（own Rashi）"
+            },
+            {
+              "quote": "yuti with either Shukr, or Putr’s Lord",
+              "claim": "与金星（Shukr）或五宫主（Putr's Lord）同宫"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will obtain royal status",
+              "claim": "命主会获得王者地位"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v39",
+            "quote": "Should Guru be in his own Rashiidentical with Dharm Bhava and yuti with either Shukr, or Putr’s Lord, the native will obtain royal status.",
+            "pdf_pages": [
+              84
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘五宫主（Putr's Lord）是哪颗行星、木星（Guru）是否落九宫（Dharm）、木星（Guru）是否落自己主管的星座（own Rāśi）。",
+        "stop_fact_keys": [
+          "本盘五宫主（Putr's Lord）是哪颗行星",
+          "木星（Guru）是否落九宫（Dharm）",
+          "木星（Guru）是否落自己主管的星座（own Rāśi）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "own Rāśi 是木星自己主管的星座，不得读成落本宫；原文还要求这个星座与九宫重合。",
+          "不得据此推断得位时间或权位大小。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "1168d399c4888d6223ead077f780693dce4329f32277d8a01be7ba7e37b5d6cb"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v40-auspicious-birth-time.step-001",
+      "method": {
+        "method": "ch39-v40-auspicious-birth-time",
+        "title": "生于正午或午夜起的两个半 Ghati 吉时：成为国王或与国王相当",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我出生的时辰好不好",
+          "正午前后出生有什么讲究"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Two and a half Ghatis from mid-day, or from mid-night is auspicious time. A birth during such an auspicious time will cause one to be a king, or equal to him",
+            "正午午夜起两个半 Ghati 吉时 国王"
+          ],
+          "counter_queries": [
+            "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "This Lagn changes along with every Ghati (24 minutes) from the sunrise",
+            "I explain below again some special Lagnas, viz. Bhava Lagna, Hora Lagn and Ghati Lagn"
+          ],
+          "method_queries": [
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn",
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v40-auspicious-birth-time.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Two and a half Ghatis from mid-day, or from mid-night is auspicious time"
+            },
+            {
+              "step_id": "ch39-v40-auspicious-birth-time.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "A birth during such an auspicious time"
+            },
+            {
+              "step_id": "ch39-v40-auspicious-birth-time.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will cause one to be a king, or equal to him"
+            },
+            {
+              "step_id": "ch39-v40-auspicious-birth-time.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Two and a half Ghatis from mid-day, or from mid-night is auspicious time will cause one to be a king, or equal to him"
+            },
+            {
+              "step_id": "ch39-v40-auspicious-birth-time.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "A birth during such an auspicious time will cause one to be a king, or equal to him"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少出生时刻事实时停止。",
+          "正午与午夜两个时段的判定事实全部缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v40-auspicious-birth-time.step-001",
+        "action": "取出生时刻，核对它是否落在正午起或午夜起的两个半 Ghati 之内。",
+        "applicability_scope": "仅限本命盘出生时刻的判断；原文没有给出这段吉时的起讫换算细节。",
+        "minimum_supported_claim": "从正午起，或从午夜起的两个半 Ghati（Two and a half Ghatis）是吉时；生在这样的吉时会使人成为国王，或与国王相当。",
+        "produced_fact_keys": [
+          "出生吉时的贵格判定"
+        ],
+        "required_fact_keys": [
+          "本盘的出生时刻是什么时间"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘的出生时刻是什么时间"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "出生时刻是否落在正午（mid-day）起的两个半 Ghati 之内"
+                },
+                {
+                  "fact_key": "出生时刻是否落在午夜（mid-night）起的两个半 Ghati 之内"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘的出生时刻是什么时间"
+            },
+            "required_fact_keys": [
+              "出生时刻是否落在正午（mid-day）起的两个半 Ghati 之内"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "出生时刻是否落在正午（mid-day）起的两个半 Ghati 之内"
+            },
+            "selection_group": "ch39-v40-auspicious-birth-time.step-001:which-window",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：出生时刻是否落在正午（mid-day）起的两个半 Ghati 之内。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘的出生时刻是什么时间"
+            },
+            "required_fact_keys": [
+              "出生时刻是否落在午夜（mid-night）起的两个半 Ghati 之内"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "出生时刻是否落在午夜（mid-night）起的两个半 Ghati 之内"
+            },
+            "selection_group": "ch39-v40-auspicious-birth-time.step-001:which-window",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：出生时刻是否落在午夜（mid-night）起的两个半 Ghati 之内。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Two and a half Ghatis from mid-day, or from mid-night is auspicious time",
+              "claim": "从正午起，或从午夜起的两个半 Ghati（Two and a half Ghatis）是吉时"
+            },
+            {
+              "quote": "A birth during such an auspicious time",
+              "claim": "生在这样的吉时"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will cause one to be a king, or equal to him",
+              "claim": "会使人成为国王，或与国王相当"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v40",
+            "quote": "Two and a half Ghatis from mid-day, or from mid-night is auspicious time. A birth during such an auspicious time will cause one to be a king, or equal to him.",
+            "pdf_pages": [
+              84
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘的出生时刻是什么时间。",
+        "stop_fact_keys": [
+          "本盘的出生时刻是什么时间"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文只写正午与午夜两个起点，不得把日出、日落等别的时点也算进来。",
+          "不得把两个半 Ghati 换算成原文没有给出的别的时长单位结论。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "5ff4daa41d160d23428604bf5d60bbc43aae1f8d09e1abd1bd4f7d7afd117656"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v41-chandra-shukra-sahaj-labh-mutual-drishti.step-001",
+      "method": {
+        "method": "ch39-v41-chandra-shukra-sahaj-labh-mutual-drishti",
+        "title": "月亮与金星互处三宫十一宫并互照：贵格成立",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "月亮金星隔着三宫十一宫说明什么",
+          "我有没有贵格"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Chandra and Shukra be mutually in Sahaj and Labh Bhava and receiving Drishtis from each other, while they are placed elsewhere, a Raj Yog is obtained",
+            "月亮金星互处三宫十一宫 互相相照 贵格"
+          ],
+          "counter_queries": [
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "Sahaj, Ari, Karm and Labh Bhava are Upachaya Bhavas",
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics"
+          ],
+          "method_queries": [
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn",
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v41-chandra-shukra-sahaj-labh-mutual-drishti.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should Chandra and Shukra be mutually in Sahaj and Labh Bhava"
+            },
+            {
+              "step_id": "ch39-v41-chandra-shukra-sahaj-labh-mutual-drishti.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "receiving Drishtis from each other"
+            },
+            {
+              "step_id": "ch39-v41-chandra-shukra-sahaj-labh-mutual-drishti.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "a Raj Yog is obtained"
+            },
+            {
+              "step_id": "ch39-v41-chandra-shukra-sahaj-labh-mutual-drishti.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should Chandra and Shukra be mutually in Sahaj and Labh Bhava a Raj Yog is obtained"
+            },
+            {
+              "step_id": "ch39-v41-chandra-shukra-sahaj-labh-mutual-drishti.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "receiving Drishtis from each other a Raj Yog is obtained"
+            },
+            {
+              "step_id": "ch39-v41-chandra-shukra-sahaj-labh-mutual-drishti.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Should moon and venus be mutually in 3rd house and 11th house"
+            },
+            {
+              "step_id": "ch39-v41-chandra-shukra-sahaj-labh-mutual-drishti.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Should moon and venus be mutually in 3rd house and 11th house a Raj Yog is obtained"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少月亮与金星互处三宫十一宫的事实时停止。",
+          "缺少两者互照的事实时停止。",
+          "原文的 while they are placed elsewhere 所指未定，若需据此细分情形则停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v41-chandra-shukra-sahaj-labh-mutual-drishti.step-001",
+        "action": "核对月亮（Chandra）与金星（Shukra）是否互处三宫与十一宫，并互相相照。",
+        "applicability_scope": "仅限本命盘 Raj Yog 的成立判定；原文另有 while they are placed elsewhere 一语，未界定所指，本方法不据此细分情形；原文没有时间限定。",
+        "minimum_supported_claim": "月亮（Chandra）与金星（Shukra）互处三宫与十一宫（Sahaj and Labh Bhava）并互相相照时，Raj Yog 成立。",
+        "produced_fact_keys": [
+          "月亮金星互处三宫十一宫的贵格判定"
+        ],
+        "required_fact_keys": [
+          "月亮（Chandra）与金星（Shukra）是否互处三宫与十一宫（Sahaj、Labh）",
+          "月亮（Chandra）与金星（Shukra）是否互相相照"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "月亮（Chandra）与金星（Shukra）是否互处三宫与十一宫（Sahaj、Labh）"
+            },
+            {
+              "fact_key": "月亮（Chandra）与金星（Shukra）是否互相相照"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Chandra and Shukra be mutually in Sahaj and Labh Bhava",
+              "claim": "月亮（Chandra）与金星（Shukra）互处三宫与十一宫（Sahaj and Labh Bhava）"
+            },
+            {
+              "quote": "receiving Drishtis from each other",
+              "claim": "并互相相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "a Raj Yog is obtained",
+              "claim": "Raj Yog 成立"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v41",
+            "quote": "Should Chandra and Shukra be mutually in Sahaj and Labh Bhava and receiving Drishtis from each other, while they are placed elsewhere, a Raj Yog is obtained.",
+            "pdf_pages": [
+              84
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：月亮（Chandra）与金星（Shukra）是否互处三宫与十一宫（Sahaj、Labh）、月亮（Chandra）与金星（Shukra）是否互相相照。",
+        "stop_fact_keys": [
+          "月亮（Chandra）与金星（Shukra）是否互处三宫与十一宫（Sahaj、Labh）",
+          "月亮（Chandra）与金星（Shukra）是否互相相照"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得替原文界定 while they are placed elsewhere 的所指。",
+          "不得据此推断收益、婚姻或应期。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "36cd60a940b07dd470bc45dcc3a8f8fae676f36b00eafb8d03e784efc36b143a"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v42-chandra-vargottamsa-four-drishtis.step-001",
+      "method": {
+        "method": "ch39-v42-chandra-vargottamsa-four-drishtis",
+        "title": "月亮有力且为 Vargottāńś 并受四颗以上行星相照：成为国王",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "月亮受很多行星相照说明什么",
+          "我有没有登顶的组合"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Should Chandra, endowed with strength, be Vargottāńś and receives a Drishti from four, or more Grahas, the native will become a king",
+            "月亮有力 Vargottāńś 四颗行星相照 国王"
+          ],
+          "counter_queries": [
+            "One born in Kema Drum Yog will be very much reproached, will be bereft of intelligence, learning, reduced to penury and perils",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)",
+            "This happens, when Lagn in the RashiKundali and the Navāńś Lagn are in the same Rāśi",
+            "In the Dasha Varg scheme the designations commence from Parijata etc., such as 2 good Vargas - Parijatha, 3 Uttama, 4 Gopur, 5 Simhasan"
+          ],
+          "method_queries": [
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn",
+            "The 2<sup>nd</sup> , 3<sup>rd</sup> etc. up to 12<sup>th</sup> from Chandra and Surya will deal with the same subject, as they do, when reckoned from Lagn"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v42-chandra-vargottamsa-four-drishtis.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Should Chandra, endowed with strength, be Vargottāńś"
+            },
+            {
+              "step_id": "ch39-v42-chandra-vargottamsa-four-drishtis.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "receives a Drishti from four, or more Grahas"
+            },
+            {
+              "step_id": "ch39-v42-chandra-vargottamsa-four-drishtis.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will become a king"
+            },
+            {
+              "step_id": "ch39-v42-chandra-vargottamsa-four-drishtis.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Should Chandra, endowed with strength, be Vargottāńś the native will become a king"
+            },
+            {
+              "step_id": "ch39-v42-chandra-vargottamsa-four-drishtis.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "receives a Drishti from four, or more Grahas the native will become a king"
+            },
+            {
+              "step_id": "ch39-v42-chandra-vargottamsa-four-drishtis.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Should moon, endowed with strength, be Vargottāńś"
+            },
+            {
+              "step_id": "ch39-v42-chandra-vargottamsa-four-drishtis.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Should moon, endowed with strength, be Vargottāńś the native will become a king"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "原文未给出月亮有力的判准，力量未确定即停判。",
+          "缺少月亮 Vargottāńś 事实时停止。",
+          "缺少相照月亮的行星计数事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v42-chandra-vargottamsa-four-drishtis.step-001",
+        "action": "核对月亮（Chandra）是否有力、是否为 Vargottāńś，并数相照它的行星是否不少于四颗。",
+        "applicability_scope": "仅限本命盘；原文说月亮须 endowed with strength，但未给出力量的判准；原文没有时间限定。",
+        "minimum_supported_claim": "月亮（Chandra）有力、为 Vargottāńś，并受四颗或更多行星相照时，命主会成为国王。",
+        "produced_fact_keys": [
+          "月亮 Vargottāńś 受多照的贵格判定"
+        ],
+        "required_fact_keys": [
+          "相照月亮（Chandra）的行星有几颗",
+          "月亮（Chandra）是否有力（endowed with strength）",
+          "月亮（Chandra）是否为 Vargottāńś",
+          "相照月亮（Chandra）的行星是否不少于四颗"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "相照月亮（Chandra）的行星有几颗"
+            },
+            {
+              "fact_key": "月亮（Chandra）是否有力（endowed with strength）"
+            },
+            {
+              "fact_key": "月亮（Chandra）是否为 Vargottāńś"
+            },
+            {
+              "fact_key": "相照月亮（Chandra）的行星是否不少于四颗"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Should Chandra, endowed with strength, be Vargottāńś",
+              "claim": "月亮（Chandra）有力、为 Vargottāńś"
+            },
+            {
+              "quote": "receives a Drishti from four, or more Grahas",
+              "claim": "受四颗或更多行星相照"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will become a king",
+              "claim": "命主会成为国王"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v42",
+            "quote": "Should Chandra, endowed with strength, be Vargottāńś and receives a Drishti from four, or more Grahas, the native will become a king.",
+            "pdf_pages": [
+              84
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：相照月亮（Chandra）的行星有几颗、月亮（Chandra）是否有力（endowed with strength）、月亮（Chandra）是否为 Vargottāńś、相照月亮（Chandra）的行星是否不少于四颗。",
+        "stop_fact_keys": [
+          "相照月亮（Chandra）的行星有几颗",
+          "月亮（Chandra）是否有力（endowed with strength）",
+          "月亮（Chandra）是否为 Vargottāńś",
+          "相照月亮（Chandra）的行星是否不少于四颗"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文未给出 endowed with strength 的判准，不得自行指定力量门槛。",
+          "原文没有限定相照的行星是吉是凶，不得自行加上吉星限定。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "521e0bd38d9d9c914ebfba9dcd98426fc1df20911a36f82cd6e378d3e3325cac"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v43-lagn-uttamansa-four-drishtis.step-001",
+      "method": {
+        "method": "ch39-v43-lagn-uttamansa-four-drishtis",
+        "title": "上升落 Uttamāńś 并受四颗以上行星（不含月亮）相照：成为国王",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "上升受多颗行星相照好不好",
+          "为什么月亮相照要排除"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "One will become a king, if Lagn in Uttamāńś receives a Drishti from four, or more Grahas, out of which Chandra should not be one",
+            "上升 Uttamāńś 四颗行星相照 不含月亮 国王"
+          ],
+          "counter_queries": [
+            "One born in Kema Drum Yog will be very much reproached, will be bereft of intelligence, learning, reduced to penury and perils",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "In the Dasha Varg scheme the designations commence from Parijata etc., such as 2 good Vargas - Parijatha, 3 Uttama, 4 Gopur, 5 Simhasan",
+            "This happens, when Lagn in the RashiKundali and the Navāńś Lagn are in the same Rāśi",
+            "Shad Bal consists of the following: Sthan Bal (positional), Dig Bal (directional), Kaal Bal (Temporal)"
+          ],
+          "method_queries": [
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn",
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v43-lagn-uttamansa-four-drishtis.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "if Lagn in Uttamāńś receives a Drishti from four, or more Grahas"
+            },
+            {
+              "step_id": "ch39-v43-lagn-uttamansa-four-drishtis.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "out of which Chandra should not be one"
+            },
+            {
+              "step_id": "ch39-v43-lagn-uttamansa-four-drishtis.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "One will become a king"
+            },
+            {
+              "step_id": "ch39-v43-lagn-uttamansa-four-drishtis.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "if Lagn in Uttamāńś receives a Drishti from four, or more Grahas One will become a king"
+            },
+            {
+              "step_id": "ch39-v43-lagn-uttamansa-four-drishtis.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "out of which Chandra should not be one One will become a king"
+            },
+            {
+              "step_id": "ch39-v43-lagn-uttamansa-four-drishtis.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "if 1st house in Uttamāńś receives a Drishti from four, or more Grahas"
+            },
+            {
+              "step_id": "ch39-v43-lagn-uttamansa-four-drishtis.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "out of which moon should not be one"
+            },
+            {
+              "step_id": "ch39-v43-lagn-uttamansa-four-drishtis.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "if 1st house in Uttamāńś receives a Drishti from four, or more Grahas One will become a king"
+            },
+            {
+              "step_id": "ch39-v43-lagn-uttamansa-four-drishtis.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "out of which moon should not be one One will become a king"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少上升 Uttamāńś 事实时停止。",
+          "缺少相照上升的行星计数事实时停止。",
+          "缺少月亮是否相照上升的事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v43-lagn-uttamansa-four-drishtis.step-001",
+        "action": "核对上升（Lagn）是否落 Uttamāńś，数相照上升的行星是否不少于四颗，并确认其中不含月亮（Chandra）。",
+        "applicability_scope": "仅限本命盘；原文没有时间限定。",
+        "minimum_supported_claim": "上升（Lagn）落 Uttamāńś，并受四颗或更多行星相照、其中不包括月亮（Chandra）时，命主会成为国王。",
+        "produced_fact_keys": [
+          "上升 Uttamāńś 受多照的贵格判定"
+        ],
+        "required_fact_keys": [
+          "相照上升宫（Lagna）的行星有几颗",
+          "上升（Lagna）是否落 Uttamāńś",
+          "相照上升宫（Lagna）的行星是否不少于四颗",
+          "月亮（Chandra）是否相照上升宫（Lagna）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "相照上升宫（Lagna）的行星有几颗"
+            },
+            {
+              "fact_key": "上升（Lagna）是否落 Uttamāńś"
+            },
+            {
+              "fact_key": "相照上升宫（Lagna）的行星是否不少于四颗"
+            },
+            {
+              "operator": "NOT",
+              "operands": [
+                {
+                  "fact_key": "月亮（Chandra）是否相照上升宫（Lagna）"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "if Lagn in Uttamāńś receives a Drishti from four, or more Grahas",
+              "claim": "上升（Lagn）落 Uttamāńś，并受四颗或更多行星相照"
+            },
+            {
+              "quote": "out of which Chandra should not be one",
+              "claim": "其中不包括月亮（Chandra）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "One will become a king",
+              "claim": "命主会成为国王"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v43",
+            "quote": "One will become a king, if Lagn in Uttamāńś receives a Drishti from four, or more Grahas, out of which Chandra should not be one.",
+            "pdf_pages": [
+              84
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：相照上升宫（Lagna）的行星有几颗、上升（Lagna）是否落 Uttamāńś、相照上升宫（Lagna）的行星是否不少于四颗、月亮（Chandra）是否相照上升宫（Lagna）。",
+        "stop_fact_keys": [
+          "相照上升宫（Lagna）的行星有几颗",
+          "上升（Lagna）是否落 Uttamāńś",
+          "相照上升宫（Lagna）的行星是否不少于四颗",
+          "月亮（Chandra）是否相照上升宫（Lagna）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文明确把月亮排除在这四颗之外，不得把月亮算进相照行星。",
+          "原文没有限定相照的行星是吉是凶，不得自行加上吉星限定。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "5f41ac6846f31b6dacc90aef33a6abb9e943e496c1267dbaff0990bbeed2b7c1"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v44-one-two-or-three-exalted.step-001",
+      "method": {
+        "method": "ch39-v44-one-two-or-three-exalted",
+        "title": "一至三颗行星入旺：王族出身者成为国王，另一人与国王相当或富有",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "盘里有几颗入旺的行星才算好",
+          "入旺行星不多还有希望吗"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If one, or two, or three Grahas are in exaltation, one of a royal scion will become a king, while another will be equal to a king, or be wealthy",
+            "一颗两颗三颗行星入旺 王族出身 国王"
+          ],
+          "counter_queries": [
+            "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "In Simh the first 20 degrees are Surya’s Mooltrikon, while the rest is his own Bhava"
+          ],
+          "method_queries": [
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn",
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v44-one-two-or-three-exalted.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If one, or two, or three Grahas are in exaltation"
+            },
+            {
+              "step_id": "ch39-v44-one-two-or-three-exalted.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "one of a royal scion will become a king, while another will be equal to a king, or be wealthy"
+            },
+            {
+              "step_id": "ch39-v44-one-two-or-three-exalted.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If one, or two, or three Grahas are in exaltation one of a royal scion will become a king, while another will be equal to a king, or be wealthy"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘入旺行星计数事实时停止。",
+          "命主是否为王族出身未确定时，国王一档断语停判。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v44-one-two-or-three-exalted.step-001",
+        "action": "数本盘入旺的行星有几颗，再核对是一颗、两颗还是三颗。",
+        "applicability_scope": "仅限本命盘；原文把结果分给两个人（one of a royal scion 与 another），既未说明哪一档入旺颗数对应哪一种结果，也未界定 another 指谁；原文没有时间限定。",
+        "minimum_supported_claim": "有一颗、两颗或三颗行星入旺时，王族出身者会成为国王，另一人则与国王相当，或者富有。",
+        "produced_fact_keys": [
+          "一至三颗行星入旺的身份判定"
+        ],
+        "required_fact_keys": [
+          "本盘入旺的行星有几颗"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘入旺的行星有几颗"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "本盘入旺的行星是否恰有一颗"
+                },
+                {
+                  "fact_key": "本盘入旺的行星是否恰有两颗"
+                },
+                {
+                  "fact_key": "本盘入旺的行星是否恰有三颗"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘入旺的行星有几颗"
+            },
+            "required_fact_keys": [
+              "本盘入旺的行星是否恰有一颗"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "本盘入旺的行星是否恰有一颗"
+            },
+            "selection_group": "ch39-v44-one-two-or-three-exalted.step-001:how-many-exalted",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：本盘入旺的行星是否恰有一颗。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘入旺的行星有几颗"
+            },
+            "required_fact_keys": [
+              "本盘入旺的行星是否恰有两颗"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "本盘入旺的行星是否恰有两颗"
+            },
+            "selection_group": "ch39-v44-one-two-or-three-exalted.step-001:how-many-exalted",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：本盘入旺的行星是否恰有两颗。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘入旺的行星有几颗"
+            },
+            "required_fact_keys": [
+              "本盘入旺的行星是否恰有三颗"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "本盘入旺的行星是否恰有三颗"
+            },
+            "selection_group": "ch39-v44-one-two-or-three-exalted.step-001:how-many-exalted",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：本盘入旺的行星是否恰有三颗。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If one, or two, or three Grahas are in exaltation",
+              "claim": "有一颗、两颗或三颗行星入旺"
+            }
+          ],
+          "results": [
+            {
+              "quote": "one of a royal scion will become a king, while another will be equal to a king, or be wealthy",
+              "claim": "王族出身者会成为国王，另一人则与国王相当，或者富有"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v44",
+            "quote": "If one, or two, or three Grahas are in exaltation, one of a royal scion will become a king, while another will be equal to a king, or be wealthy.",
+            "pdf_pages": [
+              84
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘入旺的行星有几颗。",
+        "stop_fact_keys": [
+          "本盘入旺的行星有几颗"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得替原文指定 another 的所指，也不得把入旺颗数与两种结果一一对应。",
+          "不得去掉 royal scion（王族出身）这一限定。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "ab8243dd806b0ea03154ea9f9267bff3f8e87a58781afa4fa6755577758246c4"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v45-four-or-five-exalted-or-mooltrikon.step-001",
+      "method": {
+        "method": "ch39-v45-four-or-five-exalted-or-mooltrikon",
+        "title": "四或五颗行星居入旺星座或 Mooltrikon 星座：出身低微也成为国王",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "出身普通还能不能大富大贵",
+          "Mooltrikon 和入旺一样有力吗"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If four, or five Grahas occupy their exaltation Rāśis, or Mooltrikon Rāśis, even a person of base birth will become king",
+            "四颗五颗行星入旺或根本三角 出身低微成王"
+          ],
+          "counter_queries": [
+            "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "In Simh the first 20 degrees are Surya’s Mooltrikon, while the rest is his own Bhava"
+          ],
+          "method_queries": [
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn",
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v45-four-or-five-exalted-or-mooltrikon.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If four, or five Grahas occupy their exaltation Rāśis"
+            },
+            {
+              "step_id": "ch39-v45-four-or-five-exalted-or-mooltrikon.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or Mooltrikon Rāśis"
+            },
+            {
+              "step_id": "ch39-v45-four-or-five-exalted-or-mooltrikon.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "even a person of base birth will become king"
+            },
+            {
+              "step_id": "ch39-v45-four-or-five-exalted-or-mooltrikon.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If four, or five Grahas occupy their exaltation Rāśis even a person of base birth will become king"
+            },
+            {
+              "step_id": "ch39-v45-four-or-five-exalted-or-mooltrikon.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or Mooltrikon Rāśis even a person of base birth will become king"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少入旺或 Mooltrikon 行星计数事实时停止。",
+          "四条分支的计数判定事实全部缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v45-four-or-five-exalted-or-mooltrikon.step-001",
+        "action": "分别数落自己入旺星座与落自己 Mooltrikon 星座的行星颗数，核对是否达到四颗或五颗。",
+        "applicability_scope": "仅限本命盘；原文没有时间限定。",
+        "minimum_supported_claim": "有四颗或五颗行星落自己的入旺星座（exaltation Rāśis），或落自己的 Mooltrikon 星座时，即使出身低微者也会成为国王。",
+        "produced_fact_keys": [
+          "四五颗行星得地的成王判定"
+        ],
+        "required_fact_keys": [
+          "本盘落自己入旺星座（exaltation Rāśi）的行星有几颗",
+          "本盘落自己 Mooltrikon 星座的行星有几颗"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘落自己入旺星座（exaltation Rāśi）的行星有几颗"
+                },
+                {
+                  "fact_key": "本盘落自己 Mooltrikon 星座的行星有几颗"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "本盘落自己入旺星座（exaltation Rāśi）的行星是否有四颗"
+                },
+                {
+                  "fact_key": "本盘落自己入旺星座（exaltation Rāśi）的行星是否有五颗"
+                },
+                {
+                  "fact_key": "本盘落自己 Mooltrikon 星座的行星是否有四颗"
+                },
+                {
+                  "fact_key": "本盘落自己 Mooltrikon 星座的行星是否有五颗"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘落自己入旺星座（exaltation Rāśi）的行星有几颗"
+                },
+                {
+                  "fact_key": "本盘落自己 Mooltrikon 星座的行星有几颗"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "本盘落自己入旺星座（exaltation Rāśi）的行星是否有四颗"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "本盘落自己入旺星座（exaltation Rāśi）的行星是否有四颗"
+            },
+            "selection_group": "ch39-v45-four-or-five-exalted-or-mooltrikon.step-001:dignity-and-count",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：本盘落自己入旺星座（exaltation Rāśi）的行星是否有四颗。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘落自己入旺星座（exaltation Rāśi）的行星有几颗"
+                },
+                {
+                  "fact_key": "本盘落自己 Mooltrikon 星座的行星有几颗"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "本盘落自己入旺星座（exaltation Rāśi）的行星是否有五颗"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "本盘落自己入旺星座（exaltation Rāśi）的行星是否有五颗"
+            },
+            "selection_group": "ch39-v45-four-or-five-exalted-or-mooltrikon.step-001:dignity-and-count",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：本盘落自己入旺星座（exaltation Rāśi）的行星是否有五颗。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘落自己入旺星座（exaltation Rāśi）的行星有几颗"
+                },
+                {
+                  "fact_key": "本盘落自己 Mooltrikon 星座的行星有几颗"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "本盘落自己 Mooltrikon 星座的行星是否有四颗"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "本盘落自己 Mooltrikon 星座的行星是否有四颗"
+            },
+            "selection_group": "ch39-v45-four-or-five-exalted-or-mooltrikon.step-001:dignity-and-count",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：本盘落自己 Mooltrikon 星座的行星是否有四颗。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘落自己入旺星座（exaltation Rāśi）的行星有几颗"
+                },
+                {
+                  "fact_key": "本盘落自己 Mooltrikon 星座的行星有几颗"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "本盘落自己 Mooltrikon 星座的行星是否有五颗"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "本盘落自己 Mooltrikon 星座的行星是否有五颗"
+            },
+            "selection_group": "ch39-v45-four-or-five-exalted-or-mooltrikon.step-001:dignity-and-count",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：本盘落自己 Mooltrikon 星座的行星是否有五颗。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If four, or five Grahas occupy their exaltation Rāśis",
+              "claim": "有四颗或五颗行星落自己的入旺星座（exaltation Rāśis）"
+            },
+            {
+              "quote": "or Mooltrikon Rāśis",
+              "claim": "落自己的 Mooltrikon 星座"
+            }
+          ],
+          "results": [
+            {
+              "quote": "even a person of base birth will become king",
+              "claim": "即使出身低微者也会成为国王"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v45",
+            "quote": "If four, or five Grahas occupy their exaltation Rāśis, or Mooltrikon Rāśis, even a person of base birth will become king.",
+            "pdf_pages": [
+              84
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘落自己入旺星座（exaltation Rāśi）的行星有几颗、本盘落自己 Mooltrikon 星座的行星有几颗。",
+        "stop_fact_keys": [
+          "本盘落自己入旺星座（exaltation Rāśi）的行星有几颗",
+          "本盘落自己 Mooltrikon 星座的行星有几颗"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文只写四颗与五颗两档，不得把三颗或六颗也按这一条判。",
+          "入旺与 Mooltrikon 是两种不同的得地状态，不得混为一谈。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "a8d203e3414d9accdb92998fa20ed810119f578fcd28d20b70f43a0797109045"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v46-six-exalted-emperor.step-001",
+      "method": {
+        "method": "ch39-v46-six-exalted-emperor",
+        "title": "六颗行星入旺：成为帝王并享王家仪仗",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "入旺的行星特别多说明什么",
+          "最高一档的贵格是什么样"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If six Grahas are exalted, the native will become emperor and will enjoy various kinds of royal paraphernalia",
+            "六颗行星入旺 帝王 王家仪仗"
+          ],
+          "counter_queries": [
+            "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "In Simh the first 20 degrees are Surya’s Mooltrikon, while the rest is his own Bhava"
+          ],
+          "method_queries": [
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn",
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v46-six-exalted-emperor.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If six Grahas are exalted"
+            },
+            {
+              "step_id": "ch39-v46-six-exalted-emperor.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will become emperor and will enjoy various kinds of royal paraphernalia"
+            },
+            {
+              "step_id": "ch39-v46-six-exalted-emperor.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If six Grahas are exalted the native will become emperor and will enjoy various kinds of royal paraphernalia"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘入旺行星计数事实时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v46-six-exalted-emperor.step-001",
+        "action": "数本盘入旺的行星是否达到六颗。",
+        "applicability_scope": "仅限本命盘；原文没有时间限定。",
+        "minimum_supported_claim": "有六颗行星入旺时，命主会成为帝王，并享有各种王家仪仗。",
+        "produced_fact_keys": [
+          "六颗行星入旺的帝王判定"
+        ],
+        "required_fact_keys": [
+          "本盘入旺的行星有几颗",
+          "本盘入旺的行星是否有六颗"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘入旺的行星有几颗"
+            },
+            {
+              "fact_key": "本盘入旺的行星是否有六颗"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If six Grahas are exalted",
+              "claim": "有六颗行星入旺"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will become emperor and will enjoy various kinds of royal paraphernalia",
+              "claim": "命主会成为帝王，并享有各种王家仪仗"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v46",
+            "quote": "If six Grahas are exalted, the native will become emperor and will enjoy various kinds of royal paraphernalia.",
+            "pdf_pages": [
+              84
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘入旺的行星有几颗、本盘入旺的行星是否有六颗。",
+        "stop_fact_keys": [
+          "本盘入旺的行星有几颗",
+          "本盘入旺的行星是否有六颗"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文这一条只写六颗，不得把四颗、五颗一档的结果搬到这里，也不得反向套用。",
+          "不得据此推断疆域、朝代或应期。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "a88ccbdf698a7f0eca4f75caf848c80eb948ca01f4fbc9451c6bfe5eca85ec92"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v47-guru-shukra-budh-exalted-with-benefic-in-kendr.step-001",
+      "method": {
+        "method": "ch39-v47-guru-shukra-budh-exalted-with-benefic-in-kendr",
+        "title": "木星、金星或水星之一入旺且角宫有吉星：成为国王或与国王相当",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "只有一颗吉星入旺够不够",
+          "角宫里有吉星有多重要"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Even, if one among Guru, Shukra and Budh is in exaltation, while a benefic is in a Kendr, the native will become a king, or be equal to him",
+            "木星金星水星入旺 角宫吉星 国王"
+          ],
+          "counter_queries": [
+            "The native will be penniless, if Lagn’s Lord is in Vyaya Bhava, while Vyaya’s Lord is in Lagn along with the Lord of a Marak",
+            "The divisions of a combust Grah, defeated Grah, weak Grah and a Grah in bad Avasthas, like Sayan, be all ignored to be auspicious, for these destroy the good Yogas"
+          ],
+          "boundary_queries": [
+            "A Grah in exaltation gives fully good effects, while in Mooltrikon it is bereft of its auspicious effects by one fourth",
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics"
+          ],
+          "method_queries": [
+            "If the Lord of a Kendr establishes a relationship with the Lord of a Kon, a Raj Yog is obtained",
+            "Raj Yogas are to be known from the Karakāńś Lagn and the natal Lagn"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v47-guru-shukra-budh-exalted-with-benefic-in-kendr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "Even, if one among Guru, Shukra and Budh is in exaltation"
+            },
+            {
+              "step_id": "ch39-v47-guru-shukra-budh-exalted-with-benefic-in-kendr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while a benefic is in a Kendr"
+            },
+            {
+              "step_id": "ch39-v47-guru-shukra-budh-exalted-with-benefic-in-kendr.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native will become a king, or be equal to him"
+            },
+            {
+              "step_id": "ch39-v47-guru-shukra-budh-exalted-with-benefic-in-kendr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "Even, if one among Guru, Shukra and Budh is in exaltation the native will become a king, or be equal to him"
+            },
+            {
+              "step_id": "ch39-v47-guru-shukra-budh-exalted-with-benefic-in-kendr.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while a benefic is in a Kendr the native will become a king, or be equal to him"
+            },
+            {
+              "step_id": "ch39-v47-guru-shukra-budh-exalted-with-benefic-in-kendr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "Even, if one among jupiter, venus and mercury is in exaltation"
+            },
+            {
+              "step_id": "ch39-v47-guru-shukra-budh-exalted-with-benefic-in-kendr.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "Even, if one among jupiter, venus and mercury is in exaltation the native will become a king, or be equal to him"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少本盘吉星名册事实时停止。",
+          "缺少角宫吉星占据事实时停止。",
+          "三颗行星的入旺事实全部缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v47-guru-shukra-budh-exalted-with-benefic-in-kendr.step-001",
+        "action": "取本盘吉星名册，核对木星、金星、水星之中是否有一颗入旺，同时角宫内是否有吉星。",
+        "applicability_scope": "仅限本命盘；原文本句未给出吉星的判准，也没有时间限定。",
+        "minimum_supported_claim": "木星（Guru）、金星（Shukra）与水星（Budh）之中有一颗入旺，同时角宫（Kendr）内有一颗吉星时，命主会成为国王，或与国王相当。",
+        "produced_fact_keys": [
+          "三吉星之一入旺配角宫吉星的贵格判定"
+        ],
+        "required_fact_keys": [
+          "本盘中哪些行星被判为吉星",
+          "角宫（Kendras）内是否有吉星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘中哪些行星被判为吉星"
+                },
+                {
+                  "fact_key": "角宫（Kendras）内是否有吉星"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "木星（Guru）是否入旺"
+                },
+                {
+                  "fact_key": "金星（Shukra）是否入旺"
+                },
+                {
+                  "fact_key": "水星（Budh）是否入旺"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘中哪些行星被判为吉星"
+                },
+                {
+                  "fact_key": "角宫（Kendras）内是否有吉星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "木星（Guru）是否入旺"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "木星（Guru）是否入旺"
+            },
+            "selection_group": "ch39-v47-guru-shukra-budh-exalted-with-benefic-in-kendr.step-001:which-graha-exalted",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：木星（Guru）是否入旺。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘中哪些行星被判为吉星"
+                },
+                {
+                  "fact_key": "角宫（Kendras）内是否有吉星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "金星（Shukra）是否入旺"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "金星（Shukra）是否入旺"
+            },
+            "selection_group": "ch39-v47-guru-shukra-budh-exalted-with-benefic-in-kendr.step-001:which-graha-exalted",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：金星（Shukra）是否入旺。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘中哪些行星被判为吉星"
+                },
+                {
+                  "fact_key": "角宫（Kendras）内是否有吉星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "水星（Budh）是否入旺"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "水星（Budh）是否入旺"
+            },
+            "selection_group": "ch39-v47-guru-shukra-budh-exalted-with-benefic-in-kendr.step-001:which-graha-exalted",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：水星（Budh）是否入旺。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "Even, if one among Guru, Shukra and Budh is in exaltation",
+              "claim": "木星（Guru）、金星（Shukra）与水星（Budh）之中有一颗入旺"
+            },
+            {
+              "quote": "while a benefic is in a Kendr",
+              "claim": "角宫（Kendr）内有一颗吉星"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native will become a king, or be equal to him",
+              "claim": "命主会成为国王，或与国王相当"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v47",
+            "quote": "Even, if one among Guru, Shukra and Budh is in exaltation, while a benefic is in a Kendr, the native will become a king, or be equal to him.",
+            "pdf_pages": [
+              84
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中哪些行星被判为吉星、角宫（Kendras）内是否有吉星。",
+        "stop_fact_keys": [
+          "本盘中哪些行星被判为吉星",
+          "角宫（Kendras）内是否有吉星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文只列木星、金星、水星三颗，不得把别的行星入旺也算进来。",
+          "不得据此推断登位时间或具体权位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "a2261274e2d8d45a695a72b1e4300b573ca9025dbadcf73be9396bc66e9c4b6b"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch39-v48-all-benefics-in-kendras-malefics-in-sahaj-ari-labh.step-001",
+      "method": {
+        "method": "ch39-v48-all-benefics-in-kendras-malefics-in-sahaj-ari-labh",
+        "title": "吉星全落角宫、凶星居三宫六宫十一宫：出身寒微也登王位",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "吉星凶星各就各位有多大力量",
+          "出身一般能不能翻身"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If all benefics are relegated to Kendras, while malefics are in Sahaj, Ari and Labh Bhava, the native, though may be of mean descent, will ascend the throne",
+            "吉星全落角宫 凶星三宫六宫十一宫 登王位"
+          ],
+          "counter_queries": [
+            "If inauspicious Bhavas are occupied by benefics, while auspicious Bhavas are occupied by malefics, the native will be indigent and will be distressed even in the matter of food",
+            "If Lagn’s Lord along with a malefic is in Ari, Randhr, or Vyaya Bhava, while Dhan’s Lord is in an enemy’s Rāśi, or in debilitation, even a native of royal scion will become penniless"
+          ],
+          "boundary_queries": [
+            "The Kendras are specially known, as Lagn (the ascendent), Bandhu Bhava, Yuvati Bhava (the descendant) and Karm Bhava (mid-heaven)",
+            "Sahaj, Ari, Karm and Labh Bhava are Upachaya Bhavas",
+            "Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu (the ascending and the descending nodes of Chandra) are malefics, while the rest are benefics"
+          ],
+          "method_queries": [
+            "If the Lord of a Kendr establishes a relationship with the Lord of a Kon, a Raj Yog is obtained",
+            "The Yogas, mentioned above (up to Sloka 16) should be delineated after knowing favourable, or unfavourable dispositions of the participant Grahas and their strength and weakness"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch39-v48-all-benefics-in-kendras-malefics-in-sahaj-ari-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If all benefics are relegated to Kendras"
+            },
+            {
+              "step_id": "ch39-v48-all-benefics-in-kendras-malefics-in-sahaj-ari-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "while malefics are in Sahaj, Ari and Labh Bhava"
+            },
+            {
+              "step_id": "ch39-v48-all-benefics-in-kendras-malefics-in-sahaj-ari-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "the native, though may be of mean descent, will ascend the throne"
+            },
+            {
+              "step_id": "ch39-v48-all-benefics-in-kendras-malefics-in-sahaj-ari-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If all benefics are relegated to Kendras the native, though may be of mean descent, will ascend the throne"
+            },
+            {
+              "step_id": "ch39-v48-all-benefics-in-kendras-malefics-in-sahaj-ari-labh.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "while malefics are in Sahaj, Ari and Labh Bhava the native, though may be of mean descent, will ascend the throne"
+            },
+            {
+              "step_id": "ch39-v48-all-benefics-in-kendras-malefics-in-sahaj-ari-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "while malefics are in 3rd house, 6th house and 11th house"
+            },
+            {
+              "step_id": "ch39-v48-all-benefics-in-kendras-malefics-in-sahaj-ari-labh.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "while malefics are in 3rd house, 6th house and 11th house the native, though may be of mean descent, will ascend the throne"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少吉星或凶星名册事实时停止。",
+          "四项占据事实缺任一项时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch39-v48-all-benefics-in-kendras-malefics-in-sahaj-ari-labh.step-001",
+        "action": "取吉星与凶星名册，核对所有吉星是否都落角宫，凶星是否落三宫、六宫与十一宫。",
+        "applicability_scope": "仅限本命盘；原文本句未给出吉凶星的判准，也没有时间限定。",
+        "minimum_supported_claim": "所有吉星都落角宫（Kendras），同时凶星落三宫（Sahaj）、六宫（Ari）与十一宫（Labh Bhava）时，命主即使出身寒微也会登上王位。",
+        "produced_fact_keys": [
+          "吉星全居角宫凶星居三六十一宫的登位判定"
+        ],
+        "required_fact_keys": [
+          "本盘中哪些行星被判为吉星",
+          "本盘中哪些行星被判为凶星",
+          "本盘所有吉星是否都落角宫（Kendras）",
+          "三宫（Sahaj）是否被凶星占据",
+          "六宫（Ari）是否被凶星占据",
+          "十一宫（Labh）是否被凶星占据"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            {
+              "fact_key": "本盘中哪些行星被判为凶星"
+            },
+            {
+              "fact_key": "本盘所有吉星是否都落角宫（Kendras）"
+            },
+            {
+              "fact_key": "三宫（Sahaj）是否被凶星占据"
+            },
+            {
+              "fact_key": "六宫（Ari）是否被凶星占据"
+            },
+            {
+              "fact_key": "十一宫（Labh）是否被凶星占据"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If all benefics are relegated to Kendras",
+              "claim": "所有吉星都落角宫（Kendras）"
+            },
+            {
+              "quote": "while malefics are in Sahaj, Ari and Labh Bhava",
+              "claim": "凶星落三宫（Sahaj）、六宫（Ari）与十一宫（Labh Bhava）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "the native, though may be of mean descent, will ascend the throne",
+              "claim": "命主即使出身寒微也会登上王位"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch39:v48",
+            "quote": "If all benefics are relegated to Kendras, while malefics are in Sahaj, Ari and Labh Bhava, the native, though may be of mean descent, will ascend the throne.",
+            "pdf_pages": [
+              84
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中哪些行星被判为吉星、本盘中哪些行星被判为凶星、本盘所有吉星是否都落角宫（Kendras）、三宫（Sahaj）是否被凶星占据、六宫（Ari）是否被凶星占据、十一宫（Labh）是否被凶星占据。",
+        "stop_fact_keys": [
+          "本盘中哪些行星被判为吉星",
+          "本盘中哪些行星被判为凶星",
+          "本盘所有吉星是否都落角宫（Kendras）",
+          "三宫（Sahaj）是否被凶星占据",
+          "六宫（Ari）是否被凶星占据",
+          "十一宫（Labh）是否被凶星占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文要求所有吉星都落角宫，不得放宽成部分吉星落角宫。",
+          "不得据此推断登位时间或具体权位。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "2f5f623afc68f24b2e7e99eafe563df0fe47afd00bf831569f8629608fc32166"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch39:v37": {
+      "evidence_atom_id": "bphs-97:santhanam:ch39:v37",
+      "chapter_number": 39,
+      "chapter_title": "Raj Yog",
+      "verse_label": "37.",
+      "content_role": "verse",
+      "exact_text": "37. Should the Lord of Bandhu, or of Karm Bhava join either the Putr’s Lord, or Dharm’s Lord, the native will obtain a kingdom.",
+      "pdf_pages": [
+        84
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 39 · Sloka 37 · PDF page 84 · bphs-97:santhanam:ch39:v37",
+      "previous_atom_id": "bphs-97:santhanam:ch39:v36",
+      "next_atom_id": "bphs-97:santhanam:ch39:v38",
+      "context_before": " If the Lords of Putr, Karm, Bandhu and Lagn are yuti in Dharm Bhava, one will become a ruler with fame, spreading over the four directions.\n\n",
+      "context_after": "38. If Putr’s Lord is in Lagna, Bandhu, or Karm Bhava, yuti with Dharm’s Lord, or Lagn Lord, the native will become a king.\n\n39.",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch39:v38": {
+      "evidence_atom_id": "bphs-97:santhanam:ch39:v38",
+      "chapter_number": 39,
+      "chapter_title": "Raj Yog",
+      "verse_label": "38.",
+      "content_role": "verse",
+      "exact_text": "38. If Putr’s Lord is in Lagna, Bandhu, or Karm Bhava, yuti with Dharm’s Lord, or Lagn Lord, the native will become a king.",
+      "pdf_pages": [
+        84
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 39 · Sloka 38 · PDF page 84 · bphs-97:santhanam:ch39:v38",
+      "previous_atom_id": "bphs-97:santhanam:ch39:v37",
+      "next_atom_id": "bphs-97:santhanam:ch39:v39",
+      "context_before": "7. Should the Lord of Bandhu, or of Karm Bhava join either the Putr’s Lord, or Dharm’s Lord, the native will obtain a kingdom.\n\n",
+      "context_after": "39. Should Guru be in his own Rashiidentical with Dharm Bhava and yuti with either Shukr, or Putr’s Lord, the native will obtain",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch39:v39": {
+      "evidence_atom_id": "bphs-97:santhanam:ch39:v39",
+      "chapter_number": 39,
+      "chapter_title": "Raj Yog",
+      "verse_label": "39.",
+      "content_role": "verse",
+      "exact_text": "39. Should Guru be in his own Rashiidentical with Dharm Bhava and yuti with either Shukr, or Putr’s Lord, the native will obtain royal status.",
+      "pdf_pages": [
+        84
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 39 · Sloka 39 · PDF page 84 · bphs-97:santhanam:ch39:v39",
+      "previous_atom_id": "bphs-97:santhanam:ch39:v38",
+      "next_atom_id": "bphs-97:santhanam:ch39:v40",
+      "context_before": ".\n\n38. If Putr’s Lord is in Lagna, Bandhu, or Karm Bhava, yuti with Dharm’s Lord, or Lagn Lord, the native will become a king.\n\n",
+      "context_after": "40. Two and a half Ghatis from mid-day, or from mid-night is auspicious time. A birth during such an auspicious time will cause ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch39:v40": {
+      "evidence_atom_id": "bphs-97:santhanam:ch39:v40",
+      "chapter_number": 39,
+      "chapter_title": "Raj Yog",
+      "verse_label": "40.",
+      "content_role": "verse",
+      "exact_text": "40. Two and a half Ghatis from mid-day, or from mid-night is auspicious time. A birth during such an auspicious time will cause one to be a king, or equal to him.",
+      "pdf_pages": [
+        84
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 39 · Sloka 40 · PDF page 84 · bphs-97:santhanam:ch39:v40",
+      "previous_atom_id": "bphs-97:santhanam:ch39:v39",
+      "next_atom_id": "bphs-97:santhanam:ch39:v41",
+      "context_before": " Should Guru be in his own Rashiidentical with Dharm Bhava and yuti with either Shukr, or Putr’s Lord, the native will obtain royal status.\n\n",
+      "context_after": "41. Should Chandra and Shukra be mutually in Sahaj and Labh Bhava and receiving Drishtis from each other, while they are placed ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch39:v41": {
+      "evidence_atom_id": "bphs-97:santhanam:ch39:v41",
+      "chapter_number": 39,
+      "chapter_title": "Raj Yog",
+      "verse_label": "41.",
+      "content_role": "verse",
+      "exact_text": "41. Should Chandra and Shukra be mutually in Sahaj and Labh Bhava and receiving Drishtis from each other, while they are placed elsewhere, a Raj Yog is obtained.",
+      "pdf_pages": [
+        84
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 39 · Sloka 41 · PDF page 84 · bphs-97:santhanam:ch39:v41",
+      "previous_atom_id": "bphs-97:santhanam:ch39:v40",
+      "next_atom_id": "bphs-97:santhanam:ch39:v42",
+      "context_before": "ay, or from mid-night is auspicious time. A birth during such an auspicious time will cause one to be a king, or equal to him.\n\n",
+      "context_after": "42. Should Chandra, endowed with strength, be Vargottāńś and receives a Drishti from four, or more Grahas, the native will becom",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch39:v42": {
+      "evidence_atom_id": "bphs-97:santhanam:ch39:v42",
+      "chapter_number": 39,
+      "chapter_title": "Raj Yog",
+      "verse_label": "42.",
+      "content_role": "verse",
+      "exact_text": "42. Should Chandra, endowed with strength, be Vargottāńś and receives a Drishti from four, or more Grahas, the native will become a king.",
+      "pdf_pages": [
+        84
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 39 · Sloka 42 · PDF page 84 · bphs-97:santhanam:ch39:v42",
+      "previous_atom_id": "bphs-97:santhanam:ch39:v41",
+      "next_atom_id": "bphs-97:santhanam:ch39:v43",
+      "context_before": " Should Chandra and Shukra be mutually in Sahaj and Labh Bhava and receiving Drishtis from each other, while they are placed elsewhere, a Raj Yog is obtained.\n\n",
+      "context_after": "43. One will become a king, if Lagn in Uttamāńś receives a Drishti from four, or more Grahas, out of which Chandra should not be",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch39:v43": {
+      "evidence_atom_id": "bphs-97:santhanam:ch39:v43",
+      "chapter_number": 39,
+      "chapter_title": "Raj Yog",
+      "verse_label": "43.",
+      "content_role": "verse",
+      "exact_text": "43. One will become a king, if Lagn in Uttamāńś receives a Drishti from four, or more Grahas, out of which Chandra should not be one.",
+      "pdf_pages": [
+        84
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 39 · Sloka 43 · PDF page 84 · bphs-97:santhanam:ch39:v43",
+      "previous_atom_id": "bphs-97:santhanam:ch39:v42",
+      "next_atom_id": "bphs-97:santhanam:ch39:v44",
+      "context_before": " Should Chandra, endowed with strength, be Vargottāńś and receives a Drishti from four, or more Grahas, the native will become a king.\n\n",
+      "context_after": "44. If one, or two, or three Grahas are in exaltation, one of a royal scion will become a king, while another will be equal to a",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch39:v44": {
+      "evidence_atom_id": "bphs-97:santhanam:ch39:v44",
+      "chapter_number": 39,
+      "chapter_title": "Raj Yog",
+      "verse_label": "44.",
+      "content_role": "verse",
+      "exact_text": "44. If one, or two, or three Grahas are in exaltation, one of a royal scion will become a king, while another will be equal to a king, or be wealthy.",
+      "pdf_pages": [
+        84
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 39 · Sloka 44 · PDF page 84 · bphs-97:santhanam:ch39:v44",
+      "previous_atom_id": "bphs-97:santhanam:ch39:v43",
+      "next_atom_id": "bphs-97:santhanam:ch39:v45",
+      "context_before": " One will become a king, if Lagn in Uttamāńś receives a Drishti from four, or more Grahas, out of which Chandra should not be one.\n\n",
+      "context_after": "45. If four, or five Grahas occupy their exaltation Rāśis, or Mooltrikon Rāśis, even a person of base birth will become king.\n\n4",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch39:v45": {
+      "evidence_atom_id": "bphs-97:santhanam:ch39:v45",
+      "chapter_number": 39,
+      "chapter_title": "Raj Yog",
+      "verse_label": "45.",
+      "content_role": "verse",
+      "exact_text": "45. If four, or five Grahas occupy their exaltation Rāśis, or Mooltrikon Rāśis, even a person of base birth will become king.",
+      "pdf_pages": [
+        84
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 39 · Sloka 45 · PDF page 84 · bphs-97:santhanam:ch39:v45",
+      "previous_atom_id": "bphs-97:santhanam:ch39:v44",
+      "next_atom_id": "bphs-97:santhanam:ch39:v46",
+      "context_before": " If one, or two, or three Grahas are in exaltation, one of a royal scion will become a king, while another will be equal to a king, or be wealthy.\n\n",
+      "context_after": "46. If six Grahas are exalted, the native will become emperor and will enjoy various kinds of royal paraphernalia.\n\n47. Even, if",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch39:v46": {
+      "evidence_atom_id": "bphs-97:santhanam:ch39:v46",
+      "chapter_number": 39,
+      "chapter_title": "Raj Yog",
+      "verse_label": "46.",
+      "content_role": "verse",
+      "exact_text": "46. If six Grahas are exalted, the native will become emperor and will enjoy various kinds of royal paraphernalia.",
+      "pdf_pages": [
+        84
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 39 · Sloka 46 · PDF page 84 · bphs-97:santhanam:ch39:v46",
+      "previous_atom_id": "bphs-97:santhanam:ch39:v45",
+      "next_atom_id": "bphs-97:santhanam:ch39:v47",
+      "context_before": "\n45. If four, or five Grahas occupy their exaltation Rāśis, or Mooltrikon Rāśis, even a person of base birth will become king.\n\n",
+      "context_after": "47. Even, if one among Guru, Shukra and Budh is in exaltation, while a benefic is in a Kendr, the native will become a king, or ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch39:v47": {
+      "evidence_atom_id": "bphs-97:santhanam:ch39:v47",
+      "chapter_number": 39,
+      "chapter_title": "Raj Yog",
+      "verse_label": "47.",
+      "content_role": "verse",
+      "exact_text": "47. Even, if one among Guru, Shukra and Budh is in exaltation, while a benefic is in a Kendr, the native will become a king, or be equal to him.",
+      "pdf_pages": [
+        84
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 39 · Sloka 47 · PDF page 84 · bphs-97:santhanam:ch39:v47",
+      "previous_atom_id": "bphs-97:santhanam:ch39:v46",
+      "next_atom_id": "bphs-97:santhanam:ch39:v48",
+      "context_before": "come king.\n\n46. If six Grahas are exalted, the native will become emperor and will enjoy various kinds of royal paraphernalia.\n\n",
+      "context_after": "48. If all benefics are relegated to Kendras, while malefics are in Sahaj, Ari and Labh Bhava, the native, though may be of mean",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch39:v48": {
+      "evidence_atom_id": "bphs-97:santhanam:ch39:v48",
+      "chapter_number": 39,
+      "chapter_title": "Raj Yog",
+      "verse_label": "48.",
+      "content_role": "verse",
+      "exact_text": "48. If all benefics are relegated to Kendras, while malefics are in Sahaj, Ari and Labh Bhava, the native, though may be of mean descent, will ascend the throne.",
+      "pdf_pages": [
+        84
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 39 · Sloka 48 · PDF page 84 · bphs-97:santhanam:ch39:v48",
+      "previous_atom_id": "bphs-97:santhanam:ch39:v47",
+      "next_atom_id": null,
+      "context_before": " Even, if one among Guru, Shukra and Budh is in exaltation, while a benefic is in a Kendr, the native will become a king, or be equal to him.\n\n",
+      "context_after": "",
+      "content_missing": false
+    }
+  }
+}

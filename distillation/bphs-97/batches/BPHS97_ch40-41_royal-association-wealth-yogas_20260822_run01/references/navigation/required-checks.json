@@ -1,0 +1,964 @@
+{
+  "pilot_only": false,
+  "publishable": false,
+  "topics": {
+    "ch40-v1-karm-lord-amatya-karak-court-chief": {
+      "question_type": "王廷之长：十宫主与 Amatya Karak 或其星座主同宫、受其相照",
+      "required_facts": [
+        "本盘十宫主（Karm's Lord）是哪颗行星",
+        "本盘的 Amatya Karak 是哪颗行星"
+      ],
+      "conditional_facts": [
+        "十宫主（Karm's Lord）是否与 Amatya Karak 的星座主（dispositor）同宫",
+        "十宫主（Karm's Lord）是否被 Amatya Karak 的星座主（dispositor）相照",
+        "十宫主（Karm's Lord）是否与 Amatya Karak 同宫",
+        "十宫主（Karm's Lord）是否被 Amatya Karak 相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "十宫主身份事实缺失时停止。",
+        "Amatya Karak 身份事实缺失时停止。",
+        "四种关联事实全部缺失时停止。"
+      ]
+    },
+    "ch40-v2-karm-labh-free-of-malefics-court-chief": {
+      "question_type": "王廷之长：十宫与十一宫无凶星占据相照，十一宫受其宫主相照",
+      "required_facts": [
+        "本盘中哪些行星被判为凶星",
+        "十宫（Karm）是否被凶星占据",
+        "十一宫（Labh）是否被凶星占据",
+        "十宫（Karm）是否被凶星相照",
+        "十一宫（Labh）是否被凶星相照",
+        "十一宫（Labh）是否被十一宫主（Labh's Lord）相照"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "凶星名册未定时停止：须先按 BPHS 自己的吉凶星定义取名册。",
+        "缺少十宫或十一宫的凶星占据、相照事实时停止。",
+        "缺少十一宫是否受其宫主相照的事实时停止。"
+      ]
+    },
+    "ch40-v3-amatya-karak-with-atma-karak-dispositor": {
+      "question_type": "大智并为王之大臣：Amatya Karak 与 Atma Karak 的星座主同宫",
+      "required_facts": [
+        "本盘的 Amatya Karak 是哪颗行星",
+        "本盘的 Atma Karak 是哪颗行星",
+        "Amatya Karak 是否与 Atma Karak 的星座主（dispositor）同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "Amatya Karak 或 Atma Karak 的身份事实缺失时停止。",
+        "Atma Karak 所落星座的星座主未取到时停止。"
+      ]
+    },
+    "ch40-v4-atma-karak-strong-amatya-karak-dignified": {
+      "question_type": "必为王之大臣：Atma Karak 有力偕吉星，或 Amatya Karak 落本宫、入旺",
+      "required_facts": [
+        "本盘的 Atma Karak 是哪颗行星",
+        "本盘的 Amatya Karak 是哪颗行星",
+        "本盘中哪些行星被判为吉星"
+      ],
+      "conditional_facts": [
+        "Atma Karak 是否有力",
+        "Atma Karak 是否与吉星同宫",
+        "Amatya Karak 是否落本宫（own Bhava）",
+        "Amatya Karak 是否入旺"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "Atma Karak 或 Amatya Karak 的身份事实缺失时停止。",
+        "「有力」的判准未按本书 Shad Bal 一章取到时，该分支停判。",
+        "吉星名册未定时停止：须先按 BPHS 自己的吉凶星定义取名册。"
+      ]
+    },
+    "ch40-v5-atma-karak-in-tanu-putr-dharm": {
+      "question_type": "必为王之大臣并有名声：Atma Karak 落一宫、五宫或九宫",
+      "required_facts": [
+        "本盘的 Atma Karak 落在哪一宫"
+      ],
+      "conditional_facts": [
+        "Atma Karak 是否落一宫（Tanu Bhava）",
+        "Atma Karak 是否落五宫（Putr Bhava）",
+        "Atma Karak 是否落九宫（Dharm Bhava）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "Atma Karak 的落宫事实缺失时停止。"
+      ]
+    },
+    "ch40-v6-karaks-in-kendr-or-kon-royal-mercy": {
+      "question_type": "得王之恩宠与庇护：Atma Karak 或 Amatya Karak 落角宫、三角宫",
+      "required_facts": [
+        "本盘的 Atma Karak 落在哪一宫",
+        "本盘的 Amatya Karak 落在哪一宫"
+      ],
+      "conditional_facts": [
+        "Atma Karak 是否落角宫（Kendr）",
+        "Atma Karak 是否落三角宫（Kon）",
+        "Amatya Karak 是否落角宫（Kendr）",
+        "Amatya Karak 是否落三角宫（Kon）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "两个 Char Karak 的落宫事实全部缺失时停止。",
+        "角宫、三角宫的名目未按本书第 7 章界定取到时停止。"
+      ]
+    },
+    "ch40-v7-malefics-third-sixth-army-chief": {
+      "question_type": "成为军队统帅：凶星落 Atma Karak 或 Arudh Lagna 起第 3 与第 6 位，或落三宫与六宫",
+      "required_facts": [
+        "本盘中哪些行星被判为凶星"
+      ],
+      "conditional_facts": [
+        "Atma Karak 起第 3 宫内是否有凶星",
+        "Atma Karak 起第 6 宫内是否有凶星",
+        "Arudh Lagn 起第 3 宫内是否有凶星",
+        "Arudh Lagn 起第 6 宫内是否有凶星",
+        "三宫（Sahaj）是否被凶星占据",
+        "六宫（Ari）是否被凶星占据"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "凶星名册未定时停止：须先按 BPHS 自己的吉凶星定义取名册。",
+        "三条起算法的位置事实全部缺失时停止。",
+        "Arudh Lagna 未按本书 Arudh 一章算出时，该分支停判。"
+      ]
+    },
+    "ch40-v8-atma-karak-drishti-to-dharm-lord": {
+      "question_type": "成为王之大臣：Atma Karak 落角宫、三角宫、入旺或本宫并相照九宫主",
+      "required_facts": [
+        "本盘的 Atma Karak 是哪颗行星",
+        "本盘九宫主（Dharm's Lord）是哪颗行星",
+        "Atma Karak 是否相照九宫主（Dharm's Lord）"
+      ],
+      "conditional_facts": [
+        "Atma Karak 是否落角宫（Kendr）",
+        "Atma Karak 是否落三角宫（Kon）",
+        "Atma Karak 是否入旺",
+        "Atma Karak 是否落本宫（own Bhava）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "Atma Karak 或九宫主的身份事实缺失时停止。",
+        "Atma Karak 是否相照九宫主的事实缺失时停止。",
+        "四项落宫与尊贵事实全部缺失时停止。"
+      ]
+    },
+    "ch40-v9-moon-dispositor-as-atma-karak-in-tanu": {
+      "question_type": "高龄之年成为王之大臣：月亮星座主即 Atma Karak 并偕吉星落一宫",
+      "required_facts": [
+        "本盘中哪些行星被判为吉星",
+        "本盘月亮（Chandra）所落星座的星座主（dispositor）是哪颗行星",
+        "月亮（Chandra）所落星座的星座主（dispositor）是否即 Atma Karak",
+        "月亮（Chandra）所落星座的星座主（dispositor）是否落一宫（Tanu Bhava）",
+        "月亮（Chandra）所落星座的星座主（dispositor）是否与吉星同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "月亮所落星座的星座主未取到时停止。",
+        "该行星是否即 Atma Karak 的事实缺失时停止。",
+        "吉星名册未定时停止：须先按 BPHS 自己的吉凶星定义取名册。"
+      ]
+    },
+    "ch40-v10-atma-karak-with-benefic-royal-patronage-wealth": {
+      "question_type": "因王家庇护而得财：Atma Karak 偕吉星落五宫、七宫、十宫或九宫",
+      "required_facts": [
+        "本盘的 Atma Karak 落在哪一宫",
+        "本盘中哪些行星被判为吉星",
+        "Atma Karak 是否与吉星同宫"
+      ],
+      "conditional_facts": [
+        "Atma Karak 是否落五宫（Putr Bhava）",
+        "Atma Karak 是否落七宫（Yuvati Bhava）",
+        "Atma Karak 是否落十宫（Karm Bhava）",
+        "Atma Karak 是否落九宫（Dharm Bhava）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "Atma Karak 的落宫事实缺失时停止。",
+        "吉星名册未定时停止：须先按 BPHS 自己的吉凶星定义取名册。",
+        "Atma Karak 是否与吉星同宫的事实缺失时停止。"
+      ]
+    },
+    "ch40-v11-arudh-of-dharm-or-atma-karak-royal-circles": {
+      "question_type": "与王室圈子相往还：九宫的 Arudh 即本命上升，或 Atma Karak 落九宫",
+      "required_facts": [
+        "本盘九宫（Dharm Bhava）的 Arudh 落在哪一宫",
+        "本盘的 Atma Karak 落在哪一宫"
+      ],
+      "conditional_facts": [
+        "九宫（Dharm Bhava）的 Arudh 是否即本命上升宫（Janm Lagn）",
+        "Atma Karak 是否落九宫（Dharm Bhava）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "九宫的 Arudh 未按本书 Arudh 一章算出时，该分支停判。",
+        "Atma Karak 的落宫事实缺失时停止。"
+      ]
+    },
+    "ch40-v12-labh-occupied-by-own-lord-royal-gain": {
+      "question_type": "因与王家往还而得利：十一宫被其宫主占据不受凶照，Atma Karak 偕吉星",
+      "required_facts": [
+        "本盘中哪些行星被判为凶星",
+        "本盘中哪些行星被判为吉星",
+        "十一宫（Labh）是否被十一宫主（Labh's Lord）占据",
+        "十一宫（Labh）是否被凶星相照",
+        "Atma Karak 是否与吉星同宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "吉凶星名册未定时停止：须先按 BPHS 自己的吉凶星定义取名册。",
+        "十一宫的占据与相照事实缺失时停止。",
+        "Atma Karak 是否与吉星同宫的事实缺失时停止。"
+      ]
+    },
+    "ch40-v13-karm-lagn-lords-exchange-royal-association": {
+      "question_type": "与王有大关联：十宫主与上升主互换星座",
+      "required_facts": [
+        "本盘上升主（Lagn's Lord）是哪颗行星",
+        "本盘十宫主（Karm's Lord）是哪颗行星",
+        "上升主（Lagn's Lord）与十宫主（Karm's Lord）是否互换星座（Rāśi）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "上升主或十宫主的身份事实缺失时停止。",
+        "两主是否互换星座的事实缺失时停止。"
+      ]
+    },
+    "ch40-v14-shukra-chandra-fourth-from-karakamsa": {
+      "question_type": "得王家徽记：金星与月亮同落 Karakāńś 起第 4 位",
+      "required_facts": [
+        "本盘的 Karakāńś 落在哪个星座",
+        "金星（Shukra）是否落 Karakāńś 起第 4 宫",
+        "月亮（Chandra）是否落 Karakāńś 起第 4 宫"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "Karakāńś 未按本书第 33 章的界定取到时停止。",
+        "金星或月亮的落位事实缺失时停止。"
+      ]
+    },
+    "ch40-v15-lagn-lord-or-atma-karak-with-putr-lord": {
+      "question_type": "成为王或大臣：上升主或 Atma Karak 与五宫主同宫并落角宫、三角宫",
+      "required_facts": [
+        "本盘上升主（Lagn's Lord）是哪颗行星",
+        "本盘的 Atma Karak 是哪颗行星",
+        "本盘五宫主（Putr's Lord）是哪颗行星"
+      ],
+      "conditional_facts": [
+        "上升主（Lagn's Lord）是否与五宫主（Putr's Lord）同宫",
+        "Atma Karak 是否与五宫主（Putr's Lord）同宫",
+        "上升主（Lagn's Lord）是否落角宫（Kendr）",
+        "上升主（Lagn's Lord）是否落三角宫（Kon）",
+        "Atma Karak 是否落角宫（Kendr）",
+        "Atma Karak 是否落三角宫（Kon）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "上升主、Atma Karak 或五宫主的身份事实缺失时停止。",
+        "同宫与落宫两类事实全部缺失时停止。"
+      ]
+    },
+    "ch41-v2-shukra-rashi-as-putr-with-mangal-in-labh": {
+      "question_type": "大富：五宫为金星星座并被金星占据，火星落十一宫",
+      "required_facts": [
+        "本盘五宫（Putr Bhava）落在哪个星座",
+        "五宫（Putr Bhava）是否为金星（Shukra）主管的星座（Rāśi）",
+        "五宫（Putr Bhava）是否被金星（Shukra）占据",
+        "火星（Mangal）是否落十一宫（Labh）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "五宫所落星座未取到时停止。",
+        "五宫是否被金星占据、火星是否落十一宫的事实缺失时停止。"
+      ]
+    },
+    "ch41-v3-budh-rashi-as-putr-with-three-in-labh": {
+      "question_type": "极富：五宫为水星星座并被水星占据，月火木三星落十一宫",
+      "required_facts": [
+        "本盘五宫（Putr Bhava）落在哪个星座",
+        "五宫（Putr Bhava）是否为水星（Budh）主管的星座（Rāśi）",
+        "五宫（Putr Bhava）是否被水星（Budh）占据",
+        "月亮（Chandra）是否落十一宫（Labh）",
+        "火星（Mangal）是否落十一宫（Labh）",
+        "木星（Guru）是否落十一宫（Labh）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "五宫所落星座未取到时停止。",
+        "十一宫三颗行星的落宫事实缺失时停止。"
+      ]
+    },
+    "ch41-v4-simh-as-putr-with-surya-and-three-in-labh": {
+      "question_type": "极富：五宫为狮子座并被太阳占据，土月木三星落十一宫",
+      "required_facts": [
+        "本盘五宫（Putr Bhava）落在哪个星座",
+        "五宫（Putr Bhava）是否落在狮子座（Simh）",
+        "五宫（Putr Bhava）是否被太阳（Surya）占据",
+        "土星（Shani）是否落十一宫（Labh）",
+        "月亮（Chandra）是否落十一宫（Labh）",
+        "木星（Guru）是否落十一宫（Labh）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "五宫所落星座未取到时停止。",
+        "十一宫三颗行星的落宫事实缺失时停止。"
+      ]
+    },
+    "ch41-v5-surya-chandra-in-labh-shani-in-own-putr": {
+      "question_type": "极富：日月落十一宫，土星落自己主管的五宫",
+      "required_facts": [
+        "本盘五宫（Putr Bhava）落在哪个星座",
+        "太阳（Surya）是否落十一宫（Labh）",
+        "月亮（Chandra）是否落十一宫（Labh）",
+        "五宫（Putr Bhava）是否被土星（Shani）占据",
+        "五宫（Putr Bhava）是否同时是土星（Shani）自己主管的宫（own Bhava）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "五宫所落星座未取到时停止。",
+        "日月是否落十一宫、土星是否落五宫的事实缺失时停止。"
+      ]
+    },
+    "ch41-v6-guru-in-own-putr-with-budh-in-labh": {
+      "question_type": "极富：木星落自己主管的五宫，水星落十一宫",
+      "required_facts": [
+        "本盘五宫（Putr Bhava）落在哪个星座",
+        "五宫（Putr Bhava）是否为木星（Guru）主管的星座（Rāśi）",
+        "五宫（Putr Bhava）是否被木星（Guru）占据",
+        "水星（Budh）是否落十一宫（Labh）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "五宫所落星座未取到时停止。",
+        "木星是否落五宫、水星是否落十一宫的事实缺失时停止。"
+      ]
+    },
+    "ch41-v7-mangal-rashi-as-putr-with-shukra-in-labh": {
+      "question_type": "极富：五宫为火星星座并有火星在内，金星落十一宫",
+      "required_facts": [
+        "本盘五宫（Putr Bhava）落在哪个星座",
+        "五宫（Putr Bhava）是否为火星（Mangal）主管的星座（Rāśi）",
+        "五宫（Putr Bhava）是否被火星（Mangal）占据",
+        "金星（Shukra）是否落十一宫（Labh）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "五宫所落星座未取到时停止。",
+        "五宫是否有火星、金星是否落十一宫的事实缺失时停止。"
+      ]
+    },
+    "ch41-v8-kark-as-putr-with-chandra-and-shani-in-labh": {
+      "question_type": "极富：五宫为巨蟹座并有月亮在内，土星落十一宫",
+      "required_facts": [
+        "本盘五宫（Putr Bhava）落在哪个星座",
+        "五宫（Putr Bhava）是否落在巨蟹座（Kark）",
+        "五宫（Putr Bhava）是否被月亮（Chandra）占据",
+        "土星（Shani）是否落十一宫（Labh）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "五宫所落星座未取到时停止。",
+        "五宫是否有月亮、土星是否落十一宫的事实缺失时停止。"
+      ]
+    },
+    "ch41-v9-surya-in-simh-lagn-with-mangal-guru": {
+      "question_type": "富有：上升为狮子座并有太阳，太阳与火星木星同宫或受其相照",
+      "required_facts": [
+        "本盘上升（Lagn）落在哪个星座",
+        "上升（Lagn）是否落在狮子座（Simh）",
+        "太阳（Surya）是否落上升宫（Lagna）"
+      ],
+      "conditional_facts": [
+        "太阳（Surya）是否与火星（Mangal）同宫",
+        "太阳（Surya）是否与木星（Guru）同宫",
+        "太阳（Surya）是否被火星（Mangal）相照",
+        "太阳（Surya）是否被木星（Guru）相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "上升所落星座未取到时停止。",
+        "太阳是否落上升宫的事实缺失时停止。",
+        "同宫与相照两类关系事实全部缺失时停止。"
+      ]
+    },
+    "ch41-v10-chandra-in-kark-lagn-with-budh-guru": {
+      "question_type": "富有：上升为巨蟹座并有月亮，月亮与水星木星同宫或受其相照",
+      "required_facts": [
+        "本盘上升（Lagn）落在哪个星座",
+        "上升（Lagn）是否落在巨蟹座（Kark）",
+        "月亮（Chandra）是否落上升宫（Lagna）"
+      ],
+      "conditional_facts": [
+        "月亮（Chandra）是否与水星（Budh）同宫",
+        "月亮（Chandra）是否与木星（Guru）同宫",
+        "月亮（Chandra）是否被水星（Budh）相照",
+        "月亮（Chandra）是否被木星（Guru）相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "上升所落星座未取到时停止。",
+        "月亮是否落上升宫的事实缺失时停止。",
+        "同宫与相照两类关系事实全部缺失时停止。"
+      ]
+    },
+    "ch41-v11-mangal-in-own-lagn-with-budh-shukra-shani": {
+      "question_type": "富有：上升为火星自己的星座并有火星，火星与水金土同宫或受其相照",
+      "required_facts": [
+        "本盘上升（Lagn）落在哪个星座",
+        "上升（Lagn）是否为火星（Mangal）主管的星座（Rāśi）",
+        "火星（Mangal）是否落上升宫（Lagna）"
+      ],
+      "conditional_facts": [
+        "火星（Mangal）是否与水星（Budh）同宫",
+        "火星（Mangal）是否与金星（Shukra）同宫",
+        "火星（Mangal）是否与土星（Shani）同宫",
+        "火星（Mangal）是否被水星（Budh）相照",
+        "火星（Mangal）是否被金星（Shukra）相照",
+        "火星（Mangal）是否被土星（Shani）相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "上升所落星座未取到时停止。",
+        "火星是否落上升宫的事实缺失时停止。",
+        "同宫与相照两类关系事实全部缺失时停止。"
+      ]
+    },
+    "ch41-v12-budh-in-own-lagn-with-shani-guru": {
+      "question_type": "富有：上升为水星星座并有水星，水星与土星木星同宫或受其相照",
+      "required_facts": [
+        "本盘上升（Lagn）落在哪个星座",
+        "上升（Lagn）是否为水星（Budh）主管的星座（Rāśi）",
+        "水星（Budh）是否落上升宫（Lagna）"
+      ],
+      "conditional_facts": [
+        "水星（Budh）是否与土星（Shani）同宫",
+        "水星（Budh）是否与木星（Guru）同宫",
+        "水星（Budh）是否被土星（Shani）相照",
+        "水星（Budh）是否被木星（Guru）相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "上升所落星座未取到时停止。",
+        "水星是否落上升宫的事实缺失时停止。",
+        "同宫与相照两类关系事实全部缺失时停止。"
+      ]
+    },
+    "ch41-v13-guru-in-own-lagn-with-budh-mangal": {
+      "question_type": "富有：上升为木星自己的星座并有木星，木星与水星火星同宫或受其相照",
+      "required_facts": [
+        "本盘上升（Lagn）落在哪个星座",
+        "上升（Lagn）是否为木星（Guru）主管的星座（Rāśi）",
+        "木星（Guru）是否落上升宫（Lagna）"
+      ],
+      "conditional_facts": [
+        "木星（Guru）是否与水星（Budh）同宫",
+        "木星（Guru）是否与火星（Mangal）同宫",
+        "木星（Guru）是否被水星（Budh）相照",
+        "木星（Guru）是否被火星（Mangal）相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "上升所落星座未取到时停止。",
+        "木星是否落上升宫的事实缺失时停止。",
+        "同宫与相照两类关系事实全部缺失时停止。"
+      ]
+    },
+    "ch41-v14-shukra-in-own-lagn-with-shani-budh": {
+      "question_type": "富有：上升为金星自己的星座并有金星，金星与土星水星同宫或受其相照",
+      "required_facts": [
+        "本盘上升（Lagn）落在哪个星座",
+        "上升（Lagn）是否为金星（Shukra）主管的星座（Rāśi）",
+        "金星（Shukra）是否落上升宫（Lagna）"
+      ],
+      "conditional_facts": [
+        "金星（Shukra）是否与土星（Shani）同宫",
+        "金星（Shukra）是否与水星（Budh）同宫",
+        "金星（Shukra）是否被土星（Shani）相照",
+        "金星（Shukra）是否被水星（Budh）相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "上升所落星座未取到时停止。",
+        "金星是否落上升宫的事实缺失时停止。",
+        "同宫与相照两类关系事实全部缺失时停止。"
+      ]
+    },
+    "ch41-v15-shani-in-own-lagn-with-mangal-guru": {
+      "question_type": "富有：上升为土星自己的星座并有土星，土星受火星木星相照或与之同宫",
+      "required_facts": [
+        "本盘上升（Lagn）落在哪个星座",
+        "上升（Lagn）是否为土星（Shani）主管的星座（Rāśi）",
+        "土星（Shani）是否落上升宫（Lagna）"
+      ],
+      "conditional_facts": [
+        "土星（Shani）是否与火星（Mangal）同宫",
+        "土星（Shani）是否与木星（Guru）同宫",
+        "土星（Shani）是否被火星（Mangal）相照",
+        "土星（Shani）是否被木星（Guru）相照"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "上升所落星座未取到时停止。",
+        "土星是否落上升宫的事实缺失时停止。",
+        "同宫与相照两类关系事实全部缺失时停止。"
+      ]
+    },
+    "ch41-v16-dharm-and-putr-lords-give-wealth": {
+      "question_type": "给财之曜：九宫主与五宫主，在各自大运期间给出财富",
+      "required_facts": [
+        "本盘九宫主（Dharm's Lord）是哪颗行星",
+        "本盘五宫主（Putr's Lord）是哪颗行星"
+      ],
+      "conditional_facts": [
+        "该行星（Grah）是否即本盘九宫主（Dharm's Lord）",
+        "该行星（Grah）是否即本盘五宫主（Putr's Lord）"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "九宫主或五宫主的身份事实缺失时停止。",
+        "大运次第未取到时，给财时段无法定位，只保留给财资格的结论。"
+      ]
+    },
+    "ch41-v16-grahas-yuti-with-dharm-putr-lords-give-wealth": {
+      "question_type": "给财之曜：与九宫主或五宫主同宫的行星，在各自大运期间给出财富",
+      "required_facts": [
+        "本盘九宫主（Dharm's Lord）是哪颗行星",
+        "本盘五宫主（Putr's Lord）是哪颗行星"
+      ],
+      "conditional_facts": [
+        "该行星（Grah）是否与九宫主（Dharm's Lord）同宫",
+        "该行星（Grah）是否与五宫主（Putr's Lord）同宫"
+      ],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "九宫主或五宫主的身份事实缺失时停止。",
+        "同宫关系事实缺失时停止。",
+        "大运次第未取到时，给财时段无法定位，只保留给财资格的结论。"
+      ]
+    },
+    "ch41-v18-19-kendr-lord-parijatamsa": {
+      "question_type": "角宫之主（Kendr's Lord）落 Parijatāńś 的效果",
+      "required_facts": [
+        "本盘中该行星（Grah）是否主管角宫（Kendr）",
+        "该角宫之主（Kendr's Lord）的分盘尊贵是否为 Parijatāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "角宫之主（Kendr's Lord）的身份事实缺失时停止。",
+        "分盘尊贵是否为 Parijatāńś 的事实缺失时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v18-19-kendr-lord-uttamamsa": {
+      "question_type": "角宫之主（Kendr's Lord）落 Uttamāńś 的效果",
+      "required_facts": [
+        "本盘中该行星（Grah）是否主管角宫（Kendr）",
+        "该角宫之主（Kendr's Lord）的分盘尊贵是否为 Uttamāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "角宫之主（Kendr's Lord）的身份事实缺失时停止。",
+        "分盘尊贵是否为 Uttamāńś 的事实缺失时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v18-19-kendr-lord-gopuramsa": {
+      "question_type": "角宫之主（Kendr's Lord）落 Gopurāńś 的效果",
+      "required_facts": [
+        "本盘中该行星（Grah）是否主管角宫（Kendr）",
+        "该角宫之主（Kendr's Lord）的分盘尊贵是否为 Gopurāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "角宫之主（Kendr's Lord）的身份事实缺失时停止。",
+        "分盘尊贵是否为 Gopurāńś 的事实缺失时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v18-19-kendr-lord-simhasanamsa": {
+      "question_type": "角宫之主（Kendr's Lord）落 Simhasanāńś 的效果",
+      "required_facts": [
+        "本盘中该行星（Grah）是否主管角宫（Kendr）",
+        "该角宫之主（Kendr's Lord）的分盘尊贵是否为 Simhasanāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "角宫之主（Kendr's Lord）的身份事实缺失时停止。",
+        "分盘尊贵是否为 Simhasanāńś 的事实缺失时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v18-19-kendr-lord-paravatamsa": {
+      "question_type": "角宫之主（Kendr's Lord）落 Paravatāńś 的效果",
+      "required_facts": [
+        "本盘中该行星（Grah）是否主管角宫（Kendr）",
+        "该角宫之主（Kendr's Lord）的分盘尊贵是否为 Paravatāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "角宫之主（Kendr's Lord）的身份事实缺失时停止。",
+        "分盘尊贵是否为 Paravatāńś 的事实缺失时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v18-19-kendr-lord-devalokamsa": {
+      "question_type": "角宫之主（Kendr's Lord）落 Devalokāńś 的效果",
+      "required_facts": [
+        "本盘中该行星（Grah）是否主管角宫（Kendr）",
+        "该角宫之主（Kendr's Lord）的分盘尊贵是否为 Devalokāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "角宫之主（Kendr's Lord）的身份事实缺失时停止。",
+        "分盘尊贵是否为 Devalokāńś 的事实缺失时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v18-19-kendr-lord-brahmalokamsa": {
+      "question_type": "角宫之主（Kendr's Lord）落 Brahmalokāńś 的效果",
+      "required_facts": [
+        "本盘中该行星（Grah）是否主管角宫（Kendr）",
+        "该角宫之主（Kendr's Lord）的分盘尊贵是否为 Brahmalokāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "角宫之主（Kendr's Lord）的身份事实缺失时停止。",
+        "分盘尊贵是否为 Brahmalokāńś 的事实缺失时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v18-19-kendr-lord-iravatamsa": {
+      "question_type": "角宫之主（Kendr's Lord）落 Iravatāńś 的效果",
+      "required_facts": [
+        "本盘中该行星（Grah）是否主管角宫（Kendr）",
+        "该角宫之主（Kendr's Lord）的分盘尊贵是否为 Iravatāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "角宫之主（Kendr's Lord）的身份事实缺失时停止。",
+        "分盘尊贵是否为 Iravatāńś 的事实缺失时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v20-22-putr-lord-parijatamsa": {
+      "question_type": "五宫主（Putr's Lord）落 Parijatāńś 的效果",
+      "required_facts": [
+        "本盘五宫主（Putr's Lord）是哪颗行星",
+        "五宫主（Putr's Lord）的分盘尊贵是否为 Parijatāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "五宫主（Putr's Lord）的身份事实缺失时停止。",
+        "分盘尊贵是否为 Parijatāńś 的事实缺失时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v20-22-putr-lord-uttamamsa": {
+      "question_type": "五宫主（Putr's Lord）落 Uttamāńś 的效果",
+      "required_facts": [
+        "本盘五宫主（Putr's Lord）是哪颗行星",
+        "五宫主（Putr's Lord）的分盘尊贵是否为 Uttamāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "五宫主（Putr's Lord）的身份事实缺失时停止。",
+        "分盘尊贵是否为 Uttamāńś 的事实缺失时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v20-22-putr-lord-gopuramsa": {
+      "question_type": "五宫主（Putr's Lord）落 Gopurāńś 的效果",
+      "required_facts": [
+        "本盘五宫主（Putr's Lord）是哪颗行星",
+        "五宫主（Putr's Lord）的分盘尊贵是否为 Gopurāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "五宫主（Putr's Lord）的身份事实缺失时停止。",
+        "分盘尊贵是否为 Gopurāńś 的事实缺失时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v20-22-putr-lord-simhasanamsa": {
+      "question_type": "五宫主（Putr's Lord）落 Simhasanāńś 的效果",
+      "required_facts": [
+        "本盘五宫主（Putr's Lord）是哪颗行星",
+        "五宫主（Putr's Lord）的分盘尊贵是否为 Simhasanāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "五宫主（Putr's Lord）的身份事实缺失时停止。",
+        "分盘尊贵是否为 Simhasanāńś 的事实缺失时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v20-22-putr-lord-paravatamsa": {
+      "question_type": "五宫主（Putr's Lord）落 Paravatāńś 的效果",
+      "required_facts": [
+        "本盘五宫主（Putr's Lord）是哪颗行星",
+        "五宫主（Putr's Lord）的分盘尊贵是否为 Paravatāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "五宫主（Putr's Lord）的身份事实缺失时停止。",
+        "分盘尊贵是否为 Paravatāńś 的事实缺失时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v20-22-putr-lord-devalokamsa": {
+      "question_type": "五宫主（Putr's Lord）落 Devalokāńś 的效果",
+      "required_facts": [
+        "本盘五宫主（Putr's Lord）是哪颗行星",
+        "五宫主（Putr's Lord）的分盘尊贵是否为 Devalokāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "五宫主（Putr's Lord）的身份事实缺失时停止。",
+        "分盘尊贵是否为 Devalokāńś 的事实缺失时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v20-22-putr-lord-brahmalokamsa": {
+      "question_type": "五宫主（Putr's Lord）落 Brahmalokāńś 的效果",
+      "required_facts": [
+        "本盘五宫主（Putr's Lord）是哪颗行星",
+        "五宫主（Putr's Lord）的分盘尊贵是否为 Brahmalokāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "五宫主（Putr's Lord）的身份事实缺失时停止。",
+        "分盘尊贵是否为 Brahmalokāńś 的事实缺失时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v20-22-putr-lord-iravatamsa": {
+      "question_type": "五宫主（Putr's Lord）落 Iravatāńś 的效果",
+      "required_facts": [
+        "本盘五宫主（Putr's Lord）是哪颗行星",
+        "五宫主（Putr's Lord）的分盘尊贵是否为 Iravatāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "五宫主（Putr's Lord）的身份事实缺失时停止。",
+        "分盘尊贵是否为 Iravatāńś 的事实缺失时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v23-27-dharm-lord-parijatamsa": {
+      "question_type": "九宫主（Dharm's Lord）落 Parijatāńś 的效果",
+      "required_facts": [
+        "本盘九宫主（Dharm's Lord）是哪颗行星",
+        "九宫主（Dharm's Lord）的分盘尊贵是否为 Parijatāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "九宫主（Dharm's Lord）的身份事实缺失时停止。",
+        "分盘尊贵是否为 Parijatāńś 的事实缺失时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v23-27-dharm-lord-uttamamsa": {
+      "question_type": "九宫主（Dharm's Lord）落 Uttamāńś 的效果",
+      "required_facts": [
+        "本盘九宫主（Dharm's Lord）是哪颗行星",
+        "九宫主（Dharm's Lord）的分盘尊贵是否为 Uttamāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "九宫主（Dharm's Lord）的身份事实缺失时停止。",
+        "分盘尊贵是否为 Uttamāńś 的事实缺失时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v23-27-dharm-lord-gopuramsa": {
+      "question_type": "九宫主（Dharm's Lord）落 Gopurāńś 的效果",
+      "required_facts": [
+        "本盘九宫主（Dharm's Lord）是哪颗行星",
+        "九宫主（Dharm's Lord）的分盘尊贵是否为 Gopurāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "九宫主（Dharm's Lord）的身份事实缺失时停止。",
+        "分盘尊贵是否为 Gopurāńś 的事实缺失时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v23-27-dharm-lord-simhasanamsa": {
+      "question_type": "九宫主（Dharm's Lord）落 Simhasanāńś 的效果",
+      "required_facts": [
+        "本盘九宫主（Dharm's Lord）是哪颗行星",
+        "九宫主（Dharm's Lord）的分盘尊贵是否为 Simhasanāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "九宫主（Dharm's Lord）的身份事实缺失时停止。",
+        "分盘尊贵是否为 Simhasanāńś 的事实缺失时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v23-27-dharm-lord-paravatamsa": {
+      "question_type": "九宫主（Dharm's Lord）落 Paravatāńś 的效果",
+      "required_facts": [
+        "本盘九宫主（Dharm's Lord）是哪颗行星",
+        "九宫主（Dharm's Lord）的分盘尊贵是否为 Paravatāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "九宫主（Dharm's Lord）的身份事实缺失时停止。",
+        "分盘尊贵是否为 Paravatāńś 的事实缺失时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v23-27-dharm-lord-devalokamsa": {
+      "question_type": "九宫主（Dharm's Lord）落 Devalokāńś 的效果",
+      "required_facts": [
+        "本盘九宫主（Dharm's Lord）是哪颗行星",
+        "九宫主（Dharm's Lord）的分盘尊贵是否为 Devalokāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "九宫主（Dharm's Lord）的身份事实缺失时停止。",
+        "分盘尊贵是否为 Devalokāńś 的事实缺失时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v23-27-dharm-lord-brahmalokamsa": {
+      "question_type": "九宫主（Dharm's Lord）落 Brahmalokāńś 的效果",
+      "required_facts": [
+        "本盘九宫主（Dharm's Lord）是哪颗行星",
+        "九宫主（Dharm's Lord）的分盘尊贵是否为 Brahmalokāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "九宫主（Dharm's Lord）的身份事实缺失时停止。",
+        "分盘尊贵是否为 Brahmalokāńś 的事实缺失时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v23-27-dharm-lord-iravatamsa": {
+      "question_type": "九宫主（Dharm's Lord）落 Iravatāńś 的效果",
+      "required_facts": [
+        "本盘九宫主（Dharm's Lord）是哪颗行星",
+        "九宫主（Dharm's Lord）的分盘尊贵是否为 Iravatāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "九宫主（Dharm's Lord）的身份事实缺失时停止。",
+        "分盘尊贵是否为 Iravatāńś 的事实缺失时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v28-kendr-kon-lords-relationship-raj-yog": {
+      "question_type": "Raj Yog：角宫之主与三角宫之主之间建立关联",
+      "required_facts": [
+        "本盘各角宫（Kendr）之主分别是哪颗行星",
+        "本盘各三角宫（Kon）之主分别是哪颗行星",
+        "角宫之主（Kendr's Lord）与三角宫之主（Kon's Lord）之间是否建立关联（relationship）"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "角宫之主或三角宫之主的身份事实缺失时停止。",
+        "「关联（relationship）」的判准未按本书第 3 章的 Grah 关系界定取到时停止。"
+      ]
+    },
+    "ch41-v29-34-related-lords-parijatamsa": {
+      "question_type": "发生关联的角宫之主与三角宫之主落 Parijatāńś 的效果",
+      "required_facts": [
+        "角宫之主（Kendr's Lord）与三角宫之主（Kon's Lord）之间是否建立关联（relationship）",
+        "发生关联的角宫之主与三角宫之主是否同处 Parijatāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "发生关联的角宫之主与三角宫之主的身份事实缺失时停止。",
+        "分盘尊贵是否为 Parijatāńś 的事实缺失时停止。",
+        "关联的判准未按本书第 3 章的 Grah 关系界定取到时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v29-34-related-lords-uttamamsa": {
+      "question_type": "发生关联的角宫之主与三角宫之主落 Uttamāńś 的效果",
+      "required_facts": [
+        "角宫之主（Kendr's Lord）与三角宫之主（Kon's Lord）之间是否建立关联（relationship）",
+        "发生关联的角宫之主与三角宫之主是否同处 Uttamāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "发生关联的角宫之主与三角宫之主的身份事实缺失时停止。",
+        "分盘尊贵是否为 Uttamāńś 的事实缺失时停止。",
+        "关联的判准未按本书第 3 章的 Grah 关系界定取到时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v29-34-related-lords-gopuramsa": {
+      "question_type": "发生关联的角宫之主与三角宫之主落 Gopurāńś 的效果",
+      "required_facts": [
+        "角宫之主（Kendr's Lord）与三角宫之主（Kon's Lord）之间是否建立关联（relationship）",
+        "发生关联的角宫之主与三角宫之主是否同处 Gopurāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "发生关联的角宫之主与三角宫之主的身份事实缺失时停止。",
+        "分盘尊贵是否为 Gopurāńś 的事实缺失时停止。",
+        "关联的判准未按本书第 3 章的 Grah 关系界定取到时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    },
+    "ch41-v29-34-related-lords-simhasanamsa": {
+      "question_type": "发生关联的角宫之主与三角宫之主落 Simhasanāńś 的效果",
+      "required_facts": [
+        "角宫之主（Kendr's Lord）与三角宫之主（Kon's Lord）之间是否建立关联（relationship）",
+        "发生关联的角宫之主与三角宫之主是否同处 Simhasanāńś"
+      ],
+      "conditional_facts": [],
+      "fact_binding_status": "unmapped",
+      "stop_conditions": [
+        "发生关联的角宫之主与三角宫之主的身份事实缺失时停止。",
+        "分盘尊贵是否为 Simhasanāńś 的事实缺失时停止。",
+        "关联的判准未按本书第 3 章的 Grah 关系界定取到时停止。",
+        "分盘尊贵的判定口径未按本书第 6 章 Dasha Varg 的等级表取到时停止。"
+      ]
+    }
+  }
+}

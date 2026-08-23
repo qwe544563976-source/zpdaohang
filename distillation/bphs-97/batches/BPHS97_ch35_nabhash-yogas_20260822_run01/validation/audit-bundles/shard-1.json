@@ -1,0 +1,2051 @@
+{
+  "shard": 1,
+  "step_count": 13,
+  "frozen_atoms_path": "/home/user/zpdaohang/distillation/_local/evidence_atoms.jsonl",
+  "frozen_atoms_sha256": "6ee0276dc0e8c1de94799326084ed5341f6d7b6a97089e3dd94e53ee5627f248",
+  "note": "原文一律逐字复制自冻结文件的 exact_text，未摘要未截断。冻结文件仍是唯一真相，随时可回去核对。",
+  "steps": [
+    {
+      "step_id": "ch35-v7-rajju-yog.step-001",
+      "method": {
+        "method": "ch35-v7-rajju-yog",
+        "title": "Rajju Yog：所有行星都落在动星座",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘里的行星是不是都在同一类星座里",
+          "我命里有没有 Rajju Yog"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "All the Grahas in Movable Rāśis cause Rajju Yog.",
+            "Rajju Yog 的成立条件"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "All the Grahas in Fixed Rāśis cause Musala Yog. All the Grahas in Dual Rāśis cause Nala Yog.",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v7-rajju-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "All the Grahas in Movable Rāśis"
+            },
+            {
+              "step_id": "ch35-v7-rajju-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "cause Rajju Yog"
+            },
+            {
+              "step_id": "ch35-v7-rajju-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "All the Grahas in Movable Rāśis cause Rajju Yog"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Rajju Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Rajju Yog 成立。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v7-rajju-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Rajju Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Rajju Yog 的成立判定；原文只给盘面分布条件，没有时间、上升或男女限定。",
+        "minimum_supported_claim": "本盘所有行星（Grahas）都落在动星座（Movable Rāśi）时，构成 Rajju Yog。",
+        "produced_fact_keys": [
+          "Rajju Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在动星座（Movable Rāśi）"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘所有行星（Grahas）是否都落在动星座（Movable Rāśi）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "All the Grahas in Movable Rāśis",
+              "claim": "本盘所有行星（Grahas）都落在动星座（Movable Rāśi）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "cause Rajju Yog",
+              "claim": "构成 Rajju Yog"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v7",
+            "quote": "All the Grahas in Movable Rāśis cause Rajju Yog.",
+            "pdf_pages": [
+              75,
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘所有行星（Grahas）是否都落在动星座（Movable Rāśi）。",
+        "stop_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在动星座（Movable Rāśi）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「所有行星」放宽成「多数行星」——原文写的是 All the Grahas。",
+          "不得把动星座（Movable Rāśi）换成宫（Bhava）——原文这一句说的是星座。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "1c2a17be92fc29564593b15842c32698c1fb5a1a5cb624b8774b02d566d8e4a0"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v7-musala-yog.step-001",
+      "method": {
+        "method": "ch35-v7-musala-yog",
+        "title": "Musala Yog：所有行星都落在固定星座",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘里的行星是不是都在固定星座",
+          "我命里有没有 Musala Yog"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "All the Grahas in Fixed Rāśis cause Musala Yog.",
+            "Musala Yog 的成立条件"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "All the Grahas in Movable Rāśis cause Rajju Yog. All the Grahas in Fixed Rāśis cause Musala Yog.",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v7-musala-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "All the Grahas in Fixed Rāśis"
+            },
+            {
+              "step_id": "ch35-v7-musala-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "cause Musala Yog"
+            },
+            {
+              "step_id": "ch35-v7-musala-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "All the Grahas in Fixed Rāśis cause Musala Yog"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Musala Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Musala Yog 成立。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v7-musala-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Musala Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Musala Yog 的成立判定；原文只给盘面分布条件，没有时间、上升或男女限定。",
+        "minimum_supported_claim": "本盘所有行星（Grahas）都落在固定星座（Fixed Rāśi）时，构成 Musala Yog。",
+        "produced_fact_keys": [
+          "Musala Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在固定星座（Fixed Rāśi）"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘所有行星（Grahas）是否都落在固定星座（Fixed Rāśi）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "All the Grahas in Fixed Rāśis",
+              "claim": "本盘所有行星（Grahas）都落在固定星座（Fixed Rāśi）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "cause Musala Yog",
+              "claim": "构成 Musala Yog"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v7",
+            "quote": "All the Grahas in Fixed Rāśis cause Musala Yog.",
+            "pdf_pages": [
+              75,
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘所有行星（Grahas）是否都落在固定星座（Fixed Rāśi）。",
+        "stop_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在固定星座（Fixed Rāśi）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「所有行星」放宽成「多数行星」——原文写的是 All the Grahas。",
+          "不得把固定星座（Fixed Rāśi）换成宫（Bhava）——原文这一句说的是星座。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "bbed461a6bc79a31c75a188827039049cdd471b3bcdb5cbe3cf1732e217f686f"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v7-nala-yog.step-001",
+      "method": {
+        "method": "ch35-v7-nala-yog",
+        "title": "Nala Yog：所有行星都落在双体星座",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘里的行星是不是都在双体星座",
+          "我命里有没有 Nala Yog"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "All the Grahas in Dual Rāśis cause Nala Yog.",
+            "Nala Yog 的成立条件"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "All the Grahas in Fixed Rāśis cause Musala Yog. All the Grahas in Dual Rāśis cause Nala Yog.",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v7-nala-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "All the Grahas in Dual Rāśis"
+            },
+            {
+              "step_id": "ch35-v7-nala-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "cause Nala Yog"
+            },
+            {
+              "step_id": "ch35-v7-nala-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "All the Grahas in Dual Rāśis cause Nala Yog"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Nala Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Nala Yog 成立。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v7-nala-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Nala Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Nala Yog 的成立判定；原文只给盘面分布条件，没有时间、上升或男女限定。",
+        "minimum_supported_claim": "本盘所有行星（Grahas）都落在双体星座（Dual Rāśi）时，构成 Nala Yog。",
+        "produced_fact_keys": [
+          "Nala Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在双体星座（Dual Rāśi）"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘所有行星（Grahas）是否都落在双体星座（Dual Rāśi）"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "All the Grahas in Dual Rāśis",
+              "claim": "本盘所有行星（Grahas）都落在双体星座（Dual Rāśi）"
+            }
+          ],
+          "results": [
+            {
+              "quote": "cause Nala Yog",
+              "claim": "构成 Nala Yog"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v7",
+            "quote": "All the Grahas in Dual Rāśis cause Nala Yog.",
+            "pdf_pages": [
+              75,
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘所有行星（Grahas）是否都落在双体星座（Dual Rāśi）。",
+        "stop_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在双体星座（Dual Rāśi）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把「所有行星」放宽成「多数行星」——原文写的是 All the Grahas。",
+          "不得把双体星座（Dual Rāśi）换成宫（Bhava）——原文这一句说的是星座。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "ced16329f67ce7cd589393944fa93784a8eb0d935a5060f3e6850ca71c69b371"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v8-maal-yog.step-001",
+      "method": {
+        "method": "ch35-v8-maal-yog",
+        "title": "Maal Yog：3 个角宫被吉星占据",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我命里有没有 Maal Yog",
+          "我盘上角宫里的吉星算什么格局"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If 3 Kendras are occupied by benefics, Maal Yog is produced",
+            "These Yogas, respectively, produce benefic and malefic results.",
+            "Maal Yog 的成立条件"
+          ],
+          "counter_queries": [
+            "while malefics so placed will cause Bhujang, or Sarpa Yog"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v8-maal-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "3 Kendras are occupied by benefics"
+            },
+            {
+              "step_id": "ch35-v8-maal-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Maal Yog is produced"
+            },
+            {
+              "step_id": "ch35-v8-maal-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "These Yogas, respectively, produce benefic and malefic results"
+            },
+            {
+              "step_id": "ch35-v8-maal-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "3 Kendras are occupied by benefics Maal Yog is produced"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Maal Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Maal Yog 成立。",
+          "本盘吉星名册未取得时停止：吉凶归类见第 3 章 Benefics and Malefics 一节。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v8-maal-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Maal Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Maal Yog 的成立判定；原文用 respectively 把吉、凶两种结果依次对应 Maal 与 Sarpa 两个瑜伽，本条只取 Maal 这一侧；原文未给吉星判准，也没有时间限定。",
+        "minimum_supported_claim": "本盘有3个角宫（Kendra）被吉星占据时，构成 Maal Yog，这个瑜伽产生吉的结果。",
+        "produced_fact_keys": [
+          "Maal Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘中哪些行星被判为吉星",
+          "本盘是否有3个角宫（Kendra）被吉星占据"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘中哪些行星被判为吉星"
+            },
+            {
+              "fact_key": "本盘是否有3个角宫（Kendra）被吉星占据"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "3 Kendras are occupied by benefics",
+              "claim": "本盘有3个角宫（Kendra）被吉星占据"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Maal Yog is produced",
+              "claim": "构成 Maal Yog"
+            },
+            {
+              "quote": "These Yogas, respectively, produce benefic and malefic results",
+              "claim": "这个瑜伽产生吉的结果"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v8",
+            "quote": "If 3 Kendras are occupied by benefics, Maal Yog is produced",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v8",
+            "quote": "These Yogas, respectively, produce benefic and malefic results.",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中哪些行星被判为吉星、本盘是否有3个角宫（Kendra）被吉星占据。",
+        "stop_fact_keys": [
+          "本盘中哪些行星被判为吉星",
+          "本盘是否有3个角宫（Kendra）被吉星占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 3 个角宫放宽成任意角宫有吉星——原文写的是 3 Kendras。",
+          "不得据 respectively 反推 Sarpa Yog 的具体结果内容——本条只取 Maal Yog 这一侧。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "7113a3d0942ef1253bbbb1796f45e71787afe5bc6c13199a406a380765f4fc7d"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v8-sarpa-yog.step-001",
+      "method": {
+        "method": "ch35-v8-sarpa-yog",
+        "title": "Bhujang（又名 Sarpa）Yog：3 个角宫被凶星占据",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我命里有没有 Sarpa Yog",
+          "我盘上角宫里的凶星算什么格局"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If 3 Kendras are occupied by benefics, Maal Yog is produced, while malefics so placed will cause Bhujang, or Sarpa Yog.",
+            "These Yogas, respectively, produce benefic and malefic results.",
+            "Sarpa Yog 的成立条件"
+          ],
+          "counter_queries": [
+            "If 3 Kendras are occupied by benefics, Maal Yog is produced"
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v8-sarpa-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "3 Kendras"
+            },
+            {
+              "step_id": "ch35-v8-sarpa-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "malefics so placed"
+            },
+            {
+              "step_id": "ch35-v8-sarpa-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "will cause Bhujang, or Sarpa Yog"
+            },
+            {
+              "step_id": "ch35-v8-sarpa-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "These Yogas, respectively, produce benefic and malefic results"
+            },
+            {
+              "step_id": "ch35-v8-sarpa-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "3 Kendras will cause Bhujang, or Sarpa Yog"
+            },
+            {
+              "step_id": "ch35-v8-sarpa-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "malefics so placed will cause Bhujang, or Sarpa Yog"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Sarpa Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Sarpa Yog 成立。",
+          "本盘凶星名册未取得时停止：吉凶归类见第 3 章 Benefics and Malefics 一节。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v8-sarpa-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Sarpa Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Bhujang（又名 Sarpa）Yog 的成立判定；原文的 so placed 承接前半句的 3 Kendras，用 respectively 把吉、凶两种结果依次对应 Maal 与 Sarpa，本条只取 Sarpa 这一侧；原文未给凶星判准，也没有时间限定。",
+        "minimum_supported_claim": "本盘有3个角宫（Kendra）被凶星占据时，构成 Bhujang（又名 Sarpa）Yog，这个瑜伽产生凶的结果。",
+        "produced_fact_keys": [
+          "Sarpa Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘中哪些行星被判为凶星",
+          "本盘是否有3个角宫（Kendra）被凶星占据"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘中哪些行星被判为凶星"
+            },
+            {
+              "fact_key": "本盘是否有3个角宫（Kendra）被凶星占据"
+            }
+          ]
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "3 Kendras",
+              "claim": "3个角宫（Kendra）"
+            },
+            {
+              "quote": "malefics so placed",
+              "claim": "被凶星占据"
+            }
+          ],
+          "results": [
+            {
+              "quote": "will cause Bhujang, or Sarpa Yog",
+              "claim": "构成 Bhujang（又名 Sarpa）Yog"
+            },
+            {
+              "quote": "These Yogas, respectively, produce benefic and malefic results",
+              "claim": "这个瑜伽产生凶的结果"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v8",
+            "quote": "If 3 Kendras are occupied by benefics, Maal Yog is produced, while malefics so placed will cause Bhujang, or Sarpa Yog.",
+            "pdf_pages": [
+              76
+            ]
+          },
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v8",
+            "quote": "These Yogas, respectively, produce benefic and malefic results.",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中哪些行星被判为凶星、本盘是否有3个角宫（Kendra）被凶星占据。",
+        "stop_fact_keys": [
+          "本盘中哪些行星被判为凶星",
+          "本盘是否有3个角宫（Kendra）被凶星占据"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 3 个角宫放宽成任意角宫有凶星——原文写的是 3 Kendras。",
+          "不得据 respectively 反推 Maal Yog 的具体结果内容——本条只取 Sarpa Yog 这一侧。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "9b0842aa7d5bf2263afaa80230d9221f14c1cbbb5c457867631adad1224a1383"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v9-11-gada-yog.step-001",
+      "method": {
+        "method": "ch35-v9-11-gada-yog",
+        "title": "Gada Yog：所有行星都落在相邻的两个角宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘上行星是不是挤在两个角宫里",
+          "我命里有没有 Gada Yog"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If all the Grahas occupy two successive Kendras, Gada Yog is formed.",
+            "Gada Yog 的成立条件"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v9-11-gada-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "all the Grahas occupy two successive Kendras"
+            },
+            {
+              "step_id": "ch35-v9-11-gada-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Gada Yog is formed"
+            },
+            {
+              "step_id": "ch35-v9-11-gada-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "all the Grahas occupy two successive Kendras Gada Yog is formed"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Gada Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Gada Yog 成立。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v9-11-gada-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Gada Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Gada Yog 的成立判定；原文只给盘面分布条件，没有时间、上升或男女限定。",
+        "minimum_supported_claim": "本盘所有行星（Grahas）都落在相邻的两个角宫（Kendra）内时，构成 Gada Yog。",
+        "produced_fact_keys": [
+          "Gada Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在相邻的两个角宫（Kendra）内"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘所有行星（Grahas）是否都落在相邻的两个角宫（Kendra）内"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "all the Grahas occupy two successive Kendras",
+              "claim": "本盘所有行星（Grahas）都落在相邻的两个角宫（Kendra）内"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Gada Yog is formed",
+              "claim": "构成 Gada Yog"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v9-11",
+            "quote": "If all the Grahas occupy two successive Kendras, Gada Yog is formed.",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘所有行星（Grahas）是否都落在相邻的两个角宫（Kendra）内。",
+        "stop_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在相邻的两个角宫（Kendra）内"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 two successive Kendras 放宽成任意两个角宫——原文要求相邻。",
+          "不得把角宫（Kendra）换成三角宫。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b0b701a9dfab1c9c9a1e15f0f60d5b5244c09c141f6aeccdf23afe6aa3729a5b"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v9-11-sakat-yog.step-001",
+      "method": {
+        "method": "ch35-v9-11-sakat-yog",
+        "title": "Sakat Yog：所有行星都落在上升宫与七宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘上行星是不是都在一七宫轴上",
+          "我命里有没有 Sakat Yog"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Sakat Yog occurs, when all the Grahas are disposed in Lagn and Yuvati Bhava.",
+            "Sakat Yog 的成立条件"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v9-11-sakat-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "all the Grahas are disposed in Lagn and Yuvati Bhava"
+            },
+            {
+              "step_id": "ch35-v9-11-sakat-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Sakat Yog occurs"
+            },
+            {
+              "step_id": "ch35-v9-11-sakat-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "all the Grahas are disposed in Lagn and Yuvati Bhava Sakat Yog occurs"
+            },
+            {
+              "step_id": "ch35-v9-11-sakat-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "all the Grahas are disposed in 1st house and 7th house"
+            },
+            {
+              "step_id": "ch35-v9-11-sakat-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "all the Grahas are disposed in 1st house and 7th house Sakat Yog occurs"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Sakat Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Sakat Yog 成立。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v9-11-sakat-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Sakat Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Sakat Yog 的成立判定；原文只给盘面分布条件，没有时间、上升或男女限定。",
+        "minimum_supported_claim": "本盘所有行星（Grahas）都落在上升宫（Lagn）与七宫（Yuvati Bhava）内时，构成 Sakat Yog。",
+        "produced_fact_keys": [
+          "Sakat Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在上升宫（Lagn）与七宫（Yuvati Bhava）内"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘所有行星（Grahas）是否都落在上升宫（Lagn）与七宫（Yuvati Bhava）内"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "all the Grahas are disposed in Lagn and Yuvati Bhava",
+              "claim": "本盘所有行星（Grahas）都落在上升宫（Lagn）与七宫（Yuvati Bhava）内"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Sakat Yog occurs",
+              "claim": "构成 Sakat Yog"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v9-11",
+            "quote": "Sakat Yog occurs, when all the Grahas are disposed in Lagn and Yuvati Bhava.",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘所有行星（Grahas）是否都落在上升宫（Lagn）与七宫（Yuvati Bhava）内。",
+        "stop_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在上升宫（Lagn）与七宫（Yuvati Bhava）内"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把上升宫（Lagn）与七宫（Yuvati Bhava）换成其他宫轴。",
+          "不得把「所有行星」放宽成「多数行星」。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "8e9b540bc7b0021a3b6efdabb06161aa9e9810051171b832f66e4c75e3d75813"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v9-11-vihag-yog.step-001",
+      "method": {
+        "method": "ch35-v9-11-vihag-yog",
+        "title": "Vihag Yog：所有行星都落在四宫与十宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘上行星是不是都在四十宫轴上",
+          "我命里有没有 Vihag Yog"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If all confine to Bandhu and Karm Bhava, then Vihag Yog occurs.",
+            "Vihag Yog 的成立条件"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v9-11-vihag-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "If all confine to Bandhu and Karm Bhava"
+            },
+            {
+              "step_id": "ch35-v9-11-vihag-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "then Vihag Yog occurs"
+            },
+            {
+              "step_id": "ch35-v9-11-vihag-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "If all confine to Bandhu and Karm Bhava then Vihag Yog occurs"
+            },
+            {
+              "step_id": "ch35-v9-11-vihag-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "If all confine to 4th house and 10th house"
+            },
+            {
+              "step_id": "ch35-v9-11-vihag-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "If all confine to 4th house and 10th house then Vihag Yog occurs"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Vihag Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Vihag Yog 成立。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v9-11-vihag-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Vihag Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Vihag Yog 的成立判定；原文只给盘面分布条件，没有时间、上升或男女限定。",
+        "minimum_supported_claim": "本盘所有行星（Grahas）都落在四宫（Bandhu）与十宫（Karm Bhava）内时，构成 Vihag Yog。",
+        "produced_fact_keys": [
+          "Vihag Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在四宫（Bandhu）与十宫（Karm Bhava）内"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘所有行星（Grahas）是否都落在四宫（Bandhu）与十宫（Karm Bhava）内"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "If all confine to Bandhu and Karm Bhava",
+              "claim": "本盘所有行星（Grahas）都落在四宫（Bandhu）与十宫（Karm Bhava）内"
+            }
+          ],
+          "results": [
+            {
+              "quote": "then Vihag Yog occurs",
+              "claim": "构成 Vihag Yog"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v9-11",
+            "quote": "If all confine to Bandhu and Karm Bhava, then Vihag Yog occurs.",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘所有行星（Grahas）是否都落在四宫（Bandhu）与十宫（Karm Bhava）内。",
+        "stop_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在四宫（Bandhu）与十宫（Karm Bhava）内"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把四宫（Bandhu）与十宫（Karm Bhava）换成其他宫轴。",
+          "原文的 all 承接同偈前句的 all the Grahas，不得读成「所有吉星」或「所有凶星」。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "e836e534d8fe5f14a1e965000c2e44dcfe4a3dfe745f295f326180baf94ae64d"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v9-11-shringatak-yog.step-001",
+      "method": {
+        "method": "ch35-v9-11-shringatak-yog",
+        "title": "Shringatak Yog：所有行星都落在上升宫、五宫与九宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘上行星是不是都在一五九宫",
+          "我命里有没有 Shringatak Yog"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "All Grahas in Lagna, Putr and Dharm Bhava cause Shringatak Yog",
+            "Shringatak Yog 的成立条件"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v9-11-shringatak-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "All Grahas in Lagna, Putr and Dharm Bhava"
+            },
+            {
+              "step_id": "ch35-v9-11-shringatak-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "cause Shringatak Yog"
+            },
+            {
+              "step_id": "ch35-v9-11-shringatak-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "All Grahas in Lagna, Putr and Dharm Bhava cause Shringatak Yog"
+            },
+            {
+              "step_id": "ch35-v9-11-shringatak-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "All Grahas in 1st house, 5th house and 9th house"
+            },
+            {
+              "step_id": "ch35-v9-11-shringatak-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "All Grahas in 1st house, 5th house and 9th house cause Shringatak Yog"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Shringatak Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Shringatak Yog 成立。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v9-11-shringatak-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Shringatak Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Shringatak Yog 的成立判定；原文只给盘面分布条件，没有时间、上升或男女限定。",
+        "minimum_supported_claim": "本盘所有行星（Grahas）都落在上升宫（Lagna）、五宫（Putr）与九宫（Dharm Bhava）内时，构成 Shringatak Yog。",
+        "produced_fact_keys": [
+          "Shringatak Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在上升宫（Lagna）、五宫（Putr）与九宫（Dharm Bhava）内"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘所有行星（Grahas）是否都落在上升宫（Lagna）、五宫（Putr）与九宫（Dharm Bhava）内"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "All Grahas in Lagna, Putr and Dharm Bhava",
+              "claim": "本盘所有行星（Grahas）都落在上升宫（Lagna）、五宫（Putr）与九宫（Dharm Bhava）内"
+            }
+          ],
+          "results": [
+            {
+              "quote": "cause Shringatak Yog",
+              "claim": "构成 Shringatak Yog"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v9-11",
+            "quote": "All Grahas in Lagna, Putr and Dharm Bhava cause Shringatak Yog",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘所有行星（Grahas）是否都落在上升宫（Lagna）、五宫（Putr）与九宫（Dharm Bhava）内。",
+        "stop_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在上升宫（Lagna）、五宫（Putr）与九宫（Dharm Bhava）内"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把这三个宫换成别的三角宫组合——原文逐宫点名。",
+          "不得把「所有行星」放宽成「多数行星」。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "e970d55f81ec67622fd82119612c394326f9e445e32075e9a5117fd7d6c55357"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v9-11-hal-yog.step-001",
+      "method": {
+        "method": "ch35-v9-11-hal-yog",
+        "title": "Hal Yog：所有行星都落在二六十宫、三七十一宫或四八十二宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘上行星是不是都在同一组三宫里",
+          "我命里有没有 Hal Yog"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "while all Grahas in Dhan, Ari and Karm Bhava, or in Sahaj, Yuvati and Labh Bhava, or in Bandhu, Randhr and Vyaya Bhava cause Hal Yog",
+            "Hal Yog 的成立条件"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v9-11-hal-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "all Grahas in Dhan, Ari and Karm Bhava"
+            },
+            {
+              "step_id": "ch35-v9-11-hal-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or in Sahaj, Yuvati and Labh Bhava"
+            },
+            {
+              "step_id": "ch35-v9-11-hal-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or in Bandhu, Randhr and Vyaya Bhava"
+            },
+            {
+              "step_id": "ch35-v9-11-hal-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "cause Hal Yog"
+            },
+            {
+              "step_id": "ch35-v9-11-hal-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "all Grahas in Dhan, Ari and Karm Bhava cause Hal Yog"
+            },
+            {
+              "step_id": "ch35-v9-11-hal-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or in Sahaj, Yuvati and Labh Bhava cause Hal Yog"
+            },
+            {
+              "step_id": "ch35-v9-11-hal-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or in Bandhu, Randhr and Vyaya Bhava cause Hal Yog"
+            },
+            {
+              "step_id": "ch35-v9-11-hal-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "all Grahas in 2nd house, 6th house and 10th house"
+            },
+            {
+              "step_id": "ch35-v9-11-hal-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "or in 3rd house, 7th house and 11th house"
+            },
+            {
+              "step_id": "ch35-v9-11-hal-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "or in 4th house, 8th house and 12th house"
+            },
+            {
+              "step_id": "ch35-v9-11-hal-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "all Grahas in 2nd house, 6th house and 10th house cause Hal Yog"
+            },
+            {
+              "step_id": "ch35-v9-11-hal-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "or in 3rd house, 7th house and 11th house cause Hal Yog"
+            },
+            {
+              "step_id": "ch35-v9-11-hal-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "or in 4th house, 8th house and 12th house cause Hal Yog"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Hal Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Hal Yog 成立。",
+          "三组宫位的占据事实全部缺失时停止。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v9-11-hal-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Hal Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Hal Yog 的成立判定；原文只给盘面分布条件，没有时间、上升或男女限定。",
+        "minimum_supported_claim": "本盘所有行星（Grahas）都落在二宫（Dhan）、六宫（Ari）与十宫（Karm Bhava）内，或都落在三宫（Sahaj）、七宫（Yuvati）与十一宫（Labh Bhava）内，或都落在四宫（Bandhu）、八宫（Randhr）与十二宫（Vyaya Bhava）内时，构成 Hal Yog。",
+        "produced_fact_keys": [
+          "Hal Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘所有行星（Grahas）分别落在哪一宫（Bhava）"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "fact_key": "本盘所有行星（Grahas）分别落在哪一宫（Bhava）"
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "本盘所有行星（Grahas）是否都落在二宫（Dhan）、六宫（Ari）与十宫（Karm Bhava）内"
+                },
+                {
+                  "fact_key": "本盘所有行星（Grahas）是否都落在三宫（Sahaj）、七宫（Yuvati）与十一宫（Labh Bhava）内"
+                },
+                {
+                  "fact_key": "本盘所有行星（Grahas）是否都落在四宫（Bandhu）、八宫（Randhr）与十二宫（Vyaya Bhava）内"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "fact_key": "本盘所有行星（Grahas）分别落在哪一宫（Bhava）"
+            },
+            "required_fact_keys": [
+              "本盘所有行星（Grahas）是否都落在二宫（Dhan）、六宫（Ari）与十宫（Karm Bhava）内"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "本盘所有行星（Grahas）是否都落在二宫（Dhan）、六宫（Ari）与十宫（Karm Bhava）内"
+            },
+            "selection_group": "ch35-v9-11-hal-yog.step-001:hal-triads",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：本盘所有行星（Grahas）是否都落在二宫（Dhan）、六宫（Ari）与十宫（Karm Bhava）内。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘所有行星（Grahas）分别落在哪一宫（Bhava）"
+            },
+            "required_fact_keys": [
+              "本盘所有行星（Grahas）是否都落在三宫（Sahaj）、七宫（Yuvati）与十一宫（Labh Bhava）内"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "本盘所有行星（Grahas）是否都落在三宫（Sahaj）、七宫（Yuvati）与十一宫（Labh Bhava）内"
+            },
+            "selection_group": "ch35-v9-11-hal-yog.step-001:hal-triads",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：本盘所有行星（Grahas）是否都落在三宫（Sahaj）、七宫（Yuvati）与十一宫（Labh Bhava）内。"
+          },
+          {
+            "when": {
+              "fact_key": "本盘所有行星（Grahas）分别落在哪一宫（Bhava）"
+            },
+            "required_fact_keys": [
+              "本盘所有行星（Grahas）是否都落在四宫（Bandhu）、八宫（Randhr）与十二宫（Vyaya Bhava）内"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "本盘所有行星（Grahas）是否都落在四宫（Bandhu）、八宫（Randhr）与十二宫（Vyaya Bhava）内"
+            },
+            "selection_group": "ch35-v9-11-hal-yog.step-001:hal-triads",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：本盘所有行星（Grahas）是否都落在四宫（Bandhu）、八宫（Randhr）与十二宫（Vyaya Bhava）内。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "all Grahas in Dhan, Ari and Karm Bhava",
+              "claim": "本盘所有行星（Grahas）都落在二宫（Dhan）、六宫（Ari）与十宫（Karm Bhava）内"
+            },
+            {
+              "quote": "or in Sahaj, Yuvati and Labh Bhava",
+              "claim": "都落在三宫（Sahaj）、七宫（Yuvati）与十一宫（Labh Bhava）内"
+            },
+            {
+              "quote": "or in Bandhu, Randhr and Vyaya Bhava",
+              "claim": "都落在四宫（Bandhu）、八宫（Randhr）与十二宫（Vyaya Bhava）内"
+            }
+          ],
+          "results": [
+            {
+              "quote": "cause Hal Yog",
+              "claim": "构成 Hal Yog"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v9-11",
+            "quote": "while all Grahas in Dhan, Ari and Karm Bhava, or in Sahaj, Yuvati and Labh Bhava, or in Bandhu, Randhr and Vyaya Bhava cause Hal Yog",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘所有行星（Grahas）分别落在哪一宫（Bhava）。",
+        "stop_fact_keys": [
+          "本盘所有行星（Grahas）分别落在哪一宫（Bhava）"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "三组宫位是原文并列的三种成立方式，不得互相拼接成新的组合。",
+          "不得把「所有行星」放宽成「多数行星」。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "56085c63ba9810bdc40991c13c22ed2fc412ad9865f840503649cddda57ae299"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v9-11-vajr-yog.step-001",
+      "method": {
+        "method": "ch35-v9-11-vajr-yog",
+        "title": "Vajr Yog：吉星全在上升与七宫，或凶星全在四宫与十宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我命里有没有 Vajr Yog",
+          "我盘上吉星凶星分别挤在哪几个角宫"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "Vajr Yog is caused by all benefics in Lagn and Yuvati Bhava, or all malefics in Bandhu and Karm Bhava.",
+            "Vajr Yog 的成立条件"
+          ],
+          "counter_queries": [
+            "In a contrary situation, i.e. all benefics in Bandhu and Karm Bhava, or all malefics in Lagn and Yuvati Bhava, Yav Yog is generated."
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v9-11-vajr-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "all benefics in Lagn and Yuvati Bhava"
+            },
+            {
+              "step_id": "ch35-v9-11-vajr-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or all malefics in Bandhu and Karm Bhava"
+            },
+            {
+              "step_id": "ch35-v9-11-vajr-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Vajr Yog is caused"
+            },
+            {
+              "step_id": "ch35-v9-11-vajr-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "all benefics in Lagn and Yuvati Bhava Vajr Yog is caused"
+            },
+            {
+              "step_id": "ch35-v9-11-vajr-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or all malefics in Bandhu and Karm Bhava Vajr Yog is caused"
+            },
+            {
+              "step_id": "ch35-v9-11-vajr-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "all benefics in 1st house and 7th house"
+            },
+            {
+              "step_id": "ch35-v9-11-vajr-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "or all malefics in 4th house and 10th house"
+            },
+            {
+              "step_id": "ch35-v9-11-vajr-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "all benefics in 1st house and 7th house Vajr Yog is caused"
+            },
+            {
+              "step_id": "ch35-v9-11-vajr-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "or all malefics in 4th house and 10th house Vajr Yog is caused"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Vajr Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Vajr Yog 成立。",
+          "本盘吉星与凶星名册未取得时停止：吉凶归类见第 3 章 Benefics and Malefics 一节。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v9-11-vajr-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Vajr Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Vajr Yog 的成立判定；原文只给盘面分布条件，没有时间、上升或男女限定。",
+        "minimum_supported_claim": "本盘所有吉星都落在上升宫（Lagn）与七宫（Yuvati Bhava）内，或所有凶星都落在四宫（Bandhu）与十宫（Karm Bhava）内时，构成 Vajr Yog。",
+        "produced_fact_keys": [
+          "Vajr Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘中哪些行星被判为吉星",
+          "本盘中哪些行星被判为凶星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘中哪些行星被判为吉星"
+                },
+                {
+                  "fact_key": "本盘中哪些行星被判为凶星"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "本盘所有吉星是否都落在上升宫（Lagn）与七宫（Yuvati Bhava）内"
+                },
+                {
+                  "fact_key": "本盘所有凶星是否都落在四宫（Bandhu）与十宫（Karm Bhava）内"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘中哪些行星被判为吉星"
+                },
+                {
+                  "fact_key": "本盘中哪些行星被判为凶星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "本盘所有吉星是否都落在上升宫（Lagn）与七宫（Yuvati Bhava）内"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "本盘所有吉星是否都落在上升宫（Lagn）与七宫（Yuvati Bhava）内"
+            },
+            "selection_group": "ch35-v9-11-vajr-yog.step-001:vajr-sides",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：本盘所有吉星是否都落在上升宫（Lagn）与七宫（Yuvati Bhava）内。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘中哪些行星被判为吉星"
+                },
+                {
+                  "fact_key": "本盘中哪些行星被判为凶星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "本盘所有凶星是否都落在四宫（Bandhu）与十宫（Karm Bhava）内"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "本盘所有凶星是否都落在四宫（Bandhu）与十宫（Karm Bhava）内"
+            },
+            "selection_group": "ch35-v9-11-vajr-yog.step-001:vajr-sides",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：本盘所有凶星是否都落在四宫（Bandhu）与十宫（Karm Bhava）内。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "all benefics in Lagn and Yuvati Bhava",
+              "claim": "本盘所有吉星都落在上升宫（Lagn）与七宫（Yuvati Bhava）内"
+            },
+            {
+              "quote": "or all malefics in Bandhu and Karm Bhava",
+              "claim": "所有凶星都落在四宫（Bandhu）与十宫（Karm Bhava）内"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Vajr Yog is caused",
+              "claim": "构成 Vajr Yog"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v9-11",
+            "quote": "Vajr Yog is caused by all benefics in Lagn and Yuvati Bhava, or all malefics in Bandhu and Karm Bhava.",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中哪些行星被判为吉星、本盘中哪些行星被判为凶星。",
+        "stop_fact_keys": [
+          "本盘中哪些行星被判为吉星",
+          "本盘中哪些行星被判为凶星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "吉星一侧与凶星一侧是原文并列的两种成立方式，不得要求两者同时满足。",
+          "不得把吉星侧的宫位与凶星侧的宫位对调——对调后原文写的是 Yav Yog。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "b968e4f87bbea1c15bc0a65559f1f8fa22691dd0efcac89449be74b5071a070f"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v9-11-yav-yog.step-001",
+      "method": {
+        "method": "ch35-v9-11-yav-yog",
+        "title": "Yav Yog：吉星全在四宫与十宫，或凶星全在上升与七宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我命里有没有 Yav Yog",
+          "我盘上吉星在四十宫算什么格局"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "In a contrary situation, i.e. all benefics in Bandhu and Karm Bhava, or all malefics in Lagn and Yuvati Bhava, Yav Yog is generated.",
+            "Yav Yog 的成立条件"
+          ],
+          "counter_queries": [
+            "Vajr Yog is caused by all benefics in Lagn and Yuvati Bhava, or all malefics in Bandhu and Karm Bhava."
+          ],
+          "boundary_queries": [
+            "Benefics and Malefics. Among these, Surya, Shani, Mangal, decreasing Chandra, Rahu and Ketu",
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v9-11-yav-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "all benefics in Bandhu and Karm Bhava"
+            },
+            {
+              "step_id": "ch35-v9-11-yav-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "or all malefics in Lagn and Yuvati Bhava"
+            },
+            {
+              "step_id": "ch35-v9-11-yav-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Yav Yog is generated"
+            },
+            {
+              "step_id": "ch35-v9-11-yav-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "all benefics in Bandhu and Karm Bhava Yav Yog is generated"
+            },
+            {
+              "step_id": "ch35-v9-11-yav-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "or all malefics in Lagn and Yuvati Bhava Yav Yog is generated"
+            },
+            {
+              "step_id": "ch35-v9-11-yav-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "all benefics in 4th house and 10th house"
+            },
+            {
+              "step_id": "ch35-v9-11-yav-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition",
+              "query": "or all malefics in 1st house and 7th house"
+            },
+            {
+              "step_id": "ch35-v9-11-yav-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "all benefics in 4th house and 10th house Yav Yog is generated"
+            },
+            {
+              "step_id": "ch35-v9-11-yav-yog.step-001",
+              "lane": "support",
+              "origin": "bilingual_verbatim_condition_plus_result",
+              "query": "or all malefics in 1st house and 7th house Yav Yog is generated"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Yav Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Yav Yog 成立。",
+          "本盘吉星与凶星名册未取得时停止：吉凶归类见第 3 章 Benefics and Malefics 一节。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v9-11-yav-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Yav Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Yav Yog 的成立判定；原文以 In a contrary situation, i.e. 自行写明所指的两种盘面，本条只按原文写明的这两种取值；原文未给吉凶星判准，也没有时间限定。",
+        "minimum_supported_claim": "本盘所有吉星都落在四宫（Bandhu）与十宫（Karm Bhava）内，或所有凶星都落在上升宫（Lagn）与七宫（Yuvati Bhava）内时，构成 Yav Yog。",
+        "produced_fact_keys": [
+          "Yav Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘中哪些行星被判为吉星",
+          "本盘中哪些行星被判为凶星"
+        ],
+        "condition_logic": {
+          "operator": "AND",
+          "operands": [
+            {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘中哪些行星被判为吉星"
+                },
+                {
+                  "fact_key": "本盘中哪些行星被判为凶星"
+                }
+              ]
+            },
+            {
+              "operator": "OR",
+              "operands": [
+                {
+                  "fact_key": "本盘所有吉星是否都落在四宫（Bandhu）与十宫（Karm Bhava）内"
+                },
+                {
+                  "fact_key": "本盘所有凶星是否都落在上升宫（Lagn）与七宫（Yuvati Bhava）内"
+                }
+              ]
+            }
+          ]
+        },
+        "conditional_fact_requirements": [
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘中哪些行星被判为吉星"
+                },
+                {
+                  "fact_key": "本盘中哪些行星被判为凶星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "本盘所有吉星是否都落在四宫（Bandhu）与十宫（Karm Bhava）内"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "本盘所有吉星是否都落在四宫（Bandhu）与十宫（Karm Bhava）内"
+            },
+            "selection_group": "ch35-v9-11-yav-yog.step-001:yav-sides",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：本盘所有吉星是否都落在四宫（Bandhu）与十宫（Karm Bhava）内。"
+          },
+          {
+            "when": {
+              "operator": "AND",
+              "operands": [
+                {
+                  "fact_key": "本盘中哪些行星被判为吉星"
+                },
+                {
+                  "fact_key": "本盘中哪些行星被判为凶星"
+                }
+              ]
+            },
+            "required_fact_keys": [
+              "本盘所有凶星是否都落在上升宫（Lagn）与七宫（Yuvati Bhava）内"
+            ],
+            "branch_condition_logic": {
+              "fact_key": "本盘所有凶星是否都落在上升宫（Lagn）与七宫（Yuvati Bhava）内"
+            },
+            "selection_group": "ch35-v9-11-yav-yog.step-001:yav-sides",
+            "stop_condition": "选中该分支后，缺少以下事实即停止：本盘所有凶星是否都落在上升宫（Lagn）与七宫（Yuvati Bhava）内。"
+          }
+        ],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "all benefics in Bandhu and Karm Bhava",
+              "claim": "本盘所有吉星都落在四宫（Bandhu）与十宫（Karm Bhava）内"
+            },
+            {
+              "quote": "or all malefics in Lagn and Yuvati Bhava",
+              "claim": "所有凶星都落在上升宫（Lagn）与七宫（Yuvati Bhava）内"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Yav Yog is generated",
+              "claim": "构成 Yav Yog"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v9-11",
+            "quote": "In a contrary situation, i.e. all benefics in Bandhu and Karm Bhava, or all malefics in Lagn and Yuvati Bhava, Yav Yog is generated.",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘中哪些行星被判为吉星、本盘中哪些行星被判为凶星。",
+        "stop_fact_keys": [
+          "本盘中哪些行星被判为吉星",
+          "本盘中哪些行星被判为凶星"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "原文用 i.e. 自己写明了 contrary situation 指哪两种盘面，不得再自行推演别的「相反情形」。",
+          "吉星一侧与凶星一侧是原文并列的两种成立方式，不得要求两者同时满足。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "587284cd12843b12fd3bffa859bd2f94114b77ce6866b245c29467eced681fe0"
+      },
+      "high_risk_terms": []
+    },
+    {
+      "step_id": "ch35-v12-kamal-yog.step-001",
+      "method": {
+        "method": "ch35-v12-kamal-yog",
+        "title": "Kamal Yog：所有行星都落在 4 个角宫",
+        "target_house": null,
+        "generalization_scope": "general_rule",
+        "user_intents": [
+          "我盘上行星是不是都在四个角宫里",
+          "我命里有没有 Kamal Yog"
+        ],
+        "facts": null,
+        "dependencies": [],
+        "retrieval_plan": {
+          "support_queries": [
+            "If all the Grahas are in the 4 Kendras, Kamal Yog is produced.",
+            "Kamal Yog 的成立条件"
+          ],
+          "counter_queries": [],
+          "boundary_queries": [
+            "O excellent of the Brahmins, explained below are 32 Nabhash Yogas, which have a total of 1800 different varieties.",
+            "These consist of 3 Asraya Yogas, 2 Dala Yogas, 20 Akriti Yogas and 7 Sankhya Yogas.",
+            "Nabhash 瑜伽全章的总数与分类边界"
+          ],
+          "method_queries": [
+            "Names of Nabhash Yogas. The 3 Asraya Yogas are Rajju, Musala and Nala Yogas.",
+            "Effects of Nabhash Yogas (up to Sloka 50).",
+            "怎么按 Nabhash 瑜伽的分类去查一张盘"
+          ],
+          "derived_step_queries": [
+            {
+              "step_id": "ch35-v12-kamal-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition",
+              "query": "all the Grahas are in the 4 Kendras"
+            },
+            {
+              "step_id": "ch35-v12-kamal-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_result",
+              "query": "Kamal Yog is produced"
+            },
+            {
+              "step_id": "ch35-v12-kamal-yog.step-001",
+              "lane": "support",
+              "origin": "verbatim_condition_plus_result",
+              "query": "all the Grahas are in the 4 Kendras Kamal Yog is produced"
+            }
+          ]
+        },
+        "stop_conditions": [
+          "缺少判定 Kamal Yog 所需的行星分布事实时停止。",
+          "行星分布事实取不到确定值时停止，不得凭部分行星推定 Kamal Yog 成立。"
+        ]
+      },
+      "step": {
+        "step_id": "ch35-v12-kamal-yog.step-001",
+        "action": "核对本盘行星（Grahas）的分布，判定 Kamal Yog 是否成立。",
+        "applicability_scope": "仅限本命盘 Kamal Yog 的成立判定；原文只给盘面分布条件，没有时间、上升或男女限定。",
+        "minimum_supported_claim": "本盘所有行星（Grahas）都落在4个角宫（Kendra）内时，构成 Kamal Yog。",
+        "produced_fact_keys": [
+          "Kamal Yog 成立判定"
+        ],
+        "required_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在4个角宫（Kendra）内"
+        ],
+        "condition_logic": {
+          "fact_key": "本盘所有行星（Grahas）是否都落在4个角宫（Kendra）内"
+        },
+        "conditional_fact_requirements": [],
+        "source_status": "single_explicit_source",
+        "claim_terms": {
+          "conditions": [
+            {
+              "quote": "all the Grahas are in the 4 Kendras",
+              "claim": "本盘所有行星（Grahas）都落在4个角宫（Kendra）内"
+            }
+          ],
+          "results": [
+            {
+              "quote": "Kamal Yog is produced",
+              "claim": "构成 Kamal Yog"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "evidence_atom_id": "bphs-97:santhanam:ch35:v12",
+            "quote": "If all the Grahas are in the 4 Kendras, Kamal Yog is produced.",
+            "pdf_pages": [
+              76
+            ]
+          }
+        ],
+        "stop_condition": "缺少以下固定事实即停止：本盘所有行星（Grahas）是否都落在4个角宫（Kendra）内。",
+        "stop_fact_keys": [
+          "本盘所有行星（Grahas）是否都落在4个角宫（Kendra）内"
+        ],
+        "exception_relations": [],
+        "forbidden_extensions": [
+          "不得把 4 个角宫放宽成任意角宫——原文写的是 the 4 Kendras。",
+          "不得把角宫（Kendra）换成三角宫。"
+        ],
+        "context_reference": false,
+        "context_bindings": [],
+        "time_scope": {
+          "kind": "none",
+          "label": "原文没有时间限定",
+          "fact_keys": []
+        },
+        "concession_conditions": [],
+        "step_hash": "64518957e65bb487f499effdbb6c6884e628f3f77b5dbe6901a466f53a14dfaa"
+      },
+      "high_risk_terms": []
+    }
+  ],
+  "atoms": {
+    "bphs-97:santhanam:ch35:v7": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v7",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "7.",
+      "content_role": "verse",
+      "exact_text": "7. Rajju, Musala and Nala Yogas. All the Grahas in Movable Rāśis cause Rajju Yog. All the Grahas in Fixed Rāśis cause Musala Yog. All the Grahas in Dual Rāśis cause Nala Yog.",
+      "pdf_pages": [
+        75,
+        76
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 7 · PDF pages 75-76 · bphs-97:santhanam:ch35:v7",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v3-6",
+      "next_atom_id": "bphs-97:santhanam:ch35:v8",
+      "context_before": "and Samudr Yogas. The 7 Sankhya Yogas are Vallaki, Daam, Paash, Kedara, Sool, Yuga and Gola Yogas. Thus these are 32 in total.\n\n",
+      "context_after": "8. Maal and Sarpa Yogas. If 3 Kendras are occupied by benefics, Maal Yog is produced, while malefics so placed will cause Bhujan",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch35:v8": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v8",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "8.",
+      "content_role": "verse",
+      "exact_text": "8. Maal and Sarpa Yogas. If 3 Kendras are occupied by benefics, Maal Yog is produced, while malefics so placed will cause Bhujang, or Sarpa Yog. These Yogas, respectively, produce benefic and malefic results.",
+      "pdf_pages": [
+        76
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 8 · PDF page 76 · bphs-97:santhanam:ch35:v8",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v7",
+      "next_atom_id": "bphs-97:santhanam:ch35:v9-11",
+      "context_before": "ju Yog. All the Grahas in Fixed Rāśis cause Musala Yog. All the Grahas in Dual Rāśis cause Nala\n\n<!-- SOURCE_PAGE 76 -->\n\nYog.\n\n",
+      "context_after": "9-11. Gada, Sakat, Vihag, Shringatak, Hal, Vajr and Yav Yogas. If all the Grahas occupy two successive Kendras, Gada Yog is form",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch35:v9-11": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v9-11",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "9-11.",
+      "content_role": "verse",
+      "exact_text": "9-11. Gada, Sakat, Vihag, Shringatak, Hal, Vajr and Yav Yogas. If all the Grahas occupy two successive Kendras, Gada Yog is formed. Sakat Yog occurs, when all the Grahas are disposed in Lagn and Yuvati Bhava. If all confine to Bandhu and Karm Bhava, then Vihag Yog occurs. All Grahas in Lagna, Putr and Dharm Bhava cause Shringatak Yog, while all Grahas in Dhan, Ari and Karm Bhava, or in Sahaj, Yuvati and Labh Bhava, or in Bandhu, Randhr and Vyaya Bhava cause Hal Yog. Vajr Yog is caused by all benefics in Lagn and Yuvati Bhava, or all malefics in Bandhu and Karm Bhava. In a contrary situation, i.e. all benefics in Bandhu and Karm Bhava, or all malefics in Lagn and Yuvati Bhava, Yav Yog is generated.",
+      "pdf_pages": [
+        76
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 9-11 · PDF page 76 · bphs-97:santhanam:ch35:v9-11",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v8",
+      "next_atom_id": "bphs-97:santhanam:ch35:v12",
+      "context_before": "ed, while malefics so placed will cause Bhujang, or Sarpa Yog. These Yogas, respectively, produce benefic and malefic results.\n\n",
+      "context_after": "12. Kamal and Vapi Yogas. If all the Grahas are in the 4 Kendras, Kamal Yog is produced. If all of them happen to be in all the ",
+      "content_missing": false
+    },
+    "bphs-97:santhanam:ch35:v12": {
+      "evidence_atom_id": "bphs-97:santhanam:ch35:v12",
+      "chapter_number": 35,
+      "chapter_title": "Nabhash Yogas",
+      "verse_label": "12.",
+      "content_role": "verse",
+      "exact_text": "12. Kamal and Vapi Yogas. If all the Grahas are in the 4 Kendras, Kamal Yog is produced. If all of them happen to be in all the Apoklimas, or in all the Panapharas, Vapi Yog occurs.",
+      "pdf_pages": [
+        76
+      ],
+      "citation": "BPHS · Santhanam 97-chapter edition · Ch. 35 · Sloka 12 · PDF page 76 · bphs-97:santhanam:ch35:v12",
+      "previous_atom_id": "bphs-97:santhanam:ch35:v9-11",
+      "next_atom_id": "bphs-97:santhanam:ch35:v13",
+      "context_before": "ontrary situation, i.e. all benefics in Bandhu and Karm Bhava, or all malefics in Lagn and Yuvati Bhava, Yav Yog is generated.\n\n",
+      "context_after": "13. Yup, Shar, Shakti and Danda Yogas. If all the 7 Grahas are in the 4 Bhavas, commencing from Lagna, they cause Yup Yog, if fr",
+      "content_missing": false
+    }
+  }
+}
